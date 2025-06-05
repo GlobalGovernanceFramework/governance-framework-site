@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="manifest" href="/manifest.json">
+    <!-- iOS meta tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="GGF">
+
+    <!-- Theme color for Android -->
+    <meta name="theme-color" content="#2B4B8C">
+
+		<meta charset="utf-8" />
+    <link rel="icon" href="../../icons/favicon.png" type="image/png">
+    <link rel="icon" href="../../icons/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="../../icons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../icons/apple-touch-icon-152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="../../icons/apple-touch-icon-167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../icons/apple-touch-icon-180.png">
+    <link rel="mask-icon" href="../../icons/maskable_icon192.png" color="#2B4B8C">
+    <meta name="msapplication-TileImage" content="../../icons/ms-tile-144.png">
+    <meta name="msapplication-TileColor" content="#2B4B8C">
+		<meta name="viewport" content="width=device-width" />
+		<!-- Temporary Tailwind CDN (until we fix the local Tailwind setup) -->
+		<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+		<!-- Custom inline styles for buttons and other elements -->
+		<style>
+			.btn-primary {
+				background-color: #2563eb;
+				color: white;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				font-weight: 500;
+				transition-property: all;
+				transition-duration: 200ms;
+			}
+			.btn-primary:hover {
+				background-color: #1d4ed8;
+				transform: translateY(-2px);
+			}
+		</style>
+		
+		<link href="../../_app/immutable/assets/0.lOry6XAG.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/FrameworkSidebar.rSfe8KvO.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/46.DHTdjfKq.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.BBGghwS3.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/S4zkwXhi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DhxZHzpA.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BppMPddQ.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BTSlPHgk.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CYgJF_JY.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DI3wW-Wv.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.DlNF_-N8.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Hn1gYnKv.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DkrhUMMJ.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DWtAmnz2.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Bz6G7n7N.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CkDn7Ypf.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CALJTuoc.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D6DkHhct.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.HVN1qxcm.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Ddt477Eu.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DmDkJ5Tx.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BD0iatVu.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BRzKQYUk.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DJb14Fzi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/pdyL3CsN.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/EUvqdT4d.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D3MJbfhS.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPufCEFL.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/uxwWpffx.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Bfc47y5P.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/46.aOau-EzJ.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BheWnx7M.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Dg3xN2YH.js">
+    <script>
+      // Unregister any existing service workers
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          for (let registration of registrations) {
+            registration.unregister();
+          }
+        });
+      }
+      // Handle hash-based routing and redirect paths
+      (function() {
+        // First check if we have a hash route
+        const { hash } = window.location;
+        if (hash && hash.length > 1) {
+          const path = hash.slice(1);
+          history.replaceState(null, null, path);
+        } 
+        // Then check if we have a saved redirect path
+        else if (sessionStorage.getItem('redirectPath')) {
+          const redirectPath = sessionStorage.getItem('redirectPath');
+          sessionStorage.removeItem('redirectPath');
+          history.replaceState(null, null, redirectPath);
+        }
+      })();
+    </script>
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!----><!--[!--><!--]--> <div class="flex flex-col min-h-screen svelte-1yx7f06"><header class="svelte-wvv4mv"><div class="container svelte-wvv4mv"><div class="header-content svelte-wvv4mv"><div class="logo-section svelte-wvv4mv"><a href="../../" class="logo-link svelte-wvv4mv"><img src="../../logo.svg" alt="Global Governance Framework" class="logo-img svelte-wvv4mv"> <span class="site-title svelte-wvv4mv">Global Governance Framework</span></a> <button type="button" class="menu-button svelte-wvv4mv" aria-label="Open menu"><!--[!--><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg><!--]--></button></div> <nav class="nav-container  svelte-wvv4mv"><ul class="nav-list svelte-wvv4mv"><li class="nav-item svelte-wvv4mv"><a href="../../" class="nav-link  svelte-wvv4mv" data-sveltekit-preload-data="hover">Home</a></li> <li class="nav-item dropdown svelte-wvv4mv"><div style="display: flex; justify-content: space-between; align-items: center;"><a href="../../framework" class="nav-link  svelte-wvv4mv" data-sveltekit-preload-data="hover">Framework <svg xmlns="http://www.w3.org/2000/svg" class="dropdown-icon hidden md:inline-block svelte-wvv4mv" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg></a> <button type="button" class="dropdown-toggle md:hidden svelte-wvv4mv" aria-label="Open framework menu"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg></button></div> <div class="dropdown-menu svelte-wvv4mv"><a href="../../framework" class="svelte-wvv4mv" data-sveltekit-preload-data="hover">Framework Introduction</a> <a href="../../framework/docs" class="svelte-wvv4mv" data-sveltekit-preload-data="hover">Overview</a> <a href="../../framework/docs/principles" class="svelte-wvv4mv" data-sveltekit-preload-data="hover">Core Principles</a> <a href="../../framework/global-citizenship" class="svelte-wvv4mv" data-sveltekit-preload-data="hover">Global Citizenship</a> <a href="../../framework/docs/implementation" class="svelte-wvv4mv" data-sveltekit-preload-data="hover">Implementation</a> <a href="../../framework/hubs" class="svelte-wvv4mv" data-sveltekit-preload-data="hover">Regional Hubs</a> <a href="../../framework/tools" class="svelte-wvv4mv" data-sveltekit-preload-data="hover">Implementation Tools</a> <a href="../../framework/visuals" class="svelte-wvv4mv" data-sveltekit-preload-data="hover">Visualizations</a> <a href="../../framework/docs/case-studies" class="svelte-wvv4mv" data-sveltekit-preload-data="hover">Case Studies</a> <a href="../../framework/ai-futures" class="svelte-wvv4mv" data-sveltekit-preload-data="hover">AI Futures</a> <a href="../../framework/docs/resources" class="svelte-wvv4mv" data-sveltekit-preload-data="hover">Resources</a> <a href="../../framework/docs/glossary" class="svelte-wvv4mv" data-sveltekit-preload-data="hover">Glossary</a></div></li> <li class="nav-item svelte-wvv4mv"><a href="../../downloads" class="nav-link  svelte-wvv4mv" data-sveltekit-preload-data="hover">Downloads</a></li> <li class="nav-item svelte-wvv4mv"><a href="../../about" class="nav-link  svelte-wvv4mv" data-sveltekit-preload-data="hover">About</a></li> <li class="nav-item svelte-wvv4mv"><a href="../../contact" class="nav-link  svelte-wvv4mv" data-sveltekit-preload-data="hover">Contact</a></li></ul> <div><select aria-label="Select language" class="language-select svelte-wvv4mv"><!--[--><option value="en">English</option><option value="sv">Svenska</option><!--]--></select></div></nav></div></div></header><!----> <main class="flex-grow container mx-auto px-4 py-8 svelte-1yx7f06"><!----><!----><div class="documentation-container svelte-1pta2pr"><div class="sidebar svelte-h83rx0"><nav><ul class="svelte-h83rx0"><!--[--><li class="nav-item  svelte-h83rx0"><!--[!--><a href="../../framework/docs" class="svelte-h83rx0">Overview</a><!--]--></li><li class="nav-item  svelte-h83rx0"><!--[!--><a href="../../framework/docs/principles" class="svelte-h83rx0">Core Principles</a><!--]--></li><li class="nav-item  svelte-h83rx0"><!--[!--><a href="../../framework/global-citizenship" class="svelte-h83rx0">Global Citizenship</a><!--]--></li><li class="nav-item  svelte-h83rx0"><!--[--><div class="nav-header svelte-h83rx0"><a href="../../framework/docs/implementation" class="svelte-h83rx0">Implementation</a> <button class="toggle-btn svelte-h83rx0" aria-expanded="false"><!--[!--><span>▶</span><!--]--></button></div> <!--[!--><!--]--><!--]--></li><li class="nav-item  svelte-h83rx0"><!--[!--><a href="../../framework/hubs" class="svelte-h83rx0">Regional Hubs</a><!--]--></li><li class="nav-item  svelte-h83rx0"><!--[!--><a href="../../framework/tools" class="svelte-h83rx0">Implementation Tools</a><!--]--></li><li class="nav-item  svelte-h83rx0"><!--[!--><a href="../../framework/visuals" class="svelte-h83rx0">Visualizations</a><!--]--></li><li class="nav-item  svelte-h83rx0"><!--[!--><a href="../../framework/docs/case-studies" class="svelte-h83rx0">Case Studies</a><!--]--></li><li class="nav-item  svelte-h83rx0"><!--[!--><a href="../../framework/ai-futures" class="svelte-h83rx0">AI Futures</a><!--]--></li><li class="nav-item  svelte-h83rx0"><!--[!--><a href="../../framework/docs/resources" class="svelte-h83rx0">Resources</a><!--]--></li><li class="nav-item  svelte-h83rx0"><!--[!--><a href="../../framework/docs/glossary" class="svelte-h83rx0">Glossary</a><!--]--></li><!--]--></ul></nav></div><!----> <div class="content svelte-1pta2pr"><!----><h1>🌍 <strong>Global Citizenship Practice Framework</strong></h1> <p><em>Expanding Identity, Responsibility, and Action for a Thriving Planet</em></p> <hr> <h2>🔹 <strong>What is Global Citizenship?</strong></h2> <p>A <strong>practice</strong> (not just an idea) that combines:</p> <ul><li><strong>Identity:</strong> Belonging to a global community <em>alongside</em> local/cultural identities.</li> <li><strong>Ethics:</strong> Living by 10 shared values that unite humanity (below).</li> <li><strong>Action:</strong> Progressing from awareness to leadership (5 levels).</li> <li><strong>Systems Change:</strong> Supporting innovations like <strong>AUBI</strong> (Adaptive Universal Basic Income) to enable participation.</li></ul> <blockquote><p><em>“It’s not about perfection—it’s about direction. Every choice nudges the world toward justice or injustice.”</em></p></blockquote> <hr> <h2>🔹 <strong>The 10 Core Values</strong></h2> <p><em>Interconnected principles for daily decisions</em></p> <table><thead><tr><th>Icon</th><th>Value</th><th>Essence</th></tr></thead><tbody><tr><td>🌱</td><td><strong>Honor Life</strong></td><td>Protect all beings (human, animal, AI, ecosystems).</td></tr><tr><td>❤️</td><td><strong>Compassion</strong></td><td>Act to relieve suffering.</td></tr><tr><td>⚖️</td><td><strong>Justice</strong></td><td>Challenge exploitation; create equity.</td></tr><tr><td>🔍</td><td><strong>Seek Truth</strong></td><td>Stay humble, question biases.</td></tr><tr><td>🗝️</td><td><strong>Respect Freedom</strong></td><td>Defend dignity and expression.</td></tr><tr><td>🌎</td><td><strong>Care for Earth</strong></td><td>Steward resources for future generations.</td></tr><tr><td>🕊️</td><td><strong>Build Peace</strong></td><td>Resolve conflicts through dialogue.</td></tr><tr><td>✨</td><td><strong>Practice Integrity</strong></td><td>Align actions with values.</td></tr><tr><td>🙏</td><td><strong>Cultivate Gratitude</strong></td><td>Appreciate interconnectedness.</td></tr><tr><td>🧠</td><td><strong>Grow in Wisdom</strong></td><td>Learn from diverse perspectives.</td></tr></tbody></table> <p><em>Values adapt across cultures but share universal roots.</em></p> <hr> <h2>🔹 <strong>5 Levels of Practice</strong></h2> <p><em>A nonlinear journey—start where you are.</em></p> <table><thead><tr><th>Level</th><th>What You Do</th><th>Mindset Shift</th><th>Example Actions</th></tr></thead><tbody><tr><td><strong>1. Awareness</strong></td><td>Learn global systems.</td><td><em>“Our world is interconnected.”</em></td><td>Read global news; trace supply chains.</td></tr><tr><td><strong>2. Understanding</strong></td><td>Analyze root causes.</td><td><em>“Issues are systemic.”</em></td><td>Study climate justice; reflect on privileges.</td></tr><tr><td><strong>3. Empathy</strong></td><td>Connect emotionally.</td><td><em>“Their pain is my pain.”</em></td><td>Join intercultural exchanges; support refugees.</td></tr><tr><td><strong>4. Participation</strong></td><td>Take local-global action.</td><td><em>“My choices matter.”</em></td><td>Reduce waste; advocate for policy change.</td></tr><tr><td><strong>5. Leadership</strong></td><td>Create systemic solutions.</td><td><em>“We can redesign systems.”</em></td><td>Launch AUBI pilots; bridge divides.</td></tr></tbody></table> <hr> <h2>🔹 <strong>Why It Matters</strong></h2> <h3><strong>Tangible Benefits</strong></h3> <ul><li><strong>Individuals:</strong> Purpose, resilience, cross-cultural skills.</li> <li><strong>Communities:</strong> Conflict reduction, innovation, solidarity.</li> <li><strong>Planet:</strong> Climate cooperation, rights for nature, equitable tech.</li></ul> <h3><strong>Barriers &amp; Solutions</strong></h3> <table><thead><tr><th>Barrier</th><th>Solution</th></tr></thead><tbody><tr><td><em>“I’m overwhelmed.”</em></td><td>Start small (e.g., meatless Mondays → climate advocacy).</td></tr><tr><td><em>“It’s not my problem.”</em></td><td>Explore how local issues (housing, jobs) link to global systems.</td></tr><tr><td><em>“I lack resources.”</em></td><td>Use low-tech tools (community circles, storytelling).</td></tr></tbody></table> <hr> <h2>🔹 <strong>Start Today</strong></h2> <h3><strong>Tools &amp; Practices</strong></h3> <ul><li><strong>🧰 AUBI Advocacy:</strong> Support economic systems that free people to participate.</li> <li><strong>📱 Tech for Good:</strong> Use AI translators to bridge language gaps.</li> <li><strong>🌱 Daily Rituals:</strong> Pause to ask: <em>“Who benefits from my choices? Who bears the cost?”</em></li></ul> <h3><strong>Expanding the Circle</strong></h3> <p>Global citizenship now includes:</p> <ul><li><strong>Non-humans:</strong> Legal rights for rivers (New Zealand’s Whanganui River).</li> <li><strong>AI Ethics:</strong> Ensuring algorithms respect human rights.</li> <li><strong>Cosmic Responsibility:</strong> Preparing for interstellar ethics.</li></ul> <hr> <h2>🔹 <strong>“You Are Already a Global Citizen”</strong></h2> <p><em>This framework helps you live it consciously.</em></p> <p><strong>Next Steps:</strong></p> <ol><li><strong>Assess:</strong> Use the self-reflection tool (in full framework).</li> <li><strong>Connect:</strong> Join a global citizenship circle.</li> <li><strong>Act:</strong> Pick <em>one</em> value to deepen this week.</li></ol> <p><em>Created by Björn Kenneth Holmström &amp; collaborators | Submit your story: <a href="mailto:globalgovernanceframework@gmail.com">globalgovernanceframework@gmail.com</a></em></p><!----></div></div><!----><!----></main> <footer class="svelte-1tlrlj5"><div class="container svelte-1tlrlj5"><div class="grid svelte-1tlrlj5"><div><h3 class="svelte-1tlrlj5">Global Governance Framework</h3> <p class="svelte-1tlrlj5">Developing interoperable systems and operating models for global governance that respect local autonomy.</p></div> <div><h3 class="svelte-1tlrlj5">Navigation</h3> <ul class="svelte-1tlrlj5"><li class="svelte-1tlrlj5"><a href="../../" class="svelte-1tlrlj5">Home</a></li> <li class="svelte-1tlrlj5"><a href="../../about" class="svelte-1tlrlj5">About</a></li> <li class="svelte-1tlrlj5"><a href="../../framework" class="svelte-1tlrlj5">Framework</a></li> <li class="svelte-1tlrlj5"><a href="../../framework/docs/glossary" class="svelte-1tlrlj5">Glossary</a></li> <li class="svelte-1tlrlj5"><a href="../../downloads" class="svelte-1tlrlj5">Downloads</a></li> <li class="svelte-1tlrlj5"><a href="../../contact" class="svelte-1tlrlj5">Contact</a></li></ul></div> <div><h3 class="svelte-1tlrlj5">Legal</h3> <ul class="svelte-1tlrlj5"><li class="svelte-1tlrlj5"><a href="../../privacy" class="svelte-1tlrlj5">Privacy Policy</a></li> <li class="svelte-1tlrlj5"><a href="../../terms" class="svelte-1tlrlj5">Terms of Use</a></li></ul></div> <div><h3 class="svelte-1tlrlj5">Connect</h3> <div class="flex space-x-4 svelte-1tlrlj5"><a href="https://github.com/GlobalGovernanceFramework" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="svelte-1tlrlj5"><svg class="h-6 w-6 svelte-1tlrlj5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg></a> <a href="mailto:globalgovernanceframework@gmail.com" aria-label="Email" class="svelte-1tlrlj5"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 svelte-1tlrlj5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></a></div></div></div> <div class="border-t flex flex-col md:flex-row justify-between items-center svelte-1tlrlj5"><div class="mb-4 md:mb-0 svelte-1tlrlj5"><p class="text-sm svelte-1tlrlj5">© 2025 Global Governance Framework 2025 | All Rights Reserved</p></div> <div class="flex items-center space-x-2 svelte-1tlrlj5"><img src="../../logo.svg" alt="Global Governance Framework" class="h-6 w-6 svelte-1tlrlj5"> <span class="text-sm">Building frameworks for ethical global governance</span></div></div></div></footer><!----></div><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_ndj3oc = {
+						base: new URL("../..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.BBGghwS3.js"),
+						import("../../_app/immutable/entry/app.DlNF_-N8.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 46],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

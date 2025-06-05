@@ -1,1 +1,0 @@
-Dokument ej ännu översatt
