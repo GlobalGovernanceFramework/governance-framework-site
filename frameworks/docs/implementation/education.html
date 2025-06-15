@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="manifest" href="/manifest.json">
+    <!-- iOS meta tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="GGF">
+
+    <!-- Theme color for Android -->
+    <meta name="theme-color" content="#2B4B8C">
+
+		<meta charset="utf-8" />
+    <link rel="icon" href="../../../icons/favicon.png" type="image/png">
+    <link rel="icon" href="../../../icons/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="../../../icons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../../icons/apple-touch-icon-152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="../../../icons/apple-touch-icon-167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../icons/apple-touch-icon-180.png">
+    <link rel="mask-icon" href="../../../icons/maskable_icon192.png" color="#2B4B8C">
+    <meta name="msapplication-TileImage" content="../../../icons/ms-tile-144.png">
+    <meta name="msapplication-TileColor" content="#2B4B8C">
+		<meta name="viewport" content="width=device-width" />
+		<!-- Temporary Tailwind CDN (until we fix the local Tailwind setup) -->
+		<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+		<!-- Custom inline styles for buttons and other elements -->
+		<style>
+			.btn-primary {
+				background-color: #2563eb;
+				color: white;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				font-weight: 500;
+				transition-property: all;
+				transition-duration: 200ms;
+			}
+			.btn-primary:hover {
+				background-color: #1d4ed8;
+				transform: translateY(-2px);
+			}
+		</style>
+		
+		<link href="../../../_app/immutable/assets/0.lOry6XAG.css" rel="stylesheet">
+		<link href="../../../_app/immutable/assets/FrameworkSidebar.Do2cbBlu.css" rel="stylesheet">
+		<link href="../../../_app/immutable/assets/ConstellationMap.CqReL0fM.css" rel="stylesheet">
+		<link href="../../../_app/immutable/assets/20.DOKTE5A7.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../../_app/immutable/entry/start.DEtME1Xl.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/Da5YPA48.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/BhwWVQoX.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/C2sttjVu.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/BGXHXHIf.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/CYgJF_JY.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/BKrwEIOF.js">
+		<link rel="modulepreload" href="../../../_app/immutable/entry/app.DPoSWgtN.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/BaO5pROh.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/BcQwJDS1.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/B5Fwv4qb.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/g4Q1JD9w.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/YXLJPfv9.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/CsCFQ0It.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/B2xOgcOe.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/Dr1y4inN.js">
+		<link rel="modulepreload" href="../../../_app/immutable/nodes/0.DGREpKJT.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/Dl73iU1-.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/DHNp0KGA.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/B50KWc7i.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/BRzKQYUk.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/pUlpAWFV.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/Ca1nVRUj.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/CKVs7Tqw.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/BACytxgB.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/BIwzW8eQ.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/kzoX45eN.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/Bfc47y5P.js">
+		<link rel="modulepreload" href="../../../_app/immutable/nodes/20.BCl9Cw4K.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/BheWnx7M.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/CJRnOOvS.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/Wkyib0_h.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/2z892vTu.js">
+		<link rel="modulepreload" href="../../../_app/immutable/chunks/vkuxiONl.js">
+    <script>
+      // Unregister any existing service workers
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          for (let registration of registrations) {
+            registration.unregister();
+          }
+        });
+      }
+      // Handle hash-based routing and redirect paths
+      (function() {
+        // First check if we have a hash route
+        const { hash } = window.location;
+        if (hash && hash.length > 1) {
+          const path = hash.slice(1);
+          history.replaceState(null, null, path);
+        } 
+        // Then check if we have a saved redirect path
+        else if (sessionStorage.getItem('redirectPath')) {
+          const redirectPath = sessionStorage.getItem('redirectPath');
+          sessionStorage.removeItem('redirectPath');
+          history.replaceState(null, null, redirectPath);
+        }
+      })();
+    </script>
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!----><!--[!--><!--]--> <div class="flex flex-col min-h-screen svelte-1yx7f06"><header class="svelte-wvv4mv"><div class="container svelte-wvv4mv"><div class="header-content svelte-wvv4mv"><div class="logo-section svelte-wvv4mv"><a href="../../../" class="logo-link svelte-wvv4mv"><img src="../../../logo.svg" alt="Global Governance Framework" class="logo-img svelte-wvv4mv"> <span class="site-title svelte-wvv4mv">Global Governance Framework</span></a> <button type="button" class="menu-button svelte-wvv4mv" aria-label="Open menu"><!--[!--><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg><!--]--></button></div> <nav class="nav-container  svelte-wvv4mv"><ul class="nav-list svelte-wvv4mv"><li class="nav-item svelte-wvv4mv"><a href="../../../" class="nav-link  svelte-wvv4mv" data-sveltekit-preload-data="hover">Home</a></li> <li class="nav-item dropdown svelte-wvv4mv"><div style="display: flex; justify-content: space-between; align-items: center;"><a href="../../../frameworks" class="nav-link  svelte-wvv4mv" data-sveltekit-preload-data="hover">Framework <svg xmlns="http://www.w3.org/2000/svg" class="dropdown-icon hidden md:inline-block svelte-wvv4mv" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg></a> <button type="button" class="dropdown-toggle md:hidden svelte-wvv4mv" aria-label="Open framework menu"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg></button></div> <div class="dropdown-menu svelte-wvv4mv"><a href="../../../frameworks" class="svelte-wvv4mv" data-sveltekit-preload-data="hover">Framework Introduction</a> <a href="../../../frameworks/docs" class="svelte-wvv4mv" data-sveltekit-preload-data="hover">Overview</a> <a href="../../../frameworks/docs/principles" class="svelte-wvv4mv" data-sveltekit-preload-data="hover">Core Principles</a> <a href="../../../frameworks/global-citizenship" class="svelte-wvv4mv" data-sveltekit-preload-data="hover">Global Citizenship</a> <a href="../../../frameworks/docs/implementation" class="svelte-wvv4mv" data-sveltekit-preload-data="hover">Implementation</a> <a href="../../../frameworks/hubs" class="svelte-wvv4mv" data-sveltekit-preload-data="hover">Regional Hubs</a> <a href="../../../frameworks/tools" class="svelte-wvv4mv" data-sveltekit-preload-data="hover">Implementation Tools</a> <a href="../../../frameworks/visuals" class="svelte-wvv4mv" data-sveltekit-preload-data="hover">Visualizations</a> <a href="../../../frameworks/docs/case-studies" class="svelte-wvv4mv" data-sveltekit-preload-data="hover">Case Studies</a> <a href="../../../frameworks/ai-futures" class="svelte-wvv4mv" data-sveltekit-preload-data="hover">AI Futures</a> <a href="../../../frameworks/docs/resources" class="svelte-wvv4mv" data-sveltekit-preload-data="hover">Resources</a> <a href="../../../frameworks/docs/glossary" class="svelte-wvv4mv" data-sveltekit-preload-data="hover">Glossary</a></div></li> <li class="nav-item svelte-wvv4mv"><a href="../../../downloads" class="nav-link  svelte-wvv4mv" data-sveltekit-preload-data="hover">Downloads</a></li> <li class="nav-item svelte-wvv4mv"><a href="../../../about" class="nav-link  svelte-wvv4mv" data-sveltekit-preload-data="hover">About</a></li> <li class="nav-item svelte-wvv4mv"><a href="../../../contact" class="nav-link  svelte-wvv4mv" data-sveltekit-preload-data="hover">Contact</a></li></ul> <div><select aria-label="Select language" class="language-select svelte-wvv4mv"><!--[--><option value="en">English</option><option value="sv">Svenska</option><!--]--></select></div></nav></div></div></header><!----> <main class="flex-grow container mx-auto px-4 py-8 svelte-1yx7f06"><!----><!----><div class="documentation-container svelte-pqwynw"><!--[--><div class="sidebar svelte-1iigtxh"><nav><ul class="svelte-1iigtxh"><!--[--><li class="nav-item  svelte-1iigtxh"><!--[!--><a href="../../../frameworks/docs" class="svelte-1iigtxh">Overview <!--[!--><!--]--> <!--[!--><!--]--></a><!--]--></li><li class="nav-item  svelte-1iigtxh"><!--[!--><a href="../../../frameworks/docs/principles" class="svelte-1iigtxh">Core Principles <!--[!--><!--]--> <!--[!--><!--]--></a><!--]--></li><li class="nav-item  svelte-1iigtxh"><!--[!--><a href="../../../frameworks/global-citizenship" class="svelte-1iigtxh">Global Citizenship <!--[!--><!--]--> <!--[!--><!--]--></a><!--]--></li><li class="nav-item  svelte-1iigtxh"><!--[--><div class="nav-header svelte-1iigtxh"><a href="../../../frameworks/docs/implementation" class="svelte-1iigtxh">Implementation <!--[!--><!--]--></a> <button class="toggle-btn svelte-1iigtxh" aria-expanded="false"><!--[!--><span>▶</span><!--]--></button></div> <!--[!--><!--]--><!--]--></li><li class="nav-item  svelte-1iigtxh"><!--[!--><a href="../../../frameworks/hubs" class="svelte-1iigtxh">Regional Hubs <!--[!--><!--]--> <!--[!--><!--]--></a><!--]--></li><li class="nav-item  svelte-1iigtxh"><!--[!--><a href="../../../frameworks/tools" class="svelte-1iigtxh">Implementation Tools <!--[!--><!--]--> <!--[!--><!--]--></a><!--]--></li><li class="nav-item  svelte-1iigtxh"><!--[!--><a href="../../../frameworks/visuals" class="svelte-1iigtxh">Visualizations <!--[!--><!--]--> <!--[!--><!--]--></a><!--]--></li><li class="nav-item  svelte-1iigtxh"><!--[!--><a href="../../../frameworks/docs/case-studies" class="svelte-1iigtxh">Case Studies <!--[!--><!--]--> <!--[!--><!--]--></a><!--]--></li><li class="nav-item  svelte-1iigtxh"><!--[!--><a href="../../../frameworks/ai-futures" class="svelte-1iigtxh">AI Futures <!--[!--><!--]--> <!--[!--><!--]--></a><!--]--></li><li class="nav-item  svelte-1iigtxh"><!--[!--><a href="../../../frameworks/docs/resources" class="svelte-1iigtxh">Resources <!--[!--><!--]--> <!--[!--><!--]--></a><!--]--></li><li class="nav-item  svelte-1iigtxh"><!--[!--><a href="../../../frameworks/docs/glossary" class="svelte-1iigtxh">Glossary <!--[!--><!--]--> <!--[!--><!--]--></a><!--]--></li><!--]--></ul></nav></div><!--]--> <div class="content svelte-pqwynw"><!--[--><div class="lite-guide-card svelte-pqwynw"><div class="card-content svelte-pqwynw"><div class="card-icon svelte-pqwynw">📘</div> <div class="card-text svelte-pqwynw"><h3 class="svelte-pqwynw">New to the Education Framework?</h3> <p class="svelte-pqwynw">Start with our simplified guide that explains the core concepts in plain language.</p></div> <div class="card-actions svelte-pqwynw"><button class="primary-btn svelte-pqwynw">Read Education Framework Lite</button> <button class="secondary-btn svelte-pqwynw">Download PDF <span class="download-icon svelte-pqwynw">↓</span></button></div></div></div><!--]--> <!--[--><!--[--><div class="section-nav svelte-pqwynw"><ul class="svelte-pqwynw"><!--[--><li class="svelte-pqwynw"><button class="svelte-pqwynw">Education Framework Lite</button></li><li class="svelte-pqwynw active"><button class="svelte-pqwynw">Overview</button></li><li class="svelte-pqwynw"><button class="svelte-pqwynw">Preamble</button></li><li class="svelte-pqwynw"><button class="svelte-pqwynw">Vision &amp; Principles</button></li><li class="svelte-pqwynw"><button class="svelte-pqwynw">Structural Components</button></li><li class="svelte-pqwynw"><button class="svelte-pqwynw">Implementation Strategies</button></li><li class="svelte-pqwynw"><button class="svelte-pqwynw">Monitoring &amp; Evaluation</button></li><li class="svelte-pqwynw"><button class="svelte-pqwynw">SDG Alignment</button></li><li class="svelte-pqwynw"><button class="svelte-pqwynw">Visual Components</button></li><li class="svelte-pqwynw"><button class="svelte-pqwynw">Case Models</button></li><li class="svelte-pqwynw"><button class="svelte-pqwynw">Future Potential</button></li><li class="svelte-pqwynw"><button class="svelte-pqwynw">Appendices</button></li><!--]--></ul></div><!--]--> <!--[--><div class="section-content svelte-pqwynw" id="index"><!--[2--><!----><h2>Regenerative Educational Systems Implementation Framework</h2> <p><strong>In this document:</strong></p> <ul><li><a href="#overview">Overview</a></li> <li><a href="#framework-sections">Framework Sections</a></li> <li><a href="#implementation-tools">Implementation Tools</a></li> <li><a href="#access-and-usage">Access and Usage</a></li></ul> <p>In a world yearning for renewal, the <em>Regenerative Educational Systems Implementation Framework</em> emerges as a tapestry of hope, woven from the threads of global wisdom, regenerative design, and democratic empowerment. Inspired by the Butterfly Party’s (Fjärilspartiet) vision of holistic growth, it reimagines education as a living ecosystem, nurturing learners—from Sahel villages to urban hubs—as ethically grounded, adaptive stewards of a thriving planet. This master index serves as the gateway to the framework, linking its ten sections and inviting stakeholders—educators, policymakers, youth, and communities—to co-create a future where learning heals, unites, and transforms.</p> <h3><a id="overview"></a>Overview</h3> <p>The framework is a comprehensive blueprint for transforming global education, addressing the interconnected challenges of climate change, inequality, and technological disruption. It integrates eight structural components, from polycentric learning networks to existential meaning-making, with phased implementation strategies and robust monitoring and evaluation. Aligned with SDGs, it prioritizes equity, inclusion, and regenerative principles, drawing on case models and future potential to inspire action. Visual and multimedia components and practical appendices ensure accessibility and impact across diverse contexts.</p> <p><strong>Purpose</strong>: To cultivate holistic, adaptive, and ethically grounded global citizens who navigate complexity, restore ecosystems, and co-create equitable governance, impacting 1 billion learners by 2050.</p> <p><strong>Key Features</strong>:</p> <ul><li>Decentralized, inclusive learning hubs</li> <li>Spiral dynamics curricula tailored to developmental stages</li> <li>Regenerative campuses as living labs</li> <li>Youth-led governance with progressive voting rights</li> <li>Ethical AI and VR/AR integration</li> <li>Community-led M&amp;E and global data visualization</li> <li>SDG-aligned metrics and a Planetary Learning Calendar</li> <li>Multimedia storytelling and scalable future initiatives</li></ul> <h3><a id="framework-sections"></a>Framework Sections</h3> <p>The framework is organized into ten sections, each a vital thread in its regenerative design. Explore them below:</p> <ol><li><strong><a href="/frameworks/docs/implementation/education#01-preamble">Preamble and Executive Summary</a></strong>: Introduces the framework’s vision, global context, and a concise summary for stakeholders.</li> <li><strong><a href="/frameworks/docs/implementation/education#02-vision-principles">Vision and Core Principles</a></strong>: Articulates the transformative vision and eight guiding principles, including systems thinking and equity.</li> <li><strong><a href="/frameworks/docs/implementation/education#03-structural-components">Structural Components</a></strong>: Details eight operational pillars, from polycentric networks to educator training.</li> <li><strong><a href="/frameworks/docs/implementation/education#04-implementation-strategies">Implementation Strategies</a></strong>: Outlines tiered adoption, regional blueprints, financial framework architecture, and resilience protocols.</li> <li><strong><a href="/frameworks/docs/implementation/education#05-monitoring-evaluation">Monitoring and Evaluation (M&amp;E)</a></strong>: Presents a robust system for tracking outcomes, equity, and adaptability.</li> <li><strong><a href="/frameworks/docs/implementation/education#06-sdg-alignment">SDG Alignment and Impact Metrics</a></strong>: Maps the framework to SDGs, with metrics and a Planetary Learning Calendar.</li> <li><strong><a href="/frameworks/docs/implementation/education#07-visual-multimedia">Visual and Multimedia Components</a></strong>: Describes the SVG map, animated explainer, and interactive web summary.</li> <li><strong><a href="/frameworks/docs/implementation/education#08-case-models">Case Models</a></strong>: Showcases real-world pilots, from Nordic youth parliaments to Indigenous schools.</li> <li><strong><a href="/frameworks/docs/implementation/education#09-future-potential">Future Potential</a></strong>: Envisions scalable initiatives, like a Global Learning Commons and AI simulations.</li> <li><strong><a href="/frameworks/docs/implementation/education#10-appendices">Appendices</a></strong>: Compiles templates, toolkits, and references to support implementation.</li></ol> <h3><a id="implementation-tools"></a>Implementation Tools</h3> <p>To bridge theory and practice, the framework provides practical tools and templates that stakeholders can immediately use to begin implementation:</p> <ul><li><strong><a href="/frameworks/tools/education/seed-kit-en.zip">Start with the Seed Kit</a></strong>: A complete package with all essential components for launching a Tier 1 micro-pilot.</li> <li><strong>Core Implementation Tools</strong>: <ul><li><a href="/frameworks/tools/education/pilot-readiness-self-assessment-tool-en.pdf">Pilot Readiness Self-Assessment Tool</a></li> <li><a href="/frameworks/tools/education/youth-council-charter-en.pdf">Youth Council Charter Template</a></li> <li><a href="/frameworks/tools/education/regenerative-project-guide-en.pdf">Regenerative Project Guide</a></li> <li><a href="/frameworks/tools/education/curriculum-mapping-template-en.pdf">Curriculum Mapping Template</a></li> <li><a href="/frameworks/tools/education/mne-rubric-template-en.pdf">M&amp;E Rubric Template</a></li></ul></li> <li><strong>Advocacy &amp; Scaling Tools</strong>: <ul><li><a href="/frameworks/tools/education/advocacy-playbook-en.pdf">Advocacy Playbook</a></li> <li><a href="/frameworks/tools/education/bureaucratic-navigation-toolkit-en.pdf">Bureaucratic Navigation Toolkit</a></li> <li><a href="/frameworks/tools/education/cost-benefit-analysis-model-en.pdf">Cost-Benefit Analysis Model</a></li></ul></li> <li><strong>Framework Guides</strong>: <ul><li><a href="/frameworks/tools/education/education-framework-lite.pdf">Education Framework Lite Guide</a> (English)</li> <li><a href="/frameworks/tools/education/education-framework-lite-swedish.pdf">Utbildningsramverk Lite Guide</a> (Swedish)</li></ul></li></ul> <p>All tools are available in both PDF and editable markdown formats, with selected tools available in multiple languages. Access the complete <a href="/frameworks/tools/education">Tools Library</a> for all versions and formats.</p> <h3><a id="access-and-usage"></a>Access and Usage</h3> <p>The framework is accessible through the Global Governance Framework website, with all content designed for easy access and adaptation. Stakeholders can:</p> <ul><li><strong>Download</strong>: Access the complete framework as a PDF via the <a href="/downloads">Downloads</a> section of our website.</li> <li><strong>Navigate</strong>: Use this index to explore sections sequentially or jump to specific topics via section links above.</li> <li><strong>Access Tools</strong>: Browse all implementation tools in both PDF and markdown formats at the <a href="/frameworks/tools/education">Tools Library</a>.</li> <li><strong>Engage</strong>: Share feedback through our contact portal or email [globalgovernanceframework@gmail.com], contributing to iterative refinements.</li> <li><strong>Amplify</strong>: Leverage the available multimedia assets to advocate for adoption at local, national, or global levels.</li> <li><strong>Implement</strong>: Use the practical <a href="#implementation-tools">Implementation Tools</a> to launch pilots in your context, beginning with the “Start with the Seed” kit.</li></ul> <p><strong>Equity Commitment</strong>: We strive to make all materials open-access, and are working to translate them into multiple languages, with accessible formats (e.g., braille, audio) to ensure inclusion of marginalized groups (LGBTQ+, Indigenous, neurodiverse, disabled, caste-oppressed, refugees).</p> <p><strong>Call to Action</strong>: Join educators, youth, and communities worldwide in piloting, scaling, and refining this framework. Begin with the “Start with the Seed” kit or explore case models for inspiration. Together, let us cultivate a regenerative education ecosystem.</p> <hr> <p><strong>Cross-Reference Note</strong>: This index links to all sections, grounding the framework in its vision, components, strategies, M&amp;E, SDGs, visuals, case models, future potential, and appendices, while providing practical tools for immediate implementation.</p><!----><!--]--></div><!--]--><!--]--></div></div><!----><!----></main> <footer class="svelte-1tlrlj5"><div class="container svelte-1tlrlj5"><div class="grid svelte-1tlrlj5"><div><h3 class="svelte-1tlrlj5">Global Governance Framework</h3> <p class="svelte-1tlrlj5">Developing interoperable systems and operating models for global governance that respect local autonomy.</p></div> <div><h3 class="svelte-1tlrlj5">Navigation</h3> <ul class="svelte-1tlrlj5"><li class="svelte-1tlrlj5"><a href="../../../" class="svelte-1tlrlj5">Home</a></li> <li class="svelte-1tlrlj5"><a href="../../../about" class="svelte-1tlrlj5">About</a></li> <li class="svelte-1tlrlj5"><a href="../../../frameworks" class="svelte-1tlrlj5">Framework</a></li> <li class="svelte-1tlrlj5"><a href="../../../frameworks/docs/glossary" class="svelte-1tlrlj5">Glossary</a></li> <li class="svelte-1tlrlj5"><a href="../../../downloads" class="svelte-1tlrlj5">Downloads</a></li> <li class="svelte-1tlrlj5"><a href="../../../contact" class="svelte-1tlrlj5">Contact</a></li></ul></div> <div><h3 class="svelte-1tlrlj5">Legal</h3> <ul class="svelte-1tlrlj5"><li class="svelte-1tlrlj5"><a href="../../../privacy" class="svelte-1tlrlj5">Privacy Policy</a></li> <li class="svelte-1tlrlj5"><a href="../../../terms" class="svelte-1tlrlj5">Terms of Use</a></li></ul></div> <div><h3 class="svelte-1tlrlj5">Connect</h3> <div class="flex space-x-4 svelte-1tlrlj5"><a href="https://github.com/GlobalGovernanceFramework" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="svelte-1tlrlj5"><svg class="h-6 w-6 svelte-1tlrlj5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg></a> <a href="mailto:globalgovernanceframework@gmail.com" aria-label="Email" class="svelte-1tlrlj5"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 svelte-1tlrlj5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></a></div></div></div> <div class="border-t flex flex-col md:flex-row justify-between items-center svelte-1tlrlj5"><div class="mb-4 md:mb-0 svelte-1tlrlj5"><p class="text-sm svelte-1tlrlj5">© 2025 Global Governance Framework 2025 | All Rights Reserved</p></div> <div class="flex items-center space-x-2 svelte-1tlrlj5"><img src="../../../logo.svg" alt="Global Governance Framework" class="h-6 w-6 svelte-1tlrlj5"> <span class="text-sm">Building frameworks for ethical global governance</span></div></div></div></footer><!----></div><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_oz2tch = {
+						base: new URL("../../..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../../_app/immutable/entry/start.DEtME1Xl.js"),
+						import("../../../_app/immutable/entry/app.DPoSWgtN.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 20],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
