@@ -45,6 +45,13 @@ const config = {
           console.warn(`Warning: Missing asset during prerendering: ${path}`);
           return;
         }
+
+        if (path.includes('/frameworks/meta-governance/') && 
+            path !== '/frameworks/meta-governance' &&
+            !path.includes('?')) {
+          console.warn(`Skipping prerender of hash-based URL: ${path}`);
+          return;
+        }
         
         // Ignore RSS feed and sitemap requests during prerendering
         if (path.includes('rss.xml') || 

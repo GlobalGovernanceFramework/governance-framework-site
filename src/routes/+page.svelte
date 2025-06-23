@@ -193,7 +193,7 @@
           <span style="color: #1e293b;">{$t('home.treatyFeature.point3')}</span>
         </div>
       </div>
-      <a href="{base}/frameworks/docs/implementation/treaty-for-our-only-home" style="display: inline-block; background-color: #DAA520; color: #2B4B8C; font-weight: 600; padding: 0.75rem 2rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+      <a href="{base}/frameworks/treaty-for-our-only-home" style="display: inline-block; background-color: #DAA520; color: #2B4B8C; font-weight: 600; padding: 0.75rem 2rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
         {$t('home.treatyFeature.button')}
       </a>
     </div>

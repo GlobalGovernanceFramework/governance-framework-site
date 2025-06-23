@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Regenerativa Utbildningssystem Implementationsramverk - Global Governance Framework",
+    "description": "En omfattande, anpassningsbar plan för att omvandla global utbildning till ett regenerativt, inkluderande ekosystem"
+  },
+  "guideCard": {
+    "title": "Ny inom det regenerativa utbildningsramverket?",
+    "description": "Börja med vår tillgängliga guide som förklarar kärnkoncepten inom regenerativ utbildning på ett enkelt språk.",
+    "buttonText": "Läs ramverkets lättviktsguide"
+  },
+  "categories": {
+    "overview": "Översikt",
+    "foundation": "Grund",
+    "implementation": "Implementation",
+    "evaluation": "Utvärdering & tillämpning",
+    "resources": "Resurser"
+  },
+  "sections": {
+    "index": "Översikt",
+    "quick-start": "Ramverkets lättviktsguide",
+    "preamble": "Inledning & sammanfattning",
+    "vision-principles": "Vision & kärnprinciper",
+    "structural-components": "Strukturella komponenter", 
+    "implementation-strategies": "Implementeringsstrategier",
+    "monitoring-evaluation": "Övervakning & utvärdering",
+    "sdg-alignment": "SDG-anpassning & påverkansmätningar",
+    "visual-multimedia": "Visuella & multimedia-komponenter",
+    "illustrative-case-models": "Illustrativa fallmodeller",
+    "future-potential": "Framtida potential",
+    "appendices": "Bilagor"
+  },
+  "sectionsShort": {
+    "index": "Översikt",
+    "quick-start": "Ramverk Lite",
+    "preamble": "Inledning",
+    "vision-principles": "Vision",
+    "structural-components": "Komponenter",
+    "implementation-strategies": "Implementation",
+    "monitoring-evaluation": "Övervakning",
+    "sdg-alignment": "SDG-anpassning",
+    "visual-multimedia": "Visuell",
+    "illustrative-case-models": "Fallstudier",
+    "future-potential": "Framtid",
+    "appendices": "Bilagor"
+  },
+  "progress": {
+    "text": "Avsnitt {current} av {total}"
+  },
+  "languageFallback": {
+    "title": "Innehåll på svenska kommer snart",
+    "description": "Detta avsnitt visas för närvarande på engelska tills den svenska översättningen är klar."
+  },
+  "navigation": {
+    "downloadPdf": "Ladda ner PDF-version",
+    "continueToFull": "Fortsätt till fullständigt ramverk",
+    "previousSection": "Föregående avsnitt",
+    "nextSection": "Nästa avsnitt"
+  },
+  "errors": {
+    "sectionNotFound": "Avsnitt \"{section}\" hittades inte",
+    "contentInDevelopment": "Detta innehåll är fortfarande under utveckling."
+  },
+  "loading": {
+    "text": "Laddar ramverksinnehåll..."
+  },
+  "intro": {
+    "title": "Regenerativa Utbildningssystem Implementationsramverk",
+    "overview": "Översikt",
+    "paragraph1": "Det Regenerativa Utbildningssystem Implementationsramverket är en omfattande, anpassningsbar plan för att omvandla global utbildning. Den integrerar åtta strukturella komponenter med stegvisa implementeringsstrategier och robust övervakning och utvärdering.",
+    "paragraph2": "Detta ramverk omdefinierar global utbildning som ett regenerativt, inkluderande ekosystem som förbereder elever att ta itu med planetära utmaningar. Det integrerar systemtänkande, spiraldynamik, regenerativ design och globalt medborgarskap för att främja holistiska, etiskt grundade medborgare."
+  }
+}

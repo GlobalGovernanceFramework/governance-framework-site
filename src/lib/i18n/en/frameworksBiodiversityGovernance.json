@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "title": "Biodiversity Governance Framework - Global Governance Framework",
+    "description": "A revolutionary blueprint for planetary healing, weaving together indigenous sovereignty, economic transformation, and cultural mobilization for our living Earth"
+  },
+  "guideCard": {
+    "title": "New to the Biodiversity Framework?",
+    "description": "Start with one of our specialized guides that explain the framework for different stakeholders and contexts.",
+    "buttonText": "Choose a Guide"
+  },
+  "categories": {
+    "overview": "Overview",
+    "foundation": "Foundation",
+    "governance": "Governance & Policy", 
+    "implementation": "Implementation",
+    "resources": "Resources"
+  },
+  "sections": {
+    "index": "Overview",
+    "philosophical-preamble": "Philosophical Preamble",
+    "introduction-vision": "Introduction and Vision",
+    "guiding-principles": "Guiding Principles",
+    "core-pillars": "Core Pillars",
+    "governance-structure": "Governance Structure",
+    "policy-mechanisms": "Policy Mechanisms",
+    "stakeholder-engagement": "Stakeholder Engagement",
+    "financing-mechanisms": "Financing Mechanisms",
+    "implementation-roadmap": "Implementation Roadmap",
+    "metrics-success": "Metrics for Success",
+    "visualizations": "Visualizations",
+    "challenges-solutions": "Challenges and Solutions",
+    "implementation-tools": "Implementation Tools",
+    "reparations-protocol": "Reparations Protocol",
+    "conclusion-call-to-action": "Conclusion and Call to Action",
+    "technical-guide-policymakers": "Technical Guide for Policymakers",
+    "community-implementation-guide": "Community Implementation Guide",
+    "youth-engagement-leadership-guide": "Youth Engagement & Leadership Guide",
+    "corporate-transition-redemption-guide": "Corporate Transition & Redemption Guide",
+    "indigenous-data-sovereignty-guide": "Indigenous Data Sovereignty Guide",
+    "appendix-a-synergy-esfmlg": "Appendix A: Synergy with ESFMLG",
+    "appendix-b-glossary": "Appendix B: Comprehensive Glossary",
+    "appendix-c-tool-library": "Appendix C: Complete Tool Library",
+    "appendix-d-moral-edge-cases": "Appendix D: Moral Edge-Cases Analysis",
+    "appendix-e-political-economy": "Appendix E: Political Economy Analysis",
+    "appendix-f-feasibility-studies": "Appendix F: Feasibility Studies",
+    "appendix-g-pilot-blueprints": "Appendix G: Pilot Program Blueprints",
+    "appendix-h-scenario-planning": "Appendix H: Scenario Planning",
+    "appendix-i-cooperation-protocols": "Appendix I: International Cooperation Protocols",
+    "appendix-j-creative-outputs": "Appendix J: Creative Outputs Inspiration"
+  },
+  "sectionsShort": {
+    "philosophical-preamble": "Preamble",
+    "introduction-vision": "Introduction", 
+    "guiding-principles": "Principles",
+    "core-pillars": "Core Pillars",
+    "governance-structure": "Governance",
+    "policy-mechanisms": "Policy",
+    "stakeholder-engagement": "Stakeholders",
+    "financing-mechanisms": "Financing",
+    "implementation-roadmap": "Roadmap",
+    "metrics-success": "Metrics",
+    "visualizations": "Visualizations", 
+    "challenges-solutions": "Challenges",
+    "implementation-tools": "Tools",
+    "reparations-protocol": "Reparations",
+    "conclusion-call-to-action": "Conclusion",
+    "technical-guide-policymakers": "Policymaker Guide",
+    "community-implementation-guide": "Community Guide",
+    "youth-engagement-leadership-guide": "Youth Guide",
+    "corporate-transition-redemption-guide": "Corporate Guide",
+    "indigenous-data-sovereignty-guide": "Indigenous Guide"
+  },
+  "progress": {
+    "text": "Section {current} of {total}"
+  },
+  "navigation": {
+    "downloadPdf": "Download PDF Version",
+    "continueToFramework": "Continue to Full Framework",
+    "previousSection": "Previous Section",
+    "nextSection": "Next Section"
+  },
+  "languageFallback": {
+    "title": "Content in your language coming soon",
+    "description": "This section is currently displayed in English until translation is complete."
+  },
+  "loading": {
+    "text": "Loading framework content..."
+  },
+  "errors": {
+    "sectionNotFound": "Section \"{section}\" not found",
+    "contentInDevelopment": "This content is still being developed."
+  }
+}

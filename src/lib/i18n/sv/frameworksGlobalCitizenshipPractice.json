@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Ramverk för globalt medborgarskap - Globalt styrelseramverk",
+    "description": "Ett omfattande ramverk för att utveckla global medborgarskapsmedvetenhet och praktik"
+  },
+  "guideCard": {
+    "title": "Ny till globalt medborgarskap?",
+    "description": "Börja med vår koncisa 2-sidiga översikt som fångar essensen av utveckling av globalt medborgarskap och dess transformativa potential.",
+    "buttonText": "Läs den snabba översikten"
+  },
+  "categories": {
+    "overview": "Översikt",
+    "foundation": "Grund",
+    "practice": "Tillämpning",
+    "advanced": "Avancerat",
+    "resources": "Resurser & verktyg"
+  },
+  "sections": {
+    "index": "Översikt",
+    "foundational-values": "Grundläggande värderingar",
+    "meaning-practice": "Vad globalt medborgarskap betyder",
+    "development-path": "Utvecklingsväg i fem nivåer",
+    "tangible-benefits": "Påtagliga fördelar",
+    "overcoming-barriers": "Övervinna hinder",
+    "intergenerational-perspectives": "Intergenerationella perspektiv",
+    "technology-ethics": "Teknik & etik",
+    "measuring-impact": "Mäta påverkan",
+    "inclusive-pathways": "Inkluderande vägar",
+    "professional-integration": "Professionell integration",
+    "crisis-response": "Krishantering",
+    "ai-digital-technologies": "AI & digital teknik",
+    "self-assessment-tools": "Självbedömningsverktyg",
+    "economic-foundations": "Ekonomiska grunder",
+    "future-proofing": "Framtidssäkring",
+    "advanced-implementation": "Avancerad implementering",
+    "expanding-boundaries": "Utvidga gränser",
+    "beyond-human-centered": "Bortom människocentrering",
+    "global-citizenship-2-page-overview": "2-sidig översikt"
+  },
+  "sectionsShort": {
+    "foundational-values": "Värderingar",
+    "meaning-practice": "Betydelse & praktik",
+    "development-path": "Utvecklingsväg",
+    "tangible-benefits": "Fördelar",
+    "overcoming-barriers": "Hinder",
+    "intergenerational-perspectives": "Intergenerationell",
+    "technology-ethics": "Teknik",
+    "measuring-impact": "Påverkan",
+    "inclusive-pathways": "Inkluderande",
+    "professional-integration": "Professionell",
+    "crisis-response": "Kris",
+    "ai-digital-technologies": "AI & digital",
+    "self-assessment-tools": "Bedömning",
+    "economic-foundations": "Ekonomi",
+    "future-proofing": "Framtidssäkring",
+    "advanced-implementation": "Avancerat",
+    "expanding-boundaries": "Gränser",
+    "beyond-human-centered": "Bortom mänskligt",
+    "global-citizenship-2-page-overview": "Snabb översikt"
+  },
+  "progress": {
+    "text": "Avsnitt {current} av {total}"
+  },
+  "navigation": {
+    "downloadPdf": "Ladda ner PDF-version",
+    "continueToFramework": "Fortsätt till fullständigt ramverk",
+    "previousSection": "Föregående avsnitt",
+    "nextSection": "Nästa avsnitt"
+  },
+  "languageFallback": {
+    "title": "Innehåll på ditt språk kommer snart",
+    "description": "Detta avsnitt visas för närvarande på engelska tills översättningen är klar."
+  },
+  "errors": {
+    "sectionNotFound": "Avsnitt \"{section}\" hittades inte",
+    "contentInDevelopment": "Detta innehåll utvecklas fortfarande."
+  },
+  "loading": {
+    "text": "Laddar ramverksinnehåll..."
+  }
+}

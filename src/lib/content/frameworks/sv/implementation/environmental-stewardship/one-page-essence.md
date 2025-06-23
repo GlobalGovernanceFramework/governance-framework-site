@@ -55,7 +55,7 @@ Erkännande av rättigheter för alla varelser – från ekosystem och arter til
 
 ---
 
-**Kontakta oss på [globalgovernanceframework.org/contact](https://globalgovernanceframework.org/contact)**
+**Kontakta oss på [globalgovernanceframeworks.org/contact](https://globalgovernanceframeworks.org/contact)**
 
 
 *Se webbplatsen för fullständigt ramverk*

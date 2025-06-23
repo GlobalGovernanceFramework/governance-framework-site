@@ -2,45 +2,46 @@
 <script>
   import { t } from '$lib/i18n';
   import { createEventDispatcher } from 'svelte';
+  import { allFrameworks, getFrameworkBySlug } from '$lib/stores/frameworkNav.js';
   
   const dispatch = createEventDispatcher();
   
   let currentQuestion = 0;
   let answers = {};
   
-  // Enhanced quiz structure with tiered mapping
+  // Enhanced quiz structure with tiered mapping using frameworkNav.js data
   const quizStructure = [
     {
       id: 'values',
       options: [
         { 
           key: 'climate',
-          primary: ['climate-energy', 'environmental-stewardship'],
-          secondary: ['biodiversity-governance', 'oceans-marine', 'food-systems'],
-          tertiary: ['treaty-foundation', 'existential-risk']
+          primary: ['climate-and-energy-governance', 'environmental-stewardship'],
+          secondary: ['biodiversity-governance', 'oceans-and-marine-governance', 'food-systems-and-agriculture'],
+          tertiary: ['treaty-for-our-only-home', 'existential-risk-governance']
         },
         { 
           key: 'justice',
-          primary: ['peace-conflict', 'justice-systems'],
-          secondary: ['indigenous-governance', 'global-ethics', 'gender-equality'],
-          tertiary: ['treaty-foundation', 'meta-governance']
+          primary: ['peace-and-conflict-resolution', 'justice-systems'],
+          secondary: ['indigenous-governance-and-traditional-knowledge', 'global-ethics-and-rights-of-beings', 'gender-equality-and-lgbtq-rights'],
+          tertiary: ['treaty-for-our-only-home', 'implementation-methods-and-tools']
         },
         { 
           key: 'technology',
           primary: ['technology-governance', 'digital-commons'],
-          secondary: ['space-governance', 'existential-risk', 'consciousness-development'],
-          tertiary: ['treaty-foundation', 'implementation-tools']
+          secondary: ['space-governance', 'existential-risk-governance', 'consciousness-and-inner-development'],
+          tertiary: ['treaty-for-our-only-home', 'implementation-methods-and-tools']
         },
         { 
           key: 'community',
-          primary: ['cultural-heritage', 'urban-development'],
-          secondary: ['spiritual-dialogue', 'rural-development', 'youth-governance'],
-          tertiary: ['treaty-foundation', 'wisdom-governance']
+          primary: ['cultural-heritage-preservation', 'urban-and-community-development'],
+          secondary: ['religious-and-spiritual-dialogue-governance', 'rural-development-governance', 'youth-and-intergenerational-governance'],
+          tertiary: ['treaty-for-our-only-home', 'wisdom-governance']
         },
         { 
           key: 'systems',
-          primary: ['treaty-foundation'],
-          secondary: ['meta-governance', 'implementation-tools'],
+          primary: ['treaty-for-our-only-home'],
+          secondary: ['implementation-methods-and-tools'],
           tertiary: ['wisdom-governance'],
           highlight: true
         }
@@ -51,33 +52,33 @@
       options: [
         { 
           key: 'learning',
-          primary: ['educational-systems', 'consciousness-development'],
-          secondary: ['cultural-heritage', 'digital-commons', 'youth-governance'],
-          tertiary: ['treaty-foundation', 'wisdom-governance']
+          primary: ['educational-systems', 'consciousness-and-inner-development'],
+          secondary: ['cultural-heritage-preservation', 'digital-commons', 'youth-and-intergenerational-governance'],
+          tertiary: ['treaty-for-our-only-home', 'wisdom-governance']
         },
         { 
           key: 'building',
-          primary: ['urban-development', 'technology-governance'],
-          secondary: ['space-governance', 'implementation-tools', 'digital-commons'],
-          tertiary: ['treaty-foundation', 'meta-governance']
+          primary: ['urban-and-community-development', 'technology-governance'],
+          secondary: ['space-governance', 'implementation-methods-and-tools', 'digital-commons'],
+          tertiary: ['treaty-for-our-only-home', 'implementation-methods-and-tools']
         },
         { 
           key: 'protecting',
-          primary: ['environmental-stewardship', 'healthcare-governance'],
-          secondary: ['biodiversity-governance', 'mental-health', 'animal-welfare'],
-          tertiary: ['treaty-foundation', 'existential-risk']
+          primary: ['environmental-stewardship', 'planetary-health'],
+          secondary: ['biodiversity-governance', 'mental-health-governance', 'animal-welfare-governance'],
+          tertiary: ['treaty-for-our-only-home', 'existential-risk-governance']
         },
         { 
           key: 'advocating',
-          primary: ['peace-conflict', 'global-ethics'],
-          secondary: ['labor-employment', 'migration-mobility', 'gender-equality'],
-          tertiary: ['treaty-foundation', 'justice-systems']
+          primary: ['peace-and-conflict-resolution', 'global-ethics-and-rights-of-beings'],
+          secondary: ['labor-and-employment-governance', 'migration-and-human-mobility', 'gender-equality-and-lgbtq-rights'],
+          tertiary: ['treaty-for-our-only-home', 'justice-systems']
         },
         { 
           key: 'transforming',
-          primary: ['treaty-foundation'],
-          secondary: ['meta-governance', 'economic-integration'],
-          tertiary: ['implementation-tools', 'wisdom-governance'],
+          primary: ['treaty-for-our-only-home'],
+          secondary: ['implementation-methods-and-tools', 'economic-integration'],
+          tertiary: ['wisdom-governance'],
           highlight: true
         }
       ]
@@ -87,33 +88,33 @@
       options: [
         { 
           key: 'local',
-          primary: ['urban-development', 'mental-health'],
-          secondary: ['rural-development', 'consciousness-development', 'cultural-heritage'],
-          tertiary: ['treaty-foundation', 'wisdom-governance']
+          primary: ['urban-and-community-development', 'mental-health-governance'],
+          secondary: ['rural-development-governance', 'consciousness-and-inner-development', 'cultural-heritage-preservation'],
+          tertiary: ['treaty-for-our-only-home', 'wisdom-governance']
         },
         { 
           key: 'national',
           primary: ['economic-integration', 'educational-systems'],
-          secondary: ['healthcare-governance', 'labor-employment', 'financial-systems'],
-          tertiary: ['treaty-foundation', 'meta-governance']
+          secondary: ['planetary-health', 'labor-and-employment-governance', 'financial-systems'],
+          tertiary: ['treaty-for-our-only-home', 'implementation-methods-and-tools']
         },
         { 
           key: 'global',
-          primary: ['climate-energy', 'peace-conflict', 'treaty-foundation'],
-          secondary: ['biodiversity-governance', 'migration-mobility', 'oceans-marine'],
-          tertiary: ['existential-risk', 'space-governance']
+          primary: ['climate-and-energy-governance', 'peace-and-conflict-resolution', 'treaty-for-our-only-home'],
+          secondary: ['biodiversity-governance', 'migration-and-human-mobility', 'oceans-and-marine-governance'],
+          tertiary: ['existential-risk-governance', 'space-governance']
         },
         { 
           key: 'intergenerational',
-          primary: ['youth-governance', 'space-governance'],
-          secondary: ['existential-risk', 'consciousness-development', 'wisdom-governance'],
-          tertiary: ['treaty-foundation', 'meta-governance']
+          primary: ['youth-and-intergenerational-governance', 'space-governance'],
+          secondary: ['existential-risk-governance', 'consciousness-and-inner-development', 'wisdom-governance'],
+          tertiary: ['treaty-for-our-only-home', 'implementation-methods-and-tools']
         },
         { 
           key: 'connected',
-          primary: ['treaty-foundation'],
-          secondary: ['meta-governance', 'implementation-tools'],
-          tertiary: ['wisdom-governance', 'consciousness-development'],
+          primary: ['treaty-for-our-only-home'],
+          secondary: ['implementation-methods-and-tools'],
+          tertiary: ['wisdom-governance', 'consciousness-and-inner-development'],
           highlight: true
         }
       ]
@@ -136,61 +137,69 @@
     
     Object.values(answers).forEach(answer => {
       // Primary frameworks get 3 points
-      answer.primary.forEach(framework => {
-        frameworkScores[framework] = (frameworkScores[framework] || 0) + 3;
+      answer.primary.forEach(frameworkSlug => {
+        frameworkScores[frameworkSlug] = (frameworkScores[frameworkSlug] || 0) + 3;
       });
       
       // Secondary frameworks get 2 points
-      answer.secondary.forEach(framework => {
-        frameworkScores[framework] = (frameworkScores[framework] || 0) + 2;
+      answer.secondary.forEach(frameworkSlug => {
+        frameworkScores[frameworkSlug] = (frameworkScores[frameworkSlug] || 0) + 2;
       });
       
       // Tertiary frameworks get 1 point
-      answer.tertiary.forEach(framework => {
-        frameworkScores[framework] = (frameworkScores[framework] || 0) + 1;
+      answer.tertiary.forEach(frameworkSlug => {
+        frameworkScores[frameworkSlug] = (frameworkScores[frameworkSlug] || 0) + 1;
       });
     });
     
-    // Special bonus for treaty framework
-    if (frameworkScores['treaty-foundation']) {
-      frameworkScores['treaty-foundation'] += 5;
+    // Special bonus for treaty framework (foundation)
+    if (frameworkScores['treaty-for-our-only-home']) {
+      frameworkScores['treaty-for-our-only-home'] += 5;
     }
     
-    // Sort frameworks by score
+    // Convert scores to framework objects and sort by score
     const sortedFrameworks = Object.entries(frameworkScores)
-      .sort(([,a], [,b]) => b - a)
-      .map(([framework]) => framework);
+      .map(([slug, score]) => {
+        const framework = getFrameworkBySlug(slug);
+        return framework ? { ...framework, score } : null;
+      })
+      .filter(Boolean)
+      .sort((a, b) => {
+        // Sort by score first, then by tier (lower tier = higher priority)
+        if (b.score !== a.score) return b.score - a.score;
+        return a.tier - b.tier;
+      });
     
     // Ensure treaty is in top 3 if mentioned
     const topRecommendations = [];
-    if (sortedFrameworks.includes('treaty-foundation')) {
-      topRecommendations.push('treaty-foundation');
+    const treatyFramework = sortedFrameworks.find(f => f.slug === 'treaty-for-our-only-home');
+    if (treatyFramework) {
+      topRecommendations.push(treatyFramework);
     }
     
     // Add other top frameworks
     sortedFrameworks
-      .filter(f => f !== 'treaty-foundation')
+      .filter(f => f.slug !== 'treaty-for-our-only-home')
       .slice(0, topRecommendations.length === 1 ? 2 : 3)
       .forEach(f => topRecommendations.push(f));
     
-    // Collect related frameworks
-    const allSecondary = [];
-    const allTertiary = [];
-    
+    // Collect related frameworks (lower scoring ones)
+    const allSecondaryTertiary = [];
     Object.values(answers).forEach(answer => {
-      allSecondary.push(...answer.secondary);
-      allTertiary.push(...answer.tertiary);
+      allSecondaryTertiary.push(...answer.secondary, ...answer.tertiary);
     });
     
-    const relatedFrameworks = [...new Set([...allSecondary, ...allTertiary])]
-      .filter(f => !topRecommendations.includes(f))
+    const relatedFrameworks = [...new Set(allSecondaryTertiary)]
+      .map(slug => getFrameworkBySlug(slug))
+      .filter(Boolean)
+      .filter(f => !topRecommendations.some(top => top.slug === f.slug))
       .slice(0, 6);
     
     const results = {
       answers,
       recommendedFrameworks: topRecommendations,
       relatedFrameworks,
-      primaryInterest: topRecommendations[0],
+      primaryInterest: topRecommendations[0]?.slug || 'treaty-for-our-only-home',
       allScores: frameworkScores
     };
     

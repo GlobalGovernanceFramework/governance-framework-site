@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "title": "Teknikstyrningsimplementeringsramverk - Global Governance Framework",
+    "description": "Ett omfattande ramverk för att implementera effektiva teknikstyrningssystem"
+  },
+  "guideCard": {
+    "title": "Ny inom teknikstyrningsimplementeringsramverket?",
+    "description": "Börja med vår introduktion som förklarar ramverkets vision, grundprinciper och omfattande metod för teknikstyrning.",
+    "buttonText": "Läs introduktionen"
+  },
+  "categories": {
+    "overview": "Översikt",
+    "foundation": "Grund & förståelse",
+    "structure": "Bygga styrningssystem",
+    "operation": "Få styrning att fungera",
+    "adaptation": "Hålla sig i framkant",
+    "learning": "Lärande & förbättring"
+  },
+  "sections": {
+    "index": "Ramverköversikt",
+    "introduction": "Introduktion & grundprinciper",
+    "context": "Sammanhang & omfattning",
+    "governance-model": "Styrningsmodellkomponenter",
+    "implementation": "Implementeringsplan",
+    "tools": "Verktyg & teknologier",
+    "operational": "Operativa riktlinjer",
+    "emerging": "Förutseende av ny teknik",
+    "evaluation": "Utvärdering & mätmetoder",
+    "case-studies": "Fallstudier & exempel",
+    "appendices": "Bilagor & resurser"
+  },
+  "sectionsShort": {
+    "index": "Översikt",
+    "introduction": "Introduktion",
+    "context": "Sammanhang",
+    "governance-model": "Styrningsmodell",
+    "implementation": "Implementation",
+    "tools": "Verktyg",
+    "operational": "Drift",
+    "emerging": "Ny teknik",
+    "evaluation": "Utvärdering",
+    "case-studies": "Fallstudier",
+    "appendices": "Bilagor"
+  },
+  "progress": {
+    "text": "Avsnitt {current} av {total}"
+  },
+  "languageFallback": {
+    "title": "Innehåll på svenska kommer snart",
+    "description": "Detta avsnitt visas för närvarande på engelska tills den svenska översättningen är klar."
+  },
+  "navigation": {
+    "downloadPdf": "Ladda ner PDF-version",
+    "continueToFull": "Fortsätt till fullständigt ramverk",
+    "previousSection": "Föregående avsnitt",
+    "nextSection": "Nästa avsnitt"
+  },
+  "errors": {
+    "sectionNotFound": "Avsnitt \"{section}\" hittades inte",
+    "contentInDevelopment": "Detta innehåll är fortfarande under utveckling."
+  },
+  "loading": {
+    "text": "Laddar ramverksinnehåll..."
+  },
+  "localizedText": {
+    "newToFramework": "Ny inom teknikstyrningsimplementeringsramverket?",
+    "startWithIntroduction": "Börja med vår introduktion som förklarar ramverkets vision, grundprinciper och omfattande metod för teknikstyrning.",
+    "readIntroduction": "Läs introduktionen",
+    "downloadPdf": "Ladda ner PDF-version",
+    "continueToFull": "Fortsätt till fullständigt ramverk",
+    "foundationTitle": "Grund & förståelse",
+    "structureTitle": "Bygga styrningssystem",
+    "operationTitle": "Få styrning att fungera",
+    "adaptationTitle": "Hålla sig i framkant",
+    "learningTitle": "Lärande & förbättring"
+  }
+}

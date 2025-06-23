@@ -35,7 +35,7 @@ Mänskligheten står inför en aldrig tidigare skådad **polykris**: kaskadande 
 
 **Ramverket**: Fördraget för vårt enda hem tillhandahåller en omfattande plan för denna transformation genom fem integrerade pelare för reform, stödda av strategiska implementeringsvägar som överbrygger visionära mål med pragmatisk politik.
 
-[Läs mer om visionen och polykrisens svar](/frameworks/docs/implementation/treaty-for-our-only-home#01-introduction)
+[Läs mer om visionen och polykrisens svar](/frameworks/treaty-for-our-only-home#introduction)
 
 ## <a id="karnprinciper"></a>Kärnprinciper
 
@@ -51,7 +51,7 @@ Fördraget bygger på sju grundläggande principer som vägleder varje mekanism 
 
 Dessa principer arbetar tillsammans som ett levande system, med inbyggda protokoll för att lösa konflikter mellan konkurrerande värden och stresstesta ramverk under press.
 
-[Läs mer om kärnprinciper](/frameworks/docs/implementation/treaty-for-our-only-home#02-core-principles)
+[Läs mer om kärnprinciper](/frameworks/treaty-for-our-only-home#core-principles)
 
 ## <a id="fem-pelarna"></a>De fem pelarna för reform
 
@@ -92,7 +92,7 @@ Fördragets arkitektur vilar på fem sammanlänkade pelare, var och en designad 
 
 **Nyckelreform**: **Skuldrättvisa** - Automatiska skulduppehåll under kriser (tvärs-pelare-integration)
 
-[Läs mer om de fem pelarna](/frameworks/docs/implementation/treaty-for-our-only-home#03-five-pillars)
+[Läs mer om de fem pelarna](/frameworks/treaty-for-our-only-home#five-pillars)
 
 ## <a id="implementeringsstrategier"></a>Implementeringsstrategier
 
@@ -110,7 +110,7 @@ Ett visionärt fördrag kräver en obönhörligt pragmatisk väg till förverkli
 ### Stegvis implementering
 Från stadsnivåpiloter och experimentzoner till regional uppskalning och global adoption, med inbyggda återvändbarhetsskårdåtgärder och kontinuerliga anpassningsprotokoll.
 
-[Läs mer om implementeringsstrategier](/frameworks/docs/implementation/treaty-for-our-only-home#04-implementation-strategies)
+[Läs mer om implementeringsstrategier](/frameworks/treaty-for-our-only-home#implementation-strategies)
 
 ## <a id="overvakning-utvardering"></a>Övervakning och utvärdering
 
@@ -124,7 +124,7 @@ Omfattande ramverk för att mäta framsteg, säkerställa ansvarighet och upprä
 
 Övervakningsramverket omdefinierar framgång kring mänskliga och planetära behov snarare än byråkratiska mått, och säkerställer att styrningstransformation faktiskt tjänar de människor det påstår sig hjälpa.
 
-[Läs mer om övervakning och utvärdering](/frameworks/docs/implementation/treaty-for-our-only-home#05-monitoring-evaluation)
+[Läs mer om övervakning och utvärdering](/frameworks/treaty-for-our-only-home#monitoring-evaluation)
 
 ## <a id="slutsats"></a>Slutsats
 
@@ -138,7 +138,7 @@ Visionen förverkligad genom omfattande transformation från krisgenererande til
 
 Slutsatsen visar att Fördraget för vårt enda hem representerar inte utopiskt drömmande utan praktisk nödvändighet—styrningstransformation värdig de utmaningar vi står inför och framtiden vi måste säkra för vårt enda hem.
 
-[Läs mer om slutsatsen](/frameworks/docs/implementation/treaty-for-our-only-home#06-conclusion)
+[Läs mer om slutsatsen](/frameworks/treaty-for-our-only-home#conclusion)
 
 ## <a id="vanliga-fragor-utmaningar"></a>Vanliga frågor och utmaningar
 
@@ -156,7 +156,7 @@ Att hantera de mest vanliga och viktiga frågorna om fördragsimplementering, fr
 
 Varje utmaning får detaljerade svar som visar hur sofistikerad styrningsdesign kan navigera verkliga komplexiteter utan att överge transformativ ambition.
 
-[Läs mer om vanliga frågor och utmaningar](/frameworks/docs/implementation/treaty-for-our-only-home#07-faq-and-challenges)
+[Läs mer om vanliga frågor och utmaningar](/frameworks/treaty-for-our-only-home#faq-and-challenges)
 
 ## <a id="ordlista"></a>Ordlista
 
@@ -171,7 +171,7 @@ Omfattande definitioner av nyckeltermer, koncept och mekanismer som används gen
 
 Ordlistan säkerställer konceptuell sammanhållning över den omfattande styrningstransformationsplanen samtidigt som tillgängligheten för olika målgrupper bibehålls.
 
-[Läs mer om nyckeltermer och koncept](/frameworks/docs/implementation/treaty-for-our-only-home#08-glossary)
+[Läs mer om nyckeltermer och koncept](/frameworks/treaty-for-our-only-home#glossary)
 
 ## <a id="verktyg-och-resurser"></a>Verktyg och resurser
 
@@ -193,7 +193,7 @@ Detta fördrag är designat inte bara för att läsas, utan för att användas. 
 - Ensidiga "sammanfattning för skeptiker"
 - "Kostnaden för passivitet"-infografik (54 biljoner dollar klimat + 13,8 biljoner dollar pandemieförluster)
 - Mediaengagemangssamtalsämnen och mallar
-- [Grafiskt paket för sociala medier med nyckelcitat](/frameworks/docs/implementation/treaty-for-our-only-home#social-media-templates)
+- [Grafiskt paket för sociala medier med nyckelcitat](/frameworks/treaty-for-our-only-home#social-media-templates)
 - Mallbrev till förtroendevalda
 
 **Integration**: Ansluter med alla fem pelare och implementeringsstrategier
@@ -283,25 +283,25 @@ Detta fördrag är designat inte bara för att läsas, utan för att användas. 
 ### För olika intressentgrupper
 
 **Regeringstjänstemän och beslutsfattare**:
-1. Granska [sammanfattningen för skeptiker](/frameworks/docs/implementation/treaty-for-our-only-home#executive-summary)
+1. Granska [sammanfattningen för skeptiker](/frameworks/treaty-for-our-only-home#executive-summary)
 2. Utforska [implementeringshandböckerna för nyckelreformer] *Denna handbokserie är under utveckling och kommer att släppas som en nyckelresurs för beslutsfattare efter den inledande lanseringsfasen.*
 3. Använd [suveränitetsnalvigatorverktyget] för att bedöma reformeffekter
 4. Kontakta globalgovernanceframework@gmail.com med ämne "Regeringspartnerskap"
 
 **Civilsamhälle och opinionsbildningsorganisationer**:
 1. Ladda ner [global påverkanskit för förvaltare](/frameworks/tools/treaty-for-our-only-home/global-stewardship-advocacy-kit-sv.zip)
-2. Granska [implementeringsstrategierna](/frameworks/docs/implementation/treaty-for-our-only-home#04-implementation-strategies)
+2. Granska [implementeringsstrategierna](/frameworks/treaty-for-our-only-home#implementation-strategies)
 3. Gå med i nätverket för den globala förvaltaralliansen
 4. Kontakta globalgovernanceframework@gmail.com med ämne "Allianspartnerskap"
 
 **Akademiska och forskningsinstitutioner**:
-1. Få åtkomst till den fullständiga [fördragsramverksdokumentationen](/frameworks/docs/implementation/treaty-for-our-only-home)
-2. Granska protokollen för [övervakning och utvärdering](/frameworks/docs/implementation/treaty-for-our-only-home#06-monitoring-evaluation)
+1. Få åtkomst till den fullständiga [fördragsramverksdokumentationen](/frameworks/treaty-for-our-only-home)
+2. Granska protokollen för [övervakning och utvärdering](/frameworks/treaty-for-our-only-home#monitoring-evaluation)
 3. Utforska samarbete om reformacceleratorlaboratorier
 4. Kontakta globalgovernanceframework@gmail.com med ämne "Forskningssamarbete"
 
 **Städer och regionala regeringar**:
-1. Utforska [Pelare 2: Nya aktörer och röster](/frameworks/docs/implementation/treaty-for-our-only-home#03-five-pillars) för formella stadsroller (navigera till den andra pelaren med indexet för de fem pelarna)
+1. Utforska [Pelare 2: Nya aktörer och röster](/frameworks/treaty-for-our-only-home#five-pillars) för formella stadsroller (navigera till den andra pelaren med indexet för de fem pelarna)
 2. Granska pilotprogrammöjligheter i implementeringsstrategier
 3. Anslut med C40 Cities-partnerskapsnätverket
 4. Kontakta globalgovernanceframework@gmail.com med ämne "Stadspartnerskap"

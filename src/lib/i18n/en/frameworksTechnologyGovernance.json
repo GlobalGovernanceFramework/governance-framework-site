@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "title": "Technology Governance Implementation Framework - Global Governance Framework",
+    "description": "A comprehensive framework for implementing effective technology governance systems"
+  },
+  "guideCard": {
+    "title": "New to Technology Governance Implementation Framework?",
+    "description": "Start with our introduction that explains the framework's vision, core principles, and comprehensive approach to technology governance.",
+    "buttonText": "Read the Introduction"
+  },
+  "categories": {
+    "overview": "Overview",
+    "foundation": "Foundation & Understanding",
+    "structure": "Building Governance Systems",
+    "operation": "Making Governance Work",
+    "adaptation": "Staying Ahead",
+    "learning": "Learning & Improvement"
+  },
+  "sections": {
+    "index": "Framework Overview",
+    "introduction": "Introduction & Core Principles",
+    "context": "Context & Scope",
+    "governance-model": "Governance Model Components",
+    "implementation": "Implementation Roadmap",
+    "tools": "Tools & Technologies",
+    "operational": "Operational Guidelines",
+    "emerging": "Emerging Technology Anticipation",
+    "evaluation": "Evaluation & Metrics",
+    "case-studies": "Case Studies & Examples",
+    "appendices": "Appendices & Resources"
+  },
+  "sectionsShort": {
+    "index": "Overview",
+    "introduction": "Introduction",
+    "context": "Context",
+    "governance-model": "Governance Model",
+    "implementation": "Implementation",
+    "tools": "Tools",
+    "operational": "Operations",
+    "emerging": "Emerging Tech",
+    "evaluation": "Evaluation",
+    "case-studies": "Case Studies",
+    "appendices": "Appendices"
+  },
+  "progress": {
+    "text": "Section {current} of {total}"
+  },
+  "languageFallback": {
+    "title": "Content in your language coming soon",
+    "description": "This section is currently displayed in English until translation is complete."
+  },
+  "navigation": {
+    "downloadPdf": "Download PDF Version",
+    "continueToFull": "Continue to Full Framework",
+    "previousSection": "Previous Section",
+    "nextSection": "Next Section"
+  },
+  "errors": {
+    "sectionNotFound": "Section \"{section}\" not found",
+    "contentInDevelopment": "This content is still being developed."
+  },
+  "loading": {
+    "text": "Loading framework content..."
+  },
+  "localizedText": {
+    "newToFramework": "New to Technology Governance Implementation Framework?",
+    "startWithIntroduction": "Start with our introduction that explains the framework's vision, core principles, and comprehensive approach to technology governance.",
+    "readIntroduction": "Read the Introduction",
+    "downloadPdf": "Download PDF Version",
+    "continueToFull": "Continue to Full Framework",
+    "foundationTitle": "Foundation & Understanding",
+    "structureTitle": "Building Governance Systems",
+    "operationTitle": "Making Governance Work",
+    "adaptationTitle": "Staying Ahead",
+    "learningTitle": "Learning & Improvement"
+  }
+}

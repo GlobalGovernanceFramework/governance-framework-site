@@ -1,14 +1,17 @@
 // src/routes/frameworks/docs/implementation/+page.js
-import { locale } from '$lib/i18n';
+import { locale, loadTranslations } from '$lib/i18n';
 import { get } from 'svelte/store';
 import { browser } from '$app/environment';
 
-export async function load({ depends }) {
+export async function load({ depends, url }) {
   // Declare dependency on locale
   depends('app:locale');
   
   // Get the base locale from the store
   let currentLocale = get(locale);
+
+ // Load framework translations for this route
+  await loadTranslations(currentLocale, url.pathname);
   
   // Only check URL param in the browser, not during prerendering
   if (browser) {

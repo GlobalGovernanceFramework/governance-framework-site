@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "title": "Ekonomiskt Integrationssystem - Global Governance Framework",
+    "description": "Ett omfattande ramverk för att skapa rättvisa, hållbara och sammankopplade ekonomiska system som stödjer både lokal suveränitet och global samverkan"
+  },
+  "guideCard": {
+    "title": "Ny till Ekonomiskt Integrationssystem?",
+    "description": "Börja med en av våra förenklade guider som förklarar kärnkoncepten för olika målgrupper.",
+    "buttonText": "Välj en guide"
+  },
+  "categories": {
+    "overview": "Översikt",
+    "foundation": "Grund",
+    "implementation": "Implementering",
+    "governance": "Styrning & drift",
+    "resources": "Resurser"
+  },
+  "sections": {
+    "index": "Översikt",
+    "technical-guide": "Teknisk guide för beslutsfattare",
+    "community-guide": "Samhällsguide för ekonomisk implementering",
+    "youth-guide": "Ekonomisk handlingsguide för ungdomar",
+    "digital-ethics": "Digital ekonomietik guide",
+    "indigenous-guide": "Urfolks ekonomisk förvaltningsguide",
+    "introduction": "Introduktion",
+    "core-principles": "Kärnprinciper",
+    "local-implementation": "Lokal implementering",
+    "regional-implementation": "Regional implementering",
+    "global-implementation": "Global implementering",
+    "nested-support": "Integrerade stödsystem",
+    "tech-commons": "Kunskaps- & teknikallmänningar",
+    "transitional-pathways": "Övergångsvägar",
+    "decision-protocols": "Beslutsprotokoll",
+    "cross-domain": "Tvärdomänintegration",
+    "adaptive-governance": "Adaptiv styrning",
+    "monitoring": "Övervakning & utvärdering",
+    "public-engagement": "Offentligt engagemang",
+    "timeline": "Implementeringstidslinje",
+    "challenges-lessons": "Implementeringsutmaningar",
+    "visualizations": "Visualiseringar",
+    "conclusion": "Slutsats"
+  },
+  "sectionsShort": {
+    "index": "Översikt",
+    "technical-guide": "Teknisk guide",
+    "community-guide": "Samhällsguide",
+    "youth-guide": "Ungdomsguide",
+    "digital-ethics": "Digital etikguide",
+    "indigenous-guide": "Urfolksguide",
+    "introduction": "Introduktion",
+    "core-principles": "Principer",
+    "local-implementation": "Lokal",
+    "regional-implementation": "Regional",
+    "global-implementation": "Global",
+    "nested-support": "Stöd",
+    "tech-commons": "Teknikallmänningar",
+    "transitional-pathways": "Vägar",
+    "decision-protocols": "Beslut",
+    "cross-domain": "Integration",
+    "adaptive-governance": "Styrning",
+    "monitoring": "Övervakning",
+    "public-engagement": "Engagemang",
+    "timeline": "Tidslinje",
+    "challenges-lessons": "Utmaningar",
+    "visualizations": "Visualiseringar",
+    "conclusion": "Slutsats"
+  },
+  "overview": {
+    "title": "Ekonomiskt Integrationssystem",
+    "subtitle": "Översikt",
+    "paragraph1": "Det ekonomiska integrationssystemet erbjuder en omfattande styrningsarkitektur för att skapa rättvisa, hållbara och sammankopplade ekonomiska system som stödjer både lokal suveränitet och global samverkan.",
+    "paragraph2": "Detta ramverk integrerar lokala, regionala och globala tillvägagångssätt genom innovativa mekanismer som gemenskapsvalutor, etiska handelszoner, adaptiv basinkomst och gemensam förvaltning av resurser för att omvandla ekonomiska utmaningar till möjligheter för delat välstånd."
+  },
+  "guides": [
+    {
+      "id": "technical-guide",
+      "title": "Teknisk guide",
+      "description": "Detaljerad guide för beslutsfattare, ekonomer och regeringstjänstemän",
+      "icon": "📊"
+    },
+    {
+      "id": "community-guide",
+      "title": "Samhällsguide",
+      "description": "Implementeringsguide för lokala ledare, kooperativ och samhällsorganisationer",
+      "icon": "🤝"
+    },
+    {
+      "id": "youth-guide",
+      "title": "Ungdomsguide",
+      "description": "Praktisk guide för ungdomar, entreprenörer och studentgrupper",
+      "icon": "🌱"
+    },
+    {
+      "id": "digital-ethics",
+      "title": "Digital etikguide",
+      "description": "Guide för digital ekonomi, etik och teknikstyrning",
+      "icon": "💻"
+    },
+    {
+      "id": "indigenous-guide",
+      "title": "Urfolksguide",
+      "description": "Förvaltningsguide för urfolkssamhällen och traditionella kunskapssystem",
+      "icon": "🌿"
+    }
+  ],
+  "progress": {
+    "text": "Avsnitt {current} av {total}"
+  },
+  "languageFallback": {
+    "title": "Innehåll på svenska kommer snart",
+    "description": "Detta avsnitt visas för närvarande på engelska tills den svenska översättningen är klar."
+  },
+  "navigation": {
+    "downloadPdf": "Ladda ner PDF-version",
+    "continueToFramework": "Fortsätt till fullständigt ramverk",
+    "previousSection": "Föregående avsnitt",
+    "nextSection": "Nästa avsnitt"
+  },
+  "errors": {
+    "sectionNotFound": "Avsnitt \"{section}\" hittades inte",
+    "contentInDevelopment": "Detta innehåll utvecklas fortfarande."
+  },
+  "loading": {
+    "text": "Laddar ekonomiskt integrationsinnehåll..."
+  }
+}

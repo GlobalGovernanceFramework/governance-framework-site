@@ -1,15 +1,37 @@
 <!-- src/routes/about/+page.svelte -->
 <script>
-  import { t } from '$lib/i18n';
+  import { t, locale, loadTranslations } from '$lib/i18n';
   import { base } from '$app/paths';
+  import { browser } from '$app/environment';
+  import { onMount } from 'svelte';
 
-  // Optional: If you want to handle hover state in script, you could define a function here
-  // For now, we'll fix the inline events directly
+  let translationsLoaded = false;
+
+  onMount(async () => {
+    if (browser) {
+      // Explicitly load translations for the about page
+      await loadTranslations($locale, '/about');
+      translationsLoaded = true;
+    }
+  });
+
+  // React to locale changes
+  $: if (browser && $locale) {
+    loadTranslations($locale, '/about').then(() => {
+      translationsLoaded = true;
+    });
+  }
+
+  // Debug logging
+  $: if (browser) {
+    console.log('About page translations loaded:', translationsLoaded);
+    console.log('About translations:', $t('about'));
+  }
 </script>
 
 <svelte:head>
-  <title>About - Global Governance Framework</title>
-  <meta name="description" content="Learn about the Global Governance Framework project" />
+  <title>About - Global Governance Frameworks</title>
+  <meta name="description" content="Learn about the Global Governance Frameworks project" />
 </svelte:head>
 
 <!-- Hero Section -->
@@ -163,7 +185,10 @@
         <div style="background-color: white; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border: 1px solid #2D5F2D;">
           <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem; color: #2B4B8C;">{$t('about.getInvolved.join.title')}</h3>
           <p style="margin-bottom: 1rem; color: #4b5563;">{$t('about.getInvolved.join.description')}</p>
-          <a href="https://github.com/GlobalGovernanceFramework" target="_blank" rel="noopener noreferrer" style="color: #DAA520; font-weight: 500; transition: color 0.2s;" on:mouseover="{e => e.target.style.color = '#B8860B'}" on:mouseout="{e => e.target.style.color = '#DAA520'}">{$t('about.getInvolved.join.link')}</a>
+          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <a href="{base}/get-involved" style="color: #DAA520; font-weight: 500; transition: color 0.2s;" on:mouseover="{e => e.target.style.color = '#B8860B'}" on:mouseout="{e => e.target.style.color = '#DAA520'}">{$t('about.getInvolved.join.primaryLink')}</a>
+            <a href="https://github.com/GlobalGovernanceFrameworks" target="_blank" rel="noopener noreferrer" style="color: #6b7280; font-weight: 500; font-size: 0.9rem; transition: color 0.2s;" on:mouseover="{e => e.target.style.color = '#374151'}" on:mouseout="{e => e.target.style.color = '#6b7280'}">{$t('about.getInvolved.join.secondaryLink')}</a>
+          </div>
         </div>
         
         <!-- Card 3 -->

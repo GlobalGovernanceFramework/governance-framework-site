@@ -2,28 +2,25 @@
 <script>
   import { t } from '$lib/i18n';
   import { base } from '$app/paths';
-  import { getConnectedFrameworks, frameworks, frameworkStatus } from './compassData.js';
+  import { getConnectedFrameworks, frameworkStatus } from './compassData.js';
   
   export let selectedElement = null;
   export let userProgress = {};
   export let closeInfoPanel = () => {};
 
-  $: connectedFrameworkIds = selectedElement 
+  $: connectedFrameworks = selectedElement 
     ? getConnectedFrameworks(selectedElement.type, selectedElement.id)
     : [];
-    
-  $: connectedFrameworks = connectedFrameworkIds
-    .map(id => frameworks[id])
-    .filter(Boolean)
-    .sort((a, b) => a.priority - b.priority);
 
   function getStatusColor(status) {
     switch (status) {
-      case frameworkStatus.READY:
+      case 'ready':
         return '#10B981'; // Green
-      case frameworkStatus.IN_REVIEW:
+      case 'review':
         return '#F59E0B'; // Orange
-      case frameworkStatus.PLANNED:
+      case 'planned':
+        return '#6B7280'; // Gray
+      case 'coming-soon':
         return '#6B7280'; // Gray
       default:
         return '#6B7280';
@@ -32,11 +29,13 @@
 
   function getStatusText(status) {
     switch (status) {
-      case frameworkStatus.READY:
+      case 'ready':
         return $t('globalCitizenship.compass.status.ready');
-      case frameworkStatus.IN_REVIEW:
+      case 'review':
         return $t('globalCitizenship.compass.status.inReview');
-      case frameworkStatus.PLANNED:
+      case 'planned':
+        return $t('globalCitizenship.compass.status.planned');
+      case 'coming-soon':
         return $t('globalCitizenship.compass.status.planned');
       default:
         return '';
@@ -80,18 +79,18 @@
                       style="background-color: {getStatusColor(framework.status)}"
                       title={getStatusText(framework.status)}
                     ></span>
-                    {#if framework.status === frameworkStatus.READY || framework.status === frameworkStatus.IN_REVIEW}
+                    {#if framework.status === 'ready' || framework.status === 'review'}
                       <a href="{base}{framework.path}" class="framework-link">
-                        {$t(`globalCitizenship.frameworks.database.${framework.id}.name`)}
+                        {$t(framework.titleKey)}
                       </a>
                     {:else}
                       <span class="framework-name planned">
-                        {$t(`globalCitizenship.frameworks.database.${framework.id}.name`)}
+                        {$t(framework.titleKey)}
                       </span>
                     {/if}
                   </div>
                   <p class="framework-description">
-                    {$t(`globalCitizenship.frameworks.database.${framework.id}.description`)}
+                    {$t(`globalCitizenship.frameworks.database.${framework.slug.replace(/-/g, '')}.description`)}
                   </p>
                 </div>
               {/each}
@@ -120,18 +119,18 @@
                       style="background-color: {getStatusColor(framework.status)}"
                       title={getStatusText(framework.status)}
                     ></span>
-                    {#if framework.status === frameworkStatus.READY || framework.status === frameworkStatus.IN_REVIEW}
+                    {#if framework.status === 'ready' || framework.status === 'review'}
                       <a href="{base}{framework.path}" class="framework-link">
-                        {$t(`globalCitizenship.frameworks.database.${framework.id}.name`)}
+                        {$t(framework.titleKey)}
                       </a>
                     {:else}
                       <span class="framework-name planned">
-                        {$t(`globalCitizenship.frameworks.database.${framework.id}.name`)}
+                        {$t(framework.titleKey)}
                       </span>
                     {/if}
                   </div>
                   <p class="framework-description">
-                    {$t(`globalCitizenship.frameworks.database.${framework.id}.description`)}
+                    {$t(`globalCitizenship.frameworks.database.${framework.slug.replace(/-/g, '')}.description`)}
                   </p>
                 </div>
               {/each}
@@ -145,7 +144,7 @@
       {/if}
       
       <!-- Planned Framework Contact Encouragement -->
-      {#if connectedFrameworks.some(fw => fw.status === frameworkStatus.PLANNED)}
+      {#if connectedFrameworks.some(fw => fw.status === 'planned' || fw.status === 'coming-soon')}
         <div class="planned-frameworks-cta">
           <p>{$t('globalCitizenship.compass.info.plannedFrameworks.text')}</p>
           <div class="cta-buttons">

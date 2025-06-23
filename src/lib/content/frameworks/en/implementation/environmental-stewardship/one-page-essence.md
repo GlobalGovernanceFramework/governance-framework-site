@@ -55,6 +55,6 @@ Recognizing rights for all beings – from ecosystems and species to potentially
 
 ---
 
-**Connect with us at [globalgovernanceframework.org/contact](https://globalgovernanceframework.org/contact)**
+**Connect with us at [globalgovernanceframeworks.org/contact](https://globalgovernanceframeworks.org/contact)**
 
 *See website for full framework*

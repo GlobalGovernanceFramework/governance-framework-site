@@ -638,7 +638,7 @@
      text-anchor="middle"
      fill="#ffffff"
      font-weight="bold"
-     id="text1">Global</text>
+     id="text1">Globala</text>
   <text
      x="400"
      y="308"
@@ -647,7 +647,7 @@
      text-anchor="middle"
      fill="#ffffff"
      font-weight="bold"
-     id="text2">Governance</text>
+     id="text2">styrnings-</text>
   <text
      x="400"
      y="328"
@@ -656,7 +656,7 @@
      text-anchor="middle"
      fill="#ffffff"
      font-weight="bold"
-     id="text3">Framework</text>
+     id="text3">ramverk</text>
   <!-- Title -->
   <text
      x="400"

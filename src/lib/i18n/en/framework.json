@@ -16,7 +16,7 @@
   },
   "overview": {
     "title": "Framework Overview",
-    "description": "The Global Governance Framework provides a comprehensive approach to addressing complex global challenges through interoperable governance systems. Explore our documentation to discover principles, implementation strategies, and practical applications.",
+    "description": "The Global Governance Frameworks provides a comprehensive approach to addressing complex global challenges through interoperable governance systems. Explore our documentation to discover principles, implementation strategies, and practical applications.",
     "learnMore": "Learn more"
   },
   "quickAccess": {
@@ -28,6 +28,25 @@
     "caseStudies": "Case Studies",
     "resources": "Resources",
     "glossary": "Glossary"
+  },
+  "implementationFrameworks": {
+    "title": "Implementation Frameworks",
+    "description": "Domain-specific frameworks organized by priority tiers, from foundational reforms to visionary governance models. Each framework provides detailed implementation guidance for its respective area.",
+    "roadmapTitle": "Tiered Implementation Roadmap",
+    "roadmapDescription": "The frameworks are organized into five tiers representing a logical progression from addressing immediate crises to enabling long-term flourishing. This structure provides a clear implementation roadmap where foundational reforms create the stability needed for more advanced governance innovations.",
+    "tiers": {
+      "tier0": "Institutional Reform",
+      "tier1": "Urgent Stability",
+      "tier2": "Long-term Systems",
+      "tier3": "Equity & Culture",
+      "tier4": "Visionary Governance"
+    },
+    "gettingStarted": {
+      "title": "Start Your Implementation Journey",
+      "description": "Ready to implement these frameworks in your context? Our implementation guides provide step-by-step approaches, decision allocation tools, and case studies to help you get started.",
+      "implementationButton": "Implementation Guidelines",
+      "caseStudiesButton": "View Case Studies"
+    }
   },
   "status": {
     "concept": {
@@ -50,9 +69,32 @@
   "statusLegend": {
     "title": "Document Status Indicators"
   },
+  "tier": {
+    "0": {
+      "title": "Tier 0: Global Institutional Reform",
+      "description": "This foundational tier serves as the prerequisite for all others. It is the operating system upgrade for global governance, focusing on the core rules, bodies, and legal frameworks that make coordinated international action possible."
+    },
+    "1": {
+      "title": "Tier 1: Urgent Global Stability & Justice",
+      "description": "This tier includes the most urgent domains of global governance—areas where failure to act can lead to irreversible harm, large-scale human suffering, or systemic collapse."
+    },
+    "2": {
+      "title": "Tier 2: Systems for Long-Term Thriving",
+      "description": "Tier 2 domains are foundational systems that enable sustainable human flourishing over time. They include governance of technology, finance, education, urban development, and employment."
+    },
+    "3": {
+      "title": "Tier 3: Equity, Culture & Future Generations",
+      "description": "This tier focuses on ensuring inclusion, preserving diverse heritages, and representing those often overlooked—such as youth, Indigenous peoples, rural communities, and future generations."
+    },
+    "4": {
+      "title": "Tier 4: Visionary & Meta Governance",
+      "description": "The fourth tier includes forward-looking and systemic domains of governance, addressing the deeper architecture of coordination, meaning-making, and planetary stewardship."
+    },
+    "noFrameworks": "No frameworks defined for this tier yet."
+  },
   "intro": {
     "title": "Introduction to Meta-Governance",
-    "paragraph1": "The world has numerous governance experiments happening at different scales, but they often operate in isolation. The Global Governance Framework provides patterns and interfaces that allow these diverse systems to interoperate.",
+    "paragraph1": "The world has numerous governance experiments happening at different scales, but they often operate in isolation. The Global Governance Frameworks provides patterns and interfaces that allow these diverse systems to interoperate.",
     "paragraph2": "Our approach is not to create a single model of governance, but rather to build the infrastructure that enables many models to coexist, communicate, and evolve together."
   },
   "emergingExamples": {
@@ -142,58 +184,57 @@
       "principles": "Core Principles",
       "globalCitizenship": "Global Citizenship",
       "implementation": "Implementation",
-      "implementationTier0": "Tier 0: Global Institutional Reform",
-      "implementationTier1": "Tier 1: Urgent Global Stability & Justice",
-      "implementationTier2": "Tier 2: Systems for Long-Term Thriving",
-      "implementationTier3": "Tier 3: Equity, Culture & Future Generations",
-      "implementationTier4": "Tier 4: Visionary & Meta Governance",
-      "implementationInstitutionalReform": "Treaty for Our Only Home",
-      "implementationClimateEnergy": "Climate & Energy Governance",
-      "implementationIndigenous": "Indigenous & Traditional Knowledge",
-      "implementationEconomic": "Economic Integration",
-      "implementationEnvironment": "Environmental Stewardship",
-      "implementationPeace": "Peace & Conflict Resolution",
-      "implementationTechnology": "Technology Governance",
-      "implementationEducation": "Educational Systems",
-      "implementationHealthcare": "Healthcare Governance",
-      "implementationCulture": "Cultural Heritage Preservation",
-      "implementationRural": "Rural Development",
-      "implementationSpiritual": "Religious & Spiritual Dialogue",
-      "implementationMigration": "Migration & Human Mobility",
-      "implementationDisaster": "Disaster Risk Reduction & Resilience",
-      "implementationFood": "Food Systems & Agriculture",
-      "implementationMentalHealth": "Mental Health",
-      "implementationUrban": "Urban & Community Development",
-      "implementationWash": "Water & Sanitation",
-      "implementationDigital": "Digital Commons",
-      "implementationFinancial": "Financial Systems",
-      "implementationJustice": "Justice Systems",
-      "implementationEnergy": "Climate & Energy Governance",
-      "implementationDisasterResilience": "Disaster Risk Reduction & Resilience",
-      "implementationOceansMarine": "Oceans & Marine Governance",
-      "implementationLaborEmployment": "Labor & Employment Governance",
-      "implementationInclusion": "Disability Rights & Inclusion Governance",
-      "implementationBiodiversity": "Biodiversity Governance",
-      "implementationAnimalWelfare": "Animal Welfare",
-      "implementationGlobalCitizenship": "Global Citizenship Practice",
-      "implementationYouthGovernance": "Youth & Intergenerational Governance",
-      "implementationAging": "Aging Population Support",
-      "implementationEthicsRights": "Global Ethics & Human Rights",
-      "implementationSpaceGovernance": "Space Governance",
-      "implementationConsciousness": "Consciousness & Inner Development",
-      "implementationMetaGovernance": "Integrated Meta-Governance",
-      "implementationMethodsTools": "Implementation Methods & Tools",
       "regionalHubs": "Regional Hubs",
       "implementationTools": "Implementation Tools",
       "visualizations": "Visualizations",
-      "case-studies": "Case Studies",
-      "ai-futures": "AI Futures",
+      "caseStudies": "Case Studies",
+      "aiFutures": "AI Futures",
       "resources": "Resources",
-      "glossary": "Glossary"
+      "glossary": "Glossary",
+
+      "frameworkTitles": {
+        "treatyForOurOnlyHome": "Treaty for Our Only Home",
+        "climateAndEnergyGovernance": "Climate & Energy Governance",
+        "peaceAndConflictResolution": "Peace & Conflict Resolution",
+        "indigenousGovernanceAndTraditionalKnowledge": "Indigenous Governance & Traditional Knowledge",
+        "planetaryHealth": "Planetary Health",
+        "foodSystemsAndAgriculture": "Food Systems & Agriculture",
+        "economicIntegration": "Economic Integration",
+        "justiceSystems": "Justice Systems",
+        "migrationAndHumanMobility": "Migration & Human Mobility",
+        "disasterRiskReduction": "Disaster Risk Reduction & Resilience",
+        "technologyGovernance": "Technology Governance",
+        "financialSystems": "Financial Systems",
+        "educationalSystems": "Educational Systems",
+        "mentalHealthGovernance": "Mental Health Governance",
+        "urbanAndCommunityDevelopment": "Urban & Community Development",
+        "waterAndSanitationGovernance": "Water & Sanitation Governance",
+        "environmentalStewardship": "Environmental Stewardship",
+        "animalWelfareGovernance": "Animal Welfare Governance",
+        "biodiversityGovernance": "Biodiversity Governance",
+        "oceansAndMarineGovernance": "Oceans & Marine Governance",
+        "laborAndEmploymentGovernance": "Labor & Employment Governance",
+        "disabilityRightsAndInclusion": "Disability Rights & Inclusion",
+        "digitalCommons": "Digital Commons",
+        "culturalHeritagePreservation": "Cultural Heritage & Linguistic Diversity Preservation",
+        "ruralDevelopmentGovernance": "Rural Development Governance",
+        "religiousAndSpiritualDialogueGovernance": "Religious & Spiritual Dialogue",
+        "youthAndIntergenerationalGovernance": "Youth & Intergenerational Governance",
+        "globalCitizenshipPractice": "Global Citizenship Practice",
+        "globalEthicsAndRightsOfBeings": "Global Ethics & Rights of Beings",
+        "genderEqualityAndLgbtqRights": "Gender Equality & LGBTQ+ Rights",
+        "agingPopulationSupportGovernance": "Aging Population Support Governance",
+        "spaceGovernance": "Space Governance",
+        "existentialRiskGovernance": "Existential Risk Governance",
+        "consciousnessAndInnerDevelopment": "Consciousness & Inner Development",
+        "integratedMetaGovernance": "Integrated Meta-Governance",
+        "implementationMethodsAndTools": "Implementation Methods & Tools",
+        "wisdomGovernance": "Wisdom Governance"
+      }
     }
   },
   "coreElements": {
-    "title": "Core Framework Elements",
+    "title": "Core Frameworks Elements",
     "interoperability": {
       "title": "1. Governance Interoperability Framework",
       "intro": "This framework helps different governance systems connect and collaborate effectively:",
@@ -216,15 +257,15 @@
     }
   },
   "learnMore": {
-    "title": "Dive Deeper into the Framework",
+    "title": "Dive Deeper into the Frameworks",
     "description": "Ready to explore the complete documentation? Our comprehensive guides provide detailed implementation instructions, principles, case studies, and resources.",
     "button": "Explore Full Documentation"
   },
-  "cta": "Contribute to the Framework",
+  "cta": "Contribute to the Frameworks",
   "principles": {
     "interconnection": {
       "title": "Core Principles Interconnection",
-      "description": "This diagram illustrates how the thirteen constitutional principles work together as an integrated system. The principles are organized by function: governance structure (green), rights and environment (brown), resource and conflict management (gold), and evolution and integration (purple). Each principle connects to the central Global Governance Framework while also reinforcing and balancing other principles."
+      "description": "This diagram illustrates how the thirteen constitutional principles work together as an integrated system. The principles are organized by function: governance structure (green), rights and environment (brown), resource and conflict management (gold), and evolution and integration (purple). Each principle connects to the central Global Governance Frameworks while also reinforcing and balancing other principles."
     }
   }
 }

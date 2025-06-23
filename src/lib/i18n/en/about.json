@@ -75,7 +75,8 @@
     "join": {
       "title": "Join the Community",
       "description": "Connect with others interested in global governance innovation and framework development.",
-      "link": "GitHub Repository →"
+      "primaryLink": "Get Involved →",
+      "secondaryLink": "GitHub Repository ↗"
     },
     "apply": {
       "title": "Apply the Framework",

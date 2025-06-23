@@ -1,411 +1,312 @@
 // src/routes/frameworks/global-citizenship/components/compassData.js
+import { allFrameworks, getFrameworkBySlug, getFrameworksByTier } from '$lib/stores/frameworkNav.js';
 
+// Re-export framework status and tiers from the centralized source
 export const frameworkStatus = {
   READY: 'ready',
-  IN_REVIEW: 'in-review',
-  PLANNED: 'planned'
+  IN_REVIEW: 'review', // Updated to match frameworkNav.js
+  PLANNED: 'planned',
+  COMING_SOON: 'coming-soon'
 };
 
 export const tiers = {
-  TIER_0: 'tier0',
-  TIER_1: 'tier1', 
-  TIER_2: 'tier2',
-  TIER_3: 'tier3',
-  TIER_4: 'tier4'
+  TIER_0: 0,
+  TIER_1: 1, 
+  TIER_2: 2,
+  TIER_3: 3,
+  TIER_4: 4
 };
 
-// Framework database with status and tier information
-export const frameworks = {
-  // Tier 0: Foundation
-  treatyFoundation: {
-    id: 'treatyFoundation',
-    tier: tiers.TIER_0,
-    status: frameworkStatus.READY,
-    path: '/frameworks/docs/implementation/treaty-for-our-only-home',
-    priority: 1
-  },
+// Create a lookup object for frameworks using the centralized data
+export const frameworks = allFrameworks.reduce((acc, framework) => {
+  // Convert slug to camelCase ID for backward compatibility
+  const id = framework.slug.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
+  
+  acc[id] = {
+    id,
+    slug: framework.slug,
+    tier: framework.tier,
+    status: framework.status,
+    path: framework.path,
+    priority: framework.tier + 1, // Priority based on tier
+    titleKey: framework.titleKey,
+    version: framework.version
+  };
+  
+  return acc;
+}, {});
 
-  // Tier 1: Urgent Action
-  climateEnergy: {
-    id: 'climateEnergy',
-    tier: tiers.TIER_1,
-    status: frameworkStatus.IN_REVIEW,
-    path: '/frameworks/docs/implementation/energy',
-    priority: 2
-  },
-  peaceConflict: {
-    id: 'peaceConflict',
-    tier: tiers.TIER_1,
-    status: frameworkStatus.IN_REVIEW,
-    path: '/frameworks/docs/implementation/peace',
-    priority: 2
-  },
-  indigenousGovernance: {
-    id: 'indigenousGovernance',
-    tier: tiers.TIER_1,
-    status: frameworkStatus.IN_REVIEW,
-    path: '/frameworks/docs/implementation/indigenous',
-    priority: 2
-  },
-  healthcareGovernance: {
-    id: 'healthcareGovernance',
-    tier: tiers.TIER_1,
-    status: frameworkStatus.IN_REVIEW,
-    path: '/frameworks/docs/implementation/healthcare',
-    priority: 2
-  },
-  foodSystems: {
-    id: 'foodSystems',
-    tier: tiers.TIER_1,
-    status: frameworkStatus.IN_REVIEW,
-    path: '/frameworks/docs/implementation/food',
-    priority: 2
-  },
-  economicIntegration: {
-    id: 'economicIntegration',
-    tier: tiers.TIER_1,
-    status: frameworkStatus.IN_REVIEW,
-    path: '/frameworks/docs/implementation/economic',
-    priority: 2
-  },
-  justiceSystem: {
-    id: 'justiceSystem',
-    tier: tiers.TIER_1,
-    status: frameworkStatus.IN_REVIEW,
-    path: '/frameworks/docs/implementation/justice',
-    priority: 2
-  },
-  migrationMobility: {
-    id: 'migrationMobility',
-    tier: tiers.TIER_1,
-    status: frameworkStatus.PLANNED,
-    path: '/frameworks/docs/implementation/migration',
-    priority: 2
-  },
-  disasterResilience: {
-    id: 'disasterResilience',
-    tier: tiers.TIER_1,
-    status: frameworkStatus.IN_REVIEW,
-    path: '/frameworks/docs/implementation/disaster',
-    priority: 2
-  },
+// Helper function to convert camelCase back to slug
+function camelCaseToSlug(camelCase) {
+  return camelCase.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+}
 
-  // Tier 2: Systems Development
-  technologyGovernance: {
-    id: 'technologyGovernance',
-    tier: tiers.TIER_2,
-    status: frameworkStatus.IN_REVIEW,
-    path: '/frameworks/docs/implementation/technology',
-    priority: 3
-  },
-  financialSystems: {
-    id: 'financialSystems',
-    tier: tiers.TIER_2,
-    status: frameworkStatus.IN_REVIEW,
-    path: '/frameworks/docs/implementation/financial-systems',
-    priority: 3
-  },
-  educationalSystems: {
-    id: 'educationalSystems',
-    tier: tiers.TIER_2,
-    status: frameworkStatus.IN_REVIEW,
-    path: '/frameworks/docs/implementation/education',
-    priority: 3
-  },
-  mentalHealth: {
-    id: 'mentalHealth',
-    tier: tiers.TIER_2,
-    status: frameworkStatus.PLANNED,
-    path: '/frameworks/docs/implementation/mental-health',
-    priority: 3
-  },
-  urbanDevelopment: {
-    id: 'urbanDevelopment',
-    tier: tiers.TIER_2,
-    status: frameworkStatus.PLANNED,
-    path: '/frameworks/docs/implementation/urban',
-    priority: 3
-  },
-  waterSanitation: {
-    id: 'waterSanitation',
-    tier: tiers.TIER_2,
-    status: frameworkStatus.IN_REVIEW,
-    path: '/frameworks/docs/implementation/water',
-    priority: 3
-  },
-  environmentalStewardship: {
-    id: 'environmentalStewardship',
-    tier: tiers.TIER_2,
-    status: frameworkStatus.IN_REVIEW,
-    path: '/frameworks/docs/implementation/environment',
-    priority: 3
-  },
-  animalWelfare: {
-    id: 'animalWelfare',
-    tier: tiers.TIER_2,
-    status: frameworkStatus.IN_REVIEW,
-    path: '/frameworks/docs/implementation/animal-welfare',
-    priority: 3
-  },
-  biodiversityGovernance: {
-    id: 'biodiversityGovernance',
-    tier: tiers.TIER_2,
-    status: frameworkStatus.IN_REVIEW,
-    path: '/frameworks/docs/implementation/biodiversity',
-    priority: 3
-  },
-  oceansMarine: {
-    id: 'oceansMarine',
-    tier: tiers.TIER_2,
-    status: frameworkStatus.PLANNED,
-    path: '/frameworks/docs/implementation/oceans',
-    priority: 3
-  },
-  laborEmployment: {
-    id: 'laborEmployment',
-    tier: tiers.TIER_2,
-    status: frameworkStatus.PLANNED,
-    path: '/frameworks/docs/implementation/labor',
-    priority: 3
-  },
-  disabilityInclusion: {
-    id: 'disabilityInclusion',
-    tier: tiers.TIER_2,
-    status: frameworkStatus.PLANNED,
-    path: '/frameworks/docs/implementation/inclusion',
-    priority: 3
-  },
-
-  // Tier 3: Equity & Culture
-  digitalCommons: {
-    id: 'digitalCommons',
-    tier: tiers.TIER_3,
-    status: frameworkStatus.IN_REVIEW,
-    path: '/frameworks/docs/implementation/digital',
-    priority: 4
-  },
-  culturalHeritage: {
-    id: 'culturalHeritage',
-    tier: tiers.TIER_3,
-    status: frameworkStatus.PLANNED,
-    path: '/frameworks/docs/implementation/culture',
-    priority: 4
-  },
-  ruralDevelopment: {
-    id: 'ruralDevelopment',
-    tier: tiers.TIER_3,
-    status: frameworkStatus.PLANNED,
-    path: '/frameworks/docs/implementation/rural',
-    priority: 4
-  },
-  spiritualDialogue: {
-    id: 'spiritualDialogue',
-    tier: tiers.TIER_3,
-    status: frameworkStatus.IN_REVIEW,
-    path: '/frameworks/docs/implementation/spiritual',
-    priority: 4
-  },
-  youthGovernance: {
-    id: 'youthGovernance',
-    tier: tiers.TIER_3,
-    status: frameworkStatus.PLANNED,
-    path: '/frameworks/docs/implementation/youth',
-    priority: 4
-  },
-  globalEthics: {
-    id: 'globalEthics',
-    tier: tiers.TIER_3,
-    status: frameworkStatus.IN_REVIEW,
-    path: '/frameworks/docs/implementation/ethics',
-    priority: 4
-  },
-  genderEquality: {
-    id: 'genderEquality',
-    tier: tiers.TIER_3,
-    status: frameworkStatus.PLANNED,
-    path: '/frameworks/docs/implementation/gender',
-    priority: 4
-  },
-  agingSupport: {
-    id: 'agingSupport',
-    tier: tiers.TIER_3,
-    status: frameworkStatus.IN_REVIEW,
-    path: '/frameworks/docs/implementation/aging',
-    priority: 4
-  },
-
-  // Tier 4: Visionary & Meta
-  spaceGovernance: {
-    id: 'spaceGovernance',
-    tier: tiers.TIER_4,
-    status: frameworkStatus.PLANNED,
-    path: '/frameworks/docs/implementation/space',
-    priority: 5
-  },
-  existentialRisk: {
-    id: 'existentialRisk',
-    tier: tiers.TIER_4,
-    status: frameworkStatus.PLANNED,
-    path: '/frameworks/docs/implementation/existential-risk',
-    priority: 5
-  },
-  consciousnessDevelopment: {
-    id: 'consciousnessDevelopment',
-    tier: tiers.TIER_4,
-    status: frameworkStatus.IN_REVIEW,
-    path: '/frameworks/docs/implementation/consciousness',
-    priority: 5
-  },
-  metaGovernance: {
-    id: 'metaGovernance',
-    tier: tiers.TIER_4,
-    status: frameworkStatus.IN_REVIEW,
-    path: '/frameworks/docs/implementation/meta',
-    priority: 5
-  },
-  implementationTools: {
-    id: 'implementationTools',
-    tier: tiers.TIER_4,
-    status: frameworkStatus.IN_REVIEW,
-    path: '/frameworks/docs/implementation/methods-tools',
-    priority: 5
-  },
-  wisdomGovernance: {
-    id: 'wisdomGovernance',
-    tier: tiers.TIER_4,
-    status: frameworkStatus.PLANNED,
-    path: '/frameworks/docs/implementation/wisdom',
-    priority: 5
-  }
-};
-
-// Mapping from values to related frameworks
+// Mapping from values to related frameworks (using slugs from frameworkNav.js)
 export const valueFrameworkConnections = {
   life: [
-    'treatyFoundation', 'animalWelfare', 'biodiversityGovernance', 
-    'environmentalStewardship', 'healthcareGovernance', 'existentialRisk'
+    'treaty-for-our-only-home', 
+    'animal-welfare-governance', 
+    'biodiversity-governance', 
+    'environmental-stewardship', 
+    'planetary-health', 
+    'existential-risk-governance'
   ],
   compassion: [
-    'treatyFoundation', 'healthcareGovernance', 'mentalHealth', 
-    'migrationMobility', 'agingSupport', 'disabilityInclusion'
+    'treaty-for-our-only-home', 
+    'planetary-health', 
+    'mental-health-governance', 
+    'migration-and-human-mobility', 
+    'aging-population-support-governance', 
+    'disability-rights-and-inclusion'
   ],
   justice: [
-    'treatyFoundation', 'justiceSystem', 'globalEthics', 
-    'genderEquality', 'economicIntegration', 'indigenousGovernance'
+    'treaty-for-our-only-home', 
+    'justice-systems', 
+    'global-ethics-and-rights-of-beings', 
+    'gender-equality-and-lgbtq-rights', 
+    'economic-integration', 
+    'indigenous-governance-and-traditional-knowledge'
   ],
   truth: [
-    'treatyFoundation', 'educationalSystems', 'digitalCommons', 
-    'culturalHeritage', 'spiritualDialogue', 'wisdomGovernance'
+    'treaty-for-our-only-home', 
+    'educational-systems', 
+    'digital-commons', 
+    'cultural-heritage-preservation', 
+    'religious-and-spiritual-dialogue-governance', 
+    'wisdom-governance'
   ],
   freedom: [
-    'treatyFoundation', 'globalEthics', 'digitalCommons', 
-    'genderEquality', 'migrationMobility', 'youthGovernance'
+    'treaty-for-our-only-home', 
+    'global-ethics-and-rights-of-beings', 
+    'digital-commons', 
+    'gender-equality-and-lgbtq-rights', 
+    'migration-and-human-mobility', 
+    'youth-and-intergenerational-governance'
   ],
   earth: [
-    'treatyFoundation', 'climateEnergy', 'environmentalStewardship', 
-    'biodiversityGovernance', 'foodSystems', 'waterSanitation'
+    'treaty-for-our-only-home', 
+    'climate-and-energy-governance', 
+    'environmental-stewardship', 
+    'biodiversity-governance', 
+    'food-systems-and-agriculture', 
+    'water-and-sanitation-governance'
   ],
   peace: [
-    'treatyFoundation', 'peaceConflict', 'disasterResilience', 
-    'spiritualDialogue', 'metaGovernance', 'indigenousGovernance'
+    'treaty-for-our-only-home', 
+    'peace-and-conflict-resolution', 
+    'disaster-risk-reduction', 
+    'religious-and-spiritual-dialogue-governance', 
+    'implementation-methods-and-tools', 
+    'indigenous-governance-and-traditional-knowledge'
   ],
   integrity: [
-    'treatyFoundation', 'justiceSystem', 'globalEthics', 
-    'financialSystems', 'technologyGovernance', 'implementationTools'
+    'treaty-for-our-only-home', 
+    'justice-systems', 
+    'global-ethics-and-rights-of-beings', 
+    'financial-systems', 
+    'technology-governance', 
+    'implementation-methods-and-tools'
   ],
   gratitude: [
-    'treatyFoundation', 'culturalHeritage', 'spiritualDialogue', 
-    'indigenousGovernance', 'wisdomGovernance', 'consciousnessDevelopment'
+    'treaty-for-our-only-home', 
+    'cultural-heritage-preservation', 
+    'religious-and-spiritual-dialogue-governance', 
+    'indigenous-governance-and-traditional-knowledge', 
+    'wisdom-governance', 
+    'consciousness-and-inner-development'
   ],
   wisdom: [
-    'treatyFoundation', 'wisdomGovernance', 'consciousnessDevelopment', 
-    'educationalSystems', 'spiritualDialogue', 'metaGovernance'
+    'treaty-for-our-only-home', 
+    'wisdom-governance', 
+    'consciousness-and-inner-development', 
+    'educational-systems', 
+    'religious-and-spiritual-dialogue-governance', 
+    'implementation-methods-and-tools'
   ]
 };
 
 // Mapping from development levels to frameworks
 export const levelFrameworkConnections = {
   awareness: [
-    'treatyFoundation', 'educationalSystems', 'digitalCommons', 'culturalHeritage'
+    'treaty-for-our-only-home', 
+    'educational-systems', 
+    'digital-commons', 
+    'cultural-heritage-preservation'
   ],
   understanding: [
-    'treatyFoundation', 'climateEnergy', 'peaceConflict', 'globalEthics', 'wisdomGovernance'
+    'treaty-for-our-only-home', 
+    'climate-and-energy-governance', 
+    'peace-and-conflict-resolution', 
+    'global-ethics-and-rights-of-beings', 
+    'wisdom-governance'
   ],
   empathy: [
-    'treatyFoundation', 'migrationMobility', 'healthcareGovernance', 'mentalHealth', 
-    'indigenousGovernance', 'spiritualDialogue'
+    'treaty-for-our-only-home', 
+    'migration-and-human-mobility', 
+    'planetary-health', 
+    'mental-health-governance', 
+    'indigenous-governance-and-traditional-knowledge', 
+    'religious-and-spiritual-dialogue-governance'
   ],
   participation: [
-    'treatyFoundation', 'youthGovernance', 'urbanDevelopment', 'ruralDevelopment', 
-    'digitalCommons', 'implementationTools'
+    'treaty-for-our-only-home', 
+    'youth-and-intergenerational-governance', 
+    'urban-and-community-development', 
+    'rural-development-governance', 
+    'digital-commons', 
+    'implementation-methods-and-tools'
   ],
   leadership: [
-    'treatyFoundation', 'metaGovernance', 'consciousnessDevelopment', 
-    'existentialRisk', 'spaceGovernance', 'implementationTools'
+    'treaty-for-our-only-home', 
+    'implementation-methods-and-tools', 
+    'consciousness-and-inner-development', 
+    'existential-risk-governance', 
+    'space-governance', 
+    'wisdom-governance'
   ]
 };
 
-// Quiz response to framework mapping
+// Quiz response to framework mapping (using slugs)
 export const quizToFrameworkMapping = {
   values: {
-    climate: ['climateEnergy', 'environmentalStewardship', 'biodiversityGovernance', 'foodSystems'],
-    justice: ['justiceSystem', 'globalEthics', 'genderEquality', 'economicIntegration'],
-    technology: ['technologyGovernance', 'digitalCommons', 'spaceGovernance', 'existentialRisk'],
-    community: ['culturalHeritage', 'urbanDevelopment', 'ruralDevelopment', 'youthGovernance'],
-    systems: ['treatyFoundation', 'metaGovernance', 'implementationTools', 'wisdomGovernance']
+    climate: [
+      'climate-and-energy-governance', 
+      'environmental-stewardship', 
+      'biodiversity-governance', 
+      'food-systems-and-agriculture'
+    ],
+    justice: [
+      'justice-systems', 
+      'global-ethics-and-rights-of-beings', 
+      'gender-equality-and-lgbtq-rights', 
+      'economic-integration'
+    ],
+    technology: [
+      'technology-governance', 
+      'digital-commons', 
+      'space-governance', 
+      'existential-risk-governance'
+    ],
+    community: [
+      'cultural-heritage-preservation', 
+      'urban-and-community-development', 
+      'rural-development-governance', 
+      'youth-and-intergenerational-governance'
+    ],
+    systems: [
+      'treaty-for-our-only-home', 
+      'implementation-methods-and-tools', 
+      'wisdom-governance'
+    ]
   },
   contribution: {
-    learning: ['educationalSystems', 'digitalCommons', 'culturalHeritage', 'wisdomGovernance'],
-    building: ['technologyGovernance', 'urbanDevelopment', 'financialSystems', 'implementationTools'],
-    protecting: ['peaceConflict', 'healthcareGovernance', 'environmentalStewardship', 'disasterResilience'],
-    advocating: ['justiceSystem', 'globalEthics', 'genderEquality', 'youthGovernance'],
-    transforming: ['treatyFoundation', 'metaGovernance', 'consciousnessDevelopment', 'existentialRisk']
+    learning: [
+      'educational-systems', 
+      'digital-commons', 
+      'cultural-heritage-preservation', 
+      'wisdom-governance'
+    ],
+    building: [
+      'technology-governance', 
+      'urban-and-community-development', 
+      'financial-systems', 
+      'implementation-methods-and-tools'
+    ],
+    protecting: [
+      'peace-and-conflict-resolution', 
+      'planetary-health', 
+      'environmental-stewardship', 
+      'disaster-risk-reduction'
+    ],
+    advocating: [
+      'justice-systems', 
+      'global-ethics-and-rights-of-beings', 
+      'gender-equality-and-lgbtq-rights', 
+      'youth-and-intergenerational-governance'
+    ],
+    transforming: [
+      'treaty-for-our-only-home', 
+      'implementation-methods-and-tools', 
+      'consciousness-and-inner-development', 
+      'existential-risk-governance'
+    ]
   },
   scale: {
-    local: ['urbanDevelopment', 'ruralDevelopment', 'culturalHeritage', 'mentalHealth'],
-    national: ['justiceSystem', 'educationalSystems', 'healthcareGovernance', 'economicIntegration'],
-    global: ['treatyFoundation', 'climateEnergy', 'peaceConflict', 'migrationMobility'],
-    intergenerational: ['existentialRisk', 'spaceGovernance', 'consciousnessDevelopment', 'wisdomGovernance'],
-    connected: ['treatyFoundation', 'metaGovernance', 'implementationTools', 'climateEnergy']
+    local: [
+      'urban-and-community-development', 
+      'rural-development-governance', 
+      'cultural-heritage-preservation', 
+      'mental-health-governance'
+    ],
+    national: [
+      'justice-systems', 
+      'educational-systems', 
+      'planetary-health', 
+      'economic-integration'
+    ],
+    global: [
+      'treaty-for-our-only-home', 
+      'climate-and-energy-governance', 
+      'peace-and-conflict-resolution', 
+      'migration-and-human-mobility'
+    ],
+    intergenerational: [
+      'existential-risk-governance', 
+      'space-governance', 
+      'consciousness-and-inner-development', 
+      'wisdom-governance'
+    ],
+    connected: [
+      'treaty-for-our-only-home', 
+      'implementation-methods-and-tools', 
+      'climate-and-energy-governance'
+    ]
   }
 };
 
-// Utility functions
+// Utility functions that now use the centralized data
 export function getFrameworksByStatus(status) {
-  return Object.values(frameworks).filter(fw => fw.status === status);
+  return allFrameworks.filter(fw => fw.status === status);
 }
 
-export function getFrameworksByTier(tier) {
-  return Object.values(frameworks).filter(fw => fw.tier === tier);
+export function getFrameworksByTierLevel(tier) {
+  return getFrameworksByTier(tier);
 }
 
 export function getConnectedFrameworks(elementType, elementId) {
+  let connectedSlugs = [];
+  
   if (elementType === 'value') {
-    return valueFrameworkConnections[elementId] || [];
+    connectedSlugs = valueFrameworkConnections[elementId] || [];
   } else if (elementType === 'practice') {
-    return levelFrameworkConnections[elementId] || [];
+    connectedSlugs = levelFrameworkConnections[elementId] || [];
   }
-  return [];
+  
+  // Convert slugs to framework objects from centralized data
+  return connectedSlugs
+    .map(slug => getFrameworkBySlug(slug))
+    .filter(Boolean);
 }
 
 export function generateRecommendations(quizResults) {
   if (!quizResults) return [];
   
-  const recommendations = new Set();
+  const recommendationSlugs = new Set();
   
   // Always include foundation
-  recommendations.add('treatyFoundation');
+  recommendationSlugs.add('treaty-for-our-only-home');
   
   // Add frameworks based on quiz responses
   Object.entries(quizResults).forEach(([category, response]) => {
     const mappings = quizToFrameworkMapping[category];
     if (mappings && mappings[response]) {
-      mappings[response].forEach(fw => recommendations.add(fw));
+      mappings[response].forEach(slug => recommendationSlugs.add(slug));
     }
   });
   
-  return Array.from(recommendations)
-    .map(id => frameworks[id])
+  // Convert slugs to framework objects and sort by priority (tier)
+  return Array.from(recommendationSlugs)
+    .map(slug => getFrameworkBySlug(slug))
     .filter(Boolean)
-    .sort((a, b) => a.priority - b.priority);
+    .sort((a, b) => a.tier - b.tier);
 }

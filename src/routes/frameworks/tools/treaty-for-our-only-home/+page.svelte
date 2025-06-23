@@ -327,7 +327,7 @@
           <h3>{texts.executiveSummaryTitle}</h3>
           <p>{texts.executiveSummaryDesc}</p>
           <div class="tool-actions">
-            <a href="{base}/frameworks/docs/implementation/treaty-for-our-only-home#executive-summary-for-the-skeptic" class="download-btn pdf">
+            <a href="{base}/frameworks/treaty-for-our-only-home#executive-summary-for-the-skeptic" class="download-btn pdf">
               View Online
               <span class="icon">→</span>
             </a>

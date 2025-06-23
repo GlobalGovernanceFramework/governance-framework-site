@@ -35,7 +35,7 @@ The **Treaty for Our Only Home** is not just another reform proposal—it is the
 
 **The Framework**: The Treaty for Our Only Home provides a comprehensive blueprint for this transformation through five integrated pillars of reform, supported by strategic implementation pathways that bridge visionary goals with pragmatic politics.
 
-[Learn more about the Vision and Polycrisis Response](/frameworks/docs/implementation/treaty-for-our-only-home#01-introduction)
+[Learn more about the Vision and Polycrisis Response](/frameworks/treaty-for-our-only-home#introduction)
 
 ## <a id="core-principles"></a>Core Principles
 
@@ -51,7 +51,7 @@ The treaty is built on seven foundational principles that guide every mechanism 
 
 These principles work together as a living system, with built-in protocols for resolving conflicts between competing values and stress-testing frameworks under pressure.
 
-[Learn more about Core Principles](/frameworks/docs/implementation/treaty-for-our-only-home#02-core-principles)
+[Learn more about Core Principles](/frameworks/treaty-for-our-only-home#core-principles)
 
 ## <a id="five-pillars"></a>The Five Pillars of Reform
 
@@ -94,7 +94,7 @@ The treaty's architecture is built on five interlocking pillars, each designed t
 
 **Keystone Reform**: **Debt Justice** - Automatic debt pauses during crises (cross-pillar integration)
 
-[Learn more about the Five Pillars](/frameworks/docs/implementation/treaty-for-our-only-home#03-five-pillars)
+[Learn more about the Five Pillars](/frameworks/treaty-for-our-only-home#five-pillars)
 
 ## <a id="implementation-strategies"></a>Implementation Strategies
 
@@ -112,7 +112,7 @@ A visionary treaty requires a relentlessly pragmatic path to realization. The Tr
 ### Phased Implementation
 From city-level pilots and experimental zones to regional scaling and global adoption, with built-in reversibility mechanisms and continuous adaptation protocols.
 
-[Learn more about Implementation Strategies](/frameworks/docs/implementation/treaty-for-our-only-home#04-implementation-strategies)
+[Learn more about Implementation Strategies](/frameworks/treaty-for-our-only-home#implementation-strategies)
 
 ## <a id="monitoring-evaluation"></a>Monitoring & Evaluation
 
@@ -126,7 +126,7 @@ Comprehensive frameworks for measuring progress, ensuring accountability, and ma
 
 The monitoring framework redefines success around human and planetary needs rather than bureaucratic metrics, ensuring that governance transformation actually serves the people it claims to help.
 
-[Learn more about Monitoring & Evaluation](/frameworks/docs/implementation/treaty-for-our-only-home#05-monitoring-evaluation)
+[Learn more about Monitoring & Evaluation](/frameworks/treaty-for-our-only-home#monitoring-evaluation)
 
 ## <a id="conclusion"></a>Conclusion
 
@@ -140,7 +140,7 @@ The vision realized through comprehensive transformation from crisis-generating 
 
 The conclusion demonstrates that the Treaty for Our Only Home represents not utopian dreaming but practical necessity—governance transformation worthy of the challenges we face and the future we must secure for our only home.
 
-[Learn more about the Conclusion](/frameworks/docs/implementation/treaty-for-our-only-home#06-conclusion)
+[Learn more about the Conclusion](/frameworks/treaty-for-our-only-home#conclusion)
 
 ## <a id="faq-challenges"></a>FAQ & Challenges
 
@@ -158,7 +158,7 @@ Addressing the most common and important questions about Treaty implementation, 
 
 Each challenge receives detailed responses that demonstrate how sophisticated governance design can navigate real-world complexities without abandoning transformative ambition.
 
-[Learn more about FAQ & Challenges](/frameworks/docs/implementation/treaty-for-our-only-home#07-faq-and-challenges)
+[Learn more about FAQ & Challenges](/frameworks/treaty-for-our-only-home#faq-and-challenges)
 
 ## <a id="glossary"></a>Glossary
 
@@ -173,7 +173,7 @@ Comprehensive definitions of key terms, concepts, and mechanisms used throughout
 
 The glossary ensures conceptual coherence across the comprehensive governance transformation blueprint while maintaining accessibility for diverse audiences.
 
-[Learn more about Key Terms and Concepts](/frameworks/docs/implementation/treaty-for-our-only-home#08-glossary)
+[Learn more about Key Terms and Concepts](/frameworks/treaty-for-our-only-home#glossary)
 
 ## <a id="tools-and-resources"></a>Tools and Resources
 
@@ -195,7 +195,7 @@ This Treaty is designed not just to be read, but to be wielded. The following st
 - One-page "Executive Summary for the Skeptic"
 - "Cost of Inaction" infographic ($54T climate + $13.8T pandemic losses)
 - Media engagement talking points and templates
-- [Social media graphics pack with key quotes](/frameworks/docs/implementation/treaty-for-our-only-home#social-media-templates)
+- [Social media graphics pack with key quotes](/frameworks/treaty-for-our-only-home#social-media-templates)
 - Template letters to elected representatives
 
 **Integration**: Connects with all five pillars and implementation strategies
@@ -285,25 +285,25 @@ This Treaty is designed not just to be read, but to be wielded. The following st
 ### For Different Stakeholder Groups
 
 **Government Officials & Policymakers**:
-1. Review the [Executive Summary for the Skeptic](/frameworks/docs/implementation/treaty-for-our-only-home#executive-summary)
+1. Review the [Executive Summary for the Skeptic](/frameworks/treaty-for-our-only-home#executive-summary)
 2. Explore the [Keystone Reform Playbooks] *This playbook series is in development and will be released as a key resource for policymakers following the initial launch phase.*
 3. Use the [Sovereignty Navigator Tool] to assess reform impacts
 4. Contact globalgovernanceframework@gmail.com with subject "Government Partnership"
 
 **Civil Society & Advocacy Organizations**:
 1. Download the [Global Stewardship Advocacy Kit](/frameworks/tools/treaty-for-our-only-home/global-stewardship-advocacy-kit-en.zip)
-2. Review the [Implementation Strategies](/frameworks/docs/implementation/treaty-for-our-only-home#04-implementation-strategies)
+2. Review the [Implementation Strategies](/frameworks/treaty-for-our-only-home#implementation-strategies)
 3. Join the Global Stewardship Alliance network
 4. Contact globalgovernanceframework@gmail.com with subject "Alliance Partnership"
 
 **Academic & Research Institutions**:
-1. Access the full [Treaty framework documentation](/frameworks/docs/implementation/treaty-for-our-only-home)
-2. Review the [Monitoring & Evaluation](/frameworks/docs/implementation/treaty-for-our-only-home#06-monitoring-evaluation) protocols
+1. Access the full [Treaty framework documentation](/frameworks/treaty-for-our-only-home)
+2. Review the [Monitoring & Evaluation](/frameworks/treaty-for-our-only-home#monitoring-evaluation) protocols
 3. Explore collaboration on Reform Accelerator Labs
 4. Contact globalgovernanceframework@gmail.com with subject "Research Collaboration"
 
 **Cities & Regional Governments**:
-1. Explore [Pillar 2: New Actors & Voices](/frameworks/docs/implementation/treaty-for-our-only-home#03-five-pillars) for formal city roles (navigate to the second pillar with the Five Pillars section index)
+1. Explore [Pillar 2: New Actors & Voices](/frameworks/treaty-for-our-only-home#five-pillars) for formal city roles (navigate to the second pillar with the Five Pillars section index)
 2. Review pilot program opportunities in implementation strategies
 3. Connect with the C40 Cities partnership network
 4. Contact globalgovernanceframework@gmail.com with subject "City Partnership"

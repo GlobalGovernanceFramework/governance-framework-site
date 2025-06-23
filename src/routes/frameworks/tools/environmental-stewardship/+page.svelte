@@ -218,7 +218,7 @@
             <p>{texts.seedKitDesc}</p>
           </div>
           <div class="card-actions">
-            <a href={getFilePath(`sacred-seed-kit-${currentLocale}.zip`, 'spiritual')} download class="primary-btn">
+            <a href={getFilePath(`sacred-seed-kit-${currentLocale}.zip`, 'religious-and-spiritual-dialogue-governance')} download class="primary-btn">
               {texts.seedKitButton}
               <span class="icon">↓</span>
             </a>

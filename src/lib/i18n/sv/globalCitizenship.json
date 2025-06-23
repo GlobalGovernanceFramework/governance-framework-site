@@ -289,7 +289,7 @@
       "values": "Gemensamma värderingar (mitten)",
       "practices": "Utvecklingsövningar", 
       "coreValues": "Kärnvärderingar",
-      "completed": "Genomförda Övningar"
+      "completed": "Genomförda övningar"
     }
   },
   "recommendations": {
@@ -318,180 +318,38 @@
   "frameworks": {
     "title": "Ramverkskopplingar",
     "description": "Se hur övningar för globalt medborgarskap kopplas till specifika styrningsramverk över alla fyra transformationsnivåer.",
+    "tier": "Nivå",
+    "controls": {
+      "show": "Visa",
+      "hide": "Dölj",
+      "practiceConnections": "övningskopplingar",
+      "yourPracticesConnect": "Dina övningar kopplar dig till",
+      "frameworks": "ramverk"
+    },
+    "personalConnections": {
+      "title": "Dina personliga ramverkskopplingar",
+      "description": "Baserat på dina kompassövningar och värderingar"
+    },
+    "tierConnections": {
+      "foundation": "Grundkopplingar",
+      "urgent": "Brådskande åtgärdskopplingar",
+      "systems": "Systembyggnadskopplingar", 
+      "visionary": "Visionära kopplingar"
+    },
     "tier0": {
-      "title": "Nivå 0: Grund",
-      "description": "Styrningsinfrastrukturen som möjliggör att alla andra ramverk kan fungera tillsammans effektivt.",
-      "link": "Utforska Fördraget för vårt enda hem"
+      "description": "Styrningsinfrastrukturen som möjliggör att alla andra ramverk kan fungera tillsammans effektivt."
     },
     "tier1": {
-      "title": "Nivå 1: brådskande åtgärder",
       "description": "Omedelbara svar på globala kriser som hotar stabilitet och rättvisa.",
-      "climate": "Klimat & energi",
-      "peace": "Fred & konfliktlösning", 
-      "indigenous": "Urfolksstyrning",
       "viewAll": "Visa alla nivå 1 ramverk"
     },
     "tier2": {
-      "title": "Nivå 2: Systemutveckling", 
       "description": "Långsiktiga system som gör det möjligt för mänsklig civilisation att blomstra hållbart.",
-      "technology": "Teknikstyrning",
-      "education": "Utbildningssystem",
-      "finance": "Finansiella system",
       "viewAll": "Visa alla nivå 2 ramverk"
     },
     "tier3": {
-      "title": "Nivå 3 & 4: Framtida grunder",
       "description": "Rättvisa, kultur och visionära ramverk för intergenerationellt blomstrande.",
-      "digital": "Digitala allmänningar",
-      "culture": "Kulturarv",
-      "consciousness": "Medvetenhetsutveckling", 
       "viewAll": "Visa alla avancerade ramverk"
-    },
-    "database": {
-      "treatyFoundation": {
-        "name": "Fördrag för vårt enda hem",
-        "description": "Det grundläggande ramverket som möjliggör global samordning och gör alla andra ramverk möjliga"
-      },
-      "climateEnergy": {
-        "name": "Klimat- & energistyrning", 
-        "description": "Brådskande åtgärder mot klimatförändringar och övergång till rena energisystem"
-      },
-      "peaceConflict": {
-        "name": "Fred & konfliktlösning",
-        "description": "Bygga hållbar fred och lösa konflikter genom globalt samarbete"
-      },
-      "technologyGovernance": {
-        "name": "Teknikstyrning",
-        "description": "Etisk utveckling och styrning av framväxande teknologier för mänsklighetens bästa"
-      },
-      "educationalSystems": {
-        "name": "Utbildningssystem",
-        "description": "Transformera utbildning för att förbereda medborgare för 2000-talets utmaningar"
-      },
-      "digitalCommons": {
-        "name": "Digitala allmänningar",
-        "description": "Styra gemensamma digitala resurser och säkerställa rättvis tillgång till kunskap"
-      },
-      "culturalHeritage": {
-        "name": "Kulturarv & språklig mångfald",
-        "description": "Bevara världens kulturer, språk och traditionella kunskapssystem"
-      },
-      "spaceGovernance": {
-        "name": "Rymdstyrning", 
-        "description": "Styra mänsklighetens expansion bortom jorden för fredliga ändamål"
-      },
-      "consciousnessDevelopment": {
-        "name": "Medvetenhets- & inre utveckling",
-        "description": "Odla visdom, empati och utvidgad medvetenhet för planetärt medborgarskap"
-      },
-      "environmentalStewardship": {
-        "name": "Miljöförvaltning",
-        "description": "Skydda och återställa naturmiljöer och biologisk mångfald"
-      },
-      "urbanDevelopment": {
-        "name": "Stads- & gemenskapsutveckling", 
-        "description": "Skapa hållbara, blomstrande städer och gemenskaper"
-      },
-      "globalEthics": {
-        "name": "Global etik & mänskliga rättigheter",
-        "description": "Etablera universella etiska principer och skydda mänsklig värdighet"
-      },
-      "indigenousGovernance": {
-        "name": "Urfolksstyrning & traditionell kunskap",
-        "description": "Integrera urfolksvisdom och styrningssystem i globala ramverk"
-      },
-      "healthcareGovernance": {
-        "name": "Hälsovårdsstyrning",
-        "description": "Globala hälsosystem, pandemiberedskap och universell tillgång till sjukvård"
-      },
-      "foodSystems": {
-        "name": "Matsystem & jordbruk",
-        "description": "Hållbar matproduktion, näringssäkerhet och regenerativt jordbruk"
-      },
-      "economicIntegration": {
-        "name": "Ekonomisk integration",
-        "description": "Rättvisa och hållbara globala ekonomiska system som tjänar alla människor"
-      },
-      "justiceSystem": {
-        "name": "Rättssystem", 
-        "description": "Lika tillgång till rättvisa, rättsstatsprincipen och återupprättande metoder för konfliktlösning"
-      },
-      "migrationMobility": {
-        "name": "Migration & mänsklig rörlighet",
-        "description": "Human styrning av global migration och förflyttning"
-      },
-      "disasterResilience": {
-        "name": "Katastrofriskminimering & motståndskraft",
-        "description": "Förbereda för och svara på naturliga och mänskligt skapade katastrofer"
-      },
-      "financialSystems": {
-        "name": "Finansiella system",
-        "description": "Reformera global finansiell arkitektur för stabilitet och rättvisa"
-      },
-      "mentalHealth": {
-        "name": "Styrning av mental hälsa",
-        "description": "Globala tillvägagångssätt för mental hälsa, välbefinnande och psykologisk motståndskraft"
-      },
-      "waterSanitation": {
-        "name": "Vatten & sanitet",
-        "description": "Universell tillgång till rent vatten, sanitet och vattenresurshantering"
-      },
-      "animalWelfare": {
-        "name": "Djurvälfärd",
-        "description": "Etisk behandling och skydd av djur i alla sammanhang"
-      },
-      "biodiversityGovernance": {
-        "name": "Styrning av biologisk mångfald",
-        "description": "Skydda jordens biologiska mångfald och ekosystemtjänster"
-      },
-      "oceansMarine": {
-        "name": "Styrning av hav & marina områden",
-        "description": "Hållbar styrning av havsresurser och marina ekosystem"
-      },
-      "laborEmployment": {
-        "name": "Arbets- & sysselsättningsstyrning",
-        "description": "Rättvis arbete, anställningsrättigheter och värdiga försörjningsmöjligheter globalt"
-      },
-      "disabilityInclusion": {
-        "name": "Funktionsrättsliga rättigheter & inkludering",
-        "description": "Full inkludering och rättigheter för personer med funktionsnedsättning i alla samhällsaspekter"
-      },
-      "ruralDevelopment": {
-        "name": "Landsbygdsutveckling", 
-        "description": "Stödja landsbygdssamhällen, försörjningsmöjligheter och hållbar markanvändning"
-      },
-      "spiritualDialogue": {
-        "name": "Religiös & andlig dialog",
-        "description": "Interreligiöst samarbete och integration av andlig visdom i styrning"
-      },
-      "youthGovernance": {
-        "name": "Ungdoms- & intergenerationell styrning",
-        "description": "Inkludera ungdomars röster och skydda framtida generationers intressen"
-      },
-      "genderEquality": {
-        "name": "Jämställdhet & HBTQ+-rättigheter",
-        "description": "Full jämlikhet oavsett könsidentitet eller sexuell läggning"
-      },
-      "agingSupport": {
-        "name": "Stöd för åldrande befolkning",
-        "description": "Ta hand om och stärka äldre befolkningar globalt"
-      },
-      "existentialRisk": {
-        "name": "Styrning av existentiella risker",
-        "description": "Hantera hot mot mänsklighetens överlevnad och långsiktiga blomstring"
-      },
-      "metaGovernance": {
-        "name": "Integrerad metastyrning",
-        "description": "Styra hur vi styr - samordning över alla styrningssystem"
-      },
-      "implementationTools": {
-        "name": "Implementeringsmetoder & verktyg",
-        "description": "Praktiska verktyg och metoder för att implementera styrningsramverk"
-      },
-      "wisdomGovernance": {
-        "name": "Visdomsstyrning",
-        "description": "Integrera gamla visdomstraditioner med moderna styrningssystem"
-      }
     }
   },
   "foundation": {
@@ -501,7 +359,7 @@
       "governance": {
         "title": "Nuvarande system är otillräckliga",
         "content": "Klimatförändringar, pandemier och tekniska utmaningar kräver samordning utöver vad 1900-talets institutioner kan erbjuda. Vi behöver nya ramverk för globalt samarbete.",
-        "highlight": "Fördraget för Vårt Enda Hem tillhandahåller den grundläggande styrningsinfrastrukturen."
+        "highlight": "Fördraget för vårt enda hem tillhandahåller den grundläggande styrningsinfrastrukturen."
       },
       "planetary": {
         "title": "Utmaningar på planetär nivå", 
@@ -554,6 +412,94 @@
     "tier2": "Nivå 2: System", 
     "tier3": "Nivå 3: Rättvisa",
     "tier4": "Nivå 4: Visionär"
+  },
+  "connections": {
+    "practices": {
+      "awareness": {
+        "description": "Förstå globala utmaningar och deras samband",
+        "treatyReason": "Global medvetenhet hjälper dig förstå varför vi behöver ny styrningsinfrastruktur",
+        "climateReason": "Klimatmedvetenhet driver brådskande åtgärder mot vår mest akuta kris",
+        "healthReason": "Förstå hälsoeffekterna av globala utmaningar"
+      },
+      "understanding": {
+        "description": "Djup förståelse av globala system och deras interaktioner",
+        "treatyReason": "Systemtänkande visar varför samordnade globala åtgärder är nödvändiga",
+        "technologyReason": "Förstå hur teknologi formar globala system",
+        "educationReason": "Utbildning omvandlar förståelse till utbredd kapacitet"
+      },
+      "empathy": {
+        "description": "Bry sig om människor och varelser utanför din närmaste gemenskap",
+        "migrationReason": "Empati driver stöd för fördrivna och sårbara befolkningar",
+        "mentalHealthReason": "Global empati inkluderar omsorg om universellt välbefinnande",
+        "ethicsReason": "Utvidga din cirkel av moralisk omsorg till alla varelser"
+      },
+      "participation": {
+        "description": "Vidta åtgärder för globala frågor genom olika kanaler",
+        "digitalReason": "Deltagande inkluderar att bidra till global kunskapsdelning",
+        "citizenshipReason": "Strukturerat tillvägagångssätt för att utveckla medborgarskapsförmågor",
+        "educationReason": "Deltagande i lärande och undervisning av andra"
+      },
+      "leadership": {
+        "description": "Vägleda andra och skapa förändring i stor skala",
+        "treatyReason": "Globala ledare hjälper till att bygga infrastrukturen för planetärt samarbete",
+        "consciousnessReason": "Ledarskap kräver inre utveckling och utvidgad medvetenhet",
+        "peaceReason": "Ledare är avgörande för att bygga hållbar fred"
+      }
+    },
+    "values": {
+      "earth": {
+        "climateReason": "Att bry sig om jorden kräver brådskande klimatåtgärder",
+        "healthReason": "Jordvård inkluderar att skydda planetära hälsosystem",
+        "environmentReason": "Direkt uttryck för jordvårdsvärden",
+        "biodiversityReason": "Att skydda jorden inkluderar att bevara alla livsformer"
+      },
+      "justice": {
+        "peaceReason": "Rättvisa kräver att våld avslutas och fred byggs",
+        "systemsReason": "Direkt uttryck för rättvisa värden i styrning",
+        "economicReason": "Ekonomisk rättvisa är grundläggande för global rättvisa",
+        "genderReason": "Rättvisa inkluderar jämställdhet för alla identiteter"
+      },
+      "compassion": {
+        "migrationReason": "Medkänsla driver omsorg för fördrivna befolkningar",
+        "mentalHealthReason": "Medkänsligt svar på lidande inkluderar mental hälsa",
+        "ethicsReason": "Medkänsla sträcker sig till alla kännande varelser"
+      },
+      "truth": {
+        "educationReason": "Sanningssökande transformerar utbildning och lärande",
+        "technologyReason": "Sanning och transparens i teknikutveckling",
+        "digitalReason": "Öppen tillgång till kunskap och information"
+      },
+      "freedom": {
+        "peaceReason": "Frihet kräver att förtryck och våld avslutas",
+        "digitalReason": "Digital frihet och öppen tillgång till kunskap",
+        "genderReason": "Frihet inkluderar självbestämmande av identitet"
+      },
+      "peace": {
+        "conflictReason": "Direkt uttryck för fredsvärden i styrning",
+        "consciousnessReason": "Inre fred bidrar till världsfred",
+        "justiceReason": "Rättssystem som bygger snarare än vidmakthåller konflikt"
+      },
+      "integrity": {
+        "treatyReason": "Integritet är avgörande för pålitlig global styrning",
+        "technologyReason": "Etisk teknikutveckling kräver integritet",
+        "consciousnessReason": "Personlig integritet stödjer kollektiv transformation"
+      },
+      "gratitude": {
+        "indigenousReason": "Tacksamhet för urfolks visdom och förvaltarskap",
+        "environmentReason": "Tacksamt förvaltarskap av naturens gåvor",
+        "consciousnessReason": "Tacksamhetsövningar stödjer inre utveckling"
+      },
+      "wisdom": {
+        "consciousnessReason": "Visdomsodling är central för medvetenhetsutveckling",
+        "indigenousReason": "Urfolks visdom erbjuder gammal kunskap för moderna utmaningar",
+        "governanceReason": "Integration av visdomstraditioner i styrning"
+      },
+      "life": {
+        "ethicsReason": "Hedra alla livsformer genom utvidgade rättigheter",
+        "biodiversityReason": "Skydda livets mångfald på jorden",
+        "animalReason": "Hedra djurliv genom välfärdsskydd"
+      }
+    }
   },
   "cta": {
     "title": "Börja din resa mot globalt medborgarskap",

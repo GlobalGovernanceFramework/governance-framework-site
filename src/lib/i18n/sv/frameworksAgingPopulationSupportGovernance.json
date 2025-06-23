@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "title": "Ramverk för åldrandepopulation stödstyrning - Global styrelseramverk",
+    "description": "Ett transformativt ramverk för att omvandla åldrande från samhällsbörda till samhällets största styrka genom äldreledda regenerativa system"
+  },
+  "guideCard": {
+    "title": "Ny inom åldrandestöd ramverk?",
+    "description": "Börja med vår tillgängliga grundguide som förklarar ramverkets kärnprinciper och äldreledda transformationsväg.",
+    "buttonText": "Läs ramverkets grundläggande"
+  },
+  "categories": {
+    "overview": "Översikt",
+    "foundation": "Grund",
+    "implementation": "Implementering",
+    "resources": "Resurser & verktyg"
+  },
+  "sections": {
+    "index": "Översikt",
+    "preamble": "Förord: åldrande som tillgång",
+    "executive-summary": "Sammanfattning",
+    "economic-security": "Ekonomisk trygghet genom AUBI",
+    "meaningful-occupation": "Rätt till meningsfull sysselsättning",
+    "healthcare-climate": "Hälsovård & klimatintegration",
+    "social-inclusion": "Social inkludering & gemenskap",
+    "nested-governance": "Nästlade styrningssystem",
+    "legal-ethical": "Juridiska & etiska skyddsåtgärder",
+    "implementation-roadmap": "Implementeringsfärdplan",
+    "monitoring-adaptive": "Övervakning & adaptiv förvaltning",
+    "call-to-action": "Uppmaning till handling & äldreledarskap",
+    "appendices": "Bilagor & resurser",
+    "aging-framework-essentials": "Ramverk grundläggande guide"
+  },
+  "sectionsShort": {
+    "preamble": "Förord",
+    "executive-summary": "Sammanfattning",
+    "economic-security": "Ekonomisk trygghet",
+    "meaningful-occupation": "Meningsfull sysselsättning",
+    "healthcare-climate": "Hälsovård & klimat",
+    "social-inclusion": "Social inkludering",
+    "nested-governance": "Nästlade styrningar",
+    "legal-ethical": "Juridiska & etiska",
+    "implementation-roadmap": "Implementering",
+    "monitoring-adaptive": "Övervakning & adaptiv",
+    "call-to-action": "Uppmaning till handling",
+    "appendices": "Bilagor",
+    "aging-framework-essentials": "Ramverk grundläggande"
+  },
+  "progress": {
+    "text": "Avsnitt {current} av {total}"
+  },
+  "navigation": {
+    "downloadPdf": "Ladda ner PDF-version",
+    "continueToFramework": "Fortsätt till fullständigt ramverk",
+    "previousSection": "Föregående avsnitt",
+    "nextSection": "Nästa avsnitt"
+  },
+  "languageFallback": {
+    "title": "Innehåll på ditt språk kommer snart",
+    "description": "Detta avsnitt visas för närvarande på engelska tills översättningen är klar."
+  },
+  "errors": {
+    "sectionNotFound": "Avsnitt \"{section}\" hittades inte",
+    "contentInDevelopment": "Detta innehåll utvecklas fortfarande."
+  },
+  "loading": {
+    "text": "Laddar ramverksinnehåll..."
+  }
+}

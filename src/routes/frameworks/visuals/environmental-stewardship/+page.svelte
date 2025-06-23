@@ -351,7 +351,7 @@
       
       <!-- Back to Framework link -->
       <div class="back-link">
-        <a href="{base}/frameworks/docs/implementation/environmental-stewardship">
+        <a href="{base}/frameworks/environmental-stewardship">
           <span class="back-icon">←</span>
           {currentLocale === 'sv' ? 'Tillbaka till miljöförvaltningsramverket' : 'Back to Environmental Stewardship Framework'}
         </a>

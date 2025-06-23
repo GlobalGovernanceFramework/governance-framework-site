@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Vatten och sanitet styrningsramverk - Global styrningsramverk",
+    "description": "En transformativ plan för att uppnå universell tillgång till säkert hanterat vatten och sanitet samtidigt som vi helar våra planets vattensystem"
+  },
+  "guideCard": {
+    "title": "Ny inom vattenstyrning?",
+    "description": "Börja med vår praktiska guide som förklarar hur samhällen kan börja transformera sina vattensystem idag.",
+    "buttonText": "Läs snabbimplementeringsguiden"
+  },
+  "categories": {
+    "overview": "Översikt",
+    "foundation": "Grund",
+    "governance": "Styrning och system",
+    "implementation": "Implementering",
+    "resources": "Resurser"
+  },
+  "sections": {
+    "index": "Översikt",
+    "theory-of-change": "Förändringsteori",
+    "guiding-principles": "Vägledande principer",
+    "institutional-policy-framework": "Institutionellt och policyramverk",
+    "financing-investment": "Finansiering och investering",
+    "service-delivery-infrastructure": "Tjänsteleverans och infrastruktur",
+    "monitoring-accountability": "Övervakning och ansvarsskyldighet",
+    "climate-environmental-integration": "Klimat- och miljöintegration",
+    "innovation-knowledge-sharing": "Innovation och kunskapsdelning",
+    "crisis-response-adaptation": "Krishantering och anpassning",
+    "social-behavioral-change": "Social och beteendeförändring",
+    "global-partnerships": "Globala partnerskap",
+    "ethical-systems-framing": "Etisk och systemramverk",
+    "implementation-roadmap": "Implementeringsfärdplan",
+    "regional-implementation-blueprints": "Regionala implementeringsritningar",
+    "visual-accessibility-aids": "Visuella och tillgänglighetshjälpmedel",
+    "glossary": "Ordlista",
+    "executive-summary": "Verkställande sammanfattning",
+    "quick-implementation-guide": "Snabbimplementeringsguide",
+    "youth-leadership-guide": "Ungdomsledarskapguide"
+  },
+  "sectionsShort": {
+    "index": "Översikt",
+    "theory-of-change": "Förändringsteori",
+    "guiding-principles": "Principer",
+    "institutional-policy-framework": "Institutionellt",
+    "financing-investment": "Finansiering",
+    "service-delivery-infrastructure": "Tjänsteleverans",
+    "monitoring-accountability": "Övervakning",
+    "climate-environmental-integration": "Klimat",
+    "innovation-knowledge-sharing": "Innovation",
+    "crisis-response-adaptation": "Krishantering",
+    "social-behavioral-change": "Social förändring",
+    "global-partnerships": "Partnerskap",
+    "ethical-systems-framing": "Etik och system",
+    "implementation-roadmap": "Färdplan",
+    "regional-implementation-blueprints": "Regionala ritningar",
+    "visual-accessibility-aids": "Visuella hjälpmedel",
+    "glossary": "Ordlista",
+    "executive-summary": "Verkställande sammanfattning",
+    "quick-implementation-guide": "Snabbguide",
+    "youth-leadership-guide": "Ungdomsguide"
+  },
+  "progress": {
+    "text": "Avsnitt {current} av {total}"
+  },
+  "languageFallback": {
+    "title": "Innehåll på ditt språk kommer snart",
+    "description": "Detta avsnitt visas för närvarande på engelska tills översättningen är klar."
+  },
+  "navigation": {
+    "downloadPdf": "Ladda ner PDF-version",
+    "continueToFramework": "Fortsätt till fullständigt ramverk",
+    "previousSection": "Föregående avsnitt",
+    "nextSection": "Nästa avsnitt"
+  },
+  "errors": {
+    "sectionNotFound": "Avsnitt \"{section}\" hittades inte",
+    "contentInDevelopment": "Detta innehåll utvecklas fortfarande."
+  },
+  "loading": {
+    "text": "Laddar ramverksinnehåll..."
+  }
+}

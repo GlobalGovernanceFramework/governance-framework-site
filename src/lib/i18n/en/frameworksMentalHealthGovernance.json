@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "title": "Living Mandala for Planetary Mental Health - Global Governance Framework",
+    "description": "A transformative framework for global mental health governance, positioning mental health as a transcultural human right woven into our planetary interdependence"
+  },
+  "guideCard": {
+    "title": "New to Planetary Mental Health Framework?",
+    "description": "Start with our accessible essentials guide that explains the framework's core principles and community-led transformation pathway.",
+    "buttonText": "Read the Framework Essentials"
+  },
+  "categories": {
+    "overview": "Overview",
+    "foundation": "Foundation",
+    "systems": "Systems & Delivery",
+    "implementation": "Implementation",
+    "resources": "Resources"
+  },
+  "sections": {
+    "index": "Overview",
+    "vision-principles": "Vision & Guiding Principles",
+    "governance-structures": "Governance & Institutional Structures",
+    "legal-policy": "Legal & Policy Frameworks",
+    "financing-resources": "Financing & Resource Mobilization",
+    "service-delivery": "Service Delivery & Workforce",
+    "monitoring-accountability": "Monitoring, Evaluation & Accountability",
+    "crisis-response": "Crisis & Emergency Response",
+    "innovation-research": "Innovation & Research",
+    "cross-cutting-themes": "Cross-Cutting Themes",
+    "implementation-strategy": "Implementation Strategy",
+    "political-strategy": "Political Strategy & Stakeholder Mapping",
+    "risk-management": "Risk Management",
+    "technology-implementation": "Technology Implementation",
+    "change-management": "Change Management",
+    "conclusion": "The Mandala Completes: From Vision to Living Reality",
+    "mental-health-framework-essentials": "Framework Essentials"
+  },
+  "sectionsShort": {
+    "index": "Overview",
+    "vision-principles": "Vision & Principles",
+    "governance-structures": "Governance",
+    "legal-policy": "Legal & Policy",
+    "financing-resources": "Financing",
+    "service-delivery": "Service Delivery",
+    "monitoring-accountability": "Monitoring",
+    "crisis-response": "Crisis Response",
+    "innovation-research": "Innovation",
+    "cross-cutting-themes": "Cross-Cutting",
+    "implementation-strategy": "Implementation",
+    "political-strategy": "Political Strategy",
+    "risk-management": "Risk Management",
+    "technology-implementation": "Technology",
+    "change-management": "Change Management",
+    "conclusion": "Conclusion",
+    "mental-health-framework-essentials": "Framework Essentials"
+  },
+  "progress": {
+    "text": "Section {current} of {total}"
+  },
+  "languageFallback": {
+    "title": "Content in your language coming soon",
+    "description": "This section is currently displayed in English until translation is complete."
+  },
+  "navigation": {
+    "downloadPdf": "Download PDF Version",
+    "continueToFramework": "Continue to Full Framework",
+    "previousSection": "Previous Section",
+    "nextSection": "Next Section"
+  },
+  "errors": {
+    "sectionNotFound": "Section \"{section}\" not found",
+    "contentInDevelopment": "This content is still being developed."
+  },
+  "loading": {
+    "text": "Loading framework content..."
+  }
+}

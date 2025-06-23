@@ -318,180 +318,38 @@
   "frameworks": {
     "title": "Framework Connections",
     "description": "See how global citizenship practices connect to specific governance frameworks across all four tiers of transformation.",
+    "tier": "Tier",
+    "controls": {
+      "show": "Show",
+      "hide": "Hide", 
+      "practiceConnections": "Practice Connections",
+      "yourPracticesConnect": "Your practices connect you to",
+      "frameworks": "frameworks"
+    },
+    "personalConnections": {
+      "title": "Your Personal Framework Connections",
+      "description": "Based on your compass practices and values"
+    },
+    "tierConnections": {
+      "foundation": "Foundation connections",
+      "urgent": "Urgent action connections", 
+      "systems": "Systems building connections",
+      "visionary": "Visionary connections"
+    },
     "tier0": {
-      "title": "Tier 0: Foundation",
-      "description": "The governance infrastructure that enables all other frameworks to work together effectively.",
-      "link": "Explore the Treaty for Our Only Home"
+      "description": "The governance infrastructure that enables all other frameworks to work together effectively."
     },
     "tier1": {
-      "title": "Tier 1: Urgent Action",
       "description": "Immediate responses to global crises that threaten stability and justice.",
-      "climate": "Climate & Energy",
-      "peace": "Peace & Conflict Resolution", 
-      "indigenous": "Indigenous Governance",
       "viewAll": "View All Tier 1 Frameworks"
     },
     "tier2": {
-      "title": "Tier 2: Systems Development", 
       "description": "Long-term systems that enable human civilization to thrive sustainably.",
-      "technology": "Technology Governance",
-      "education": "Educational Systems",
-      "finance": "Financial Systems",
       "viewAll": "View All Tier 2 Frameworks"
     },
     "tier3": {
-      "title": "Tier 3 & 4: Future Foundations",
       "description": "Equity, culture, and visionary frameworks for intergenerational flourishing.",
-      "digital": "Digital Commons",
-      "culture": "Cultural Heritage",
-      "consciousness": "Consciousness Development", 
       "viewAll": "View All Advanced Frameworks"
-    },
-    "database": {
-      "treatyFoundation": {
-        "name": "Treaty for Our Only Home",
-        "description": "The foundational framework that enables global coordination and makes all other frameworks possible"
-      },
-      "climateEnergy": {
-        "name": "Climate & Energy Governance", 
-        "description": "Urgent action on climate change and transition to clean energy systems"
-      },
-      "peaceConflict": {
-        "name": "Peace & Conflict Resolution",
-        "description": "Building sustainable peace and resolving conflicts through global cooperation"
-      },
-      "technologyGovernance": {
-        "name": "Technology Governance",
-        "description": "Ethical development and governance of emerging technologies for human benefit"
-      },
-      "educationalSystems": {
-        "name": "Educational Systems",
-        "description": "Transforming education to prepare citizens for 21st-century challenges"
-      },
-      "digitalCommons": {
-        "name": "Digital Commons",
-        "description": "Governing shared digital resources and ensuring equitable access to knowledge"
-      },
-      "culturalHeritage": {
-        "name": "Cultural Heritage & Linguistic Diversity",
-        "description": "Preserving world cultures, languages, and traditional knowledge systems"
-      },
-      "spaceGovernance": {
-        "name": "Space Governance", 
-        "description": "Governing humanity's expansion beyond Earth for peaceful purposes"
-      },
-      "consciousnessDevelopment": {
-        "name": "Consciousness & Inner Development",
-        "description": "Cultivating wisdom, empathy, and expanded awareness for planetary citizenship"
-      },
-      "environmentalStewardship": {
-        "name": "Environmental Stewardship",
-        "description": "Protecting and restoring natural environments and biodiversity"
-      },
-      "urbanDevelopment": {
-        "name": "Urban & Community Development", 
-        "description": "Creating sustainable, thriving cities and communities"
-      },
-      "globalEthics": {
-        "name": "Global Ethics & Human Rights",
-        "description": "Establishing universal ethical principles and protecting human dignity"
-      },
-      "indigenousGovernance": {
-        "name": "Indigenous Governance & Traditional Knowledge",
-        "description": "Integrating Indigenous wisdom and governance systems into global frameworks"
-      },
-      "healthcareGovernance": {
-        "name": "Healthcare Governance",
-        "description": "Global health systems, pandemic preparedness, and universal healthcare access"
-      },
-      "foodSystems": {
-        "name": "Food Systems & Agriculture",
-        "description": "Sustainable food production, nutrition security, and regenerative agriculture"
-      },
-      "economicIntegration": {
-        "name": "Economic Integration",
-        "description": "Fair and sustainable global economic systems that serve all people"
-      },
-      "justiceSystem": {
-        "name": "Justice Systems", 
-        "description": "Equal access to justice, rule of law, and restorative approaches to conflict"
-      },
-      "migrationMobility": {
-        "name": "Migration & Human Mobility",
-        "description": "Humane governance of global migration and displacement"
-      },
-      "disasterResilience": {
-        "name": "Disaster Risk Reduction & Resilience",
-        "description": "Preparing for and responding to natural and human-made disasters"
-      },
-      "financialSystems": {
-        "name": "Financial Systems",
-        "description": "Reforming global financial architecture for stability and equity"
-      },
-      "mentalHealth": {
-        "name": "Mental Health Governance",
-        "description": "Global approaches to mental health, wellbeing, and psychological resilience"
-      },
-      "waterSanitation": {
-        "name": "Water & Sanitation",
-        "description": "Universal access to clean water, sanitation, and water resource management"
-      },
-      "animalWelfare": {
-        "name": "Animal Welfare",
-        "description": "Ethical treatment and protection of animals in all contexts"
-      },
-      "biodiversityGovernance": {
-        "name": "Biodiversity Governance",
-        "description": "Protecting Earth's biological diversity and ecosystem services"
-      },
-      "oceansMarine": {
-        "name": "Oceans & Marine Governance",
-        "description": "Sustainable governance of ocean resources and marine ecosystems"
-      },
-      "laborEmployment": {
-        "name": "Labor & Employment Governance",
-        "description": "Fair work, employment rights, and dignified livelihoods globally"
-      },
-      "disabilityInclusion": {
-        "name": "Disability Rights & Inclusion",
-        "description": "Full inclusion and rights for people with disabilities in all aspects of society"
-      },
-      "ruralDevelopment": {
-        "name": "Rural Development", 
-        "description": "Supporting rural communities, livelihoods, and sustainable land use"
-      },
-      "spiritualDialogue": {
-        "name": "Religious & Spiritual Dialogue",
-        "description": "Interfaith cooperation and integrating spiritual wisdom into governance"
-      },
-      "youthGovernance": {
-        "name": "Youth & Intergenerational Governance",
-        "description": "Including youth voices and protecting future generations' interests"
-      },
-      "genderEquality": {
-        "name": "Gender Equality & LGBTQ+ Rights",
-        "description": "Full equality regardless of gender identity or sexual orientation"
-      },
-      "agingSupport": {
-        "name": "Aging Population Support",
-        "description": "Caring for and empowering older populations globally"
-      },
-      "existentialRisk": {
-        "name": "Existential Risk Governance",
-        "description": "Managing threats to human survival and long-term flourishing"
-      },
-      "metaGovernance": {
-        "name": "Integrated Meta-Governance",
-        "description": "Governing how we govern - coordination across all governance systems"
-      },
-      "implementationTools": {
-        "name": "Implementation Methods & Tools",
-        "description": "Practical tools and methods for implementing governance frameworks"
-      },
-      "wisdomGovernance": {
-        "name": "Wisdom Governance",
-        "description": "Integrating ancient wisdom traditions with modern governance systems"
-      }
     }
   },
   "foundation": {
@@ -554,6 +412,94 @@
     "tier2": "Tier 2: Systems", 
     "tier3": "Tier 3: Equity",
     "tier4": "Tier 4: Visionary"
+  },
+  "connections": {
+    "practices": {
+      "awareness": {
+        "description": "Understanding global challenges and their interconnections",
+        "treatyReason": "Global awareness helps you understand why we need new governance infrastructure",
+        "climateReason": "Climate awareness drives urgent action on our most pressing crisis",
+        "healthReason": "Understanding health impacts of global challenges"
+      },
+      "understanding": {
+        "description": "Deep comprehension of global systems and their interactions",
+        "treatyReason": "Systems thinking shows why coordinated global action is essential",
+        "technologyReason": "Understanding how technology shapes global systems",
+        "educationReason": "Education transforms understanding into widespread capability"
+      },
+      "empathy": {
+        "description": "Caring for people and beings beyond your immediate community",
+        "migrationReason": "Empathy drives support for displaced and vulnerable populations",
+        "mentalHealthReason": "Global empathy includes care for universal wellbeing",
+        "ethicsReason": "Expanding your circle of moral concern to all beings"
+      },
+      "participation": {
+        "description": "Taking action on global issues through various channels",
+        "digitalReason": "Participation includes contributing to global knowledge sharing",
+        "citizenshipReason": "Structured approach to developing citizenship capabilities",
+        "educationReason": "Participation in learning and teaching others"
+      },
+      "leadership": {
+        "description": "Guiding others and creating change at scale",
+        "treatyReason": "Global leaders help build the infrastructure for planetary cooperation",
+        "consciousnessReason": "Leadership requires inner development and expanded awareness",
+        "peaceReason": "Leaders are essential for building sustainable peace"
+      }
+    },
+    "values": {
+      "earth": {
+        "climateReason": "Caring for Earth demands urgent climate action",
+        "healthReason": "Earth care includes protecting planetary health systems",
+        "environmentReason": "Direct expression of earth care values",
+        "biodiversityReason": "Protecting Earth includes preserving all life forms"
+      },
+      "justice": {
+        "peaceReason": "Justice requires ending violence and building peace",
+        "systemsReason": "Direct expression of justice values in governance",
+        "economicReason": "Economic justice is fundamental to global fairness",
+        "genderReason": "Justice includes equality for all identities"
+      },
+      "compassion": {
+        "migrationReason": "Compassion drives care for displaced populations",
+        "mentalHealthReason": "Compassionate response to suffering includes mental health",
+        "ethicsReason": "Compassion extends to all sentient beings"
+      },
+      "truth": {
+        "educationReason": "Truth-seeking transforms education and learning",
+        "technologyReason": "Truth and transparency in technology development",
+        "digitalReason": "Open access to knowledge and information"
+      },
+      "freedom": {
+        "peaceReason": "Freedom requires ending oppression and violence",
+        "digitalReason": "Digital freedom and open access to knowledge",
+        "genderReason": "Freedom includes self-determination of identity"
+      },
+      "peace": {
+        "conflictReason": "Direct expression of peace values in governance",
+        "consciousnessReason": "Inner peace contributes to world peace",
+        "justiceReason": "Justice systems that build rather than perpetuate conflict"
+      },
+      "integrity": {
+        "treatyReason": "Integrity is essential for trustworthy global governance",
+        "technologyReason": "Ethical technology development requires integrity",
+        "consciousnessReason": "Personal integrity supports collective transformation"
+      },
+      "gratitude": {
+        "indigenousReason": "Gratitude for Indigenous wisdom and stewardship",
+        "environmentReason": "Grateful stewardship of natural gifts",
+        "consciousnessReason": "Gratitude practices support inner development"
+      },
+      "wisdom": {
+        "consciousnessReason": "Wisdom cultivation is central to consciousness development",
+        "indigenousReason": "Indigenous wisdom offers ancient knowledge for modern challenges",
+        "governanceReason": "Integration of wisdom traditions in governance"
+      },
+      "life": {
+        "ethicsReason": "Honoring all life forms through expanded rights",
+        "biodiversityReason": "Protecting the diversity of life on Earth",
+        "animalReason": "Honoring animal life through welfare protection"
+      }
+    }
   },
   "cta": {
     "title": "Begin Your Global Citizenship Journey",

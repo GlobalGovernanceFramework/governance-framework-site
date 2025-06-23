@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Water & Sanitation Governance Framework - Global Governance Framework",
+    "description": "A transformative blueprint for achieving universal access to safely managed water and sanitation while healing our planet's water systems"
+  },
+  "guideCard": {
+    "title": "New to Water Governance?",
+    "description": "Start with our practical guide that explains how communities can begin transforming their water systems today.",
+    "buttonText": "Read the Quick Implementation Guide"
+  },
+  "categories": {
+    "overview": "Overview",
+    "foundation": "Foundation",
+    "governance": "Governance & Systems",
+    "implementation": "Implementation",
+    "resources": "Resources"
+  },
+  "sections": {
+    "index": "Overview",
+    "theory-of-change": "Theory of Change",
+    "guiding-principles": "Guiding Principles",
+    "institutional-policy-framework": "Institutional & Policy Framework",
+    "financing-investment": "Financing & Investment",
+    "service-delivery-infrastructure": "Service Delivery & Infrastructure",
+    "monitoring-accountability": "Monitoring & Accountability",
+    "climate-environmental-integration": "Climate & Environmental Integration",
+    "innovation-knowledge-sharing": "Innovation & Knowledge Sharing",
+    "crisis-response-adaptation": "Crisis Response & Adaptation",
+    "social-behavioral-change": "Social & Behavioral Change",
+    "global-partnerships": "Global Partnerships",
+    "ethical-systems-framing": "Ethical & Systems Framing",
+    "implementation-roadmap": "Implementation Roadmap",
+    "regional-implementation-blueprints": "Regional Implementation Blueprints",
+    "visual-accessibility-aids": "Visual & Accessibility Aids",
+    "glossary": "Glossary",
+    "executive-summary": "Executive Summary",
+    "quick-implementation-guide": "Quick Implementation Guide",
+    "youth-leadership-guide": "Youth Leadership Guide"
+  },
+  "sectionsShort": {
+    "index": "Overview",
+    "theory-of-change": "Theory of Change",
+    "guiding-principles": "Principles",
+    "institutional-policy-framework": "Institutional",
+    "financing-investment": "Financing",
+    "service-delivery-infrastructure": "Service Delivery",
+    "monitoring-accountability": "Monitoring",
+    "climate-environmental-integration": "Climate",
+    "innovation-knowledge-sharing": "Innovation",
+    "crisis-response-adaptation": "Crisis Response",
+    "social-behavioral-change": "Social Change",
+    "global-partnerships": "Partnerships",
+    "ethical-systems-framing": "Ethics & Systems",
+    "implementation-roadmap": "Roadmap",
+    "regional-implementation-blueprints": "Regional Blueprints",
+    "visual-accessibility-aids": "Visual Aids",
+    "glossary": "Glossary",
+    "executive-summary": "Executive Summary",
+    "quick-implementation-guide": "Quick Guide",
+    "youth-leadership-guide": "Youth Guide"
+  },
+  "progress": {
+    "text": "Section {current} of {total}"
+  },
+  "languageFallback": {
+    "title": "Content in your language coming soon",
+    "description": "This section is currently displayed in English until translation is complete."
+  },
+  "navigation": {
+    "downloadPdf": "Download PDF Version",
+    "continueToFramework": "Continue to Full Framework",
+    "previousSection": "Previous Section",
+    "nextSection": "Next Section"
+  },
+  "errors": {
+    "sectionNotFound": "Section \"{section}\" not found",
+    "contentInDevelopment": "This content is still being developed."
+  },
+  "loading": {
+    "text": "Loading framework content..."
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "Finansiella system-ramverk - Global Governance Framework",
+    "description": "En omfattande plan för att omforma globala finanssystem till förmån för mänskligt och ekologiskt välbefinnande"
+  },
+  "guideCard": {
+    "title": "Ny inom finansiella system-ramverket?",
+    "description": "Börja med en av våra förenklade guider som förklarar kärnkoncepten för olika målgrupper.",
+    "buttonText": "Välj en guide"
+  },
+  "categories": {
+    "overview": "Översikt",
+    "foundation": "Grund",
+    "implementation": "Implementation",
+    "operations": "Drift & utvärdering",
+    "resources": "Resurser"
+  },
+  "sections": {
+    "index": "Översikt",
+    "quick-guide": "Teknisk guide",
+    "quick-guide-medium": "Samhällsguide",
+    "quick-guide-youth": "Ungdoms & gräsrötters guide",
+    "introduction": "Introduktion",
+    "core-principles": "Kärnprinciper",
+    "structural-components": "Strukturella komponenter",
+    "implementation-approaches": "Implementeringsmetoder",
+    "metrics-evaluation": "Mätning & utvärdering",
+    "supporting-sections": "Stödjande sektioner",
+    "appendices": "Bilagor"
+  },
+  "sectionsShort": {
+    "index": "Översikt",
+    "quick-guide": "Teknisk guide",
+    "quick-guide-medium": "Samhällsguide", 
+    "quick-guide-youth": "Ungdomsguide",
+    "introduction": "Introduktion",
+    "core-principles": "Principer",
+    "structural-components": "Komponenter",
+    "implementation-approaches": "Implementation",
+    "metrics-evaluation": "Mätning",
+    "supporting-sections": "Stödjande",
+    "appendices": "Bilagor"
+  },
+  "guides": [
+    {
+      "id": "quick-guide",
+      "title": "Teknisk guide",
+      "description": "Detaljerad guide för beslutsfattare, finansinstitutioner och organisationer",
+      "icon": "📊"
+    },
+    {
+      "id": "quick-guide-medium",
+      "title": "Samhällsguide",
+      "description": "Balanserad guide för lokala myndigheter, samhällsgrupper och ideella organisationer",
+      "icon": "🤝"
+    },
+    {
+      "id": "quick-guide-youth",
+      "title": "Ungdoms & gräsrötters guide",
+      "description": "Visuell, tillgänglig guide för ungdomsgrupper, skolor och olika samhällen",
+      "icon": "🌱"
+    }
+  ],
+  "progress": {
+    "text": "Avsnitt {current} av {total}"
+  },
+  "languageFallback": {
+    "title": "Innehåll på svenska kommer snart",
+    "description": "Detta avsnitt visas för närvarande på engelska tills den svenska översättningen är klar."
+  },
+  "navigation": {
+    "downloadPdf": "Ladda ner PDF-version",
+    "continueToFull": "Fortsätt till fullständigt ramverk",
+    "previousSection": "Föregående avsnitt",
+    "nextSection": "Nästa avsnitt"
+  },
+  "errors": {
+    "sectionNotFound": "Avsnitt \"{section}\" hittades inte",
+    "contentInDevelopment": "Detta innehåll är fortfarande under utveckling."
+  },
+  "loading": {
+    "text": "Laddar ramverksinnehåll..."
+  },
+  "intro": {
+    "title": "Finansiella system-ramverk",
+    "overview": "Översikt", 
+    "paragraph1": "Finansiella system-ramverket är en omfattande plan för att omforma globala finanssystem till förmån för mänskligt och ekologiskt välbefinnande. Den integrerar olika uttryck av värde—från traditionella valutor till omsorg, tid och ekologiska bidrag—genom Hearts som en frivillig global valuta.",
+    "paragraph2": "Detta ramverk omdefinierar finanssystem som levande system som speglar våra kollektiva värderingar och formar våra sociala prioriteringar. Det skapar praktiska övergångsvägar från existerande system till mer holistiska alternativ."
+  }
+}

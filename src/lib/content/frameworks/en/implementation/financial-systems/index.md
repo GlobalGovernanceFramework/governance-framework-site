@@ -25,7 +25,7 @@ Financial systems orchestrate the flow of resources, trust, and value, acting as
 
 This framework reimagines financial systems to prioritize human and ecological flourishing, integrating diverse currencies (love, care, connection) with robust governance, equitable access, practical transition pathways, and *Hearts* as a global coordinating currency.
 
-[Learn more about the Introduction](/frameworks/docs/implementation/financial-systems#01-introduction)
+[Learn more about the Introduction](/frameworks/docs/implementation/financial-systems#introduction)
 
 ## <a id="core-principles"></a>Core Principles
 
@@ -36,7 +36,7 @@ The Financial Systems Framework is built on four foundational principles that gu
 - **The Love Ledger**: A symbolic subsystem for recognizing non-monetary contributions
 - **Sacred Economics**: A guiding philosophy reframing systems via gift economies
 
-[Learn more about Core Principles](/frameworks/docs/implementation/financial-systems#02-core-principles)
+[Learn more about Core Principles](/frameworks/docs/implementation/financial-systems#core-principles)
 
 ## <a id="structural-components"></a>Structural Components
 
@@ -48,7 +48,7 @@ The framework establishes key systems and mechanisms to enable its vision:
 - **Hybrid Systems Management**: Managing plural value system risks
 - **Equity Mechanisms**: Ensuring inclusivity and addressing inequities
 
-[Learn more about Structural Components](/frameworks/docs/implementation/financial-systems#03-structural-components)
+[Learn more about Structural Components](/frameworks/docs/implementation/financial-systems#structural-components)
 
 ## <a id="implementation-approaches"></a>Implementation Approaches
 
@@ -60,7 +60,7 @@ The framework provides practical deployment strategies across multiple contexts:
 - **Integration with Traditional Financial Systems**: Facilitating adoption by mainstream institutions
 - **Regulatory Strategy**: Navigating global financial regulations
 
-[Learn more about Implementation Approaches](/frameworks/docs/implementation/financial-systems#04-implementation-approaches)
+[Learn more about Implementation Approaches](/frameworks/docs/implementation/financial-systems#implementation-approaches)
 
 ## <a id="metrics-and-evaluation"></a>Metrics and Evaluation
 
@@ -71,7 +71,7 @@ Success is measured through rigorous evaluation frameworks:
 - **Economic Modeling**: Simulation of Hearts circulation and economic impact
 - **Meta-Framework Learning System**: Self-improvement based on implementation data
 
-[Learn more about Metrics and Evaluation](/frameworks/docs/implementation/financial-systems#05-metrics-evaluation)
+[Learn more about Metrics and Evaluation](/frameworks/docs/implementation/financial-systems#metrics-evaluation)
 
 ## <a id="supporting-sections"></a>Supporting Sections
 
@@ -85,7 +85,7 @@ Additional components address specific needs and applications:
 - **Post-Scarcity Prototyping**: Preparing for automation-driven societies
 - **Existential Risk Interface**: Aligning Hearts with existential risk mitigation
 
-[Learn more about Supporting Sections](/frameworks/docs/implementation/financial-systems#06-supporting-sections)
+[Learn more about Supporting Sections](/frameworks/docs/implementation/financial-systems#supporting-sections)
 
 ## <a id="appendices"></a>Appendices
 
@@ -102,7 +102,7 @@ Supplementary resources provide detailed technical information:
 - **Protocol Zoo**: Specialized Hearts derivatives
 - **Governance War Games**: Simulating crises for resilience
 
-[Learn more about Appendices](/frameworks/docs/implementation/financial-systems#07-appendices)
+[Learn more about Appendices](/frameworks/docs/implementation/financial-systems#appendices)
 
 ## Tools and Resources
 
@@ -152,7 +152,7 @@ The Financial Systems Framework provides a comprehensive set of tools to support
 
 To begin implementing the Financial Systems Framework:
 
-1. Review the [Core Principles](/frameworks/docs/implementation/financial-systems#02-core-principles) section
+1. Review the [Core Principles](/frameworks/docs/implementation/financial-systems#core-principles) section
 2. Explore the [Hearts Implementation Toolkit](/frameworks/tools/financial-systems/hearts-toolkit-en.pdf)
 3. Join the Global Commons Council community at [globalgovernanceframework.org/community](https://globalgovernanceframework.org/community)
 4. Sign up for implementation support webinars

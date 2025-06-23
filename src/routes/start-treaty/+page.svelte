@@ -3,7 +3,7 @@
   import { goto } from '$app/navigation';
 
   onMount(() => {
-    goto('/frameworks/docs/implementation/treaty-for-our-only-home/getting-started');
+    goto('/frameworks/treaty-for-our-only-home/getting-started');
   });
 </script>
 

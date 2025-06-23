@@ -23,11 +23,11 @@ The **Planetary Health Accord Implementation Framework** is a transformative roa
 
 The framework employs a multi-faceted approach to achieve systemic transformation, structured around five core pillars:  
 
-1. **Community-Centered Governance**: Establishes Community Health Assemblies and Regional Health Hubs to ensure local control, democratic participation, and accountability in health system decision-making (see [Governance Structure](/frameworks/docs/implementation/planetary-health#01-governance-structure)).  
-2. **Ethical Technology Integration**: Deploys AI diagnostics, blockchain health records, and offline-first solutions with community oversight, bias auditing, and respect for data sovereignty (see [Technology and Data Infrastructure](/frameworks/docs/implementation/planetary-health#02-technology-data-infrastructure)).  
-3. **Sustainable Financing**: Leverages the Global Health Solidarity Fund and community-controlled budgets to ensure equitable resource allocation and fair compensation for health workers (see [Financing Mechanisms](/frameworks/docs/implementation/planetary-health#03-financing-mechanisms)).  
-4. **Cultural and Trauma-Informed Care**: Integrates traditional healing with modern medicine, prioritizing cultural humility and intergenerational healing to address systemic traumas (see [Community-Centered Healthcare](/frameworks/docs/implementation/planetary-health#06-community-centered-healthcare)).  
-5. **Planetary Health Advocacy**: Promotes climate-adaptive care, ecosystem restoration, and One Health surveillance to prevent pandemics and support environmental resilience (see [Pandemic and Climate-Preparedness](/frameworks/docs/implementation/planetary-health#05-pandemic-climate-preparedness)).  
+1. **Community-Centered Governance**: Establishes Community Health Assemblies and Regional Health Hubs to ensure local control, democratic participation, and accountability in health system decision-making (see [Governance Structure](/frameworks/planetary-health#governance-structure)).  
+2. **Ethical Technology Integration**: Deploys AI diagnostics, blockchain health records, and offline-first solutions with community oversight, bias auditing, and respect for data sovereignty (see [Technology and Data Infrastructure](/frameworks/planetary-health#technology-data-infrastructure)).  
+3. **Sustainable Financing**: Leverages the Global Health Solidarity Fund and community-controlled budgets to ensure equitable resource allocation and fair compensation for health workers (see [Financing Mechanisms](/frameworks/planetary-health#financing-mechanisms)).  
+4. **Cultural and Trauma-Informed Care**: Integrates traditional healing with modern medicine, prioritizing cultural humility and intergenerational healing to address systemic traumas (see [Community-Centered Healthcare](/frameworks/planetary-health#community-centered-healthcare)).  
+5. **Planetary Health Advocacy**: Promotes climate-adaptive care, ecosystem restoration, and One Health surveillance to prevent pandemics and support environmental resilience (see [Pandemic and Climate-Preparedness](/frameworks/planetary-health#pandemic-climate-preparedness)).  
 
 ## Core Components  
 
@@ -36,8 +36,8 @@ The framework provides a robust set of tools and mechanisms to operationalize it
 - **Health Worker Charter**: Outlines rights, responsibilities, and support for health workers as sacred stewards of community and planetary health (see [Health Worker Charter](/frameworks/tools/planetary-health/health-worker-charter-en.pdf)).  
 - **AI Literacy Certifications**: Equips stakeholders with skills to ethically use and oversee AI health tools, ensuring accessibility and cultural competency (see [AI Literacy Certifications](/frameworks/tools/planetary-health/ai-literacy-certifications-en.pdf)).  
 - **Community Engagement Playbook**: Guides communities in establishing health assemblies and advocating for local priorities (see [Community Engagement Playbook](/frameworks/tools/planetary-health/community-engagement-playbook-en.pdf)).  
-- **Global Knowledge Commons**: Facilitates open-source sharing of health innovations, traditional practices, and lessons learned (see [Global Knowledge Commons](/frameworks/docs/implementation/planetary-health#13-global-knowledge-commons)).  
-- **Recognition Programs**: Honors health workers and communities through Planetary Health Steward Awards and Global Health Day celebrations (see [Recognition and Celebration Programs](/frameworks/docs/implementation/planetary-health#15-cross-cutting-mechanisms)).  
+- **Global Knowledge Commons**: Facilitates open-source sharing of health innovations, traditional practices, and lessons learned (see [Global Knowledge Commons](/frameworks/planetary-health#global-knowledge-commons)).  
+- **Recognition Programs**: Honors health workers and communities through Planetary Health Steward Awards and Global Health Day celebrations (see [Recognition and Celebration Programs](/frameworks/planetary-health#cross-cutting-mechanisms)).  
 
 ## Stakeholder Roles  
 

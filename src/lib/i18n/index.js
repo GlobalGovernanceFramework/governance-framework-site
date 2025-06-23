@@ -15,275 +15,145 @@ const currentRoute = writable('/');
 // Create a readable store for locales
 const locales = readable(supportedLocales);
 
+// Data-driven mapping for page-specific translations
+const pageSpecificTranslationsMap = [
+  // Framework routes (most specific first)
+  { route: '/frameworks/treaty-for-our-only-home', dataKey: 'treatyFramework', fileName: 'frameworksTreatyForOurOnlyHome' },
+  { route: '/frameworks/consciousness-and-inner-development', dataKey: 'consciousnessFramework', fileName: 'frameworksConsciousnessAndInnerDevelopment' },
+  { route: '/frameworks/technology-governance', dataKey: 'techFramework', fileName: 'frameworksTechnologyGovernance' },
+  { route: '/frameworks/financial-systems', dataKey: 'financialFramework', fileName: 'frameworksFinancialSystems' },
+  { route: '/frameworks/educational-systems', dataKey: 'educationalFramework', fileName: 'frameworksEducationalSystems' },
+  { route: '/frameworks/food-systems-and-agriculture', dataKey: 'foodSystemsFramework', fileName: 'frameworksFoodSystemsAndAgriculture' },
+  { route: '/frameworks/economic-integration', dataKey: 'economicFramework', fileName: 'frameworksEconomicIntegration' },
+  { route: '/frameworks/justice-systems', dataKey: 'justiceFramework', fileName: 'frameworksJusticeSystems' },
+  { route: '/frameworks/disaster-risk-reduction', dataKey: 'disasterFramework', fileName: 'frameworksDisasterRiskReduction' },
+  { route: '/frameworks/planetary-health', dataKey: 'planetaryHealthFramework', fileName: 'frameworksPlanetaryHealth' },
+  { route: '/frameworks/indigenous-governance-and-traditional-knowledge', dataKey: 'indigenousFramework', fileName: 'frameworksIndigenousGovernanceAndTraditionalKnowledge' },
+  { route: '/frameworks/peace-and-conflict-resolution', dataKey: 'peaceFramework', fileName: 'frameworksPeaceAndConflictResolution' },
+  { route: '/frameworks/climate-and-energy-governance', dataKey: 'climateFramework', fileName: 'frameworksClimateAndEnergyGovernance' },
+  { route: '/frameworks/mental-health-governance', dataKey: 'mentalHealthFramework', fileName: 'frameworksMentalHealthGovernance' },
+  { route: '/frameworks/water-and-sanitation-governance', dataKey: 'waterSanitationFramework', fileName: 'frameworksWaterAndSanitationGovernance' },
+  { route: '/frameworks/environmental-stewardship', dataKey: 'environmentalStewardshipFramework', fileName: 'frameworksEnvironmentalStewardship' },
+  { route: '/frameworks/animal-welfare-governance', dataKey: 'animalWelfareFramework', fileName: 'frameworksAnimalWelfareGovernance' },
+  { route: '/frameworks/biodiversity-governance', dataKey: 'biodiversityGovernanceFramework', fileName: 'frameworksBiodiversityGovernance' },
+  { route: '/frameworks/digital-commons', dataKey: 'digitalCommonsFramework', fileName: 'frameworksDigitalCommons' },
+  { route: '/frameworks/global-ethics-and-rights-of-beings', dataKey: 'globalEthicsFramework', fileName: 'frameworksGlobalEthicsAndRightsOfBeings' },
+  { route: '/frameworks/global-citizenship-practice', dataKey: 'globalCitizenshipFramework', fileName: 'frameworksGlobalCitizenshipPractice' },
+  { route: '/frameworks/religious-and-spiritual-dialogue-governance', dataKey: 'religiousSpiritualFramework', fileName: 'frameworksReligiousAndSpiritualDialogueGovernance' },
+  { route: '/frameworks/aging-population-support-governance', dataKey: 'agingFramework', fileName: 'frameworksAgingPopulationSupportGovernance' },
+  { route: '/frameworks/global-citizenship', dataKey: 'globalCitizenship', fileName: 'globalCitizenship' },
+  { route: '/frameworks/ai-futures', dataKey: 'aiFutures', fileName: 'aiFutures' },
+  { route: '/frameworks/docs/implementation/treaty-for-our-only-home/getting-started', dataKey: 'startTreaty', fileName: 'startTreaty' },
+  
+  // Get-involved routes
+  { route: '/get-involved/website', dataKey: 'website', fileName: 'website' },
+  { route: '/get-involved/translations', dataKey: 'translations', fileName: 'translations' },
+  { route: '/get-involved/outreach', dataKey: 'outreach', fileName: 'outreach' },
+  { route: '/get-involved/frameworks', dataKey: 'frameworks', fileName: 'frameworks' },
+  { route: '/get-involved', dataKey: 'getInvolved', fileName: 'getInvolved' },
+  
+  // Other specific routes
+  { route: '/start-treaty', dataKey: 'startTreaty', fileName: 'startTreaty' },
+  { route: '/translations', dataKey: 'translations', fileName: 'translations' },
+  { route: '/about', dataKey: 'about', fileName: 'about' },
+  { route: '/contact', dataKey: 'contact', fileName: 'contact' },
+  { route: '/blog', dataKey: 'blog', fileName: 'blog' },
+  { route: '/privacy', dataKey: 'privacy', fileName: 'privacy' },
+  { route: '/terms', dataKey: 'terms', fileName: 'terms' },
+  { route: '/downloads', dataKey: 'downloads', fileName: 'downloads' },
+  { route: '/youth', dataKey: 'youth', fileName: 'youth' },
+  
+  // Home route (most general - must be last!)
+  { route: '/', dataKey: 'home', fileName: 'home' }
+];
+
+// Reusable translation loader function
+async function loadAndAssignTranslation(locale, fileName, dataKey, translationData) {
+  try {
+    const module = await import(`./${locale}/${fileName}.json`);
+    translationData[dataKey] = module.default;
+    console.log(`Loaded ${dataKey} translations for locale: ${locale}`);
+  } catch (e) {
+    console.error(`Error loading ${dataKey} translations for ${locale}:`, e);
+    // Fallback to English if the specified locale fails (and it's not English)
+    if (locale !== 'en') {
+      try {
+        const fallbackModule = await import(`./en/${fileName}.json`);
+        translationData[dataKey] = fallbackModule.default;
+        console.log(`Loaded ${dataKey} translations (English fallback)`);
+      } catch (fallbackError) {
+        console.error(`Error loading ${dataKey} English fallback:`, fallbackError);
+      }
+    }
+  }
+}
+
 // Load translations for a specific language and route
 async function loadTranslations(newLocale, route = '/') {
-  // Remove the base path from the route if it's present
-  if (route.startsWith(base)) {
-    route = route.slice(base.length);
-  }
+  // Normalize route path
+  if (route.startsWith(base)) route = route.slice(base.length);
+  if (!route) route = '/';
 
-  // If the route is empty after removing the base, set it to the root
-  if (!route) {
-    route = '/';
-  }
+  const translationData = {};
 
-  // Default translations (common phrases used across the site)
-  let translationData = {};
-  
   try {
-    // Store the current route
     currentRoute.set(route);
     console.log(`Loading translations for locale: ${newLocale}, route: ${route}`);
-    
-    // Load common translations (including newsletter)
-    try {
-      if (newLocale === 'en') {
-        translationData.common = (await import('./en/common.json')).default;
-      } else if (newLocale === 'sv') {
-        translationData.common = (await import('./sv/common.json')).default;
-      }
-      console.log('Loaded common translations:', translationData.common);
-    } catch (e) {
-      console.error('Error loading common translations:', e);
+
+    // 1. Load common translations
+    await loadAndAssignTranslation(newLocale, 'common', 'common', translationData);
+
+    // 2. Load framework nav translations if on a framework page
+    if (route.startsWith('/frameworks')) {
+      await loadAndAssignTranslation(newLocale, 'framework', 'framework', translationData);
     }
-    
-    // Load page-specific translations
-    if (route === '/' || route.startsWith('/?')) {
-      // Home page
-      try {
-        if (newLocale === 'en') {
-          translationData.home = (await import('./en/home.json')).default;
-        } else if (newLocale === 'sv') {
-          translationData.home = (await import('./sv/home.json')).default;
-        }
-      } catch (e) {
-        console.error('Error loading home translations:', e);
-      }
-    } else if (route.startsWith('/about')) {
-      // About page
-      try {
-        if (newLocale === 'en') {
-          translationData.about = (await import('./en/about.json')).default;
-        } else if (newLocale === 'sv') {
-          translationData.about = (await import('./sv/about.json')).default;
-        }
-      } catch (e) {
-        console.error('Error loading about translations:', e);
-      }
-    } else if (route.startsWith('/contact')) {
-      // Contact page
-      try {
-        if (newLocale === 'en') {
-          translationData.contact = (await import('./en/contact.json')).default;
-        } else if (newLocale === 'sv') {
-          translationData.contact = (await import('./sv/contact.json')).default;
-        }
-      } catch (e) {
-        console.error('Error loading contact translations:', e);
-      }
-    } else if (route.startsWith('/blog')) {
-      // Blog pages - load blog-specific translations
-      try {
-        if (newLocale === 'en') {
-          translationData.blog = (await import('./en/blog.json')).default;
-        } else if (newLocale === 'sv') {
-          translationData.blog = (await import('./sv/blog.json')).default;
-        }
-        console.log('Loaded blog translations:', translationData.blog);
-      } catch (e) {
-        console.error('Error loading blog translations:', e);
-      }
-    } else if (route.startsWith('/frameworks/docs/implementation/treaty-for-our-only-home/getting-started')) {
-      // Start Treaty landing page
-      try {
-        if (newLocale === 'en') {
-          translationData.startTreaty = (await import('./en/startTreaty.json')).default;
-        } else if (newLocale === 'sv') {
-          translationData.startTreaty = (await import('./sv/startTreaty.json')).default;
-        }
-        console.log('Loaded startTreaty translations:', translationData.startTreaty);
-      } catch (e) {
-        console.error('Error loading startTreaty translations:', e);
-      }
-    } else if (route.includes('/frameworks/ai-futures')) {
-      // AI-futures page
-      try {
-        if (newLocale === 'en') {
-          translationData.aiFutures = (await import('./en/aiFutures.json')).default;
-        } else if (newLocale === 'sv') {
-          translationData.aiFutures = (await import('./sv/aiFutures.json')).default;
-        }
-      } catch (e) {
-        console.error('Error loading aiFutures translations:', e);
-      }
-    } else if (route === '/get-involved') {
-      // Get involved main landing page
-      try {
-        if (newLocale === 'en') {
-          translationData.getInvolved = (await import('./en/getInvolved.json')).default;
-        } else if (newLocale === 'sv') {
-          translationData.getInvolved = (await import('./sv/getInvolved.json')).default;
-        }
-        console.log('Loaded getInvolved translations:', translationData.getInvolved);
-      } catch (e) {
-        console.error('Error loading getInvolved translations:', e);
-      }
-    } else if (route.startsWith('/get-involved/website')) {
-      // Website contribution page
-      try {
-        if (newLocale === 'en') {
-          translationData.website = (await import('./en/website.json')).default;
-        } else if (newLocale === 'sv') {
-          translationData.website = (await import('./sv/website.json')).default;
-        }
-        console.log('Loaded website translations:', translationData.website);
-      } catch (e) {
-        console.error('Error loading website translations:', e);
-      }
-    } else if (route.startsWith('/get-involved/translations')) {
-      // Website translations page
-      try {
-        if (newLocale === 'en') {
-          translationData.translations = (await import('./en/translations.json')).default;
-        } else if (newLocale === 'sv') {
-          translationData.translations = (await import('./sv/translations.json')).default;
-        }
-        console.log('Loaded translation hub translations:', translationData.translations);
-      } catch (e) {
-        console.error('Error loading translation hub translations:', e);
-      }
-    } else if (route.startsWith('/get-involved/outreach')) {
-      // Outreach contribution page
-      try {
-        if (newLocale === 'en') {
-          translationData.outreach = (await import('./en/outreach.json')).default;
-        } else if (newLocale === 'sv') {
-          translationData.outreach = (await import('./sv/outreach.json')).default;
-        }
-        console.log('Loaded outreach translations:', translationData.outreach);
-      } catch (e) {
-        console.error('Error loading outreach translations:', e);
-      }
-    } else if (route.startsWith('/get-involved/frameworks')) {
-      // Frameworks contribution page
-      try {
-        if (newLocale === 'en') {
-          translationData.frameworks = (await import('./en/frameworks.json')).default;
-        } else if (newLocale === 'sv') {
-          translationData.frameworks = (await import('./sv/frameworks.json')).default;
-        }
-        console.log('Loaded frameworks translations:', translationData.frameworks);
-      } catch (e) {
-        console.error('Error loading frameworks translations:', e);
-      }
-    } else if (route.startsWith('/translations')) {
-      // Translations contributions page
-      try {
-        if (newLocale === 'en') {
-          translationData.translations = (await import('./en/translations.json')).default;
-        } else if (newLocale === 'sv') {
-          translationData.translations = (await import('./sv/translations.json')).default;
-        }
-        console.log('Loaded translations translations:', translationData.translations);
-      } catch (e) {
-        console.error('Error loading translations translations:', e);
-      }
-    } else if (route.includes('/frameworks/global-citizenship')) {
-      // Global Citizenship page
-      try {
-        if (newLocale === 'en') {
-          translationData.globalCitizenship = (await import('./en/globalCitizenship.json')).default;
-        } else if (newLocale === 'sv') {
-          translationData.globalCitizenship = (await import('./sv/globalCitizenship.json')).default;
-        }
-        console.log('Loaded globalCitizenship translations:', translationData.globalCitizenship);
-      } catch (e) {
-        console.error('Error loading globalCitizenship translations:', e);
-      }
-      
-      // Also load framework translations for navigation
-      try {
-        if (newLocale === 'en') {
-          translationData.framework = (await import('./en/framework.json')).default;
-        } else if (newLocale === 'sv') {
-          translationData.framework = (await import('./sv/framework.json')).default;
-        }
-      } catch (e) {
-        console.error('Error loading framework translations:', e);
-      }
-    } else if (route.startsWith('/frameworks')) {
-      // Other framework pages
-      try {
-        if (newLocale === 'en') {
-          translationData.framework = (await import('./en/framework.json')).default;
-        } else if (newLocale === 'sv') {
-          translationData.framework = (await import('./sv/framework.json')).default;
-        }
-      } catch (e) {
-        console.error('Error loading framework translations:', e);
-      }
-    } else if (route.startsWith('/privacy')) {
-      // Privacy page
-      try {
-        if (newLocale === 'en') {
-          translationData.privacy = (await import('./en/privacy.json')).default;
-        } else if (newLocale === 'sv') {
-          translationData.privacy = (await import('./sv/privacy.json')).default;
-        }
-      } catch (e) {
-        console.error('Error loading privacy translations:', e);
-      }
-    } else if (route.startsWith('/terms')) {
-      // Terms page
-      try {
-        if (newLocale === 'en') {
-          translationData.terms = (await import('./en/terms.json')).default;
-        } else if (newLocale === 'sv') {
-          translationData.terms = (await import('./sv/terms.json')).default;
-        }
-      } catch (e) {
-        console.error('Error loading terms translations:', e);
-      }
-    } else if (route.startsWith('/downloads')) {
-      // Downloads page
-      try {
-        if (newLocale === 'en') {
-          translationData.downloads = (await import('./en/downloads.json')).default;
-        } else if (newLocale === 'sv') {
-          translationData.downloads = (await import('./sv/downloads.json')).default;
-        }
-      } catch (e) {
-        console.error('Error loading downloads translations:', e);
-      }
-    } else if (route.startsWith('/youth')) {
-      // Youth page
-      try {
-        if (newLocale === 'en') {
-          translationData.youth = (await import('./en/youth.json')).default;
-        } else if (newLocale === 'sv') {
-          translationData.youth = (await import('./sv/youth.json')).default;
-        }
-      } catch (e) {
-        console.error('Error loading youth translations:', e);
+
+    // 3. Load page-specific translations using the map
+    for (const mapping of pageSpecificTranslationsMap) {
+      if (route.includes(mapping.route)) {
+        await loadAndAssignTranslation(newLocale, mapping.fileName, mapping.dataKey, translationData);
+        // Break after the first match to mimic 'if/else if' behavior
+        break; 
       }
     }
 
-    
-    // Log the loaded translations for debugging
-    console.log('Loaded translations data:', translationData);
-    
-    // Update the locale and translations stores
+    console.log('Loaded translations data for route:', route, translationData);
+
+    // Update the stores
     locale.set(newLocale);
-    translations.set(translationData);
     
-    // Store the locale in localStorage if we're in the browser
+    // Preserve existing translations and merge with new ones
+    translations.update(existingTranslations => {
+      console.log('Existing translations before merge:', Object.keys(existingTranslations));
+      console.log('New translations to merge:', Object.keys(translationData));
+      
+      // Always preserve climateFramework translations if they exist and we're not explicitly updating them
+      const shouldPreserveClimateFramework = existingTranslations.climateFramework && 
+        !translationData.climateFramework && 
+        !route.includes('/frameworks/climate-and-energy-governance');
+      
+      if (shouldPreserveClimateFramework) {
+        console.log('Preserving existing climateFramework translations');
+        return { 
+          ...existingTranslations, 
+          ...translationData, 
+          climateFramework: existingTranslations.climateFramework 
+        };
+      }
+      
+      // Default merge
+      const merged = { ...existingTranslations, ...translationData };
+      console.log('Merged translations:', Object.keys(merged));
+      return merged;
+    });
+
     if (browser) {
       localStorage.setItem('locale', newLocale);
     }
-    
+
     return translationData;
   } catch (e) {
-    console.error('Error loading translations:', e);
+    console.error('General error in loadTranslations:', e);
     return {};
   }
 }

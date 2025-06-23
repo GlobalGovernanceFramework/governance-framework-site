@@ -1,10 +1,10 @@
 ---
-title: Case Studies - Global Governance Framework
+title: Case Studies - Global Governance Frameworks
 ---
 
 # Case Studies
 
-These case studies illustrate how the Global Governance Framework principles have been applied in various contexts around the world. Each example demonstrates different aspects of the framework in action, providing insights into implementation challenges and successes.
+These case studies illustrate how the Global Governance Frameworks principles have been applied in various contexts around the world. Each example demonstrates different aspects of the framework in action, providing insights into implementation challenges and successes.
 
 ## The Nordic Council: Regional Cooperation without Centralization
 
@@ -224,6 +224,6 @@ Across these diverse case studies, several patterns of successful framework impl
 4. **Feedback Loops**: Regular review and adaptation improves outcomes over time
 5. **Balance of Structure and Flexibility**: Clear frameworks combined with contextual adaptation
 
-These case studies demonstrate that the Global Governance Framework is not a theoretical construct but a practical approach that has been successfully implemented in various contexts around the world. While no single implementation embodies all framework principles perfectly, each case study shows how specific principles can be applied to address real-world governance challenges.
+These case studies demonstrate that the Global Governance Frameworks is not a theoretical construct but a practical approach that has been successfully implemented in various contexts around the world. While no single implementation embodies all framework principles perfectly, each case study shows how specific principles can be applied to address real-world governance challenges.
 
 For guidance on implementing these approaches in your own context, see the [Implementation Guidelines](/frameworks/docs/implementation) section.

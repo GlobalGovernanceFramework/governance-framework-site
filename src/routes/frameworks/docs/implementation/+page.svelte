@@ -15,6 +15,9 @@
     // After mounting, we can safely render the content
     contentReady = true;
   });
+  
+  // Make sure t is reactive and available
+  $: translationFunction = $t;
 </script>
 
 <div class="documentation-container">
@@ -23,7 +26,7 @@
   <div class="content">
     <!-- Only render the markdown component on the client -->
     {#if browser && contentReady && data.component}
-      <svelte:component this={data.component} />
+      <svelte:component this={data.component} t={translationFunction} />
     {:else if browser}
       <div class="loading">Loading content...</div>
     {:else}

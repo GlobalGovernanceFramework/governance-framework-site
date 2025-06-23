@@ -2,132 +2,100 @@
 <script>
   import { t } from '$lib/i18n';
   import { base } from '$app/paths';
+  import { allFrameworks, getFrameworkBySlug, tierMetadata } from '$lib/stores/frameworkNav.js';
   
   export let quizResults;
   
-  // Enhanced framework database with routing information
-  const frameworkDatabase = {
-    'treaty-foundation': {
-      name: 'globalCitizenship.frameworks.database.treatyFoundation.name',
-      description: 'globalCitizenship.frameworks.database.treatyFoundation.description',
-      tier: 0,
-      color: '#8B5A3C',
-      route: '/frameworks/docs/implementation/treaty-for-our-only-home',
-      importance: 'critical',
-      icon: '🏛️'
-    },
-    'climate-energy': {
-      name: 'globalCitizenship.frameworks.database.climateEnergy.name',
-      description: 'globalCitizenship.frameworks.database.climateEnergy.description',
-      tier: 1,
-      color: '#2D5F2D',
-      route: '/frameworks/docs/implementation/energy',
-      icon: '🌍'
-    },
-    'peace-conflict': {
-      name: 'globalCitizenship.frameworks.database.peaceConflict.name',
-      description: 'globalCitizenship.frameworks.database.peaceConflict.description',
-      tier: 1,
-      color: '#2B4B8C',
-      route: '/frameworks/docs/implementation/peace',
-      icon: '🕊️'
-    },
-    'technology-governance': {
-      name: 'globalCitizenship.frameworks.database.technologyGovernance.name',
-      description: 'globalCitizenship.frameworks.database.technologyGovernance.description',
-      tier: 2,
-      color: '#6B5CA5',
-      route: '/frameworks/docs/implementation/technology',
-      icon: '⚡'
-    },
-    'educational-systems': {
-      name: 'globalCitizenship.frameworks.database.educationalSystems.name',
-      description: 'globalCitizenship.frameworks.database.educationalSystems.description',
-      tier: 2,
-      color: '#B8860B',
-      route: '/frameworks/docs/implementation/education',
-      icon: '📚'
-    },
-    'digital-commons': {
-      name: 'globalCitizenship.frameworks.database.digitalCommons.name',
-      description: 'globalCitizenship.frameworks.database.digitalCommons.description',
-      tier: 3,
-      color: '#00CED1',
-      route: '/frameworks/docs/implementation/digital',
-      icon: '💻'
-    },
-    'cultural-heritage': {
-      name: 'globalCitizenship.frameworks.database.culturalHeritage.name',
-      description: 'globalCitizenship.frameworks.database.culturalHeritage.description',
-      tier: 3,
-      color: '#DEB887',
-      route: '/frameworks/docs/implementation/culture',
-      icon: '🏛️'
-    },
-    'space-governance': {
-      name: 'globalCitizenship.frameworks.database.spaceGovernance.name',
-      description: 'globalCitizenship.frameworks.database.spaceGovernance.description',
-      tier: 4,
-      color: '#2F4F4F',
-      route: '/frameworks/docs/implementation/space',
-      icon: '🚀'
-    },
-    'consciousness-development': {
-      name: 'globalCitizenship.frameworks.database.consciousnessDevelopment.name',
-      description: 'globalCitizenship.frameworks.database.consciousnessDevelopment.description',
-      tier: 4,
-      color: '#9932CC',
-      route: '/frameworks/docs/implementation/consciousness',
-      icon: '🧠'
-    },
-    // Add more frameworks as needed...
-    'environmental-stewardship': {
-      name: 'globalCitizenship.frameworks.database.environmentalStewardship.name',
-      description: 'globalCitizenship.frameworks.database.environmentalStewardship.description',
-      tier: 2,
-      color: '#32CD32',
-      route: '/frameworks/docs/implementation/environmental-stewardship',
-      icon: '🌱'
-    },
-    'urban-development': {
-      name: 'globalCitizenship.frameworks.database.urbanDevelopment.name',
-      description: 'globalCitizenship.frameworks.database.urbanDevelopment.description',
-      tier: 2,
-      color: '#708090',
-      route: '/frameworks/docs/implementation/urban',
-      icon: '🏙️'
-    },
-    'global-ethics': {
-      name: 'globalCitizenship.frameworks.database.globalEthics.name',
-      description: 'globalCitizenship.frameworks.database.globalEthics.description',
-      tier: 3,
-      color: '#8A2BE2',
-      route: '/frameworks/docs/implementation/ethics',
-      icon: '⚖️'
-    },
-    'spiral-dynamics': {
-      name: 'Spiral Dynamics',
-      description: 'Understanding how different value systems emerge and evolve helps navigate the complexity of global citizenship. This framework reveals why people approach the same challenges so differently.',
-      tier: 'developmental',
-      color: '#8B4513',
-      route: 'https://www.spiralize.org',
-      external: true,
-      icon: '🌀',
-      benefits: ['Cross-cultural understanding', 'Systems thinking', 'Conflict resolution'],
-      type: 'developmental'
-    },
+  // Enhanced framework database using frameworkNav.js data
+  const frameworkDatabase = allFrameworks.reduce((acc, framework) => {
+    // Convert slug to kebab-case key for compatibility
+    const key = framework.slug;
+    
+    // Get tier colors
+    const tierColors = {
+      0: '#8B5A3C',
+      1: '#2D5F2D', 
+      2: '#6B5CA5',
+      3: '#DEB887',
+      4: '#2F4F4F'
+    };
+    
+    // Get framework icons based on slug patterns
+    const getIcon = (slug) => {
+      if (slug.includes('treaty')) return '🏛️';
+      if (slug.includes('climate') || slug.includes('energy')) return '🌍';
+      if (slug.includes('peace')) return '🕊️';
+      if (slug.includes('technology')) return '⚡';
+      if (slug.includes('education')) return '📚';
+      if (slug.includes('digital')) return '💻';
+      if (slug.includes('culture')) return '🏛️';
+      if (slug.includes('space')) return '🚀';
+      if (slug.includes('consciousness')) return '🧠';
+      if (slug.includes('environment')) return '🌱';
+      if (slug.includes('urban')) return '🏙️';
+      if (slug.includes('ethics')) return '⚖️';
+      return '📋'; // Default icon
+    };
+    
+    acc[key] = {
+      name: framework.titleKey,
+      description: `globalCitizenship.frameworks.database.${framework.slug.replace(/-/g, '')}.description`,
+      tier: framework.tier,
+      color: tierColors[framework.tier] || '#6B7280',
+      route: framework.path,
+      importance: framework.tier === 0 ? 'critical' : 'normal',
+      icon: getIcon(framework.slug),
+      status: framework.status,
+      version: framework.version
+    };
+    
+    return acc;
+  }, {});
+  
+  // Add Spiral Dynamics as special case
+  frameworkDatabase['spiral-dynamics'] = {
+    name: 'Spiral Dynamics',
+    description: 'Understanding how different value systems emerge and evolve helps navigate the complexity of global citizenship. This framework reveals why people approach the same challenges so differently.',
+    tier: 'developmental',
+    color: '#8B4513',
+    route: 'https://www.spiralize.org',
+    external: true,
+    icon: '🌀',
+    benefits: ['Cross-cultural understanding', 'Systems thinking', 'Conflict resolution'],
+    type: 'developmental'
   };
   
   // Get framework details
   function getFrameworkDetails(frameworkId) {
-    return frameworkDatabase[frameworkId] || null;
+    // Try direct lookup first
+    if (frameworkDatabase[frameworkId]) {
+      return frameworkDatabase[frameworkId];
+    }
+    
+    // Try to find by converting camelCase to slug
+    const slug = frameworkId.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+    if (frameworkDatabase[slug]) {
+      return frameworkDatabase[slug];
+    }
+    
+    // Try to find by slug directly in frameworkNav
+    const framework = getFrameworkBySlug(frameworkId);
+    if (framework) {
+      return getFrameworkDetails(framework.slug);
+    }
+    
+    return null;
   }
   
   // Get recommended frameworks with details
   function getRecommendedFrameworks() {
     if (!quizResults?.recommendedFrameworks) return [];
     return quizResults.recommendedFrameworks
-      .map(id => getFrameworkDetails(id))
+      .map(framework => {
+        // Handle both framework objects and IDs
+        const id = typeof framework === 'object' ? framework.slug || framework.id : framework;
+        return getFrameworkDetails(id);
+      })
       .filter(Boolean);
   }
   
@@ -135,21 +103,38 @@
   function getRelatedFrameworks() {
     if (!quizResults?.relatedFrameworks) return [];
     return quizResults.relatedFrameworks
-      .map(id => getFrameworkDetails(id))
+      .map(framework => {
+        const id = typeof framework === 'object' ? framework.slug || framework.id : framework;
+        return getFrameworkDetails(id);
+      })
       .filter(Boolean)
       .slice(0, 6);
   }
   
-  // Get tier label and styling
+  // Get tier label and styling using frameworkNav.js tierMetadata
   function getTierInfo(tier) {
-    const tierConfig = {
-      0: { label: 'globalCitizenship.tiers.tier0', class: 'tier-0', priority: 'critical' },
-      1: { label: 'globalCitizenship.tiers.tier1', class: 'tier-1', priority: 'urgent' },
-      2: { label: 'globalCitizenship.tiers.tier2', class: 'tier-2', priority: 'important' },
-      3: { label: 'globalCitizenship.tiers.tier3', class: 'tier-3', priority: 'strategic' },
-      4: { label: 'globalCitizenship.tiers.tier4', class: 'tier-4', priority: 'visionary' }
+    if (typeof tier === 'number' && tierMetadata[tier]) {
+      const tierConfig = {
+        0: { class: 'tier-0', priority: 'critical' },
+        1: { class: 'tier-1', priority: 'urgent' },
+        2: { class: 'tier-2', priority: 'important' },
+        3: { class: 'tier-3', priority: 'strategic' },
+        4: { class: 'tier-4', priority: 'visionary' }
+      };
+      
+      return {
+        label: tierMetadata[tier].titleKey,
+        class: tierConfig[tier]?.class || 'tier-1',
+        priority: tierConfig[tier]?.priority || 'normal'
+      };
+    }
+    
+    // Handle special tiers like 'developmental'
+    return {
+      label: 'globalCitizenship.tiers.developmental',
+      class: 'tier-developmental',
+      priority: 'strategic'
     };
-    return tierConfig[tier] || tierConfig[1];
   }
 
   function shouldShowSpiralDynamics() {
@@ -608,62 +593,6 @@
   .summary-item strong {
     color: #1F2937;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .recommendations-section {
-      padding: 2rem 0;
-    }
-    
-    .frameworks-grid.primary {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-    
-    .frameworks-grid.related {
-      grid-template-columns: 1fr;
-      gap: 1rem;
-    }
-    
-    .section-header h2 {
-      font-size: 1.875rem;
-    }
-    
-    .section-header h3 {
-      font-size: 1.5rem;
-    }
-    
-    .related-recommendations {
-      padding: 1.5rem;
-    }
-    
-    .personalization-summary {
-      padding: 1.5rem;
-    }
-    
-    .tier-badge {
-      flex-direction: column;
-      gap: 0.25rem;
-      padding: 0.5rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .card-header {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1rem;
-    }
-    
-    .card-header.compact {
-      flex-direction: row;
-      align-items: center;
-    }
-    
-    .summary-content {
-      gap: 1.5rem;
-    }
-  }
 
   /* Developmental Framework Section */
   .developmental-framework-section {
@@ -846,9 +775,45 @@
     color: #9CA3AF;
     font-style: italic;
   }
-
-  /* Responsive adjustments */
+  
+  /* Responsive Design */
   @media (max-width: 768px) {
+    .recommendations-section {
+      padding: 2rem 0;
+    }
+    
+    .frameworks-grid.primary {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    
+    .frameworks-grid.related {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    
+    .section-header h2 {
+      font-size: 1.875rem;
+    }
+    
+    .section-header h3 {
+      font-size: 1.5rem;
+    }
+    
+    .related-recommendations {
+      padding: 1.5rem;
+    }
+    
+    .personalization-summary {
+      padding: 1.5rem;
+    }
+    
+    .tier-badge {
+      flex-direction: column;
+      gap: 0.25rem;
+      padding: 0.5rem;
+    }
+
     .developmental-framework-section {
       margin: 2rem 0;
       padding: 1.5rem;
@@ -884,8 +849,23 @@
       height: 20px;
     }
   }
-
+  
   @media (max-width: 480px) {
+    .card-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    
+    .card-header.compact {
+      flex-direction: row;
+      align-items: center;
+    }
+    
+    .summary-content {
+      gap: 1.5rem;
+    }
+
     .developmental-header h3 {
       font-size: 1.5rem;
     }

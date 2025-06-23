@@ -329,4 +329,4 @@ By focusing on practical first steps, this playbook helps overcome inertia and c
 
 The First 100 Days Playbook provides a structured approach to beginning Environmental Stewardship Framework implementation. By focusing on concrete, stakeholder-specific actions, it creates multiple entry points for engagement while building toward comprehensive implementation. Through early successes and collaborative foundations, these first steps catalyze the longer transformation journey toward a regenerative world by 2050.
 
-For additional resources, implementation support, and funding opportunities, visit [globalgovernanceframework.org/frameworks/environmental-stewardship](https://globalgovernanceframework.org/frameworks/environmental-stewardship).
+For additional resources, implementation support, and funding opportunities, visit [globalgovernanceframeworks.org/frameworks/environmental-stewardship](https://globalgovernanceframeworks.org/frameworks/environmental-stewardship).

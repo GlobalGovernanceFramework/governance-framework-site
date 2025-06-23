@@ -122,25 +122,31 @@
     },
     inclusion: {
       en: {
-        title: 'Disability Rights & Inclusion Framework',
-        defaultDescription: "We're creating a framework ensuring full participation, accessibility, and rights for people with disabilities.",
+        title: 'Radical Disability Freedom Framework',
+        defaultDescription: "Nothing About Us Without Us – A revolutionary framework reimagining governance through disability justice, centering disabled leadership to dismantle ableism and build universal design, collective care, and liberated sovereignty.",
         defaultFeatures: [
-          'Universal design and radical accessibility standards',
-          'Care cooperatives and disability-led support systems',
-          'Crip technology labs and assistive innovation',
-          'Abolition of ableist institutional systems',
-          'Global disability alliance with enforcement powers'
+          'Global Disability Alliance with suspensive veto power over inaccessible policies',
+          'Access Ombuds Network enforcing universal design with legal authority',
+          'Crip Technology Labs for disabled-led innovation in AI, biotech, and assistive tech',
+          'Care Cooperatives replacing exploitative systems with community-led mutual aid',
+          'Ableism Tax funding reparations and accessibility infrastructure',
+          'Accessibility Courts with 30-day resolutions and livestreamed proceedings',
+          'Zero preventable disability deaths and 100% accessible spaces by 2040',
+          'Rights of Nature integration addressing climate-induced disabilities'
         ]
       },
       sv: {
-        title: 'Funktionsrätter & inkludering ramverk',
-        defaultDescription: "Vi skapar ett ramverk som säkerställer full delaktighet, tillgänglighet och rättigheter för personer med funktionsnedsättningar.",
+        title: 'Radikalt funktionsrättighetsfrihet ramverk',
+        defaultDescription: "Inget om oss utan oss – Ett revolutionerande ramverk som omtänker styrning genom funktionsrättvisa, centrerar funktionshindersledarskap för att avskaffa ableism och bygga universell design, kollektiv omsorg och befriad suveränitet.",
         defaultFeatures: [
-          'Universell design och radikala tillgänglighetsstandarder',
-          'Omsorgskooperativ och funktionshindersledda stödsystem',
-          'Funktionshindersteknik-labb och hjälpteknikinnovation',
-          'Avskaffande av ableistiska institutionella system',
-          'Global funktionshinderallians med verkställande befogenheter'
+          'Global funktionshinderallians med suspensiv vetorätt över otillgängliga policys',
+          'Tillgänglighetsombudsnätverk som genomdriver universell design med juridisk auktoritet',
+          'Crip-tekniklabb för funktionshinderslett innovation inom AI, biotek och hjälpteknik',
+          'Omsorgskooperativ som ersätter exploaterande system med samhällsledd ömsesidig hjälp',
+          'Ableism-skatt som finansierar reparationer och tillgänglighetsinfrastruktur',
+          'Tillgänglighetstribunaler med 30-dagars lösningar och livestreamade förhandlingar',
+          'Noll förebyggbara funktionshinderdödsfall och 100% tillgängliga utrymmen till 2040',
+          'Naturens rättigheter integration som adresserar klimatorsakade funktionshinder'
         ]
       }
     },
@@ -263,6 +269,70 @@
           'Visdomsbaserad policyutveckling och utvärdering'
         ]
       }
+    },
+    rural: {
+      en: {
+        title: 'Global Rural Development Governance Framework',
+        defaultDescription: "Empowering rural communities worldwide through equitable, sustainable, and participatory development rooted in dignity, self-determination, cultural integrity, ecological kinship, and justice.",
+        defaultFeatures: [
+          'Global Rural Development Council with Indigenous councils and youth leadership',
+          'Global Fund for Rural Development targeting $50 billion over 10 years',
+          'Rural Observatory with AI-assisted tools and satellite monitoring',
+          'Global Rural Academy for capacity building in local languages',
+          'Universal Basic Infrastructure with climate-resilient design',
+          'Community-Led Conservation with payments for ecosystem services',
+          'Gender-transformative approaches mandating 50% women in leadership',
+          'Digital inclusion with blockchain for land rights and cybersecurity protection'
+        ]
+      },
+      sv: {
+        title: 'Global landsbygdsutvecklings-styrning ramverk',
+        defaultDescription: "Stärka landsbygdsgemenskaper världen över genom rättvis, hållbar och deltagande utveckling grundad i värdighet, självbestämmande, kulturell integritet, ekologisk samhörighet och rättvisa.",
+        defaultFeatures: [
+          'Global landsbygdsutvecklingsråd med ursprungsbefolkningsråd och ungdomsledarskap',
+          'Global fond för landsbygdsutveckling med mål på 50 miljarder dollar över 10 år',
+          'Landsbygdsobservatorium med AI-assisterade verktyg och satellitövervakning',
+          'Global landsbygdsakademi för kapacitetsbyggande på lokala språk',
+          'Universal grundinfrastruktur med klimatmotståndskraftig design',
+          'Gemenskapslett naturvård med betalningar för ekosystemtjänster',
+          'Genusstransformativa tillvägagångssätt som kräver 50% kvinnor i ledarskap',
+          'Digital inkludering med blockchain för markrättigheter och cybersäkerhetsskydd'
+        ]
+      }
+    },
+    existential: {
+      en: {
+        title: 'Global Existential Risk Governance Framework',
+        defaultDescription: "The IPCC for All Existential Risks - a comprehensive governance framework for preventing, mitigating, and building resilience against global catastrophic threats to humanity's survival, from AI misalignment to climate collapse.",
+        defaultFeatures: [
+          'Existential Risk Observatory (ERO) with AI-driven risk assessment and public dashboard',
+          'Existential Security Council (UN-ESC) with veto power for global catastrophic risk resolutions',
+          'Tiered risk classification system from high-priority actionable risks to watchlist monitoring',
+          'AI Safety Accord with moratorium on unaligned AGI until 2040 and alignment enforcement',
+          'Pandemic Radar using federated learning for privacy-preserving genomic surveillance',
+          'Space Governance Body coordinating asteroid deflection and extraterrestrial risk protocols',
+          'World Risk Assembly with citizen juries and Global South representation',
+          'Existential Civics education for 100M people by 2030 with epistemic security training',
+          'Mobile GERG Risk App providing real-time risk exposure and resilience data',
+          'Global Response Teams with Interpol-like jurisdiction and oversight tribunal protection'
+        ]
+      },
+      sv: {
+        title: 'Global existentiell risk-styrning ramverk',
+        defaultDescription: "IPCC för alla existentiella risker - ett omfattande styrningsramverk för att förebygga, mildra och bygga motståndskraft mot globala katastrofala hot mot mänsklighetens överlevnad, från AI-missanpassning till klimatkollaps.",
+        defaultFeatures: [
+          'Existentiell riskobservatorium (ERO) med AI-driven riskbedömning och offentlig dashboard',
+          'Existentiell säkerhetsråd (UN-ESC) med vetorätt för globala katastrofala riskresolutioner',
+          'Nivåindelat riskklassificeringssystem från högprioriterade åtgärdbara risker till bevakningslista',
+          'AI-säkerhetsavtal med moratorium på ej-anpassad AGI till 2040 och anpassningsövervakning',
+          'Pandemi-radar med federerad inlärning för integritetsskyddande genomisk övervakning',
+          'Rymdstyrningsorgan som koordinerar asteroidavböjning och utomjordiska riskprotokoll',
+          'Världsriskförsamling med medborgarjurys och Global Syd-representation',
+          'Existentiell medborgarundervisning för 100M människor till 2030 med epistemisk säkerhetsträning',
+          'Mobil GERG Risk-app som ger realtids-riskexponering och motståndskraftsdata',
+          'Globala insatsteam med Interpol-liknande jurisdiktion och övervakningsdomstolsskydd'
+        ]
+      }
     }
   };
 
@@ -345,7 +415,7 @@
               {:else if frameworkName === 'labor'}
                 {index === 0 ? '🤖' : index === 1 ? '✊' : index === 2 ? '📚' : index === 3 ? '💼' : '💰'}
               {:else if frameworkName === 'inclusion'}
-                {index === 0 ? '♿' : index === 1 ? '🎓' : index === 2 ? '🏠' : index === 3 ? '🔧' : '🤲'}
+                {index === 0 ? '🏛️' : index === 1 ? '⚖️' : index === 2 ? '🔬' : index === 3 ? '🤝' : index === 4 ? '💰' : index === 5 ? '🏛️' : index === 6 ? '🎯' : '🌍'}
               {:else if frameworkName === 'gender'}
                 {index === 0 ? '⚖️' : index === 1 ? '🏳️‍🌈' : index === 2 ? '💪' : index === 3 ? '🏥' : '📚'}
               {:else if frameworkName === 'culture'}
@@ -356,6 +426,10 @@
                 {index === 0 ? '🚀' : index === 1 ? '🌍' : index === 2 ? '⚖️' : index === 3 ? '🛸' : '🔬'}
               {:else if frameworkName === 'wisdom'}
                 {index === 0 ? '🧠' : index === 1 ? '⚖️' : index === 2 ? '🔮' : index === 3 ? '📚' : '🧘'}
+              {:else if frameworkName === 'rural'}
+                {index === 0 ? '🏛️' : index === 1 ? '💰' : index === 2 ? '📡' : index === 3 ? '🎓' : index === 4 ? '🏗️' : index === 5 ? '🌱' : index === 6 ? '👩‍💼' : '🔐'}
+              {:else if frameworkName === 'existential'}
+                {index === 0 ? '📊' : index === 1 ? '🏛️' : index === 2 ? '📋' : index === 3 ? '🤖' : index === 4 ? '🦠' : index === 5 ? '🚀' : index === 6 ? '🗳️' : index === 7 ? '📚' : index === 8 ? '📱' : '⚡'}
               {:else}
                 🔹
               {/if}

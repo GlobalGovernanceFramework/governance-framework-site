@@ -5,6 +5,7 @@
   import { base } from '$app/paths';
   import { onMount } from 'svelte';
   import { browser } from '$app/environment';
+  import { goto } from '$app/navigation';
   
   // Handle language selection
   function handleLocaleChange(e) {
@@ -15,13 +16,51 @@
   // Mobile menu state
   let isMenuOpen = false;
   let isFrameworksDropdownOpen = false;
+  let isMetaGovernanceDropdownOpen = false;
   let isGetInvolvedDropdownOpen = false;
+
+  function handleMetaGovernanceNavigation(event, section) {
+    event.preventDefault();
+    event.stopPropagation();
+    
+    if (browser) {
+      console.log('Header navigation triggered for section:', section); // Debug log
+      console.log('Current pathname:', $page.url.pathname); // Debug log
+      
+      // Close dropdown
+      isMetaGovernanceDropdownOpen = false;
+      
+      // Check if we're already on the meta-governance page
+      if ($page.url.pathname === base + '/frameworks/meta-governance') {
+        console.log('Already on page, updating hash'); // Debug log
+        // We're already on the page, just update hash
+        window.location.hash = section;
+      } else {
+        console.log('Navigating to page with hash'); // Debug log
+        // Navigate to the page with hash using SvelteKit's goto
+        goto(`${base}/frameworks/meta-governance#${section}`).then(() => {
+          console.log('Navigation completed'); // Debug log
+          // Force a hash change event after navigation
+          setTimeout(() => {
+            if (window.location.hash !== `#${section}`) {
+              window.location.hash = section;
+            }
+          }, 100);
+        });
+      }
+    }
+  }
   
   const toggleMenu = () => (isMenuOpen = !isMenuOpen);
 
   const toggleFrameworksDropdown = (e) => {
     e.stopPropagation();
     isFrameworksDropdownOpen = !isFrameworksDropdownOpen;
+  };
+
+  const toggleMetaGovernanceDropdown = (e) => {
+    e.stopPropagation();
+    isMetaGovernanceDropdownOpen = !isMetaGovernanceDropdownOpen;
   };
 
   const toggleGetInvolvedDropdown = (e) => {
@@ -32,6 +71,7 @@
   const closeDropdowns = () => {
     if (isFrameworksDropdownOpen) isFrameworksDropdownOpen = false;
     if (isGetInvolvedDropdownOpen) isGetInvolvedDropdownOpen = false;
+    if (isMetaGovernanceDropdownOpen) isMetaGovernanceDropdownOpen = false; // ADD THIS LINE
   };
   
   let isMobile = false;
@@ -76,7 +116,7 @@
   .header-content {
     display: flex;
     flex-direction: column;
-    padding: 1rem 0;
+    padding: 0.75rem 0;
   }
   
   @media (min-width: 768px) {
@@ -107,13 +147,13 @@
   }
   
   .logo-img {
-    height: 40px;
-    width: 40px;
-    margin-right: 0.75rem;
+    height: 35px;
+    width: 35px;
+    margin-right: 0.5rem;
   }
   
   .site-title {
-    font-size: 1.25rem;
+    font-size: 1.125rem !important;
     font-weight: 600;
     color: #ffffff;
   }
@@ -163,7 +203,8 @@
   @media (min-width: 768px) {
     .nav-list {
       flex-direction: row;
-      margin-right: 2rem;
+      margin-right: 1.5rem;
+      align-items: center;
     }
   }
   
@@ -174,7 +215,8 @@
   @media (min-width: 768px) {
     .nav-item {
       margin-bottom: 0;
-      margin-right: 1.5rem;
+      margin-right: 1.25rem !important;
+      /* REMOVED: display: flex and align-items that were breaking dropdowns */
     }
   }
 
@@ -188,6 +230,9 @@
     padding-bottom: 0.25rem;
     border-bottom: 2px solid transparent;
     transition: all 0.2s;
+    font-size: 0.9rem !important;
+    line-height: 1.2;
+    /* REMOVED: display: inline-flex and align-items that were breaking dropdowns */
   }
   
   .nav-link:hover {
@@ -202,23 +247,27 @@
   }
   
   .language-select {
-    padding: 0.375rem 0.75rem;
+    padding: 0.3rem 0.6rem !important;
     border: 1px solid #2D5F2D;
     border-radius: 0.375rem;
     background-color: #ffffff;
     color: #2B4B8C;
     cursor: pointer;
+    font-size: 0.8rem !important;
   }
 
   .dropdown {
     position: relative;
   }
 
+  /* FIXED: Removed flex properties that were breaking dropdown behavior */
   .dropdown-icon {
     display: inline-block;
     margin-left: 0.25rem;
     vertical-align: middle;
     transition: transform 0.2s;
+    width: 14px !important;
+    height: 14px !important;
   }
 
   .dropdown:hover .dropdown-icon {
@@ -226,11 +275,11 @@
   }
 
   .dropdown-menu {
-    display: none;
+    display: none; /* CRITICAL: Ensure dropdowns start hidden */
     position: absolute;
     top: 100%;
     left: 0;
-    min-width: 200px;
+    min-width: 180px;
     background-color: #ffffff;
     border: 1px solid #2D5F2D;
     border-radius: 0.375rem;
@@ -238,10 +287,11 @@
     z-index: 20;
     margin-top: 0.25rem;
     padding-top: 0.25rem;
+    flex-direction: column; /* FIXED: Ensure vertical layout */
   }
 
   .dropdown:hover .dropdown-menu {
-    display: block;
+    display: block; /* CRITICAL: Show on hover */
   }
 
   .dropdown::after {
@@ -256,11 +306,13 @@
 
   .dropdown-menu a {
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 0.45rem 0.8rem !important;
     color: #2B4B8C;
     text-decoration: none;
     border-left: 3px solid transparent;
     transition: all 0.2s;
+    font-size: 0.85rem !important;
+    line-height: 1.3;
   }
 
   .dropdown-menu a:hover {
@@ -287,7 +339,7 @@
   
   @media (min-width: 768px) {
     .language-select {
-      margin-left: 1rem;
+      margin-left: 0.75rem !important;
     }
 
     .md\:hidden {
@@ -308,11 +360,11 @@
       margin-top: 0.5rem;
       margin-bottom: 0.5rem;
       margin-left: 1rem;
-      display: none;
+      display: none; /* CRITICAL: Ensure mobile dropdowns start hidden */
     }
     
     .dropdown.open .dropdown-menu {
-      display: block;
+      display: block; /* CRITICAL: Show when mobile dropdown is opened */
     }
     
     .dropdown .dropdown-toggle {
@@ -328,6 +380,74 @@
     color: inherit;
     cursor: pointer;
     padding: 0;
+  }
+
+  /* BALANCED RESPONSIVE SIZING */
+  @media (max-width: 1300px) and (min-width: 768px) {
+    .nav-item {
+      margin-right: 1.1rem !important;
+    }
+  }
+
+  @media (max-width: 1200px) and (min-width: 768px) {
+    .nav-item {
+      margin-right: 1rem !important;
+    }
+    
+    .nav-link {
+      font-size: 0.85rem !important;
+    }
+    
+    .language-select {
+      font-size: 0.75rem !important;
+    }
+  }
+
+  @media (max-width: 1100px) and (min-width: 768px) {
+    .nav-item {
+      margin-right: 0.9rem !important;
+    }
+    
+    .nav-link {
+      font-size: 0.8rem !important;
+    }
+    
+    .language-select {
+      font-size: 0.7rem !important;
+      padding: 0.25rem 0.5rem !important;
+    }
+    
+    .dropdown-menu a {
+      font-size: 0.8rem !important;
+      padding: 0.4rem 0.7rem !important;
+    }
+  }
+
+  .dropdown-item-btn {
+    display: block;
+    width: 100%;
+    padding: 0.45rem 0.8rem !important;
+    color: #2B4B8C;
+    text-decoration: none;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+    transition: all 0.2s;
+    font-size: 0.85rem !important;
+    line-height: 1.3;
+  }
+
+  .dropdown-item-btn:hover {
+    background-color: #f7f1e3;
+    color: #DAA520;
+    border-left-color: #DAA520;
+  }
+
+  .dropdown-item-btn:focus {
+    outline: 2px solid #DAA520;
+    outline-offset: -2px;
   }
 </style>
 
@@ -372,10 +492,113 @@
               {browser ? ($t('common.header.home') || 'Home') : 'Home'}
             </a>
           </li>
-          
+
+          <li class="nav-item dropdown" class:open={isMetaGovernanceDropdownOpen}>
+            <div class="dropdown-header">
+              <a 
+                href="{base}/frameworks/meta-governance"
+                class={`nav-link nav-link-highlight ${browser && ($page.url.pathname === base + '/frameworks/meta-governance' || $page.url.pathname.startsWith(base + '/frameworks/meta-governance/')) ? 'active' : ''}`}
+                data-sveltekit-preload-data="hover"
+              >
+                {browser ? ($t('common.header.metaGovernance') || 'Meta-Governance') : 'Meta-Governance'}
+                <svg xmlns="http://www.w3.org/2000/svg" class="dropdown-icon hidden md:inline-block" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </a>
+              <button 
+                type="button" 
+                class="dropdown-toggle md:hidden" 
+                on:click|stopPropagation={toggleMetaGovernanceDropdown}
+                on:keydown={(e) => e.key === 'Enter' && toggleMetaGovernanceDropdown(e)}
+                aria-label={isMetaGovernanceDropdownOpen ? 'Close meta-governance menu' : 'Open meta-governance menu'}
+                role="button"
+                tabindex="0"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d={isMetaGovernanceDropdownOpen ? "M5 15l7-7 7 7" : "M19 9l-7 7-7-7"} />
+                </svg>
+              </button>
+            </div>
+
+            <div class="dropdown-menu" on:click|stopPropagation={() => {}} role="menu">
+              <a 
+                href="{base}/frameworks/meta-governance#index" 
+                on:click={(e) => handleMetaGovernanceNavigation(e, 'index')}
+                data-sveltekit-preload-data="hover" 
+                role="menuitem"
+              >
+                {browser ? ($t('common.header.metaGovernanceOverview') || 'Overview') : 'Overview'}
+              </a>
+              <a 
+                href="{base}/frameworks/meta-governance#principles" 
+                on:click={(e) => handleMetaGovernanceNavigation(e, 'principles')}
+                data-sveltekit-preload-data="hover" 
+                role="menuitem"
+              >
+                {browser ? ($t('common.header.metaGovernancePrinciples') || 'Core Principles') : 'Core Principles'}
+              </a>
+              <a 
+                href="{base}/frameworks/meta-governance#structural" 
+                on:click={(e) => handleMetaGovernanceNavigation(e, 'structural')}
+                data-sveltekit-preload-data="hover" 
+                role="menuitem"
+              >
+                {browser ? ($t('common.header.metaGovernanceStructural') || 'Structural Components') : 'Structural Components'}
+              </a>
+              <a 
+                href="{base}/frameworks/meta-governance#implementation" 
+                on:click={(e) => handleMetaGovernanceNavigation(e, 'implementation')}
+                data-sveltekit-preload-data="hover" 
+                role="menuitem"
+              >
+                {browser ? ($t('common.header.metaGovernanceImplementation') || 'Implementation') : 'Implementation'}
+              </a>
+              <a 
+                href="{base}/frameworks/meta-governance#evaluation" 
+                on:click={(e) => handleMetaGovernanceNavigation(e, 'evaluation')}
+                data-sveltekit-preload-data="hover" 
+                role="menuitem"
+              >
+                {browser ? ($t('common.header.metaGovernanceEvaluation') || 'Evaluation') : 'Evaluation'}
+              </a>
+              <a 
+                href="{base}/frameworks/meta-governance#case-models" 
+                on:click={(e) => handleMetaGovernanceNavigation(e, 'case-models')}
+                data-sveltekit-preload-data="hover" 
+                role="menuitem"
+              >
+                {browser ? ($t('common.header.metaGovernanceCaseModels') || 'Case Models') : 'Case Models'}
+              </a>
+              <a 
+                href="{base}/frameworks/meta-governance#future" 
+                on:click={(e) => handleMetaGovernanceNavigation(e, 'future')}
+                data-sveltekit-preload-data="hover" 
+                role="menuitem"
+              >
+                {browser ? ($t('common.header.metaGovernanceFuture') || 'Future Potential') : 'Future Potential'}
+              </a>
+              <a 
+                href="{base}/frameworks/meta-governance#manifesto" 
+                on:click={(e) => handleMetaGovernanceNavigation(e, 'manifesto')}
+                data-sveltekit-preload-data="hover" 
+                role="menuitem"
+              >
+                {browser ? ($t('common.header.metaGovernanceWhy') || 'Why Join?') : 'Why Join?'}
+              </a>
+              <a 
+                href="{base}/frameworks/meta-governance#quick-start" 
+                on:click={(e) => handleMetaGovernanceNavigation(e, 'quick-start')}
+                data-sveltekit-preload-data="hover" 
+                role="menuitem"
+              >
+                {browser ? ($t('common.header.metaGovernanceQuickStart') || 'Quick Start') : 'Quick Start'}
+              </a>
+            </div>
+          </li>
+
           <!-- Frameworks Dropdown (now includes Global Citizenship) -->
           <li class="nav-item dropdown" class:open={isFrameworksDropdownOpen}>
-            <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="dropdown-header">
               <a 
                 href="{base}/frameworks"
                 class={`nav-link ${browser && $page.url.pathname.startsWith(base + '/frameworks') ? 'active' : ''}`}
@@ -451,19 +674,9 @@
             </div>
           </li>
 
-          <li class="nav-item">
-            <a 
-              href="{base}/blog"
-              class={`nav-link ${isActive('/blog') ? 'active' : ''}`}
-              data-sveltekit-preload-data="hover"
-            >
-              {browser ? ($t('common.header.blog') || 'Blog') : 'Blog'}
-            </a>
-          </li>
-
           <!-- New Get Involved Dropdown -->
           <li class="nav-item dropdown" class:open={isGetInvolvedDropdownOpen}>
-            <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="dropdown-header">
               <a 
                 href="{base}/get-involved"
                 class={`nav-link ${browser && $page.url.pathname.startsWith(base + '/get-involved') ? 'active' : ''}`}
@@ -507,6 +720,16 @@
 
           <li class="nav-item">
             <a 
+              href="{base}/blog"
+              class={`nav-link ${isActive('/blog') ? 'active' : ''}`}
+              data-sveltekit-preload-data="hover"
+            >
+              {browser ? ($t('common.header.blog') || 'Blog') : 'Blog'}
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a 
               href="{base}/about"
               class={`nav-link ${isActive('/about') ? 'active' : ''}`}
               data-sveltekit-preload-data="hover"
@@ -531,9 +754,10 @@
             value={browser ? $locale : 'en'} 
             on:change={handleLocaleChange}
             class="language-select"
+            title={browser ? ($t('common.language.tooltip') || 'Change language') : 'Change language'}
           >
             {#each (browser ? $locales : ['en', 'sv']) as loc}
-              <option value={loc}>{browser ? getLanguageName(loc) : (loc === 'en' ? 'English' : 'Svenska')}</option>
+              <option value={loc}>{loc.toUpperCase()}</option>
             {/each}
           </select>
         </div>

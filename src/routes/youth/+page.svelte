@@ -1,4 +1,4 @@
-<!-- src/routes/youth/+page.svelte -->
+<!-- src/routes/youth-and-intergenerational-governance/+page.svelte -->
 <script>
   import { t, locale } from '$lib/i18n';
   import { base } from '$app/paths';
@@ -13,11 +13,11 @@
   });
 
   // Reactive variables for localized links
-  $: comicLink = `${base}/frameworks/tools/youth/youth-governance-comic-${$locale}.pdf`;
-  $: starterKitLink = `${base}/frameworks/tools/youth/youth-leadership-starter-kit-${$locale}.pdf`;
-  $: circleGuideLink = `${base}/frameworks/tools/youth/youth-dialogue-circle-guide-${$locale}.pdf`;
-  $: mindfulnessLink = `${base}/frameworks/tools/youth/youth-mindfulness-guide-${$locale}.pdf`;
-  $: actionGuideLink = `${base}/frameworks/tools/youth/youth-community-action-guide-${$locale}.pdf`;
+  $: comicLink = `${base}/frameworks/tools/youth-and-intergenerational-governance/youth-governance-comic-${$locale}.pdf`;
+  $: starterKitLink = `${base}/frameworks/tools/youth-and-intergenerational-governance/youth-leadership-starter-kit-${$locale}.pdf`;
+  $: circleGuideLink = `${base}/frameworks/tools/youth-and-intergenerational-governance/youth-dialogue-circle-guide-${$locale}.pdf`;
+  $: mindfulnessLink = `${base}/frameworks/tools/youth-and-intergenerational-governance/youth-mindfulness-guide-${$locale}.pdf`;
+  $: actionGuideLink = `${base}/frameworks/tools/youth-and-intergenerational-governance/youth-community-action-guide-${$locale}.pdf`;
 
   // Youth resources with reactive links
   $: youthResources = [
@@ -701,7 +701,7 @@
        {$t('youth.cta.description')}
      </p>
      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-       <a href="{base}/frameworks/tools/youth/youth-leadership-starter-kit.zip" class="btn-primary" style="background-color: white; color: #DAA520;">
+       <a href="{base}/frameworks/tools/youth-and-intergenerational-governance/youth-leadership-starter-kit.zip" class="btn-primary" style="background-color: white; color: #DAA520;">
          {$t('youth.cta.primaryButton')}
        </a>
        <a href="{base}/contact" class="btn-secondary" style="border-color: white; color: white;">

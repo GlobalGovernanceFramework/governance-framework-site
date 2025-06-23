@@ -150,7 +150,7 @@
         
         <div class="cta-buttons">
           <a 
-            href="{base}/frameworks/docs/implementation/treaty-for-our-only-home" 
+            href="{base}/frameworks/treaty-for-our-only-home" 
             class="cta-button primary"
           >
             {$t('globalCitizenship.foundation.cta.exploreTreaty')}

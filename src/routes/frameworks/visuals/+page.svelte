@@ -35,8 +35,8 @@
       foodTitle: "Food Systems & Agriculture Visualizations",
       foodDesc: "Visual tools for sustainable food systems governance, including food web diagrams, value chain visualizations, and interactive maps of agricultural transformation pathways.",
       foodButton: "Coming Soon",
-      ethicsTitle: "Ethics & Rights of Beings Visualizations",
-      ethicsDesc: "Visual resources for the Ethics & Rights of Beings Framework, including dynamic rights spectrum, implementation guides, governance structures, and consciousness assessment tools.",
+      ethicsTitle: "Global Ethics & Rights of Beings Visualizations",
+      ethicsDesc: "Visual resources for the Global Ethics & Rights of Beings Framework, including dynamic rights spectrum, implementation guides, governance structures, and consciousness assessment tools.",
       ethicsButton: "Access Ethics Visualizations",
       digitalTitle: "Digital Commons Visualizations",
       digitalDesc: "Visual resources for the Digital Commons Framework, including governance architecture, data sovereignty protocols, mesh network structures, and interactive tools for digital rights implementation.",
@@ -74,8 +74,8 @@
       environmentalTitle: "Visualiseringar för miljöförvaltning",
       environmentalDesc: "Visuella resurser för regenerativ miljöstyrning, inklusive ramverk för ekosystemrättigheter, handlingsplaner för klimatåtgärder, intressentnätverk och övervakningsverktyg för planetens välbefinnande.",
       environmentalButton: "Öppna miljövisualiseringar",
-      ethicsTitle: "Visualiseringar för etik och varelsers rättigheter",
-      ethicsDesc: "Visuella resurser för ramverket för etik och varelsers rättigheter, inklusive dynamiskt rättighetsspektrum, implementeringsguider, styrningsstrukturer och verktyg för medvetenhetsbedömning.",
+      ethicsTitle: "Visualiseringar för global etik och varelsers rättigheter",
+      ethicsDesc: "Visuella resurser för ramverket för global etik och varelsers rättigheter, inklusive dynamiskt rättighetsspektrum, implementeringsguider, styrningsstrukturer och verktyg för medvetenhetsbedömning.",
       ethicsButton: "Öppna etikvisualiseringar",
       digitalTitle: "Visualiseringar för digitala allmänningar",
       digitalDesc: "Visuella resurser för ramverket för digitala allmänningar, inklusive styrningsarkitektur, datasuveränitetsprotokoll, nätverksstrukturer och interaktiva verktyg för implementering av digitala rättigheter.",
@@ -160,7 +160,7 @@
             <p style="color: #4b5563; margin-bottom: 1rem;">
               {texts.peaceDesc}
             </p>
-            <a href="{base}/frameworks/visuals/peace" style="display: inline-flex; align-items: center; background-color: #6B5CA5; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href="{base}/frameworks/visuals/peace-and-conflict-resolution" style="display: inline-flex; align-items: center; background-color: #6B5CA5; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.peaceButton}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -230,7 +230,7 @@
             <p style="color: #4b5563; margin-bottom: 1rem;">
               {texts.digitalDesc}
             </p>
-            <a href="{base}/frameworks/visuals/digital" style="display: inline-flex; align-items: center; background-color: #6d28d9; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href="{base}/frameworks/visuals/digital-commons" style="display: inline-flex; align-items: center; background-color: #6d28d9; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.digitalButton}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -249,7 +249,7 @@
             <p style="color: #4b5563; margin-bottom: 1rem;">
               {texts.biodiversityDesc}
             </p>
-            <a href="{base}/frameworks/visuals/biodiversity" style="display: inline-flex; align-items: center; background-color: #2d5016; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href="{base}/frameworks/visuals/biodiversity-governance" style="display: inline-flex; align-items: center; background-color: #2d5016; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.biodiversityButton}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -259,7 +259,7 @@
         </div>
       </div>
       
-      <!-- Ethics & Rights of Beings Framework Card -->
+      <!-- Global Ethics & Rights of Beings Framework Card -->
       <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #16a34a; margin-bottom: 2rem;">
         <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
           <div style="font-size: 2.5rem; color: #16a34a;">🦋</div>
@@ -268,7 +268,7 @@
             <p style="color: #4b5563; margin-bottom: 1rem;">
               {texts.ethicsDesc}
             </p>
-            <a href="{base}/frameworks/visuals/ethics" style="display: inline-flex; align-items: center; background-color: #16a34a; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href="{base}/frameworks/visuals/global-ethics-and-rights-of-beings" style="display: inline-flex; align-items: center; background-color: #16a34a; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.ethicsButton}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />

@@ -152,7 +152,7 @@ The Financial Systems Framework is still evolving, and young people's input is e
 - Creating implementation guides for other youth
 - Developing Hearts projects in your community
 
-Contact [youth@globalgovernanceframework.org](mailto:youth@globalgovernanceframework.org) to get involved!
+Contact [globalgovernanceframeworks@gmail.com](mailto:globalgovernanceframeworks@gmail.com) to get involved!
 
 ---
 

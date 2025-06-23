@@ -1,10 +1,10 @@
 ---
-title: Grundprinciper – Ramverk för Global Styrning
+title: Grundprinciper – Ramverken för Global Styrning
 ---
 
 # Grundprinciper
 
-Ramverket för Global Styrning bygger på flera grundläggande principer som utgör dess etiska grund och praktiska vägledning. Dessa principer samverkar för att skapa styrningssystem som är demokratiska, anpassningsbara och respektfulla mot mångfald.
+Ramverken för global styrning bygger på flera grundläggande principer som utgör dess etiska grund och praktiska vägledning. Dessa principer samverkar för att skapa styrningssystem som är demokratiska, anpassningsbara och respektfulla mot mångfald.
 
 ## 1. Decentraliserad Auktoritet (Subsidiaritet)
 

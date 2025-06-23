@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "Implementeringsramverk för Rättssystem - Global Governance Framework",
+    "description": "Ett omfattande ramverk för att omvandla globala rättssystem genom restaurativ rättvisa, ursprungsfolks rättstraditioner och innovativa teknologier"
+  },
+  "guideCard": {
+    "title": "Ny till Rättssystemsramverket?",
+    "description": "Börja med en av våra förenklade guider som förklarar kärnkoncepten för olika målgrupper.",
+    "buttonText": "Välj en guide"
+  },
+  "categories": {
+    "overview": "Översikt",
+    "foundation": "Grund",
+    "implementation": "Implementering",
+    "operations": "Drift & övervakning",
+    "resources": "Resurser"
+  },
+  "sections": {
+    "index": "Översikt",
+    "justice-framework-lite-guide": "Teknisk guide",
+    "youth-justice-guide": "Ungdomsrättvisa guide",
+    "introduction": "Introduktion",
+    "governance-structure": "Styrningsstruktur",
+    "legal-framework": "Rättsligt ramverk",
+    "implementation-mechanisms": "Implementeringsmekanismer",
+    "digital-justice-innovation": "Digital rättvisa & innovation",
+    "monitoring-accountability": "Övervakning & ansvarsskyldighet",
+    "stakeholder-engagement": "Intressentengagemang",
+    "challenges-mitigation": "Utmaningar & riskreducering",
+    "timeline-milestones": "Tidslinje & milstolpar",
+    "conclusion": "Slutsats",
+    "appendices": "Bilagor"
+  },
+  "sectionsShort": {
+    "index": "Översikt",
+    "justice-framework-lite-guide": "Teknisk guide",
+    "youth-justice-guide": "Ungdomsguide",
+    "introduction": "Introduktion",
+    "governance-structure": "Styrning",
+    "legal-framework": "Rättsligt",
+    "implementation-mechanisms": "Implementering",
+    "digital-justice-innovation": "Digital rättvisa",
+    "monitoring-accountability": "Övervakning",
+    "stakeholder-engagement": "Intressenter",
+    "challenges-mitigation": "Utmaningar",
+    "timeline-milestones": "Tidslinje",
+    "conclusion": "Slutsats",
+    "appendices": "Bilagor"
+  },
+  "overview": {
+    "title": "Implementeringsramverk för Rättssystem",
+    "subtitle": "Översikt",
+    "paragraph1": "Implementeringsramverket för Rättssystem är en omfattande, anpassningsbar plan för att omvandla globala rättssystem. Det integrerar restaurativ rättvisa, ursprungsfolks rättstraditioner, och innovativa teknologier för att skapa hållbara, rättvisa och motståndskraftiga rättssystem.",
+    "paragraph2": "Detta ramverk omdefinerar globala rättssystem som transparenta, inkluderande och effektiva, med mål att öka förtroendet för rättssystemen med 25%, uppnå 80% rättvis tillgång till rättvisa, och lösa 70% av fallen utan upptrappning till högre domstolar till 2035."
+  },
+  "guides": [
+    {
+      "id": "justice-framework-lite-guide",
+      "title": "Teknisk guide",
+      "description": "Detaljerad guide för policyimplementerare, regeringstjänstemän och organisationer",
+      "icon": "⚖️"
+    },
+    {
+      "id": "youth-justice-guide",
+      "title": "Ungdomsrättvisa guide",
+      "description": "Visuell, tillgänglig guide för ungdomsgrupper, skolor och olika samhällen",
+      "icon": "🧑‍⚖️"
+    }
+  ],
+  "progress": {
+    "text": "Avsnitt {current} av {total}"
+  },
+  "languageFallback": {
+    "title": "Innehåll på svenska kommer snart",
+    "description": "Detta avsnitt visas för närvarande på engelska tills den svenska översättningen är klar."
+  },
+  "navigation": {
+    "downloadPdf": "Ladda ner PDF-version",
+    "continueToFramework": "Fortsätt till fullständigt ramverk",
+    "previousSection": "Föregående avsnitt",
+    "nextSection": "Nästa avsnitt"
+  },
+  "errors": {
+    "sectionNotFound": "Avsnitt \"{section}\" hittades inte",
+    "contentInDevelopment": "Detta innehåll utvecklas fortfarande."
+  },
+  "loading": {
+    "text": "Laddar rättssystemsinnehåll..."
+  }
+}

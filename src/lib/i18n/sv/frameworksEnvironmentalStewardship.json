@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Miljöförvaltningsramverk - Global styrningsramverk",
+    "description": "En omfattande plan för transformativ miljöstyrning som tar itu med ekosystemförsämring, klimatförändring, ekonomisk ojämlikhet och teknisk etik"
+  },
+  "guideCard": {
+    "title": "Ny inom miljöförvaltningsramverket?",
+    "description": "Börja med våra viktiga guider som förklarar kärnkoncept och ger omedelbara åtgärdssteg.",
+    "buttonText": "Läs sidessensen"
+  },
+  "categories": {
+    "overview": "Översikt",
+    "foundation": "Grund",
+    "governance": "Styrning och policy",
+    "implementation": "Implementering",
+    "resources": "Resurser"
+  },
+  "sections": {
+    "index": "Översikt",
+    "one-page-essence": "Sidessens",
+    "first-100-days-playbook": "Första 100 dagarna playbook",
+    "introduction": "Introduktion",
+    "guiding-principles": "Vägledande principer",
+    "governance-structure": "Styrningsstruktur",
+    "core-pillars": "Kärnpelare",
+    "policy-mechanisms": "Policymekanismer",
+    "stakeholder-engagement": "Intressentengagemang",
+    "financing-mechanisms": "Finansieringsmekanismer",
+    "implementation-roadmap": "Implementeringsplan",
+    "metrics-for-success": "Mätning av framgång",
+    "visualizations": "Visualiseringar",
+    "challenges-and-solutions": "Utmaningar och lösningar",
+    "implementation-tools": "Implementeringsverktyg",
+    "reparations-protocol": "Reparationsprotokoll",
+    "conclusion": "Slutsats",
+    "appendices": "Bilagor"
+  },
+  "sectionsShort": {
+    "index": "Översikt",
+    "one-page-essence": "Sidessens",
+    "first-100-days-playbook": "100 dagars playbook",
+    "introduction": "Introduktion",
+    "guiding-principles": "Principer",
+    "governance-structure": "Styrning",
+    "core-pillars": "Kärnpelare",
+    "policy-mechanisms": "Policy",
+    "stakeholder-engagement": "Intressenter",
+    "financing-mechanisms": "Finansiering",
+    "implementation-roadmap": "Färdplan",
+    "metrics-for-success": "Mätning",
+    "visualizations": "Visualiseringar",
+    "challenges-and-solutions": "Utmaningar",
+    "implementation-tools": "Verktyg",
+    "reparations-protocol": "Reparationer",
+    "conclusion": "Slutsats",
+    "appendices": "Bilagor"
+  },
+  "progress": {
+    "text": "Avsnitt {current} av {total}"
+  },
+  "languageFallback": {
+    "title": "Innehåll på ditt språk kommer snart",
+    "description": "Detta avsnitt visas för närvarande på engelska tills översättningen är klar."
+  },
+  "navigation": {
+    "downloadPdf": "Ladda ner PDF-version",
+    "continueToFramework": "Fortsätt till fullständigt ramverk",
+    "previousSection": "Föregående avsnitt",
+    "nextSection": "Nästa avsnitt"
+  },
+  "errors": {
+    "sectionNotFound": "Avsnitt \"{section}\" hittades inte",
+    "contentInDevelopment": "Detta innehåll utvecklas fortfarande."
+  },
+  "loading": {
+    "text": "Laddar ramverksinnehåll..."
+  }
+}

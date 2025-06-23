@@ -1,6 +1,6 @@
 {
   "hero": {
-    "title": "Ramverket",
+    "title": "Ramverken",
     "subtitle": "Verktyg för interoperabilitet och utveckling inom styrning"
   },
   "components": {
@@ -11,12 +11,12 @@
       "title": "Tillämpningar"
     },
     "tools": {
-      "title": "Verktyg & Resurser"
+      "title": "Verktyg & resurser"
     }
   },
   "overview": {
     "title": "Ramverksöversikt",
-    "description": "Det globala styrningsramverket erbjuder ett omfattande tillvägagångssätt för att hantera komplexa globala utmaningar genom driftskompatibla styrsystem. Utforska vår dokumentation för att upptäcka principer, implementeringsstrategier och praktiska tillämpningar.",
+    "description": "De globala styrningsramverken erbjuder ett omfattande tillvägagångssätt för att hantera komplexa globala utmaningar genom driftskompatibla styrsystem. Utforska vår dokumentation för att upptäcka principer, implementeringsstrategier och praktiska tillämpningar.",
     "learnMore": "Läs mer"
   },
   "quickAccess": {
@@ -28,6 +28,25 @@
     "caseStudies": "Fallstudier",
     "resources": "Resurser",
     "glossary": "Ordlista"
+  },
+  "implementationFrameworks": {
+    "title": "Implementeringsramverken",
+    "description": "Domänspecifika ramverk organiserade efter prioritetsnivåer, från grundläggande reformer till visionära styrningsmodeller. Varje ramverk tillhandahåller detaljerad implementeringsvägledning för sitt respektive område.",
+    "roadmapTitle": "Stegvis implementeringsfärdplan",
+    "roadmapDescription": "Ramverken är organiserade i fem nivåer som representerar en logisk progression från att hantera omedelbara kriser till att möjliggöra långsiktigt välmående. Denna struktur tillhandahåller en tydlig implementeringsfärdplan där grundläggande reformer skapar den stabilitet som behövs för mer avancerade styrningsinnovationer.",
+    "tiers": {
+      "tier0": "Institutionell reform",
+      "tier1": "Akut stabilitet",
+      "tier2": "Långsiktiga system",
+      "tier3": "Jämlikhet och kultur",
+      "tier4": "Visionär styrning"
+    },
+    "gettingStarted": {
+      "title": "Påbörja din implementeringsresa",
+      "description": "Redo att implementera dessa ramverk i ditt sammanhang? Våra implementeringsguider tillhandahåller steg-för-steg-metoder, verktyg för beslutsallokering och fallstudier för att hjälpa dig komma igång.",
+      "implementationButton": "Implementeringsriktlinjer",
+      "caseStudiesButton": "Visa fallstudier"
+    }
   },
   "status": {
     "concept": {
@@ -50,13 +69,36 @@
   "statusLegend": {
     "title": "Dokumentstatusindikatorer"
   },
+  "tier": {
+    "0": {
+      "title": "Nivå 0: Global institutionell reform",
+      "description": "Denna grundläggande nivå fungerar som förutsättning för alla andra. Det är uppgraderingen av operativsystemet för global styrning, med fokus på de centrala regler, organ och rättsliga ramverk som möjliggör samordnade internationella åtgärder."
+    },
+    "1": {
+      "title": "Nivå 1: Global stabilitet och rättvisa",
+      "description": "Denna nivå omfattar de mest akuta områdena inom global styrning – där uteblivna åtgärder kan leda till oåterkallelig skada, mänskligt lidande i stor skala eller systemisk kollaps."
+    },
+    "2": {
+      "title": "Nivå 2: System för långsiktigt välmående",
+      "description": "Denna nivå samlar grundläggande system som möjliggör hållbart mänskligt välmående över tid. Här ingår styrning av teknik, finans, utbildning, stadsutveckling och arbetsmarknad."
+    },
+    "3": {
+      "title": "Nivå 3: Jämlikhet, kultur & framtida generationer",
+      "description": "Här ligger fokus på inkludering, kulturell mångfald och representation av dem som ofta förbises – såsom unga, urfolk, landsbygdsbor och framtida generationer."
+    },
+    "4": {
+      "title": "Nivå 4: Visionär och metagovernance",
+      "description": "Den fjärde nivån omfattar framåtblickande och systemövergripande områden inom global styrning. Här utforskar vi hur mänskligheten kan samordna sig på nya sätt."
+    },
+    "noFrameworks": "Inga ramverk definierade för denna nivå ännu."
+  },
   "intro": {
-    "title": "Introduktion till Meta-Styrning",
-    "paragraph1": "Världen är fylld av styrningsexperiment på olika nivåer, men de fungerar ofta isolerat. Ramverket för Global Styrning tillhandahåller mönster och gränssnitt som gör det möjligt för dessa olika system att samverka.",
+    "title": "Introduktion till meta-styrning",
+    "paragraph1": "Världen är fylld av styrningsexperiment på olika nivåer, men de fungerar ofta isolerat. ramverken för global styrning tillhandahåller mönster och gränssnitt som gör det möjligt för dessa olika system att samverka.",
     "paragraph2": "Vår metod handlar inte om att skapa en enhetlig styrningsmodell, utan att bygga infrastrukturen som gör det möjligt för många modeller att samexistera, kommunicera och utvecklas tillsammans."
   },
   "emergingExamples": {
-    "title": "Framväxande Möjligheter i Praktiken",
+    "title": "Framväxande möjligheter i praktiken",
     "intro": "Runt om i världen ser vi lovande exempel på framgångsrik transnationell styrning i praktiken. Dessa verkliga initiativ visar vad som är möjligt när vi skapar system för samarbete över gränser:",
     "examples": [
       {
@@ -64,72 +106,72 @@
         "description": "Städer som samarbetar direkt i klimatinitiativ, delar resurser och kunskap över nationsgränser. C40 Cities Climate Leadership Group kopplar samman 97 städer med över 700 miljoner invånare för att driva på kraftfull klimatåtgärd."
       },
       {
-        "title": "Plattformar för Digital Demokrati",
+        "title": "Plattformar för digital demokrati",
         "description": "Programvaruramverk som Decidim och vTaiwan möjliggör medborgardeltagande i stor skala i policyutveckling och skapar nya modeller för responsiv styrning bortom traditionella representativa strukturer."
       },
       {
-        "title": "Transnationell Allmänningförvaltning",
+        "title": "Transnationell allmänningförvaltning",
         "description": "Samarbetsramverk för förvaltning av gemensamma resurser som överskrider gränser – från vattensystem till digital infrastruktur – som visar hur samhällen kan självstyra över traditionella gränser."
       },
       {
-        "title": "Regionala Samarbetsramverk",
+        "title": "Regionala samarbetsramverk",
         "description": "Initiativ som Nordiska Rådet möjliggör samarbete mellan olika nationer samtidigt som kulturell autonomi och suveränitet bevaras – vilket visar att samarbete kan stärka snarare än försvaga lokal identitet."
       }
     ]
   },
   "techEnablers": {
-    "title": "Teknologiska Möjliggörare",
+    "title": "Teknologiska möjliggörare",
     "intro": "Nya teknologier gör transparent och deltagarbaserad global samordning möjlig i en skala och hastighet som tidigare varit otänkbar:",
     "enablers": [
       {
-        "title": "AI för Transparent Beslutsfattande",
+        "title": "AI för transparent beslutsfattande",
         "description": "AI-system som kan bearbeta stora mängder policydata, modellera effekter och göra beslutsprocesser begripliga för medborgare. Dessa verktyg kan balansera expertkunskap med demokratisk insyn, så att teknisk komplexitet inte blir ett hinder för deltagande."
       },
       {
-        "title": "Blockchain för Ansvarstagande",
+        "title": "Blockchain för ansvarstagande",
         "description": "Distribuerade liggare som skapar manipuleringssäkra register över beslut, resursfördelningar och policyimplementeringar. Dessa system möjliggör förtroende utan behov av centraliserad auktoritet och gör transparent styrning möjlig över olika jurisdiktioner."
       },
       {
-        "title": "Digital Översättning & Kulturell Kontext",
+        "title": "Digital översättning & kulturell kontext",
         "description": "Avancerade språkmodeller som bryter ned kommunikationsbarriärer mellan styrningssystem – inte bara genom ord-för-ord-översättning, utan genom kulturellt begriplig tolkning av begrepp och värderingar."
       },
       {
-        "title": "Deltagarbaserade Sensing-nätverk",
+        "title": "Deltagarbaserade sensing-nätverk",
         "description": "Medborgardrivna övervakningssystem för miljötillstånd, resursanvändning och policyresultat. Dessa nätverk fördelar både arbetet och auktoriteten i styrning, och skapar gemensamma empiriska grunder för beslut."
       }
     ]
   },
   "bottomUpApproaches": {
-    "title": "Underifrånperspektiv Möter Institutionell Utveckling",
+    "title": "Underifrånperspektiv möter institutionell utveckling",
     "intro": "Effektiv global styrning kräver både gräsrotsinnovation och institutionell anpassning. Vårt ramverk fokuserar på gränssnitten mellan dessa tillvägagångssätt:",
     "principles": [
       {
-        "title": "Protokoll för Ömsesidigt Erkännande",
+        "title": "Protokoll för ömsesidigt erkännande",
         "description": "Standarder som gör att formella institutioner kan erkänna och interagera med samhällsledda styrningsinitiativ, och därigenom bygga broar mellan traditionella och framväxande modeller."
       },
       {
-        "title": "Integration som Bevarar Suveränitet",
+        "title": "Integration som bevarar suveränitet",
         "description": "Tillvägagångssätt som gör det möjligt för samhällen att delta i större system samtidigt som de bevarar sin självbestämmanderätt – så att globala ramverk stärker snarare än överskrider lokal styrning."
       },
       {
-        "title": "Utveckling av Kollektivt Kunskapsarkiv",
+        "title": "Utveckling av kollektivt kunskapsarkiv",
         "description": "Gemensamma arkiv över styrningsinnovationer, fallstudier och goda exempel som gör det möjligt för både gräsrotsprojekt och institutioner att lära av varandra."
       },
       {
-        "title": "Inbäddade Ansvarsstrukturer",
+        "title": "Inbäddade ansvarsstrukturer",
         "description": "Ramverk som säkerställer att institutioner förblir ansvariga inför de samhällen de tjänar, samtidigt som lokala beslut tar hänsyn till effekter utanför deras egna gränser."
       }
     ],
     "conclusion": "Genom att fokusera på dessa gränssnitt kan vi skapa styrningssystem som kombinerar underifrånperspektivets anpassningsförmåga och kontextkänslighet med institutionernas samordningskapacitet och stabilitet."
   },
   "comingSoon": {
-    "title": "Kommer Snart",
-    "intro": "Vi håller just nu på att utveckla detaljerat innehåll för styrningsramverket. Denna sida kommer snart att innehålla omfattande dokumentation om:",
+    "title": "Kommer snart",
+    "intro": "Vi håller just nu på att utveckla detaljerat innehåll för styrningsramverken. Denna sida kommer snart att innehålla omfattande dokumentation om:",
     "items": [
-      "Modeller för Interoperabilitet i Styrning",
-      "Ramverk för Beslutsallokering",
-      "Designmönster för Meta-Styrning",
-      "Arkitektur för Adaptiv Styrning"
+      "Modeller för interoperabilitet i styrning",
+      "Ramverk för beslutsallokering",
+      "Designmönster för meta-styrning",
+      "Arkitektur för adaptiv styrning"
     ]
   },
   "labels": {
@@ -140,62 +182,61 @@
     "nav": {
       "overview": "Översikt",
       "principles": "Kärnprinciper",
-      "globalCitizenship": "Globalt Medborgarskap",
+      "globalCitizenship": "Globalt medborgarskap",
       "implementation": "Implementering",
-      "implementationTier0": "Nivå 0: Global institutionell reform",
-      "implementationTier1": "Nivå 1: Global stabilitet och rättvisa",
-      "implementationTier2": "Nivå 2: System för långsiktigt välmående",
-      "implementationTier3": "Nivå 3: Jämlikhet, kultur & framtida generationer",
-      "implementationTier4": "Nivå 4: Visionär och metagovernance",
-      "implementationInstitutionalReform": "Fördraget för vårt enda hem",
-      "implementationClimateEnergy": "Klimat och energistyrning",
-      "implementationIndigenous": "Ursprungsfolk & traditionell kunskap",
-      "implementationEconomic": "Ekonomisk integration",
-      "implementationEnvironment": "Förvaltarskap av natur och miljö",
-      "implementationPeace": "Fred och konflikthantering",
-      "implementationTechnology": "Teknikstyrning",
-      "implementationEducation": "Utbildningssystem",
-      "implementationHealthcare": "Hälso- och sjukvårdsstyrning",
-      "implementationCulture": "Bevarande av kulturarv",
-      "implementationRural": "Landsbygdsutveckling",
-      "implementationSpiritual": "Religiös och andlig dialog",
-      "implementationMigration": "Migration & mänsklig rörlighet",
-      "implementationDisaster": "Katastrofrisk och resiliens",
-      "implementationFood": "Livsmedelssystem & jordbruk",
-      "implementationMentalHealth": "Mental hälsa",
-      "implementationWash": "Vatten & sanitet",
-      "implementationUrban": "Stads- & samhällsutveckling",
-      "implementationDigital": "Digitala allmänningar",
-      "implementationFinancial": "Finansiella system",
-      "implementationJustice": "Rättssystem",
-      "implementationEnergy": "Klimat- & energistyrning",
-      "implementationDisasterResilience": "Katastrofrisk och resiliens",
-      "implementationOceansMarine": "Havsförvaltning & marina ekosystem",
-      "implementationLaborEmployment": "Arbetsmarknad & sysselsättning",
-      "implementationInclusion": "Funktionsrätt och inkluderingsstyrning",
-      "implementationBiodiversity": "Biologisk mångfald",
-      "implementationAnimalWelfare": "Djurskydd",
-      "implementationGlobalCitizenship": "Globalt medborgarskapsarbete",
-      "implementationYouthGovernance": "Ungdoms- & generationsstyrning",
-      "implementationAging": "Åldrande befolkningsstöd",
-      "implementationEthicsRights": "Globala rättigheter & etik",
-      "implementationSpaceGovernance": "Rymdförvaltning",
-      "implementationConsciousness": "Medvetande & inre utveckling",
-      "implementationMetaGovernance": "Integrerad metagovernance",
-      "implementationMethodsTools": "Metoder & verktyg för implementering",
-      "regionalHubs": "Regionala Nav",
+      "regionalHubs": "Regionala nav",
       "implementationTools": "Implementeringsverktyg",
       "visualizations": "Visualiseringar",
-      "case-studies": "Fallstudier",
-      "ai-futures": "AI och framtiden",
+      "caseStudies": "Fallstudier",
+      "aiFutures": "AI och framtiden",
       "resources": "Resurser",
-      "glossary": "Ordlista"
+      "glossary": "Ordlista",
+
+      "frameworkTitles": {
+        "treatyForOurOnlyHome": "Fördraget för vårt enda hem",
+        "climateAndEnergyGovernance": "Klimat och energistyrning",
+        "peaceAndConflictResolution": "Fred och konflikthantering",
+        "indigenousGovernanceAndTraditionalKnowledge": "Ursprungsfolk & traditionell kunskap",
+        "planetaryHealth": "Planetär hälsa",
+        "foodSystemsAndAgriculture": "Livsmedelssystem & jordbruk",
+        "economicIntegration": "Ekonomisk integration",
+        "justiceSystems": "Rättssystem",
+        "migrationAndHumanMobility": "Migration & mänsklig rörlighet",
+        "disasterRiskReduction": "Katastrofrisk och resiliens",
+        "technologyGovernance": "Teknikstyrning",
+        "financialSystems": "Finansiella system",
+        "educationalSystems": "Utbildningssystem",
+        "mentalHealthGovernance": "Psykisk hälsostyrning",
+        "urbanAndCommunityDevelopment": "Stads- & samhällsutveckling",
+        "waterAndSanitationGovernance": "Vatten & sanitetstyrning",
+        "environmentalStewardship": "Förvaltarskap av natur och miljö",
+        "animalWelfareGovernance": "Djurskyddsstyrning",
+        "biodiversityGovernance": "Biologisk mångfald",
+        "oceansAndMarineGovernance": "Havsförvaltning & marina ekosystem",
+        "laborAndEmploymentGovernance": "Arbetsmarknad & sysselsättning",
+        "disabilityRightsAndInclusion": "Funktionsrätt och inkludering",
+        "digitalCommons": "Digitala allmänningar",
+        "culturalHeritagePreservation": "Bevarande av kulturarv",
+        "ruralDevelopmentGovernance": "Landsbygdsutvecklingsstyrning",
+        "religiousAndSpiritualDialogueGovernance": "Religiös och andlig dialogstyrning",
+        "youthAndIntergenerationalGovernance": "Ungdoms- & generationsstyrning",
+        "globalCitizenshipPractice": "Globalt medborgarskapsarbete",
+        "globalEthicsAndRightsOfBeings": "Global etik och varelsers rättigheter",
+        "genderEqualityAndLgbtqRights": "Jämställdhet och HBTQ+-rättigheter",
+        "agingPopulationSupportGovernance": "Åldrande befolkningsstöd",
+        "spaceGovernance": "Rymdförvaltning",
+        "existentialRiskGovernance": "Styrning av existentiella risker",
+        "consciousnessAndInnerDevelopment": "Medvetande & inre utveckling",
+        "integratedMetaGovernance": "Integrerad metagovernance",
+        "implementationMethodsAndTools": "Metoder & verktyg för implementering",
+        "wisdomGovernance": "Vishetsstyrning"
+      }
     }
   },
   "coreElements": {
-    "title": "Kärnelement i Ramverket",
+    "title": "Kärnelement i Ramverken",
     "interoperability": {
-      "title": "1. Ramverk för Interoperabilitet i Styrning",
+      "title": "1. Ramverk för interoperabilitet i styrning",
       "intro": "Detta ramverk hjälper olika styrningssystem att kopplas samman och samarbeta effektivt:",
       "items": [
         {"name": "Protokollstandarder", "description": "Hur olika styrsystem kan utbyta information"},
@@ -220,12 +261,11 @@
     "description": "Redo att utforska den kompletta dokumentationen? Våra omfattande guider ger detaljerade implementeringsinstruktioner, principer, fallstudier och resurser.",
     "button": "Utforska fullständig dokumentation"
   },
-  "cta": "Bidra till Ramverket",
+  "cta": "Bidra till ramverken",
   "principles": {
     "interconnection": {
-      "title": "Samband mellan Kärnprinciper",
-      "description": "Detta diagram illustrerar hur de tretton konstitutionella principerna fungerar tillsammans som ett integrerat system. Principerna är organiserade efter funktion: styrningsstruktur (grön), rättigheter och miljö (brun), resurs- och konflikthantering (guld), samt evolution och integration (lila). Varje princip ansluter till det centrala Global Governance Framework samtidigt som den förstärker och balanserar andra principer."
+      "title": "Samband mellan kärnprinciper",
+      "description": "Detta diagram illustrerar hur de tretton konstitutionella principerna fungerar tillsammans som ett integrerat system. Principerna är organiserade efter funktion: styrningsstruktur (grön), rättigheter och miljö (brun), resurs- och konflikthantering (guld), samt evolution och integration (lila). Varje princip ansluter till de centrala globala styrningsramverken samtidigt som den förstärker och balanserar andra principer."
     }
   }
 }
-

@@ -103,46 +103,28 @@ Use consistent cross-reference formats:
 
 ### 5. URL Path Structure and Naming
 
-URLs are a critical part of framework accessibility, navigation, and search optimization. Follow these guidelines for consistent and effective path structures:
+URLs are a critical part of framework accessibility, navigation, and long-term stability. Follow these guidelines for consistent and effective path structures.
 
 #### Path Naming Principles
 
-- **Clarity over brevity**: Use descriptive paths that clearly indicate content purpose, even if slightly longer
-  - Preferred: `/environmental-stewardship` 
-  - Avoid: `/environment` (too general)
+- **Clarity over Brevity**: Use descriptive paths that clearly indicate content.
+  - **Preferred**: `/frameworks/climate-and-energy`
+  - **Avoid**: `/frameworks/energy`
 
-- **Kebab-case format**: Use hyphens to separate words in all URL paths
-  - Correct: `/water-energy-food-nexus`
-  - Avoid: `/waterenergyfood` or `/water_energy_food`
+- **Kebab-case Format**: Use hyphens to separate words in all URL paths and filenames.
+  - **Correct**: `climate-and-energy.md`
+  - **Avoid**: `climateAndEnergy.md` or `climate_and_energy.md`
 
-- **Hierarchical structure**: Organize paths to reflect content hierarchy
-  - Framework sections: `/frameworks/environmental-stewardship`
-  - Tools within frameworks: `/frameworks/environmental-stewardship/tools`
-
-- **Avoid unnecessary terms**: Remove articles and common prepositions
-  - Preferred: `/stakeholder-engagement`
-  - Avoid: `/the-stakeholder-engagement-guide`
+- **Unified Hierarchical Structure**: All detailed frameworks should follow a single, consistent path structure to simplify navigation and maintenance.
+  - **Primary Structure**: `/frameworks/[framework-name]`
 
 #### Implementation Recommendations
 
-- **Redirect strategy**: Implement redirects from shorter or logical alternative paths to canonical URLs
-  - Example: `/environment` redirects to `/environmental-stewardship`
+- **Redirect Strategy**: Because GitHub Pages does not support server-side 301 redirects, a client-side redirect file must be placed at the old URL path for any changed links. This file should contain both a meta refresh tag for users and a canonical link tag for search engines.
 
-- **Language handling**: Language selection is managed via the site header selector, not in URL paths
-  - Content is organized in the repository by language subdirectories (e.g., `/en/`, `/sv/`)
-  - Public-facing URLs remain language-agnostic, with the user's language preference determining which content is displayed
+- **URL Stability**: Once a new URL is published under this convention, it should be considered permanent to prevent broken links.
 
-- **Version indicators**: Include version numbers for versioned documentation when applicable
-  - Example: `/environmental-stewardship/v2/implementation`
-
-- **URL stability**: Once published, maintain URL paths even if titles change to prevent broken links
-  - Implement redirects if structural changes are necessary
-
-- **Path depth**: Limit path depth to 3-4 levels maximum for usability
-  - Manageable: `/frameworks/environmental-stewardship/tools/seed-kit`
-  - Avoid: `/frameworks/environmental/stewardship/implementation/tools/community/seed-kit`
-
-Following these guidelines ensures that URLs contribute to overall framework usability, discoverability, and long-term maintenance while establishing a consistent pattern across all digital resources.
+- **File Naming**: The source markdown file should have the same kebab-case name as the final URL slug (e.g., the page at `/frameworks/climate-and-energy` should come from a file named `climate-and-energy.md`).
 
 ### 6. Contact Information and Resource References
 

@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "title": "Levande mandala för planetär psykisk hälsa - Global styrningsramverk",
+    "description": "Ett transformativt ramverk för global psykisk hälso-styrning, som positionerar psykisk hälsa som en transkulturell mänsklig rättighet invävd i vårt planetära ömsesidiga beroende"
+  },
+  "guideCard": {
+    "title": "Ny inom ramverket för planetär psykisk hälsa?",
+    "description": "Börja med vår tillgängliga grundguide som förklarar ramverkets kärnprinciper och samhällsledda transformationsväg.",
+    "buttonText": "Läs Ramverkets Grundläggande"
+  },
+  "categories": {
+    "overview": "Översikt",
+    "foundation": "Grund",
+    "systems": "System och leverans",
+    "implementation": "Implementering",
+    "resources": "Resurser"
+  },
+  "sections": {
+    "index": "Översikt",
+    "vision-principles": "Vision och vägledande principer",
+    "governance-structures": "Styrning och institutionella strukturer",
+    "legal-policy": "Juridiska och politiska ramverk",
+    "financing-resources": "Finansiering och resursmobilisering",
+    "service-delivery": "Tjänsteleverans och arbetskraft",
+    "monitoring-accountability": "Övervakning, utvärdering och ansvarsskyldighet",
+    "crisis-response": "Kris- och nödinsats",
+    "innovation-research": "Innovation och forskning",
+    "cross-cutting-themes": "Övergripande teman",
+    "implementation-strategy": "Implementeringsstrategi",
+    "political-strategy": "Politisk strategi och intressentmappning",
+    "risk-management": "Riskhantering",
+    "technology-implementation": "Teknikimplementering",
+    "change-management": "Förändringsledning",
+    "conclusion": "Mandalan fullbordas: från vision till levande verklighet",
+    "mental-health-framework-essentials": "Ramverk grundläggande"
+  },
+  "sectionsShort": {
+    "index": "Översikt",
+    "vision-principles": "Vision och principer",
+    "governance-structures": "Styrning",
+    "legal-policy": "Juridik och politik",
+    "financing-resources": "Finansiering",
+    "service-delivery": "Tjänsteleverans",
+    "monitoring-accountability": "Övervakning",
+    "crisis-response": "Krisinsats",
+    "innovation-research": "Innovation",
+    "cross-cutting-themes": "Övergripande",
+    "implementation-strategy": "Implementering",
+    "political-strategy": "Politisk strategi",
+    "risk-management": "Riskhantering",
+    "technology-implementation": "Teknik",
+    "change-management": "Förändringsledning",
+    "conclusion": "Slutsats",
+    "mental-health-framework-essentials": "Ramverk grundläggande"
+  },
+  "progress": {
+    "text": "Avsnitt {current} av {total}"
+  },
+  "languageFallback": {
+    "title": "Innehåll på ditt språk kommer snart",
+    "description": "Detta avsnitt visas för närvarande på engelska tills översättningen är klar."
+  },
+  "navigation": {
+    "downloadPdf": "Ladda ner PDF-version",
+    "continueToFramework": "Fortsätt till fullständigt ramverk",
+    "previousSection": "Föregående avsnitt",
+    "nextSection": "Nästa avsnitt"
+  },
+  "errors": {
+    "sectionNotFound": "Avsnitt \"{section}\" hittades inte",
+    "contentInDevelopment": "Detta innehåll utvecklas fortfarande."
+  },
+  "loading": {
+    "text": "Laddar ramverksinnehåll..."
+  }
+}

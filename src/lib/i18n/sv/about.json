@@ -75,7 +75,8 @@
     "join": {
       "title": "Gå med i gemenskapen",
       "description": "Knyt kontakt med andra som är intresserade av global styrningsinnovation och ramverksutveckling.",
-      "link": "GitHub repository →"
+      "primaryLink": "Engagera dig →",
+      "secondaryLink": "GitHub repository ↗"
     },
     "apply": {
       "title": "Tillämpa ramverken",

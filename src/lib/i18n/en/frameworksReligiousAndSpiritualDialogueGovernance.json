@@ -1,0 +1,129 @@
+{
+  "meta": {
+    "title": "Religious & Spiritual Dialogue Governance Framework - Global Governance Framework",
+    "description": "A comprehensive framework for integrating religious, spiritual, and non-theistic ethical perspectives into global governance"
+  },
+  "guideCard": {
+    "title": "New to the Spiritual Dialogue Framework?",
+    "description": "Start with one of our guides that explain the principles for different audiences.",
+    "buttonText": "Choose a Guide"
+  },
+  "guideSelector": {
+    "title": "Spiritual Dialogue Framework Guides",
+    "description": "Choose the guide version that best matches your needs:"
+  },
+  "categories": {
+    "overview": "Overview",
+    "foundation": "Foundation",
+    "implementation": "Implementation",
+    "resources": "Resources & Tools",
+    "guides": "Guides",
+    "implementationTools": "Implementation Tools",
+    "appendices": "Appendices"
+  },
+  "sections": {
+    "index": "Overview",
+    "introduction": "Introduction",
+    "core-principles": "Core Principles",
+    "objectives": "Objectives",
+    "governance-structure": "Governance Structure",
+    "implementation-mechanisms": "Implementation Mechanisms",
+    "key-activities": "Key Activities",
+    "funding-and-resources": "Funding & Resources",
+    "challenges-and-mitigation-strategies": "Challenges & Mitigation",
+    "timeline": "Timeline",
+    "conclusion": "Conclusion",
+    "executive-brief": "Executive Brief",
+    "policy-guide": "Policy Guide",
+    "youth-and-broad-audiences-guide": "Youth & Broad Audiences Guide",
+    "adaptive-facilitation-tools": "Adaptive Facilitation Tools",
+    "digital-feedback-dashboard": "Digital Feedback Dashboard",
+    "appendix-a": "Appendix A: Selection Criteria",
+    "appendix-b": "Appendix B: Glossary of Terms",
+    "appendix-c": "Appendix C: Case Studies",
+    "appendix-d": "Appendix D: Expansion Resources",
+    "appendix-e": "Appendix E: Sunset Clause",
+    "appendix-f": "Appendix F: Nominating Networks",
+    "appendix-g": "Appendix G: AI Ethics Guidelines",
+    "appendix-h": "Appendix H: Reparations Protocol"
+  },
+  "sectionsShort": {
+    "introduction": "Introduction",
+    "core-principles": "Principles",
+    "objectives": "Objectives",
+    "governance-structure": "Governance",
+    "implementation-mechanisms": "Implementation",
+    "key-activities": "Activities",
+    "funding-and-resources": "Funding",
+    "challenges-and-mitigation-strategies": "Challenges",
+    "timeline": "Timeline",
+    "conclusion": "Conclusion",
+    "executive-brief": "Executive Brief",
+    "policy-guide": "Policy Guide",
+    "youth-and-broad-audiences-guide": "Youth Guide",
+    "adaptive-facilitation-tools": "Facilitation Tools",
+    "digital-feedback-dashboard": "Feedback Dashboard",
+    "appendix-a": "Selection Criteria",
+    "appendix-b": "Glossary",
+    "appendix-c": "Case Studies",
+    "appendix-d": "Expansion Resources",
+    "appendix-e": "Sunset Clause",
+    "appendix-f": "Nominating Networks",
+    "appendix-g": "AI Ethics",
+    "appendix-h": "Reparations"
+  },
+  "guides": [
+    {
+      "id": "executive-brief",
+      "title": "Executive Brief",
+      "description": "Concise overview for decision-makers highlighting strategic impact",
+      "icon": "📊"
+    },
+    {
+      "id": "policy-guide",
+      "title": "Policy Guide",
+      "description": "Framework overview for policymakers and governance institutions",
+      "icon": "⚖️"
+    },
+    {
+      "id": "youth-and-broad-audiences-guide",
+      "title": "Youth & Broad Audiences",
+      "description": "Visual, accessible guide for younger participants and general audiences",
+      "icon": "🌿"
+    }
+  ],
+  "tools": [
+    {
+      "id": "adaptive-facilitation-tools",
+      "title": "Adaptive Facilitation Tools",
+      "description": "Dynamic system for real-time dialogue adjustment",
+      "icon": "🛠️"
+    },
+    {
+      "id": "digital-feedback-dashboard",
+      "title": "Digital Feedback Dashboard",
+      "description": "Real-time monitoring and visualization system",
+      "icon": "📊"
+    }
+  ],
+  "progress": {
+    "text": "Section {current} of {total}"
+  },
+  "navigation": {
+    "downloadPdf": "Download PDF Version",
+    "continueToFramework": "Continue to Full Framework",
+    "previousSection": "Previous Section",
+    "nextSection": "Next Section"
+  },
+  "languageFallback": {
+    "title": "Content in your language coming soon",
+    "description": "This section is currently displayed in English until translation is complete."
+  },
+  "errors": {
+    "sectionNotFound": "Section \"{section}\" not found",
+    "contentInDevelopment": "This content is still being developed."
+  },
+  "loading": {
+    "text": "Loading framework content..."
+  }
+}

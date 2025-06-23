@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "Financial Systems Framework - Global Governance Framework",
+    "description": "A comprehensive blueprint for transforming global financial systems to prioritize human and ecological flourishing"
+  },
+  "guideCard": {
+    "title": "New to the Financial Systems Framework?",
+    "description": "Start with one of our simplified guides that explain the core concepts for different audiences.",
+    "buttonText": "Choose a Guide"
+  },
+  "categories": {
+    "overview": "Overview",
+    "foundation": "Foundation",
+    "implementation": "Implementation",
+    "operations": "Operations & Evaluation",
+    "resources": "Resources"
+  },
+  "sections": {
+    "index": "Overview",
+    "quick-guide": "Technical Guide",
+    "quick-guide-medium": "Community Guide", 
+    "quick-guide-youth": "Youth & Grassroots Guide",
+    "introduction": "Introduction",
+    "core-principles": "Core Principles",
+    "structural-components": "Structural Components",
+    "implementation-approaches": "Implementation Approaches",
+    "metrics-evaluation": "Metrics & Evaluation",
+    "supporting-sections": "Supporting Sections",
+    "appendices": "Appendices"
+  },
+  "sectionsShort": {
+    "index": "Overview",
+    "quick-guide": "Technical Guide",
+    "quick-guide-medium": "Community Guide",
+    "quick-guide-youth": "Youth Guide",
+    "introduction": "Introduction",
+    "core-principles": "Principles",
+    "structural-components": "Components",
+    "implementation-approaches": "Implementation",
+    "metrics-evaluation": "Metrics",
+    "supporting-sections": "Supporting",
+    "appendices": "Appendices"
+  },
+  "guides": [
+    {
+      "id": "quick-guide",
+      "title": "Technical Guide",
+      "description": "Detailed guide for policy implementers, financial institutions, and organizations",
+      "icon": "📊"
+    },
+    {
+      "id": "quick-guide-medium",
+      "title": "Community Guide", 
+      "description": "Balanced guide for local authorities, community groups, and non-profits",
+      "icon": "🤝"
+    },
+    {
+      "id": "quick-guide-youth",
+      "title": "Youth & Grassroots Guide",
+      "description": "Visual, accessible guide for youth groups, schools, and diverse communities", 
+      "icon": "🌱"
+    }
+  ],
+  "progress": {
+    "text": "Section {current} of {total}"
+  },
+  "languageFallback": {
+    "title": "Content in your language coming soon",
+    "description": "This section is currently displayed in English until translation is complete."
+  },
+  "navigation": {
+    "downloadPdf": "Download PDF Version",
+    "continueToFull": "Continue to Full Framework",
+    "previousSection": "Previous Section",
+    "nextSection": "Next Section"
+  },
+  "errors": {
+    "sectionNotFound": "Section \"{section}\" not found",
+    "contentInDevelopment": "This content is still being developed."
+  },
+  "loading": {
+    "text": "Loading framework content..."
+  },
+  "intro": {
+    "title": "Financial Systems Framework",
+    "overview": "Overview",
+    "paragraph1": "The Financial Systems Framework is a comprehensive blueprint for transforming global financial systems to prioritize human and ecological flourishing. It integrates diverse expressions of value—from traditional currencies to care, time, and ecological contributions—through Hearts as a voluntary global coordinating currency.",
+    "paragraph2": "This framework reimagines financial systems as living systems that reflect our collective values and shape our social priorities, while providing practical transition pathways from existing systems to more holistic alternatives."
+  }
+}

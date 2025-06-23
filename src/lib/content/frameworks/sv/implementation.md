@@ -1,14 +1,19 @@
 ---
-title: Implementeringsriktlinjer – Ramverk för Global Styrning
+title: Implementeringsriktlinjer – Ramverk för global styrning
 ---
+
+<script>
+  import AllFrameworksList from '$lib/components/AllFrameworksList.svelte';
+  export let t;
+</script>
 
 # Implementeringsriktlinjer
 
-Att implementera Ramverket för Global Styrning kräver genomtänkt anpassning till olika kontexter. Dessa riktlinjer ger praktiska tillvägagångssätt för att tillämpa ramverkets principer på olika nivåer och i varierande miljöer.
+Att implementera ramverken för global styrning kräver genomtänkt anpassning till olika kontexter. Dessa riktlinjer ger praktiska tillvägagångssätt för att tillämpa ramverkens principer på olika nivåer och i varierande miljöer.
 
 ## Förstå Implementeringsprocessen
 
-Implementering är ingen universell lösning, utan en resa av anpassning och utveckling. Ramverket kan tillämpas på flera nivåer:
+Implementering är ingen universell lösning, utan en resa av anpassning och utveckling. Ramverken kan tillämpas på flera nivåer:
 
 - **Samhällsnivå**: Lokala styrstrukturer, grannskapsråd, samhällsinitiativ
 - **Kommun-/stadsnivå**: Urban styrning, stadsplanering, lokal demokrati
@@ -20,7 +25,7 @@ Implementering är ingen universell lösning, utan en resa av anpassning och utv
 
 ### 1. Ramverk för Beslutsallokering
 
-Den mest utmanande delen av flernivåstyrning är att avgöra på vilken nivå ett beslut bör fattas. Ramverket erbjuder ett systematiskt tillvägagångssätt:
+Den mest utmanande delen av flernivåstyrning är att avgöra på vilken nivå ett beslut bör fattas. Ramverken erbjuder ett systematiskt tillvägagångssätt:
 
 #### Principen om Påverkansområde
 - **Lokal nivå**: Frågor som främst påverkar ett enskilt samhälle med minimala yttre effekter
@@ -89,7 +94,7 @@ För att olika styrningssystem ska kunna samverka effektivt krävs standardisera
 
 ### 3. Faserad Implementeringsstrategi
 
-Att införa ramverket fungerar bäst som en gradvis, evolutionär process:
+Att införa ramverken fungerar bäst som en gradvis, evolutionär process:
 
 #### Fas 1: Bygga Grund (1–2 år)
 - Skapa dialog mellan styrningsnivåer
@@ -111,76 +116,17 @@ Att införa ramverket fungerar bäst som en gradvis, evolutionär process:
 
 ## Domänspecifik implementering
 
-Det globala styrningsramverket är organiserat i fem distinkta nivåer, som var och en representerar ett logiskt och beroende steg i en global implementeringsresa. Nivåerna är ordnade efter prioritet och går från att hantera omedelbara, grundläggande kriser till att möjliggöra långsiktiga, visionära mål. Denna struktur ger en tydlig färdplan som säkerställer att insatser för att bygga stabilitet och rättvisa (nivå 1) skapar den nödvändiga grunden för att utveckla system för välstånd, jämlikhet och metastyrning i de efterföljande nivåerna. Denna nivåindelade färdplan överensstämmer med den etappvisa implementeringsmetoden, där grundbyggande möjliggör mer integrerade former av samarbete över tid.
+Ramverken för global styrning är organiserade i fem distinkta nivåer, som var och en representerar ett logiskt och beroende steg i en global implementeringsresa. Nivåerna är ordnade efter prioritet och går från att hantera omedelbara, grundläggande kriser till att möjliggöra långsiktiga, visionära mål. Denna struktur ger en tydlig färdplan som säkerställer att insatser för att bygga stabilitet och rättvisa (nivå 1) skapar den nödvändiga grunden för att utveckla system för välstånd, jämlikhet och metastyrning i de efterföljande nivåerna. Denna nivåindelade färdplan överensstämmer med den etappvisa implementeringsmetoden, där grundbyggande möjliggör mer integrerade former av samarbete över tid.
 
-### Tier 0: Global institutionell reform
-- [Fördraget för vårt enda hem](/frameworks/docs/implementation/treaty-for-our-only-home) v1.0
+<AllFrameworksList {t} />
 
-### **Nivå 1: Akut global stabilitet och rättvisa**
-
-* [Klimat- och energistyrning](/frameworks/docs/implementation/energy) (Under granskning)
-* [Fred och konfliktlösning](/frameworks/docs/implementation/peace) (Under granskning)
-  * Att göra: *Lägg till saknade resurser: Guider, verktyg och mallar.*
-  * [Spiral Peacecraft: En guide för värdebaserad konfliktlösning] (Planned)
-* [Ursprungsfolkens styrning och traditionell kunskap](/frameworks/docs/implementation/indigenous) (Under granskning)
-* [Hälso- och sjukvårdsstyrning](/frameworks/docs/implementation/healthcare) (Under granskning)
-* [Livsmedelssystem och jordbruk](/frameworks/docs/implementation/food) (Under granskning)
-  * Att göra: *Utöka omfattning: Tydlig styrning av jord och regenerativt jordbruk*
-* [Ekonomisk integration](/frameworks/docs/implementation/economic) (Under granskning)
-* [Rättssystem](/frameworks/docs/implementation/justice) (Under granskning)
-* [Migration och mänsklig rörlighet](/frameworks/docs/implementation/migration) (Planerad)
-* [Katastrofriskreducering och resiliens](/frameworks/docs/implementation/disaster) (Under granskning)
-
-
-### **Nivå 2: System för långsiktigt välstånd**
-
-* [Teknikstyrning](/frameworks/docs/implementation/technology) (Under granskning)
-* [Finansiella system](/frameworks/docs/implementation/finance) (Under granskning)
-* [Utbildningssystem](/frameworks/docs/implementation/education) (Under granskning)
-* [Psykisk hälsostyrning](/frameworks/docs/implementation/mental-health) (Planerad)
-* [Stads- och samhällsutveckling](/frameworks/docs/implementation/urban) (Planerad)
-* [Vatten och sanitet](/frameworks/docs/implementation/water) (Under granskning)
-* [Miljöhushållning](/frameworks/docs/implementation/environment) (Under granskning)
-* [Djurvälfärd](/frameworks/docs/implementation/animal-welfare) (Under granskning)
-* [Biologisk mångfald](/frameworks/docs/implementation/biodiversity) (Under granskning)
-* [Havs- och marin styrning](/frameworks/docs/implementation/oceans) (Planerad)
-* [Arbetsmarknadsstyrning](/frameworks/docs/implementation/labor) (Planerad)
-* [Funktionsrätt och inkluderingsstyrning](/frameworks/docs/implementation/inclusion) (Planerad)
-
----
-
-### **Nivå 3: Jämlikhet, kultur och framtida generationer**
-
-* [Digitala allmänningar](/frameworks/docs/implementation/digital) (Under granskning)
-* [Kulturarvsbevarande](/frameworks/docs/implementation/culture) (Planerad)
-  * *Utökad för att tydligt inkludera hotade språk och immateriellt kulturarv*
-* [Landsbygdsutveckling](/frameworks/docs/implementation/rural) (Planerad)
-* [Religiös och andlig dialog](/frameworks/docs/implementation/spiritual) (Under granskning)
-* [Ungdoms- och generationsstyrning](/frameworks/docs/implementation/youth) (Planerad)
-* [Globalt medborgarskapsarbete](/frameworks/global-citizenship/full-framework) (Under granskning)
-* [Global etik och mänskliga rättigheter](/frameworks/docs/implementation/ethics) (Under granskning)
-* [Jämställdhet och HBTQ+-rättigheter](/frameworks/docs/implementation/gender) (Planerad)
-* [Åldrande befolkningsstöd](/frameworks/docs/implementation/aging) (Under granskning)
-
----
-
-### **Nivå 4: Visionär och metastyrning**
-
-* [Rymdförvaltning](/frameworks/docs/implementation/space) (Planerad)
-* \[Styrning av existentiella risker] *(Ny – Planerad)*
-  * *Omfattar AI-säkerhet, bioetik, katastrofrisker och långsiktig överlevnad*
-* [Medvetande & inre utveckling](/frameworks/docs/implementation/consciousness) (Under granskning)
-* [Integrerad metagovernance](/frameworks/docs/implementation/meta) (Under granskning)
-* [Metoder & verktyg för implementering](/frameworks/docs/implementation/methods-tools) (Under granskning)
-* [Vishetsstyrning](/frameworks/docs/implementation/wisdom) (Planerad)
-
-Varje domänimplementering ger detaljerad vägledning, verktyg och fallstudier specifika för det området, samtidigt som de följer ramverkets kärnprinciper och implementeringsmetoder.
+Varje domänimplementering ger detaljerad vägledning, verktyg och fallstudier specifika för det området, samtidigt som de följer ramverkens kärnprinciper och implementeringsmetoder.
 
 ## Fallstudier för Implementering
 
 ### Lokal-till-Regional Implementering: Vattenförvaltning
 
-Ett avrinningsområde som spänner över flera samhällen visar hur ramverket kan tillämpas:
+Ett avrinningsområde som spänner över flera samhällen visar hur ramverken kan tillämpas:
 
 1. **Analys av beslutsallokering**:
  - Vattenanvändning påverkar alla samhällen → Regional fråga
@@ -235,7 +181,7 @@ Existerande maktstrukturer motsätter sig ofta maktförskjutning:
 Många samhällen saknar teknisk infrastruktur för avancerade system:
 
 **Strategier**:
-- Skapa teknik-anpassade versioner av ramverkets verktyg
+- Skapa teknik-anpassade versioner av ramverkens verktyg
 - Bygg kapacitet genom utbildning och resurser
 - Implementera analoga versioner av digitala processer
 - Designa för stegvis förbättring över tid
@@ -246,7 +192,7 @@ Styrmodeller måste respektera och anpassas till kulturella sammanhang:
 
 **Strategier**:
 - Involvera lokala kulturledare i anpassningsarbetet
-- Identifiera befintliga likheter i lokala traditioner
+- Identifiera befintliga likheter med ramverken i lokala traditioner
 - Anpassa begrepp och processer efter kulturella normer
 - Betona principer snarare än specifika strukturer
 
@@ -256,10 +202,10 @@ Styrmodeller måste respektera och anpassas till kulturella sammanhang:
  - Identifiera existerande strukturer och relationer
  - Identifiera nyckelaktörer och beslutsfattare
  - Utvärdera utmaningar och behov
- - Identifiera lämpliga startpunkter
+ - Identifiera lämpliga startpunkter för ramverken
 
 2. **Bygg Förståelse**:
- - Utbilda aktörer i ramverkets principer
+ - Utbilda aktörer i ramverkens principer
  - Skapa en gemensam vision för förbättrad styrning
  - Identifiera tidiga förespråkare
  - Skapa gemensamt språkbruk
@@ -276,7 +222,6 @@ Styrmodeller måste respektera och anpassas till kulturella sammanhang:
  - Bygg formella strukturer i takt med ökat förtroende
  - Dokumentera och dela din resa
 
-Att implementera ramverket är i sig en styrningsprocess som bör följa de principer det främjar: transparens, delaktighet, anpassningsbarhet och kontextrespekt.
+Att implementera ramverken är i sig en styrningsprocess som bör följa de principer de främjar: transparens, delaktighet, anpassningsbarhet och kontextrespekt.
 
 För konkreta exempel på hur dessa metoder tillämpats i praktiken, se avsnittet [Fallstudier](/frameworks/docs/case-studies).
-

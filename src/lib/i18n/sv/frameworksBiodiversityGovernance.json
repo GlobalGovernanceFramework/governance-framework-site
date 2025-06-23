@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "title": "Ramverk för biodiversitetsstyrning - Global styrningsramverk",
+    "description": "En revolutionerande plan för planetär läkning som sammanväver ursprungssuveränitet, ekonomisk transformation och kulturell mobilisering för vår levande jord"
+  },
+  "guideCard": {
+    "title": "Ny inom biodiversitetsramverket?",
+    "description": "Börja med en av våra specialiserade guider som förklarar ramverket för olika intressenter och sammanhang.",
+    "buttonText": "Välj en guide"
+  },
+  "categories": {
+    "overview": "Översikt",
+    "foundation": "Grund",
+    "governance": "Styrning & policy",
+    "implementation": "Implementering",
+    "resources": "Resurser"
+  },
+  "sections": {
+    "index": "Översikt",
+    "philosophical-preamble": "Filosofisk inledning",
+    "introduction-vision": "Introduktion och vision",
+    "guiding-principles": "Vägledande principer",
+    "core-pillars": "Kärnpelare",
+    "governance-structure": "Styrningsstruktur",
+    "policy-mechanisms": "Policymekanismer",
+    "stakeholder-engagement": "Intressentengagemang",
+    "financing-mechanisms": "Finansieringsmekanismer",
+    "implementation-roadmap": "Implementeringsfärdplan",
+    "metrics-success": "Mätvärden för framgång",
+    "visualizations": "Visualiseringar",
+    "challenges-solutions": "Utmaningar och lösningar",
+    "implementation-tools": "Implementeringsverktyg",
+    "reparations-protocol": "Reparationsprotokoll",
+    "conclusion-call-to-action": "Slutsats och handlingsuppmaning",
+    "technical-guide-policymakers": "Teknisk guide för beslutsfattare",
+    "community-implementation-guide": "Samhällsguide för implementering",
+    "youth-engagement-leadership-guide": "Ungdomsengagemang & ledarskapsguide",
+    "corporate-transition-redemption-guide": "Företagsövergång & återlösningsguide",
+    "indigenous-data-sovereignty-guide": "Urfolks datasuveränitet guide",
+    "appendix-a-synergy-esfmlg": "Bilaga A: Synergi med ESFMLG",
+    "appendix-b-glossary": "Bilaga B: Omfattande ordlista",
+    "appendix-c-tool-library": "Bilaga C: Komplett verktygsbibliotek",
+    "appendix-d-moral-edge-cases": "Bilaga D: Moraliska gränsfall",
+    "appendix-e-political-economy": "Bilaga E: Politisk ekonomi analys",
+    "appendix-f-feasibility-studies": "Bilaga F: Genomförbarhetsstudier",
+    "appendix-g-pilot-blueprints": "Bilaga G: Pilotprogram ritningar",
+    "appendix-h-scenario-planning": "Bilaga H: Scenarioplanering",
+    "appendix-i-cooperation-protocols": "Bilaga I: Internationella samarbetsprotokoll",
+    "appendix-j-creative-outputs": "Bilaga J: Kreativa outputs inspiration"
+  },
+  "sectionsShort": {
+    "philosophical-preamble": "Inledning",
+    "introduction-vision": "Introduktion",
+    "guiding-principles": "Principer",
+    "core-pillars": "Kärnpelare",
+    "governance-structure": "Styrning",
+    "policy-mechanisms": "Policy",
+    "stakeholder-engagement": "Intressenter",
+    "financing-mechanisms": "Finansiering",
+    "implementation-roadmap": "Färdplan",
+    "metrics-success": "Mätvärden",
+    "visualizations": "Visualiseringar",
+    "challenges-solutions": "Utmaningar",
+    "implementation-tools": "Verktyg",
+    "reparations-protocol": "Reparationer",
+    "conclusion-call-to-action": "Slutsats",
+    "technical-guide-policymakers": "Beslutsfattarguide",
+    "community-implementation-guide": "Samhällsguide",
+    "youth-engagement-leadership-guide": "Ungdomsguide",
+    "corporate-transition-redemption-guide": "Företagsguide",
+    "indigenous-data-sovereignty-guide": "Ursprungsguide"
+  },
+  "progress": {
+    "text": "Avsnitt {current} av {total}"
+  },
+  "navigation": {
+    "downloadPdf": "Ladda ner PDF-version",
+    "continueToFramework": "Fortsätt till fullständigt ramverk",
+    "previousSection": "Föregående avsnitt",
+    "nextSection": "Nästa avsnitt"
+  },
+  "languageFallback": {
+    "title": "Innehåll på svenska kommer snart",
+    "description": "Detta avsnitt visas för närvarande på engelska tills den svenska översättningen är klar."
+  },
+  "loading": {
+    "text": "Laddar ramverksinnehåll..."
+  },
+  "errors": {
+    "sectionNotFound": "Avsnitt \"{section}\" hittades inte",
+    "contentInDevelopment": "Detta innehåll utvecklas fortfarande."
+  }
+}

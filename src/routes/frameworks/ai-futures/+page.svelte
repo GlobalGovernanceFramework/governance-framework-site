@@ -227,7 +227,7 @@
     <div class="cta">
       <h3 class="cta-title">{$t('aiFutures.action.cta.title')}</h3>
       <p>{$t('aiFutures.action.cta.description')}</p>
-      <a href="{base}/frameworks/docs/implementation/technology" class="btn">{$t('aiFutures.action.cta.button')}</a>
+      <a href="{base}/frameworks/technology-governance" class="btn">{$t('aiFutures.action.cta.button')}</a>
     </div>
   </div>
 </div>

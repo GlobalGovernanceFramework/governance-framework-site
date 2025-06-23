@@ -2,6 +2,19 @@
 <script>
   import { t } from '$lib/i18n';
   import { base } from '$app/paths';
+  import AllFrameworksList from '$lib/components/AllFrameworksList.svelte';
+
+  // Smooth scroll function to navigate to tier sections
+  function scrollToTier(tierNumber) {
+    const element = document.getElementById(`tier-${tierNumber}`);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'start',
+        inline: 'nearest'
+      });
+    }
+  }
 </script>
 
 <svelte:head>
@@ -138,6 +151,96 @@
             </svg>
           </a>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEW: Implementation Frameworks Section -->
+<section style="padding: 3rem 0; background-color: #f8fafc;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
+    <div style="text-align: center; margin-bottom: 3rem;">
+      <h2 style="font-size: 2rem; font-weight: 700; color: #2B4B8C; margin-bottom: 1rem;">
+        {$t('framework.implementationFrameworks.title')}
+      </h2>
+      <p style="color: #4b5563; font-size: 1.125rem; max-width: 42rem; margin: 0 auto; line-height: 1.7;">
+        {$t('framework.implementationFrameworks.description')}
+      </p>
+    </div>
+    
+    <!-- Implementation Roadmap Explanation -->
+    <div style="background: linear-gradient(to right, #e9f2e9, #eaf5ea); padding: 2rem; border-radius: 0.75rem; margin-bottom: 3rem; border-left: 4px solid #2D5F2D;">
+      <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+        <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.5rem; height: 1.5rem; color: #2D5F2D; margin-right: 0.75rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.031 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+        </svg>
+        <h3 style="font-size: 1.375rem; font-weight: 600; color: #2D5F2D; margin: 0;">{$t('framework.implementationFrameworks.roadmapTitle')}</h3>
+      </div>
+      <p style="color: #2D5F2D; line-height: 1.7; margin-bottom: 1rem;">
+        {$t('framework.implementationFrameworks.roadmapDescription')}
+      </p>
+      <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem;">
+        <button 
+          class="tier-nav-button tier-0-button"
+          on:click={() => scrollToTier(0)}
+          style="flex: 1; min-width: 200px; text-align: center; cursor: pointer; border: none; background: none; padding: 0;"
+        >
+          <div style="background-color: #dc2626; color: white; padding: 0.5rem; border-radius: 0.375rem; font-weight: 600; margin-bottom: 0.5rem; transition: all 0.2s ease;">Tier 0</div>
+          <span style="font-size: 0.875rem; color: #374151; display: block;">{$t('framework.implementationFrameworks.tiers.tier0')}</span>
+        </button>
+        <button 
+          class="tier-nav-button tier-1-button"
+          on:click={() => scrollToTier(1)}
+          style="flex: 1; min-width: 200px; text-align: center; cursor: pointer; border: none; background: none; padding: 0;"
+        >
+          <div style="background-color: #ea580c; color: white; padding: 0.5rem; border-radius: 0.375rem; font-weight: 600; margin-bottom: 0.5rem; transition: all 0.2s ease;">Tier 1</div>
+          <span style="font-size: 0.875rem; color: #374151; display: block;">{$t('framework.implementationFrameworks.tiers.tier1')}</span>
+        </button>
+        <button 
+          class="tier-nav-button tier-2-button"
+          on:click={() => scrollToTier(2)}
+          style="flex: 1; min-width: 200px; text-align: center; cursor: pointer; border: none; background: none; padding: 0;"
+        >
+          <div style="background-color: #ca8a04; color: white; padding: 0.5rem; border-radius: 0.375rem; font-weight: 600; margin-bottom: 0.5rem; transition: all 0.2s ease;">Tier 2</div>
+          <span style="font-size: 0.875rem; color: #374151; display: block;">{$t('framework.implementationFrameworks.tiers.tier2')}</span>
+        </button>
+        <button 
+          class="tier-nav-button tier-3-button"
+          on:click={() => scrollToTier(3)}
+          style="flex: 1; min-width: 200px; text-align: center; cursor: pointer; border: none; background: none; padding: 0;"
+        >
+          <div style="background-color: #16a34a; color: white; padding: 0.5rem; border-radius: 0.375rem; font-weight: 600; margin-bottom: 0.5rem; transition: all 0.2s ease;">Tier 3</div>
+          <span style="font-size: 0.875rem; color: #374151; display: block;">{$t('framework.implementationFrameworks.tiers.tier3')}</span>
+        </button>
+        <button 
+          class="tier-nav-button tier-4-button"
+          on:click={() => scrollToTier(4)}
+          style="flex: 1; min-width: 200px; text-align: center; cursor: pointer; border: none; background: none; padding: 0;"
+        >
+          <div style="background-color: #7c3aed; color: white; padding: 0.5rem; border-radius: 0.375rem; font-weight: 600; margin-bottom: 0.5rem; transition: all 0.2s ease;">Tier 4</div>
+          <span style="font-size: 0.875rem; color: #374151; display: block;">{$t('framework.implementationFrameworks.tiers.tier4')}</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Dynamic Frameworks List using your existing component -->
+    <AllFrameworksList t={$t} showTierHeaders={true} className="implementation-frameworks" addTierIds={true} />
+
+    <!-- Implementation Getting Started -->
+    <div style="background-color: white; padding: 2rem; border-radius: 0.75rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-top: 3rem; text-align: center;">
+      <h3 style="font-size: 1.5rem; font-weight: 600; color: #2B4B8C; margin-bottom: 1rem;">
+        {$t('framework.implementationFrameworks.gettingStarted.title')}
+      </h3>
+      <p style="color: #4b5563; line-height: 1.7; margin-bottom: 2rem; max-width: 36rem; margin-left: auto; margin-right: auto;">
+        {$t('framework.implementationFrameworks.gettingStarted.description')}
+      </p>
+      <div style="display: flex; flex-direction: column; gap: 1rem; align-items: center; justify-content: center; max-width: 20rem; margin: 0 auto;">
+        <a href="{base}/frameworks/docs/implementation" style="width: 100%; display: inline-block; background-color: #DAA520; color: white; font-weight: 600; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.2s;">
+          {$t('framework.implementationFrameworks.gettingStarted.implementationButton')}
+        </a>
+        <a href="{base}/frameworks/docs/case-studies" style="width: 100%; display: inline-block; background-color: transparent; border: 2px solid #2B4B8C; color: #2B4B8C; font-weight: 600; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; transition: all 0.2s;">
+          {$t('framework.implementationFrameworks.gettingStarted.caseStudiesButton')}
+        </a>
       </div>
     </div>
   </div>
@@ -389,6 +492,289 @@
     gap: 1rem;
     margin-bottom: 1.5rem;
   }
+
+  /* --- Tier Navigation Buttons --- */
+  .tier-nav-button {
+    transition: all 0.2s ease;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .tier-nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+  }
+
+  .tier-nav-button:hover div {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .tier-nav-button:active {
+    transform: translateY(0);
+  }
+
+  .tier-nav-button:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+  }
+
+  /* Add visual feedback for button interaction */
+  .tier-0-button:hover div { box-shadow: 0 4px 8px rgba(220, 38, 38, 0.3); }
+  .tier-1-button:hover div { box-shadow: 0 4px 8px rgba(234, 88, 12, 0.3); }
+  .tier-2-button:hover div { box-shadow: 0 4px 8px rgba(202, 138, 4, 0.3); }
+  .tier-3-button:hover div { box-shadow: 0 4px 8px rgba(22, 163, 74, 0.3); }
+  .tier-4-button:hover div { box-shadow: 0 4px 8px rgba(124, 58, 237, 0.3); }
+  :global(.implementation-frameworks) {
+    margin-top: 2rem;
+  }
+
+  /* Enhanced tier section styling that matches page design */
+  :global(.implementation-frameworks .tier-section) {
+    background: linear-gradient(to right, #f8fafc, #f1f5f9);
+    border-radius: 1rem;
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Add subtle background pattern */
+  :global(.implementation-frameworks .tier-section::before) {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, var(--tier-color), transparent);
+  }
+
+  :global(.implementation-frameworks .tier-section:last-child) {
+    margin-bottom: 0;
+  }
+
+  /* Tier-specific color variables and styling */
+  :global(.tier-0) {
+    --tier-color: #dc2626;
+    border-top: 4px solid #dc2626;
+  }
+
+  :global(.tier-1) {
+    --tier-color: #ea580c;
+    border-top: 4px solid #ea580c;
+  }
+
+  :global(.tier-2) {
+    --tier-color: #ca8a04;
+    border-top: 4px solid #ca8a04;
+  }
+
+  :global(.tier-3) {
+    --tier-color: #16a34a;
+    border-top: 4px solid #16a34a;
+  }
+
+  :global(.tier-4) {
+    --tier-color: #7c3aed;
+    border-top: 4px solid #7c3aed;
+  }
+
+  /* Tier headers styling */
+  :global(.implementation-frameworks .tier-section h2) {
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  :global(.implementation-frameworks .tier-section h2::before) {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--tier-color);
+    flex-shrink: 0;
+  }
+
+  :global(.implementation-frameworks .tier-description) {
+    color: #4b5563;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    font-style: italic;
+  }
+
+  /* Enhanced framework grid layout */
+  :global(.implementation-frameworks .framework-list) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+  }
+
+  /* Beautiful framework cards - now fully clickable */
+  :global(.implementation-frameworks .framework-item) {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border-radius: 0.75rem;
+    padding: 0; /* Remove padding from container since link will handle it */
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Make the framework link fill the entire card */
+  :global(.implementation-frameworks .framework-link) {
+    font-size: 1.125rem;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #1f2937;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    height: 100%;
+    position: relative;
+  }
+
+  /* Subtle accent line for each framework card */
+  :global(.implementation-frameworks .framework-link::before) {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--tier-color), rgba(255,255,255,0.5));
+    opacity: 0.7;
+  }
+
+  :global(.implementation-frameworks .framework-item:hover) {
+    background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    border-color: var(--tier-color);
+  }
+
+  :global(.implementation-frameworks .framework-item:hover .framework-link::before) {
+    opacity: 1;
+  }
+
+  :global(.implementation-frameworks .framework-item:hover .framework-link) {
+    color: var(--tier-color);
+  }
+
+  /* Framework title styling within the link */
+  :global(.implementation-frameworks .framework-link .framework-title) {
+    font-size: 1.125rem;
+    line-height: 1.4;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  /* Status and version badges container */
+  :global(.implementation-frameworks .framework-meta) {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: auto; /* Push to bottom of card */
+    flex-wrap: wrap;
+  }
+
+  /* Status and version badges */
+  :global(.implementation-frameworks .status) {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+  }
+
+  :global(.implementation-frameworks .version) {
+    font-size: 0.75rem;
+    background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+    color: #64748b;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    border: 1px solid #cbd5e1;
+  }
+
+  /* No frameworks message styling */
+  :global(.implementation-frameworks .no-frameworks) {
+    color: #6b7280;
+    font-style: italic;
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, #f9fafb, #f3f4f6);
+    border-radius: 0.75rem;
+    border: 2px dashed #d1d5db;
+    margin: 1rem 0;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .quick-access-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .button-gold,
+    .button-outline {
+      min-width: 200px;
+    }
+
+    :global(.implementation-frameworks .framework-list) {
+      grid-template-columns: 1fr;
+    }
+
+    :global(.implementation-frameworks .tier-section) {
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    :global(.implementation-frameworks .tier-section h2) {
+      font-size: 1.5rem;
+    }
+  }
+
+  /* Subtle animation for framework items */
+  @media (prefers-reduced-motion: no-preference) {
+    :global(.implementation-frameworks .framework-item) {
+      animation: fadeInUp 0.6s ease-out;
+      animation-fill-mode: both;
+    }
+
+    :global(.implementation-frameworks .framework-item:nth-child(1)) { animation-delay: 0.1s; }
+    :global(.implementation-frameworks .framework-item:nth-child(2)) { animation-delay: 0.2s; }
+    :global(.implementation-frameworks .framework-item:nth-child(3)) { animation-delay: 0.3s; }
+    :global(.implementation-frameworks .framework-item:nth-child(4)) { animation-delay: 0.4s; }
+    :global(.implementation-frameworks .framework-item:nth-child(5)) { animation-delay: 0.5s; }
+    :global(.implementation-frameworks .framework-item:nth-child(6)) { animation-delay: 0.6s; }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 </style>
-
-

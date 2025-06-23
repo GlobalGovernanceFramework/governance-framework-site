@@ -1,10 +1,10 @@
 ---
-title: Fallstudier – Ramverk för Global Styrning
+title: Fallstudier – Ramverken för global styrning
 ---
 
 # Fallstudier
 
-Dessa fallstudier visar hur principerna i Ramverket för Global Styrning har tillämpats i olika sammanhang världen över. Varje exempel illustrerar olika aspekter av ramverket i praktiken och ger insikter om implementeringens utmaningar och framgångar.
+Dessa fallstudier visar hur principerna i Ramverken för global styrning har tillämpats i olika sammanhang världen över. Varje exempel illustrerar olika aspekter av ramverket i praktiken och ger insikter om implementeringens utmaningar och framgångar.
 
 ## Nordiska Rådet: Regionalt samarbete utan centralisering
 
@@ -224,7 +224,7 @@ Bland dessa olika fallstudier framträder flera gemensamma framgångsfaktorer:
 4. **Återkopplingsslingor**: Lärande och förbättring över tid  
 5. **Balans mellan struktur och flexibilitet**: Ramverk + anpassning
 
-Dessa fallstudier visar att Global Governance Framework inte bara är teori, utan en praktiskt fungerande modell för olika sammanhang.
+Dessa fallstudier visar att Global Governance Frameworks inte bara är teori, utan en praktiskt fungerande modell för olika sammanhang.
 
 För vägledning i hur du kan tillämpa dessa arbetssätt, se avsnittet [Implementeringsriktlinjer](/frameworks/docs/implementation).
 

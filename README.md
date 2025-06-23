@@ -90,7 +90,9 @@ module.exports = {
 ├── static/               # Static assets
 ├── CONTRIBUTING.md       # Contribution guidelines
 ├── README.md
-├── STYLE_GUIDE.md        # Documentation standards and best practices
+├── static/
+│   ├── get-involved/
+│   │   ├── STYLE_GUIDE.md # Documentation of standards and best practices for framework contributions
 ├── svelte.config.js      # SvelteKit configuration
 ├── tailwind.config.js    # Tailwind CSS configuration
 ├── postcss.config.js     # PostCSS configuration
