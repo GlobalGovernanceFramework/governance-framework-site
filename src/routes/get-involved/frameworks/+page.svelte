@@ -8,7 +8,7 @@
 
   export let data;
 
-  console.log('Page loading...');
+  console.log('Frameworks page loading...');
 
   $: currentLocale = $locale;
   
@@ -38,37 +38,57 @@
     }
   });
   
-  // Simple fallback text
+  // Bilingual fallback text
   const fallbackText = {
-    title: 'Framework Development',
-    subtitle: 'Create governance frameworks that enable system interoperability',
-    heroIntro: 'Join our community of framework developers and help create tools that enable different governance systems to communicate, collaborate, and evolve together.',
-    downloadGuide: 'Download Development Guide',
-    joinDevelopers: 'Join Framework Community',
-    downloadMarkdown: 'Download Markdown Version',
-    downloadPdf: 'Download PDF Version',
-    joinDiscord: 'Join Our Framework Community',
-    getStarted: 'Ready to Build Frameworks?',
-    guideDescription: 'Get the complete framework developer\'s guide with authoring workflows, quality standards, and collaboration approaches.',
-    communityDescription: 'Connect with other framework developers, share your work, and coordinate on governance innovation projects.',
-    errorTitle: 'Framework Guide Not Available',
-    errorText: 'The framework development guide could not be loaded. Please try again later or contact our development team.',
-    caseStudies: 'View Case Studies',
-    caseStudiesDescription: 'Explore real-world examples of governance frameworks in action and learn from implementation experiences.'
+    en: {
+      title: 'Framework Development',
+      subtitle: 'Create governance frameworks that enable system interoperability',
+      heroIntro: 'Join our community of framework developers and help create tools that enable different governance systems to communicate, collaborate, and evolve together.',
+      downloadGuide: 'Download Development Guide',
+      joinDevelopers: 'Join Framework Community',
+      downloadMarkdown: 'Download Markdown Version',
+      downloadPdf: 'Download PDF Version',
+      joinDiscord: 'Join Our Framework Community',
+      getStarted: 'Ready to Build Frameworks?',
+      guideDescription: 'Get the complete framework developer\'s guide with authoring workflows, quality standards, and collaboration approaches.',
+      communityDescription: 'Connect with other framework developers, share your work, and coordinate on governance innovation projects.',
+      errorTitle: 'Framework Guide Not Available',
+      errorText: 'The framework development guide could not be loaded. Please try again later or contact our development team.',
+      caseStudies: 'View Case Studies',
+      caseStudiesDescription: 'Explore real-world examples of governance frameworks in action and learn from implementation experiences.'
+    },
+    sv: {
+      title: 'Ramverksutveckling',
+      subtitle: 'Skapa styrningsramverk som möjliggör systeminteroperabilitet',
+      heroIntro: 'Gå med i vår gemenskap av ramverksutvecklare och hjälp till att skapa verktyg som gör det möjligt för olika styrningssystem att kommunicera, samarbeta och utvecklas tillsammans.',
+      downloadGuide: 'Ladda ner utvecklingsguide',
+      joinDevelopers: 'Gå med i ramverksgemenskap',
+      downloadMarkdown: 'Ladda ner Markdown-version',
+      downloadPdf: 'Ladda ner PDF-version',
+      joinDiscord: 'Gå med i vår ramverksgemenskap',
+      getStarted: 'Redo att bygga ramverk?',
+      guideDescription: 'Få den kompletta ramverksutvecklarens guide med författararbetsflöden, kvalitetsstandarder och samarbetsmetoder.',
+      communityDescription: 'Anslut dig till andra ramverksutvecklare, dela ditt arbete och koordinera innovationsprojekt för styrning.',
+      errorTitle: 'Ramverksguide inte tillgänglig',
+      errorText: 'Ramverksutvecklingsguiden kunde inte laddas. Vänligen försök igen senare eller kontakta vårt utvecklingsteam.',
+      caseStudies: 'Visa fallstudier',
+      caseStudiesDescription: 'Utforska verkliga exempel på styrningsramverk i praktiken och lär dig av implementeringserfarenheter.'
+    }
   };
 
-  // Simple text function - try multiple ways to get translations
+  // Simple text function with language support
   function getText(key) {
-    // Try the translation system with the correct nested path
+    // Try the translation system first
     let value = $t(`frameworks.${key}`);
    
-    // If we get a value, use it, otherwise use fallback
-    if (value && value !== '') {
+    // If we get a value that's not just the key, use it
+    if (value && value !== '' && value !== `frameworks.${key}`) {
       return value;
     }
     
-    // Fallback to hardcoded text
-    return fallbackText[key] || key;
+    // Fallback to language-specific text
+    const langTexts = fallbackText[currentLocale] || fallbackText.en;
+    return langTexts[key] || fallbackText.en[key] || key;
   }
 
   function downloadMarkdown() {
@@ -100,14 +120,13 @@
   }
 
   onMount(() => {
-    console.log('Frameworks contribution page mounted successfully');
-    console.log('Component mounted with locale:', currentLocale); // ✅ Add debug log
-    console.log('Content using English fallback:', data.contentUsingEnglishFallback); // ✅ Add debug log
+    console.log('Component mounted with locale:', currentLocale); // Debug log
+    console.log('Content using English fallback:', data.contentUsingEnglishFallback); // Debug log
   });
 </script>
 
 <svelte:head>
-  <title>{getText('title')} - Global Governance Framework</title>
+  <title>{getText('title')} - Global Governance Frameworks</title>
   <meta name="description" content={getText('subtitle')} />
 </svelte:head>
 
@@ -122,6 +141,17 @@
         <p class="hero-intro">{getText('heroIntro')}</p>
       </div>
     </div>
+
+    <!-- Language Fallback Notice -->
+    {#if data.contentUsingEnglishFallback && currentLocale !== 'en'}
+      <div class="language-fallback-notice">
+        <div class="notice-icon">🌐</div>
+        <div class="notice-content">
+          <strong>{currentLocale === 'sv' ? 'Innehåll på svenska kommer snart' : 'Content in your language coming soon'}</strong>
+          <p>{currentLocale === 'sv' ? 'Detta avsnitt visas för närvarande på engelska tills den svenska översättningen är klar.' : 'This section is currently displayed in English until translation is complete.'}</p>
+        </div>
+      </div>
+    {/if}
 
     <!-- Quick Actions Card -->
     <div class="action-cards">
@@ -161,7 +191,7 @@
           <p>{getText('caseStudiesDescription')}</p>
           <div class="card-actions">
             <button class="primary-btn examples-btn" on:click={viewCaseStudies}>
-              View Examples <span class="external-icon">↗</span>
+              {getText('caseStudies')} <span class="external-icon">↗</span>
             </button>
           </div>
         </div>
@@ -249,6 +279,43 @@
     max-width: 600px;
     margin: 0 auto;
     opacity: 0.85;
+  }
+
+  /* Language fallback notice */
+  .language-fallback-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: rgba(107, 92, 165, 0.1);
+    border: 1px solid rgba(107, 92, 165, 0.3);
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .notice-icon {
+    font-size: 1.25rem;
+    color: var(--secondary-purple);
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+  }
+
+  .notice-content {
+    flex: 1;
+  }
+
+  .notice-content strong {
+    color: var(--secondary-purple);
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .notice-content p {
+    color: var(--content-text);
+    font-size: 0.875rem;
+    margin: 0;
+    line-height: 1.5;
   }
 
   /* Action Cards */
@@ -426,9 +493,33 @@
     color: var(--content-text);
   }
 
+  .guide-content :global(ul),
+  .guide-content :global(ol) {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    color: var(--content-text);
+  }
+
+  .guide-content :global(li) {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+
   .guide-content :global(strong) {
     font-weight: 600;
     color: var(--primary-blue);
+  }
+
+  .guide-content :global(a) {
+    color: var(--primary-blue);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(43, 75, 140, 0.3);
+    transition: all 0.2s;
+  }
+
+  .guide-content :global(a:hover) {
+    color: var(--warm-gold);
+    border-bottom-color: var(--warm-gold);
   }
 
   /* Bottom CTA */
@@ -544,6 +635,22 @@
     .cta-actions button {
       width: 100%;
       max-width: 300px;
+    }
+
+    .language-fallback-notice {
+      padding: 0.75rem 1rem;
+    }
+
+    .notice-icon {
+      font-size: 1.1rem;
+    }
+
+    .notice-content strong {
+      font-size: 0.9rem;
+    }
+
+    .notice-content p {
+      font-size: 0.8rem;
     }
   }
 </style>

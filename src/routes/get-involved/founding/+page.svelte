@@ -112,7 +112,7 @@
 </script>
 
 <svelte:head>
-  <title>{getText('title')} - Global Governance Framework</title>
+  <title>{getText('title')} - Global Governance Frameworks</title>
   <meta name="description" content={getText('subtitle')} />
 </svelte:head>
 

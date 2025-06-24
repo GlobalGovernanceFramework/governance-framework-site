@@ -3,45 +3,92 @@
   import { t, locale } from '$lib/i18n';
   import { browser } from '$app/environment';
   import { base } from '$app/paths';
-  import { onMount } from 'svelte';
+  import { onMount, afterUpdate } from 'svelte';
+  import { invalidate, afterNavigate } from '$app/navigation';
 
   export let data;
 
-  console.log('Outreach contribution page loading...');
+  console.log('Outreach page loading...');
 
   $: currentLocale = $locale;
   
-  // Simple fallback text
+  let previousLocale = null;
+  let isFirstLoad = true;
+  
+  // ✅ Use afterNavigate to handle the timing better
+  afterNavigate(() => {
+    if (isFirstLoad) {
+      previousLocale = currentLocale;
+      isFirstLoad = false;
+      console.log('Initial navigation complete, locale set to:', currentLocale);
+    }
+  });
+  
+  // ✅ Watch for locale changes after navigation is complete
+  afterUpdate(() => {
+    if (browser && !isFirstLoad && currentLocale !== previousLocale) {
+      console.log('Locale changed after update:', { from: previousLocale, to: currentLocale });
+      previousLocale = currentLocale;
+      
+      // Invalidate with a small delay to ensure the change is processed
+      setTimeout(() => {
+        console.log('Invalidating page data...');
+        invalidate('app:locale');
+      }, 50);
+    }
+  });
+  
+  // Bilingual fallback text
   const fallbackText = {
-    title: 'Community & Outreach',
-    subtitle: 'Help spread our vision for cooperative governance worldwide',
-    heroIntro: 'Join our global community of advocates and help share tools for better governance with communities, organizations, and leaders worldwide.',
-    downloadGuide: 'Download Outreach Guide',
-    joinAdvocates: 'Join Advocate Community',
-    downloadMarkdown: 'Download Markdown Version',
-    downloadPdf: 'Download PDF Version',
-    joinDiscord: 'Join Our Outreach Community',
-    getStarted: 'Ready to Make an Impact?',
-    guideDescription: 'Get the complete advocate\'s guide with messaging strategies, content creation ideas, and community building approaches.',
-    communityDescription: 'Connect with other advocates, share your outreach efforts, and coordinate campaigns in real-time.',
-    errorTitle: 'Outreach Guide Not Available',
-    errorText: 'The outreach guide could not be loaded. Please try again later or contact our community team.',
-    advocacyKit: 'Download Advocacy Kit',
-    advocacyDescription: 'Access talking points, social media templates, and presentation materials for effective outreach.'
+    en: {
+      title: 'Community & Outreach',
+      subtitle: 'Help spread our vision for cooperative governance worldwide',
+      heroIntro: 'Join our global community of advocates and help share tools for better governance with communities, organizations, and leaders worldwide.',
+      downloadGuide: 'Download Outreach Guide',
+      joinAdvocates: 'Join Advocate Community',
+      downloadMarkdown: 'Download Markdown Version',
+      downloadPdf: 'Download PDF Version',
+      joinDiscord: 'Join Our Outreach Community',
+      getStarted: 'Ready to Make an Impact?',
+      guideDescription: 'Get the complete advocate\'s guide with messaging strategies, content creation ideas, and community building approaches.',
+      communityDescription: 'Connect with other advocates, share your outreach efforts, and coordinate campaigns in real-time.',
+      errorTitle: 'Outreach Guide Not Available',
+      errorText: 'The outreach guide could not be loaded. Please try again later or contact our community team.',
+      advocacyKit: 'Download Advocacy Kit',
+      advocacyDescription: 'Access talking points, social media templates, and presentation materials for effective outreach.'
+    },
+    sv: {
+      title: 'Gemenskap och uppsökande verksamhet',
+      subtitle: 'Hjälp till att sprida vår vision för kooperativ styrning världen över',
+      heroIntro: 'Gå med i vår globala gemenskap av förespråkare och hjälp till att dela verktyg för bättre styrning med samhällen, organisationer och ledare världen över.',
+      downloadGuide: 'Ladda ner uppsökningsguide',
+      joinAdvocates: 'Gå med i förespråkargemenskap',
+      downloadMarkdown: 'Ladda ner Markdown-version',
+      downloadPdf: 'Ladda ner PDF-version',
+      joinDiscord: 'Gå med i vår uppsökningsgemenskap',
+      getStarted: 'Redo att göra skillnad?',
+      guideDescription: 'Få den kompletta förespråkarens guide med meddelandestrategier, idéer för innehållsskapande och metoder för gemenskapsbyggande.',
+      communityDescription: 'Anslut dig till andra förespråkare, dela dina uppsökningsinsatser och koordinera kampanjer i realtid.',
+      errorTitle: 'Uppsökningsguide inte tillgänglig',
+      errorText: 'Uppsökningsguiden kunde inte laddas. Vänligen försök igen senare eller kontakta vårt gemenskapsteam.',
+      advocacyKit: 'Ladda ner argumentationskit',
+      advocacyDescription: 'Få tillgång till diskussionsunderlag, mallar för sociala medier och presentationsmaterial för effektiv uppsökning.'
+    }
   };
 
-  // Simple text function - try multiple ways to get translations
+  // Simple text function with language support
   function getText(key) {
-    // Try the translation system with the correct nested path
+    // Try the translation system first
     let value = $t(`outreach.${key}`);
    
-    // If we get a value, use it, otherwise use fallback
-    if (value && value !== '') {
+    // If we get a value that's not just the key, use it
+    if (value && value !== '' && value !== `outreach.${key}`) {
       return value;
     }
     
-    // Fallback to hardcoded text
-    return fallbackText[key] || key;
+    // Fallback to language-specific text
+    const langTexts = fallbackText[currentLocale] || fallbackText.en;
+    return langTexts[key] || fallbackText.en[key] || key;
   }
 
   function downloadMarkdown() {
@@ -79,12 +126,13 @@
   }
 
   onMount(() => {
-    console.log('Outreach contribution page mounted successfully');
+    console.log('Component mounted with locale:', currentLocale); // Debug log
+    console.log('Content using English fallback:', data.contentUsingEnglishFallback); // Debug log
   });
 </script>
 
 <svelte:head>
-  <title>{getText('title')} - Global Governance Framework</title>
+  <title>{getText('title')} - Global Governance Frameworks</title>
   <meta name="description" content={getText('subtitle')} />
 </svelte:head>
 
@@ -99,6 +147,17 @@
         <p class="hero-intro">{getText('heroIntro')}</p>
       </div>
     </div>
+
+    <!-- Language Fallback Notice -->
+    {#if data.contentUsingEnglishFallback && currentLocale !== 'en'}
+      <div class="language-fallback-notice">
+        <div class="notice-icon">🌐</div>
+        <div class="notice-content">
+          <strong>{currentLocale === 'sv' ? 'Innehåll på svenska kommer snart' : 'Content in your language coming soon'}</strong>
+          <p>{currentLocale === 'sv' ? 'Detta avsnitt visas för närvarande på engelska tills den svenska översättningen är klar.' : 'This section is currently displayed in English until translation is complete.'}</p>
+        </div>
+      </div>
+    {/if}
 
     <!-- Quick Actions Card -->
     <div class="action-cards">
@@ -138,7 +197,7 @@
           <p>{getText('advocacyDescription')}</p>
           <div class="card-actions">
             <button class="primary-btn advocacy-btn" on:click={downloadAdvocacyKit}>
-              Download Kit <span class="download-icon">↓</span>
+              {getText('advocacyKit')} <span class="download-icon">↓</span>
             </button>
           </div>
         </div>
@@ -149,15 +208,10 @@
     <div class="guide-content">
       {#if data?.guideContent}
         <svelte:component this={data.guideContent} />
-      {:else if data?.contentUsingEnglishFallback}
-        <div class="fallback-notice">
-          <p>Content not available in {data.currentLocale}. Showing English version.</p>
-        </div>
       {:else}
         <div class="error-state">
           <h2>{getText('errorTitle')}</h2>
           <p>{getText('errorText')}</p>
-          <p>Debug: data = {JSON.stringify(data)}</p>
         </div>
       {/if}
     </div>
@@ -179,7 +233,6 @@
   </div>
 </div>
 
-<!-- Keep all the existing CSS styles exactly the same -->
 <style>
   /* Use home page color scheme */
   :root {
@@ -232,6 +285,43 @@
     max-width: 600px;
     margin: 0 auto;
     opacity: 0.85;
+  }
+
+  /* Language fallback notice */
+  .language-fallback-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: rgba(107, 92, 165, 0.1);
+    border: 1px solid rgba(107, 92, 165, 0.3);
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .notice-icon {
+    font-size: 1.25rem;
+    color: var(--secondary-purple);
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+  }
+
+  .notice-content {
+    flex: 1;
+  }
+
+  .notice-content strong {
+    color: var(--secondary-purple);
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .notice-content p {
+    color: var(--content-text);
+    font-size: 0.875rem;
+    margin: 0;
+    line-height: 1.5;
   }
 
   /* Action Cards */
@@ -410,9 +500,33 @@
     color: var(--content-text);
   }
 
+  .guide-content :global(ul),
+  .guide-content :global(ol) {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    color: var(--content-text);
+  }
+
+  .guide-content :global(li) {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+
   .guide-content :global(strong) {
     font-weight: 600;
     color: var(--primary-blue);
+  }
+
+  .guide-content :global(a) {
+    color: var(--primary-blue);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(43, 75, 140, 0.3);
+    transition: all 0.2s;
+  }
+
+  .guide-content :global(a:hover) {
+    color: var(--warm-gold);
+    border-bottom-color: var(--warm-gold);
   }
 
   /* Bottom CTA */
@@ -528,6 +642,22 @@
     .cta-actions button {
       width: 100%;
       max-width: 300px;
+    }
+
+    .language-fallback-notice {
+      padding: 0.75rem 1rem;
+    }
+
+    .notice-icon {
+      font-size: 1.1rem;
+    }
+
+    .notice-content strong {
+      font-size: 0.9rem;
+    }
+
+    .notice-content p {
+      font-size: 0.8rem;
     }
   }
 </style>
