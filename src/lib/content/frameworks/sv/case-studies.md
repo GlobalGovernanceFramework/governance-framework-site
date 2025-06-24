@@ -4,9 +4,9 @@ title: Fallstudier – Ramverken för global styrning
 
 # Fallstudier
 
-Dessa fallstudier visar hur principerna i Ramverken för global styrning har tillämpats i olika sammanhang världen över. Varje exempel illustrerar olika aspekter av ramverket i praktiken och ger insikter om implementeringens utmaningar och framgångar.
+Dessa fallstudier visar hur principerna i Ramverken för global styrning har tillämpats i olika sammanhang världen över. Varje exempel illustrerar olika aspekter av ramverken i praktiken och ger insikter om implementeringens utmaningar och framgångar.
 
-## Nordiska Rådet: Regionalt samarbete utan centralisering
+## Nordiska rådet: Regionalt samarbete utan centralisering
 
 ### Översikt
 **Nordiska rådet**, grundat 1952, underlättar samarbetet mellan Danmark, Finland, Island, Norge och Sverige, samt associerade områden som Grönland och Färöarna.
@@ -30,7 +30,7 @@ Nordiska rådet visar hur nationer kan skapa effektiv transnationell styrning ut
 - Gradvis, förtroendebaserad integration har varit mer stabil än toppstyrda initiativ  
 - Kulturella och språkliga band har underlättat politiskt samarbete
 
-### Relevans för ramverket
+### Relevans för ramverken
 Nordiska rådet visar hur principerna om decentralisering, kulturell autonomi och balanserad integration kan tillämpas framgångsrikt på regional nivå.
 
 ---
@@ -64,7 +64,7 @@ vTaiwan tillämpar en flerstegsprocess som kombinerar teknik med demokratiskt de
 - Minskad polarisering tack vare samförståndsfokus  
 - Skalbarhet visad i projekt med hundratusentals deltagare
 
-### Relevans för ramverket
+### Relevans för ramverken
 vTaiwan visar hur teknik kan stärka demokratin när den utformas etiskt. Det är ett starkt exempel på skalbart deltagande och transparens inom Global Governance Framework.
 
 ---
@@ -93,7 +93,7 @@ Decidim kombinerar digital och fysisk delaktighet:
 - Över 100 städer har antagit modellen  
 - Plattformens ägarskap förblir demokratiskt
 
-### Relevans för ramverket
+### Relevans för ramverken
 Decidim visar hur transparens och deltagande fungerar praktiskt på kommunal nivå. Den sprider innovation horisontellt, med lokal anpassning.
 
 ---
@@ -122,8 +122,8 @@ Bodensjön visar praktisk tillämpning av beslutsallokering och samverkan:
 - Balans mellan ekonomi och ekologi  
 - Motståndskraftig styrmodell
 
-### Relevans för ramverket
-Ett konkret exempel på hur gränsöverskridande resurser kan förvaltas genom ramverkets principer.
+### Relevans för ramverken
+Ett konkret exempel på hur gränsöverskridande resurser kan förvaltas genom ramverkens principer.
 
 ---
 
@@ -151,7 +151,7 @@ Zapatistastyrningen visar hur direktdemokrati fungerar i praktiken:
 - Ekonomisk motståndskraft genom kooperativ  
 - Direktdemokrati fungerar även i resurssvaga miljöer
 
-### Relevans för ramverket
+### Relevans för ramverken
 Ett starkt exempel på hur marginaliserade samhällen kan bygga fungerande styrning utan högteknologi.
 
 ---
@@ -180,8 +180,8 @@ Visar hur miljöstyrning sker i flera nivåer:
 - Ojämt genomförande mellan regioner  
 - Spänningar mellan central styrning och lokal anpassning
 
-### Relevans för ramverket
-Visar både potentialen och utmaningarna i att tillämpa ramverkets principer på EU-nivå.
+### Relevans för ramverken
+Visar både potentialen och utmaningarna i att tillämpa ramverkens principer på EU-nivå.
 
 ---
 
@@ -209,7 +209,7 @@ Visar hur global styrning kan fungera i praktiken:
 - Positiv påverkan även på klimatet  
 - Visar att global samverkan fungerar
 
-### Relevans för ramverket
+### Relevans för ramverken
 Visar att planetär styrning fungerar när den är väl utformad – särskilt genom adaptiv utveckling och global rättvisa.
 
 ---

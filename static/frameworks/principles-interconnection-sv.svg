@@ -594,7 +594,7 @@
      font-family="Arial, sans-serif"
      font-size="13"
      text-anchor="start"
-     id="text30">Rättigheter  Miljö</text>
+     id="text30">Rättigheter &amp; miljö</text>
   <rect
      x="620"
      y="540"
@@ -608,7 +608,7 @@
      font-family="Arial, sans-serif"
      font-size="13"
      text-anchor="start"
-     id="text31">Resurser  Konflikt</text>
+     id="text31">Resurser &amp; konflikt</text>
   <rect
      x="620"
      y="570"
@@ -622,7 +622,7 @@
      font-family="Arial, sans-serif"
      font-size="13"
      text-anchor="start"
-     id="text32">Evolution  Integration</text>
+     id="text32">Evolution &amp; integration</text>
   <!-- Small interconnection lines between principles -->
   <circle
      cx="400"
@@ -666,7 +666,7 @@
      text-anchor="middle"
      fill="#2B4B8C"
      font-weight="bold"
-     id="text35">Samband mellan Kärnprinciper</text>
+     id="text35">Samband mellan kärnprinciper</text>
   <text
      x="502"
      y="114"
