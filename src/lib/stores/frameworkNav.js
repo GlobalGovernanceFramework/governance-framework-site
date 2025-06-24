@@ -20,7 +20,7 @@ export const allFrameworks = [
     titleKey: 'framework.docs.nav.frameworkTitles.treatyForOurOnlyHome',
     tier: 0,
     status: 'ready',
-    version: 'v1.0',
+    version: 'review', // was v1.0, reverted for ethics audit
     path: '/frameworks/treaty-for-our-only-home'
   },
 
