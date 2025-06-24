@@ -4,44 +4,73 @@
   import { browser } from '$app/environment';
   import { base } from '$app/paths';
   import { onMount } from 'svelte';
+  import { invalidate } from '$app/navigation';
 
   export let data;
 
-  console.log('Website contribution page loading...');
+  console.log('Website page loading...');
 
   $: currentLocale = $locale;
   
-  // Simple fallback text
+  // Watch for locale changes and invalidate data if needed
+  let previousLocale = currentLocale;
+  $: if (browser && currentLocale !== previousLocale && previousLocale !== undefined) {
+    console.log('Locale changed, invalidating data:', { from: previousLocale, to: currentLocale });
+    previousLocale = currentLocale;
+    invalidate('app:locale');
+  }
+  
+  // Bilingual fallback text
   const fallbackText = {
-    title: "Website Development",
-    subtitle: "Help build and improve our global governance platform",
-    heroIntro: "Join our development community and contribute to building tools that enable governance system interoperability worldwide.",
-    downloadGuide: "Download Website Contributor Guide",
-    joinDevelopers: "Join Developer Community",
-    downloadMarkdown: "Download Markdown Version",
-    downloadPdf: "Download PDF Version",
-    joinDiscord: "Join Our Developer Community",
-    getStarted: "Ready to Start Coding?",
-    guideDescription: "Get the complete guide for developers. Includes setup instructions, coding standards, and workflows for integrating new frameworks into our SvelteKit site.",
-    communityDescription: "Connect with other developers, get code reviews, and collaborate on features in real-time.",
-    errorTitle: "Website contributor guide Not Available",
-    errorText: "The website contributor guide could not be loaded. Please try again later or contact our development team.",
-    githubRepo: "View GitHub Repository",
-    githubDescription: "Access the source code, submit issues, and contribute directly to the project."
+    en: {
+      title: "Website Development",
+      subtitle: "Help build and improve our global governance platform",
+      heroIntro: "Join our development community and contribute to building tools that enable governance system interoperability worldwide.",
+      downloadGuide: "Download Website Contributor Guide",
+      joinDevelopers: "Join Developer Community",
+      downloadMarkdown: "Download Markdown Version",
+      downloadPdf: "Download PDF Version",
+      joinDiscord: "Join Our Developer Community",
+      getStarted: "Ready to Start Coding?",
+      guideDescription: "Get the complete guide for developers. Includes setup instructions, coding standards, and workflows for integrating new frameworks into our SvelteKit site.",
+      communityDescription: "Connect with other developers, get code reviews, and collaborate on features in real-time.",
+      errorTitle: "Website contributor guide Not Available",
+      errorText: "The website contributor guide could not be loaded. Please try again later or contact our development team.",
+      githubRepo: "View GitHub Repository",
+      githubDescription: "Access the source code, submit issues, and contribute directly to the project."
+    },
+    sv: {
+      title: "Webbutveckling",
+      subtitle: "Hjälp till att bygga och förbättra vår globala styrningsplattform",
+      heroIntro: "Gå med i vår utvecklargemenskap och bidra till att bygga verktyg som möjliggör interoperabilitet mellan styrningssystem världen över.",
+      downloadGuide: "Ladda ner webbplatsens bidragsguide",
+      joinDevelopers: "Gå med i utvecklargemenskap",
+      downloadMarkdown: "Ladda ner Markdown-version",
+      downloadPdf: "Ladda ner PDF-version",
+      joinDiscord: "Gå med i vår utvecklargemenskap",
+      getStarted: "Redo att börja koda?",
+      guideDescription: "Få den kompletta guiden för utvecklare. Inkluderar installationsinstruktioner, kodningsstandarder och arbetsflöden för att integrera nya ramverk i vår SvelteKit-webbplats.",
+      communityDescription: "Anslut dig till andra utvecklare, få kodgranskningar och samarbeta om funktioner i realtid.",
+      errorTitle: "Webbplatsens bidragsguide inte tillgänglig",
+      errorText: "Webbplatsens bidragsguide kunde inte laddas. Vänligen försök igen senare eller kontakta vårt utvecklingsteam.",
+      githubRepo: "Visa GitHub-arkiv",
+      githubDescription: "Få tillgång till källkoden, skicka in problem och bidra direkt till projektet."
+    }
   };
 
-  // Simple text function - try multiple ways to get translations
+  // Simple text function with language support
   function getText(key) {
-    // Try the translation system with the correct nested path
+    // Try the translation system first
     let value = $t(`website.${key}`);
    
-    // If we get a value, use it, otherwise use fallback
-    if (value && value !== '') {
+    // If we get a value that's not just the key, use it
+    if (value && value !== '' && value !== `website.${key}`) {
       return value;
     }
     
-    // Fallback to hardcoded text
-    return fallbackText[key] || key;
+    // Fallback to language-specific text
+    const langTexts = fallbackText[currentLocale] || fallbackText.en;
+    return langTexts[key] || fallbackText.en[key] || key;
   }
 
   function downloadMarkdown() {
@@ -73,12 +102,14 @@
   }
 
   onMount(() => {
-    console.log('Website contribution page mounted successfully');
+    console.log('Component mounted with locale:', currentLocale);
+    console.log('Content using English fallback:', data.contentUsingEnglishFallback);
+    previousLocale = currentLocale; // Initialize previous locale
   });
 </script>
 
 <svelte:head>
-  <title>{getText('title')} - Global Governance Frameworks</title>
+  <title>{getText('title')} - Global Governance Framework</title>
   <meta name="description" content={getText('subtitle')} />
 </svelte:head>
 
@@ -93,6 +124,17 @@
         <p class="hero-intro">{getText('heroIntro')}</p>
       </div>
     </div>
+
+    <!-- Language Fallback Notice -->
+    {#if data.contentUsingEnglishFallback && currentLocale !== 'en'}
+      <div class="language-fallback-notice">
+        <div class="notice-icon">🌐</div>
+        <div class="notice-content">
+          <strong>{currentLocale === 'sv' ? 'Innehåll på svenska kommer snart' : 'Content in your language coming soon'}</strong>
+          <p>{currentLocale === 'sv' ? 'Detta avsnitt visas för närvarande på engelska tills den svenska översättningen är klar.' : 'This section is currently displayed in English until translation is complete.'}</p>
+        </div>
+      </div>
+    {/if}
 
     <!-- Quick Actions Card -->
     <div class="action-cards">
@@ -143,15 +185,10 @@
     <div class="guide-content">
       {#if data?.guideContent}
         <svelte:component this={data.guideContent} />
-      {:else if data?.contentUsingEnglishFallback}
-        <div class="fallback-notice">
-          <p>Content not available in {data.currentLocale}. Showing English version.</p>
-        </div>
       {:else}
         <div class="error-state">
           <h2>{getText('errorTitle')}</h2>
           <p>{getText('errorText')}</p>
-          <p>Debug: data = {JSON.stringify(data)}</p>
         </div>
       {/if}
     </div>

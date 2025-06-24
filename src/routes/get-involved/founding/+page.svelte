@@ -3,40 +3,22 @@
   import { t, locale } from '$lib/i18n';
   import { browser } from '$app/environment';
   import { base } from '$app/paths';
-  import { onMount, afterUpdate } from 'svelte';
-  import { invalidate, afterNavigate } from '$app/navigation';
+  import { onMount } from 'svelte';
+  import { invalidate } from '$app/navigation';
 
   export let data;
 
-  console.log('Page loading...');
+  console.log('Founding page loading...');
 
   $: currentLocale = $locale;
   
-  let previousLocale = null;
-  let isFirstLoad = true;
-  
-  // ✅ Use afterNavigate to handle the timing better
-  afterNavigate(() => {
-    if (isFirstLoad) {
-      previousLocale = currentLocale;
-      isFirstLoad = false;
-      console.log('Initial navigation complete, locale set to:', currentLocale);
-    }
-  });
-  
-  // ✅ Watch for locale changes after navigation is complete
-  afterUpdate(() => {
-    if (browser && !isFirstLoad && currentLocale !== previousLocale) {
-      console.log('Locale changed after update:', { from: previousLocale, to: currentLocale });
-      previousLocale = currentLocale;
-      
-      // Invalidate with a small delay to ensure the change is processed
-      setTimeout(() => {
-        console.log('Invalidating page data...');
-        invalidate('app:locale');
-      }, 50);
-    }
-  });
+  // Watch for locale changes and invalidate data if needed
+  let previousLocale = currentLocale;
+  $: if (browser && currentLocale !== previousLocale && previousLocale !== undefined) {
+    console.log('Locale changed, invalidating data:', { from: previousLocale, to: currentLocale });
+    previousLocale = currentLocale;
+    invalidate('app:locale');
+  }
   
   // Bilingual fallback text
   const fallbackText = {
@@ -106,13 +88,14 @@
   }
 
   onMount(() => {
-    console.log('Component mounted with locale:', currentLocale); // Debug log
-    console.log('Content using English fallback:', data.contentUsingEnglishFallback); // Debug log
+    console.log('Component mounted with locale:', currentLocale);
+    console.log('Content using English fallback:', data.contentUsingEnglishFallback);
+    previousLocale = currentLocale; // Initialize previous locale
   });
 </script>
 
 <svelte:head>
-  <title>{getText('title')} - Global Governance Frameworks</title>
+  <title>{getText('title')} - Global Governance Framework</title>
   <meta name="description" content={getText('subtitle')} />
 </svelte:head>
 

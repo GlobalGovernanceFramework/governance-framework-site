@@ -8,7 +8,10 @@ export async function load({ depends, url }) {
   // Declare dependency on locale
   depends('app:locale');
   
-  const currentLocale = get(locale);
+  // Simply get the current locale from the store (set by root layout)
+  const currentLocale = get(locale) || 'sv';
+  
+  console.log('Website page load - current locale:', currentLocale);
   
   // Safe check for print mode that works during prerendering
   const isPrintMode = import.meta.env.SSR ? false : url.searchParams.get('print') === 'true';
@@ -20,18 +23,22 @@ export async function load({ depends, url }) {
   let guideContent = null;
   
   try {
+    console.log(`Attempting to load: $lib/content/get-involved/website/${currentLocale}/website-guide.md`);
     // Try to load the current locale version
     guideContent = await import(`$lib/content/get-involved/website/${currentLocale}/website-guide.md`);
+    console.log('Successfully loaded website guide for locale:', currentLocale);
   } catch (e) {
+    console.log('Falling back to English website guide, error was:', e.message);
     // Fall back to English if translation isn't available
     try {
       guideContent = await import(`$lib/content/get-involved/website/en/website-guide.md`);
+      console.log('Successfully loaded English website guide fallback');
       // Track that this content is using English fallback
       if (currentLocale !== 'en') {
         contentUsingEnglishFallback = true;
       }
     } catch (e2) {
-      console.error("Failed to load website guide content");
+      console.error("Failed to load any website guide content:", e2);
     }
   }
   

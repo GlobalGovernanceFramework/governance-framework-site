@@ -4,41 +4,14 @@ import { get } from 'svelte/store';
 
 export const csr = true;
 
-export async function load({ depends, url, cookies }) {
+export async function load({ depends, url }) {
   // Declare dependency on locale
   depends('app:locale');
   
-  // Get locale from multiple sources with proper fallback chain
-  let currentLocale = get(locale);
+  // Simply get the current locale from the store (set by root layout)
+  const currentLocale = get(locale) || 'sv';
   
-  // During SSR or if locale store isn't initialized, check other sources
-  if (!currentLocale || currentLocale === '' || import.meta.env.SSR) {
-    // Priority order: URL param > cookie > default
-    const urlLocale = url.searchParams.get('lang');
-    let cookieLocale = null;
-    
-    // Safely try to get cookie
-    try {
-      cookieLocale = cookies?.get('locale') || null;
-    } catch (e) {
-      console.log('Could not read locale cookie:', e.message);
-      cookieLocale = null;
-    }
-    
-    // For SSR, we can't access browser language, so use cookie or default
-    currentLocale = urlLocale || cookieLocale || 'sv'; // Default to Swedish
-    
-    // Validate that we support this locale
-    if (!['en', 'sv'].includes(currentLocale)) {
-      currentLocale = 'sv'; // Default to Swedish instead of English
-    }
-    
-    console.log('Load function detected locale:', currentLocale, 'from:', {
-      urlLocale,
-      cookieLocale,
-      SSR: import.meta.env.SSR
-    });
-  }
+  console.log('Founding page load - current locale:', currentLocale);
   
   // Safe check for print mode that works during prerendering
   const isPrintMode = import.meta.env.SSR ? false : url.searchParams.get('print') === 'true';
@@ -65,7 +38,7 @@ export async function load({ depends, url, cookies }) {
         contentUsingEnglishFallback = true;
       }
     } catch (e2) {
-      console.error("Failed to load founding guide content:", e2);
+      console.error("Failed to load any founding guide content:", e2);
     }
   }
   
