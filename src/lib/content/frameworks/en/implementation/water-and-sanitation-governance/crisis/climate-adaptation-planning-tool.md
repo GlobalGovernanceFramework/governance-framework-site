@@ -1337,7 +1337,7 @@ Environmental and Social Sustainability:
 - **Advocate for Support**: Demand climate finance and policy support that prioritizes community ownership
 
 **Contact for Climate Adaptation Support**:
-- **Email**: globalgovernanceframework@gmail.com
+- **Email**: globalgovernanceframeworks@gmail.com
 - **Subject**: "Climate Adaptation Planning Implementation"
 - **Include**: Location, climate risks, community capacity, adaptation priorities, and support needs
 

@@ -286,14 +286,14 @@ The protocols prioritize cultural safety, indigenous sovereignty, and equity.
   - [Community Engagement Toolkit](/frameworks/tools/planetary-health/community-engagement-toolkit-en.pdf)
   - [Health Equity Dashboard Template](/frameworks/tools/planetary-health/health-equity-dashboard-en.pdf)
 - **Support Channels**:
-  - Email: [globalgovernanceframework@gmail.com]
+  - Email: [globalgovernanceframeworks@gmail.com]
   - Community Portal: [globalgovernanceframework.org/contact]
   - Quarterly One Health Surveillance Review Cycles for feedback.
 - **Training Resources**:
   - One Health Surveillance Workshop (Tools Library).
   - Integrated Data Management Training (online, multilingual).
 
-**Call to Action**: Start by conducting a One Health risk assessment with Regional Health Hubs. Use the Community Engagement Toolkit to train community data collectors. Contact [globalgovernanceframework@gmail.com] for surveillance training or pilot funding opportunities.
+**Call to Action**: Start by conducting a One Health risk assessment with Regional Health Hubs. Use the Community Engagement Toolkit to train community data collectors. Contact [globalgovernanceframeworks@gmail.com] for surveillance training or pilot funding opportunities.
 
 ---
 

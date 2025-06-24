@@ -18,7 +18,7 @@ The **Indigenous Justice Integration Template** enables jurisdictions to incorpo
 4. **Follow Integration Steps**: Customize the process to integrate indigenous justice practices, incorporating conflict resolution and digital documentation strategies.
 5. **Monitor and Evaluate**: Track progress using metrics, integrating results into the framework’s metrics dashboard ([Monitoring and Accountability](/frameworks/docs/implementation/justice-systems#06-monitoring-accountability)).
 6. **Adapt as Needed**: Modify up to 20% of content (e.g., incorporate specific protocols) with approval from Regional Justice Hubs and indigenous leaders ([Appendices](/frameworks/docs/implementation/justice-systems#11-appendices)).
-7. **Seek Support**: Submit plans to Regional Justice Hubs for funding, training, or technical assistance via [globalgovernanceframework@gmail.com].
+7. **Seek Support**: Submit plans to Regional Justice Hubs for funding, training, or technical assistance via [globalgovernanceframeworks@gmail.com].
 
 ## Indigenous Justice Integration Principles
 The following principles guide integration, ensuring alignment with cultural sensitivity, inclusivity, and transparency:
@@ -222,7 +222,7 @@ Track metrics to assess integration effectiveness, integrating into the framewor
 ## Implementation and Support
 - **Launch**: Convene a community assembly to finalize the plan by [date, e.g., Q3 2026].
 - **Submit**: Share plans with Regional Justice Hubs ([Tools Library](/frameworks/tools/justice-systems)).
-- **Request Assistance**: Contact [globalgovernanceframework@gmail.com] for training, funding, or support.
+- **Request Assistance**: Contact [globalgovernanceframeworks@gmail.com] for training, funding, or support.
 - **Feedback**: Submit template feedback for biannual updates (July and January).
 
 ## Monitoring Progress

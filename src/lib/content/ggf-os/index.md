@@ -115,7 +115,7 @@ Join this transformative movement through escalating pathways of participation:
 - Participate in the Office of the Adversary to challenge assumptions and propose alternatives
 - Help steer the course through our [Constitutional Amendment Protocol](/frameworks/ggf-os/amendment-protocol)
 
-**Current Contact**: globalgovernanceframework@gmail.com
+**Current Contact**: globalgovernanceframeworks@gmail.com
 **Development Status**: 
 - ✅ Framework documentation and core protocols
 - 🚧 Lab formation and contributor onboarding systems (in development)

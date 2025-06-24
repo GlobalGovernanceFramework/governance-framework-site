@@ -86,7 +86,7 @@ Establish your node's foundational elements with these steps:
 
 2. **Register with Framework (1 week)**:
    - **Option A** Not yet available! (SMS): Text "NEW NODE" to 12345 with location and facilitator name.
-   - **Option B** (Email): Submit registration form to globalgovernanceframework@gmail.com.
+   - **Option B** (Email): Submit registration form to globalgovernanceframeworks@gmail.com.
    - **Option C** (Mail): Send paper form to your Regional Digital Hub (addresses in appendix).
    - **Option D** (GitHub): Fork the node-registration repository and submit a pull request.
    - You will receive confirmation and Node ID within 3 days.
@@ -484,7 +484,7 @@ Implement systematic assessment and adaptation processes:
 - **Offline Operations Manual**: Printed guide for disruption periods (available from Regional Hubs).
 - **Minimal-Viable Node Quickstart**: Simplified one-page guide (Appendix F).
 - **Ultra-Lightweight Digital Implementation**: GitHub-based approach (Appendix F).
-- **Technical Support Hotline**: Email globalgovernanceframework@gmail.com.
+- **Technical Support Hotline**: Email globalgovernanceframeworks@gmail.com.
 - **Troubleshooting Cards**: Laminated quick reference for common issues (available from Regional Hubs).
 
 ---

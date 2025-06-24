@@ -59,4 +59,4 @@ This is what a Peace Wall moment might look like! What would you add to it? 🎨
 Access these in the *Peace & Conflict Resolution Seed Kit* via the [Tools Library](/frameworks/tools/peace).
 
 ## Call to Action
-You have the power to build peace! 🚀🌟🕊️ Start small—organize a peace club, share a peace post, or host a dialogue. Check out the *Seed Kit* and full framework at [Tools Library](/frameworks/tools/peace). Tell us about your work at [globalgovernanceframework@gmail.com] to join youth peacebuilders worldwide! 🌎
+You have the power to build peace! 🚀🌟🕊️ Start small—organize a peace club, share a peace post, or host a dialogue. Check out the *Seed Kit* and full framework at [Tools Library](/frameworks/tools/peace). Tell us about your work at [globalgovernanceframeworks@gmail.com] to join youth peacebuilders worldwide! 🌎

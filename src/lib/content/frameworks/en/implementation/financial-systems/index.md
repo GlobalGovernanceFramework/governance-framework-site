@@ -162,4 +162,4 @@ To begin implementing the Financial Systems Framework:
 3. Join the Global Commons Council community at [globalgovernanceframework.org/community](https://globalgovernanceframework.org/community)
 4. Sign up for implementation support webinars
 
-For questions or support, contact [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com).
+For questions or support, contact [globalgovernanceframeworks@gmail.com](mailto:globalgovernanceframeworks@gmail.com).

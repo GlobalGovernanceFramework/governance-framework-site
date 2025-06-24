@@ -778,13 +778,11 @@ Even in our darkest hours—perhaps especially then—our treatment of all being
 
 For additional support implementing rights-based approaches in crisis:
 
-- **Crisis Ethics Consultation Hotline:** Available 24/7 for urgent ethical guidance
-- **Regional Support Teams:** Field assistance for implementation challenges
-- **Training Resources:** Comprehensive materials for capacity development
-- **Digital Tool Access:** Download offline-capable applications for field use
-- **Community of Practice:** Connect with others implementing these approaches
-
-Contact (not yet available): crisisethics@globalgovernanceframework.org
+- **Crisis Ethics Consultation Hotline:** *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Regional Support Teams:** *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Training Resources:** *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Digital Tool Access:** *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Community of Practice:** *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 *This guide is part of the Global Ethics & Rights of Beings Framework crisis implementation resources.*
 

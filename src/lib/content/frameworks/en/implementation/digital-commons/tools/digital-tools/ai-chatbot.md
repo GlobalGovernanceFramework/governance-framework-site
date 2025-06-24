@@ -212,7 +212,7 @@ Continuous monitoring ensures the chatbot meets user needs.
 - **Guides**: Community, Indigenous, Ethics Guides (globalgovernanceframework.org/tools).
 - **Tools**: SMS Feedback, Field-Test Logbook, Blockchain Ledger.
 - **Visuals**: Chatbot Interface Guide, Navigation Flowchart (globalgovernanceframework.org/visuals).
-- **Support**: Email globalgovernanceframework@gmail.com
+- **Support**: Email globalgovernanceframeworks@gmail.com
 - **Access**: Multilingual, braille, audio formats at globalgovernanceframework.org.
 
 ---

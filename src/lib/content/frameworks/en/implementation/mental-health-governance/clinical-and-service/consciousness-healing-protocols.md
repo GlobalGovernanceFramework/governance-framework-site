@@ -665,12 +665,12 @@ Adaptations must maintain the essential spiritual and cultural integrity of trad
 
 Currently available:
 - ✅ Framework documentation and consciousness-inclusive healing protocols
-- ✅ General support via globalgovernanceframework@gmail.com
+- ✅ General support via globalgovernanceframeworks@gmail.com
 - 🚧 Specialized consciousness-inclusive practitioner training programs (in development)
 - 🚧 Regional consciousness-inclusive mental health networks (in development)
 
 **Contact Information:**
-- **Primary Contact:** globalgovernanceframework@gmail.com
+- **Primary Contact:** globalgovernanceframeworks@gmail.com
 - **Website:** globalgovernanceframework.org
 - **Subject Lines for Specific Support:**
   - "Consciousness-Inclusive Training" - for practitioner training inquiries
@@ -773,7 +773,7 @@ Currently available:
 **Immediate Crisis Support**:
 - **National Suicide Prevention Lifeline**: 988 (trained in spiritual crisis differentiation where available)
 - **Local Emergency Services**: 911 (with consciousness-inclusive crisis protocols where available)
-- **Global Governance Framework**: globalgovernanceframework@gmail.com for spiritual emergency resource guidance
+- **Global Governance Framework**: globalgovernanceframeworks@gmail.com for spiritual emergency resource guidance
 - **Website Resources**: globalgovernanceframework.org for additional crisis support information
 
 **Specialized Support Networks**:
@@ -844,7 +844,7 @@ The Consciousness-Inclusive Healing Protocols represent a fundamental shift in m
 
 **Living Document Status**: This protocol guide is designed for continuous improvement based on implementation experience and emerging research. Current version represents comprehensive analysis as of June 2025 with regular updates planned based on feedback and new developments.
 
-**Contact for Implementation Support**: globalgovernanceframework@gmail.com with subject line "Consciousness-Inclusive Implementation Support"
+**Contact for Implementation Support**: globalgovernanceframeworks@gmail.com with subject line "Consciousness-Inclusive Implementation Support"
 
 ---
 

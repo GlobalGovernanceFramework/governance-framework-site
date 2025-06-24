@@ -353,7 +353,7 @@ Vilka handlingar vidtar du? Vilka initiativ eller idéer är du delaktig i?
 Vad inspirerar dig eller hjälper dig fortsätta trots globala utmaningar?
 
 **Vill du vara med i framtida versioner eller i ett offentligt galleri av berättelser?**
-Skicka din berättelse till: globalgovernanceframework@gmail.com
+Skicka din berättelse till: globalgovernanceframeworks@gmail.com
 
 ## 3. Påtagliga Fördelar med Globalt Medborgarskap
 

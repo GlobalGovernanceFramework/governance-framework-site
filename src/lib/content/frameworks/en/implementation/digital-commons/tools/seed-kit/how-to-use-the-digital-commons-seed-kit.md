@@ -161,7 +161,7 @@ Once your node is operational, consider these next steps:
 
 ## Support Resources
 
-- **Email Support**: globalgovernanceframework@gmail.com
+- **Email Support**: globalgovernanceframeworks@gmail.com
 - **Online Resources**: Visit globalgovernanceframework.org for guides, forums, and updates
 - **Regional Hubs**: Contact information for your nearest Regional Digital Hub is included in the Node Setup Guide
 

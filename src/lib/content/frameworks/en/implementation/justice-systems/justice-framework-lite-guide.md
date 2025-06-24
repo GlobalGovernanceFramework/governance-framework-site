@@ -66,7 +66,7 @@ The framework offers practical tools to help you engage immediately. Access them
 
 ### Take Action
 1. **Download** the framework PDF at [Downloads](/downloads).
-2. **Engage** via forums, digital platforms, or email [globalgovernanceframework@gmail.com].
+2. **Engage** via forums, digital platforms, or email [globalgovernanceframeworks@gmail.com].
 3. **Implement** a pilot using the Start with Justice Kit.
 4. **Share Feedback** to shape updates (reviewed every July and January).
 
@@ -85,7 +85,7 @@ See [Challenges and Mitigation Strategies](/frameworks/justice-systems/challenge
 ## Join the Movement
 The Justice Systems Implementation Framework is a shared vision for a just world. Whether you’re resolving local disputes, shaping policy, or advocating for youth, your role matters. Start with this guide, explore the tools, and connect with global stakeholders to co-create a future where justice is accessible to all.
 
-**Contact**: Share ideas or volunteer for translation and case studies at [globalgovernanceframework@gmail.com].  
+**Contact**: Share ideas or volunteer for translation and case studies at [globalgovernanceframeworks@gmail.com].  
 **Resources**: Access all tools and updates at [globalgovernanceframework.org](/frameworks/tools/justice-systems).
 
 **Let’s build justice together.**

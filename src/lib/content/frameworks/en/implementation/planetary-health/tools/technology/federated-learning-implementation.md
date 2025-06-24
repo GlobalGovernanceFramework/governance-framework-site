@@ -288,14 +288,14 @@ The FL system prioritizes cultural safety, indigenous sovereignty, and equity.
   - [Community Engagement Toolkit](/frameworks/tools/planetary-health/community-engagement-toolkit-en.pdf)
   - [Health Equity Dashboard Template](/frameworks/tools/planetary-health/health-equity-dashboard-en.pdf)
 - **Support Channels**:
-  - Email: [globalgovernanceframework@gmail.com]
+  - Email: [globalgovernanceframeworks@gmail.com]
   - Community Portal: [globalgovernanceframework.org/contact]
   - Quarterly AI and Data Review Cycles for feedback.
 - **Training Resources**:
   - Cultural Competency Training Module (Tools Library).
   - Federated Learning Workshop (online, multilingual).
 
-**Call to Action**: Start by assessing regional data infrastructure with Regional Health Hubs. Use the Community Engagement Toolkit to educate communities on FL. Contact [globalgovernanceframework@gmail.com] for FL training or pilot funding opportunities.
+**Call to Action**: Start by assessing regional data infrastructure with Regional Health Hubs. Use the Community Engagement Toolkit to educate communities on FL. Contact [globalgovernanceframeworks@gmail.com] for FL training or pilot funding opportunities.
 
 ---
 

@@ -282,11 +282,11 @@ The treaty explicitly protects subsidiarity (local control of local issues) and 
 
 **For Advocacy**: Download the Global Stewardship Advocacy Kit with talking points, media materials, and organizing resources
 
-**For Implementation**: Contact globalgovernanceframework@gmail.com with subject "Treaty Implementation" to explore pilot programs
+**For Implementation**: Contact globalgovernanceframeworks@gmail.com with subject "Treaty Implementation" to explore pilot programs
 
 **For Research**: Connect with academic and policy networks studying governance innovation and systemic transformation
 
-**For Government Partners**: Contact globalgovernanceframework@gmail.com with subject "Government Partnership" to discuss Alliance membership
+**For Government Partners**: Contact globalgovernanceframeworks@gmail.com with subject "Government Partnership" to discuss Alliance membership
 
 ### Learn More
 
@@ -316,6 +316,6 @@ The Treaty for Our Only Home provides the roadmap. The rest is up to all of us.
 
 *The Treaty for Our Only Home: Framework for conscious evolution from crisis-generating to resilience-generating governance systems. This guide represents comprehensive research synthesis developed through evidence integration and systemic analysis. Implementation should involve consultation with stakeholders familiar with specific cultural, legal, and technical contexts.*
 
-*For questions, partnership opportunities, or implementation support: globalgovernanceframework@gmail.com*
+*For questions, partnership opportunities, or implementation support: globalgovernanceframeworks@gmail.com*
 
 *Version 1.0 - June 2025*

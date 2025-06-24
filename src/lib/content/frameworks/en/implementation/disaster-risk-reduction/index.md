@@ -169,7 +169,7 @@ All tools will be available in multiple formats and languages, with particular a
 1. Review [Guiding Principles](/frameworks/disaster-risk-reduction#principles) and [Framework Components](/frameworks/disaster-risk-reduction#components)
 2. Explore [Cultural Adaptation Strategies](/frameworks/disaster-risk-reduction#scalability) for contextual relevance
 3. Examine [Case Studies](/frameworks/disaster-risk-reduction#annexes) for similar contexts
-4. Contact globalgovernanceframework@gmail.com with subject "Community Implementation"
+4. Contact globalgovernanceframeworks@gmail.com with subject "Community Implementation"
 5. Join waitlist for Community Resilience Starter Kit (Q2 2026 release)
 
 **Government Officials & Policymakers**:
@@ -177,31 +177,31 @@ All tools will be available in multiple formats and languages, with particular a
 2. Explore [Resource Requirements](/frameworks/disaster-risk-reduction#resources) for budget planning
 3. Examine [Implementation Barriers & Mitigation](/frameworks/disaster-risk-reduction#barriers) for political strategy
 4. Join waitlist for DRR&R Implementation Playbook (Q1 2026 release)
-5. Contact globalgovernanceframework@gmail.com with subject "Government Partnership"
+5. Contact globalgovernanceframeworks@gmail.com with subject "Government Partnership"
 
 **NGOs & International Organizations**:
 1. Explore [Collaborative Engagement](/frameworks/disaster-risk-reduction#engagement) for partnership approaches
 2. Review [Scalability & Adaptation](/frameworks/disaster-risk-reduction#scalability) for program design
 3. Examine [Monitoring & Evaluation](/frameworks/disaster-risk-reduction#monitoring) for impact measurement
-4. Contact globalgovernanceframework@gmail.com with subject "NGO Partnership"
+4. Contact globalgovernanceframeworks@gmail.com with subject "NGO Partnership"
 
 **Indigenous & Cultural Communities**:
 1. Review framework sections on cultural sensitivity and Indigenous knowledge integration
 2. Explore [Innovative Governance Models](/frameworks/disaster-risk-reduction#governance) for sovereignty-respecting approaches
 3. Join development of Cultural Adaptation Protocol Guide
-4. Contact globalgovernanceframework@gmail.com with subject "Cultural Partnership"
+4. Contact globalgovernanceframeworks@gmail.com with subject "Cultural Partnership"
 
 **Researchers & Academic Institutions**:
 1. Explore [Monitoring & Evaluation](/frameworks/disaster-risk-reduction#monitoring) frameworks
 2. Review [Case Studies](/frameworks/disaster-risk-reduction#annexes) for research collaboration opportunities
 3. Examine [Technical Appendices](/frameworks/disaster-risk-reduction#annexes) for methodology details
-4. Contact globalgovernanceframework@gmail.com with subject "Research Collaboration"
+4. Contact globalgovernanceframeworks@gmail.com with subject "Research Collaboration"
 
 **Private Sector & Technology Organizations**:
 1. Review [Implementation Approaches](/frameworks/disaster-risk-reduction#approaches) for technology integration
 2. Explore [Collaborative Engagement](/frameworks/disaster-risk-reduction#engagement) for private sector incentives
 3. Join waitlist for Technology Integration Package (2027 release)
-4. Contact globalgovernanceframework@gmail.com with subject "Private Sector Partnership"
+4. Contact globalgovernanceframeworks@gmail.com with subject "Private Sector Partnership"
 
 ## <a id="access-and-usage"></a>Access and Usage
 
@@ -214,7 +214,7 @@ The framework is accessible through the Global Governance Framework website, des
 - **Engage**: Share feedback and join development processes for culturally appropriate implementation
 - **Collaborate**: Connect with other implementers and contribute to framework evolution
 
-**Tool Development Updates**: Subscribe to development updates by emailing globalgovernanceframework@gmail.com with subject "DRR Tool Updates" to receive notifications when new implementation tools become available.
+**Tool Development Updates**: Subscribe to development updates by emailing globalgovernanceframeworks@gmail.com with subject "DRR Tool Updates" to receive notifications when new implementation tools become available.
 
 **Accessibility Commitment**: All materials will feature inclusive design principles with multi-modal access options, language translation support, and accommodations for diverse learning and communication needs.
 
@@ -257,7 +257,7 @@ The framework is accessible through the Global Governance Framework website, des
 - **Researchers**: Contribute evidence on inclusive approaches and community-led resilience
 
 **Contact Information**:
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Website**: globalgovernanceframework.org
 - **Subject Lines for Specific Support**:
   - "Community Implementation" - for local resilience building using available guidance

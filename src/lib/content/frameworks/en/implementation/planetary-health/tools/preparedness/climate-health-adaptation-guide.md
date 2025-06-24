@@ -299,14 +299,14 @@ The guide prioritizes cultural safety, indigenous sovereignty, and equity.
   - [Community Engagement Toolkit](/frameworks/tools/planetary-health/community-engagement-toolkit-en.pdf)
   - [Health Equity Dashboard Template](/frameworks/tools/planetary-health/health-equity-dashboard-en.pdf)
 - **Support Channels**:
-  - Email: [globalgovernanceframework@gmail.com]
+  - Email: [globalgovernanceframeworks@gmail.com]
   - Community Portal: [globalgovernanceframework.org/contact]
   - Quarterly Climate-Health Adaptation Review Cycles for feedback.
 - **Training Resources**:
   - Climate-Health Adaptation Workshop (Tools Library).
   - Community Resilience Training (online, multilingual).
 
-**Call to Action**: Start by conducting a climate-health risk assessment with Regional Health Hubs. Use the Community Engagement Toolkit to involve communities in adaptation planning. Contact [globalgovernanceframework@gmail.com] for training or funding opportunities.
+**Call to Action**: Start by conducting a climate-health risk assessment with Regional Health Hubs. Use the Community Engagement Toolkit to involve communities in adaptation planning. Contact [globalgovernanceframeworks@gmail.com] for training or funding opportunities.
 
 ---
 

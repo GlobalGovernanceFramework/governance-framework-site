@@ -225,4 +225,4 @@ Juridisk princip som möjliggör för internationella domstolar att åtala allva
 
 Denna ordlista tillhandahåller väsentligt referensmaterial för att förstå ramverket för fördraget för vårt enda hem. Termer definieras med tillräcklig detalj för praktisk tillämpning samtidigt som klarhet upprätthålls för olika målgrupper. Korsreferenser genom fördragsdokumentationen använder dessa definitioner konsekvent för att säkerställa konceptuell sammanhang över den omfattande styrningstransformations planen.
 
-*För ytterligare förtydliganden om specifika termer eller begrepp, kontakta globalgovernanceframework@gmail.com med ämnet "Ordlistefrågor"*
+*För ytterligare förtydliganden om specifika termer eller begrepp, kontakta globalgovernanceframeworks@gmail.com med ämnet "Ordlistefrågor"*

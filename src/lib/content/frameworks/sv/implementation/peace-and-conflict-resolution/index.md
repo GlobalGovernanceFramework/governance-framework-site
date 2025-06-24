@@ -183,7 +183,7 @@ Ramverket är tillgängligt genom flera kanaler designade för att tjäna olika 
 - **Ladda ner**: Få tillgång till det kompletta ramverket som PDF via [nedladdnings](/downloads) sektionen på vår webbplats, eller ladda ner individuella avsnitt för fokuserad implementering.
 - **Navigera**: Använd detta index för att utforska avsnitt sekventiellt eller hoppa till specifika ämnen via avsnittsläkar ovan.
 - **Få tillgång till verktyg**: Bläddra bland alla implementeringsverktyg i både PDF- och markdown-format på [verktygsbiblioteket](/frameworks/tools/peace).
-- **Engagera**: Dela feedback genom vår kontaktportal eller e-post [globalgovernanceframework@gmail.com], bidra till iterativa förbättringar.
+- **Engagera**: Dela feedback genom vår kontaktportal eller e-post [globalgovernanceframeworks@gmail.com], bidra till iterativa förbättringar.
 - **Implementera**: Börja med de praktiska [implementeringsverktygen](#implementation-tools) för att initiera fredsstyrningsförbättringar i ditt sammanhang, börja med "startpaketet för fred och konfliktlösning."
 - **Anpassa**: Modifiera ansatser för att passa ditt specifika lokala, nationella eller regionala sammanhang samtidigt som du bibehåller anpassning till kärnprinciper.
 
@@ -213,4 +213,4 @@ Få tillgång till dessa resurser i [visuella resursbiblioteket](/frameworks/vis
 
 **Om ramverket**: Utvecklat genom omfattande konsultation med fredsbyggare, akademiker och utövare från olika sammanhang representerar detta ramverk syntetiserade bästa praxis från globala erfarenheter av konflikttransformation, underhållet av ett dedikerat team på globalgovernanceframework.org.
 
-**Bidra**: Hjälp till att utöka tillgängligheten genom att volontära för översättning, dokumentformatering eller fallstudieutveckling. Kontakta oss på [globalgovernanceframework@gmail.com] för att gå med i gemenskapen.
+**Bidra**: Hjälp till att utöka tillgängligheten genom att volontära för översättning, dokumentformatering eller fallstudieutveckling. Kontakta oss på [globalgovernanceframeworks@gmail.com] för att gå med i gemenskapen.

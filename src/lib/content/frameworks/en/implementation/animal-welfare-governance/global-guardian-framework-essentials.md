@@ -263,7 +263,7 @@ Aboriginal communities employ traditional burning practices that protect wildlif
 5. **Advocacy Leadership**: Use monitoring results to advocate for policy change and resource mobilization
 
 **Immediate Actions** (2025):
-- Contact globalgovernanceframework@gmail.com with subject "Community Guardian Program" to begin assessment and planning
+- Contact globalgovernanceframeworks@gmail.com with subject "Community Guardian Program" to begin assessment and planning
 - Download Guardian Community Starter Kit for complete implementation resources
 - Connect with local advocates and organizations for coalition building
 - Attend community meetings to build consensus for welfare improvements
@@ -295,7 +295,7 @@ Aboriginal communities employ traditional burning practices that protect wildlif
 5. **Peer Learning**: Connect with other transitioning farmers for mutual support and knowledge sharing
 
 **Immediate Actions** (2025):
-- Contact transition support services through globalgovernanceframework@gmail.com with subject "Farmer Transition Request"
+- Contact transition support services through globalgovernanceframeworks@gmail.com with subject "Farmer Transition Request"
 - Apply for Just Transition Bond funding for conversion planning and implementation
 - Explore alternative protein production opportunities including plant-based and cultured meat partnerships
 - Join Agricultural Guardian Networks for peer support and best practice sharing
@@ -426,7 +426,7 @@ Every sentient being enjoys freedom from unnecessary suffering. Every community 
 ### Contact and Connection
 
 **Primary Contact Information**:
-- **Email**: globalgovernanceframework@gmail.com
+- **Email**: globalgovernanceframeworks@gmail.com
 - **Website**: globalgovernanceframework.org
 - **Documentation**: Complete framework available at globalgovernanceframework.org/frameworks/docs/implementation/animal-welfare
 
@@ -448,7 +448,7 @@ Every sentient being enjoys freedom from unnecessary suffering. Every community 
 
 **For Any Stakeholder** (Next 30 Days):
 1. Download relevant tools from the complete implementation toolkit
-2. Contact globalgovernanceframework@gmail.com with specific subject line for your interest area
+2. Contact globalgovernanceframeworks@gmail.com with specific subject line for your interest area
 3. Share this guide with three people who might be interested in animal welfare transformation
 4. Identify one local animal welfare improvement you can implement in your community
 5. Connect with existing animal welfare or environmental organizations in your area

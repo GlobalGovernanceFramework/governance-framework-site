@@ -360,7 +360,7 @@ What inspires you or keeps you going despite global challenges?
 ---
 
 **Want to be included in future versions or in a public gallery of stories?**
-Submit your story to: globalgovernanceframework@gmail.com
+Submit your story to: globalgovernanceframeworks@gmail.com
 
 ## 3. Tangible Benefits of Global Citizenship
 

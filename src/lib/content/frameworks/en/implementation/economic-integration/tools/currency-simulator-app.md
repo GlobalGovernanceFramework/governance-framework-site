@@ -392,16 +392,16 @@ The simulator will assist in:
 
 ### Ways to Contribute
 Interested stakeholders can:
-- **Join User Testing:** [Sign up for beta testing](globalgovernanceframework.org/currency-sim/beta)
-- **Provide Use Cases:** Share specific community contexts for simulation design
-- **Contribute Expertise:** Connect economic modeling knowledge to development team
-- **Support Translations:** Assist with multilingual interface development
-- **Fund Development:** Contribute to accelerate the development timeline
+- **Join User Testing:** *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Provide Use Cases:** *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Contribute Expertise:** *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Support Translations:** *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Fund Development:** *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 ### Contact Information
-- Development Team Email: currency-sim@globalgovernanceframework.org
-- Project Coordinator: Not assigned
-- GitHub Repository: github.com/nested-economies/currency-simulator (coming soon)
+- Development Team Email: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- Project Coordinator: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- GitHub Repository: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 ---
 

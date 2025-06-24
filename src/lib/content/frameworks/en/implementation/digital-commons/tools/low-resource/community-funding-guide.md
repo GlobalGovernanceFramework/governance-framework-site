@@ -196,7 +196,7 @@ Inclusive engagement maximizes participation and funding success.
 - **Guides**: Funding Navigator, Community, Indigenous Guides (globalgovernanceframework.org/tools).
 - **Tools**: SMS Budget Updates, Blockchain Ledger, Community Audit.
 - **Visuals**: Funding Cycle Poster, Budget Flowchart (globalgovernanceframework.org/visuals).
-- **Support**: Email globalgovernanceframework@gmail.com
+- **Support**: Email globalgovernanceframeworks@gmail.com
 - **Access**: Multilingual, braille, audio formats at globalgovernanceframework.org.
 
 ---

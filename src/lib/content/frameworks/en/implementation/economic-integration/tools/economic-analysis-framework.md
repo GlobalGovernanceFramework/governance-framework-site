@@ -573,5 +573,5 @@ The Economic Analysis Framework connects directly to other components of the Nes
 - [Economic Financing Navigator](/frameworks/tools/economic/economic-financing-navigator-en.pdf)
 
 ### Contact and Support
-- Email: globalgovernanceframework.org@gmail.com
+- Email: globalgovernanceframeworks.org@gmail.com
 

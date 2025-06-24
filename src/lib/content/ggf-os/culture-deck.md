@@ -208,4 +208,4 @@ The future is collaborative, conscious, and regenerative. It's being built by co
 
 **Version 2.2 | June 19, 2025**  
 **Next Review**: December 2025  
-**Contributing Stories**: Contact globalgovernanceframework@gmail.com with "Culture Deck Stories" in subject line
+**Contributing Stories**: Contact globalgovernanceframeworks@gmail.com with "Culture Deck Stories" in subject line

@@ -355,7 +355,7 @@ Community-Led Mental Health Task Forces represent local organizing structures th
 The Living Mandala for Planetary Mental Health framework represents comprehensive research synthesis and iterative refinement through multiple AI systems, integrating evidence-based practices with community-led approaches to mental health.
 
 ### **For Questions or Feedback** 📞
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Subject Line**: "Community Task Force Guide Feedback"
 - **Website**: globalgovernanceframework.org
 

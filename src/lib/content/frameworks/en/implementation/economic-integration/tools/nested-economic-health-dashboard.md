@@ -464,9 +464,9 @@ Interested stakeholders can:
 - **Provide Data:** Participate in baseline data collection
 
 ### Contact Information
-- Development Team Email: metrics@globalgovernanceframework.org
-- Project Coordinator: Dr. Amara Okafor, Monitoring & Evaluation Lead
-- GitHub Repository: github.com/nested-economies/health-index (coming soon)
+- Development Team Email: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- Project Coordinator: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- GitHub Repository: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 ---
 

@@ -476,9 +476,9 @@ Framework representatives with expertise in religious engagement are available t
 - Connect you with similar communities
 - Support your exploration process
 
-**Contact (not yet available):** religious@globalgovernanceframework.org
-**Phone:** (not yet available)
-**Website:** (not yet available) globalgovernanceframework.org/religious
+**Contact not yet available):** *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+**Phone:** *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+**Website:** *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 ### Customized Resources
 

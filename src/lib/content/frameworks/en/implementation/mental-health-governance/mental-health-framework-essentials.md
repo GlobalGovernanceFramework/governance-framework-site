@@ -301,7 +301,7 @@ When communities worldwide embrace their authority over mental health narratives
 ## Contact & Engagement
 
 - **Framework Website**: globalgovernanceframework.org/mental-health
-- **Email**: globalgovernanceframework@gmail.com
+- **Email**: globalgovernanceframeworks@gmail.com
 - **Community Forums**: Secure, trauma-informed discussion spaces
 - **Implementation Support**: Cultural adaptation and technical assistance
 - **Global Network**: Connect with communities implementing transformation

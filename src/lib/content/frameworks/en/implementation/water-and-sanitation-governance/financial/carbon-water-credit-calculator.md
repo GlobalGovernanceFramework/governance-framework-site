@@ -827,7 +827,7 @@ Return on investment: 6.3% annually
 5. **Launch Your Project**: Begin implementation with community leadership and ownership
 
 **Contact for Implementation Support**:
-- Email: globalgovernanceframework@gmail.com
+- Email: globalgovernanceframeworks@gmail.com
 - Subject: "Carbon-Water Credit Implementation"
 - Include: Community location, project type, scale, timeline, and support needs
 

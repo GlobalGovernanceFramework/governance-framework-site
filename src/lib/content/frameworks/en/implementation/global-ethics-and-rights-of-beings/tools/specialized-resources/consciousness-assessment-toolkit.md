@@ -1404,11 +1404,11 @@ The approaches outlined here represent our current best understanding, but this 
 
 For additional assistance with consciousness assessment, connect with our support team:
 
-- **Email: (not yet available)** consciousness@globalgovernanceframework.org
-- **Online Community: (not yet available)** [globalgovernanceframework.org/assessment](https://globalgovernanceframework.org/assessment)
-- **Research Updates:** Sign up for findings and methodology notifications
-- **Training Information:** Find courses and certification opportunities
-- **Implementation Consultation:** Request specialized assessment support
+- **Email: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Online Community:** *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Research Updates:** *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Training Information:** *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Implementation Consultation:** *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 *This toolkit is part of the Global Ethics & Rights of Beings Framework resources.*
 

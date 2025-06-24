@@ -95,7 +95,7 @@ To bridge theory and practice, the framework provides practical tools and templa
 All tools are available in PDF and editable markdown formats, with selected tools planned for multilingual versions. Access the complete [Tools Library](/frameworks/tools/justice) for all versions and formats.
 
 ## <a id="real-world-examples"></a>Real-world Examples (Planned)
-A section highlighting early adopters and pilot implementations will be added as real-world applications emerge. Potential examples include pilot projects in regions like Asia-Pacific or Latin America, showcasing how the framework adapts to diverse legal systems. Stakeholders are invited to submit case studies via [globalgovernanceframework@gmail.com] to populate this section.
+A section highlighting early adopters and pilot implementations will be added as real-world applications emerge. Potential examples include pilot projects in regions like Asia-Pacific or Latin America, showcasing how the framework adapts to diverse legal systems. Stakeholders are invited to submit case studies via [globalgovernanceframeworks@gmail.com] to populate this section.
 
 ## <a id="access-and-usage"></a>Access and Usage
 The framework is accessible through the Global Governance Framework website, designed for easy adaptation and use. Stakeholders can:
@@ -103,7 +103,7 @@ The framework is accessible through the Global Governance Framework website, des
 - **Download**: Access the complete framework as a PDF via the [Downloads](/downloads) section.
 - **Navigate**: Use this index to explore sections sequentially or jump to specific topics via section links or stakeholder pathways.
 - **Access Tools**: Browse all implementation tools in PDF and markdown formats at the [Tools Library](/frameworks/tools/justice).
-- **Engage**: Share feedback through the contact portal or email [globalgovernanceframework@gmail.com]. Feedback is reviewed biannually by a dedicated committee, with revisions published every July and January to incorporate stakeholder input.
+- **Engage**: Share feedback through the contact portal or email [globalgovernanceframeworks@gmail.com]. Feedback is reviewed biannually by a dedicated committee, with revisions published every July and January to incorporate stakeholder input.
 - **Amplify**: Leverage multimedia assets (e.g., infographics, youth-focused guides) to advocate for adoption at local, national, or global levels.
 - **Implement**: Use the [Implementation Tools](#implementation-tools) to launch pilots, starting with the "Start with Justice" kit.
 
@@ -119,4 +119,4 @@ The framework is accessible through the Global Governance Framework website, des
 
 **About the Framework**: Developed through iterative design and feedback from global stakeholders, this framework synthesizes best practices, maintained by a dedicated team at globalgovernanceframework.org.
 
-**Contribute**: Help expand accessibility by volunteering for translation, document formatting, or case study development. Contact us at [globalgovernanceframework@gmail.com] to join the community.
+**Contribute**: Help expand accessibility by volunteering for translation, document formatting, or case study development. Contact us at [globalgovernanceframeworks@gmail.com] to join the community.

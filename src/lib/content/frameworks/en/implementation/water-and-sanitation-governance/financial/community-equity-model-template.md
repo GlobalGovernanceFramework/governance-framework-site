@@ -799,7 +799,7 @@ Timeline and Evaluation:
 **Join the Movement**: Connect with the growing movement of community-owned utilities, cooperative enterprises, and democratic economy initiatives transforming how communities meet their needs through mutual aid and collective ownership.
 
 **Contact and Connect**: 
-- Email: globalgovernanceframework@gmail.com
+- Email: globalgovernanceframeworks@gmail.com
 - Subject: "Community Equity Model Implementation"
 - Include: Community location, current situation, technical assistance needs, timeline
 

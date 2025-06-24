@@ -216,7 +216,7 @@ Track advocacy success to refine strategies and demonstrate value.
 - **Guides**: Community, Youth, Indigenous, Ethics Guides (globalgovernanceframework.org/tools).
 - **Tools**: Stakeholder Mapping, Impact Tracker, SMS Voting Template.
 - **Visuals**: Advocacy Cycle Poster, Framework Map (globalgovernanceframework.org/visuals).
-- **Support**: Email globalgovernanceframework@gmail.com, text ADVOCATE to 12345, or join monthly call-ins (first Monday, 10:00 UTC).
+- **Support**: Email globalgovernanceframeworks@gmail.com, text ADVOCATE to 12345, or join monthly call-ins (first Monday, 10:00 UTC).
 - **Access**: Multilingual, braille, audio formats at globalgovernanceframework.org.
 
 ---

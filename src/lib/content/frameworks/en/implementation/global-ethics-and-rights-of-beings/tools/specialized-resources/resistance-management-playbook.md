@@ -887,10 +887,10 @@ Format for capturing and sharing positive engagement outcomes:
 ### Contact and Support
 
 For implementation support or questions about specific resistance situations:
-- Email: [resistance.management@globalgovernanceframework.org]
-- Regional Support Offices: [Directory Link]
-- Implementation Coaches: [Directory Link]
-- Online Forum: [Community Link]
+- Email: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- Regional Support Offices: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- Implementation Coaches: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- Online Forum: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 ### Training Opportunities
 
@@ -921,5 +921,3 @@ Immediate assistance for urgent opposition situations:
 
 *The Global Ethics & Rights of Beings Framework Resistance Management Playbook*  
 *Version 1.0 - May 2025*
-
-*[globalgovernanceframework.org/ethics/resistance-management-playbook]*

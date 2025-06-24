@@ -366,7 +366,7 @@ The framework complements global and local regulations:
 - **Regional Policy Examples**: Successful implementations adapted to different regulatory contexts
 - **Crisis Management Protocols**: Emergency policy responses for major technological or social disruptions
 - **Future Technology Assessment Tools**: Frameworks for evaluating emerging technologies against democratic principles
-- **Support**: Email globalgovernanceframework@gmail.com, join monthly policymaker calls (third Thursday, 14:00 UTC)
+- **Support**: Email globalgovernanceframeworks@gmail.com, join monthly policymaker calls (third Thursday, 14:00 UTC)
 
 ---
 

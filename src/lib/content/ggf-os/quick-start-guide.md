@@ -115,7 +115,7 @@ Most importantly, it demonstrates these possibilities through actual practice ra
 
 **Adapt and Share**: The framework is designed for adaptation. Take what serves your context, modify what needs changing, and share your learnings with the community.
 
-**Contact**: globalgovernanceframework@gmail.com  
+**Contact**: globalgovernanceframeworks@gmail.com  
 **Subject Lines**: "Implementation Support" | "Community Connection" | "Partnership Inquiry"
 
 ---

@@ -755,9 +755,9 @@ The wisdom and experience gained through your council implementation will benefi
 
 ---
 
-**For additional support and resources, visit**: [globalgovernanceframework.org/consciousness/wisdom-councils](https://globalgovernanceframework.org/consciousness/wisdom-councils)
+**For additional support and resources, visit**: [globalgovernanceframeworks.org/frameworks/consciousness-and-inner-development
 
-**Questions or feedback?** Contact us at: [wisdom-councils@globalgovernanceframework.org](mailto:wisdom-councils@globalgovernanceframework.org)
+**Questions or feedback?** Contact us at: [globalgovernanceframeworks@gmail.com](mailto:globalgovernanceframeworks@gmail.com)
 
 ---
 

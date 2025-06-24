@@ -193,39 +193,39 @@ All tools will be available in PDF and editable markdown formats, with selected 
 1. Complete the [Community Readiness Assessment](/frameworks/tools/aubi/community-readiness-assessment-en.pdf) *(Available Now)*
 2. Use the [AUBI Pilot Design Template](/frameworks/tools/aubi/aubi-pilot-template-en.pdf) *(Available Now)*
 3. Review [Layer 0 Recognition Protocols](/frameworks/docs/implementation/aubi#04-payout-architecture) for immediate implementation
-4. Contact globalgovernanceframework@gmail.com with subject "Community Pilot"
+4. Contact globalgovernanceframeworks@gmail.com with subject "Community Pilot"
 5. Join waitlist for AUBI Community Starter Kit *(Q1 2026 release)*
 
 **Government Officials & Policymakers**:
 1. Review the [AUBI Framework Quick Guide](/frameworks/tools/aubi/aubi-quick-guide-en.pdf) *(Available Now)* and [Executive Summary](/frameworks/docs/implementation/aubi#01-introduction)
 2. Join waitlist for AUBI Policy Playbook *(Q4 2025 release)*
 3. Explore [Treaty Integration](/frameworks/docs/implementation/aubi#02-treaty-integration) for international coordination
-4. Contact globalgovernanceframework@gmail.com with subject "Government Partnership"
+4. Contact globalgovernanceframeworks@gmail.com with subject "Government Partnership"
 
 **Indigenous & Cultural Communities**:
 1. Review framework sections on [Cultural Integration](/frameworks/docs/implementation/aubi#08-cultural-integration)
 2. Join waitlist for Cultural Sovereignty Toolkit *(Q2 2026 release)*
 3. Connect with Decolonial Oversight Council development
-4. Contact globalgovernanceframework@gmail.com with subject "Cultural Partnership"
+4. Contact globalgovernanceframeworks@gmail.com with subject "Cultural Partnership"
 
 **Researchers & Academic Institutions**:
 1. Explore the [LMCI Measurement](/frameworks/docs/implementation/aubi#07-lmci-measurement) protocols
 2. Review [Longitudinal Impact Studies](/frameworks/docs/implementation/aubi#07-lmci-measurement) methodology
 3. Access [Technical Appendices](/frameworks/docs/implementation/aubi#18-appendices) for research collaboration
-4. Contact globalgovernanceframework@gmail.com with subject "Research Collaboration"
+4. Contact globalgovernanceframeworks@gmail.com with subject "Research Collaboration"
 
 **Technology Organizations & Developers**:
 1. Review [Technical Architecture](/frameworks/docs/implementation/aubi#09-technical-architecture) specifications
 2. Join waitlist for AUBI Technology Platform Setup *(2027-2028 release)*
 3. Explore [Hearts Currency Integration](/frameworks/docs/implementation/aubi#05-economic-architecture) opportunities
-4. Contact globalgovernanceframework@gmail.com with subject "Technology Partnership"
+4. Contact globalgovernanceframeworks@gmail.com with subject "Technology Partnership"
 
 **Advocacy Organizations & Movements**:
 1. Use the ["AUBI for Humanity" Narrative Collection](/frameworks/tools/aubi/aubi-humanity-narratives-en.pdf) *(Available Now)*
 2. Apply the [Criticism Response Guide](/frameworks/tools/aubi/criticism-response-guide-en.pdf) *(Available Now)*
 3. Review [Communication Strategy](/frameworks/docs/implementation/aubi#10-communication-strategy) for campaign development
 4. Join waitlist for complete Advocacy Package *(2027 release)*
-5. Contact globalgovernanceframework@gmail.com with subject "Advocacy Partnership"
+5. Contact globalgovernanceframeworks@gmail.com with subject "Advocacy Partnership"
 
 ## <a id="access-and-usage"></a>Access and Usage
 
@@ -234,11 +234,11 @@ The framework is accessible through the Global Governance Framework website, des
 - **Download**: Access the complete framework as a PDF via the [Downloads](/downloads) section, available in multiple formats including mobile-optimized versions.
 - **Navigate**: Use this index to explore sections sequentially or jump to specific topics via direct section links.
 - **Access Tools**: Browse currently available implementation tools and join waitlists for upcoming releases at the [AUBI Tools Library](/frameworks/tools/aubi).
-- **Engage**: Share feedback through the contact portal, email globalgovernanceframework@gmail.com, or join pilot development programs.
+- **Engage**: Share feedback through the contact portal, email globalgovernanceframeworks@gmail.com, or join pilot development programs.
 - **Implement**: Launch community initiatives using currently available Phase 1 tools.
 - **Advocate**: Use available narrative collections and criticism response guides to build public support.
 
-**Tool Development Updates**: Subscribe to development updates by emailing globalgovernanceframework@gmail.com with subject "Tool Updates" to receive notifications when new implementation tools become available.
+**Tool Development Updates**: Subscribe to development updates by emailing globalgovernanceframeworks@gmail.com with subject "Tool Updates" to receive notifications when new implementation tools become available.
 
 **Accessibility Commitment**: All materials feature inclusive design principles with multi-modal access options, language translation support, and privacy protections exceeding international standards.
 
@@ -281,7 +281,7 @@ The framework is accessible through the Global Governance Framework website, des
 - **Researchers**: Contribute evidence and modeling for economic and social impacts
 
 **Contact Information**:
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Website**: globalgovernanceframework.org
 - **Subject Lines for Specific Support**:
   - "Community Pilot" - for local implementation initiatives using available tools

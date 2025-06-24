@@ -502,7 +502,7 @@ Professionellt samarbete: _________________________________________________
 ## Kontakt och implementeringsstöd
 
 ### **Implementeringsvägledning** 📞
-- **Primär kontakt**: globalgovernanceframework@gmail.com
+- **Primär kontakt**: globalgovernanceframeworks@gmail.com
 - **Ämnesrad**: "Andliga kris beslutsträd"
 - **Webbplats**: globalgovernanceframework.org
 

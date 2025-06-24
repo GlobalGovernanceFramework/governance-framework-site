@@ -604,7 +604,7 @@ SEKTION D: GEMENSKAP-EMPOWERMENT
 Living Mandala for Planetary Mental Health ramverket representerar omfattande forskningssyntes och iterativ förfining genom flera AI-system, integrerar evidensbaserade praxis med gemenskapsledda ansatser till mental hälso ansvarsskyldighet och övervakning.
 
 ### **Implementerings vägledning** 📞
-- **Primär kontakt**: globalgovernanceframework@gmail.com
+- **Primär kontakt**: globalgovernanceframeworks@gmail.com
 - **Ämnesrad**: "Mental Health Watchdog Implementation"
 - **Webbplats**: globalgovernanceframework.org
 

@@ -77,7 +77,7 @@ The framework is accessible through the Global Governance Framework website, des
 - **Download**: Access the complete framework as a PDF via the [Downloads](/downloads) section.
 - **Navigate**: Use this index to explore sections sequentially or jump to specific topics via section links.
 - **Access Tools**: Browse all implementation tools in PDF and markdown formats at the [Tools Library](/frameworks/tools/food-systems).
-- **Engage**: Share feedback through the contact portal or email [globalgovernanceframework@gmail.com], contributing to iterative refinements.
+- **Engage**: Share feedback through the contact portal or email [globalgovernanceframeworks@gmail.com], contributing to iterative refinements.
 - **Amplify**: Leverage multimedia assets (e.g., comics, infographics) to advocate for adoption at local, national, or global levels.
 - **Implement**: Use the [Implementation Tools](#implementation-tools) to launch pilots, starting with the "Start with the Seed" kit.
 
@@ -93,4 +93,4 @@ The framework is accessible through the Global Governance Framework website, des
 
 **About the Framework**: Developed through iterative design and feedback, this framework represents synthesized best practices from global stakeholders, maintained by a dedicated team at globalgovernanceframework.org.
 
-**Contribute**: Help expand accessibility by volunteering for translation, document formatting, or case study development. Contact us at [globalgovernanceframework@gmail.com] to join the community.
+**Contribute**: Help expand accessibility by volunteering for translation, document formatting, or case study development. Contact us at [globalgovernanceframeworks@gmail.com] to join the community.

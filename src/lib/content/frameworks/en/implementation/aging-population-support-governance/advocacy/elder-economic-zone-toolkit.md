@@ -743,7 +743,7 @@ The Elder Economic Zone Planning Toolkit provides comprehensive guidance for com
 
 **About This Toolkit**: Developed through collaboration with elder community leaders, economic development professionals, and successful aging-focused business districts. Maintained by the Global Governance Framework team with ongoing updates based on implementation experience and community feedback.
 
-**Version Updates**: This toolkit will be updated annually based on implementation experience and community feedback. Submit suggestions and lessons learned to globalgovernanceframework@gmail.com.
+**Version Updates**: This toolkit will be updated annually based on implementation experience and community feedback. Submit suggestions and lessons learned to globalgovernanceframeworks@gmail.com.
 
 **Elder Leadership Commitment**: All Elder Economic Zone development must maintain elder leadership and democratic governance throughout the planning, implementation, and evaluation process. Economic development serves elder community wellbeing and continues to strengthen through elder participation.
 

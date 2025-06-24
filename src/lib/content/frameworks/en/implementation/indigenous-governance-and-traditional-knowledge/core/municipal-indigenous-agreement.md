@@ -305,12 +305,12 @@ The Vancouver-Musqueam Fraser River Restoration Partnership demonstrates municip
 **Current Status Note**: The Global Governance Framework is in active development. Currently available:
 - ✅ Municipal-Indigenous partnership template and guidance
 - ✅ Traditional knowledge integration protocols
-- ✅ General support via globalgovernanceframework@gmail.com
+- ✅ General support via globalgovernanceframeworks@gmail.com
 - 🚧 Legal advocacy networks (in development)
 - 🚧 Regional coordinator networks (in development)
 
 **Contact Information**:
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Website**: globalgovernanceframework.org
 - **Subject Lines for Specific Support**:
   - "Municipal Partnership Development" - for partnership implementation guidance
@@ -327,6 +327,6 @@ The Vancouver-Musqueam Fraser River Restoration Partnership demonstrates municip
 
 **Document Version**: Version 1.0 (2025-01-11)  
 **Next Review**: 2025-07-01  
-**Contact Updates**: globalgovernanceframework@gmail.com
+**Contact Updates**: globalgovernanceframeworks@gmail.com
 
 **Cultural Protocol Reminder**: This template must be adapted following appropriate Indigenous cultural protocols and traditional governance systems. No agreement should proceed without extensive relationship building, cultural education, and Indigenous community leadership in agreement development and implementation.

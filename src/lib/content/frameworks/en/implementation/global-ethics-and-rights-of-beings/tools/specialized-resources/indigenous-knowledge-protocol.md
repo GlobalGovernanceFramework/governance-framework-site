@@ -704,8 +704,4 @@ Documented examples of successful Indigenous knowledge integration in different 
 
 ---
 
-*This Indigenous Knowledge Integration Protocol is part of the Global Ethics & Rights of Beings Framework resources. For additional implementation support, visit [globalgovernanceframework.org/ethics/indigenous] or contact [indigenous@globalgovernanceframework.org].*
-
 *Version 1.0 - May 2025*
-
-*Developed in consultation with the Indigenous Advisory Circle of the Global Ethics & Rights of Beings Framework*

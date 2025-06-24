@@ -553,9 +553,9 @@ Join our global community of educators creating new possibilities for relationsh
 
 For additional assistance with implementation, connect with our educator support team:
 
-- **Email: (not yet available)** education@globalgovernanceframework.org
-- **Online Community (not yet available):** [globalgovernanceframework.org/educators.](https://globalgovernanceframework.org/educators)
-- **Regional Support: (not yet available)** Find your local education coordinator at [globalgovernanceframework.org/regions](https://globalgovernanceframework.org/regions)
+- **Email:** *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Online Community:** *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Regional Support:** *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 *This guide is part of the Global Ethics & Rights of Beings Framework resources for educators.*
 

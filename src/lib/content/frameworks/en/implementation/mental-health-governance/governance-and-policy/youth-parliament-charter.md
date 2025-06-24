@@ -450,7 +450,7 @@ We, the young people of the world, recognize that mental health challenges dispr
 ## Contact & Charter Support
 
 ### **Implementation Guidance** 📞
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Subject Line**: "Youth Parliament Charter"
 - **Website**: globalgovernanceframework.org
 

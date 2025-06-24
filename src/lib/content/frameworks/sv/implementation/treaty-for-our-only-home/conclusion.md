@@ -204,6 +204,6 @@ Behöver du förtydliganden om specifika termer eller begrepp? [Ordlistan](/fram
 
 *Fördraget för vårt enda hem: Ett ramverk för medveten evolution från krisgenerande till motståndskraftgenerande styrningssystem. Utvecklat genom omfattande forskningssyntes och iterativ förfining för att integrera evidensbaserade praxis med visionär transformation. Implementering kräver lokal konsultation med kulturella, juridiska och tekniska experter bekanta med specifika kontext samtidigt som ramverkets systemiska integritet och transformativa omfattning upprätthålls.*
 
-*För frågor, partnerskapsmöjligheter eller implementeringsstöd: globalgovernanceframework@gmail.com*
+*För frågor, partnerskapsmöjligheter eller implementeringsstöd: globalgovernanceframeworks@gmail.com*
 
 *Version 1.0 - juni 2025 - En början, inte ett slut.*

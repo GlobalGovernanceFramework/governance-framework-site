@@ -46,7 +46,7 @@ Each case study demonstrates how the Framework’s four pillars—Climate Mitiga
 
 6. **Seek Support**:
    - Explore the Regional Hub concept at [globalgovernanceframework.org/frameworks/hubs](https://globalgovernanceframework.org/frameworks/hubs).
-   - Email [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com) for technical assistance.
+   - Email [globalgovernanceframeworks@gmail.com](mailto:globalgovernanceframeworks@gmail.com) for technical assistance.
 
 ---
 
@@ -256,8 +256,8 @@ Stakeholders can adapt these examples by following the [Climate Governance Seed 
 For additional support:
 
 - **Online Resources**: Access tools and guides at [globalgovernanceframework.org/frameworks/tools/energy](https://globalgovernanceframework.org/frameworks/tools/energy).
-- **Technical Assistance**: Email [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com).
+- **Technical Assistance**: Email [globalgovernanceframeworks@gmail.com](mailto:globalgovernanceframeworks@gmail.com).
 - **Regional Governance Concepts**: Learn more about the Regional Hub framework at [globalgovernanceframework.org/frameworks/hubs](https://globalgovernanceframework.org/frameworks/hubs).
-- **Implementation Partnerships**: Inquire about opportunities to pilot Regional Hub functions in your region through [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com).
+- **Implementation Partnerships**: Inquire about opportunities to pilot Regional Hub functions in your region through [globalgovernanceframeworks@gmail.com](mailto:globalgovernanceframeworks@gmail.com).
 
 This document is a living resource, updated periodically. Check the website for the latest version.

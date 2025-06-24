@@ -1,7 +1,7 @@
 ---
 title: Bio-Arts Residencies Toolkit
 section: bio-arts-residencies-toolkit
-revision: 1.0 (2025-05-24)
+revision: 0.5 (2025-05-24)
 ---
 
 # Bio-Arts Residencies Toolkit
@@ -33,7 +33,7 @@ The **Bio-Arts Residencies Toolkit** is a resource designed to empower communiti
 
 **Primary Users**: Indigenous artists, cultural organizations, community leaders, youth representatives, policymakers.
 
-**Integration**: Complements the [Economic Resilience & Corporate Transition Toolkit](/frameworks/tools/biodiversity/economic-resilience-toolkit-en.pdf) and [Public Trust Dashboard](/frameworks/tools/biodiversity/trust-dashboard-evaluation-en.pdf).
+**Integration**: Complements the [Economic Resilience & Corporate Transition Toolkit](/frameworks/tools/biodiversity-governance/economic-resilience-toolkit-en.pdf) and [Public Trust Dashboard](/frameworks/tools/biodiversity-governance/trust-dashboard-evaluation-en.pdf).
 
 ## <a id="core-components"></a>Core Components
 
@@ -109,7 +109,7 @@ The toolkit follows a phased approach to ensure rapid deployment and measurable 
 
 ## <a id="tools-templates"></a>Tools and Templates
 
-The following tools are included in the [Biodiversity Framework Seed Kit](/frameworks/tools/biodiversity/seed-kit-en.zip):
+The following tools are included in the [Biodiversity Framework Seed Kit](/frameworks/tools/biodiversity-governance/seed-kit-en.zip):
 
 - **Indigenous Arts Framework**  
   **Purpose**: Guides the design of residencies rooted in indigenous knowledge.  
@@ -119,7 +119,7 @@ The following tools are included in the [Biodiversity Framework Seed Kit](/frame
   **Key Features**:  
     - FPIC 2.0 consent protocols.  
     - Traditional knowledge integration guidelines.  
-  **Access**: [/frameworks/tools/biodiversity/indigenous-arts-framework-en.pdf].
+  **Access**: [/frameworks/tools/biodiversity-governance/indigenous-arts-framework-en.pdf].
 
 - **Restoration Art Project Guide**  
   **Purpose**: Outlines steps for creating art tied to restoration projects.  
@@ -129,7 +129,7 @@ The following tools are included in the [Biodiversity Framework Seed Kit](/frame
   **Key Features**:  
     - Art-restoration linkage templates.  
     - Digital campaign (NFT) guidelines.  
-  **Access**: [/frameworks/tools/biodiversity/restoration-art-project-guide-en.pdf].
+  **Access**: [/frameworks/tools/biodiversity-governance/restoration-art-project-guide-en.pdf].
 
 - **Community Engagement Playbook**  
   **Purpose**: Plans festivals and campaigns to engage communities.  
@@ -139,7 +139,7 @@ The following tools are included in the [Biodiversity Framework Seed Kit](/frame
   **Key Features**:  
     - Restoration Festival planning checklist.  
     - #BioDebt campaign strategy.  
-  **Access**: [/frameworks/tools/biodiversity/community-engagement-playbook-en.pdf].
+  **Access**: [/frameworks/tools/biodiversity-governance/community-engagement-playbook-en.pdf].
 
 - **Residency Funding Guide**  
   **Purpose**: Secures and manages funds for residencies.  
@@ -149,7 +149,7 @@ The following tools are included in the [Biodiversity Framework Seed Kit](/frame
   **Key Features**:  
     - Crowdfunding platform setup instructions.  
     - Ecological Debt Reparations framework.  
-  **Access**: [/frameworks/tools/biodiversity/residency-funding-guide-en.pdf].
+  **Access**: [/frameworks/tools/biodiversity-governance/residency-funding-guide-en.pdf].
 
 - **Artist and Community Mapping Template**  
   **Purpose**: Identifies artists and communities for residencies.  
@@ -159,7 +159,7 @@ The following tools are included in the [Biodiversity Framework Seed Kit](/frame
   **Key Features**:  
     - FPIC 2.0 engagement protocols.  
     - Biodiversity project mapping tool.  
-  **Access**: [/frameworks/tools/biodiversity/artist-community-mapping-template-en.pdf].
+  **Access**: [/frameworks/tools/biodiversity-governance/artist-community-mapping-template-en.pdf].
 
 - **Cultural Impact Assessment Protocol**  
   **Purpose**: Evaluates cultural and biodiversity outcomes of residencies.  
@@ -169,7 +169,7 @@ The following tools are included in the [Biodiversity Framework Seed Kit](/frame
   **Key Features**:  
     - Cultural Biodiversity Index metrics.  
     - Blockchain-secured verification process.  
-  **Access**: [/frameworks/tools/biodiversity/cultural-impact-assessment-protocol-en.pdf].
+  **Access**: [/frameworks/tools/biodiversity-governance/cultural-impact-assessment-protocol-en.pdf].
 
 ## <a id="metrics-evaluation"></a>Metrics and Evaluation
 
@@ -182,7 +182,7 @@ Metrics ensure accountability and tie outcomes to cultural and biodiversity goal
 - **Indigenous Leadership**: 70% of residencies led by indigenous artists, with 80% FPIC 2.0 compliance.
 
 ### Evaluation Tools
-- **Global Biodiversity Health Dashboard**: Tracks ecosystem metrics with community verification ([/frameworks/tools/biodiversity/health-dashboard-en.md]).
+- **Global Biodiversity Health Dashboard**: Tracks ecosystem metrics with community verification ([/frameworks/tools/biodiversity-governance/health-dashboard-en.md]).
 - **Cultural Biodiversity Index**: Measures cultural engagement through festival attendance and social media reach.
 - **Ethical AI Analytics**: Sentiment analysis for community engagement and predictive modeling for ecological impacts.
 - **Traditional Knowledge Indicators**: Elder-verified cultural and ecological signs (e.g., storytelling revitalization).
@@ -220,20 +220,20 @@ The toolkit is designed for universal access and equitable implementation:
 
 - **Languages**: Available in 10 languages, including Yolŋu Matha and Quechua (2030), prioritizing indigenous languages in biodiversity hotspots.
 - **Formats**: PDF, markdown, braille, audio narration, and SMS-compatible versions for low-connectivity areas.
-- **Cultural Sensitivity**: Regional Adaptation Guidelines ensure context-specific implementation ([/frameworks/tools/biodiversity/regional-adaptation-guidelines-en.pdf]).
+- **Cultural Sensitivity**: Regional Adaptation Guidelines ensure context-specific implementation ([/frameworks/tools/biodiversity-governance/regional-adaptation-guidelines-en.pdf]).
 - **Equity Focus**: 70% of residencies prioritize indigenous and Global South communities; women, youth, and marginalized groups included via community assemblies.
-- **Open Access**: All materials under Creative Commons licensing, freely available at [/frameworks/tools/biodiversity].
+- **Open Access**: All materials under Creative Commons licensing, freely available at [/frameworks/tools/biodiversity-governance].
 
 ---
 
 **Cross-References**:
-- [Economic Resilience & Corporate Transition Toolkit](/frameworks/tools/biodiversity/economic-resilience-toolkit-en.pdf)
-- [FPIC 2.0 Protocols Template](/frameworks/tools/biodiversity/fpic-2-protocols-template-en.pdf)
-- [Public Trust Dashboard](/frameworks/tools/biodiversity/trust-dashboard-evaluation-en.pdf)
-- [Biodiversity Impact Bonds Template](/frameworks/tools/biodiversity/impact-bonds-financing-en.pdf)
+- [Economic Resilience & Corporate Transition Toolkit](/frameworks/tools/biodiversity-governance/economic-resilience-toolkit-en.pdf)
+- [FPIC 2.0 Protocols Template](/frameworks/tools/biodiversity-governance/fpic-2-protocols-template-en.pdf)
+- [Public Trust Dashboard](/frameworks/tools/biodiversity-governance/trust-dashboard-evaluation-en.pdf)
+- [Biodiversity Impact Bonds Template](/frameworks/tools/biodiversity-governance/impact-bonds-financing-en.pdf)
 
 **Next Steps**:
-1. Download the toolkit from [/frameworks/tools/biodiversity].
+1. Download the toolkit from [/frameworks/tools/biodiversity-governance].
 2. Convene artists and communities using the [Artist and Community Mapping Template](#tools-templates).
 3. Launch pilot residencies in sanctuary states (e.g., Australia, Peru) using [Pilot Program Blueprints](/frameworks/docs/implementation/biodiversity#appendix-g-pilot-blueprints).
-4. Contact [globalbiodiversityframework@gmail.com] for support.
+4. Contact [globalgovernanceframeworks@gmail.com] for support.

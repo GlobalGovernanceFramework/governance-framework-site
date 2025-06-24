@@ -59,7 +59,7 @@ Implementation is structured in tiers (micro-pilots to national scaling), suppor
 
 Ready for adoption through UNESCO, national pilots, and multi-sector coalitions, this framework invites stakeholders—educators, policymakers, youth, and communities—to co-create a regenerative future where both learning and technology serve community empowerment. Join us in transforming education into a catalyst for planetary healing, equitable governance, and technological sovereignty.
 
-**Call to Action**: Review the framework, participate in pilot programs supporting both educational innovation and digital sovereignty, and share feedback to shape the future of global education. Contact [globalgovernanceframework@gmail.com] for collaboration opportunities.
+**Call to Action**: Review the framework, participate in pilot programs supporting both educational innovation and digital sovereignty, and share feedback to shape the future of global education. Contact [globalgovernanceframeworks@gmail.com] for collaboration opportunities.
 
 ### <a id="integration-with-digital-commons"></a>Integration with Digital Commons
 

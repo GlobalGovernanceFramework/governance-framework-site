@@ -926,7 +926,7 @@ Community Learning Networks:
 - **Connect with Networks**: Join regional and global networks of communities using participatory monitoring
 
 **Contact for Dashboard Implementation Support**:
-- **Email**: globalgovernanceframework@gmail.com
+- **Email**: globalgovernanceframeworks@gmail.com
 - **Subject**: "Performance Dashboard Implementation"
 - **Include**: Community location, monitoring priorities, technology capacity, and support needs
 

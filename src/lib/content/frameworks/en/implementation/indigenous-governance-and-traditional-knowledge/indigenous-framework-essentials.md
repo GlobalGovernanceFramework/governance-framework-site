@@ -397,7 +397,7 @@ Community-controlled framework providing automatic protection for Traditional Kn
 - Traditional Knowledge-AI integration and community-controlled technology development
 
 **Primary Contact Information:**
-- **Email**: globalgovernanceframework@gmail.com
+- **Email**: globalgovernanceframeworks@gmail.com
 - **Website**: globalgovernanceframework.org
 - **Subject Lines for Specific Support**:
   - "BAZ Development" - for Bioregional Autonomous Zone implementation

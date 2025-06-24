@@ -97,7 +97,7 @@ Indigenous communities can join existing nodes or start their own, with minimal 
 2. **Start an Indigenous Node (2-4 weeks)**:
   - Gather 5+ community members (elders, youth, leaders).
   - Discuss digital needs (e.g., cultural archives, health data).
-  - Register via SMS (text JOIN to 12345), email (globalgovernanceframework@gmail.com), or Regional Hub.
+  - Register via SMS (text JOIN to 12345), email (globalgovernanceframeworks@gmail.com), or Regional Hub.
   - Receive Indigenous Starter Kit (protocols, templates).
   - Example: Canada’s Cree node started with 10 members, focusing on language preservation.
 3. **Set Up Governance (1-2 weeks)**:
@@ -223,7 +223,7 @@ Nodes access funding to ensure sovereignty and sustainability.
 - **Guides**: Community, Youth, Ethics Toolkits (globalgovernanceframework.org/tools).
 - **Tools**: Oral Consensus Guide, SMS Voting, Field-Test Logbook.
 - **Visuals**: Stewardship Cycle Poster, Data Sovereignty Map (globalgovernanceframework.org/visuals).
-- **Support**: Email globalgovernanceframework@gmail.com, text INDIGENOUS to 12345, or join Indigenous Call-Ins (first Tuesday, 10:00 UTC).
+- **Support**: Email globalgovernanceframeworks@gmail.com, text INDIGENOUS to 12345, or join Indigenous Call-Ins (first Tuesday, 10:00 UTC).
 - **Access**: Multilingual, oral, visual formats at globalgovernanceframework.org.
 
 ---

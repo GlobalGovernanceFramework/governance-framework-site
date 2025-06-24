@@ -301,7 +301,7 @@ Lorsque les communautés du monde entier embrasseront leur autorité sur les ré
 ## Contact et Engagement
 
 - **Site Web du Cadre** : globalgovernanceframework.org/sante-mentale
-- **Courriel** : globalgovernanceframework@gmail.com
+- **Courriel** : globalgovernanceframeworks@gmail.com
 - **Forums Communautaires** : Espaces de discussion sécurisés et tenant compte des traumatismes
 - **Soutien à la Mise en Œuvre** : Adaptation culturelle et assistance technique
 - **Réseau Mondial** : Connectez-vous avec des communautés mettant en œuvre la transformation

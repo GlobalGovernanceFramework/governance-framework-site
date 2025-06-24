@@ -123,4 +123,4 @@ In 2024, Nordic youth councils adapted this charter to govern 2,000 learners acr
 - Advocacy Playbook ([Section 10.1](/frameworks/docs/implementation/education#10-appendices))
 
 ## Download
-Available at [framework website](https://www.globalgovernanceframework.org/frameworks/docs/implementation/education) as PDF, Word, markdown, and accessible formats (audio, braille, sign language). Contact [globalgovernanceframework@gmail.com] for translation requests or support.
+Available at [framework website](https://www.globalgovernanceframework.org/frameworks/docs/implementation/education) as PDF, Word, markdown, and accessible formats (audio, braille, sign language). Contact [globalgovernanceframeworks@gmail.com] for translation requests or support.

@@ -1238,23 +1238,23 @@ Software and digital resources supporting framework implementation.
 ## Contact and Support Information
 
 ### Global Framework Secretariat (not yet available)
-- Email: [contact@globalgovernanceframework.org](mailto:contact@globalgovernanceframework.org)
-- Website: [www.globalgovernanceframework.org/ethics](http://www.globalgovernanceframework.org/ethics)
-- Implementation Support: [www.globalgovernanceframework.org/ethics/policymakers](http://www.globalgovernanceframework.org/ethics/policymakers)
+- Email: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- Website: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- Implementation Support: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 ### Regional Support Hubs (not yet available)
-- **Africa**: [africa@globalgovernanceframework.org](mailto:africa@globalgovernanceframework.org)
-- **Americas**: [americas@globalgovernanceframework.org](mailto:americas@globalgovernanceframework.org)
-- **Asia-Pacific**: [asia-pacific@globalgovernanceframework.org](mailto:asia-pacific@globalgovernanceframework.org)
-- **Europe**: [europe@globalgovernanceframework.org](mailto:europe@globalgovernanceframework.org)
-- **Middle East**: [middle-east@globalgovernanceframework.org](mailto:middle-east@globalgovernanceframework.org)
+- **Africa**: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Americas**: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Asia-Pacific**: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Europe**: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Middle East**: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 ### Implementation Community of Practice
 - Join the global community of policymakers implementing the framework
 - Share experiences and solutions
 - Access peer support and expertise
 - Contribute to framework evolution
-- Register at: [www.globalgovernanceframework.org/ethics/community](http://www.globalgovernanceframework.org/ethics/community) (not yet available)
+- Register at: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 ---
 

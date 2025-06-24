@@ -202,7 +202,7 @@ Practical tools ensure ethical principles are actionable, even in low-resource s
 - **Guides**: Community, Youth, Indigenous Toolkits (globalgovernanceframework.org/tools).
 - **Tools**: SMS Voting, Data Sovereignty Protocol, AI Ethics Checklist.
 - **Visuals**: Ethics Flowchart, Governance Cycle Poster (globalgovernanceframework.org/visuals).
-- **Support**: Email globalgovernanceframework@gmail.com, text ETHICS to 12345, or join monthly call-ins (first Monday, 10:00 UTC).
+- **Support**: Email globalgovernanceframeworks@gmail.com, text ETHICS to 12345, or join monthly call-ins (first Monday, 10:00 UTC).
 - **Access**: Multilingual, braille, audio formats at globalgovernanceframework.org.
 
 ---

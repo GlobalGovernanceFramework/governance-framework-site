@@ -521,7 +521,7 @@ The Ethical Decision Template provides practical tools for embodying consciousne
 
 **Contact Information**:
 Global Governance Framework  
-Email: globalgovernanceframework@gmail.com  
+Email: globalgovernanceframeworks@gmail.com  
 Website: [globalgovernanceframework.org]
 
 **License**: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)

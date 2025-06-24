@@ -491,12 +491,12 @@ Comprehensive response systems for addressing Indigenous data sovereignty violat
 **Current Status Note**: The Global Governance Framework is in active development. Currently available:
 - ✅ Indigenous Data Sovereignty framework and implementation guidance
 - ✅ Community consultation and technical setup support
-- ✅ General support via globalgovernanceframework@gmail.com
+- ✅ General support via globalgovernanceframeworks@gmail.com
 - 🚧 Legal advocacy coordination networks (in development)
 - 🚧 Technical implementation support networks (in development)
 
 **Contact Information**:
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Website**: globalgovernanceframework.org
 - **Subject Lines for Specific Support**:
   - "Indigenous Data Sovereignty Implementation" - for community setup and governance support
@@ -530,6 +530,6 @@ Comprehensive response systems for addressing Indigenous data sovereignty violat
 
 **Document Version**: Version 1.0 (2025-01-11)  
 **Next Review**: 2025-07-01  
-**Contact Updates**: globalgovernanceframework@gmail.com
+**Contact Updates**: globalgovernanceframeworks@gmail.com
 
 **Cultural Protocol Reminder**: Indigenous Data Sovereignty implementation must follow appropriate cultural protocols and traditional governance systems. All data activities should strengthen rather than compromise traditional knowledge transmission and occur under traditional authority and elder guidance. Sacred knowledge requires absolute protection and should never be included in digital systems without explicit traditional spiritual authority permission.

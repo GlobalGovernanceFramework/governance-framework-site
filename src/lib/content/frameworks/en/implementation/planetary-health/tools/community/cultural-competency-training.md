@@ -293,14 +293,14 @@ The module is grounded in cultural safety, indigenous sovereignty, and equity.
   - [Community Engagement Toolkit](/frameworks/tools/planetary-health/community-engagement-toolkit-en.pdf)
   - [Health Equity Dashboard Template](/frameworks/tools/planetary-health/health-equity-dashboard-en.pdf)
 - **Support Channels**:
-  - Email: [globalgovernanceframework@gmail.com]
+  - Email: [globalgovernanceframeworks@gmail.com]
   - Community Portal: [globalgovernanceframework.org/contact]
   - Quarterly Cultural Competency Review Cycles for feedback.
 - **Training Resources**:
   - Community Health Worker Certification Program (Tools Library).
   - Cultural Competency Workshop (online, multilingual).
 
-**Call to Action**: Start by recruiting trainers with cultural expertise and trainees from LMIC and indigenous communities. Use the Community Engagement Toolkit to plan training sessions. Contact [globalgovernanceframework@gmail.com] for trainer certification or pilot funding opportunities.
+**Call to Action**: Start by recruiting trainers with cultural expertise and trainees from LMIC and indigenous communities. Use the Community Engagement Toolkit to plan training sessions. Contact [globalgovernanceframeworks@gmail.com] for trainer certification or pilot funding opportunities.
 
 ---
 

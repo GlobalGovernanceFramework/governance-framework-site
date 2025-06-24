@@ -548,9 +548,9 @@ Interested stakeholders can:
 - **Support Accessibility:** Help ensure inclusive design for all users
 
 ### Contact Information
-- Development Team Email: collab-platform@globalgovernanceframework.org
-- Project Coordinator: Sophia Chen, Collaboration Systems Lead
-- GitHub Repository: github.com/nested-economies/collaboration-platform (coming soon)
+- Development Team Email: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- Project Coordinator: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- GitHub Repository: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 ---
 

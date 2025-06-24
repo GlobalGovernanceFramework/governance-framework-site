@@ -762,4 +762,4 @@ A Community Water Assembly is a democratically governed community body with real
 
 **Your Community's Water Democracy Starts Now**: Every community has the wisdom, creativity, and power needed to govern their water democratically. Trust your community's capacity, start with small steps, and build the water future your community deserves through collective action and shared power.
 
-**Connect and Support**: For additional resources, peer connections, and implementation support, visit globalgovernanceframework.org/assemblies or contact assemblies@globalgovernanceframework.org to connect with the global network of communities building water democracy.
+**Connect and Support**: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*

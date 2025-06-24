@@ -1393,4 +1393,4 @@ def generate_community_bias_report(metrics, community_name):
 
 ---
 
-**Resource Access**: For additional tools, training materials, and community support, visit globalgovernanceframework.org/ai-bias or contact ai-bias@globalgovernanceframework.org to connect with the global network of communities working on algorithmic justice and community-controlled technology.
+**Resource Access**: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*

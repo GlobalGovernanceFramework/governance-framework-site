@@ -23,7 +23,7 @@ The **Youth Justice Guide** equips jurisdictions with strategies and tools to re
 5. **Use Templates**: Adapt templates for program design, training, and reporting.
 6. **Monitor and Evaluate**: Track progress with metrics, integrating into the framework's metrics dashboard ([Monitoring and Accountability](/frameworks/justice-systems#monitoring-accountability)).
 7. **Adapt as Needed**: Modify up to 20% of the guide with approval from Regional Justice Hubs ([Appendices](/frameworks/justice-systems#appendices)).
-8. **Seek Support**: Contact [globalgovernanceframework@gmail.com] for funding, training, or technical assistance.
+8. **Seek Support**: Contact [globalgovernanceframeworks@gmail.com] for funding, training, or technical assistance.
 
 > **YOUTH VOICE**: *"This guide isn't just for adults to read and implement. It's for us—young people—to lead change in our communities. Start by understanding your rights, then gather your peers, and make your voice heard in the design of these programs. Remember, nothing about us without us!"*
 
@@ -239,7 +239,7 @@ Track the following metrics to assess youth justice impact, integrating into the
 ## Implementation and Support
 - **Launch**: Convene a youth justice task force by [date, e.g., Q2 2027] to finalize the plan.
 - **Submit**: Share plans and reports with Regional Justice Hubs via secure platforms or offline channels ([Tools Library](/frameworks/tools/justice)).
-- **Request Assistance**: Contact [globalgovernanceframework@gmail.com] for funding, training, or support.
+- **Request Assistance**: Contact [globalgovernanceframeworks@gmail.com] for funding, training, or support.
 - **Feedback**: Submit guide usability feedback via the engagement platform for biannual updates (July and January).
 
 ## Youth Forum Toolkit

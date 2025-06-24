@@ -7,8 +7,8 @@ The Economic Micro-Grant Template provides communities and grassroots organizati
 This template embodies the principles of <span style="color: blue;">sovereignty</span>, <span style="color: green;">interoperability</span>, <span style="color: red;">justice</span>, and <span style="color: purple;">adaptability</span> by prioritizing local decision-making, ensuring compatibility with larger systems, embedding equity in all processes, and allowing flexible implementation based on context.
 
 **Version:** 1.0 (2025)  
-**Available formats:** PDF, editable document, web form, paper printout  
-**Languages:** Available in 10 languages with visual guides for low-literacy contexts  
+**Available formats:** PDF, and markdown  
+**Languages:** Available in English
 
 ---
 
@@ -61,9 +61,9 @@ Grants are available to:
 Choose one of the following application methods:
 
 **Digital Application:**
-- Online form at globalgovernanceframework.org/micro-grants
-- Email submission to micro-grants@globalgovernanceframework.org
-- Mobile app submission via the Framework App
+- Online form *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- Email submission *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- Mobile app submission *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 **Offline Application:**
 - Paper application submitted to regional hubs

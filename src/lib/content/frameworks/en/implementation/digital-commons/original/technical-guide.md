@@ -188,7 +188,7 @@ The framework complements global and local regulations:
 - **Technical Guides**: Community, Youth, Indigenous, Ethics guides (globalgovernanceframework.org/tools).
 - **Governance Tools**: SMS Voting, Data Sovereignty, AI Audit templates.
 - **Visuals**: Framework Map, Governance Flow, Funding Loop (globalgovernanceframework.org/visuals).
-- **Support**: Email globalgovernanceframework@gmail.com
+- **Support**: Email globalgovernanceframeworks@gmail.com
 
 ---
 

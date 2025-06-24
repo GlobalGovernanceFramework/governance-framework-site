@@ -213,15 +213,9 @@ End-user instructions for participation:
 4. **Expand Participation**: Increase contribution diversity
 5. **Become Advocate**: Share experience with others
 
-## Connect with the Community
+## Connect 
 
-Join the growing network of communities implementing the Financial Systems Framework:
-
-- **Online Forum**: [globalgovernanceframework.org/community](https://globalgovernanceframework.org/community)
-- **Regional Nodes**: Find local implementation partners in your area
-- **Monthly Calls**: Connect with practitioners worldwide
-
-For more information, contact [financial-systems@globalgovernanceframework.org](mailto:financial-systems@globalgovernanceframework.org)
+For more information, contact [globalgovernanceframeworks@gmail.com](mailto:globalgovernanceframeworks@gmail.com)
 
 ---
 

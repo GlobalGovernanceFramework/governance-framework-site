@@ -163,4 +163,4 @@ In India, 30 educators used this module to train for a pilot, achieving 85% comp
 - Nordic Youth Parliaments Case Model ([Section 8.1](#])
 
 ## Download
-Available at [framework website](#) as Word, PDF, markdown, and accessible formats (audio, braille, simplified text). Contact [framework@xai.org] for translation requests or support.
+Available at [framework website](globalgovernanceframeworks.org) as PDF and markdown. Get involved [globalgovernanceframeworks.org/get-involved] for translation requests or support.

@@ -452,12 +452,12 @@ A BAZ is a self-governing territory where Indigenous communities exercise sovere
 **Current Status Note**: The Global Governance Framework is in active development. Currently available:
 - ✅ BAZ readiness assessment tools and setup guidance
 - ✅ Traditional governance development support
-- ✅ General support via globalgovernanceframework@gmail.com
+- ✅ General support via globalgovernanceframeworks@gmail.com
 - 🚧 Regional coordinator networks (in development)
 - 🚧 Legal advocacy coordination (in development)
 
 **Contact Information**:
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Website**: globalgovernanceframework.org
 - **Subject Lines for Specific Support**:
   - "BAZ Development Support" - for community readiness assessment and setup guidance
@@ -482,6 +482,6 @@ A BAZ is a self-governing territory where Indigenous communities exercise sovere
 
 **Document Version**: Version 1.0 (2025-01-11)  
 **Next Review**: 2025-07-01  
-**Contact Updates**: globalgovernanceframework@gmail.com
+**Contact Updates**: globalgovernanceframeworks@gmail.com
 
 **Cultural Protocol Reminder**: BAZ development must follow appropriate Indigenous cultural protocols and traditional governance systems. This assessment and setup process should be led by Indigenous communities with elder guidance and community consensus at every step.

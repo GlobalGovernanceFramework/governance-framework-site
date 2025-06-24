@@ -471,9 +471,9 @@ Interested stakeholders can:
 - **Provide Implementation Questions:** Help build the chatbot's knowledge
 
 ### Contact Information
-- Development Team Email: ai-assistant@globalgovernanceframework.org
-- Project Coordinator: Jin Park, Digital Accessibility Lead
-- GitHub Repository: github.com/nested-economies/frameworks-assistant (coming soon)
+- Development Team Email: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- Project Coordinator: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- GitHub Repository: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 ---
 

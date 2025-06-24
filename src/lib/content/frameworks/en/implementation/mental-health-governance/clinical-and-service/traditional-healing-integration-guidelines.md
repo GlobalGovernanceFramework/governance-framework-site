@@ -960,12 +960,12 @@ Article 5: Accountability and Evaluation
 
 Currently available:
 - ✅ Framework documentation and traditional healing integration guidelines
-- ✅ General support via globalgovernanceframework@gmail.com
+- ✅ General support via globalgovernanceframeworks@gmail.com
 - 🚧 Specialized traditional healing integration training programs (in development)
 - 🚧 Regional traditional healing integration networks (in development)
 
 **Contact Information:**
-- **Primary Contact:** globalgovernanceframework@gmail.com
+- **Primary Contact:** globalgovernanceframeworks@gmail.com
 - **Website:** globalgovernanceframework.org
 - **Subject Lines for Specific Support:**
   - "Traditional Healing Integration" - for integration planning and implementation support
@@ -1026,7 +1026,7 @@ The Traditional Healing Integration Guidelines represent a fundamental commitmen
 
 **Living Document Status**: This guideline is designed for continuous improvement based on implementation experience and traditional healing community feedback. Current version represents comprehensive analysis as of June 2025 with regular updates planned based on community guidance and emerging practices.
 
-**Contact for Implementation Support**: globalgovernanceframework@gmail.com with subject line "Traditional Healing Integration Implementation"
+**Contact for Implementation Support**: globalgovernanceframeworks@gmail.com with subject line "Traditional Healing Integration Implementation"
 
 ---
 

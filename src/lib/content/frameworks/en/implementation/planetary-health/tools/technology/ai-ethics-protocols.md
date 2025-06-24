@@ -153,5 +153,5 @@ Stakeholders of the Planetary Health Accord are called to uphold the AI Ethics P
 Together, we can ensure AI serves as a force for justice, healing, and planetary health. Join the Accord to build ethical health systems for all.  
 
 **Access the Protocols**: Available in PDF and editable markdown at [Tools Library](/frameworks/tools/planetary-health).  
-**Feedback**: Share input via [globalgovernanceframework@gmail.com].  
+**Feedback**: Share input via [globalgovernanceframeworks@gmail.com].  
 **Related Resources**: Explore [AI Literacy Certifications](/frameworks/tools/planetary-health/ai-literacy-certifications-en.pdf) and [AI Bias Audit Framework](/frameworks/tools/planetary-health/ai-bias-audit-framework-en.pdf) for complementary tools.

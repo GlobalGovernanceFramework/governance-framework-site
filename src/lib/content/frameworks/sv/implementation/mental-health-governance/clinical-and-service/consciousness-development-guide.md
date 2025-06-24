@@ -1317,7 +1317,7 @@ INTEGRATIONSSTÖD:
 ## Kontakt & implementeringsstöd
 
 ### **Implementeringsvägledning** 📞
-- **Primär kontakt**: globalgovernanceframework@gmail.com
+- **Primär kontakt**: globalgovernanceframeworks@gmail.com
 - **Ämnesrad**: "Medvetandeutvecklingsguide"
 - **Webbplats**: globalgovernanceframework.org
 

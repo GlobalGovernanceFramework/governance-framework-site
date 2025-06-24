@@ -243,7 +243,7 @@ The template is designed for universal access and equitable implementation:
 3. Engage investors via the [Funding Navigator](/frameworks/tools/biodiversity/funding-navigator-en.pdf).  
 4. Launch pilot BIBs in sanctuary states (Costa Rica, Bhutan, Palau) using [Pilot Program Blueprints](/frameworks/docs/implementation/biodiversity#appendix-g-pilot-blueprints).  
 
-**Contact**: [globalgovernanceframework@gmail.com] for support or to contribute to template refinement.
+**Contact**: [globalgovernanceframeworks@gmail.com] for support or to contribute to template refinement.
 
 ---
 

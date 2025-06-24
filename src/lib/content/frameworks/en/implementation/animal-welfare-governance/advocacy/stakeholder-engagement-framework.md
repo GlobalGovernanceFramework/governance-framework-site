@@ -743,7 +743,7 @@ Phase 4: Capacity Building (Ongoing)
 **Current Status Note:** The Global Guardian Framework is in active development. 
 Currently available:
 - ✅ Framework documentation and stakeholder engagement guidance
-- ✅ General support via globalgovernanceframework@gmail.com
+- ✅ General support via globalgovernanceframeworks@gmail.com
 - 🚧 Facilitator training programs (in development)
 - 🚧 Cultural competency training (in development)
 - 🚧 Stakeholder engagement support services (in development)
@@ -751,13 +751,13 @@ Currently available:
 **Facilitator Development Programs:**
 
 **Core Facilitation Training:**
-- **Basic Facilitation Skills**: [Contact globalgovernanceframework@gmail.com with subject "Facilitation Training"]
+- **Basic Facilitation Skills**: [Contact globalgovernanceframeworks@gmail.com with subject "Facilitation Training"]
 - **Advanced Stakeholder Engagement**: [Contact with subject "Advanced Engagement Training"]
 - **Conflict Resolution and Mediation**: [Contact with subject "Conflict Resolution Training"]
 - **Cultural Competency Development**: [Contact with subject "Cultural Competency Training"]
 
 **Specialized Training Areas:**
-- **Indigenous Engagement**: [Contact globalgovernanceframework@gmail.com with subject "Indigenous Engagement Training"]
+- **Indigenous Engagement**: [Contact globalgovernanceframeworks@gmail.com with subject "Indigenous Engagement Training"]
 - **Multi-Cultural Facilitation**: [Contact with subject "Multi-Cultural Training"]
 - **Digital Engagement Platforms**: [Contact with subject "Digital Engagement Training"]
 - **Policy Development Facilitation**: [Contact with subject "Policy Facilitation Training"]
@@ -767,13 +767,13 @@ Currently available:
 **Engagement Design and Implementation Support:**
 
 **Planning and Design Support:**
-- **Stakeholder Mapping**: [Contact globalgovernanceframework@gmail.com with subject "Stakeholder Mapping Support"]
+- **Stakeholder Mapping**: [Contact globalgovernanceframeworks@gmail.com with subject "Stakeholder Mapping Support"]
 - **Engagement Strategy Development**: [Contact with subject "Engagement Strategy Support"]
 - **Cultural Protocol Guidance**: [Contact with subject "Cultural Protocol Support"]
 - **Method Selection and Design**: [Contact with subject "Engagement Method Support"]
 
 **Implementation Support:**
-- **Facilitation Services**: [Contact globalgovernanceframework@gmail.com with subject "Facilitation Services"]
+- **Facilitation Services**: [Contact globalgovernanceframeworks@gmail.com with subject "Facilitation Services"]
 - **Technical Assistance**: [Contact with subject "Engagement Technical Support"]
 - **Evaluation and Monitoring**: [Contact with subject "Engagement Evaluation Support"]
 - **Conflict Resolution Support**: [Contact with subject "Conflict Resolution Support"]
@@ -783,13 +783,13 @@ Currently available:
 **Professional Networks and Partnerships:**
 
 **Facilitator Networks:**
-- **Global Facilitator Network**: [Contact globalgovernanceframework@gmail.com with subject "Facilitator Network"]
+- **Global Facilitator Network**: [Contact globalgovernanceframeworks@gmail.com with subject "Facilitator Network"]
 - **Regional Facilitator Hubs**: [Contact with subject "Regional Facilitator Support"]
 - **Cultural Specialist Network**: [Contact with subject "Cultural Specialist Network"]
 - **Indigenous Engagement Specialists**: [Contact with subject "Indigenous Engagement Network"]
 
 **Institutional Partnerships:**
-- **Academic Partnerships**: [Contact globalgovernanceframework@gmail.com with subject "Academic Partnership"]
+- **Academic Partnerships**: [Contact globalgovernanceframeworks@gmail.com with subject "Academic Partnership"]
 - **NGO Collaboration**: [Contact with subject "NGO Engagement Partnership"]
 - **Government Cooperation**: [Contact with subject "Government Engagement Support"]
 - **International Networks**: [Contact with subject "International Engagement Network"]
@@ -882,7 +882,7 @@ Hour 48-72: Transition Planning
 **Stakeholder Engagement Support:**
 
 **Primary Support:**
-- **Email:** globalgovernanceframework@gmail.com
+- **Email:** globalgovernanceframeworks@gmail.com
 - **Website:** globalgovernanceframework.org
 - **Subject Lines for Engagement-Specific Support:**
   - "Stakeholder Mapping" - for stakeholder identification and analysis support
@@ -894,7 +894,7 @@ Hour 48-72: Transition Planning
   - "Evaluation Support" - for engagement evaluation and improvement assistance
 
 **Specialized Support Areas:**
-- **Indigenous Engagement**: [Contact globalgovernanceframework@gmail.com with subject "Indigenous Engagement Support"]
+- **Indigenous Engagement**: [Contact globalgovernanceframeworks@gmail.com with subject "Indigenous Engagement Support"]
 - **Multi-Cultural Facilitation**: [Contact with subject "Multi-Cultural Engagement"]
 - **Rural Community Engagement**: [Contact with subject "Rural Community Engagement"]
 - **Industry Stakeholder Engagement**: [Contact with subject "Industry Engagement"]
@@ -902,7 +902,7 @@ Hour 48-72: Transition Planning
 - **International Engagement**: [Contact with subject "International Stakeholder Coordination"]
 
 **Regional Engagement Networks:**
-- **Americas Engagement Network**: [Contact globalgovernanceframework@gmail.com with subject "Americas Engagement Network"]
+- **Americas Engagement Network**: [Contact globalgovernanceframeworks@gmail.com with subject "Americas Engagement Network"]
 - **Europe-Africa Engagement Network**: [Contact with subject "Europe-Africa Engagement Network"]
 - **Asia-Pacific Engagement Network**: [Contact with subject "Asia-Pacific Engagement Network"]
 
@@ -989,7 +989,7 @@ This framework provides tools and guidance for that engagement, but the most imp
 This Stakeholder Engagement Framework was developed through consultation with engagement specialists, Indigenous leaders, community organizers, government officials, and stakeholder representatives from diverse cultural and political contexts. The framework represents collective wisdom about meaningful engagement while maintaining flexibility for adaptation to diverse contexts and cultural requirements.
 
 **Feedback and Continuous Improvement:**
-We welcome feedback from facilitators, government officials, community leaders, and stakeholders using this engagement framework. Please share your experiences, adaptations, and recommendations with globalgovernanceframework@gmail.com using subject "Engagement Framework Feedback".
+We welcome feedback from facilitators, government officials, community leaders, and stakeholders using this engagement framework. Please share your experiences, adaptations, and recommendations with globalgovernanceframeworks@gmail.com using subject "Engagement Framework Feedback".
 
 **Cultural Protocols and Respect:**
 This framework is offered with deep respect for the diverse cultural protocols and traditional practices of Indigenous peoples and traditional communities worldwide. We acknowledge that no external framework can capture the full richness of traditional governance and decision-making systems, and we encourage adaptation and modification to respect local protocols and values.

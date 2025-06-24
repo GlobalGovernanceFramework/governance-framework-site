@@ -804,7 +804,7 @@ Standard formats for implementation documentation:
 - Case study template
 - Evaluation report template
 
-**Access these templates at: globalgovernanceframework.org/pioneers/templates**
+**Access these templates at: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 #### Assessment Tools
 Instruments for various implementation evaluations:
@@ -815,7 +815,7 @@ Instruments for various implementation evaluations:
 - Rights assessment protocols
 - Impact evaluation instruments
 
-**Access these tools at: globalgovernanceframework.org/pioneers/tools**
+**Access these tools at: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 #### Visual Resources
 Graphical materials supporting implementation:
@@ -826,7 +826,7 @@ Graphical materials supporting implementation:
 - Stakeholder mapping visuals
 - Rights spectrum illustrations
 
-**Access these resources at: globalgovernanceframework.org/pioneers/visuals**
+**Access these resources at: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 ### 7.2 Learning Resources
 
@@ -841,7 +841,7 @@ Educational materials on framework components:
 - Cultural adaptation resources
 - Specialized implementation guides
 
-**Access the library at: globalgovernanceframework.org/pioneers/knowledge**
+**Access the library at: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 #### Case Study Collection
 Learn from other pioneer implementations:
@@ -852,7 +852,7 @@ Learn from other pioneer implementations:
 - Video interviews with implementers
 - Implementation visits information
 
-**Access case studies at: globalgovernanceframework.org/pioneers/cases**
+**Access case studies at: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 #### Learning Modules
 Structured educational components:
@@ -863,7 +863,7 @@ Structured educational components:
 - Simulation exercises
 - Assessment quizzes
 
-**Access learning modules at: globalgovernanceframework.org/pioneers/learning**
+**Access learning modules at: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 ### 7.3 Connection and Assistance
 
@@ -878,7 +878,7 @@ Connect with other implementers:
 - Collaborative problem-solving groups
 - Regular virtual meetups
 
-**Join the network at: globalgovernanceframework.org/pioneers/network**
+**Join the network at: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 #### Expert Support
 Access specialized assistance:
@@ -889,7 +889,7 @@ Access specialized assistance:
 - Peer review opportunities
 - Specialized working groups
 
-**Request support at: globalgovernanceframework.org/pioneers/support**
+**Request support at: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 #### Recognition and Visibility
 Gain acknowledgment for your implementation:
@@ -900,7 +900,7 @@ Gain acknowledgment for your implementation:
 - Media highlight opportunities
 - Implementation visitor program
 
-**Learn more at: globalgovernanceframework.org/pioneers/recognition**
+**Learn more at: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 ## Appendices
 
@@ -980,4 +980,4 @@ We encourage you to:
 
 Thank you for your commitment to expanding our circle of moral consideration to include all beings. Your pioneering work helps create a world where the rights and dignity of all beings are recognized and protected.
 
-*For additional support, contact the Pioneer Support Team at pioneers@globalgovernanceframework.org (not yet available)*
+*For additional support, contact the Pioneer Support Team at *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>**

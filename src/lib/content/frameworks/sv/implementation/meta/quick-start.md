@@ -144,7 +144,7 @@ FÖRDJUPAT ENGAGEMANG (för intresserade organisationer/samhällen):
 - Gå med i en arbetsgrupp kring specifika utmaningar (klimat, hälsa, etc.)
 
 Redo att hjälpa systemen att fungera bättre tillsammans? Här är hur:  
-- **📥 Dela Din Visdom**: Berätta om ditt samhälles styrningsidéer (t.ex. urfolkskonsensus eller lokala kooperativ). Maila oss på [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com).  
+- **📥 Dela Din Visdom**: Berätta om ditt samhälles styrningsidéer (t.ex. urfolkskonsensus eller lokala kooperativ). Maila oss på [globalgovernanceframeworks@gmail.com](mailto:globalgovernanceframeworks@gmail.com).  
 - **🧩 Testa Ett Verktyg**: Prova vår policy-simulator eller styrningskarta (tillgänglig 2026). Registrera dig på [globalgovernanceframework.org/tools](https://globalgovernanceframework.org/tools).  
 - **👥 Delta i en Dialog**: Delta i en workshop eller panel online. Kolla [globalgovernanceframework.org/events](https://globalgovernanceframework.org/events) för uppdateringar.  
 - **📚 Lär Dig Mer**: Utforska [hela ramverket](https://globalgovernanceframework.org/frameworks) för djupare insikter.

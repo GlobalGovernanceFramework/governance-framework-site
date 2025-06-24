@@ -83,7 +83,7 @@ Alla verktyg finns tillgängliga i vårt [Verktyg & Mallar Bibliotek](/framework
 3. **[Ladda ner Frö-Kitet](/frameworks/tools/educational-systems/seed-kit.zip)** – Starta en mikro-pilot i din kontext.
 4. **Dela Feedback & Skala upp** – Anslut till globala nätverk via [Interaktiv Webbplattform](/platform/).
 
-**Kontakt:** [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com)
+**Kontakt:** [globalgovernanceframeworks@gmail.com](mailto:globalgovernanceframeworks@gmail.com)
 **Ramverkets Repository:** [Länk till GitHub repository](https://github.com/GlobalGovernanceFrameworks/website/src/lib/content/frameworks/sv/implementation/educational-systems)
 
 > "Utbildning är inte en förberedelse för livet; utbildning är livet självt — tillsammans skapat."

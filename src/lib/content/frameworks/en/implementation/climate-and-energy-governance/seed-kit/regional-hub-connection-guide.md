@@ -139,7 +139,7 @@ The Regional Hub concept will evolve through practical implementation and stakeh
 
 To discuss regional coordination approaches or contribute to the Regional Hub concept development:
 
-- Email: globalgovernanceframework@gmail.com
+- Email: globalgovernanceframeworks@gmail.com
 - Subject: Regional Hub Connection
 - Website: [globalgovernanceframework.org/frameworks/hubs](https://globalgovernanceframework.org/frameworks/hubs)
 

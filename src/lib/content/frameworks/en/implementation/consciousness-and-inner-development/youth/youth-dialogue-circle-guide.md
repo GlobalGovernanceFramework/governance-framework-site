@@ -849,6 +849,6 @@ Start where you are. Use what you have. Do what you can. And remember - you don'
 
 *This guide is part of the Global Governance Framework project. All materials are freely available under Creative Commons licensing. Share, adapt, and improve on these ideas to fit your community's needs.*
 
-**Questions? Need support?** Email us at globalgovernanceframework@gmail.com or connect with other youth organizers in our online community.
+**Questions? Need support?** Email us at globalgovernanceframeworks@gmail.com or connect with other youth organizers in our online community.
 
 **Want more resources?** Check out our Youth Leadership Toolkit and other materials at globalgovernanceframework.org/youth

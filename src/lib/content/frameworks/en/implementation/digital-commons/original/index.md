@@ -118,7 +118,7 @@ Accessible channels for diverse stakeholders:
 - **Download**: Full framework PDF at [Downloads](/downloads), or individual sections.
 - **Navigate**: Use index to explore sections via links.
 - **Access Tools**: PDF/markdown at [Tools Library](/frameworks/tools/digital).
-- **Engage**: Feedback at globalgovernanceframework.org/contact or [globalgovernanceframework@gmail.com].
+- **Engage**: Feedback at globalgovernanceframework.org/contact or [globalgovernanceframeworks@gmail.com].
 - **Implement**: Start with Digital Commons Seed Kit and Minimal-Viable Node Quickstart.
 - **Adapt**: Tailor to local/regional contexts, aligning with principles.
 - **Audio Access**: Narrated versions of Preamble, Epilogue, and Quickstart Guide available as podcasts, radio broadcasts, or mesh network downloads, in multiple languages.
@@ -160,7 +160,7 @@ Access at [Visual Resources Library](/frameworks/visuals/digital).
 
 **About the Framework**: Developed with technologists, Indigenous leaders, and governance experts, synthesizing historical commons practices and modern innovations, maintained by globalgovernanceframework.org.
 
-**Contribute**: Volunteer for translation, tool development, or pilot support at [globalgovernanceframework@gmail.com].
+**Contribute**: Volunteer for translation, tool development, or pilot support at [globalgovernanceframeworks@gmail.com].
 
 ---
 

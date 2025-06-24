@@ -606,7 +606,7 @@ OVERALL TRAFFIC LIGHT STATUS: 🟩/🟨/🟥
 The Living Mandala for Planetary Mental Health framework represents comprehensive research synthesis and iterative refinement through multiple AI systems, integrating evidence-based practices with community-led approaches to mental health accountability and oversight.
 
 ### **Implementation Guidance** 📞
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Subject Line**: "Mental Health Watchdog Implementation"
 - **Website**: globalgovernanceframework.org
 

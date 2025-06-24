@@ -196,4 +196,4 @@ För att mildra dessa återkommande misspunkter bör utövare lägga till dessa 
 
 Dessa verktyg ingår i *startpaketet för fred och konfliktlösning*, tillgängligt via [verktygsbiblioteket](/frameworks/tools/peace).
 
-**Uppmaning till handling**: Analysera dina planerade fredsstyrningsinitiativ mot dessa misspunkter före implementering. Genomför en pre-implementering misslyckandet analys, testa dina antaganden rigoröst och bygg in anpassningsmekanismer från start. Dela implementeringsutmaningar på [globalgovernanceframework@gmail.com] eller på vår [Discord server](https://discord.gg/Zx4hMJf4JU) för att bidra till vårt kollektiva lärande om både framgångar och misslyckanden i fredsbyggande.
+**Uppmaning till handling**: Analysera dina planerade fredsstyrningsinitiativ mot dessa misspunkter före implementering. Genomför en pre-implementering misslyckandet analys, testa dina antaganden rigoröst och bygg in anpassningsmekanismer från start. Dela implementeringsutmaningar på [globalgovernanceframeworks@gmail.com] eller på vår [Discord server](https://discord.gg/Zx4hMJf4JU) för att bidra till vårt kollektiva lärande om både framgångar och misslyckanden i fredsbyggande.

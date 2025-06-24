@@ -397,7 +397,7 @@ Marco controlado por la comunidad proporcionando protección automática para Co
 - Integración de Conocimientos Tradicionales-IA y desarrollo de tecnología controlada por la comunidad
 
 **Información de Contacto Primaria**:
-- **Correo Electrónico**: globalgovernanceframework@gmail.com
+- **Correo Electrónico**: globalgovernanceframeworks@gmail.com
 - **Sitio Web**: globalgovernanceframework.org
 - **Líneas de Asunto para Apoyo Específico**:
   - "Desarrollo ZAB" - para implementación de Zona Autónoma Biorregional

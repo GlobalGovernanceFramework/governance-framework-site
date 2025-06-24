@@ -236,4 +236,4 @@ The protocol is designed for universal access and equitable implementation:
 1. Download the protocol from [/frameworks/tools/biodiversity].
 2. Engage stakeholders using the [Stakeholder Engagement Template](#tools-templates).
 3. Launch pilot guardianship systems in sanctuary states (e.g., Democratic Republic of Congo, Peru) using [Pilot Program Blueprints](/frameworks/docs/implementation/biodiversity#appendix-g-pilot-blueprints).
-4. Contact [globalgovernanceframework@gmail.com] for support.
+4. Contact [globalgovernanceframeworks@gmail.com] for support.

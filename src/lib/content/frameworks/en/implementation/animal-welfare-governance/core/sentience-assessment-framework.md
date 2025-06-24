@@ -402,18 +402,18 @@ Sentience is the capacity to have subjective experiences, particularly the abili
 **Current Status Note:** The Global Guardian Framework is in active development. 
 Currently available:
 - ✅ Framework documentation and assessment protocols
-- ✅ General support via globalgovernanceframework@gmail.com
+- ✅ General support via globalgovernanceframeworks@gmail.com
 - 🚧 Public sentience database (in development)
 - 🚧 Educational resources and outreach programs (in development)
 
 **Public Sentience Database:**
-- **Database Access**: [Public sentience database - in development. Contact globalgovernanceframework@gmail.com for current assessment information]
+- **Database Access**: [Public sentience database - in development. Contact globalgovernanceframeworks@gmail.com for current assessment information]
 - **Search Functionality**: [Advanced search capabilities - in development]
 - **Regular Updates**: [Quarterly updates - contact for current assessment status]
 - **Download Options**: [Data export options - contact for available formats]
 
 **Educational Resources:**
-- **Assessment Methodology Guides**: [Contact globalgovernanceframework@gmail.com with subject "Assessment Methodology"]
+- **Assessment Methodology Guides**: [Contact globalgovernanceframeworks@gmail.com with subject "Assessment Methodology"]
 - **Species-Specific Information**: [Contact for current species assessment summaries]
 - **Research Opportunity Information**: [Contact with subject "Research Opportunities"]
 - **Public Participation Guides**: [Contact with subject "Public Participation in Assessment"]
@@ -423,20 +423,20 @@ Currently available:
 **Research Collaboration Framework:**
 
 **Academic Partnerships:**
-- **University Collaborations**: [Contact globalgovernanceframework@gmail.com with subject "Research Collaboration"]
+- **University Collaborations**: [Contact globalgovernanceframeworks@gmail.com with subject "Research Collaboration"]
 - **Research Funding**: [Research funding opportunities - in development]
 - **Student Research Projects**: [Contact with subject "Student Research Projects"]
 - **Publication Partnerships**: [Contact with subject "Publication Collaboration"]
 
 **Citizen Science Integration:**
 - **Public Data Collection**: [Citizen science programs - in development]
-- **Community Monitoring**: [Contact globalgovernanceframework@gmail.com with subject "Community Monitoring"]
+- **Community Monitoring**: [Contact globalgovernanceframeworks@gmail.com with subject "Community Monitoring"]
 - **Volunteer Research Assistance**: [Contact with subject "Volunteer Research"]
 - **Educational Participation**: [Contact with subject "Educational Research Participation"]
 
 **International Collaboration:**
 - **Global Research Networks**: [International collaboration networks - in development]
-- **Cross-Border Studies**: [Contact globalgovernanceframework@gmail.com with subject "International Research"]
+- **Cross-Border Studies**: [Contact globalgovernanceframeworks@gmail.com with subject "International Research"]
 - **Methodology Standardization**: [Contact with subject "Assessment Standardization"]
 - **Capacity Building**: [Contact with subject "Research Capacity Building"]
 
@@ -527,7 +527,7 @@ Currently available:
 
 **Capacity Building:**
 - **Training Programs**: [Assessment training programs - in development]
-- **Technical Assistance**: [Contact globalgovernanceframework@gmail.com with subject "Technical Assistance"]
+- **Technical Assistance**: [Contact globalgovernanceframeworks@gmail.com with subject "Technical Assistance"]
 - **Resource Sharing**: [Assessment resource sharing - contact for current availability]
 - **Mentorship Networks**: [Expert mentorship programs - in development]
 
@@ -536,14 +536,14 @@ Currently available:
 **Regulatory Framework Support:**
 
 **Policy Development Assistance:**
-- **Legislative Guidance**: [Contact globalgovernanceframework@gmail.com with subject "Legislative Support"]
+- **Legislative Guidance**: [Contact globalgovernanceframeworks@gmail.com with subject "Legislative Support"]
 - **Regulatory Integration**: [Contact with subject "Regulatory Framework Support"]
 - **Implementation Planning**: [Contact with subject "Implementation Planning Support"]
 - **Enforcement Support**: [Contact with subject "Enforcement Framework Support"]
 
 **Stakeholder Engagement:**
 - **Government Consultation**: [Government engagement programs - contact for current services]
-- **Industry Partnership**: [Contact globalgovernanceframework@gmail.com with subject "Industry Partnership"]
+- **Industry Partnership**: [Contact globalgovernanceframeworks@gmail.com with subject "Industry Partnership"]
 - **Civil Society Coordination**: [Contact with subject "Civil Society Engagement"]
 - **Academic Collaboration**: [Contact with subject "Academic Partnership"]
 
@@ -602,12 +602,12 @@ Currently available:
 **Current Status Note:** The Global Guardian Framework is in active development. 
 Currently available:
 - ✅ Framework documentation and assessment protocols
-- ✅ General support via globalgovernanceframework@gmail.com
+- ✅ General support via globalgovernanceframeworks@gmail.com
 - 🚧 Expert panel networks (in development)
 - 🚧 Assessment database and tools (in development)
 
 **Assessment Support:**
-- **Primary Contact:** globalgovernanceframework@gmail.com
+- **Primary Contact:** globalgovernanceframeworks@gmail.com
 - **Website:** globalgovernanceframework.org
 - **Subject Lines for Specific Support:**
   - "Sentience Assessment Request" - for new species assessment
@@ -623,7 +623,7 @@ Currently available:
 This Sentience Assessment Framework was developed through extensive consultation with comparative neuroscientists, animal behaviorists, conservation biologists, and Indigenous knowledge holders. The framework represents current scientific best practices while maintaining flexibility for emerging research and diverse knowledge systems.
 
 **Feedback and Continuous Improvement:**
-We welcome feedback from researchers, practitioners, and communities using this framework. Please share your experiences, methodological suggestions, and evidence contributions with globalgovernanceframework@gmail.com using subject "Sentience Framework Feedback".
+We welcome feedback from researchers, practitioners, and communities using this framework. Please share your experiences, methodological suggestions, and evidence contributions with globalgovernanceframeworks@gmail.com using subject "Sentience Framework Feedback".
 
 **Scientific Integrity Commitment:**
 This framework commits to the highest standards of scientific integrity, transparency, and objectivity while acknowledging the inherent limitations and uncertainties in consciousness research. All assessments undergo rigorous peer review and maintain openness to new evidence and methodological improvements.

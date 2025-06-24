@@ -664,7 +664,7 @@ This guide provides systematic protocols for adapting Global Guardian Framework 
 **Current Status Note:** The Global Guardian Framework is in active development. 
 Currently available:
 - ✅ Framework documentation and cultural adaptation tools
-- ✅ General support via globalgovernanceframework@gmail.com
+- ✅ General support via globalgovernanceframeworks@gmail.com
 - 🚧 Specialized cultural support programs (in development)
 - 🚧 Indigenous rights advocacy networks (in development)
 - 🚧 Cultural innovation funding programs (in development)
@@ -672,22 +672,22 @@ Currently available:
 **Cultural Support Services:**
 
 **Cultural Adaptation Support:**
-- **Contact:** globalgovernanceframework@gmail.com with subject "Cultural Adaptation Support"
+- **Contact:** globalgovernanceframeworks@gmail.com with subject "Cultural Adaptation Support"
 - **Services:** [Cultural adaptation consultation - contact for current availability]
 - **Resources:** [Cultural adaptation resource library - in development]
 
 **Indigenous Rights Support:**
-- **Contact:** globalgovernanceframework@gmail.com with subject "Indigenous Rights Support"
+- **Contact:** globalgovernanceframeworks@gmail.com with subject "Indigenous Rights Support"
 - **Services:** [Indigenous rights advocacy - contact for current services]
 - **Legal Support:** [Contact for information about current legal support availability]
 
 **Traditional Knowledge Protection:**
-- **Contact:** globalgovernanceframework@gmail.com with subject "Traditional Knowledge Protection"
+- **Contact:** globalgovernanceframeworks@gmail.com with subject "Traditional Knowledge Protection"
 - **Services:** [Knowledge protection protocols - contact for current guidance]
 - **Legal Resources:** [Legal protection assistance - contact for current availability]
 
 **Cultural Innovation Funding:**
-- **Contact:** globalgovernanceframework@gmail.com with subject "Cultural Innovation Funding"
+- **Contact:** globalgovernanceframeworks@gmail.com with subject "Cultural Innovation Funding"
 - **Programs:** [Cultural innovation funding programs - in development]
 - **Application Support:** [Contact for information about current funding opportunities]
 
@@ -697,7 +697,7 @@ Currently available:
 
 **Indigenous and Traditional Community Networks:**
 - **Regional Networks:** [Regional Indigenous community networks - in development]
-- **Practice-Specific Networks:** [Contact globalgovernanceframework@gmail.com for networking opportunities]
+- **Practice-Specific Networks:** [Contact globalgovernanceframeworks@gmail.com for networking opportunities]
 - **Knowledge Sharing Platforms:** [Community knowledge sharing platforms - in development]
 
 **Learning and Capacity Building:**
@@ -706,7 +706,7 @@ Currently available:
 - **Cultural Innovation Showcases:** [Innovation showcase events - in development]
 
 **Advocacy and Representation:**
-- **Indigenous Rights Advocacy:** [Contact globalgovernanceframework@gmail.com for advocacy support]
+- **Indigenous Rights Advocacy:** [Contact globalgovernanceframeworks@gmail.com for advocacy support]
 - **Cultural Rights Protection:** [Cultural rights advocacy - contact for current services]
 - **International Forum Participation:** [International representation opportunities - contact for information]
 
@@ -819,7 +819,7 @@ Currently available:
 ### Contact Information
 
 **Cultural Adaptation Support:**
-- **Primary Contact:** globalgovernanceframework@gmail.com
+- **Primary Contact:** globalgovernanceframeworks@gmail.com
 - **Website:** globalgovernanceframework.org
 - **Subject Lines for Specific Support:**
   - "Cultural Adaptation Support" - for adaptation guidance
@@ -834,7 +834,7 @@ Currently available:
 This Cultural Adaptation Protocol Guide was developed through extensive consultation with Indigenous communities, traditional knowledge holders, and cultural rights advocates. It represents collective wisdom about respectful cultural integration while maintaining the flexibility needed for diverse community contexts.
 
 **Feedback and Improvement:**
-We welcome feedback from communities using this guide to support continuous improvement and cultural responsiveness. Please share your experiences, adaptations, and suggestions with globalgovernanceframework@gmail.com using subject "Cultural Protocol Feedback".
+We welcome feedback from communities using this guide to support continuous improvement and cultural responsiveness. Please share your experiences, adaptations, and suggestions with globalgovernanceframeworks@gmail.com using subject "Cultural Protocol Feedback".
 
 **Cultural Rights Acknowledgment:**
 This guide acknowledges the UN Declaration on the Rights of Indigenous Peoples and other international cultural rights frameworks. Communities maintain full authority over their cultural practices and adaptations regardless of external guidance or recommendations.

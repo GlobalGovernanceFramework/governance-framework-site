@@ -66,5 +66,5 @@ The Planetary Health Accord Implementation Framework invites all stakeholders to
 Together, we can build health systems that honor every life, preserve cultural wisdom, and heal our planet. Join the Accord to make health a sacred, equitable, and planetary endeavor.  
 
 **Access the Framework**: Available at [Tools Library](/frameworks/tools/planetary-health).  
-**Feedback**: Share input via [globalgovernanceframework@gmail.com].  
+**Feedback**: Share input via [globalgovernanceframeworks@gmail.com].  
 **Contact**: Learn more at [Planetary Health Accord Secretariat](#).

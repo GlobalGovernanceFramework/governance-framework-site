@@ -152,5 +152,5 @@ Policymakers, health authorities, and community leaders are urged to adopt the P
 Together, we can create health policies that honor equity, cultural wisdom, and planetary health. Join the Planetary Health Accord to build a just and resilient future.  
 
 **Access the Toolkit**: Available in PDF and editable markdown at [Tools Library](/frameworks/tools/planetary-health).  
-**Feedback**: Share input via [globalgovernanceframework@gmail.com].  
+**Feedback**: Share input via [globalgovernanceframeworks@gmail.com].  
 **Related Resources**: Explore [Community Engagement Playbook](/frameworks/tools/planetary-health/community-engagement-playbook-en.pdf) and [Ethical Technology Governance](/frameworks/docs/implementation/planetary-health#10-ethical-technology-governance) for complementary guidance.

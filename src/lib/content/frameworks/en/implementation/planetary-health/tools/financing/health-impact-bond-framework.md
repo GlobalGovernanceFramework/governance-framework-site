@@ -308,14 +308,14 @@ The framework prioritizes cultural safety, indigenous sovereignty, and equity.
   - [Community Engagement Toolkit](/frameworks/tools/planetary-health/community-engagement-toolkit-en.pdf)
   - [Health Equity Dashboard Template](/frameworks/tools/planetary-health/health-equity-dashboard-en.pdf)
 - **Support Channels**:
-  - Email: [globalgovernanceframework@gmail.com]
+  - Email: [globalgovernanceframeworks@gmail.com]
   - Community Portal: [globalgovernanceframework.org/contact]
   - Quarterly Health Impact Bond Review Cycles for feedback.
 - **Training Resources**:
   - Impact Investing for Health Workshop (Tools Library).
   - Health Impact Bond Management Training (online, multilingual).
 
-**Call to Action**: Start by forming a stakeholder group with Regional Health Hubs and investors. Use the Community Engagement Toolkit to co-design interventions with communities. Contact [globalgovernanceframework@gmail.com] for HIB training or pilot funding opportunities.
+**Call to Action**: Start by forming a stakeholder group with Regional Health Hubs and investors. Use the Community Engagement Toolkit to co-design interventions with communities. Contact [globalgovernanceframeworks@gmail.com] for HIB training or pilot funding opportunities.
 
 ---
 

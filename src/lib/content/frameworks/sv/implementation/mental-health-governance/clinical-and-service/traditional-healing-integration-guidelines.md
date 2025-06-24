@@ -953,12 +953,12 @@ Artikel 5: Ansvarighet och utvärdering
 
 För närvarande tillgängligt:
 - ✅ Ramverksdokumentation och riktlinjer för traditionell läkningsintegration
-- ✅ Allmänt stöd via globalgovernanceframework@gmail.com
+- ✅ Allmänt stöd via globalgovernanceframeworks@gmail.com
 - 🚧 Specialiserade traditionella läkningsintegrations träningsprogram (under utveckling)
 - 🚧 Regionala traditionella läkningsintegrations nätverk (under utveckling)
 
 **Kontaktinformation:**
-- **Primär kontakt:** globalgovernanceframework@gmail.com
+- **Primär kontakt:** globalgovernanceframeworks@gmail.com
 - **Webbplats:** globalgovernanceframework.org
 - **Ämnesrader för specifikt stöd:**
   - "Traditionell läkningsintegration" - för integrationsplanering och implementeringsstöd
@@ -993,7 +993,7 @@ Riktlinjerna för integration av traditionell läkning representerar ett grundl�
 
 **Status som levande dokument**: Denna riktlinje är utformad för kontinuerlig förbättring baserat på implementeringserfarenhet och feedback från traditionella läkningsgemenskaper. Nuvarande version representerar omfattande analys per juni 2025 med regelbundna uppdateringar planerade baserat på gemenskapsvägledning och framväxande praktiker.
 
-**Kontakt för implementeringsstöd**: globalgovernanceframework@gmail.com med ämnesraden "Traditionell läkningsintegration implementering"
+**Kontakt för implementeringsstöd**: globalgovernanceframeworks@gmail.com med ämnesraden "Traditionell läkningsintegration implementering"
 
 ---
 

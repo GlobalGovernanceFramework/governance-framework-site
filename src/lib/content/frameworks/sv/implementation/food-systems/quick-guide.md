@@ -100,7 +100,7 @@ Hitta alla verktyg i [Verktygsbiblioteket](/frameworks/tools/food-systems).
 - **Börja idag**: Välj en åtgärd från "Nyckelåtgärder", t.ex. att prata med en bonde eller starta en trädgård.  
 - **Gå med andra**: Koppla samman med lokala grupper eller online på [globalgovernanceframework.org].  
 - **Dela din berättelse**: Inspirera andra genom att berätta om ditt arbete (t.ex. med #FoodSystemsFuture).  
-- **Ge feedback**: Maila [globalgovernanceframework@gmail.com] eller använd kontaktportalen på [globalgovernanceframework.org].  
+- **Ge feedback**: Maila [globalgovernanceframeworks@gmail.com] eller använd kontaktportalen på [globalgovernanceframework.org].  
 - **Läs mer**: Utforska hela ramverket via [Index](/frameworks/docs/implementation/food-systems).  
 
 Tillsammans kan vi bygga matsystem som ger alla mat, skyddar planeten och inkluderar alla röster. Börja smått, tänk stort och agera nu!  

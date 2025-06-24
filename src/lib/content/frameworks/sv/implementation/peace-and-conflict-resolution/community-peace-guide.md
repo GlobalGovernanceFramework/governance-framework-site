@@ -43,4 +43,4 @@ Samhällen är hjärtat i fredsbyggande, bygger broar över klyftor genom förtr
 Få tillgång till dessa i *startpaketet för fred och konfliktlösning* via [verktygsbiblioteket](/frameworks/tools/peace).
 
 ## Uppmaning till handling
-Du kan driva fred i ditt samhälle. Börja med att bilda en *lokal fredskommitté*, organisera ett dialogforum eller vara värd för en workshop i digital kunskap. Utforska *startpaketet* och hela ramverket på [verktygsbiblioteket](/frameworks/tools/peace). Dela dina insatser på [globalgovernanceframework@gmail.com] för att gå med i en global fredsbyggande gemenskap.
+Du kan driva fred i ditt samhälle. Börja med att bilda en *lokal fredskommitté*, organisera ett dialogforum eller vara värd för en workshop i digital kunskap. Utforska *startpaketet* och hela ramverket på [verktygsbiblioteket](/frameworks/tools/peace). Dela dina insatser på [globalgovernanceframeworks@gmail.com] för att gå med i en global fredsbyggande gemenskap.

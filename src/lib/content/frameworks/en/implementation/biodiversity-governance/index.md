@@ -172,7 +172,7 @@ The framework is designed for maximum accessibility across diverse stakeholders,
 - **Download**: Access the complete framework PDF at [Downloads](/downloads), with individual sections available for targeted reading and implementation planning.
 - **Navigate**: Use this index to explore sections sequentially or jump to specific topics via direct links, with cross-references throughout the framework.
 - **Access Tools**: Browse comprehensive implementation toolkit in PDF and markdown formats at [Tools Library](/frameworks/tools/biodiversity-governance), organized by stakeholder type and implementation phase.
-- **Engage**: Share feedback, propose improvements, and join the global community through globalgovernanceframework.org/contact or [globalgovernanceframework@gmail.com], contributing to iterative framework development.
+- **Engage**: Share feedback, propose improvements, and join the global community through globalgovernanceframework.org/contact or [globalgovernanceframeworks@gmail.com], contributing to iterative framework development.
 - **Implement**: Begin immediately with the Biodiversity Framework Seed Kit, starting with pilot-appropriate tools from the sanctuary state blueprints (Costa Rica, Bhutan, Palau).
 - **Adapt**: Customize implementation using Regional Adaptation Guidelines to respect local legal systems, cultural contexts, and Indigenous sovereignty requirements.
 - **Audio Access**: Narrated versions of key sections including Philosophical Preamble, Quick Start Guide, and Conclusion available as podcasts, radio broadcasts, and mesh network downloads in multiple languages.
@@ -195,7 +195,7 @@ The framework is designed for maximum accessibility across diverse stakeholders,
 
 ---
 
-**Visual Resources Library**:
+**Visual Resources Library (visionary//planned)**:
 - Biodiversity Governance Map: Indigenous-led hubs and protected area networks
 - Rights Progression Timeline: Ecosystem personhood milestones from 2025-2045
 - Global Biodiversity Health Dashboard: Real-time restoration and protection metrics
@@ -217,7 +217,7 @@ Access comprehensive visual toolkit at [Visual Resources Library](/frameworks/vi
 
 ---
 
-**About the Framework**: Developed by iterative refinement through A.I. tools such as Claude, Grok, DeepSeek and ChatGPT. Maintained and continuously refined by the Global Governance Framework collaborative network at globalgovernanceframework.org.
+**About the Framework**: Developed by iterative refinement through A.I. tools such as Claude, Grok, DeepSeek and ChatGPT. Maintained and continuously refined by the Global Governance Framework collaborative network at globalgovernanceframeworks.org.
 
 **Contribute**: Expand global accessibility by volunteering for translation (prioritizing indigenous languages), tool development (especially low-resource contexts), pilot program documentation, cultural sensitivity review, or advocacy campaign development. Contact [globalgovernanceframeworks@gmail.com] to join the regenerative movement for planetary healing.
 

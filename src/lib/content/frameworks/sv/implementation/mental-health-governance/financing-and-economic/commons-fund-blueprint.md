@@ -711,7 +711,7 @@ Blueprint för Global Mental Health Commons Fund representerar en revolutionär 
 
 **Status som levande dokument**: Denna blueprint är designad för kontinuerlig evolution baserat på gemenskaps implementeringserfarenhet och traditionell läkningsgemenskaps vägledning. Nuvarande version representerar omfattande analys per juni 2025 med regelbundna uppdateringar planerade baserat på gemenskapsfeedback och framväxande innovationer.
 
-**Kontakt för implementeringsstöd**: globalgovernanceframework@gmail.com med ämnesraden "Commons Fund Implementation Support"
+**Kontakt för implementeringsstöd**: globalgovernanceframeworks@gmail.com med ämnesraden "Commons Fund Implementation Support"
 
 ---
 

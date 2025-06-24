@@ -225,7 +225,7 @@ Transparent reporting and follow-up ensure accountability.
 - **Guides**: Digital Ethics, Community, Indigenous Guides (globalgovernanceframework.org/tools).
 - **Tools**: SMS Feedback, Blockchain Ledger, Bias Scanner.
 - **Visuals**: Audit Process Flowchart, Compliance Checklist (globalgovernanceframework.org/visuals).
-- **Support**: Email globalgovernanceframework@gmail.com
+- **Support**: Email globalgovernanceframeworks@gmail.com
 - **Access**: Multilingual, braille, audio formats at globalgovernanceframework.org.
 
 ---

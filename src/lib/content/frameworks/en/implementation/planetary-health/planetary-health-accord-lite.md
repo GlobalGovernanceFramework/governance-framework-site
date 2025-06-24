@@ -152,7 +152,7 @@ Join the *Planetary Health Accord* to build a healthier, equitable world:
 1. Conduct a local health needs assessment.
 2. Connect with Regional Health Hubs for support.
 3. Access tools and training at [globalgovernanceframework.org](http://globalgovernanceframework.org).
-4. Contact [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com) for guidance.
+4. Contact [globalgovernanceframeworks@gmail.com](mailto:globalgovernanceframeworks@gmail.com) for guidance.
 
 **Metrics for Action**:
 - 100+ stakeholders engaged by Year 1.

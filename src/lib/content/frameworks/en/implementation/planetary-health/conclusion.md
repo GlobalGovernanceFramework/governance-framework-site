@@ -262,7 +262,7 @@ The Planetary Health Accord begins with each of us choosing **healing over harm*
 
 **Start Implementation**: Begin with the [Planetary Health Starter Kit](/frameworks/tools/planetary-health/planetary-health-starter-kit-en.zip) for immediate community action
 
-**Join the Movement**: Connect with implementation communities at [globalgovernanceframework@gmail.com]
+**Join the Movement**: Connect with implementation communities at [globalgovernanceframeworks@gmail.com]
 
 **Share the Vision**: Amplify the Planetary Health Accord through social media, community presentations, and policy advocacy
 

@@ -249,4 +249,4 @@ Beslutsfattare och medlare är avgörande för att institutionalisera fredsstyrn
 5. Bygga digital etik i teknologiska tillvägagångssätt
 6. Mäta både negativa och positiva fredsindikatorer
 
-Ladda ner det fullständiga ramverket eller utforska ytterligare verktyg på [Tools Library](/frameworks/tools/peace). Dela feedback på [globalgovernanceframework@gmail.com] eller på vår [Discord server](https://discord.gg/Zx4hMJf4JU) för att förfina detta arbete och gå med i en global fredsbyggande gemenskap.
+Ladda ner det fullständiga ramverket eller utforska ytterligare verktyg på [Tools Library](/frameworks/tools/peace). Dela feedback på [globalgovernanceframeworks@gmail.com] eller på vår [Discord server](https://discord.gg/Zx4hMJf4JU) för att förfina detta arbete och gå med i en global fredsbyggande gemenskap.

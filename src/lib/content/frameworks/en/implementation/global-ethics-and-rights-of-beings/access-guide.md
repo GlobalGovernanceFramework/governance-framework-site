@@ -557,4 +557,4 @@ Together, we can create a more inclusive ethical framework that honors the inher
 
 *Last updated: May 2025*
 
-*Contact: [globalgovernanceframework@gmail.com]*
+*Contact: [globalgovernanceframeworks@gmail.com]*

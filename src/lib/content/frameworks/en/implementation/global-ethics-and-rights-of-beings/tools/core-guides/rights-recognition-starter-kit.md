@@ -698,16 +698,14 @@ Achieve formal recognition as a Rights of Beings Implementation Community with d
 
 ### Implementation Support Resources
 
-- **Coaching Available**: Connect with trained coaches at [email protected]
-- **Peer Learning**: Join monthly implementation community calls
-- **Resource Library**: Access templates, examples, and guides
-- **Funding Directory**: Explore potential funding sources for implementation
-- **Technical Assistance**: Request specialized support for complex challenges
+- **Coaching Available**: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Peer Learning**: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Resource Library**: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Funding Directory**: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Technical Assistance**: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 Remember that this timeline is flexible—adapt it to your community's unique circumstances, pace, and priorities. The journey of rights recognition is not about perfect implementation but about transforming relationships with all beings who share your community.
 
 ---
 
-*This Rights Recognition Starter Kit is part of the Global Ethics & Rights of Beings Framework resources. For additional implementation support, visit [globalgovernanceframework.org/ethics/toolkit] or contact [implementation@globalgovernanceframework.org].*
-
-*Version 1.2 - May 2025*
+*Version 0.5 - May 2025*

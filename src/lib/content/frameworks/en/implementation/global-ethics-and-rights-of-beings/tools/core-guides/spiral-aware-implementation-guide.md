@@ -1067,14 +1067,12 @@ Sustained implementation requires long-term developmental support:
 
 ### Implementation Support Resources
 
-- Spiral-Aware Implementation Coaching
-- Multi-Perspective Facilitation Services
-- Organizational Assessment Tools
-- Cultural Adaptation Consulting
-- Implementation Community of Practice
+- Spiral-Aware Implementation Coaching *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- Multi-Perspective Facilitation Services *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- Organizational Assessment Tools *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- Cultural Adaptation Consulting *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- Implementation Community of Practice *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 ---
 
-*This Spiral-Aware Implementation Guide is part of the Global Ethics & Rights of Beings Framework resources. For additional implementation support, visit [globalgovernanceframework.org/ethics/spiral] or contact [spiral@globalgovernanceframework.org].*
-
-*Version 1.0 - May 2025*
+*Version 0.5 - May 2025*

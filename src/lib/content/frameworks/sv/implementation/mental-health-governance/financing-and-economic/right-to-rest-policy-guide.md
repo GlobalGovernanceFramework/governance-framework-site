@@ -919,7 +919,7 @@ Rättigheten till vila - politisk implementeringsguide representerar en grundlä
 
 **Status som levande dokument**: Denna guide är designad för kontinuerlig utveckling baserad på implementeringserfarenhet och framväxande forskning. Nuvarande version representerar omfattande analys från juni 2025 med regelbundna uppdateringar planerade baserat på samhällsfeedback och policyutvecklingar.
 
-**Kontakt för implementeringsstöd**: globalgovernanceframework@gmail.com med ämnesrad "Rätt till vila implementeringsstöd"
+**Kontakt för implementeringsstöd**: globalgovernanceframeworks@gmail.com med ämnesrad "Rätt till vila implementeringsstöd"
 
 ---
 

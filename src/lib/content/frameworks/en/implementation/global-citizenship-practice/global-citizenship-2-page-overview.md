@@ -98,5 +98,5 @@ Start small:
 2. **Connect:** Join a global citizenship circle.
 3. **Act:** Pick *one* value to deepen this week.
 
-*Created by Björn Kenneth Holmström & collaborators | Submit your story: globalgovernanceframework@gmail.com*
+*Created by Björn Kenneth Holmström & collaborators | Submit your story: globalgovernanceframeworks@gmail.com*
 

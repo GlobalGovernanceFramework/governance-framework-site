@@ -226,6 +226,6 @@ For support in implementing the Climate & Energy Governance Framework, stakehold
 - **Online Resources**: 
   - [www.globalgovernanceframework.org/frameworks/climate-and-energy-governance](https://globalgovernanceframework.org/frameworks/climate-and-energy-governance)
   - [www.globalgovernanceframework.org/frameworks/tools/energy](https://globalgovernanceframework.org/frameworks/tools/energy)
-- **Technical Assistance**: Email [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com) for guidance on policy design, finance access, or tool usage.
+- **Technical Assistance**: Email [globalgovernanceframeworks@gmail.com](mailto:globalgovernanceframeworks@gmail.com) for guidance on policy design, finance access, or tool usage.
 
 This guide is a living document, updated regularly to reflect implementation progress and emerging lessons. Visit [www.globalgovernanceframework.org](https://www.globalgovernanceframework.org) for the latest version and additional resources.

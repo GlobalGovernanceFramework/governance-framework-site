@@ -982,7 +982,7 @@ To ensure assessment quality and credibility, consider these verification approa
 - Training Videos
 
 **Support Resources:**
-- Email globalgovernanceframework@gmail.com
+- Email globalgovernanceframeworks@gmail.com
 - Regional Hub assessment coordinators
 - Monthly assessment support calls (first Thursday)
 - Assessment peer learning network

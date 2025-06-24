@@ -1,5 +1,7 @@
 # Ethics Charter Template
 
+*<span style="color: #6c757d; font-style: italic;">(This document includes planned resources for future implementation.)</span>*
+
 ## Purpose
 The Ethics Charter Template is designed to assist facilitators in creating a shared ethics charter that formalizes the values, principles, and commitments emerging from interfaith and inter-spiritual dialogues within the Religious & Spiritual Dialogue Framework. It ensures that charters are inclusive, culturally sensitive, and actionable, reflecting diverse spiritual, religious, and ethical perspectives while fostering collaboration, accountability, conflict resolution, and long-term sustainability at global, regional, or local levels, in alignment with the framework’s principles of inclusivity, respect, equity, collaboration, and knowledge integration.
 
@@ -284,4 +286,4 @@ Revisions will respect the original values and cultural sensitivities, per the [
   - [Truth & Reconciliation Toolkit](/frameworks/tools/spiritual/truth-reconciliation-toolkit-en.pdf)
   - [Wisdom Documentation Templates](/frameworks/tools/spiritual/wisdom-documentation-templates-en.pdf)
   - [Digital Access & Inclusion Audit](/frameworks/tools/spiritual/digital-access-inclusion-audit-en.pdf)
-  - Contact: spiritualdialogue@globalgovernanceframework.org
+  - Contact: globalgovernanceframeworks@gmail.com

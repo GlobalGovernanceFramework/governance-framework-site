@@ -616,10 +616,10 @@ Methods for bridging different communication styles:
 ### Contact and Support
 
 For implementation support or questions about specific conflict situations:
-- Email (not yet available): [conflictresolution@globalgovernanceframework.org]
-- Regional Support Offices: [Directory Link]
-- Implementation Coaches: [Directory Link]
-- Online Forum: [Community Link]
+- Email (not yet available): *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- Regional Support Offices: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- Implementation Coaches: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- Online Forum: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 ### Training Opportunities
 
@@ -642,5 +642,3 @@ Join our global community of practitioners implementing conflict resolution prot
 
 *The Global Ethics & Rights of Beings Framework Conflict Resolution Protocol Guide*  
 *Version 1.0 - May 2025*
-
-*[globalgovernanceframework.org/ethics/conflict-resolution-guide]*

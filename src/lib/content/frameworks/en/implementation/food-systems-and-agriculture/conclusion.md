@@ -29,7 +29,7 @@ The framework’s success depends on collective action. Stakeholders are invited
 - **Advocate**: Amplify the framework’s goals through campaigns, webinars, and global forums, as outlined in [Communication and Advocacy](/frameworks/food-systems-and-agriculture#communication-advocacy).
 - **Collaborate**: Join multi-stakeholder dialogues and co-governance structures, prioritizing indigenous and youth voices, as detailed in [Stakeholder Engagement](/frameworks/food-systems-and-agriculture#stakeholder-engagement).
 - **Monitor**: Use planned dashboards and KPIs from the [Visual Appendix](/frameworks/food-systems-and-agriculture#visual-appendix) to track progress and refine strategies.
-- **Engage**: Share feedback via the globalgovernanceframework.org contact portal or email [globalgovernanceframework@gmail.com] to shape future iterations.
+- **Engage**: Share feedback via the globalgovernanceframework.org contact portal or email [globalgovernanceframeworks@gmail.com] to shape future iterations.
 
 **Iterative Evolution**: This framework is designed as a living document that will evolve through regular review cycles. Stakeholder feedback will directly inform annual refinements (2025-2029) and the comprehensive review in 2029. Your experiences, challenges, and successes implementing the framework will shape its next iteration, ensuring it remains relevant, effective, and responsive to emerging global challenges and opportunities.
 

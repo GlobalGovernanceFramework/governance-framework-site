@@ -148,7 +148,7 @@ Regenerative farming grows food while improving the land, unlike traditional met
 
 - **Additional Resources**:
   - Visit [globalgovernanceframework.org] for videos, case studies, and community forums.
-  - Email [globalgovernanceframework@gmail.com] for help or to share your story.
+  - Email [globalgovernanceframeworks@gmail.com] for help or to share your story.
   - Connect with local NGOs or farmers’ groups for training and seeds.
 
 Find all tools at the [Tools Library](/frameworks/tools/food-systems).

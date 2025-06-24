@@ -257,14 +257,14 @@ The toolkit prioritizes cultural safety, indigenous sovereignty, and equity.
   - [Community Engagement Toolkit](/frameworks/tools/planetary-health/community-engagement-toolkit-en.pdf)
   - [Health Equity Dashboard Template](/frameworks/tools/planetary-health/health-equity-dashboard-en.pdf)
 - **Support Channels**:
-  - Email: [globalgovernanceframework@gmail.com]
+  - Email: [globalgovernanceframeworks@gmail.com]
   - Community Portal: [globalgovernanceframework.org/contact]
   - Quarterly Open-Source Pharma Review Cycles for feedback.
 - **Training Resources**:
   - Open-Source Pharma Workshop (Tools Library).
   - Collaborative Drug Development Training (online, multilingual).
 
-**Call to Action**: Start by forming an Open-Source Pharma Consortium with Regional Health Hubs. Use the Community Engagement Toolkit to involve communities in drug prioritization. Contact [globalgovernanceframework@gmail.com] for open-source pharma training or pilot funding opportunities.
+**Call to Action**: Start by forming an Open-Source Pharma Consortium with Regional Health Hubs. Use the Community Engagement Toolkit to involve communities in drug prioritization. Contact [globalgovernanceframeworks@gmail.com] for open-source pharma training or pilot funding opportunities.
 
 ---
 

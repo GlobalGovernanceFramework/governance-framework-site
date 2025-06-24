@@ -1327,7 +1327,7 @@ Content Modifications:
 **Current Status Note:** The Global Guardian Framework is in active development. 
 Currently available:
 - ✅ Framework documentation and training materials
-- ✅ General support via globalgovernanceframework@gmail.com
+- ✅ General support via globalgovernanceframeworks@gmail.com
 - 🚧 Advanced training programs (in development)
 - 🚧 Train-the-trainer certification (in development)
 - 🚧 Specialized adaptation resources (in development)
@@ -1377,19 +1377,19 @@ Currently available:
 **Training Support Services:**
 
 **Facilitator Development:**
-- **Train-the-Trainer Programs**: [Contact globalgovernanceframework@gmail.com with subject "Anti-Speciesism Trainer Certification"]
+- **Train-the-Trainer Programs**: [Contact globalgovernanceframeworks@gmail.com with subject "Anti-Speciesism Trainer Certification"]
 - **Facilitator Resources**: [Contact with subject "Facilitator Resource Request"]
 - **Ongoing Support**: [Contact with subject "Facilitator Support"]
 - **Peer Network**: [Facilitator networks - in development]
 
 **Organizational Implementation:**
-- **Organizational Assessment**: [Contact globalgovernanceframework@gmail.com with subject "Organizational Speciesism Assessment"]
+- **Organizational Assessment**: [Contact globalgovernanceframeworks@gmail.com with subject "Organizational Speciesism Assessment"]
 - **Custom Training Development**: [Contact with subject "Custom Training Development"]
 - **Policy Integration**: [Contact with subject "Anti-Speciesism Policy Integration"]
 - **Evaluation and Measurement**: [Contact with subject "Training Evaluation Support"]
 
 **Research and Evaluation:**
-- **Training Effectiveness Research**: [Contact globalgovernanceframework@gmail.com with subject "Training Research Collaboration"]
+- **Training Effectiveness Research**: [Contact globalgovernanceframeworks@gmail.com with subject "Training Research Collaboration"]
 - **Best Practice Documentation**: [Contact with subject "Best Practice Sharing"]
 - **Innovation Development**: [Contact with subject "Training Innovation"]
 - **Academic Partnerships**: [Contact with subject "Academic Training Partnership"]
@@ -1510,7 +1510,7 @@ Certification Requirements:
 ### Contact Information and Support
 
 **Primary Support:**
-- **Email:** globalgovernanceframework@gmail.com
+- **Email:** globalgovernanceframeworks@gmail.com
 - **Website:** globalgovernanceframework.org
 - **Subject Lines for Training-Specific Support:**
   - "Anti-Speciesism Training Support" - for general training guidance
@@ -1521,7 +1521,7 @@ Certification Requirements:
   - "Research Collaboration" - for training effectiveness research
 
 **Trainer Network:** [Trainer networks - in development]
-- **Regional Trainer Networks**: [Contact globalgovernanceframework@gmail.com for regional trainer connections]
+- **Regional Trainer Networks**: [Contact globalgovernanceframeworks@gmail.com for regional trainer connections]
 - **Specialist Trainers**: [Contact for specialized trainer expertise]
 - **Peer Support**: [Contact for trainer peer support opportunities]
 
@@ -1593,7 +1593,7 @@ These training materials represent the beginning of ongoing support for anti-spe
 These Anti-Speciesism Training Materials were developed through collaboration with animal ethicists, social justice educators, cultural competency trainers, and advocates from diverse backgrounds and perspectives. The materials represent best practices in adult education while addressing the complex and sensitive nature of speciesism education.
 
 **Feedback and Continuous Improvement:**
-We welcome feedback from trainers, participants, and organizations using these materials. Please share your experiences, suggestions, and adaptations with globalgovernanceframework@gmail.com using subject "Anti-Speciesism Training Feedback".
+We welcome feedback from trainers, participants, and organizations using these materials. Please share your experiences, suggestions, and adaptations with globalgovernanceframeworks@gmail.com using subject "Anti-Speciesism Training Feedback".
 
 **Cultural Responsiveness:**
 These materials are designed for adaptation to different cultural contexts while maintaining core educational objectives. We encourage cultural adaptation and welcome input from diverse communities and cultural perspectives.

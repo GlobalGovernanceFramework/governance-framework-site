@@ -177,5 +177,5 @@ Access at [Visual Resources Library](/frameworks/visuals/digital-commons).
 
 **About the Framework**: Developed with technologists, Indigenous leaders, and governance experts, synthesizing historical commons practices and modern innovations, maintained by globalgovernanceframework.org.
 
-**Contribute**: Volunteer for translation, tool development, or pilot support at [globalgovernanceframework@gmail.com].
+**Contribute**: Volunteer for translation, tool development, or pilot support at [globalgovernanceframeworks@gmail.com].
 

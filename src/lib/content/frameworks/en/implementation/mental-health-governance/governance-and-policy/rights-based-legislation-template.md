@@ -424,7 +424,7 @@ This Act supersedes any conflicting state or local law except where state or loc
 ## Contact & Implementation Support
 
 ### **Implementation Guidance** 📞
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Subject Line**: "Rights-Based Legislation Template"
 - **Website**: globalgovernanceframework.org
 

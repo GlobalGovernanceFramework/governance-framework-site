@@ -230,11 +230,11 @@ Use this template to prioritize and track actions based on your assessment resul
 2. **Develop a Strategy**: Use the action plan to integrate recommendations into your climate and energy governance roadmap.
 
 3. **Connect to Regional Resources**:
-   - Explore the Regional Hub concept at [globalgovernanceframework.org/frameworks/hubs](https://globalgovernanceframework.org/frameworks/hubs) to understand how regional coordination can support your governance initiatives.
+   - Explore the Regional Hub concept at [globalgovernanceframeworks.org/frameworks/hubs](https://globalgovernanceframework.org/frameworks/hubs) to understand how regional coordination can support your governance initiatives.
    - Identify existing regional organizations in your area that may provide similar functions to the conceptual Regional Hubs.
 
 4. **Access Support**:
-   - Email [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com) for technical assistance and to discuss potential regional collaboration opportunities.
+   - Email [globalgovernanceframeworks@gmail.com](mailto:globalgovernanceframeworks@gmail.com) for technical assistance and to discuss potential regional collaboration opportunities.
    - Inquire about pilot projects or implementation partnerships related to the Regional Hub concept.
 
 5. **Monitor Progress**: Reassess readiness annually to track improvements and adjust strategies.
@@ -247,12 +247,12 @@ Use this template to prioritize and track actions based on your assessment resul
 
 For additional support:
 
-- **Online Resources**: Access tools and guides at [globalgovernanceframework.org/frameworks/tools/energy](https://globalgovernanceframework.org/frameworks/tools/energy).
+- **Online Resources**: Access tools and guides at [globalgovernanceframeworks.org/frameworks/tools/climate-and-energy-governance](https://globalgovernanceframework.org/frameworks/tools/climate-and-energy-governance).
 
-- **Technical Assistance**: Email [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com).
+- **Technical Assistance**: Email [globalgovernanceframeworks@gmail.com](mailto:globalgovernanceframeworks@gmail.com).
 
-- **Regional Governance Concepts**: Learn more about the Regional Hub framework at [globalgovernanceframework.org/frameworks/hubs](https://globalgovernanceframework.org/frameworks/hubs).
+- **Regional Governance Concepts**: Learn more about the Regional Hub framework at [globalgovernanceframeworks.org/frameworks/hubs](https://globalgovernanceframeworks.org/frameworks/hubs).
 
-- **Implementation Partnerships**: Inquire about opportunities to pilot Regional Hub functions in your region through [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com).
+- **Implementation Partnerships**: Inquire about opportunities to pilot Regional Hub functions in your region through [globalgovernanceframeworks@gmail.com](mailto:globalgovernanceframeworks@gmail.com).
 
 This tool is a living document, updated periodically. Check the website for the latest version.

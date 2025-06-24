@@ -63,7 +63,7 @@ Policymakers are encouraged to:
 - **Review the Framework**: Access detailed guidance at [Framework Documentation](/frameworks/docs/implementation/justice-systems).
 - **Adopt Tools**: Implement provided tools, starting with the [Policy Harmonization Toolkit](/frameworks/tools/justice-systems/policy-harmonization-toolkit-en.pdf) and [Cost-Benefit Analysis Model](/frameworks/tools/justice-systems/cost-benefit-analysis-model-en.pdf).
 - **Collaborate**: Partner with Regional Justice Hubs and communities to ensure inclusive reforms.
-- **Seek Support**: Contact [globalgovernanceframework@gmail.com] for funding, training, or technical assistance.
+- **Seek Support**: Contact [globalgovernanceframeworks@gmail.com] for funding, training, or technical assistance.
 - **Provide Feedback**: Submit input via the engagement platform to refine tools, with updates biannually (July and January).
 
 The Justice Systems Implementation Framework offers a transformative opportunity to build equitable, trusted, and efficient justice systems. Policymakers’ leadership is critical to realizing these goals by 2035.

@@ -98,7 +98,7 @@ Find all tools at the [Tools Library](/frameworks/tools/food-systems).
 - **Start Today**: Pick one action from the “Key Actions” section, like talking to a farmer or starting a garden.
 - **Join Others**: Connect with local groups or online at [globalgovernanceframework.org] to share ideas and learn.
 - **Share Your Story**: Tell others about your work (e.g., post on social media with #FoodSystemsFuture) to inspire more people.
-- **Give Feedback**: Email [globalgovernanceframework@gmail.com] or use the contact portal at [globalgovernanceframework.org] to share how the framework is working for you.
+- **Give Feedback**: Email [globalgovernanceframeworks@gmail.com] or use the contact portal at [globalgovernanceframework.org] to share how the framework is working for you.
 - **Learn More**: Explore the full framework at the [Index](/frameworks/food-systems-and-agriculture) for deeper details.
 
 Together, we can build food systems that feed everyone, protect the planet, and include all voices. Start small, think big, and act now!

@@ -1421,19 +1421,19 @@ External Accountant: _________________ Date: _________
 **Current Status Note:** The Global Guardian Framework is in active development. 
 Currently available:
 - ✅ Framework documentation and cooperative development guidance
-- ✅ General support via globalgovernanceframework@gmail.com
+- ✅ General support via globalgovernanceframeworks@gmail.com
 - 🚧 Cooperative development and technical assistance programs (in development)
 - 🚧 Regional cooperative networks and mentorship (in development)
 - 🚧 Funding and investment facilitation services (in development)
 
 **Cooperative Development Support:**
-- **Pre-Development Planning**: [Contact globalgovernanceframework@gmail.com with subject "Cooperative Development Planning"]
+- **Pre-Development Planning**: [Contact globalgovernanceframeworks@gmail.com with subject "Cooperative Development Planning"]
 - **Legal Structure and Incorporation**: [Contact with subject "Cooperative Legal Support"]
 - **Governance Design and Training**: [Contact with subject "Cooperative Governance Support"]
 - **Business Planning and Financial Modeling**: [Contact with subject "Cooperative Business Planning"]
 
 **Operational Support Services:**
-- **Production System Design**: [Contact globalgovernanceframework@gmail.com with subject "Cooperative Production Support"]
+- **Production System Design**: [Contact globalgovernanceframeworks@gmail.com with subject "Cooperative Production Support"]
 - **Marketing and Sales Development**: [Contact with subject "Cooperative Marketing Support"]
 - **Financial Management Systems**: [Contact with subject "Cooperative Financial Support"]
 - **Member Education and Training**: [Contact with subject "Cooperative Education Support"]
@@ -1443,13 +1443,13 @@ Currently available:
 **Cooperative Network Building Services:**
 
 **Regional Cooperative Networks:**
-- **Local Cooperative Clusters**: [Contact globalgovernanceframework@gmail.com with subject "Local Cooperative Network"]
+- **Local Cooperative Clusters**: [Contact globalgovernanceframeworks@gmail.com with subject "Local Cooperative Network"]
 - **Sectoral Cooperative Federations**: [Contact with subject "Sectoral Cooperative Federation"]
 - **International Cooperative Connections**: [Contact with subject "International Cooperative Network"]
 - **Mentorship and Peer Learning**: [Contact with subject "Cooperative Mentorship Program"]
 
 **Partnership Development:**
-- **Market Partnership Development**: [Contact globalgovernanceframework@gmail.com with subject "Cooperative Market Partnerships"]
+- **Market Partnership Development**: [Contact globalgovernanceframeworks@gmail.com with subject "Cooperative Market Partnerships"]
 - **Technical Service Partnerships**: [Contact with subject "Cooperative Service Partnerships"]
 - **Financial Service Partnerships**: [Contact with subject "Cooperative Financial Partnerships"]
 - **Policy Advocacy Partnerships**: [Contact with subject "Cooperative Policy Advocacy"]
@@ -1459,13 +1459,13 @@ Currently available:
 **Professional Development and Training:**
 
 **Cooperative Leadership Training:**
-- **Governance and Democracy**: [Contact globalgovernanceframework@gmail.com with subject "Cooperative Governance Training"]
+- **Governance and Democracy**: [Contact globalgovernanceframeworks@gmail.com with subject "Cooperative Governance Training"]
 - **Financial Management**: [Contact with subject "Cooperative Financial Training"]
 - **Conflict Resolution**: [Contact with subject "Cooperative Conflict Training"]
 - **Strategic Planning**: [Contact with subject "Cooperative Strategy Training"]
 
 **Technical Skills Development:**
-- **Animal Welfare Management**: [Contact globalgovernanceframework@gmail.com with subject "Cooperative Welfare Training"]
+- **Animal Welfare Management**: [Contact globalgovernanceframeworks@gmail.com with subject "Cooperative Welfare Training"]
 - **Sustainable Agriculture**: [Contact with subject "Cooperative Agriculture Training"]
 - **Marketing and Sales**: [Contact with subject "Cooperative Marketing Training"]
 - **Technology Integration**: [Contact with subject "Cooperative Technology Training"]
@@ -1535,7 +1535,7 @@ Organizational Readiness Assessment:
 **Cooperative Development Support:**
 
 **Primary Support:**
-- **Email:** globalgovernanceframework@gmail.com
+- **Email:** globalgovernanceframeworks@gmail.com
 - **Website:** globalgovernanceframework.org
 - **Subject Lines for Cooperative-Specific Support:**
   - "Cooperative Development Planning" - for feasibility assessment and development planning
@@ -1547,13 +1547,13 @@ Organizational Readiness Assessment:
   - "Cooperative Financial Support" - for financial management and member benefit systems
 
 **Specialized Cooperative Types:**
-- **Worker Cooperatives**: [Contact globalgovernanceframework@gmail.com with subject "Worker Cooperative Development"]
+- **Worker Cooperatives**: [Contact globalgovernanceframeworks@gmail.com with subject "Worker Cooperative Development"]
 - **Multi-Stakeholder Cooperatives**: [Contact with subject "Multi-Stakeholder Cooperative Development"]
 - **Marketing Cooperatives**: [Contact with subject "Marketing Cooperative Development"]
 - **Service Cooperatives**: [Contact with subject "Service Cooperative Development"]
 
 **Regional Cooperative Networks:**
-- **Americas Cooperative Network**: [Contact globalgovernanceframework@gmail.com with subject "Americas Cooperative Network"]
+- **Americas Cooperative Network**: [Contact globalgovernanceframeworks@gmail.com with subject "Americas Cooperative Network"]
 - **Europe Cooperative Initiative**: [Contact with subject "Europe Cooperative Initiative"]
 - **Asia-Pacific Cooperative Platform**: [Contact with subject "Asia-Pacific Cooperative Platform"]
 - **Africa Cooperative Development**: [Contact with subject "Africa Cooperative Development"]
@@ -1668,7 +1668,7 @@ This cooperative development framework represents current best practices in demo
 This Cooperative Development Toolkit was developed through consultation with cooperative development experts, successful cooperative leaders, animal welfare scientists, community organizers, and cooperative members from diverse economic and cultural contexts. The toolkit represents collective expertise while maintaining flexibility for adaptation to different community types and cultural contexts.
 
 **Feedback and Continuous Improvement:**
-We welcome feedback from community organizers, cooperative developers, members, and other stakeholders using this cooperative development framework. Please share your experiences, innovations, and recommendations with globalgovernanceframework@gmail.com using subject "Cooperative Toolkit Feedback".
+We welcome feedback from community organizers, cooperative developers, members, and other stakeholders using this cooperative development framework. Please share your experiences, innovations, and recommendations with globalgovernanceframeworks@gmail.com using subject "Cooperative Toolkit Feedback".
 
 **Cooperative Movement Support:**
 This toolkit supports the broader cooperative movement while focusing specifically on animal welfare applications. We encourage cooperation and collaboration with existing cooperative development organizations and networks to strengthen the overall movement for economic democracy.

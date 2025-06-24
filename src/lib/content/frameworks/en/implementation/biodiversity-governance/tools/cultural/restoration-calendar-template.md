@@ -1,7 +1,7 @@
 ---
 title: Global Restoration Calendar Template
 section: global-restoration-calendar-template
-revision: 1.0 (2025-05-24)
+revision: 0.5 (2025-05-24)
 ---
 
 # Global Restoration Calendar Template
@@ -33,7 +33,7 @@ The **Global Restoration Calendar Template** is a resource designed to enable in
 
 **Primary Users**: Indigenous councils, Regional Biodiversity Hubs, cultural organizations, policymakers, youth representatives.
 
-**Integration**: Complements the [Bio-Arts Residencies Toolkit](/frameworks/tools/biodiversity/bio-arts-residencies-toolkit-en.pdf), [Economic Resilience & Corporate Transition Toolkit](/frameworks/tools/biodiversity/economic-resilience-toolkit-en.pdf), and [Public Trust Dashboard](/frameworks/tools/biodiversity/trust-dashboard-evaluation-en.pdf).
+**Integration**: Complements the [Bio-Arts Residencies Toolkit](/frameworks/tools/biodiversity-governance/bio-arts-residencies-toolkit-en.pdf), [Economic Resilience & Corporate Transition Toolkit](/frameworks/tools/biodiversity-governance/economic-resilience-toolkit-en.pdf), and [Public Trust Dashboard](/frameworks/tools/biodiversity-governance/trust-dashboard-evaluation-en.pdf).
 
 ## <a id="core-components"></a>Core Components
 
@@ -109,7 +109,7 @@ The template follows a phased approach to ensure effective coordination and meas
 
 ## <a id="tools-templates"></a>Tools and Templates
 
-The following tools are included in the [Biodiversity Framework Seed Kit](/frameworks/tools/biodiversity/seed-kit-en.zip):
+The following tools are included in the [Biodiversity Framework Seed Kit](/frameworks/tools/biodiversity-governance/seed-kit-en.zip):
 
 - **Restoration Milestones Planner**  
   **Purpose**: Schedules ecological restoration targets and tracks progress.  
@@ -119,7 +119,7 @@ The following tools are included in the [Biodiversity Framework Seed Kit](/frame
   **Key Features**:  
     - Ecosystem-specific milestone templates.  
     - Traditional knowledge integration guidelines.  
-  **Access**: [/frameworks/tools/biodiversity/restoration-milestones-planner-en.pdf].
+  **Access**: [/frameworks/tools/biodiversity-governance/restoration-milestones-planner-en.pdf].
 
 - **Cultural Events Scheduler**  
   **Purpose**: Plans Restoration Festivals and cultural campaigns.  
@@ -129,7 +129,7 @@ The following tools are included in the [Biodiversity Framework Seed Kit](/frame
   **Key Features**:  
     - Festival planning checklist.  
     - #BioDebt campaign timeline.  
-  **Access**: [/frameworks/tools/biodiversity/cultural-events-scheduler-en.pdf].
+  **Access**: [/frameworks/tools/biodiversity-governance/cultural-events-scheduler-en.pdf].
 
 - **Policy and Funding Calendar**  
   **Purpose**: Aligns policy advocacy and funding rounds with restoration goals.  
@@ -139,7 +139,7 @@ The following tools are included in the [Biodiversity Framework Seed Kit](/frame
   **Key Features**:  
     - BIB and debt-for-nature swap advocacy timelines.  
     - Community-controlled funding protocols.  
-  **Access**: [/frameworks/tools/biodiversity/policy-funding-calendar-en.pdf].
+  **Access**: [/frameworks/tools/biodiversity-governance/policy-funding-calendar-en.pdf].
 
 - **Monitoring and Reporting Schedule**  
   **Purpose**: Schedules evaluation and reporting of restoration outcomes.  
@@ -149,7 +149,7 @@ The following tools are included in the [Biodiversity Framework Seed Kit](/frame
   **Key Features**:  
     - Quarterly reporting templates.  
     - Blockchain-secured verification protocols.  
-  **Access**: [/frameworks/tools/biodiversity/monitoring-reporting-schedule-en.pdf].
+  **Access**: [/frameworks/tools/biodiversity-governance/monitoring-reporting-schedule-en.pdf].
 
 - **Stakeholder Coordination Template**  
   **Purpose**: Facilitates stakeholder engagement and FPIC 2.0 consent.  
@@ -159,7 +159,7 @@ The following tools are included in the [Biodiversity Framework Seed Kit](/frame
   **Key Features**:  
     - FPIC 2.0 engagement protocols.  
     - Stakeholder mapping tool.  
-  **Access**: [/frameworks/tools/biodiversity/stakeholder-coordination-template-en.pdf].
+  **Access**: [/frameworks/tools/biodiversity-governance/stakeholder-coordination-template-en.pdf].
 
 ## <a id="metrics-evaluation"></a>Metrics and Evaluation
 
@@ -172,7 +172,7 @@ Metrics ensure accountability and tie outcomes to biodiversity and cultural goal
 - **Indigenous Leadership**: 70% of calendar events led by indigenous communities, with 90% FPIC 2.0 compliance.
 
 ### Evaluation Tools
-- **Global Biodiversity Health Dashboard**: Tracks ecosystem metrics with community verification ([/frameworks/tools/biodiversity/health-dashboard-en.md]).
+- **Global Biodiversity Health Dashboard**: Tracks ecosystem metrics with community verification ([/frameworks/tools/biodiversity-governance/health-dashboard-en.md]).
 - **Cultural Biodiversity Index**: Measures engagement through festival attendance and social media reach.
 - **Ethical AI Analytics**: Sentiment analysis for community engagement and predictive modeling for ecological outcomes.
 - **Traditional Knowledge Indicators**: Elder-verified ecological and cultural signs (e.g., species return, storytelling revitalization).
@@ -204,26 +204,26 @@ Risks are managed to protect community interests and ensure calendar success.
 - **Community Recall**: Indigenous veto power to pause events if cultural or ecological harm occurs.
 - **Rapid Response**: 72-hour deployment of mediators for disputes or SWAT Teams for ecological crises.
 
-## <a id="accessibility-equity"></a>Accessibility and Equity
+## <a id="accessibility-equity"></a>Accessibility and Equity  (planned)
 
 The template is designed for universal access and equitable implementation:
 
 - **Languages**: Available in 12 languages, including Swahili and Quechua (2030), prioritizing indigenous languages in biodiversity hotspots.
 - **Formats**: PDF, markdown, braille, audio narration, and SMS-compatible versions for low-connectivity areas.
-- **Cultural Sensitivity**: Regional Adaptation Guidelines ensure context-specific implementation ([/frameworks/tools/biodiversity/regional-adaptation-guidelines-en.pdf]).
+- **Cultural Sensitivity**: Regional Adaptation Guidelines ensure context-specific implementation ([/frameworks/tools/biodiversity-governance/regional-adaptation-guidelines-en.pdf]).
 - **Equity Focus**: 70% of events prioritize indigenous and Global South communities; women, youth, and marginalized groups included via community assemblies.
 - **Open Access**: All materials under Creative Commons licensing, freely available at [/frameworks/tools/biodiversity].
 
 ---
 
 **Cross-References**:
-- [Bio-Arts Residencies Toolkit](/frameworks/tools/biodiversity/bio-arts-residencies-toolkit-en.pdf)
-- [Economic Resilience & Corporate Transition Toolkit](/frameworks/tools/biodiversity/economic-resilience-toolkit-en.pdf)
-- [FPIC 2.0 Protocols Template](/frameworks/tools/biodiversity/fpic-2-protocols-template-en.pdf)
-- [Public Trust Dashboard](/frameworks/tools/biodiversity/trust-dashboard-evaluation-en.pdf)
+- [Bio-Arts Residencies Toolkit](/frameworks/tools/biodiversity-governance/bio-arts-residencies-toolkit-en.pdf)
+- [Economic Resilience & Corporate Transition Toolkit](/frameworks/tools/biodiversity-governance/economic-resilience-toolkit-en.pdf)
+- [FPIC 2.0 Protocols Template](/frameworks/tools/biodiversity-governance/fpic-2-protocols-template-en.pdf)
+- [Public Trust Dashboard](/frameworks/tools/biodiversity-governance/trust-dashboard-evaluation-en.pdf)
 
 **Next Steps**:
-1. Download the template from [/frameworks/tools/biodiversity].
+1. Download the template from [/frameworks/tools/biodiversity-governance].
 2. Convene stakeholders using the [Stakeholder Coordination Template](#tools-templates).
 3. Launch pilot calendars in sanctuary states (e.g., Costa Rica, Kenya) using [Pilot Program Blueprints](/frameworks/docs/implementation/biodiversity#appendix-g-pilot-blueprints).
-4. Contact [globalbiodiversityframework@gmail.com] for support.
+4. Contact [globalbiodiversityframeworks@gmail.com] for support.

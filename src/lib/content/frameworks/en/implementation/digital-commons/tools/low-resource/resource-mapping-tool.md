@@ -236,7 +236,7 @@ Regular updates ensure resource maps remain relevant and effective.
 - **Guides**: Community, Funding, Indigenous Guides (globalgovernanceframework.org/tools).
 - **Tools**: SMS Feedback, Blockchain Ledger, Oral Mapping Guide.
 - **Visuals**: Resource Cycle Poster, Asset Map (globalgovernanceframework.org/visuals).
-- **Support**: Email globalgovernanceframework@gmail.com, text RESOURCES to 12345, or join monthly call-ins (first Monday, 10:00 UTC).
+- **Support**: Email globalgovernanceframeworks@gmail.com, text RESOURCES to 12345, or join monthly call-ins (first Monday, 10:00 UTC).
 - **Access**: Multilingual, braille, audio formats at globalgovernanceframework.org.
 
 ---

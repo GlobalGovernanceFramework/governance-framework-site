@@ -74,7 +74,7 @@ The framework is accessible through the Global Governance Framework website, wit
 - **Download**: Access the complete framework as a PDF via the [Downloads](/downloads) section of our website.
 - **Navigate**: Use this index to explore sections sequentially or jump to specific topics via section links above.
 - **Access Tools**: Browse all implementation tools in both PDF and markdown formats at the [Tools Library](/frameworks/tools/education).
-- **Engage**: Share feedback through our contact portal or email [globalgovernanceframework@gmail.com], contributing to iterative refinements.
+- **Engage**: Share feedback through our contact portal or email [globalgovernanceframeworks@gmail.com], contributing to iterative refinements.
 - **Amplify**: Leverage the available multimedia assets to advocate for adoption at local, national, or global levels.
 - **Implement**: Use the practical [Implementation Tools](#implementation-tools) to launch pilots in your context, beginning with the "Start with the Seed" kit.
 

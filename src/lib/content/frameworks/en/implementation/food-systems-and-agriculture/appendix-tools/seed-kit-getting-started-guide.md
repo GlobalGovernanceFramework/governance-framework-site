@@ -101,7 +101,7 @@ Find all tools at [Tools Library](/frameworks/tools/food-systems).
 - **Include Everyone**: Work with diverse people, especially indigenous groups, women, and youth, to make your project stronger.
 - **Use Local Knowledge**: Ask community elders or farmers about local ways to grow food, using the [TEK Integration Template](/frameworks/tools/food-systems/tek-integration-template-en.md) or [Regenerative Farming Guide](/frameworks/tools/food-systems/regenerative-farming-guide-en.md).
 - **Keep It Simple**: Use plain language and low-tech solutions, like paper forms or radio, to reach more people.
-- **Share Your Story**: Post about your project on [e.g., social media, community boards] or email [globalgovernanceframework@gmail.com] to inspire others.
+- **Share Your Story**: Post about your project on [e.g., social media, community boards] or email [globalgovernanceframeworks@gmail.com] to inspire others.
 - **Ask for Help**: Connect with local NGOs or visit [globalgovernanceframework.org] for support and ideas.
 
 *Accessible explanation*: Start with a small project, involve everyone, use local wisdom, keep things easy, share what you do, and ask for help if you need it.

@@ -665,12 +665,12 @@ Anpassningar måste bibehålla den väsentliga andliga och kulturella integritet
 
 För närvarande tillgängligt:
 - ✅ Ramverksdokumentation och medvetandeinkluderande läkningsprotokoll
-- ✅ Allmänt stöd via globalgovernanceframework@gmail.com
+- ✅ Allmänt stöd via globalgovernanceframeworks@gmail.com
 - 🚧 Specialiserade utbildningsprogram för medvetandeinkluderande praktiker (under utveckling)
 - 🚧 Regionala nätverk för medvetandeinkluderande psykiatri (under utveckling)
 
 **Kontaktinformation:**
-- **Primär kontakt:** globalgovernanceframework@gmail.com
+- **Primär kontakt:** globalgovernanceframeworks@gmail.com
 - **Webbplats:** globalgovernanceframework.org
 - **Ämnesrader för specifikt stöd:**
   - "Medvetandeinkluderande utbildning" - för förfrågningar om praktikerutbildning
@@ -773,7 +773,7 @@ För närvarande tillgängligt:
 **Omedelbart krisstöd**:
 - **Nationell suicidpreventionslinje**: 112 i Sverige
 - **Lokala akuttjänster**: 112 (med medvetandeinkluderande krisprotokoll där tillgängligt)
-- **Global Governance Framework**: globalgovernanceframework@gmail.com för vägledning om resurser vid andliga kriser
+- **Global Governance Framework**: globalgovernanceframeworks@gmail.com för vägledning om resurser vid andliga kriser
 - **Webbplatsresurser**: globalgovernanceframework.org för ytterligare krisstödsinformation
 
 **Specialiserade stödnätverk**:
@@ -844,7 +844,7 @@ De medvetandeinkluderande läkningsprotokollen representerar ett grundläggande 
 
 **Status som levande dokument**: Denna protokollguide är utformad för kontinuerlig förbättring baserad på implementeringserfarenhet och framväxande forskning. Nuvarande version representerar omfattande analys från juni 2025 med regelbundna uppdateringar planerade baserat på feedback och nya utvecklingar.
 
-**Kontakt för implementeringsstöd**: globalgovernanceframework@gmail.com med ämnesrad "Medvetandeinkluderande implementeringsstöd"
+**Kontakt för implementeringsstöd**: globalgovernanceframeworks@gmail.com med ämnesrad "Medvetandeinkluderande implementeringsstöd"
 
 ---
 

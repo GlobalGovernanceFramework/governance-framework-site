@@ -100,5 +100,5 @@ Börja smått:
 2. **Anslut:** Gå med i en cirkel för globalt medborgarskap.
 3. **Agera:** Välj *ett* värde att fördjupa denna vecka.
 
-*Skapat av Björn Kenneth Holmström & medskapare | Dela din berättelse: globalgovernanceframework@gmail.com*
+*Skapat av Björn Kenneth Holmström & medskapare | Dela din berättelse: globalgovernanceframeworks@gmail.com*
 

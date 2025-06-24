@@ -103,7 +103,7 @@ Accessible channels for diverse stakeholders:
 - **Download**: Full framework PDF at [Downloads](/downloads), or individual sections.
 - **Navigate**: Use index to explore sections via links.
 - **Access Tools**: PDF/markdown at [Tools Library](/frameworks/tools/economic).
-- **Engage**: Feedback at globalgovernanceframework.org/contact or [globalgovernanceframework@gmail.com].
+- **Engage**: Feedback at globalgovernanceframework.org/contact or [globalgovernanceframeworks@gmail.com].
 - **Implement**: Start with Economic Integration Seed Kit and Quick Start guide.
 - **Adapt**: Tailor to local/regional contexts, aligning with principles.
 
@@ -140,7 +140,7 @@ Access at [Visual Resources Library](/frameworks/visuals/economic).
 
 **About the Framework**: Developed with economists, indigenous leaders, and practitioners, synthesizing best practices, maintained by globalgovernanceframework.org.
 
-**Contribute**: Volunteer for translation, formatting, or case studies at [globalgovernanceframework@gmail.com].
+**Contribute**: Volunteer for translation, formatting, or case studies at [globalgovernanceframeworks@gmail.com].
 
 ---
 

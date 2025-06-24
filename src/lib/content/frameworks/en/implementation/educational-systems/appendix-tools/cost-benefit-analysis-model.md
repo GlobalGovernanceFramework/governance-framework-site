@@ -135,5 +135,5 @@ In Brazil, this model justified $5M for youth parliaments, projecting $20M in so
 - Regenerative Project Guide ([Section 10.1](/frameworks/docs/implementation/education#10-appendices))
 
 ## Download
-Available at [framework website](https://www.globalgovernanceframework.org) as Excel, PDF, markdown, and accessible formats (audio, braille, simplified text). Contact [globalgovernanceframework@gmail.com] for translation requests or support.
+Available at [framework website](https://www.globalgovernanceframework.org) as Excel, PDF, markdown, and accessible formats (audio, braille, simplified text). Contact [globalgovernanceframeworks@gmail.com] for translation requests or support.
 

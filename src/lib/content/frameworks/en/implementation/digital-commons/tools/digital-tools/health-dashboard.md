@@ -216,7 +216,7 @@ Continuous monitoring ensures the dashboard meets community needs.
 - **Guides**: Community, Indigenous, Ethics Guides (globalgovernanceframework.org/tools).
 - **Tools**: SMS Voting, Field-Test Logbook, Blockchain Ledger.
 - **Visuals**: Dashboard Interface Guide, Data Flowchart (globalgovernanceframework.org/visuals).
-- **Support**: Email globalgovernanceframework@gmail.com
+- **Support**: Email globalgovernanceframeworks@gmail.com
 - **Access**: Multilingual, braille, audio formats at globalgovernanceframework.org.
 
 ---

@@ -204,7 +204,7 @@ Stakeholders formalize their commitment.
 ## Implementation and Support
 - **Launch**: Convene a stakeholder meeting to adopt the charter by [date, e.g., Q1 2026].
 - **Submit**: Share with Regional Justice Hubs via secure platforms or offline channels ([Tools Library](/frameworks/tools/justice-systems)).
-- **Request Assistance**: Contact [globalgovernanceframework@gmail.com] for training, funding, or technical support.
+- **Request Assistance**: Contact [globalgovernanceframeworks@gmail.com] for training, funding, or technical support.
 - **Feedback**: Submit template usability feedback for biannual updates (July and January).
 
 ## Monitoring Progress

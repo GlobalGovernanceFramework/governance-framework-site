@@ -581,7 +581,7 @@ Section 5: Transparency and Accountability
 
 **Transform Tomorrow**: Through WASH Sovereign Wealth Funds, we can achieve universal water access while building community wealth, healing ecosystems, and demonstrating that finance can serve justice rather than extraction. The water future your community deserves is possible—and it starts with sovereign wealth dedicated to the sovereignty of communities and the sovereignty of water itself.
 
-**Contact and Connect**: Join the global WSWF network at globalgovernanceframework@gmail.com. Share your implementation experiences, access additional resources, and build the movement for community-controlled water finance that serves planetary healing and social justice.
+**Contact and Connect**: Join the global WSWF network at globalgovernanceframeworks@gmail.com. Share your implementation experiences, access additional resources, and build the movement for community-controlled water finance that serves planetary healing and social justice.
 
 ---
 

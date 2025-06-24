@@ -2117,16 +2117,16 @@ The future of aging care lies in elder-led mutual support networks that recogniz
 - **Research and Policy Advocacy**: Collaboration on research, evaluation, and policy development
 
 **Contact Information**
-- **General Information**: mutualcare@agingframework.org
-- **Implementation Support**: implementation@agingframework.org
-- **Elder Leadership Development**: leadership@agingframework.org
-- **Professional Partnerships**: professionals@agingframework.org
+- **General Information**: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Implementation Support**: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Elder Leadership Development**: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Professional Partnerships**: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 **Web Resources**
-- **Framework Website**: agingframework.org/mutualcare
-- **Implementation Toolkit**: agingframework.org/resources/mutualcare
-- **Elder Network Directory**: agingframework.org/networks
-- **Research and Evaluation**: agingframework.org/research/mutualcare
+- **Framework Website**: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Implementation Toolkit**: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Elder Network Directory**: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Research and Evaluation**: *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 ---
 

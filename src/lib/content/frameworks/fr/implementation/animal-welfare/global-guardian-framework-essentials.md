@@ -362,7 +362,7 @@ Tout être sensible jouit liberté de souffrance inutile. Toute communauté cont
 ### Contact et Connexion
 
 **Informations Contact Principal** :
-- **Courriel** : globalgovernanceframework@gmail.com
+- **Courriel** : globalgovernanceframeworks@gmail.com
 - **Site Web** : globalgovernanceframework.org
 - **Documentation** : Cadre complet disponible globalgovernanceframework.org/frameworks/docs/implementation/animal-welfare
 
@@ -384,7 +384,7 @@ Tout être sensible jouit liberté de souffrance inutile. Toute communauté cont
 
 **Pour Tout Partie Prenante** (30 Prochains Jours) :
 1. Télécharger outils pertinents de boîte outils mise en œuvre complète
-2. Contacter globalgovernanceframework@gmail.com avec ligne sujet spécifique pour votre domaine intérêt
+2. Contacter globalgovernanceframeworks@gmail.com avec ligne sujet spécifique pour votre domaine intérêt
 3. Partager ce guide avec trois personnes pouvant être intéressées transformation bien-être animal
 4. Identifier une amélioration bien-être animal locale que vous pouvez implémenter dans votre communauté
 5. Connecter avec organisations bien-être animal ou environnementales existantes dans votre région
@@ -423,8 +423,8 @@ Rejoignez la transformation. Tout être mérite liberté de souffrance inutile. 
 
 **Version Document** : 1.0 (2025-06-07)  
 **Langues Disponibles** : Français, Anglais, Espagnol  
-**Contact** : globalgovernanceframework@gmail.com  
-**Cadre Complet** : globalgovernanceframework.org/animal-welfare Contacter globalgovernanceframework@gmail.com avec sujet "Programme Guardian Communautaire" pour commencer évaluation et planification
+**Contact** : globalgovernanceframeworks@gmail.com  
+**Cadre Complet** : globalgovernanceframework.org/animal-welfare Contacter globalgovernanceframeworks@gmail.com avec sujet "Programme Guardian Communautaire" pour commencer évaluation et planification
 - Télécharger Kit Démarrage Communauté Guardian pour ressources mise en œuvre complètes
 - Connecter avec défenseurs locaux et organisations pour construction coalitions
 - Assister réunions communautaires pour construire consensus améliorations bien-être
@@ -456,7 +456,7 @@ Rejoignez la transformation. Tout être mérite liberté de souffrance inutile. 
 5. **Apprentissage Pairs** : Connecter avec autres agriculteurs transition pour soutien mutuel et partage connaissance
 
 **Actions Immédiates** (2025) :
-- Contacter services soutien transition par globalgovernanceframework@gmail.com avec sujet "Demande Transition Agriculteur"
+- Contacter services soutien transition par globalgovernanceframeworks@gmail.com avec sujet "Demande Transition Agriculteur"
 - Postuler financement Obligations Transition Juste pour planification et mise en œuvre conversion
 - Explorer opportunités production protéine alternative incluant partenariats viande cultivée et basée plantes
 - Rejoindre Réseaux Guardian Agricoles pour soutien pairs et partage meilleures pratiques
@@ -587,7 +587,7 @@ Tout être sensible jouit liberté de souffrance inutile. Toute communauté cont
 ### Contact et Connexion
 
 **Informations Contact Principal** :
-- **Courriel** : globalgovernanceframework@gmail.com
+- **Courriel** : globalgovernanceframeworks@gmail.com
 - **Site Web** : globalgovernanceframework.org
 - **Documentation** : Cadre complet disponible globalgovernanceframework.org/animal-welfare
 
@@ -609,7 +609,7 @@ Tout être sensible jouit liberté de souffrance inutile. Toute communauté cont
 
 **Pour Tout Partie Prenante** (30 Prochains Jours) :
 1. Télécharger outils pertinents de boîte outils mise en œuvre complète
-2. Contacter globalgovernanceframework@gmail.com avec ligne sujet spécifique pour votre domaine intérêt
+2. Contacter globalgovernanceframeworks@gmail.com avec ligne sujet spécifique pour votre domaine intérêt
 3. Partager ce guide avec trois personnes pouvant être intéressées transformation bien-être animal
 4. Identifier une amélioration bien-être animal locale que vous pouvez implémenter dans votre communauté
 5. Connecter avec organisations bien-être animal ou environnementales existantes dans votre région
@@ -648,5 +648,5 @@ Rejoignez la transformation. Tout être mérite liberté de souffrance inutile. 
 
 **Version Document** : 1.0 (2025-06-07)  
 **Langues Disponibles** : Français, Anglais, Espagnol  
-**Contact** : globalgovernanceframework@gmail.com  
+**Contact** : globalgovernanceframeworks@gmail.com  
 **Cadre Complet** : globalgovernanceframework.org/frameworks/docs/implementation/animal-welfare

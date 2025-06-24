@@ -225,4 +225,4 @@ Legal principle enabling international courts to prosecute serious crimes (ecoci
 
 This glossary provides essential reference material for understanding the Treaty for Our Only Home framework. Terms are defined with sufficient detail for practical application while maintaining clarity for diverse audiences. Cross-references throughout the Treaty documentation use these definitions consistently to ensure conceptual coherence across the comprehensive governance transformation blueprint.
 
-*For additional clarification on specific terms or concepts, contact globalgovernanceframework@gmail.com with subject "Glossary Questions"*
+*For additional clarification on specific terms or concepts, contact globalgovernanceframeworks@gmail.com with subject "Glossary Questions"*

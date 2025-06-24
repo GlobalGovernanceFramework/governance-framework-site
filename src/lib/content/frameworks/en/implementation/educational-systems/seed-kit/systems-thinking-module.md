@@ -154,4 +154,4 @@ In Thailand, this module was piloted with 200 learners, achieving 85% systems th
 - Spiral Dynamics Pilot Case Model ([Section 8.4](#])
 
 ## Download
-Available at [framework website](#) as Word, PDF, markdown, and accessible formats (audio, braille, visual aids). Contact [globalgovernanceframework@gmail.com] for translation requests or support.
+Available at [framework website](#) as Word, PDF, markdown, and accessible formats (audio, braille, visual aids). Contact [globalgovernanceframeworks@gmail.com] for translation requests or support.

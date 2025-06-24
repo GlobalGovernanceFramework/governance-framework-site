@@ -103,7 +103,7 @@ Youth Councils within nodes amplify young voices, requiring minimal setup.
   - Discuss local digital needs (e.g., education tools, cultural preservation).
   - Example: Canada's council focused on Indigenous knowledge archives.
 2. **Register with Node/Hub (1 week)**:
-  - Submit goals via email (globalgovernanceframework@gmail.com), or node meeting.
+  - Submit goals via email (globalgovernanceframeworks@gmail.com), or node meeting.
   - Receive Youth Starter Kit (templates, guides).
 3. **Hold First Meeting (1 day)**:
   - Use Youth Quickstart Guide (Appendix G) to set priorities.

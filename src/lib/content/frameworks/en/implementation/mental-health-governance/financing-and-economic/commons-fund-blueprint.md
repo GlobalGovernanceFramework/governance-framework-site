@@ -903,7 +903,7 @@ The Global Mental Health Commons Fund Blueprint represents a revolutionary trans
 
 **Living Document Status**: This blueprint is designed for continuous evolution based on community implementation experience and traditional healing community guidance. Current version represents comprehensive analysis as of June 2025 with regular updates planned based on community feedback and emerging innovations.
 
-**Contact for Implementation Support**: globalgovernanceframework@gmail.com with subject line "Commons Fund Implementation Support"
+**Contact for Implementation Support**: globalgovernanceframeworks@gmail.com with subject line "Commons Fund Implementation Support"
 
 ---
 

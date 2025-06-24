@@ -1233,7 +1233,7 @@ Global network participation: _____ connections made
 - **Take Action**: Begin with pilot projects and build toward comprehensive circular economy systems
 
 **Contact for Implementation Support**:
-- **Email**: globalgovernanceframework@gmail.com
+- **Email**: globalgovernanceframeworks@gmail.com
 - **Subject**: "Circular Finance Implementation"
 - **Include**: Community location, waste streams, scale, timeline, and support needs
 

@@ -287,14 +287,14 @@ The system prioritizes cultural safety, indigenous sovereignty, and equity.
   - [Community Engagement Toolkit](/frameworks/tools/planetary-health/community-engagement-toolkit-en.pdf)
   - [Health Equity Dashboard Template](/frameworks/tools/planetary-health/health-equity-dashboard-en.pdf)
 - **Support Channels**:
-  - Email: [globalgovernanceframework@gmail.com]
+  - Email: [globalgovernanceframeworks@gmail.com]
   - Community Portal: [globalgovernanceframework.org/contact]
   - Quarterly Health IT Review Cycles for feedback.
 - **Training Resources**:
   - Cultural Competency Training Module (Tools Library).
   - Blockchain Health Records Workshop (online, multilingual).
 
-**Call to Action**: Begin by conducting a needs assessment with Regional Health Hubs. Use the Community Engagement Toolkit to train communities on system use. Contact [globalgovernanceframework@gmail.com] for blockchain training or pilot funding opportunities.
+**Call to Action**: Begin by conducting a needs assessment with Regional Health Hubs. Use the Community Engagement Toolkit to train communities on system use. Contact [globalgovernanceframeworks@gmail.com] for blockchain training or pilot funding opportunities.
 
 ---
 

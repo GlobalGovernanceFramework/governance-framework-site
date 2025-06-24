@@ -1178,7 +1178,7 @@ För närvarande tillgängligt:
 - 🚧 Faciliteringoch kulturkompetensutbildning för gemenskapspartnerskap (under utveckling)
 
 **Kontaktinformation:**
-- **Primär kontakt:** globalgovernanceframework@gmail.com
+- **Primär kontakt:** globalgovernanceframeworks@gmail.com
 - **Webbplats:** globalgovernanceframework.org
 - **Ämnesrader för specifikt stöd:**
   - "Dashboard Development" - för teknisk utveckling och implementationsstöd

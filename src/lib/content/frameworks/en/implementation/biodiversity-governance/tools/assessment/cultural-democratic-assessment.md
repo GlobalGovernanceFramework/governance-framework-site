@@ -236,4 +236,4 @@ The tool is designed for universal access and equitable implementation:
 1. Download the tool from [/frameworks/tools/biodiversity].
 2. Engage stakeholders using the [Stakeholder Engagement Template](#tools-templates).
 3. Launch pilot assessments in sanctuary states (e.g., Peru, Kenya) using [Pilot Program Blueprints](/frameworks/docs/implementation/biodiversity#appendix-g-pilot-blueprints).
-4. Contact [globalgovernanceframework@gmail.com] for support.
+4. Contact [globalgovernanceframeworks@gmail.com] for support.

@@ -69,4 +69,4 @@ En konsekvent typografi är nyckeln till en enhetlig **profil**. Vårt primära 
 
 ### Frågor?
 
-Om du har några frågor om dessa riktlinjer eller behöver specifikt material som inte ingår i detta kit, vänligen kontakta oss på globalgovernanceframework@gmail.com.
+Om du har några frågor om dessa riktlinjer eller behöver specifikt material som inte ingår i detta kit, vänligen kontakta oss på globalgovernanceframeworks@gmail.com.

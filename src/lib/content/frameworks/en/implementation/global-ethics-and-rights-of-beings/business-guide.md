@@ -1057,10 +1057,10 @@ Your leadership in implementing the Rights of Beings Framework doesn't just chan
 
 For additional support with business implementation of the Rights of Beings Framework:
 
-- **Business Implementation Team:** business@globalgovernanceframework.org
-- **Industry Working Groups:** [industry.globalgovernanceframework.org](https://industry.globalgovernanceframework.org)
-- **Implementation Resources:** [business.globalgovernanceframework.org/resources](https://business.globalgovernanceframework.org/resources)
-- **Events and Learning:** [business.globalgovernanceframework.org/events](https://business.globalgovernanceframework.org/events)
+- **Business Implementation Team:** *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Industry Working Groups:** *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Implementation Resources:** *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
+- **Events and Learning:** *<span style="color: #6c757d; font-style: italic;">(This resource is planned for future implementation.)</span>*
 
 *This guide is part of the Global Ethics & Rights of Beings Framework resources for business leaders.*
 

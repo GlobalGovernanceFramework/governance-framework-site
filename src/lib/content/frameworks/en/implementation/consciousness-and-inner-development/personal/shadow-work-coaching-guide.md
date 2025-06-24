@@ -528,7 +528,7 @@ Shadow work, when approached with community accountability and justice orientati
 
 **Contact Information**:
 Global Governance Framework  
-Email: globalgovernanceframework@gmail.com  
+Email: globalgovernanceframeworks@gmail.com  
 Website: [globalgovernanceframework.org]
 
 **License**: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)

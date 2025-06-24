@@ -33,7 +33,7 @@ The **Bio-Influencer Training & Campaign Kit** is a resource designed to empower
 
 **Primary Users**: Indigenous leaders, youth activists, cultural organizations, Regional Biodiversity Hubs.
 
-**Integration**: Complements the [Bio-Arts Residencies Toolkit](/frameworks/tools/biodiversity/bio-arts-residencies-toolkit-en.pdf), [Global Restoration Calendar Template](/frameworks/tools/biodiversity/global-restoration-calendar-template-en.pdf), and [Public Trust Dashboard](/frameworks/tools/biodiversity/trust-dashboard-evaluation-en.pdf).
+**Integration**: Complements the [Bio-Arts Residencies Toolkit](/frameworks/tools/biodiversity-governance/bio-arts-residencies-toolkit-en.pdf), [Global Restoration Calendar Template](/frameworks/tools/biodiversity-governance/global-restoration-calendar-template-en.pdf), and [Public Trust Dashboard](/frameworks/tools/biodiversity-governance/trust-dashboard-evaluation-en.pdf).
 
 ## <a id="core-components"></a>Core Components
 
@@ -109,7 +109,7 @@ The kit follows a phased approach to ensure effective training and campaign depl
 
 ## <a id="tools-templates"></a>Tools and Templates
 
-The following tools are included in the [Biodiversity Framework Seed Kit](/frameworks/tools/biodiversity/seed-kit-en.zip):
+The following tools are included in the [Biodiversity Framework Seed Kit](/frameworks/tools/biodiversity-governance/seed-kit-en.zip):
 
 - **Bio-Influencer Training Curriculum**  
   **Purpose**: Trains influencers in biodiversity advocacy and campaign strategies.  
@@ -119,7 +119,7 @@ The following tools are included in the [Biodiversity Framework Seed Kit](/frame
   **Key Features**:  
     - Modules on ecological literacy and indigenous storytelling.  
     - FPIC 2.0 content creation guidelines.  
-  **Access**: [/frameworks/tools/biodiversity/bio-influencer-training-curriculum-en.pdf].
+  **Access**: [/frameworks/tools/biodiversity-governance/bio-influencer-training-curriculum-en.pdf].
 
 - **Campaign Strategy Guide**  
   **Purpose**: Outlines steps for launching #BioDebt and related campaigns.  
@@ -129,7 +129,7 @@ The following tools are included in the [Biodiversity Framework Seed Kit](/frame
   **Key Features**:  
     - Hashtag campaign templates.  
     - Restoration milestone storytelling frameworks.  
-  **Access**: [/frameworks/tools/biodiversity/campaign-strategy-guide-en.pdf].
+  **Access**: [/frameworks/tools/biodiversity-governance/campaign-strategy-guide-en.pdf].
 
 - **Community Engagement Toolkit**  
   **Purpose**: Engages communities in bio-influencer campaigns.  
@@ -139,7 +139,7 @@ The following tools are included in the [Biodiversity Framework Seed Kit](/frame
   **Key Features**:  
     - Workshop planning checklist.  
     - Gamified challenge templates (e.g., #BioDebtChallenge).  
-  **Access**: [/frameworks/tools/biodiversity/community-engagement-toolkit-en.pdf].
+  **Access**: [/frameworks/tools/biodiversity-governance/community-engagement-toolkit-en.pdf].
 
 - **Campaign Funding Guide**  
   **Purpose**: Secures and manages funds for bio-influencer campaigns.  
@@ -149,7 +149,7 @@ The following tools are included in the [Biodiversity Framework Seed Kit](/frame
   **Key Features**:  
     - Crowdfunding platform setup instructions.  
     - Ecological Debt Reparations framework.  
-  **Access**: [/frameworks/tools/biodiversity/campaign-funding-guide-en.pdf].
+  **Access**: [/frameworks/tools/biodiversity-governance/campaign-funding-guide-en.pdf].
 
 - **Influencer Recruitment Template**  
   **Purpose**: Identifies and recruits bio-influencers.  
@@ -159,7 +159,7 @@ The following tools are included in the [Biodiversity Framework Seed Kit](/frame
   **Key Features**:  
     - FPIC 2.0 recruitment protocols.  
     - Diversity and inclusion criteria.  
-  **Access**: [/frameworks/tools/biodiversity/influencer-recruitment-template-en.pdf].
+  **Access**: [/frameworks/tools/biodiversity-governance/influencer-recruitment-template-en.pdf].
 
 - **Campaign Impact Assessment Protocol**  
   **Purpose**: Evaluates cultural and biodiversity outcomes of campaigns.  
@@ -169,7 +169,7 @@ The following tools are included in the [Biodiversity Framework Seed Kit](/frame
   **Key Features**:  
     - Cultural Biodiversity Index metrics.  
     - Blockchain-secured verification process.  
-  **Access**: [/frameworks/tools/biodiversity/campaign-impact-assessment-protocol-en.pdf].
+  **Access**: [/frameworks/tools/biodiversity-governance/campaign-impact-assessment-protocol-en.pdf].
 
 ## <a id="metrics-evaluation"></a>Metrics and Evaluation
 
@@ -182,7 +182,7 @@ Metrics ensure accountability and tie outcomes to cultural and biodiversity goal
 - **Indigenous and Youth Leadership**: 60% of influencers from indigenous/Global South communities, 70% youth-led campaigns.
 
 ### Evaluation Tools
-- **Global Biodiversity Health Dashboard**: Tracks ecosystem metrics with community verification ([/frameworks/tools/biodiversity/health-dashboard-en.md]).
+- **Global Biodiversity Health Dashboard**: Tracks ecosystem metrics with community verification ([/frameworks/tools/biodiversity-governance/health-dashboard-en.md]).
 - **Cultural Biodiversity Index**: Measures engagement through social media reach and festival attendance.
 - **Ethical AI Analytics**: Sentiment analysis for campaign impact and predictive modeling for ecological outcomes.
 - **Traditional Knowledge Indicators**: Elder-verified cultural and ecological signs (e.g., community storytelling revitalization).
@@ -214,26 +214,26 @@ Risks are managed to protect community interests and ensure campaign success.
 - **Community Recall**: Indigenous veto power to pause campaigns if cultural or ecological harm occurs.
 - **Rapid Response**: 72-hour deployment of cultural mediators for disputes or SWAT Teams for ecological crises.
 
-## <a id="accessibility-equity"></a>Accessibility and Equity
+## <a id="accessibility-equity"></a>Accessibility and Equity (planned)
 
 The kit is designed for universal access and equitable implementation:
 
 - **Languages**: Available in 10 languages, including Portuguese and Yoruba (2030), prioritizing indigenous languages in biodiversity hotspots.
 - **Formats**: PDF, markdown, braille, audio narration, and SMS-compatible versions for low-connectivity areas.
-- **Cultural Sensitivity**: Regional Adaptation Guidelines ensure context-specific implementation ([/frameworks/tools/biodiversity/regional-adaptation-guidelines-en.pdf]).
+- **Cultural Sensitivity**: Regional Adaptation Guidelines ensure context-specific implementation ([/frameworks/tools/biodiversity-governance/regional-adaptation-guidelines-en.pdf]).
 - **Equity Focus**: 60% of influencers from indigenous/Global South communities; women, youth, and marginalized groups included via community assemblies.
 - **Open Access**: All materials under Creative Commons licensing, freely available at [/frameworks/tools/biodiversity].
 
 ---
 
 **Cross-References**:
-- [Bio-Arts Residencies Toolkit](/frameworks/tools/biodiversity/bio-arts-residencies-toolkit-en.pdf)
-- [Global Restoration Calendar Template](/frameworks/tools/biodiversity/global-restoration-calendar-template-en.pdf)
-- [FPIC 2.0 Protocols Template](/frameworks/tools/biodiversity/fpic-2-protocols-template-en.pdf)
-- [Public Trust Dashboard](/frameworks/tools/biodiversity/trust-dashboard-evaluation-en.pdf)
+- [Bio-Arts Residencies Toolkit](/frameworks/tools/biodiversity-governance/bio-arts-residencies-toolkit-en.pdf)
+- [Global Restoration Calendar Template](/frameworks/tools/biodiversity-governance/global-restoration-calendar-template-en.pdf)
+- [FPIC 2.0 Protocols Template](/frameworks/tools/biodiversity-governance/fpic-2-protocols-template-en.pdf)
+- [Public Trust Dashboard](/frameworks/tools/biodiversity-governance/trust-dashboard-evaluation-en.pdf)
 
 **Next Steps**:
 1. Download the kit from [/frameworks/tools/biodiversity].
 2. Recruit influencers using the [Influencer Recruitment Template](#tools-templates).
-3. Launch pilot campaigns in sanctuary states (e.g., Brazil, Australia) using [Pilot Program Blueprints](/frameworks/docs/implementation/biodiversity#appendix-g-pilot-blueprints).
-4. Contact [globalbiodiversityframework@gmail.com] for support.
+3. Launch pilot campaigns in sanctuary states (e.g., Brazil, Australia) using [Pilot Program Blueprints](/frameworks/docs/implementation/biodiversity-governance#appendix-g-pilot-blueprints).
+4. Contact [globalgovernanceframeworks@gmail.com] for support.

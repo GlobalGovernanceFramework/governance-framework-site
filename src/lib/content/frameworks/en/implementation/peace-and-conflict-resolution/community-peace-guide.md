@@ -43,4 +43,4 @@ Communities are the heart of peacebuilding, bridging divides through trust and c
 Access these in the *Peace & Conflict Resolution Seed Kit* via the [Tools Library](/frameworks/tools/peace).
 
 ## Call to Action
-You can drive peace in your community. Start by forming a *Local Peace Committee*, organizing a dialogue forum, or hosting a digital literacy workshop. Explore the *Seed Kit* and full framework at [Tools Library](/frameworks/tools/peace). Share your efforts at [globalgovernanceframework@gmail.com] to join a global peacebuilding community.
+You can drive peace in your community. Start by forming a *Local Peace Committee*, organizing a dialogue forum, or hosting a digital literacy workshop. Explore the *Seed Kit* and full framework at [Tools Library](/frameworks/tools/peace). Share your efforts at [globalgovernanceframeworks@gmail.com] to join a global peacebuilding community.

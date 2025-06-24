@@ -292,25 +292,25 @@ This Treaty is designed not just to be read, but to be wielded. The following st
 1. Review the [Executive Summary for the Skeptic](/frameworks/treaty-for-our-only-home#executive-summary)
 2. Explore the [Keystone Reform Playbooks] *This playbook series is in development and will be released as a key resource for policymakers following the initial launch phase.*
 3. Use the [Sovereignty Navigator Tool] to assess reform impacts
-4. Contact globalgovernanceframework@gmail.com with subject "Government Partnership"
+4. Contact globalgovernanceframeworks@gmail.com with subject "Government Partnership"
 
 **Civil Society & Advocacy Organizations**:
 1. Download the [Global Stewardship Advocacy Kit](/frameworks/tools/treaty-for-our-only-home/global-stewardship-advocacy-kit-en.zip)
 2. Review the [Implementation Strategies](/frameworks/treaty-for-our-only-home#implementation-strategies)
 3. Join the Global Stewardship Alliance network
-4. Contact globalgovernanceframework@gmail.com with subject "Alliance Partnership"
+4. Contact globalgovernanceframeworks@gmail.com with subject "Alliance Partnership"
 
 **Academic & Research Institutions**:
 1. Access the full [Treaty framework documentation](/frameworks/treaty-for-our-only-home)
 2. Review the [Monitoring & Evaluation](/frameworks/treaty-for-our-only-home#monitoring-evaluation) protocols
 3. Explore collaboration on Reform Accelerator Labs
-4. Contact globalgovernanceframework@gmail.com with subject "Research Collaboration"
+4. Contact globalgovernanceframeworks@gmail.com with subject "Research Collaboration"
 
 **Cities & Regional Governments**:
 1. Explore [Pillar 2: New Actors & Voices](/frameworks/treaty-for-our-only-home#five-pillars) for formal city roles (navigate to the second pillar with the Five Pillars section index)
 2. Review pilot program opportunities in implementation strategies
 3. Connect with the C40 Cities partnership network
-4. Contact globalgovernanceframework@gmail.com with subject "City Partnership"
+4. Contact globalgovernanceframeworks@gmail.com with subject "City Partnership"
 
 ## <a id="next-steps"></a>Next Steps
 
@@ -344,7 +344,7 @@ The Treaty for Our Only Home represents a complete architectural blueprint for g
 - **Researchers**: Contribute evidence and modeling for reform impacts
 
 **Contact Information**:
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Website**: globalgovernanceframework.org
 - **Subject Lines for Specific Support**:
   - "Treaty Advocacy" - for advocacy and movement building

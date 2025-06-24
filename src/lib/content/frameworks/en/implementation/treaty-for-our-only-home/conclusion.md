@@ -204,6 +204,6 @@ Need clarification on specific terms or concepts? The [Glossary](/frameworks/tre
 
 *The Treaty for Our Only Home: A framework for conscious evolution from crisis-generating to resilience-generating governance systems. Developed through comprehensive research synthesis and iterative refinement to integrate evidence-based practices with visionary transformation. Implementation requires local consultation with cultural, legal, and technical experts familiar with specific contexts while maintaining the framework's systemic integrity and transformative scope.*
 
-*For questions, partnership opportunities, or implementation support: globalgovernanceframework@gmail.com*
+*For questions, partnership opportunities, or implementation support: globalgovernanceframeworks@gmail.com*
 
 *Version 1.0 - June 2025 - A beginning, not an end.*

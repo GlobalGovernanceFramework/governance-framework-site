@@ -99,7 +99,7 @@ The framework is accessible through multiple channels designed to serve diverse 
 - **Download**: Access the complete framework as a PDF via the [Downloads](/downloads) section of our website, or download individual sections for focused implementation.
 - **Navigate**: Use this index to explore sections sequentially or jump to specific topics via section links above.
 - **Access Tools**: Browse all implementation tools in both PDF and markdown formats at the [Tools Library](/frameworks/tools/energy).
-- **Engage**: Share feedback through our contact portal or email [globalgovernanceframework@gmail.com], contributing to iterative refinements.
+- **Engage**: Share feedback through our contact portal or email [globalgovernanceframeworks@gmail.com], contributing to iterative refinements.
 - **Implement**: Begin with the practical [Implementation Tools](#implementation-tools) to initiate governance improvements in your context, starting with the "Climate Governance Seed Kit."
 - **Adapt**: Modify approaches to suit your specific local, national, or regional context while maintaining alignment with core principles.
 

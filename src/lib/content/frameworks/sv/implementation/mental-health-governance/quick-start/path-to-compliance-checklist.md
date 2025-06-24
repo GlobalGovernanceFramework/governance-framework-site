@@ -461,7 +461,7 @@ Ramverket Living Mandala for Planetary Mental Health är ett konceptuellt ramver
 
 **För närvarande tillgängligt:**
 - ✅ Ramverksdokumentation och konceptuella implementeringsguider
-- ✅ Grundläggande förfrågningar via globalgovernanceframework@gmail.com
+- ✅ Grundläggande förfrågningar via globalgovernanceframeworks@gmail.com
 
 **Tidigt utvecklingsskede:**
 - 🚧 Alla implementeringsprogram, nätverk och specialiserade tjänster är konceptuella
@@ -469,7 +469,7 @@ Ramverket Living Mandala for Planetary Mental Health är ett konceptuellt ramver
 - 🚧 Söker partnerskap med mental hälsoprofessionella och förespråkare
 
 ### **Kontaktinformation** 📞
-- **Primär kontakt**: globalgovernanceframework@gmail.com
+- **Primär kontakt**: globalgovernanceframeworks@gmail.com
 - **Webbplats**: globalgovernanceframework.org
 - **Syfte**: Ramverksfeedback, samarbetsförfrågningar, akademisk diskussion
 
@@ -483,7 +483,7 @@ Ramverket söker för närvarande:
 ### **Viktig anteckning** 🌐
 Detta ramverk representerar konceptuellt utvecklingsarbete snarare än ett operationellt program. All implementeringsvägledning är teoretisk och skulle kräva betydande gemenskapsvalidering, professionell granskning och pilottestning före någon verklig tillämpning.
 
-**För samarbete eller feedback**: Kontakta globalgovernanceframework@gmail.com med "Mental Health Framework Feedback" i ämnesraden.
+**För samarbete eller feedback**: Kontakta globalgovernanceframeworks@gmail.com med "Mental Health Framework Feedback" i ämnesraden.
 
 ---
 

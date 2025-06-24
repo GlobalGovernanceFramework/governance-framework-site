@@ -284,14 +284,14 @@ The playbook prioritizes cultural safety, indigenous sovereignty, and equity.
   - [Community Engagement Toolkit](/frameworks/tools/planetary-health/community-engagement-toolkit-en.pdf)
   - [Health Equity Dashboard Template](/frameworks/tools/planetary-health/health-equity-dashboard-en.pdf)
 - **Support Channels**:
-  - Email: [globalgovernanceframework@gmail.com]
+  - Email: [globalgovernanceframeworks@gmail.com]
   - Community Portal: [globalgovernanceframework.org/contact]
   - Quarterly Pandemic Response Review Cycles for feedback.
 - **Training Resources**:
   - Pandemic Response Workshop (Tools Library).
   - Crisis Coordination Training (online, multilingual).
 
-**Call to Action**: Start by enhancing One Health surveillance with Regional Health Hubs. Use the Community Engagement Toolkit to train community response teams. Contact [globalgovernanceframework@gmail.com] for training or funding opportunities.
+**Call to Action**: Start by enhancing One Health surveillance with Regional Health Hubs. Use the Community Engagement Toolkit to train community response teams. Contact [globalgovernanceframeworks@gmail.com] for training or funding opportunities.
 
 ---
 

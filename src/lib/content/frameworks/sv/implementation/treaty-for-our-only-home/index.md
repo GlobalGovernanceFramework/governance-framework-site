@@ -286,25 +286,25 @@ Detta fördrag är designat inte bara för att läsas, utan för att användas. 
 1. Granska [sammanfattningen för skeptiker](/frameworks/treaty-for-our-only-home#executive-summary)
 2. Utforska [implementeringshandböckerna för nyckelreformer] *Denna handbokserie är under utveckling och kommer att släppas som en nyckelresurs för beslutsfattare efter den inledande lanseringsfasen.*
 3. Använd [suveränitetsnalvigatorverktyget] för att bedöma reformeffekter
-4. Kontakta globalgovernanceframework@gmail.com med ämne "Regeringspartnerskap"
+4. Kontakta globalgovernanceframeworks@gmail.com med ämne "Regeringspartnerskap"
 
 **Civilsamhälle och opinionsbildningsorganisationer**:
 1. Ladda ner [global påverkanskit för förvaltare](/frameworks/tools/treaty-for-our-only-home/global-stewardship-advocacy-kit-sv.zip)
 2. Granska [implementeringsstrategierna](/frameworks/treaty-for-our-only-home#implementation-strategies)
 3. Gå med i nätverket för den globala förvaltaralliansen
-4. Kontakta globalgovernanceframework@gmail.com med ämne "Allianspartnerskap"
+4. Kontakta globalgovernanceframeworks@gmail.com med ämne "Allianspartnerskap"
 
 **Akademiska och forskningsinstitutioner**:
 1. Få åtkomst till den fullständiga [fördragsramverksdokumentationen](/frameworks/treaty-for-our-only-home)
 2. Granska protokollen för [övervakning och utvärdering](/frameworks/treaty-for-our-only-home#monitoring-evaluation)
 3. Utforska samarbete om reformacceleratorlaboratorier
-4. Kontakta globalgovernanceframework@gmail.com med ämne "Forskningssamarbete"
+4. Kontakta globalgovernanceframeworks@gmail.com med ämne "Forskningssamarbete"
 
 **Städer och regionala regeringar**:
 1. Utforska [Pelare 2: Nya aktörer och röster](/frameworks/treaty-for-our-only-home#five-pillars) för formella stadsroller (navigera till den andra pelaren med indexet för de fem pelarna)
 2. Granska pilotprogrammöjligheter i implementeringsstrategier
 3. Anslut med C40 Cities-partnerskapsnätverket
-4. Kontakta globalgovernanceframework@gmail.com med ämne "Stadspartnerskap"
+4. Kontakta globalgovernanceframeworks@gmail.com med ämne "Stadspartnerskap"
 
 ## <a id="nasta-steg"></a>Nästa steg
 
@@ -338,7 +338,7 @@ Fördraget för vårt enda hem representerar en komplett arkitektonisk plan för
 - **Forskare**: Bidra med bevis och modellering för reformeffekter
 
 **Kontaktinformation**:
-- **Primär kontakt**: globalgovernanceframework@gmail.com
+- **Primär kontakt**: globalgovernanceframeworks@gmail.com
 - **Webbplats**: globalgovernanceframework.org
 - **Ämnesrader för specifikt stöd**:
   - "Fördragsopinionsbildning" - för opinionsbildning och rörelsebyggande

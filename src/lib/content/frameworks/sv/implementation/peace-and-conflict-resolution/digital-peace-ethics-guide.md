@@ -42,4 +42,4 @@ Digitala verktyg kan förstärka fred eller eskalera konflikter:
 Få tillgång till dessa i *startpaketet för fred och konfliktlösning* via [verktygsbiblioteket](/frameworks/tools/peace).
 
 ## Uppmaning till handling
-Led etiskt digitalt fredsbyggande genom att revidera plattformar, utbilda samhällen eller använda decentraliserade verktyg. Börja med *bedömningen av fredsteknologietik* och utforska hela ramverket på [verktygsbiblioteket](/frameworks/tools/peace). Dela feedback på [globalgovernanceframework@gmail.com] för att forma framtiden för digital fred.
+Led etiskt digitalt fredsbyggande genom att revidera plattformar, utbilda samhällen eller använda decentraliserade verktyg. Börja med *bedömningen av fredsteknologietik* och utforska hela ramverket på [verktygsbiblioteket](/frameworks/tools/peace). Dela feedback på [globalgovernanceframeworks@gmail.com] för att forma framtiden för digital fred.

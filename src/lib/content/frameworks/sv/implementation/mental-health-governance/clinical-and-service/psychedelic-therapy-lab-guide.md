@@ -976,12 +976,12 @@ Gemenskapsintegration säkerställer att psykedelisk terapi tjänar gemenskapsbe
 
 För närvarande tillgängligt:
 - ✅ Ramverksdokumentation och riktlinjer för uppsättning av psykedelisk terapilabb
-- ✅ Allmänt stöd via globalgovernanceframework@gmail.com
+- ✅ Allmänt stöd via globalgovernanceframeworks@gmail.com
 - 🚧 Specialiserade psykedeliska terapiträningsprogram (under utveckling)
 - 🚧 Konsulttjänster för integration av traditionell läkning (under utveckling)
 
 **Kontaktinformation:**
-- **Primär kontakt:** globalgovernanceframework@gmail.com
+- **Primär kontakt:** globalgovernanceframeworks@gmail.com
 - **Webbplats:** globalgovernanceframework.org
 - **Ämnesrader för specifikt stöd:**
   - "Psykedelisk labbuppsättning" - för labbutveckling och implementeringsstöd
@@ -1016,7 +1016,7 @@ Guiden för uppsättning av psykedelisk-assisterade terapilabb representerar en 
 
 **Status som levande dokument**: Denna guide är utformad för kontinuerlig förbättring baserat på implementeringserfarenhet, feedback från traditionella läkningsgemenskaper och utvecklande juridiska ramverk. Nuvarande version representerar omfattande analys per juni 2025 med regelbundna uppdateringar planerade baserat på gemenskapsvägledning och regulatoriska förändringar.
 
-**Kontakt för implementeringsstöd**: globalgovernanceframework@gmail.com med ämnesraden "Psykedelisk labb implementeringsstöd"
+**Kontakt för implementeringsstöd**: globalgovernanceframeworks@gmail.com med ämnesraden "Psykedelisk labb implementeringsstöd"
 
 ---
 

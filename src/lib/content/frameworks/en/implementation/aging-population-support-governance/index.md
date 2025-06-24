@@ -117,6 +117,6 @@ The framework is accessible through the Global Governance Framework website, des
 
 **About the Framework**: Developed through iterative design with elder co-leadership and extensive community feedback, representing synthesized best practices from global stakeholders and elder wisdom keepers, maintained by the dedicated team at globalgovernanceframework.org.
 
-**Elder Leadership Development**: Help expand elder agency by volunteering for Ambassador training, political organizing, pilot leadership, or community facilitation. Contact us at [globalgovernanceframework@gmail.com] to join the Elder Leadership Network.
+**Elder Leadership Development**: Help expand elder agency by volunteering for Ambassador training, political organizing, pilot leadership, or community facilitation. Contact us at [globalgovernanceframeworks@gmail.com] to join the Elder Leadership Network.
 
 **The Vision Realized**: By 2040, aging represents society's greatest strength—a time when accumulated wisdom drives innovation, when economic systems become stronger through elder participation, and when intergenerational connection replaces age segregation. Every elder deserves not just survival, but agency over a thriving life of purpose, connection, and respect. **The future of aging is elder-led, and it starts now.**

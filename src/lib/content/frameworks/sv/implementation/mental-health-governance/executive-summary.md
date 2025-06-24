@@ -102,4 +102,4 @@ Den Levande Mandalan för Planetärisk Psykisk Hälsa erbjuder både ett omfatta
 
 **Ramverksutveckling**: Utvecklat genom iterativ forskningssyntes med flera AI-system för att maximera analytisk mångfald och evidensintegration, som införlivar etablerade principer för psykisk hälsa med innovativa metoder för lokalsamhällets suveränitet.
 
-**Implementeringsstöd**: Kontakta globalgovernanceframework@gmail.com för kulturell anpassningshjälp, utbildningsresurser och kontakt med lokalsamhällen som implementerar transformation.
+**Implementeringsstöd**: Kontakta globalgovernanceframeworks@gmail.com för kulturell anpassningshjälp, utbildningsresurser och kontakt med lokalsamhällen som implementerar transformation.

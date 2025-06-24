@@ -128,7 +128,7 @@ Ramverket är tillgängligt via webbplatsen för Global Governance Framework, de
 - **Ladda ner**: Få tillgång till det kompletta ramverket som PDF via avsnittet [Nedladdningar](/downloads), tillgängligt på flera språk och tillgänglighetsformat.
 - **Navigera**: Använd detta index för att utforska avsnitt som följer mandalastrukturen eller få tillgång till specifika komponenter via avsnittslänkar.
 - **Tillgång till verktyg**: Bläddra bland alla implementeringsverktyg med traumainformerade protokoll i [verktygsbiblioteket](/frameworks/tools/mental-health-governance).
-- **Engagera dig**: Dela återkoppling genom säkra, gemenskapskontrollerade kanaler eller mejla [globalgovernanceframework@gmail.com] med dataskydd för psykisk hälsa.
+- **Engagera dig**: Dela återkoppling genom säkra, gemenskapskontrollerade kanaler eller mejla [globalgovernanceframeworks@gmail.com] med dataskydd för psykisk hälsa.
 - **Organisera**: Använd verktygslådor för politisk organisering för att bygga koalitioner för opinionsbildning kring psykisk hälsa och etablera gemenskapsledda arbetsgrupper.
 - **Implementera**: Börja med startpaketet för styrning av psykisk hälsa eller anslut till existerande pilotprogram och gemenskapsledda initiativ.
 
@@ -156,6 +156,6 @@ Ramverket är tillgängligt via webbplatsen för Global Governance Framework, de
 
 **Om ramverket**: Utvecklat genom gemenskapsledda samdesignprocesser med omfattande input från förespråkare för psykisk hälsa, traditionella läkare, neurodivergenta gemenskaper och överlevare från psykiatriska system. Representerar syntetiserad visdom från globala läkningstraditioner och samtida styrningsinnovationer, upprätthålls av Global Governance Framework-gemenskapen på globalgovernanceframework.org.
 
-**Opinionsbildning för psykisk hälsa**: Stöd transformationen av globala system för psykisk hälsa genom att bidra till policyutveckling, gemenskapsorganisering, forskning eller direkta tjänster. Kontakta oss på [globalgovernanceframework@gmail.com] för att engagera dig i gemenskapsledda initiativ som respekterar dina gränser och läkningsresa.
+**Opinionsbildning för psykisk hälsa**: Stöd transformationen av globala system för psykisk hälsa genom att bidra till policyutveckling, gemenskapsorganisering, forskning eller direkta tjänster. Kontakta oss på [globalgovernanceframeworks@gmail.com] för att engagera dig i gemenskapsledda initiativ som respekterar dina gränser och läkningsresa.
 
 **Förverkligad vision**: Vid 2035 framträder psykisk hälsa som en transkulturell mänsklig rättighet snarare än ett medicinskt privilegium—där gemenskapsvisdom vägleder läkning snarare än institutionell kontroll, där medvetandeutforskning firas snarare än patologiseras, och där kollektivt välmående ersätter individuell behandling. **Framtiden är gemenskapsledd, och transformationen börjar i våra läkningscirklar idag.**
