@@ -703,6 +703,9 @@
             </div>
 
             <div class="dropdown-menu" on:click|stopPropagation={() => {}} role="menu">
+              <a href="{base}/get-involved/founding" class={isActive('/get-involved/founding') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
+                {browser ? ($t('common.header.getInvolvedFounding') || 'Founding Organization') : 'Founding Organization'}
+              </a>
               <a href="{base}/get-involved/frameworks" class={isActive('/get-involved/frameworks') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
                 {browser ? ($t('common.header.getInvolvedFrameworks') || 'Contribute to Frameworks') : 'Contribute to Frameworks'}
               </a>

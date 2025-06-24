@@ -30,6 +30,7 @@
     "frameworkAIFutures": "AI-framtider",
     "frameworkResources": "Resurser",
     "frameworkGlossary": "Ordlista",
+    "getInvolvedFounding": "Bli grundare",
     "getInvolvedFrameworks": "Bidra till ramverk",
     "getInvolvedTranslations": "Bidra med översättningar",
     "getInvolvedWebsite": "Bidra till webbplatsen",
@@ -43,7 +44,8 @@
     "glossary": "Ordlista",
     "discord": {
       "inviteLink": "https://discord.gg/Zx4hMJf4JUe"
-    }
+    },
+    "founding": "Grundande"
   },
   "language": {
     "select": "Välj språk"

@@ -18,7 +18,7 @@ The Global Governance Frameworks addresses humanity's most pressing challenges -
 
 ### 1. GitHub Repository Access
 
-**Repository URL:** https://github.com/GlobalGovernanceFramework/governance-framework-site
+**Repository URL:** https://github.com/GlobalGovernanceFrameworks/website
 
 #### Install Git (Choose your operating system)
 
@@ -62,20 +62,20 @@ git config --global user.email "your.email@example.com"
 #### Fork and Clone the Repository
 
 **Step 1: Fork on GitHub**
-1. Go to https://github.com/GlobalGovernanceFramework/governance-framework-site
+1. Go to https://github.com/GlobalGovernanceFrameworks/website
 2. Click the "Fork" button in the top-right corner
 3. This creates a copy in your GitHub account
 
 **Step 2: Clone Your Fork**
 ```bash
 # Replace 'yourusername' with your actual GitHub username
-git clone https://github.com/yourusername/governance-framework-site.git
+git clone https://github.com/yourusername/governance-frameworks-site.git
 
 # Navigate into the project
-cd governance-framework-site
+cd governance-frameworks-site
 
 # Add the original repository as upstream (for getting updates)
-git remote add upstream https://github.com/GlobalGovernanceFramework/governance-framework-site.git
+git remote add upstream https://github.com/GlobalGovernanceFrameworks/website
 ```
 
 **Step 3: Create Your Translation Branch**
@@ -99,10 +99,10 @@ The frameworks are organized as follows:
 ├── fr/               # French
 └── [your-language]/  # Your target language
     └── implementation/
-        ├── peace/           # Peace & Conflict Resolution
-        ├── mental-health/   # Mental Health
-        ├── education/       # Education
-        ├── technology/      # Technology
+        ├── peace-and-conflict-resolution/           # Peace & Conflict Resolution
+        ├── mental-health-governance/                # Mental Health Governance
+        ├── educational-systems/                     # Educational Systems
+        ├── technology-governance/                   # Technology Governance
         └── [other-frameworks]/
 ```
 
@@ -117,10 +117,10 @@ The frameworks are organized as follows:
 - Individual section files (e.g., `core-principles.md`, `implementation-timeline.md`)
 
 **Example Framework Folders:**
-- `peace/` - Peace & Conflict Resolution Framework
-- `mental-health/` - Mental Health Framework  
-- `education/` - Education Framework
-- `technology/` - Technology Governance Framework
+- `peace-and-conflict-resolution/` - Peace & Conflict Resolution Framework
+- `mental-health-governance/` - Mental Health Framework  
+- `educational-systems/` - Education Framework
+- `technology-governance/` - Technology Governance Framework
 - `environmental-stewardship/` - Environmental Stewardship Framework
 
 ### Priority 2: User Interface Text

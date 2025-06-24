@@ -137,6 +137,7 @@
           <li><a href="{base}/frameworks/docs/glossary">{browser ? ($t('common.footer.glossary') || 'Glossary') : 'Glossary'}</a></li>
           <li><a href="{base}/downloads">{browser ? ($t('common.header.downloads') || 'Downloads') : 'Downloads'}</a></li>
           <li><a href="{base}/contact">{browser ? ($t('common.header.contact') || 'Contact') : 'Contact'}</a></li>
+          <li><a href="{base}/get-involved/founding">{browser ? ($t('common.footer.founding') || 'Founding') : 'Founding'}</a></li>
         </ul>
       </div>
       

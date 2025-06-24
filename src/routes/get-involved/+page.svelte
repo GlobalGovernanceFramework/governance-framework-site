@@ -8,50 +8,91 @@
 
   $: currentLocale = $locale;
 
-  // Simple fallback text
+  // Simple fallback text with bilingual support
   const fallbackText = {
-    title: 'Get Involved',
-    subtitle: 'Join our global community building better governance systems',
-    heroIntro: 'Choose how you\'d like to contribute to creating tools that enable different governance systems to communicate, collaborate, and evolve together.',
-    
-    translationTitle: 'Translation',
-    translationDescription: 'Help make global governance frameworks accessible worldwide by translating content into your language.',
-    translationCta: 'Start Translating',
-    
-    websiteTitle: 'Website Development',
-    websiteDescription: 'Contribute to our technical infrastructure, build new features, and improve the platform that powers our mission.',
-    websiteCta: 'Join Developers',
-    
-    outreachTitle: 'Community & Outreach',
-    outreachDescription: 'Spread our vision, build advocacy networks, and connect with communities that can benefit from our frameworks.',
-    outreachCta: 'Build Community',
-    
-    frameworksTitle: 'Framework Development',
-    frameworksDescription: 'Create new governance frameworks and tools that address real-world challenges in your area of expertise.',
-    frameworksCta: 'Create Frameworks',
-    
-    whyContribute: 'Why contribute?',
-    whyText: 'The governance challenges facing humanity require collaborative innovation. Your unique skills, perspective, and experience can help create the tools and networks needed for more cooperative, effective governance systems worldwide.',
-    
-    globalImpact: 'Global impact',
-    globalText: 'Join contributors from around the world working to build infrastructure that enables different governance systems to interoperate and evolve together.',
-    
-    getStarted: 'Ready to get started?',
-    getStartedText: 'Every contribution matters, whether it\'s translating a single page, fixing a bug, sharing content, or developing a comprehensive framework.'
+    en: {
+      title: 'Get Involved',
+      subtitle: 'Join our global community building better governance systems',
+      heroIntro: 'Choose how you\'d like to contribute to creating tools that enable different governance systems to communicate, collaborate, and evolve together.',
+      
+      foundingTitle: 'Founding Organization',
+      foundingDescription: 'Help establish the formal organization that will carry our mission forward for generations to come.',
+      foundingCta: 'Join Founding Team',
+      
+      translationTitle: 'Translation',
+      translationDescription: 'Help make global governance frameworks accessible worldwide by translating content into your language.',
+      translationCta: 'Start Translating',
+      
+      websiteTitle: 'Website Development',
+      websiteDescription: 'Contribute to our technical infrastructure, build new features, and improve the platform that powers our mission.',
+      websiteCta: 'Join Developers',
+      
+      outreachTitle: 'Community & Outreach',
+      outreachDescription: 'Spread our vision, build advocacy networks, and connect with communities that can benefit from our frameworks.',
+      outreachCta: 'Build Community',
+      
+      frameworksTitle: 'Framework Development',
+      frameworksDescription: 'Create new governance frameworks and tools that address real-world challenges in your area of expertise.',
+      frameworksCta: 'Create Frameworks',
+      
+      whyContribute: 'Why contribute?',
+      whyText: 'The governance challenges facing humanity require collaborative innovation. Your unique skills, perspective, and experience can help create the tools and networks needed for more cooperative, effective governance systems worldwide.',
+      
+      globalImpact: 'Global impact',
+      globalText: 'Join contributors from around the world working to build infrastructure that enables different governance systems to interoperate and evolve together.',
+      
+      getStarted: 'Ready to get started?',
+      getStartedText: 'Every contribution matters, whether it\'s becoming a founding member, translating a single page, fixing a bug, sharing content, or developing a comprehensive framework.'
+    },
+    sv: {
+      title: 'Engagera dig',
+      subtitle: 'Gå med i vår globala gemenskap som bygger bättre styrningssystem',
+      heroIntro: 'Välj hur du vill bidra till att skapa verktyg som gör det möjligt för olika styrningssystem att kommunicera, samarbeta och utvecklas tillsammans.',
+      
+      foundingTitle: 'Grundande organisation',
+      foundingDescription: 'Hjälp till att etablera den formella organisation som kommer att föra vårt uppdrag framåt för kommande generationer.',
+      foundingCta: 'Gå med i det grundande teamet',
+      
+      translationTitle: 'Översättning',
+      translationDescription: 'Hjälp till att göra globala styrningsramverk tillgängliga världen över genom att översätta innehåll till ditt språk.',
+      translationCta: 'Börja översätta',
+      
+      websiteTitle: 'Webbutveckling',
+      websiteDescription: 'Bidra till vår tekniska infrastruktur, bygg nya funktioner och förbättra plattformen som driver vårt uppdrag.',
+      websiteCta: 'Gå med utvecklarna',
+      
+      outreachTitle: 'Gemenskap & utåtriktad verksamhet',
+      outreachDescription: 'Sprid vår vision, bygg påverkansnätverk och knyt kontakter med gemenskaper som kan dra nytta av våra ramverk.',
+      outreachCta: 'Bygg gemenskap',
+      
+      frameworksTitle: 'Ramverksutveckling',
+      frameworksDescription: 'Skapa nya styrningsramverk och verktyg som hanterar verkliga utmaningar inom ditt expertområde.',
+      frameworksCta: 'Skapa ramverk',
+      
+      whyContribute: 'Varför bidra?',
+      whyText: 'De styrningsutmaningar som mänskligheten står inför kräver samarbetsinnovation. Dina unika färdigheter, perspektiv och erfarenheter kan hjälpa till att skapa de verktyg och nätverk som behövs för mer kooperativa, effektiva styrningssystem världen över.',
+      
+      globalImpact: 'Global påverkan',
+      globalText: 'Gå med bidragsgivare från hela världen som arbetar för att bygga infrastruktur som gör det möjligt för olika styrningssystem att samverka och utvecklas tillsammans.',
+      
+      getStarted: 'Redo att komma igång?',
+      getStartedText: 'Varje bidrag spelar roll, oavsett om det handlar om att bli en grundande medlem, översätta en enda sida, fixa en bugg, dela innehåll eller utveckla ett omfattande ramverk.'
+    }
   };
 
-  // Simple text function - try multiple ways to get translations
+  // Simple text function with language support
   function getText(key) {
-    // Try the translation system with the correct nested path
+    // Try the translation system first
     let value = $t(`getInvolved.${key}`);
    
-    // If we get a value, use it, otherwise use fallback
-    if (value && value !== '') {
+    // If we get a value that's not just the key, use it
+    if (value && value !== '' && value !== `getInvolved.${key}`) {
       return value;
     }
     
-    // Fallback to hardcoded text
-    return fallbackText[key] || key;
+    // Fallback to language-specific text
+    const langTexts = fallbackText[currentLocale] || fallbackText.en;
+    return langTexts[key] || fallbackText.en[key] || key;
   }
 
   onMount(() => {
@@ -79,6 +120,21 @@
     <!-- Contribution Cards -->
     <div class="contribution-cards">
       
+      <!-- Founding Organization Card - Featured at top -->
+      <a href="{base}/get-involved/founding" class="contribution-card founding-card featured">
+        <div class="featured-badge">
+          {currentLocale === 'sv' ? 'Angeläget' : 'Urgent'}
+        </div>
+        <div class="card-icon">🏛️</div>
+        <div class="card-content">
+          <h3>{getText('foundingTitle')}</h3>
+          <p>{getText('foundingDescription')}</p>
+          <div class="card-cta">
+            {getText('foundingCta')} <span class="arrow">→</span>
+          </div>
+        </div>
+      </a>
+
       <!-- Translation Card -->
       <a href="{base}/get-involved/translations" class="contribution-card translation-card">
         <div class="card-icon">🌍</div>
@@ -248,6 +304,35 @@
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
   }
 
+  /* Featured card styling */
+  .featured {
+    border: 2px solid var(--warm-gold);
+    background: linear-gradient(135deg, #FEF7ED 0%, #FDF2E9 100%);
+  }
+
+  .featured::before {
+    height: 6px;
+    background: var(--warm-gold);
+  }
+
+  .featured-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--warm-gold);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .founding-card::before {
+    background: var(--warm-gold);
+  }
+
   .translation-card::before {
     background: var(--earthy-green);
   }
@@ -395,6 +480,13 @@
       padding: 1.5rem;
     }
 
+    .featured-badge {
+      top: 0.75rem;
+      right: 0.75rem;
+      font-size: 0.7rem;
+      padding: 0.2rem 0.6rem;
+    }
+
     .card-icon {
       font-size: 2.5rem;
       margin-bottom: 1rem;
@@ -425,6 +517,16 @@
 
     .card-content h3 {
       font-size: 1.25rem;
+    }
+
+    .featured-badge {
+      position: static;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .featured {
+      padding-top: 1.5rem;
     }
   }
 </style>

@@ -3,13 +3,40 @@
   import { t, locale } from '$lib/i18n';
   import { browser } from '$app/environment';
   import { base } from '$app/paths';
-  import { onMount } from 'svelte';
+  import { onMount, afterUpdate } from 'svelte';
+  import { invalidate, afterNavigate } from '$app/navigation';
 
   export let data;
 
-  console.log('Frameworks contribution page loading...');
+  console.log('Page loading...');
 
   $: currentLocale = $locale;
+  
+  let previousLocale = null;
+  let isFirstLoad = true;
+  
+  // ✅ Use afterNavigate to handle the timing better
+  afterNavigate(() => {
+    if (isFirstLoad) {
+      previousLocale = currentLocale;
+      isFirstLoad = false;
+      console.log('Initial navigation complete, locale set to:', currentLocale);
+    }
+  });
+  
+  // ✅ Watch for locale changes after navigation is complete
+  afterUpdate(() => {
+    if (browser && !isFirstLoad && currentLocale !== previousLocale) {
+      console.log('Locale changed after update:', { from: previousLocale, to: currentLocale });
+      previousLocale = currentLocale;
+      
+      // Invalidate with a small delay to ensure the change is processed
+      setTimeout(() => {
+        console.log('Invalidating page data...');
+        invalidate('app:locale');
+      }, 50);
+    }
+  });
   
   // Simple fallback text
   const fallbackText = {
@@ -74,6 +101,8 @@
 
   onMount(() => {
     console.log('Frameworks contribution page mounted successfully');
+    console.log('Component mounted with locale:', currentLocale); // ✅ Add debug log
+    console.log('Content using English fallback:', data.contentUsingEnglishFallback); // ✅ Add debug log
   });
 </script>
 

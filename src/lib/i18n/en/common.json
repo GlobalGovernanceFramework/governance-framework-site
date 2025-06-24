@@ -30,6 +30,7 @@
     "frameworkAIFutures": "AI Futures",
     "frameworkResources": "Resources",
     "frameworkGlossary": "Glossary",
+    "getInvolvedFounding": "Become a Founder",
     "getInvolvedFrameworks": "Contribute to Frameworks",
     "getInvolvedTranslations": "Contribute Translations",
     "getInvolvedWebsite": "Contribute to Website",
@@ -43,7 +44,8 @@
     "glossary": "Glossary",
     "discord": {
       "inviteLink": "https://discord.gg/Zx4hMJf4JUe"
-    }
+    },
+    "founding": "Founding"
   },
   "language": {
     "select": "Select language"

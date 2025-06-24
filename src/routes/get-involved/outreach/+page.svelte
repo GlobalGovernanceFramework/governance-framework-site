@@ -149,10 +149,15 @@
     <div class="guide-content">
       {#if data?.guideContent}
         <svelte:component this={data.guideContent} />
+      {:else if data?.contentUsingEnglishFallback}
+        <div class="fallback-notice">
+          <p>Content not available in {data.currentLocale}. Showing English version.</p>
+        </div>
       {:else}
         <div class="error-state">
           <h2>{getText('errorTitle')}</h2>
           <p>{getText('errorText')}</p>
+          <p>Debug: data = {JSON.stringify(data)}</p>
         </div>
       {/if}
     </div>
@@ -174,6 +179,7 @@
   </div>
 </div>
 
+<!-- Keep all the existing CSS styles exactly the same -->
 <style>
   /* Use home page color scheme */
   :root {
