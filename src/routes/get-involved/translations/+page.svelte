@@ -1,42 +1,90 @@
+<!-- src/routes/get-involved/translations/+page.svelte -->
 <script>
   import { t, locale } from '$lib/i18n';
   import { browser } from '$app/environment';
   import { base } from '$app/paths';
-  import { onMount } from 'svelte';
+  import { onMount, afterUpdate } from 'svelte';
+  import { invalidate, afterNavigate } from '$app/navigation';
 
   export let data;
 
+  console.log('Translation page loading...');
+
   $: currentLocale = $locale;
   
-  // Simple fallback text
+  let previousLocale = null;
+  let isFirstLoad = true;
+  
+  // ✅ Use afterNavigate to handle the timing better
+  afterNavigate(() => {
+    if (isFirstLoad) {
+      previousLocale = currentLocale;
+      isFirstLoad = false;
+      console.log('Initial navigation complete, locale set to:', currentLocale);
+    }
+  });
+  
+  // ✅ Watch for locale changes after navigation is complete
+  afterUpdate(() => {
+    if (browser && !isFirstLoad && currentLocale !== previousLocale) {
+      console.log('Locale changed after update:', { from: previousLocale, to: currentLocale });
+      previousLocale = currentLocale;
+      
+      // Invalidate with a small delay to ensure the change is processed
+      setTimeout(() => {
+        console.log('Invalidating page data...');
+        invalidate('app:locale');
+      }, 50);
+    }
+  });
+  
+  // Bilingual fallback text
   const fallbackText = {
-    title: 'Translation Hub',
-    subtitle: 'Help make global governance frameworks accessible worldwide',
-    heroIntro: 'Join our global community of translators making governance frameworks accessible to communities worldwide.',
-    downloadKit: 'Download Translation Kit',
-    joinCommunity: 'Join Community',
-    downloadMarkdown: 'Download Markdown Version',
-    downloadPdf: 'Download PDF Version',
-    joinDiscord: 'Join Our Translation Community',
-    getStarted: 'Ready to Get Started?',
-    kitDescription: 'Get the complete translator\'s kit with technical setup, guidelines, and community information.',
-    communityDescription: 'Connect with other translators, get help, and coordinate translation efforts in real-time.',
-    errorTitle: 'Translation Guide Not Available',
-    errorText: 'The translation guide could not be loaded. Please try again later or contact support.'
+    en: {
+      title: 'Translation Hub',
+      subtitle: 'Help make global governance frameworks accessible worldwide',
+      heroIntro: 'Join our global community of translators making governance frameworks accessible to communities worldwide.',
+      downloadKit: 'Download Translation Kit',
+      joinCommunity: 'Join Community',
+      downloadMarkdown: 'Download Markdown Version',
+      downloadPdf: 'Download PDF Version',
+      joinDiscord: 'Join Our Translation Community',
+      getStarted: 'Ready to Get Started?',
+      kitDescription: 'Get the complete translator\'s kit with technical setup, guidelines, and community information.',
+      communityDescription: 'Connect with other translators, get help, and coordinate translation efforts in real-time.',
+      errorTitle: 'Translation Guide Not Available',
+      errorText: 'The translation guide could not be loaded. Please try again later or contact support.'
+    },
+    sv: {
+      title: 'Översättningscentrum',
+      subtitle: 'Hjälp till att göra ramverk för global styrning tillgängliga världen över',
+      heroIntro: 'Gå med i vår globala gemenskap av översättare som gör styrningsramverk tillgängliga för samhällen världen över.',
+      downloadKit: 'Ladda ner översättningskit',
+      joinCommunity: 'Gå med i gemenskapen',
+      downloadMarkdown: 'Ladda ner Markdown-version',
+      downloadPdf: 'Ladda ner PDF-version',
+      joinDiscord: 'Gå med i vår översättningsgemenskap',
+      getStarted: 'Redo att komma igång?',
+      kitDescription: 'Få det kompletta översättningskitet med teknisk installation, riktlinjer och gemenskapsinformation.',
+      communityDescription: 'Anslut dig till andra översättare, få hjälp och koordinera översättningsinsatser i realtid.',
+      errorTitle: 'Översättningsguide inte tillgänglig',
+      errorText: 'Översättningsguiden kunde inte laddas. Vänligen försök igen senare eller kontakta support.'
+    }
   };
 
-  // Simple text function - try multiple ways to get translations
+  // Simple text function with language support
   function getText(key) {
-    // Try the translation system with the correct nested path
+    // Try the translation system first
     let value = $t(`translations.${key}`);
    
-    // If we get a value, use it, otherwise use fallback
-    if (value && value !== '') {
+    // If we get a value that's not just the key, use it
+    if (value && value !== '' && value !== `translations.${key}`) {
       return value;
     }
     
-    // Fallback to hardcoded text
-    return fallbackText[key] || key;
+    // Fallback to language-specific text
+    const langTexts = fallbackText[currentLocale] || fallbackText.en;
+    return langTexts[key] || fallbackText.en[key] || key;
   }
 
   function downloadMarkdown() {
@@ -64,7 +112,8 @@
   }
 
   onMount(() => {
-    console.log('Translations page mounted successfully');
+    console.log('Component mounted with locale:', currentLocale); // Debug log
+    console.log('Content using English fallback:', data.contentUsingEnglishFallback); // Debug log
   });
 </script>
 
@@ -84,6 +133,17 @@
         <p class="hero-intro">{getText('heroIntro')}</p>
       </div>
     </div>
+
+    <!-- Language Fallback Notice -->
+    {#if data.contentUsingEnglishFallback && currentLocale !== 'en'}
+      <div class="language-fallback-notice">
+        <div class="notice-icon">🌐</div>
+        <div class="notice-content">
+          <strong>{currentLocale === 'sv' ? 'Innehåll på svenska kommer snart' : 'Content in your language coming soon'}</strong>
+          <p>{currentLocale === 'sv' ? 'Detta avsnitt visas för närvarande på engelska tills den svenska översättningen är klar.' : 'This section is currently displayed in English until translation is complete.'}</p>
+        </div>
+      </div>
+    {/if}
 
     <!-- Quick Actions Card -->
     <div class="action-cards">
@@ -121,15 +181,10 @@
     <div class="guide-content">
       {#if data?.guideContent}
         <svelte:component this={data.guideContent} />
-      {:else if data?.contentUsingEnglishFallback}
-        <div class="fallback-notice">
-          <p>Content not available in {data.currentLocale}. Showing English version.</p>
-        </div>
       {:else}
         <div class="error-state">
           <h2>{getText('errorTitle')}</h2>
           <p>{getText('errorText')}</p>
-          <p>Debug: data = {JSON.stringify(data)}</p>
         </div>
       {/if}
     </div>
@@ -236,6 +291,43 @@
     margin: 0 auto;
     opacity: 0.85;
     font-weight: 300;
+  }
+
+  /* Language fallback notice */
+  .language-fallback-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: rgba(107, 92, 165, 0.1);
+    border: 1px solid rgba(107, 92, 165, 0.3);
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .notice-icon {
+    font-size: 1.25rem;
+    color: var(--secondary-purple);
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+  }
+
+  .notice-content {
+    flex: 1;
+  }
+
+  .notice-content strong {
+    color: var(--secondary-purple);
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .notice-content p {
+    color: var(--content-text);
+    font-size: 0.875rem;
+    margin: 0;
+    line-height: 1.5;
   }
 
   /* Action Cards */
@@ -403,22 +495,6 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     border: 1px solid var(--border-color);
     overflow-wrap: break-word;
-  }
-
-  /* Fallback Notice */
-  .fallback-notice {
-    background-color: #fef3c7;
-    border: 1px solid #f59e0b;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    margin-bottom: 2rem;
-    color: #92400e;
-    text-align: center;
-  }
-
-  .fallback-notice p {
-    margin: 0;
-    font-weight: 500;
   }
 
   /* Global Content Styling for Markdown/Dynamic Content */
@@ -803,6 +879,22 @@
     .cta-actions button {
       width: 100%;
       max-width: 300px;
+    }
+
+    .language-fallback-notice {
+      padding: 0.75rem 1rem;
+    }
+
+    .notice-icon {
+      font-size: 1.1rem;
+    }
+
+    .notice-content strong {
+      font-size: 0.9rem;
+    }
+
+    .notice-content p {
+      font-size: 0.8rem;
     }
   }
 
