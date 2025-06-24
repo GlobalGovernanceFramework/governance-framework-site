@@ -1,10 +1,9 @@
-<!-- src/routes/get-involved/founding/+page.svelte -->
+<!-- src/routes/get-involved/founding/+page.svelte - Script section -->
 <script>
   import { t, locale } from '$lib/i18n';
   import { browser } from '$app/environment';
   import { base } from '$app/paths';
   import { onMount } from 'svelte';
-  import { invalidate } from '$app/navigation';
 
   export let data;
 
@@ -12,15 +11,64 @@
 
   $: currentLocale = $locale;
   
-  // Watch for locale changes and invalidate data if needed
-  let previousLocale = currentLocale;
-  $: if (browser && currentLocale !== previousLocale && previousLocale !== undefined) {
-    console.log('Locale changed, invalidating data:', { from: previousLocale, to: currentLocale });
-    previousLocale = currentLocale;
-    invalidate('app:locale');
+  // Reactive variables for content loading
+  let guideContent = null;
+  let contentUsingEnglishFallback = false;
+  let isLoading = true;
+  let loadError = false;
+
+  // Reactive function to load markdown based on current locale
+  async function loadMarkdownContent(locale) {
+    if (!locale) return;
+    
+    isLoading = true;
+    loadError = false;
+    contentUsingEnglishFallback = false;
+    
+    try {
+      console.log(`Loading markdown for locale: ${locale}`);
+      
+      // Try to load the current locale version
+      const module = await import(`$lib/content/get-involved/founding/${locale}/found-the-organization.md`);
+      guideContent = module.default;
+      console.log('Successfully loaded content for locale:', locale);
+      
+    } catch (e) {
+      console.log('Falling back to English, error was:', e.message);
+      
+      // Fall back to English if translation isn't available
+      try {
+        const module = await import(`$lib/content/get-involved/founding/en/found-the-organization.md`);
+        guideContent = module.default;
+        console.log('Successfully loaded English fallback');
+        
+        // Track that this content is using English fallback
+        if (locale !== 'en') {
+          contentUsingEnglishFallback = true;
+        }
+      } catch (e2) {
+        console.error("Failed to load any founding guide content:", e2);
+        loadError = true;
+      }
+    }
+    
+    isLoading = false;
   }
-  
-  // Bilingual fallback text
+
+  // Reactive statement to reload content when locale changes
+  $: if (browser && currentLocale) {
+    loadMarkdownContent(currentLocale);
+  }
+
+  // Initial load on mount
+  onMount(() => {
+    console.log('Component mounted with locale:', currentLocale);
+    if (currentLocale) {
+      loadMarkdownContent(currentLocale);
+    }
+  });
+
+  // Bilingual fallback text (same as before)
   const fallbackText = {
     en: {
       title: 'Our Path to Formalization',
@@ -86,12 +134,6 @@
   function exploreFrameworks() {
     window.open(`${base}/frameworks/docs`, '_self');
   }
-
-  onMount(() => {
-    console.log('Component mounted with locale:', currentLocale);
-    console.log('Content using English fallback:', data.contentUsingEnglishFallback);
-    previousLocale = currentLocale; // Initialize previous locale
-  });
 </script>
 
 <svelte:head>
@@ -112,7 +154,7 @@
     </div>
 
     <!-- Language Fallback Notice -->
-    {#if data.contentUsingEnglishFallback && currentLocale !== 'en'}
+    {#if contentUsingEnglishFallback && currentLocale !== 'en'}
       <div class="language-fallback-notice">
         <div class="notice-icon">🌐</div>
         <div class="notice-content">
@@ -124,8 +166,20 @@
 
     <!-- Main Content -->
     <div class="main-content">
-      {#if data?.guideContent}
-        <svelte:component this={data.guideContent} />
+      {#if isLoading}
+        <div class="loading-state">
+          <p>Loading content...</p>
+        </div>
+      {:else if loadError}
+        <div class="error-state">
+          <h2>{getText('errorTitle')}</h2>
+          <p>{getText('errorText')}</p>
+          <button class="primary-btn" on:click={contactUs}>
+            {getText('contactUs')} <span class="external-icon">✉</span>
+          </button>
+        </div>
+      {:else if guideContent}
+        <svelte:component this={guideContent} />
       {:else}
         <div class="error-state">
           <h2>{getText('errorTitle')}</h2>
@@ -137,6 +191,7 @@
       {/if}
     </div>
 
+    <!-- Rest of the component stays the same -->
     <!-- Call to Action Section -->
     <div class="cta-section">
       <div class="cta-content">
@@ -182,6 +237,7 @@
   </div>
 </div>
 
+<!-- Add a simple loading state style -->
 <style>
   /* Use consistent color scheme */
   :root {
@@ -281,6 +337,18 @@
     margin-bottom: 2rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     border: 1px solid var(--border-color);
+  }
+
+  /* Loading state */
+  .loading-state {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: var(--content-text);
+  }
+  
+  .loading-state p {
+    font-size: 1.125rem;
+    opacity: 0.7;
   }
 
   /* Content styling */

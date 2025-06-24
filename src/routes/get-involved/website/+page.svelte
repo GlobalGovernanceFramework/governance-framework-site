@@ -4,7 +4,6 @@
   import { browser } from '$app/environment';
   import { base } from '$app/paths';
   import { onMount } from 'svelte';
-  import { invalidate } from '$app/navigation';
 
   export let data;
 
@@ -12,14 +11,63 @@
 
   $: currentLocale = $locale;
   
-  // Watch for locale changes and invalidate data if needed
-  let previousLocale = currentLocale;
-  $: if (browser && currentLocale !== previousLocale && previousLocale !== undefined) {
-    console.log('Locale changed, invalidating data:', { from: previousLocale, to: currentLocale });
-    previousLocale = currentLocale;
-    invalidate('app:locale');
+  // Reactive variables for content loading
+  let guideContent = null;
+  let contentUsingEnglishFallback = false;
+  let isLoading = true;
+  let loadError = false;
+
+  // Reactive function to load markdown based on current locale
+  async function loadMarkdownContent(locale) {
+    if (!locale) return;
+    
+    isLoading = true;
+    loadError = false;
+    contentUsingEnglishFallback = false;
+    
+    try {
+      console.log(`Loading website guide for locale: ${locale}`);
+      
+      // Try to load the current locale version
+      const module = await import(`$lib/content/get-involved/website/${locale}/website-guide.md`);
+      guideContent = module.default;
+      console.log('Successfully loaded website guide for locale:', locale);
+      
+    } catch (e) {
+      console.log('Falling back to English website guide, error was:', e.message);
+      
+      // Fall back to English if translation isn't available
+      try {
+        const module = await import(`$lib/content/get-involved/website/en/website-guide.md`);
+        guideContent = module.default;
+        console.log('Successfully loaded English website guide fallback');
+        
+        // Track that this content is using English fallback
+        if (locale !== 'en') {
+          contentUsingEnglishFallback = true;
+        }
+      } catch (e2) {
+        console.error("Failed to load any website guide content:", e2);
+        loadError = true;
+      }
+    }
+    
+    isLoading = false;
   }
-  
+
+  // Reactive statement to reload content when locale changes
+  $: if (browser && currentLocale) {
+    loadMarkdownContent(currentLocale);
+  }
+
+  // Initial load on mount
+  onMount(() => {
+    console.log('Component mounted with locale:', currentLocale);
+    if (currentLocale) {
+      loadMarkdownContent(currentLocale);
+    }
+  });
+
   // Bilingual fallback text
   const fallbackText = {
     en: {
@@ -100,12 +148,6 @@
   function viewGitHub() {
     window.open('https://github.com/GlobalGovernanceFrameworks/website', '_blank');
   }
-
-  onMount(() => {
-    console.log('Component mounted with locale:', currentLocale);
-    console.log('Content using English fallback:', data.contentUsingEnglishFallback);
-    previousLocale = currentLocale; // Initialize previous locale
-  });
 </script>
 
 <svelte:head>
@@ -126,7 +168,7 @@
     </div>
 
     <!-- Language Fallback Notice -->
-    {#if data.contentUsingEnglishFallback && currentLocale !== 'en'}
+    {#if contentUsingEnglishFallback && currentLocale !== 'en'}
       <div class="language-fallback-notice">
         <div class="notice-icon">🌐</div>
         <div class="notice-content">
@@ -183,8 +225,17 @@
 
     <!-- Main Guide Content -->
     <div class="guide-content">
-      {#if data?.guideContent}
-        <svelte:component this={data.guideContent} />
+      {#if isLoading}
+        <div class="loading-state">
+          <p>Loading content...</p>
+        </div>
+      {:else if loadError}
+        <div class="error-state">
+          <h2>{getText('errorTitle')}</h2>
+          <p>{getText('errorText')}</p>
+        </div>
+      {:else if guideContent}
+        <svelte:component this={guideContent} />
       {:else}
         <div class="error-state">
           <h2>{getText('errorTitle')}</h2>
@@ -262,6 +313,43 @@
     max-width: 600px;
     margin: 0 auto;
     opacity: 0.85;
+  }
+
+  /* Language fallback notice */
+  .language-fallback-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: rgba(107, 92, 165, 0.1);
+    border: 1px solid rgba(107, 92, 165, 0.3);
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .notice-icon {
+    font-size: 1.25rem;
+    color: var(--secondary-purple);
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+  }
+
+  .notice-content {
+    flex: 1;
+  }
+
+  .notice-content strong {
+    color: var(--secondary-purple);
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .notice-content p {
+    color: var(--content-text);
+    font-size: 0.875rem;
+    margin: 0;
+    line-height: 1.5;
   }
 
   /* Action Cards */
@@ -407,6 +495,18 @@
     margin-bottom: 2rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     border: 1px solid var(--border-color);
+  }
+
+  /* Loading state */
+  .loading-state {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: var(--content-text);
+  }
+  
+  .loading-state p {
+    font-size: 1.125rem;
+    opacity: 0.7;
   }
 
   /* Content styling */
@@ -575,6 +675,22 @@
     .cta-actions button {
       width: 100%;
       max-width: 300px;
+    }
+
+    .language-fallback-notice {
+      padding: 0.75rem 1rem;
+    }
+
+    .notice-icon {
+      font-size: 1.1rem;
+    }
+
+    .notice-content strong {
+      font-size: 0.9rem;
+    }
+
+    .notice-content p {
+      font-size: 0.8rem;
     }
   }
 </style>
