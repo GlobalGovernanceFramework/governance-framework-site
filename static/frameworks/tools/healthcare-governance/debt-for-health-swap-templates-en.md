@@ -270,14 +270,14 @@ The templates prioritize cultural safety, indigenous sovereignty, and equity.
   - [Community Engagement Toolkit](/frameworks/tools/planetary-health/community-engagement-toolkit-en.pdf)
   - [Health Equity Dashboard Template](/frameworks/tools/planetary-health/health-equity-dashboard-en.pdf)
 - **Support Channels**:
-  - Email: [globalgovernanceframework@gmail.com]
+  - Email: [globalgovernanceframeworks@gmail.com]
   - Community Portal: [globalgovernanceframework.org/contact]
   - Quarterly Debt-for-Health Swap Review Cycles for feedback.
 - **Training Resources**:
   - Financial Management for Health Equity Workshop (Tools Library).
   - Debt-for-Health Swap Negotiation Training (online, multilingual).
 
-**Call to Action**: Start by identifying eligible LMIC debts and potential creditors. Use the Community Engagement Toolkit to involve communities in proposal development. Contact [globalgovernanceframework@gmail.com] for debt swap training or pilot funding opportunities.
+**Call to Action**: Start by identifying eligible LMIC debts and potential creditors. Use the Community Engagement Toolkit to involve communities in proposal development. Contact [globalgovernanceframeworks@gmail.com] for debt swap training or pilot funding opportunities.
 
 ---
 

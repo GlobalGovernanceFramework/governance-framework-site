@@ -610,12 +610,12 @@ Framework for coordinating support from non-Indigenous legal advocates while mai
 **Current Status Note**: The Global Governance Framework is in active development. Currently available:
 - ✅ Indigenous rights legal strategy frameworks and templates
 - ✅ Legal research and documentation guidance
-- ✅ General support via globalgovernanceframework@gmail.com
+- ✅ General support via globalgovernanceframeworks@gmail.com
 - 🚧 Legal advocacy coordination networks (in development)
 - 🚧 International legal support systems (in development)
 
 **Contact Information**:
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Website**: globalgovernanceframework.org
 - **Subject Lines for Specific Support**:
   - "Indigenous Rights Legal Strategy" - for legal strategy development and advocacy planning
@@ -651,7 +651,7 @@ Framework for coordinating support from non-Indigenous legal advocates while mai
 
 **Document Version**: Version 1.0 (2025-01-11)  
 **Next Review**: 2025-07-01  
-**Contact Updates**: globalgovernanceframework@gmail.com
+**Contact Updates**: globalgovernanceframeworks@gmail.com
 
 **Cultural Protocol Reminder**: Indigenous rights legal strategy must follow appropriate cultural protocols and traditional governance systems. All legal activities should strengthen rather than compromise traditional governance and occur under traditional authority and elder guidance. Sacred knowledge and cultural information require protection throughout legal advocacy and strategy development.
 

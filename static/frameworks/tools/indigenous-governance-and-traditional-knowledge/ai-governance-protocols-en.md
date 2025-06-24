@@ -529,7 +529,7 @@ The vision is clear: AI systems that strengthen Traditional Knowledge transmissi
 - 🚧 Traditional Knowledge protection platform (in development)
 
 **Contact Information:**
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Website**: globalgovernanceframework.org
 - **Subject Lines for Specific Support:**
   - "AI Ethics Protocol Implementation" - for community AI governance development

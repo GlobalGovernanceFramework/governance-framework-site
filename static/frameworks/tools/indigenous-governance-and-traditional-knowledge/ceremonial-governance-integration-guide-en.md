@@ -370,7 +370,7 @@ Traditional spiritual practices and ceremonial governance provide frameworks for
 - Traditional healing and community spiritual resilience program integration
 
 **Contact Information:**
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Subject Line**: "Ceremonial Governance Integration - [Community/Individual/Organization]"
 - **Website**: globalgovernanceframework.org/ceremonial-governance
 

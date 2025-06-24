@@ -282,25 +282,25 @@ This Treaty is designed not just to be read, but to be wielded. The following st
 1. Review the [Executive Summary for the Skeptic](/frameworks/docs/implementation/treaty-for-our-only-home#executive-summary)
 2. Explore the [Keystone Reform Playbooks] *This playbook series is in development and will be released as a key resource for policymakers following the initial launch phase.*
 3. Use the [Sovereignty Navigator Tool] to assess reform impacts
-4. Contact globalgovernanceframework@gmail.com with subject "Government Partnership"
+4. Contact globalgovernanceframeworks@gmail.com with subject "Government Partnership"
 
 **Civil Society & Advocacy Organizations**:
 1. Download the [Global Stewardship Advocacy Kit](/frameworks/tools/treaty-for-our-only-home/global-stewardship-advocacy-kit-en.zip)
 2. Review the [Implementation Strategies](/frameworks/docs/implementation/treaty-for-our-only-home#04-implementation-strategies)
 3. Join the Global Stewardship Alliance network
-4. Contact globalgovernanceframework@gmail.com with subject "Alliance Partnership"
+4. Contact globalgovernanceframeworks@gmail.com with subject "Alliance Partnership"
 
 **Academic & Research Institutions**:
 1. Access the full [Treaty framework documentation](/frameworks/docs/implementation/treaty-for-our-only-home)
 2. Review the [Monitoring & Evaluation](/frameworks/docs/implementation/treaty-for-our-only-home#06-monitoring-evaluation) protocols
 3. Explore collaboration on Reform Accelerator Labs
-4. Contact globalgovernanceframework@gmail.com with subject "Research Collaboration"
+4. Contact globalgovernanceframeworks@gmail.com with subject "Research Collaboration"
 
 **Cities & Regional Governments**:
 1. Explore [Pillar 2: New Actors & Voices](/frameworks/docs/implementation/treaty-for-our-only-home#03-five-pillars) for formal city roles (navigate to the second pillar with the Five Pillars section index)
 2. Review pilot program opportunities in implementation strategies
 3. Connect with the C40 Cities partnership network
-4. Contact globalgovernanceframework@gmail.com with subject "City Partnership"
+4. Contact globalgovernanceframeworks@gmail.com with subject "City Partnership"
 
 ## <a id="next-steps"></a>Next Steps
 
@@ -334,7 +334,7 @@ The Treaty for Our Only Home represents a complete architectural blueprint for g
 - **Researchers**: Contribute evidence and modeling for reform impacts
 
 **Contact Information**:
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Website**: globalgovernanceframework.org
 - **Subject Lines for Specific Support**:
   - "Treaty Advocacy" - for advocacy and movement building
@@ -1778,7 +1778,7 @@ Need clarification on specific terms or concepts? The [Glossary](/frameworks/doc
 
 *The Treaty for Our Only Home: A framework for conscious evolution from crisis-generating to resilience-generating governance systems. Developed through comprehensive research synthesis and iterative refinement to integrate evidence-based practices with visionary transformation. Implementation requires local consultation with cultural, legal, and technical experts familiar with specific contexts while maintaining the framework's systemic integrity and transformative scope.*
 
-*For questions, partnership opportunities, or implementation support: globalgovernanceframework@gmail.com*
+*For questions, partnership opportunities, or implementation support: globalgovernanceframeworks@gmail.com*
 
 *Version 1.0 - June 2025 - A beginning, not an end.*
 
@@ -2705,5 +2705,5 @@ Legal principle enabling international courts to prosecute serious crimes (ecoci
 
 This glossary provides essential reference material for understanding the Treaty for Our Only Home framework. Terms are defined with sufficient detail for practical application while maintaining clarity for diverse audiences. Cross-references throughout the Treaty documentation use these definitions consistently to ensure conceptual coherence across the comprehensive governance transformation blueprint.
 
-*For additional clarification on specific terms or concepts, contact globalgovernanceframework@gmail.com with subject "Glossary Questions"*
+*For additional clarification on specific terms or concepts, contact globalgovernanceframeworks@gmail.com with subject "Glossary Questions"*
 

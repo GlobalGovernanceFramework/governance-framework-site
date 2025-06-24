@@ -1183,6 +1183,6 @@ For support in implementing the Climate & Energy Governance Framework, access th
 - **Online Resources**: 
   - [www.globalgovernanceframework.org/frameworks/docs/implementation/energy](https://globalgovernanceframework.org/frameworks/docs/implementation/energy)
   - [www.globalgovernanceframework.org/frameworks/tools/energy](https://globalgovernanceframework.org/frameworks/tools/energy)
-- **Technical Assistance**: Email [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com) for guidance on policy design, finance access, or tool usage.
+- **Technical Assistance**: Email [globalgovernanceframeworks@gmail.com](mailto:globalgovernanceframeworks@gmail.com) for guidance on policy design, finance access, or tool usage.
 
 This guide is a living document, updated regularly to reflect implementation progress and emerging lessons. Visit [www.globalgovernanceframework.org](https://www.globalgovernanceframework.org) for the latest version and additional resources.

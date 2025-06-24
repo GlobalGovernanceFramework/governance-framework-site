@@ -289,12 +289,12 @@ Tools for gathering community input and ensuring inclusive participation includi
 Currently available:
 - ✅ Complete template collection with cultural adaptation guidelines
 - ✅ Implementation guides and training materials
-- ✅ Community support via globalgovernanceframework@gmail.com
+- ✅ Community support via globalgovernanceframeworks@gmail.com
 - 🚧 Digital template platforms (in development)
 - 🚧 Community network coordination systems (in development)
 
 **Contact Information:**
-- **Primary Contact:** globalgovernanceframework@gmail.com
+- **Primary Contact:** globalgovernanceframeworks@gmail.com
 - **Website:** globalgovernanceframework.org
 - **Subject Lines for Specific Support:**
   - "Community Tracking Support" - for template customization and implementation assistance
@@ -304,7 +304,7 @@ Currently available:
 
 **Template Access and Customization:**
 1. **Template Download**: Access complete template collection from this document
-2. **Customization Support**: Contact globalgovernanceframework@gmail.com with subject "Community Tracking Support" for adaptation assistance
+2. **Customization Support**: Contact globalgovernanceframeworks@gmail.com with subject "Community Tracking Support" for adaptation assistance
 3. **Cultural Adaptation**: Request specialized support for Indigenous and traditional community adaptations
 4. **Training Coordination**: Arrange community training sessions and capacity building support
 5. **Peer Network Participation**: Connect with other communities for mutual learning and collaboration
@@ -317,7 +317,7 @@ Currently available:
 - **Long-Term Connection**: Continued support and connection to peer learning networks
 
 **Pilot Community Opportunities:**
-Communities interested in piloting innovative monitoring approaches can participate in development programs by contacting globalgovernanceframework@gmail.com with subject "Community Pilot Request." Pilot communities receive:
+Communities interested in piloting innovative monitoring approaches can participate in development programs by contacting globalgovernanceframeworks@gmail.com with subject "Community Pilot Request." Pilot communities receive:
 - Free template customization and adaptation support
 - Comprehensive training and ongoing technical assistance
 - Direct input into template development and improvement
@@ -335,5 +335,5 @@ Communities interested in piloting innovative monitoring approaches can particip
 
 **Document Version:** 1.0 (2025-06-07)  
 **Next Review:** 2025-09-07  
-**Contact:** globalgovernanceframework@gmail.com  
+**Contact:** globalgovernanceframeworks@gmail.com  
 **Integration:** Core component of Global Guardian Framework community empowerment and democratic participation systems

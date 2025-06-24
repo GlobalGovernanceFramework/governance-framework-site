@@ -214,7 +214,7 @@ När gemenskaper världen över omfamnar sin auktoritet över berättelser om ps
 ## Kontakt och engagemang
 
 - **Ramverkets webbplats**: globalgovernanceframework.org/psykisk-halsa
-- **E-post**: globalgovernanceframework@gmail.com
+- **E-post**: globalgovernanceframeworks@gmail.com
 - **Gemenskapsforum**: Säkra, traumainformerade diskussionsutrymmen
 - **Implementeringsstöd**: Kulturell anpassning och teknisk assistans
 - **Globalt nätverk**: Anslut till gemenskaper som implementerar transformation

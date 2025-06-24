@@ -1479,7 +1479,7 @@ This economic modeling tool will be updated regularly based on:
 - Technology improvements and new data sources
 
 **Contact Information**
-- **General Support**: globalgovernanceframework@gmail.com
+- **General Support**: globalgovernanceframeworks@gmail.com
 - **Economic Modeling Questions**: economics@agingframework.org
 - **Data and Research**: research@agingframework.org
 - **Implementation Support**: implementation@agingframework.org

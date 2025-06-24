@@ -460,7 +460,7 @@
 - Traditional Knowledge protection technology and community-controlled platform development
 
 **Contact Information:**
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Subject Line**: "Storytelling & Media Strategy - [Community/Organization/Individual]"
 - **Website**: globalgovernanceframework.org/indigenous-media
 

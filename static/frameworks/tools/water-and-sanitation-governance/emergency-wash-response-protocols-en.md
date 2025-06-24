@@ -552,7 +552,7 @@ Post-Emergency Evaluation:
 5. **Practice and Improve**: Regular drills and exercises to test and improve emergency response capacity
 
 **Contact for Emergency Preparedness Support**:
-- **Email**: globalgovernanceframework@gmail.com
+- **Email**: globalgovernanceframeworks@gmail.com
 - **Subject**: "Emergency WASH Response Implementation"
 - **Include**: Community location, hazard risks, current preparedness level, and training needs
 

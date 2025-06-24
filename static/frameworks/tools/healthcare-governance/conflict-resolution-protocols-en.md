@@ -212,14 +212,14 @@ Conflict resolution prioritizes cultural safety, indigenous sovereignty, and equ
   - [Community Engagement Toolkit](/frameworks/tools/planetary-health/community-engagement-toolkit-en.pdf)
   - [Health Equity Dashboard Template](/frameworks/tools/planetary-health/health-equity-dashboard-en.pdf)
 - **Support Channels**:
-  - Email: [globalgovernanceframework@gmail.com]
+  - Email: [globalgovernanceframeworks@gmail.com]
   - Community Portal: [globalgovernanceframework.org/contact]
   - Monthly Conflict Resolution Review Cycles for feedback.
 - **Training Resources**:
   - Cultural Competency Training Module (Tools Library).
   - Conflict Resolution Facilitator Certification (online, multilingual).
 
-**Call to Action**: Train hub and council members in these protocols using the Cultural Competency Training Module. Establish a Conflict Resolution Ombudsman roster by contacting [globalgovernanceframework@gmail.com]. Use the Community Engagement Toolkit to integrate community feedback into resolution processes.
+**Call to Action**: Train hub and council members in these protocols using the Cultural Competency Training Module. Establish a Conflict Resolution Ombudsman roster by contacting [globalgovernanceframeworks@gmail.com]. Use the Community Engagement Toolkit to integrate community feedback into resolution processes.
 
 ---
 

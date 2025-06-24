@@ -125,7 +125,7 @@ This framework is designed as a living document for adaptation and evolution acr
 - **Download**: Access complete framework and tools via [Downloads](/downloads) section
 - **Implement**: Launch pilots using implementation tools, beginning with Sacred Waters Kit
 - **Adapt**: Customize regional blueprints and governance models for local contexts
-- **Connect**: Join global community of water stewards through [contact portal](mailto:globalgovernanceframework@gmail.com)
+- **Connect**: Join global community of water stewards through [contact portal](mailto:globalgovernanceframeworks@gmail.com)
 - **Contribute**: Share experiences, innovations, and feedback to strengthen the framework
 
 **Equity and Accessibility Commitment**: All materials are open-access under Creative Commons licensing. Initial translations available in major UN languages, with priority expansion to Indigenous languages and regions implementing pilots. Audio, visual, and graphic novel versions ensure accessibility across literacy levels and learning styles.
@@ -140,7 +140,7 @@ This framework is designed as a living document for adaptation and evolution acr
 
 The water crisis is humanity's crisis. The water solution is humanity's opportunity for healing, justice, and regeneration.
 
-**Join the Water Revolution**: Connect with the global movement at [globalgovernanceframework@gmail.com] to pilot implementations, contribute translations, share innovations, or support community organizing for water justice. Together, we transform water governance from extraction to regeneration, from scarcity to abundance, from conflict to healing.
+**Join the Water Revolution**: Connect with the global movement at [globalgovernanceframeworks@gmail.com] to pilot implementations, contribute translations, share innovations, or support community organizing for water justice. Together, we transform water governance from extraction to regeneration, from scarcity to abundance, from conflict to healing.
 
 # Theory of Change
 

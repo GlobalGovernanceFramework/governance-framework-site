@@ -134,4 +134,4 @@ In 2024, Amazonian Indigenous communities used this guide to launch a reforestat
 - Cost-Benefit Analysis ([Section 10.3](/frameworks/docs/implementation/education#10-appendices))
 
 ## Download
-Available at [framework website](https://www.globalgovernanceframework.org/frameworks/docs/implementation/education) as PDF, Word, markdown, and accessible formats (audio, braille, oral). Contact [globalgovernanceframework@gmail.com] for translation requests or support.
+Available at [framework website](https://www.globalgovernanceframework.org/frameworks/docs/implementation/education) as PDF, Word, markdown, and accessible formats (audio, braille, oral). Contact [globalgovernanceframeworks@gmail.com] for translation requests or support.

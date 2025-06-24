@@ -1331,7 +1331,7 @@ Success requires patience, persistence, and unwavering commitment to traditional
 - 🚧 Community-controlled quantum-resistant infrastructure (in development)
 
 **Contact Information:**
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Website**: globalgovernanceframework.org
 - **Subject Lines for Specific Support:**
   - "Cybersecurity Implementation Support" - for community cybersecurity development and quantum-resistant infrastructure

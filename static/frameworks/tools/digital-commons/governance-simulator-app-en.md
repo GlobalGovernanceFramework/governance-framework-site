@@ -198,7 +198,7 @@ Continuous monitoring ensures the app meets community needs.
 - **Guides**: Community, Indigenous, Ethics Guides (globalgovernanceframework.org/tools).
 - **Tools**: SMS Voting, Field-Test Logbook, Blockchain Ledger.
 - **Visuals**: App Interface Guide, Governance Cycle Poster (globalgovernanceframework.org/visuals).
-- **Support**: Email globalgovernanceframework@gmail.com
+- **Support**: Email globalgovernanceframeworks@gmail.com
 - **Access**: Multilingual, braille, audio formats at globalgovernanceframework.org.
 
 ---

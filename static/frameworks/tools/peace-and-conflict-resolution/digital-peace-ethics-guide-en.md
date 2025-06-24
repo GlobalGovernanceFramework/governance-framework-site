@@ -42,4 +42,4 @@ Digital tools can amplify peace or escalate conflicts:
 Access these in the *Peace & Conflict Resolution Seed Kit* via the [Tools Library](/frameworks/tools/peace).
 
 ## Call to Action
-Lead ethical digital peacebuilding by auditing platforms, training communities, or deploying decentralized tools. Start with the *Peace-Technology Ethics Assessment* and explore the full framework at [Tools Library](/frameworks/tools/peace). Share feedback at [globalgovernanceframework@gmail.com] to shape the future of digital peace.
+Lead ethical digital peacebuilding by auditing platforms, training communities, or deploying decentralized tools. Start with the *Peace-Technology Ethics Assessment* and explore the full framework at [Tools Library](/frameworks/tools/peace). Share feedback at [globalgovernanceframeworks@gmail.com] to shape the future of digital peace.

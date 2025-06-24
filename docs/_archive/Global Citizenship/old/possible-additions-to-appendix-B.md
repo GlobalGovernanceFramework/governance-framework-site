@@ -1,5 +1,5 @@
 ### 7.2 Expert Network
-A global network of AUBI implementation experts is available for consultation. Contact globalgovernanceframework@gmail.com for referrals to specialists in:
+A global network of AUBI implementation experts is available for consultation. Contact globalgovernanceframeworks@gmail.com for referrals to specialists in:
 - Legal framework development
 - Payment system design
 - Community engagement

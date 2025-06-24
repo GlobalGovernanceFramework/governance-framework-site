@@ -432,7 +432,7 @@ The Living Mandala for Planetary Mental Health framework is an early-stage conce
 
 **Currently Available:**
 - ✅ Framework documentation and conceptual implementation guides
-- ✅ Basic inquiries via globalgovernanceframework@gmail.com
+- ✅ Basic inquiries via globalgovernanceframeworks@gmail.com
 
 **Early Development Stage:**
 - 🚧 All implementation programs, networks, and specialized services are conceptual
@@ -440,7 +440,7 @@ The Living Mandala for Planetary Mental Health framework is an early-stage conce
 - 🚧 Seeking partnerships with mental health professionals and advocates
 
 ### **Contact Information** 📞
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Website**: globalgovernanceframework.org
 - **Purpose**: Framework feedback, collaboration inquiries, academic discussion
 
@@ -454,7 +454,7 @@ The framework is currently seeking:
 ### **Important Note** 🌐
 This framework represents conceptual development work rather than an operational program. All implementation guidance is theoretical and would require substantial community validation, professional review, and pilot testing before any real-world application.
 
-**For collaboration or feedback**: Contact globalgovernanceframework@gmail.com with "Mental Health Framework Feedback" in the subject line.
+**For collaboration or feedback**: Contact globalgovernanceframeworks@gmail.com with "Mental Health Framework Feedback" in the subject line.
 
 ---
 

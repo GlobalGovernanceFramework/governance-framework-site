@@ -576,7 +576,7 @@ Cultural sensitivity protocols ensure that consciousness governance authenticall
 
 **Contact Information**:
 Global Governance Framework Consortium  
-Email: globalgovernanceframework@gmail.com  
+Email: globalgovernanceframeworks@gmail.com  
 Website: [globalgovernanceframework.org]
 
 **License**: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)

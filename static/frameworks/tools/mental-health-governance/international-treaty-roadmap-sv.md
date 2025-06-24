@@ -476,7 +476,7 @@ Artikel X: Samhällssuveränitet inom mental hälsa
 ## Kontakt och implementeringsstöd
 
 ### **Implementeringsvägledning** 📞
-- **Primär kontakt**: globalgovernanceframework@gmail.com
+- **Primär kontakt**: globalgovernanceframeworks@gmail.com
 - **Ämnesrad**: "Internationell fördragsfärdplan"
 - **Webbplats**: globalgovernanceframework.org
 

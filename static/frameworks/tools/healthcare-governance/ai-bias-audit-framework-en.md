@@ -273,14 +273,14 @@ Audits prioritize cultural safety, indigenous sovereignty, and equity.
   - [Community Engagement Toolkit](/frameworks/tools/planetary-health/community-engagement-toolkit-en.pdf)
   - [Health Equity Dashboard Template](/frameworks/tools/planetary-health/health-equity-dashboard-en.pdf)
 - **Support Channels**:
-  - Email: [globalgovernanceframework@gmail.com]
+  - Email: [globalgovernanceframeworks@gmail.com]
   - Community Portal: [globalgovernanceframework.org/contact]
   - Quarterly AI Ethics Review Cycles for feedback.
 - **Training Resources**:
   - Cultural Competency Training Module (Tools Library).
   - AI Ethics and Bias Audit Workshop (online, multilingual).
 
-**Call to Action**: Start by identifying AI systems in use and forming an audit team with hub coordinators. Use the Community Engagement Toolkit to gather community input. Contact [globalgovernanceframework@gmail.com] for AI ethics training or to join audit pilot programs.
+**Call to Action**: Start by identifying AI systems in use and forming an audit team with hub coordinators. Use the Community Engagement Toolkit to gather community input. Contact [globalgovernanceframeworks@gmail.com] for AI ethics training or to join audit pilot programs.
 
 ---
 

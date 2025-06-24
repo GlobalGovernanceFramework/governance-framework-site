@@ -323,13 +323,13 @@ Financial Planning and Counseling:
 **Current Status Note:** The Global Guardian Framework is in active development. 
 Currently available:
 - ✅ Framework documentation and just transition planning guidance
-- ✅ General support via globalgovernanceframework@gmail.com
+- ✅ General support via globalgovernanceframeworks@gmail.com
 - 🚧 Direct financial support programs (in development)
 - 🚧 Training and skills development programs (in development)
 - 🚧 Economic security and support services (in development)
 
 **Support Services Access:**
-- **Individual Transition Planning**: [Contact globalgovernanceframework@gmail.com with subject "Individual Transition Planning"]
+- **Individual Transition Planning**: [Contact globalgovernanceframeworks@gmail.com with subject "Individual Transition Planning"]
 - **Skills Development Programs**: [Contact with subject "Skills Development Support"]
 - **Economic Security Support**: [Contact with subject "Economic Security Support"]
 - **Financial Planning Services**: [Contact with subject "Financial Planning Support"]
@@ -1295,7 +1295,7 @@ Funding Organizations: _________________ Date: _________
 **Current Status Note:** The Global Guardian Framework is in active development. 
 Currently available:
 - ✅ Framework documentation and just transition planning guidance
-- ✅ General support via globalgovernanceframework@gmail.com
+- ✅ General support via globalgovernanceframeworks@gmail.com
 - 🚧 Training and capacity building programs (in development)
 - 🚧 Technical assistance and mentoring services (in development)
 - 🚧 Funding and resource mobilization support (in development)
@@ -1303,19 +1303,19 @@ Currently available:
 **Capacity Building Services:**
 
 **Individual and Worker Support:**
-- **Career Transition Planning**: [Contact globalgovernanceframework@gmail.com with subject "Career Transition Planning"]
+- **Career Transition Planning**: [Contact globalgovernanceframeworks@gmail.com with subject "Career Transition Planning"]
 - **Skills Assessment and Development**: [Contact with subject "Skills Development Support"]
 - **Financial Planning and Counseling**: [Contact with subject "Financial Planning Support"]
 - **Job Placement and Career Services**: [Contact with subject "Career Services Support"]
 
 **Business Development Support:**
-- **Business Transformation Planning**: [Contact globalgovernanceframework@gmail.com with subject "Business Transformation Support"]
+- **Business Transformation Planning**: [Contact globalgovernanceframeworks@gmail.com with subject "Business Transformation Support"]
 - **Cooperative Development**: [Contact with subject "Cooperative Development Support"]
 - **Market Development and Marketing**: [Contact with subject "Market Development Support"]
 - **Financial Management and Investment**: [Contact with subject "Business Financial Support"]
 
 **Community Development Support:**
-- **Community Planning and Facilitation**: [Contact globalgovernanceframework@gmail.com with subject "Community Planning Support"]
+- **Community Planning and Facilitation**: [Contact globalgovernanceframeworks@gmail.com with subject "Community Planning Support"]
 - **Economic Development Strategy**: [Contact with subject "Economic Development Support"]
 - **Partnership Development**: [Contact with subject "Partnership Development Support"]
 - **Grant Writing and Funding**: [Contact with subject "Funding Support"]
@@ -1325,13 +1325,13 @@ Currently available:
 **Professional Support Networks:**
 
 **Expert Networks:**
-- **Economic Development Specialists**: [Contact globalgovernanceframework@gmail.com with subject "Economic Development Expertise"]
+- **Economic Development Specialists**: [Contact globalgovernanceframeworks@gmail.com with subject "Economic Development Expertise"]
 - **Business Development Mentors**: [Contact with subject "Business Mentoring"]
 - **Cooperative Development Advisors**: [Contact with subject "Cooperative Development Expertise"]
 - **Community Organizing Specialists**: [Contact with subject "Community Organizing Support"]
 
 **Peer Learning Networks:**
-- **Community-to-Community Learning**: [Contact globalgovernanceframework@gmail.com with subject "Peer Learning Networks"]
+- **Community-to-Community Learning**: [Contact globalgovernanceframeworks@gmail.com with subject "Peer Learning Networks"]
 - **Worker Transition Support Groups**: [Contact with subject "Worker Support Groups"]
 - **Business Owner Networks**: [Contact with subject "Business Owner Networks"]
 - **Best Practice Sharing**: [Contact with subject "Best Practice Sharing"]
@@ -1341,13 +1341,13 @@ Currently available:
 **Resource Mobilization Support:**
 
 **Funding Strategy Development:**
-- **Grant Identification and Writing**: [Contact globalgovernanceframework@gmail.com with subject "Grant Development Support"]
+- **Grant Identification and Writing**: [Contact globalgovernanceframeworks@gmail.com with subject "Grant Development Support"]
 - **Investment Attraction**: [Contact with subject "Investment Attraction Support"]
 - **Crowdfunding and Community Investment**: [Contact with subject "Community Investment Support"]
 - **Social Impact Financing**: [Contact with subject "Social Impact Financing"]
 
 **Resource Partnerships:**
-- **Foundation Partnerships**: [Contact globalgovernanceframework@gmail.com with subject "Foundation Partnership Development"]
+- **Foundation Partnerships**: [Contact globalgovernanceframeworks@gmail.com with subject "Foundation Partnership Development"]
 - **Government Program Access**: [Contact with subject "Government Program Support"]
 - **Private Sector Partnerships**: [Contact with subject "Private Sector Partnership"]
 - **International Cooperation**: [Contact with subject "International Partnership Support"]
@@ -1431,7 +1431,7 @@ Implementation Planning:
 **Just Transition Planning Support:**
 
 **Primary Support:**
-- **Email:** globalgovernanceframework@gmail.com
+- **Email:** globalgovernanceframeworks@gmail.com
 - **Website:** globalgovernanceframework.org
 - **Subject Lines for Transition-Specific Support:**
   - "Just Transition Planning" - for comprehensive transition planning and coordination
@@ -1442,14 +1442,14 @@ Implementation Planning:
   - "Resource Mobilization" - for funding and resource development support
 
 **Specialized Support Areas:**
-- **Economic Development**: [Contact globalgovernanceframework@gmail.com with subject "Economic Development Support"]
+- **Economic Development**: [Contact globalgovernanceframeworks@gmail.com with subject "Economic Development Support"]
 - **Workforce Development**: [Contact with subject "Workforce Development Support"]
 - **Rural Transition**: [Contact with subject "Rural Transition Support"]
 - **Indigenous Community Transition**: [Contact with subject "Indigenous Transition Support"]
 - **Youth and Next Generation**: [Contact with subject "Youth Transition Support"]
 
 **Regional Transition Networks:**
-- **Americas Transition Network**: [Contact globalgovernanceframework@gmail.com with subject "Americas Transition Network"]
+- **Americas Transition Network**: [Contact globalgovernanceframeworks@gmail.com with subject "Americas Transition Network"]
 - **Europe Transition Initiative**: [Contact with subject "Europe Transition Initiative"]
 - **Asia-Pacific Transition Platform**: [Contact with subject "Asia-Pacific Transition Platform"]
 
@@ -1542,7 +1542,7 @@ This just transition planning framework represents current best practices in equ
 This Just Transition Planning Workbook was developed through consultation with community development practitioners, economic development specialists, labor organizers, cooperative developers, and affected communities from diverse economic and cultural contexts. The workbook represents collective wisdom while maintaining flexibility for adaptation to different economic situations and cultural values.
 
 **Feedback and Continuous Improvement:**
-We welcome feedback from community leaders, workers, business owners, and other stakeholders using this transition planning workbook. Please share your experiences, innovations, and recommendations with globalgovernanceframework@gmail.com using subject "Just Transition Workbook Feedback".
+We welcome feedback from community leaders, workers, business owners, and other stakeholders using this transition planning workbook. Please share your experiences, innovations, and recommendations with globalgovernanceframeworks@gmail.com using subject "Just Transition Workbook Feedback".
 
 **Community Solidarity and Learning:**
 This workbook supports collaborative learning and mutual support among communities undertaking just transitions. We encourage sharing of experiences, strategies, and resources to strengthen the movement for equitable economic transition worldwide.

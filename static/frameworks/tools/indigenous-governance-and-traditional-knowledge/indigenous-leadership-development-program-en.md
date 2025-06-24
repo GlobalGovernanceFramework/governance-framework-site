@@ -426,7 +426,7 @@ The program offers specialized tracks while maintaining integrated traditional k
 - International exchange and global Indigenous leadership development
 
 **Contact Information:**
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Subject Line**: "Indigenous Leadership Development Program - [Community/Individual Application]"
 - **Website**: globalgovernanceframework.org/indigenous-leadership
 

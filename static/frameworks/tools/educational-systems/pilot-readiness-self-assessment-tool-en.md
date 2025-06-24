@@ -139,4 +139,4 @@ In Sudan, this tool identified funding and training gaps for a Seed Kit pilot, s
 - Seed Kit Pilot ([Section 4.3](/frameworks/docs/implementation/education#04-implementation-strategies))
 
 ## Download
-Available at [framework website](https://www.globalgovernanceframework.org/frameworks/docs/implementation/education) as Word, PDF, online survey, markdown, and accessible formats (audio, braille, oral). Contact [globalgovernanceframework@gmail.com] for translation requests or support.
+Available at [framework website](https://www.globalgovernanceframework.org/frameworks/docs/implementation/education) as Word, PDF, online survey, markdown, and accessible formats (audio, braille, oral). Contact [globalgovernanceframeworks@gmail.com] for translation requests or support.

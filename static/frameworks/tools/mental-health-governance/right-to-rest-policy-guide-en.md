@@ -912,7 +912,7 @@ The Right to Rest Policy Implementation Guide represents a fundamental shift in 
 
 **Living Document Status**: This guide is designed for continuous evolution based on implementation experience and emerging research. Current version represents comprehensive analysis as of June 2025 with regular updates planned based on community feedback and policy developments.
 
-**Contact for Implementation Support**: globalgovernanceframework@gmail.com with subject line "Right to Rest Implementation Support"
+**Contact for Implementation Support**: globalgovernanceframeworks@gmail.com with subject line "Right to Rest Implementation Support"
 
 ---
 

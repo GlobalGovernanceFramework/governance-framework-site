@@ -365,7 +365,7 @@ Verktygslådan för kulturell anpassning gör det möjligt för gemenskaper att 
 Ramverket Living Mandala for Planetary Mental Health representerar omfattande forskningssyntes och iterativ förfining genom flera AI-system, integrerande evidensbaserade praxis med gemenskapsledda ansatser till mental hälsa.
 
 ### **Kulturell anpassningsstöd** 📞
-- **Primär kontakt**: globalgovernanceframework@gmail.com
+- **Primär kontakt**: globalgovernanceframeworks@gmail.com
 - **Ämnesrad**: "Cultural Adaptation Toolkit Support"
 - **Webbplats**: globalgovernanceframework.org
 

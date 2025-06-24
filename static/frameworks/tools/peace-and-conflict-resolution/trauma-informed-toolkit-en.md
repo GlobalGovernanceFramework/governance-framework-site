@@ -66,4 +66,4 @@ Facilitators play a critical role in creating safe, inclusive spaces for dialogu
 The toolkit is open-access, with translations planned for Spanish, Arabic, and French. Non-digital templates and radio scripts ensure accessibility for low-literacy and low-connectivity communities, prioritizing inclusion for marginalized groups (e.g., refugees, Indigenous populations).
 
 #### 10. Call to Action
-Facilitators can transform conflicts by creating safe, inclusive spaces. Start by training in NVC and trauma-informed mediation, then lead a dialogue using this toolkit. Share feedback at [globalgovernanceframework@gmail.com] to join a global peacebuilding community.
+Facilitators can transform conflicts by creating safe, inclusive spaces. Start by training in NVC and trauma-informed mediation, then lead a dialogue using this toolkit. Share feedback at [globalgovernanceframeworks@gmail.com] to join a global peacebuilding community.

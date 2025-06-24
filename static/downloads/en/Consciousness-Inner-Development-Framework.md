@@ -122,7 +122,7 @@ The framework is accessible through the Global Governance Framework website, des
 - **Download**: Access the complete framework as a PDF via the [Downloads](/downloads) section.
 - **Navigate**: Use this index to explore sections sequentially or jump to specific topics via section links or stakeholder pathways.
 - **Access Tools**: Browse all implementation tools in PDF and markdown formats at the [Tools Library](/frameworks/tools/consciousness).
-- **Engage**: Share feedback through the contact portal or email [globalgovernanceframework@gmail.com]. Feedback is incorporated through quarterly consciousness review cycles with community oversight.
+- **Engage**: Share feedback through the contact portal or email [globalgovernanceframeworks@gmail.com]. Feedback is incorporated through quarterly consciousness review cycles with community oversight.
 - **Amplify**: Leverage multimedia assets including consciousness literacy materials, infographics, and community engagement tools to advocate for adoption at local, national, or global levels.
 - **Implement**: Use the [Implementation Tools](#implementation-tools) to launch initiatives, starting with the "Conscious Governance Starter Kit" for communities and organizations.
 
@@ -132,7 +132,7 @@ The framework is accessible through the Global Governance Framework website, des
 
 **About the Framework**: Developed through collaboration with global governance experts, indigenous wisdom keepers, youth leaders, and affected communities worldwide, this framework synthesizes evidence-based practices with innovative approaches, maintained by the Consciousness Accord development consortium.
 
-**Contribute**: Help expand accessibility by volunteering for translation, community documentation, digital platform development, or pilot implementation. Contact us at [globalgovernanceframework@gmail.com] to join the conscious governance movement.
+**Contribute**: Help expand accessibility by volunteering for translation, community documentation, digital platform development, or pilot implementation. Contact us at [globalgovernanceframeworks@gmail.com] to join the conscious governance movement.
 
 # Manifesto: The Consciousness Accord
 
@@ -156,7 +156,7 @@ We call upon all stakeholders to embrace consciousness as the foundation of gove
 - Communities co-create solutions via [Consciousness-Raising Circles](/frameworks/docs/consciousness#07-community-engagement).
 - Global challenges—climate crises, inequality, technological risks—are met with wisdom.
 
-Join us by launching pilots with the [Conscious Governance Starter Kit](/frameworks/tools/consciousness/conscious-governance-starter-kit-en.zip), advocating at [Global Consciousness Summits](/frameworks/docs/consciousness#13-implementation-roadmap), or contributing at [globalgovernanceframework@gmail.com].
+Join us by launching pilots with the [Conscious Governance Starter Kit](/frameworks/tools/consciousness/conscious-governance-starter-kit-en.zip), advocating at [Global Consciousness Summits](/frameworks/docs/consciousness#13-implementation-roadmap), or contributing at [globalgovernanceframeworks@gmail.com].
 
 **Infographic Placeholder**: *Conscious Governance Timeline (2026–2035)* to visualize pilot launches, scaling, and systemic transformation.
 
@@ -216,7 +216,7 @@ We are the Consciousness Accord Consortium, comprising:
 - **Community Organizers**: Leaders from 50+ grassroots networks across Africa, Asia, and Latin America.
 - **Partners**: UN Harmony with Nature, Inner Development Goals (IDG) networks, and Club of Rome.
 
-Formed through dialogues at the 2024 UN Summit of the Future, our consortium operates as an open coalition. Join by contributing to pilots, translations, or platforms at [globalgovernanceframework@gmail.com].
+Formed through dialogues at the 2024 UN Summit of the Future, our consortium operates as an open coalition. Join by contributing to pilots, translations, or platforms at [globalgovernanceframeworks@gmail.com].
 
 **Coalition-Building Strategy**: We recruit via [Global Consciousness Summits](/frameworks/docs/consciousness#13-implementation-roadmap), regional hubs, and digital platforms, prioritizing diverse representation and co-design, as detailed in [Stakeholder Engagement](/frameworks/docs/consciousness#07-community-engagement).
 
@@ -224,7 +224,7 @@ Formed through dialogues at the 2024 UN Summit of the Future, our consortium ope
 
 **Cross-Reference Note**: This manifesto connects to [Introduction](/frameworks/docs/consciousness#01-introduction) for context, [Governance Structure](/frameworks/docs/consciousness#01-governance-structure) for implementation, and [Conclusion](/frameworks/docs/consciousness#15-conclusion) for the final call to action.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Feedback welcome at [globalgovernanceframeworks@gmail.com].
 
 **Equity Commitment**: All materials are open-access under CC BY-SA 4.0, with translations prioritized for pilot regions and underserved communities.
 
@@ -625,7 +625,7 @@ These comprehensive mitigations, detailed in [Implementation Roadmap](/framework
 
 **Cross-Reference Note**: This section connects to [Personal Transformation](/frameworks/docs/consciousness#02-personal-transformation) for leadership training, [Collective Consciousness](/frameworks/docs/consciousness#03-collective-consciousness) for community engagement, [Economic Realignment](/frameworks/docs/consciousness#06-economic-realignment) for funding models, and [Implementation Roadmap](/frameworks/docs/consciousness#13-implementation-roadmap) for detailed scaling strategies.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Feedback welcome at [globalgovernanceframeworks@gmail.com].
 
 **Equity Commitment**: All materials are open-access under CC BY-SA 4.0, with translations prioritized for pilot regions and underserved communities.
 
@@ -1322,7 +1322,7 @@ Personal transformation for consciousness governance faces predictable challenge
 
 **Cross-Reference Note**: This section connects to [Governance Structure](/frameworks/docs/consciousness#01-governance-structure) for institutional integration, [Collective Consciousness](/frameworks/docs/consciousness#03-collective-consciousness) for community engagement, [Spiral Dynamics Integration](/frameworks/docs/consciousness#05-spiral-dynamics) for developmental awareness, and [Assessment and Accountability](/frameworks/docs/consciousness#09-metrics-accountability) for measurement frameworks.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin personal transformation with the [Mindfulness Training Module](/frameworks/tools/consciousness/mindfulness-training-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin personal transformation with the [Mindfulness Training Module](/frameworks/tools/consciousness/mindfulness-training-en.pdf). Feedback welcome at [globalgovernanceframeworks@gmail.com].
 
 **Equity Commitment**: All personal transformation materials are open-access under CC BY-SA 4.0, with sliding scale training options and scholarships prioritized for underrepresented communities and developing regions.
 
@@ -2185,7 +2185,7 @@ Collective consciousness development faces predictable challenges that require p
 
 **Cross-Reference Note**: This section connects to [Personal Transformation](/frameworks/docs/consciousness#02-personal-transformation) for individual preparation, [Governance Structure](/frameworks/docs/consciousness#01-governance-structure) for institutional integration, [Spiral Dynamics Integration](/frameworks/docs/consciousness#05-spiral-dynamics) for understanding diverse value systems, and [Community Engagement](/frameworks/docs/consciousness#07-community-engagement) for broader participation strategies.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin collective consciousness development with the [Community Dialogue Manual](/frameworks/tools/consciousness/community-dialogue-manual-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin collective consciousness development with the [Community Dialogue Manual](/frameworks/tools/consciousness/community-dialogue-manual-en.pdf). Feedback welcome at [globalgovernanceframeworks@gmail.com].
 
 **Equity Commitment**: All collective consciousness materials are open-access under CC BY-SA 4.0, with priority support for marginalized communities and resources for removing participation barriers including interpretation, childcare, and accessibility accommodations.
 
@@ -3367,7 +3367,7 @@ Anticipating and managing the complex challenges and risks associated with syste
 
 **Cross-Reference Note**: This section connects to [Governance Structure](/frameworks/docs/consciousness#01-governance-structure) for institutional frameworks, [Personal Transformation](/frameworks/docs/consciousness#02-personal-transformation) for individual preparation, [Collective Consciousness](/frameworks/docs/consciousness#03-collective-consciousness) for community engagement, [Spiral Dynamics Integration](/frameworks/docs/consciousness#05-spiral-dynamics) for understanding diverse value systems, and [Economic Realignment](/frameworks/docs/consciousness#06-economic-realignment) for alternative economic models.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin systemic integration with the [Institutional Design Framework](/frameworks/tools/consciousness/institutional-design-framework-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin systemic integration with the [Institutional Design Framework](/frameworks/tools/consciousness/institutional-design-framework-en.pdf). Feedback welcome at [globalgovernanceframeworks@gmail.com].
 
 **Equity Commitment**: All systemic integration materials are open-access under CC BY-SA 4.0, with priority technical assistance for marginalized communities and resources for removing implementation barriers including funding, training, and institutional support.
 
@@ -4687,7 +4687,7 @@ Addressing potential misuses and ethical challenges in applying Spiral Dynamics 
 
 **Cross-Reference Note**: This section connects to [Personal Transformation](/frameworks/docs/consciousness#02-personal-transformation) for individual development understanding, [Collective Consciousness](/frameworks/docs/consciousness#03-collective-consciousness) for community engagement across difference, [Systemic Integration](/frameworks/docs/consciousness#04-systemic-integration) for institutional value system adaptation, and [Cross-Cultural Translation](/frameworks/docs/consciousness#12-cross-cultural-translation) for cultural sensitivity in implementation.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin value system understanding with the [Value System Assessment Toolkit](/frameworks/tools/consciousness/value-system-assessment-toolkit-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin value system understanding with the [Value System Assessment Toolkit](/frameworks/tools/consciousness/value-system-assessment-toolkit-en.pdf). Feedback welcome at [globalgovernanceframeworks@gmail.com].
 
 **Equity Commitment**: All Spiral Dynamics integration materials are open-access under CC BY-SA 4.0, with priority support for community-led adaptation, indigenous partnership, and resources for preventing cultural appropriation while supporting authentic cultural expression and development.
 
@@ -6695,7 +6695,7 @@ Anticipating and managing challenges in economic realignment while maintaining c
 
 **Cross-Reference Note**: This section connects to [Systemic Integration](/frameworks/docs/consciousness#04-systemic-integration) for broader transformation context, [Collective Consciousness](/frameworks/docs/consciousness#03-collective-consciousness) for community engagement approaches, [Governance Structure](/frameworks/docs/consciousness#01-governance-structure) for democratic decision-making frameworks, and [Ecological Integration](/frameworks/docs/consciousness#08-environmental-ecological-integration) for environmental sustainability.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin economic realignment with the [Community Economic Assessment Toolkit](/frameworks/tools/consciousness/community-economic-assessment-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin economic realignment with the [Community Economic Assessment Toolkit](/frameworks/tools/consciousness/community-economic-assessment-en.pdf). Feedback welcome at [globalgovernanceframeworks@gmail.com].
 
 **Equity Commitment**: All economic realignment materials are open-access under CC BY-SA 4.0, with priority support for worker and community ownership development, cooperative enterprise support, and resources for building community wealth and economic democracy while addressing historical economic injustices.
 
@@ -8784,7 +8784,7 @@ Anticipating and addressing common challenges in community engagement while main
 
 **Cross-Reference Note**: This section connects to [Personal Transformation](/frameworks/docs/consciousness#02-personal-transformation) for individual preparation, [Collective Consciousness](/frameworks/docs/consciousness#03-collective-consciousness) for group processes, [Governance Structure](/frameworks/docs/consciousness#01-governance-structure) for institutional integration, and [Digital Platforms](/frameworks/docs/consciousness#10-digital-platforms) for technology-enhanced engagement.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin community engagement with the [Community Engagement Assessment Framework](/frameworks/tools/consciousness/community-engagement-assessment-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin community engagement with the [Community Engagement Assessment Framework](/frameworks/tools/consciousness/community-engagement-assessment-en.pdf). Feedback welcome at [globalgovernanceframeworks@gmail.com].
 
 **Equity Commitment**: All community engagement materials are open-access under CC BY-SA 4.0, with priority support for marginalized communities, resources for removing participation barriers, and emphasis on community control over engagement processes and outcomes.
 
@@ -10091,7 +10091,7 @@ Addressing common challenges in maintaining consciousness governance principles 
 
 **Cross-Reference Note**: This section connects to [Governance Structure](/frameworks/docs/consciousness#01-governance-structure) for democratic emergency systems, [Personal Transformation](/frameworks/docs/consciousness#02-personal-transformation) for leadership under pressure, [Collective Consciousness](/frameworks/docs/consciousness#03-collective-consciousness) for community mobilization, and [Systemic Integration](/frameworks/docs/consciousness#04-systemic-integration) for institutional crisis preparedness.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin crisis preparedness with the [Community Resilience Assessment Toolkit](/frameworks/tools/consciousness/community-resilience-assessment-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin crisis preparedness with the [Community Resilience Assessment Toolkit](/frameworks/tools/consciousness/community-resilience-assessment-en.pdf). Feedback welcome at [globalgovernanceframeworks@gmail.com].
 
 **Equity Commitment**: All crisis response materials are open-access under CC BY-SA 4.0, with priority support for frontline communities most vulnerable to crises and resources for building community-controlled emergency response capacity.
 
@@ -12291,7 +12291,7 @@ Systematic evaluation and enhancement of digital platforms to ensure they effect
 
 **Cross-Reference Note**: This section connects to [Governance Structure](/frameworks/docs/consciousness#01-governance-structure) for institutional integration, [Collective Consciousness](/frameworks/docs/consciousness#03-collective-consciousness) for community engagement, [Systemic Integration](/frameworks/docs/consciousness#04-systemic-integration) for broader system transformation, and [Ethical AI Governance](/frameworks/docs/consciousness#11-ethical-ai-governance) for responsible artificial intelligence deployment.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin digital platform development with the [Digital Platform Assessment Toolkit](/frameworks/tools/consciousness/digital-platform-assessment-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin digital platform development with the [Digital Platform Assessment Toolkit](/frameworks/tools/consciousness/digital-platform-assessment-en.pdf). Feedback welcome at [globalgovernanceframeworks@gmail.com].
 
 **Equity Commitment**: All digital platform materials are open-access under CC BY-SA 4.0, with priority support for community-controlled development, digital equity initiatives, and resources for addressing technology access barriers while ensuring community sovereignty over digital infrastructure and governance.
 
@@ -13739,7 +13739,7 @@ Anticipating and managing the complex challenges and risks associated with ethic
 
 **Cross-Reference Note**: This section connects to [Digital Platforms](/frameworks/docs/consciousness#10-digital-platforms) for AI-enhanced governance tools, [Systemic Integration](/frameworks/docs/consciousness#04-systemic-integration) for embedding AI governance in broader systems, [Personal Transformation](/frameworks/docs/consciousness#02-personal-transformation) for developing AI governance leadership, and [Global Cooperation](/frameworks/docs/consciousness#17-international-cooperation) for international AI governance coordination.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin ethical AI governance with the [AI Ethics Assessment Framework](/frameworks/tools/consciousness/ai-ethics-assessment-framework-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin ethical AI governance with the [AI Ethics Assessment Framework](/frameworks/tools/consciousness/ai-ethics-assessment-framework-en.pdf). Feedback welcome at [globalgovernanceframeworks@gmail.com].
 
 **Equity Commitment**: All ethical AI governance materials are open-access under CC BY-SA 4.0, with priority support for communities working to democratize AI development and deployment, and resources for building local capacity for AI governance and oversight while protecting community sovereignty and cultural values.
 
@@ -15340,7 +15340,7 @@ Comprehensive frameworks for identifying, preventing, and addressing risks in cr
 
 **Cross-Reference Note**: This section connects to [Spiral Dynamics Integration](/frameworks/docs/consciousness#05-spiral-dynamics) for value system understanding, [Collective Consciousness](/frameworks/docs/consciousness#03-collective-consciousness) for community engagement across difference, [Systemic Integration](/frameworks/docs/consciousness#04-systemic-integration) for institutional cultural adaptation, and [Implementation Roadmap](/frameworks/docs/consciousness#13-implementation-roadmap) for phased cultural translation development.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin cross-cultural translation with the [Deep Cultural Engagement Protocol Manual](/frameworks/tools/consciousness/deep-cultural-engagement-protocol-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin cross-cultural translation with the [Deep Cultural Engagement Protocol Manual](/frameworks/tools/consciousness/deep-cultural-engagement-protocol-en.pdf). Feedback welcome at [globalgovernanceframeworks@gmail.com].
 
 **Equity Commitment**: All cross-cultural translation materials are open-access under CC BY-SA 4.0, with priority support for indigenous and traditional communities, resources for preventing cultural appropriation, and requirements for community benefit sharing in all cultural knowledge use.
 
@@ -16739,7 +16739,7 @@ Comprehensive framework for measuring consciousness governance effectiveness, im
 
 **Cross-Reference Note**: This section connects to [Governance Structure](/frameworks/docs/consciousness#01-governance-structure) for institutional frameworks, [Personal Transformation](/frameworks/docs/consciousness#02-personal-transformation) for individual development, [Collective Consciousness](/frameworks/docs/consciousness#03-collective-consciousness) for community engagement, [Systemic Integration](/frameworks/docs/consciousness#04-systemic-integration) for institutional embedding, [Spiral Dynamics Integration](/frameworks/docs/consciousness#05-spiral-dynamics) for value system navigation, and [Metrics and Accountability](/frameworks/docs/consciousness#09-metrics-accountability) for measurement frameworks.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin implementation with the [Conscious Governance Starter Kit](/frameworks/tools/consciousness/conscious-governance-starter-kit-en.zip). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin implementation with the [Conscious Governance Starter Kit](/frameworks/tools/consciousness/conscious-governance-starter-kit-en.zip). Feedback welcome at [globalgovernanceframeworks@gmail.com].
 
 **Equity Commitment**: All implementation materials are open-access under CC BY-SA 4.0, with priority support for Global South communities, indigenous-led initiatives, and resources for removing implementation barriers including funding, training, and technical assistance.
 
@@ -18347,7 +18347,7 @@ Standards and best practices for creating accessible, culturally sensitive, and 
 
 **Cross-Reference Note**: This section connects to all framework components by providing visual representation tools. It supports [Governance Structure](/frameworks/docs/consciousness#01-governance-structure) with institutional diagrams, [Implementation Roadmap](/frameworks/docs/consciousness#13-implementation-roadmap) with process flowcharts, [Spiral Dynamics Integration](/frameworks/docs/consciousness#05-spiral-dynamics) with value system visualizations, and [Cross-Cultural Translation](/frameworks/docs/consciousness#12-cross-cultural-translation) with cultural adaptation guidelines.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin visual implementation with the [Visual Communication Toolkit](/frameworks/tools/consciousness/visual-communication-toolkit-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin visual implementation with the [Visual Communication Toolkit](/frameworks/tools/consciousness/visual-communication-toolkit-en.pdf). Feedback welcome at [globalgovernanceframeworks@gmail.com].
 
 **Equity Commitment**: All visual architecture materials are open-access under CC BY-SA 4.0, with priority support for community-led adaptation, accessibility accommodation, and resources for creating culturally appropriate visual communications that honor diverse ways of knowing and aesthetic traditions.
 
@@ -18616,7 +18616,7 @@ The transformation begins with you. The transformation begins now.
 
 ---
 
-**Access and Implementation**: Begin your consciousness governance journey by downloading the [Conscious Governance Starter Kit](/frameworks/tools/consciousness/conscious-governance-starter-kit-en.zip). Connect with the global network through [globalgovernanceframework@gmail.com]. Access all tools and resources at the [Tools Library](/frameworks/tools/consciousness).
+**Access and Implementation**: Begin your consciousness governance journey by downloading the [Conscious Governance Starter Kit](/frameworks/tools/consciousness/conscious-governance-starter-kit-en.zip). Connect with the global network through [globalgovernanceframeworks@gmail.com]. Access all tools and resources at the [Tools Library](/frameworks/tools/consciousness).
 
 **Cross-Reference Integration**: This conclusion synthesizes all framework elements: [Manifesto](/frameworks/docs/consciousness#00-manifesto) vision, [Governance Structure](/frameworks/docs/consciousness#01-governance-structure) implementation, [Personal Transformation](/frameworks/docs/consciousness#02-personal-transformation) foundation, [Collective Consciousness](/frameworks/docs/consciousness#03-collective-consciousness) community building, [Systemic Integration](/frameworks/docs/consciousness#04-systemic-integration) institutional change, [Spiral Dynamics](/frameworks/docs/consciousness#05-spiral-dynamics) cultural sensitivity, [Economic Realignment](/frameworks/docs/consciousness#06-economic-realignment) material support, [Community Engagement](/frameworks/docs/consciousness#07-community-engagement) grassroots power, [Crisis Response](/frameworks/docs/consciousness#08-crisis-response) emergency protocols, [Metrics and Accountability](/frameworks/docs/consciousness#09-metrics-accountability) assessment systems, [Digital Platforms](/frameworks/docs/consciousness#10-digital-platforms) technological integration, [Ethical AI](/frameworks/docs/consciousness#11-ethical-ai-governance) responsible innovation, [Cross-Cultural Translation](/frameworks/docs/consciousness#12-cross-cultural-translation) global adaptation, [Implementation Roadmap](/frameworks/docs/consciousness#13-implementation-roadmap) strategic planning, and [Visual Architecture](/frameworks/docs/consciousness#14-visual-architecture-map) system design.
 

@@ -25,7 +25,7 @@
 > **Proposal**: Integrate framework components (e.g., polycentric networks, [Section 3.1](/frameworks/docs/implementation/education#03-structural-components)) via pilot programs, supported by educator training ([Section 3.8](/frameworks/docs/implementation/education#03-structural-components)).  
 > **Benefits**: Enhances equity (90% diversity compliance, [Section 5.3](/frameworks/docs/implementation/education#05-monitoring-evaluation)), fosters resilience, and builds global citizenship.  
 > **Call to Action**: Approve $500K pilot funding and curriculum flexibility, with M&E to track impact ([Section 5](/frameworks/docs/implementation/education#05-monitoring-evaluation)).  
-> **Contact**: [Local Champion Name], [globalgovernanceframework@gmail.com].
+> **Contact**: [Local Champion Name], [globalgovernanceframeworks@gmail.com].
 
 **Instructions**:
 - Customize with local data (e.g., regional SDGs, case model outcomes).
@@ -147,5 +147,5 @@ In Vietnam, local champions used this toolkit to secure ministry approval for a 
 - Spiral Dynamics Pilot Case Model ([Section 8.4](/frameworks/docs/implementation/education#08-case-models))
 
 ## Download
-Available at [framework website](https://www.globalgovernanceframework.org) as PDF, Word, markdown, and accessible formats (audio, braille, oral). Contact [globalgovernanceframework@gmail.com] for translation requests or support.
+Available at [framework website](https://www.globalgovernanceframework.org) as PDF, Word, markdown, and accessible formats (audio, braille, oral). Contact [globalgovernanceframeworks@gmail.com] for translation requests or support.
 

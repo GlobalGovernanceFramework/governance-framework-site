@@ -1473,19 +1473,19 @@ Post-Award Support:
 **Current Status Note:** The Global Guardian Framework is in active development. 
 Currently available:
 - ✅ Framework documentation and innovation challenge guidance
-- ✅ General support via globalgovernanceframework@gmail.com
+- ✅ General support via globalgovernanceframeworks@gmail.com
 - 🚧 Innovation challenge fund programs and application support (in development)
 - 🚧 Mentorship networks and technical assistance (in development)
 - 🚧 Market development and partnership facilitation (in development)
 
 **Application Development Support:**
-- **Innovation Concept Development**: [Contact globalgovernanceframework@gmail.com with subject "Innovation Concept Development"]
+- **Innovation Concept Development**: [Contact globalgovernanceframeworks@gmail.com with subject "Innovation Concept Development"]
 - **Technical Feasibility Assessment**: [Contact with subject "Innovation Technical Assessment"]
 - **Business Model Development**: [Contact with subject "Innovation Business Development"]
 - **Market Validation Support**: [Contact with subject "Innovation Market Validation"]
 
 **Application Writing and Review Support:**
-- **Application Writing Workshops**: [Contact globalgovernanceframework@gmail.com with subject "Innovation Application Workshops"]
+- **Application Writing Workshops**: [Contact globalgovernanceframeworks@gmail.com with subject "Innovation Application Workshops"]
 - **Peer Review and Feedback**: [Contact with subject "Innovation Application Review"]
 - **Expert Consultation**: [Contact with subject "Innovation Expert Consultation"]
 - **Final Application Review**: [Contact with subject "Innovation Application Final Review"]
@@ -1495,13 +1495,13 @@ Currently available:
 **Innovation Support Network:**
 
 **Technical Mentorship and Guidance:**
-- **Animal Welfare Science**: [Contact globalgovernanceframework@gmail.com with subject "Innovation Welfare Science Mentorship"]
+- **Animal Welfare Science**: [Contact globalgovernanceframeworks@gmail.com with subject "Innovation Welfare Science Mentorship"]
 - **Technology Development**: [Contact with subject "Innovation Technology Mentorship"]
 - **Manufacturing and Production**: [Contact with subject "Innovation Manufacturing Mentorship"]
 - **Regulatory and Compliance**: [Contact with subject "Innovation Regulatory Mentorship"]
 
 **Business Development Support:**
-- **Market Development and Sales**: [Contact globalgovernanceframework@gmail.com with subject "Innovation Market Development"]
+- **Market Development and Sales**: [Contact globalgovernanceframeworks@gmail.com with subject "Innovation Market Development"]
 - **Financial Planning and Fundraising**: [Contact with subject "Innovation Financial Planning"]
 - **Partnership Development**: [Contact with subject "Innovation Partnership Development"]
 - **Scaling and Growth Strategy**: [Contact with subject "Innovation Scaling Strategy"]
@@ -1511,13 +1511,13 @@ Currently available:
 **Innovation Community Building:**
 
 **Innovator Networks and Collaboration:**
-- **Innovation Community Platform**: [Contact globalgovernanceframework@gmail.com with subject "Innovation Community Network"]
+- **Innovation Community Platform**: [Contact globalgovernanceframeworks@gmail.com with subject "Innovation Community Network"]
 - **Peer Learning and Support Groups**: [Contact with subject "Innovation Peer Learning"]
 - **Collaborative Development Projects**: [Contact with subject "Innovation Collaboration"]
 - **Knowledge Sharing and Best Practices**: [Contact with subject "Innovation Knowledge Sharing"]
 
 **Industry and Market Connections:**
-- **Industry Partnership Development**: [Contact globalgovernanceframework@gmail.com with subject "Innovation Industry Partnerships"]
+- **Industry Partnership Development**: [Contact globalgovernanceframeworks@gmail.com with subject "Innovation Industry Partnerships"]
 - **Customer and Market Access**: [Contact with subject "Innovation Market Access"]
 - **Investor and Funding Connections**: [Contact with subject "Innovation Investor Connections"]
 - **Policy and Advocacy Support**: [Contact with subject "Innovation Policy Support"]
@@ -1587,7 +1587,7 @@ Business Model Viability Assessment:
 **Innovation Challenge Fund Support:**
 
 **Primary Support:**
-- **Email:** globalgovernanceframework@gmail.com
+- **Email:** globalgovernanceframeworks@gmail.com
 - **Website:** globalgovernanceframework.org
 - **Subject Lines for Innovation-Specific Support:**
   - "Innovation Concept Development" - for concept development and refinement
@@ -1598,14 +1598,14 @@ Business Model Viability Assessment:
   - "Innovation Partnership Development" - for partnership and collaboration
 
 **Specialized Innovation Areas:**
-- **Alternative Protein Innovation**: [Contact globalgovernanceframework@gmail.com with subject "Alternative Protein Innovation"]
+- **Alternative Protein Innovation**: [Contact globalgovernanceframeworks@gmail.com with subject "Alternative Protein Innovation"]
 - **Welfare Monitoring Technology**: [Contact with subject "Welfare Monitoring Innovation"]
 - **Humane Production Systems**: [Contact with subject "Humane Production Innovation"]
 - **Market and Financial Innovation**: [Contact with subject "Market Innovation"]
 - **Community Technology Solutions**: [Contact with subject "Community Technology Innovation"]
 
 **Regional Innovation Networks:**
-- **Americas Innovation Hub**: [Contact globalgovernanceframework@gmail.com with subject "Americas Innovation Hub"]
+- **Americas Innovation Hub**: [Contact globalgovernanceframeworks@gmail.com with subject "Americas Innovation Hub"]
 - **Europe Innovation Network**: [Contact with subject "Europe Innovation Network"]
 - **Asia-Pacific Innovation Platform**: [Contact with subject "Asia-Pacific Innovation Platform"]
 - **Global South Innovation Initiative**: [Contact with subject "Global South Innovation Initiative"]
@@ -1720,7 +1720,7 @@ Innovation in animal welfare is rapidly evolving with emerging opportunities in:
 This Innovation Challenge Fund Application Kit was developed through consultation with innovation fund managers, successful entrepreneurs, animal welfare scientists, technology experts, and community representatives from diverse sectors and regions. The kit represents collective expertise while maintaining flexibility for adaptation to different innovation types and funding contexts.
 
 **Feedback and Continuous Improvement:**
-We welcome feedback from innovators, funders, mentors, and other stakeholders using this innovation challenge framework. Please share your experiences, innovations, and recommendations with globalgovernanceframework@gmail.com using subject "Innovation Kit Feedback".
+We welcome feedback from innovators, funders, mentors, and other stakeholders using this innovation challenge framework. Please share your experiences, innovations, and recommendations with globalgovernanceframeworks@gmail.com using subject "Innovation Kit Feedback".
 
 **Innovation Ecosystem Support:**
 This kit supports the broader innovation ecosystem for animal welfare while providing specific guidance for challenge fund applications. We encourage collaboration with existing innovation programs and networks to strengthen the overall ecosystem for welfare-positive innovation.

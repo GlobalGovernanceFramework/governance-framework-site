@@ -19,7 +19,7 @@ The **Cost-Benefit Analysis Model** enables jurisdictions to evaluate the financ
 5. **Evaluate Social Outcomes**: Incorporate qualitative social benefits (e.g., trust, equity) using monetization proxies where applicable.
 6. **Monitor and Report**: Track results using provided metrics, integrating into the framework’s metrics dashboard ([Monitoring and Accountability](/frameworks/docs/implementation/justice-systems#06-monitoring-accountability)).
 7. **Adapt as Needed**: Modify up to 20% of the model (e.g., adjust cost categories) with approval from Regional Justice Hubs ([Appendices](/frameworks/docs/implementation/justice-systems#11-appendices)).
-8. **Seek Support**: Submit analysis plans to Regional Justice Hubs for technical assistance or funding via [globalgovernanceframework@gmail.com].
+8. **Seek Support**: Submit analysis plans to Regional Justice Hubs for technical assistance or funding via [globalgovernanceframeworks@gmail.com].
 
 ## Cost-Benefit Analysis Principles
 The following principles guide the analysis, ensuring alignment with the framework’s commitment to equity, transparency, and evidence-based decision-making:
@@ -249,7 +249,7 @@ Track the following metrics to assess analysis effectiveness, integrating into t
 ## Implementation and Support
 - **Launch**: Convene a stakeholder meeting to finalize the analysis plan by [date, e.g., Q3 2027].
 - **Submit**: Share plans and reports with Regional Justice Hubs via secure platforms or offline channels ([Tools Library](/frameworks/tools/justice-systems)).
-- **Request Assistance**: Contact [globalgovernanceframework@gmail.com] for analytical tools, funding, or support.
+- **Request Assistance**: Contact [globalgovernanceframeworks@gmail.com] for analytical tools, funding, or support.
 - **Feedback**: Submit model usability feedback via the engagement platform for biannual updates (July and January).
 
 ## Monitoring Progress

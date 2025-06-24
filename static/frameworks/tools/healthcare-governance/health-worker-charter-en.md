@@ -93,5 +93,5 @@ Together, we will create health systems that honor every life, preserve cultural
 ---
 
 **Access the Charter**: Available in PDF and editable markdown at [Tools Library](/frameworks/tools/planetary-health).  
-**Feedback**: Share input via [globalgovernanceframework@gmail.com].  
+**Feedback**: Share input via [globalgovernanceframeworks@gmail.com].  
 **Related Resources**: Explore [Community Engagement Playbook](/frameworks/tools/planetary-health/community-engagement-playbook-en.pdf) and [Cultural Competency Guidelines](/frameworks/tools/planetary-health/cultural-competency-guidelines-en.pdf) for implementation support.

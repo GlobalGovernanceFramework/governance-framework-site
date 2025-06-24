@@ -354,7 +354,7 @@ This template provides practical tools while honoring the sacred responsibility 
 - 🚧 Global Indigenous alliance coordination (in development)
 
 **Contact Information:**
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Website**: globalgovernanceframework.org
 - **Subject Lines for Specific Support**:
   - "Land Rematriation Support" - for campaign planning and strategy consultation

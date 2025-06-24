@@ -485,7 +485,7 @@ The Aging Population Support Framework provides the blueprint for transforming g
 ---
 
 **Contact and Support**:
-- **Email**: globalgovernanceframework@gmail.com
+- **Email**: globalgovernanceframeworks@gmail.com
 - **Website**: agingframework.org
 - **Resources**: All tools available in multiple formats and languages
 - **Training**: Elder Ambassador and professional development programs

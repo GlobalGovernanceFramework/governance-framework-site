@@ -1139,6 +1139,6 @@ Ageism interruption is essential infrastructure for implementing the Aging Popul
 - **Website**: Visit agingframework.org/ageism for additional tools and training opportunities
 - **Community**: Join local ageism interruption practice groups and age-inclusion advocacy networks
 - **Training**: Participate in comprehensive ageism interruption workshops and train-the-trainer programs
-- **Contact**: Email globalgovernanceframework@gmail.com for consultation and implementation support
+- **Contact**: Email globalgovernanceframeworks@gmail.com for consultation and implementation support
 
 **The transformation begins now, with your commitment to challenge ageism and build age-inclusive communities where everyone can thrive throughout their lives.**

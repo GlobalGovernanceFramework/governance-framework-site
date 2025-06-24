@@ -18,7 +18,7 @@ The **Monitoring & Evaluation Rubric Template** enables jurisdictions to systema
 4. **Reflect Qualitatively**: Provide insights on challenges, successes, and contextual factors to complement quantitative scores.
 5. **Report Findings**: Submit results to Regional Justice Hubs for integration into the framework’s metrics dashboard ([Monitoring and Accountability](/frameworks/docs/implementation/justice-systems#06-monitoring-accountability)).
 6. **Develop Action Plans**: Use scores and reflections to prioritize improvements, aligning with the [Pilot Readiness Self-Assessment Tool](/frameworks/tools/justice-systems/pilot-readiness-self-assessment-tool-en.pdf).
-7. **Seek Support**: Request technical assistance or funding from Regional Justice Hubs via [globalgovernanceframework@gmail.com].
+7. **Seek Support**: Request technical assistance or funding from Regional Justice Hubs via [globalgovernanceframeworks@gmail.com].
 
 ## Monitoring & Evaluation Rubric
 
@@ -188,7 +188,7 @@ Use rubric scores to develop action plans, prioritizing low-scoring areas.
 ## Implementation and Support
 - **Launch**: Convene a monitoring team to finalize the rubric by [date, e.g., Q4 2026].
 - **Submit**: Share reports with Regional Justice Hubs via secure platforms or offline channels ([Tools Library](/frameworks/tools/justice-systems)).
-- **Request Assistance**: Contact [globalgovernanceframework@gmail.com] for training, funding, or technical support, referencing rubric results.
+- **Request Assistance**: Contact [globalgovernanceframeworks@gmail.com] for training, funding, or technical support, referencing rubric results.
 - **Feedback**: Submit template usability feedback via the engagement platform for biannual updates (July and January).
 
 ## Monitoring Progress

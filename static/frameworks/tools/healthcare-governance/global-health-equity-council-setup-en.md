@@ -295,14 +295,14 @@ The Council’s setup prioritizes cultural safety, indigenous sovereignty, and e
   - [Conflict Resolution Protocols](/frameworks/tools/planetary-health/conflict-resolution-protocols-en.pdf)
   - [Youth Advisory Board Framework](/frameworks/tools/planetary-health/youth-advisory-board-framework-en.pdf)
 - **Support Channels**:
-  - Email: [globalgovernanceframework@gmail.com]
+  - Email: [globalgovernanceframeworks@gmail.com]
   - Community Portal: [globalgovernanceframework.org/contact]
   - Monthly Health Equity Review Cycles for feedback integration.
 - **Training Resources**:
   - Cultural Competency Training Module (available in Tools Library).
   - AI Literacy Certifications for understanding Council tech systems.
 
-**Call to Action**: Begin by forming a stakeholder task force to draft the Council charter and initiate nomination processes. Use the Planetary Health Starter Kit for additional community engagement tools. Contact [globalgovernanceframework@gmail.com] to connect with pilot programs or volunteer for translation and implementation support.
+**Call to Action**: Begin by forming a stakeholder task force to draft the Council charter and initiate nomination processes. Use the Planetary Health Starter Kit for additional community engagement tools. Contact [globalgovernanceframeworks@gmail.com] to connect with pilot programs or volunteer for translation and implementation support.
 
 ---
 

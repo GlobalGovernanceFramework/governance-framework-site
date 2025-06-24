@@ -168,7 +168,7 @@ Translate assessment results into structured improvement activities using the te
 ## Peer Learning Component
 Connect with jurisdictions facing similar challenges or readiness levels to share strategies and resources.
 
-- **Peer Matching**: Regional Justice Hubs facilitate connections based on assessment scores, legal systems, or challenges (e.g., low technological capacity). Contact [globalgovernanceframework@gmail.com] to request a match.
+- **Peer Matching**: Regional Justice Hubs facilitate connections based on assessment scores, legal systems, or challenges (e.g., low technological capacity). Contact [globalgovernanceframeworks@gmail.com] to request a match.
 - **Collaboration Platforms**: Join the Implementation Community Platform ([Tools Library](/frameworks/tools/justice-systems)) by Year 2 (2027) for virtual forums, targeting 1,000 active users by Year 3.
 - **Activities**:
   - **Virtual Exchanges**: Quarterly video calls to discuss action plans and best practices (e.g., governance setup).
@@ -209,7 +209,7 @@ Based on your total score, qualitative reflections, and radar chart:
 
 ## Submission and Support
 - **Submit Results**: Share assessments, radar charts, and action plans with Regional Justice Hubs via secure platforms or offline channels ([Tools Library](/frameworks/tools/justice-systems)).
-- **Request Assistance**: Contact [globalgovernanceframework@gmail.com] for funding, training, or peer matching, referencing your score and action plan.
+- **Request Assistance**: Contact [globalgovernanceframeworks@gmail.com] for funding, training, or peer matching, referencing your score and action plan.
 - **Feedback**: Submit tool usability feedback via the engagement platform for biannual updates (July and January).
 
 ## Monitoring Progress

@@ -584,7 +584,7 @@
 ---
 
 **Contact Information**:
-- globalgovernanceframework@gmail.com
+- globalgovernanceframeworks@gmail.com
 
 **Document Status**: Living document updated based on pilot experience and community feedback
 **Next Review**: December 2025

@@ -612,7 +612,7 @@ Success Indicators:
 **Current Status Note:** The Global Guardian Framework is in active development. 
 Currently available:
 - ✅ Framework documentation and economic assessment guidance
-- ✅ General support via globalgovernanceframework@gmail.com
+- ✅ General support via globalgovernanceframeworks@gmail.com
 - 🚧 Economic modeling support services (in development)
 - 🚧 Technical assistance for impact assessment (in development)
 - 🚧 Stakeholder survey and data collection support (in development)
@@ -620,19 +620,19 @@ Currently available:
 **Assessment Support Services:**
 
 **Technical Assistance:**
-- **Methodology Consultation**: [Contact globalgovernanceframework@gmail.com with subject "Economic Assessment Methodology"]
+- **Methodology Consultation**: [Contact globalgovernanceframeworks@gmail.com with subject "Economic Assessment Methodology"]
 - **Data Collection Support**: [Contact with subject "Economic Data Collection Support"]
 - **Modeling Assistance**: [Contact with subject "Economic Modeling Support"]
 - **Validation Services**: [Contact with subject "Assessment Validation Support"]
 
 **Training and Capacity Building:**
-- **Assessment Training**: [Contact globalgovernanceframework@gmail.com with subject "Economic Assessment Training"]
+- **Assessment Training**: [Contact globalgovernanceframeworks@gmail.com with subject "Economic Assessment Training"]
 - **Methodology Workshops**: [Contact with subject "Assessment Methodology Training"]
 - **Software Training**: [Contact with subject "Economic Modeling Software Training"]
 - **Stakeholder Engagement Training**: [Contact with subject "Stakeholder Assessment Training"]
 
 **Data and Research Support:**
-- **Data Access**: [Contact globalgovernanceframework@gmail.com with subject "Economic Data Access"]
+- **Data Access**: [Contact globalgovernanceframeworks@gmail.com with subject "Economic Data Access"]
 - **Research Collaboration**: [Contact with subject "Economic Research Collaboration"]
 - **Best Practice Sharing**: [Contact with subject "Assessment Best Practices"]
 - **International Comparison**: [Contact with subject "International Assessment Comparison"]
@@ -817,7 +817,7 @@ Recommended Follow-up: [Next steps for detailed analysis]
 **Assessment Support Services:**
 
 **Primary Support:**
-- **Email:** globalgovernanceframework@gmail.com
+- **Email:** globalgovernanceframeworks@gmail.com
 - **Website:** globalgovernanceframework.org
 - **Subject Lines for Economic Assessment Support:**
   - "Economic Assessment Planning" - for assessment design and methodology guidance
@@ -828,14 +828,14 @@ Recommended Follow-up: [Next steps for detailed analysis]
   - "Training Request" - for economic assessment training and capacity building
 
 **Specialized Support Areas:**
-- **Agricultural Economics**: [Contact globalgovernanceframework@gmail.com with subject "Agricultural Economic Assessment"]
+- **Agricultural Economics**: [Contact globalgovernanceframeworks@gmail.com with subject "Agricultural Economic Assessment"]
 - **Regional Development**: [Contact with subject "Regional Economic Impact Assessment"]
 - **Labor Market Analysis**: [Contact with subject "Employment Impact Assessment"]
 - **Trade Impact Assessment**: [Contact with subject "Trade Impact Analysis"]
 - **Social Cost-Benefit Analysis**: [Contact with subject "Social Cost-Benefit Assessment"]
 
 **International Cooperation:**
-- **Comparative Analysis**: [Contact globalgovernanceframework@gmail.com with subject "International Economic Comparison"]
+- **Comparative Analysis**: [Contact globalgovernanceframeworks@gmail.com with subject "International Economic Comparison"]
 - **Best Practice Sharing**: [Contact with subject "Assessment Best Practice Exchange"]
 - **Joint Assessments**: [Contact with subject "Collaborative Economic Assessment"]
 - **Capacity Building**: [Contact with subject "International Assessment Capacity Building"]
@@ -915,7 +915,7 @@ This assessment tool represents an evolving resource that will continue to devel
 This Economic Impact Assessment Tool was developed through consultation with agricultural economists, policy analysts, industry representatives, and affected communities from diverse economic and cultural contexts. The tool represents collective experience in economic assessment while maintaining flexibility for adaptation to diverse economic systems and policy contexts.
 
 **Feedback and Continuous Improvement:**
-We welcome feedback from economists, policy makers, and stakeholders using this assessment tool. Please share your experiences, methodological innovations, and recommendations with globalgovernanceframework@gmail.com using subject "Economic Assessment Tool Feedback".
+We welcome feedback from economists, policy makers, and stakeholders using this assessment tool. Please share your experiences, methodological innovations, and recommendations with globalgovernanceframeworks@gmail.com using subject "Economic Assessment Tool Feedback".
 
 **Research and Development:**
 This tool supports ongoing research in animal welfare economics while respecting the complexity of economic systems and the importance of stakeholder knowledge in assessment processes. We encourage sharing of assessment experiences and methodological innovations across jurisdictions and contexts.

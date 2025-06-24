@@ -84,7 +84,7 @@ The framework is accessible through the Global Governance Framework website, des
 - **Download**: Access the complete framework as a PDF via the [Downloads](/downloads) section, available in large-print and audio formats.
 - **Navigate**: Use this index to explore sections sequentially or jump to specific topics via section links with elder-friendly navigation.
 - **Access Tools**: Browse all implementation tools in PDF, markdown, and elder-accessible formats at the [Tools Library](/frameworks/tools/aging).
-- **Engage**: Share feedback through the contact portal, email [globalgovernanceframework@gmail.com], or join Elder Ambassador training programs.
+- **Engage**: Share feedback through the contact portal, email [globalgovernanceframeworks@gmail.com], or join Elder Ambassador training programs.
 - **Organize**: Use political organizing toolkits to build Elder Political Coalitions and advocate for AUBI pilots.
 - **Implement**: Launch elder-led initiatives using the Elder Leadership Starter Kit and pilot templates.
 
@@ -105,7 +105,7 @@ The framework is accessible through the Global Governance Framework website, des
 
 **About the Framework**: Developed through iterative design with elder co-leadership and extensive community feedback, representing synthesized best practices from global stakeholders and elder wisdom keepers, maintained by the dedicated team at globalgovernanceframework.org.
 
-**Elder Leadership Development**: Help expand elder agency by volunteering for Ambassador training, political organizing, pilot leadership, or community facilitation. Contact us at [globalgovernanceframework@gmail.com] to join the Elder Leadership Network.
+**Elder Leadership Development**: Help expand elder agency by volunteering for Ambassador training, political organizing, pilot leadership, or community facilitation. Contact us at [globalgovernanceframeworks@gmail.com] to join the Elder Leadership Network.
 
 **The Vision Realized**: By 2040, aging represents society's greatest strength—a time when accumulated wisdom drives innovation, when economic systems become stronger through elder participation, and when intergenerational connection replaces age segregation. Every elder deserves not just survival, but agency over a thriving life of purpose, connection, and respect. **The future of aging is elder-led, and it starts now.**
 
@@ -4008,7 +4008,7 @@ The global aging population is not a tsunami to be weathered—it is a resource 
 **Take Action Today**:
 - **Visit**: agingframework.org/connect to join the global elder network
 - **Download**: [Elder Leadership Starter Kit](/frameworks/tools/aging/elder-leadership-kit-en.zip) for immediate action steps
-- **Contact**: globalgovernanceframework@gmail.com to volunteer for framework development
+- **Contact**: globalgovernanceframeworks@gmail.com to volunteer for framework development
 - **Organize**: Start an elder cooperative in your community using our tools and guides
 - **Innovate**: Join an Elder Innovation Hub or start one in your community
 - **Advocate**: Run for office or support elder candidates in your next local election

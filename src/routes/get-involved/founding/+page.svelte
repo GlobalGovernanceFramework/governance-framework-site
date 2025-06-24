@@ -141,8 +141,8 @@
 
     <!-- Main Content -->
     <div class="main-content">
-      {#if data?.foundingContent}
-        <svelte:component this={data.foundingContent} />
+      {#if data?.guideContent}
+        <svelte:component this={data.guideContent} />
       {:else}
         <div class="error-state">
           <h2>{getText('errorTitle')}</h2>

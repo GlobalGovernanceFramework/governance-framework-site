@@ -436,7 +436,7 @@ Long-term Accountability: ___________________
 ## Contact & Implementation Support
 
 ### **Implementation Guidance** 📞
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Subject Line**: "Traffic Light Assessment Framework"
 - **Website**: globalgovernanceframework.org
 

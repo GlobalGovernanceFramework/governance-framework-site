@@ -1903,7 +1903,7 @@ Elder Innovation Hubs serve as practical implementation of multiple framework co
 - **Website**: Visit agingframework.org/innovation for additional tools and consultation
 - **Network**: Connect with existing hubs and development support
 - **Training**: Access hub development training and certification programs
-- **Contact**: Email globalgovernanceframework@gmail.com for consultation and partnership
+- **Contact**: Email globalgovernanceframeworks@gmail.com for consultation and partnership
 
 **The transformation begins now, with elders leading innovation in your community.**
 

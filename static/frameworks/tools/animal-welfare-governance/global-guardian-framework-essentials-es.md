@@ -245,7 +245,7 @@ Las comunidades aborígenes emplean prácticas tradicionales de quema que proteg
 5. **Liderazgo de Abogacía**: Usar resultados de monitoreo para abogar por cambio de política y movilización de recursos
 
 **Acciones Inmediatas** (2025):
-- Contactar globalgovernanceframework@gmail.com con asunto "Programa Guardian Comunitario" para comenzar evaluación y planificación
+- Contactar globalgovernanceframeworks@gmail.com con asunto "Programa Guardian Comunitario" para comenzar evaluación y planificación
 - Descargar Kit de Inicio de Comunidad Guardian para recursos completos de implementación
 - Conectar con defensores locales y organizaciones para construcción de coaliciones
 - Asistir a reuniones comunitarias para construir consenso para mejoras de bienestar
@@ -277,7 +277,7 @@ Las comunidades aborígenes emplean prácticas tradicionales de quema que proteg
 5. **Aprendizaje Entre Pares**: Conectar con otros agricultores en transición para apoyo mutuo y compartir conocimiento
 
 **Acciones Inmediatas** (2025):
-- Contactar servicios de apoyo de transición a través de globalgovernanceframework@gmail.com con asunto "Solicitud de Transición de Agricultor"
+- Contactar servicios de apoyo de transición a través de globalgovernanceframeworks@gmail.com con asunto "Solicitud de Transición de Agricultor"
 - Aplicar para financiamiento de Bonos de Transición Justa para planificación e implementación de conversión
 - Explorar oportunidades de producción de proteína alternativa incluyendo asociaciones de carne cultivada y basada en plantas
 - Unirse a Redes de Guardian Agrícola para apoyo de pares y compartir mejores prácticas
@@ -408,7 +408,7 @@ Todo ser sintiente disfruta libertad del sufrimiento innecesario. Toda comunidad
 ### Contacto y Conexión
 
 **Información de Contacto Principal**:
-- **Correo Electrónico**: globalgovernanceframework@gmail.com
+- **Correo Electrónico**: globalgovernanceframeworks@gmail.com
 - **Sitio Web**: globalgovernanceframework.org
 - **Documentación**: Marco completo disponible en globalgovernanceframework.org/frameworks/docs/implementation/animal-welfare
 
@@ -430,7 +430,7 @@ Todo ser sintiente disfruta libertad del sufrimiento innecesario. Toda comunidad
 
 **Para Cualquier Interesado** (Próximos 30 Días):
 1. Descargar herramientas relevantes del kit de herramientas de implementación completo
-2. Contactar globalgovernanceframework@gmail.com con línea de asunto específica para su área de interés
+2. Contactar globalgovernanceframeworks@gmail.com con línea de asunto específica para su área de interés
 3. Compartir esta guía con tres personas que podrían estar interesadas en transformación de bienestar animal
 4. Identificar una mejora local de bienestar animal que pueda implementar en su comunidad
 5. Conectar con organizaciones existentes de bienestar animal o ambiental en su área
@@ -469,5 +469,5 @@ Las herramientas existen. Los caminos están claros. El movimiento global está 
 
 **Versión del Documento:** 1.0 (2025-06-07)  
 **Idiomas Disponibles**: Español, Inglés, Francés (próximamente)  
-**Contacto**: globalgovernanceframework@gmail.com  
+**Contacto**: globalgovernanceframeworks@gmail.com  
 **Marco Completo**: globalgovernanceframework.org/frameworks/docs/implementation/animal-welfare

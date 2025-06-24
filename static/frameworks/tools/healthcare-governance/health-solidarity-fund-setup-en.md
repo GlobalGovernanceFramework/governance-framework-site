@@ -236,14 +236,14 @@ The fund prioritizes cultural safety, indigenous sovereignty, and equity.
   - [Community Engagement Toolkit](/frameworks/tools/planetary-health/community-engagement-toolkit-en.pdf)
   - [Health Equity Dashboard Template](/frameworks/tools/planetary-health/health-equity-dashboard-en.pdf)
 - **Support Channels**:
-  - Email: [globalgovernanceframework@gmail.com]
+  - Email: [globalgovernanceframeworks@gmail.com]
   - Community Portal: [globalgovernanceframework.org/contact]
   - Quarterly Fund Management Review Cycles for feedback.
 - **Training Resources**:
   - Financial Management for Health Equity Workshop (Tools Library).
   - Fund Governance Training (online, multilingual).
 
-**Call to Action**: Start by forming a Fund Oversight Committee with Regional Health Hubs. Use the Community Engagement Toolkit to launch fundraising campaigns. Contact [globalgovernanceframework@gmail.com] for fund management training or pilot funding opportunities.
+**Call to Action**: Start by forming a Fund Oversight Committee with Regional Health Hubs. Use the Community Engagement Toolkit to launch fundraising campaigns. Contact [globalgovernanceframeworks@gmail.com] for fund management training or pilot funding opportunities.
 
 ---
 

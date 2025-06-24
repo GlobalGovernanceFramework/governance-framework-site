@@ -214,7 +214,7 @@ Cuando las comunidades de todo el mundo adopten su autoridad sobre las narrativa
 ## Contacto y Participación
 
 - **Sitio Web del Marco**: globalgovernanceframework.org/salud-mental
-- **Correo Electrónico**: globalgovernanceframework@gmail.com
+- **Correo Electrónico**: globalgovernanceframeworks@gmail.com
 - **Foros Comunitarios**: Espacios de discusión seguros e informados por trauma
 - **Apoyo a la Implementación**: Adaptación cultural y asistencia técnica
 - **Red Global**: Conéctate con comunidades implementando la transformación

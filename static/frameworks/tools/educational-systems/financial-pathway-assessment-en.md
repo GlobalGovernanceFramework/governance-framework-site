@@ -275,7 +275,7 @@
 
 ### Community Consultation Support
 - **Facilitation Guide**: Instructions for conducting inclusive assessment workshops
-- **Translation Support**: Contact [globalgovernanceframework@gmail.com] for additional language versions
+- **Translation Support**: Contact [globalgovernanceframeworks@gmail.com] for additional language versions
 - **Technical Assistance**: Connect with experienced Track 2 communities for guidance
 
 ### Financial Pathway Resources
@@ -296,4 +296,4 @@
 - Nordic Youth Parliaments ([Section 8.1](/frameworks/docs/implementation/education#81-nordic-youth-parliaments))
 
 ## Download
-Available at [framework website](https://www.globalgovernanceframework.org/frameworks/docs/implementation/education) as PDF, Word, online survey, markdown, and accessible formats (audio, braille, oral facilitation guides). Contact [globalgovernanceframework@gmail.com] for translation requests or consultation support.
+Available at [framework website](https://www.globalgovernanceframework.org/frameworks/docs/implementation/education) as PDF, Word, online survey, markdown, and accessible formats (audio, braille, oral facilitation guides). Contact [globalgovernanceframeworks@gmail.com] for translation requests or consultation support.

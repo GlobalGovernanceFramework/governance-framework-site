@@ -496,12 +496,12 @@ Earth Council developing diplomatic relationships with sympathetic governments a
 **Current Status Note**: The Global Governance Framework is in active development. Currently available:
 - ✅ Earth Council formation protocols and guidance
 - ✅ Traditional governance consultation support
-- ✅ General support via globalgovernanceframework@gmail.com
+- ✅ General support via globalgovernanceframeworks@gmail.com
 - 🚧 International coordination networks (in development)
 - 🚧 Leadership development programs (in development)
 
 **Contact Information**:
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Website**: globalgovernanceframework.org
 - **Subject Lines for Specific Support**:
   - "Earth Council Formation" - for community consultation and formation guidance
@@ -535,6 +535,6 @@ Earth Council developing diplomatic relationships with sympathetic governments a
 
 **Document Version**: Version 1.0 (2025-01-11)  
 **Next Review**: 2025-07-01  
-**Contact Updates**: globalgovernanceframework@gmail.com
+**Contact Updates**: globalgovernanceframeworks@gmail.com
 
 **Cultural Protocol Reminder**: Earth Council formation must follow appropriate Indigenous cultural protocols and traditional governance systems. All formation activities should strengthen rather than compromise traditional governance and occur under traditional authority and elder guidance. Sacred knowledge and ceremonial practices require absolute protection and appropriate spiritual authority permission.

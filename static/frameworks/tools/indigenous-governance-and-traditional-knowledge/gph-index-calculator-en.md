@@ -582,12 +582,12 @@ By 2045, the Pacific Northwest Bioregional Autonomous Zone demonstrates GPH supe
 **Current Status Note**: The Global Governance Framework is in active development. Currently available:
 - ✅ GPH Index calculation tools and methodology
 - ✅ Community assessment and policy integration guidance
-- ✅ General support via globalgovernanceframework@gmail.com
+- ✅ General support via globalgovernanceframeworks@gmail.com
 - 🚧 International coordination networks (in development)
 - 🚧 Government policy integration support (in development)
 
 **Contact Information**:
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Website**: globalgovernanceframework.org
 - **Subject Lines for Specific Support**:
   - "GPH Index Implementation" - for community GPH assessment and calculation support
@@ -623,7 +623,7 @@ By 2045, the Pacific Northwest Bioregional Autonomous Zone demonstrates GPH supe
 
 **Document Version**: Version 1.0 (2025-01-11)  
 **Next Review**: 2025-07-01  
-**Contact Updates**: globalgovernanceframework@gmail.com
+**Contact Updates**: globalgovernanceframeworks@gmail.com
 
 **Cultural Protocol Reminder**: GPH Index implementation must follow appropriate Indigenous cultural protocols and traditional governance systems. All measurement and evaluation activities should strengthen rather than compromise traditional knowledge transmission and occur under traditional authority and elder guidance. Sacred knowledge and cultural information require protection throughout GPH assessment and monitoring processes.
 

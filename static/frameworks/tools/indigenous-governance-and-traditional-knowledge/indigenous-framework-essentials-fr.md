@@ -383,7 +383,7 @@ Cadre contrôlé par la communauté fournissant protection automatique pour les 
 - Intégration Savoirs Traditionnels-IA et développement technologie contrôlé par communauté
 
 **Informations Contact Primaires** :
-- **Courriel** : globalgovernanceframework@gmail.com
+- **Courriel** : globalgovernanceframeworks@gmail.com
 - **Site Web** : globalgovernanceframework.org
 - **Lignes Objet pour Soutien Spécifique** :
   - "Développement ZAB" - pour implémentation Zone Autonome Biorégionale

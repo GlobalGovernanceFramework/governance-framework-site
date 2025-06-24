@@ -121,7 +121,7 @@ The templates integrate the Framework’s principles of equity, transparency, sc
    - Identify existing regional organizations in your area that may provide similar functions to the conceptual Regional Hubs.
 
 4. **Access Support**:
-   - Email [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com) for technical assistance and to discuss potential regional collaboration opportunities.
+   - Email [globalgovernanceframeworks@gmail.com](mailto:globalgovernanceframeworks@gmail.com) for technical assistance and to discuss potential regional collaboration opportunities.
    - Inquire about pilot projects or implementation partnerships related to the Regional Hub concept.
 
 5. **Monitor Progress**: Reassess the effectiveness of your briefs annually, adjusting content based on stakeholder feedback and new data.
@@ -136,10 +136,10 @@ For additional support:
 
 - **Online Resources**: Access tools and guides at [globalgovernanceframework.org/frameworks/tools/energy](https://globalgovernanceframework.org/frameworks/tools/energy).
 
-- **Technical Assistance**: Email [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com).
+- **Technical Assistance**: Email [globalgovernanceframeworks@gmail.com](mailto:globalgovernanceframeworks@gmail.com).
 
 - **Regional Governance Concepts**: Learn more about the Regional Hub framework at [globalgovernanceframework.org/frameworks/hubs](https://globalgovernanceframework.org/frameworks/hubs).
 
-- **Implementation Partnerships**: Inquire about opportunities to pilot Regional Hub functions in your region through [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com).
+- **Implementation Partnerships**: Inquire about opportunities to pilot Regional Hub functions in your region through [globalgovernanceframeworks@gmail.com](mailto:globalgovernanceframeworks@gmail.com).
 
 These templates are living documents, updated periodically. Check the website for the latest versions.

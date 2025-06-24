@@ -455,7 +455,7 @@ Comprehensive legal frameworks protecting Indigenous cultural integrity and Trad
 - Traditional governance capacity building and cultural revitalization program integration
 
 **Contact Information:**
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Subject Line**: "Cultural Integrity Protocol - [Community/Organization/Individual]"
 - **Website**: globalgovernanceframework.org/cultural-integrity
 

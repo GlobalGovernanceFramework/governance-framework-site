@@ -108,7 +108,7 @@ Innan du delar innehåll, granska det mot våra kvalitetsstandarder och övervä
 
 Effektiv utåtriktad verksamhet sker genom koordination och samarbete snarare än isolerade individuella insatser.
 
-**Gemenskapskanaler** ger utrymmen för realtidskoordination och stöd. Gå med i vår Discord-server på https://discord.gg/Zx4hMJf4JU för att komma åt dedikerade kanaler för gemenskapens utåtriktade koordination, innehållsdelning och feedback, och samarbetsprojektutveckling. För formella partnerskap, mediafrågor och strategisk planering, mejla oss på globalgovernanceframework@gmail.com.
+**Gemenskapskanaler** ger utrymmen för realtidskoordination och stöd. Gå med i vår Discord-server på https://discord.gg/Zx4hMJf4JU för att komma åt dedikerade kanaler för gemenskapens utåtriktade koordination, innehållsdelning och feedback, och samarbetsprojektutveckling. För formella partnerskap, mediafrågor och strategisk planering, mejla oss på globalgovernanceframeworks@gmail.com.
 
 **Arbetsgrupper och specialisering** tillåter gemenskapsmedlemmar att fokusera sina insatser där de kan ha mest påverkan. Innehållsskapandeteam fokuserar på sociala mediestrategier, video- och multimediaproduktion, skrivande och dokumentation, och design och visuell kommunikation. Utåtriktad specialiseringsgrupper arbetar med akademiskt och forskningsengagemang, regerings- och policyutåtriktad verksamhet, civilsamhälleanslutningar och affärs- och teknologisektorengagemang. Regionala koordinationsteam hanterar lokal gemenskapsbyggande, kulturell anpassning av meddelanden, översättning och lokalisering, och regional evenemangorganisation.
 

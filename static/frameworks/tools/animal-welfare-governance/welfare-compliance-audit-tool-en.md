@@ -784,7 +784,7 @@ For each assessed animal, evaluate:
 The Global Guardian Framework is in active development. 
 Currently available:
 - ✅ Framework documentation and audit tools
-- ✅ General support via globalgovernanceframework@gmail.com
+- ✅ General support via globalgovernanceframeworks@gmail.com
 - 🚧 Auditor training programs (in development)
 - 🚧 Certification database systems (in development)
 - 🚧 Regional auditor networks (in development)
@@ -792,19 +792,19 @@ Currently available:
 ### Audit Support Services
 
 **Training and Certification:**
-- **Auditor Training Programs**: [Contact globalgovernanceframework@gmail.com with subject "Auditor Training"]
+- **Auditor Training Programs**: [Contact globalgovernanceframeworks@gmail.com with subject "Auditor Training"]
 - **Certification Courses**: [Auditor certification programs - in development]
 - **Continuing Education**: [Contact with subject "Continuing Education"]
 - **Specialized Training**: [Contact with subject "Specialized Audit Training"]
 
 **Technical Support:**
-- **Audit Methodology Support**: [Contact globalgovernanceframework@gmail.com with subject "Audit Methodology Support"]
+- **Audit Methodology Support**: [Contact globalgovernanceframeworks@gmail.com with subject "Audit Methodology Support"]
 - **Cultural Adaptation Assistance**: [Contact with subject "Cultural Adaptation Support"]
 - **Documentation Templates**: [Contact with subject "Audit Documentation"]
 - **Technology Tools**: [Digital audit tools - in development]
 
 **Quality Assurance:**
-- **Audit Quality Review**: [Contact globalgovernanceframework@gmail.com with subject "Audit Quality Review"]
+- **Audit Quality Review**: [Contact globalgovernanceframeworks@gmail.com with subject "Audit Quality Review"]
 - **Peer Review Network**: [Auditor peer review networks - in development]
 - **Calibration Studies**: [Contact with subject "Audit Calibration"]
 - **Continuous Improvement**: [Contact with subject "Audit Improvement Feedback"]
@@ -812,7 +812,7 @@ Currently available:
 ### Contact Information
 
 **Primary Support:**
-- **Email:** globalgovernanceframework@gmail.com
+- **Email:** globalgovernanceframeworks@gmail.com
 - **Website:** globalgovernanceframework.org
 - **Subject Lines for Specific Support:**
   - "Audit Training Request" - for auditor training and certification
@@ -823,9 +823,9 @@ Currently available:
   - "Certification Status Inquiry" - for certification process information
 
 **Regional Audit Networks:** [Regional auditor networks - in development]
-- **Americas Region**: [Contact globalgovernanceframework@gmail.com with subject "Americas Audit Network"]
-- **Europe/Africa Region**: [Contact globalgovernanceframework@gmail.com with subject "Europe-Africa Audit Network"]
-- **Asia-Pacific Region**: [Contact globalgovernanceframework@gmail.com with subject "Asia-Pacific Audit Network"]
+- **Americas Region**: [Contact globalgovernanceframeworks@gmail.com with subject "Americas Audit Network"]
+- **Europe/Africa Region**: [Contact globalgovernanceframeworks@gmail.com with subject "Europe-Africa Audit Network"]
+- **Asia-Pacific Region**: [Contact globalgovernanceframeworks@gmail.com with subject "Asia-Pacific Audit Network"]
 
 ---
 
@@ -1070,7 +1070,7 @@ Currently available:
 This Welfare Compliance Audit Tool was developed through collaboration with animal welfare experts, auditors, facility managers, and community representatives. It represents best practices in welfare assessment while maintaining practical applicability across diverse contexts.
 
 **Feedback and Continuous Improvement:**
-We welcome feedback from auditors, facilities, and stakeholders using this tool. Please share your experiences, suggestions for improvement, and adaptation needs with globalgovernanceframework@gmail.com using subject "Audit Tool Feedback".
+We welcome feedback from auditors, facilities, and stakeholders using this tool. Please share your experiences, suggestions for improvement, and adaptation needs with globalgovernanceframeworks@gmail.com using subject "Audit Tool Feedback".
 
 **Cultural Adaptation:**
 This tool is designed for adaptation to different cultural contexts while maintaining core welfare standards. Communities and regions are encouraged to adapt the tool to local conditions while preserving the fundamental assessment framework.

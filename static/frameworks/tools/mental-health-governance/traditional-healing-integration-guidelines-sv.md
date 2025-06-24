@@ -741,7 +741,7 @@ Riktlinjerna för integration av traditionell läkning representerar ett grundl�
 
 **Status som levande dokument**: Denna riktlinje är utformad för kontinuerlig förbättring baserat på implementeringserfarenhet och feedback från traditionella läkningsgemenskaper. Nuvarande version representerar omfattande analys per juni 2025 med regelbundna uppdateringar planerade baserat på gemenskapsvägledning och framväxande praktiker.
 
-**Kontakt för implementeringsstöd**: globalgovernanceframework@gmail.com med ämnesraden "Traditionell läkningsintegration implementering"
+**Kontakt för implementeringsstöd**: globalgovernanceframeworks@gmail.com med ämnesraden "Traditionell läkningsintegration implementering"
 
 ---
 

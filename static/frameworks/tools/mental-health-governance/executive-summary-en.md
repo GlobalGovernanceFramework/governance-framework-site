@@ -102,4 +102,4 @@ The Living Mandala for Planetary Mental Health offers both comprehensive framewo
 
 **Framework Development**: Developed through iterative research synthesis using multiple AI systems to maximize analytical diversity and evidence integration, incorporating established mental health principles with innovative community sovereignty approaches.
 
-**Implementation Support**: Contact globalgovernanceframework@gmail.com for cultural adaptation assistance, training resources, and connection with communities implementing transformation.
+**Implementation Support**: Contact globalgovernanceframeworks@gmail.com for cultural adaptation assistance, training resources, and connection with communities implementing transformation.

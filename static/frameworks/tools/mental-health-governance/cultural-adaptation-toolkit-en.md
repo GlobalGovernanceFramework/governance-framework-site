@@ -365,7 +365,7 @@ The Cultural Adaptation Toolkit enables communities to implement the Living Mand
 The Living Mandala for Planetary Mental Health framework represents comprehensive research synthesis and iterative refinement through multiple AI systems, integrating evidence-based practices with community-led approaches to mental health.
 
 ### **Cultural Adaptation Support** 📞
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Subject Line**: "Cultural Adaptation Toolkit Support"
 - **Website**: globalgovernanceframework.org
 

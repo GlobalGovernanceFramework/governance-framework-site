@@ -52,7 +52,7 @@ The Justice Systems Implementation Framework offers a transformative opportunity
 
 - **Review Tools**: Access the [Tools Library](/frameworks/tools/justice-systems) for implementation guidance, starting with the [Policy Harmonization Toolkit](/frameworks/tools/justice-systems/policy-harmonization-toolkit-en.pdf) and [Advocacy Playbook](/frameworks/tools/justice-systems/advocacy-playbook-en.pdf).
 - **Collaborate**: Partner with Regional Justice Hubs and communities to drive reforms.
-- **Secure Support**: Contact [globalgovernanceframework@gmail.com] for funding, training, or technical assistance.
+- **Secure Support**: Contact [globalgovernanceframeworks@gmail.com] for funding, training, or technical assistance.
 - **Provide Feedback**: Submit input via the engagement platform to refine strategies, with updates biannually (July and January).
 
 By acting now, policymakers can deliver justice systems that serve all communities, achieving lasting social and economic benefits by 2035.

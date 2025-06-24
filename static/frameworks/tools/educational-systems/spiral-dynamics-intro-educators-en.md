@@ -153,7 +153,7 @@ In Kenya, 50 educators completed this module, achieving 85% comprehension and in
 
 ## Additional Resources
 - Visit [spiralize.org](https://spiralize.org) for free access to Spiral Dynamics history, topical insights, and a self-assessment test to explore personal and learner value stages.  
-- Contact [globalgovernanceframework@gmail.com] for support or translation requests.
+- Contact [globalgovernanceframeworks@gmail.com] for support or translation requests.
 
 ## Download
-Available at [framework website](#) as Word, PDF, markdown, and accessible formats (audio, braille, simplified text). Contact [globalgovernanceframework@gmail.com] for translation requests or support.
+Available at [framework website](#) as Word, PDF, markdown, and accessible formats (audio, braille, simplified text). Contact [globalgovernanceframeworks@gmail.com] for translation requests or support.

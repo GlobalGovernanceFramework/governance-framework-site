@@ -746,7 +746,7 @@ Post-Launch (1-3 months after):
 **Current Status Note:** The Global Guardian Framework is in active development. 
 Currently available:
 - ✅ Framework documentation and citizen science monitoring guidance
-- ✅ General support via globalgovernanceframework@gmail.com
+- ✅ General support via globalgovernanceframeworks@gmail.com
 - 🚧 Citizen science app development (in development)
 - 🚧 Community platform and user networks (in development)
 - 🚧 Research partnerships and data sharing systems (in development)
@@ -796,19 +796,19 @@ Global Expansion:
 **Comprehensive Support Framework:**
 
 **Technical Support Services:**
-- **App Support**: [Contact globalgovernanceframework@gmail.com with subject "Citizen Science App Support"]
+- **App Support**: [Contact globalgovernanceframeworks@gmail.com with subject "Citizen Science App Support"]
 - **Account Issues**: [Contact with subject "App Account Support"]
 - **Technical Problems**: [Contact with subject "App Technical Issues"]
 - **Feature Requests**: [Contact with subject "App Feature Request"]
 
 **Community Support:**
-- **Community Management**: [Contact globalgovernanceframework@gmail.com with subject "Community Support"]
+- **Community Management**: [Contact globalgovernanceframeworks@gmail.com with subject "Community Support"]
 - **Training and Education**: [Contact with subject "User Training Support"]
 - **Advocacy Guidance**: [Contact with subject "Advocacy Support"]
 - **Partnership Development**: [Contact with subject "Community Partnership"]
 
 **Research and Data Support:**
-- **Research Collaboration**: [Contact globalgovernanceframework@gmail.com with subject "Research Partnership"]
+- **Research Collaboration**: [Contact globalgovernanceframeworks@gmail.com with subject "Research Partnership"]
 - **Data Access**: [Contact with subject "Research Data Access"]
 - **Academic Partnerships**: [Contact with subject "Academic Collaboration"]
 - **Policy Research**: [Contact with subject "Policy Research Support"]
@@ -818,13 +818,13 @@ Global Expansion:
 **Open Development Framework:**
 
 **Development Contribution:**
-- **Code Contributions**: [Contact globalgovernanceframework@gmail.com with subject "App Development Contribution"]
+- **Code Contributions**: [Contact globalgovernanceframeworks@gmail.com with subject "App Development Contribution"]
 - **Translation Support**: [Contact with subject "App Translation Support"]
 - **Design Contributions**: [Contact with subject "App Design Support"]
 - **Testing and QA**: [Contact with subject "App Testing Support"]
 
 **Content and Educational Development:**
-- **Educational Content**: [Contact globalgovernanceframework@gmail.com with subject "Educational Content Development"]
+- **Educational Content**: [Contact globalgovernanceframeworks@gmail.com with subject "Educational Content Development"]
 - **Training Materials**: [Contact with subject "Training Material Development"]
 - **Species-Specific Protocols**: [Contact with subject "Assessment Protocol Development"]
 - **Cultural Adaptation**: [Contact with subject "Cultural Adaptation Support"]
@@ -834,13 +834,13 @@ Global Expansion:
 **Stakeholder Integration Framework:**
 
 **Organizational Partnerships:**
-- **NGO Integration**: [Contact globalgovernanceframework@gmail.com with subject "NGO Partnership"]
+- **NGO Integration**: [Contact globalgovernanceframeworks@gmail.com with subject "NGO Partnership"]
 - **Academic Collaboration**: [Contact with subject "Academic Partnership"]
 - **Government Cooperation**: [Contact with subject "Government Partnership"]
 - **Corporate Engagement**: [Contact with subject "Corporate Partnership"]
 
 **Technical Integration:**
-- **API Integration**: [Contact globalgovernanceframework@gmail.com with subject "API Integration"]
+- **API Integration**: [Contact globalgovernanceframeworks@gmail.com with subject "API Integration"]
 - **Data Sharing**: [Contact with subject "Data Sharing Partnership"]
 - **System Integration**: [Contact with subject "System Integration"]
 - **Platform Expansion**: [Contact with subject "Platform Integration"]
@@ -910,7 +910,7 @@ Impact and Effectiveness:
 **Citizen Science App Development:**
 
 **Primary Support:**
-- **Email:** globalgovernanceframework@gmail.com
+- **Email:** globalgovernanceframeworks@gmail.com
 - **Website:** globalgovernanceframework.org
 - **Subject Lines for App-Specific Support:**
   - "Citizen Science App Development" - for app development and technical guidance
@@ -921,13 +921,13 @@ Impact and Effectiveness:
   - "Cultural Adaptation" - for localization and cultural sensitivity guidance
 
 **Specialized Development Areas:**
-- **Mobile App Development**: [Contact globalgovernanceframework@gmail.com with subject "Mobile App Development Support"]
+- **Mobile App Development**: [Contact globalgovernanceframeworks@gmail.com with subject "Mobile App Development Support"]
 - **Data Analytics Platform**: [Contact with subject "Analytics Platform Development"]
 - **Community Management Tools**: [Contact with subject "Community Platform Development"]
 - **Educational Content Creation**: [Contact with subject "Educational Content Development"]
 
 **Regional Implementation Networks:**
-- **Americas Citizen Science Network**: [Contact globalgovernanceframework@gmail.com with subject "Americas Citizen Science Network"]
+- **Americas Citizen Science Network**: [Contact globalgovernanceframeworks@gmail.com with subject "Americas Citizen Science Network"]
 - **Europe Citizen Science Platform**: [Contact with subject "Europe Citizen Science Platform"]
 - **Asia-Pacific Monitoring Network**: [Contact with subject "Asia-Pacific Monitoring Network"]
 

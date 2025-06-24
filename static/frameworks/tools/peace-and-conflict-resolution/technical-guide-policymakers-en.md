@@ -249,4 +249,4 @@ Policymakers and mediators are pivotal in institutionalizing peace governance. B
 5. Building digital ethics into technological approaches
 6. Measuring both negative and positive peace indicators
 
-Download the full framework or explore additional tools at [Tools Library](/frameworks/tools/peace). Share feedback at [globalgovernanceframework@gmail.com] or on our [Discord server](https://discord.gg/Zx4hMJf4JU) to refine this work and join a global peacebuilding community.
+Download the full framework or explore additional tools at [Tools Library](/frameworks/tools/peace). Share feedback at [globalgovernanceframeworks@gmail.com] or on our [Discord server](https://discord.gg/Zx4hMJf4JU) to refine this work and join a global peacebuilding community.

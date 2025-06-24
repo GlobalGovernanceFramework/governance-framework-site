@@ -267,11 +267,11 @@ Fördraget skyddar uttryckligen subsidiaritet (lokal kontroll av lokala frågor)
 
 **För opinionsbildning**: Ladda ner den globala förvaltarnas påverkanskit med samtalsämnen, mediematerial och organiseringsresurser
 
-**För implementering**: Kontakta globalgovernanceframework@gmail.com med ämne "Fördragsimplementering" för att utforska pilotprogram
+**För implementering**: Kontakta globalgovernanceframeworks@gmail.com med ämne "Fördragsimplementering" för att utforska pilotprogram
 
 **För forskning**: Anslut med akademiska och politiska nätverk som studerar styrningsinnovation och systemisk transformation
 
-**För regeringspartners**: Kontakta globalgovernanceframework@gmail.com med ämne "Regeringspartnerskap" för att diskutera alliansmedlemskap
+**För regeringspartners**: Kontakta globalgovernanceframeworks@gmail.com med ämne "Regeringspartnerskap" för att diskutera alliansmedlemskap
 
 ### Lär dig mer
 
@@ -301,6 +301,6 @@ Fördraget för vårt enda hem tillhandahåller vägkartan. Resten är upp till 
 
 *Fördraget för vårt enda hem: Ramverk för medveten evolution från krisgenererande till motståndskraftgenererande styrsystem. Denna guide representerar omfattande forskningssyntes utvecklad genom evidensintegration och systemisk analys. Implementering bör involvera konsultation med intressenter bekanta med specifika kulturella, juridiska och tekniska sammanhang.*
 
-*För frågor, partnerskapsmöjligheter eller implementeringsstöd: globalgovernanceframework@gmail.com*
+*För frågor, partnerskapsmöjligheter eller implementeringsstöd: globalgovernanceframeworks@gmail.com*
 
 *Version 1.0 - Juni 2025*

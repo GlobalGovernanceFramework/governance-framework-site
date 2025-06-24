@@ -450,7 +450,7 @@ Vi, världens unga människor, erkänner att mentalvårdsutmaningar oproportione
 ## Kontakt och stadgestöd
 
 ### **Implementeringsvägledning** 📞
-- **Primär kontakt**: globalgovernanceframework@gmail.com
+- **Primär kontakt**: globalgovernanceframeworks@gmail.com
 - **Ämnesrad**: "Ungdomsmentalvårdsparlamentsstadga"
 - **Webbplats**: globalgovernanceframework.org
 

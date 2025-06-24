@@ -303,7 +303,7 @@ Article X: Community Sovereignty in Mental Health
 ## Contact & Implementation Support
 
 ### **Implementation Guidance** 📞
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Subject Line**: "International Treaty Roadmap"
 - **Website**: globalgovernanceframework.org
 

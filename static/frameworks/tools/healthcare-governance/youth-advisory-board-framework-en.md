@@ -236,14 +236,14 @@ The framework prioritizes cultural safety, indigenous sovereignty, and equity to
   - [Community Engagement Toolkit](/frameworks/tools/planetary-health/community-engagement-toolkit-en.pdf)
   - [Health Equity Dashboard Template](/frameworks/tools/planetary-health/health-equity-dashboard-en.pdf)
 - **Support Channels**:
-  - Email: [globalgovernanceframework@gmail.com]
+  - Email: [globalgovernanceframeworks@gmail.com]
   - Community Portal: [globalgovernanceframework.org/contact]
   - Quarterly Youth Engagement Review Cycles for feedback.
 - **Training Resources**:
   - Cultural Competency Training Module (Tools Library).
   - Youth Leadership Workshop (online, multilingual).
 
-**Call to Action**: Begin by launching a nomination campaign through the Youth Leadership Pipeline. Use the Community Engagement Toolkit to plan your first youth health forum. Contact [globalgovernanceframework@gmail.com] for training resources or to connect with regional youth networks.
+**Call to Action**: Begin by launching a nomination campaign through the Youth Leadership Pipeline. Use the Community Engagement Toolkit to plan your first youth health forum. Contact [globalgovernanceframeworks@gmail.com] for training resources or to connect with regional youth networks.
 
 ---
 

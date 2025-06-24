@@ -711,7 +711,7 @@ Dessa verktyg ingår i *startpaketet för fred och konfliktlösning*, tillgängl
 
 **Rättviseåtagande**: Alla MHPSS-resurser är med öppen tillgång, med översättningar planerade för spanska, arabiska och franska. Icke-digitala verktyg (t.ex. pappersbaserade mallar, radioskript) och samhällsledda ansatser säkerställer tillgänglighet för samhällen med låg läskunnighet och låg anslutning, prioriterar inkludering för marginaliserade grupper (t.ex. flyktingar, ursprungsbefolkningar).
 
-**Uppmaning till handling**: Intressenter kan stärka fredsbyggande genom att bädda in MHPSS i sina initiativ. Börja med att utbilda facilitatorer med *trauma-informerade faciliteringsverktygslådan*, etablera *säkra utrymmen* eller förespråka mental hälsa bestämmelser i fredsavtal. Dela feedback på [globalgovernanceframework@gmail.com] för att gå med i en global fredsbyggande gemenskap.
+**Uppmaning till handling**: Intressenter kan stärka fredsbyggande genom att bädda in MHPSS i sina initiativ. Börja med att utbilda facilitatorer med *trauma-informerade faciliteringsverktygslådan*, etablera *säkra utrymmen* eller förespråka mental hälsa bestämmelser i fredsavtal. Dela feedback på [globalgovernanceframeworks@gmail.com] för att gå med i en global fredsbyggande gemenskap.
 
 ### Utvecklingsbaserade värdesystem och fred
 
@@ -1327,7 +1327,7 @@ För att mildra dessa återkommande misspunkter bör utövare lägga till dessa 
 
 Dessa verktyg ingår i *startpaketet för fred och konfliktlösning*, tillgängligt via [verktygsbiblioteket](/frameworks/tools/peace).
 
-**Uppmaning till handling**: Analysera dina planerade fredsstyrningsinitiativ mot dessa misspunkter före implementering. Genomför en pre-implementering misslyckandet analys, testa dina antaganden rigoröst och bygg in anpassningsmekanismer från start. Dela implementeringsutmaningar på [globalgovernanceframework@gmail.com] eller på vår [Discord server](https://discord.gg/Zx4hMJf4JU) för att bidra till vårt kollektiva lärande om både framgångar och misslyckanden i fredsbyggande.
+**Uppmaning till handling**: Analysera dina planerade fredsstyrningsinitiativ mot dessa misspunkter före implementering. Genomför en pre-implementering misslyckandet analys, testa dina antaganden rigoröst och bygg in anpassningsmekanismer från start. Dela implementeringsutmaningar på [globalgovernanceframeworks@gmail.com] eller på vår [Discord server](https://discord.gg/Zx4hMJf4JU) för att bidra till vårt kollektiva lärande om både framgångar och misslyckanden i fredsbyggande.
 
 # Visualiseringar för ramverket för fred och konfliktlösning
 
@@ -1764,7 +1764,7 @@ Ramverket är tillgängligt genom flera kanaler designade för att tjäna olika 
 - **Ladda ner**: Få tillgång till det kompletta ramverket som PDF via [nedladdnings](/downloads) sektionen på vår webbplats, eller ladda ner individuella avsnitt för fokuserad implementering.
 - **Navigera**: Använd detta index för att utforska avsnitt sekventiellt eller hoppa till specifika ämnen via avsnittsläkar ovan.
 - **Få tillgång till verktyg**: Bläddra bland alla implementeringsverktyg i både PDF- och markdown-format på [verktygsbiblioteket](/frameworks/tools/peace).
-- **Engagera**: Dela feedback genom vår kontaktportal eller e-post [globalgovernanceframework@gmail.com], bidra till iterativa förbättringar.
+- **Engagera**: Dela feedback genom vår kontaktportal eller e-post [globalgovernanceframeworks@gmail.com], bidra till iterativa förbättringar.
 - **Implementera**: Börja med de praktiska [implementeringsverktygen](#implementation-tools) för att initiera fredsstyrningsförbättringar i ditt sammanhang, börja med "startpaketet för fred och konfliktlösning."
 - **Anpassa**: Modifiera ansatser för att passa ditt specifika lokala, nationella eller regionala sammanhang samtidigt som du bibehåller anpassning till kärnprinciper.
 
@@ -1788,7 +1788,7 @@ Få tillgång till dessa resurser i [visuella resursbiblioteket](/frameworks/vis
 
 **Om ramverket**: Utvecklat genom omfattande konsultation med fredsbyggare, akademiker och utövare från olika sammanhang representerar detta ramverk syntetiserade bästa praxis från globala erfarenheter av konflikttransformation, underhållet av ett dedikerat team på globalgovernanceframework.org.
 
-**Bidra**: Hjälp till att utöka tillgängligheten genom att volontära för översättning, dokumentformatering eller fallstudieutveckling. Kontakta oss på [globalgovernanceframework@gmail.com] för att gå med i gemenskapen.
+**Bidra**: Hjälp till att utöka tillgängligheten genom att volontära för översättning, dokumentformatering eller fallstudieutveckling. Kontakta oss på [globalgovernanceframeworks@gmail.com] för att gå med i gemenskapen.
 
 ### Lättillgängliga guider för fred och konfliktlösning
 
@@ -2082,7 +2082,7 @@ Beslutsfattare och medlare är avgörande för att institutionalisera fredsstyrn
 5. Bygga digital etik i teknologiska tillvägagångssätt
 6. Mäta både negativa och positiva fredsindikatorer
 
-Ladda ner det fullständiga ramverket eller utforska ytterligare verktyg på [Tools Library](/frameworks/tools/peace). Dela feedback på [globalgovernanceframework@gmail.com] eller på vår [Discord server](https://discord.gg/Zx4hMJf4JU) för att förfina detta arbete och gå med i en global fredsbyggande gemenskap.
+Ladda ner det fullständiga ramverket eller utforska ytterligare verktyg på [Tools Library](/frameworks/tools/peace). Dela feedback på [globalgovernanceframeworks@gmail.com] eller på vår [Discord server](https://discord.gg/Zx4hMJf4JU) för att förfina detta arbete och gå med i en global fredsbyggande gemenskap.
 
 # Samhällsguide för fredsimplementering
 
@@ -2129,7 +2129,7 @@ Samhällen är hjärtat i fredsbyggande, bygger broar över klyftor genom förtr
 Få tillgång till dessa i *startpaketet för fred och konfliktlösning* via [verktygsbiblioteket](/frameworks/tools/peace).
 
 ## Uppmaning till handling
-Du kan driva fred i ditt samhälle. Börja med att bilda en *lokal fredskommitté*, organisera ett dialogforum eller vara värd för en workshop i digital kunskap. Utforska *startpaketet* och hela ramverket på [verktygsbiblioteket](/frameworks/tools/peace). Dela dina insatser på [globalgovernanceframework@gmail.com] för att gå med i en global fredsbyggande gemenskap.
+Du kan driva fred i ditt samhälle. Börja med att bilda en *lokal fredskommitté*, organisera ett dialogforum eller vara värd för en workshop i digital kunskap. Utforska *startpaketet* och hela ramverket på [verktygsbiblioteket](/frameworks/tools/peace). Dela dina insatser på [globalgovernanceframeworks@gmail.com] för att gå med i en global fredsbyggande gemenskap.
 
 # Ungdomsfredshandlingsguide
 
@@ -2192,7 +2192,7 @@ Så här kan ett fredsväggsögonblick se ut! Vad skulle du lägga till? 🎨�
 Få tillgång till dessa i *Peace & Conflict Resolution Seed Kit* via [Tools Library](/frameworks/tools/peace).
 
 ## Uppmaning till handling
-Du har makten att bygga fred! 🚀🌟🕊️ Börja smått—organisera en fredsklubb, dela ett fredsinlägg eller arrangera en dialog. Kolla in *Seed Kit* och det fullständiga ramverket på [Tools Library](/frameworks/tools/peace). Berätta om ditt arbete på [globalgovernanceframework@gmail.com] för att gå med ungdomsfredsbyggare världen över! 🌎
+Du har makten att bygga fred! 🚀🌟🕊️ Börja smått—organisera en fredsklubb, dela ett fredsinlägg eller arrangera en dialog. Kolla in *Seed Kit* och det fullständiga ramverket på [Tools Library](/frameworks/tools/peace). Berätta om ditt arbete på [globalgovernanceframeworks@gmail.com] för att gå med ungdomsfredsbyggare världen över! 🌎
 
 # Digital fredsetikguide
 
@@ -2238,5 +2238,5 @@ Digitala verktyg kan förstärka fred eller eskalera konflikter:
 Få tillgång till dessa i *startpaketet för fred och konfliktlösning* via [verktygsbiblioteket](/frameworks/tools/peace).
 
 ## Uppmaning till handling
-Led etiskt digitalt fredsbyggande genom att revidera plattformar, utbilda samhällen eller använda decentraliserade verktyg. Börja med *bedömningen av fredsteknologietik* och utforska hela ramverket på [verktygsbiblioteket](/frameworks/tools/peace). Dela feedback på [globalgovernanceframework@gmail.com] för att forma framtiden för digital fred.
+Led etiskt digitalt fredsbyggande genom att revidera plattformar, utbilda samhällen eller använda decentraliserade verktyg. Börja med *bedömningen av fredsteknologietik* och utforska hela ramverket på [verktygsbiblioteket](/frameworks/tools/peace). Dela feedback på [globalgovernanceframeworks@gmail.com] för att forma framtiden för digital fred.
 

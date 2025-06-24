@@ -122,7 +122,7 @@ The framework is accessible through the Global Governance Framework website, des
 - **Download**: Access the complete framework as a PDF via the [Downloads](/downloads) section.
 - **Navigate**: Use this index to explore sections sequentially or jump to specific topics via section links or stakeholder pathways.
 - **Access Tools**: Browse all implementation tools in PDF and markdown formats at the [Tools Library](/frameworks/tools/planetary-health).
-- **Engage**: Share feedback through the contact portal or email [globalgovernanceframework@gmail.com]. Feedback is incorporated through monthly health equity review cycles with community oversight.
+- **Engage**: Share feedback through the contact portal or email [globalgovernanceframeworks@gmail.com]. Feedback is incorporated through monthly health equity review cycles with community oversight.
 - **Amplify**: Leverage multimedia assets including health literacy materials, infographics, and community engagement tools to advocate for adoption at local, national, or global levels.
 - **Implement**: Use the [Implementation Tools](#implementation-tools) to launch initiatives, starting with the "Planetary Health Starter Kit" for communities and organizations.
 
@@ -132,7 +132,7 @@ The framework is accessible through the Global Governance Framework website, des
 
 **About the Framework**: Developed through extensive collaboration with global health experts, community health workers, indigenous health leaders, and affected communities worldwide, this framework synthesizes evidence-based practices with innovative approaches, maintained by the Planetary Health Accord development consortium.
 
-**Contribute**: Help expand accessibility by volunteering for translation, community health documentation, technology development, or pilot implementation. Contact us at [globalgovernanceframework@gmail.com] to join the planetary health movement.
+**Contribute**: Help expand accessibility by volunteering for translation, community health documentation, technology development, or pilot implementation. Contact us at [globalgovernanceframeworks@gmail.com] to join the planetary health movement.
 
 # Manifesto: The Planetary Health Accord
 
@@ -4426,7 +4426,7 @@ The Planetary Health Accord begins with each of us choosing **healing over harm*
 
 **Start Implementation**: Begin with the [Planetary Health Starter Kit](/frameworks/tools/planetary-health/planetary-health-starter-kit-en.zip) for immediate community action
 
-**Join the Movement**: Connect with implementation communities at [globalgovernanceframework@gmail.com]
+**Join the Movement**: Connect with implementation communities at [globalgovernanceframeworks@gmail.com]
 
 **Share the Vision**: Amplify the Planetary Health Accord through social media, community presentations, and policy advocacy
 

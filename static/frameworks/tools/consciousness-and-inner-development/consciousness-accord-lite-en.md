@@ -164,7 +164,7 @@ Rwanda's post-genocide recovery used traditional "Gacaca" courts—community cir
 - Connect with others in your area working on these approaches
 
 **📧 Get Involved:**
-Email globalgovernanceframework@gmail.com to:
+Email globalgovernanceframeworks@gmail.com to:
 - Find consciousness governance initiatives near you
 - Access training and educational resources
 - Share your own experiences and successes

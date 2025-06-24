@@ -22,7 +22,7 @@ The **Policy Harmonization Toolkit** supports jurisdictions in aligning national
 8. **Use Templates**: Adapt templates for drafts, gap analyses, and compliance checklists.
 9. **Monitor and Evaluate**: Track progress using metrics, integrating into the framework’s metrics dashboard ([Monitoring and Accountability](/frameworks/docs/implementation/justice-systems#06-monitoring-accountability)).
 10. **Adapt as Needed**: Modify up to 20% of the toolkit with approval from Regional Justice Hubs ([Appendices](/frameworks/docs/implementation/justice-systems#11-appendices)).
-11. **Seek Support**: Submit plans to Regional Justice Hubs via [globalgovernanceframework@gmail.com].
+11. **Seek Support**: Submit plans to Regional Justice Hubs via [globalgovernanceframeworks@gmail.com].
 
 ## Policy Harmonization Principles
 The following principles guide harmonization, ensuring alignment with equity, inclusivity, and transparency:
@@ -283,7 +283,7 @@ Track metrics to assess harmonization effectiveness, integrating into the framew
 ## Implementation and Support
 - **Launch**: Convene a stakeholder meeting to finalize the plan by [date, e.g., Q2 2027].
 - **Submit**: Share plans and reports with Regional Justice Hubs via secure platforms or offline channels ([Tools Library](/frameworks/tools/justice-systems)).
-- **Request Assistance**: Contact [globalgovernanceframework@gmail.com] for expertise, funding, or support.
+- **Request Assistance**: Contact [globalgovernanceframeworks@gmail.com] for expertise, funding, or support.
 - **Feedback**: Submit toolkit feedback for biannual updates (July and January).
 
 ## Monitoring Progress

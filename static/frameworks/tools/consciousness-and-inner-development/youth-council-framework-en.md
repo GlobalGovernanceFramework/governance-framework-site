@@ -843,7 +843,7 @@ The framework provides pathways for youth to develop as conscious leaders while 
 
 **Contact Information**:
 Global Governance Framework Consortium  
-Email: globalgovernanceframework@gmail.com  
+Email: globalgovernanceframeworks@gmail.com  
 Website: [globalgovernanceframework.org]
 
 **License**: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)

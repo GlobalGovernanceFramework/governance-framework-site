@@ -500,7 +500,7 @@ KAPITEL 4: SAMHÄLLSANSVARIGHET
 ## Kontakt och implementeringsstöd
 
 ### **Implementeringsvägledning** 📞
-- **Primär kontakt**: globalgovernanceframework@gmail.com
+- **Primär kontakt**: globalgovernanceframeworks@gmail.com
 - **Ämnesrad**: "Nationell kommissionsbildningsguide"
 - **Webbplats**: globalgovernanceframework.org
 

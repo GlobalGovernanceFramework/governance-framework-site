@@ -571,7 +571,7 @@ Ramverket för Stöd till Åldrande Befolkning erbjuder en ritning för att omva
 
 **Kontakt och Stöd**:
 
-* **E-post**: [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com)
+* **E-post**: [globalgovernanceframeworks@gmail.com](mailto:globalgovernanceframeworks@gmail.com)
 * **Webbplats**: agingframework.org
 * **Resurser**: Tillgängliga i flera format och språk
 * **Utbildning**: Äldreambassadörs- och yrkesprogram

@@ -21,7 +21,7 @@ The **Restorative Justice Guide** supports jurisdictions in integrating restorat
 7. **Leverage Case Studies**: Adapt best practices to local contexts.
 8. **Monitor and Evaluate**: Track progress using provided metrics, integrating results into the framework’s metrics dashboard ([Monitoring and Accountability](/frameworks/docs/implementation/justice-systems#06-monitoring-accountability)).
 9. **Adapt as Needed**: Modify up to 20% of content (e.g., add indigenous practices) with Regional Justice Hub approval ([Appendices](/frameworks/docs/implementation/justice-systems#11-appendices)).
-10. **Seek Support**: Submit plans to Regional Justice Hubs for funding, training, or technical assistance via [globalgovernanceframework@gmail.com].
+10. **Seek Support**: Submit plans to Regional Justice Hubs for funding, training, or technical assistance via [globalgovernanceframeworks@gmail.com].
 
 ## Restorative Justice Principles
 Restorative justice is grounded in the following principles, aligned with the framework’s commitment to universal access, cultural sensitivity, and transparency:
@@ -227,7 +227,7 @@ Track metrics to assess program effectiveness, integrating into the framework’
 ## Implementation and Support
 - **Launch**: Convene a stakeholder meeting to finalize the plan by [date, e.g., Q2 2026].
 - **Submit**: Share plans and reports with Regional Justice Hubs ([Tools Library](/frameworks/tools/justice-systems)).
-- **Request Assistance**: Contact [globalgovernanceframework@gmail.com] for training, funding, or support.
+- **Request Assistance**: Contact [globalgovernanceframeworks@gmail.com] for training, funding, or support.
 - **Feedback**: Submit guide usability feedback for biannual updates (July and January).
 
 ## Monitoring Progress

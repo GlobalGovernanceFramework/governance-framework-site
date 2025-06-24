@@ -80,7 +80,7 @@ This legislative template provides a comprehensive framework for transforming me
 ## Contact & Implementation Support
 
 ### **Implementation Guidance** 📞
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Subject Line**: "Rights-Based Legislation Template"
 - **Website**: globalgovernanceframework.org
 

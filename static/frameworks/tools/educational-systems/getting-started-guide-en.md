@@ -120,7 +120,7 @@ anonymous channels ([Section 5.7](#]).
 **Resources**:
 - **Framework Appendices**: Access tools like the Advocacy Playbook ([Section 10.1](#]) and Cost-Benefit Analysis Model ([Section 10.3](#]) for funding and advocacy ([Download](./appendices/)).
 - **Spiral Dynamics**: Explore [spiralize.org](https://spiralize.org) for free insights, history, and a self-assessment test to understand developmental stages.
-- **Support**: Contact [globalgovernanceframework@gmail.com] for translation, training, or implementation assistance.
+- **Support**: Contact [globalgovernanceframeworks@gmail.com] for translation, training, or implementation assistance.
 - **Community**: Join the global dashboard ([Section 5.8](#]) to share stories and learn from other pilots.
 
 **Customization**: Add local resources (e.g., regional NGOs, Indigenous knowledge networks).
@@ -137,4 +137,4 @@ In Sudan, a community used the Seed Kit to launch a pilot for 100 learners, achi
 - Systems Thinking Module ([Section 4.3](#])
 
 ## Download
-Available at [framework website](#) as Word, PDF, markdown, and accessible formats (audio, braille, simplified text). Contact [globalgovernanceframework@gmail.com] for translation requests or support.
+Available at [framework website](#) as Word, PDF, markdown, and accessible formats (audio, braille, simplified text). Contact [globalgovernanceframeworks@gmail.com] for translation requests or support.

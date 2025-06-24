@@ -132,5 +132,5 @@ In Vietnam, local champions used this playbook to secure ministry approval for a
 - Spiral Dynamics Pilot Case Model ([Section 8.4](/frameworks/docs/implementation/education#08-case-models))
 
 ## Download
-Available at [framework website](#) as PDF, Word, markdown, and accessible formats (audio, braille, oral). Contact [globalgovernanceframework@gmail.com] for translation requests or support.
+Available at [framework website](#) as PDF, Word, markdown, and accessible formats (audio, braille, oral). Contact [globalgovernanceframeworks@gmail.com] for translation requests or support.
 

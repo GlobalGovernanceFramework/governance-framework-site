@@ -513,20 +513,20 @@ This kit provides comprehensive guidance for respecting Indigenous sovereignty, 
 **Current Status Note:** The Global Guardian Framework is in active development. 
 Currently available:
 - ✅ Framework documentation and Indigenous rights guidance
-- ✅ General support via globalgovernanceframework@gmail.com
+- ✅ General support via globalgovernanceframeworks@gmail.com
 - 🚧 Indigenous-specific funding programs (in development)
 - 🚧 Traditional knowledge protection services (in development)
 - 🚧 Indigenous leadership networks (in development)
 
 **Economic Transition Programs:**
-- **Traditional Practice Enhancement**: [Contact globalgovernanceframework@gmail.com with subject "Traditional Practice Support"]
+- **Traditional Practice Enhancement**: [Contact globalgovernanceframeworks@gmail.com with subject "Traditional Practice Support"]
 - **Community Enterprise Development**: [Contact with subject "Indigenous Enterprise Support"]
 - **Capacity Building Programs**: [Contact with subject "Indigenous Capacity Building"]
 - **Market Access Support**: [Contact with subject "Indigenous Market Access"]
 
 **Funding and Investment:**
 - **Indigenous Community Grants**: [Indigenous community funding programs - in development]
-- **Traditional Knowledge Protection**: [Contact globalgovernanceframework@gmail.com with subject "Traditional Knowledge Protection"]
+- **Traditional Knowledge Protection**: [Contact globalgovernanceframeworks@gmail.com with subject "Traditional Knowledge Protection"]
 - **Community Investment Funds**: [Indigenous investment programs - in development]
 - **Emergency Support**: [Contact with subject "Indigenous Emergency Support"]
 
@@ -665,19 +665,19 @@ Currently available:
 **Current Support Services:**
 
 **Indigenous Rights Advocacy:**
-- **Legal Support**: [Contact globalgovernanceframework@gmail.com with subject "Indigenous Legal Support"]
+- **Legal Support**: [Contact globalgovernanceframeworks@gmail.com with subject "Indigenous Legal Support"]
 - **Rights Training**: [Contact with subject "Indigenous Rights Training"]
 - **Advocacy Coordination**: [Contact with subject "Indigenous Advocacy Support"]
 - **International Engagement**: [Contact with subject "Indigenous International Engagement"]
 
 **Traditional Knowledge Support:**
-- **Knowledge Protection**: [Contact globalgovernanceframework@gmail.com with subject "Traditional Knowledge Protection"]
+- **Knowledge Protection**: [Contact globalgovernanceframeworks@gmail.com with subject "Traditional Knowledge Protection"]
 - **Documentation Support**: [Contact with subject "Indigenous Knowledge Documentation"]
 - **Research Collaboration**: [Contact with subject "Indigenous Research Partnership"]
 - **Innovation Support**: [Contact with subject "Indigenous Innovation Support"]
 
 **Community Development:**
-- **Leadership Development**: [Contact globalgovernanceframework@gmail.com with subject "Indigenous Leadership Development"]
+- **Leadership Development**: [Contact globalgovernanceframeworks@gmail.com with subject "Indigenous Leadership Development"]
 - **Capacity Building**: [Contact with subject "Indigenous Capacity Building"]
 - **Economic Development**: [Contact with subject "Indigenous Economic Development"]
 - **Cultural Programs**: [Contact with subject "Indigenous Cultural Programs"]
@@ -687,13 +687,13 @@ Currently available:
 **Indigenous Networks and Collaboration:**
 
 **Regional Indigenous Networks:**
-- **Regional Coordination**: [Regional Indigenous networks - in development. Contact globalgovernanceframework@gmail.com for current networking opportunities]
+- **Regional Coordination**: [Regional Indigenous networks - in development. Contact globalgovernanceframeworks@gmail.com for current networking opportunities]
 - **Knowledge Sharing Platforms**: [Indigenous knowledge sharing platforms - in development]
 - **Peer Learning Programs**: [Contact with subject "Indigenous Peer Learning"]
 - **Innovation Networks**: [Contact with subject "Indigenous Innovation Networks"]
 
 **International Indigenous Engagement:**
-- **UN Forum Participation**: [Contact globalgovernanceframework@gmail.com with subject "UN Indigenous Forum"]
+- **UN Forum Participation**: [Contact globalgovernanceframeworks@gmail.com with subject "UN Indigenous Forum"]
 - **International Networks**: [Contact with subject "International Indigenous Networks"]
 - **Global Indigenous Rights**: [Contact with subject "Global Indigenous Rights Advocacy"]
 - **Knowledge Exchange**: [Contact with subject "International Indigenous Knowledge Exchange"]
@@ -746,13 +746,13 @@ Currently available:
 **Current Status Note:** The Global Guardian Framework is in active development. 
 Currently available:
 - ✅ Framework documentation and Indigenous rights guidance
-- ✅ General support via globalgovernanceframework@gmail.com
+- ✅ General support via globalgovernanceframeworks@gmail.com
 - 🚧 Indigenous-specific funding programs (in development)
 - 🚧 Traditional knowledge protection services (in development)
 - 🚧 Indigenous leadership networks (in development)
 
 **Primary Support:**
-- **Email:** globalgovernanceframework@gmail.com
+- **Email:** globalgovernanceframeworks@gmail.com
 - **Website:** globalgovernanceframework.org
 - **Subject Lines for Indigenous-Specific Support:**
   - "Indigenous Rights Support" - for general Indigenous rights guidance
@@ -1114,7 +1114,7 @@ This kit represents the beginning of ongoing support for Indigenous rights integ
 
 ### Contact for Indigenous-Specific Support
 
-**Primary Contact:** globalgovernanceframework@gmail.com
+**Primary Contact:** globalgovernanceframeworks@gmail.com
 **Website:** globalgovernanceframework.org
 
 **For Indigenous Communities and Organizations:**

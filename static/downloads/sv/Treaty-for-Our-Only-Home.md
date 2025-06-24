@@ -280,25 +280,25 @@ Detta fördrag är designat inte bara för att läsas, utan för att användas. 
 1. Granska [sammanfattningen för skeptiker](/frameworks/docs/implementation/treaty-for-our-only-home#executive-summary)
 2. Utforska [implementeringshandböckerna för nyckelreformer] *Denna handbokserie är under utveckling och kommer att släppas som en nyckelresurs för beslutsfattare efter den inledande lanseringsfasen.*
 3. Använd [suveränitetsnalvigatorverktyget] för att bedöma reformeffekter
-4. Kontakta globalgovernanceframework@gmail.com med ämne "Regeringspartnerskap"
+4. Kontakta globalgovernanceframeworks@gmail.com med ämne "Regeringspartnerskap"
 
 **Civilsamhälle och opinionsbildningsorganisationer**:
 1. Ladda ner [global påverkanskit för förvaltare](/frameworks/tools/treaty-for-our-only-home/global-stewardship-advocacy-kit-sv.zip)
 2. Granska [implementeringsstrategierna](/frameworks/docs/implementation/treaty-for-our-only-home#04-implementation-strategies)
 3. Gå med i nätverket för den globala förvaltaralliansen
-4. Kontakta globalgovernanceframework@gmail.com med ämne "Allianspartnerskap"
+4. Kontakta globalgovernanceframeworks@gmail.com med ämne "Allianspartnerskap"
 
 **Akademiska och forskningsinstitutioner**:
 1. Få åtkomst till den fullständiga [fördragsramverksdokumentationen](/frameworks/docs/implementation/treaty-for-our-only-home)
 2. Granska protokollen för [övervakning och utvärdering](/frameworks/docs/implementation/treaty-for-our-only-home#06-monitoring-evaluation)
 3. Utforska samarbete om reformacceleratorlaboratorier
-4. Kontakta globalgovernanceframework@gmail.com med ämne "Forskningssamarbete"
+4. Kontakta globalgovernanceframeworks@gmail.com med ämne "Forskningssamarbete"
 
 **Städer och regionala regeringar**:
 1. Utforska [Pelare 2: Nya aktörer och röster](/frameworks/docs/implementation/treaty-for-our-only-home#03-five-pillars) för formella stadsroller (navigera till den andra pelaren med indexet för de fem pelarna)
 2. Granska pilotprogrammöjligheter i implementeringsstrategier
 3. Anslut med C40 Cities-partnerskapsnätverket
-4. Kontakta globalgovernanceframework@gmail.com med ämne "Stadspartnerskap"
+4. Kontakta globalgovernanceframeworks@gmail.com med ämne "Stadspartnerskap"
 
 ## <a id="nasta-steg"></a>Nästa steg
 
@@ -332,7 +332,7 @@ Fördraget för vårt enda hem representerar en komplett arkitektonisk plan för
 - **Forskare**: Bidra med bevis och modellering för reformeffekter
 
 **Kontaktinformation**:
-- **Primär kontakt**: globalgovernanceframework@gmail.com
+- **Primär kontakt**: globalgovernanceframeworks@gmail.com
 - **Webbplats**: globalgovernanceframework.org
 - **Ämnesrader för specifikt stöd**:
   - "Fördragsopinionsbildning" - för opinionsbildning och rörelsebyggande
@@ -1776,7 +1776,7 @@ Behöver du förtydliganden om specifika termer eller begrepp? [Ordlistan](/fram
 
 *Fördraget för vårt enda hem: Ett ramverk för medveten evolution från krisgenerande till motståndskraftgenerande styrningssystem. Utvecklat genom omfattande forskningssyntes och iterativ förfining för att integrera evidensbaserade praxis med visionär transformation. Implementering kräver lokal konsultation med kulturella, juridiska och tekniska experter bekanta med specifika kontext samtidigt som ramverkets systemiska integritet och transformativa omfattning upprätthålls.*
 
-*För frågor, partnerskapsmöjligheter eller implementeringsstöd: globalgovernanceframework@gmail.com*
+*För frågor, partnerskapsmöjligheter eller implementeringsstöd: globalgovernanceframeworks@gmail.com*
 
 *Version 1.0 - juni 2025 - En början, inte ett slut.*
 
@@ -2709,5 +2709,5 @@ Juridisk princip som möjliggör för internationella domstolar att åtala allva
 
 Denna ordlista tillhandahåller väsentligt referensmaterial för att förstå ramverket för fördraget för vårt enda hem. Termer definieras med tillräcklig detalj för praktisk tillämpning samtidigt som klarhet upprätthålls för olika målgrupper. Korsreferenser genom fördragsdokumentationen använder dessa definitioner konsekvent för att säkerställa konceptuell sammanhang över den omfattande styrningstransformations planen.
 
-*För ytterligare förtydliganden om specifika termer eller begrepp, kontakta globalgovernanceframework@gmail.com med ämnet "Ordlistefrågor"*
+*För ytterligare förtydliganden om specifika termer eller begrepp, kontakta globalgovernanceframeworks@gmail.com med ämnet "Ordlistefrågor"*
 

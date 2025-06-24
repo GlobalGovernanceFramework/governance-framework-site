@@ -95,7 +95,7 @@ You don’t have to do everything. Pick a level that fits:
 ### 🌱 **Get Involved**  
 
 Ready to help systems work better together? Here’s how:  
-- **📥 Share Your Wisdom**: Tell us about your community’s governance ideas (e.g., Indigenous consensus or local co-ops). Email us at [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com).  
+- **📥 Share Your Wisdom**: Tell us about your community’s governance ideas (e.g., Indigenous consensus or local co-ops). Email us at [globalgovernanceframeworks@gmail.com](mailto:globalgovernanceframeworks@gmail.com).  
 - **🧩 Test a Tool**: Try our policy simulator or governance map (available 2026). Sign up at [globalgovernanceframework.org/tools](https://globalgovernanceframework.org/tools).  
 - **👥 Join a Dialogue**: Attend a community workshop or online panel. Check [globalgovernanceframework.org/events](https://globalgovernanceframework.org/events) for updates.  
 - **📚 Learn More**: Dive into the [full framework](https://globalgovernanceframework.org/frameworks) for deeper insights.

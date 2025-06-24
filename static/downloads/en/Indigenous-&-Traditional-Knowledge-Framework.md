@@ -100,7 +100,7 @@ The framework is accessible through the Global Governance Framework website, des
 - **Download**: Access the complete framework as a PDF via the [Downloads](/downloads) section, available in multiple languages and culturally appropriate formats.
 - **Navigate**: Use this index to explore sections following Indigenous storytelling traditions or access specific components via section links.
 - **Access Tools**: Browse all implementation tools with cultural sensitivity protocols at the [Tools Library](/frameworks/tools/indigenous).
-- **Engage**: Share feedback through secure, community-controlled channels or email [globalgovernanceframework@gmail.com] with Indigenous data sovereignty protections.
+- **Engage**: Share feedback through secure, community-controlled channels or email [globalgovernanceframeworks@gmail.com] with Indigenous data sovereignty protections.
 - **Organize**: Use political organizing toolkits to build Indigenous coalitions, launch land rematriation campaigns, and establish Bioregional Autonomous Zones.
 - **Implement**: Begin with the Indigenous Sovereignty Starter Kit or connect with existing BAZ pilots and Indigenous-led initiatives.
 
@@ -122,7 +122,7 @@ The framework is accessible through the Global Governance Framework website, des
 
 **About the Framework**: Developed through organic Indigenous-led design processes with extensive elder guidance and community feedback, representing synthesized traditional knowledge systems and contemporary governance innovations, maintained by Indigenous knowledge keepers and allies at globalgovernanceframework.org.
 
-**Indigenous Leadership Development**: Support Indigenous sovereignty by contributing to traditional knowledge documentation, legal advocacy, technology development, or bioregional organizing. Contact us at [globalgovernanceframework@gmail.com] to engage respectfully with Indigenous-led initiatives.
+**Indigenous Leadership Development**: Support Indigenous sovereignty by contributing to traditional knowledge documentation, legal advocacy, technology development, or bioregional organizing. Contact us at [globalgovernanceframeworks@gmail.com] to engage respectfully with Indigenous-led initiatives.
 
 **The Vision Realized**: By 2050, planetary governance emerges from Indigenous wisdom rather than colonial extraction—where bioregional stewardship replaces nation-state control, where AI serves Traditional Ecological Knowledge rather than corporate interests, and where ceremonial governance guides humanity's relationship with all beings. **The future is Indigenous-led, and the transformation begins in our bioregions today.**
 

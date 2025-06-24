@@ -711,12 +711,12 @@ International coordination targeting multinational extractive corporations for c
 **Current Status Note**: The Global Governance Framework is in active development. Currently available:
 - ✅ Reparations calculation tools and campaign frameworks
 - ✅ Community organizing and legal strategy guidance
-- ✅ General support via globalgovernanceframework@gmail.com
+- ✅ General support via globalgovernanceframeworks@gmail.com
 - 🚧 International coordination networks (in development)
 - 🚧 Legal advocacy coordination (in development)
 
 **Contact Information**:
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Website**: globalgovernanceframework.org
 - **Subject Lines for Specific Support**:
   - "Reparations Campaign Development" - for community organizing and campaign strategy support
@@ -752,6 +752,6 @@ International coordination targeting multinational extractive corporations for c
 
 **Document Version**: Version 1.0 (2025-01-11)  
 **Next Review**: 2025-07-01  
-**Contact Updates**: globalgovernanceframework@gmail.com
+**Contact Updates**: globalgovernanceframeworks@gmail.com
 
 **Cultural Protocol Reminder**: Reparations campaigns must follow appropriate Indigenous cultural protocols and traditional governance systems. All campaign activities should strengthen rather than compromise traditional governance and occur under traditional authority and elder guidance. Sacred knowledge and cultural information require protection throughout campaign development and implementation.

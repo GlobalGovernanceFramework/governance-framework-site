@@ -2881,7 +2881,7 @@ These intergenerational programs serve as essential infrastructure for implement
 - **Website**: Visit agingframework.org/intergenerational for additional templates and consultation
 - **Training**: Access intergenerational program development training and facilitation workshops
 - **Network**: Connect with other communities implementing intergenerational programs
-- **Contact**: Email globalgovernanceframework@gmail.com for consultation and technical assistance
+- **Contact**: Email globalgovernanceframeworks@gmail.com for consultation and technical assistance
 
 **The future of community is intergenerational, and it begins with your program today.**
 

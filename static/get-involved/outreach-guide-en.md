@@ -108,7 +108,7 @@ Before sharing content, review it against our quality standards and consider get
 
 Effective outreach happens through coordination and collaboration rather than isolated individual efforts.
 
-**Community channels** provide spaces for real-time coordination and support. Join our Discord server at https://discord.gg/Zx4hMJf4JU to access dedicated channels for community outreach coordination, content sharing and feedback, and collaborative project development. For formal partnerships, media inquiries, and strategic planning, email us at globalgovernanceframework@gmail.com.
+**Community channels** provide spaces for real-time coordination and support. Join our Discord server at https://discord.gg/Zx4hMJf4JU to access dedicated channels for community outreach coordination, content sharing and feedback, and collaborative project development. For formal partnerships, media inquiries, and strategic planning, email us at globalgovernanceframeworks@gmail.com.
 
 **Working groups and specialization** allow community members to focus their efforts where they can have the most impact. Content creation teams focus on social media strategy, video and multimedia production, writing and documentation, and design and visual communications. Outreach specialization groups work on academic and research engagement, government and policy outreach, civil society connections, and business and technology sector engagement. Regional coordination teams handle local community building, cultural adaptation of messaging, translation and localization, and regional event organization.
 

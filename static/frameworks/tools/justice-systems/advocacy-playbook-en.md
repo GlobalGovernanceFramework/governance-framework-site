@@ -21,7 +21,7 @@ The **Advocacy Playbook** equips jurisdictions with strategies and tools to buil
 7. **Develop Campaigns**: Create tailored campaigns using provided templates (e.g., press releases, social media plans).
 8. **Implement Advocacy**: Execute campaigns through events, media outreach, and policy dialogues, ensuring accessibility.
 9. **Monitor and Evaluate**: Track impact using metrics, integrating results into the framework’s metrics dashboard ([Monitoring and Accountability](/frameworks/docs/implementation/justice-systems#06-monitoring-accountability)).
-10. **Seek Support**: Request resources or assistance from Regional Justice Hubs via [globalgovernanceframework@gmail.com].
+10. **Seek Support**: Request resources or assistance from Regional Justice Hubs via [globalgovernanceframeworks@gmail.com].
 
 ## Advocacy Principles
 The following principles guide advocacy efforts, ensuring alignment with inclusivity, transparency, and cultural sensitivity:
@@ -226,7 +226,7 @@ Track metrics to assess advocacy impact, integrating into the framework’s metr
 ## Implementation and Support
 - **Launch**: Convene a stakeholder meeting to finalize the plan by [date, e.g., Q1 2027].
 - **Submit**: Share plans and reports with Regional Justice Hubs via secure platforms or offline channels ([Tools Library](/frameworks/tools/justice-systems)).
-- **Request Assistance**: Contact [globalgovernanceframework@gmail.com] for training, funding, or support.
+- **Request Assistance**: Contact [globalgovernanceframeworks@gmail.com] for training, funding, or support.
 - **Feedback**: Submit playbook feedback for biannual updates (July and January).
 
 ## Monitoring Progress

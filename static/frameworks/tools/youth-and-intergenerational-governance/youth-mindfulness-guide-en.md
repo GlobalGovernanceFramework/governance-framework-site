@@ -435,6 +435,6 @@ That leader is you.
 
 *This guide is part of the Global Governance Framework project. All materials are freely available under Creative Commons licensing. Share these practices with other young leaders in your life.*
 
-**Questions? Want more support?** Email us at globalgovernanceframework@gmail.com or join our online community of mindful young changemakers.
+**Questions? Want more support?** Email us at globalgovernanceframeworks@gmail.com or join our online community of mindful young changemakers.
 
 **Ready for more?** Check out our Youth Leadership Toolkit and other resources at globalgovernanceframework.org/youth

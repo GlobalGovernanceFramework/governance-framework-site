@@ -91,7 +91,7 @@ A streamlined process ensures communities can access funding with minimal barrie
    - Example: Brazil chose crowdfunding for a youth-led app.
 3. **Submit Proposal (1-2 weeks)**:
    - Complete Funding Proposal Template (Appendix R): Goals, budget, timeline.
-   - Submit via SMS, email (globalgovernanceframework@gmail.com), or paper to Hub.
+   - Submit via SMS, email (globalgovernanceframeworks@gmail.com), or paper to Hub.
    - Example: Canada’s node submitted a grant proposal for $50,000.
 4. **Review and Approval (2-4 weeks)**:
    - Hubs review proposals, prioritizing equity (e.g., Indigenous, rural nodes).
@@ -188,7 +188,7 @@ Building relationships with funders ensures long-term support and alignment.
 - **Guides**: Community, Youth, Indigenous, Ethics Guides (globalgovernanceframework.org/tools).
 - **Tools**: Funder Mapping, Impact Report, SMS Budget Updates.
 - **Visuals**: Funding Cycle Poster, Budget Flowchart (globalgovernanceframework.org/visuals).
-- **Support**: Email globalgovernanceframework@gmail.com, text FUND to 12345, or join monthly call-ins (first Monday, 10:00 UTC).
+- **Support**: Email globalgovernanceframeworks@gmail.com, text FUND to 12345, or join monthly call-ins (first Monday, 10:00 UTC).
 - **Access**: Multilingual, braille, audio formats at globalgovernanceframework.org.
 
 ---

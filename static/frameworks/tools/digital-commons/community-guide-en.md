@@ -51,7 +51,7 @@ Starting a node is simple, requiring minimal resources and scalable to your comm
   - Example: Senegal's node started with 15 farmers and elders identifying malaria data needs.
 
 2. **Register the Node (1 week)**:
-  - Contact Regional Hub via SMS (text JOIN to 12345), email (globalgovernanceframework@gmail.com), or mail.
+  - Contact Regional Hub via SMS (text JOIN to 12345), email (globalgovernanceframeworks@gmail.com), or mail.
   - Submit a short description of your community and goals.
   - Receive a Node Starter Kit (guides, templates, contacts).
 
@@ -341,7 +341,7 @@ Nodes access diverse funding to ensure sustainability and equity.
 - **Guides**: Youth, Indigenous, Ethics, Rural Toolkits (globalgovernanceframework.org/tools).
 - **Tools**: SMS Voting, Data Sovereignty Protocol, Field-Test Logbook.
 - **Visuals**: Governance Cycle Poster, Component Map (globalgovernanceframework.org/visuals).
-- **Support**: Email globalgovernanceframework@gmail.com
+- **Support**: Email globalgovernanceframeworks@gmail.com
 - **Crisis Support Hotline**: Text HELP to 12345 for emergency technical or governance assistance
 - **Regional Adaptation Resources**: Specific guides for African, Asian, Latin American, and other regional contexts
 - **Technology Assessment Toolkit**: Templates for evaluating new technologies against community values

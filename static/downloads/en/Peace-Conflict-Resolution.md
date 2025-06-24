@@ -949,7 +949,7 @@ Access these resources in the [Visual Resources Library](/frameworks/visuals/pea
 
 **About the Framework**: Developed through extensive consultation with peacebuilders, academics, and practitioners from diverse contexts, this framework represents synthesized best practices from global experiences in conflict transformation, maintained by a dedicated team at globalgovernanceframework.org.
 
-**Contribute**: Help expand accessibility by volunteering for translation, document formatting, or case study development. Contact us at [globalgovernanceframework@gmail.com] to join the community.
+**Contribute**: Help expand accessibility by volunteering for translation, document formatting, or case study development. Contact us at [globalgovernanceframeworks@gmail.com] to join the community.
 
 ### Peace & Conflict Resolution Lite Guides
 
@@ -1243,7 +1243,7 @@ Policymakers and mediators are pivotal in institutionalizing peace governance. B
 5. Building digital ethics into technological approaches
 6. Measuring both negative and positive peace indicators
 
-Download the full framework or explore additional tools at [Tools Library](/frameworks/tools/peace). Share feedback at [globalgovernanceframework@gmail.com] or on our [Discord server](https://discord.gg/Zx4hMJf4JU) to refine this work and join a global peacebuilding community.
+Download the full framework or explore additional tools at [Tools Library](/frameworks/tools/peace). Share feedback at [globalgovernanceframeworks@gmail.com] or on our [Discord server](https://discord.gg/Zx4hMJf4JU) to refine this work and join a global peacebuilding community.
 
 # Community Peace Implementation Guide
 
@@ -1290,7 +1290,7 @@ Communities are the heart of peacebuilding, bridging divides through trust and c
 Access these in the *Peace & Conflict Resolution Seed Kit* via the [Tools Library](/frameworks/tools/peace).
 
 ## Call to Action
-You can drive peace in your community. Start by forming a *Local Peace Committee*, organizing a dialogue forum, or hosting a digital literacy workshop. Explore the *Seed Kit* and full framework at [Tools Library](/frameworks/tools/peace). Share your efforts at [globalgovernanceframework@gmail.com] to join a global peacebuilding community.
+You can drive peace in your community. Start by forming a *Local Peace Committee*, organizing a dialogue forum, or hosting a digital literacy workshop. Explore the *Seed Kit* and full framework at [Tools Library](/frameworks/tools/peace). Share your efforts at [globalgovernanceframeworks@gmail.com] to join a global peacebuilding community.
 
 # Youth Peace Action Guide
 
@@ -1353,7 +1353,7 @@ This is what a Peace Wall moment might look like! What would you add to it? 🎨
 Access these in the *Peace & Conflict Resolution Seed Kit* via the [Tools Library](/frameworks/tools/peace).
 
 ## Call to Action
-You have the power to build peace! 🚀🌟🕊️ Start small—organize a peace club, share a peace post, or host a dialogue. Check out the *Seed Kit* and full framework at [Tools Library](/frameworks/tools/peace). Tell us about your work at [globalgovernanceframework@gmail.com] to join youth peacebuilders worldwide! 🌎
+You have the power to build peace! 🚀🌟🕊️ Start small—organize a peace club, share a peace post, or host a dialogue. Check out the *Seed Kit* and full framework at [Tools Library](/frameworks/tools/peace). Tell us about your work at [globalgovernanceframeworks@gmail.com] to join youth peacebuilders worldwide! 🌎
 
 # Digital Peace Ethics Guide
 
@@ -1399,5 +1399,5 @@ Digital tools can amplify peace or escalate conflicts:
 Access these in the *Peace & Conflict Resolution Seed Kit* via the [Tools Library](/frameworks/tools/peace).
 
 ## Call to Action
-Lead ethical digital peacebuilding by auditing platforms, training communities, or deploying decentralized tools. Start with the *Peace-Technology Ethics Assessment* and explore the full framework at [Tools Library](/frameworks/tools/peace). Share feedback at [globalgovernanceframework@gmail.com] to shape the future of digital peace.
+Lead ethical digital peacebuilding by auditing platforms, training communities, or deploying decentralized tools. Start with the *Peace-Technology Ethics Assessment* and explore the full framework at [Tools Library](/frameworks/tools/peace). Share feedback at [globalgovernanceframeworks@gmail.com] to shape the future of digital peace.
 

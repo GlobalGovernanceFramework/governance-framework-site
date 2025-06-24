@@ -121,4 +121,4 @@ The global water crisis demands more than technical fixes—it requires fundamen
 
 **Framework Access**: Complete framework, implementation tools, and technical assistance available at globalgovernanceframework.org. Regional adaptation support and pilot project development available through partnership with global implementation network.
 
-**Contact**: Connect with global implementation team at globalgovernanceframework@gmail.com for policy guidance, technical assistance, and partnership development supporting community-led water governance transformation.
+**Contact**: Connect with global implementation team at globalgovernanceframeworks@gmail.com for policy guidance, technical assistance, and partnership development supporting community-led water governance transformation.

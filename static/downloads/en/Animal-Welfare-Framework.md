@@ -96,7 +96,7 @@ The framework is accessible through the Global Governance Framework website, des
 - **Download**: Access the complete framework as a PDF via the [Downloads](/downloads) section, available in multiple languages and cultural adaptations.
 - **Navigate**: Use this index to explore sections sequentially or jump to specific topics via section links with multilingual navigation.
 - **Access Tools**: Browse all implementation tools in PDF, markdown, and culturally-adapted formats at the [Tools Library](/frameworks/tools/animal-welfare).
-- **Engage**: Share feedback through the contact portal, email [globalgovernanceframework@gmail.com], or join Guardian Community Ambassador programs.
+- **Engage**: Share feedback through the contact portal, email [globalgovernanceframeworks@gmail.com], or join Guardian Community Ambassador programs.
 - **Organize**: Use advocacy toolkits to build welfare coalitions and advocate for policy implementation.
 - **Implement**: Launch community-led initiatives using the Guardian Community Starter Kit and transition templates.
 
@@ -129,7 +129,7 @@ The framework is accessible through the Global Governance Framework website, des
 
 **About the Framework**: Developed through collaborative design with Indigenous communities, animal advocates, farmers, and conservation experts, representing synthesized best practices from global stakeholders and traditional knowledge keepers, maintained by the dedicated team at globalgovernanceframework.org.
 
-**Guardian Community Development**: Help expand community agency by volunteering for Ambassador training, policy advocacy, pilot leadership, or cultural facilitation. Contact us at [globalgovernanceframework@gmail.com] to join the Guardian Community Network.
+**Guardian Community Development**: Help expand community agency by volunteering for Ambassador training, policy advocacy, pilot leadership, or cultural facilitation. Contact us at [globalgovernanceframeworks@gmail.com] to join the Guardian Community Network.
 
 **The Vision Realized**: By 2035, our relationship with animals represents humanity's greatest moral achievement—a time when guardianship replaces ownership, when economic systems prosper through compassion, and when intergenerational wisdom guides our treatment of all sentient life. Every being deserves freedom from unnecessary suffering, and every community deserves agency over their transition to humane systems. **The future of animal welfare is community-led, and it starts now.**
 

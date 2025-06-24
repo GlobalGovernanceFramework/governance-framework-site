@@ -95,7 +95,7 @@ All tools are available in our [Tools & Templates Library](/frameworks/tools/edu
 3. **[Download the Seed Kit](/frameworks/tools/education/seed-kit.zip)** – Launch a micro-pilot in your context.
 4. **Share Feedback & Scale** – Join global networks via the [Interactive Web Platform](/platform/).
 
-**Contact:** [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com)
+**Contact:** [globalgovernanceframeworks@gmail.com](mailto:globalgovernanceframeworks@gmail.com)
 **Framework Repository:** [GitHub](https://github.com/GlobalGovernanceFramework/governance-framework-site)
 **Framework Source Files:** [Education Framework Source](https://github.com/GlobalGovernanceFramework/governance-framework-site/tree/main/src/lib/content/frameworks/en/implementation/education)
 

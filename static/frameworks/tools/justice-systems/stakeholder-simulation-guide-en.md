@@ -18,7 +18,7 @@ The **Stakeholder Simulation Guide** equips jurisdictions with a methodology to 
 4. **Conduct the Simulation**: Execute the simulation following the step-by-step methodology.
 5. **Evaluate Outcomes**: Use metrics to assess consensus, trust, and strategy viability, integrating results into the framework’s metrics dashboard ([Monitoring and Accountability](/frameworks/docs/implementation/justice-systems#06-monitoring-accountability)).
 6. **Adapt as Needed**: Modify up to 20% of the guide (e.g., scenarios, roles) with approval from Regional Justice Hubs ([Appendices](/frameworks/docs/implementation/justice-systems#11-appendices)).
-7. **Seek Support**: Contact [globalgovernanceframework@gmail.com] for facilitation training, funding, or technical assistance.
+7. **Seek Support**: Contact [globalgovernanceframeworks@gmail.com] for facilitation training, funding, or technical assistance.
 
 ## Simulation Principles
 The following principles guide stakeholder simulations, ensuring alignment with equity, inclusivity, and transparency:
@@ -203,7 +203,7 @@ Track the following metrics to assess simulation impact, integrating into the fr
 ## Implementation and Support
 - **Launch**: Convene a planning meeting to finalize the simulation plan by [date, e.g., Q3 2027].
 - **Submit**: Share plans and outcome reports with Regional Justice Hubs via secure platforms or offline channels ([Tools Library](/frameworks/tools/justice-systems)).
-- **Request Assistance**: Contact [globalgovernanceframework@gmail.com] for facilitator training, funding, or support.
+- **Request Assistance**: Contact [globalgovernanceframeworks@gmail.com] for facilitator training, funding, or support.
 - **Feedback**: Submit guide usability feedback via the engagement platform for biannual updates (July and January).
 
 ## Monitoring Progress

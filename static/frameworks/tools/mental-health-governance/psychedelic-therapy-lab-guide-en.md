@@ -969,12 +969,12 @@ Community integration ensures that psychedelic therapy serves community needs an
 
 Currently available:
 - ✅ Framework documentation and psychedelic therapy lab setup guidelines
-- ✅ General support via globalgovernanceframework@gmail.com
+- ✅ General support via globalgovernanceframeworks@gmail.com
 - 🚧 Specialized psychedelic therapy training programs (in development)
 - 🚧 Traditional healing integration consultation services (in development)
 
 **Contact Information:**
-- **Primary Contact:** globalgovernanceframework@gmail.com
+- **Primary Contact:** globalgovernanceframeworks@gmail.com
 - **Website:** globalgovernanceframework.org
 - **Subject Lines for Specific Support:**
   - "Psychedelic Lab Setup" - for lab development and implementation support
@@ -1009,7 +1009,7 @@ The Psychedelic-Assisted Therapy Lab Setup Guide represents a revolutionary appr
 
 **Living Document Status**: This guide is designed for continuous improvement based on implementation experience, traditional healing community feedback, and evolving legal frameworks. Current version represents comprehensive analysis as of June 2025 with regular updates planned based on community guidance and regulatory changes.
 
-**Contact for Implementation Support**: globalgovernanceframework@gmail.com with subject line "Psychedelic Lab Implementation Support"
+**Contact for Implementation Support**: globalgovernanceframeworks@gmail.com with subject line "Psychedelic Lab Implementation Support"
 
 ---
 

@@ -319,7 +319,7 @@ Gemenskapsledda mental hälso-taskforces representerar lokala organiseringsstruk
 Ramverket Living Mandala for Planetary Mental Health representerar omfattande forskningssyntes och iterativ förfining genom flera AI-system, integrerande evidensbaserade praxis med gemenskapsledda ansatser till mental hälsa.
 
 ### **För frågor eller feedback** 📞
-- **Primär kontakt**: globalgovernanceframework@gmail.com
+- **Primär kontakt**: globalgovernanceframeworks@gmail.com
 - **Ämnesrad**: "Community Task Force Guide Feedback"
 - **Webbplats**: globalgovernanceframework.org
 

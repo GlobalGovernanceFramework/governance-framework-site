@@ -357,7 +357,7 @@ The window for transformation is closing as global challenges intensify. Yet the
 ---
 
 **Contact Information:**
-- Email: globalgovernanceframework@gmail.com
+- Email: globalgovernanceframeworks@gmail.com
 - Web: globalgovernanceframework.org
 - Download Full Framework: [Framework Index](/frameworks/docs/consciousness/index)
 - Implementation Tools: [Tools Library](/frameworks/tools/consciousness)

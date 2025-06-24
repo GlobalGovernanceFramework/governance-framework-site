@@ -661,12 +661,12 @@ Coordinated legal support system protecting Traditional Knowledge and supporting
 **Current Status Note**: The Global Governance Framework is in active development. Currently available:
 - ✅ Traditional Knowledge documentation protocols and templates
 - ✅ Community consultation and elder authority guidance
-- ✅ General support via globalgovernanceframework@gmail.com
+- ✅ General support via globalgovernanceframeworks@gmail.com
 - 🚧 Technical implementation support networks (in development)
 - 🚧 Legal advocacy coordination networks (in development)
 
 **Contact Information**:
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Website**: globalgovernanceframework.org
 - **Subject Lines for Specific Support**:
   - "Traditional Knowledge Documentation" - for community documentation support and guidance
@@ -700,4 +700,4 @@ Coordinated legal support system protecting Traditional Knowledge and supporting
 
 **Document Version**: Version 1.0 (2025-01-11)  
 **Next Review**: 2025-07-01  
-**Contact Updates**: globalgovernanceframework@gmail.com
+**Contact Updates**: globalgovernanceframeworks@gmail.com

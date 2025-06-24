@@ -205,7 +205,7 @@ Continuous oversight ensures PPPs deliver community benefit and adhere to ethics
 - **Guides**: Funding Navigator, Community, Indigenous Guides (globalgovernanceframework.org/tools).
 - **Tools**: Funder Mapping, SMS Feedback, Blockchain Ledger.
 - **Visuals**: PPP Cycle Poster, Funding Flowchart (globalgovernanceframework.org/visuals).
-- **Support**: Email globalgovernanceframework@gmail.com, text PPP to 12345, or join monthly call-ins (first Monday, 10:00 UTC).
+- **Support**: Email globalgovernanceframeworks@gmail.com, text PPP to 12345, or join monthly call-ins (first Monday, 10:00 UTC).
 - **Access**: Multilingual, oral, audio formats at globalgovernanceframework.org.
 
 ---

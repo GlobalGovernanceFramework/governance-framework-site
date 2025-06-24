@@ -166,7 +166,7 @@ For individuals or communities with basic technical capabilities, here is an ext
 
 **Next Steps**: Once your node is active, request the Field-Test Logbook (Appendix G) to track your progress. Download at globalgovernanceframework.org/tools/digital.
 
-**Contact**: Email globalgovernanceframework@gmail.com
+**Contact**: Email globalgovernanceframeworks@gmail.com
 
 ---
 

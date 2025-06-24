@@ -1178,7 +1178,7 @@ Currently available:
 - 🚧 Community partnership facilitation and cultural competency training (in development)
 
 **Contact Information:**
-- **Primary Contact:** globalgovernanceframework@gmail.com
+- **Primary Contact:** globalgovernanceframeworks@gmail.com
 - **Website:** globalgovernanceframework.org
 - **Subject Lines for Specific Support:**
   - "Dashboard Development" - for technical development and implementation support

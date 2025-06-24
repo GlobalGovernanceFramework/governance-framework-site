@@ -69,4 +69,4 @@ Consistent typography is key to a unified brand voice. Our primary typeface is *
 
 ### Questions?
 
-If you have any questions about these guidelines or need specific assets not included in this kit, please contact us at **globalgovernanceframework@gmail.com**.
+If you have any questions about these guidelines or need specific assets not included in this kit, please contact us at **globalgovernanceframeworks@gmail.com**.

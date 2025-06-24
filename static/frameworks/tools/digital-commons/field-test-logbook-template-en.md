@@ -253,7 +253,7 @@ ____________________________________________________________________________
 
 **Confidentiality**: Your logbook helps improve the framework but won't be shared publicly without permission. Specify any sections that should remain confidential.
 
-**Support**: For assistance completing this logbook, contact your Regional Digital Hub or email globalgovernanceframework@gmail.com
+**Support**: For assistance completing this logbook, contact your Regional Digital Hub or email globalgovernanceframeworks@gmail.com
 
 ---
 

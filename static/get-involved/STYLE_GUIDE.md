@@ -132,7 +132,7 @@ URLs are a critical part of framework accessibility, navigation, and long-term s
 All framework tools and documentation must accurately represent the current development status of resources and contact information. Use clear status indicators and avoid creating false expectations about non-existent services.
 
 **Current Infrastructure Reference:**
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Primary Website**: globalgovernanceframework.org
 - **Development Status**: Include clear disclaimers about what is currently available vs. in development
 
@@ -148,12 +148,12 @@ Use consistent status indicators throughout all documentation:
 **Current Status Note:** The Global Guardian Framework is in active development. 
 Currently available:
 - ✅ Framework documentation and [specific tools available]
-- ✅ General support via globalgovernanceframework@gmail.com
+- ✅ General support via globalgovernanceframeworks@gmail.com
 - 🚧 [Specific services] (in development)
 - 🚧 [Regional networks/specialized programs] (in development)
 
 **Contact Information:**
-- **Primary Contact:** globalgovernanceframework@gmail.com
+- **Primary Contact:** globalgovernanceframeworks@gmail.com
 - **Website:** globalgovernanceframework.org
 - **Subject Lines for Specific Support:**
   - "Subject A" - for [specific type of support]
@@ -164,7 +164,7 @@ Currently available:
 
 **For Non-Existent Resources:**
 - Use placeholder format: `[Service name - in development]`
-- Provide contact instructions: `[Contact globalgovernanceframework@gmail.com with subject "Service Request"]`
+- Provide contact instructions: `[Contact globalgovernanceframeworks@gmail.com with subject "Service Request"]`
 - Avoid specific URLs for unregistered domains
 
 **For Future Resources:**

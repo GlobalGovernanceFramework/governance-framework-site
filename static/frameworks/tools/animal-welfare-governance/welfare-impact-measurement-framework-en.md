@@ -357,12 +357,12 @@ Equipment and material support for assessment implementation including:
 
 Currently available:
 - ✅ Framework documentation and assessment templates
-- ✅ General implementation support via globalgovernanceframework@gmail.com
+- ✅ General implementation support via globalgovernanceframeworks@gmail.com
 - 🚧 Digital monitoring platforms (in development)
 - 🚧 Assessor training certification programs (in development)
 
 **Contact Information:**
-- **Primary Contact:** globalgovernanceframework@gmail.com
+- **Primary Contact:** globalgovernanceframeworks@gmail.com
 - **Website:** globalgovernanceframework.org
 - **Subject Lines for Specific Support:**
   - "Welfare Assessment Support" - for measurement implementation assistance
@@ -371,7 +371,7 @@ Currently available:
 
 **Access Instructions:**
 1. Download this framework document and associated templates
-2. Contact globalgovernanceframework@gmail.com with subject "Welfare Assessment Support" for implementation guidance
+2. Contact globalgovernanceframeworks@gmail.com with subject "Welfare Assessment Support" for implementation guidance
 3. Join the Guardian Community Network for peer learning and resource sharing
 4. Access the Global Guardian Framework documentation for context and integration guidance
 
@@ -385,5 +385,5 @@ Currently available:
 
 **Document Version:** 1.0 (2025-06-07)  
 **Next Review:** 2025-09-07  
-**Contact:** globalgovernanceframework@gmail.com  
+**Contact:** globalgovernanceframeworks@gmail.com  
 **Integration:** Part of Global Guardian Framework monitoring and evaluation systems

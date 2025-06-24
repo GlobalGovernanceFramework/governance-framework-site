@@ -1150,7 +1150,7 @@ Our commitment to improvement includes:
 **Current Status Note:** The Global Guardian Framework is in active development. 
 Currently available:
 - ✅ Framework documentation and charter development guidance
-- ✅ General support via globalgovernanceframework@gmail.com
+- ✅ General support via globalgovernanceframeworks@gmail.com
 - 🚧 Charter development facilitation services (in development)
 - 🚧 Legal and policy integration support (in development)
 - 🚧 Community engagement training programs (in development)
@@ -1158,19 +1158,19 @@ Currently available:
 **Charter Development Assistance:**
 
 **Planning and Design Support:**
-- **Charter Planning Workshops**: [Contact globalgovernanceframework@gmail.com with subject "Charter Planning Workshop"]
+- **Charter Planning Workshops**: [Contact globalgovernanceframeworks@gmail.com with subject "Charter Planning Workshop"]
 - **Stakeholder Engagement Design**: [Contact with subject "Charter Stakeholder Engagement"]
 - **Legal Integration Assessment**: [Contact with subject "Charter Legal Assessment"]
 - **Cultural Adaptation Guidance**: [Contact with subject "Charter Cultural Adaptation"]
 
 **Facilitation and Process Support:**
-- **Community Consultation Facilitation**: [Contact globalgovernanceframework@gmail.com with subject "Charter Consultation Facilitation"]
+- **Community Consultation Facilitation**: [Contact globalgovernanceframeworks@gmail.com with subject "Charter Consultation Facilitation"]
 - **Conflict Resolution and Mediation**: [Contact with subject "Charter Conflict Resolution"]
 - **Consensus Building Support**: [Contact with subject "Charter Consensus Building"]
 - **Traditional Knowledge Integration**: [Contact with subject "Charter Traditional Knowledge"]
 
 **Technical Assistance:**
-- **Charter Drafting Support**: [Contact globalgovernanceframework@gmail.com with subject "Charter Drafting Assistance"]
+- **Charter Drafting Support**: [Contact globalgovernanceframeworks@gmail.com with subject "Charter Drafting Assistance"]
 - **Implementation Planning**: [Contact with subject "Charter Implementation Planning"]
 - **Monitoring System Design**: [Contact with subject "Charter Monitoring Design"]
 - **Enforcement Framework Development**: [Contact with subject "Charter Enforcement Framework"]
@@ -1180,19 +1180,19 @@ Currently available:
 **Charter Development Training Programs:**
 
 **Community Leadership Training:**
-- **Charter Development Leadership**: [Contact globalgovernanceframework@gmail.com with subject "Charter Leadership Training"]
+- **Charter Development Leadership**: [Contact globalgovernanceframeworks@gmail.com with subject "Charter Leadership Training"]
 - **Stakeholder Engagement Skills**: [Contact with subject "Stakeholder Engagement Training"]
 - **Conflict Resolution and Mediation**: [Contact with subject "Conflict Resolution Training"]
 - **Cultural Competency Development**: [Contact with subject "Cultural Competency Training"]
 
 **Technical Skills Training:**
-- **Legal Framework Integration**: [Contact globalgovernanceframework@gmail.com with subject "Legal Integration Training"]
+- **Legal Framework Integration**: [Contact globalgovernanceframeworks@gmail.com with subject "Legal Integration Training"]
 - **Policy Development Skills**: [Contact with subject "Policy Development Training"]
 - **Monitoring and Evaluation**: [Contact with subject "Monitoring Training"]
 - **Enforcement and Compliance**: [Contact with subject "Enforcement Training"]
 
 **Facilitator Training:**
-- **Charter Development Facilitation**: [Contact globalgovernanceframework@gmail.com with subject "Charter Facilitation Training"]
+- **Charter Development Facilitation**: [Contact globalgovernanceframeworks@gmail.com with subject "Charter Facilitation Training"]
 - **Community Consultation Methods**: [Contact with subject "Consultation Training"]
 - **Cultural Sensitivity Training**: [Contact with subject "Cultural Sensitivity Training"]
 - **Consensus Building Techniques**: [Contact with subject "Consensus Building Training"]
@@ -1202,19 +1202,19 @@ Currently available:
 **Charter Community Networks:**
 
 **Peer Learning Opportunities:**
-- **Charter Development Networks**: [Regional charter networks - in development. Contact globalgovernanceframework@gmail.com for current opportunities]
+- **Charter Development Networks**: [Regional charter networks - in development. Contact globalgovernanceframeworks@gmail.com for current opportunities]
 - **Implementation Experience Sharing**: [Contact with subject "Charter Implementation Sharing"]
 - **Best Practice Documentation**: [Contact with subject "Charter Best Practices"]
 - **Innovation and Adaptation**: [Contact with subject "Charter Innovation"]
 
 **International Cooperation:**
 - **Global Charter Network**: [International charter networks - in development]
-- **Cross-Cultural Learning**: [Contact globalgovernanceframework@gmail.com with subject "Cross-Cultural Charter Learning"]
+- **Cross-Cultural Learning**: [Contact globalgovernanceframeworks@gmail.com with subject "Cross-Cultural Charter Learning"]
 - **Standard Harmonization**: [Contact with subject "Charter Standard Harmonization"]
 - **Capacity Building Exchange**: [Contact with subject "Charter Capacity Exchange"]
 
 **Research and Evaluation:**
-- **Charter Effectiveness Research**: [Contact globalgovernanceframework@gmail.com with subject "Charter Research Collaboration"]
+- **Charter Effectiveness Research**: [Contact globalgovernanceframeworks@gmail.com with subject "Charter Research Collaboration"]
 - **Impact Assessment Studies**: [Contact with subject "Charter Impact Assessment"]
 - **Innovation Documentation**: [Contact with subject "Charter Innovation Research"]
 - **Academic Partnerships**: [Contact with subject "Charter Academic Partnership"]
@@ -1290,7 +1290,7 @@ Currently available:
 ### Contact Information and Support
 
 **Primary Support:**
-- **Email:** globalgovernanceframework@gmail.com
+- **Email:** globalgovernanceframeworks@gmail.com
 - **Website:** globalgovernanceframework.org
 - **Subject Lines for Charter-Specific Support:**
   - "Charter Development Support" - for general charter development guidance
@@ -1302,9 +1302,9 @@ Currently available:
   - "Charter Network Connection" - for connecting with other charter communities
 
 **Regional Charter Networks:** [Regional networks - in development]
-- **Americas Charter Network**: [Contact globalgovernanceframework@gmail.com with subject "Americas Charter Network"]
-- **Europe-Africa Charter Network**: [Contact globalgovernanceframework@gmail.com with subject "Europe-Africa Charter Network"]
-- **Asia-Pacific Charter Network**: [Contact globalgovernanceframework@gmail.com with subject "Asia-Pacific Charter Network"]
+- **Americas Charter Network**: [Contact globalgovernanceframeworks@gmail.com with subject "Americas Charter Network"]
+- **Europe-Africa Charter Network**: [Contact globalgovernanceframeworks@gmail.com with subject "Europe-Africa Charter Network"]
+- **Asia-Pacific Charter Network**: [Contact globalgovernanceframeworks@gmail.com with subject "Asia-Pacific Charter Network"]
 
 ---
 
@@ -1374,7 +1374,7 @@ This charter template represents the beginning of ongoing support for animal wel
 This Guardian Rights Charter Template was developed through consultation with animal welfare advocates, community leaders, legal experts, and cultural representatives from diverse contexts. The template represents best practices in rights-based advocacy while maintaining flexibility for local adaptation and cultural integration.
 
 **Feedback and Continuous Improvement:**
-We welcome feedback from communities and organizations using this template. Please share your experiences, adaptations, and suggestions with globalgovernanceframework@gmail.com using subject "Charter Template Feedback".
+We welcome feedback from communities and organizations using this template. Please share your experiences, adaptations, and suggestions with globalgovernanceframeworks@gmail.com using subject "Charter Template Feedback".
 
 **Cultural Responsiveness:**
 This template is designed for adaptation to diverse cultural, legal, and organizational contexts while maintaining core animal welfare principles. We encourage cultural adaptation and welcome input from diverse communities and perspectives.

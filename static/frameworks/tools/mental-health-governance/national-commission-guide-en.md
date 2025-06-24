@@ -368,7 +368,7 @@ CHAPTER 4: COMMUNITY ACCOUNTABILITY
 ## Contact & Implementation Support
 
 ### **Implementation Guidance** 📞
-- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Contact**: globalgovernanceframeworks@gmail.com
 - **Subject Line**: "National Commission Formation Guide"
 - **Website**: globalgovernanceframework.org
 

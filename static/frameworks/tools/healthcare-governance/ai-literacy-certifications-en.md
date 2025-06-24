@@ -182,5 +182,5 @@ Stakeholders of the Planetary Health Accord, embrace AI literacy as a tool for h
 Together, we will ensure AI serves justice, respects cultural wisdom, and heals our planet. Join the movement to make AI a force for good in health transformation.  
 
 **Access the Certifications**: Available in PDF and editable markdown at [Tools Library](/frameworks/tools/planetary-health).  
-**Feedback**: Share input via [globalgovernanceframework@gmail.com].  
+**Feedback**: Share input via [globalgovernanceframeworks@gmail.com].  
 **Related Resources**: Explore [Blockchain Implementation Guide](/frameworks/tools/planetary-health/blockchain-implementation-guide-en.pdf) and [AI Ethics Protocols](/frameworks/tools/planetary-health/ai-ethics-protocols-en.pdf) for complementary tools.

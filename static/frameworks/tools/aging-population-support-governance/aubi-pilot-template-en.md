@@ -1671,6 +1671,6 @@ ___________________ Date: ________
 
 *For additional support, consultation, and connection with other pilot communities, visit: agingframework.org/aubi*
 
-*Contact: globalgovernanceframework@gmail.com*
+*Contact: globalgovernanceframeworks@gmail.com*
 
 *The transformation begins now.*

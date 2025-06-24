@@ -243,14 +243,14 @@ Hubs prioritize cultural safety, indigenous sovereignty, and equity to ensure in
   - [Health Equity Dashboard Template](/frameworks/tools/planetary-health/health-equity-dashboard-en.pdf)
   - [Community Engagement Toolkit](/frameworks/tools/planetary-health/community-engagement-toolkit-en.pdf)
 - **Support Channels**:
-  - Email: [globalgovernanceframework@gmail.com]
+  - Email: [globalgovernanceframeworks@gmail.com]
   - Community Portal: [globalgovernanceframework.org/contact]
   - Quarterly Regional Health Review Cycles for feedback.
 - **Training Resources**:
   - Cultural Competency Training Module (Tools Library).
   - Health Equity Monitoring Workshop (online, multilingual).
 
-**Call to Action**: Start by identifying pilot regions and forming a regional task force to draft the hub charter. Use the Community Engagement Toolkit to plan your first health forum. Contact [globalgovernanceframework@gmail.com] for pilot funding opportunities or to join regional training programs.
+**Call to Action**: Start by identifying pilot regions and forming a regional task force to draft the hub charter. Use the Community Engagement Toolkit to plan your first health forum. Contact [globalgovernanceframeworks@gmail.com] for pilot funding opportunities or to join regional training programs.
 
 ---
 

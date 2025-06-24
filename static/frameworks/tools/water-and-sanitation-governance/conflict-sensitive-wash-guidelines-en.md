@@ -660,7 +660,7 @@ Annual Strategic Review:
 4. **Monitor and Adapt**: Continuously monitor conflict sensitivity and adapt programming for maximum peace-building impact
 
 **Contact for Conflict-Sensitive Programming Support**:
-- **Email**: globalgovernanceframework@gmail.com
+- **Email**: globalgovernanceframeworks@gmail.com
 - **Subject**: "Conflict-Sensitive WASH Implementation"
 - **Include**: Conflict context, community dynamics, programming scale, and technical assistance needs
 

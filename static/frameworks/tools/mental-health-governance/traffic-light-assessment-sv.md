@@ -436,7 +436,7 @@ Långsiktig ansvarsskyldighet: ___________________
 ## Kontakt & implementeringsstöd
 
 ### **Implementeringsvägledning** 📞
-- **Primär kontakt**: globalgovernanceframework@gmail.com
+- **Primär kontakt**: globalgovernanceframeworks@gmail.com
 - **Ämnesrad**: "Traffic Light Assessment Framework"
 - **Webbplats**: globalgovernanceframework.org
 

@@ -166,5 +166,5 @@ Stakeholders are urged to launch Health Sanctuaries to transform global health:
 Together, we can build health systems that heal communities, honor cultures, and restore our planet. Join the Planetary Health Accord to make Health Sanctuaries a reality.  
 
 **Access the Guides**: Available in PDF and editable markdown at [Tools Library](#/frameworks/tools/planetary-health).  
-**Feedback**: Share input via [globalgovernanceframework@gmail.com].  
+**Feedback**: Share input via [globalgovernanceframeworks@gmail.com].  
 **Related Resources**: Explore [Community Engagement Playbook](#/frameworks/tools/planetary-health/community-engagement-playbook-en.pdf) and [AI Ethics Protocols](#/frameworks/tools/planetary-health/ai-ethics-protocols-en.pdf) for complementary tools.

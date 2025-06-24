@@ -124,7 +124,7 @@ The framework is accessible through the Global Governance Framework website, des
 - **Download**: Access the complete framework as a PDF via the [Downloads](/downloads) section, available in multiple languages and accessibility formats.
 - **Navigate**: Use this index to explore sections following the mandala structure or access specific components via section links.
 - **Access Tools**: Browse all implementation tools with trauma-informed protocols at the [Tools Library](/frameworks/tools/mental-health).
-- **Engage**: Share feedback through secure, community-controlled channels or email [globalgovernanceframework@gmail.com] with mental health data sovereignty protections.
+- **Engage**: Share feedback through secure, community-controlled channels or email [globalgovernanceframeworks@gmail.com] with mental health data sovereignty protections.
 - **Organize**: Use political organizing toolkits to build mental health advocacy coalitions and establish community-led task forces.
 - **Implement**: Begin with the Mental Health Governance Starter Kit or connect with existing pilot programs and community-led initiatives.
 
@@ -146,7 +146,7 @@ The framework is accessible through the Global Governance Framework website, des
 
 **About the Framework**: Developed through community-led co-design processes with extensive input from mental health advocates, traditional healers, neurodivergent communities, and survivors of psychiatric systems. Representing synthesized wisdom from global healing traditions and contemporary governance innovations, maintained by the Global Governance Framework community at globalgovernanceframework.org.
 
-**Mental Health Advocacy**: Support the transformation of global mental health systems by contributing to policy development, community organizing, research, or direct service. Contact us at [globalgovernanceframework@gmail.com] to engage with community-led initiatives respecting your boundaries and healing journey.
+**Mental Health Advocacy**: Support the transformation of global mental health systems by contributing to policy development, community organizing, research, or direct service. Contact us at [globalgovernanceframeworks@gmail.com] to engage with community-led initiatives respecting your boundaries and healing journey.
 
 **The Vision Realized**: By 2035, mental health emerges as a transcultural human right rather than medical privilege—where community wisdom guides healing rather than institutional control, where consciousness exploration is celebrated rather than pathologized, and where collective flourishing replaces individual treatment. **The future is community-led, and the transformation begins in our healing circles today.**
 

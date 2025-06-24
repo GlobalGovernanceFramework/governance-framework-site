@@ -59,4 +59,4 @@ Så här kan ett fredsväggsögonblick se ut! Vad skulle du lägga till? 🎨�
 Få tillgång till dessa i *Peace & Conflict Resolution Seed Kit* via [Tools Library](/frameworks/tools/peace).
 
 ## Uppmaning till handling
-Du har makten att bygga fred! 🚀🌟🕊️ Börja smått—organisera en fredsklubb, dela ett fredsinlägg eller arrangera en dialog. Kolla in *Seed Kit* och det fullständiga ramverket på [Tools Library](/frameworks/tools/peace). Berätta om ditt arbete på [globalgovernanceframework@gmail.com] för att gå med ungdomsfredsbyggare världen över! 🌎
+Du har makten att bygga fred! 🚀🌟🕊️ Börja smått—organisera en fredsklubb, dela ett fredsinlägg eller arrangera en dialog. Kolla in *Seed Kit* och det fullständiga ramverket på [Tools Library](/frameworks/tools/peace). Berätta om ditt arbete på [globalgovernanceframeworks@gmail.com] för att gå med ungdomsfredsbyggare världen över! 🌎

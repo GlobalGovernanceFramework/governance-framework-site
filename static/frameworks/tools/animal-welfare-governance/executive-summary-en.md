@@ -4,7 +4,7 @@
 **Strategic Overview for Leadership Implementation**
 
 **Contact Information for Implementation Support**
-- Primary Contact: globalgovernanceframework@gmail.com
+- Primary Contact: globalgovernanceframeworks@gmail.com
 - Website: globalgovernanceframework.org
 - Implementation Tools: Available at /frameworks/tools/animal-welfare
 - Subject Line for Executive Consultation: "Executive Implementation Support - Animal Welfare Framework"
