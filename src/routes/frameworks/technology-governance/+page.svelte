@@ -5,6 +5,7 @@
   import { browser } from '$app/environment';
   import { invalidate } from '$app/navigation';
   import { base } from '$app/paths';
+  import SectionNotice from '$lib/components/SectionNotice.svelte';
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
   import { onMount, tick } from 'svelte';
   import { slide } from 'svelte/transition';
@@ -202,6 +203,13 @@
   <title>{tf.meta?.title || 'Technology Governance Implementation Framework - Global Governance Framework'}</title>
   <meta name="description" content="{tf.meta?.description || 'A comprehensive framework for implementing effective technology governance systems'}" />
 </svelte:head>
+
+<SectionNotice 
+  type="warning" 
+  customContent={true}
+>
+  <p>{$t('common.notices.section.frameworks.text')}</p>
+</SectionNotice>
 
 {#if mounted}
   <div class="documentation-container">

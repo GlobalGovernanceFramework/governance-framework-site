@@ -5,6 +5,7 @@
   import { browser } from '$app/environment';
   import { invalidate } from '$app/navigation';
   import { base } from '$app/paths';
+  import SectionNotice from '$lib/components/SectionNotice.svelte';
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
   import { onMount, tick } from 'svelte';
   import { slide } from 'svelte/transition';
@@ -208,6 +209,13 @@
   <title>{esf.meta?.title || 'Environmental Stewardship Framework - Global Governance Framework'}</title>
   <meta name="description" content="{esf.meta?.description || 'A comprehensive plan for transformative environmental governance addressing ecosystem degradation, climate change, economic inequity, and technological ethics'}" />
 </svelte:head>
+
+<SectionNotice 
+  type="warning" 
+  customContent={true}
+>
+  <p>{$t('common.notices.section.frameworks.text')}</p>
+</SectionNotice>
 
 {#if mounted}
   <div class="documentation-container">

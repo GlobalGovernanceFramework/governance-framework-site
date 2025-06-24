@@ -1,7 +1,11 @@
 ---
 title: Global Governance Biodiversity Implementation Framework
 section: index
-revision: Version 2.0 (2025-05-23)
+status: First draft
+revision: 0.5
+releaseDate: too be determined
+lastUpdated: 2025-06-24
+nextReview: too be determined
 ---
 
 # Global Governance Biodiversity Implementation Framework

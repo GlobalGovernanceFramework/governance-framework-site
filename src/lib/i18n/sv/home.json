@@ -1,13 +1,4 @@
 {
-  "disclaimer": {
-    "title": "Ramverksutvecklingsstatus",
-    "text": [
-      "Detta är ett proof-of-concept-projekt som utforskar nya tillvägagångssätt för global styrning. Som sådana är dessa ramverk levande dokument och varierar i mognad.",
-      "Vårt mål är att inspirera diskussion och tillhandahålla anpassningsbara verktyg, inte att presentera ett färdigt, operativt system.",
-      "• Menat att stödja, inte ersätta, mänsklig bedömning och policyexpertis.",
-      "• Vi välkomnar feedback för att forma deras utveckling. Kontrollera varje dokuments status för dess nuvarande beredskapsnivå."
-    ]
-  },
   "whyExists": {
     "title": "Varför detta existerar",
     "paragraph1": "Detta projekt började med en grundläggande fråga: Vad skulle det krävas för att mänskligheten ska blomstra tillsammans?",

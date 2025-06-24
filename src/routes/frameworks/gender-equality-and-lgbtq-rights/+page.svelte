@@ -1,4 +1,4 @@
-<!-- src/routes/frameworks/docs/implementation/gender/+page.svelte -->
+<!-- src/routes/frameworks/gender-equality-and-lgbtq-rights/+page.svelte -->
 <script>
   import { page } from '$app/stores';
   import { t, locale } from '$lib/i18n';
@@ -15,6 +15,11 @@
   }
 </script>
 
+<svelte:head>
+  <title>Gender Equality & LGBTQ+ Rights Framework - Global Governance Framework</title>
+  <meta name="description" content="A comprehensive framework promoting gender equality and LGBTQ+ rights across all sectors of society through intersectional policy development and inclusive governance." />
+</svelte:head>
+
 <div class="documentation-container">
   <FrameworkSidebar />
 
@@ -23,12 +28,12 @@
     <FrameworkComingSoon 
       frameworkName="gender"
       icon="🏳️‍🌈"
-      expectedQuarter="Q4 2025"
+      expectedQuarter="Q3 2025"
       themeColors={{
-        primary: '#db2777',
-        secondary: '#ec4899', 
-        accent: '#f59e0b',
-        light: '#fdf2f8'
+        primary: '#e91e63',
+        secondary: '#f06292', 
+        accent: '#ff9800',
+        light: '#fce4ec'
       }}
       contactEmail="globalgovernanceframeworks@gmail.com"
     />

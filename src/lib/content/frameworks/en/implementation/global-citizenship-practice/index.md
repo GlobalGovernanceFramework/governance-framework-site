@@ -1,6 +1,11 @@
 ---
 title: Global Citizenship Practice Framework
 section: index
+status: First release
+revision: 1.0
+releaseDate: too be determined
+lastUpdated: 2025-06-24
+nextReview: too be determined
 ---
 
 # Global Citizenship Practice Framework
@@ -77,7 +82,7 @@ The framework is organized into 18 comprehensive sections, each building toward 
 ## <a id="access-and-usage"></a>Access and Usage
 The framework is accessible through the Global Governance Framework website and designed for both individual development and community implementation. Stakeholders can:
 
-- **Download**: Access the complete framework as a PDF via the [Downloads](/downloads) section, available in multiple formats.
+- **Download**: Access the complete framework as a PDF via the [Downloads](/downloads) section, available as PDF.
 - **Navigate**: Use this index to explore sections sequentially or jump to specific topics via section links.
 - **Practice**: Begin with the self-assessment tools and development path guidance for personal growth.
 - **Implement**: Use the practical tools and templates for community and organizational implementation.

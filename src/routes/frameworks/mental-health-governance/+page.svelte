@@ -5,6 +5,7 @@
   import { browser } from '$app/environment';
   import { invalidate } from '$app/navigation';
   import { base } from '$app/paths';
+  import SectionNotice from '$lib/components/SectionNotice.svelte';
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
   import { onMount, tick } from 'svelte';
   import { slide } from 'svelte/transition';
@@ -210,6 +211,13 @@
   <title>{mhf.meta?.title || 'Living Mandala for Planetary Mental Health - Global Governance Framework'}</title>
   <meta name="description" content="{mhf.meta?.description || 'A transformative framework for global mental health governance, positioning mental health as a transcultural human right woven into our planetary interdependence'}" />
 </svelte:head>
+
+<SectionNotice 
+  type="warning" 
+  customContent={true}
+>
+  <p>{$t('common.notices.section.frameworks.text')}</p>
+</SectionNotice>
 
 {#if mounted}
   <div class="documentation-container">

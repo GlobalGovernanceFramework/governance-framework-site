@@ -1,6 +1,11 @@
 ---
 title: Environmental Stewardship Framework for Multi-Level Governance
 section: index
+status: First draft
+revision: 0.5
+releaseDate: too be determined
+lastUpdated: 2025-06-24
+nextReview: too be determined
 ---
 
 # Environmental Stewardship Framework for Multi-Level Governance

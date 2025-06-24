@@ -1,4 +1,17 @@
 {
+  "notices": {
+    "global": {
+      "text": "This is a living project. We are actively developing these frameworks and building our organization. You may encounter broken links or inconsistencies as we refine our work. Thank you for your understanding.",
+      "dismiss": "Dismiss notice"
+    },
+    "section": {
+      "defaultTitle": "Section Notice",
+      "dismiss": "Dismiss",
+      "frameworks": {
+        "text": "Note from the Founder: The core concepts and structure of this framework are in place, but it is currently undergoing a detailed revision to improve clarity, consistency, and alignment with our project's strategy. We appreciate your patience, and your feedback during this audit is invaluable."
+       }
+    }
+  },
   "header": {
     "home": "Home",
     "blog": "Blog",

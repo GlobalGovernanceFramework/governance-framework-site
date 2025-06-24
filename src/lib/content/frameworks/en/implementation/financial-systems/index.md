@@ -1,8 +1,13 @@
 ---
 title: Financial Systems Framework
 section: index
-revision: Version 1.0 (2025-05-21)
+status: First draft
+revision: 0.5
+releaseDate: too be determined
+lastUpdated: 2025-06-24
+nextReview: too be determined
 ---
+
 
 # Financial Systems Framework
 

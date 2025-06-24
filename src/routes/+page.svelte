@@ -44,29 +44,6 @@
 <section style="padding: 2rem 0; background-color: #f8fafc;">
   <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
     
-    <!-- Document Readiness Disclaimer - Collapsible -->
-    <div class="collapsible-info-box" style="margin-bottom: 1rem;">
-      <button 
-        class="info-box-header disclaimer-header"
-        on:click={toggleDisclaimer}
-        aria-expanded={disclaimerExpanded}
-      >
-        <div class="header-content">
-          <span class="icon">⚠️</span>
-          <h3>{$t('home.disclaimer.title')}</h3>
-        </div>
-        <span class="toggle-icon" class:rotated={disclaimerExpanded}>▼</span>
-      </button>
-      
-      {#if disclaimerExpanded}
-        <div class="info-box-content disclaimer-content" style="animation: slideDown 0.3s ease-out;">
-          {#each $t('home.disclaimer.text') || [] as paragraph}
-            <p>{paragraph}</p>
-          {/each}
-        </div>
-      {/if}
-    </div>
-
     <!-- Why This Exists - Collapsible -->
     <div class="collapsible-info-box" style="margin-bottom: 1rem;">
       <button 

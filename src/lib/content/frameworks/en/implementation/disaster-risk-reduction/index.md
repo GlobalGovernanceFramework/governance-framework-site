@@ -1,8 +1,13 @@
 ---
 title: Disaster Risk Reduction & Resilience (DRR&R) Framework
 section: index
-revision: Version 1.0 (2025-06-17)
+status: First draft
+revision: 0.3
+releaseDate: too be determined
+lastUpdated: 2025-06-24
+nextReview: too be determined
 ---
+
 
 # Disaster Risk Reduction & Resilience (DRR&R) Framework
 

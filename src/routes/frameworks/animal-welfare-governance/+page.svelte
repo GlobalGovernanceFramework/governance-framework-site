@@ -5,7 +5,9 @@
   import { browser } from '$app/environment';
   import { invalidate } from '$app/navigation';
   import { base } from '$app/paths';
+  import SectionNotice from '$lib/components/SectionNotice.svelte';
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
+
   import { onMount, tick } from 'svelte';
   import { slide } from 'svelte/transition';
 
@@ -235,6 +237,13 @@
   <title>{awf.meta?.title || 'Global Guardian Framework: Animal Welfare for a Shared Future - Global Governance Framework'}</title>
   <meta name="description" content="{awf.meta?.description || 'A transformative blueprint for converting humanity\'s relationship with animals from domination to guardianship, positioning animals as sentient beings deserving compassion and respect'}" />
 </svelte:head>
+
+<SectionNotice 
+  type="warning" 
+  customContent={true}
+>
+  <p>{$t('common.notices.section.frameworks.text')}</p>
+</SectionNotice>
 
 {#if mounted}
   <div class="documentation-container">

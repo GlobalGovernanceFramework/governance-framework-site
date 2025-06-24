@@ -1,13 +1,4 @@
 {
-  "disclaimer": {
-    "title": "Framework Development Status",
-    "text": [
-      "This is a proof-of-concept project exploring new approaches to global governance. As such, these frameworks are living documents and vary in maturity.",
-      "Our goal is to inspire discussion and provide adaptable tools, not to present a finalized, operational system.",
-      "• Meant to support, not replace, human judgment and policy expertise.",
-      "• We welcome feedback to shape their evolution. Check each document’s status for its current readiness level."
-    ]
-  },
   "whyExists": {
     "title": "Why This Exists",
     "paragraph1": "This project began with a fundamental question: What would it take for humanity to thrive together?",

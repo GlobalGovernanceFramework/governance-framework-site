@@ -4,6 +4,7 @@
   import { browser } from '$app/environment';
   import { invalidate } from '$app/navigation';
   import { base } from '$app/paths';
+  import SectionNotice from '$lib/components/SectionNotice.svelte';
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
   import { onMount, tick } from 'svelte';
   import { slide } from 'svelte/transition';
@@ -228,6 +229,13 @@
   <title>{phf.meta?.title || 'Planetary Health Accord Implementation Framework - Global Governance Framework'}</title>
   <meta name="description" content="{phf.meta?.description || 'A revolutionary blueprint for global health transformation, weaving together indigenous sovereignty, technological innovation, and community-centered care'}" />
 </svelte:head>
+
+<SectionNotice 
+  type="warning" 
+  customContent={true}
+>
+  <p>{$t('common.notices.section.frameworks.text')}</p>
+</SectionNotice>
 
 {#if mounted}
   <div class="documentation-container">

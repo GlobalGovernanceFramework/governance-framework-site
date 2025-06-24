@@ -1,7 +1,10 @@
 ---
 title: Global Framework for Water & Sanitation (WASH) Governance
-framework: water
-revision: Version 1.0 (2025-06-07)
+status: First draft
+revision: 0.5
+releaseDate: too be determined
+lastUpdated: 2025-06-24
+nextReview: too be determined
 ---
 
 # Global Framework for Water & Sanitation (WASH) Governance

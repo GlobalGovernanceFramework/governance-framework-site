@@ -1,7 +1,11 @@
 ---
 title: Consciousness & Inner Development Framework
 section: index
-revision: 1.0 (2025-05-30)
+status: First draft
+revision: 0.5
+releaseDate: too be determined
+lastUpdated: 2025-06-24
+nextReview: too be determined
 ---
 
 # Consciousness & Inner Development Framework

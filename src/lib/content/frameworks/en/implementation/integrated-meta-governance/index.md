@@ -1,9 +1,11 @@
 ---
 title: Integrated Meta-Governance Framework
 section: index
-status: Enhanced Version
-lastUpdated: June 23, 2025
-nextReview: To be determined
+status: First Release
+revision: 1.0
+lastUpdated: 2025-06-23
+nextReview: too be determined
+releaseDate: 2025-06-23
 ---
 
 # Integrated Meta-Governance Framework

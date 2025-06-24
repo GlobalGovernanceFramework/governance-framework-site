@@ -1,4 +1,17 @@
 {
+  "notices": {
+    "global": {
+      "text": "Detta är ett levande projekt. Vi utvecklar aktivt dessa ramverk och bygger vår organisation. Du kan stöta på trasiga länkar eller inkonsekvenser medan vi förfinar vårt arbete. Tack för din förståelse.",
+      "dismiss": "Stäng meddelande"
+    },
+    "section": {
+      "defaultTitle": "Sektionsmeddelande",
+      "dismiss": "Stäng",
+      "frameworks": {
+        "text": "Meddelande från grundaren: Kärnkoncepten och strukturen i detta ramverk finns på plats, men det genomgår för närvarande en detaljerad revidering för att förbättra tydlighet, konsekvens och överensstämmelse med vårt projekts strategi. Vi uppskattar ditt tålamod, och din feedback under denna granskning är ovärderlig."
+      }
+    }
+  },
   "header": {
     "home": "Hem",
     "blog": "Blogg",

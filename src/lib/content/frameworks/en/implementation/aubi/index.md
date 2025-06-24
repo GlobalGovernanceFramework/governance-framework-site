@@ -1,7 +1,11 @@
 ---
 title: Adaptive Universal Basic Income (AUBI) Framework
 section: index
-revision: Version 3.0 (2025-06-16)
+status: First draft, without web pages
+revision: 0.4
+releaseDate: too be determined
+lastUpdated: 2025-06-24
+nextReview: too be determined
 ---
 
 # Adaptive Universal Basic Income (AUBI) Framework

@@ -9,6 +9,7 @@
   import { base } from '$app/paths';
   import { writable } from 'svelte/store';
   import Header from '$lib/components/Header.svelte';
+  import GlobalNotice from '$lib/components/GlobalNotice.svelte';
   import { registerServiceWorker } from '$lib/utils/registerServiceWorker';
   
   // Initialize stores at the top level
@@ -55,7 +56,7 @@
 
 <div class="flex flex-col min-h-screen">
   <Header />
-  
+  <GlobalNotice />
   <main class="flex-grow container mx-auto px-4 py-8">
     <slot />
   </main>

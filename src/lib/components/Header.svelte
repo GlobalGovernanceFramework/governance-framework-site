@@ -216,7 +216,6 @@
     .nav-item {
       margin-bottom: 0;
       margin-right: 1.25rem !important;
-      /* REMOVED: display: flex and align-items that were breaking dropdowns */
     }
   }
 
@@ -232,7 +231,6 @@
     transition: all 0.2s;
     font-size: 0.9rem !important;
     line-height: 1.2;
-    /* REMOVED: display: inline-flex and align-items that were breaking dropdowns */
   }
   
   .nav-link:hover {
@@ -260,7 +258,6 @@
     position: relative;
   }
 
-  /* FIXED: Removed flex properties that were breaking dropdown behavior */
   .dropdown-icon {
     display: inline-block;
     margin-left: 0.25rem;
@@ -275,7 +272,7 @@
   }
 
   .dropdown-menu {
-    display: none; /* CRITICAL: Ensure dropdowns start hidden */
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -284,14 +281,14 @@
     border: 1px solid #2D5F2D;
     border-radius: 0.375rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 20;
+    z-index: 60;
     margin-top: 0.25rem;
     padding-top: 0.25rem;
-    flex-direction: column; /* FIXED: Ensure vertical layout */
+    flex-direction: column;
   }
 
   .dropdown:hover .dropdown-menu {
-    display: block; /* CRITICAL: Show on hover */
+    display: block;
   }
 
   .dropdown::after {
@@ -360,11 +357,11 @@
       margin-top: 0.5rem;
       margin-bottom: 0.5rem;
       margin-left: 1rem;
-      display: none; /* CRITICAL: Ensure mobile dropdowns start hidden */
+      display: none;
     }
     
     .dropdown.open .dropdown-menu {
-      display: block; /* CRITICAL: Show when mobile dropdown is opened */
+      display: block;
     }
     
     .dropdown .dropdown-toggle {
@@ -382,7 +379,6 @@
     padding: 0;
   }
 
-  /* BALANCED RESPONSIVE SIZING */
   @media (max-width: 1300px) and (min-width: 768px) {
     .nav-item {
       margin-right: 1.1rem !important;

@@ -1,7 +1,11 @@
 ---
 title: Digital Commons Framework
 section: index
-revision: Version 2.0 (2025-05-22)
+status: First draft
+revision: 0.5
+releaseDate: too be determined
+lastUpdated: 2025-06-24
+nextReview: too be determined
 ---
 
 # Digital Commons Framework

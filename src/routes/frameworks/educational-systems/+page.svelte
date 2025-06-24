@@ -5,6 +5,7 @@
   import { browser } from '$app/environment';
   import { invalidate } from '$app/navigation';
   import { base } from '$app/paths';
+  import SectionNotice from '$lib/components/SectionNotice.svelte';
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
   import { onMount, tick } from 'svelte';
   import { slide } from 'svelte/transition';
@@ -237,6 +238,13 @@
   <title>{ef.meta?.title || 'Regenerative Educational Systems Implementation Framework - Global Governance Framework'}</title>
   <meta name="description" content="{ef.meta?.description || 'A comprehensive, adaptable blueprint for transforming global education into a regenerative, inclusive ecosystem'}" />
 </svelte:head>
+
+<SectionNotice 
+  type="warning" 
+  customContent={true}
+>
+  <p>{$t('common.notices.section.frameworks.text')}</p>
+</SectionNotice>
 
 {#if mounted}
   <div class="documentation-container">

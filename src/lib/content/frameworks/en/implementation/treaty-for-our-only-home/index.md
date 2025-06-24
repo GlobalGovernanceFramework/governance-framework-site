@@ -1,7 +1,11 @@
 ---
 title: Treaty for Our Only Home v1.0
 section: index
-revision: Version 1.0 (2025-06-15)
+status: First release
+revision: 1.0
+releaseDate: 2025-06-15
+lastUpdated: 2025-06-24
+nextReview: too be determined
 ---
 
 # Treaty for Our Only Home v1.0

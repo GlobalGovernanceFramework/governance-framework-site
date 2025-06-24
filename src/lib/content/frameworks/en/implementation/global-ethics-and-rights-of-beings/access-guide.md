@@ -1,3 +1,12 @@
+---
+title: Global Ethics & Rights of Beings Framework: Access Guide
+status: First draft
+revision: 0.4
+releaseDate: too be determined
+lastUpdated: 2025-06-24
+nextReview: too be determined
+---
+
 # Global Ethics & Rights of Beings Framework: Access Guide
 
 ## Welcome to the Framework

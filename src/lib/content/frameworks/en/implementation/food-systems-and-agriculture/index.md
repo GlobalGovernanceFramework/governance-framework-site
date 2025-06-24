@@ -1,6 +1,10 @@
 ---
 title: Food Systems & Agriculture Framework
 section: index
+revision: 0.5
+releaseDate: too be determined
+lastUpdated: 2025-06-24
+nextReview: too be determined
 ---
 
 # Food Systems & Agriculture Framework
