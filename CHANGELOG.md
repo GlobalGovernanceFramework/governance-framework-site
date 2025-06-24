@@ -2,6 +2,23 @@
 
 All notable changes to the Global Governance Framework website will be documented in this file.
 
+## [0.4.0] - 2025-06-25
+
+### Project Refinement & Strategy
+This release marks the beginning of a major project-wide audit and strategic refinement phase. The focus has shifted from rapid feature addition to improving the quality, consistency, and ethical alignment of all existing content and frameworks.
+
+### Added
+- Implemented a site-wide notification system to inform users of the project's active development status.
+- Created standardized issue templates on GitHub for bug reports and ethical reviews.
+- Established a `CONTRIBUTING.md` file centered on a GitHub-first workflow.
+
+### Improved
+- Began a comprehensive audit of all frameworks to address consistency, over-promising, and cross-framework alignment. This is a major ongoing effort.
+- Initiated a formal ethical review of the "Veto Trade" proposal to ensure it aligns with core principles.
+- Contribution Workflow: Refined the project's contribution model to be GitHub-first. As part of this strategic shift, the public Discord has been made private, and all public links are being removed to create a focused workspace.
+
+---
+
 ## [0.3.0] - 2025-05-16
 
 ### Project Milestone
