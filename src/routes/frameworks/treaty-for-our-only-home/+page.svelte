@@ -963,6 +963,24 @@
     color: var(--treaty-secondary);
   }
 
+  /* Ordered lists */
+  .content :global(ol) {
+    list-style-type: decimal;
+    counter-reset: item;
+  }
+
+  .content :global(ol li) {
+    position: relative;
+    margin-bottom: 0.75rem;
+    padding-left: 0.5rem;
+    color: #4b5563;
+  }
+
+  .content :global(ol li::marker) {
+    color: var(--treaty-secondary);
+    font-weight: 600;
+  }
+
   /* Links */
   .content :global(a) {
     color: var(--treaty-secondary);
