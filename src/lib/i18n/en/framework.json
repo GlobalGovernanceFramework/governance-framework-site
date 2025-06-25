@@ -1,6 +1,6 @@
 {
   "hero": {
-    "title": "The Framework",
+    "title": "The Frameworks",
     "subtitle": "Tools for governance interoperability and evolution"
   },
   "components": {
@@ -15,12 +15,12 @@
     }
   },
   "overview": {
-    "title": "Framework Overview",
+    "title": "Frameworks Overview",
     "description": "The Global Governance Frameworks provides a comprehensive approach to addressing complex global challenges through interoperable governance systems. Explore our documentation to discover principles, implementation strategies, and practical applications.",
     "learnMore": "Learn more"
   },
   "quickAccess": {
-    "title": "Explore the Framework Documentation",
+    "title": "Explore the Frameworks Documentation",
     "description": "Access detailed documentation on principles, implementation guides, case studies, and resources.",
     "viewDocs": "View Documentation",
     "corePrinciples": "Core Principles",
@@ -143,7 +143,7 @@
   },
   "bottomUpApproaches": {
     "title": "Bottom-Up Meets Institutional Evolution",
-    "intro": "Effective global governance requires both grassroots innovation and institutional adaptation. Our framework focuses on the interfaces between these approaches:",
+    "intro": "Effective global governance requires both grassroots innovation and institutional adaptation. Our frameworks focuses on the interfaces between these approaches:",
     "principles": [
       {
         "title": "Mutual Recognition Protocols",
@@ -166,7 +166,7 @@
   },
   "comingSoon": {
     "title": "Coming Soon",
-    "intro": "We're currently developing detailed content for the governance framework. This page will soon include comprehensive documentation on:",
+    "intro": "We're currently developing detailed content for the governance frameworks. This page will soon include comprehensive documentation on:",
     "items": [
       "Governance Interoperability Models",
       "Decision Allocation Frameworks",
