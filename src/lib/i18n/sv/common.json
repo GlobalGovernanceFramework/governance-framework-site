@@ -43,6 +43,8 @@
     "frameworkAIFutures": "AI-framtider",
     "frameworkResources": "Resurser",
     "frameworkGlossary": "Ordlista",
+    "implementationFrameworks": "Implementeringsramverk",
+    "tieredFrameworks": "Nivåindelade ramverk",
     "getInvolvedFounding": "Bli grundare",
     "getInvolvedFrameworks": "Bidra till ramverk",
     "getInvolvedTranslations": "Bidra med översättningar",
@@ -61,7 +63,8 @@
     "founding": "Grundande"
   },
   "language": {
-    "select": "Välj språk"
+    "select": "Välj språk",
+    "tooltip": "Byt språk"
   },
   "follow": {
     "title": "Håll kontakten",

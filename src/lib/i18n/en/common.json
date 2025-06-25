@@ -43,6 +43,8 @@
     "frameworkAIFutures": "AI Futures",
     "frameworkResources": "Resources",
     "frameworkGlossary": "Glossary",
+    "implementationFrameworks": "Implementation Frameworks",
+    "tieredFrameworks": "Tiered Frameworks",
     "getInvolvedFounding": "Become a Founder",
     "getInvolvedFrameworks": "Contribute to Frameworks",
     "getInvolvedTranslations": "Contribute Translations",
@@ -61,7 +63,8 @@
     "founding": "Founding"
   },
   "language": {
-    "select": "Select language"
+    "select": "Select language",
+    "tooltip": "Change language"
   },
   "follow": {
     "title": "Stay Connected",

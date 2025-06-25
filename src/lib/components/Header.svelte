@@ -6,6 +6,7 @@
   import { onMount } from 'svelte';
   import { browser } from '$app/environment';
   import { goto } from '$app/navigation';
+  import { allFrameworks, tierMetadata, getFrameworksByTier, getAllTiers } from '$lib/stores/frameworkNav.js';
   
   // Handle language selection
   function handleLocaleChange(e) {
@@ -16,31 +17,35 @@
   // Mobile menu state
   let isMenuOpen = false;
   let isFrameworksDropdownOpen = false;
-  let isMetaGovernanceDropdownOpen = false;
   let isGetInvolvedDropdownOpen = false;
+
+  // Group frameworks by tier for the tiered menu
+  const frameworksByTier = {};
+  const tiers = getAllTiers();
+  
+  tiers.forEach(tier => {
+    frameworksByTier[tier] = getFrameworksByTier(tier);
+  });
 
   function handleMetaGovernanceNavigation(event, section) {
     event.preventDefault();
     event.stopPropagation();
     
     if (browser) {
-      console.log('Header navigation triggered for section:', section); // Debug log
-      console.log('Current pathname:', $page.url.pathname); // Debug log
+      console.log('Header navigation triggered for section:', section);
+      console.log('Current pathname:', $page.url.pathname);
       
       // Close dropdown
-      isMetaGovernanceDropdownOpen = false;
+      isFrameworksDropdownOpen = false;
       
       // Check if we're already on the meta-governance page
       if ($page.url.pathname === base + '/frameworks/meta-governance') {
-        console.log('Already on page, updating hash'); // Debug log
-        // We're already on the page, just update hash
+        console.log('Already on page, updating hash');
         window.location.hash = section;
       } else {
-        console.log('Navigating to page with hash'); // Debug log
-        // Navigate to the page with hash using SvelteKit's goto
+        console.log('Navigating to page with hash');
         goto(`${base}/frameworks/meta-governance#${section}`).then(() => {
-          console.log('Navigation completed'); // Debug log
-          // Force a hash change event after navigation
+          console.log('Navigation completed');
           setTimeout(() => {
             if (window.location.hash !== `#${section}`) {
               window.location.hash = section;
@@ -58,11 +63,6 @@
     isFrameworksDropdownOpen = !isFrameworksDropdownOpen;
   };
 
-  const toggleMetaGovernanceDropdown = (e) => {
-    e.stopPropagation();
-    isMetaGovernanceDropdownOpen = !isMetaGovernanceDropdownOpen;
-  };
-
   const toggleGetInvolvedDropdown = (e) => {
     e.stopPropagation();
     isGetInvolvedDropdownOpen = !isGetInvolvedDropdownOpen;
@@ -71,7 +71,6 @@
   const closeDropdowns = () => {
     if (isFrameworksDropdownOpen) isFrameworksDropdownOpen = false;
     if (isGetInvolvedDropdownOpen) isGetInvolvedDropdownOpen = false;
-    if (isMetaGovernanceDropdownOpen) isMetaGovernanceDropdownOpen = false; // ADD THIS LINE
   };
   
   let isMobile = false;
@@ -116,7 +115,7 @@
   .header-content {
     display: flex;
     flex-direction: column;
-    padding: 0.75rem 0;
+    padding: 1rem 0; /* Increased from 0.75rem */
   }
   
   @media (min-width: 768px) {
@@ -147,13 +146,13 @@
   }
   
   .logo-img {
-    height: 35px;
-    width: 35px;
-    margin-right: 0.5rem;
+    height: 40px; /* Increased from 35px */
+    width: 40px; /* Increased from 35px */
+    margin-right: 0.75rem; /* Increased from 0.5rem */
   }
   
   .site-title {
-    font-size: 1.125rem !important;
+    font-size: 1.375rem !important; /* Increased from 1.125rem */
     font-weight: 600;
     color: #ffffff;
   }
@@ -215,7 +214,7 @@
   @media (min-width: 768px) {
     .nav-item {
       margin-bottom: 0;
-      margin-right: 1.25rem !important;
+      margin-right: 1.5rem !important; /* Increased spacing due to more space */
     }
   }
 
@@ -229,7 +228,7 @@
     padding-bottom: 0.25rem;
     border-bottom: 2px solid transparent;
     transition: all 0.2s;
-    font-size: 0.9rem !important;
+    font-size: 1rem !important; /* Increased from 0.9rem */
     line-height: 1.2;
   }
   
@@ -245,13 +244,13 @@
   }
   
   .language-select {
-    padding: 0.3rem 0.6rem !important;
+    padding: 0.4rem 0.7rem !important; /* Increased from 0.3rem 0.6rem */
     border: 1px solid #2D5F2D;
     border-radius: 0.375rem;
     background-color: #ffffff;
     color: #2B4B8C;
     cursor: pointer;
-    font-size: 0.8rem !important;
+    font-size: 0.9rem !important; /* Increased from 0.8rem */
   }
 
   .dropdown {
@@ -276,7 +275,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    min-width: 180px;
+    min-width: 210px; /* Reduced from 280px (75% of 280px = 210px) */
     background-color: #ffffff;
     border: 1px solid #2D5F2D;
     border-radius: 0.375rem;
@@ -285,6 +284,7 @@
     margin-top: 0.25rem;
     padding-top: 0.25rem;
     flex-direction: column;
+    overflow-x: visible; /* Keep this */
   }
 
   .dropdown:hover .dropdown-menu {
@@ -303,12 +303,12 @@
 
   .dropdown-menu a {
     display: block;
-    padding: 0.45rem 0.8rem !important;
+    padding: 0.5rem 0.9rem !important; /* Increased padding */
     color: #2B4B8C;
     text-decoration: none;
     border-left: 3px solid transparent;
     transition: all 0.2s;
-    font-size: 0.85rem !important;
+    font-size: 0.9rem !important; /* Increased from 0.85rem */
     line-height: 1.3;
   }
 
@@ -327,7 +327,219 @@
   .dropdown-menu a.highlighted {
     background-color: #f0f8ff;
     font-weight: 600;
+    border-left-color: #6B5CA5; /* Use purple for Global Citizenship */
+  }
+
+  .dropdown-menu a.meta-governance {
+    color: #DAA520;
+    font-weight: 700;
+    background-color: #fffbeb;
     border-left-color: #DAA520;
+  }
+
+  .dropdown-menu a.meta-governance:hover {
+    background-color: #fef3c7;
+  }
+
+  .dropdown-separator {
+    height: 1px;
+    background-color: #e5e7eb;
+    margin: 0.5rem 0;
+  }
+
+  .dropdown-section-title {
+    padding: 0.25rem 0.9rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 0.25rem;
+  }
+
+  .dropdown-scrollable-content {
+    max-height: 50vh; /* Adjust height as needed */
+    overflow-y: auto;
+  }
+
+  .dropdown-scrollable-content a {
+    display: block;
+    padding: 0.5rem 0.9rem !important;
+    color: #2B4B8C;
+    text-decoration: none;
+    border-left: 3px solid transparent;
+    transition: all 0.2s;
+    font-size: 0.9rem !important;
+    line-height: 1.3;
+  }
+
+  .dropdown-scrollable-content a:hover {
+    background-color: #f7f1e3;
+    color: #DAA520;
+    border-left-color: #DAA520;
+  }
+
+  .dropdown-scrollable-content a.active {
+    color: #DAA520;
+    border-left-color: #DAA520;
+    font-weight: 600;
+  }
+
+  /* Sub-menu styles for tiered frameworks */
+  .dropdown-submenu {
+    position: relative;
+  }
+
+  .dropdown-submenu > a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dropdown-submenu > a::after {
+    content: '▸';
+    font-size: 0.75rem;
+    opacity: 0.7;
+  }
+
+  .dropdown-submenu .dropdown-menu-level2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: calc(100% + 2px);
+    min-width: 200px; /* Reduced from 320px to adapt to content */
+    width: max-content; /* Adapt to content width */
+    max-width: 250px; /* Prevent it from getting too wide */
+    background-color: #ffffff;
+    border: 1px solid #2D5F2D;
+    border-radius: 0.375rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    overflow-x: visible;
+    overflow-y: visible; /* Remove scrolling from level 2 */
+  }
+
+  /* FIXED: Proper hover activation for level 2 menu */
+  .dropdown-submenu:hover > .dropdown-menu-level2 {
+    display: block;
+  }
+
+  /* FIXED: Add hover bridge for level 2 */
+  .dropdown-submenu::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 10px;
+    height: 100%;
+    background-color: transparent;
+    z-index: 999;
+  }
+
+  /* Tier submenu styles */
+  .tier-submenu {
+    position: relative;
+  }
+
+ /* Replace it with this revised version */
+  .tier-submenu > a {
+    display: block;
+    padding: 0.4rem 0.9rem !important;
+    color: #6b7280;                   
+    background-color: transparent;    
+    font-weight: 500;                 
+    text-decoration: none;
+    border-left: 3px solid transparent;
+    transition: all 0.2s;
+    font-size: 0.8rem !important;     
+    line-height: 1.3;
+    position: relative;
+    text-transform: uppercase;        
+    letter-spacing: 0.05em;           
+  }
+
+  .tier-submenu > a:hover {
+    background-color: #f1f5f9;
+    color: #1e293b;
+    border-left-color: #6B5CA5;
+  }
+
+  .tier-submenu > a::after {
+    content: '▸';
+    font-size: 0.75rem;
+    opacity: 0.7;
+    position: absolute;
+    right: 0.9rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .tier-submenu .dropdown-menu-level3 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: calc(100% + 2px);
+    min-width: 280px;
+    width: max-content;
+    max-width: 320px;
+    background-color: #ffffff;
+    border: 1px solid #2D5F2D;
+    border-radius: 0.375rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    z-index: 1001;
+    overflow-x: visible;
+    padding-top: 0.25rem;
+  }
+
+  /* Add scrollable content for level 3 if there are many frameworks */
+  .tier-submenu .dropdown-menu-level3-scrollable {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-bottom: 0.25rem;
+  }
+
+  /* FIXED: Proper hover activation for level 3 menu */
+  .tier-submenu:hover > .dropdown-menu-level3 {
+    display: block;
+  }
+
+  /* FIXED: Add hover bridge for level 3 */
+  .tier-submenu::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 10px;
+    height: 100%;
+    background-color: transparent;
+    z-index: 1000;
+  }
+
+  .tier-submenu .dropdown-menu-level3 a,
+  .tier-submenu .dropdown-menu-level3-scrollable a {
+    padding: 0.4rem 1.2rem !important;
+    font-size: 0.85rem !important;
+    white-space: nowrap;
+    display: block;
+    color: #2B4B8C;
+    text-decoration: none;
+    border-left: 3px solid transparent;
+    transition: all 0.2s;
+    line-height: 1.3;
+  }
+
+  .tier-submenu .dropdown-menu-level3 a:hover,
+  .tier-submenu .dropdown-menu-level3-scrollable a:hover {
+    background-color: #f7f1e3;
+    color: #DAA520;
+    border-left-color: #DAA520;
+  }
+
+  .tier-submenu .dropdown-menu-level3 a.active,
+  .tier-submenu .dropdown-menu-level3-scrollable a.active {
+    color: #DAA520;
+    border-left-color: #DAA520;
+    font-weight: 600;
   }
 
   .hidden {
@@ -336,7 +548,7 @@
   
   @media (min-width: 768px) {
     .language-select {
-      margin-left: 0.75rem !important;
+      margin-left: 1rem !important; /* Increased spacing */
     }
 
     .md\:hidden {
@@ -369,6 +581,21 @@
       margin-left: 0.5rem;
       cursor: pointer;
     }
+
+    /* Mobile: flatten the sub-menus */
+    .dropdown-submenu .dropdown-menu-level2,
+    .tier-submenu .dropdown-menu-level3 {
+      position: static;
+      box-shadow: none;
+      border: none;
+      margin-left: 1rem;
+      display: block;
+    }
+
+    .dropdown-submenu > a::after,
+    .tier-submenu > a::after {
+      display: none;
+    }
   }
   
   .dropdown-toggle {
@@ -379,50 +606,51 @@
     padding: 0;
   }
 
+  /* Responsive adjustments for larger text */
   @media (max-width: 1300px) and (min-width: 768px) {
     .nav-item {
-      margin-right: 1.1rem !important;
+      margin-right: 1.3rem !important;
     }
   }
 
   @media (max-width: 1200px) and (min-width: 768px) {
     .nav-item {
-      margin-right: 1rem !important;
+      margin-right: 1.2rem !important;
     }
     
     .nav-link {
-      font-size: 0.85rem !important;
+      font-size: 0.95rem !important;
     }
     
     .language-select {
-      font-size: 0.75rem !important;
+      font-size: 0.85rem !important;
     }
   }
 
   @media (max-width: 1100px) and (min-width: 768px) {
     .nav-item {
-      margin-right: 0.9rem !important;
+      margin-right: 1.1rem !important;
     }
     
     .nav-link {
-      font-size: 0.8rem !important;
+      font-size: 0.9rem !important;
     }
     
     .language-select {
-      font-size: 0.7rem !important;
-      padding: 0.25rem 0.5rem !important;
+      font-size: 0.8rem !important;
+      padding: 0.35rem 0.6rem !important;
     }
     
     .dropdown-menu a {
-      font-size: 0.8rem !important;
-      padding: 0.4rem 0.7rem !important;
+      font-size: 0.85rem !important;
+      padding: 0.45rem 0.8rem !important;
     }
   }
 
   .dropdown-item-btn {
     display: block;
     width: 100%;
-    padding: 0.45rem 0.8rem !important;
+    padding: 0.5rem 0.9rem !important;
     color: #2B4B8C;
     text-decoration: none;
     border: none;
@@ -431,7 +659,7 @@
     cursor: pointer;
     border-left: 3px solid transparent;
     transition: all 0.2s;
-    font-size: 0.85rem !important;
+    font-size: 0.9rem !important;
     line-height: 1.3;
   }
 
@@ -444,6 +672,19 @@
   .dropdown-item-btn:focus {
     outline: 2px solid #DAA520;
     outline-offset: -2px;
+  }
+
+  /* Right-side positioning for menus that would overflow */
+  @media (min-width: 768px) {
+    .dropdown-submenu .dropdown-menu-level2.position-right {
+      left: auto;
+      right: calc(100% + 2px);
+    }
+
+    .tier-submenu .dropdown-menu-level3.position-right {
+      left: auto;
+      right: calc(100% + 2px);
+    }
   }
 </style>
 
@@ -489,110 +730,7 @@
             </a>
           </li>
 
-          <li class="nav-item dropdown" class:open={isMetaGovernanceDropdownOpen}>
-            <div class="dropdown-header">
-              <a 
-                href="{base}/frameworks/meta-governance"
-                class={`nav-link nav-link-highlight ${browser && ($page.url.pathname === base + '/frameworks/meta-governance' || $page.url.pathname.startsWith(base + '/frameworks/meta-governance/')) ? 'active' : ''}`}
-                data-sveltekit-preload-data="hover"
-              >
-                {browser ? ($t('common.header.metaGovernance') || 'Meta-Governance') : 'Meta-Governance'}
-                <svg xmlns="http://www.w3.org/2000/svg" class="dropdown-icon hidden md:inline-block" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
-              </a>
-              <button 
-                type="button" 
-                class="dropdown-toggle md:hidden" 
-                on:click|stopPropagation={toggleMetaGovernanceDropdown}
-                on:keydown={(e) => e.key === 'Enter' && toggleMetaGovernanceDropdown(e)}
-                aria-label={isMetaGovernanceDropdownOpen ? 'Close meta-governance menu' : 'Open meta-governance menu'}
-                role="button"
-                tabindex="0"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d={isMetaGovernanceDropdownOpen ? "M5 15l7-7 7 7" : "M19 9l-7 7-7-7"} />
-                </svg>
-              </button>
-            </div>
-
-            <div class="dropdown-menu" on:click|stopPropagation={() => {}} role="menu">
-              <a 
-                href="{base}/frameworks/meta-governance#index" 
-                on:click={(e) => handleMetaGovernanceNavigation(e, 'index')}
-                data-sveltekit-preload-data="hover" 
-                role="menuitem"
-              >
-                {browser ? ($t('common.header.metaGovernanceOverview') || 'Overview') : 'Overview'}
-              </a>
-              <a 
-                href="{base}/frameworks/meta-governance#principles" 
-                on:click={(e) => handleMetaGovernanceNavigation(e, 'principles')}
-                data-sveltekit-preload-data="hover" 
-                role="menuitem"
-              >
-                {browser ? ($t('common.header.metaGovernancePrinciples') || 'Core Principles') : 'Core Principles'}
-              </a>
-              <a 
-                href="{base}/frameworks/meta-governance#structural" 
-                on:click={(e) => handleMetaGovernanceNavigation(e, 'structural')}
-                data-sveltekit-preload-data="hover" 
-                role="menuitem"
-              >
-                {browser ? ($t('common.header.metaGovernanceStructural') || 'Structural Components') : 'Structural Components'}
-              </a>
-              <a 
-                href="{base}/frameworks/meta-governance#implementation" 
-                on:click={(e) => handleMetaGovernanceNavigation(e, 'implementation')}
-                data-sveltekit-preload-data="hover" 
-                role="menuitem"
-              >
-                {browser ? ($t('common.header.metaGovernanceImplementation') || 'Implementation') : 'Implementation'}
-              </a>
-              <a 
-                href="{base}/frameworks/meta-governance#evaluation" 
-                on:click={(e) => handleMetaGovernanceNavigation(e, 'evaluation')}
-                data-sveltekit-preload-data="hover" 
-                role="menuitem"
-              >
-                {browser ? ($t('common.header.metaGovernanceEvaluation') || 'Evaluation') : 'Evaluation'}
-              </a>
-              <a 
-                href="{base}/frameworks/meta-governance#case-models" 
-                on:click={(e) => handleMetaGovernanceNavigation(e, 'case-models')}
-                data-sveltekit-preload-data="hover" 
-                role="menuitem"
-              >
-                {browser ? ($t('common.header.metaGovernanceCaseModels') || 'Case Models') : 'Case Models'}
-              </a>
-              <a 
-                href="{base}/frameworks/meta-governance#future" 
-                on:click={(e) => handleMetaGovernanceNavigation(e, 'future')}
-                data-sveltekit-preload-data="hover" 
-                role="menuitem"
-              >
-                {browser ? ($t('common.header.metaGovernanceFuture') || 'Future Potential') : 'Future Potential'}
-              </a>
-              <a 
-                href="{base}/frameworks/meta-governance#manifesto" 
-                on:click={(e) => handleMetaGovernanceNavigation(e, 'manifesto')}
-                data-sveltekit-preload-data="hover" 
-                role="menuitem"
-              >
-                {browser ? ($t('common.header.metaGovernanceWhy') || 'Why Join?') : 'Why Join?'}
-              </a>
-              <a 
-                href="{base}/frameworks/meta-governance#quick-start" 
-                on:click={(e) => handleMetaGovernanceNavigation(e, 'quick-start')}
-                data-sveltekit-preload-data="hover" 
-                role="menuitem"
-              >
-                {browser ? ($t('common.header.metaGovernanceQuickStart') || 'Quick Start') : 'Quick Start'}
-              </a>
-            </div>
-          </li>
-
-          <!-- Frameworks Dropdown (now includes Global Citizenship) -->
+          <!-- Single Frameworks Dropdown with Hierarchical Structure -->
           <li class="nav-item dropdown" class:open={isFrameworksDropdownOpen}>
             <div class="dropdown-header">
               <a 
@@ -621,7 +759,19 @@
             </div>
 
             <div class="dropdown-menu" on:click|stopPropagation={() => {}} role="menu">
-              <!-- Global Citizenship - highlighted as the main framework -->
+              <!-- Foundational Frameworks Section -->
+              
+              <!-- Meta-Governance - The Core Architecture -->
+              <a 
+                href="{base}/frameworks/meta-governance" 
+                class={`meta-governance ${browser && ($page.url.pathname === base + '/frameworks/meta-governance' || $page.url.pathname.startsWith(base + '/frameworks/meta-governance/')) ? 'active' : ''}`}
+                data-sveltekit-preload-data="hover" 
+                role="menuitem"
+              >
+                {browser ? ($t('common.header.metaGovernance') || 'Meta-Governance') : 'Meta-Governance'}
+              </a>
+              
+              <!-- Global Citizenship - The Human Foundation -->
               <a 
                 href="{base}/frameworks/global-citizenship" 
                 class={`${isActive('/frameworks/global-citizenship') ? 'active' : ''} highlighted`} 
@@ -631,46 +781,100 @@
                 {browser ? ($t('common.header.frameworkGlobalCitizenship') || 'Global Citizenship') : 'Global Citizenship'}
               </a>
               
-              <a href="{base}/frameworks" class={isActive('/frameworks') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
-                {browser ? ($t('common.header.frameworkOverview') || 'Overview') : 'Overview'}
-              </a>
-              <a href="{base}/frameworks/docs" class={isActive('/frameworks/docs') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
-                {browser ? ($t('common.header.frameworkDocs') || 'Documentation') : 'Documentation'}
-              </a>
-              <a href="{base}/frameworks/docs/principles" class={isActive('/frameworks/docs/principles') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
-                {browser ? ($t('common.header.frameworkPrinciples') || 'Principles') : 'Principles'}
-              </a>
-              <a href="{base}/frameworks/docs/implementation" class={isActive('/frameworks/docs/implementation') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
-                {browser ? ($t('common.header.frameworkImplementation') || 'Implementation') : 'Implementation'}
-              </a>
-              <a href="{base}/frameworks/hubs" class={isActive('/frameworks/hubs') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
-                {browser ? ($t('common.header.frameworkHubs') || 'Hubs') : 'Hubs'}
-              </a>
-              <a href="{base}/frameworks/tools" class={isActive('/frameworks/tools') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
-                {browser ? ($t('common.header.frameworkTools') || 'Tools') : 'Tools'}
-              </a>
-              <a href="{base}/frameworks/visuals" class={isActive('/frameworks/visuals') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
-                {browser ? ($t('common.header.frameworkVisuals') || 'Visuals') : 'Visuals'}
-              </a>
-              <a href="{base}/downloads" class={isActive('/downloads') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
-                {browser ? ($t('common.header.frameworkDownloads') || 'Framework Downloads') : 'Downloads'}
-              </a>
-              <a href="{base}/frameworks/docs/case-studies" class={isActive('/frameworks/docs/case-studies') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
-                {browser ? ($t('common.header.frameworkCaseStudies') || 'Case Studies') : 'Case Studies'}
-              </a>
-              <a href="{base}/frameworks/ai-futures" class={isActive('/frameworks/ai-futures') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
-                {browser ? ($t('common.header.frameworkAIFutures') || 'AI Futures') : 'AI Futures'}
-              </a>
-              <a href="{base}/frameworks/docs/resources" class={isActive('/frameworks/docs/resources') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
-                {browser ? ($t('common.header.frameworkResources') || 'Resources') : 'Resources'}
-              </a>
-              <a href="{base}/frameworks/docs/glossary" class={isActive('/frameworks/docs/glossary') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
-                {browser ? ($t('common.header.frameworkGlossary') || 'Glossary') : 'Glossary'}
-              </a>
+              <!-- Visual Separator -->
+              <div class="dropdown-separator"></div>
+              
+              <!-- Implementation Frameworks with Tiered Sub-Sub-Menus (OUTSIDE scrollable area) -->
+              <div class="dropdown-submenu">
+                <a href="{base}/frameworks" role="menuitem">
+                  {browser ? ($t('common.header.tieredFrameworks') || 'Tiered Frameworks') : 'Tiered Frameworks'}
+                </a>
+                <div class="dropdown-menu-level2">
+                  {#each tiers as tier}
+                    <div class="tier-submenu">
+                      <a href="{base}/frameworks/tier-{tier}" role="menuitem">
+                        {browser ? ($t(tierMetadata[tier]?.titleKey) || `Tier ${tier}`) : `Tier ${tier}`}
+                      </a>
+                      <div class="dropdown-menu-level3">
+                        {#if (frameworksByTier[tier] || []).length > 8}
+                          <!-- If more than 8 frameworks, add scrollable container -->
+                          <div class="dropdown-menu-level3-scrollable">
+                            {#each frameworksByTier[tier] || [] as framework}
+                              <a 
+                                href="{base}{framework.path}" 
+                                class={isActive(framework.path) ? 'active' : ''} 
+                                data-sveltekit-preload-data="hover" 
+                                role="menuitem"
+                              >
+                                {browser ? ($t(framework.titleKey) || framework.slug) : framework.slug}
+                              </a>
+                            {/each}
+                          </div>
+                        {:else}
+                          <!-- If 8 or fewer frameworks, no scrolling needed -->
+                          {#each frameworksByTier[tier] || [] as framework}
+                            <a 
+                              href="{base}{framework.path}" 
+                              class={isActive(framework.path) ? 'active' : ''} 
+                              data-sveltekit-preload-data="hover" 
+                              role="menuitem"
+                            >
+                              {browser ? ($t(framework.titleKey) || framework.slug) : framework.slug}
+                            </a>
+                          {/each}
+                        {/if}
+                      </div>
+                    </div>
+                  {/each}
+                </div>
+              </div>
+              
+              <!-- Visual Separator -->
+              <div class="dropdown-separator"></div>
+              
+              <!-- Scrollable Content Area for all the static links -->
+              <div class="dropdown-scrollable-content">
+                <a href="{base}/frameworks" class={isActive('/frameworks') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
+                  {browser ? ($t('common.header.frameworkOverview') || 'Overview') : 'Overview'}
+                </a>
+                <a href="{base}/frameworks/docs" class={isActive('/frameworks/docs') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
+                  {browser ? ($t('common.header.frameworkDocs') || 'Documentation') : 'Documentation'}
+                </a>
+                <a href="{base}/frameworks/docs/principles" class={isActive('/frameworks/docs/principles') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
+                  {browser ? ($t('common.header.frameworkPrinciples') || 'Principles') : 'Principles'}
+                </a>
+                <a href="{base}/frameworks/docs/implementation" class={isActive('/frameworks/docs/implementation') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
+                  {browser ? ($t('common.header.frameworkImplementation') || 'Implementation') : 'Implementation'}
+                </a>
+                <a href="{base}/frameworks/hubs" class={isActive('/frameworks/hubs') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
+                  {browser ? ($t('common.header.frameworkHubs') || 'Hubs') : 'Hubs'}
+                </a>
+                <a href="{base}/frameworks/tools" class={isActive('/frameworks/tools') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
+                  {browser ? ($t('common.header.frameworkTools') || 'Tools') : 'Tools'}
+                </a>
+                <a href="{base}/frameworks/visuals" class={isActive('/frameworks/visuals') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
+                  {browser ? ($t('common.header.frameworkVisuals') || 'Visuals') : 'Visuals'}
+                </a>
+                <a href="{base}/downloads" class={isActive('/downloads') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
+                  {browser ? ($t('common.header.frameworkDownloads') || 'Framework Downloads') : 'Downloads'}
+                </a>
+                <a href="{base}/frameworks/docs/case-studies" class={isActive('/frameworks/docs/case-studies') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
+                  {browser ? ($t('common.header.frameworkCaseStudies') || 'Case Studies') : 'Case Studies'}
+                </a>
+                <a href="{base}/frameworks/ai-futures" class={isActive('/frameworks/ai-futures') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
+                  {browser ? ($t('common.header.frameworkAIFutures') || 'AI Futures') : 'AI Futures'}
+                </a>
+                <a href="{base}/frameworks/docs/resources" class={isActive('/frameworks/docs/resources') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
+                  {browser ? ($t('common.header.frameworkResources') || 'Resources') : 'Resources'}
+                </a>
+                <a href="{base}/frameworks/docs/glossary" class={isActive('/frameworks/docs/glossary') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
+                  {browser ? ($t('common.header.frameworkGlossary') || 'Glossary') : 'Glossary'}
+                </a>
+              </div>
             </div>
           </li>
 
-          <!-- New Get Involved Dropdown -->
+          <!-- Get Involved Dropdown -->
           <li class="nav-item dropdown" class:open={isGetInvolvedDropdownOpen}>
             <div class="dropdown-header">
               <a 
@@ -700,7 +904,7 @@
 
             <div class="dropdown-menu" on:click|stopPropagation={() => {}} role="menu">
               <a href="{base}/get-involved/founding" class={isActive('/get-involved/founding') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
-                {browser ? ($t('common.header.getInvolvedFounding') || 'Founding Organization') : 'Founding Organization'}
+                {browser ? ($t('common.header.getInvolvedFounding') ||  'Founding Organization') : 'Founding Organization'}
               </a>
               <a href="{base}/get-involved/frameworks" class={isActive('/get-involved/frameworks') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
                 {browser ? ($t('common.header.getInvolvedFrameworks') || 'Contribute to Frameworks') : 'Contribute to Frameworks'}
