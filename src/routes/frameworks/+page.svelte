@@ -54,7 +54,7 @@
       </div>
       
       <!-- Framework Components Grid -->
-      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; width: 100%; max-width: 900px; margin-top: 2rem;">
+      <div class="framework-components-grid" style="display: grid; gap: 1rem; width: 100%; max-width: 900px; margin-top: 2rem;">
         <!-- Documentation -->
         <div class="hover-card">
           <h3 style="font-size: 1.25rem; font-weight: 600; color: #2B4B8C; margin-bottom: 0.75rem;">{$t('framework.components.documentation.title')}</h3>
@@ -727,6 +727,73 @@
   }
 
   /* Responsive adjustments */
+  /* Framework Components Grid - Mobile Responsive Fix */
+  @media (max-width: 768px) {
+    /* Make the framework components grid stack vertically on mobile */
+    .quick-access-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .button-gold,
+    .button-outline {
+      min-width: 200px;
+    }
+
+    /* Override the 3-column grid to be single column on mobile */
+    section[style*="grid-template-columns: repeat(3, minmax(0, 1fr))"] {
+      display: grid !important;
+      grid-template-columns: 1fr !important; /* Single column on mobile */
+      gap: 1.5rem !important; /* Slightly larger gap for better spacing */
+    }
+
+    /* Ensure hover cards stack nicely */
+    .hover-card {
+      margin-bottom: 1rem;
+    }
+
+    /* Make menu links more touch-friendly on mobile */
+    .menu-link {
+      padding: 0.75rem 0.75rem 0.75rem 1rem;
+      font-size: 0.95rem;
+    }
+
+    /* Adjust card titles for mobile */
+    .hover-card h3 {
+      font-size: 1.125rem;
+    }
+  }
+
+  /* For very small screens (phones in portrait) */
+  @media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    .hover-card {
+      padding: 1.25rem;
+    }
+
+    .menu-link {
+      padding: 0.625rem 0.625rem 0.625rem 0.875rem;
+      font-size: 0.9rem;
+    }
+
+    .button-gold,
+    .button-outline {
+      min-width: 100%;
+      text-align: center;
+    }
+  }
+
+  .framework-components-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  @media (max-width: 768px) {
+    .framework-components-grid {
+      grid-template-columns: 1fr !important;
+      gap: 1.5rem !important;
+    }
+  }
+
   @media (max-width: 768px) {
     .quick-access-buttons {
       flex-direction: column;
