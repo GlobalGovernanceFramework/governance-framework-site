@@ -11,100 +11,10 @@
 
   $: currentLocale = $locale;
   
-  // Reactive variables for content loading
-  let guideContent = null;
-  let contentUsingEnglishFallback = false;
+  // Show simplified guide instead of full markdown content
+  let showSimplifiedGuide = true;
   let isLoading = true;
   let loadError = false;
-
-  // Reactive function to load markdown based on current locale
-  async function loadMarkdownContent(locale) {
-    if (!locale) return;
-    
-    isLoading = true;
-    loadError = false;
-    contentUsingEnglishFallback = false;
-    
-    try {
-      console.log(`Loading website guide for locale: ${locale}`);
-      
-      // Try to load the current locale version
-      const module = await import(`$lib/content/get-involved/website/${locale}/website-guide.md`);
-      guideContent = module.default;
-      console.log('Successfully loaded website guide for locale:', locale);
-      
-    } catch (e) {
-      console.log('Falling back to English website guide, error was:', e.message);
-      
-      // Fall back to English if translation isn't available
-      try {
-        const module = await import(`$lib/content/get-involved/website/en/website-guide.md`);
-        guideContent = module.default;
-        console.log('Successfully loaded English website guide fallback');
-        
-        // Track that this content is using English fallback
-        if (locale !== 'en') {
-          contentUsingEnglishFallback = true;
-        }
-      } catch (e2) {
-        console.error("Failed to load any website guide content:", e2);
-        loadError = true;
-      }
-    }
-    
-    isLoading = false;
-  }
-
-  // Reactive statement to reload content when locale changes
-  $: if (browser && currentLocale) {
-    loadMarkdownContent(currentLocale);
-  }
-
-  // Initial load on mount
-  onMount(() => {
-    console.log('Component mounted with locale:', currentLocale);
-    if (currentLocale) {
-      loadMarkdownContent(currentLocale);
-    }
-  });
-
-  // Bilingual fallback text
-  const fallbackText = {
-    en: {
-      title: "Website Development",
-      subtitle: "Help build and improve our global governance platform",
-      heroIntro: "Join our development community and contribute to building tools that enable governance system interoperability worldwide.",
-      downloadGuide: "Download Website Contributor Guide",
-      joinDevelopers: "Join Developer Community",
-      downloadMarkdown: "Download Markdown Version",
-      downloadPdf: "Download PDF Version",
-      joinDiscord: "Join Our Developer Community",
-      getStarted: "Ready to Start Coding?",
-      guideDescription: "Get the complete guide for developers. Includes setup instructions, coding standards, and workflows for integrating new frameworks into our SvelteKit site.",
-      communityDescription: "Connect with other developers, get code reviews, and collaborate on features in real-time.",
-      errorTitle: "Website contributor guide Not Available",
-      errorText: "The website contributor guide could not be loaded. Please try again later or contact our development team.",
-      githubRepo: "View GitHub Repository",
-      githubDescription: "Access the source code, submit issues, and contribute directly to the project."
-    },
-    sv: {
-      title: "Webbutveckling",
-      subtitle: "Hjälp till att bygga och förbättra vår globala styrningsplattform",
-      heroIntro: "Gå med i vår utvecklargemenskap och bidra till att bygga verktyg som möjliggör interoperabilitet mellan styrningssystem världen över.",
-      downloadGuide: "Ladda ner webbplatsens bidragsguide",
-      joinDevelopers: "Gå med i utvecklargemenskap",
-      downloadMarkdown: "Ladda ner Markdown-version",
-      downloadPdf: "Ladda ner PDF-version",
-      joinDiscord: "Gå med i vår utvecklargemenskap",
-      getStarted: "Redo att börja koda?",
-      guideDescription: "Få den kompletta guiden för utvecklare. Inkluderar installationsinstruktioner, kodningsstandarder och arbetsflöden för att integrera nya ramverk i vår SvelteKit-webbplats.",
-      communityDescription: "Anslut dig till andra utvecklare, få kodgranskningar och samarbeta om funktioner i realtid.",
-      errorTitle: "Webbplatsens bidragsguide inte tillgänglig",
-      errorText: "Webbplatsens bidragsguide kunde inte laddas. Vänligen försök igen senare eller kontakta vårt utvecklingsteam.",
-      githubRepo: "Visa GitHub-arkiv",
-      githubDescription: "Få tillgång till källkoden, skicka in problem och bidra direkt till projektet."
-    }
-  };
 
   // Simple text function with language support
   function getText(key) {
@@ -116,38 +26,48 @@
       return value;
     }
     
-    // Fallback to language-specific text
+    // Fallback to hardcoded bilingual text
+    const fallbackText = {
+      en: {
+        title: "Website Development",
+        subtitle: "Help build and improve our global governance platform",
+        heroIntro: "Join our development community and contribute to building tools that enable governance system interoperability worldwide.",
+        getStarted: "Ready to Start Coding?",
+        contributionProcessTitle: "Our Contribution Process is Evolving",
+        contributionProcessText: "To focus on establishing our formal organization, we are temporarily pausing our real-time community channels and revising our contributor guides. All development work is currently being coordinated directly on GitHub. This is the best place to access the source code, review our CONTRIBUTING.md guidelines, submit issues, and contribute directly to the project.",
+        communityGitHubCTA: "Contribute on GitHub",
+        errorTitle: "Website contributor guide Not Available",
+        errorText: "The website contributor guide could not be loaded. Please try again later or contact our development team.",
+        githubRepo: "View GitHub Repository",
+        githubDescription: "Access the source code, submit issues, and contribute directly to the project."
+      },
+      sv: {
+        title: "Webbutveckling",
+        subtitle: "Hjälp till att bygga och förbättra vår globala styrningsplattform",
+        heroIntro: "Gå med i vår utvecklargemenskap och bidra till att bygga verktyg som möjliggör interoperabilitet mellan styrningssystem världen över.",
+        getStarted: "Redo att börja koda?",
+        contributionProcessTitle: "Vår bidragsprocess utvecklas",
+        contributionProcessText: "För att fokusera på att etablera vår formella organisation pausar vi tillfälligt våra realtidsgemenskapskanaler och reviderar våra bidragsguider. Allt utvecklingsarbete koordineras för närvarande direkt på GitHub. Det här är den bästa platsen för att komma åt källkoden, granska våra CONTRIBUTING.md-riktlinjer, skicka in problem och bidra direkt till projektet.",
+        communityGitHubCTA: "Bidra på GitHub",
+        errorTitle: "Webbplatsens bidragsguide inte tillgänglig",
+        errorText: "Webbplatsens bidragsguide kunde inte laddas. Vänligen försök igen senare eller kontakta vårt utvecklingsteam.",
+        githubRepo: "Visa GitHub-arkiv",
+        githubDescription: "Få tillgång till källkoden, skicka in problem och bidra direkt till projektet."
+      }
+    };
+    
     const langTexts = fallbackText[currentLocale] || fallbackText.en;
     return langTexts[key] || fallbackText.en[key] || key;
   }
 
-  function downloadMarkdown() {
-    const filename = `website-guide-${currentLocale}.md`;
-    const link = document.createElement('a');
-    link.href = `${base}/get-involved/${filename}`;
-    link.download = filename;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
-
-  function downloadPdf() {
-    const filename = `website-guide-${currentLocale}.pdf`;
-    const link = document.createElement('a');
-    link.href = `${base}/get-involved/${filename}`;
-    link.download = filename;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
-
-  function joinDiscord() {
-    window.open('https://discord.gg/Zx4hMJf4JU', '_blank');
-  }
-
-  function viewGitHub() {
+  function openGitHub() {
     window.open('https://github.com/GlobalGovernanceFrameworks/website', '_blank');
   }
+
+  // Set loading to false on mount since we're showing simplified guide
+  onMount(() => {
+    isLoading = false;
+  });
 </script>
 
 <svelte:head>
@@ -167,93 +87,35 @@
       </div>
     </div>
 
-    <!-- Language Fallback Notice -->
-    {#if contentUsingEnglishFallback && currentLocale !== 'en'}
-      <div class="language-fallback-notice">
-        <div class="notice-icon">🌐</div>
-        <div class="notice-content">
-          <strong>{currentLocale === 'sv' ? 'Innehåll på svenska kommer snart' : 'Content in your language coming soon'}</strong>
-          <p>{currentLocale === 'sv' ? 'Detta avsnitt visas för närvarande på engelska tills den svenska översättningen är klar.' : 'This section is currently displayed in English until translation is complete.'}</p>
-        </div>
-      </div>
-    {/if}
-
-    <!-- Quick Actions Card -->
-    <div class="action-cards">
-      <div class="action-card downloads-card">
-        <div class="card-icon">💻</div>
-        <div class="card-content">
-          <h3>{getText('downloadGuide')}</h3>
-          <p>{getText('guideDescription')}</p>
-          <div class="card-actions">
-            <button class="primary-btn" on:click={downloadMarkdown}>
-              {getText('downloadMarkdown')} <span class="download-icon">↓</span>
-            </button>
-            <button class="secondary-btn" on:click={downloadPdf}>
-              {getText('downloadPdf')} <span class="download-icon">↓</span>
-            </button>
+    <!-- Single "How to Contribute Now" Section -->
+    <div class="contribution-section">
+      <div class="contribution-content">
+        <div class="contribution-header">
+          <div class="contribution-icon">🔄</div>
+          <div>
+            <h2>{getText('contributionProcessTitle')}</h2>
           </div>
         </div>
-      </div>
-
-      <div class="action-card community-card">
-        <div class="card-icon">👥</div>
-        <div class="card-content">
-          <h3>{getText('joinDevelopers')}</h3>
-          <p>{getText('communityDescription')}</p>
-          <div class="card-actions">
-            <button class="primary-btn discord-btn" on:click={joinDiscord}>
-              {getText('joinDiscord')} <span class="external-icon">↗</span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="action-card github-card">
-        <div class="card-icon">🔧</div>
-        <div class="card-content">
-          <h3>{getText('githubRepo')}</h3>
-          <p>{getText('githubDescription')}</p>
-          <div class="card-actions">
-            <button class="primary-btn github-btn" on:click={viewGitHub}>
-              View on GitHub <span class="external-icon">↗</span>
+        
+        <div class="contribution-body">
+          <p>{getText('contributionProcessText')}</p>
+          
+          <div class="contribution-actions">
+            <button class="primary-btn large github-btn" on:click={openGitHub}>
+              {getText('communityGitHubCTA')} <span class="external-icon">↗</span>
             </button>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Main Guide Content -->
-    <div class="guide-content">
-      {#if isLoading}
-        <div class="loading-state">
-          <p>Loading content...</p>
-        </div>
-      {:else if loadError}
-        <div class="error-state">
-          <h2>{getText('errorTitle')}</h2>
-          <p>{getText('errorText')}</p>
-        </div>
-      {:else if guideContent}
-        <svelte:component this={guideContent} />
-      {:else}
-        <div class="error-state">
-          <h2>{getText('errorTitle')}</h2>
-          <p>{getText('errorText')}</p>
-        </div>
-      {/if}
-    </div>
-
-    <!-- Bottom Call-to-Action -->
+    <!-- Simplified Bottom Call-to-Action -->
     <div class="bottom-cta">
       <div class="cta-content">
         <h2>{getText('getStarted')}</h2>
         <div class="cta-actions">
-          <button class="primary-btn large" on:click={viewGitHub}>
-            View on GitHub <span class="external-icon">↗</span>
-          </button>
-          <button class="secondary-btn large discord-btn" on:click={joinDiscord}>
-            {getText('joinDiscord')} <span class="external-icon">↗</span>
+          <button class="primary-btn large github-btn" on:click={openGitHub}>
+            {getText('communityGitHubCTA')} <span class="external-icon">↗</span>
           </button>
         </div>
       </div>
@@ -272,16 +134,34 @@
     --light-background: #f8fafc;
     --content-text: #4b5563;
     --border-color: #e5e7eb;
+    --text-dark: #374151;
+    --text-light: #6b7280;
+    --warning-orange: #f59e0b;
   }
 
   .page-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem;
+    min-height: 100vh;
+    background-color: var(--light-background);
   }
 
   .content {
     min-width: 0;
+    width: 100%;
+  }
+
+  /* Typography Defaults */
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 0;
+    line-height: 1.6;
   }
 
   /* Hero Section */
@@ -292,6 +172,12 @@
     margin-bottom: 2rem;
     color: white;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
   }
 
   .hero-content h1 {
@@ -305,6 +191,7 @@
     font-size: 1.25rem;
     margin-bottom: 1.5rem;
     opacity: 0.9;
+    font-weight: 400;
   }
 
   .hero-intro {
@@ -313,111 +200,84 @@
     max-width: 600px;
     margin: 0 auto;
     opacity: 0.85;
+    font-weight: 300;
   }
 
-  /* Language fallback notice */
-  .language-fallback-notice {
+  /* Contribution Section */
+  .contribution-section {
+    background: white;
+    border-radius: 1rem;
+    padding: 0;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+  }
+
+  .contribution-content {
+    background-color: rgba(245, 158, 11, 0.05);
+    border: 1px solid rgba(245, 158, 11, 0.2);
+    padding: 2.5rem;
+  }
+
+  .contribution-header {
     display: flex;
     align-items: flex-start;
-    gap: 1rem;
-    background-color: rgba(107, 92, 165, 0.1);
-    border: 1px solid rgba(107, 92, 165, 0.3);
-    border-radius: 0.5rem;
-    padding: 1rem 1.25rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .notice-icon {
-    font-size: 1.25rem;
-    color: var(--secondary-purple);
-    flex-shrink: 0;
-    margin-top: 0.125rem;
-  }
-
-  .notice-content {
-    flex: 1;
-  }
-
-  .notice-content strong {
-    color: var(--secondary-purple);
-    font-size: 0.95rem;
-    display: block;
-    margin-bottom: 0.25rem;
-  }
-
-  .notice-content p {
-    color: var(--content-text);
-    font-size: 0.875rem;
-    margin: 0;
-    line-height: 1.5;
-  }
-
-  /* Action Cards */
-  .action-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 1.5rem;
     margin-bottom: 2rem;
   }
 
-  .action-card {
-    background: white;
-    border-radius: 0.75rem;
-    padding: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border: 1px solid var(--border-color);
-    display: flex;
-    align-items: flex-start;
-    gap: 1.5rem;
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-
-  .action-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
-  }
-
-  .downloads-card {
-    border-top: 4px solid var(--primary-blue);
-  }
-
-  .community-card {
-    border-top: 4px solid var(--earthy-green);
-  }
-
-  .github-card {
-    border-top: 4px solid var(--dark-gold);
-  }
-
-  .card-icon {
-    font-size: 2.5rem;
+  .contribution-icon {
+    font-size: 3rem;
+    color: var(--warning-orange);
     flex-shrink: 0;
+    line-height: 1;
   }
 
-  .card-content {
-    flex: 1;
+  .contribution-header h2 {
+    color: var(--warning-orange);
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
   }
 
-  .card-content h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: var(--primary-blue);
-  }
-
-  .card-content p {
+  .contribution-body p {
     color: var(--content-text);
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
+    font-size: 1.25rem;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    max-width: none;
   }
 
-  .card-actions {
+  .contribution-actions {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
+    justify-content: center;
+  }
+
+  .contribution-actions .primary-btn {
+    background-color: var(--warning-orange);
+    color: white;
+    font-size: 1.125rem;
+    padding: 1rem 2.5rem;
+    font-weight: 600;
+  }
+
+  .contribution-actions .primary-btn:hover {
+    background-color: #d97706;
   }
 
   /* Buttons */
+  button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    user-select: none;
+  }
+
   .primary-btn {
     background-color: var(--primary-blue);
     color: white;
@@ -426,10 +286,16 @@
     border-radius: 0.5rem;
     font-weight: 500;
     cursor: pointer;
-    transition: all 0.2s;
-    display: flex;
+    transition: all 0.2s ease;
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
   }
 
   .primary-btn:hover {
@@ -437,43 +303,18 @@
     transform: translateY(-1px);
   }
 
-  .secondary-btn {
-    background-color: white;
-    color: var(--primary-blue);
-    border: 1px solid var(--primary-blue);
-    padding: 0.625rem 1.25rem;
-    border-radius: 0.5rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .secondary-btn:hover {
-    background-color: rgba(43, 75, 140, 0.05);
-    transform: translateY(-1px);
-  }
-
-  .discord-btn {
-    background-color: var(--earthy-green);
-    color: white;
-    border-color: var(--earthy-green);
-  }
-
-  .discord-btn:hover {
-    background-color: #1f4a1f;
+  .primary-btn:active {
+    transform: translateY(0);
   }
 
   .github-btn {
-    background-color: #24292e;
+    background-color: var(--text-dark);
     color: white;
-    border-color: #24292e;
+    border-color: var(--text-dark);
   }
 
   .github-btn:hover {
-    background-color: #1a1e22;
+    background-color: #1f2937;
   }
 
   .large {
@@ -481,20 +322,10 @@
     font-size: 1.125rem;
   }
 
-  .download-icon,
   .external-icon {
     font-size: 0.875rem;
     opacity: 0.8;
-  }
-
-  /* Guide Content */
-  .guide-content {
-    background: white;
-    border-radius: 0.75rem;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    border: 1px solid var(--border-color);
+    flex-shrink: 0;
   }
 
   /* Loading state */
@@ -509,59 +340,6 @@
     opacity: 0.7;
   }
 
-  /* Content styling */
-  .guide-content :global(h1) {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    color: var(--primary-blue);
-  }
-
-  .guide-content :global(h2) {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    color: var(--secondary-purple);
-  }
-
-  .guide-content :global(h3) {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-    color: var(--earthy-green);
-  }
-
-  .guide-content :global(p) {
-    margin-bottom: 1rem;
-    line-height: 1.7;
-    color: var(--content-text);
-  }
-
-  .guide-content :global(code) {
-    background-color: #f1f5f9;
-    padding: 0.125rem 0.25rem;
-    border-radius: 0.25rem;
-    font-family: 'Monaco', 'Consolas', monospace;
-    font-size: 0.875rem;
-  }
-
-  .guide-content :global(pre) {
-    background-color: #1e293b;
-    color: #e2e8f0;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    overflow-x: auto;
-    margin: 1rem 0;
-  }
-
-  .guide-content :global(pre code) {
-    background-color: transparent;
-    padding: 0;
-    color: inherit;
-  }
-
   /* Bottom CTA */
   .bottom-cta {
     background: linear-gradient(135deg, var(--earthy-green), var(--primary-blue));
@@ -569,6 +347,12 @@
     padding: 3rem 2rem;
     text-align: center;
     color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .cta-content {
+    max-width: 600px;
+    margin: 0 auto;
   }
 
   .cta-content h2 {
@@ -597,100 +381,143 @@
     color: white;
   }
 
-  .cta-actions .secondary-btn {
-    background-color: transparent;
-    color: white;
-    border-color: white;
-  }
-
-  .cta-actions .secondary-btn:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-
-  /* Error state */
-  .error-state {
-    text-align: center;
-    padding: 3rem 2rem;
-    color: var(--content-text);
-  }
-
-  .error-state h2 {
-    color: var(--primary-blue);
-    margin-bottom: 1rem;
+  /* Focus states for accessibility */
+  .primary-btn:focus {
+    outline: 2px solid var(--warm-gold);
+    outline-offset: 2px;
   }
 
   /* Responsive Design */
   @media (max-width: 768px) {
     .page-container {
-      padding: 1rem;
+      padding: 1rem 0.5rem;
     }
 
     .hero-section {
-      padding: 2rem 1.5rem;
+      padding: 2rem 1rem;
+      margin-bottom: 1.5rem;
     }
 
     .hero-content h1 {
-      font-size: 2rem;
+      font-size: 1.75rem;
+      line-height: 1.1;
+      margin-bottom: 0.75rem;
     }
 
     .hero-subtitle {
-      font-size: 1.125rem;
+      font-size: 1rem;
+      margin-bottom: 1rem;
     }
 
     .hero-intro {
-      font-size: 1rem;
+      font-size: 0.95rem;
     }
 
-    .action-cards {
-      grid-template-columns: 1fr;
+    .contribution-section {
+      margin-bottom: 1.5rem;
     }
 
-    .action-card {
+    .contribution-content {
+      padding: 2rem 1.5rem;
+    }
+
+    .contribution-header {
       flex-direction: column;
       text-align: center;
       gap: 1rem;
+      margin-bottom: 1.5rem;
     }
 
-    .card-actions {
-      justify-content: center;
+    .contribution-header h2 {
+      font-size: 1.5rem;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
     }
 
-    .guide-content {
-      padding: 1.5rem;
+    .contribution-body p {
+      font-size: 1.125rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .contribution-actions .primary-btn {
+      width: 100%;
+      max-width: 280px;
+      font-size: 1rem;
+      padding: 0.875rem 2rem;
     }
 
     .bottom-cta {
-      padding: 2rem 1.5rem;
+      padding: 2rem 1rem;
     }
 
     .cta-content h2 {
       font-size: 1.5rem;
+      margin-bottom: 1.5rem;
     }
 
     .cta-actions {
       flex-direction: column;
       width: 100%;
+      gap: 0.75rem;
     }
 
     .cta-actions button {
       width: 100%;
-      max-width: 300px;
+      max-width: 280px;
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .page-container {
+      padding: 0.75rem 0.25rem;
     }
 
-    .language-fallback-notice {
-      padding: 0.75rem 1rem;
+    .hero-content h1 {
+      font-size: 1.5rem;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
     }
 
-    .notice-icon {
-      font-size: 1.1rem;
+    .hero-subtitle {
+      font-size: 0.95rem;
     }
 
-    .notice-content strong {
+    .hero-intro {
       font-size: 0.9rem;
     }
 
-    .notice-content p {
-      font-size: 0.8rem;
+    .contribution-content {
+      padding: 1.5rem 1rem;
+    }
+
+    .contribution-header h2 {
+      font-size: 1.25rem;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    .contribution-body p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .contribution-actions .primary-btn {
+      max-width: 100%;
+      font-size: 0.9rem;
+      padding: 0.75rem 1.5rem;
+    }
+
+    .cta-content h2 {
+      font-size: 1.25rem;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    .cta-actions button {
+      max-width: 100%;
+      font-size: 0.85rem;
     }
   }
 </style>

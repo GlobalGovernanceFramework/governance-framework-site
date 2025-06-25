@@ -2,16 +2,12 @@
   "title": "Framework Development",
   "subtitle": "Create governance frameworks that enable system interoperability",
   "heroIntro": "Join our community of framework developers and help create tools that enable different governance systems to communicate, collaborate, and evolve together.",
-  "downloadGuide": "Download Development Guide",
-  "joinDevelopers": "Join Framework Community",
-  "downloadMarkdown": "Download Markdown Version",
-  "downloadPdf": "Download PDF Version",
-  "joinDiscord": "Join Our Framework Community",
   "getStarted": "Ready to Build Frameworks?",
-  "guideDescription": "Get the complete framework developer's guide with authoring workflows, quality standards, and collaboration approaches.",
-  "communityDescription": "Connect with other framework developers, share your work, and coordinate on governance innovation projects.",
-  "errorTitle": "Framework Guide Not Available",
-  "errorText": "The framework development guide could not be loaded. Please try again later or contact our development team.",
+  "contributionProcessTitle": "Our Framework Development Process is Evolving",
+  "contributionProcessText": "To focus on establishing our formal organization, we are temporarily pausing our real-time community channels and revising our framework development guides. All framework development coordination is currently being managed directly on GitHub. This is the best place to access our CONTRIBUTING.md guidelines, review existing frameworks, contribute new frameworks, and collaborate with other developers.",
+  "communityGitHubCTA": "Contribute on GitHub",
   "caseStudies": "View Case Studies",
-  "caseStudiesDescription": "Explore real-world examples of governance frameworks in action and learn from implementation experiences."
+  "caseStudiesDescription": "Explore real-world examples of governance frameworks in action and learn from implementation experiences.",
+  "errorTitle": "Framework Guide Not Available",
+  "errorText": "The framework development guide could not be loaded. Please try again later or contact our development team."
 }

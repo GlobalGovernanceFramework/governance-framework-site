@@ -1,17 +1,12 @@
 {
-  "title": "Gemenskap & utåtriktad verksamhet",
+  "title": "Gemenskap & uppsökande verksamhet",
   "subtitle": "Hjälp till att sprida vår vision för kooperativ styrning världen över",
   "heroIntro": "Gå med i vår globala gemenskap av förespråkare och hjälp till att dela verktyg för bättre styrning med samhällen, organisationer och ledare världen över.",
-  "downloadGuide": "Ladda ner utåtriktad guide",
-  "joinAdvocates": "Gå med i förespråkargemenskapen",
-  "downloadMarkdown": "Ladda ner Markdown-version",
-  "downloadPdf": "Ladda ner PDF-version",
-  "joinDiscord": "Gå med i vår utåtriktade gemenskap",
   "getStarted": "Redo att göra skillnad?",
-  "guideDescription": "Få den kompletta förespråkarens guide med meddelandestrategier, idéer för innehållsskapande och tillvägagångssätt för gemenskapsbyggande.",
-  "communityDescription": "Anslut med andra förespråkare, dela dina utåtriktade insatser och koordinera kampanjer i realtid.",
-  "errorTitle": "Utåtriktad guide inte tillgänglig",
-  "errorText": "Den utåtriktade guiden kunde inte laddas. Försök igen senare eller kontakta vårt gemenskapsteam.",
-  "advocacyKit": "Ladda ner opinionsbildningskit",
-  "advocacyDescription": "Få tillgång till diskussionspunkter, sociala medier-mallar och presentationsmaterial för effektiv utåtriktad verksamhet."
+  "outreachChannelsTitle": "Gemenskaps- och uppsökningskanaler under översyn",
+  "outreachChannelsText": "När vi fokuserar på det grundläggande arbetet med att etablera vår formella organisation är våra realtidsgemenskaps- och uppsökningskanaler tillfälligt privata. Vi reviderar för närvarande våra uppsökningsguider och argumentationskit för att anpassa dem till nya, mer hållbara bidragsarbetsflöden. Medan våra interaktiva kanaler är pausade är det bästa sättet att förstå vårt uppdrag och budskap att utforska våra kärnramverk och läsa vår blogg. Vi ser fram emot att återlansera vårt gemenskaps- och uppsökningsprogram inom en snar framtid.",
+  "exploreFrameworks": "Utforska våra ramverk",
+  "readBlog": "Läs vår blogg",
+  "errorTitle": "Uppsökningsguide inte tillgänglig",
+  "errorText": "Uppsökningsguiden kunde inte laddas. Vänligen försök igen senare eller kontakta vårt gemenskapsteam."
 }

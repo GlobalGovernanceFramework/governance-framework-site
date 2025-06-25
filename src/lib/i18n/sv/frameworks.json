@@ -2,16 +2,12 @@
   "title": "Ramverksutveckling",
   "subtitle": "Skapa styrningsramverk som möjliggör systeminteroperabilitet",
   "heroIntro": "Gå med i vår gemenskap av ramverksutvecklare och hjälp till att skapa verktyg som möjliggör för olika styrsystem att kommunicera, samarbeta och utvecklas tillsammans.",
-  "downloadGuide": "Ladda ner utvecklingsguide",
-  "joinDevelopers": "Gå med i ramverksgemenskapen",
-  "downloadMarkdown": "Ladda ner Markdown-version",
-  "downloadPdf": "Ladda ner PDF-version",
-  "joinDiscord": "Gå med i vår ramverksgemenskap",
   "getStarted": "Redo att bygga ramverk?",
-  "guideDescription": "Få den kompletta ramverksutvecklarens guide med författararbetsflöden, kvalitetsstandarder och samarbetsmetoder.",
-  "communityDescription": "Anslut med andra ramverksutvecklare, dela ditt arbete och koordinera innovationsprojekt inom styrning.",
-  "errorTitle": "Ramverksguide inte tillgänglig",
-  "errorText": "Ramverksutvecklingsguiden kunde inte laddas. Försök igen senare eller kontakta vårt utvecklingsteam.",
+  "contributionProcessTitle": "Vår ramverksutvecklingsprocess utvecklas",
+  "contributionProcessText": "För att fokusera på att etablera vår formella organisation pausar vi tillfälligt våra realtidsgemenskapskanaler och reviderar våra ramverksutvecklingsguider. All ramverksutvecklingskoordinering hanteras för närvarande direkt på GitHub. Det här är den bästa platsen för att komma åt våra CONTRIBUTING.md-riktlinjer, granska befintliga ramverk, bidra med nya ramverk och samarbeta med andra utvecklare.",
+  "communityGitHubCTA": "Bidra på GitHub",
   "caseStudies": "Visa fallstudier",
-  "caseStudiesDescription": "Utforska verkliga exempel på styrningsramverk i aktion och lär av implementeringserfarenheter."
+  "caseStudiesDescription": "Utforska verkliga exempel på styrningsramverk i aktion och lär av implementeringserfarenheter.",
+  "errorTitle": "Ramverksguide inte tillgänglig",
+  "errorText": "Ramverksutvecklingsguiden kunde inte laddas. Försök igen senare eller kontakta vårt utvecklingsteam."
 }

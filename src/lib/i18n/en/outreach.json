@@ -2,16 +2,11 @@
   "title": "Community & Outreach",
   "subtitle": "Help spread our vision for cooperative governance worldwide",
   "heroIntro": "Join our global community of advocates and help share tools for better governance with communities, organizations, and leaders worldwide.",
-  "downloadGuide": "Download Outreach Guide",
-  "joinAdvocates": "Join Advocate Community",
-  "downloadMarkdown": "Download Markdown Version",
-  "downloadPdf": "Download PDF Version",
-  "joinDiscord": "Join Our Outreach Community",
   "getStarted": "Ready to Make an Impact?",
-  "guideDescription": "Get the complete advocate\"s guide with messaging strategies, content creation ideas, and community building approaches.",
-  "communityDescription": "Connect with other advocates, share your outreach efforts, and coordinate campaigns in real-time.",
+  "outreachChannelsTitle": "Community & Outreach Channels Under Review",
+  "outreachChannelsText": "As we focus on the foundational work of establishing our formal organization, our real-time community and outreach channels are temporarily private. We are currently revising our outreach guides and advocacy kits to align with new, more sustainable contribution workflows. While our interactive channels are paused, the best way to understand our mission and message is by exploring our core frameworks and reading our blog. We look forward to re-launching our community and outreach program in the near future.",
+  "exploreFrameworks": "Explore Our Frameworks",
+  "readBlog": "Read Our Blog",
   "errorTitle": "Outreach Guide Not Available",
-  "errorText": "The outreach guide could not be loaded. Please try again later or contact our community team.",
-  "advocacyKit": "Download Advocacy Kit",
-  "advocacyDescription": "Access talking points, social media templates, and presentation materials for effective outreach."
+  "errorText": "The outreach guide could not be loaded. Please try again later or contact our community team."
 }
