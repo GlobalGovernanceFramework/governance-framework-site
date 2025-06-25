@@ -204,7 +204,7 @@
                 {$t('startTreaty.fivePillars.pillar1.keyAction.description')}
               </div>
             </div>
-            <a href="{base}/frameworks/treaty-for-our-only-home?section=03-five-pillars" style="display: inline-block; margin-top: 1rem; color: #2B4B8C; font-weight: 500; text-decoration: none; border-bottom: 1px solid #2B4B8C; transition: all 0.2s;">
+            <a href="{base}/frameworks/treaty-for-our-only-home?section=five-pillars" style="display: inline-block; margin-top: 1rem; color: #2B4B8C; font-weight: 500; text-decoration: none; border-bottom: 1px solid #2B4B8C; transition: all 0.2s;">
               {$t('startTreaty.fivePillars.learnMore')} →
             </a>
           </div>
@@ -232,7 +232,7 @@
                 {$t('startTreaty.fivePillars.pillar2.keyAction.description')}
               </div>
             </div>
-            <a href="{base}/frameworks/treaty-for-our-only-home?section=03-five-pillars" style="display: inline-block; margin-top: 1rem; color: #2D5F2D; font-weight: 500; text-decoration: none; border-bottom: 1px solid #2D5F2D; transition: all 0.2s;">
+            <a href="{base}/frameworks/treaty-for-our-only-home?section=five-pillars" style="display: inline-block; margin-top: 1rem; color: #2D5F2D; font-weight: 500; text-decoration: none; border-bottom: 1px solid #2D5F2D; transition: all 0.2s;">
               {$t('startTreaty.fivePillars.learnMore')} →
             </a>
           </div>
@@ -260,7 +260,7 @@
                 {$t('startTreaty.fivePillars.pillar3.keyAction.description')}
               </div>
             </div>
-            <a href="{base}/frameworks/treaty-for-our-only-home?section=03-five-pillars" style="display: inline-block; margin-top: 1rem; color: #B8860B; font-weight: 500; text-decoration: none; border-bottom: 1px solid #B8860B; transition: all 0.2s;">
+            <a href="{base}/frameworks/treaty-for-our-only-home?section=five-pillars" style="display: inline-block; margin-top: 1rem; color: #B8860B; font-weight: 500; text-decoration: none; border-bottom: 1px solid #B8860B; transition: all 0.2s;">
               {$t('startTreaty.fivePillars.learnMore')} →
             </a>
           </div>
@@ -288,7 +288,7 @@
                 {$t('startTreaty.fivePillars.pillar4.keyAction.description')}
               </div>
             </div>
-            <a href="{base}/frameworks/treaty-for-our-only-home?section=03-five-pillars" style="display: inline-block; margin-top: 1rem; color: #00C49A; font-weight: 500; text-decoration: none; border-bottom: 1px solid #00C49A; transition: all 0.2s;">
+            <a href="{base}/frameworks/treaty-for-our-only-home?section=five-pillars" style="display: inline-block; margin-top: 1rem; color: #00C49A; font-weight: 500; text-decoration: none; border-bottom: 1px solid #00C49A; transition: all 0.2s;">
               {$t('startTreaty.fivePillars.learnMore')} →
             </a>
           </div>
@@ -316,7 +316,7 @@
                 {$t('startTreaty.fivePillars.pillar5.keyAction.description')}
               </div>
             </div>
-            <a href="{base}/frameworks/treaty-for-our-only-home?section=03-five-pillars" style="display: inline-block; margin-top: 1rem; color: #6B5CA5; font-weight: 500; text-decoration: none; border-bottom: 1px solid #6B5CA5; transition: all 0.2s;">
+            <a href="{base}/frameworks/treaty-for-our-only-home?section=five-pillars" style="display: inline-block; margin-top: 1rem; color: #6B5CA5; font-weight: 500; text-decoration: none; border-bottom: 1px solid #6B5CA5; transition: all 0.2s;">
               {$t('startTreaty.fivePillars.learnMore')} →
             </a>
           </div>
@@ -393,7 +393,7 @@
             <p style="color: #4b5563; line-height: 1.7; margin-bottom: 1.5rem;">
               {$t('startTreaty.crediblePath.haveQuestions.description')}
             </p>
-            <a href="{base}/frameworks/treaty-for-our-only-home#07-faq-and-challenges" style="display: inline-block; background-color: #B8860B; color: white; font-weight: 600; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href="{base}/frameworks/treaty-for-our-only-home#faq-and-challenges" style="display: inline-block; background-color: #B8860B; color: white; font-weight: 600; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.2s;">
               {$t('startTreaty.crediblePath.haveQuestions.button')}
             </a>
           </div>

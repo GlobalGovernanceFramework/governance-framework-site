@@ -1,7 +1,6 @@
 ---
 title: Introduction - The Polycrisis Response
 section: introduction
-revision: Version 1.0 (2025-06-15)
 ---
 
 # Introduction: The Polycrisis Response

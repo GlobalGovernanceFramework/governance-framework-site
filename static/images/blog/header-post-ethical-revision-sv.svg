@@ -1,0 +1,199 @@
+<svg viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background blueprint grid -->
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#E8F4FD" stroke-width="0.5"/>
+    </pattern>
+    
+    <!-- Gradient for evolved network -->
+    <linearGradient id="networkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B5CA5;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#2B4B8C;stop-opacity:0.1"/>
+    </linearGradient>
+    
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+  </defs>
+  
+  <!-- Blueprint background -->
+  <rect width="1200" height="600" fill="#F8FBFF"/>
+  <rect width="1200" height="600" fill="url(#grid)"/>
+  
+  <!-- Title -->
+  <text x="600" y="40" text-anchor="middle" fill="#2B4B8C" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+    Från maktkoncentration till demokratiskt partnerskap
+  </text>
+  <text x="600" y="65" text-anchor="middle" fill="#6B5CA5" font-family="Arial, sans-serif" font-size="16">
+    Den etiska evolutionen av strategiska övergångsmekanismer
+  </text>
+  
+  <!-- LEFT SIDE: Simple Power Structure -->
+  <g id="original-structure">
+    <!-- Label -->
+    <text x="200" y="120" text-anchor="middle" fill="#2B4B8C" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+      Ursprungligt förslag
+    </text>
+    
+    <!-- Large power block at top -->
+    <rect x="120" y="150" width="160" height="80" fill="#DAA520" stroke="#2B4B8C" stroke-width="2" filter="url(#shadow)"/>
+    <text x="200" y="185" text-anchor="middle" fill="#2B4B8C" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+      Förstärkt
+    </text>
+    <text x="200" y="205" text-anchor="middle" fill="#2B4B8C" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+      vetomakt
+    </text>
+    
+    <!-- Simple hierarchical connections -->
+    <line x1="200" y1="230" x2="200" y2="280" stroke="#2B4B8C" stroke-width="3"/>
+    
+    <!-- Lower blocks -->
+    <rect x="100" y="300" width="80" height="50" fill="#E8F4FD" stroke="#6B5CA5" stroke-width="1"/>
+    <text x="140" y="330" text-anchor="middle" fill="#6B5CA5" font-family="Arial, sans-serif" font-size="10">
+      Andra
+    </text>
+    <text x="140" y="342" text-anchor="middle" fill="#6B5CA5" font-family="Arial, sans-serif" font-size="10">
+      nationer
+    </text>
+    
+    <rect x="220" y="300" width="80" height="50" fill="#E8F4FD" stroke="#6B5CA5" stroke-width="1"/>
+    <text x="260" y="330" text-anchor="middle" fill="#6B5CA5" font-family="Arial, sans-serif" font-size="10">
+      Begränsad
+    </text>
+    <text x="260" y="342" text-anchor="middle" fill="#6B5CA5" font-family="Arial, sans-serif" font-size="10">
+      röst
+    </text>
+    
+    <!-- Simple connecting lines -->
+    <line x1="180" y1="250" x2="140" y2="300" stroke="#6B5CA5" stroke-width="2"/>
+    <line x1="220" y1="250" x2="260" y2="300" stroke="#6B5CA5" stroke-width="2"/>
+    
+    <!-- Problems indicated -->
+    <text x="200" y="390" text-anchor="middle" fill="#CC5500" font-family="Arial, sans-serif" font-size="12" font-style="italic">
+      Risker: Elittillfångatagande,
+    </text>
+    <text x="200" y="405" text-anchor="middle" fill="#CC5500" font-family="Arial, sans-serif" font-size="12" font-style="italic">
+      permanens, tvånivåsystem
+    </text>
+  </g>
+  
+  <!-- EVOLUTION ARROW -->
+  <g id="evolution-arrow">
+    <path d="M 350 300 Q 450 250 550 300" stroke="#DAA520" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/>
+    <text x="450" y="270" text-anchor="middle" fill="#DAA520" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+      Etisk evolution
+    </text>
+    
+    <!-- Arrow marker -->
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#DAA520"/>
+      </marker>
+    </defs>
+  </g>
+  
+  <!-- RIGHT SIDE: Evolved Democratic Network -->
+  <g id="evolved-structure">
+    <!-- Label -->
+    <text x="900" y="120" text-anchor="middle" fill="#2B4B8C" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+      Etiskt förfinat ramverk
+    </text>
+    
+    <!-- Central coordinating hub (smaller, constrained) -->
+    <rect x="850" y="160" width="100" height="60" fill="#6B5CA5" stroke="#2B4B8C" stroke-width="2" filter="url(#shadow)"/>
+    <text x="900" y="185" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+      Strategisk
+    </text>
+    <text x="900" y="200" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+      övergång
+    </text>
+    
+    <!-- Safeguard shields around central hub -->
+    <circle cx="840" cy="180" r="8" fill="#DAA520" stroke="#2B4B8C" stroke-width="1"/>
+    <text x="840" y="185" text-anchor="middle" fill="#2B4B8C" font-family="Arial, sans-serif" font-size="8" font-weight="bold">🛡</text>
+    
+    <circle cx="960" cy="180" r="8" fill="#DAA520" stroke="#2B4B8C" stroke-width="1"/>
+    <text x="960" y="185" text-anchor="middle" fill="#2B4B8C" font-family="Arial, sans-serif" font-size="8" font-weight="bold">⏰</text>
+    
+    <!-- Distributed network nodes -->
+    <!-- Global South -->
+    <rect x="720" y="250" width="90" height="45" fill="#DAA520" stroke="#2B4B8C" stroke-width="2"/>
+    <text x="765" y="270" text-anchor="middle" fill="#2B4B8C" font-family="Arial, sans-serif" font-size="11" font-weight="bold">
+      Globala södern
+    </text>
+    <text x="765" y="285" text-anchor="middle" fill="#2B4B8C" font-family="Arial, sans-serif" font-size="11" font-weight="bold">
+      förstärkt
+    </text>
+    
+    <!-- Civil Society -->
+    <rect x="980" y="250" width="90" height="45" fill="#DAA520" stroke="#2B4B8C" stroke-width="2"/>
+    <text x="1025" y="270" text-anchor="middle" fill="#2B4B8C" font-family="Arial, sans-serif" font-size="11" font-weight="bold">
+      Civilsamhälle
+    </text>
+    <text x="1025" y="285" text-anchor="middle" fill="#2B4B8C" font-family="Arial, sans-serif" font-size="11" font-weight="bold">
+      röst
+    </text>
+    
+    <!-- Youth Council -->
+    <rect x="750" y="350" width="80" height="45" fill="#6B5CA5" stroke="#2B4B8C" stroke-width="2"/>
+    <text x="790" y="370" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="11" font-weight="bold">
+      Ungdoms-
+    </text>
+    <text x="790" y="385" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="11" font-weight="bold">
+      råd
+    </text>
+    
+    <!-- Office of Adversary -->
+    <rect x="950" y="350" width="90" height="45" fill="#2B4B8C" stroke="#DAA520" stroke-width="2"/>
+    <text x="995" y="370" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">
+      Motståndets
+    </text>
+    <text x="995" y="385" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">
+      kontor
+    </text>
+    
+    <!-- Supermajority Override -->
+    <rect x="820" y="320" width="100" height="40" fill="#E8F4FD" stroke="#2B4B8C" stroke-width="2"/>
+    <text x="870" y="337" text-anchor="middle" fill="#2B4B8C" font-family="Arial, sans-serif" font-size="10" font-weight="bold">
+      Supermajoritets-
+    </text>
+    <text x="870" y="350" text-anchor="middle" fill="#2B4B8C" font-family="Arial, sans-serif" font-size="10" font-weight="bold">
+      åsidosättning
+    </text>
+    
+    <!-- Network connections with safeguards -->
+    <line x1="870" y1="220" x2="765" y2="250" stroke="#6B5CA5" stroke-width="2"/>
+    <line x1="930" y1="220" x2="1025" y2="250" stroke="#6B5CA5" stroke-width="2"/>
+    <line x1="880" y1="220" x2="790" y2="350" stroke="#6B5CA5" stroke-width="2"/>
+    <line x1="920" y1="220" x2="995" y2="350" stroke="#6B5CA5" stroke-width="2"/>
+    <line x1="900" y1="220" x2="870" y2="320" stroke="#DAA520" stroke-width="3"/>
+    
+    <!-- Connection safeguards (small lock symbols) -->
+    <circle cx="820" cy="235" r="6" fill="#DAA520"/>
+    <text x="820" y="239" text-anchor="middle" fill="#2B4B8C" font-family="Arial, sans-serif" font-size="6">🔒</text>
+    
+    <circle cx="980" cy="235" r="6" fill="#DAA520"/>
+    <text x="980" y="239" text-anchor="middle" fill="#2B4B8C" font-family="Arial, sans-serif" font-size="6">🔒</text>
+    
+    <!-- Safeguards list -->
+    <text x="900" y="450" text-anchor="middle" fill="#2B4B8C" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+      Inbyggda skyddsåtgärder:
+    </text>
+    <text x="750" y="470" text-anchor="start" fill="#6B5CA5" font-family="Arial, sans-serif" font-size="10">
+      • Demokratiska begränsningar • Prestationsansvarighet
+    </text>
+    <text x="750" y="485" text-anchor="start" fill="#6B5CA5" font-family="Arial, sans-serif" font-size="10">
+      • Solnedgångsklausuler • Parallell förstärkning • Kontinuerlig övervakning
+    </text>
+  </g>
+  
+  <!-- Bottom process note -->
+  <rect x="50" y="520" width="1100" height="60" fill="url(#networkGrad)" stroke="#6B5CA5" stroke-width="1" rx="5"/>
+  <text x="600" y="545" text-anchor="middle" fill="#2B4B8C" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+    Den etiska evolutionsprocessen
+  </text>
+  <text x="600" y="565" text-anchor="middle" fill="#2B4B8C" font-family="Arial, sans-serif" font-size="12">
+    Från enkel maktackommodation till sofistikerade demokratiska övergångsmekanismer med robusta skyddsåtgärder
+  </text>
+</svg>

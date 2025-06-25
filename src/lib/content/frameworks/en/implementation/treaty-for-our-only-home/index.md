@@ -1,10 +1,11 @@
 ---
 title: Treaty for Our Only Home v1.0
 section: index
-status: First release
-revision: 1.0
+status: Second release
+revision: 1.1
+revision_description: Ethically Revised
 releaseDate: 2025-06-15
-lastUpdated: 2025-06-24
+lastUpdated: 2025-06-25
 nextReview: too be determined
 ---
 

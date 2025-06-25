@@ -1,7 +1,6 @@
 ---
 title: FAQ & Challenges - Addressing Common Concerns
 section: faq-and-challenges
-revision: Version 1.0 (2025-06-15)
 ---
 
 # FAQ & Challenges: Addressing Common Concerns
@@ -22,6 +21,8 @@ revision: Version 1.0 (2025-06-15)
 
 ## <a id="sovereignty-concerns"></a>Sovereignty and National Interests
 
+*The Treaty's approach to sovereignty recognizes that existing power holders will not voluntarily surrender influence without equivalent value in return. However, all strategic transition mechanisms—including enhanced roles for existing powers in emerging governance domains—are designed with robust democratic safeguards, performance accountability, and sunset provisions to ensure they serve broader democratization rather than entrenching privilege. These arrangements represent temporary bridges to more equitable governance, not permanent accommodations.*
+
 ### "Doesn't this create world government that undermines national sovereignty?"
 
 **Short Answer**: No. The Treaty creates enhanced international cooperation, not world government. Nations retain domestic authority while pooling sovereignty for planetary challenges that no single nation can address alone.
@@ -38,9 +39,9 @@ revision: Version 1.0 (2025-06-15)
 
 ### "How do you prevent powerful nations from dominating new institutions?"
 
-**Short Answer**: Through structural design features that distribute power, protect minority voices, and create multiple centers of authority rather than single hierarchies.
+**Short Answer**: Through structural design features that distribute power, protect minority voices, and create multiple centers of authority rather than single hierarchies, with robust democratic safeguards constraining all enhanced roles.
 
-**Detailed Response**: The Treaty prevents great power domination through several innovative mechanisms:
+**Detailed Response**: The Treaty prevents great power domination through several innovative mechanisms with built-in ethical safeguards:
 
 **Polycentric Authority Structure**:
 - Multiple governance bodies (UNSC, UNGA, UNPA, Global Council for the Future) create competing centers of power
@@ -53,21 +54,30 @@ revision: Version 1.0 (2025-06-15)
 - Global Equity Ombudsperson with investigation authority
 - Dual supermajority requirements (states + population) prevent numerical domination
 
-**Rotational Leadership**:
-- Council of Guardians prevents any nation from permanent control
-- Civic lottery systems include randomly selected citizens in governance
-- Regional representation requirements ensure geographic distribution
+**Strategic Transition Safeguards**:
+While existing powers may receive time-limited leadership opportunities in emerging governance domains as part of transition mechanisms, these roles include strict democratic constraints:
+- **Supermajority override**: No enhanced role can block decisions supported by 2/3+ of institution members
+- **Performance accountability**: Leadership positions contingent on measurable contribution to Treaty objectives and global public goods
+- **Rotation requirements**: All enhanced roles limited to 2-3 year terms with competitive renewal
+- **Parallel enhancement**: Simultaneous creation of enhanced roles for Global South leaders, civil society, and marginalized voices
+- **Sunset provisions**: All enhanced arrangements automatically expire after 10 years unless renewed through global democratic process
+
+**Monitoring and Enforcement**:
+- Office of the Adversary specifically monitors transition mechanisms for signs of capture or mission creep
+- Global Equity Ombudsperson investigates complaints about power concentration
+- Citizens' assemblies can recommend modifications to enhanced role arrangements
+- Automatic termination triggers when enhanced roles fail to serve democratization objectives
 
 **Economic Incentives for Inclusion**:
-- Global Public Goods Fund benefits flow to all participants
-- Carbon tax revenue sharing rewards developing nation participation
-- Technology transfer requirements prevent knowledge hoarding
+- Global Public Goods Fund benefits flow to all participants based on transparent, equitable criteria
+- Carbon tax revenue sharing rewards developing nation participation and climate action
+- Technology transfer requirements prevent knowledge hoarding and ensure global access
 
 ### "What if major powers simply refuse to participate?"
 
-**Short Answer**: The Treaty is designed to work with willing participants while creating competitive pressure for broader adoption through demonstrated benefits and economic incentives.
+**Short Answer**: The Treaty is designed to work with willing participants while creating competitive pressure for broader adoption through demonstrated benefits, economic incentives, and strategic transition mechanisms that respect democratic principles.
 
-**Detailed Response**: The implementation strategy acknowledges that universal participation isn't required for effectiveness:
+**Detailed Response**: The implementation strategy acknowledges that universal participation isn't required for effectiveness while providing ethical pathways for broader engagement:
 
 **Coalition of the Willing Approach**:
 - Global Stewardship Alliance begins with 30-50 committed nations
@@ -77,19 +87,33 @@ revision: Version 1.0 (2025-06-15)
 **Economic Incentive Structures**:
 - Alliance territories gain advantages in sustainable finance markets
 - Carbon tax revenue creates funding for climate adaptation and technology
-- Non-participants face carbon border adjustments and reduced cooperation
+- Non-participants face carbon border adjustments and reduced cooperation opportunities
+
+**Strategic Transition Framework**:
+Rather than demanding immediate surrender of influence, the Treaty offers time-limited, democratically constrained pathways for existing powers to maintain influence while supporting transformation:
+
+- **Enhanced roles in emerging domains** (digital governance, climate adaptation) with strict democratic safeguards
+- **Preferential access to global resources** contingent on supporting Treaty objectives and meeting performance criteria
+- **Leadership opportunities** in new institutions, subject to rotation, accountability, and supermajority override mechanisms
+- **Technical expertise positions** that leverage institutional experience while serving global democratization
+
+**Democratic Constraints on All Incentives**:
+- No enhanced role can override democratic decisions or block supermajority votes
+- All preferential arrangements include sunset clauses and performance requirements
+- Parallel enhancement ensures Global South and civil society gain equivalent opportunities
+- Office of the Adversary monitors all arrangements to prevent capture or mission creep
 
 **Gradual Expansion Strategy**:
-- Success stories create pressure for broader adoption
-- Sovereignty bargains offer enhanced roles in emerging governance domains
-- Crisis response effectiveness demonstrates value of cooperation
+- Success stories create pressure for broader adoption without compromising democratic principles
+- Crisis response effectiveness demonstrates value of cooperation over unilateral action
+- Economic advantages flow to participants while maintaining ethical standards
 
 **Network Effects**:
-- Alliance members coordinate diplomatic pressure on hold-outs
-- Business communities advocate for participation to access benefits
-- Civil society creates electoral pressure for Treaty support
+- Alliance members coordinate diplomatic pressure while respecting sovereignty
+- Business communities advocate for participation to access sustainable finance benefits
+- Civil society creates electoral pressure for Treaty support through demonstrated improvements in governance effectiveness
 
-**Historical Example**: The Paris Climate Agreement began with willing participants and expanded through competitive pressure and demonstrated benefits, despite initial major power resistance.
+**Historical Example**: The Paris Climate Agreement began with willing participants and expanded through competitive pressure and demonstrated benefits, while the EU's gradual expansion shows how enhanced cooperation can attract broader participation without compromising democratic values.
 
 ## <a id="implementation-feasibility"></a>Implementation Feasibility
 

@@ -1,7 +1,6 @@
 ---
 title: Social Media Templates
 section: social-media-templates
-revision: Version 1.0 (2025-06-15)
 ---
 
 # Social Media Templates: Treaty for Our Only Home

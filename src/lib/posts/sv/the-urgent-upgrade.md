@@ -70,7 +70,7 @@ Det är dags att uppgradera vårt globala operativsystem – för dagens utmanin
 ### Läs mer:
 
 * Utforska hela ramverket för **"Fördraget för vårt enda hem"**
-  [Länk till ramverket](/frameworks/docs/implementation/treaty-for-our-only-home)  
+  [Länk till ramverket](/frameworks/treaty-for-our-only-home)  
 
 * Fördjupa dig i **"Suveränitetssbyten och övergångsmekanismer"**, i sektion 04, **Implementering**.
 * Förstå **"De fem reformpelarna"** i detalj i sektion 03, **Fem pelare**

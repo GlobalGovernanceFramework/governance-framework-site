@@ -1,8 +1,12 @@
 ---
 title: Fördraget för vårt enda hem v1.0
 section: index
-revision: Version 1.0 (2025-06-15)
----
+status: Andra revisionen
+revision: 1.1
+revision_description: Etiskt reviderad
+releaseDate: 2025-06-15
+lastUpdated: 2025-06-25
+nextReview: att bestämmas
 
 # Fördraget för vårt enda hem v1.0
 

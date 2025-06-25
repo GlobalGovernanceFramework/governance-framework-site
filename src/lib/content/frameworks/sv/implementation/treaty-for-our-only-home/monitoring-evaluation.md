@@ -1,7 +1,6 @@
 ---
 title: Övervakning och utvärdering - Säkerställa effektivitet och ansvarighet
 section: monitoring-evaluation
-revision: Version 1.0 (2025-06-15)
 ---
 
 # Övervakning och utvärdering: Säkerställa effektivitet och ansvarighet

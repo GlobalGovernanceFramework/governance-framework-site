@@ -58,7 +58,7 @@ The choice before us is clear: continue to accept escalating systemic risk, or m
 ## Read More:
 
 * Explore the full "Treaty for Our Only Home" framework.
-[Link to the framework](/frameworks/docs/implementation/treaty-for-our-only-home)
+[Link to the framework](/frameworks/treaty-for-our-only-home)
 * Dive deeper into the "Sovereignty Bargains and Transition Mechanisms" in section 04, **Implementation**
 * Understand the "Five Pillars of Reform" in detail in section 03, **Five Pillars**
 

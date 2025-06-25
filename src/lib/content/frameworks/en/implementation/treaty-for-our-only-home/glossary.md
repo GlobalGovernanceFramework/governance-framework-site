@@ -1,7 +1,6 @@
 ---
 title: Glossary - Key Terms and Concepts
 section: glossary
-revision: Version 1.0 (2025-06-15)
 ---
 
 # Glossary: Key Terms and Concepts
@@ -160,8 +159,11 @@ Escalating intervention approach for enforcement and crisis response:
 - **Phase II (2029-2033)**: Scaling successful mechanisms with cross-pillar integration
 - **Phase III (2034-2040)**: Universal adoption and institutional consolidation
 
-### Sovereignty Bargain Framework
-Negotiation approach offering enhanced leadership in emerging domains (digital governance, climate technology) in exchange for limitations on traditional authorities (veto power, unilateral action). Creates win-win transitions rather than zero-sum power struggles.
+### Strategic Transition Framework
+Ethically constrained negotiation approach offering time-limited, democratically supervised leadership opportunities in emerging governance domains in exchange for supporting democratization of traditional authorities. All enhanced roles include: (1) supermajority override mechanisms preventing unilateral decision-making, (2) performance accountability based on measurable contribution to Treaty objectives, (3) automatic sunset provisions requiring democratic renewal after 10 years, (4) parallel enhancement for Global South and marginalized voices, and (5) continuous monitoring by the Office of the Adversary. Designed as temporary bridges to greater democratization, not permanent privilege accommodation.
+
+### Strategic Transition Mechanisms
+Temporary, democratically constrained pathways for existing power holders to maintain influence while supporting governance transformation. Distinguished from traditional power accommodations by: mandatory rotation requirements, performance-based renewal criteria, supermajority override protections, parallel enhancement for marginalized actors, and automatic sunset unless renewed through democratic process. Serve as bridges to more equitable governance rather than permanent settlements.
 
 ## <a id="technical-governance"></a>Technical and Governance Terms
 

@@ -2,14 +2,14 @@
 <script>
   import { base } from '$app/paths';
   import { page } from '$app/stores';
-  import { t } from '$lib/i18n';
+  import { t, locale } from '$lib/i18n';
   import { browser } from '$app/environment';
   import Follow from '$lib/components/Follow.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
   
-  export let data; // SvelteKit provides data from +page.server.js
+  export let data; // SvelteKit provides data from +page.js
   
-  // Get the current language from server data, not URL params
+  // Get the current language from load data
   $: currentLang = data.currentLocale || 'en';
   
   // Helper function for translations with fallbacks

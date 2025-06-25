@@ -1,7 +1,6 @@
 ---
 title: Ordlista - Nyckeltermer och begrepp
 section: glossary
-revision: Version 1.0 (2025-06-15)
 ---
 
 # Ordlista: Nyckeltermer och begrepp
@@ -160,8 +159,21 @@ Eskaleran de interventionsmetod för tillämpning och krissvar:
 - **Fas II (2029-2033)**: Skalning av framgångsrika mekanismer med tvärpelare-integration
 - **Fas III (2034-2040)**: Universell adoption och institutionell konsolidering
 
-### Suveränitetsbargainramverk
-Förhandlingsmetod som erbjuder förstärkt ledarskap i framväxande domäner (digital styrning, klimatteknik) i utbyte mot begränsningar av traditionella auktoriteter (vetomakt, unilateral åtgärd). Skapar win-win övergångar snarare än nollsummepowerstruggles.
+### Strategisk övergångsramverk (Strategic Transition Framework)
+Detta är en etiskt begränsad förhandlingsmetod som syftar till att påskynda en demokratisering av traditionella maktstrukturer. Metoden erbjuder inflytelserika aktörer tidsbegränsade och demokratiskt övervakade ledarroller inom nya styrningsdomäner, i utbyte mot deras stöd för reformerna.
+
+Alla förstärkta roller som erbjuds inom ramverket omgärdas av följande strikta skyddsmekanismer:
+
+* **Skydd mot ensidigt beslutsfattande:** Inkluderar mekanismer för att åsidosätta beslut med supermajoritet, vilket förhindrar att en enskild aktör kan blockera processer.
+* **Prestationsansvar:** Rollerna är beroende av mätbara bidrag som tydligt stödjer fördragets övergripande mål.
+* **Tidsbegränsning (Solnedgångsklausul):** Rollerna är tidsbegränsade och upphör automatiskt efter 10 år om de inte förnyas genom en global demokratisk process.
+* **Parallell förstärkning:** Säkerställer att även Globala Södern och marginaliserade röster får utökade och stärkta roller i det nya systemet.
+* **Oberoende övervakning:** Kontinuerlig granskning utförs av "Motståndets Kontor" (Office of the Adversary) för att säkerställa efterlevnad och etisk integritet.
+
+**Grundprincip:** Ramverket fungerar som en tillfällig bro för att uppnå bredare demokratisering och är uttryckligen inte utformat för att skapa en permanent struktur av privilegier.
+
+### Strategiska Övergångsmekanismer (Strategic Transition Mechanisms)
+Tillfälliga, demokratiskt begränsade vägar för befintliga maktinnehavare att behålla inflytande samtidigt som de stöder styrningsomvandling. Skiljer sig från traditionella maktackommodationer genom: obligatoriska rotationskrav, prestationsbaserade förnyelsekriterier, supermajoritetsskydd, parallell förstärkning för marginaliserade aktörer, och automatisk solnedgång såvida inte förnyad genom demokratisk process. Tjänar som broar till mer rättvis styrning snarare än permanenta uppgörelser.
 
 ## <a id="technical-governance"></a>Tekniska och styrningsbegrepp
 

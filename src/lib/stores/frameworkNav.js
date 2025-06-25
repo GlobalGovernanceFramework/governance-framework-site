@@ -19,8 +19,8 @@ export const allFrameworks = [
     slug: 'treaty-for-our-only-home',
     titleKey: 'framework.docs.nav.frameworkTitles.treatyForOurOnlyHome',
     tier: 0,
-    status: 'review',
-    // version: '1.0'
+    status: 'ready',
+    version: '1.1',
     path: '/frameworks/treaty-for-our-only-home'
   },
 

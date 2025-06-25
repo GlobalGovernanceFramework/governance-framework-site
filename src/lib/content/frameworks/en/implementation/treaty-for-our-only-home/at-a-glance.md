@@ -44,4 +44,4 @@ The "Treaty for Our Only Home" is a ready-to-implement blueprint to upgrade glob
 * **Keystone Reform:** **Debt Justice Protocols** to stabilize economies during crises.
 
 ### Implementation Strategy: The Dual-Track Approach
-A "Global Stewardship Alliance" of 30-50 nations will pioneer these reforms, demonstrating their viability while engaging in pragmatic negotiations with existing powers to ensure a smooth transition.
+A "Global Stewardship Alliance" of 30-50 nations will pioneer these reforms, demonstrating their viability while engaging in strategic transition mechanisms with existing powers—time-limited arrangements with democratic safeguards, performance accountability, and automatic sunset provisions that serve democratization rather than elite accommodation.

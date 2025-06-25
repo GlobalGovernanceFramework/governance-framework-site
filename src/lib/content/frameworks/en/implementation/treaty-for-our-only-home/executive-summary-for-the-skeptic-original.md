@@ -37,23 +37,15 @@ This document proposes a framework for a pragmatic, phased upgrade of our global
 
 ---
 
-## 3. Strategic Transition Mechanisms
+## 3. The Strategic Calculus: Sovereignty is Not Lost, It is Pooled for Greater Gain
 
 This framework acknowledges that power will not be ceded without benefit. It is based on a series of pragmatic "Sovereignty Bargains":
 
 ### Key Bargains
 
-**The Institutional Transition Framework**: Recognizing that powerful nations will not voluntarily surrender influence without receiving equivalent value, the framework offers strategic transition mechanisms as a bridge to more equitable governance.
+- **The Veto Trade**: Powerful nations are asked to limit their absolute veto power. In exchange, they are offered primacy and leadership roles in new, highly influential bodies designed to govern the critical domains of the future (e.g., the Global Digital Governance Body, Global Council for the Future). They trade an obsolete power for agenda-setting power in the arenas that will define the 21st century.
 
-**Time-Limited Leadership Opportunities**: P5 nations receive rotating chairmanships (2-3 year terms) and technical expertise roles in emerging governance domains (Global Digital Governance Body, Global Council for the Future) in exchange for UNSC veto limitations. These roles are explicitly designed with:
-- **Democratic safeguards**: All new bodies maintain supermajority override mechanisms preventing any single actor from blocking decisions
-- **Performance accountability**: Leadership positions require renewal based on contribution to global public goods
-- **Sunset provisions**: Enhanced roles automatically expire after 10 years unless renewed through global democratic process
-- **Transitional by design**: These arrangements serve as a bridge mechanism, with the explicit goal of evolving toward full democratic governance as global institutions mature and gain legitimacy.
-
-**Parallel Enhancement for All**: The framework simultaneously creates enhanced roles for Global South leaders, regional powers, and civil society to prevent a two-tier system. This represents transitional accommodation of existing power while building toward full sovereign equality.
-
-**The Ethical Foundation**: This approach accepts that perfect justice delayed indefinitely serves no one's interests, while imperfect but functional reform enables breakthrough solutions to climate change, pandemics, and global instability that benefit everyone—especially the most vulnerable.
+- **The Stability Dividend**: By pooling sovereignty to create predictable rules and effective enforcement, all nations—especially major economic powers—gain a more stable and de-risked environment for trade, investment, and long-term planning. The cost of a small loss in unilateral freedom of action is repaid exponentially in reduced volatility.
 
 ---
 

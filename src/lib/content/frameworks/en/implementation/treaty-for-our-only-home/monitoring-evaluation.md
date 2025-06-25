@@ -1,7 +1,6 @@
 ---
 title: Monitoring & Evaluation - Ensuring Effectiveness and Accountability
 section: monitoring-evaluation
-revision: Version 1.0 (2025-06-15)
 ---
 
 # Monitoring & Evaluation: Ensuring Effectiveness and Accountability
