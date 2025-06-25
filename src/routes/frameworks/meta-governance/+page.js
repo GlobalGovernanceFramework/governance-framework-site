@@ -51,12 +51,12 @@ export async function load({ depends, url }) {
   for (const section of sections) {
     try {
       // Try to load the current locale version
-      content[section] = await import(`$lib/content/frameworks/${currentLocale}/implementation/integrated-meta-governance/${section}.md`);
+      content[section] = await import(`$lib/content/frameworks/${currentLocale}/implementation/meta-governance/${section}.md`);
       isModular = true;
     } catch (e) {
       // Fall back to English if the translation isn't available
       try {
-        content[section] = await import(`$lib/content/frameworks/en/implementation/integrated-meta-governance/${section}.md`);
+        content[section] = await import(`$lib/content/frameworks/en/implementation/meta-governance/${section}.md`);
         isModular = true;
         // Track that this section is using the English fallback
         if (currentLocale !== 'en') {

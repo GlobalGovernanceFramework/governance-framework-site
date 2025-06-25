@@ -6,7 +6,7 @@ revision: 1.1
 revision_description: Etiskt reviderad
 releaseDate: 2025-06-15
 lastUpdated: 2025-06-25
-nextReview: att bestämmas
+nextReview: Fastställs senare
 
 # Fördraget för vårt enda hem v1.0
 

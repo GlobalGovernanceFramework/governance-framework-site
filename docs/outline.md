@@ -1,4 +1,4 @@
-# Global Governance Framework - Project Overview
+# Global Governance Frameworks - Project Overview
 
 ## Project Background & Vision
 

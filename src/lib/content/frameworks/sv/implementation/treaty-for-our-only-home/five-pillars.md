@@ -280,6 +280,8 @@ Prioriterad implementering på fossila bränslen, flyg och sjöfart, med intäkt
 **Skatt på finansiella transaktioner:**
 En avgift på 0,01 % på högfrekvent handel, derivat och valutaspekulation minskar marknadsvolatiliteten samtidigt som den genererar betydande intäkter för globalt samarbete. Minskar skadlig spekulation samtidigt som den finansierar fördelaktig samordning.
 
+Fondens styrning skulle kunna använda en särskild fördelningsmodell, såsom att fördela 50 % av intäkterna till centrala samordningsfunktioner, 30 % till aktieprogram som säkerställer deltagande från resurssvaga grupper och 20 % till en "generationell låsbox" för att säkra långsiktiga intressen.
+
 **Skatt på digitala tjänster:**
 Beskatta teknikjättars globala intäkter i proportion till den användardata som utvinns och den marknadsdominans som utövas. Motverkar skatteflykt samtidigt som den finansierar skydd för digitala rättigheter och rättvis tillgång till teknik.
 

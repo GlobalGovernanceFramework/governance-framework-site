@@ -137,14 +137,22 @@ The enhanced meta-governance framework operates through interconnected structura
 
 **Financial Transparency**: Real-time resource flow tracking with public dashboards and independent auditing systems.
 
-### V. Security and Resilience
+### V. Funding the Coordination Infrastructure
+Sustainable meta-governance requires a funding stream independent of the political pressures of voluntary contributions. The framework proposes a **"coordination infrastructure tax"** as its primary funding mechanism, sourced from a fractional levy (0.1%-1%) on global high-frequency trading (HFT) and algorithmic transaction revenues.
+
+This is ethically justified as actors who benefit most from global stability and coordinated systems contribute to their upkeep. The revenue would be managed by an **Independent Allocation Council** and distributed according to a clear formula:
+- **50% to Core Functions**: Funding for reflexivity engines, interoperability tools, and power-balancing audits.
+- **30% to Equity Participation**: Grants to ensure under-resourced domains (e.g., Indigenous groups, Global South NGOs) can participate fully.
+- **20% to a Transgenerational Lockbox**: An endowment to fund long-term coordination needs, such as the rights of future generations.
+
+### VI. Security and Resilience
 **Conflict Prevention**: Early warning systems with **AI-assisted pattern recognition** detecting cross-domain tensions before they escalate.
 
 **Peace-Building Coordination**: Integrated approaches addressing security-development-environment nexus with **community reconciliation support**.
 
 **Crisis Response**: Emergency coordination protocols with streamlined decision-making and **alternative communication channels** for system failures.
 
-### VI. Learning and Evolution
+### VII. Learning and Evolution
 **Reflexivity Engines**: Human-AI hybrid systems with **real-time monitoring** and systematic learning integration from crisis responses.
 
 **Temporal Layering**: Governance across immediate crisis response, decadal transformation, and **seven-generation planning** with future impact assessment protocols.

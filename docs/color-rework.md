@@ -55,7 +55,7 @@ This creates both consistency and distinction.
 You do not need to discard the unique color schemes you've created. Instead, formalize the `Cosmic Blue` and `Action Gold` from your header as the site-wide Master Brand. Then, re-scope the unique framework colors to act as **secondary accents** rather than primary colors.
 
 This approach gives you the best of both worlds:
-1.  **A Strong, Unified Brand:** Users will always know they are on the `globalgovernanceframework.org` site.
+1.  **A Strong, Unified Brand:** Users will always know they are on the `globalgovernanceframeworks.org` site.
 2.  **Clear Thematic Identity:** Each framework will still have its own distinct visual flavor.
 3.  **Visual Hierarchy:** The relationship between the main project and its component frameworks will be instantly clear to the user.
 

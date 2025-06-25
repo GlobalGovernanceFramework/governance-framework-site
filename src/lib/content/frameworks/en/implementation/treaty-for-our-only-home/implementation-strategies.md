@@ -95,7 +95,11 @@ Not all Treaty reforms are equally foundational. Critical path analysis identifi
 
 **Pillar 4: Global Taxation System** serves as the master key that unlocks all other mechanisms. Without independent funding, international institutions remain dependent on voluntary contributions that can be withdrawn during political backlash. The carbon tax and financial transaction tax provide the resource base that makes all other reforms viable.
 
-*Implementation Sequence*: Begin with coalition of willing nations (EU, Nordic countries, progressive Pacific states) implementing carbon taxes with revenue sharing agreements. Demonstrate economic benefits and climate effectiveness. Expand gradually through competitive pressure and economic incentives.
+The implementation of these funding streams is designed to be pragmatic and evidence-based:
+
+* **For the Carbon Tax**: The implementation will begin with a **coalition of willing nations** (e.g., EU, Nordic countries, progressive Pacific states) that implement carbon taxes with revenue-sharing agreements. This will demonstrate the economic and climate benefits, creating competitive pressure and economic incentives for gradual expansion to other nations.
+
+* **For the Financial Transaction Tax (FTT)**: The implementation will follow a **pragmatic, three-phase path**. It will begin with **voluntary pledges** from a coalition of pioneering financial actors, move to **sector-wide adoption** in key financial hubs, and culminate in **formal institutionalization** with oversight from bodies like the Bank for International Settlements (BIS) or the IMF. A portion of the revenue generated through this mechanism will be allocated to fund the core infrastructure of the Integrated Meta-Governance Framework, ensuring a sustainable foundation for all cross-domain coordination.
 
 **Pillar 1: UNSC Veto Override** breaks the decision-making deadlock that paralyzes responses to global challenges. This single reform enables action on climate, pandemics, conflict prevention, and economic stability that current institutional architecture prevents.
 

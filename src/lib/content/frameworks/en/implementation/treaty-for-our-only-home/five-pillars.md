@@ -280,6 +280,8 @@ Priority deployment on fossil fuels, aviation, and shipping with revenue sharing
 **Financial Transaction Tax:**
 0.01% levy on high-frequency trading, derivatives, and currency speculation reduces market volatility while generating substantial revenue for global cooperation. Reduces harmful speculation while funding beneficial coordination.
 
+The Fund's governance could utilize a dedicated allocation formula, such as distributing 50% of revenue to core coordination functions, 30% to equity programs ensuring participation from under-resourced groups, and 20% to a 'Transgenerational Lockbox' to secure long-term interests.
+
 **Digital Services Tax:**
 Tax tech giants' global revenue proportional to user data extracted and market dominance exercised. Addresses tax avoidance while funding digital rights protection and equitable technology access.
 

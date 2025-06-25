@@ -93,9 +93,13 @@ Alla reformer i fördraget är inte lika grundläggande. En kritisk väg-analys 
 
 ### Grundläggande hörnstensreformer (Icke-förhandlingsbara)
 
-**Pelare 4: Globalt beskattningssystem** fungerar som huvudnyckeln som låser upp alla andra mekanismer. Utan oberoende finansiering förblir internationella institutioner beroende av frivilliga bidrag som kan dras tillbaka vid politiska motreaktioner. Koldioxidskatten och skatten på finansiella transaktioner utgör den resursbas som gör alla andra reformer genomförbara.
+**Pelare 4: Globalt beskattningssystem** fungerar som den huvudnyckel som låser upp alla andra mekanismer. Utan oberoende finansiering förblir internationella institutioner beroende av frivilliga bidrag som kan dras tillbaka vid politiska motreaktioner. Koldioxidskatten och skatten på finansiella transaktioner utgör den resursbas som gör alla andra reformer genomförbara.
 
-*Implementeringssekvens:* Börja med en koalition av villiga nationer (EU, Norden, progressiva Stillahavsstater) som implementerar koldioxidskatter med avtal om intäktsdelning. Demonstrera ekonomiska fördelar och klimateffektivitet. Expandera gradvis genom konkurrenstryck och ekonomiska incitament.
+Implementeringen av dessa finansieringsströmmar är utformad för att vara pragmatisk och evidensbaserad:
+
+* **För koldioxidskatten**: Implementeringen kommer att inledas med en **koalition av villiga nationer** (t.ex. EU, Norden, progressiva Stillahavsstater) som inför koldioxidskatter med avtal om intäktsdelning. Detta kommer att demonstrera de ekonomiska och klimatmässiga fördelarna, vilket skapar ett konkurrenstryck och ekonomiska incitament för en gradvis expansion till andra nationer.
+
+* **För skatten på finansiella transaktioner (FTT)**: Implementeringen kommer att följa en **pragmatisk trestegsmodell**. Den inleds med **frivilliga åtaganden** från en koalition av banbrytande finansiella aktörer, övergår till en **sektorsövergripande anslutning** i viktiga finansiella nav, och kulminerar i en **formell institutionalisering** med tillsyn av organ som Bank for International Settlements (BIS) eller IMF. En del av intäkterna som genereras genom denna mekanism kommer att avsättas för att finansiera den integrerade metastyrningsramens kärninfrastruktur, vilket säkerställer en hållbar grund för all samordning mellan olika områden.
 
 **Pelare 1: Kringgående av vetorätten i säkerhetsrådet** bryter det beslutsfattande dödläge som paralyserar insatser mot globala utmaningar. Denna enda reform möjliggör handling gällande klimat, pandemier, konfliktförebyggande och ekonomisk stabilitet som den nuvarande institutionella arkitekturen förhindrar.
 
