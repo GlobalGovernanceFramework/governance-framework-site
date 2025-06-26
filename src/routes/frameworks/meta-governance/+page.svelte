@@ -12,7 +12,7 @@
   export let data;
 
   // Keep track of which section is active (for sub-navigation)
-  let activeSection = data.initialSection || 'index'; // Start with the section from load function
+  let activeSection = data.initialSection || 'introduction'; // Start with the section from load function
 
   onMount(() => {
     if (browser) {
@@ -41,8 +41,8 @@
           console.log('Hash not found, defaulting to index but keeping hash:', hash);
           activeSection = 'index';
         } else {
-          // No hash or index hash
-          activeSection = data.initialSection || 'index';
+          // No hash or introduction hash
+          activeSection = data.initialSection || 'introduction';
         }
       };
 
@@ -105,30 +105,21 @@
   // This will track the current locale for our component
   $: currentLocale = $locale;
 
-  // Swedish translations for the introduction section
-  const introSv = {
-    title: "Integrerad meta-styrning ramverk implementering",
-    overview: "Översikt",
+  // Swedish translations for the INTRODUCTION section (renamed from introSv)
+  const introductionTextSv = {
+    title: "Integrerad Meta-Styrning",
+    subtitle: "En introduktion till planetär samordning",
     paragraph1: "Integrerad meta-styrning är konsten och arkitekturen att designa, samordna och utveckla styrningssystem över domäner, nivåer, kulturer och tidsskalor. När globala utmaningar blir alltmer sammankopplade och komplexa, erbjuder meta-styrning den nödvändiga strukturen för att harmonisera olika insatser till en sammanhängande helhet—utan att överskrida autonomi, mångfald eller subsidiaritet.",
     paragraph2: "Detta ramverk beskriver principer, strukturer och mekanismer för hur olika styrningsdomäner interagerar, överlappar och utvecklas i linje med gemensamma mål. Det är tänkt som en potentiell \"konstitution för planetär samordning\"—ett levande, adaptivt system som utvecklas genom kollektivt lärande."
   };
 
-  // English translations as fallback
-  const introEn = {
-    title: "Integrated Meta-Governance Framework Implementation",
-    overview: "Overview",
+  // English translations as fallback for INTRODUCTION
+  const introductionTextEn = {
+    title: "Integrated Meta-Governance",
+    subtitle: "An introduction to planetary coordination",
     paragraph1: "Integrated Meta-Governance is the art and architecture of designing, aligning, and evolving governance systems across domains, levels, cultures, and timescales. As global challenges become increasingly interconnected and complex, meta-governance offers the scaffolding necessary to harmonize diverse efforts into a coherent whole—without overriding autonomy, diversity, or subsidiarity.",
     paragraph2: "This framework outlines principles, structures, and mechanisms to guide how various governance domains interact, overlap, and evolve in alignment with shared goals. It is envisioned as a potential \"constitution for planetary coordination\"—a living, adaptive system that evolves through collective learning."
   };
-
-  function getOverviewTitle() {
-    const overviewTitles = {
-      en: "Overview",
-      sv: "Översikt"
-    };
-    
-    return overviewTitles[currentLocale] || overviewTitles.en;
-  }
 
   // Group sections logically with multi-lingual support
   function getSectionCategoryTitle(category) {
@@ -148,12 +139,13 @@
     return (categoryTitles[currentLocale] || categoryTitles.en)[category] || category;
   }
 
-  // Get section titles in current language
+  // Get section titles in current language - UPDATED with new structure
   function getSectionTitle(section) {
     const titles = {
       en: {
         'quick-start': "Meta-Governance Lite",
-        'index': "Overview",
+        'introduction': "Introduction",    // NEW: Introduction section for introduction.md
+        'index': "Overview",              // This is now the overview (index.md)
         'principles': "Core Principles",
         'value-proposition': "Value Proposition",
         'structural': "Structural Components",
@@ -167,7 +159,8 @@
       },
       sv: {
         'quick-start': "Meta-styrning lite",
-        'index': "Översikt",
+        'introduction': "Introduktion",   // NEW: Introduction section for introduction.md
+        'index': "Översikt",             // This is now the overview (index.md)
         'principles': "Grundläggande principer",
         'value-proposition': "Värdeerbjudande",
         'structural': "Strukturella komponenter",
@@ -189,6 +182,8 @@
     const fullTitle = getSectionTitle(section);
     
     const shortTitles = {
+      'Introduction': 'Introduction',
+      'Overview': 'Overview',
       'Core Principles': 'Principles',
       'Value Proposition': 'Value Proposition',
       'Structural Components': 'Structure',
@@ -199,6 +194,8 @@
       'Why Join?': 'Why Join?',
       'Appendix': 'Appendix',
       'Related': 'Related',
+      'Introduktion': 'Introduktion',
+      'Översikt': 'Översikt',
       'Grundläggande principer': 'Principer',
       'Värdeerbjudande': 'Värdeerbjudande',
       'Strukturella komponenter': 'Struktur',
@@ -216,23 +213,25 @@
 
   function getSectionIcon(section) {
     const sectionIcons = {
-      'principles': '📜', // Scroll for principles
+      'introduction': '🌟',     // NEW: Star icon for Introduction  
+      'index': '🗺️',          // Map icon for Overview (index.md)
+      'principles': '📜',       // Scroll for principles
       'value-proposition': '💎', // Gem for value
-      'structural': '🏗️', // Building construction for structure
-      'implementation': '⚙️', // Gears for implementation
-      'evaluation': '📊', // Bar chart for evaluation
-      'case-models': '📖', // Open book for case models
-      'future': '🔭', // Telescope for future potential
-      'manifesto': '📢', // Megaphone for a call to action/manifesto
-      'appendix': '📎', // Paperclip for appendix
-      'related': '🔗'  // Link for related topics
+      'structural': '🏗️',      // Building construction for structure
+      'implementation': '⚙️',   // Gears for implementation
+      'evaluation': '📊',       // Bar chart for evaluation
+      'case-models': '📖',      // Open book for case models
+      'future': '🔭',          // Telescope for future potential
+      'manifesto': '📢',       // Megaphone for a call to action/manifesto
+      'appendix': '📎',        // Paperclip for appendix
+      'related': '🔗'          // Link for related topics
     };
     // Return the icon or a default fallback
     return sectionIcons[section] || '✦';
   }
 
   // Choose the right intro text based on the current locale
-  $: intro = currentLocale === 'sv' ? introSv : introEn;
+  $: introductionText = currentLocale === 'sv' ? introductionTextSv : introductionTextEn;
 
   $: if (browser && $locale) {
     invalidate('app:locale');
@@ -249,9 +248,9 @@
     document.body.removeChild(link);
   }
 
-  // Check which sections are active
+  // Check which sections are active - UPDATED with new structure
   $: isLiteActive = activeSection === 'quick-start';
-  $: isFoundationActive = ['principles', 'value-proposition'].includes(activeSection);
+  $: isFoundationActive = ['introduction', 'index', 'principles', 'value-proposition'].includes(activeSection); // Added 'introduction' and 'index'
   $: isImplementationActive = ['structural', 'implementation', 'evaluation', 'case-models'].includes(activeSection);
   $: isResourceActive = ['future', 'manifesto', 'appendix', 'related'].includes(activeSection);
 
@@ -297,8 +296,8 @@
     section.match(/^\d{2}-/)
   ).sort();
 
-  // Define section groupings
-  $: foundationSections = ['principles', 'value-proposition'];
+  // Define section groupings - UPDATED with new structure
+  $: foundationSections = ['introduction', 'index', 'principles', 'value-proposition']; // Added 'introduction' and 'index' here
   $: implementationSections = ['structural', 'implementation', 'evaluation', 'case-models'];
   $: resourceSections = ['future', 'manifesto', 'appendix', 'related'];
 
@@ -335,7 +334,7 @@
 
 <div class="content">
   <!-- Quick Access Card for Lite Guide -->
-  {#if !isPrintMode && !isLiteActive && activeSection === 'index'}
+  {#if !isPrintMode && !isLiteActive && activeSection === 'introduction'}
     <div class="lite-guide-card">
       <div class="card-content">
         <div class="card-icon">📘</div>
@@ -356,15 +355,15 @@
     <!-- Sub-navigation for framework sections -->
     {#if !isPrintMode} 
       <div class="section-nav">
-        <!-- Overview -->
+        <!-- Introduction -->
         <div class="nav-section">
           <button 
-            class="nav-item overview-item" 
-            class:active={activeSection === 'index'}
-            on:click={() => setActiveSection('index')}
+            class="nav-item introduction-item" 
+            class:active={activeSection === 'introduction'}
+            on:click={() => setActiveSection('introduction')}
           >
-            <span class="nav-icon">🏠</span>
-            <span class="nav-title">{getOverviewTitle()}</span>
+            <span class="nav-icon">🌟</span>
+            <span class="nav-title">{getSectionTitle('introduction')}</span>
           </button>
         </div>
 
@@ -380,7 +379,7 @@
           </button>
         </div>
 
-        <!-- Foundation Accordion -->
+        <!-- Foundation Accordion - NOW INCLUDES INTRODUCTION AND OVERVIEW -->
         <div class="nav-accordion">
           <button 
             class="accordion-header" 
@@ -482,8 +481,8 @@
     <!-- Show active section, or all sections in print mode -->
     {#each sectionsToShow as section}
       <div class="section-content" id={section}>
-        <!-- Language fallback notice (skip for index since we have Swedish overview) -->
-        {#if !isPrintMode && data.sectionsUsingEnglishFallback?.includes(section) && section !== 'index'}
+        <!-- Language fallback notice (skip for introduction since we have custom text) -->
+        {#if !isPrintMode && data.sectionsUsingEnglishFallback?.includes(section) && section !== 'introduction'}
           <div class="language-fallback-notice">
             <div class="notice-icon">🌐</div>
             <div class="notice-content">
@@ -492,6 +491,7 @@
             </div>
           </div>
         {/if}
+        
         {#if section === 'quick-start'}
           <!-- Render Lite Guide -->
           <svelte:component this={data.sections[section].default} />
@@ -502,27 +502,31 @@
               <button class="secondary-btn" on:click={downloadLiteGuide}>
                 {getLocalizedText('downloadPdf')} <span class="download-icon">↓</span>
               </button>
-              <button class="primary-btn" on:click={() => setActiveSection('index')}>
+              <button class="primary-btn" on:click={() => setActiveSection('introduction')}>
                 {getLocalizedText('continueToFull')} <span class="arrow-icon">→</span>
               </button>
             </div>
           {/if}
 
-        {:else if section === 'index' && currentLocale === 'sv'}
-          <!-- Manually render Swedish introduction for the index section -->
-          <div class="overview-section">
-            <h1>{intro.title}</h1>
-            <h2>{intro.overview}</h2>
-            <p>{intro.paragraph1}</p>
-            <p>{intro.paragraph2}</p>
+        {:else if section === 'introduction'}
+          <!-- Render Introduction (custom text + constellation map) -->
+          <div class="introduction-section">
+            <h1>{introductionText.title}</h1>
+            <h2>{introductionText.subtitle}</h2>
+            <p>{introductionText.paragraph1}</p>
+            <p>{introductionText.paragraph2}</p>
           </div>
-          <!-- Show constellation map for index section -->
+          <!-- Show constellation map for introduction section -->
           <ConstellationMap />
+          
         {:else if section === 'index'}
-          <!-- Render English introduction through the markdown component -->
-          <svelte:component this={data.sections[section].default} />
-          <!-- Show constellation map for index section -->
-          <ConstellationMap />
+          <!-- Render Overview section from index.md -->
+          {#if data.sections[section]}
+            <svelte:component this={data.sections[section].default} />
+          {:else}
+            <p>Overview section not found</p>
+          {/if}
+          
         {:else if data.sections[section]}
           <!-- Render normal sections from markdown files -->
           <svelte:component this={data.sections[section].default} />
@@ -558,11 +562,11 @@
     {/each}
   {:else}
     <!-- Legacy single file display -->
-    <div class="overview-section">
-      <h1>{intro.title}</h1>
-      <h2>{intro.overview}</h2>
-      <p>{intro.paragraph1}</p>
-      <p>{intro.paragraph2}</p>
+    <div class="introduction-section">
+      <h1>{introductionText.title}</h1>
+      <h2>{introductionText.subtitle}</h2>
+      <p>{introductionText.paragraph1}</p>
+      <p>{introductionText.paragraph2}</p>
     </div>
     
     <!-- Show constellation map -->
@@ -713,7 +717,8 @@
     background-color: var(--meta-secondary);
   }
 
-  .overview-item {
+  /* Updated styling for Introduction item (renamed from overview-item) */
+  .introduction-item {
     background: linear-gradient(135deg, rgba(43, 75, 140, 0.1), rgba(218, 165, 32, 0.1));
     border: 1px solid rgba(43, 75, 140, 0.2);
     border-radius: 0.375rem;
@@ -721,7 +726,7 @@
     margin-bottom: 0.5rem;
   }
 
-  .overview-item.active {
+  .introduction-item.active {
     background: var(--meta-primary);
     color: white;
   }
@@ -804,6 +809,33 @@
   .section-content {
     padding-top: 1rem;
     scroll-margin-top: 2rem;
+  }
+
+  /* Updated styling for introduction section (renamed from overview-section) */
+  .introduction-section {
+    margin-bottom: 2rem;
+  }
+
+  .introduction-section h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--meta-primary);
+  }
+
+  .introduction-section h2 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: var(--meta-secondary);
+    font-style: italic;
+  }
+
+  .introduction-section p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #4b5563;
+    font-size: 1rem;
   }
 
   .documentation-container {
@@ -1300,124 +1332,6 @@
     .section-navigation button {
       width: 100%;
     }
-  }
-
-  /* Meta-governance specific theme elements */
-
-  /* Special callouts for meta-governance concepts */
-  .content :global(.systems-integration-callout) {
-    background-color: rgba(43, 75, 140, 0.1);
-    border-radius: 0.5rem;
-    padding: 1rem;
-    margin: 1.5rem 0;
-    border-left: 4px solid var(--meta-primary);
-  }
-
-  .content :global(.coordination-callout) {
-    background-color: rgba(107, 92, 165, 0.1);
-    border-radius: 0.5rem;
-    padding: 1rem;
-    margin: 1.5rem 0;
-    border-left: 4px solid var(--meta-secondary);
-  }
-
-  .content :global(.emergence-callout) {
-    background-color: rgba(218, 165, 32, 0.1);
-    border-radius: 0.5rem;
-    padding: 1rem;
-    margin: 1.5rem 0;
-    border-left: 4px solid var(--meta-accent);
-  }
-
-  .content :global(.sustainability-callout) {
-    background-color: rgba(45, 95, 45, 0.1);
-    border-radius: 0.5rem;
-    padding: 1rem;
-    margin: 1.5rem 0;
-    border-left: 4px solid var(--meta-earth);
-  }
-
-  /* Special styling for case studies */
-  .content :global(.case-study) {
-    background-color: rgba(43, 75, 140, 0.05);
-    border-radius: 0.5rem;
-    padding: 1.25rem;
-    margin: 1.5rem 0;
-    border-left: 4px solid var(--meta-primary);
-  }
-
-  .content :global(.case-study-title) {
-    color: var(--meta-primary);
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-  }
-
-  /* Highlight boxes for important meta-governance concepts */
-  .content :global(.concept-highlight) {
-    background-color: rgba(107, 92, 165, 0.1);
-    border-radius: 0.5rem;
-    padding: 1.25rem;
-    margin: 1.5rem 0;
-    border: 1px solid rgba(107, 92, 165, 0.3);
-  }
-
-  .content :global(.concept-highlight-title) {
-    color: var(--meta-secondary);
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-    border-bottom: 1px solid rgba(107, 92, 165, 0.3);
-    padding-bottom: 0.5rem;
-  }
-
-  /* Framework integration styling */
-  .content :global(.integration-highlight) {
-    background-color: rgba(218, 165, 32, 0.1);
-    border-radius: 0.5rem;
-    padding: 1.25rem;
-    margin: 1.5rem 0;
-    border: 1px solid rgba(218, 165, 32, 0.3);
-  }
-
-  .content :global(.integration-highlight-title) {
-    color: var(--meta-accent);
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-    border-bottom: 1px solid rgba(218, 165, 32, 0.3);
-    padding-bottom: 0.5rem;
-  }
-
-  /* Governance architecture styling */
-  .content :global(.architecture-highlight) {
-    background-color: rgba(43, 75, 140, 0.1);
-    border-radius: 0.5rem;
-    padding: 1.25rem;
-    margin: 1.5rem 0;
-    border: 1px solid rgba(43, 75, 140, 0.3);
-  }
-
-  .content :global(.architecture-highlight-title) {
-    color: var(--meta-primary);
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-    border-bottom: 1px solid rgba(43, 75, 140, 0.3);
-    padding-bottom: 0.5rem;
-  }
-
-  /* Planetary coordination styling */
-  .content :global(.planetary-highlight) {
-    background-color: rgba(45, 95, 45, 0.1);
-    border-radius: 0.5rem;
-    padding: 1.25rem;
-    margin: 1.5rem 0;
-    border: 1px solid rgba(45, 95, 45, 0.3);
-  }
-
-  .content :global(.planetary-highlight-title) {
-    color: var(--meta-earth);
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-    border-bottom: 1px solid rgba(45, 95, 45, 0.3);
-    padding-bottom: 0.5rem;
   }
 
   /* Language fallback notice */

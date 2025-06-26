@@ -18,7 +18,7 @@ export async function load({ depends, url }) {
   const isPrintMode = import.meta.env.SSR ? false : url.searchParams.get('print') === 'true';
   
   // CRITICAL FIX: Get hash from browser location during client-side navigation
-  let initialSection = 'index'; // default
+  let initialSection = 'introduction'; // default
   
   if (browser) {
     // During client-side navigation, we can access window.location
@@ -28,10 +28,11 @@ export async function load({ depends, url }) {
     }
   }
   
-  // Define sections to load
+  // Define sections to load - ADD 'introduction' section here
   const sections = [
     'quick-start',
-    'index',
+    'introduction',  // NEW: Add introduction section for introduction.md content
+    'index',         // This will be the overview (index.md)
     'principles',
     'value-proposition',
     'structural',

@@ -127,25 +127,26 @@ You don’t have to do everything. Pick a level that fits:
 
 ### 🌱 **Get Involved: Your Journey**
 
-START HERE (5 minutes):
-- Take our quiz to find your meta-governance role at globalgovernanceframework.org/quiz
-- Sign up for monthly updates on pilots in your region
+There are many ways to get involved, whether you want to start small or participate deeply. Here’s how you can contribute today and in the future.
 
-NEXT STEPS (1-2 hours per month):
-- Join a virtual community dialogue (monthly, various time zones)
-- Test prototype tools and give feedback
-- Share your community's governance wisdom
+#### **What You Can Do Right Now:**
 
-DEEPER ENGAGEMENT (for interested organizations/communities):
-- Nominate your community as a pilot site (applications open January 2026)
-- Host a meta-governance workshop (training and materials provided)
-- Join a working group on specific challenges (climate, health, etc.)
+* **📚 Learn More**: Dive into the [full frameworks](https://globalgovernanceframeworks.org/frameworks) for deeper insights into the principles and structures.
+* **📥 Share Your Wisdom**: Tell us about your community’s governance ideas (e.g., Indigenous consensus or local co-ops). Email your insights to us at [globalgovernanceframeworks@gmail.com](mailto:globalgovernanceframeworks@gmail.com).
 
-Ready to help systems work better together? Here’s how:  
-- **📥 Share Your Wisdom**: Tell us about your community’s governance ideas (e.g., Indigenous consensus or local co-ops). Email us at [globalgovernanceframeworks@gmail.com](mailto:globalgovernanceframeworks@gmail.com).  
-- **🧩 Test a Tool**: Try our policy simulator or governance map (available 2026). To be available at [globalgovernanceframeworks.org/tools](https://globalgovernanceframeworks.org/tools).  
-- **👥 Join a Dialogue**: Attend a community workshop or online panel. Check [globalgovernanceframeworks.org/events](https://globalgovernanceframeworks.org/events) for updates.  
-- **📚 Learn More**: Dive into the [full frameworks](https://globalgovernanceframeworks.org/frameworks) for deeper insights.
+#### **Future Opportunities & How to Stay Informed:**
+
+We are constantly developing new interactive tools and forums. Our future plans include:
+* An interactive **quiz** to help you find your meta-governance role.
+* **Testing tools** like our policy simulator and governance map (planned for 2026).
+* **Community dialogues** and workshops for collaboration and knowledge sharing.
+
+The best way to get notified when these become available is to register your interest.
+
+**Register Your Interest via Email:**
+Let us know what you're interested in (e.g., "Monthly Updates," "Workshop Info," or "Tool Testing").
+
+**[Click here to send us an email](mailto:globalgovernanceframeworks@gmail.com?subject=Interest%20in%20Meta-Governance%20Updates)**
 
 > *“Meta-governance isn’t about ruling—it’s about relating. Join us to build a future where systems work for everyone.”*
 

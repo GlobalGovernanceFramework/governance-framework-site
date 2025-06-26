@@ -375,6 +375,77 @@
     { source: 'policy', target: 'toolkit', strength: 1 }
   ];
 
+  // Function to calculate smart tooltip positioning
+  function calculateTooltipPosition(node, containerRect) {
+    const TOOLTIP_WIDTH = 280;
+    const TOOLTIP_HEIGHT = 100; // Approximate height
+    const MARGIN = 30; // Increased margin to ensure separation
+    
+    // Calculate node position in screen coordinates relative to container
+    const nodeScreenX = (node.x / 1000) * containerRect.width;
+    const nodeScreenY = (node.y / 600) * containerRect.height;
+    
+    let tooltipX, tooltipY;
+    
+    // Determine horizontal position based on node location
+    if (node.x < 400) {
+      // Left side nodes: show tooltip to the right
+      tooltipX = nodeScreenX + node.radius + MARGIN;
+    } else if (node.x > 600) {
+      // Right side nodes: show tooltip to the left
+      tooltipX = nodeScreenX - TOOLTIP_WIDTH - node.radius - MARGIN;
+    } else {
+      // Center nodes: show tooltip to the right if there's space, otherwise left
+      if (nodeScreenX + TOOLTIP_WIDTH + MARGIN < containerRect.width) {
+        tooltipX = nodeScreenX + node.radius + MARGIN;
+      } else {
+        tooltipX = nodeScreenX - TOOLTIP_WIDTH - node.radius - MARGIN;
+      }
+    }
+    
+    // Vertical position: try to center on node, but keep within bounds
+    tooltipY = nodeScreenY - (TOOLTIP_HEIGHT / 2);
+    
+    // Ensure tooltip stays within container bounds with more generous margins
+    tooltipX = Math.max(10, Math.min(tooltipX, containerRect.width - TOOLTIP_WIDTH - 10));
+    tooltipY = Math.max(10, Math.min(tooltipY, containerRect.height - TOOLTIP_HEIGHT - 10));
+    
+    return { x: tooltipX, y: tooltipY };
+  }
+
+  // Function to show tooltip
+  function showTooltip(node, translation) {
+    if (!hoverInfo || !containerElement) return;
+    
+    // Set content
+    hoverInfo.innerHTML = `
+      <div class="hover-title">${translation.title}</div>
+      <div class="hover-description">${translation.description}</div>
+    `;
+    
+    // Calculate position
+    const containerRect = containerElement.getBoundingClientRect();
+    const position = calculateTooltipPosition(node, containerRect);
+    
+    // Position tooltip
+    hoverInfo.style.left = `${position.x}px`;
+    hoverInfo.style.top = `${position.y}px`;
+    hoverInfo.style.opacity = '1';
+    hoverInfo.style.visibility = 'visible';
+    
+    console.log(`Showing tooltip for ${node.id} at ${position.x}, ${position.y}`); // Debug
+  }
+
+  // Function to hide tooltip
+  function hideTooltip() {
+    if (!hoverInfo) return;
+    
+    hoverInfo.style.opacity = '0';
+    hoverInfo.style.visibility = 'hidden';
+    
+    console.log('Hiding tooltip'); // Debug
+  }
+
   // Function to redraw the visualization when language changes
   $: if (svg && hoverInfo && containerElement && currentLocale) {
     drawVisualization();
@@ -510,32 +581,21 @@
         nodeGroup.appendChild(text);
         svg.appendChild(nodeGroup);
         
-        // Add hover functionality with translated content
-        nodeGroup.addEventListener('mouseover', function(e) {
-          // Show hover info with translated content
-          hoverInfo.innerHTML = `
-            <div class="hover-title">${translation.title}</div>
-            <div class="hover-description">${translation.description}</div>
-          `;
-          
-          // Position hover info near the node
-          const rect = svg.getBoundingClientRect();
-          const containerRect = containerElement.getBoundingClientRect();
-          
-          let x = (node.x / 1000) * rect.width + containerRect.left;
-          let y = (node.y / 600) * rect.height + containerRect.top;
-          
-          // Adjust to keep within container
-          x = Math.min(x, containerRect.right - 260);
-          x = Math.max(x, containerRect.left + 10);
-          
-          hoverInfo.style.left = `${x}px`;
-          hoverInfo.style.top = `${y}px`;
-          hoverInfo.style.opacity = 1;
+        // Add hover functionality with improved positioning and debugging
+        nodeGroup.addEventListener('mouseenter', function(e) {
+          e.stopPropagation();
+          showTooltip(node, translation);
         });
         
-        nodeGroup.addEventListener('mouseout', function() {
-          hoverInfo.style.opacity = 0;
+        nodeGroup.addEventListener('mouseleave', function(e) {
+          e.stopPropagation();
+          hideTooltip();
+        });
+
+        // Additional safeguard - hide on click
+        nodeGroup.addEventListener('click', function(e) {
+          e.stopPropagation();
+          hideTooltip();
         });
       });
       
@@ -548,6 +608,9 @@
     if (svg && hoverInfo && containerElement) {
       // Initial drawing of the visualization
       drawVisualization();
+      
+      // Add a global event listener to hide tooltip when mouse leaves the entire container
+      containerElement.addEventListener('mouseleave', hideTooltip);
       
       // Add animation for stars twinkling
       const stars = document.querySelectorAll('.star');
@@ -718,26 +781,31 @@
 
   .hover-info {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 5px;
-    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.96);
+    border-radius: 8px;
+    padding: 12px 16px;
     font-size: 14px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     pointer-events: none;
     opacity: 0;
-    transition: opacity 0.3s;
-    max-width: 250px;
-    z-index: 100;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    max-width: 280px;
+    z-index: 1000;
+    backdrop-filter: blur(4px);
   }
 
   .hover-title {
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #1a1a1a;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #2B4B8C;
+    font-size: 15px;
+    line-height: 1.3;
   }
 
   .hover-description {
-    color: #333;
+    color: #4b5563;
     font-size: 13px;
     line-height: 1.4;
   }
@@ -753,6 +821,13 @@
   .node circle {
     stroke: white;
     stroke-width: 1.5;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .node:hover circle {
+    transform: scale(1.1);
+    stroke-width: 2;
   }
 
   .central-node text {
@@ -775,9 +850,43 @@
       height: 400px;
     }
 
+    .hover-info {
+      max-width: 240px;
+      padding: 10px 12px;
+      font-size: 13px;
+    }
+
+    .hover-title {
+      font-size: 14px;
+    }
+
+    .hover-description {
+      font-size: 12px;
+    }
+
     .legend {
       flex-direction: column;
       gap: 8px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .constellation-container {
+      height: 350px;
+    }
+
+    .hover-info {
+      max-width: 200px;
+      padding: 8px 10px;
+      font-size: 12px;
+    }
+
+    .hover-title {
+      font-size: 13px;
+    }
+
+    .hover-description {
+      font-size: 11px;
     }
   }
 </style>
