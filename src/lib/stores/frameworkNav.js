@@ -26,6 +26,13 @@ export const allFrameworks = [
 
   // Tier 1: Urgent Global Stability & Justice
   {
+    slug: 'indigenous-governance-and-traditional-knowledge',
+    titleKey: 'framework.docs.nav.frameworkTitles.indigenousGovernanceAndTraditionalKnowledge',
+    tier: 1,
+    status: 'review',
+    path: '/frameworks/indigenous-governance-and-traditional-knowledge'
+  },
+  {
     slug: 'climate-and-energy-governance',
     titleKey: 'framework.docs.nav.frameworkTitles.climateAndEnergyGovernance',
     tier: 1,
@@ -38,13 +45,6 @@ export const allFrameworks = [
     tier: 1,
     status: 'review',
     path: '/frameworks/peace-and-conflict-resolution'
-  },
-  {
-    slug: 'indigenous-governance-and-traditional-knowledge',
-    titleKey: 'framework.docs.nav.frameworkTitles.indigenousGovernanceAndTraditionalKnowledge',
-    tier: 1,
-    status: 'review',
-    path: '/frameworks/indigenous-governance-and-traditional-knowledge'
   },
   {
     slug: 'planetary-health',

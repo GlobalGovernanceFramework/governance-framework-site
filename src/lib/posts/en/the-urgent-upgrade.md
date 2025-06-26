@@ -7,7 +7,7 @@ tags: ["Global Governance", "Systemic Risk", "Polycrisis", "UN Reform", "Climate
 hashtags: ["#GlobalGovernance", "#Polycrisis", "#SystemicRisk", "#FutureIsNow", "#TreatyForOurOnlyHome", "#ClimateAction", "#UNReform"]
 ---
 
-![Systemic Failure](/images/blog/header-post-1-version-kintsugi.png)
+![Systemic Failure](/images/blog/header-post-1-cog-wheel.png)
 
 ## Introduction: The Unacceptable Cost of the Status Quo
 

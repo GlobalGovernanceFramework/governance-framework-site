@@ -7,7 +7,7 @@ tags: ["Global styrning", "Systemrisk", "Polykris", "FN-reform", "Klimatåtgärd
 hashtags: ["#GlobalStyrning", "#Polykris", "#Systemrisk", "#FramtidenÄrNu", "#FördragFörVårtEndaHem", "#KlimatÅtgärder", "#FNReform"]
 ---
 
-![Systemic Failure](/images/blog/header-post-1-version-kintsugi.png)
+![Systemic Failure](/images/blog/header-post-1-cog-wheel.png)
 
 ## Introduktion: Den oacceptabla kostnaden av status quo
 
