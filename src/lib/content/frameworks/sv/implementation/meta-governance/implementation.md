@@ -112,6 +112,8 @@ Effektiv samordning kräver att man överbryggar generationernas perspektiv och 
 
 ### Integration av ursprungsfolksstyrning: Från konsultation till samstyre
 
+**Fördrag-ursprungsbefolkningsramverksintegration**: Ursprungsbefolkningsintegration inom meta-styrning implementerar de **institutionella reformerna** i [Fördraget för Vårt Enda Hem](/frameworks/treaty-for-our-only-home) genom de **bioregionala autonoma zonerna** och **traditionella kunskapsskyddssystemen** som beskrivs i detalj i [ramverket för ursprungsbefolkningars styrning](/frameworks/indigenous-governance-and-traditional-knowledge). Detta säkerställer att koordinationsmekanismer stärker snarare än undergräver ursprungsbefolkningarnas suveränitet samtidigt som de stöder fördragets transformation av globala styrningsinstitutioner.
+
 **Erkännande av suveränitet och traditionell auktoritet** (Månad 1-12):
 
 Integrationen av ursprungsfolk omvandlar i grunden samordning från konsultation till genuint samstyre genom att erkänna traditionella auktoriteter som jämlika med statliga och internationella institutioner. **Standarder för representation av ursprungsfolk** etablerar minst 30 % representation av ursprungsfolk i alla samordningsråd med **traditionell styrningsauktoritet** likvärdig med formell institutionell makt.

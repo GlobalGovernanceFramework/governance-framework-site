@@ -48,6 +48,8 @@ The foundation of meta-governance lies in structures that enable diverse systems
 - **Youth Integration**: Youth councils parallel to adult councils with **binding authority on long-term decisions** and **veto power over decisions with harmful intergenerational impacts**
 - **Indigenous Representation**: Minimum 30% Indigenous representation with **traditional governance authority** equal to formal institutional power
 
+**Indigenous Leadership Integration**: The primary expression of coordination councils guided by Traditional Ecological Knowledge is the **Earth Council (Kawsay Pacha)** as detailed in the [Indigenous Governance Framework](/frameworks/indigenous-governance-and-traditional-knowledge#structural-components). Meta-governance councils must operate under Indigenous sovereignty principles and bioregional governance protocols to ensure coordination serves rather than supplants traditional authority structures.
+
 **Decision Protocols**:
 - **Standard Decisions**: Modified consensus with 80% threshold enabling integrative solutions
 - **Crisis Decisions**: Streamlined consensus (60% threshold) with **democratic safeguards** ensuring all emergency decisions expire in 90 days unless renewed

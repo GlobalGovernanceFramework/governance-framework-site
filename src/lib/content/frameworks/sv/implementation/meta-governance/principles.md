@@ -157,6 +157,8 @@ Varje princip inkluderar specifika mekanismer för implementering och inbyggda p
 
 **Princip**: Alla styrningsbeslut måste anpassas till ekologisk integritet, planetära gränser och kommande generationers välbefinnande, och behandla Jordens system som grunden för all samordning.
 
+**Juridisk och institutionell Grund**: Denna princip är juridiskt och institutionellt grundad i **naturens rättigheter**-bestämmelserna och **ekocidlagstiftningen** i [Fördraget för vårt enda hem](/frameworks/treaty-for-our-only-home#five-pillars), samtidigt som den hämtar sin praktiska implementeringsvägledning från **bioregional styrning** och **sjunde generationens ansvar**-principerna i [ursprungsbefolkningsramverket](/frameworks/indigenous-governance-and-traditional-knowledge#core-principles).
+
 **I praktiken**: Varje samordningsbeslut utvärderas för dess ekologiska påverkan och långsiktiga hållbarhet, vilket säkerställer att styrsystem tjänar snarare än underminerar planetens hälsa.
 
 **Implementeringsmekanismer**:

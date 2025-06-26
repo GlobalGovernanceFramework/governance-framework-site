@@ -29,6 +29,8 @@ Meta-governance participation is voluntary but strategically incentivized. The f
 
 **Enhanced Legitimacy**: Alignment with planetary stewardship principles, intergenerational justice, and Indigenous sovereignty recognition strengthens public trust and stakeholder support across diverse constituencies.
 
+**Transformational Framework Integration**: Meta-governance participation connects frameworks to the broader transformation envisioned by the [Treaty for Our Only Home](/frameworks/treaty-for-our-only-home), while ensuring implementation follows the **bioregional governance**, **Traditional Ecological Knowledge**, and **ceremonial stewardship** principles of the [Indigenous Framework](/frameworks/indigenous-governance-and-traditional-knowledge) that provide the ethical foundation for sustainable planetary coordination.
+
 ### Strategic Long-Term Benefits
 
 **Future-Proofing**: Integration with youth governance, consciousness evolution support, and seven-generation thinking ensures frameworks remain relevant as society evolves rather than becoming obsolete.

@@ -29,6 +29,8 @@ Deltagande i metastyrning är frivilligt men strategiskt incitamentsdrivet. Ramv
 
 **Förbättrad legitimitet**: Anpassning till principer för planetärt förvaltarskap, rättvisa mellan generationer och erkännande av ursprungsfolks suveränitet stärker allmänhetens förtroende och stödet från intressenter över olika grupper.
 
+**Transformativ Ramverksintegration**: Meta-styrningsdeltagande kopplar ramverk till den bredare transformation som föreställs av [Fördraget för Vårt Enda Hem](/frameworks/treaty-for-our-only-home), samtidigt som det säkerställer att implementering följer **bioregional styrning**, **Traditionell Ekologisk Kunskap** och **ceremoniell förvaltning**-principerna i [Ursprungsbefolkningsramverket](/frameworks/indigenous-governance-and-traditional-knowledge) som tillhandahåller den etiska grunden för hållbar planetär koordination.
+
 ### Strategiska långsiktiga fördelar
 
 **Framtidssäkring**: Integration med ungdomsstyre, stöd för medvetandeevolution och ett sjugenerationersperspektiv säkerställer att ramverk förblir relevanta när samhället utvecklas, istället för att bli föråldrade.

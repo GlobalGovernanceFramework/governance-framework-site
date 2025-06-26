@@ -28,7 +28,17 @@ releaseDate: 2025-06-23
 
 **Framework Development**: This enhanced framework emerges from the urgent need to coordinate governance systems across domains, scales, and cultures without sacrificing autonomy or diversity. It synthesizes insights from successful coordination models worldwide, offering practical tools for implementation at multiple levels—from crisis response to civilizational resilience.
 
-As planetary crises intersect—climate change triggering mass migration, pandemics disrupting supply chains, AI transforming economies—our siloed governance approaches increasingly fail. **Meta-governance provides the scaffolding to align diverse efforts coherently while preserving local control and cultural diversity.**
+Our world is at a turning point. Interlocking crises in our climate, economies, and social systems reveal the urgent need for a new model of global cooperation—one that is adaptive, just, and effective. The siloed governance systems of the 20th century are no longer fit for purpose.
+
+The Global Governance Frameworks project proposes a comprehensive, three-part solution to this challenge:
+
+1. **Reformed Institutions**: The **[Treaty for Our Only Home](/frameworks/treaty-for-our-only-home)** provides the new institutional "hardware"—the legal and political reforms needed for global stability and action.
+2. **Foundational Wisdom**: The **[Indigenous & Traditional Knowledge Governance Framework](/frameworks/indigenous-governance-and-traditional-knowledge)** provides the "heart and soul"—the ethical principles and land-based wisdom essential for ensuring these reforms are regenerative and just.
+3. **A Coordination Operating System**: This **Integrated Meta-Governance Framework** provides the essential "nervous system" or coordination architecture that allows the reformed institutions and the guiding wisdom to work together seamlessly across all domains, scales, and cultures.
+
+This document outlines the principles, structures, and mechanisms of that coordination architecture. It is the practical guide for how diverse systems can align and collaborate effectively without sacrificing the autonomy and diversity that make them resilient.
+
+**Meta-governance serves as the operational bridge between institutional transformation and Indigenous wisdom**, ensuring that the Treaty's mechanisms are implemented through the bioregional governance, Traditional Ecological Knowledge, and ceremonial stewardship principles that have sustained human-Earth relationships for millennia.
 
 The **Enhanced Integrated Meta-Governance Framework** is not just another coordination proposal—it is **the comprehensive architecture for how governance systems can work together without losing their uniqueness**. This framework transforms governance from fragmented competition into connected collaboration, **unlocking coordinated crisis response, preventing governance failures, and building systems that serve both human and planetary needs across generations.**
 

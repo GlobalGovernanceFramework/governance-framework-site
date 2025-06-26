@@ -48,6 +48,8 @@ Grunden för metastyrning ligger i strukturer som möjliggör för olika system 
 - **Integration av unga**: Ungdomsråd parallellt med vuxenråd med **bindande befogenhet i långsiktiga beslut** och **vetorätt över beslut med skadliga konsekvenser för kommande generationer**.
 - **Representation av ursprungsfolk**: Minst 30 % representation av ursprungsfolk med **traditionell styrningsauktoritet** likvärdig med formell institutionell makt.
 
+**Integration av Ursprungsbefolkningars Ledarskap**: Det primära uttrycket för koordinationsråd som vägleds av Traditionell Ekologisk Kunskap är **Jordrådet (Kawsay Pacha)** som beskrivs i detalj i [Ramverket för Ursprungsbefolkningars Styrning](/frameworks/indigenous-governance-and-traditional-knowledge#structural-components). Meta-styrningsråd måste verka under ursprungsbefolkningarnas suveränitetsprinciper och bioregionala styrningsprotokoll för att säkerställa att koordination tjänar snarare än ersätter traditionella auktoritetsstrukturer.
+
 **Beslutsprotokoll**:
 - **Standardbeslut**: Modifierad konsensus med en tröskel på 80 % som möjliggör integrerande lösningar.
 - **Krisbeslut**: Effektiviserad konsensus (60 % tröskel) med **demokratiska skyddsmekanismer** som säkerställer att alla nödbeslut upphör efter 90 dagar om de inte förnyas.

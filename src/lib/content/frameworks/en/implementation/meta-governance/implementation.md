@@ -110,6 +110,8 @@ Effective coordination requires bridging generational perspectives and planning 
 
 ### Indigenous Governance Integration: From Consultation to Co-Governance
 
+**Treaty-Indigenous Framework Integration**: Indigenous integration within meta-governance implements the **institutional reforms** of the [Treaty for Our Only Home](/frameworks/treaty-for-our-only-home) through the **Bioregional Autonomous Zones** and **Traditional Knowledge protection systems** detailed in the [Indigenous Governance Framework](/frameworks/indigenous-governance-and-traditional-knowledge). This ensures that coordination mechanisms strengthen rather than undermine Indigenous sovereignty while supporting the Treaty's transformation of global governance institutions.
+
 **Sovereignty Recognition and Traditional Authority** (Months 1-12):
 
 Indigenous integration fundamentally transforms coordination from consultation to genuine co-governance recognizing traditional authorities as equals to state and international institutions. **Indigenous representation standards** establish minimum 30% Indigenous representation in all coordination councils with **traditional governance authority** equal to formal institutional power.

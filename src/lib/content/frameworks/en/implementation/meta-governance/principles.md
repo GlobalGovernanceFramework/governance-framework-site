@@ -157,6 +157,8 @@ Each principle includes specific mechanisms for implementation and built-in prot
 
 **Principle**: All governance decisions must align with ecological integrity, planetary boundaries, and the wellbeing of future generations, treating Earth's systems as the foundation for all coordination.
 
+**Legal and Institutional Foundation**: This principle is legally and institutionally grounded in the **Rights of Nature** provisions and **ecocide legislation** of the [Treaty for Our Only Home](/frameworks/treaty-for-our-only-home#five-pillars), while drawing its practical implementation guidance from the **bioregional governance** and **seventh-generation accountability** principles of the [Indigenous Framework](/frameworks/indigenous-governance-and-traditional-knowledge#core-principles).
+
 **In Practice**: Every coordination decision is evaluated for ecological impact and long-term sustainability, ensuring governance systems serve rather than undermine planetary health.
 
 **Implementation Mechanisms**:
