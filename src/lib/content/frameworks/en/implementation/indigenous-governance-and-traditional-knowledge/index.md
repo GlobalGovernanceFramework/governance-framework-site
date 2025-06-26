@@ -22,7 +22,9 @@ nextReview: too be determined
 
 In a world facing ecological collapse and spiritual disconnection, the *Indigenous & Traditional Knowledge Governance Framework* offers a radical blueprint for planetary transformation—positioning Indigenous peoples not as stakeholders to consult, but as the sovereign architects of regenerative governance systems. Rooted in decolonization, ecological regeneration, and post-human solidarity, this framework centers Indigenous sovereignty, ecological wisdom, and long-term sustainability as the foundation for planetary healing and thriving futures for all beings.
 
-## <a id="overview"></a>Overview
+## \<a id="overview"\>\</a\>Overview
+
+**Framework Position**: This Indigenous & Traditional Knowledge Governance Framework serves as the primary, leading model for cultural and ecological governance within the broader [Integrated Meta-Governance ecosystem](/frameworks/meta-governance). It provides the foundational wisdom and practical implementation pathways for meta-governance principles, demonstrating how polycentric coordination, subsidiarity, and planetary stewardship can be realized through Indigenous sovereignty and Traditional Ecological Knowledge. While meta-governance provides the coordination architecture for diverse systems to work together, this framework offers the proven, land-based approaches that have sustained human-Earth relationships for millennia.
 
 This framework advances a revolutionary **Global Framework for Indigenous Governance & Traditional Knowledge Governance**, moving beyond reform to fundamental transformation. It integrates bioregional governance, non-human rights, and ceremonial stewardship with practical implementation mechanisms, comprehensive legal strategies, and technological sovereignty protocols. Aligned with the United Nations Declaration on the Rights of Indigenous Peoples (UNDRIP), the Paris Agreement, and emerging Rights of Nature legislation, it prioritizes Indigenous authority, ecological restoration, and seventh-generation accountability.
 
@@ -31,14 +33,15 @@ This framework advances a revolutionary **Global Framework for Indigenous Govern
 **2050 Commitment**: 80% of critical ecosystems under Indigenous-led Bioregional Autonomous Zones (BAZs), Gross Planetary Health (GPH) replaces GDP globally, and 100 Indigenous languages revitalized through technology and cultural resurgence.
 
 **Key Features**:
-- **Bioregional Autonomous Zones (BAZs)** with Indigenous sovereignty and ecosystem-based governance
-- **Earth Council (Kawsay Pacha)** providing moral authority and planetary coordination
-- **Traditional Knowledge Protection** through Global Indigenous Creative Commons and data sovereignty
-- **Regenerative Economics** centered on Gross Planetary Health metrics and reparations
-- **Indigenous AI Governance** with Traditional Ecological Knowledge training and Indigenous oversight
-- **Ceremonial Stewardship Transition** toward ritual-based governance inspired by songlines
-- **Comprehensive Safeguards** including Red Lines Clause and cultural integrity protocols
-- **Intergenerational Accountability** with 200+ year impact assessments and Future Generations Tribunal
+
+  - **Bioregional Autonomous Zones (BAZs)** with Indigenous sovereignty and ecosystem-based governance
+  - **Earth Council (Kawsay Pacha)** providing moral authority and planetary coordination
+  - **Traditional Knowledge Protection** through Global Indigenous Creative Commons and data sovereignty
+  - **Regenerative Economics** centered on Gross Planetary Health metrics and reparations
+  - **Indigenous AI Governance** with Traditional Ecological Knowledge training and Indigenous oversight
+  - **Ceremonial Stewardship Transition** toward ritual-based governance inspired by songlines
+  - **Comprehensive Safeguards** including Red Lines Clause and cultural integrity protocols
+  - **Intergenerational Accountability** with 200+ year impact assessments and Future Generations Tribunal
 
 **Target Outcomes by 2040**: 50% biodiversity increase in BAZs, 100 reparative agreements, $1T in ecological reparations, 50 languages revitalized, and 30% of land returned to Indigenous stewardship.
 
@@ -70,39 +73,41 @@ The framework preserves its organic Indigenous-centered structure, organized int
 
 ## <a id="implementation-tools"></a>Implementation Tools
 
+These tools are designed to integrate seamlessly with the broader [Meta-Governance coordination architecture](/frameworks/meta-governance), providing Indigenous-led implementation pathways for meta-governance principles while maintaining full cultural sovereignty and traditional authority.
+
 To bridge traditional knowledge with practical action, the framework provides Indigenous-designed tools and templates for immediate community use:
 
-- **[Indigenous Sovereignty Starter Kit](/frameworks/tools/indigenous/indigenous-sovereignty-starter-kit-en.zip)**: Complete package for establishing Bioregional Autonomous Zones and Traditional Knowledge protection protocols.
+- **[Indigenous Sovereignty Starter Kit](/frameworks/tools/indigenous-governance-and-traditional-knowledge/indigenous-sovereignty-starter-kit-en.zip)**: Complete package for establishing Bioregional Autonomous Zones and Traditional Knowledge protection protocols.
 
 - **Core Governance Tools**:
-  - [Municipal-Indigenous Cooperative Agreement Template](/frameworks/tools/indigenous/municipal-indigenous-agreement-en.pdf)
-  - [BAZ Readiness Assessment & Setup Guide](/frameworks/tools/indigenous/baz-readiness-assessment-en.pdf)
-  - [Traditional Knowledge Documentation Kit](/frameworks/tools/indigenous/tek-documentation-kit-en.pdf)
-  - [Indigenous Data Sovereignty Framework](/frameworks/tools/indigenous/indigenous-data-sovereignty-framework-en.pdf)
-  - [Earth Council Formation Guide](/frameworks/tools/indigenous/earth-council-formation-guide-en.pdf)
+  - [Municipal-Indigenous Cooperative Agreement Template](/frameworks/tools/indigenous-governance-and-traditional-knowledge/municipal-indigenous-agreement-en.pdf)
+  - [BAZ Readiness Assessment & Setup Guide](/frameworks/tools/indigenous-governance-and-traditional-knowledge/baz-readiness-assessment-en.pdf)
+  - [Traditional Knowledge Documentation Kit](/frameworks/tools/indigenous-governance-and-traditional-knowledge/tek-documentation-kit-en.pdf)
+  - [Indigenous Data Sovereignty Framework](/frameworks/tools/indigenous-governance-and-traditional-knowledge/indigenous-data-sovereignty-framework-en.pdf)
+  - [Earth Council Formation Guide](/frameworks/tools/indigenous-governance-and-traditional-knowledge/earth-council-formation-guide-en.pdf)
 
 - **Economic & Legal Tools**:
-  - [Reparations Calculation & Campaign Toolkit](/frameworks/tools/indigenous/reparations-toolkit-en.pdf)
-  - [Gross Planetary Health Index Calculator](/frameworks/tools/indigenous/gph-index-calculator-en.pdf)
-  - [Indigenous Rights Legal Strategy Guide](/frameworks/tools/indigenous/legal-strategy-guide-en.pdf)
-  - [Land Rematriation Planning Template](/frameworks/tools/indigenous/land-rematriation-template-en.pdf)
+  - [Reparations Calculation & Campaign Toolkit](/frameworks/tools/indigenous-governance-and-traditional-knowledge/reparations-toolkit-en.pdf)
+  - [Gross Planetary Health Index Calculator](/frameworks/tools/indigenous-governance-and-traditional-knowledge/gph-index-calculator-en.pdf)
+  - [Indigenous Rights Legal Strategy Guide](/frameworks/tools/indigenous-governance-and-traditional-knowledge/legal-strategy-guide-en.pdf)
+  - [Land Rematriation Planning Template](/frameworks/tools/indigenous-governance-and-traditional-knowledge/land-rematriation-template-en.pdf)
 
 - **Technology & Innovation Tools**:
-  - [Indigenous AI Ethics & Governance Protocols](/frameworks/tools/indigenous/ai-governance-protocols-en.pdf)
-  - [Cybersecurity & Quantum-Threat Protection Guide](/frameworks/tools/indigenous/cybersecurity-quantum-guide-en.pdf)
+  - [Indigenous AI Ethics & Governance Protocols](/frameworks/tools/indigenous-governance-and-traditional-knowledge/ai-governance-protocols-en.pdf)
+  - [Cybersecurity & Quantum-Threat Protection Guide](/frameworks/tools/indigenous-governance-and-traditional-knowledge/cybersecurity-quantum-guide-en.pdf)
 
 - **Cultural & Leadership Tools**:
-  - [Cultural Integrity Replication Protocol](/frameworks/tools/indigenous/cultural-integrity-replication-protocol-en.pdf)
-  - [Indigenous Leadership Development Program](/frameworks/tools/indigenous/indigenous-leadership-development-program-en.pdf)
-  - [Storytelling & Media Strategy Toolkit](/frameworks/tools/indigenous/storytelling-media-strategy-toolkit-en.pdf)
-  - [Ceremonial Governance Integration Guide](/frameworks/tools/indigenous/ceremonial-governance-integration-guide-en.pdf)
+  - [Cultural Integrity Replication Protocol](/frameworks/tools/indigenous-governance-and-traditional-knowledge/cultural-integrity-replication-protocol-en.pdf)
+  - [Indigenous Leadership Development Program](/frameworks/tools/indigenous-governance-and-traditional-knowledge/indigenous-leadership-development-program-en.pdf)
+  - [Storytelling & Media Strategy Toolkit](/frameworks/tools/indigenous-governance-and-traditional-knowledge/storytelling-media-strategy-toolkit-en.pdf)
+  - [Ceremonial Governance Integration Guide](/frameworks/tools/indigenous-governance-and-traditional-knowledge/ceremonial-governance-integration-guide-en.pdf)
 
 - **Framework Guides**:
-  - [Indigenous Governance Framework Essentials](/frameworks/tools/indigenous/indigenous-framework-essentials-en.pdf) (English)
-  - [Marco de Gobernanza Indígena Esencial](/frameworks/tools/indigenous/indigenous-framework-essentials-es.pdf) (Spanish)
-  - [Cadre de Gouvernance Autochtone Essentiel](/frameworks/tools/indigenous/indigenous-framework-essentials-fr.pdf) (French)
+  - [Indigenous Governance Framework Essentials](/frameworks/tools/indigenous-governance-and-traditional-knowledge/indigenous-framework-essentials-en.pdf) (English)
+  - [Marco de Gobernanza Indígena Esencial](/frameworks/tools/indigenous-governance-and-traditional-knowledge/indigenous-framework-essentials-es.pdf) (Spanish)
+  - [Cadre de Gouvernance Autochtone Essentiel](/frameworks/tools/indigenous-governance-and-traditional-knowledge/indigenous-framework-essentials-fr.pdf) (French)
 
-All tools respect Indigenous intellectual property protocols, include cultural sensitivity guidelines, and are available in multiple formats with community-appropriate accessibility features. Access the complete [Tools Library](/frameworks/tools/indigenous) for all versions and cultural adaptations.
+All tools respect Indigenous intellectual property protocols, include cultural sensitivity guidelines, and are available in multiple formats with community-appropriate accessibility features. Access the complete [Tools Library](/frameworks/tools/indigenous-governance-and-traditional-knowledge) for all versions and cultural adaptations.
 
 ## <a id="access-and-usage"></a>Access and Usage
 
@@ -110,7 +115,7 @@ The framework is accessible through the Global Governance Framework website, des
 
 - **Download**: Access the complete framework as a PDF via the [Downloads](/downloads) section, available in multiple languages and culturally appropriate formats.
 - **Navigate**: Use this index to explore sections following Indigenous storytelling traditions or access specific components via section links.
-- **Access Tools**: Browse all implementation tools with cultural sensitivity protocols at the [Tools Library](/frameworks/tools/indigenous).
+- **Access Tools**: Browse all implementation tools with cultural sensitivity protocols at the [Tools Library](/frameworks/tools/indigenous-governance-and-traditional-knowledge).
 - **Engage**: Share feedback through secure, community-controlled channels or email [globalgovernanceframeworks@gmail.com] with Indigenous data sovereignty protections.
 - **Organize**: Use political organizing toolkits to build Indigenous coalitions, launch land rematriation campaigns, and establish Bioregional Autonomous Zones.
 - **Implement**: Begin with the Indigenous Sovereignty Starter Kit or connect with existing BAZ pilots and Indigenous-led initiatives.

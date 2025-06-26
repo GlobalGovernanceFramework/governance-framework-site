@@ -117,6 +117,10 @@ This framework is designed for multiple audiences while maintaining Indigenous l
 
 **This framework is not a blueprint to be imposed—it is an invitation to participate in Indigenous-led planetary healing while respecting cultural protocols and maintaining community self-determination.**
 
+### Relationship to Integrated Meta-Governance
+
+This Indigenous & Traditional Knowledge Governance Framework serves as the foundational wisdom layer and living heart of the broader [Integrated Meta-Governance Framework](/frameworks/meta-governance). While meta-governance provides the architectural principles for coordination across diverse governance systems, this framework offers the practical, land-based implementation rooted in thousands of years of proven Indigenous governance success. The bioregional approach, traditional knowledge protection, and ceremonial stewardship outlined here provide concrete models for how meta-governance principles like polycentric coordination, subsidiarity, and planetary stewardship can be realized through Indigenous leadership and ecological relationship.
+
 ---
 
 **Navigation Note**: This preamble introduces the framework's foundational purpose and approach. Continue to [Core Principles](/frameworks/indigenous-governance-and-traditional-knowledge#core-principles) to explore the values and frameworks that guide Indigenous governance systems, or visit the [Implementation Tools](/frameworks/tools/indigenous) to access practical resources for community organizing and bioregional development.

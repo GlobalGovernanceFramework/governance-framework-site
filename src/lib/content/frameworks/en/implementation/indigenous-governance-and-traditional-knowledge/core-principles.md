@@ -33,6 +33,8 @@ Each principle emerges from Traditional Ecological Knowledge while engaging with
 
 **Principle**: Governance systems must be organized around ecosystems and cultural territories rather than colonial nation-state boundaries, with Indigenous peoples leading stewardship of their traditional territories.
 
+**Meta-Governance Integration**: Bioregional governance represents the practical, land-based expression of the meta-governance principles of **polycentric coordination** and **subsidiarity**, demonstrating how power can be distributed across many ecological centers while maintaining Indigenous sovereignty and traditional authority structures.
+
 **Traditional Foundation**: Indigenous governance has always been bioregional, organized around watersheds, seasonal rounds, and ecological relationships. The Haudenosaunee Confederacy governed across what are now multiple US states and Canadian provinces based on the Great Lakes ecosystem. Australian Aboriginal nations organized governance through songlines that map both spiritual and ecological relationships across the continent.
 
 **Contemporary Application**: Bioregional Autonomous Zones (BAZs) replace nation-state authority with Indigenous-led governance systems that respect ecosystem boundaries and cultural territories. These zones operate through:
