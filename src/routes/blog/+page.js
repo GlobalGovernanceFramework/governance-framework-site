@@ -4,22 +4,31 @@ import { browser } from '$app/environment';
 import { locale } from '$lib/i18n';
 import { get } from 'svelte/store';
 
+export const prerender = false;
+
 export async function load({ depends, url }) {
   depends('app:locale');
   
-  // Get current locale - prioritize URL param, then store, then default
+  // Get current locale - handle prerendering safely
   let currentLocale = 'en';
   
-  if (url.searchParams.has('lang')) {
-    currentLocale = url.searchParams.get('lang');
+  // Only access searchParams if not prerendering
+  if (url && url.searchParams) {
+    try {
+      if (url.searchParams.has('lang')) {
+        currentLocale = url.searchParams.get('lang');
+      } else if (browser) {
+        currentLocale = get(locale) || 'en';
+      }
+    } catch (e) {
+      // During prerendering, searchParams might not be available
+      // Fall back to default locale or store value
+      if (browser) {
+        currentLocale = get(locale) || 'en';
+      }
+    }
   } else if (browser) {
     currentLocale = get(locale) || 'en';
-  }
-  
-  // Ensure we have a valid locale
-  const validLocales = ['en', 'sv'];
-  if (!validLocales.includes(currentLocale)) {
-    currentLocale = 'en';
   }
 
   console.log('Blog page loading with locale:', currentLocale);
