@@ -53,7 +53,7 @@ Fördraget bygger på sju grundläggande principer som vägleder varje mekanism 
 - **Etisk och epistemisk integritet**: Styrning grundad i sanningssökande och etisk reflektion
 - **Minimal livskraftig styrning**: De enklaste mekanismerna som uppnår maximal genomslagskraft genom nyckelreformer
 
-Dessa principer arbetar tillsammans som ett levande system, med inbyggda protokoll för att lösa konflikter mellan konkurrerande värden och stresstesta ramverk under press.
+Dessa principer arbetar tillsammans som ett levande system, med inbyggda protokoll för att lösa konflikter mellan konkurrerande värden och stresstesta ramverk under press. De är utformade för att anpassa sig till och lära av ursprungsbefolkningars styrningsprinciper inklusive bioregionalt förvaltarskap, sjunde-generationstänkande, och ceremoniella beslutsprocesser som har upprätthållit människa-jord-relationer i årtusenden. Den fullständiga artikulationen av dessa grundläggande tillvägagångssätt finns i [Ramverket för Ursprungsbefolkningars Styrning och Traditionell Kunskap](/frameworks/indigenous-governance-and-traditional-knowledge#core-principles), som tillhandahåller de kulturella protokoll och Traditionell Kunskap som är nödvändig för att implementera Fördragets institutionella reformer på sätt som hedrar snarare än extraherar från ursprungsbefolkningars visdom.
 
 [Läs mer om kärnprinciper](/frameworks/treaty-for-our-only-home#core-principles)
 
@@ -100,11 +100,11 @@ Fördragets arkitektur vilar på fem sammanlänkade pelare, var och en designad 
 
 ## <a id="implementeringsstrategier"></a>Implementeringsstrategier
 
-Ett visionärt fördrag kräver en obönhörligt pragmatisk väg till förverkligande. Fördraget för vårt enda hem använder ett sofistikerat dubbelspårsansats som överbrygger idealism med politisk verklighet:
+Ett visionärt fördrag kräver en obevekligt pragmatisk väg till förverkligande. Fördraget för Vårt Enda Hem använder ett sofistikerat dubbelspårsförhållningssätt som bygger broar mellan idealism och politisk verklighet, samtidigt som det säkerställer att **ursprungsbefolkningars ledarskap och Traditionell Ekologisk Kunskap vägleder varje aspekt av implementeringen**:
 
-### Dubbelspårsansats
-- **Visionärt spår**: Global förvaltaralliansj av 30-50 nationer som implementerar "guldstandard"-reformer för att demonstrera livskraft
-- **Pragmatiskt spår**: Strategiska suveränitetstabubyten, hotmildringsramning och noggrant utformade övergångsmekanismer för befintliga maktinnehavare
+### Dubbelspårsförhållningssätt
+- **Visionärt spår**: Global Förvaltarskapsallians av 30-50 nationer som implementerar "Guldstandard"-reformer för att demonstrera genomförbarhet, **i partnerskap med ursprungsbefolkningsledda Bioregionala Autonoma Zoner och Traditionella Kunskapsskyddssystem**
+- **Pragmatiskt spår**: Strategiska suveränitetets förhandlingar, hotmitigeringsramar, och noggrant utformade övergångsmekanismer för nuvarande maktinnehavare, **begränsade av ursprungsbefolkningars suveränitetskrav och ekologiska integritetsprinciper**
 
 ### Kritisk väganalys
 **Grundläggande reformer** (Icke-förhandlingsbara): Globalt beskattningssystem och säkerhetsrådets vetoomgång som grunden som möjliggör alla andra mekanismer.
@@ -284,25 +284,31 @@ Detta fördrag är designat inte bara för att läsas, utan för att användas. 
 
 ## <a id="komma-igang"></a>Komma igång
 
-### För olika intressentgrupper
+### För Olika Intressentgrupper
 
-**Regeringstjänstemän och beslutsfattare**:
-1. Granska [sammanfattningen för skeptiker](/frameworks/treaty-for-our-only-home#executive-summary)
-2. Utforska [implementeringshandböckerna för nyckelreformer] *Denna handbokserie är under utveckling och kommer att släppas som en nyckelresurs för beslutsfattare efter den inledande lanseringsfasen.*
-3. Använd [suveränitetsnalvigatorverktyget] för att bedöma reformeffekter
-4. Kontakta globalgovernanceframeworks@gmail.com med ämne "Regeringspartnerskap"
+**All implementering måste börja med ursprungsbefolkningskonsultation och partnerskap enligt kulturella protokoll som beskrivs i [Ramverket för ursprungsbefolkningars styrning och traditionell kunskap](/frameworks/indigenous-governance-and-traditional-knowledge). Ingen fördragsmekanism bör implementeras utan ursprungsbefolkningars vägledning och samtycke**.
 
-**Civilsamhälle och opinionsbildningsorganisationer**:
-1. Ladda ner [global påverkanskit för förvaltare](/frameworks/tools/treaty-for-our-only-home/global-stewardship-advocacy-kit-sv.zip)
-2. Granska [implementeringsstrategierna](/frameworks/treaty-for-our-only-home#implementation-strategies)
-3. Gå med i nätverket för den globala förvaltaralliansen
-4. Kontakta globalgovernanceframeworks@gmail.com med ämne "Allianspartnerskap"
+**Regeringstjänstemän & beslutsfattare**:
+1. **Börja med ursprungsbefolkningskonsultation** enligt fritt, föregående och informerat samtycke-protokoll
+2. Granska [Sammanfattning för skeptikern](/frameworks/treaty-for-our-only-home#executive-summary)
+3. Studera [integrationskraven för ursprungsbefolkningsstyrning](/frameworks/indigenous-governance-and-traditional-knowledge#interface-existing-systems)
+4. Utforska [hörnstensreformernas handböcker] *Denna handboksserie är under utveckling och kommer att släppas som en nyckelresurs för beslutsfattare efter den första lanseringsfasen.*
+5. Kontakta globalgovernanceframeworks@gmail.com med ämne "Utveckling av ursprungsbefolkningspartnerskap"
 
-**Akademiska och forskningsinstitutioner**:
-1. Få åtkomst till den fullständiga [fördragsramverksdokumentationen](/frameworks/treaty-for-our-only-home)
-2. Granska protokollen för [övervakning och utvärdering](/frameworks/treaty-for-our-only-home#monitoring-evaluation)
-3. Utforska samarbete om reformacceleratorlaboratorier
-4. Kontakta globalgovernanceframeworks@gmail.com med ämne "Forskningssamarbete"
+**Civilsamhälle & påverkansorganisationer**:
+1. **Bygg relationer med ursprungsbefolkningsledda organisationer** i din bioregion enligt lämpliga kulturella protokoll
+2. Ladda ner [global förvaltarskaps påverkanskit](/frameworks/tools/treaty-for-our-only-home/global-stewardship-advocacy-kit-en.zip)
+3. Studera [ursprungsbefolkningssolidaritetsprinciper](/frameworks/indigenous-governance-and-traditional-knowledge#pathways-broader-engagement) för etiskt allierat engagemang
+4. Granska [implementeringsstrategier](/frameworks/treaty-for-our-only-home#implementation-strategies)
+5. Kontakta globalgovernanceframeworks@gmail.com med ämne "Ursprungsbefolkningsallierat partnerskap"
+
+**Akademiska & forskningsinstitutioner**:
+
+1.  **Anamma protokoll för ursprungsfolksforskning** och åta er att följa principerna för samhällskontrollerad datasuveränitet innan någon forskning påbörjas, enligt detaljerna i [Indigenous Framework's guide for ethical academic engagement] - Link to come!
+2.  Ta del av den fullständiga [dokumentationen för fördraget](/frameworks/treaty-for-our-only-home).
+3.  Granska protokollen för [Övervakning & utvärdering](/frameworks/treaty-for-our-only-home#monitoring-evaluation) för samarbetsmöjligheter.
+4.  Utforska partnerskap i Reform Accelerator Labs.
+5.  Kontakta globalgovernanceframeworks@gmail.com med ämnesraden "**Etiskt forskningspartnerskap**".
 
 **Städer och regionala regeringar**:
 1. Utforska [Pelare 2: Nya aktörer och röster](/frameworks/treaty-for-our-only-home#five-pillars) för formella stadsroller (navigera till den andra pelaren med indexet för de fem pelarna)
@@ -310,27 +316,42 @@ Detta fördrag är designat inte bara för att läsas, utan för att användas. 
 3. Anslut med C40 Cities-partnerskapsnätverket
 4. Kontakta globalgovernanceframeworks@gmail.com med ämne "Stadspartnerskap"
 
-## <a id="nasta-steg"></a>Nästa steg
+## \<a id="nasta-steg"\>\</a\>Nästa steg
 
-Fördraget för vårt enda hem representerar en komplett arkitektonisk plan för global styrningstransformation. Nästa fas fokuserar på att bygga den politiska viljan och strategiska allianserna som är nödvändiga för implementering:
+*Treaty for Our Only Home* utgör en komplett arkitektonisk ritning för global styrningstransformation. Nästa fas fokuserar på att bygga den politiska viljan och de strategiska allianser som krävs för implementering. Hela denna process styrs av en övergripande princip: **alla steg måste tas i autentiskt partnerskap med och under ledning av ursprungsfolk.**
+
+### Grundläggande princip för alla nästa steg: Ursprungsfolkslett partnerskap
+
+Följande krav är icke-förhandlingsbara förutsättningar som kommer att genomsyra alla omedelbara, medellånga och långsiktiga prioriteringar:
+
+1.  **Fritt, föregående och informerat samtycke**: All implementering av fördraget måste följa ursprungsfolks protokoll och erhålla samtycke från samhällen.
+2.  **Respekt för traditionell kunskap**: Traditionell ekologisk kunskap (TEK) måste vägleda teknisk utveckling, ekonomisk omvandling och ekologisk återställning.
+3.  **Stöd för återlämnande av mark (Land Rematriation)**: Fördragets mekanismer måste aktivt stödja återlämnandet av mark till ursprungsfolks förvaltarskap.
+4.  **Efterlevnad av kulturella protokoll**: Alla aktiviteter måste respektera ursprungsfolks styrsystem och ceremoniella krav.
+5.  **Resursdelning**: Ekonomiska fördelar måste tillfalla de ursprungsfolkssamhällen som leder den ekologiska och sociala läkningen.
 
 ### Omedelbara prioriteringar (2025-2026)
-1. **Bildande av global förvaltaralliansj**: Rekrytera 30-50 nationer engagerade i att implementera nyckelreformer
-2. **Lansering av pilotprogram**: Börja experimentella implementeringar i villiga jurisdiktioner
-3. **Diplomatiskt engagemang**: Initiera förhandlingar om suveränitetstabubyten med nyckelmakter
-4. **Allmän mobilisering**: Lansera global opinionsbildningskampanj med TED-liknande narrativ
 
-### Medellånga mål (2027-2030)
-1. **Fördragsratificeringsprocess**: Börja formella internationella fördragsförhandlingar
-2. **Institutionell prototypframställning**: Testa nya styrmekanismer i regionala sammanhang
-3. **Finansieringsmekanismutsättning**: Implementera globala beskattningspiloter
-4. **Testning av krisrespons**: Validera protokoll för nödstyring
+*Med ovanstående principer som vägledning är våra omedelbara åtgärder:*
+
+1.  **Bildande av en global förvaltningsallians**: Rekrytera 30–50 nationer som är engagerade i att implementera de centrala reformerna ("keystone reforms").
+2.  **Lansering av pilotprogram**: Påbörja experimentella implementeringar i villiga jurisdiktioner.
+3.  **Diplomatiskt engagemang**: Inleda förhandlingar om "suveränitets-byten" (sovereignty bargains) med nyckelmakter.
+4.  **Offentlig mobilisering**: Lansera en global påverkanskampanj med TED-liknande berättelser.
+
+### Mål på medellång sikt (2027-2030)
+
+1.  **Ratificeringsprocess för fördraget**: Påbörja formella internationella fördragsförhandlingar.
+2.  **Prototypframställning av institutioner**: Testa nya styrningsmekanismer i regionala sammanhang.
+3.  **Införande av finansieringsmekanismer**: Implementera pilotprojekt för global beskattning.
+4.  **Testning av krisinsatser**: Validera protokoll för nödstyrning.
 
 ### Långsiktig vision (2031-2040)
-1. **Fullständig fördragsimplementering**: Uppnå global adoption av kärnmekanismer
-2. **Institutionell evolution**: Kontinuerlig anpassning baserad på prestandadata
-3. **Krisförebyggande**: Visa effektivitet i att förebygga/hantera globala utmaningar
-4. **Civilisationstransformation**: Etablera förvaltarskap och samvete som styrnormer
+
+1.  **Full implementering av fördraget**: Uppnå globalt anammande av kärnmekanismerna.
+2.  **Institutionell evolution**: Kontinuerlig anpassning baserad på prestandadata.
+3.  **Förebyggande av kriser**: Demonstrera effektivitet i att förebygga/hantera globala utmaningar.
+4.  **Civilisationstransformation**: Etablera förvaltarskap och samvete som normer för styrning.
 
 ### Hur du kan bidra
 

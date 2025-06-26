@@ -216,6 +216,8 @@ Fördraget för Vårt Enda Hem är ett levande dokument, utformat för att utvec
 
 **Valet är vårt. Tiden är nu. Omvandlingen börjar med oss.**
 
+**För den kompletta etiska och praktiska implementeringsguiden**: [Ramverket för Ursprungsbefolkningars Styrning och Traditionell Kunskap](/frameworks/indigenous-governance-and-traditional-knowledge) tillhandahåller de väsentliga kulturella protokollen, traditionell ekologisk kunskap, och ursprungsbefolkningars styrningsprinciper som är nödvändiga för att implementera dessa fördrags-mekanismer på sätt som helar snarare än skadar. Ingen fördrags-implementering bör fortsätta utan ursprungsbefolkningars ledarskap och vägledning.
+
 ---
 
 **Fortsätt din upptäcktsresa:**

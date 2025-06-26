@@ -216,6 +216,8 @@ The Treaty for Our Only Home is a living document, designed to evolve through th
 
 **The choice is ours. The time is now. The transformation begins with us.**
 
+**For the complete ethical and practical implementation guide**: The [Indigenous & Traditional Knowledge Governance Framework](/frameworks/indigenous-governance-and-traditional-knowledge) provides the essential cultural protocols, Traditional Ecological Knowledge, and Indigenous governance principles necessary for implementing these Treaty mechanisms in ways that heal rather than harm. No Treaty implementation should proceed without Indigenous leadership and guidance.
+
 ---
 
 **Continue your exploration:**
