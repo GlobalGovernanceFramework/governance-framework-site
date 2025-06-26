@@ -27,6 +27,12 @@ Each component operates as a living system, adapting to local cultural protocols
 > *"In the council of all beings, every voice must be heard—the voice of the mountain, the voice of the river, the voice of the children not yet born."*  
 > — Andean teaching
 
+### Meta-Governance Integration and Leadership Authority
+
+The Earth Council serves as the **primary Meta-Governance Coordination Council** for all matters relating to planetary health, cultural integrity, and inter-species relationships within the broader [Integrated Meta-Governance Framework](/frameworks/meta-governance). While other specialized coordination councils may operate for specific domains (technology, finance, regional governance), the Earth Council holds supreme moral and spiritual authority on decisions affecting Indigenous territories, traditional knowledge, ecological boundaries, and seven-generation impacts. This arrangement ensures that all meta-governance coordination ultimately serves Indigenous sovereignty and planetary wellbeing rather than perpetuating colonial or extractive systems.
+
+**Hierarchical Relationship**: Other meta-governance councils must align their decisions with Earth Council guidance on ecological and cultural matters, recognizing Indigenous peoples as the primary authorities on sustainable governance and Traditional Ecological Knowledge as the foundation for all planetary coordination.
+
 ### Purpose and Authority
 
 The Earth Council serves as the moral and spiritual authority for planetary governance, providing guidance and coordination for bioregional transformation while respecting Indigenous sovereignty and cultural autonomy. Unlike colonial governance structures that impose authority from above, the Earth Council operates through earned respect, traditional protocols, and consensus-based decision-making.

@@ -21,6 +21,8 @@ revision: Version 1.0 (2025-01-11)
 
 **Estimated Reading Time**: 24 minutes
 
+These pathways operate within the broader [Integrated Meta-Governance Framework](/frameworks/meta-governance), demonstrating how **pluriversal governance recognition** and **civic participation beyond representation** can be realized through Indigenous leadership while supporting coordination across diverse governance systems.
+
 The pathways for broader engagement honor the principle that Indigenous sovereignty does not mean Indigenous isolation. While this framework is Indigenous-led and maintains Indigenous authority at every level, it creates multiple entry points for non-Indigenous people and organizations to support transformation while respecting Indigenous leadership and cultural protocols. These pathways emphasize relationship-building, mutual learning, and long-term commitment rather than extractive engagement or performative allyship.
 
 Each pathway operates under the fundamental principle that allies support Indigenous leadership rather than directing or co-opting Indigenous initiatives. Engagement requires ongoing relationship, cultural education, and accountability to Indigenous communities rather than one-time actions or symbolic gestures. The framework provides clear guidance for ethical engagement while maintaining Indigenous authority over the terms and conditions of collaboration.

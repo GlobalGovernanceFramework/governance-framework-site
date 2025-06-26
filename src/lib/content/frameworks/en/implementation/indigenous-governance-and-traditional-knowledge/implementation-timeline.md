@@ -224,6 +224,8 @@ Each phase builds on previous foundations while respecting the organic pace of c
 > *"Now the roots grow deep and the branches strengthen, reaching toward the light while holding firm in the earth."*  
 > — Haudenosaunee teaching
 
+**Meta-Governance Framework Integration**: This foundation phase constitutes the leading edge of the [Integrated Meta-Governance Framework's](/frameworks/meta-governance) **Foundation Tier (Years 1-3)** and represents the practical implementation of **Tier 1: Urgent Global Stability & Justice** through Indigenous sovereignty and Traditional Knowledge application. The bioregional governance pilots and Traditional Knowledge protection systems established during this phase provide the foundational models for broader meta-governance coordination across other domains and regions.
+
 ### Land Back Movement Amplification
 
 **Massive Land Rematriation Campaign**:
@@ -326,6 +328,8 @@ Each phase builds on previous foundations while respecting the organic pace of c
 
 > *"The tree spreads its branches wide, offering shelter and sustenance to all beings while its roots grow deeper into the sacred earth."*  
 > — Coast Salish teaching
+
+**Meta-Governance Scaling**: This expansion phase aligns with the activation of Meta-Governance **Integration Tier (Years 4-7)** and **Evolution Tier (Years 8-15)**, demonstrating how Indigenous-led bioregional coordination can provide the foundational model for planetary governance transformation across Tiers 2 and 3 of the broader framework.
 
 ### Bioregional Assembly Scaling
 
@@ -435,6 +439,8 @@ Each phase builds on previous foundations while respecting the organic pace of c
 
 > *"The great tree reaches full maturity, its canopy providing shelter for countless beings while its deep roots nourish the entire forest."*  
 > — Aboriginal Australian teaching
+
+**Meta-Governance Transcendence**: This transformation phase embodies the meta-governance vision of **Liberatory Impermanence** and represents the ultimate goal of **Tier 4: Visionary & Meta Governance** - the evolution toward natural coordination where external governance structures dissolve into wisdom-based, ceremonial stewardship that makes formal coordination unnecessary.
 
 ### AI/TEK Planetary Nervous System
 
