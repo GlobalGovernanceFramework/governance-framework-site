@@ -18,7 +18,7 @@ The climate crisis is already here — with rising temperatures, extreme weather
 - Your generation will live the longest with today's decisions  
 - Indigenous, rural, and low-income communities often face the greatest climate impacts
 
-![Placeholder for SVG: 'Our Planet, Our Future' — globe with diverse people from different cultures](/images/frameworks/energy/climate-action-svg-1.svg)
+![Placeholder for SVG: 'Our Planet, Our Future' — globe with diverse people from different cultures](/images/frameworks/climate-and-energy-governance/climate-action-svg-1.svg)
 
 > "We are not too young to lead. We are just in time."  
 
@@ -46,7 +46,7 @@ Things change fast. Plans must evolve as we learn more and face new challenges.
 ### ❤️ 6. Ethics & Care  
 Every living being matters. Climate action is about love for people and the planet.
 
-![Placeholder for SVG: '6 Petals of the Climate Flower'](/images/frameworks/energy/climate-action-svg-2.svg)
+![Placeholder for SVG: '6 Petals of the Climate Flower'](/images/frameworks/climate-and-energy-governance/climate-action-svg-2.svg)
 
 ---
 
@@ -90,7 +90,7 @@ Climate action has four main focus areas. Wherever you live, you can get involve
 
 **Success story:** In Kenya, youth innovators developed an app that connects small-scale farmers with climate-smart agricultural techniques, improving resilience.
 
-![Placeholder for SVG: '4 Pillars – Holding up a Regenerative World'](/images/frameworks/energy/climate-action-svg-3.svg)
+![Placeholder for SVG: '4 Pillars – Holding up a Regenerative World'](/images/frameworks/climate-and-energy-governance/climate-action-svg-3.svg)
 
 ---
 
@@ -120,7 +120,7 @@ Climate action has four main focus areas. Wherever you live, you can get involve
 - Use climate apps to track your community's carbon footprint 📊
 - Join global digital climate strikes 🌐
 
-![Placeholder for SVG: 'Governance Pyramid with Action Paths'](/images/frameworks/energy/climate-action-svg-4.svg)
+![Placeholder for SVG: 'Governance Pyramid with Action Paths'](/images/frameworks/climate-and-energy-governance/climate-action-svg-4.svg)
 
 ---
 
@@ -149,7 +149,7 @@ Climate action has four main focus areas. Wherever you live, you can get involve
 - Digital collaboration platform
 - Resource library with multilingual materials
 
-![Placeholder for SVG: 'Youth Climate Toolkit'](/images/frameworks/energy/climate-action-svg-5.svg)
+![Placeholder for SVG: 'Youth Climate Toolkit'](/images/frameworks/climate-and-energy-governance/climate-action-svg-5.svg)
 
 ---
 
@@ -176,7 +176,7 @@ Climate change affects different communities in different ways. How we respond s
 - Global Youth Biodiversity Network
 - Climate Action Network
 
-![Placeholder for SVG: 'Global Climate Connections'](/images/frameworks/energy/climate-action-svg-6.svg)
+![Placeholder for SVG: 'Global Climate Connections'](/images/frameworks/climate-and-energy-governance/climate-action-svg-6.svg)
 
 ---
 
@@ -205,7 +205,7 @@ The digital world offers powerful tools for climate action:
 **Online to Offline:**
 Remember to connect digital action to real-world change in your community!
 
-![Placeholder for SVG: 'Digital Climate Network'](/images/frameworks/energy/climate-action-svg-7.svg)
+![Placeholder for SVG: 'Digital Climate Network'](/images/frameworks/climate-and-energy-governance/climate-action-svg-7.svg)
 
 ---
 
@@ -229,7 +229,7 @@ Let's co-create the future — together.
 
 > "We are ancestors of the world to come."
 
-![Placeholder for SVG: 'Butterfly flying over a regenerative Earth'](/images/frameworks/energy/climate-action-svg-8.svg)
+![Placeholder for SVG: 'Butterfly flying over a regenerative Earth'](/images/frameworks/climate-and-energy-governance/climate-action-svg-8.svg)
 
 ---
 

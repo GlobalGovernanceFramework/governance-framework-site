@@ -6,234 +6,263 @@ section: stakeholder-engagement
 ## Stakeholder Engagement
 
 **In this section:**
-- [Governments](#governments)
-- [Private Sector](#private-sector)
-- [Civil Society](#civil-society)
-- [Non-State Actors](#non-state-actors)
-- [Scientific Community](#scientific-community)
-- [Cultural Knowledge Systems](#cultural-knowledge-systems)
+- [Transformed Stakeholder Relations](#transformed-stakeholder-relations)
+- [Indigenous Peoples as Primary Architects](#indigenous-peoples-primary-architects)
+- [Youth Climate Leadership Authority](#youth-climate-leadership-authority)
+- [Frontline Communities and Environmental Justice](#frontline-communities-environmental-justice)
+- [Corporate Accountability and Transformation](#corporate-accountability-transformation)
+- [Reformed Government and Institutional Roles](#reformed-government-institutional-roles)
+- [Scientific Community and Knowledge Integration](#scientific-community-knowledge-integration)
+- [Civil Society and Movement Organizations](#civil-society-movement-organizations)
 
-Effective climate and energy governance requires the meaningful participation of diverse stakeholders across society. This framework recognizes that inclusive, participatory processes lead to more legitimate, equitable, and effective outcomes. The stakeholder engagement approach outlined here moves beyond consultation to true collaboration, recognizing different stakeholders not merely as observers but as active participants with distinct rights, responsibilities, and contributions.
+Effective climate and energy governance requires the meaningful participation of diverse stakeholders, but within a fundamentally transformed power structure that centers Indigenous sovereignty, Traditional Ecological Knowledge, and community control. Operating through the institutional authority of the [Treaty for Our Only Home](/frameworks/treaty-for-our-only-home), guided by the [Indigenous & Traditional Knowledge Governance Framework](/frameworks/indigenous-governance-and-traditional-knowledge), and coordinated through the [Integrated Meta-Governance Framework](/frameworks/meta-governance), this framework moves beyond consultation to genuine power redistribution and Indigenous leadership.
 
-### <a id="governments"></a>Governments
+## <a id="transformed-stakeholder-relations"></a>Transformed Stakeholder Relations
 
-National, subnational, and local governments are primary implementers of climate and energy policies and key participants in the governance framework.
+### From Consultation to Indigenous Sovereignty
 
-#### Differentiated Roles and Responsibilities
+The stakeholder engagement approach fundamentally transforms traditional power relationships:
 
-The framework establishes differentiated but complementary roles for governments at various levels:
+**Indigenous Peoples as Sovereign Architects**: Indigenous communities transition from "stakeholders to consult" to sovereign decision-makers with territorial authority over climate and energy governance within [Bioregional Autonomous Zones (BAZs)](/frameworks/indigenous-governance-and-traditional-knowledge#structural-components).
 
-- **National Governments**: Primary responsibility for international commitments, national policy frameworks, and cross-jurisdictional coordination. National governments represent their countries in global governance bodies, translate international objectives into domestic action, and report on implementation progress.
+**Traditional Ecological Knowledge as Primary Authority**: [Traditional Ecological Knowledge (TEK)](/frameworks/indigenous-governance-and-traditional-knowledge#key-mechanisms) serves as the foundational guidance system for all climate decisions, with Western science providing supplementary rather than primary authority.
 
-- **Subnational Governments (States/Provinces/Regions)**: Crucial bridge between national policies and local implementation, often with significant authority over energy systems, land use, transportation, and economic development. The framework formally recognizes their role in developing region-specific approaches and adapting national policies to regional contexts.
+**Community Control Over Resources**: Climate and energy resources come under community ownership and control rather than corporate extraction, with the [Global Carbon Levy](/frameworks/treaty-for-our-only-home#five-pillars) funding community-controlled projects rather than corporate subsidies.
 
-- **Local Governments (Cities/Municipalities/Counties)**: Front-line implementers addressing climate and energy at the community level, with key responsibilities for urban planning, building standards, local transportation, waste management, and community engagement. The framework acknowledges their unique proximity to citizens and ability to tailor solutions to local needs.
+**Rights of Nature Implementation**: Stakeholder engagement includes representation for ecosystems as legal persons, with Indigenous communities serving as legal guardians for forests, rivers, wetlands, and other beings under the [Rights of Nature](/frameworks/indigenous-governance-and-traditional-knowledge#core-principles) framework.
 
-#### Integration with Existing Frameworks
+### Power Redistribution Through Treaty Mechanisms
 
-To avoid duplication and maximize effectiveness, the framework:
+**Enforcement Authority**: The [Global Enforcement Mechanism](/frameworks/treaty-for-our-only-home#five-pillars) provides legal backing for Indigenous territorial sovereignty and community rights, prosecuting violations of Free, Prior, and Informed Consent and ecocide crimes.
 
-- **Builds on UNFCCC Processes**: Aligns with and enhances existing government engagement in UNFCCC negotiations, Nationally Determined Contributions (NDCs), and Paris Agreement implementation.
+**Democratic Enhancement**: The [Global Citizens' Initiative](/frameworks/treaty-for-our-only-home#five-pillars) enables binding referendums on climate policies, transcending national boundaries and corporate influence to ensure genuine democratic participation.
 
-- **Strengthens Vertical Integration**: Improves coordination between national, subnational, and local government actions through integrated planning processes, consistent reporting methodologies, and nested implementation responsibilities.
+**Economic Justice**: Climate reparations and wealth redistribution through progressive taxation ensure frontline communities have the resources necessary for meaningful participation and self-determination.
 
-- **Expands Horizontal Collaboration**: Facilitates peer-to-peer learning and collaboration among governments at the same level through knowledge sharing platforms, joint initiatives, and collaborative problem-solving networks.
+**Youth Authority**: Next-generation representatives hold decision-making power on long-term climate commitments, with veto authority over policies causing harm across seven generations.
 
-#### Capacity Building and Support
+## <a id="indigenous-peoples-primary-architects"></a>Indigenous Peoples as Primary Architects
 
-Recognizing varying capacities across governments, the framework provides:
+### Territorial Sovereignty and Climate Authority
 
-- **Differentiated Support Systems**: Targeted assistance for developing country governments, small island states, least developed countries, and other governments with limited resources.
+**Bioregional Governance Leadership**: Indigenous nations exercise territorial sovereignty within BAZs, with authority over all climate and energy decisions affecting traditional territories, ecosystems, and cultural sites.
 
-- **Technical Assistance**: Access to expertise, tools, and best practices for climate and energy policy design, implementation, and monitoring.
+**Traditional Knowledge Authority**: Indigenous knowledge holders serve as primary decision-makers for climate adaptation strategies, ecosystem management, and sustainable energy development, with Western experts providing technical support under Indigenous guidance.
 
-- **Institutional Strengthening**: Support for developing governance structures, procedures, and capabilities for effective climate and energy management.
+**Sacred Site and Cultural Protection**: Indigenous communities hold absolute authority over protecting sacred sites, ceremonial areas, and culturally significant landscapes from climate infrastructure development, with spiritual leaders exercising veto power over projects affecting traditional territories.
 
-- **South-South Cooperation**: Facilitation of direct knowledge and technology exchange between developing countries based on shared contexts and challenges.
+**Treaty and Territorial Rights**: Climate governance recognizes and enforces existing Indigenous treaty rights and territorial claims, with the Global Enforcement Mechanism providing legal backing for Indigenous sovereignty against unwanted fossil fuel or renewable energy development.
 
-### <a id="private-sector"></a>Private Sector
+### Traditional Ecological Knowledge Integration
 
-Businesses and financial institutions are essential to achieving climate and energy goals through their investment decisions, operations, products, services, and influence on consumption patterns.
+**Climate Science Co-Leadership**: Indigenous knowledge holders serve as co-leaders with Western scientists in climate research, modeling, and adaptation planning, ensuring Traditional Ecological Knowledge receives equal authority in climate decision-making.
 
-#### Sectoral Transformation Partnerships
+**Ecosystem Management Authority**: Indigenous communities exercise primary authority over ecosystem restoration, carbon sequestration, and biodiversity conservation within traditional territories, with Traditional Ecological Knowledge guiding restoration strategies.
 
-The framework establishes structured engagement with key economic sectors:
+**Climate Monitoring and Early Warning**: Indigenous environmental observers serve as primary sources for climate monitoring and early warning systems, with traditional environmental indicators integrated with scientific measurements under Indigenous oversight.
 
-- **High-Emission Industries**: Dedicated decarbonization partnerships for sectors such as power generation, transportation, steel, cement, chemicals, and agriculture, with tailored strategies combining regulation, incentives, and support for innovation.
+**Cultural Protocol Climate Integration**: Climate governance processes follow traditional protocols for decision-making, ceremony, and community consultation, ensuring climate action strengthens rather than undermines Indigenous cultural practices.
 
-- **Financial Sector**: Collaborative frameworks for aligning financial flows with climate and energy goals, including banks, insurers, asset managers, pension funds, and other financial institutions.
+### Indigenous Economic Sovereignty
 
-- **Clean Technology Providers**: Accelerator programs for scaling renewable energy, energy efficiency, storage, hydrogen, and other climate solutions, with emphasis on cost reduction, performance improvement, and market expansion.
+**Community-Controlled Climate Finance**: Indigenous communities receive direct access to Global Carbon Levy funding for restoration and adaptation projects, with traditional governance systems controlling resource allocation and project implementation.
 
-- **Small and Medium Enterprises (SMEs)**: Specific programs addressing the unique challenges and opportunities for smaller businesses in the climate transition, including access to finance, technical assistance, and supply chain integration.
+**Traditional Economic System Recognition**: Climate finance operates through Indigenous economic principles including reciprocity, gift economies, and seven-generation thinking rather than imposed Western economic models.
 
-#### Corporate Climate Governance
+**Land Rematriation Support**: Climate reparations include funding for returning traditional territories to Indigenous stewardship, supporting land back movements and traditional territory restoration.
 
-The framework promotes improved climate governance within businesses:
+**Indigenous Energy Sovereignty**: Indigenous communities control renewable energy development within traditional territories, ensuring energy systems serve community needs and cultural values rather than corporate profit extraction.
 
-- **Board-Level Accountability**: Requirements for climate oversight at the highest levels of corporate governance, including board member climate literacy, climate risk committees, and executive compensation tied to climate performance.
+## <a id="youth-climate-leadership-authority"></a>Youth Climate Leadership Authority
 
-- **Climate Strategy Integration**: Standards for integrating climate considerations into core business strategy, capital allocation, research and development, and supply chain management.
+### Decision-Making Power on Future Impacts
 
-- **Internal Carbon Pricing**: Guidance on implementing shadow carbon prices in internal decision-making to align investments and operations with climate goals.
+**Youth Climate Councils**: Next-generation representatives hold formal decision-making authority in climate governance through dedicated youth councils with binding authority on long-term climate commitments extending beyond 10 years.
 
-- **Climate Competency Development**: Support for building climate-related knowledge and skills throughout organizations, from leadership to operational roles.
+**Seven-Generation Veto Authority**: Youth councils exercise veto power over climate policies causing harm across seven generations, ensuring future generations have voice and authority in present decisions affecting their inheritance.
 
-#### Business Participation in Governance Processes
+**Long-Term Investment Authority**: Youth representatives control allocation of long-term climate investments, ensuring climate finance serves future sustainability rather than short-term political or economic interests.
 
-The framework establishes structured business participation in climate governance:
+**Intergenerational Climate Justice**: Youth climate leaders work in partnership with Indigenous elders to ensure climate decisions honor both traditional wisdom and next-generation needs for a livable planet.
 
-- **Private Sector Advisory Bodies**: Formalized input channels for business perspectives in governance decision-making, with balanced representation across sectors, geographies, and company sizes.
+### Youth-Indigenous Alliance Building
 
-- **Industry Coalitions**: Support for pre-competitive collaboration within and across sectors to address shared climate challenges and accelerate solutions.
+**Traditional Knowledge Youth Programs**: Young Indigenous people receive training in both Traditional Ecological Knowledge and contemporary climate governance, preparing next-generation Indigenous climate leaders.
 
-- **Corporate Climate Leadership Recognition**: Programs highlighting and rewarding companies exceeding minimum requirements and demonstrating innovative approaches.
+**Youth-Elder Climate Dialogues**: Required consultation processes between youth representatives and Indigenous elders for all major long-term climate decisions, ensuring intergenerational wisdom guides climate action.
 
-- **Business-Government-Civil Society Dialogues**: Facilitated forums for multi-stakeholder discussion of challenging climate and energy issues, seeking consensus solutions where possible.
+**Indigenous Youth Climate Authority**: Indigenous youth exercise enhanced authority within both Indigenous governance systems and broader youth climate councils, ensuring Indigenous perspectives guide next-generation climate leadership.
 
-### <a id="civil-society"></a>Civil Society
+**Cultural Continuity Youth Leadership**: Youth climate leaders support Indigenous language revitalization, traditional knowledge transmission, and cultural practice maintenance as essential components of climate resilience.
 
-Civil society organizations—including environmental groups, labor unions, consumer advocates, religious organizations, and community associations—play crucial roles in representing public interests, holding other stakeholders accountable, and mobilizing public engagement.
+### Global Youth Climate Coordination
 
-#### Formal Recognition and Access
+**International Youth Climate Networks**: Youth climate leaders coordinate across bioregions and nations through international networks, sharing strategies and supporting each other's climate advocacy and governance participation.
 
-The framework institutionalizes civil society participation through:
+**Youth Climate Education Integration**: Climate governance participation integrated with climate education and civic development, ensuring young people develop the knowledge and skills necessary for effective climate leadership.
 
-- **Governance Representation**: Dedicated civil society seats in governance bodies at global, regional, and national levels, with transparent, democratic selection processes.
+**Youth Climate Innovation Authority**: Youth representatives control funding for climate innovation projects, ensuring new technologies serve future sustainability and community benefit rather than corporate profit.
 
-- **Procedural Rights**: Guaranteed rights to information, participation, and justice in climate and energy decision-making, implementing the Aarhus Convention principles globally.
+**Youth Climate Media and Communication**: Young people control climate communication and media strategies, ensuring climate narratives center youth voice and long-term thinking rather than corporate greenwashing or political spin.
 
-- **Financial Support**: Resources enabling civil society participation, particularly from the Global South and marginalized communities, including travel support, capacity building, and organizational funding.
+## <a id="frontline-communities-environmental-justice"></a>Frontline Communities and Environmental Justice
 
-- **Protected Space for Advocacy**: Safeguards for civil society's role in critiquing, challenging, and monitoring implementation, including protection for environmental and climate defenders at risk of persecution.
+### Community Self-Determination and Climate Justice
 
-#### Special Provisions for Marginalized Groups
+**Frontline Community Authority**: Communities most affected by climate change exercise primary authority over adaptation strategies, with traditional governance systems and community assemblies controlling local climate decision-making.
 
-The framework includes specific measures for often-excluded stakeholders:
+**Environmental Justice Enforcement**: The Global Enforcement Mechanism prosecutes environmental racism and climate injustice, ensuring frontline communities receive protection from disproportionate climate impacts and pollution burdens.
 
-- **Indigenous Peoples**: Implementation of Free, Prior, and Informed Consent (FPIC) principles for all climate and energy decisions affecting indigenous lands, resources, or rights, recognizing indigenous peoples as rights-holders rather than merely stakeholders.
+**Community-Controlled Adaptation**: Frontline communities control adaptation funding and project implementation, ensuring adaptation strategies serve community needs and cultural values rather than imposed external solutions.
 
-- **Women and Gender Minorities**: Gender-responsive policies and governance structures ensuring equitable participation and leadership roles for women and gender-diverse individuals in climate and energy governance.
+**Climate Migration Rights**: Communities facing climate displacement receive support for culturally appropriate relocation or community-controlled retreat, with climate reparations funding supporting community self-determination during climate migration.
 
-- **Youth**: Dedicated mechanisms for youth engagement, recognizing both their moral stake in long-term outcomes and their potential as change agents and innovators in climate action.
+### Economic Justice and Reparations
 
-#### Condition: Indigenous and Local Community Veto Power
+**Climate Reparations Priority**: Frontline communities receive priority access to climate reparations funding, recognizing disproportionate climate impacts despite minimal historical emissions contribution.
 
-A distinctive feature of this framework is the establishment of substantive veto rights over energy projects:
+**Community Economic Development**: Climate finance supports community-controlled economic development, including cooperatives, community land trusts, and local currency systems that keep wealth within frontline communities.
 
-- **Scope of Veto Rights**: Indigenous communities and local populations directly affected by proposed energy infrastructure (renewable or otherwise) have the right to withhold consent for projects with significant impacts on their lands, waters, resources, or cultural heritage.
+**Just Transition Community Control**: Frontline communities control just transition programs, ensuring economic transition supports community self-determination and cultural preservation rather than imposed external development.
 
-- **Procedural Requirements**: Clear, culturally appropriate processes for exercising veto rights, with sufficient time, information, and resources to make informed decisions.
+**Anti-Gentrification Protection**: Climate adaptation and resilience investments include anti-gentrification protections ensuring frontline communities benefit from rather than are displaced by climate investment.
 
-- **Alternative Development Pathways**: When communities exercise veto rights, requirement to develop alternative approaches that respect their decisions while advancing clean energy goals through different locations or technologies.
+### Health and Well-being Protection
 
-- **Remedy for Past Violations**: Processes addressing historical cases where energy projects were developed without consent, including potential remediation, compensation, or project modification.
+**Community Health Authority**: Frontline communities control climate health programs, integrating traditional healing practices with contemporary public health approaches under community guidance.
 
-#### Education and Public Engagement
+**Environmental Health Justice**: Air quality improvement and pollution reduction prioritized in frontline communities, with corporate polluters required to fund community-controlled health programs and environmental cleanup.
 
-The framework promotes broader societal involvement through:
+**Climate Health Reparations**: Health impacts from climate change and pollution addressed through reparations funding supporting community-controlled health infrastructure and traditional healing systems.
 
-- **Climate and Energy Literacy**: Comprehensive education programs integrated into formal curricula at all levels and informal learning opportunities for the general public.
+**Cultural Health Integration**: Climate health programs designed to support traditional cultural practices and community well-being rather than imposing Western medical models without community consent.
 
-- **Awareness Campaigns**: Coordinated public communication efforts highlighting climate impacts, solutions, and individual/collective action opportunities.
+## <a id="corporate-accountability-transformation"></a>Corporate Accountability and Transformation
 
-- **Participatory Science**: Citizen science initiatives enabling community involvement in monitoring climate impacts, energy transitions, and implementation progress.
+### Mandatory Corporate Transformation
 
-- **Cultural Engagement**: Integration of climate and energy themes into arts, media, and cultural production to reach diverse audiences through multiple channels.
+**Ecocide Criminal Liability**: Corporate executives face criminal prosecution for climate crimes including ecosystem destruction, emissions fraud, and violations of Indigenous territorial sovereignty, with mandatory prison sentences and asset forfeiture.
 
-### <a id="non-state-actors"></a>Non-State Actors
+**Corporate Charter Revocation**: Corporations causing significant climate damage face charter revocation and asset transfer to community control, ensuring corporate climate crimes result in community ownership rather than continued corporate extraction.
 
-Beyond traditional stakeholder categories, the framework formally recognizes the growing importance of non-state actors in climate and energy governance, including cities, regions, and multi-stakeholder coalitions.
+**Mandatory Climate Reparations**: Fossil fuel corporations and high-emission industries required to pay annual reparations to Indigenous communities and frontline populations, recognizing responsibility for climate damages and historical emissions.
 
-#### Formalized Participation Structures
+**Indigenous Territory Accountability**: Corporations operating on traditional territories required to obtain Free, Prior, and Informed Consent through traditional governance processes, with Indigenous communities exercising veto authority over unwanted corporate activities.
 
-The framework institutionalizes non-state actor engagement through:
+### Corporate Governance Transformation
 
-- **Observer Status**: Formal observer roles for qualified non-state actors in governance proceedings, with rights to access information, submit inputs, and monitor implementation.
+**Community Benefit Corporation Requirements**: Large corporations affecting climate and energy systems required to restructure as community benefit corporations with community representation on boards and community benefit requirements.
 
-- **Voting Rights in Thematic Bodies**: Selected decision-making authority in specific governance areas where non-state actors have particular expertise or implementation responsibilities.
+**Worker Cooperative Transition**: Corporate climate transition programs required to include pathways for worker ownership and cooperative transformation, ensuring workers gain democratic control over climate transition rather than facing displacement.
 
-- **Youth & Indigenous Council**: A dedicated governance body composed of youth representatives and indigenous delegates with authority to review and influence decisions across the framework, including formal voting rights in regional hubs on matters directly affecting their constituencies.
+**Indigenous Board Representation**: Corporations operating on traditional territories required to include Indigenous representatives on corporate boards with veto authority over activities affecting traditional territories and cultural sites.
 
-- **Cities Coalition**: Institutional structure for urban governments to collectively participate in climate and energy governance, reflecting their growing role in implementation and innovation.
+**Regenerative Business Requirements**: Corporations required to demonstrate net-positive impacts on ecosystems and communities rather than merely reducing harm, with Traditional Ecological Knowledge guiding regenerative business assessment.
 
-#### Non-State Actor Action Agenda
+### Corporate Climate Accountability
 
-The framework strengthens and systematizes non-state climate action:
+**Science-Based Target Enforcement**: Corporate climate commitments become legally binding with enforcement through the Global Enforcement Mechanism, eliminating voluntary corporate climate action in favor of mandatory accountability.
 
-- **Action Platforms**: Coordinated frameworks for registering, tracking, and recognizing non-state climate commitments across key systems (e.g., Cities Race to Zero, Fashion Industry Charter, Responsible Steel Initiative).
+**Supply Chain Climate Accountability**: Corporations held accountable for entire supply chain emissions and impacts, with legal liability extending to subcontractors and suppliers affecting Indigenous territories or causing climate damage.
 
-- **Integration with National Policies**: Mechanisms to incorporate non-state actor actions into national climate planning and international commitments, ensuring complementarity and avoiding double-counting.
+**Climate Fraud Prosecution**: Corporate misrepresentation of climate impacts, emissions data, or climate solutions prosecuted as criminal fraud with mandatory penalties including asset forfeiture and community reparations.
 
-- **Accountability Mechanisms**: Standards and verification systems to ensure non-state climate commitments are robust, implemented, and transparently reported.
+**Transparency and Community Oversight**: Corporations required to provide complete transparency on climate impacts and operations to affected communities, with community oversight councils monitoring corporate compliance and environmental performance.
 
-- **Ambition Loops**: Deliberate cultivation of positive feedback between non-state actor leadership and governmental policy ambition.
+## <a id="reformed-government-institutional-roles"></a>Reformed Government and Institutional Roles
 
-#### Institutional Innovations
+### National Government Transformation
 
-The framework promotes governance innovations that leverage non-state actor contributions:
+**Indigenous Co-Governance Implementation**: National governments implement Indigenous co-governance arrangements, recognizing Indigenous territorial sovereignty and Traditional Ecological Knowledge authority in climate decision-making.
 
-- **Hybrid Coalitions**: Support for novel institutional arrangements bringing together governments, businesses, civil society, and other actors around specific climate challenges.
+**Youth Climate Integration**: National governments include youth climate councils with veto authority on long-term climate policies, ensuring next-generation representation in climate governance.
 
-- **Implementation Partnerships**: Structures for non-state actors to directly support NDC implementation and other governmental climate commitments through expertise, financing, and implementation capacity.
+**Global Carbon Levy Implementation**: National governments implement Global Carbon Levy collection and distribution, ensuring carbon tax revenue supports Indigenous-led restoration and community-controlled adaptation rather than corporate subsidies.
 
-- **Knowledge Hubs**: Clearinghouses for non-state climate solutions, approaches, and lessons learned, facilitating rapid diffusion of successful innovations.
+**Climate Emergency Authority**: National governments granted enhanced authority for climate emergency response through reformed international institutions, enabling rapid coordinated action during climate crises.
 
-- **Leadership Groups**: Platforms for ambitious non-state actors to demonstrate enhanced action, influencing broader norms and expectations.
+### Local and Regional Government Roles
 
-### <a id="scientific-community"></a>Scientific Community
+**Bioregional Coordination**: Local and regional governments coordinate with Indigenous nations to implement bioregional climate governance, adapting administrative boundaries to ecosystem boundaries and traditional territories.
 
-The scientific community provides the essential knowledge base for effective climate and energy governance through research, monitoring, modeling, and technical advice.
+**Community Climate Assembly Support**: Local governments support community climate assemblies with resources and implementation authority, ensuring citizen participation translates into concrete policy action.
 
-#### Science-Policy Interface
+**Municipal Indigenous Partnership**: Municipal governments establish formal partnership agreements with Indigenous nations, recognizing Indigenous territorial sovereignty and supporting traditional governance systems.
 
-The framework strengthens the connection between scientific knowledge and policy decisions:
+**Local Climate Finance Implementation**: Local governments implement local distribution of Global Carbon Levy adaptation funding, ensuring community control over climate finance allocation and project implementation.
 
-- **Scientific Advisory Bodies**: Expert committees at global, regional, and national levels providing scientific guidance to governance institutions, building on the IPCC model while enhancing responsiveness and policy relevance.
+### International Institution Reform
 
-- **Assessment Processes**: Regular, comprehensive evaluations of climate science, impacts, mitigation options, and adaptation approaches to inform governance decisions, with increased frequency and specificity compared to current IPCC cycles.
+**Enhanced UNFCCC Authority**: Reformed UNFCCC processes include Indigenous representation, youth authority, and enforcement mechanisms, enabling effective international climate action without fossil fuel industry capture.
 
-- **Rapid Response Capability**: Mechanisms for quick scientific input on emerging issues, urgent decisions, or new evidence between major assessment cycles.
+**Climate Court Authority**: International climate courts gain authority to prosecute climate crimes and enforce Indigenous territorial rights, with Indigenous legal traditions integrated alongside Western legal systems.
 
-- **Science-Based Target Validation**: Technical processes for evaluating whether climate targets and implementation plans align with scientific understanding of 1.5°C pathways.
+**UN Indigenous Climate Chamber**: United Nations includes formal Indigenous chamber with equal authority to nation-state representatives, ensuring Indigenous voice and vote in international climate decision-making.
 
-#### Knowledge Co-Production
+**Climate Emergency Coordination**: International institutions coordinate climate emergency response across multiple governance domains, maintaining Indigenous authority and democratic accountability during climate crises.
 
-The framework promotes collaborative knowledge development involving diverse participants:
+## <a id="scientific-community-knowledge-integration"></a>Scientific Community and Knowledge Integration
 
-- **Transdisciplinary Research**: Support for research that crosses traditional disciplinary boundaries and integrates natural sciences, social sciences, humanities, engineering, and other fields.
+### Traditional Knowledge-Science Collaboration
 
-- **Traditional and Indigenous Knowledge**: Processes for respectful integration of traditional ecological knowledge and indigenous science into climate and energy understanding and response strategies.
+**Co-Production Research Leadership**: Climate research designed and led collaboratively by Indigenous knowledge holders and Western scientists, ensuring Traditional Ecological Knowledge guides research questions and methodologies.
 
-- **Community Science Partnerships**: Collaborations between professional scientists and communities to address locally relevant climate and energy questions.
+**Indigenous Knowledge Validation**: Scientific research required to validate findings with Traditional Ecological Knowledge systems, ensuring scientific conclusions align with traditional environmental observations and understanding.
 
-- **Solution-Oriented Research**: Focus on knowledge creation that directly informs implementation, including technology development, policy design, behavioral insights, and governance innovations.
+**Cultural Protocol Research Compliance**: Scientific research follows traditional protocols for knowledge sharing, community consultation, and benefit distribution, ensuring research serves Indigenous communities rather than extracting knowledge for external use.
 
-#### Global Research Coordination
+**Community-Controlled Research**: Indigenous communities control research affecting their territories, including research questions, methodologies, data ownership, and application of research findings.
 
-The framework improves coordination of research efforts globally:
+### Climate Monitoring and Assessment Integration
 
-- **Research Prioritization**: Collaborative processes to identify critical knowledge gaps and coordinate research investments to address them efficiently.
+**Traditional Indicator Integration**: Climate monitoring systems integrate traditional environmental indicators with scientific measurements, ensuring comprehensive understanding of ecosystem changes and climate impacts.
 
-- **Capacity Building in Underrepresented Regions**: Programs to strengthen scientific and technical capacity in developing countries, ensuring more geographically balanced knowledge production.
+**Community-Based Climate Assessment**: Indigenous communities conduct climate impact assessments using Traditional Ecological Knowledge, with scientific support provided under Indigenous guidance and community control.
 
-- **Open Science Principles**: Requirements for publicly funded climate and energy research to be openly accessible, with data sharing, open methodologies, and accessible publication.
+**Indigenous Climate Data Sovereignty**: Climate data collected within traditional territories remains under Indigenous control, with appropriate protocols for data sharing and use respecting traditional knowledge systems.
 
-- **Research Infrastructure Sharing**: Mechanisms for shared use of major research facilities, computing resources, and observational networks for climate and energy research.
+**Collaborative Climate Modeling**: Climate modeling integrates Traditional Ecological Knowledge with scientific data, ensuring climate predictions reflect both traditional environmental understanding and contemporary scientific analysis.
 
-### <a id="cultural-knowledge-systems"></a>Cultural Knowledge Systems
+### Technology Development Under Indigenous Guidance
 
-The framework recognizes that climate governance must integrate diverse cultural knowledge systems to be truly effective and equitable:
+**Indigenous Innovation Leadership**: Technology development guided by Traditional Ecological Knowledge principles, ensuring innovations support Indigenous relationships with ecosystems rather than disrupting traditional practices.
 
-- **Cultural Knowledge Inclusion**: Formal mechanisms for integrating traditional, indigenous, and local knowledge into all aspects of climate governance, with provisions for appropriate cultural protocols regarding knowledge sharing.
+**Community Technology Sovereignty**: Indigenous communities control technology development and deployment within traditional territories, with authority to modify or reject technologies that conflict with traditional values or practices.
 
-- **Cross-Cultural Dialogue Processes**: Structured approaches to facilitate mutual understanding across different cultural perspectives on climate, nature, and governance, moving beyond translation toward genuine conceptual exchange.
+**Traditional Knowledge Technology Integration**: Technology development incorporates Traditional Ecological Knowledge, ensuring innovations enhance traditional practices rather than replacing indigenous knowledge systems.
 
-- **Culturally Adaptive Governance**: Governance procedures designed to flex and adapt to different cultural contexts, including variable decision-making processes, communication styles, and time orientations.
+**Open Source Indigenous Technology**: Technology developed with Traditional Ecological Knowledge contributions released as open source under Indigenous control, preventing corporate appropriation while enabling appropriate knowledge sharing.
 
-- **Multilingual Governance**: Comprehensive multilingual access to all governance processes, extending beyond major international languages to include indigenous and local languages in affected regions.
+## <a id="civil-society-movement-organizations"></a>Civil Society and Movement Organizations
 
-- **Cultural Impact Assessment**: Evaluation of climate policies for their potential impacts on cultural practices, values, and heritage, with appropriate mitigation measures when negative impacts are identified.
+### Environmental and Climate Justice Movement Integration
 
+**Movement-Government Coordination**: Environmental and climate justice movements coordinate with reformed government institutions to implement Indigenous-led climate policies and corporate accountability measures.
 
-Together, these stakeholder engagement approaches ensure that climate and energy governance benefits from diverse perspectives, expertise, and implementation capacities while respecting rights, addressing power imbalances, and creating conditions for broad-based participation. By moving beyond consultation to meaningful collaboration, the framework harnesses the full potential of all societal actors in addressing the climate crisis and transforming energy systems.
+**Frontline Movement Leadership**: Environmental movements follow the leadership of frontline communities and Indigenous peoples, supporting community self-determination rather than imposing external environmental agendas.
+
+**Climate Justice Enforcement Support**: Movement organizations support Global Enforcement Mechanism prosecution of climate crimes through documentation, legal support, and community organizing for climate justice.
+
+**Corporate Accountability Movement**: Civil society organizations coordinate corporate accountability campaigns, supporting community resistance to corporate climate crimes and advocating for community benefit corporation transformation.
+
+### Labor Movement and Just Transition
+
+**Worker Cooperative Transition Support**: Labor movements support worker cooperative development and democratic workplace transformation, ensuring workers gain ownership and control over climate transition rather than facing displacement.
+
+**Indigenous-Labor Alliance**: Labor movements build solidarity with Indigenous land and water protection, recognizing connections between worker rights and Indigenous territorial sovereignty.
+
+**Just Transition Movement Leadership**: Labor movements support community-controlled just transition programs, ensuring workers transition to sustainable livelihoods under community and worker control rather than corporate management.
+
+**Green Jobs Community Control**: Labor movements advocate for community-controlled green job development, ensuring sustainable employment serves community needs rather than corporate profit extraction.
+
+### Faith and Cultural Community Engagement
+
+**Religious Climate Stewardship**: Faith communities support Indigenous-led climate stewardship as spiritual practice, recognizing traditional spiritual relationships with ecosystems and supporting Rights of Nature implementation.
+
+**Cultural Climate Integration**: Cultural organizations support Indigenous cultural revitalization as climate action, recognizing connections between cultural vitality and ecosystem health.
+
+**Interfaith Indigenous Solidarity**: Faith communities build solidarity with Indigenous spiritual practices and land protection, supporting traditional ceremonies and sacred site protection as climate action.
+
+**Cultural Climate Education**: Cultural organizations support climate education that includes Indigenous perspectives and Traditional Ecological Knowledge, ensuring climate awareness includes spiritual and cultural dimensions of human-ecosystem relationships.
+
+This transformed stakeholder engagement framework creates genuine power redistribution and Indigenous leadership in climate governance, moving beyond consultation to meaningful sovereignty and community control. By operating through Treaty institutional authority, Indigenous territorial sovereignty, and Meta-Governance coordination protocols, it ensures climate action is led by those most affected and most knowledgeable about sustainable relationships with ecosystems, creating the foundation for effective and just climate transformation.
