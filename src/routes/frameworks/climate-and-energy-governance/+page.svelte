@@ -553,21 +553,8 @@
                 </div>
               {/if}
 
-            {:else if section === 'index'}
-              <!-- Render index section with i18n intro if available -->
-              {#if cf.intro?.title}
-                <div class="overview-section">
-                  <h1>{cf.intro.title}</h1>
-                  <h2>{cf.intro.overview}</h2>
-                  <p>{cf.intro.paragraph1}</p>
-                  <p>{cf.intro.paragraph2}</p>
-                </div>
-              {:else}
-                <!-- Fallback to markdown component -->
-                <svelte:component this={data.sections[section].default} t={translationFunction} />
-              {/if}
             {:else}
-              <!-- Render normal sections from markdown files -->
+              <!-- Render ALL sections including index from markdown files -->
               <svelte:component this={data.sections[section].default} t={translationFunction} />
             {/if}
 

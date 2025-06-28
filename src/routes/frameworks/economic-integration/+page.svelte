@@ -410,7 +410,7 @@
        {#if data?.sections?.[section]}
          <div class="section-content" id={section}>
            <!-- Language fallback notice -->
-           {#if !isPrintMode && data.sectionsUsingEnglishFallback?.includes(section) && section !== 'index'}
+           {#if !isPrintMode && data.sectionsUsingEnglishFallback?.includes(section)}
              <div class="language-fallback-notice">
                <div class="notice-icon">🌐</div>
                <div class="notice-content">
@@ -458,28 +458,8 @@
                </div>
              {/if}
 
-           {:else if section === 'index' && currentLocale === 'sv'}
-             <!-- Manually render Swedish introduction for the index section -->
-             <div class="overview-section">
-               <h1>{ef.overview?.title || 'Ekonomiskt Integrationssystem'}</h1>
-               <h2>{ef.overview?.subtitle || 'Översikt'}</h2>
-               <p>{ef.overview?.paragraph1}</p>
-               <p>{ef.overview?.paragraph2}</p>
-             </div>
-           {:else if section === 'index'}
-             <!-- Render English introduction through translation or markdown component -->
-             {#if ef.overview}
-               <div class="overview-section">
-                 <h1>{ef.overview.title}</h1>
-                 <h2>{ef.overview.subtitle}</h2>
-                 <p>{ef.overview.paragraph1}</p>
-                 <p>{ef.overview.paragraph2}</p>
-               </div>
-             {:else}
-               <svelte:component this={data.sections[section].default} />
-             {/if}
            {:else}
-             <!-- Render normal sections from markdown files -->
+             <!-- Render ALL sections including index from markdown files -->
              <svelte:component this={data.sections[section].default} t={translationFunction} />
            {/if}
 

@@ -79,7 +79,7 @@ The framework is organized into 15 integrated sections that demonstrate Golden T
 
 15. **[Conclusion](/frameworks/food-systems-and-agriculture#conclusion)**: Synthesizes the Golden Triangle pathway to regenerative food systems and issues calls to action for coordinated implementation.
 
-## <a id>implementation-tools"></a>Implementation Tools
+## <a id="implementation-tools"></a>Implementation Tools
 
 **Golden Triangle Integration**: These tools operationalize the coordination between Treaty mechanisms, Indigenous governance, and meta-governance protocols for immediate food system transformation:
 

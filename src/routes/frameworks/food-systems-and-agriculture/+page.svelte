@@ -159,6 +159,42 @@
     return fsf.sectionsShort?.[section] || getSectionTitle(section);
   }
 
+  // Function to get section-specific icons for food systems framework
+  function getSectionIcon(section) {
+    const sectionIcons = {
+      // Overview
+      'index': '🌾', // Wheat representing agriculture overview
+      
+      // Foundation sections
+      'introduction': '🌱', // Seedling for introduction/beginning
+      'definitions': '📖', // Book for definitions and terminology
+      'theory-of-change': '🔄', // Cycle representing transformation
+      'stakeholder-engagement': '🤝', // Handshake for collaboration
+      
+      // Strategic framework sections
+      'core-principles': '⚖️', // Balance scales for principles
+      'strategic-objectives': '🎯', // Target for objectives
+      'implementation-mechanisms': '⚙️', // Gear for mechanisms
+      'systemic-leverage-points': '🎛️', // Control panel for leverage points
+      'regional-customization': '🗺️', // Map for regional adaptation
+      
+      // Implementation sections
+      'risk-management': '🛡️', // Shield for protection/risk management
+      'timeline-milestones': '📅', // Calendar for timeline
+      'communication-advocacy': '📢', // Megaphone for communication
+      'visual-appendix': '📊', // Chart for visual data
+      'conclusion': '🎉', // Celebration for conclusion
+      
+      // Resources and guides
+      'quick-guide': '⚡', // Lightning for quick guide
+      'quick-guide-medium': '🧭', // Compass for medium guide
+      'quick-guide-youth': '🌟', // Star for youth guide
+      'glossary': '📚' // Books for glossary
+    };
+    
+    return sectionIcons[section] || '📋'; // Default clipboard icon
+  }
+
   // Function to download the framework PDF
   function downloadFramework(version = '') {
     const versionSuffix = version ? `-${version}` : '';
@@ -209,11 +245,11 @@
     setActiveSection(guide);
   }
 
-  // Get guides from translation data
+  // Get guides from translation data with better icons
   $: guides = fsf.guides || [
-    { id: 'quick-guide', title: 'Technical Version', description: 'Detailed guide for policy implementers', icon: '📊' },
-    { id: 'quick-guide-medium', title: 'Community Version', description: 'Balanced guide for local authorities', icon: '🤝' },
-    { id: 'quick-guide-youth', title: 'Youth & Grassroots Version', description: 'Visual, accessible guide', icon: '🌱' }
+    { id: 'quick-guide', title: 'Technical Version', description: 'Detailed guide for policy implementers', icon: '⚡' },
+    { id: 'quick-guide-medium', title: 'Community Version', description: 'Balanced guide for local authorities', icon: '🧭' },
+    { id: 'quick-guide-youth', title: 'Youth & Grassroots Version', description: 'Visual, accessible guide', icon: '🌟' }
   ];
 </script>
 
@@ -264,7 +300,7 @@
               class:active={activeSection === 'index'}
               on:click={() => setActiveSection('index')}
             >
-              <span class="nav-icon">🏠</span>
+              <span class="nav-icon">{getSectionIcon('index')}</span>
               <span class="nav-title">{getSectionCategoryTitle('overview')}</span>
             </button>
           </div>
@@ -291,7 +327,7 @@
                       class:active={activeSection === section}
                       on:click={() => setActiveSection(section)}
                     >
-                      <span class="nav-icon">📋</span>
+                      <span class="nav-icon">{getSectionIcon(section)}</span>
                       <span class="nav-title">{getShortSectionTitle(section)}</span>
                     </button>
                   {/if}
@@ -322,7 +358,7 @@
                       class:active={activeSection === section}
                       on:click={() => setActiveSection(section)}
                     >
-                      <span class="nav-icon">📋</span>
+                      <span class="nav-icon">{getSectionIcon(section)}</span>
                       <span class="nav-title">{getShortSectionTitle(section)}</span>
                     </button>
                   {/if}
@@ -353,7 +389,7 @@
                       class:active={activeSection === section}
                       on:click={() => setActiveSection(section)}
                     >
-                      <span class="nav-icon">📋</span>
+                      <span class="nav-icon">{getSectionIcon(section)}</span>
                       <span class="nav-title">{getShortSectionTitle(section)}</span>
                     </button>
                   {/if}
@@ -393,7 +429,7 @@
                     class:active={activeSection === 'glossary'}
                     on:click={() => setActiveSection('glossary')}
                   >
-                    <span class="nav-icon">📖</span>
+                    <span class="nav-icon">{getSectionIcon('glossary')}</span>
                     <span class="nav-title">{getSectionTitle('glossary')}</span>
                   </button>
                 {/if}
@@ -466,28 +502,8 @@
                 </div>
               {/if}
 
-            {:else if section === 'index' && currentLocale === 'sv'}
-              <!-- Manually render Swedish introduction for the index section -->
-              <div class="overview-section">
-                <h1>{fsf.overview?.title || 'Mat- och Jordbrukssystems Ramverk'}</h1>
-                <h2>{fsf.overview?.subtitle || 'Översikt'}</h2>
-                <p>{fsf.overview?.paragraph1}</p>
-                <p>{fsf.overview?.paragraph2}</p>
-              </div>
-            {:else if section === 'index'}
-              <!-- Render English introduction through translation or markdown component -->
-              {#if fsf.overview}
-                <div class="overview-section">
-                  <h1>{fsf.overview.title}</h1>
-                  <h2>{fsf.overview.subtitle}</h2>
-                  <p>{fsf.overview.paragraph1}</p>
-                  <p>{fsf.overview.paragraph2}</p>
-                </div>
-              {:else}
-                <svelte:component this={data.sections[section].default} />
-              {/if}
             {:else}
-              <!-- Render normal sections from markdown files -->
+              <!-- Render ALL sections including index from markdown files -->
               <svelte:component this={data.sections[section].default} t={translationFunction} />
             {/if}
 
@@ -1182,126 +1198,6 @@
     margin-left: auto;
   }
   
-  /* Dropdown styles for navigation and quick guides */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-
-  .dropdown-toggle {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    width: 100%;
-  }
-
-  /* Base dropdown menu styles */
-  .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    width: auto !important;
-    min-width: 250px !important;
-    padding: 0.5rem 0;
-    margin: 0.125rem 0 0;
-    background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 0.25rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
-    white-space: normal !important;
-  }
-
-  /* Navigation dropdown hover behavior */
-  .dropdown-li:hover .dropdown-menu {
-    display: block;
-  }
-
-  .dropdown-li::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 10px;
-    background: transparent;
-  }
-  
-  .dropdown-li {
-    position: relative;
-  }
-
-  .dropdown-li .dropdown-menu {
-    width: 250px;
-    display: none;
-  }
-
-  /* Fix for dropdown items when supplementary is active */
-  .dropdown-li.active .dropdown-menu {
-    background-color: white !important;
-  }
-
-  .dropdown-li.active .dropdown-item {
-    color: #212529 !important;
-  }
-
-  .dropdown-li.active .dropdown-item:hover {
-    background-color: rgba(76, 175, 80, 0.1) !important;
-    color: var(--food-primary) !important;
-  }
-
-  .dropdown-li.active .dropdown-menu .dropdown-item {
-    color: #212529 !important;
-    background-color: transparent !important;
-  }
-
-  .dropdown-li.active .dropdown-menu {
-    background-color: white !important;
-  }
-
-  /* Remove any inherited text color styling */
-  .dropdown-li.active .dropdown-item *,
-  .dropdown-li.active .guide-title,
-  .dropdown-li.active .guide-desc,
-  .dropdown-li.active .guide-icon {
-    color: inherit !important;
-  }
-
-  /* Hover state */
-  .dropdown-li.active .dropdown-item:hover {
-    background-color: rgba(76, 175, 80, 0.1) !important;
-    color: var(--food-primary) !important;
-  }
-
-  /* Fix for guide icons in dropdown */
-  .dropdown-item .guide-icon {
-    display: inline-block;
-    width: 24px;
-    text-align: center;
-    margin-right: 8px;
-  }
-  
-  .dropdown-item {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 0.75rem 1.5rem;
-    clear: both;
-    font-weight: 400;
-    color: #212529;
-    text-align: inherit;
-    white-space: normal !important;
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-  }
-  
-  .dropdown-item:hover, .dropdown-item:focus {
-    color: #16181b;
-    text-decoration: none;
-    background-color: rgba(76, 175, 80, 0.1);
-  }
-  
   /* Quick guide selector styles */
   .quick-guide-selector {
     margin-bottom: 2rem;
@@ -1357,27 +1253,72 @@
     font-size: 0.875rem;
     color: #6b7280;
   }
-  
-  .guide-info {
+
+  /* Language fallback notice */
+  .language-fallback-notice {
     display: flex;
-    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: rgba(76, 175, 80, 0.1);
+    border: 1px solid rgba(76, 175, 80, 0.3);
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
   }
-  
-  /* For dropdown guide items */
-  .dropdown-item .guide-icon {
-    font-size: 1.5rem;
-    margin-right: 1rem;
-    margin-bottom: 0;
+
+  .notice-icon {
+    font-size: 1.25rem;
+    color: var(--food-secondary);
+    flex-shrink: 0;
+    margin-top: 0.125rem;
   }
-  
-  .dropdown-item .guide-title {
-    font-weight: 600;
+
+  .notice-content {
+    flex: 1;
+  }
+
+  .notice-content strong {
+    color: var(--food-secondary);
+    font-size: 0.95rem;
+    display: block;
     margin-bottom: 0.25rem;
   }
-  
-  .dropdown-item .guide-desc {
-    font-size: 0.75rem;
+
+  .notice-content p {
+    color: #4b5563;
+    font-size: 0.875rem;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  /* Loading container */
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #e5e7eb;
+    border-top: 4px solid var(--food-primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .loading-container p {
     color: #6b7280;
+    font-size: 1.1rem;
   }
   
   @media (max-width: 640px) {
@@ -1417,206 +1358,7 @@
     .guide-card {
       max-width: none;
     }
-  }
 
-  /* Food Systems Framework specific theme elements */
-
-  /* Special callouts for food concepts */
-  .content :global(.sustainability-callout) {
-    background-color: rgba(76, 175, 80, 0.1);
-    border-radius: 0.5rem;
-    padding: 1rem;
-    margin: 1.5rem 0;
-    border-left: 4px solid var(--food-secondary);
-  }
-
-  .content :global(.traditional-knowledge-callout) {
-    background-color: rgba(121, 85, 72, 0.1);
-    border-radius: 0.5rem;
-    padding: 1rem;
-    margin: 1.5rem 0;
-    border-left: 4px solid var(--food-earth);
-  }
-
-  .content :global(.innovation-callout) {
-    background-color: rgba(139, 195, 74, 0.1);
-    border-radius: 0.5rem;
-    padding: 1rem;
-    margin: 1.5rem 0;
-    border-left: 4px solid var(--food-accent);
-  }
-
-  /* Special styling for case studies */
-  .content :global(.case-study) {
-    background-color: rgba(255, 152, 0, 0.1);
-    border-radius: 0.5rem;
-    padding: 1.25rem;
-    margin: 1.5rem 0;
-    border-left: 4px solid var(--food-harvest);
-  }
-
-  .content :global(.case-study-title) {
-    color: var(--food-harvest);
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-  }
-
-  /* Alert/warning styling */
-  .content :global(.alert) {
-    background-color: rgba(244, 67, 54, 0.1);
-    border-radius: 0.5rem;
-    padding: 1.25rem;
-    margin: 1.5rem 0;
-    border-left: 4px solid #f44336;
-  }
-
-  .content :global(.alert-title) {
-    color: #f44336;
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-  }
-
-  /* Highlight boxes for important food concepts */
-  .content :global(.concept-highlight) {
-    background-color: rgba(76, 175, 80, 0.05);
-    border-radius: 0.5rem;
-    padding: 1.25rem;
-    margin: 1.5rem 0;
-    border: 1px solid rgba(76, 175, 80, 0.3);
-  }
-
-  .content :global(.concept-highlight-title) {
-    color: var(--food-secondary);
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-    border-bottom: 1px solid rgba(76, 175, 80, 0.3);
-    padding-bottom: 0.5rem;
-  }
-
-  /* Agricultural innovation styling */
-  .content :global(.agriculture-highlight) {
-    background-color: rgba(139, 195, 74, 0.05);
-    border-radius: 0.5rem;
-    padding: 1.25rem;
-    margin: 1.5rem 0;
-    border: 1px solid rgba(139, 195, 74, 0.3);
-  }
-
-  .content :global(.agriculture-highlight-title) {
-    color: var(--food-accent);
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-    border-bottom: 1px solid rgba(139, 195, 74, 0.3);
-    padding-bottom: 0.5rem;
-  }
-
-  /* Climate and sustainability styling */
-  .content :global(.climate-highlight) {
-    background-color: rgba(3, 169, 244, 0.05);
-    border-radius: 0.5rem;
-    padding: 1.25rem;
-    margin: 1.5rem 0;
-    border: 1px solid rgba(3, 169, 244, 0.3);
-  }
-
-  .content :global(.climate-highlight-title) {
-    color: var(--food-sky);
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-    border-bottom: 1px solid rgba(3, 169, 244, 0.3);
-    padding-bottom: 0.5rem;
-  }
-
-  /* Community and traditional knowledge styling */
-  .content :global(.community-highlight) {
-    background-color: rgba(121, 85, 72, 0.05);
-    border-radius: 0.5rem;
-    padding: 1.25rem;
-    margin: 1.5rem 0;
-    border: 1px solid rgba(121, 85, 72, 0.3);
-  }
-
-  .content :global(.community-highlight-title) {
-    color: var(--food-earth);
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-    border-bottom: 1px solid rgba(121, 85, 72, 0.3);
-    padding-bottom: 0.5rem;
-  }
-
-  /* Economic and trade styling */
-  .content :global(.economic-highlight) {
-    background-color: rgba(255, 193, 7, 0.05);
-    border-radius: 0.5rem;
-    padding: 1.25rem;
-    margin: 1.5rem 0;
-    border: 1px solid rgba(255, 193, 7, 0.3);
-  }
-
-  .content :global(.economic-highlight-title) {
-    color: var(--food-seed);
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-    border-bottom: 1px solid rgba(255, 193, 7, 0.3);
-    padding-bottom: 0.5rem;
-  }
-
-  /* Nutrition and health styling */
-  .content :global(.nutrition-highlight) {
-    background-color: rgba(255, 152, 0, 0.05);
-    border-radius: 0.5rem;
-    padding: 1.25rem;
-    margin: 1.5rem 0;
-    border: 1px solid rgba(255, 152, 0, 0.3);
-  }
-
-  .content :global(.nutrition-highlight-title) {
-    color: var(--food-harvest);
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-    border-bottom: 1px solid rgba(255, 152, 0, 0.3);
-    padding-bottom: 0.5rem;
-  }
-
-  /* Language fallback notice */
-  .language-fallback-notice {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    background-color: rgba(76, 175, 80, 0.1);
-    border: 1px solid rgba(76, 175, 80, 0.3);
-    border-radius: 0.5rem;
-    padding: 1rem 1.25rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .notice-icon {
-    font-size: 1.25rem;
-    color: var(--food-secondary);
-    flex-shrink: 0;
-    margin-top: 0.125rem;
-  }
-
-  .notice-content {
-    flex: 1;
-  }
-
-  .notice-content strong {
-    color: var(--food-secondary);
-    font-size: 0.95rem;
-    display: block;
-    margin-bottom: 0.25rem;
-  }
-
-  .notice-content p {
-    color: #4b5563;
-    font-size: 0.875rem;
-    margin: 0;
-    line-height: 1.5;
-  }
-
-  /* Responsive notice */
-  @media (max-width: 640px) {
     .language-fallback-notice {
       padding: 0.75rem 1rem;
     }

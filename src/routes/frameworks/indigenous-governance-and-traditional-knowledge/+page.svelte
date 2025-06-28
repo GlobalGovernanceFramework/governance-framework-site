@@ -50,7 +50,7 @@
     governance: ['structural-components', 'implementation-timeline', 'key-mechanisms'],
     implementation: ['expected-outcomes', 'interface-existing-systems'],
     connection: ['pathways-broader-engagement', 'documentation-risk-assessment', 'system-map-visual'],
-    resources: ['glossary-references']
+    resources: ['glossary-references', 'indigenous-framework-essentials']
   };
 
   // Initialize accordion states after mount
@@ -63,7 +63,7 @@
     resourcesOpen = false;
 
     // Set initial accordion states based on active section
-    if (activeSection === 'index' || activeSection === 'indigenous-framework-essentials') {
+    if (activeSection === 'index') {
       foundationOpen = true;
     } else if (sectionGroups.foundation.includes(activeSection)) {
       foundationOpen = true;
@@ -73,7 +73,7 @@
       implementationOpen = true;
     } else if (sectionGroups.connection.includes(activeSection)) {
       connectionOpen = true;
-    } else if (sectionGroups.resources.includes(activeSection)) {
+    } else if (sectionGroups.resources.includes(activeSection) || activeSection === 'indigenous-framework-essentials') {
       resourcesOpen = true;
     } else {
       // Default state for overview
@@ -185,6 +185,38 @@
     return inf.sectionsShort?.[section] || getSectionTitle(section);
   }
 
+  // Function to get section-specific icons for indigenous framework
+  function getSectionIcon(section) {
+    const sectionIcons = {
+      // Overview
+      'index': '🌍', // Earth representing global indigenous presence
+      
+      // Foundation sections
+      'preamble': '🪶', // Feather for ceremony and sacred beginning
+      'core-principles': '⚖️', // Balance for justice and principles
+      
+      // Governance sections
+      'structural-components': '🏛️', // Building for structure
+      'implementation-timeline': '📅', // Calendar for timeline
+      'key-mechanisms': '⚙️', // Gear for mechanisms
+      
+      // Implementation sections
+      'expected-outcomes': '🎯', // Target for outcomes
+      'interface-existing-systems': '🔗', // Link for interface
+      
+      // Connection sections
+      'pathways-broader-engagement': '🌿', // Plant for growth/pathways
+      'documentation-risk-assessment': '📋', // Clipboard for documentation
+      'system-map-visual': '🗺️', // Map for visual systems
+      
+      // Resources
+      'glossary-references': '📚', // Books for references
+      'indigenous-framework-essentials': '🌱' // Seedling for essentials
+    };
+    
+    return sectionIcons[section] || '🍃'; // Default leaf icon
+  }
+
   // Function to download the indigenous guide PDF
   function downloadIndigenousGuide(version = '') {
     const versionSuffix = version ? `-${version}` : '';
@@ -200,6 +232,7 @@
   // Computed values - add safety checks
   $: isEssentialsActive = activeSection === 'indigenous-framework-essentials';
   $: isSupplementaryActive = ['glossary-references', 'indigenous-framework-essentials'].includes(activeSection);
+  $: isResourcesActive = sectionGroups.resources.includes(activeSection) || activeSection === 'indigenous-framework-essentials';
   $: allCoreSections = [
     ...sectionGroups.foundation,
     ...sectionGroups.governance,
@@ -309,7 +342,7 @@
                     class:active={activeSection === section}
                     on:click={() => setActiveSection(section)}
                   >
-                    <span class="nav-icon">🍃</span>
+                    <span class="nav-icon">{getSectionIcon(section)}</span>
                     <span class="nav-title">{getShortSectionTitle(section)}</span>
                   </button>
                 {/each}
@@ -338,7 +371,7 @@
                     class:active={activeSection === section}
                     on:click={() => setActiveSection(section)}
                   >
-                    <span class="nav-icon">⚡</span>
+                    <span class="nav-icon">{getSectionIcon(section)}</span>
                     <span class="nav-title">{getShortSectionTitle(section)}</span>
                   </button>
                 {/each}
@@ -367,7 +400,7 @@
                     class:active={activeSection === section}
                     on:click={() => setActiveSection(section)}
                   >
-                    <span class="nav-icon">🌊</span>
+                    <span class="nav-icon">{getSectionIcon(section)}</span>
                     <span class="nav-title">{getShortSectionTitle(section)}</span>
                   </button>
                 {/each}
@@ -396,7 +429,7 @@
                     class:active={activeSection === section}
                     on:click={() => setActiveSection(section)}
                   >
-                    <span class="nav-icon">🤝</span>
+                    <span class="nav-icon">{getSectionIcon(section)}</span>
                     <span class="nav-title">{getShortSectionTitle(section)}</span>
                   </button>
                 {/each}
@@ -409,7 +442,7 @@
             <button 
               class="accordion-header" 
               class:open={resourcesOpen}
-              class:has-active={isSupplementaryActive}
+              class:has-active={isResourcesActive}
               on:click={toggleResources}
             >
               <span class="accordion-icon">📄</span>
@@ -424,7 +457,7 @@
                   class:active={activeSection === 'glossary-references'}
                   on:click={() => setActiveSection('glossary-references')}
                 >
-                  <span class="nav-icon">📚</span>
+                  <span class="nav-icon">{getSectionIcon('glossary-references')}</span>
                   <span class="nav-title">{inf.buttons?.appendicesTools || 'Glossary & References'}</span>
                 </button>
                 <button 
@@ -432,7 +465,7 @@
                   class:active={activeSection === 'indigenous-framework-essentials'}
                   on:click={() => setActiveSection('indigenous-framework-essentials')}
                 >
-                  <span class="nav-icon">🌱</span>
+                  <span class="nav-icon">{getSectionIcon('indigenous-framework-essentials')}</span>
                   <span class="nav-title">{inf.buttons?.frameworkEssentials || 'Framework Essentials'}</span>
                 </button>
               </div>
@@ -466,18 +499,8 @@
               </div>
             {/if}
             
-            <!-- Handle index section with custom intro -->
-            {#if section === 'index'}
-              <div class="overview-section">
-                <h1>{inf.intro?.title || 'Indigenous & Traditional Knowledge Governance Framework'}</h1>
-                <h2>{inf.intro?.overview || 'Overview'}</h2>
-                <p>{inf.intro?.paragraph1 || 'The Indigenous & Traditional Knowledge Governance Framework emerges as a revolutionary blueprint for planetary transformation, positioning Indigenous peoples not as stakeholders to consult, but as the sovereign architects of regenerative governance systems.'}</p>
-                <p>{inf.intro?.paragraph2 || 'Rooted in decolonization, ecological regeneration, and post-human solidarity, this framework centers Indigenous sovereignty, ecological wisdom, and long-term sustainability as the foundation for planetary healing.'}</p>
-              </div>
-            {:else}
-              <!-- Render sections from markdown files -->
-              <svelte:component this={data.sections[section].default} t={translationFunction} />
-            {/if}
+            <!-- Render ALL sections including index from markdown files -->
+            <svelte:component this={data.sections[section].default} t={translationFunction} />
             
             <!-- Navigation buttons at bottom of essentials guide -->
             {#if section === 'indigenous-framework-essentials' && !isPrintMode}

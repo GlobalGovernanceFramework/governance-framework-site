@@ -63,14 +63,14 @@ export async function load({ depends, url, params }) {
   for (const section of sections) {
     try {
       // Try to load the current locale version first
-      const modulePromise = import(`$lib/content/frameworks/${currentLocale}/implementation/food-systems/${section}.md`);
+      const modulePromise = import(`$lib/content/frameworks/${currentLocale}/implementation/food-systems-and-agriculture/${section}.md`);
       content[section] = await modulePromise;
       loadedSections++;
       console.log('Successfully loaded food systems and agriculture section:', section, 'in', currentLocale);
     } catch (primaryError) {
       // Fall back to English if translation isn't available
       try {
-        const fallbackPromise = import(`$lib/content/frameworks/en/implementation/food-systems/${section}.md`);
+        const fallbackPromise = import(`$lib/content/frameworks/en/implementation/food-systems-and-agriculture/${section}.md`);
         content[section] = await fallbackPromise;
         loadedSections++;
         

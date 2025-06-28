@@ -22,7 +22,7 @@ nextReview: too be determined
 
 In a world facing ecological collapse and spiritual disconnection, the *Indigenous & Traditional Knowledge Governance Framework* offers a radical blueprint for planetary transformation—positioning Indigenous peoples not as stakeholders to consult, but as the sovereign architects of regenerative governance systems. Rooted in decolonization, ecological regeneration, and post-human solidarity, this framework centers Indigenous sovereignty, ecological wisdom, and long-term sustainability as the foundation for planetary healing and thriving futures for all beings.
 
-## \<a id="overview"\>\</a\>Overview
+## <a id="overview"></a>Overview
 
 **Framework Position**: This Indigenous & Traditional Knowledge Governance Framework serves as the primary, leading model for cultural and ecological governance within the broader [Integrated Meta-Governance ecosystem](/frameworks/meta-governance). It provides the foundational wisdom and practical implementation pathways for meta-governance principles, demonstrating how polycentric coordination, subsidiarity, and planetary stewardship can be realized through Indigenous sovereignty and Traditional Ecological Knowledge. While meta-governance provides the coordination architecture for diverse systems to work together, this framework offers the proven, land-based approaches that have sustained human-Earth relationships for millennia.
 

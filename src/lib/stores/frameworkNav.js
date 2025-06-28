@@ -40,13 +40,6 @@ export const allFrameworks = [
     path: '/frameworks/climate-and-energy-governance'
   },
   {
-    slug: 'peace-and-conflict-resolution',
-    titleKey: 'framework.docs.nav.frameworkTitles.peaceAndConflictResolution',
-    tier: 1,
-    status: 'review',
-    path: '/frameworks/peace-and-conflict-resolution'
-  },
-  {
     slug: 'planetary-health',
     titleKey: 'framework.docs.nav.frameworkTitles.planetaryHealth',
     tier: 1,
@@ -61,11 +54,18 @@ export const allFrameworks = [
     path: '/frameworks/food-systems-and-agriculture'
   },
   {
-    slug: 'economic-integration',
-    titleKey: 'framework.docs.nav.frameworkTitles.economicIntegration',
+    slug: 'disaster-risk-reduction',
+    titleKey: 'framework.docs.nav.frameworkTitles.disasterRiskReduction',
     tier: 1,
     status: 'review',
-    path: '/frameworks/economic-integration'
+    path: '/frameworks/disaster-risk-reduction'
+  },
+  {
+    slug: 'peace-and-conflict-resolution',
+    titleKey: 'framework.docs.nav.frameworkTitles.peaceAndConflictResolution',
+    tier: 1,
+    status: 'review',
+    path: '/frameworks/peace-and-conflict-resolution'
   },
   {
     slug: 'justice-systems',
@@ -75,18 +75,18 @@ export const allFrameworks = [
     path: '/frameworks/justice-systems'
   },
   {
+    slug: 'economic-integration',
+    titleKey: 'framework.docs.nav.frameworkTitles.economicIntegration',
+    tier: 1,
+    status: 'review',
+    path: '/frameworks/economic-integration'
+  },
+  {
     slug: 'migration-and-human-mobility',
     titleKey: 'framework.docs.nav.frameworkTitles.migrationAndHumanMobility',
     tier: 1,
     status: 'coming-soon',
     path: '/frameworks/migration-and-human-mobility'
-  },
-  {
-    slug: 'disaster-risk-reduction',
-    titleKey: 'framework.docs.nav.frameworkTitles.disasterRiskReduction',
-    tier: 1,
-    status: 'review',
-    path: '/frameworks/disaster-risk-reduction'
   },
 
   // Tier 2: Systems for Long-Term Thriving

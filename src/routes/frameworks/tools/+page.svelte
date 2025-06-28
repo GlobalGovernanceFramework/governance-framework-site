@@ -283,25 +283,6 @@
         </div>
       </div>
 
-      <!-- Peace Framework Card -->
-      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #6B5CA5; margin-bottom: 2rem;">
-        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
-          <div style="font-size: 2.5rem; color: #6B5CA5;">🕊️</div>
-          <div style="flex: 1; min-width: 200px;">
-            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #6B5CA5;">{texts.peaceTitle}</h2>
-            <p style="color: #4b5563; margin-bottom: 1rem;">
-              {texts.peaceDesc}
-            </p>
-            <a href="{base}/frameworks/tools/peace-and-conflict-resolution" style="display: inline-flex; align-items: center; background-color: #6B5CA5; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.peaceButton}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-
       <!-- Planetary Health Framework Card -->
       <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #1e3a8a; margin-bottom: 2rem;">
         <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
@@ -340,17 +321,17 @@
         </div>
       </div>
 
-      <!-- Economic Framework Card (to be added to Available Resources section) -->
-      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #088F8F; margin-bottom: 2rem;">
+      <!-- Peace Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #6B5CA5; margin-bottom: 2rem;">
         <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
-          <div style="font-size: 2.5rem; color: #088F8F;">💱</div>
+          <div style="font-size: 2.5rem; color: #6B5CA5;">🕊️</div>
           <div style="flex: 1; min-width: 200px;">
-            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #088F8F;">{texts.economicTitle}</h2>
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #6B5CA5;">{texts.peaceTitle}</h2>
             <p style="color: #4b5563; margin-bottom: 1rem;">
-              {texts.economicDesc}
+              {texts.peaceDesc}
             </p>
-            <a href="{base}/frameworks/tools/economic-integration" style="display: inline-flex; align-items: center; background-color: #088F8F; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.economicButton}
+            <a href="{base}/frameworks/tools/peace-and-conflict-resolution" style="display: inline-flex; align-items: center; background-color: #6B5CA5; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.peaceButton}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
@@ -370,6 +351,25 @@
             </p>
             <a href="{base}/frameworks/tools/justice-systems" style="display: inline-flex; align-items: center; background-color: #1e40af; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.justiceButton}
+              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Economic Framework Card (to be added to Available Resources section) -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #088F8F; margin-bottom: 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+          <div style="font-size: 2.5rem; color: #088F8F;">💱</div>
+          <div style="flex: 1; min-width: 200px;">
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #088F8F;">{texts.economicTitle}</h2>
+            <p style="color: #4b5563; margin-bottom: 1rem;">
+              {texts.economicDesc}
+            </p>
+            <a href="{base}/frameworks/tools/economic-integration" style="display: inline-flex; align-items: center; background-color: #088F8F; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.economicButton}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
@@ -511,6 +511,7 @@
         </div>
       </div>
 
+      <!-- Animal-Welfare Framework Card -->
       <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #1e40af; margin-bottom: 2rem;">
         <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
           <div style="font-size: 2.5rem; color: #1e40af;">🐾</div>

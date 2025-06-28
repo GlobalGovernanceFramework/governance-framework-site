@@ -540,19 +540,9 @@
               </div>
             {/if}
             
-            <!-- Handle index section with custom intro -->
-            {#if section === 'index'}
-              <div class="overview-section">
-                <h1>{phf.intro?.title || 'Planetary Health Accord Implementation Framework'}</h1>
-                <h2>{phf.intro?.overview || 'Overview'}</h2>
-                <p>{phf.intro?.paragraph1 || 'The Planetary Health Accord Implementation Framework emerges as a revolutionary blueprint for global health transformation, weaving together indigenous sovereignty, technological innovation, and community-centered care into a tapestry of hope for our living Earth.'}</p>
-                <p>{phf.intro?.paragraph2 || 'This framework reimagines healthcare to honor every person, community, and ecosystem as a co-creator of planetary health, from Community Health Legions asserting cultural sovereignty to AI systems serving justice.'}</p>
-              </div>
-            {:else}
-              <!-- Render sections from markdown files -->
-              <svelte:component this={data.sections[section].default} t={translationFunction} />
-            {/if}
-            
+            <!-- Render ALL sections including index from markdown files -->
+            <svelte:component this={data.sections[section].default} t={translationFunction} />
+                        
             <!-- Navigation buttons at bottom of lite version -->
             {#if section === 'planetary-health-accord-lite' && !isPrintMode}
               <div class="guide-navigation">

@@ -554,28 +554,8 @@
                 </div>
               {/if}
 
-            {:else if section === 'index' && currentLocale === 'sv'}
-              <!-- Manually render Swedish introduction for the index section -->
-              <div class="overview-section">
-                <h1>{df.overview?.title || 'Katastrofriskminskning & Motståndskraftsramverk'}</h1>
-                <h2>{df.overview?.subtitle || 'Ramverköversikt'}</h2>
-                <p>{df.overview?.paragraph1}</p>
-                <p>{df.overview?.paragraph2}</p>
-              </div>
-            {:else if section === 'index'}
-              <!-- Render English introduction through translation or markdown component -->
-              {#if df.overview}
-                <div class="overview-section">
-                  <h1>{df.overview.title}</h1>
-                  <h2>{df.overview.subtitle}</h2>
-                  <p>{df.overview.paragraph1}</p>
-                  <p>{df.overview.paragraph2}</p>
-                </div>
-              {:else}
-                <svelte:component this={data.sections[section].default} />
-              {/if}
             {:else}
-              <!-- Render normal sections from markdown files -->
+              <!-- Render ALL sections including index from markdown files -->
               <svelte:component this={data.sections[section].default} t={translationFunction} />
             {/if}
 
