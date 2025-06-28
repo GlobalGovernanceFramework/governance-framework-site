@@ -18,6 +18,10 @@
   let isMenuOpen = false;
   let isFrameworksDropdownOpen = false;
   let isGetInvolvedDropdownOpen = false;
+  
+  // Mobile submenu states
+  let isTieredFrameworksOpen = false;
+  let openTiers = {}; // Track which tiers are open
 
   // Group frameworks by tier for the tiered menu
   const frameworksByTier = {};
@@ -56,16 +60,47 @@
     }
   }
   
-  const toggleMenu = () => (isMenuOpen = !isMenuOpen);
+  const toggleMenu = () => {
+    isMenuOpen = !isMenuOpen;
+    // Close all dropdowns when main menu is closed
+    if (!isMenuOpen) {
+      isFrameworksDropdownOpen = false;
+      isGetInvolvedDropdownOpen = false;
+      isTieredFrameworksOpen = false;
+      openTiers = {};
+    }
+  };
 
   const toggleFrameworksDropdown = (e) => {
     e.stopPropagation();
     isFrameworksDropdownOpen = !isFrameworksDropdownOpen;
+    // Close tier dropdowns when frameworks dropdown is closed
+    if (!isFrameworksDropdownOpen) {
+      isTieredFrameworksOpen = false;
+      openTiers = {};
+    }
   };
 
   const toggleGetInvolvedDropdown = (e) => {
     e.stopPropagation();
     isGetInvolvedDropdownOpen = !isGetInvolvedDropdownOpen;
+  };
+
+  const toggleTieredFrameworks = (e) => {
+    e.stopPropagation();
+    isTieredFrameworksOpen = !isTieredFrameworksOpen;
+    // Close all tier dropdowns when tiered frameworks is closed
+    if (!isTieredFrameworksOpen) {
+      openTiers = {};
+    }
+  };
+
+  const toggleTier = (tier, e) => {
+    e.stopPropagation();
+    openTiers = {
+      ...openTiers,
+      [tier]: !openTiers[tier]
+    };
   };
   
   const closeDropdowns = () => {
@@ -560,6 +595,26 @@
     }
   }
 
+  /* Custom responsive visibility classes */
+  .desktop-only {
+    display: none;
+  }
+  
+  .mobile-only {
+    display: block;
+  }
+  
+  @media (min-width: 768px) {
+    .desktop-only {
+      display: block;
+    }
+    
+    .mobile-only {
+      display: none;
+    }
+  }
+
+  /* MOBILE-SPECIFIC STYLES */
   @media (max-width: 768px) {
     .dropdown-menu {
       position: static;
@@ -570,6 +625,12 @@
       margin-bottom: 0.5rem;
       margin-left: 1rem;
       display: none;
+      /* Add scrolling capability for mobile */
+      max-height: 60vh;
+      overflow-y: auto;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 0.375rem;
+      padding: 0.5rem 0;
     }
     
     .dropdown.open .dropdown-menu {
@@ -582,19 +643,88 @@
       cursor: pointer;
     }
 
-    /* Mobile: flatten the sub-menus */
+    /* Mobile: Control the sub-menus with collapsible state */
+    .mobile-submenu {
+      margin-left: 1rem;
+      border-left: 2px solid #e5e7eb;
+      background-color: #f9fafb;
+      border-radius: 0.25rem;
+      margin-top: 0.5rem;
+      max-height: 40vh;
+      overflow-y: auto;
+    }
+
+    .mobile-submenu.hidden {
+      display: none;
+    }
+
+    .mobile-tier-submenu {
+      margin-left: 1rem;
+      border-left: 2px solid #e5e7eb;
+      background-color: #f3f4f6;
+      border-radius: 0.25rem;
+      margin-top: 0.25rem;
+      max-height: 30vh;
+      overflow-y: auto;
+    }
+
+    .mobile-tier-submenu.hidden {
+      display: none;
+    }
+
+    .mobile-submenu-toggle,
+    .mobile-tier-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0.5rem 0.9rem;
+      background: none;
+      border: none;
+      color: #2B4B8C;
+      font-size: 0.9rem;
+      cursor: pointer;
+      text-align: left;
+      border-left: 3px solid transparent;
+      transition: all 0.2s;
+    }
+
+    .mobile-submenu-toggle:hover,
+    .mobile-tier-toggle:hover {
+      background-color: #f7f1e3;
+      color: #DAA520;
+      border-left-color: #DAA520;
+    }
+
+    .mobile-submenu-toggle svg,
+    .mobile-tier-toggle svg {
+      transition: transform 0.2s;
+    }
+
+    .mobile-submenu-toggle.open svg,
+    .mobile-tier-toggle.open svg {
+      transform: rotate(90deg);
+    }
+
+    /* Remove desktop sub-menu behavior on mobile */
     .dropdown-submenu .dropdown-menu-level2,
     .tier-submenu .dropdown-menu-level3 {
       position: static;
       box-shadow: none;
       border: none;
-      margin-left: 1rem;
-      display: block;
+      margin: 0;
+      display: none;
     }
 
     .dropdown-submenu > a::after,
     .tier-submenu > a::after {
       display: none;
+    }
+
+    /* Make sure scrollable content works on mobile */
+    .dropdown-scrollable-content {
+      max-height: 40vh;
+      overflow-y: auto;
     }
   }
   
@@ -784,8 +914,8 @@
               <!-- Visual Separator -->
               <div class="dropdown-separator"></div>
               
-              <!-- Implementation Frameworks with Tiered Sub-Sub-Menus (OUTSIDE scrollable area) -->
-              <div class="dropdown-submenu">
+              <!-- Desktop: Implementation Frameworks with Tiered Sub-Sub-Menus -->
+              <div class="dropdown-submenu desktop-only">
                 <a href="{base}/frameworks" role="menuitem">
                   {browser ? ($t('common.header.tieredFrameworks') || 'Tiered Frameworks') : 'Tiered Frameworks'}
                 </a>
@@ -806,7 +936,7 @@
                                 data-sveltekit-preload-data="hover" 
                                 role="menuitem"
                               >
-                                {browser ? ($t(framework.titleKey) || framework.slug) : framework.slug}
+                                {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
                               </a>
                             {/each}
                           </div>
@@ -819,10 +949,69 @@
                               data-sveltekit-preload-data="hover" 
                               role="menuitem"
                             >
-                              {browser ? ($t(framework.titleKey) || framework.slug) : framework.slug}
+                              {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
                             </a>
                           {/each}
                         {/if}
+                      </div>
+                    </div>
+                  {/each}
+                </div>
+              </div>
+
+              <!-- Mobile: Collapsible Tiered Frameworks -->
+              <div class="mobile-only">
+                <button 
+                  type="button" 
+                  class={`mobile-submenu-toggle ${isTieredFrameworksOpen ? 'open' : ''}`}
+                  on:click|stopPropagation={(e) => toggleTieredFrameworks(e)}
+                  aria-label={isTieredFrameworksOpen ? 'Close tiered frameworks' : 'Open tiered frameworks'}
+                >
+                  <span>{browser ? ($t('common.header.tieredFrameworks') || 'Tiered Frameworks') : 'Tiered Frameworks'}</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+                
+                <div class={`mobile-submenu ${isTieredFrameworksOpen ? '' : 'hidden'}`}>
+                  {#each tiers as tier}
+                    <div>
+                      <button 
+                        type="button" 
+                        class={`mobile-tier-toggle ${openTiers[tier] ? 'open' : ''}`}
+                        on:click|stopPropagation={(e) => toggleTier(tier, e)}
+                        aria-label={openTiers[tier] ? `Close tier ${tier}` : `Open tier ${tier}`}
+                      >
+                        <span>{browser ? ($t(tierMetadata[tier]?.titleKey) || `Tier ${tier}`) : `Tier ${tier}`}</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                      </button>
+                      
+                      <div class={`mobile-tier-submenu ${openTiers[tier] ? '' : 'hidden'}`}>
+                        {#each frameworksByTier[tier] || [] as framework}
+                          <a 
+                            href="{base}{framework.path}" 
+                            class={`${isActive(framework.path) ? 'active' : ''}`} 
+                            data-sveltekit-preload-data="hover" 
+                            role="menuitem"
+                            style="display: block; padding: 0.4rem 1.2rem; font-size: 0.85rem; color: #2B4B8C; text-decoration: none; border-left: 3px solid transparent; transition: all 0.2s;"
+                            on:mouseenter={(e) => {
+                              e.target.style.backgroundColor = '#f7f1e3';
+                              e.target.style.color = '#DAA520';
+                              e.target.style.borderLeftColor = '#DAA520';
+                            }}
+                            on:mouseleave={(e) => {
+                              if (!e.target.classList.contains('active')) {
+                                e.target.style.backgroundColor = 'transparent';
+                                e.target.style.color = '#2B4B8C';
+                                e.target.style.borderLeftColor = 'transparent';
+                              }
+                            }}
+                          >
+                            {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
+                          </a>
+                        {/each}
                       </div>
                     </div>
                   {/each}
