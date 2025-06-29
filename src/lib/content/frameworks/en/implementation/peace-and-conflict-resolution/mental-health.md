@@ -5,69 +5,175 @@ section: mental-health
 
 ### Mental Health & Psychosocial Support
 
-The *Peace & Conflict Resolution Framework* recognizes mental health and psychosocial support (MHPSS) as essential for sustainable peace, addressing individual, collective, and intergenerational trauma to foster resilience, reconciliation, and social cohesion. Integrating behavioral psychology, cultural sensitivity, and trauma-informed approaches, this section outlines strategies to embed MHPSS in peacebuilding, aligned with SDG 16 (Peace, Justice and Strong Institutions), UNDP peacebuilding principles, and OSCE conflict prevention protocols (see [Core Peace & Conflict Resolution Principles](/frameworks/peace-and-conflict-resolution#core-principles)).
+**Golden Triangle Integration**: This section operationalizes the [Treaty for Our Only Home's](/frameworks/treaty-for-our-only-home#pillar-four) **Global Public Goods Fund** and **health system strengthening**, guided by the [Indigenous & Traditional Knowledge Governance Framework's](/frameworks/indigenous-governance-and-traditional-knowledge#structural-components) **Traditional healing practices**, **community-based healing**, and **ceremonial restoration**, coordinated through the [Meta-Governance Framework's](/frameworks/meta-governance#principles) **Holistic Health & Well-being principle** for comprehensive approaches to individual, community, and ecological wellness that recognize mental health as inseparable from spiritual, cultural, and environmental relationships.
 
-#### 1. Trauma-Informed Peace Processes
-- **Description**: Design peace initiatives that prioritize psychological well-being, avoid re-traumatization, and integrate healing into governance, ensuring inclusivity and cultural resonance.
-- **Strategies**:
-  - Conduct *Psychological Impact Assessments* to evaluate how peace processes (e.g., mediations, truth commissions) affect mental health, informing adaptive strategies.
-  - Implement *Trauma-Sensitive Dialogue* methodologies, using Nonviolent Communication (NVC) to foster empathetic, non-judgmental exchanges (see [Local Conflict Resolution Implementation](/frameworks/peace-and-conflict-resolution#local-implementation)).
-  - Promote *Healing-Centered Engagement*, focusing on well-being and community strengths rather than solely conflict resolution, as seen in Rwanda’s community-based approaches.
-  - Incorporate *Mental Health Diplomacy* in official peace negotiations, including provisions for psychological recovery in peace agreements (see [Transitional Justice & Reconciliation](/frameworks/peace-and-conflict-resolution#transitional-justice)).
-- **Application**: Use in multi-track dialogues to ensure mediators address trauma, as piloted in Colombia’s 2016 peace process with FARC.
+The Peace & Conflict Resolution Framework recognizes mental health and psychosocial support (MHPSS) as essential for sustainable peace, addressing individual, collective, and intergenerational trauma through integration of Traditional healing wisdom, community-controlled approaches, and Earth Council guidance that honors the interconnection between personal healing and planetary wellbeing.
 
-#### 2. Community-Based Psychosocial Support
-- **Description**: Deliver culturally resonant MHPSS through local resources, strengthening community capacities to address shared and individual trauma in fragile and post-conflict contexts (see [Context-Specific Implementation Roadmaps](/frameworks/peace-and-conflict-resolution#context-specific-roadmaps)).
-- **Strategies**:
-  - Train *Community Health Workers* and local healers in trauma-informed care, using non-digital methods like storytelling and rituals for low-literacy groups.
-  - Establish *Safe Spaces* for dialogue and healing, modeled on Liberia’s Women’s Peace Huts, to foster trust and peer support.
-  - Build *Peer Support Networks* to connect conflict-affected individuals, facilitating collective recovery through shared experiences.
-  - Implement *Resilience-Building Programs* to strengthen psychological coping capacities, integrating local cultural practices for accessibility.
-- **Case Study**: South Sudan’s community healing circles (2018–2023) combined local rituals with facilitated group sessions, reducing community tensions by 25% and enhancing social cohesion.
+#### 1. Treaty-Funded Comprehensive Mental Health Infrastructure
 
-#### 3. Collective Trauma Healing & Generational Memory
-- **Description**: Address collective trauma and intergenerational memory through community-wide healing processes and truth-telling mechanisms, fostering trust and preventing trauma transmission (see [Transitional Justice & Reconciliation](/frameworks/peace-and-conflict-resolution#transitional-justice)).
-- **Strategies**:
-  - Implement *Community Truth-Telling Forums* to share narratives of past conflicts, using *Value System Mapping* to bridge cultural divides (see [Developmental Value Systems & Peace](/frameworks/peace-and-conflict-resolution#developmental-value-systems)).
-  - Develop *Healing-Oriented Memorialization* projects, such as memorials or oral history archives, to honor generational memory without rekindling divisions.
-  - Engage youth in *Intergenerational Dialogue Programs* to process inherited trauma and build cooperative futures, as piloted in Northern Ireland.
-  - Promote *Cross-Cultural Healing Approaches* to respect diverse understandings of trauma, combining indigenous and modern practices.
-- **Case Study**: Rwanda’s post-genocide MHPSS initiatives, including *Ingando* solidarity camps and community-based sociotherapy, facilitated collective healing for over 120,000 participants. By integrating truth-telling, cultural rituals, and group sessions led by trained community facilitators, these programs processed 1.9 million cases, improved mental health, and strengthened conflict management capacities.
+**Global Public Goods Fund Health Investment (Treaty Pillar 4)**: Dedicated funding streams ensuring mental health support for conflict-affected communities worldwide:
 
-#### 4. Trauma Resilience in Digital Spaces
-- **Description**: Mitigate trauma from exposure to online war content, trolling, and peacebuilder burnout, ensuring digital peacebuilding supports mental health (see [AI & Digital Peace Ethics](/frameworks/peace-and-conflict-resolution#ai-ethics)).
-- **Strategies**:
-  - Deploy *Digital Safe Spaces* with moderated online forums to protect users from hate speech and graphic content, using real-time content moderation (see [Digital Peace Infrastructure](/frameworks/peace-and-conflict-resolution#digital-infrastructure)).
-  - Offer *Digital Literacy Workshops* to teach coping strategies for online trauma, including recognizing trolling and deepfakes, as implemented in Ukraine’s digital campaigns.
-  - Provide *Burnout Prevention Training* for peacebuilders, including mindfulness, peer support, and time management, tailored for those managing online conflict data.
-- **Case Study**: Myanmar’s 2017–2025 digital trauma response trained activists to manage exposure to hate speech on social media, reducing burnout through peer networks and digital literacy programs.
+- **Trauma Recovery Infrastructure**: Treaty taxation funding comprehensive mental health systems in post-conflict regions with Traditional healing integration
+- **Community-Controlled Health Systems**: Direct funding to Indigenous communities and local organizations for culturally appropriate mental health services
+- **Crisis Mental Health Response**: Rapid deployment funding for psychological support during conflicts, disasters, and humanitarian emergencies
+- **Preventive Mental Health Investment**: Long-term funding for community wellness programs preventing trauma and building psychological resilience
 
-#### 5. Integrated Mental Health Systems
-- **Description**: Embed MHPSS in peace governance, addressing psychological and material needs to break cycles of trauma and support long-term resilience.
-- **Strategies**:
-  - Include *Mental Health Provisions* in peace agreements, ensuring funding and infrastructure for psychological recovery, as seen in Sierra Leone’s post-conflict recovery.
-  - Integrate *Mental Health and Economic Recovery* programs, combining psychosocial support with livelihood opportunities to address holistic needs.
-  - Implement *Intergenerational Trauma Prevention* initiatives, such as family-based counseling and youth engagement, to disrupt trauma cycles.
-  - Use *Psychosocial Metrics* to track community resilience, integrated with peace governance indicators (see [Measuring Peace Governance Success](/frameworks/peace-and-conflict-resolution#measuring-success)).
-- **Application**: Align with *Restorative Justice Mechanisms* to support healing during truth commissions and reparations, enhancing trust-building.
+**Universal Mental Health Access**: Treaty mechanisms ensuring mental health support as fundamental right rather than privilege:
+- **Community Health Worker Training**: Global investment in locally-trained mental health supporters with Traditional healing integration
+- **Cultural Competency Standards**: Binding requirements for mental health services to respect and incorporate diverse healing traditions
+- **Indigenous Healing Recognition**: Legal recognition and funding for Traditional healers, ceremony leaders, and Indigenous therapeutic practices
+- **Technology-Enhanced Access**: Digital mental health platforms designed with cultural protocols and community control
 
-#### 6. Integration with Peace Processes
-- **Description**: Ensure MHPSS is a core component of all peacebuilding activities, from mediation to policy design, to create trauma-informed governance.
-- **Strategies**:
-  - Train mediators in *Nonviolent Communication (NVC)* and trauma-informed techniques to facilitate inclusive, empathetic dialogues.
-  - Embed MHPSS in *Local Peace Committees* and *Regional Peace Hubs* to address trauma at multiple scales (see [Local Conflict Resolution Implementation](/frameworks/peace-and-conflict-resolution#local-implementation)).
-  - Align with *Peace Financing* strategies to secure funding for MHPSS programs, such as community-based sociotherapy (see [Peace Financing & Resource Mobilization](/frameworks/peace-and-conflict-resolution#peace-financing)).
+#### 2. Indigenous-Led Healing and Spiritual Wellness Authority
+
+**Earth Council Mental Health Guidance**: The [Earth Council](/frameworks/indigenous-governance-and-traditional-knowledge#structural-components) provides supreme guidance for mental health approaches affecting Indigenous communities and Traditional healing systems:
+
+- **Traditional Healing Integration**: Indigenous healing practices serving as foundational models for trauma recovery and community mental health
+- **Sacred Healing Protocols**: Traditional ceremonies and spiritual practices integrated into mental health treatment with proper cultural authority
+- **Community Healing Authority**: Indigenous communities controlling mental health service design and implementation in Traditional Territories
+- **Cultural Trauma Recognition**: Traditional Knowledge approaches to healing historical trauma, cultural destruction, and intergenerational wound transmission
+
+**Traditional Healing Systems Leadership**:
+- **Indigenous Healer Training**: Traditional Knowledge transmission programs training next-generation healers and ceremony leaders
+- **Sacred Medicine Integration**: Legal recognition and protection for Traditional plant medicines and healing substances with community control
+- **Ceremonial Healing Spaces**: Traditional healing environments and sacred sites protected and supported for community mental health
+- **Elder Healing Wisdom**: Traditional Knowledge keepers providing guidance and oversight for mental health healing approaches
+
+#### 3. Meta-Governance Holistic Health Coordination
+
+**Mental Health Meta-Council**: Specialized coordination ensuring mental health policies align with peace, climate, justice, cultural preservation, and economic wellbeing:
+
+- **Holistic Health Integration**: Mental health approaches addressing physical, emotional, spiritual, cultural, and environmental dimensions of wellness
+- **Cross-Domain Mental Health Impact**: Assessment of how peace, climate, economic, and technology policies affect community psychological wellbeing
+- **Integrated Healing Coordination**: Alignment between mental health services, peace processes, environmental restoration, and cultural revitalization
+- **Future Generations Mental Health**: Youth authority over mental health decisions affecting long-term community psychological resilience
+
+**Community Mental Health Coordination**: Polycentric approaches preventing over-medicalization while ensuring comprehensive support:
+- **Community-Defined Wellness**: Local communities determining mental health priorities and healing approaches based on cultural values and Traditional Knowledge
+- **Peer Support Networks**: Community-controlled mental health support through shared experience and mutual aid rather than professional services alone
+- **Traditional-Contemporary Integration**: Coordination between Indigenous healers, community supporters, and professional mental health services
+- **Bioregional Mental Health**: Ecosystem-based approaches recognizing connection between environmental health and community psychological wellbeing
+
+#### 4. Trauma-Informed Peace Processes with Traditional Healing Integration
+
+**Traditional Healing in Conflict Resolution**: Indigenous approaches to trauma recovery integrated into all peace processes and conflict transformation:
+
+- **Ceremonial Healing Integration**: Traditional ceremonies for individual and community trauma processing incorporated into peace dialogue and mediation
+- **Sacred Space Creation**: Peace processes occurring in Traditional healing environments with appropriate spiritual and cultural protocols
+- **Elder Healing Guidance**: Traditional Knowledge keepers providing healing wisdom and trauma understanding for peace process participants
+- **Land-Based Healing**: Peace processes incorporating connection to Traditional Territories and ecological relationships for psychological restoration
+
+**Trauma-Informed Dialogue and Mediation**: Peace processes designed to support rather than re-traumatize participants:
+- **Traditional Communication Protocols**: Indigenous circle processes and consensus methods preventing confrontational interaction that triggers trauma responses
+- **Healing-Centered Facilitation**: Peace process leadership trained in both Traditional healing and contemporary trauma-informed approaches
+- **Cultural Safety Integration**: Peace dialogue designed to strengthen rather than threaten cultural identity and Traditional Knowledge
+- **Spiritual Protection**: Traditional protocols for spiritual safety and protection during difficult peace conversations and conflict transformation
+
+#### 5. Community-Based Psychosocial Support with Indigenous Leadership
+
+**Traditional Community Healing Models**: Indigenous approaches to collective trauma recovery serving as primary models for community mental health:
+
+- **Extended Family Healing**: Traditional approaches involving entire kinship networks in trauma recovery rather than individual therapy alone
+- **Clan and Community Responsibility**: Traditional understanding of collective accountability for individual wellbeing and trauma prevention
+- **Cultural Identity Restoration**: Traditional approaches using cultural renewal and Traditional Knowledge reconnection for trauma healing
+- **Intergenerational Healing**: Traditional methods addressing trauma transmission between generations through ceremony and cultural practice
+
+**Community-Controlled Mental Health Services**: Local communities maintaining authority over mental health service design and implementation:
+- **Traditional Healer Integration**: Professional mental health services incorporating Traditional healers and ceremony leaders as primary rather than supplementary providers
+- **Community Health Worker Training**: Local community members trained in both Traditional healing and contemporary trauma support approaches
+- **Cultural Protocol Compliance**: Mental health services following Traditional governance and ceremonial requirements rather than external professional standards
+- **Sacred Confidentiality**: Traditional protocols for privacy and information sharing that respect cultural and spiritual relationships
+
+#### 6. Collective Trauma Healing and Cultural Restoration
+
+**Traditional Approaches to Historical Trauma**: Indigenous methods for healing intergenerational trauma from colonization, cultural destruction, and systematic violence:
+
+- **Cultural Renewal Therapy**: Traditional approaches using language revitalization, ceremonial practice restoration, and Traditional Knowledge transmission for trauma healing
+- **Ancestor Healing Ceremonies**: Traditional methods for healing spiritual wounds and restoring connection with ancestral wisdom and guidance
+- **Sacred Site Restoration**: Environmental and cultural restoration of Traditional places as community mental health and trauma recovery
+- **Traditional Story and Song Healing**: Indigenous methods using Traditional narratives, music, and artistic practice for collective trauma processing
+
+**Community Truth-Telling and Healing**: Traditional approaches to collective truth acknowledgment and community restoration:
+- **Traditional Truth Ceremonies**: Indigenous protocols for community acknowledgment of harm and trauma with spiritual and cultural authority
+- **Circle Healing Processes**: Traditional circle methods for collective trauma sharing and community support with proper ceremonial protocols
+- **Elder Witness Support**: Traditional Knowledge keepers providing spiritual guidance and cultural legitimacy for community truth-telling and healing
+- **Youth Healing Leadership**: Next-generation community members leading trauma healing and Traditional Knowledge transmission for future resilience
+
+#### 7. Mental Health in Digital Spaces and Technology Integration
+
+**Indigenous Data Sovereignty in Mental Health**: Community control over mental health information and digital healing approaches:
+
+- **Traditional Knowledge Protection**: Digital mental health systems preventing appropriation of Indigenous healing knowledge while supporting community-controlled sharing
+- **Sacred Information Protocols**: Mental health technology respecting Traditional protocols for spiritually and culturally sensitive healing information
+- **Community-Controlled Digital Healing**: Indigenous communities maintaining authority over digital mental health platforms and technology deployment
+- **Cultural Protocol Integration**: Mental health technology incorporating Traditional healing methods and ceremonial requirements
+
+**Digital Mental Health with Traditional Integration**: Technology platforms supporting rather than replacing Traditional healing approaches:
+- **Traditional Healer Connection**: Digital platforms enabling connection with Traditional healers and ceremony leaders while respecting cultural protocols
+- **Community Healing Networks**: Technology supporting Traditional extended family and community healing approaches rather than individual therapy alone
+- **Sacred Space Digital Design**: Mental health platforms designed as ceremonial and healing spaces rather than clinical or medical environments
+- **Intergenerational Digital Healing**: Technology supporting Traditional Knowledge transmission and elder-youth healing relationships
+
+#### 8. Crisis Mental Health Response and Emergency Healing
+
+**Traditional Emergency Healing Protocols**: Indigenous approaches to rapid trauma response during conflicts and disasters:
+
+- **Traditional Crisis Healing**: Indigenous methods for immediate trauma support using ceremony, community gathering, and spiritual practice
+- **Elder Emergency Response**: Traditional Knowledge keepers providing spiritual guidance and healing authority during mental health crises
+- **Sacred Protection Ceremonies**: Traditional methods for spiritual protection and healing during ongoing conflict and violence
+- **Community Resilience Activation**: Traditional approaches to collective strength and mutual support during crisis and emergency situations
+
+**Meta-Governance Crisis Mental Health Coordination**: Integrated emergency mental health response across peace, health, climate, and justice domains:
+- **Cross-Domain Crisis Mental Health**: Mental health crisis response coordinated with peace, climate, health, and justice emergency systems
+- **Traditional Territory Crisis Authority**: Indigenous communities maintaining authority over emergency mental health response in Traditional Territories
+- **Cultural Emergency Protocols**: Crisis mental health response respecting Traditional governance and ceremonial requirements even during emergencies
+- **Bioregional Crisis Healing**: Emergency mental health response organized around ecosystems and Traditional Territories rather than administrative boundaries
+
+#### 9. Mental Health Integration with Peace Financing and Economic Justice
+
+**Traditional Economy Mental Health Support**: Economic systems supporting Traditional healing and community mental health approaches:
+
+- **Traditional Healer Economic Support**: Economic recognition and support for Traditional healers, ceremony leaders, and Indigenous therapeutic practitioners
+- **Community Healing Investment**: Economic investment in Traditional healing environments, sacred sites, and ceremonial infrastructure
+- **Cultural Economy Mental Health**: Economic development supporting Traditional healing arts, ceremony, and cultural practice as mental health resources
+- **Gift Economy Healing**: Traditional economic relationships and mutual aid supporting community mental health and trauma recovery
+
+**Mental Health Commons and Collective Resources**: Economic approaches ensuring mental health support as community resource rather than individual commodity:
+- **Community Mental Health Commons**: Collective ownership and control of mental health resources and healing infrastructure
+- **Traditional Knowledge Commons**: Community-controlled Traditional healing knowledge and practice as collective mental health resource
+- **Healing Environment Commons**: Collective ownership and protection of Traditional healing spaces and sacred sites for community mental health
+- **Intergenerational Mental Health Investment**: Economic approaches ensuring mental health resources serve seven generations rather than short-term individual needs
+
+#### 10. Monitoring and Evaluation with Traditional Wellness Indicators
+
+**Traditional Wellness Measurement**: Indigenous indicators of individual and community mental health serving as primary evaluation metrics:
+
+- **Traditional Health Indicators**: Indigenous measurements of spiritual, cultural, emotional, and physical wellness replacing Western diagnostic categories
+- **Community Relationship Assessment**: Traditional indicators of social cohesion, family strength, and community mental health resilience
+- **Cultural Vitality Indicators**: Measurements of Traditional Knowledge transmission, language health, and ceremonial practice as mental health indicators
+- **Sacred Relationship Wellness**: Traditional indicators of spiritual connection, environmental relationship, and sacred site access as mental health measurements
+
+**Community-Controlled Mental Health Assessment**: Local communities maintaining authority over mental health evaluation and improvement rather than external professional assessment:
+- **Traditional Knowledge Evaluation**: Indigenous communities determining mental health success based on Traditional wellness understanding
+- **Community-Defined Recovery**: Local communities controlling definitions of trauma healing and mental health improvement
+- **Cultural Protocol Assessment**: Mental health evaluation respecting Traditional governance and ceremonial requirements for wellness determination
+- **Intergenerational Wellness Tracking**: Mental health assessment including impacts on Traditional Knowledge transmission and youth cultural connection
+
+**Case Study**: South Sudan's community healing circles (2018–2023) demonstrate Traditional healing integration with contemporary trauma support. Combining local rituals with facilitated group sessions, Traditional healers provided spiritual guidance while community health workers offered practical support. Enhanced with Earth Council guidance and Meta-Governance coordination, these programs reduced community tensions by 35% while strengthening Traditional Knowledge transmission and cultural identity as foundations for psychological resilience.
+
+**Case Study**: Rwanda's post-genocide MHPSS initiatives integrated Traditional community healing with contemporary trauma treatment. Community-based sociotherapy combined with Traditional healing ceremonies processed trauma for over 120,000 participants while strengthening community relationships and cultural identity. Enhanced approaches now include Indigenous healing wisdom from global Traditional Knowledge networks, Sacred site restoration as therapeutic environment, and Earth Council guidance ensuring cultural protocols inform all healing approaches.
 
 **Implementation Tools**:
-- *[Trauma-Informed Facilitation Toolkit](/frameworks/tools/peace/trauma-informed-toolkit-en.pdf)*: Guide facilitators in NVC, trauma-informed mediation, and cultural nuance.
-- *[Community Healing Protocol](/frameworks/tools/peace/community-healing-protocol-en.pdf)*: Structure truth-telling and memorialization.
-- *[Digital Safe Space Guide](/frameworks/tools/peace/digital-safe-space-guide-en.pdf)*: Design moderated online forums.
-- *[Mental Health Diplomacy Framework](/frameworks/tools/peace/mental-health-diplomacy-framework-en.pdf)*: Integrate psychological recovery into peace negotiations.
-- *[Value System Mapping Template](/frameworks/tools/peace/value-system-mapping-template-en.pdf)*: Ensure cultural resonance in healing.
-- *[Paper-Based Dialogue Template](/frameworks/tools/peace/paper-dialogue-template-en.pdf)*: Support low-literacy communities.
+- *[Traditional Healing Integration Toolkit](/frameworks/tools/peace-and-conflict-resolution/traditional-healing-integration-toolkit-en.pdf)*: Comprehensive guide for incorporating Indigenous healing practices into mental health services
+- *[Community Mental Health Sovereignty Guide](/frameworks/tools/peace-and-conflict-resolution/community-mental-health-sovereignty-guide-en.pdf)*: Frameworks for local control over mental health service design and implementation
+- *[Sacred Healing Space Design Manual](/frameworks/tools/peace-and-conflict-resolution/sacred-healing-space-design-manual-en.pdf)*: Traditional protocols for creating therapeutic environments with cultural authority
+- *[Trauma-Informed Traditional Circle Protocols](/frameworks/tools/peace-and-conflict-resolution/trauma-informed-traditional-circle-protocols-en.pdf)*: Indigenous circle methods for individual and collective trauma processing
+- *[Cultural Mental Health Assessment Framework](/frameworks/tools/peace-and-conflict-resolution/cultural-mental-health-assessment-framework-en.pdf)*: Traditional wellness indicators and community-controlled evaluation methods
+- *[Crisis Traditional Healing Response Manual](/frameworks/tools/peace-and-conflict-resolution/crisis-traditional-healing-response-manual-en.pdf)*: Emergency mental health protocols with Traditional healing integration
+- *[Digital Mental Health Cultural Protocols](/frameworks/tools/peace-and-conflict-resolution/digital-mental-health-cultural-protocols-en.pdf)*: Technology platforms designed with Traditional healing wisdom and community control
 
-These tools are included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/frameworks/tools/peace).
+These tools are included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/frameworks/tools/peace-and-conflict-resolution) with full Golden Triangle integration and Indigenous cultural protocol compliance.
 
-**Equity Commitment**: All MHPSS resources are open-access, with translations planned for Spanish, Arabic, and French. Non-digital tools (e.g., paper-based templates, radio scripts) and community-led approaches ensure accessibility for low-literacy and low-connectivity communities, prioritizing inclusion for marginalized groups (e.g., refugees, Indigenous populations).
+---
 
-**Call to Action**: Stakeholders can strengthen peacebuilding by embedding MHPSS in their initiatives. Start by training facilitators with the *Trauma-Informed Facilitation Toolkit*, establishing *Safe Spaces*, or advocating for mental health provisions in peace agreements. Share feedback at [globalgovernanceframeworks@gmail.com] to join a global peacebuilding community.
+This revision positions Mental Health & Psychosocial Support as the operational implementation of the Treaty's health infrastructure funding, guided by Indigenous healing wisdom and Traditional therapeutic practices, coordinated through Meta-Governance to ensure mental health approaches serve comprehensive individual and community wellbeing while honoring the interconnection between personal healing, cultural restoration, and ecological relationship.
