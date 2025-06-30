@@ -409,16 +409,16 @@ Indigenous approaches to peace offer not alternative methods but **the foundatio
 **Case Study**: The Haudenosaunee Confederacy's Great Law of Peace provides sophisticated frameworks for multi-nation alliance building and conflict resolution that predate and could inform contemporary international peace practice. The confederacy's consensus-based decision-making, women's authority in peace processes, and seven-generation thinking demonstrate Traditional governance approaches that address contemporary peace challenges while maintaining cultural authenticity for over 1,000 years.
 
 **Implementation Tools**:
-- *[Traditional Conflict Transformation Toolkit](/frameworks/tools/peace/traditional-conflict-transformation-toolkit-en.pdf)*: Comprehensive guide to Indigenous peacebuilding methods with cultural protocol guidance
-- *[Earth Council Consultation Protocols](/frameworks/tools/peace/earth-council-consultation-protocols-en.pdf)*: Procedures for seeking Traditional Knowledge guidance in peace processes
-- *[Circle Process Facilitation Guide](/frameworks/tools/peace/circle-process-facilitation-guide-en.pdf)*: Traditional circle methods for contemporary conflict resolution
-- *[Ceremonial Governance Integration Manual](/frameworks/tools/peace/ceremonial-governance-integration-manual-en.pdf)*: Frameworks for incorporating Traditional spiritual practice into peace processes
-- *[Sacred Site Protection Legal Toolkit](/frameworks/tools/peace/sacred-site-protection-legal-toolkit-en.pdf)*: Legal frameworks for protecting culturally significant areas during conflicts
-- *[Traditional Healing Peace Integration Guide](/frameworks/tools/peace/traditional-healing-peace-integration-en.pdf)*: Methods for incorporating Indigenous trauma healing in peace processes
-- *[Bioregional Peace Governance Templates](/frameworks/tools/peace/bioregional-peace-governance-templates-en.pdf)*: Frameworks for watershed-based conflict resolution
-- *[Multi-Traditional Peace Process Protocols](/frameworks/tools/peace/multi-traditional-peace-protocols-en.pdf)*: Guidelines for respectful integration of diverse Indigenous approaches
+- *[Traditional Conflict Transformation Toolkit](/frameworks/tools/peace-and-conflict-resolution/traditional-conflict-transformation-toolkit-en.pdf)*: Comprehensive guide to Indigenous peacebuilding methods with cultural protocol guidance
+- *[Earth Council Consultation Protocols](/frameworks/tools/peace-and-conflict-resolution/earth-council-consultation-protocols-en.pdf)*: Procedures for seeking Traditional Knowledge guidance in peace processes
+- *[Circle Process Facilitation Guide](/frameworks/tools/peace-and-conflict-resolution/circle-process-facilitation-guide-en.pdf)*: Traditional circle methods for contemporary conflict resolution
+- *[Ceremonial Governance Integration Manual](/frameworks/tools/peace-and-conflict-resolution/ceremonial-governance-integration-manual-en.pdf)*: Frameworks for incorporating Traditional spiritual practice into peace processes
+- *[Sacred Site Protection Legal Toolkit](/frameworks/tools/peace-and-conflict-resolution/sacred-site-protection-legal-toolkit-en.pdf)*: Legal frameworks for protecting culturally significant areas during conflicts
+- *[Traditional Healing Peace Integration Guide](/frameworks/tools/peace-and-conflict-resolution/traditional-healing-peace-integration-en.pdf)*: Methods for incorporating Indigenous trauma healing in peace processes
+- *[Bioregional Peace Governance Templates](/frameworks/tools/peace-and-conflict-resolution/bioregional-peace-governance-templates-en.pdf)*: Frameworks for watershed-based conflict resolution
+- *[Multi-Traditional Peace Process Protocols](/frameworks/tools/peace-and-conflict-resolution/multi-traditional-peace-protocols-en.pdf)*: Guidelines for respectful integration of diverse Indigenous approaches
 
-These tools are included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/frameworks/tools/peace) with full Golden Triangle integration and Indigenous cultural protocol compliance.
+These tools are to be included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/frameworks/tools/peace-and-conflict-resolution) with full Golden Triangle integration and Indigenous cultural protocol compliance.
 
 ---
 

@@ -123,7 +123,7 @@ While digital technologies offer powerful tools for peace, they also present uni
 - *[Community Technology Sovereignty Toolkit](/frameworks/tools/peace-and-conflict-resolution/community-tech-sovereignty-toolkit-en.pdf)*: Tools for local control over technology deployment
 - *[Meta-Governance Technology Integration Manual](/frameworks/tools/peace-and-conflict-resolution/meta-governance-tech-integration-manual-en.pdf)*: Procedures for coordinating technology policies across domains
 
-These tools are included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/frameworks/tools/peace-and-conflict-resolution) with full Golden Triangle integration.
+These tools are to be included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/frameworks/tools/peace-and-conflict-resolution) with full Golden Triangle integration.
 
 ---
 

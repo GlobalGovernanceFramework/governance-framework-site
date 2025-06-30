@@ -172,7 +172,7 @@ The Peace & Conflict Resolution Framework recognizes mental health and psychosoc
 - *[Crisis Traditional Healing Response Manual](/frameworks/tools/peace-and-conflict-resolution/crisis-traditional-healing-response-manual-en.pdf)*: Emergency mental health protocols with Traditional healing integration
 - *[Digital Mental Health Cultural Protocols](/frameworks/tools/peace-and-conflict-resolution/digital-mental-health-cultural-protocols-en.pdf)*: Technology platforms designed with Traditional healing wisdom and community control
 
-These tools are included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/frameworks/tools/peace-and-conflict-resolution) with full Golden Triangle integration and Indigenous cultural protocol compliance.
+These tools are to be included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/frameworks/tools/peace-and-conflict-resolution) with full Golden Triangle integration and Indigenous cultural protocol compliance.
 
 ---
 

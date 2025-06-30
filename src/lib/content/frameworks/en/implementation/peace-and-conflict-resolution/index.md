@@ -194,24 +194,24 @@ The framework maintains its **comprehensive 36-section structure** while integra
 ### Cross-Framework Integration Tools
 
 **Golden Triangle Navigation Kit**
-- [Framework Relationship Mapping](/frameworks/tools/peace/golden-triangle-navigation-en.pdf): Understanding how Treaty, Indigenous, and Meta-Governance frameworks interact
-- [Implementation Coordination Protocols](/frameworks/tools/peace/implementation-coordination-protocols-en.pdf): Step-by-step procedures for cross-framework alignment
-- [Indigenous Consent Verification Checklist](/frameworks/tools/peace/indigenous-consent-verification-en.pdf): Ensuring proper FPIC 2.0 compliance
+- [Framework Relationship Mapping](/frameworks/tools/peace-and-conflict-resolution/golden-triangle-navigation-en.pdf): Understanding how Treaty, Indigenous, and Meta-Governance frameworks interact
+- [Implementation Coordination Protocols](/frameworks/tools/peace-and-conflict-resolution/implementation-coordination-protocols-en.pdf): Step-by-step procedures for cross-framework alignment
+- [Indigenous Consent Verification Checklist](/frameworks/tools/peace-and-conflict-resolution/indigenous-consent-verification-en.pdf): Ensuring proper FPIC 2.0 compliance
 
 **Treaty Implementation Tools**  
-- [UNSC Veto Override Activation Guide](/frameworks/tools/peace/veto-override-activation-guide-en.pdf): Procedures for triggering override mechanisms
-- [Global Enforcement Mechanism Deployment Manual](/frameworks/tools/peace/gem-deployment-manual-en.pdf): Professional peacekeeping and protection protocols
-- [Global Taxation Peace Fund Allocation Framework](/frameworks/tools/peace/taxation-fund-allocation-en.pdf): Revenue distribution for peace infrastructure
+- [UNSC Veto Override Activation Guide](/frameworks/tools/peace-and-conflict-resolution/veto-override-activation-guide-en.pdf): Procedures for triggering override mechanisms
+- [Global Enforcement Mechanism Deployment Manual](/frameworks/tools/peace-and-conflict-resolution/gem-deployment-manual-en.pdf): Professional peacekeeping and protection protocols
+- [Global Taxation Peace Fund Allocation Framework](/frameworks/tools/peace-and-conflict-resolution/taxation-fund-allocation-en.pdf): Revenue distribution for peace infrastructure
 
 **Indigenous Guidance Tools**
-- [Earth Council Consultation Protocols](/frameworks/tools/peace/earth-council-consultation-protocols-en.pdf): Procedures for seeking Traditional Knowledge guidance
-- [Traditional Conflict Transformation Toolkit](/frameworks/tools/peace/traditional-conflict-transformation-toolkit-en.pdf): Indigenous restorative justice practices
-- [Ceremonial Stewardship Integration Guide](/frameworks/tools/peace/ceremonial-stewardship-integration-en.pdf): Transitioning to ritual-based governance
+- [Earth Council Consultation Protocols](/frameworks/tools/peace-and-conflict-resolution/earth-council-consultation-protocols-en.pdf): Procedures for seeking Traditional Knowledge guidance
+- [Traditional Conflict Transformation Toolkit](/frameworks/tools/peace-and-conflict-resolution/traditional-conflict-transformation-toolkit-en.pdf): Indigenous restorative justice practices
+- [Ceremonial Stewardship Integration Guide](/frameworks/tools/peace-and-conflict-resolution/ceremonial-stewardship-integration-en.pdf): Transitioning to ritual-based governance
 
 **Meta-Governance Coordination Tools**
-- [Peace & Security Meta-Council Operations Manual](/frameworks/tools/peace/peace-security-meta-council-manual-en.pdf): Cross-domain coordination procedures
-- [Crisis Response Coordination Protocols](/frameworks/tools/peace/crisis-response-coordination-protocols-en.pdf): 24-hour activation and alignment systems
-- [Policy Coherence Assessment Framework](/frameworks/tools/peace/policy-coherence-assessment-en.pdf): Preventing conflicts between governance domains
+- [Peace & Security Meta-Council Operations Manual](/frameworks/tools/peace-and-conflict-resolution/peace-security-meta-council-manual-en.pdf): Cross-domain coordination procedures
+- [Crisis Response Coordination Protocols](/frameworks/tools/peace-and-conflict-resolution/crisis-response-coordination-protocols-en.pdf): 24-hour activation and alignment systems
+- [Policy Coherence Assessment Framework](/frameworks/tools/peace-and-conflict-resolution/policy-coherence-assessment-en.pdf): Preventing conflicts between governance domains
 
 ### Existing Framework Tools (Enhanced with Golden Triangle Integration)
 
@@ -221,7 +221,7 @@ All existing Peace Framework tools have been updated to include:
 - Meta-governance coordination protocols
 - Cross-framework success metrics
 
-Access the complete enhanced toolkit in the [Peace & Conflict Resolution Seed Kit](/frameworks/tools/peace/seed-kit-en.zip) with full Golden Triangle integration.
+Access the complete enhanced toolkit in the [Peace & Conflict Resolution Seed Kit](/frameworks/tools/peace-and-conflict-resolution/seed-kit-en.zip) with full Golden Triangle integration.
 
 ## <a id="getting-started"></a>Getting Started with Integrated Implementation
 

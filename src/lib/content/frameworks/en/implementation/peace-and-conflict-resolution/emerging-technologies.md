@@ -162,13 +162,13 @@ Beyond established digital tools, cutting-edge technologies offer unprecedented 
 **Case Study**: The "Visualizing Peace" project in Cyprus uses virtual reality to help Greek and Turkish Cypriots experience life across the divided island. Enhanced with Indigenous consultation and Traditional conflict transformation practices, the technology creates immersive experiences incorporating traditional storytelling and healing practices. The project demonstrates how emerging technologies guided by Traditional Knowledge can create emotional connections and understanding when physical contact is limited by conflict, offering new pathways for building peace that honor rather than appropriate Indigenous wisdom.
 
 **Implementation Tools**:
-- *[Emerging Technology Peace Assessment Framework](/frameworks/tools/peace/emerging-tech-peace-assessment-en.pdf)*: Evaluate new technologies for conflict prevention and resolution potential
-- *[Indigenous Technology Integration Protocols](/frameworks/tools/peace/indigenous-tech-integration-protocols-en.pdf)*: Guidelines for respectful incorporation of Traditional Knowledge in technology development
-- *[Meta-Governance Innovation Coordination Manual](/frameworks/tools/peace/meta-governance-innovation-manual-en.pdf)*: Procedures for cross-domain technology policy alignment
-- *[Community Technology Sovereignty Toolkit](/frameworks/tools/peace/community-tech-sovereignty-toolkit-en.pdf)*: Resources for local control over emerging technology deployment
-- *[Quantum Security for Peace Processes Guide](/frameworks/tools/peace/quantum-security-peace-guide-en.pdf)*: Advanced cryptographic protection for sensitive peace negotiations
+- *[Emerging Technology Peace Assessment Framework](/frameworks/tools/peace-and-conflict-resolution/emerging-tech-peace-assessment-en.pdf)*: Evaluate new technologies for conflict prevention and resolution potential
+- *[Indigenous Technology Integration Protocols](/frameworks/tools/peace-and-conflict-resolution/indigenous-tech-integration-protocols-en.pdf)*: Guidelines for respectful incorporation of Traditional Knowledge in technology development
+- *[Meta-Governance Innovation Coordination Manual](/frameworks/tools/peace-and-conflict-resolution/meta-governance-innovation-manual-en.pdf)*: Procedures for cross-domain technology policy alignment
+- *[Community Technology Sovereignty Toolkit](/frameworks/tools/peace-and-conflict-resolution/community-tech-sovereignty-toolkit-en.pdf)*: Resources for local control over emerging technology deployment
+- *[Quantum Security for Peace Processes Guide](/frameworks/tools/peace-and-conflict-resolution/quantum-security-peace-guide-en.pdf)*: Advanced cryptographic protection for sensitive peace negotiations
 
-These tools are included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/frameworks/tools/peace) with full Golden Triangle integration.
+These tools are to be included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/frameworks/tools/peace-and-conflict-resolution) with full Golden Triangle integration.
 
 ---
 

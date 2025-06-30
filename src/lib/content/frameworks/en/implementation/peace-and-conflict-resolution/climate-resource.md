@@ -149,14 +149,14 @@ As climate change and resource scarcity intensify, they increasingly intersect w
 - **Ceremony and Climate Action**: Spiritual practices and Traditional governance integrated into climate movement strategy and organizing
 
 **Implementation Tools**:
-- *[Climate-Conflict Early Warning Protocols](/frameworks/tools/peace/climate-conflict-early-warning-en.pdf)*: Systems for detecting environmental stress before escalation to violence
-- *[Indigenous Climate Justice Toolkit](/frameworks/tools/peace/indigenous-climate-justice-toolkit-en.pdf)*: Resources for Traditional Territory-based climate response
-- *[Resource Diplomacy Mediation Guide](/frameworks/tools/peace/resource-diplomacy-mediation-en.pdf)*: Frameworks for water, land, and mineral conflict resolution
-- *[Climate Migration Planning Templates](/frameworks/tools/peace/climate-migration-planning-en.pdf)*: Community-controlled relocation and adaptation strategies
-- *[Green Colonialism Prevention Checklist](/frameworks/tools/peace/green-colonialism-prevention-en.pdf)*: Safeguards ensuring climate solutions don't become new forms of exploitation
-- *[Traditional Knowledge Climate Integration Manual](/frameworks/tools/peace/tek-climate-integration-manual-en.pdf)*: Frameworks for combining Indigenous knowledge with contemporary climate science
+- *[Climate-Conflict Early Warning Protocols](/frameworks/tools/peace-and-conflict-resolution/climate-conflict-early-warning-en.pdf)*: Systems for detecting environmental stress before escalation to violence
+- *[Indigenous Climate Justice Toolkit](/frameworks/tools/peace-and-conflict-resolution/indigenous-climate-justice-toolkit-en.pdf)*: Resources for Traditional Territory-based climate response
+- *[Resource Diplomacy Mediation Guide](/frameworks/tools/peace-and-conflict-resolution/resource-diplomacy-mediation-en.pdf)*: Frameworks for water, land, and mineral conflict resolution
+- *[Climate Migration Planning Templates](/frameworks/tools/peace-and-conflict-resolution/climate-migration-planning-en.pdf)*: Community-controlled relocation and adaptation strategies
+- *[Green Colonialism Prevention Checklist](/frameworks/tools/peace-and-conflict-resolution/green-colonialism-prevention-en.pdf)*: Safeguards ensuring climate solutions don't become new forms of exploitation
+- *[Traditional Knowledge Climate Integration Manual](/frameworks/tools/peace-and-conflict-resolution/tek-climate-integration-manual-en.pdf)*: Frameworks for combining Indigenous knowledge with contemporary climate science
 
-These tools are included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/frameworks/tools/peace) with full Golden Triangle integration.
+These tools are to be included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/frameworks/tools/peace-and-conflict-resolution) with full Golden Triangle integration.
 
 ---
 

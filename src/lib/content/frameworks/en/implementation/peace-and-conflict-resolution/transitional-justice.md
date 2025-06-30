@@ -164,15 +164,15 @@ Addressing past violence requires sophisticated governance approaches that honor
 **Case Study**: South Africa's Truth and Reconciliation Commission integrated diverse value systems and religious traditions while maintaining focus on community healing over punishment. Enhanced with Traditional African approaches including Ubuntu philosophy, ancestor consultation, and community-controlled reparations, the model demonstrates how transitional justice can honor diverse cultural approaches while achieving accountability and reconciliation at scale.
 
 **Implementation Tools**:
-- *[Traditional Healing Transitional Justice Toolkit](/frameworks/tools/peace/traditional-healing-transitional-justice-toolkit-en.pdf)*: Integration of Indigenous healing practices with formal transitional justice processes
-- *[Community-Controlled Truth Commission Guide](/frameworks/tools/peace/community-controlled-truth-commission-guide-en.pdf)*: Frameworks for locally-managed truth-telling and reconciliation
-- *[Sacred Site Transitional Justice Protocols](/frameworks/tools/peace/sacred-site-transitional-justice-protocols-en.pdf)*: Protection of culturally significant areas during transitional justice processes
-- *[Traditional Reparations Design Framework](/frameworks/tools/peace/traditional-reparations-design-framework-en.pdf)*: Community-controlled approaches to historical redress and cultural restoration
-- *[Indigenous Data Sovereignty Transitional Justice Guide](/frameworks/tools/peace/indigenous-data-sovereignty-tj-guide-en.pdf)*: Community control over transitional justice information and documentation
-- *[Youth Transitional Justice Authority Manual](/frameworks/tools/peace/youth-transitional-justice-authority-manual-en.pdf)*: Next-generation leadership in healing and reconciliation processes
-- *[Bioregional Transitional Justice Templates](/frameworks/tools/peace/bioregional-transitional-justice-templates-en.pdf)*: Ecosystem-based approaches to historical redress and community healing
+- *[Traditional Healing Transitional Justice Toolkit](/frameworks/tools/peace-and-conflict-resolution/traditional-healing-transitional-justice-toolkit-en.pdf)*: Integration of Indigenous healing practices with formal transitional justice processes
+- *[Community-Controlled Truth Commission Guide](/frameworks/tools/peace-and-conflict-resolution/community-controlled-truth-commission-guide-en.pdf)*: Frameworks for locally-managed truth-telling and reconciliation
+- *[Sacred Site Transitional Justice Protocols](/frameworks/tools/peace-and-conflict-resolution/sacred-site-transitional-justice-protocols-en.pdf)*: Protection of culturally significant areas during transitional justice processes
+- *[Traditional Reparations Design Framework](/frameworks/tools/peace-and-conflict-resolution/traditional-reparations-design-framework-en.pdf)*: Community-controlled approaches to historical redress and cultural restoration
+- *[Indigenous Data Sovereignty Transitional Justice Guide](/frameworks/tools/peace-and-conflict-resolution/indigenous-data-sovereignty-tj-guide-en.pdf)*: Community control over transitional justice information and documentation
+- *[Youth Transitional Justice Authority Manual](/frameworks/tools/peace-and-conflict-resolution/youth-transitional-justice-authority-manual-en.pdf)*: Next-generation leadership in healing and reconciliation processes
+- *[Bioregional Transitional Justice Templates](/frameworks/tools/peace-and-conflict-resolution/bioregional-transitional-justice-templates-en.pdf)*: Ecosystem-based approaches to historical redress and community healing
 
-These tools are included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/frameworks/tools/peace) with full Golden Triangle integration and Indigenous cultural protocol compliance.
+These tools are to be included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/frameworks/tools/peace-and-conflict-resolution) with full Golden Triangle integration and Indigenous cultural protocol compliance.
 
 ---
 

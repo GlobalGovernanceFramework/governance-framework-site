@@ -149,14 +149,14 @@ Media and information systems fundamentally shape conflict dynamics, either ampl
 **Case Study**: Global Indigenous Media Network Success demonstrates Traditional storytelling sovereignty in practice. By 2030, Indigenous-controlled media platforms reach 500+ million people while maintaining cultural protocols and Traditional Knowledge protection. When extractive industries attempt disinformation campaigns against Indigenous territories in 2032, coordinated Indigenous media response combines Traditional storytelling, ceremonial authority, and digital platforms to expose corporate manipulation and build global solidarity, demonstrating how Traditional communication sovereignty creates resilience against information warfare.
 
 **Implementation Tools**:
-- *[Indigenous Media Sovereignty Toolkit](/frameworks/tools/peace/indigenous-media-sovereignty-toolkit-en.pdf)*: Resources for Traditional community-controlled media development
-- *[Peace Journalism Training Manual](/frameworks/tools/peace/peace-journalism-training-manual-en.pdf)*: Conflict-sensitive reporting with Traditional Knowledge integration
-- *[Community Information Sovereignty Guide](/frameworks/tools/peace/community-info-sovereignty-guide-en.pdf)*: Frameworks for local control over information ecosystems
-- *[Crisis Communication Coordination Protocols](/frameworks/tools/peace/crisis-communication-coordination-en.pdf)*: Emergency information management across Golden Triangle frameworks
-- *[Traditional Knowledge Media Protection Kit](/frameworks/tools/peace/tek-media-protection-kit-en.pdf)*: Safeguards preventing appropriation while enabling ethical sharing
-- *[Cross-Cultural Dialogue Platform Design](/frameworks/tools/peace/cross-cultural-dialogue-design-en.pdf)*: Media systems for respectful inter-traditional communication
+- *[Indigenous Media Sovereignty Toolkit](/frameworks/tools/peace-and-conflict-resolution/indigenous-media-sovereignty-toolkit-en.pdf)*: Resources for Traditional community-controlled media development
+- *[Peace Journalism Training Manual](/frameworks/tools/peace-and-conflict-resolution/peace-journalism-training-manual-en.pdf)*: Conflict-sensitive reporting with Traditional Knowledge integration
+- *[Community Information Sovereignty Guide](/frameworks/tools/peace-and-conflict-resolution/community-info-sovereignty-guide-en.pdf)*: Frameworks for local control over information ecosystems
+- *[Crisis Communication Coordination Protocols](/frameworks/tools/peace-and-conflict-resolution/crisis-communication-coordination-en.pdf)*: Emergency information management across Golden Triangle frameworks
+- *[Traditional Knowledge Media Protection Kit](/frameworks/tools/peace-and-conflict-resolution/tek-media-protection-kit-en.pdf)*: Safeguards preventing appropriation while enabling ethical sharing
+- *[Cross-Cultural Dialogue Platform Design](/frameworks/tools/peace-and-conflict-resolution/cross-cultural-dialogue-design-en.pdf)*: Media systems for respectful inter-traditional communication
 
-These tools are included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/frameworks/tools/peace) with full Golden Triangle integration.
+These tools are to be included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/frameworks/tools/peace-and-conflict-resolution) with full Golden Triangle integration.
 
 ---
 

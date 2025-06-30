@@ -172,7 +172,7 @@ Long-term peace requires educational and cultural approaches that foster conflic
 - *[Youth Leadership Traditional Knowledge Development Guide](/frameworks/tools/peace-and-conflict-resolution/youth-leadership-traditional-knowledge-guide-en.pdf)*: Next-generation leadership preparation through Traditional apprenticeship and cultural learning
 - *[Traditional Arts Peace Education Resources](/frameworks/tools/peace-and-conflict-resolution/traditional-arts-peace-education-resources-en.pdf)*: Indigenous creative practices for conflict transformation and community healing education
 
-These tools are included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/frameworks/tools/peace-and-conflict-resolution) with full Golden Triangle integration and Indigenous cultural protocol compliance.
+These tools are to be included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/frameworks/tools/peace-and-conflict-resolution) with full Golden Triangle integration and Indigenous cultural protocol compliance.
 
 ---
 
