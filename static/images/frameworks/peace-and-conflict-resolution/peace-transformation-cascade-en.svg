@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1400 1000"
+   version="1.1"
+   id="svg80"
+   sodipodi:docname="peace-transformation-cascade-en.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview80"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.423"
+     inkscape:cx="143.026"
+     inkscape:cy="508.27423"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg80" />
+  <defs
+     id="defs13">
+    <!-- Gradients for different time phases -->
+    <linearGradient
+       id="immediateGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#dc2626;stop-opacity:0.9"
+         id="stop1" />
+      <stop
+         offset="100%"
+         style="stop-color:#b91c1c;stop-opacity:1"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="mediumGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#f59e0b;stop-opacity:0.9"
+         id="stop3" />
+      <stop
+         offset="100%"
+         style="stop-color:#d97706;stop-opacity:1"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="longTermGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#059669;stop-opacity:0.9"
+         id="stop5" />
+      <stop
+         offset="100%"
+         style="stop-color:#047857;stop-opacity:1"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       id="civilizationalGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#7c3aed;stop-opacity:0.9"
+         id="stop7" />
+      <stop
+         offset="100%"
+         style="stop-color:#6d28d9;stop-opacity:1"
+         id="stop8" />
+    </linearGradient>
+    <!-- Flow gradient for cascade effect -->
+    <linearGradient
+       id="cascadeFlow"
+       x1="0%"
+       y1="0%"
+       x2="0%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#dc2626;stop-opacity:0.8"
+         id="stop9" />
+      <stop
+         offset="33%"
+         style="stop-color:#f59e0b;stop-opacity:0.8"
+         id="stop10" />
+      <stop
+         offset="66%"
+         style="stop-color:#059669;stop-opacity:0.8"
+         id="stop11" />
+      <stop
+         offset="100%"
+         style="stop-color:#7c3aed;stop-opacity:0.8"
+         id="stop12" />
+    </linearGradient>
+    <!-- Arrow markers -->
+    <marker
+       id="cascadeArrow"
+       markerWidth="12"
+       markerHeight="8"
+       refX="12"
+       refY="4"
+       orient="auto">
+      <polygon
+         points="0 0, 12 4, 0 8"
+         fill="#374151"
+         id="polygon12" />
+    </marker>
+    <marker
+       id="impactArrow"
+       markerWidth="10"
+       markerHeight="7"
+       refX="10"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#6b7280"
+         id="polygon13" />
+    </marker>
+  </defs>
+  <!-- Background -->
+  <rect
+     width="1400"
+     height="1000"
+     fill="#f8fafc"
+     id="rect13" />
+  <rect
+     x="8.2533379"
+     y="912.16626"
+     width="1384.5953"
+     height="78.891281"
+     rx="12.587231"
+     fill="#f3f4f6"
+     stroke="#6b7280"
+     stroke-width="2.22825"
+     id="rect79" />
+  <!-- Title -->
+  <text
+     x="700"
+     y="40"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="26"
+     font-weight="bold"
+     fill="#1f2937"
+     id="text13">
+        Peace Transformation Impact Cascade
+    </text>
+  <text
+     x="700"
+     y="65"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="14"
+     fill="#6b7280"
+     id="text14">
+        How Golden Triangle Integration Creates Transformative Impacts Beyond Traditional Peace Interventions
+    </text>
+  <!-- Central Cascade Flow -->
+  <rect
+     x="650"
+     y="100"
+     width="100"
+     height="800"
+     rx="50"
+     fill="url(#cascadeFlow)"
+     stroke="#374151"
+     stroke-width="2"
+     id="rect14" />
+  <text
+     x="701.57593"
+     y="141.68019"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="8.87437px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text15"
+     style="stroke-width:0.73953">TRANSFORMATION</text>
+  <text
+     x="700"
+     y="155"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text16">CASCADE</text>
+  <!-- Timeline markers on cascade -->
+  <circle
+     cx="700"
+     cy="180"
+     r="8"
+     fill="white"
+     stroke="#dc2626"
+     stroke-width="3"
+     id="circle16" />
+  <text
+     x="760"
+     y="185"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#dc2626"
+     id="text17">0-2 YEARS</text>
+  <circle
+     cx="700"
+     cy="350"
+     r="8"
+     fill="white"
+     stroke="#f59e0b"
+     stroke-width="3"
+     id="circle17" />
+  <text
+     x="762"
+     y="355"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#f59e0b"
+     id="text18">2-10 YEARS</text>
+  <circle
+     cx="700"
+     cy="580"
+     r="8"
+     fill="white"
+     stroke="#059669"
+     stroke-width="3"
+     id="circle18" />
+  <text
+     x="762"
+     y="585"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#059669"
+     id="text19">10+ YEARS</text>
+  <circle
+     cx="700"
+     cy="800"
+     r="8"
+     fill="white"
+     stroke="#7c3aed"
+     stroke-width="3"
+     id="circle19" />
+  <text
+     x="762"
+     y="805"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#7c3aed"
+     id="text20">CIVILIZATION</text>
+  <!-- Immediate Impacts (0-2 years) - Left Side -->
+  <rect
+     x="40.145752"
+     y="120.14575"
+     width="390.13403"
+     height="259.09384"
+     rx="7.0933466"
+     fill="#fef2f2"
+     stroke="#dc2626"
+     stroke-width="2.2915"
+     id="rect20" />
+  <text
+     x="231"
+     y="145"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     fill="#dc2626"
+     id="text21">Immediate Impacts (0-2 Years)</text>
+  <text
+     x="60"
+     y="170"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text22">UNSC Paralysis Overcome:</text>
+  <text
+     x="60"
+     y="185"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text23">• Veto override mechanisms enable blocked humanitarian responses</text>
+  <text
+     x="60"
+     y="198"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text24">• Climate adaptation funding flows to vulnerable nations</text>
+  <text
+     x="62"
+     y="220"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text25">Indigenous Knowledge Integration:</text>
+  <text
+     x="62"
+     y="235"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text26">• Earth Council guidance in international peace processes</text>
+  <text
+     x="62"
+     y="248"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text27">• Traditional healing practices scale beyond local communities</text>
+  <text
+     x="60"
+     y="270"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text28">Cross-Domain Early Warning:</text>
+  <text
+     x="60"
+     y="285"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text29">• Conflict escalation prevented through integrated monitoring</text>
+  <text
+     x="60"
+     y="298"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text30">• Traditional ecological indicators enhance technical systems</text>
+  <text
+     x="62"
+     y="326"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text31">Democratic Peace Participation:</text>
+  <text
+     x="62"
+     y="341"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text32">• Global Citizens' Initiative enables direct peace governance</text>
+  <text
+     x="62"
+     y="354"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text33">• Youth councils gain authority over future impact decisions</text>
+  <!-- Medium-term Transformations (2-10 years) - Right Side -->
+  <rect
+     x="918.19446"
+     y="184.19446"
+     width="436.13586"
+     height="251.90414"
+     rx="7.9297433"
+     fill="#fefbeb"
+     stroke="#f59e0b"
+     stroke-width="2.38899"
+     id="rect33" />
+  <text
+     x="1138.6265"
+     y="209"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     fill="#f59e0b"
+     id="text34">Medium-term Transformations (2-10 Years)</text>
+  <text
+     x="938"
+     y="234"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text35">Global Enforcement Mechanism:</text>
+  <text
+     x="938"
+     y="249"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text36">• Professional peace forces replace failed intervention models</text>
+  <text
+     x="938"
+     y="262"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text37">• Indigenous oversight ensures cultural protocol compliance</text>
+  <text
+     x="939.77307"
+     y="288"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text38">Treaty Taxation Infrastructure:</text>
+  <text
+     x="939.77307"
+     y="303"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text39">• Carbon and financial transaction taxes fund peace systems</text>
+  <text
+     x="939.77307"
+     y="316"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text40">• Reparations support Indigenous Territory restoration</text>
+  <text
+     x="938"
+     y="338"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text41">Bioregional Governance Emergence:</text>
+  <text
+     x="938"
+     y="353"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text42">• Watershed-based authority replaces colonial boundaries</text>
+  <text
+     x="938"
+     y="366"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text43">• Traditional Territory recognition becomes international norm</text>
+  <text
+     x="939.77307"
+     y="390"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text44">Ceremonial Stewardship Integration:</text>
+  <text
+     x="939.77307"
+     y="405"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text45">• Ritual-based governance influences diplomatic protocols</text>
+  <text
+     x="939.77307"
+     y="418"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text46">• Seasonal decision-making cycles adopted globally</text>
+  <!-- Long-term Civilizational Shifts (10+ years) - Left Side -->
+  <rect
+     x="34.242729"
+     y="563.94489"
+     width="443.13156"
+     height="268.35614"
+     rx="8.0569382"
+     fill="#ecfdf5"
+     stroke="#059669"
+     stroke-width="2.48546"
+     id="rect46" />
+  <text
+     x="253"
+     y="591"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     fill="#059669"
+     id="text47">Long-term Civilizational Shifts (10+ Years)</text>
+  <text
+     x="54"
+     y="616"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text48">War Prevention Culture:</text>
+  <text
+     x="54"
+     y="631"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text49">• Conflict prevention rather than management becomes global norm</text>
+  <text
+     x="54"
+     y="644"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text50">• Military budgets redirected to regenerative development</text>
+  <text
+     x="52"
+     y="672"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text51">Indigenous Sovereignty Recognition:</text>
+  <text
+     x="54"
+     y="687"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text52">• Traditional Knowledge systems equal status with Western science</text>
+  <text
+     x="54"
+     y="700"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text53">• Free, Prior, and Informed Consent becomes universal standard</text>
+  <text
+     x="54"
+     y="728"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text54">Proactive Global Response:</text>
+  <text
+     x="54"
+     y="743"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text55">• Meta-Governance coordination enables prevention-focused systems</text>
+  <text
+     x="54"
+     y="756"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text56">• Seven-generation thinking standard in international law</text>
+  <text
+     x="52.226952"
+     y="784.0993"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text57">Regenerative Peace Culture:</text>
+  <text
+     x="52.226952"
+     y="799.0993"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text58">• Healing-centered approaches replace extractive systems</text>
+  <text
+     x="52.226952"
+     y="812.0993"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text59">• Ceremony and relationship central to governance</text>
+  <!-- Planetary Consciousness Evolution - Right Side -->
+  <rect
+     x="924.16089"
+     y="637.13013"
+     width="413.74451"
+     height="250.78941"
+     rx="7.5226269"
+     fill="#f3e8ff"
+     stroke="#7c3aed"
+     stroke-width="2.3217"
+     id="rect59" />
+  <text
+     x="1121"
+     y="659"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     fill="#7c3aed"
+     id="text60">Planetary Consciousness Evolution</text>
+  <text
+     x="944"
+     y="684"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text61">Species-Level Coordination:</text>
+  <text
+     x="944"
+     y="699"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text62">• Human development trajectory aligned with planetary wellbeing</text>
+  <text
+     x="944"
+     y="712"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text63">• Inter-species relationships formally recognized in governance</text>
+  <text
+     x="945.77307"
+     y="735.06854"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text64">Wisdom-Based Governance:</text>
+  <text
+     x="945.77307"
+     y="750.06854"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text65">• Decisions emerge from collective consciousness rather than force</text>
+  <text
+     x="945.77307"
+     y="763.06854"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text66">• AI serves Traditional Knowledge rather than replacing it</text>
+  <text
+     x="944"
+     y="790"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text67">Post-Colonial Governance:</text>
+  <text
+     x="944"
+     y="805"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text68">• Nation-state system gracefully transitions to bioregional stewardship</text>
+  <text
+     x="944"
+     y="818"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text69">• Indigenous worldviews guide civilizational evolution</text>
+  <text
+     x="943.77307"
+     y="838.62408"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text70">Ceremonial Planetary Governance:</text>
+  <text
+     x="943.77307"
+     y="853.62408"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text71">• Ritual and relationship replace bureaucracy as coordination mode</text>
+  <text
+     x="943.77307"
+     y="866.62408"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text72">• Earth-human partnership governs technological development</text>
+  <!-- Connecting arrows showing cascade flow -->
+  <path
+     d="M 429.78723,200 H 650"
+     stroke="#dc2626"
+     stroke-width="3"
+     marker-end="url(#cascadeArrow)"
+     fill="none"
+     id="path72"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="M 750,370 H 917.02128"
+     stroke="#f59e0b"
+     stroke-width="3"
+     marker-end="url(#cascadeArrow)"
+     fill="none"
+     id="path73"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="M 477.06856,600 H 650"
+     stroke="#059669"
+     stroke-width="3"
+     marker-end="url(#cascadeArrow)"
+     fill="none"
+     id="path74"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="M 750,820 H 924.11348"
+     stroke="#7c3aed"
+     stroke-width="3"
+     marker-end="url(#cascadeArrow)"
+     fill="none"
+     id="path75"
+     sodipodi:nodetypes="cc" />
+  <!-- Amplification indicators -->
+  <text
+     x="50"
+     y="954"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text75">Amplification Effects:</text>
+  <circle
+     cx="32"
+     cy="970"
+     r="6"
+     fill="#dc2626"
+     id="circle75" />
+  <text
+     x="47"
+     y="975"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text76">Immediate unlocking enables</text>
+  <path
+     d="m 214,970 h 30"
+     stroke="#374151"
+     stroke-width="2"
+     marker-end="url(#impactArrow)"
+     fill="none"
+     id="path76" />
+  <circle
+     cx="254"
+     cy="970"
+     r="6"
+     fill="#f59e0b"
+     id="circle76" />
+  <text
+     x="269"
+     y="975"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text77">Structural transformation which creates</text>
+  <path
+     d="m 484,970 h 30"
+     stroke="#374151"
+     stroke-width="2"
+     marker-end="url(#impactArrow)"
+     fill="none"
+     id="path77" />
+  <circle
+     cx="524"
+     cy="970"
+     r="6"
+     fill="#059669"
+     id="circle77" />
+  <text
+     x="539"
+     y="975"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text78">Cultural evolution toward</text>
+  <path
+     d="m 680,970 h 30"
+     stroke="#374151"
+     stroke-width="2"
+     marker-end="url(#impactArrow)"
+     fill="none"
+     id="path78" />
+  <circle
+     cx="720"
+     cy="970"
+     r="6"
+     fill="#7c3aed"
+     id="circle78" />
+  <text
+     x="735"
+     y="975"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text79">Consciousness transformation</text>
+  <!-- Success Metrics -->
+  <text
+     x="695"
+     y="931"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text80">Cascade Success Indicators: 85% reduction in armed conflicts • 300% increase in regenerative development • 95% Indigenous consent compliance • Ceremony integral to governance in 40+ bioregions</text>
+</svg>

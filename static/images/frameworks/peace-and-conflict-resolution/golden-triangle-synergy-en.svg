@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1400 1000"
+   version="1.1"
+   id="svg75"
+   sodipodi:docname="golden-triangle-synergy-en.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview75"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.846"
+     inkscape:cx="622.34043"
+     inkscape:cy="500"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg75" />
+  <defs
+     id="defs10">
+    <!-- Gradients for the three frameworks -->
+    <linearGradient
+       id="treatyGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#1e40af;stop-opacity:0.9"
+         id="stop1" />
+      <stop
+         offset="100%"
+         style="stop-color:#1d4ed8;stop-opacity:1"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="indigenousGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#7c2d12;stop-opacity:0.9"
+         id="stop3" />
+      <stop
+         offset="100%"
+         style="stop-color:#92400e;stop-opacity:1"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="metaGovGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#7c3aed;stop-opacity:0.9"
+         id="stop5" />
+      <stop
+         offset="100%"
+         style="stop-color:#6d28d9;stop-opacity:1"
+         id="stop6" />
+    </linearGradient>
+    <radialGradient
+       id="synergyGradient"
+       cx="700"
+       cy="400"
+       r="82"
+       fx="700"
+       fy="400"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,42)">
+      <stop
+         offset="0%"
+         style="stop-color:#fbbf24;stop-opacity:0.6"
+         id="stop7" />
+      <stop
+         offset="70%"
+         style="stop-color:#f59e0b;stop-opacity:0.8"
+         id="stop8" />
+      <stop
+         offset="100%"
+         style="stop-color:#d97706;stop-opacity:0.9"
+         id="stop9" />
+    </radialGradient>
+    <!-- Arrow markers -->
+    <marker
+       id="synergyArrow"
+       markerWidth="12"
+       markerHeight="8"
+       refX="12"
+       refY="4"
+       orient="auto">
+      <polygon
+         points="0 0, 12 4, 0 8"
+         fill="#f59e0b"
+         id="polygon9" />
+    </marker>
+    <marker
+       id="flowArrow"
+       markerWidth="10"
+       markerHeight="7"
+       refX="10"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#374151"
+         id="polygon10" />
+    </marker>
+  </defs>
+  <!-- Background -->
+  <rect
+     width="1400"
+     height="1000"
+     fill="#f8fafc"
+     id="rect10" />
+  <!-- Title -->
+  <text
+     x="700"
+     y="40"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="26"
+     font-weight="bold"
+     fill="#1f2937"
+     id="text10">
+        Golden Triangle Synergy Network
+    </text>
+  <text
+     x="700"
+     y="65"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="14"
+     fill="#6b7280"
+     id="text11">
+        Interconnected Peace Mechanisms: Treaty Authority + Indigenous Wisdom + Meta-Governance Coordination
+    </text>
+  <!-- Central Synergy Hub -->
+  <circle
+     cx="700"
+     cy="442"
+     r="80"
+     fill="url(#synergyGradient)"
+     stroke="#d97706"
+     stroke-width="4"
+     id="circle11"
+     style="fill:url(#synergyGradient)" />
+  <text
+     x="700"
+     y="427"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text12">Peace</text>
+  <text
+     x="700"
+     y="442"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text13">Transformation</text>
+  <text
+     x="700"
+     y="457"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text14">Synergies</text>
+  <!-- Treaty Framework Node (Top) -->
+  <circle
+     cx="700"
+     cy="200"
+     r="100"
+     fill="url(#treatyGradient)"
+     stroke="#1d4ed8"
+     stroke-width="3"
+     id="circle14" />
+  <text
+     x="700"
+     y="185"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="16"
+     font-weight="bold"
+     fill="white"
+     id="text15">
+        Treaty for Our
+    </text>
+  <text
+     x="700"
+     y="200"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="16"
+     font-weight="bold"
+     fill="white"
+     id="text16">
+        Only Home
+    </text>
+  <text
+     x="700"
+     y="215"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="12"
+     fill="white"
+     id="text17">
+        Institutional Authority
+    </text>
+  <!-- Indigenous Framework Node (Bottom Left) -->
+  <circle
+     cx="450"
+     cy="600"
+     r="100"
+     fill="url(#indigenousGradient)"
+     stroke="#92400e"
+     stroke-width="3"
+     id="circle17" />
+  <text
+     x="450"
+     y="585"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="16"
+     font-weight="bold"
+     fill="white"
+     id="text18">
+        Indigenous 
+    </text>
+  <text
+     x="450"
+     y="600"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="16"
+     font-weight="bold"
+     fill="white"
+     id="text19">
+        Traditional Knowledge
+    </text>
+  <text
+     x="450"
+     y="615"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="12"
+     fill="white"
+     id="text20">
+        Foundational Wisdom
+    </text>
+  <!-- Meta-Governance Framework Node (Bottom Right) -->
+  <circle
+     cx="950"
+     cy="600"
+     r="100"
+     fill="url(#metaGovGradient)"
+     stroke="#6d28d9"
+     stroke-width="3"
+     id="circle20" />
+  <text
+     x="950"
+     y="585"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="16"
+     font-weight="bold"
+     fill="white"
+     id="text21">
+        Meta-Governance
+    </text>
+  <text
+     x="950"
+     y="600"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="16"
+     font-weight="bold"
+     fill="white"
+     id="text22">
+        Integration
+    </text>
+  <text
+     x="950"
+     y="615"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="12"
+     fill="white"
+     id="text23">
+        Coordination Architecture
+    </text>
+  <!-- Connection lines forming triangle -->
+  <path
+     d="m 700,300 0,62.55319"
+     stroke="#1d4ed8"
+     stroke-width="4"
+     marker-end="url(#synergyArrow)"
+     fill="none"
+     id="path23"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="M 650 250 L 520 530"
+     stroke="#1d4ed8"
+     stroke-width="4"
+     marker-end="url(#synergyArrow)"
+     fill="none"
+     id="path24" />
+  <path
+     d="M 750 250 L 880 530"
+     stroke="#1d4ed8"
+     stroke-width="4"
+     marker-end="url(#synergyArrow)"
+     fill="none"
+     id="path25" />
+  <path
+     d="M 550 600 L 850 600"
+     stroke="#92400e"
+     stroke-width="4"
+     marker-end="url(#synergyArrow)"
+     fill="none"
+     id="path26" />
+  <!-- Treaty-Indigenous Synergies (Left Panel) -->
+  <rect
+     x="50.041275"
+     y="150.04128"
+     width="347.10422"
+     height="199.91745"
+     rx="10.847007"
+     fill="#dbeafe"
+     stroke="#1e40af"
+     stroke-width="2.08255"
+     id="rect26" />
+  <text
+     x="210"
+     y="175"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="16"
+     font-weight="bold"
+     fill="#1e40af"
+     id="text26">
+        Treaty-Indigenous Synergies
+    </text>
+  <text
+     x="70"
+     y="200"
+     font-family="Inter, sans-serif"
+     font-size="12"
+     font-weight="bold"
+     fill="#374151"
+     id="text27">
+        Ecocide Law + Traditional Territory Protection:
+    </text>
+  <text
+     x="70"
+     y="215"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text28">
+        • Legal enforcement of Indigenous land rights
+    </text>
+  <text
+     x="70"
+     y="228"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text29">
+        • Sacred site immunity protocols
+    </text>
+  <text
+     x="70"
+     y="250"
+     font-family="Inter, sans-serif"
+     font-size="12"
+     font-weight="bold"
+     fill="#374151"
+     id="text30">
+        Global Taxation + Reparations:
+    </text>
+  <text
+     x="70"
+     y="265"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text31">
+        • Carbon tax funds Territory restoration
+    </text>
+  <text
+     x="70"
+     y="278"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text32">
+        • Financial transaction tax supports healing
+    </text>
+  <text
+     x="70"
+     y="300"
+     font-family="Inter, sans-serif"
+     font-size="12"
+     font-weight="bold"
+     fill="#374151"
+     id="text33">
+        UNSC Override + Earth Council Authority:
+    </text>
+  <text
+     x="70"
+     y="315"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text34">
+        • Indigenous moral guidance for intervention
+    </text>
+  <text
+     x="70"
+     y="328"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text35">
+        • Traditional consent for peace operations
+    </text>
+  <!-- Indigenous-Meta-Governance Synergies (Bottom Panel) -->
+  <rect
+     x="87.115837"
+     y="750"
+     width="500"
+     height="180"
+     rx="10"
+     fill="#fef5e7"
+     stroke="#92400e"
+     stroke-width="2"
+     id="rect35" />
+  <text
+     x="337.11584"
+     y="775"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     fill="#92400e"
+     id="text36">Indigenous-Meta-Governance Synergies</text>
+  <text
+     x="107.11584"
+     y="800"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text37">Earth Council + Peace Meta-Council:</text>
+  <text
+     x="107.11584"
+     y="815"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text38">• Indigenous leadership in cross-domain coordination</text>
+  <text
+     x="107.11584"
+     y="835"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text39">Traditional Knowledge + Early Warning:</text>
+  <text
+     x="107.11584"
+     y="850"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text40">• Cultural indicators enhancing technical monitoring</text>
+  <text
+     x="107.11584"
+     y="870"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text41">Ceremonial Governance + Coordination Protocols:</text>
+  <text
+     x="107.11584"
+     y="885"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text42">• Ritual-based decision-making informing policy processes</text>
+  <text
+     x="107.11584"
+     y="905"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text43">Bioregional Zones + Polycentric Coordination:</text>
+  <text
+     x="107.11584"
+     y="920"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text44">• Watershed governance enabling distributed authority</text>
+  <!-- Meta-Governance-Treaty Synergies (Right Panel) -->
+  <rect
+     x="958.91125"
+     y="729.29895"
+     width="389.53445"
+     height="199.79451"
+     rx="12.172952"
+     fill="#f3e8ff"
+     stroke="#7c3aed"
+     stroke-width="2.20549"
+     id="rect44" />
+  <text
+     x="1118.8085"
+     y="754.19623"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     fill="#6d28d9"
+     id="text45">Meta-Governance-Treaty Synergies</text>
+  <text
+     x="978.80853"
+     y="779.19623"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text46">Coordination Architecture + Global Institutions:</text>
+  <text
+     x="978.80853"
+     y="794.19623"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text47">• Systematic integration of reformed UN bodies</text>
+  <text
+     x="978.80853"
+     y="807.19623"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text48">• Cross-domain policy coherence</text>
+  <text
+     x="978.80853"
+     y="829.19623"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text49">Crisis Response + Global Enforcement:</text>
+  <text
+     x="978.80853"
+     y="844.19623"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text50">• Rapid deployment coordinated across domains</text>
+  <text
+     x="978.80853"
+     y="857.19623"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text51">• 24-hour activation protocols</text>
+  <text
+     x="978.80853"
+     y="879.19623"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text52">Power Balance Monitoring + Democratic Safeguards:</text>
+  <text
+     x="978.80853"
+     y="894.19623"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text53">• Preventing capture of Treaty mechanisms</text>
+  <text
+     x="978.80853"
+     y="907.19623"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text54">• Real-time accountability systems</text>
+  <!-- Impact Examples (Center Right) -->
+  <rect
+     x="994.28369"
+     y="145.64067"
+     width="350"
+     height="280"
+     rx="10"
+     fill="#ecfdf5"
+     stroke="#059669"
+     stroke-width="2"
+     id="rect54" />
+  <text
+     x="1169.2837"
+     y="170.64067"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     fill="#047857"
+     id="text55">Synergy Impact Examples</text>
+  <text
+     x="1014.2837"
+     y="195.64067"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text56">Climate Conflict Prevention:</text>
+  <text
+     x="1014.2837"
+     y="210.64067"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text57">• Treaty carbon tax → adaptation funding</text>
+  <text
+     x="1014.2837"
+     y="223.64067"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text58">• Earth Council → water dispute mediation</text>
+  <text
+     x="1014.2837"
+     y="236.64067"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text59">• Meta-Gov → climate-peace coordination</text>
+  <text
+     x="1014.2837"
+     y="260.64066"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text60">Post-Conflict Reconstruction:</text>
+  <text
+     x="1014.2837"
+     y="275.64066"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text61">• Global Enforcement → security provision</text>
+  <text
+     x="1014.2837"
+     y="288.64066"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text62">• Traditional healing → community reconciliation</text>
+  <text
+     x="1014.2837"
+     y="301.64066"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text63">• Cross-domain coordination → coherent rebuilding</text>
+  <text
+     x="1014.2837"
+     y="325.64066"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text64">Technology Governance:</text>
+  <text
+     x="1014.2837"
+     y="340.64066"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text65">• Treaty AI standards → binding ethics rules</text>
+  <text
+     x="1014.2837"
+     y="353.64066"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text66">• Indigenous consent → technology deployment</text>
+  <text
+     x="1014.2837"
+     y="366.64066"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text67">• Meta-Gov → tech-peace coordination</text>
+  <text
+     x="1014.2837"
+     y="390.64066"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text68">Resource Conflict Resolution:</text>
+  <text
+     x="1014.2837"
+     y="405.64066"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text69">• UNSC override → blocked humanitarian response</text>
+  <text
+     x="1014.2837"
+     y="418.64066"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text70">• Traditional Territory → watershed governance</text>
+  <!-- Success Metrics (Bottom) -->
+  <rect
+     x="56.282913"
+     y="950.01813"
+     width="1289.7982"
+     height="39.96373"
+     rx="5.3741593"
+     fill="#f3f4f6"
+     stroke="#6b7280"
+     stroke-width="1.03628"
+     id="rect70" />
+  <text
+     x="700"
+     y="975"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="12"
+     font-weight="bold"
+     fill="#374151"
+     id="text71">
+        Synergy Success Metrics: 300% faster crisis response • 85% Indigenous consent compliance • 70% reduction in policy conflicts • 90% community satisfaction with integrated approaches
+    </text>
+  <!-- Flow indicators -->
+  <text
+     x="43.995274"
+     y="100"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text72">Synergy Flow:</text>
+  <path
+     d="M 170 95 L 200 95"
+     stroke="#f59e0b"
+     stroke-width="3"
+     marker-end="url(#synergyArrow)"
+     fill="none"
+     id="path72" />
+  <text
+     x="210"
+     y="100"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="#6b7280"
+     id="text73">
+        Treaty Authority
+    </text>
+  <path
+     d="M 320 95 L 350 95"
+     stroke="#92400e"
+     stroke-width="3"
+     marker-end="url(#flowArrow)"
+     fill="none"
+     id="path73" />
+  <text
+     x="360"
+     y="100"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="#6b7280"
+     id="text74">
+        Indigenous Guidance
+    </text>
+  <path
+     d="M 480 95 L 510 95"
+     stroke="#7c3aed"
+     stroke-width="3"
+     marker-end="url(#flowArrow)"
+     fill="none"
+     id="path74" />
+  <text
+     x="520"
+     y="100"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="#6b7280"
+     id="text75">
+        Meta-Gov Coordination
+    </text>
+</svg>

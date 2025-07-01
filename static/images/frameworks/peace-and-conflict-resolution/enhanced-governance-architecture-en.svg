@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1400 1000"
+   version="1.1"
+   id="svg96"
+   sodipodi:docname="enhanced-governance-architecture-en.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview96"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.846"
+     inkscape:cx="700.35461"
+     inkscape:cy="500"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg96" />
+  <defs
+     id="defs11">
+    <!-- Gradients for different governance levels -->
+    <linearGradient
+       id="planetaryGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#059669;stop-opacity:0.9"
+         id="stop1" />
+      <stop
+         offset="100%"
+         style="stop-color:#047857;stop-opacity:1"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="globalGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#2563eb;stop-opacity:0.9"
+         id="stop3" />
+      <stop
+         offset="100%"
+         style="stop-color:#1d4ed8;stop-opacity:1"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="bioregionalGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#dc2626;stop-opacity:0.9"
+         id="stop5" />
+      <stop
+         offset="100%"
+         style="stop-color:#b91c1c;stop-opacity:1"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       id="communityGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#7c3aed;stop-opacity:0.9"
+         id="stop7" />
+      <stop
+         offset="100%"
+         style="stop-color:#6d28d9;stop-opacity:1"
+         id="stop8" />
+    </linearGradient>
+    <linearGradient
+       id="integrationGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#f59e0b;stop-opacity:0.8"
+         id="stop9" />
+      <stop
+         offset="100%"
+         style="stop-color:#d97706;stop-opacity:0.9"
+         id="stop10" />
+    </linearGradient>
+    <!-- Arrow markers -->
+    <marker
+       id="arrowhead"
+       markerWidth="10"
+       markerHeight="7"
+       refX="10"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#374151"
+         id="polygon10" />
+    </marker>
+    <marker
+       id="integrationArrow"
+       markerWidth="12"
+       markerHeight="8"
+       refX="12"
+       refY="4"
+       orient="auto">
+      <polygon
+         points="0 0, 12 4, 0 8"
+         fill="#d97706"
+         id="polygon11" />
+    </marker>
+  </defs>
+  <!-- Background -->
+  <rect
+     width="1400"
+     height="1000"
+     fill="#f8fafc"
+     id="rect11" />
+  <!-- Title -->
+  <text
+     x="700"
+     y="40"
+     text-anchor="middle"
+     class="title"
+     font-family="Inter, sans-serif"
+     font-size="26"
+     font-weight="bold"
+     fill="#1f2937"
+     id="text11">
+    Enhanced Peace Governance Architecture
+  </text>
+  <text
+     x="700"
+     y="65"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="14"
+     fill="#6b7280"
+     id="text12">
+    From UN-Centric Systems to Integrated Planetary Stewardship
+  </text>
+  <!-- Governance Level Hierarchy -->
+  <!-- Planetary Level (Top) -->
+  <rect
+     x="250"
+     y="100"
+     width="900"
+     height="140"
+     rx="15"
+     fill="url(#planetaryGradient)"
+     stroke="#047857"
+     stroke-width="4"
+     id="rect12" />
+  <text
+     x="700"
+     y="130"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="20"
+     font-weight="bold"
+     fill="white"
+     id="text13">Planetary Level: Earth Council (Kawsay Pacha)</text>
+  <text
+     x="700"
+     y="155"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="14"
+     fill="white"
+     id="text14">Indigenous-Led Moral Authority  Traditional Knowledge Guidance</text>
+  <!-- Planetary Level Details -->
+  <text
+     x="270"
+     y="180"
+     font-family="Inter, sans-serif"
+     font-size="12"
+     fill="white"
+     id="text15">• Indigenous Elders  Youth Leadership (60%)</text>
+  <text
+     x="270"
+     y="195"
+     font-family="Inter, sans-serif"
+     font-size="12"
+     fill="white"
+     id="text16">• Ecological Scientists  Cultural Practitioners (35%)</text>
+  <text
+     x="270"
+     y="210"
+     font-family="Inter, sans-serif"
+     font-size="12"
+     fill="white"
+     id="text17">• AI Observers for Ecological Data (5%)</text>
+  <text
+     x="720"
+     y="180"
+     font-family="Inter, sans-serif"
+     font-size="12"
+     fill="white"
+     id="text18">• Planetary Guidance on Inter-Bioregional Conflicts</text>
+  <text
+     x="720"
+     y="195"
+     font-family="Inter, sans-serif"
+     font-size="12"
+     fill="white"
+     id="text19">• Traditional Knowledge Protection Protocols</text>
+  <text
+     x="720"
+     y="210"
+     font-family="Inter, sans-serif"
+     font-size="12"
+     fill="white"
+     id="text20">• Seven-Generation Impact Assessment</text>
+  <!-- Global Level -->
+  <rect
+     x="300"
+     y="280"
+     width="800"
+     height="130"
+     rx="12"
+     fill="url(#globalGradient)"
+     stroke="#1d4ed8"
+     stroke-width="3"
+     id="rect20" />
+  <text
+     x="700"
+     y="310"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="18"
+     font-weight="bold"
+     fill="white"
+     id="text21">Global Level: Reformed UN Institutions</text>
+  <text
+     x="700"
+     y="330"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="13"
+     fill="white"
+     id="text22">Treaty Mechanisms Under Indigenous Guidance  Meta-Governance Coordination</text>
+  <!-- Global Level Details -->
+  <text
+     x="320"
+     y="355"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="white"
+     id="text23">• UNSC Veto Override Protocol</text>
+  <text
+     x="320"
+     y="368"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="white"
+     id="text24">• Global Enforcement Mechanism</text>
+  <text
+     x="320"
+     y="381"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="white"
+     id="text25">• Global Citizens' Initiative</text>
+  <text
+     x="320"
+     y="394"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="white"
+     id="text26">• Ecocide Law Enforcement</text>
+  <text
+     x="580"
+     y="355"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="white"
+     id="text27">• Global Taxation for Peace Infrastructure</text>
+  <text
+     x="580"
+     y="368"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="white"
+     id="text28">• Peace  Security Meta-Council</text>
+  <text
+     x="580"
+     y="381"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="white"
+     id="text29">• Cross-Domain Crisis Coordination</text>
+  <text
+     x="580"
+     y="394"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="white"
+     id="text30">• Youth Council Authority</text>
+  <!-- Bioregional Level -->
+  <rect
+     x="350"
+     y="450"
+     width="700"
+     height="120"
+     rx="10"
+     fill="url(#bioregionalGradient)"
+     stroke="#b91c1c"
+     stroke-width="3"
+     id="rect30" />
+  <text
+     x="700"
+     y="480"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="16"
+     font-weight="bold"
+     fill="white"
+     id="text31">Bioregional Level: Watershed-Based Autonomous Zones</text>
+  <text
+     x="700"
+     y="500"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="12"
+     fill="white"
+     id="text32">Traditional Territory Recognition  Ecosystem-Centered Governance</text>
+  <!-- Bioregional Level Details -->
+  <text
+     x="370"
+     y="525"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="white"
+     id="text33">• Watershed Council Governance</text>
+  <text
+     x="370"
+     y="538"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="white"
+     id="text34">• Traditional Territory Protection</text>
+  <text
+     x="370"
+     y="551"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="white"
+     id="text35">• Ecosystem Integrity Standards</text>
+  <text
+     x="600"
+     y="525"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="white"
+     id="text36">• Free, Prior, and Informed Consent 2.0</text>
+  <text
+     x="600"
+     y="538"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="white"
+     id="text37">• Resource Conflict Mediation</text>
+  <text
+     x="600"
+     y="551"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="white"
+     id="text38">• Cross-Bioregional Coordination</text>
+  <!-- Community Level -->
+  <rect
+     x="400"
+     y="610"
+     width="600"
+     height="110"
+     rx="8"
+     fill="url(#communityGradient)"
+     stroke="#6d28d9"
+     stroke-width="3"
+     id="rect38" />
+  <text
+     x="700"
+     y="640"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="16"
+     font-weight="bold"
+     fill="white"
+     id="text39">Community Level: Ceremonial Stewardship</text>
+  <text
+     x="700"
+     y="660"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="12"
+     fill="white"
+     id="text40">Traditional Conflict Transformation  Ritual-Based Governance</text>
+  <!-- Community Level Details -->
+  <text
+     x="420"
+     y="685"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="white"
+     id="text41">• Circle Processes  Restorative Justice</text>
+  <text
+     x="420"
+     y="698"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="white"
+     id="text42">• Seasonal Decision-Making Cycles</text>
+  <text
+     x="700"
+     y="685"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="white"
+     id="text43">• Elder-Youth Council Integration</text>
+  <text
+     x="700"
+     y="698"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="white"
+     id="text44">• Land-Based Healing Practices</text>
+  <!-- Vertical Integration Arrows -->
+  <path
+     d="M 700 240 L 700 280"
+     stroke="#374151"
+     stroke-width="4"
+     marker-end="url(#arrowhead)"
+     fill="none"
+     id="path44" />
+  <path
+     d="M 700 410 L 700 450"
+     stroke="#374151"
+     stroke-width="4"
+     marker-end="url(#arrowhead)"
+     fill="none"
+     id="path45" />
+  <path
+     d="M 700 570 L 700 610"
+     stroke="#374151"
+     stroke-width="4"
+     marker-end="url(#arrowhead)"
+     fill="none"
+     id="path46" />
+  <!-- Upward Feedback Arrows -->
+  <path
+     d="M 750 610 L 750 570"
+     stroke="#f59e0b"
+     stroke-width="3"
+     marker-end="url(#integrationArrow)"
+     fill="none"
+     id="path47" />
+  <path
+     d="M 750 450 L 750 410"
+     stroke="#f59e0b"
+     stroke-width="3"
+     marker-end="url(#integrationArrow)"
+     fill="none"
+     id="path48" />
+  <path
+     d="M 750 280 L 750 240"
+     stroke="#f59e0b"
+     stroke-width="3"
+     marker-end="url(#integrationArrow)"
+     fill="none"
+     id="path49" />
+  <!-- Cross-Level Integration Side Panels -->
+  <!-- Left Panel: Meta-Governance Integration -->
+  <rect
+     x="50"
+     y="350"
+     width="220"
+     height="300"
+     rx="10"
+     fill="#fef3c7"
+     stroke="#f59e0b"
+     stroke-width="2"
+     id="rect49" />
+  <text
+     x="160"
+     y="375"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     fill="#92400e"
+     id="text49">Meta-Governance</text>
+  <text
+     x="160"
+     y="390"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     fill="#92400e"
+     id="text50">Coordination</text>
+  <text
+     x="60"
+     y="415"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     font-weight="bold"
+     fill="#374151"
+     id="text51">Crisis Response Integration:</text>
+  <text
+     x="60"
+     y="430"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text52">• 24-hour activation protocols</text>
+  <text
+     x="60"
+     y="443"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text53">• Peace-health-climate alignment</text>
+  <text
+     x="60"
+     y="456"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text54">• Resource flow coordination</text>
+  <text
+     x="60"
+     y="476"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     font-weight="bold"
+     fill="#374151"
+     id="text55">Early Warning Systems:</text>
+  <text
+     x="60"
+     y="491"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text56">• Cross-domain monitoring</text>
+  <text
+     x="60"
+     y="504"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text57">• Traditional indicators</text>
+  <text
+     x="60"
+     y="517"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text58">• AI-enhanced prediction</text>
+  <text
+     x="60"
+     y="537"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     font-weight="bold"
+     fill="#374151"
+     id="text59">Power Balance Monitoring:</text>
+  <text
+     x="60"
+     y="552"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text60">• Capture prevention</text>
+  <text
+     x="60"
+     y="565"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text61">• Democratic accountability</text>
+  <text
+     x="60"
+     y="578"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text62">• Equity assurance</text>
+  <text
+     x="60"
+     y="598"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     font-weight="bold"
+     fill="#374151"
+     id="text63">Policy Coherence:</text>
+  <text
+     x="60"
+     y="613"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text64">• Domain alignment</text>
+  <text
+     x="60"
+     y="626"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text65">• Conflict prevention</text>
+  <text
+     x="60"
+     y="639"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text66">• Implementation support</text>
+  <!-- Right Panel: Treaty Funding & Enforcement -->
+  <rect
+     x="1130"
+     y="350"
+     width="220"
+     height="300"
+     rx="10"
+     fill="#dbeafe"
+     stroke="#2563eb"
+     stroke-width="2"
+     id="rect66" />
+  <text
+     x="1240"
+     y="375"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     fill="#1e40af"
+     id="text67">Treaty Taxation </text>
+  <text
+     x="1240"
+     y="390"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     fill="#1e40af"
+     id="text68">Enforcement</text>
+  <text
+     x="1140"
+     y="415"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     font-weight="bold"
+     fill="#374151"
+     id="text69">Funding Mechanisms:</text>
+  <text
+     x="1140"
+     y="430"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text70">• Carbon tax revenues</text>
+  <text
+     x="1140"
+     y="443"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text71">• Financial transaction tax</text>
+  <text
+     x="1140"
+     y="456"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text72">• Reparations allocation</text>
+  <text
+     x="1140"
+     y="476"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     font-weight="bold"
+     fill="#374151"
+     id="text73">Enforcement Tools:</text>
+  <text
+     x="1140"
+     y="491"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text74">• Global Enforcement Mechanism</text>
+  <text
+     x="1140"
+     y="504"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text75">• Ecocide prosecution</text>
+  <text
+     x="1140"
+     y="517"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text76">• Protection forces</text>
+  <text
+     x="1140"
+     y="537"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     font-weight="bold"
+     fill="#374151"
+     id="text77">Democratic Authorization:</text>
+  <text
+     x="1140"
+     y="552"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text78">• UNSC veto override</text>
+  <text
+     x="1140"
+     y="565"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text79">• Global Citizens' Initiative</text>
+  <text
+     x="1140"
+     y="578"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text80">• Youth council oversight</text>
+  <text
+     x="1140"
+     y="598"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     font-weight="bold"
+     fill="#374151"
+     id="text81">Accountability Systems:</text>
+  <text
+     x="1140"
+     y="613"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text82">• Transparent operations</text>
+  <text
+     x="1140"
+     y="626"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text83">• Community oversight</text>
+  <text
+     x="1140"
+     y="639"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text84">• Performance metrics</text>
+  <!-- Integration Flow Arrows -->
+  <path
+     d="M 270 500 L 300 480"
+     stroke="#f59e0b"
+     stroke-width="2"
+     marker-end="url(#integrationArrow)"
+     fill="none"
+     id="path84" />
+  <path
+     d="M 1130 500 L 1100 480"
+     stroke="#2563eb"
+     stroke-width="2"
+     marker-end="url(#arrowhead)"
+     fill="none"
+     id="path85" />
+  <!-- Bottom Integration Summary -->
+  <rect
+     x="250"
+     y="780"
+     width="900"
+     height="120"
+     rx="10"
+     fill="#f3f4f6"
+     stroke="#6b7280"
+     stroke-width="2"
+     id="rect85" />
+  <text
+     x="700"
+     y="810"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="18"
+     font-weight="bold"
+     fill="#374151"
+     id="text85">Integrated Governance Transformation</text>
+  <text
+     x="270"
+     y="835"
+     font-family="Inter, sans-serif"
+     font-size="12"
+     fill="#374151"
+     id="text86"><tspan
+   font-weight="bold"
+   id="tspan85">From Colonial Fragmentation to Planetary Stewardship:</tspan> The Enhanced Peace Governance Architecture
+  </text>
+  <text
+     x="270"
+     y="850"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="#6b7280"
+     id="text87">
+    transforms nation-state competition into bioregional cooperation, replacing extractive intervention with regenerative
+  </text>
+  <text
+     x="270"
+     y="865"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="#6b7280"
+     id="text88">
+    healing guided by Indigenous wisdom, funded through Treaty mechanisms, and coordinated across all governance domains.
+  </text>
+  <text
+     x="270"
+     y="880"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="#6b7280"
+     id="text89">
+    Each level strengthens the others while maintaining cultural sovereignty and ecological integrity.
+  </text>
+  <!-- Level Labels -->
+  <text
+     x="30"
+     y="180"
+     font-family="Inter, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     fill="#047857"
+     transform="rotate(-90 30 180)"
+     id="text90">PLANETARY</text>
+  <text
+     x="30"
+     y="345"
+     font-family="Inter, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     fill="#1d4ed8"
+     transform="rotate(-90 30 345)"
+     id="text91">GLOBAL</text>
+  <text
+     x="30"
+     y="510"
+     font-family="Inter, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     fill="#b91c1c"
+     transform="rotate(-90 30 510)"
+     id="text92">BIOREGIONAL</text>
+  <text
+     x="30"
+     y="665"
+     font-family="Inter, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     fill="#6d28d9"
+     transform="rotate(-90 30 665)"
+     id="text93">COMMUNITY</text>
+  <!-- Integration Flow Legend -->
+  <text
+     x="58"
+     y="950"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text94">Integration Flow:</text>
+  <line
+     x1="200"
+     y1="945"
+     x2="230"
+     y2="945"
+     stroke="#374151"
+     stroke-width="4"
+     marker-end="url(#arrowhead)"
+     id="line94" />
+  <text
+     x="240"
+     y="950"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="#6b7280"
+     id="text95">Authority  Guidance (Top-Down)</text>
+  <line
+     x1="450"
+     y1="945"
+     x2="480"
+     y2="945"
+     stroke="#f59e0b"
+     stroke-width="3"
+     marker-end="url(#integrationArrow)"
+     id="line95" />
+  <text
+     x="490"
+     y="950"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="#6b7280"
+     id="text96">Innovation  Learning (Bottom-Up)</text>
+</svg>

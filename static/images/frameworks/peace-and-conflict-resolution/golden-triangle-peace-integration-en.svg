@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1200 800"
+   version="1.1"
+   id="svg47"
+   sodipodi:docname="golden-triangle-peace-integration-en.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview47"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.52875"
+     inkscape:cx="210.8747"
+     inkscape:cy="416.07565"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg47" />
+  <defs
+     id="defs8">
+    <!-- Gradients for each framework -->
+    <linearGradient
+       id="treatyGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#2563eb;stop-opacity:0.8"
+         id="stop1" />
+      <stop
+         offset="100%"
+         style="stop-color:#1d4ed8;stop-opacity:0.9"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="indigenousGradient"
+       x1="68.5"
+       y1="298.5"
+       x2="231.5"
+       y2="461.5"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0928222,0,0,1.0928222,-12.977708,20.037242)">
+      <stop
+         offset="0%"
+         style="stop-color:#059669;stop-opacity:0.8"
+         id="stop3" />
+      <stop
+         offset="100%"
+         style="stop-color:#047857;stop-opacity:0.9"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="metaGradient"
+       x1="368.5"
+       y1="298.5"
+       x2="531.5"
+       y2="461.5"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,52)">
+      <stop
+         offset="0%"
+         style="stop-color:#dc2626;stop-opacity:0.8"
+         id="stop5" />
+      <stop
+         offset="100%"
+         style="stop-color:#b91c1c;stop-opacity:0.9"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       id="peaceGradient"
+       x1="238.5"
+       y1="203.5"
+       x2="361.5"
+       y2="326.5"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.1460724,0,0,1.1460724,-45.240154,13.290821)">
+      <stop
+         offset="0%"
+         style="stop-color:#7c3aed;stop-opacity:0.8"
+         id="stop7" />
+      <stop
+         offset="100%"
+         style="stop-color:#6d28d9;stop-opacity:0.9"
+         id="stop8" />
+    </linearGradient>
+    <!-- Arrow marker -->
+    <marker
+       id="arrowhead"
+       markerWidth="10"
+       markerHeight="7"
+       refX="10"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#374151"
+         id="polygon8" />
+    </marker>
+  </defs>
+  <!-- Background -->
+  <rect
+     width="1200"
+     height="800"
+     fill="#f8fafc"
+     id="rect8" />
+  <!-- Title -->
+  <text
+     x="600"
+     y="40"
+     text-anchor="middle"
+     class="title"
+     font-family="Inter, sans-serif"
+     font-size="24"
+     font-weight="bold"
+     fill="#1f2937"
+     id="text8">
+    Peace Framework Golden Triangle Integration
+  </text>
+  <!-- Golden Triangle Framework Circles -->
+  <!-- Treaty Framework (Top) -->
+  <circle
+     cx="300"
+     cy="150"
+     r="80"
+     fill="url(#treatyGradient)"
+     stroke="#1e40af"
+     stroke-width="3"
+     id="circle8" />
+  <text
+     x="300"
+     y="145"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     fill="white"
+     id="text9">Treaty for Our</text>
+  <text
+     x="300"
+     y="162"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     fill="white"
+     id="text10">Only Home</text>
+  <!-- Indigenous Framework (Bottom Left) -->
+  <circle
+     cx="150.94563"
+     cy="435.30969"
+     r="87.425781"
+     fill="url(#indigenousGradient)"
+     stroke="#065f46"
+     stroke-width="3.27847"
+     id="circle10"
+     style="fill:url(#indigenousGradient)" />
+  <text
+     x="150"
+     y="427"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text11">Indigenous</text>
+  <text
+     x="150"
+     y="444"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text12">Traditional Knowledge</text>
+  <!-- Meta-Governance Framework (Bottom Right) -->
+  <circle
+     cx="450"
+     cy="432"
+     r="80"
+     fill="url(#metaGradient)"
+     stroke="#991b1b"
+     stroke-width="3"
+     id="circle12"
+     style="fill:url(#metaGradient)" />
+  <text
+     x="450"
+     y="427"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text13">Integrated</text>
+  <text
+     x="450"
+     y="444"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text14">Meta-Governance</text>
+  <!-- Peace Framework (Center) -->
+  <circle
+     cx="298.58154"
+     cy="317"
+     r="68.764343"
+     fill="url(#peaceGradient)"
+     stroke="#5b21b6"
+     stroke-width="3.43821"
+     id="circle14"
+     style="fill:url(#peaceGradient)" />
+  <text
+     x="300"
+     y="312"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="13px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text15">Peace</text>
+  <text
+     x="300"
+     y="327"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="13px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text16">Conflict Resolution</text>
+  <!-- Integration Arrows -->
+  <path
+     d="M 300.94563,257.1513 300,190"
+     stroke="#374151"
+     stroke-width="3"
+     marker-end="url(#arrowhead)"
+     fill="none"
+     id="path16"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="m 265,362 -70,35"
+     stroke="#374151"
+     stroke-width="3"
+     marker-end="url(#arrowhead)"
+     fill="none"
+     id="path17" />
+  <path
+     d="m 335,362 70,35"
+     stroke="#374151"
+     stroke-width="3"
+     marker-end="url(#arrowhead)"
+     fill="none"
+     id="path18" />
+  <!-- Detailed Implementation Boxes -->
+  <!-- Treaty Mechanisms -->
+  <rect
+     x="500.22345"
+     y="80.223442"
+     width="420.45145"
+     height="139.55312"
+     rx="12.012898"
+     fill="#eff6ff"
+     stroke="#2563eb"
+     stroke-width="2.44689"
+     id="rect18" />
+  <text
+     x="710.922"
+     y="105"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     fill="#1e40af"
+     id="text18">Treaty Mechanisms → Peace Implementation</text>
+  <text
+     x="578"
+     y="125"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text19">• UNSC Veto Override Protocol</text>
+  <text
+     x="578"
+     y="140"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text20">• Global Enforcement Mechanism</text>
+  <text
+     x="578"
+     y="155"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text21">• Global Taxation for Peace Infrastructure</text>
+  <text
+     x="578"
+     y="170"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text22">• Global Citizens' Initiative</text>
+  <text
+     x="578"
+     y="185"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text23">• Ecocide Law for Resource Conflict Prevention</text>
+  <text
+     x="578"
+     y="200"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text24">• Democratic Accountability Mechanisms</text>
+  <!-- Indigenous Guidance -->
+  <rect
+     x="8.5298319"
+     y="562.13739"
+     width="362.94034"
+     height="139.7252"
+     rx="10.369724"
+     fill="#ecfdf5"
+     stroke="#059669"
+     stroke-width="2.27479"
+     id="rect24" />
+  <text
+     x="190"
+     y="587"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     fill="#047857"
+     id="text25">Indigenous Guidance → Peace Wisdom</text>
+  <text
+     x="60"
+     y="607"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text26">• Earth Council Moral Authority</text>
+  <text
+     x="60"
+     y="622"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text27">• Traditional Conflict Transformation</text>
+  <text
+     x="60"
+     y="637"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text28">• Ceremonial Stewardship</text>
+  <text
+     x="60"
+     y="652"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text29">• Bioregional Autonomous Zones</text>
+  <text
+     x="60"
+     y="667"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text30">• Seven-Generation Accountability</text>
+  <text
+     x="60"
+     y="682"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text31">• Restorative Justice Practices</text>
+  <!-- Meta-Governance Coordination -->
+  <rect
+     x="400.18335"
+     y="562.18335"
+     width="393.10852"
+     height="139.63333"
+     rx="11.231671"
+     fill="#fef2f2"
+     stroke="#dc2626"
+     stroke-width="2.36667"
+     id="rect31" />
+  <text
+     x="588.22693"
+     y="585.10876"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     fill="#b91c1c"
+     id="text32">Meta-Governance → Peace Coordination</text>
+  <text
+     x="484"
+     y="607"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text33">• Peace Security Meta-Council</text>
+  <text
+     x="484"
+     y="622"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text34">• Crisis Response Coordination</text>
+  <text
+     x="484"
+     y="637"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text35">• Power Balance Monitoring</text>
+  <text
+     x="484"
+     y="652"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text36">• Cross-Domain Early Warning</text>
+  <text
+     x="484"
+     y="667"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text37">• Policy Coherence Assurance</text>
+  <text
+     x="484"
+     y="682"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text38">• Multi-System Integration</text>
+  <!-- Integration Flow Arrows -->
+  <path
+     d="M 380 150 L 500 150"
+     stroke="#2563eb"
+     stroke-width="2"
+     marker-end="url(#arrowhead)"
+     fill="none"
+     id="path38" />
+  <path
+     d="m 172.04492,521.17258 13.27423,43.6643"
+     stroke="#059669"
+     stroke-width="2"
+     marker-end="url(#arrowhead)"
+     fill="none"
+     id="path39"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="M 447.81324,512.66194 471.86761,562"
+     stroke="#dc2626"
+     stroke-width="2"
+     marker-end="url(#arrowhead)"
+     fill="none"
+     id="path40"
+     sodipodi:nodetypes="cc" />
+  <!-- Central Integration Note -->
+  <rect
+     x="800.01324"
+     y="352.01328"
+     width="359.42972"
+     height="119.97346"
+     rx="8.2155361"
+     fill="#faf5ff"
+     stroke="#7c3aed"
+     stroke-width="2.02654"
+     id="rect40" />
+  <text
+     x="975"
+     y="377"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     fill="#6d28d9"
+     id="text40">Integrated Implementation</text>
+  <text
+     x="810"
+     y="397"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     fill="#374151"
+     id="text41">The Peace Framework operates as the operational</text>
+  <text
+     x="810"
+     y="412"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     fill="#374151"
+     id="text42">implementation arm of planetary peace transformation,</text>
+  <text
+     x="810"
+     y="427"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     fill="#374151"
+     id="text43">translating Treaty institutional innovations into</text>
+  <text
+     x="810"
+     y="442"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     fill="#374151"
+     id="text44">concrete protocols guided by Indigenous wisdom</text>
+  <text
+     x="810"
+     y="457"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     fill="#374151"
+     id="text45">and coordinated through Meta-Governance architecture.</text>
+  <!-- Connection arrow from Peace Framework to explanation -->
+  <path
+     d="m 360,317 440,85"
+     stroke="#7c3aed"
+     stroke-width="2"
+     marker-end="url(#arrowhead)"
+     fill="none"
+     stroke-dasharray="5, 5"
+     id="path45" />
+  <!-- Framework Labels -->
+  <text
+     x="100"
+     y="750"
+     font-family="Inter, sans-serif"
+     font-size="12"
+     font-weight="bold"
+     fill="#374151"
+     id="text46">Golden Triangle Integration Architecture</text>
+  <text
+     x="100"
+     y="770"
+     font-family="Inter, sans-serif"
+     font-size="10"
+     fill="#6b7280"
+     id="text47">Treaty mechanisms + Indigenous wisdom + Meta-governance coordination = Regenerative peace infrastructure</text>
+</svg>

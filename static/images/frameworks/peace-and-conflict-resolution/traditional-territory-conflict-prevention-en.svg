@@ -1,0 +1,1295 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1400 1000"
+   version="1.1"
+   id="svg119"
+   sodipodi:docname="traditional-territory-conflict-prevention-en.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview119"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.846"
+     inkscape:cx="697.99054"
+     inkscape:cy="504.72813"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg119" />
+  <defs
+     id="defs15">
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#territoryPattern"
+       id="pattern119"
+       patternTransform="translate(168)" />
+    <!-- Gradients for different territory zones -->
+    <linearGradient
+       id="traditionalGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#059669;stop-opacity:0.8"
+         id="stop1" />
+      <stop
+         offset="100%"
+         style="stop-color:#047857;stop-opacity:0.9"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="watershedGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#0891b2;stop-opacity:0.7"
+         id="stop3" />
+      <stop
+         offset="100%"
+         style="stop-color:#0e7490;stop-opacity:0.8"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="sacredGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#7c2d12;stop-opacity:0.8"
+         id="stop5" />
+      <stop
+         offset="100%"
+         style="stop-color:#92400e;stop-opacity:0.9"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       id="stewardshipGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#16a34a;stop-opacity:0.7"
+         id="stop7" />
+      <stop
+         offset="100%"
+         style="stop-color:#15803d;stop-opacity:0.8"
+         id="stop8" />
+    </linearGradient>
+    <linearGradient
+       id="conflictGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#dc2626;stop-opacity:0.8"
+         id="stop9" />
+      <stop
+         offset="100%"
+         style="stop-color:#b91c1c;stop-opacity:0.9"
+         id="stop10" />
+    </linearGradient>
+    <linearGradient
+       id="peaceGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#7c3aed;stop-opacity:0.8"
+         id="stop11" />
+      <stop
+         offset="100%"
+         style="stop-color:#6d28d9;stop-opacity:0.9"
+         id="stop12" />
+    </linearGradient>
+    <!-- Pattern for territory boundaries -->
+    <pattern
+       id="territoryPattern"
+       x="0"
+       y="0"
+       width="20"
+       height="20"
+       patternUnits="userSpaceOnUse">
+      <rect
+         width="20"
+         height="20"
+         fill="#ecfdf5"
+         id="rect12" />
+      <path
+         d="M 0 10 L 20 10"
+         stroke="#059669"
+         stroke-width="1"
+         stroke-dasharray="2,2"
+         id="path12" />
+      <path
+         d="M 10 0 L 10 20"
+         stroke="#059669"
+         stroke-width="1"
+         stroke-dasharray="2,2"
+         id="path13" />
+    </pattern>
+    <!-- Arrow markers -->
+    <marker
+       id="arrowhead"
+       markerWidth="10"
+       markerHeight="7"
+       refX="10"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#374151"
+         id="polygon13" />
+    </marker>
+    <marker
+       id="preventionArrow"
+       markerWidth="12"
+       markerHeight="8"
+       refX="12"
+       refY="4"
+       orient="auto">
+      <polygon
+         points="0 0, 12 4, 0 8"
+         fill="#16a34a"
+         id="polygon14" />
+    </marker>
+    <marker
+       id="conflictArrow"
+       markerWidth="12"
+       markerHeight="8"
+       refX="12"
+       refY="4"
+       orient="auto">
+      <polygon
+         points="0 0, 12 4, 0 8"
+         fill="#dc2626"
+         id="polygon15" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#traditionalGradient"
+       id="linearGradient119"
+       x1="68.820479"
+       y1="546.51047"
+       x2="277.01107"
+       y2="754.70106"
+       gradientTransform="matrix(2.8915812,0,0,0.34583155,168,0)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#watershedGradient"
+       id="linearGradient120"
+       x1="87.506315"
+       y1="822.35368"
+       x2="263.92467"
+       y2="998.77203"
+       gradientTransform="matrix(2.8455089,0,0,0.35143098,168,0)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#sacredGradient"
+       id="linearGradient121"
+       x1="259"
+       y1="359"
+       x2="341"
+       y2="441"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(168)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#sacredGradient"
+       id="linearGradient122"
+       x1="559"
+       y1="339"
+       x2="641"
+       y2="421"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(168)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#stewardshipGradient"
+       id="linearGradient123"
+       x1="146.75065"
+       y1="584.26316"
+       x2="246.77065"
+       y2="684.28316"
+       gradientTransform="matrix(1.2197561,0,0,0.81983605,168,0)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#stewardshipGradient"
+       id="linearGradient124"
+       x1="327.11458"
+       y1="584.26316"
+       x2="427.13458"
+       y2="684.28316"
+       gradientTransform="matrix(1.2197561,0,0,0.81983605,168,0)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#stewardshipGradient"
+       id="linearGradient125"
+       x1="532.0736"
+       y1="584.26316"
+       x2="632.09359"
+       y2="684.28316"
+       gradientTransform="matrix(1.2197561,0,0,0.81983605,168,0)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <!-- Background -->
+  <rect
+     width="1400"
+     height="1000"
+     fill="#f8fafc"
+     id="rect15" />
+  <!-- Title -->
+  <text
+     x="700"
+     y="40"
+     text-anchor="middle"
+     class="title"
+     font-family="Inter, sans-serif"
+     font-size="26"
+     font-weight="bold"
+     fill="#1f2937"
+     id="text15">
+    Traditional Territory Conflict Prevention
+  </text>
+  <text
+     x="700"
+     y="65"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="14"
+     fill="#6b7280"
+     id="text16">
+    Indigenous Sovereignty Recognition and Regenerative Stewardship for Peace
+  </text>
+  <!-- Main Territory Map Area -->
+  <rect
+     x="318"
+     y="120"
+     width="800"
+     height="500"
+     rx="15"
+     fill="url(#territoryPattern)"
+     stroke="#059669"
+     stroke-width="3"
+     id="rect16"
+     style="fill:url(#pattern119)" />
+  <!-- Territory Mapping Legend -->
+  <text
+     x="718"
+     y="150"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     fill="#047857"
+     id="text17">Traditional Territory Mapping</text>
+  <!-- Traditional Boundaries -->
+  <path
+     d="m 368,200 q 100,-20 200,0 100,20 200,0 100,-20 200,0 v 50 q -100,20 -200,0 -100,-20 -200,0 -100,20 -200,0 z"
+     fill="url(#traditionalGradient)"
+     stroke="#047857"
+     stroke-width="2"
+     opacity="0.8"
+     id="path17"
+     style="fill:url(#linearGradient119)" />
+  <text
+     x="668"
+     y="225"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text18">Traditional Boundaries</text>
+  <text
+     x="668"
+     y="240"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#ffffff"
+     id="text19">Cultural Spiritual Landscapes</text>
+  <!-- Watershed Integrity -->
+  <path
+     d="m 418,300 q 100,-20 200,0 h 300 q 0,20 0,40 H 618 q -100,20 -200,0 z"
+     fill="url(#watershedGradient)"
+     stroke="#0e7490"
+     stroke-width="2"
+     opacity="0.8"
+     id="path19"
+     style="fill:url(#linearGradient120)" />
+  <text
+     x="668"
+     y="325"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text20">Watershed Integrity</text>
+  <text
+     x="668"
+     y="340"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#ffffff"
+     id="text21">Ecosystem-Based Governance</text>
+  <!-- Sacred Site Protection -->
+  <circle
+     cx="468"
+     cy="400"
+     r="40"
+     fill="url(#sacredGradient)"
+     stroke="#92400e"
+     stroke-width="2"
+     id="circle21"
+     style="fill:url(#linearGradient121)" />
+  <text
+     x="468"
+     y="395"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text22">Sacred Site</text>
+  <text
+     x="468"
+     y="408"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="9px"
+     fill="#ffffff"
+     id="text23">Protection</text>
+  <circle
+     cx="768"
+     cy="380"
+     r="40"
+     fill="url(#sacredGradient)"
+     stroke="#92400e"
+     stroke-width="2"
+     id="circle23"
+     style="fill:url(#linearGradient122)" />
+  <text
+     x="768"
+     y="375"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text24">Ceremonial</text>
+  <text
+     x="768"
+     y="388"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="9px"
+     fill="#ffffff"
+     id="text25">Space</text>
+  <!-- Resource Stewardship Zones -->
+  <rect
+     x="348"
+     y="480"
+     width="120"
+     height="80"
+     rx="8"
+     fill="url(#stewardshipGradient)"
+     stroke="#15803d"
+     stroke-width="2"
+     opacity="0.7"
+     id="rect25"
+     style="fill:url(#linearGradient123)" />
+  <text
+     x="408"
+     y="510"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text26">Traditional</text>
+  <text
+     x="408"
+     y="523"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text27">Fishing</text>
+  <text
+     x="408"
+     y="536"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="9px"
+     fill="#ffffff"
+     id="text28">Sustainable</text>
+  <text
+     x="408"
+     y="549"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="9px"
+     fill="#ffffff"
+     id="text29">Harvest</text>
+  <rect
+     x="568"
+     y="480"
+     width="120"
+     height="80"
+     rx="8"
+     fill="url(#stewardshipGradient)"
+     stroke="#15803d"
+     stroke-width="2"
+     opacity="0.7"
+     id="rect29"
+     style="fill:url(#linearGradient124)" />
+  <text
+     x="628"
+     y="510"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text30">Medicine</text>
+  <text
+     x="628"
+     y="523"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text31">Gathering</text>
+  <text
+     x="628"
+     y="536"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="9px"
+     fill="#ffffff"
+     id="text32">Traditional</text>
+  <text
+     x="628"
+     y="549"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="9px"
+     fill="#ffffff"
+     id="text33">Knowledge</text>
+  <rect
+     x="818"
+     y="480"
+     width="120"
+     height="80"
+     rx="8"
+     fill="url(#stewardshipGradient)"
+     stroke="#15803d"
+     stroke-width="2"
+     opacity="0.7"
+     id="rect33"
+     style="fill:url(#linearGradient125)" />
+  <text
+     x="878"
+     y="510"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text34">Hunting</text>
+  <text
+     x="878"
+     y="523"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text35">Grounds</text>
+  <text
+     x="878"
+     y="536"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="9px"
+     fill="#ffffff"
+     id="text36">Seasonal</text>
+  <text
+     x="878"
+     y="549"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="9px"
+     fill="#ffffff"
+     id="text37">Protocols</text>
+  <!-- Conflict Prevention Mechanisms (Left Panel) -->
+  <rect
+     x="6.9326673"
+     y="150.02487"
+     width="294.13464"
+     height="399.95026"
+     rx="10.504809"
+     fill="#ecfdf5"
+     stroke="#059669"
+     stroke-width="2.04973"
+     id="rect37" />
+  <text
+     x="154"
+     y="175"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     fill="#047857"
+     id="text38">Conflict Prevention Mechanisms</text>
+  <text
+     x="34"
+     y="200"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text39">Free, Prior, Informed Consent 2.0:</text>
+  <text
+     x="34"
+     y="215"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text40">• Enhanced consultation requirements</text>
+  <text
+     x="34"
+     y="228"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text41">• Community veto power over development</text>
+  <text
+     x="34"
+     y="241"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text42">• Cultural protocol compliance mandatory</text>
+  <text
+     x="34"
+     y="254"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text43">• Ongoing consent renewal required</text>
+  <text
+     x="34"
+     y="275"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text44">Traditional Law Integration:</text>
+  <text
+     x="34"
+     y="290"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text45">• Indigenous legal system recognition</text>
+  <text
+     x="34"
+     y="303"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text46">• Bi-juridical frameworks</text>
+  <text
+     x="34"
+     y="316"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text47">• Traditional justice authority</text>
+  <text
+     x="34"
+     y="329"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text48">• Cultural mediation protocols</text>
+  <text
+     x="34"
+     y="350"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text49">Resource Sharing Protocols:</text>
+  <text
+     x="34"
+     y="365"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text50">• Gift economy practices</text>
+  <text
+     x="34"
+     y="378"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text51">• Reciprocity agreements</text>
+  <text
+     x="34"
+     y="391"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text52">• Sustainable use principles</text>
+  <text
+     x="34"
+     y="404"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text53">• Community benefit sharing</text>
+  <text
+     x="34"
+     y="425"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text54">Land Back Implementation:</text>
+  <text
+     x="34"
+     y="440"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text55">• Territory restoration processes</text>
+  <text
+     x="34"
+     y="453"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text56">• Reparations frameworks</text>
+  <text
+     x="34"
+     y="466"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text57">• Sovereignty recognition</text>
+  <text
+     x="34"
+     y="479"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text58">• Self-determination support</text>
+  <text
+     x="34"
+     y="500"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text59">Early Warning Systems:</text>
+  <text
+     x="34"
+     y="515"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text60">• Community monitoring networks</text>
+  <text
+     x="34"
+     y="528"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text61">• Traditional indicators integration</text>
+  <!-- Peace Infrastructure (Right Panel) -->
+  <rect
+     x="1147.9259"
+     y="149.92592"
+     width="239.95905"
+     height="400.14816"
+     rx="8.5699663"
+     fill="#f3e8ff"
+     stroke="#7c3aed"
+     stroke-width="1.85183"
+     id="rect61" />
+  <text
+     x="1280"
+     y="175"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     fill="#6d28d9"
+     id="text62">Peace Infrastructure</text>
+  <text
+     x="1160"
+     y="200"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text63">Traditional Justice Systems:</text>
+  <text
+     x="1160"
+     y="215"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text64">• Restorative healing approaches</text>
+  <text
+     x="1160"
+     y="228"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text65">• Relationship repair focus</text>
+  <text
+     x="1160"
+     y="241"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text66">• Community circle processes</text>
+  <text
+     x="1160"
+     y="254"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text67">• Elder wisdom guidance</text>
+  <text
+     x="1160"
+     y="275"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text68">Ceremonial Governance:</text>
+  <text
+     x="1160"
+     y="290"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text69">• Seasonal decision-making</text>
+  <text
+     x="1160"
+     y="303"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text70">• Ritual accountability</text>
+  <text
+     x="1160"
+     y="316"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text71">• Sacred space governance</text>
+  <text
+     x="1160"
+     y="329"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text72">• Spiritual authority integration</text>
+  <text
+     x="1160"
+     y="350"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text73">Elder Council Networks:</text>
+  <text
+     x="1160"
+     y="365"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text74">• Wisdom keeper guidance</text>
+  <text
+     x="1160"
+     y="378"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text75">• Cultural authority</text>
+  <text
+     x="1160"
+     y="391"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text76">• Inter-community mediation</text>
+  <text
+     x="1160"
+     y="404"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text77">• Traditional Knowledge protection</text>
+  <text
+     x="1160"
+     y="425"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text78">Youth Leadership Development:</text>
+  <text
+     x="1160"
+     y="440"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text79">• Next-generation preparation</text>
+  <text
+     x="1160"
+     y="453"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text80">• Traditional Knowledge transmission</text>
+  <text
+     x="1160"
+     y="466"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text81">• Cultural continuity</text>
+  <text
+     x="1160"
+     y="479"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text82">• Innovation integration</text>
+  <text
+     x="1160"
+     y="500"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text83">Land-Based Healing:</text>
+  <text
+     x="1160"
+     y="515"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text84">• Ecosystem restoration</text>
+  <text
+     x="1160"
+     y="528"
+     font-family="Inter, sans-serif"
+     font-size="10px"
+     fill="#6b7280"
+     id="text85">• Community garden therapy</text>
+  <!-- Connection arrows -->
+  <path
+     d="M 498,350 H 318"
+     stroke="#16a34a"
+     stroke-width="3"
+     marker-end="url(#preventionArrow)"
+     fill="none"
+     id="path85" />
+  <path
+     d="m 1118,350 h 30"
+     stroke="#7c3aed"
+     stroke-width="3"
+     marker-end="url(#arrowhead)"
+     fill="none"
+     id="path86" />
+  <!-- Before/After Comparison (Bottom) -->
+  <rect
+     x="99.175652"
+     y="680.00305"
+     width="382.35791"
+     height="119.99385"
+     rx="8.0496407"
+     fill="#fef2f2"
+     stroke="#dc2626"
+     stroke-width="2.00615"
+     id="rect86" />
+  <text
+     x="286"
+     y="705"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     fill="#b91c1c"
+     id="text86">Without Territory Recognition</text>
+  <text
+     x="116"
+     y="725"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text87">• Resource extraction conflicts</text>
+  <text
+     x="116"
+     y="740"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text88">• Cultural site desecration</text>
+  <text
+     x="116"
+     y="755"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text89">• Environmental degradation</text>
+  <text
+     x="116"
+     y="770"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text90">• Community displacement</text>
+  <text
+     x="116"
+     y="785"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text91">• Traditional Knowledge loss</text>
+  <text
+     x="300"
+     y="725"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="#374151"
+     id="text92">• Legal system conflicts</text>
+  <text
+     x="300"
+     y="740"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="#374151"
+     id="text93">• Economic inequality</text>
+  <text
+     x="300"
+     y="755"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="#374151"
+     id="text94">• Social fragmentation</text>
+  <text
+     x="300"
+     y="770"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="#374151"
+     id="text95">• Intergenerational trauma</text>
+  <text
+     x="300"
+     y="785"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="#374151"
+     id="text96">• Ecosystem collapse</text>
+  <!-- Arrow showing transformation -->
+  <path
+     d="M 480.35461,742.36407 H 593.64066"
+     stroke="#374151"
+     stroke-width="4"
+     marker-end="url(#arrowhead)"
+     fill="none"
+     id="path96"
+     sodipodi:nodetypes="cc" />
+  <text
+     x="538"
+     y="692"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text97">Transform</text>
+  <text
+     x="538"
+     y="705"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text98">Through</text>
+  <text
+     x="538"
+     y="718"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#374151"
+     id="text99">Recognition</text>
+  <rect
+     x="590.05536"
+     y="680.05536"
+     width="423.62451"
+     height="119.88929"
+     rx="8.9184113"
+     fill="#dcfce7"
+     stroke="#16a34a"
+     stroke-width="2.11071"
+     id="rect99" />
+  <text
+     x="780"
+     y="705"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="16"
+     font-weight="bold"
+     fill="#15803d"
+     id="text100">With Territory Recognition</text>
+  <text
+     x="610"
+     y="725"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="#374151"
+     id="text101">• Sustainable resource stewardship</text>
+  <text
+     x="610"
+     y="740"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="#374151"
+     id="text102">• Sacred site protection</text>
+  <text
+     x="610"
+     y="755"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="#374151"
+     id="text103">• Biodiversity recovery</text>
+  <text
+     x="610"
+     y="770"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="#374151"
+     id="text104">• Community self-determination</text>
+  <text
+     x="610"
+     y="785"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="#374151"
+     id="text105">• Cultural revitalization</text>
+  <text
+     x="828"
+     y="725"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text106">• Legal pluralism harmony</text>
+  <text
+     x="828"
+     y="740"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text107">• Economic justice</text>
+  <text
+     x="828"
+     y="755"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text108">• Social cohesion</text>
+  <text
+     x="828"
+     y="770"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text109">• Intergenerational healing</text>
+  <text
+     x="828"
+     y="785"
+     font-family="Inter, sans-serif"
+     font-size="11px"
+     fill="#374151"
+     id="text110">• Ecosystem regeneration</text>
+  <!-- Implementation Framework -->
+  <rect
+     x="300"
+     y="840"
+     width="800"
+     height="80"
+     rx="8"
+     fill="#f3f4f6"
+     stroke="#6b7280"
+     stroke-width="2"
+     id="rect110" />
+  <text
+     x="700"
+     y="865"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="16"
+     font-weight="bold"
+     fill="#374151"
+     id="text111">Implementation Framework</text>
+  <text
+     x="320"
+     y="885"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="#374151"
+     id="text112"><tspan
+   font-weight="bold"
+   id="tspan111">Legal Foundation:</tspan> UN Declaration on Rights of Indigenous Peoples (UNDRIP) full implementation
+  </text>
+  <text
+     x="320"
+     y="900"
+     font-family="Inter, sans-serif"
+     font-size="11"
+     fill="#374151"
+     id="text113"><tspan
+   font-weight="bold"
+   id="tspan112">Treaty Integration:</tspan> Indigenous consent required for all peace operations affecting Traditional Territories
+  </text>
+  <!-- Success Metrics -->
+  <rect
+     x="150"
+     y="950"
+     width="1100"
+     height="40"
+     rx="5"
+     fill="#ecfdf5"
+     stroke="#059669"
+     stroke-width="1"
+     id="rect113" />
+  <text
+     x="700"
+     y="970"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="12"
+     font-weight="bold"
+     fill="#047857"
+     id="text114">Success Indicators: 80% reduction in resource conflicts • 60% biodiversity recovery • 100% FPIC compliance • Cultural revitalization in 500+ communities</text>
+  <!-- Legend -->
+  <rect
+     x="1020"
+     y="680"
+     width="150"
+     height="100"
+     rx="5"
+     fill="#f9fafb"
+     stroke="#d1d5db"
+     stroke-width="1"
+     id="rect114" />
+  <text
+     x="1095"
+     y="700"
+     text-anchor="middle"
+     font-family="Inter, sans-serif"
+     font-size="12"
+     font-weight="bold"
+     fill="#374151"
+     id="text115">Territory Legend</text>
+  <rect
+     x="1030"
+     y="710"
+     width="15"
+     height="10"
+     fill="url(#traditionalGradient)"
+     id="rect115" />
+  <text
+     x="1050"
+     y="719"
+     font-family="Inter, sans-serif"
+     font-size="9"
+     fill="#374151"
+     id="text116">Traditional Boundaries</text>
+  <rect
+     x="1030"
+     y="725"
+     width="15"
+     height="10"
+     fill="url(#watershedGradient)"
+     id="rect116" />
+  <text
+     x="1050"
+     y="734"
+     font-family="Inter, sans-serif"
+     font-size="9"
+     fill="#374151"
+     id="text117">Watershed Areas</text>
+  <circle
+     cx="1037"
+     cy="745"
+     r="5"
+     fill="url(#sacredGradient)"
+     id="circle117" />
+  <text
+     x="1050"
+     y="749"
+     font-family="Inter, sans-serif"
+     font-size="9"
+     fill="#374151"
+     id="text118">Sacred Sites</text>
+  <rect
+     x="1030"
+     y="755"
+     width="15"
+     height="10"
+     fill="url(#stewardshipGradient)"
+     id="rect118" />
+  <text
+     x="1050"
+     y="764"
+     font-family="Inter, sans-serif"
+     font-size="9"
+     fill="#374151"
+     id="text119">Stewardship Zones</text>
+</svg>
