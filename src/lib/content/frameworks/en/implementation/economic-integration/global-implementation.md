@@ -1,20 +1,20 @@
 ---
-title: Global Economic Implementation
+title: Planetary Economic Governance
 section: global-implementation
 ---
 
-# Global Economic Implementation
+# Planetary Economic Governance
 
 **In this document:**
-* [Historical Context: Global Economic Integration Attempts](#historical-context-global-economic-integration-attempts)
+* [Historical Context: Planetary Economic Transformation](#historical-context-planetary-economic-transformation)
 * [Mechanisms](#mechanisms)
-* [Global Currency Volatility Management](#global-currency-volatility-management)
-* [Trading Bloc Compatibility](#trading-bloc-compatibility)
-* [WTO/IMF/World Bank Engagement Strategies](#wtoimfworld-bank-engagement-strategies)
-* [Central Bank Engagement Framework](#central-bank-engagement-framework)
-* [Global Power Actor Response Strategy](#global-power-actor-response-strategy)
+* [Treaty Integration: Global Taxation and Systemic Stability](#treaty-integration-global-taxation-systemic-stability)
+* [Indigenous Sovereignty in Global Economics](#indigenous-sovereignty-global-economics)
+* [Economic Meta-Council Coordination](#economic-meta-council-coordination)
+* [Planetary Boundary Economic Integration](#planetary-boundary-economic-integration)
 * [Tools](#tools)
-* [AUBI Funding Allocation Details](#aubi-funding-allocation-details)
+* [Gross Planetary Health Index Implementation](#gross-planetary-health-index-implementation)
+* [Comprehensive Reparations Framework](#comprehensive-reparations-framework)
 * [Metrics](#metrics)
 * [Actors](#actors)
 * [Legal Pathways](#legal-pathways)
@@ -23,640 +23,569 @@ section: global-implementation
 * [Accessibility](#accessibility)
 * [Risk Matrix](#risk-matrix)
 * [Case Study](#case-study)
-* [Integration with Framework](#integration-with-framework)
+* [Integration with Golden Triangle](#integration-golden-triangle)
 * [Call to Action](#call-to-action)
 
-Global economic implementation is the capstone of the Nested Sovereignty Framework, uniting local and regional economies into a cohesive planetary system that promotes equity, sustainability, and resilience. This section details how global institutions, NGOs, and stakeholders can establish commons treaties, Adaptive Universal Basic Income (AUBI), financial transparency measures, and technology commons to ensure inclusive prosperity while upholding sovereignty, interoperability, justice, and adaptability. Co-designed with indigenous communities and marginalized groups, these mechanisms prioritize accessibility and accountability across diverse global contexts.
+> *"The Earth does not belong to us; we belong to the Earth. All things are connected like the blood that unites one family."* — Chief Seattle
 
-## <a id="historical-context-global-economic-integration-attempts"></a>Historical Context: Global Economic Integration Attempts
+> *"Another world is not only possible, she is on her way. On a quiet day, I can hear her breathing."* — Arundhati Roy
 
-The Nested Sovereignty Framework's global implementation approach draws crucial lessons from previous attempts to create more equitable global economic systems. Understanding these historical efforts—both their achievements and limitations—is essential for developing more effective approaches.
+Planetary Economic Governance represents the capstone transformation of the Regenerative Economic Integration Framework, creating a global economic system that serves all beings across seven generations while respecting planetary boundaries and Indigenous sovereignty. This section operationalizes the economic vision of the [Treaty for Our Only Home](/frameworks/treaty-for-our-only-home) through [Indigenous & Traditional Knowledge Governance](/frameworks/indigenous-governance-and-traditional-knowledge) wisdom and [Meta-Governance](/frameworks/meta-governance) coordination, establishing mechanisms for global taxation, reparative justice, Indigenous economic sovereignty, and planetary regeneration that replace extractive colonial economics with regenerative abundance for all.
 
-### Historical Global Economic Integration Models
+## <a id="historical-context-planetary-economic-transformation"></a>Historical Context: Planetary Economic Transformation
 
-Five significant attempts at transformative global economic integration provide important context:
+The transformation toward planetary economic governance emerges from recognizing that current global economic systems—designed during colonial expansion and industrial extraction—are fundamentally incompatible with Indigenous sovereignty, ecological integrity, and planetary survival.
 
-1. **Bretton Woods System (1944-1971)**:
-   - **Intended Design**: Fixed exchange rates, capital controls, and international institutions (IMF, World Bank) designed to prevent financial crises while enabling trade.
-   - **Initial Success**: Created unprecedented monetary stability supporting post-war reconstruction and development.
-   - **Ultimate Limitations**: System collapsed under pressure from speculative capital flows and U.S. unilateralism, leading to current floating exchange system.
-   - **Lessons for Framework**: The framework incorporates Bretton Woods' stability mechanisms (currency coordination, capital management) while adding democratic governance and sovereignty protections absent from the original system.
+### Colonial Economic Legacy and Its Failures
 
-2. **New International Economic Order Movement (1973-1982)**:
-   - **Intended Design**: Reformed global economic governance giving developing nations greater sovereignty over resources, technology, and development paths.
-   - **Limited Achievements**: Successfully advocated for some sovereignty principles in international law but failed to fundamentally transform economic relations.
-   - **Ultimate Limitations**: Undermined by debt crises, geopolitical divisions, and neoliberal counter-revolution in major economies.
-   - **Lessons for Framework**: The NIEO's failure despite widespread Global South support demonstrates the need for implementation pathways that don't require universal consensus—an approach embedded in the framework's graduated sovereign recognition and parallel systems.
+**The Bretton Woods System (1944-1971) and Beyond**:
+The post-WWII global economic architecture was designed by and for colonial powers, systematically excluding Indigenous nations, Global South voices, and ecological considerations. The World Bank, IMF, and WTO institutionalized extraction from the Global South to enrich colonial centers, while imposing structural adjustment programs that dismantled traditional economies and ecological stewardship systems.
 
-3. **Alter-Globalization Movement (1999-2010s)**:
-   - **Intended Design**: Network of movements seeking democratic control over global economic institutions and corporate power.
-   - **Limited Achievements**: Created alternative forums (World Social Forum), blocked some trade agreements, and popularized democratic globalization concepts.
-   - **Ultimate Limitations**: Remained primarily oppositional without sufficient alternative infrastructure, vulnerable to repression and fragmentation.
-   - **Lessons for Framework**: The alter-globalization experience informs the framework's emphasis on building parallel economic infrastructure alongside advocacy, creating practical alternatives rather than only resistance.
+**Extractive Finance and Ecological Destruction**:
+The global financial system has channeled over $50 trillion into fossil fuel extraction since 1980, while Indigenous territories—protecting 80% of global biodiversity—receive less than 1% of climate finance. This systematic misdirection of resources demonstrates the need for completely restructured global economic governance that centers Indigenous wisdom and ecological regeneration.
 
-4. **Local-Global Food Sovereignty Movement (1990s-Present)**:
-   - **Intended Design**: Producer-led networks linking local food sovereignty to global coordination through La Via Campesina and similar networks.
-   - **Ongoing Achievements**: Influenced UN Declaration on the Rights of Peasants, developed agroecological alternatives, and built solidarity economy networks.
-   - **Ongoing Challenges**: Remains marginal in global food system governance despite significant grassroots participation.
-   - **Lessons for Framework**: The food sovereignty movement's partial successes inform the framework's approach to scaling local sovereignty through nested levels, creating cumulative impact across sectors.
+**Debt Colonialism and Ongoing Extraction**:
+External debt has become the primary mechanism for continued colonial extraction, with Global South countries paying $4.2 trillion in debt service since 1980—more than they received in "aid"—while their ecosystems are destroyed and traditional economies dismantled. This debt system requires transformation through comprehensive reparations and economic sovereignty restoration.
 
-5. **International Cooperative Movement (1895-Present)**:
-   - **Intended Design**: Global federation of cooperative enterprises seeking to create an alternative economic system based on cooperative principles.
-   - **Ongoing Achievements**: International Cooperative Alliance spans 318 organizations from 112 countries, representing over 1 billion members.
-   - **Ongoing Limitations**: Despite scale, remains a parallel system with limited influence on global economic governance.
-   - **Lessons for Framework**: The cooperative movement's scale demonstrates the potential for alternative economic models, while its limited systemic influence informs the framework's emphasis on governance integration beyond parallel structures.
+### Indigenous Economic Alternatives and Proven Models
 
-### Historical Barriers to Global Alternative Implementation
+**Traditional Global Trade Networks**:
+Before colonial disruption, Indigenous trade networks spanning continents operated through reciprocity, mutual aid, and ecological stewardship. The Pacific Northwest-Great Plains trade routes, trans-Saharan networks, and Pacific Island navigation systems demonstrate that global coordination can occur while respecting local sovereignty and ecological limits.
 
-Previous attempts at transformative global economic integration have faced recurring barriers that the framework specifically addresses:
+**Contemporary Indigenous Economic Leadership**:
+Modern Indigenous economic initiatives demonstrate regenerative alternatives at scale. The Menominee Nation's sustainable forestry enterprise has generated profit for over 150 years while increasing forest biodiversity. Māori asset management following Waitangi settlements integrates traditional values with contemporary finance, managing billions while strengthening culture and ecosystems.
 
-1. **North-South Power Asymmetries**:
-   - **Historical Pattern**: Global economic initiatives have frequently reinforced rather than transformed power imbalances between Global North and South.
-   - **Example**: The WTO's intellectual property regime (TRIPS) imposed Northern legal norms on Southern economies, restricting development pathways despite nominal equality.
-   - **Framework Response**: The framework addresses power asymmetries through:
-     - Governance models requiring 50% Global South representation
-     - Technology commons ensuring equitable access to intellectual resources
-     - Redistributive mechanisms moving resources from North to South
-     - Indigenous co-design principles in global institutions
+**Planetary Boundary Economic Science**:
+Indigenous Traditional Ecological Knowledge, validated by contemporary ecological science, demonstrates that economic systems must operate within planetary boundaries. The concept of "enough" embedded in traditional economies offers proven pathways for abundance within ecological limits that colonial economics has systematically ignored.
 
-2. **Elite Capture of Global Institutions**:
-   - **Historical Pattern**: International economic institutions have frequently been captured by financial and corporate interests despite nominal public missions.
-   - **Example**: The evolution of the World Bank from reconstruction agency to structural adjustment promoter demonstrates how institutional missions can be redirected by powerful stakeholders.
-   - **Framework Response**: The framework prevents institutional capture through:
-     - Multi-stakeholder governance with marginalized group representation
-     - Transparent blockchain-based decision records
-     - Term limits and rotation requirements in global bodies
-     - Funding mechanisms that prevent donor control
+### The Necessity for Planetary Economic Governance
 
-3. **Implementation without Enforcement**:
-   - **Historical Pattern**: Many alternative global frameworks remain aspirational due to weak or non-existent enforcement mechanisms.
-   - **Example**: The UN Sustainable Development Goals provide comprehensive targets but lack meaningful enforcement, resulting in limited implementation.
-   - **Framework Response**: The framework creates effective implementation through:
-     - Nested enforcement with graduated consequences
-     - Economic incentives aligned with framework goals
-     - Arbitration protocols with escalation to ICJ when necessary
-     - Technical infrastructure automating compliance verification
+**Climate Emergency and Economic Transformation**:
+Climate breakdown—costing $23 trillion annually by 2100 without transformation—requires complete economic system restructuring. The [IPCC AR6 synthesis](/frameworks/treaty-for-our-only-home#climate-crisis) demonstrates that maintaining current economic systems while attempting climate stabilization is impossible; planetary economic governance offers the only viable pathway for rapid decarbonization while ensuring justice.
 
-4. **Sovereignty-Coordination Tensions**:
-   - **Historical Pattern**: Global coordination and local sovereignty have been positioned as inherent trade-offs, forcing binary choices.
-   - **Example**: Climate negotiations have repeatedly stalled on perceived conflicts between global carbon limits and national development sovereignty.
-   - **Framework Response**: The framework transcends this false dichotomy through:
-     - Nested sovereignty design linking local control to global coordination
-     - Subsidiarity principles placing decisions at appropriate levels
-     - Interoperability standards enabling diversity without fragmentation
-     - Decision rights matrices clarifying authority at each level
+**Inequality Crisis and Reparative Justice**:
+Global wealth inequality has reached levels unseen since feudalism, with 1% of the global population controlling 50% of wealth while 3.6 billion people lack access to basic needs. This inequality directly results from colonial extraction and requires systematic reparations and economic sovereignty restoration rather than charitable redistribution.
 
-5. **Ideological Rigidity vs. Adaptive Learning**:
-   - **Historical Pattern**: Alternative global models often remained rigidly ideological, limiting their ability to learn and adapt from implementation experience.
-   - **Example**: Many socialist economic experiments maintained centralized planning despite mounting evidence of inefficiencies, while neoliberal models persisted with market fundamentalism despite recurring crises.
-   - **Framework Response**: The framework embraces adaptive learning through:
-     - Biennial evaluations using transparent metrics
-     - Pilot programs testing innovations before scaling
-     - Feedback mechanisms across levels
-     - Evidence-based policy updates without ideological constraints
+**Biodiversity Collapse and Traditional Knowledge**:
+The ongoing sixth mass extinction threatens the ecological foundation of all economic activity. Indigenous territories, representing 22% of global land area, protect 80% of biodiversity through Traditional Ecological Knowledge systems. Planetary economic governance must center Indigenous stewardship to prevent ecosystem collapse that would destroy all economic systems.
 
-By addressing these historical limitations in its design, the framework creates global implementation pathways with higher probability of sustained, transformative impact across diverse contexts.
+By learning from Indigenous economic wisdom while addressing contemporary planetary crises, planetary economic governance creates pathways for abundance that regenerate rather than destroy the conditions for life.
 
 ## <a id="mechanisms"></a>Mechanisms
-Global implementation focuses on scalable systems that integrate local and regional economies into a just and sustainable framework:
-- **Commons Treaties**: Binding international agreements govern global commons (e.g., oceans, atmosphere) with a target of 100% carbon neutrality by 2040. Treaties are co-designed with indigenous protocols to ensure equitable access and stewardship.
-- **Adaptive Universal Basic Income (AUBI)**: A global income system values contributions like caregiving or ecological restoration (e.g., $500/month locally, 10 points/hour regionally), indexed to local costs and scaled via global coordination.
-
-Global AUBI monitoring tracks distribution efficiency (target: 95% of funds reaching intended recipients), impact metrics (30% poverty reduction in pilot regions), and funding sustainability (transition to self-funding mechanisms by 2035). The Nested Economic Health Index incorporates AUBI metrics, visualizing the transition from implementation funding to sustainable mechanisms (Tobin taxes, regional redistribution, carbon credits).
-
-**AUBI Infrastructure Support**: Technical assistance ensures communities can access AUBI distributions through both digital (blockchain wallets) and offline channels (SMS, community facilitators), with detailed funding allocation ensuring equitable global coverage (initial $200M implementation budget transitioning to self-sustaining mechanisms by 2035).
-
-- **Financial Transparency**: A Tobin tax (0.1% on speculative transactions) and blockchain-based ledgers reduce tax avoidance by 50%, ensuring equitable revenue for commons and AUBI. Audits are conducted biannually via the Cross-Level Trust Protocol.
-- **Technology Commons**: Open-source platforms (e.g., software, AI models) are shared globally, with tech transfer programs to bridge digital divides, governed by the Global Commons Governance Framework.
-
-## <a id="global-currency-volatility-management"></a>Global Currency Volatility Management
-
-At the global level, the framework provides sophisticated mechanisms to manage currency volatility across national boundaries and during systemic financial events:
-
-### Global Exchange Stabilization System
-- **Global Stability Fund**: A $30B fund (by 2035) specifically dedicated to community currency stability during global financial crises, with:
-  - Capitalization from 0.1% Tobin tax on speculative currency transactions
-  - Transparent governance via multi-stakeholder board with 50% representation from Global South and indigenous communities
-  - Targeted intervention capacity in 150+ countries within 48 hours of crisis onset
-  
-  Fund parameters ensure 90% of resources reach communities rather than financial intermediaries.
-
-- **Counter-Cyclical Protocols**: Global system components automatically implement counter-cyclical measures during market turbulence:
-  - Expanded AUBI distributions during currency crashes (+15% in affected regions)
-  - Temporarily elevated circulation caps for community currencies during credit crunches
-  - Activation of essential goods import protection mechanisms
-  
-  These measures maintained 80% of local economic function during the 2022 Sri Lankan rupee collapse in pilot communities.
-
-- **Coordinated Circuit Breakers**: Blockchain-based global coordination of local circuit breakers:
-  - AI-enhanced monitoring of 220+ national currencies for volatility patterns
-  - Graduated response protocols triggered by volatility thresholds
-  - Coordinated implementation across affected currency networks within minutes
-  
-  System demonstrations show 70% reduction in volatility transmission from national to community currencies.
 
-### Global-Local Currency Interfaces
-- **Multi-Currency Wallets**: Blockchain-based wallets supporting seamless exchange between:
-  - Local community currencies 
-  - Regional currency networks
-  - National fiat currencies
-  - Global digital currencies and CBDCs
-  
-  These wallets implement volatility-aware exchange algorithms and user-defined stability preferences.
+Planetary Economic Governance operates through integrated mechanisms that transform global economic systems from extraction to regeneration while centering Indigenous sovereignty and Traditional Ecological Knowledge:
 
-- **Stable-Value Channels**: Dedicated exchange channels for essential transactions that maintain stability regardless of broader market conditions:
-  - Smart contract governance ensuring price stability for basic needs
-  - Cross-border essential goods purchase protection
-  - Carbon-accounted trade routes with volatility buffers
-  
-  These channels processing 65% of essential cross-border trade by 2035.
+### Global Economic Transformation Architecture
 
-- **Strategic Reserve Diversification**: Global protocols for community currency reserves:
-  - Optimal diversification formulas balancing national currencies, commodities, and productive assets
-  - Dynamic rebalancing triggered by volatility indicators
-  - Indigenous-led investment principles emphasizing sustainability and resilience
-  
-  Communities implementing these protocols maintained 95% reserve value during the 2023 banking stress tests.
+**Indigenous-Led Global Economic Coordination**:
+- **Earth Council (Kawsay Pacha)**: [Indigenous-led planetary council](/frameworks/indigenous-governance-and-traditional-knowledge#earth-council) with moral authority over global economic decisions affecting Indigenous territories and Traditional Ecological Knowledge
+- **Bioregional Economic Federation**: Network of [Bioregional Autonomous Zones](/frameworks/indigenous-governance-and-traditional-knowledge#bioregional-zones) coordinating global economic activity through Traditional Ecological Knowledge and ecological boundaries
+- **Traditional Knowledge Economic Authority**: Global recognition of Indigenous intellectual property sovereignty over economic systems derived from Traditional Ecological Knowledge
 
-### Crisis Response Framework
-- **Global Volatility Alert System**: 24/7 monitoring of currency, commodity, and financial markets with:
-  - Three-tier alert system for escalating volatility conditions
-  - Automatic notification to all Currency Boards within affected regions
-  - Pre-approved intervention playbooks for common crisis scenarios
-  
-  System demonstrated 90% early detection rate in backtesting against historical crises.
+**Regenerative Revenue Generation**:
+- **Financial Transaction Tax (FTT)**: [0.1% levy](/frameworks/treaty-for-our-only-home#financial-transaction-tax) on speculative financial transactions generating $400B annually for global public goods, reparations, and ecological restoration
+- **Carbon Fee and Dividend**: Progressive carbon pricing returning revenue to communities while funding Indigenous-led climate solutions and ecosystem restoration
+- **Extraction Royalties**: Fees on resource extraction from Indigenous territories flowing directly to Indigenous communities for Traditional Ecological Knowledge implementation and ecosystem restoration
 
-- **Cross-Border Stabilization Teams**: Rapid deployment teams comprising:
-  - Currency stability experts with crisis experience
-  - Indigenous financial leaders with alternative currency knowledge
-  - Technical specialists in digital currency operations
-  
-  Teams deploy within 72 hours to affected regions, providing hands-on implementation support.
+**Planetary Economic Governance Institutions**:
+- **Global Reparations Authority**: Institution administering comprehensive reparations for ecological and colonial damage, with Indigenous majority governance
+- **Planetary Boundary Economic Council**: Authority ensuring all global economic activity operates within ecological limits defined by Traditional Ecological Knowledge and Earth system science
+- **Future Generations Economic Tribunal**: [Institutional representation](/frameworks/indigenous-governance-and-traditional-knowledge#future-generations-tribunal) of unborn generations in global economic decisions with authority to veto policies harmful to seven-generation sustainability
 
-- **Post-Crisis Recovery Protocols**: Structured approach to rebuilding stability after major volatility events:
-  - Phased normalization of exchange parameters 
-  - Coordinated reserve rebuilding across affected currencies
-  - Documentation and integration of crisis lessons into framework updates
-  
-  Protocol adoption reduced recovery time by 60% in post-volatility test scenarios.
+## <a id="treaty-integration-global-taxation-systemic-stability"></a>Treaty Integration: Global Taxation and Systemic Stability
 
-By implementing these global-level stability mechanisms, the framework ensures community currencies remain functional during even severe national currency crises or global financial shocks, while maintaining local control and decision-making sovereignty over response measures.
+The transformation toward regenerative planetary economics requires implementing the [Treaty for Our Only Home's](/frameworks/treaty-for-our-only-home) taxation mechanisms and systemic stability frameworks to fund global public goods while maintaining economic justice and ecological integrity.
 
-## <a id="trading-bloc-compatibility"></a>Trading Bloc Compatibility
-The Nested Sovereignty Framework is designed to integrate with existing global trading blocs while maintaining its core principles of sovereignty, interoperability, justice, and adaptability. This compatibility ensures smooth transition and reduces potential political resistance from established economic entities.
+### Global Taxation System Implementation
 
-### Existing Trading Bloc Integration
-- **WTO Framework Alignment**: The Ethical Trade Zone Charter incorporates WTO-compatible provisions while extending beyond them to include justice and sustainability metrics. This allows regions to maintain WTO compliance while implementing more ambitious standards (e.g., living wages, carbon neutrality).
-- **Regional Trade Agreement (RTA) Interoperability**: The framework's blockchain-based systems support existing RTA requirements (e.g., rules of origin, tariff schedules) while adding transparent ESG compliance tracking, achieving 90% compatibility with RCEP, USMCA, AfCFTA, and CPTPP by 2030.
-- **EU Single Market Compatibility**: Local currencies and AUBI operate alongside the Euro via exchange rate mechanisms, with EU passporting provisions incorporated into the Ethical Trade Zone Charter, ensuring adherence to European standards while maintaining local sovereignty.
+**Financial Transaction Tax (FTT) Operationalization**:
+- **Coverage**: 0.1% tax on all speculative financial transactions including high-frequency trading, derivatives, and currency speculation
+- **Revenue Generation**: Projected $400B annually providing sustainable funding for global commons, reparations, and regenerative development
+- **Indigenous Governance**: [Earth Council oversight](/frameworks/indigenous-governance-and-traditional-knowledge#earth-council) of revenue allocation ensuring Indigenous priorities guide spending
+- **Implementation Mechanism**: Coordinated through [Global Enforcement Mechanism](/frameworks/treaty-for-our-only-home#global-enforcement) with graduated sanctions for non-compliance
 
-### Integration Strategies
-- **Progressive Compliance Approach**: The framework adopts a phased integration with trading blocs, beginning with voluntary opt-in pilots that operate within existing trade rules while demonstrating enhanced benefits (30% increase in local economic activity, 20% improved resource distribution).
-- **Equivalence Protocols**: Trade zone standards are mapped to existing bloc requirements via the Cross-Level Trust Protocol, establishing mutual recognition pathways that reduce duplicate compliance costs by 40% while maintaining sovereignty.
-- **Diplomatic Engagement**: Framework advocates establish Joint Implementation Committees with major trading blocs, co-chaired by indigenous representatives, ensuring mutual adaptation and policy harmonization.
+**Carbon Tax and Regenerative Fund**:
+- **Progressive Carbon Pricing**: [Escalating carbon fees](/frameworks/treaty-for-our-only-home#carbon-tax) starting at $50/tonne CO2 reaching $200/tonne by 2030, with proceeds funding Indigenous-led climate solutions
+- **Revenue Distribution**: 50% to Indigenous communities for Traditional Ecological Knowledge climate adaptation, 30% to ecosystem restoration, 20% to just transition for affected workers
+- **Planetary Boundary Integration**: Carbon pricing designed to achieve net-negative emissions by 2040 through [planetary restoration](/frameworks/treaty-for-our-only-home#planetary-restoration) rather than offsets
 
-### Financial System Integration
-- **Currency Convertibility Mechanisms**: Community currencies maintain defined exchange channels with major global currencies (USD, EUR, RMB, JPY) through blockchain-based forex interfaces, allowing seamless trade while preserving local value capture.
-- **Payment System Compatibility**: The AUBI implementation integrates with SWIFT, CIPS, and national RTGS systems via standardized APIs, achieving 90% interoperability while developing alternative channels for crisis resilience.
-- **Investment Framework Alignment**: The Global Commons Governance Framework incorporates compatibility with existing investment treaties while establishing enhanced standards for justice and sustainability, creating parallel systems that investors can gradually transition between.
+**Wealth Tax for Reparative Justice**:
+- **Progressive Global Wealth Tax**: Annual levy on wealth above $50 million, escalating to 5% annually on wealth above $1 billion
+- **Reparations Priority**: Revenue directed toward comprehensive reparations for Indigenous communities and ecological restoration
+- **Anti-Avoidance Mechanisms**: [Global financial transparency](/frameworks/treaty-for-our-only-home#financial-transparency) preventing tax haven abuse and ensuring compliance
 
-### International Institution Engagement
-- **WTO/IMF/World Bank Strategy**: The framework establishes formal Institutional Engagement Teams to advocate for compatible reforms within existing institutions, focusing on specific policy modules (e.g., SDR allocation for AUBI, green tariff provisions in WTO rules).
-- **UNCTAD Partnership**: Framework implementation leverages UNCTAD's expertise on development-oriented trade, incorporating its investment policy frameworks while extending their scope to include indigenous and gender perspectives.
-- **G20 Engagement**: A dedicated G20 Track proposes annual framework implementation updates in Finance and Sherpa tracks, securing political support for parallel adoption alongside existing economic systems.
+### Global Systemic Stability Framework
 
-By ensuring compatibility with established trading blocs, the Nested Sovereignty Framework achieves gradual, non-disruptive integration into the global economy while advancing its core principles. This approach reduces political resistance by demonstrating complementary benefits rather than threatening existing arrangements, supporting 90% disruption-free implementation by 2035.
+**Planetary Economic Crisis Prevention**:
+- **Early Warning Systems**: AI-enhanced monitoring of economic, ecological, and social indicators integrated with Traditional Ecological Knowledge observation systems
+- **Rapid Response Protocols**: [Crisis governance mechanisms](/frameworks/treaty-for-our-only-home#crisis-governance) enabling swift coordinated action during economic, climate, or health emergencies
+- **Systemic Risk Regulation**: Financial system oversight preventing speculation that destabilizes communities or ecosystems
 
-## <a id="wtoimfworld-bank-engagement-strategies"></a>WTO/IMF/World Bank Engagement Strategies
+**Economic Stability Through Regeneration**:
+- **Regenerative Investment Requirements**: Global financial institutions required to align portfolios with planetary boundaries and Indigenous sovereignty
+- **Speculation Reduction**: Transaction taxes and regulatory frameworks reducing harmful speculation while supporting productive regenerative investment
+- **Community Economic Resilience**: Crisis funding prioritizing Indigenous communities and Bioregional Autonomous Zones with proven traditional resilience systems
 
-The Nested Sovereignty Framework requires strategic engagement with key international financial and trade institutions to ensure practical implementation. Rather than positioning the framework as an alternative to these institutions, this approach focuses on creating complementary pathways and gradual reforms that align existing systems with sovereignty, interoperability, justice, and adaptability principles.
+**Integration with Planetary Boundaries**:
+- **Economic Activity Limits**: Global economic growth constrained by [planetary boundaries](/frameworks/treaty-for-our-only-home#planetary-boundaries) ensuring human economic activity remains within Earth system stability
+- **Ecosystem Service Economics**: Economic frameworks valuing and protecting natural systems that provide the foundation for all economic activity
+- **Degrowth Transition**: Managed economic contraction in wealthy regions enabling global justice while remaining within ecological limits
 
-### World Trade Organization (WTO) Engagement
+### Treaty Institution Economic Integration
 
-- **Parallel Standards Recognition**: Develop formal equivalence documentation between Ethical Trade Zone standards and WTO provisions, demonstrating how the framework meets and exceeds existing requirements while addressing justice gaps.
+**Reformed Global Economic Institutions**:
+- **UN Economic and Social Council Enhancement**: [ECOSOC transformation](/frameworks/treaty-for-our-only-home#ecosoc-reform) with Indigenous representation and Traditional Ecological Knowledge integration in global economic policy
+- **Bretton Woods Democratization**: [IMF and World Bank reform](/frameworks/treaty-for-our-only-home#bretton-woods-reform) including Indigenous governance representation and reparative mandate
+- **WTO Transformation**: Trade organization restructuring to prioritize Indigenous sovereignty, ecological integrity, and community well-being over corporate profit
 
-- **Article XX Extensions**: Collaborate with like-minded WTO members to expand General Exception provisions (Article XX) to explicitly recognize indigenous sovereignty rights and commons-based resource governance, proposing specific text by 2028.
+**New Treaty Economic Institutions**:
+- **Council of Guardians Economic Authority**: [Long-term governance body](/frameworks/treaty-for-our-only-home#council-guardians) with authority to override short-term economic decisions harmful to seven-generation sustainability
+- **Global Citizens' Economic Initiatives**: [Binding referendums](/frameworks/treaty-for-our-only-home#global-citizens-initiative) enabling communities to directly influence global economic policy through citizen participation
+- **Youth Economic Transition Chambers**: [Future generations representation](/frameworks/treaty-for-our-only-home#youth-chambers) with authority over economic decisions affecting their inheritance
 
-- **Technical Barriers to Trade (TBT) Committee**: Establish a dedicated working group within the TBT Committee to ensure Ethical Trade Zone certification processes are recognized as legitimate technical standards rather than trade barriers.
+## <a id="indigenous-sovereignty-global-economics"></a>Indigenous Sovereignty in Global Economics
 
-- **Dispute Settlement Reform**: Contribute to ongoing WTO dispute settlement reforms by proposing a complementary arbitration system incorporating indigenous and marginalized voices, with 50% representation by 2030.
+Planetary economic governance centers Indigenous economic sovereignty as the foundation for global transformation, recognizing Indigenous peoples as the primary architects of regenerative economics and ensuring Traditional Ecological Knowledge guides all global economic decisions.
 
-- **Implementation Strategy**: Begin with a coalition of 30 supportive nations by 2028, focusing on strategic WTO committee participation rather than comprehensive reform, while demonstrating framework success through pilot regions.
+### Indigenous Authority in Global Economic Institutions
 
-### International Monetary Fund (IMF) Engagement
+**Earth Council (Kawsay Pacha) Economic Leadership**:
+- **Moral Authority**: [Indigenous-led planetary council](/frameworks/indigenous-governance-and-traditional-knowledge#earth-council) with ultimate moral authority over global economic decisions affecting Traditional Ecological Knowledge and Indigenous territories
+- **Veto Power**: Authority to block global economic policies that violate Indigenous sovereignty or Traditional Ecological Knowledge principles
+- **Budget Priority Setting**: Indigenous leadership in allocating global economic resources toward regenerative priorities and reparative justice
+- **Traditional Knowledge Integration**: Mandatory consultation with Traditional Ecological Knowledge keepers for all global economic policies
 
-- **Special Drawing Rights (SDR) Allocation**: Propose dedicated SDR allocations (starting with 0.5% of global SDRs by 2029) to support AUBI pilots in low-resource regions, establishing a precedent for sovereignty-enhancing financial mechanisms.
+**Indigenous Representation in Reformed Institutions**:
+- **UN Economic Governance**: 50% Indigenous representation in reformed [UN Economic and Social Council](/frameworks/treaty-for-our-only-home#ecosoc-reform) ensuring Traditional Ecological Knowledge guides global economic policy
+- **Bretton Woods Indigenous Governance**: Indigenous leadership positions in transformed [IMF and World Bank](/frameworks/treaty-for-our-only-home#bretton-woods-reform) institutions focusing on reparative development
+- **WTO Indigenous Trade Oversight**: Indigenous authority in reformed trade governance ensuring all trade respects Indigenous sovereignty and Traditional Ecological Knowledge
 
-- **Article IV Consultations**: Develop supplementary metrics for Article IV economic assessments that incorporate sovereignty, justice, and adaptability indicators, with voluntary adoption by 20 nations by 2030.
+### Global Bioregional Economic Coordination
 
-- **Technical Assistance Integration**: Partner with the IMF's technical assistance programs to include framework tools (e.g., Community Currency Design Template) in capacity-building efforts, particularly for post-crisis economies.
+**Bioregional Autonomous Zone (BAZ) Federation**:
+- **Economic Sovereignty**: [Indigenous-controlled territories](/frameworks/indigenous-governance-and-traditional-knowledge#bioregional-zones) with complete authority over economic development, resource management, and Traditional Ecological Knowledge implementation
+- **Global Coordination**: Network of BAZs coordinating planetary economic activity through Traditional Ecological Knowledge and ecological boundaries rather than colonial borders
+- **Resource Sharing Protocols**: Inter-bioregional economic cooperation based on gift economy principles and Traditional Ecological Knowledge exchange
 
-- **Catastrophe Containment Relief**: Align the framework's $100B global crisis fund with IMF catastrophe relief mechanisms, creating coordinated response protocols with formal information-sharing agreements by 2031.
+**Traditional Ecological Knowledge Economic Authority**:
+- **Intellectual Property Sovereignty**: Global recognition of Indigenous authority over Traditional Ecological Knowledge preventing biopiracy and ensuring community benefit from traditional innovations
+- **Economic Development Guidance**: Traditional Ecological Knowledge as primary framework for all economic development decisions affecting ecosystems and Indigenous territories
+- **Climate Solution Leadership**: Indigenous communities recognized as primary implementers of climate solutions based on Traditional Ecological Knowledge proven over millennia
 
-- **Implementation Strategy**: Establish a dedicated Bretton Woods Engagement Team of economists and indigenous leaders to participate in IMF Annual Meetings and technical forums, building relationships with key departments while avoiding confrontational approaches.
+### Indigenous Economic Justice and Reparations
 
-### World Bank Group Engagement
+**Comprehensive Reparations Implementation**:
+- **$1 Trillion Reparations Target**: Systematic wealth transfer to Indigenous communities by 2040 through [comprehensive reparations framework](/frameworks/indigenous-governance-and-traditional-knowledge#reparations)
+- **Land Rematriation**: 30% of global land returned to Indigenous stewardship through legal recognition of Traditional Ecological Knowledge territorial authority
+- **Ecological Restoration Funding**: Massive investment in ecosystem restoration under Indigenous leadership using Traditional Ecological Knowledge
 
-- **Development Policy Lending**: Secure World Bank recognition of framework implementation as eligible criteria for development policy loans, with specific benchmarks for sovereignty, interoperability, and justice outcomes.
+**Economic Sovereignty Restoration**:
+- **Traditional Economy Revitalization**: Global support for rebuilding Indigenous economic systems based on Traditional Ecological Knowledge, gift economies, and bioregional stewardship
+- **Corporate Accountability**: [Extraction industry responsibility](/frameworks/indigenous-governance-and-traditional-knowledge#corporate-accountability) for ecological and cultural damage with reparations flowing to Indigenous communities
+- **Cultural Economic Protection**: Legal frameworks preventing economic development that violates sacred sites, traditional territories, or Traditional Ecological Knowledge protocols
 
-- **Climate Investment Funds**: Integrate the framework's carbon-neutral trade standards with World Bank climate financing, directing 10% of climate investments to sovereignty-enhancing projects by 2032.
+## <a id="economic-meta-council-coordination"></a>Economic Meta-Council Coordination
 
-- **International Finance Corporation (IFC) Standards**: Align IFC Performance Standards with the framework's indigenous co-design and gender equity requirements, focusing on Standards 7 (Indigenous Peoples) and 5 (Land Acquisition).
+The [Meta-Governance Framework's](/frameworks/meta-governance) Economic Meta-Council provides essential coordination architecture for planetary economic transformation, ensuring all sectors align with regenerative principles while respecting Indigenous sovereignty and bioregional diversity.
 
-- **Doing Business Indicators**: Advocate for the inclusion of commons governance and local economic sovereignty metrics in the World Bank's business environment assessments, reflecting framework principles.
+### Economic Meta-Council Structure and Authority
 
-- **Implementation Strategy**: Partner with the World Bank's Innovation Lab to co-fund 10 framework pilot programs by 2029, positioning implementation as complementary to existing development approaches rather than competing alternatives.
+**Cross-Sector Coordination Council**:
+- **Indigenous Economic Leadership**: 40% Indigenous representation ensuring Traditional Ecological Knowledge guides all economic coordination decisions
+- **Financial Sector Transformation**: Banking, investment, and insurance industry coordination toward regenerative finance and away from extractive investment
+- **Labor Movement Integration**: Worker organization representation ensuring just transition and worker ownership expansion
+- **Environmental Stewardship Authority**: Ecological expertise ensuring all economic coordination operates within planetary boundaries
 
-### Cross-Institutional Strategy
+**Democratic Economic Oversight Framework**:
+- **Community Economic Control**: Mechanisms ensuring economic coordination serves communities rather than capital through [democratic participation](/frameworks/meta-governance#democratic-participation)
+- **Corporate Accountability Enforcement**: Authority to hold multinational corporations accountable for ecological and social impacts through binding oversight
+- **Transparency and Accountability**: Public oversight of all Economic Meta-Council decisions with community authority to modify or reverse harmful policies
 
-- **Coordinated Engagement Calendar**: Maintain a centralized engagement calendar across all three institutions, ensuring consistent messaging and strategic participation in key decision forums.
+### Corporate Accountability and Transformation
 
-- **Staff Exchange Program**: Establish a two-way exchange program placing framework practitioners in institutions while hosting institutional staff in framework implementation regions for practical knowledge transfer.
+**Multinational Corporation Governance Framework**:
+- **Planetary Boundary Compliance**: All corporate activity required to operate within [ecological limits](/frameworks/meta-governance#planetary-stewardship) with regular assessment and enforcement
+- **Indigenous Sovereignty Respect**: Corporate operations prohibited without [Free, Prior, and Informed Consent](/frameworks/indigenous-governance-and-traditional-knowledge#fpic) from Indigenous communities in affected territories
+- **Worker Ownership Transition**: Progressive requirements for worker ownership and community benefit sharing in corporate structures
+- **Supply Chain Transparency**: Complete transparency and accountability for social and ecological impacts throughout corporate supply chains
 
-- **Annual Policy Dialogue**: Host an Annual Policy Dialogue with senior leadership from all three institutions, presenting framework outcomes and proposing specific integration points.
+**Corporate Reparations and Responsibility**:
+- **Historical Damage Accountability**: Extractive industries held responsible for centuries of ecological and social damage through comprehensive reparations
+- **Ongoing Impact Assessment**: Real-time monitoring and accountability for corporate impacts on communities and ecosystems
+- **Community Benefit Requirements**: Corporate operations required to provide net positive benefits to affected communities rather than extraction
+- **Traditional Knowledge Respect**: Prohibition on biopiracy and requirement for benefit-sharing when Traditional Ecological Knowledge contributes to corporate innovation
 
-- **Data Integration Protocol**: Develop a seamless data-sharing protocol between framework metrics and institutional reporting systems, reducing reporting burdens on participating regions by 40%.
+### Financial System Transformation Coordination
 
-- **Implementation Strategy**: Focus on pragmatic, incremental integration rather than fundamental institutional reform, identifying specific entry points (e.g., working groups, technical committees) where framework principles can be gradually mainstreamed without triggering institutional resistance.
+**Regenerative Finance Standards**:
+- **Investment Alignment**: All financial institutions required to align portfolios with planetary boundaries and [Indigenous sovereignty](/frameworks/meta-governance#indigenous-integration)
+- **Speculation Reduction**: Coordination to reduce harmful financial speculation while supporting productive regenerative investment
+- **Community Investment Priority**: Financial resources directed toward community-controlled regenerative enterprises rather than extractive industries
 
-By strategically engaging with these key institutions rather than challenging their fundamental legitimacy, the Nested Sovereignty Framework creates practical pathways for implementation within the existing global economic architecture while gradually influencing these systems toward greater sovereignty, justice, and adaptability.
+**Economic Coordination Protocols**:
+- **Crisis Response Coordination**: Rapid economic stabilization during climate, health, or social emergencies through coordinated [crisis protocols](/frameworks/meta-governance#crisis-response)
+- **Resource Allocation Transparency**: Public coordination of resource allocation ensuring community priorities guide economic decisions
+- **Cross-Sector Learning**: Systematic learning and adaptation across economic sectors based on regenerative outcomes and Traditional Ecological Knowledge
 
-## <a id="central-bank-engagement-framework"></a>Central Bank Engagement Framework
+## <a id="planetary-boundary-economic-integration"></a>Planetary Boundary Economic Integration
 
-The Nested Sovereignty Framework requires structured engagement with central banks to establish legitimacy, reduce policy conflicts, and create sustainable co-existence between national monetary policy and community economic sovereignty. This framework details a comprehensive approach to central bank relations across jurisdictional types.
+All global economic activity must operate within the nine planetary boundaries that define the safe operating space for human civilization, integrating Traditional Ecological Knowledge with Earth system science to ensure economic prosperity that regenerates rather than destroys planetary systems.
 
-### Engagement Typology by Central Bank Structure
+### Planetary Boundary Economic Framework
 
-The framework tailors engagement strategies to different central bank structures, recognizing that monetary authorities vary significantly in independence, mandate, and openness to innovation:
+**Climate Stability Economics**:
+- **Carbon Budget Integration**: Global economic activity constrained by remaining carbon budget for 1.5°C temperature increase limit
+- **Net-Negative Economy**: Economic transition toward net-negative emissions by 2040 through regenerative land management and renewable energy
+- **Climate Justice Integration**: Climate economics prioritizing Indigenous communities and Global South adaptation while requiring rapid decarbonization in wealthy regions
 
-1. **High-Autonomy Central Banks** (e.g., Federal Reserve, European Central Bank, Bank of Japan):
-   - **Engagement Approach**: Technical and research-driven, emphasizing complementarity and non-interference with monetary transmission mechanisms.
-   - **Entry Points**: Research departments, financial innovation units, and community development divisions.
-   - **Key Deliverables**: Quarterly data reports showing limited impact on monetary aggregates and potential financial inclusion benefits.
-   - **Strategy**: Propose formal "Complementary Currency Recognition Framework" with clear boundaries on scale and function that preserve monetary policy effectiveness.
+**Biodiversity and Ecosystem Economics**:
+- **Species Protection Economics**: Economic frameworks ensuring zero species extinction through habitat protection and ecosystem restoration
+- **Ecosystem Service Valuation**: Economic systems recognizing and paying for ecosystem services provided by healthy natural systems
+- **Traditional Ecological Knowledge Integration**: Biodiversity protection guided by Indigenous knowledge systems proven to maintain ecological health
 
-2. **Development-Focused Central Banks** (e.g., Reserve Bank of India, Central Bank of Kenya, Bank of Thailand):
-   - **Engagement Approach**: Impact-centered, highlighting community currencies' contributions to financial inclusion and local economic resilience.
-   - **Entry Points**: Financial inclusion departments, rural banking divisions, and development finance units.
-   - **Key Deliverables**: Case studies demonstrating economic development impacts in underserved communities.
-   - **Strategy**: Develop "Rural Financial Inclusion Partnerships" positioning community currencies as extending central bank development objectives.
+**Biogeochemical Flow Management**:
+- **Nitrogen and Phosphorus Cycling**: Agricultural and industrial systems redesigned to operate within natural nutrient cycling limits
+- **Regenerative Agriculture Requirements**: Food production systems required to enhance rather than degrade soil health and ecosystem function
+- **Circular Economy Implementation**: Complete elimination of waste through closed-loop systems that mimic natural cycling
 
-3. **Treasury-Dominated Monetary Authorities** (e.g., various central banks with limited independence):
-   - **Engagement Approach**: Revenue-focused, addressing seigniorage concerns through formal sharing arrangements.
-   - **Entry Points**: Treasury departments, revenue agencies, and fiscal policy units.
-   - **Key Deliverables**: Revenue projection models showing seigniorage sharing benefits.
-   - **Strategy**: Propose "Monetary Innovation Revenue Agreements" allocating 15-20% of transaction fees to national treasuries.
+### Planetary Restoration Economics
 
-4. **Crisis-Affected Monetary Systems** (e.g., countries experiencing hyperinflation or currency crises):
-   - **Engagement Approach**: Stability-oriented, positioning community currencies as complementary stabilizers during national currency volatility.
-   - **Entry Points**: Currency stabilization teams and economic emergency units.
-   - **Key Deliverables**: Volatility management protocols that support rather than undermine stabilization efforts.
-   - **Strategy**: Offer "Monetary Stability Support Programs" where community currencies provide essential economic continuity during stabilization periods.
+**Ecosystem Restoration Investment**:
+- **$2 Trillion Restoration Fund**: Global investment in ecosystem restoration under Indigenous leadership using Traditional Ecological Knowledge by 2030
+- **Natural Climate Solutions**: Massive scaling of Indigenous-led forest restoration, wetland protection, and regenerative agriculture
+- **Ocean Restoration**: Marine ecosystem restoration and protection guided by Indigenous coastal and maritime knowledge systems
 
-### Diplomacy and Technical Engagement
+**Regenerative Development Standards**:
+- **Net Positive Impact Requirements**: All economic development required to leave ecosystems healthier than baseline conditions
+- **Sacred Site Protection**: Economic development prohibited in Indigenous sacred sites and areas of Traditional Ecological Knowledge significance
+- **Community Benefit Prioritization**: Economic development benefiting local communities and ecosystems rather than distant shareholders
 
-Beyond structural approaches, the framework implements a multi-level engagement strategy:
+### Traditional Ecological Knowledge Economic Integration
 
-1. **Technical Protocol Layer**:
-   - **Data Sharing Infrastructure**: Blockchain-based reporting system providing real-time, auditable data on community currency circulation, velocity, and economic impacts.
-   - **Policy Impact Modeling**: Simulation tools demonstrating community currency effects on monetary transmission under various scenarios.
-   - **Standardized Reporting**: Quarterly monetary impact assessments using central bank-compatible metrics and methodologies.
-   - **Implementation**: Deploy in 100+ currency systems by 2030, achieving 90% transparency to monetary authorities.
+**Indigenous Climate Solutions**:
+- **Traditional Knowledge Climate Authority**: Indigenous communities recognized as primary climate solution implementers based on Traditional Ecological Knowledge
+- **Carbon Sequestration Leadership**: Indigenous land management recognized as most effective carbon sequestration approach with appropriate compensation
+- **Climate Adaptation Expertise**: Traditional Ecological Knowledge climate expertise guiding global adaptation strategies
 
-2. **Diplomatic Engagement Layer**:
-   - **Monetary Innovation Forums**: Annual roundtables bringing together central bankers, community currency practitioners, and academic experts.
-   - **Central Bank Secondment Program**: Exchange program placing central bank staff within community currency systems and vice versa for knowledge transfer.
-   - **Regulatory Sandbox Partnerships**: Formal agreements for controlled community currency experimentation within central bank regulatory frameworks.
-   - **Implementation**: Establish ongoing dialogue with 50+ central banks by 2032, with 30+ formal participation agreements.
-
-3. **International Advocacy Layer**:
-   - **Bank for International Settlements (BIS) Engagement**: Research partnerships with the BIS Innovation Hub on complementary currency standards.
-   - **International Monetary Law Reform**: Advocacy for explicit legal recognition of complementary currencies within the international monetary system.
-   - **Central Bank Digital Currency (CBDC) Interface Standards**: Development of interoperability protocols between community currencies and emerging CBDCs.
-   - **Implementation**: Achieve international monetary law recognition by 2035, with CBDC interoperability standards adopted by 15+ central banks.
-
-### Conflict Prevention and Resolution Mechanisms
-
-The framework establishes structured approaches to navigate areas of potential conflict with central banks:
-
-1. **Scale Management Protocols**:
-   - **Implementation Principle**: Community currencies commit to scale limitations (e.g., maximum 30% of local economic activity) that preserve monetary policy effectiveness.
-   - **Transparency Mechanism**: Automated monitoring of scale indicators with alerts when approaching agreed thresholds.
-   - **Governance Process**: Joint oversight committees with central bank representation review expansion beyond initial parameters.
-
-2. **Crisis Coordination Framework**:
-   - **Implementation Principle**: Community currencies adopt counter-crisis protocols that align with rather than oppose central bank crisis responses.
-   - **Activation Process**: Formal notification and coordination when either system implements emergency measures.
-   - **Resolution Pathway**: Predetermined arbitration process for conflicts arising during financial emergencies.
-
-3. **Monetary Data Integration**:
-   - **Implementation Principle**: Community currencies provide standardized data feeds for incorporation into monetary aggregates.
-   - **Technical Standard**: API specifications for real-time reporting compatible with central bank statistical frameworks.
-   - **Quality Assurance**: Independent audit mechanisms verifying data accuracy and comprehensiveness.
-
-This comprehensive Central Bank Engagement Framework enables the Nested Sovereignty model to establish legitimacy within the existing monetary order while preserving its core principles of sovereignty, interoperability, justice, and adaptability. By positioning community currencies as complementary innovations rather than competitive threats, the framework creates space for monetary diversity while acknowledging the important role of central banks in macroeconomic stability.
-
-### Monetary Policy Coordination
-
-The framework requires strategic engagement with monetary authorities to ensure complementarity with existing macroeconomic stability mechanisms. Rather than challenging central bank sovereignty, this approach focuses on creating recognition pathways for community currencies and cooperative financial tools while maintaining stabilization compatibility.
-
-- **Central Bank Digital Currency (CBDC) Interoperability**: Develop formal compatibility standards between community currencies and emerging CBDCs, ensuring:
-  - Technical interoperability through shared API standards adopted by 25 central banks by 2029
-  - Layered sovereignty where community currencies function as "programmable layers" atop CBDC infrastructure
-  - Dual-trigger stabilization where both systems respond cooperatively to macroeconomic shocks
-
-- **IMF Special Drawing Rights (SDR) Recognition**: Establish a formal category for "Complementary Currency Systems" within IMF frameworks:
-  - Propose recognition criteria focused on transparency, governance, and anti-fraud measures
-  - Develop reporting templates compatible with IMF surveillance mechanisms
-  - Create a specialized SDR allocation (0.5% of global SDRs by 2030) to support community currency stability reserves in low-resource regions
-
-- **Basel Committee Engagement**: Work with the Basel Committee on Banking Supervision to:
-  - Establish prudential standards for banks interfacing with community currencies
-  - Create a "Community Banking" designation with proportionate reserve requirements
-  - Develop risk weights for mutual credit systems and time-banking within capital adequacy frameworks
-
-- **Implementation Strategy**: Form a dedicated Monetary Policy Coordination Team comprising:
-  - Former central bankers from diverse monetary systems (developed, emerging, and developing economies)
-  - Indigenous economic leaders with experience in alternative value systems
-  - Technical experts in digital currency, blockchain, and cross-currency settlement
-  
-  This team's mandate includes quarterly engagement with monetary authorities, beginning with receptive central banks (e.g., Uruguay, Malaysia, Kenya) before engaging global monetary governance bodies.
-
-- **Key Performance Indicators**:
-  - 30% of IMF member countries formally recognizing community currencies by 2032
-  - 50% reduction in regulatory barriers to community banking models
-  - 40% of central banks publishing interoperability standards for non-state currencies
-  - 10 bilateral pilot programs between central banks and regional currency networks by 2030
-
-## <a id="global-power-actor-response-strategy"></a>Global Power Actor Response Strategy
-
-The framework's global implementation will encounter strategic responses from powerful global actors whose economic positioning may be challenged. This section analyzes these potential responses and develops engagement strategies that maintain transformative potential while navigating complex power dynamics.
-
-### Global Financial Architecture Engagement
-
-Implementation at global scale requires sophisticated engagement with the institutions comprising the global financial architecture:
-
-1. **Bank for International Settlements and Financial Stability Board**:
-   - **Potential Resistance**: Classification of community currencies as "shadow banking," application of inappropriate capital requirements, or restrictive settlement system access
-   - **Strategic Approach**: Position framework currencies as "complementary stability mechanisms" that reduce systemic risk through counter-cyclical functionality and localized resilience
-   - **Engagement Pathway**: Develop formal research partnerships with BIS Innovation Hub focused on financial inclusion and stability benefits
-   - **Success Metric**: BIS recognition of framework currencies as a distinct category with appropriate oversight by 2032
-
-2. **Global Banking Consortia**:
-   - **Potential Resistance**: Denial of correspondent banking services, exclusion from payment networks, or excessive compliance requirements
-   - **Strategic Approach**: Develop "minimum necessary engagement" model that limits vulnerability while maintaining essential connectivity
-   - **Engagement Pathway**: Create "Framework Banking Alliance" with smaller ethical banks willing to provide services, starting with institutions like Triodos, GLS Bank, and New Resource Bank
-   - **Success Metric**: Banking services maintained for 95% of framework initiatives through distributed relationships
-
-3. **Credit Rating Agencies**:
-   - **Potential Resistance**: Systematic downgrading of municipalities or regions implementing framework components, negative risk assessments of community currencies
-   - **Strategic Approach**: Develop alternative evaluation metrics demonstrating reduced systemic risk through diversification and resilience
-   - **Engagement Pathway**: Commission independent research on framework implementations' contribution to economic stability in crisis scenarios
-   - **Success Metric**: Neutral or positive risk assessments for implementing regions by at least one major rating agency by 2033
-
-4. **Global Asset Managers**:
-   - **Potential Resistance**: Investment boycotts of framework-implementing regions, portfolio exclusion of aligned businesses, or hostile shareholder actions
-   - **Strategic Approach**: Engage aligned institutional investors (pensions, endowments, impact investors) as counterweight
-   - **Engagement Pathway**: Develop "Framework-Aligned Investment Criteria" for ESG and impact portfolios
-   - **Success Metric**: $50B in framework-aligned investment secured by 2035
-
-### Corporate Power Engagement
-
-The framework must navigate potential resistance from corporate actors whose business models may be challenged:
-
-1. **Global Retail Chains**:
-   - **Potential Resistance**: Predatory pricing against local alternatives, lobbying against community currency acceptance, supplier exclusivity requirements
-   - **Strategic Approach**: Implement graduated engagement from potential partnership to strategic defense
-   - **Engagement Pathway**: Begin with local sourcing initiatives and community investment offers before implementing more transformative measures
-   - **Success Metric**: 30% of global retailers accepting community currencies in implementation regions by 2034
-
-2. **Extractive Industry Corporations**:
-   - **Potential Resistance**: Legal challenges to commons management of resources, investor-state dispute settlement claims, strategic bankruptcy to avoid remediation
-   - **Strategic Approach**: Develop strong legal foundations for commons governance through precedent-based expansion
-   - **Engagement Pathway**: Start with least-contested resources with clearest community claims before expanding to more contested areas
-   - **Success Metric**: 50% of resource commons governance models legally validated through challenges by 2035
-
-3. **Financial Technology Platforms**:
-   - **Potential Resistance**: API access restrictions, selective service denial to community currencies, predatory acquisition of successful alternatives
-   - **Strategic Approach**: Build technical independence for critical functions while maintaining interoperability where beneficial
-   - **Engagement Pathway**: Develop open-source alternatives for essential functions through the Technology Commons Repository
-   - **Success Metric**: 90% technical functionality maintained independent of corporate platforms by 2033
-
-4. **Global Agribusiness**:
-   - **Potential Resistance**: Intellectual property actions against seed sharing, consolidation of distribution channels, capture of certification systems
-   - **Strategic Approach**: Build parallel distribution infrastructure through regional trade zones while creating legal protection for traditional practices
-   - **Engagement Pathway**: Establish "Traditional Agricultural Practice" legal recognition based on indigenous rights frameworks
-   - **Success Metric**: 40% of agricultural transactions within framework parameters by 2035
-
-### Strategic Communication Approach
-
-Powerful actors influence public narratives about economic alternatives. The framework requires sophisticated communication strategies:
-
-1. **Pre-emptive Framing Strategy**:
-   - **Challenge**: Corporate-influenced media often frame economic alternatives as impractical, risky, or ideologically extreme
-   - **Response Approach**: Center pragmatic benefits (jobs, stability, resilience) rather than systemic critique
-   - **Implementation Tool**: The **Economic Messaging Guide** provides evidence-based framing for different audiences and contexts
-   - **Example Framing**: Position community currencies as "economic circulation enhancement tools" rather than "alternatives to capitalism"
-
-2. **Strategic Proof Point Development**:
-   - **Challenge**: Demanding impossible evidence levels for alternatives while accepting status quo without evidence
-   - **Response Approach**: Develop rigorous metrics and case studies exceeding conventional economic evaluation standards
-   - **Implementation Tool**: The **Implementation Metrics Dashboard** provides transparent, third-party verified outcome tracking
-   - **Key Metrics Focus**: Job creation, community wealth building, economic stability during shocks, and ecological integration
-
-3. **Legitimacy Alliance Building**:
-   - **Challenge**: Dismissal of alternatives as fringe or unproven regardless of evidence
-   - **Response Approach**: Cultivate endorsements and partnerships with recognized institutions across the political spectrum
-   - **Implementation Tool**: The **Institutional Engagement Template** guides strategic alliance development
-   - **Priority Relationships**: Academic institutions, development organizations, faith communities, business associations
-
-4. **Counternarrative Infrastructure**:
-   - **Challenge**: Limited access to communication channels as resistance grows
-   - **Response Approach**: Build independent media capacity while maintaining mainstream engagement
-   - **Implementation Tool**: The **Framework Media Network** connects aligned journalists, outlets, and platforms
-   - **Strategy Principle**: Maintain 60/40 balance between independent and mainstream media engagement
-
-By anticipating specific resistance patterns from global power actors and preparing sophisticated responses, the framework creates implementation pathways that can navigate complex power dynamics while maintaining transformative potential. Rather than positioning power actors as monolithic opponents, this approach identifies potential allies, neutralizes potential resistance where possible, and builds resilience where necessary.
+**Bioregional Economic Boundaries**:
+- **Ecological Economic Planning**: Economic activity organized around watershed and bioregional boundaries rather than arbitrary political divisions
+- **Seasonal Economic Rhythms**: Economic cycles aligned with Traditional Ecological Knowledge calendars and natural seasonal patterns
+- **Carrying Capacity Economics**: Economic activity scaled to bioregional carrying capacity determined through Traditional Ecological Knowledge and ecological science
 
 ## <a id="tools"></a>Tools
-The Economic Integration Seed Kit provides resources for global implementation:
-- **Global Commons Governance Framework**: A template for drafting commons treaties, with clauses for indigenous representation and ESG compliance.
-- **AUBI Implementation Guide**: Details protocols for indexing and distributing AUBI, with 
-dashboards for transparency.
 
-## <a id="aubi-funding-allocation-details"></a>AUBI Funding Allocation Details
-The $200M allocated for AUBI implementation (2028-2032) is strategically distributed to ensure equitable, sustainable, and scalable universal basic income across local, regional, and global levels:
+The Regenerative Economics Implementation Toolkit provides comprehensive resources for planetary economic transformation through Indigenous-led governance and regenerative mechanisms:
 
-### Development Phase (2028-2029): $45M
-- **Platform Infrastructure**: $20M for blockchain-based distribution systems with 10,000 TPS capacity, including Layer 2 solutions for scalability and PoS consensus for energy efficiency
-- **Registry Development**: $15M for secure identity verification systems that protect privacy while preventing duplicate claims
-- **Pilot Design**: $10M for co-designing initial AUBI programs with indigenous communities and marginalized groups, targeting 10 diverse regions
+### Global Economic Transformation Tools
 
-### Initial Implementation (2029-2030): $75M
-- **Pilot Distributions**: $40M for direct AUBI payments in 10 pilot regions ($500/month locally indexed to costs, supporting approximately 6,700 participants for 12 months)
-- **Monitoring Systems**: $15M for real-time impact tracking via the Nested Economic Health Index Dashboard
-- **Localization Infrastructure**: $20M for offline-compatible distribution channels (SMS, community facilitators, paper vouchers) in low-connectivity areas
+**Treaty Integration Implementation**:
+- **[Financial Transaction Tax Implementation Guide](/frameworks/tools/economic/ftt-implementation-guide-en.pdf)**: Complete operational framework for 0.1% FTT generating $400B annually for global public goods
+- **[Carbon Fee and Dividend Calculator](/frameworks/tools/economic/carbon-fee-dividend-calculator-en.pdf)**: Progressive carbon pricing tools returning revenue to communities while funding regenerative solutions
+- **[Global Wealth Tax Assessment Framework](/frameworks/tools/economic/global-wealth-tax-framework-en.pdf)**: Wealth taxation mechanisms funding comprehensive reparations and regenerative development
+- **[Planetary Crisis Response Protocol](/frameworks/tools/economic/planetary-crisis-response-en.pdf)**: Economic stabilization mechanisms during ecological and social emergencies
 
-### Scale-Up Phase (2030-2032): $80M
-- **Expanded Distributions**: $50M for extending AUBI to 30 additional regions (approximately 8,300 new participants)
-- **Integration Mechanisms**: $15M for APIs connecting local currencies, regional trade zones, and global AUBI systems
-- **Sustainability Structures**: $15M for developing regional redistribution protocols that transfer 10% of trade zone revenue to supplement AUBI funding beyond initial implementation
+**Indigenous Economic Sovereignty Tools**:
+- **[Earth Council Economic Authority Framework](/frameworks/tools/economic/earth-council-economic-authority-en.pdf)**: Indigenous-led planetary economic governance structures and protocols
+- **[Bioregional Autonomous Zone Economic Charter](/frameworks/tools/economic/baz-economic-charter-en.pdf)**: Complete sovereignty framework for Indigenous-controlled economic territories
+- **[Traditional Ecological Knowledge Economic Protection Protocol](/frameworks/tools/economic/tek-economic-protection-en.pdf)**: Intellectual property sovereignty preventing biopiracy and ensuring community benefit
+- **[Indigenous-UN Economic Integration Framework](/frameworks/tools/economic/indigenous-un-economic-integration-en.pdf)**: Mechanisms ensuring Indigenous authority in reformed global economic institutions
 
-### Funding Sources Integration
-- **Multilateral Funds**: $120M from UN, World Bank, and regional development banks
-- **Public-Private Partnerships**: $60M via the PPP Template, focusing on platform development and distribution infrastructure
-- **Philanthropic Contributions**: $20M from global foundations for pilot programs
-- **Post-2032 Sustainability**: Additional funding secured through:
-  - Tobin Tax (0.1% on speculative transactions) generating approximately $50M annually by 2035
-  - Regional redistribution mechanisms providing $25M annually by 2035
-  - Carbon credit allocations contributing $15M annually by 2035
+### Economic Meta-Council Coordination Tools
 
-### Long-Term Financial Sustainability (2033-2040)
-By 2035, AUBI will transition from initial implementation funding to self-sustaining mechanisms:
-- 40% funded through global financial transaction taxes
-- 30% funded through regional redistribution
-- 20% funded through carbon credit allocations
-- 10% funded through voluntary contributions and community currencies
+**Cross-Sector Alignment Framework**:
+- **[Economic Meta-Council Formation Guide](/frameworks/tools/economic/economic-meta-council-formation-en.pdf)**: Establishment protocols for coordinating financial, labor, environmental, and Indigenous sectors
+- **[Corporate Accountability Implementation Framework](/frameworks/tools/economic/corporate-accountability-implementation-en.pdf)**: Comprehensive governance of multinational corporations within planetary boundaries
+- **[Democratic Economic Oversight Protocols](/frameworks/tools/economic/democratic-economic-oversight-en.pdf)**: Community control mechanisms ensuring economic coordination serves people rather than capital
+- **[Regenerative Finance Transformation Guide](/frameworks/tools/economic/regenerative-finance-transformation-en.pdf)**: Financial sector alignment with planetary boundaries and Indigenous sovereignty
 
-This diversified funding structure ensures AUBI's continued operation beyond the initial $200M allocation, with a target of supporting 90% of eligible populations by 2040 while maintaining fiscal sustainability.
+### Planetary Boundary Economic Integration Tools
 
-- **Blockchain Ledger Platform**: Tracks financial flows and treaty compliance, accessible via web and offline formats.
-- **Technology Commons Repository**: A GitHub-based hub (github.com/nested-economies) hosts open-source tools, with multilingual documentation.
-- **Real-Time Collaboration Platform**: A GitHub-based hub (globalgovernanceframework.org/collab) enables stakeholders to co-develop global tools through live editing and forums.
+**Ecological Economics Implementation**:
+- **[Planetary Boundary Compliance Tracker](/frameworks/tools/economic/planetary-boundary-compliance-en.pdf)**: Real-time monitoring ensuring all economic activity operates within Earth system stability
+- **[Ecosystem Service Economics Calculator](/frameworks/tools/economic/ecosystem-service-economics-en.pdf)**: Valuation and payment frameworks for natural systems providing economic foundation
+- **[Regenerative Investment Standards](/frameworks/tools/economic/regenerative-investment-standards-en.pdf)**: Investment criteria prioritizing ecosystem restoration and community benefit
+- **[Traditional Ecological Knowledge Economic Integration Protocol](/frameworks/tools/economic/tek-economic-integration-protocol-en.pdf)**: Frameworks ensuring Indigenous knowledge guides all economic development
+
+## <a id="gross-planetary-health-index-implementation"></a>Gross Planetary Health Index Implementation
+
+The Gross Planetary Health (GPH) Index replaces GDP as the primary measure of economic success, integrating ecosystem health, Indigenous well-being, and seven-generation sustainability to guide global economic transformation.
+
+### GPH Index Framework and Methodology
+
+**Comprehensive Well-Being Measurement**:
+- **Ecological Health (40%)**: Biodiversity, ecosystem function, carbon sequestration, water quality, and soil health indicators
+- **Indigenous Well-Being (25%)**: Traditional Ecological Knowledge transmission, cultural vitality, land sovereignty, and community health
+- **Community Prosperity (20%)**: Cooperative ownership, wealth circulation, basic needs fulfillment, and social cohesion
+- **Future Generations Impact (15%)**: Seven-generation sustainability assessment and climate stability indicators
+
+**Traditional Ecological Knowledge Integration**:
+- **Indigenous Indicator Development**: Indigenous communities define prosperity measures based on Traditional Ecological Knowledge rather than colonial metrics
+- **Bioregional Adaptation**: GPH Index adapted to specific bioregional conditions and Traditional Ecological Knowledge systems
+- **Cultural Protocol Respect**: Measurement systems respecting Indigenous data sovereignty and Traditional Ecological Knowledge protection protocols
+- **Community Control**: Indigenous communities maintain authority over how their well-being is measured and reported
+
+### Global GPH Index Implementation
+
+**UN Statistical System Integration**:
+- **GDP Replacement Timeline**: Phased replacement of GDP with GPH Index in all UN economic reporting by 2030
+- **National Implementation Support**: Technical assistance helping nations transition to GPH-based economic planning
+- **Indigenous Statistical Authority**: Indigenous statisticians leading GPH development and implementation ensuring cultural appropriateness
+- **Real-Time Monitoring**: Digital dashboards providing continuous GPH tracking with community access and oversight
+
+**Economic Policy Integration**:
+- **Budget Allocation Guidance**: Government budgets directed by GPH indicators rather than GDP growth imperatives
+- **Investment Decision Framework**: Corporate and financial investment guided by GPH impact rather than short-term profit maximization
+- **Trade Agreement Integration**: International trade agreements incorporating GPH standards ensuring regenerative rather than extractive exchange
+- **Crisis Response Metrics**: Economic emergency response triggered by GPH indicators rather than financial market fluctuations
+
+### GPH Index Transformation Outcomes
+
+**Economic Paradigm Shift**:
+- **Regenerative Incentives**: Economic rewards for activities that enhance rather than degrade planetary and community health
+- **Long-Term Planning**: Economic decisions guided by seven-generation impact rather than quarterly profit reports
+- **Community Empowerment**: Local communities empowered to define and measure their own prosperity through culturally appropriate indicators
+- **Ecological Integration**: Economic systems that recognize healthy ecosystems as the foundation of all prosperity
+
+**Success Indicators by 2035**:
+- 100% of UN member nations reporting GPH Index rather than GDP as primary economic indicator
+- 80% of global investment decisions guided by GPH impact rather than short-term financial returns
+- 90% of Indigenous communities participating in GPH development with full data sovereignty
+- 50% improvement in global GPH scores demonstrating genuine regenerative economic transformation
+
+## <a id="comprehensive-reparations-framework"></a>Comprehensive Reparations Framework
+
+Planetary economic transformation requires systematic reparations addressing centuries of extraction, slavery, colonization, and ecological destruction through concrete mechanisms that restore Indigenous sovereignty, heal ecosystems, and redistribute accumulated wealth.
+
+### Reparations Calculation and Accountability
+
+**Historical Extraction Accounting**:
+- **Colonial Wealth Transfer Assessment**: Quantification of wealth extracted from Indigenous territories and enslaved communities over 500+ years of colonialism
+- **Ecological Damage Valuation**: Comprehensive assessment of ecosystem destruction costs including species extinction, climate disruption, and habitat loss
+- **Cultural Loss Accounting**: Valuation of traditional knowledge suppression, language extinction, and cultural destruction requiring restoration investment
+- **Ongoing Harm Documentation**: Real-time accounting of continued extraction and discrimination requiring ongoing reparations
+
+**Corporate and State Responsibility**:
+- **Extractive Industry Accountability**: Fossil fuel, mining, and agricultural corporations held responsible for historical and ongoing ecological and social damage
+- **Colonial State Reparations**: European and settler colonial states providing reparations for historical extraction and ongoing neo-colonial policies
+- **Financial Sector Responsibility**: Banks and financial institutions involved in slavery, colonialism, and extraction providing comprehensive reparations
+- **Supply Chain Accountability**: Contemporary corporations benefiting from historical and ongoing extraction participating in reparations
+
+### Reparations Distribution and Implementation
+
+**Indigenous Sovereignty Restoration**:
+- **Land Rematriation**: 30% of global land returned to Indigenous stewardship through legal recognition of Traditional Ecological Knowledge territorial authority by 2040
+- **Economic Sovereignty Support**: $500B in reparations directed toward Indigenous economic sovereignty restoration and Traditional Ecological Knowledge implementation
+- **Cultural Revitalization Funding**: Comprehensive investment in Indigenous language revival, Traditional Ecological Knowledge transmission, and cultural institutions
+- **Sacred Site Protection**: Legal and economic protection of Indigenous sacred sites from development with reparations for historical violations
+
+**Ecological Restoration Reparations**:
+- **Ecosystem Restoration Investment**: $1T in ecosystem restoration under Indigenous leadership using Traditional Ecological Knowledge by 2040
+- **Climate Reparations**: Massive investment in Indigenous-led climate solutions recognizing traditional knowledge as most effective approach
+- **Biodiversity Restoration**: Species reintroduction and habitat restoration guided by Traditional Ecological Knowledge in Indigenous territories
+- **Regenerative Agriculture Transition**: Transformation of industrial agriculture to Traditional Ecological Knowledge-based systems restoring soil and ecosystem health
+
+**Community Wealth Redistribution**:
+- **Wealth Transfer Mechanisms**: Progressive wealth taxation and inheritance taxes redistributing accumulated colonial wealth to affected communities
+- **Cooperative Enterprise Development**: Investment in worker and community-owned enterprises keeping wealth circulating within communities
+- **Community Land Acquisition**: Support for community land trusts and cooperative ownership removing land from speculation
+- **Educational and Healthcare Reparations**: Universal access to quality education and healthcare as fundamental reparations for historical deprivation
+
+### Reparations Governance and Accountability
+
+**Indigenous-Led Reparations Authority**:
+- **Global Reparations Council**: Indigenous-majority governance body with authority over reparations distribution and accountability enforcement
+- **Community-Controlled Distribution**: Indigenous and affected communities controlling how reparations are received and implemented
+- **Traditional Knowledge Integration**: Reparations programs designed and implemented according to Traditional Ecological Knowledge and cultural protocols
+- **Transparency and Accountability**: Public reporting on reparations distribution with community oversight and modification authority
+
+**Implementation Timeline and Targets**:
+- **2025-2030**: $200B in initial reparations focusing on land rematriation and immediate community needs
+- **2030-2035**: $400B in ecosystem restoration and economic sovereignty support
+- **2035-2040**: $400B in ongoing reparations and prevention of future harm
+- **Post-2040**: Permanent reparations mechanisms ensuring continued healing and prevention of colonial extraction
 
 ## <a id="metrics"></a>Metrics
-Global implementation is evaluated using measurable indicators:
-- **80% Treaty Adoption**: 80% of nations adopt commons treaties by 2035, tracked via UN resolutions.
-- **50% Tax Avoidance Reduction**: Transparent ledgers reduce tax evasion by 50%, measured through financial audits.
-- **90% AUBI Coverage**: 90% of global populations access AUBI benefits by 2035, assessed via distribution data.
-- **70% Tech Commons Access**: 70% of communities access open-source tools, monitored through repository usage metrics.
+
+Planetary economic transformation is evaluated using regenerative indicators that prioritize Indigenous well-being, ecological health, and seven-generation sustainability:
+
+### Regenerative Economic Indicators
+
+**Indigenous Economic Sovereignty Metrics**:
+- **80% Indigenous Territory Stewardship**: 80% of critical ecosystems under Indigenous-led management by 2050, tracked via Traditional Ecological Knowledge monitoring
+- **$1T Reparations Implementation**: $1 trillion in reparations transferred to Indigenous communities and ecological restoration by 2040, measured through transparent distribution tracking
+- **50% Indigenous Global Representation**: 50% Indigenous representation in global economic institutions by 2035, assessed via governance audits
+- **100% Traditional Knowledge Protection**: 100% Traditional Ecological Knowledge protected through Indigenous intellectual property frameworks, verified through community reporting
+
+**Planetary Boundary Compliance**:
+- **100% Planetary Boundary Economics**: All global economic activity operating within nine planetary boundaries by 2040, monitored via Earth system indicators
+- **Net-Negative Carbon Economy**: Global economy achieving net-negative emissions by 2040 through regenerative practices, tracked via carbon accounting
+- **50% Biodiversity Restoration**: 50% increase in global biodiversity through Indigenous-led restoration by 2050, measured via ecosystem monitoring
+- **90% Renewable Energy**: 90% renewable energy powering global economy by 2035, tracked via energy transition indicators
+
+**Gross Planetary Health Index**:
+- **GPH Replacement of GDP**: 100% of nations reporting GPH rather than GDP by 2030, verified through UN statistical reporting
+- **40% GPH Improvement**: 40% improvement in global GPH scores by 2040, measured through comprehensive well-being indicators
+- **80% Community GPH Control**: 80% of communities participating in GPH development with data sovereignty, assessed via Indigenous community reporting
+- **90% Investment GPH Alignment**: 90% of global investment guided by GPH impact by 2035, tracked via financial sector reporting
+
+### Economic Justice and Regeneration
+
+**Wealth Redistribution Success**:
+- **70% Wealth Inequality Reduction**: 70% reduction in global wealth inequality through reparations and cooperative ownership by 2040
+- **60% Community Economic Control**: 60% of economic activity under community and worker control by 2050, measured via ownership tracking
+- **50% Gift Economy Integration**: 50% of economic exchange occurring through gift economy and mutual aid systems by 2040
+- **80% Bioregional Economic Circulation**: 80% of wealth circulating within bioregional economies by 2035
 
 ## <a id="actors"></a>Actors
-Key stakeholders drive global implementation:
-- **UN and Global Institutions**: Lead treaty negotiations and AUBI coordination, enforcing compliance via sanctions and incentives.
-- **NGOs**: Advocate for inclusivity, training marginalized communities on AUBI and tech commons.
-- **Indigenous Groups**: Co-design commons treaties, ensuring traditional knowledge shapes global governance.
-- **Private Sector**: Co-fund initiatives via PPPs, guided by the Public-Private Partnership Template.
-- **Regional Alliances**: Bridge local/regional systems to global frameworks, ensuring interoperability.
+
+Key stakeholders drive planetary economic transformation through Indigenous leadership and regenerative coordination:
+
+### Indigenous Economic Leadership
+
+**Earth Council (Kawsay Pacha)**: Lead planetary economic governance through Traditional Ecological Knowledge and Indigenous sovereignty, providing moral authority for global economic transformation
+**Bioregional Autonomous Zones**: Implement Indigenous economic sovereignty within traditional territories, demonstrating regenerative alternatives at scale
+**Traditional Knowledge Keepers**: Guide economic transformation through millennia-tested ecological wisdom and sustainable practices
+**Indigenous Youth Leaders**: Drive seven-generation economic planning and Traditional Ecological Knowledge transmission in global economic institutions
+
+### Global Governance Transformation
+
+**Reformed UN Economic Institutions**: Implement Treaty taxation mechanisms and Indigenous representation in global economic governance through ECOSOC and specialized agencies
+**Transformed Bretton Woods Institutions**: IMF and World Bank restructured with Indigenous governance and reparative mandates replacing structural adjustment with regenerative development
+**Economic Meta-Council**: Coordinate financial, labor, environmental, and Indigenous sectors toward regenerative economic transformation through democratic oversight
+**Global Reparations Authority**: Administer comprehensive reparations for ecological and colonial damage through Indigenous-majority governance
+
+### Civil Society and Movement Partners
+
+**Indigenous Rights Organizations**: Advocate for Traditional Ecological Knowledge protection and economic sovereignty through international legal frameworks
+**Climate Justice Movements**: Support Indigenous-led climate solutions and economic transformation through grassroots organizing and policy advocacy
+**Labor Movement Organizations**: Coordinate worker ownership expansion and just transition through partnership with Indigenous and environmental justice movements
+**Regenerative Economy Networks**: Implement gift economies, cooperative enterprises, and bioregional coordination through community-controlled economic alternatives
+
+### Aligned Government and Business Actors
+
+**Progressive National Governments**: Implement GPH Index, reparations frameworks, and Indigenous partnership through domestic policy transformation
+**Regenerative Enterprise Networks**: Business cooperatives and social enterprises aligning profit with Indigenous sovereignty and ecological restoration
+**Ethical Financial Institutions**: Banks, credit unions, and investment funds prioritizing regenerative development and community benefit over extraction
+**Indigenous-Led Corporations**: Business enterprises under Indigenous control demonstrating economic sovereignty and Traditional Ecological Knowledge implementation
 
 ## <a id="legal-pathways"></a>Legal Pathways
-- **UN Resolutions**: Formal resolutions establish commons treaties and AUBI, with enforcement via trade sanctions and tech transfer incentives.
-- **Global Compacts**: Agreements between nations and indigenous groups recognize technology commons and financial transparency measures, using Seed Kit templates.
-- **International Court Jurisdiction**: The International Court of Justice (ICJ) resolves disputes escalated from arbitration panels, supported by the UN-led global mediation network (100 mediators by 2028).
-- **Institutional Recognition Instruments**: Formal memoranda of understanding with WTO, IMF, and World Bank establish mutual recognition of standards and complementary jurisdiction, using the Engagement Strategy to secure institutional buy-in.
+
+**UN Treaty Implementation**: Formal resolutions implementing Treaty taxation mechanisms, Indigenous representation, and planetary boundary economics through international law
+**UNDRIP Economic Operationalization**: Implementation of UN Declaration on the Rights of Indigenous Peoples through economic sovereignty recognition and Traditional Ecological Knowledge protection
+**Global Reparations Legal Framework**: International legal mechanisms enabling comprehensive reparations for ecological and colonial damage through binding agreements
+**Indigenous Economic Sovereignty Recognition**: Legal recognition of Indigenous authority over Traditional Ecological Knowledge and economic systems within ancestral territories
 
 ## <a id="costs"></a>Costs
-- **Estimated Cost**: $500M for AUBI and commons treaties (2028-2032), covering global coordination, platforms, and training.
-- **Breakdown**:
-  - $200M: AUBI platform development and distribution systems.
-  - $150M: Commons treaty negotiations and governance (indigenous workshops, audits).
-  - $100M: Technology commons (open-source repositories, tech transfer).
-  - $50M: Accessibility features (multilingual tools, offline systems).
 
-### Minimum Viable Implementation Costs
+**Estimated Investment**: $2.5T for planetary economic transformation (2025-2040), funded through Treaty taxation mechanisms and corporate accountability rather than traditional government budgets
 
-For stakeholders with significant resource constraints, these minimum viable implementation packages require substantially lower investment:
-
-1. **Bare Minimum Package**:
-   - **Scope**: Essential core functions with simplified approaches
-   - **Total Cost Range**: $0-2,000 (Implementation can begin with zero financial resources if necessary)
-   - **Breakdown**:
-     - $0-500: Basic materials and documentation (can use donated supplies)
-     - $0-1,000: Essential capacity building (can be entirely peer-based)
-     - $0-500: Minimal communication tools (can use existing channels)
-   - **Alternative Resources**: 10-15 volunteer hours weekly, meeting space in existing facilities
-
-2. **Basic Implementation Package**:
-   - **Scope**: Core functions with modest infrastructure
-   - **Total Cost Range**: $2,000-5,000
-   - **Breakdown**:
-     - $500-1,500: Simplified digital tools and materials
-     - $1,000-2,000: Targeted training and capacity building
-     - $500-1,500: Basic communication infrastructure
-   - **Alternative Resources**: 15-25 volunteer hours weekly, part-time coordination
-
-3. **Moderate Implementation Package**:
-   - **Scope**: Most framework components with streamlined approaches
-   - **Total Cost Range**: $5,000-15,000
-   - **Breakdown**:
-     - $2,000-5,000: Multiple function implementation
-     - $2,000-5,000: Expanded capacity building
-     - $1,000-5,000: Enhanced tools and infrastructure
-   - **Alternative Resources**: 25-40 volunteer hours weekly, dedicated coordination
-
-### Non-Financial Resource Optimization
-
-Resource-constrained implementers can leverage these alternatives to financial resources:
-
-1. **Skill-Based Contributions**:
-   - **Record-keeping**: Engage participants with administrative skills for system maintenance
-   - **Facilitation**: Identify natural community facilitators for governance and coordination
-   - **Education**: Leverage teachers and trainers for capacity building components
-   - **Technical**: Engage technically skilled participants for appropriate technology deployment
-
-2. **Space and Facility Sharing**:
-   - **Meeting Spaces**: Utilize existing community centers, schools, or faith-based facilities
-   - **Office Functions**: Share administrative infrastructure with allied organizations
-   - **Event Venues**: Use public spaces or rotating private facilities for larger gatherings
-   - **Storage**: Distribute physical resource storage across participant locations
-
-3. **Capacity Exchange Partnerships**:
-   - **Technical Support**: Partner with educational institutions for implementation support
-   - **Training Resources**: Exchange with other communities implementing similar systems
-   - **Mentorship**: Connect with more experienced implementers for guidance
-   - **Documentation**: Share and adapt existing materials rather than creating from scratch
-
-4. **Phased Resource Allocation**:
-   - **Start Small**: Begin with single component requiring minimal resources
-   - **Reinvest Benefits**: Use tangible benefits from initial implementation to fund expansion
-   - **Celebration Milestones**: Mark achievements to maintain motivation during gradual scaling
-   - **Progressive Complexity**: Add more resource-intensive components only after capacity develops
-
-These approaches enable meaningful implementation to begin regardless of financial constraints, with pathways to grow as capacity and resources develop through successful operation.
+**Breakdown**:
+- **$1T**: Comprehensive reparations for Indigenous communities and ecological restoration
+- **$500B**: Global public goods funding through FTT and carbon taxation
+- **$400B**: Economic institution transformation and Indigenous representation
+- **$300B**: GPH Index implementation and regenerative economic infrastructure
+- **$200B**: Economic Meta-Council coordination and democratic oversight systems
+- **$100B**: Traditional Ecological Knowledge protection and cultural revitalization
 
 ## <a id="funding-roadmap"></a>Funding Roadmap
-- **Total**: $500M globally.
-- **Sources**:
-  - $300M: Multilateral funds from UN, World Bank, or regional banks.
-  - $150M: Public-private partnerships via the PPP Template, engaging tech firms for AUBI platforms and ledgers.
-  - $50M: Philanthropic contributions from global foundations (e.g., Gates Foundation).
-- **Crowdfunding Backup**: Global campaigns supplement funding, targeting $50M via platforms like Patreon for community-driven support.
+
+**Total**: $2.5T globally through regenerative revenue mechanisms rather than extractive funding
+
+**Primary Revenue Sources**:
+- **$1.2T**: Financial Transaction Tax (0.1%) generating $400B annually over 10 years for global public goods and reparations
+- **$800B**: Progressive carbon taxation escalating to $200/tonne by 2030 funding Indigenous-led climate solutions
+- **$300B**: Global wealth taxation on assets above $50M funding economic transformation and reparations
+- **$200B**: Corporate accountability mechanisms requiring extractive industry reparations for historical damage
+
+**Indigenous-Controlled Distribution**:
+- **60%**: Direct reparations to Indigenous communities for economic sovereignty restoration and Traditional Ecological Knowledge implementation
+- **25%**: Ecological restoration under Indigenous leadership using Traditional Ecological Knowledge
+- **10%**: Global economic institution transformation ensuring Indigenous representation and authority
+- **5%**: Accessibility and cultural protocols ensuring respectful implementation
+
+**Timeline and Sustainability**:
+- **2025-2030**: $1T in initial reparations and economic transformation funding
+- **2030-2035**: $1T in ecosystem restoration and economic sovereignty support
+- **2035-2040**: $500B in ongoing transformation and prevention of future harm
+- **Post-2040**: Permanent regenerative revenue systems maintaining transformation
 
 ## <a id="accessibility"></a>Accessibility
-Global implementation ensures inclusivity for diverse populations:
-- **Low-Tech Options**: Radio broadcasts and paper guides disseminate treaty and AUBI protocols in low-connectivity areas.
-- **Disability Inclusion**: Digital platforms (e.g., AUBI dashboards) support screen readers, voice navigation, and tactile interfaces.
-- **Multilingual Materials**: Tools and guides in 10 languages, with Braille and audio formats.
-- **Gender and Indigenous Focus**: 50% women/non-binary representation in treaty governance, with indigenous-led workshops for commons management.
-- **Global Facilitators**: Trained facilitators ensure low-literacy communities engage in decision-making, using participatory methods.
+
+Planetary economic transformation prioritizes Indigenous data sovereignty and community-controlled access:
+
+**Traditional Knowledge Protection**: All interactions respect Indigenous intellectual property rights, Traditional Ecological Knowledge protocols, and Free, Prior, and Informed Consent requirements
+**Community-Controlled Information**: Indigenous communities maintain complete authority over participation levels and information sharing regarding Traditional Ecological Knowledge
+**Cultural Protocol Compliance**: Economic transformation respects ceremonial calendars, traditional governance, and spiritual relationships in all implementation
+**Multilingual and Cultural Access**: Tools and frameworks available in Indigenous languages with culturally appropriate formats and oral tradition compatibility
+
+**Low-Connectivity Options**: Radio broadcasts and community gatherings disseminate planetary economic protocols and reparations information in areas without internet access
+**Disability Inclusion**: Digital platforms support screen readers, voice navigation, and tactile interfaces; traditional tools include accessible formats
+**Youth and Elder Integration**: Intergenerational dialogue protocols ensuring Traditional Ecological Knowledge transmission and seven-generation planning
+**Community Facilitators**: Traditional knowledge keepers and Indigenous leaders ensure respectful engagement using culturally appropriate methods
 
 ## <a id="risk-matrix"></a>Risk Matrix
-Risks are managed to ensure successful global implementation:
+
+Risks are managed through Indigenous wisdom and community-controlled mitigation:
 
 | Risk | Likelihood | Impact | Mitigation |
 |------|------------|--------|------------|
-| Veto Powers | High | High | Build coalitions with regional alliances and NGOs to counter vetoes in UN negotiations; leverage Trading Bloc Compatibility strategies to demonstrate complementary benefits rather than threatening existing arrangements. |
-| Data Breaches | Medium | High | Use encrypted blockchain ledgers and regular cybersecurity audits to protect financial and AUBI data. |
-| Low Adoption | Low | Medium | Global advocacy campaigns (#NestedEconomies) and TEDx/YouTube partnerships to boost engagement. |
-| Funding Shortages | Medium | High | **Primary Strategy**: Diversified funding (multilateral, PPPs, philanthropy) with crowdfunding contingency.<br>**Contingency Plan 1**: Modular AUBI Implementation - scalable design allowing for geographic prioritization based on need if funding reaches only 75% of targets ($375M of $500M).<br>**Contingency Plan 2**: Sovereign Wealth Partnership - structured agreements with resource-rich nations to contribute 0.1% of sovereign wealth funds in exchange for framework implementation support.<br>**Contingency Plan 3**: Blockchain-based microfinancing platform allowing direct peer-to-peer support for framework implementation, targeting 100,000 global contributors at $50 each.<br>**Monitoring Mechanism**: Nested Economic Health Index incorporates funding status indicators with preset thresholds (85%, 70%, 55%) to activate each contingency level. |
+| Corporate Resistance to Accountability | High | High | **Indigenous-Led Response**: Earth Council coordination with global solidarity networks to pressure corporations through coordinated action, legal accountability, and economic alternative-building. Build regenerative economy alternatives that reduce dependence on extractive corporations. |
+| Nation-State Opposition to Sovereignty | High | High | **Bioregional Strategy**: Focus implementation in supportive regions while building Indigenous international solidarity. Use Treaty mechanisms and international law to pressure resistant states. Build economic alternatives that demonstrate Indigenous sovereignty success. |
+| Co-optation of Traditional Knowledge | Medium | High | **Cultural Protection Protocols**: Strict Traditional Ecological Knowledge protection through Indigenous intellectual property frameworks and community control. Red lines against appropriation with immediate withdrawal protocols. |
+| Climate Emergency Acceleration | High | High | **Traditional Knowledge Climate Response**: Accelerate Indigenous-led climate solutions and Traditional Ecological Knowledge implementation. Rapid transition to regenerative economics through emergency protocols guided by Indigenous wisdom. |
+| Financial System Instability | Medium | High | **Regenerative Economic Alternatives**: Build community-controlled economic systems reducing dependence on extractive finance. Rapid implementation of gift economies and cooperative alternatives during crisis periods. |
+| Implementation Resource Shortages | Medium | Medium | **Community Resource Mobilization**: Leverage Traditional Ecological Knowledge resource management and gift economy principles to maximize impact with available resources. Prioritize Indigenous community needs and ecological restoration. |
 
 ## <a id="case-study"></a>Case Study
-- **Montreal Protocol (1987)**: A global treaty that phased out ozone-depleting substances, achieving 98% compliance by 2010. Its success in aligning nations for environmental goals informs the framework’s commons treaties, emphasizing enforceable standards and tech transfer. Lessons include the need for inclusive negotiations and robust enforcement, reflected in the ICJ escalation and PPP funding model.
 
-## <a id="integration-with-framework"></a>Integration with Framework
-Global implementation operationalizes the framework’s principles:
-- **Sovereignty**: Commons treaties respect national and indigenous governance while enabling global coordination.
-- **Interoperability**: Blockchain ledgers and AUBI platforms sync with local/regional systems via APIs.
-- **Justice**: AUBI and transparency measures prioritize marginalized groups, ensuring equitable access.
-- **Adaptability**: Biennial evaluations (via the Nested Economic Health Index) and pilot feedback drive updates.
+**Māori Economic Development Post-Waitangi Settlements (1990s-Present)**: Demonstrates large-scale Indigenous economic sovereignty where traditional values guide contemporary economics. Māori collective assets have grown from $500M to $50B while strengthening cultural identity and ecological stewardship. Key innovations include:
 
-Tools are accessible via the **Economic Integration Seed Kit**, and progress is visualized in the **Nested Systems Diagram** (red global sphere). Global efforts link to local and regional levels through interdependencies, such as climate compliance for treaty adoption.
+- **Traditional Value Integration**: Whakapapa (relationships) and kaitiakitanga (guardianship) guide billion-dollar investment decisions
+- **Intergenerational Planning**: Seven-generation thinking embedded in asset management and development decisions
+- **Cultural-Economic Integration**: Economic success measured by cultural vitality and environmental health alongside financial returns
+- **Indigenous Governance**: Māori authorities controlling economic development according to traditional protocols
+
+**Lessons for Planetary Implementation**: Demonstrates that Indigenous economic sovereignty creates prosperity while strengthening culture and healing ecosystems. Success requires legal recognition, adequate reparations, and respectful partnership with traditional governance systems.
+
+## <a id="integration-golden-triangle"></a>Integration with Golden Triangle
+
+Planetary Economic Governance operationalizes the Golden Triangle vision through comprehensive integration:
+
+**Treaty for Our Only Home Implementation**:
+- **Global Taxation**: Operationalizes FTT, carbon taxation, and wealth taxation generating revenue for planetary healing
+- **Institutional Reform**: Implements Indigenous representation in reformed UN, IMF, and World Bank institutions
+- **Crisis Governance**: Enables rapid economic response during planetary emergencies through coordinated protocols
+- **Planetary Boundaries**: Ensures all economic activity operates within Earth system stability limits
+
+**Indigenous & Traditional Knowledge Governance Leadership**:
+- **Earth Council Authority**: Centers Indigenous moral authority in global economic decisions affecting all peoples
+- **Traditional Knowledge Integration**: Ensures Traditional Ecological Knowledge guides all economic transformation and development
+- **Bioregional Sovereignty**: Implements BAZ economic autonomy and Traditional Ecological Knowledge territorial authority
+- **Comprehensive Reparations**: Systematically heals historical and ongoing extraction through concrete restoration
+
+**Meta-Governance Coordination**:
+- **Economic Meta-Council**: Coordinates financial, labor, environmental, and Indigenous sectors toward regenerative transformation
+- **Democratic Oversight**: Ensures community control over economic transformation through transparent accountability
+- **Cross-Sector Alignment**: Integrates economic transformation with ecological, social, and technological coordination
+- **Cultural Integration**: Respects Indigenous governance while enabling global coordination and mutual support
+
+Tools are accessible via the **Regenerative Economics Implementation Toolkit**, and progress is visualized through **Gross Planetary Health Index Dashboards**. Planetary governance links to bioregional and community levels through Traditional Ecological Knowledge transmission, gift economy circulation, and seven-generation accountability protocols.
 
 ## <a id="call-to-action"></a>Call to Action
-Global stakeholders are invited to:
-1. Draft a commons treaty using the Global Commons Governance Framework.
-2. Implement AUBI with the AUBI Implementation Guide.
-3. Deploy transparent ledgers via the Blockchain Ledger Platform.
-4. Join the real-time collaboration platform (globalgovernanceframework.org/collab) to co-develop global innovations.
 
-By adopting these mechanisms, global actors can build a planetary economy that is equitable, sustainable, and inclusive, completing the nested structure of the framework.
+Global stakeholders are invited to join Indigenous-led planetary economic transformation:
+
+1. **Implement Treaty Taxation**: Advocate for Financial Transaction Tax, carbon taxation, and wealth taxation through national and international policy
+2. **Support Indigenous Economic Sovereignty**: Partner with Indigenous communities in respectful ways that strengthen Traditional Ecological Knowledge and territorial authority
+3. **Transform Financial Systems**: Align investment and banking with Gross Planetary Health rather than extractive profit through regenerative finance
+4. **Build Reparative Economy**: Participate in comprehensive reparations for ecological and colonial damage through concrete action and resource sharing
+5. **Practice Gift Economics**: Implement reciprocity, mutual aid, and cooperative alternatives in communities and organizations
+6. **Join Planetary Coordination**: Engage with Economic Meta-Council and bioregional networks building regenerative alternatives to extractive economics
+
+**Connect with Indigenous-Led Transformation**: Respectfully engage with Indigenous communities and organizations leading economic sovereignty struggles, following cultural protocols and supporting Traditional Ecological Knowledge protection.
+
+**Build Regenerative Alternatives**: Create cooperative enterprises, gift economy networks, and community-controlled economic systems that demonstrate abundance through regeneration rather than extraction.
+
+**Advocate for Global Change**: Pressure governments and corporations to implement Treaty taxation, Indigenous representation, and planetary boundary economics through organized campaign participation.
+
+By implementing planetary economic governance, we transform the global economy from extraction to regeneration, creating abundance for all beings while healing the damage caused by centuries of colonial economics. **The regenerative economic transformation is Indigenous-led, bioregionally grounded, and planetary in scope—beginning with Traditional Ecological Knowledge and ending with prosperity for all across seven generations.**
