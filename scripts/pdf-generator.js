@@ -987,6 +987,38 @@ const tools = [
       sv: 'Ungdomsfredsguide - Sida '
     }
   },
+  {
+    name: 'indigenous-partnership-guide',
+    category: 'peace-and-conflict-resolution',
+    fileNames: {
+      en: 'indigenous-partnership-guide-en',
+      sv: 'indigenous-partnership-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace-and-conflict-resolution'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace-and-conflict-resolution')
+    },
+    pageFooter: {
+      en: 'Indigenous Partnership Guide for Non-Indigenous Peace Practitioners - Page ',
+      sv: 'Guide till partnerskap med ursprungsbefolkningar för fredsutövare som inte är ursprungsbefolkningar - Sida '
+    }
+  },
+  {
+    name: 'meta-governance-coordination-primer',
+    category: 'peace-and-conflict-resolution',
+    fileNames: {
+      en: 'meta-governance-coordination-primer-en',
+      sv: 'meta-governance-coordination-primer-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace-and-conflict-resolution'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace-and-conflict-resolution')
+    },
+    pageFooter: {
+      en: 'Meta-Governance Coordination Primer for Peace Organizations - Page ',
+      sv: 'Metastyrningskoordineringsgrundbok för fredsorganisationer - Sida '
+    }
+  },
   // Full Peace & Conflict Resolution Framework
   {
     name: 'peace-framework',

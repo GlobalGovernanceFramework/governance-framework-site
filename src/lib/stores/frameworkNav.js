@@ -82,6 +82,13 @@ export const allFrameworks = [
     path: '/frameworks/economic-integration'
   },
   {
+    slug: 'aurora-accord',
+    titleKey: 'framework.docs.nav.frameworkTitles.globalDataGovernanceAndSovereignty',
+    tier: 1,
+    status: 'review',
+    path: '/frameworks/aurora-accord'
+  },
+  {
     slug: 'migration-and-human-mobility',
     titleKey: 'framework.docs.nav.frameworkTitles.migrationAndHumanMobility',
     tier: 1,
@@ -124,6 +131,13 @@ export const allFrameworks = [
     tier: 2,
     status: 'coming-soon',
     path: '/frameworks/urban-and-community-development'
+  },
+  {
+    slug: 'soil-health-and-land-use-governance',
+    titleKey: 'framework.docs.nav.frameworkTitles.soilHealthAndLandUseGovernance',
+    tier: 2,
+    status: 'planned',
+    path: '/frameworks/soil-health-and-land-use-governance'
   },
   {
     slug: 'water-and-sanitation-governance',

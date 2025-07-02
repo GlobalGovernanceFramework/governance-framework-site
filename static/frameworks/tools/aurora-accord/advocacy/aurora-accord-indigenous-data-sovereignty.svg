@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1200"
+   height="630"
+   viewBox="0 0 1200 630"
+   version="1.1"
+   id="svg32"
+   sodipodi:docname="indigenous-data-sovereignty.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview32"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.94954339"
+     inkscape:cx="573.43351"
+     inkscape:cy="313.83505"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg32" />
+  <defs
+     id="defs10">
+    <!-- Gradients -->
+    <linearGradient
+       id="backgroundGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#0c1810"
+         id="stop1" />
+      <stop
+         offset="50%"
+         stop-color="#1a2e23"
+         id="stop2" />
+      <stop
+         offset="100%"
+         stop-color="#2d4a35"
+         id="stop3" />
+    </linearGradient>
+    <linearGradient
+       id="earthGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#059669"
+         id="stop4" />
+      <stop
+         offset="50%"
+         stop-color="#10b981"
+         id="stop5" />
+      <stop
+         offset="100%"
+         stop-color="#34d399"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       id="sacredGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="0%">
+      <stop
+         offset="0%"
+         stop-color="#f59e0b"
+         id="stop7" />
+      <stop
+         offset="50%"
+         stop-color="#fbbf24"
+         id="stop8" />
+      <stop
+         offset="100%"
+         stop-color="#fcd34d"
+         id="stop9" />
+    </linearGradient>
+    <!-- Traditional pattern -->
+    <pattern
+       id="traditionalPattern"
+       x="0"
+       y="0"
+       width="60"
+       height="60"
+       patternUnits="userSpaceOnUse">
+      <circle
+         cx="30"
+         cy="30"
+         r="15"
+         stroke="#10b981"
+         stroke-width="2"
+         fill="none"
+         opacity="0.3"
+         id="circle9" />
+      <circle
+         cx="30"
+         cy="30"
+         r="8"
+         fill="#059669"
+         opacity="0.2"
+         id="circle10" />
+      <path
+         d="M20,30 L40,30 M30,20 L30,40"
+         stroke="#10b981"
+         stroke-width="1"
+         opacity="0.4"
+         id="path10" />
+    </pattern>
+  </defs>
+  <!-- Background -->
+  <rect
+     width="1200"
+     height="630"
+     fill="url(#backgroundGradient)"
+     id="rect10" />
+  <!-- Traditional pattern overlay -->
+  <rect
+     x="0"
+     y="0"
+     width="1200"
+     height="630"
+     fill="url(#traditionalPattern)"
+     opacity="0.3"
+     id="rect11" />
+  <!-- Sacred geometry circles -->
+  <g
+     opacity="0.4"
+     id="g13">
+    <circle
+       cx="200"
+       cy="150"
+       r="80"
+       stroke="url(#earthGradient)"
+       stroke-width="2"
+       fill="none"
+       id="circle11" />
+    <circle
+       cx="1000"
+       cy="480"
+       r="100"
+       stroke="url(#earthGradient)"
+       stroke-width="2"
+       fill="none"
+       id="circle12" />
+    <circle
+       cx="900"
+       cy="120"
+       r="60"
+       stroke="url(#sacredGradient)"
+       stroke-width="1"
+       fill="none"
+       id="circle13" />
+  </g>
+  <!-- Central content area -->
+  <rect
+     x="50"
+     y="70"
+     width="1100"
+     height="490"
+     fill="rgba(12, 24, 16, 0.85)"
+     stroke="url(#sacredGradient)"
+     stroke-width="2"
+     rx="20"
+     id="rect13" />
+  <!-- Main quote -->
+  <text
+     x="599.02985"
+     y="190.99976"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-family="Georgia, serif"
+     font-size="37.698px"
+     font-weight="bold"
+     id="text16"
+     style="stroke-width:0.856772"><tspan
+       x="599.02985"
+       dy="0"
+       id="tspan13"
+       style="stroke-width:0.856772">&quot;Traditional knowledge worth $23 billion annually—</tspan><tspan
+       x="599.02985"
+       dy="47.122429"
+       id="tspan14"
+       style="stroke-width:0.856772">extracted without Indigenous consent.</tspan><tspan
+       x="599.02985"
+       dy="59.974003"
+       id="tspan15"
+       style="stroke-width:0.856772">The Aurora Accord establishes absolute</tspan><tspan
+       x="599.02985"
+       dy="47.122429"
+       id="tspan16"
+       style="stroke-width:0.856772">Indigenous authority over cultural data.&quot;</tspan></text>
+  <!-- Emphasis text -->
+  <text
+     x="600"
+     y="410"
+     text-anchor="middle"
+     fill="url(#sacredGradient)"
+     font-family="Arial, sans-serif"
+     font-size="32"
+     font-weight="700"
+     id="text17">
+    No more digital colonialism. Real sovereignty.
+  </text>
+  <!-- Traditional knowledge symbols -->
+  <g
+     transform="translate(150, 480)"
+     id="g26">
+    <!-- Traditional Medicine -->
+    <g
+       id="g19">
+      <circle
+         cx="0"
+         cy="0"
+         r="25"
+         fill="url(#earthGradient)"
+         opacity="0.8"
+         id="circle17" />
+      <text
+         x="0"
+         y="5"
+         text-anchor="middle"
+         fill="white"
+         font-family="Arial, sans-serif"
+         font-size="16"
+         font-weight="bold"
+         id="text18">🌿</text>
+      <text
+         x="0"
+         y="45"
+         text-anchor="middle"
+         fill="#10b981"
+         font-family="Arial, sans-serif"
+         font-size="14"
+         font-weight="600"
+         id="text19">Medicine</text>
+    </g>
+    <!-- Climate Knowledge -->
+    <g
+       transform="translate(200, 0)"
+       id="g21">
+      <circle
+         cx="0"
+         cy="0"
+         r="25"
+         fill="url(#earthGradient)"
+         opacity="0.8"
+         id="circle19" />
+      <text
+         x="0"
+         y="5"
+         text-anchor="middle"
+         fill="white"
+         font-family="Arial, sans-serif"
+         font-size="16"
+         font-weight="bold"
+         id="text20">🌡️</text>
+      <text
+         x="0"
+         y="45"
+         text-anchor="middle"
+         fill="#10b981"
+         font-family="Arial, sans-serif"
+         font-size="14"
+         font-weight="600"
+         id="text21">Climate</text>
+    </g>
+    <!-- Agricultural Wisdom -->
+    <g
+       transform="translate(400, 0)"
+       id="g23">
+      <circle
+         cx="0"
+         cy="0"
+         r="25"
+         fill="url(#earthGradient)"
+         opacity="0.8"
+         id="circle21" />
+      <text
+         x="0"
+         y="5"
+         text-anchor="middle"
+         fill="white"
+         font-family="Arial, sans-serif"
+         font-size="16"
+         font-weight="bold"
+         id="text22">🌾</text>
+      <text
+         x="0"
+         y="45"
+         text-anchor="middle"
+         fill="#10b981"
+         font-family="Arial, sans-serif"
+         font-size="14"
+         font-weight="600"
+         id="text23">Agriculture</text>
+    </g>
+    <!-- Ecological Knowledge -->
+    <g
+       transform="translate(600, 0)"
+       id="g25">
+      <circle
+         cx="0"
+         cy="0"
+         r="25"
+         fill="url(#earthGradient)"
+         opacity="0.8"
+         id="circle23" />
+      <text
+         x="0"
+         y="5"
+         text-anchor="middle"
+         fill="white"
+         font-family="Arial, sans-serif"
+         font-size="16"
+         font-weight="bold"
+         id="text24">🦅</text>
+      <text
+         x="0"
+         y="45"
+         text-anchor="middle"
+         fill="#10b981"
+         font-family="Arial, sans-serif"
+         font-size="14"
+         font-weight="600"
+         id="text25">Ecology</text>
+    </g>
+  </g>
+  <!-- Indigenous sovereignty symbol -->
+  <g
+     transform="translate(600, 100)"
+     id="g27">
+    <circle
+       cx="0"
+       cy="0"
+       r="40"
+       stroke="url(#sacredGradient)"
+       stroke-width="3"
+       fill="none"
+       id="circle26" />
+    <circle
+       cx="0"
+       cy="0"
+       r="15"
+       fill="url(#sacredGradient)"
+       id="circle27" />
+    <path
+       d="M-25,0 L25,0 M0,-25 L0,25 M-18,-18 L18,18 M-18,18 L18,-18"
+       stroke="url(#sacredGradient)"
+       stroke-width="2"
+       id="path27" />
+  </g>
+  <!-- Simplified GGF Logo -->
+  <g
+     transform="translate(1050, 550)"
+     id="g32">
+    <circle
+       cx="0"
+       cy="0"
+       r="32"
+       fill="rgba(255,255,255,0.9)"
+       stroke="url(#sacredGradient)"
+       stroke-width="1"
+       id="circle28" />
+    <circle
+       cx="0"
+       cy="0"
+       r="10"
+       fill="#2B4B8C"
+       id="circle29" />
+    <circle
+       cx="0"
+       cy="-18"
+       r="6"
+       fill="#B8860B"
+       id="circle30" />
+    <circle
+       cx="-15"
+       cy="9"
+       r="6"
+       fill="#B8860B"
+       id="circle31" />
+    <circle
+       cx="15"
+       cy="9"
+       r="6"
+       fill="#B8860B"
+       id="circle32" />
+  </g>
+  <!-- Website URL -->
+  <text
+     x="80"
+     y="590"
+     fill="rgba(255,255,255,0.8)"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     id="text32">
+    globalgovernanceframeworks.org/frameworks/aurora-accord
+  </text>
+</svg>

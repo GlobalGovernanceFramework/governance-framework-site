@@ -27,7 +27,7 @@ In order of priority (by ChatGPT and Claude)
 
 - [Urban & Community Development](/frameworks/docs/implementation/urban) (outline done)
 
-- [Migration & Human Mobility](/frameworks/docs/implementation/migration) (outline done)
+- [Migration & Human Mobility](/frameworks/docs/implementation/migration) (outline begun)
 
 - [Disability Rights & Inclusion Governance](/frameworks/docs/implementation/inclusion) (outline done)
 
@@ -67,8 +67,8 @@ Here is a proposed granular prioritization, starting from the most urgent.
 
 | Priority | Area | Tier | Rationale for Priority |
 | :--- | :--- | :--- | :--- |
-| **1** | **Global Institutional Reform** | Tier 1 | **Foundation for all other action.** Without legitimate, effective, and trusted global institutions (UN, etc.), implementing any other framework becomes nearly impossible. This is the bedrock. |
-| **2** | **Global Health Equity & Pandemic Governance** | Tier 1 | **Immediate existential threat.** Addresses the clear and present danger of global pandemics and the underlying health inequities that exacerbate such crises. High urgency and massive human impact. |
+| **1** | **Global Institutional Reform** | Tier 1 | **Foundation for all other action.** Without legitimate, effective, and trusted global institutions (UN, etc.), implementing any other framework becomes nearly impossible. This is the bedrock. | Done as the 'Treaty for Our Only Home'
+| **2** | **Global Health Equity & Pandemic Governance** | Tier 1 | **Immediate existential threat.** Addresses the clear and present danger of global pandemics and the underlying health inequities that exacerbate such crises. High urgency and massive human impact. | To be integrated with the Planetary Health framework
 | **3** | **Global Supply Chains & Logistics** | Tier 1 | **Immediate systemic vulnerability.** Recent years have shown that fragile supply chains can cripple the global economy, block access to essential goods like food and medicine, and create widespread instability. |
 | **4** | **Energy Transition Governance** | Tier 1 | **Urgent climate imperative.** Directly linked to the most pressing aspects of climate change. A just and rapid energy transition is critical to preventing catastrophic environmental tipping points. |
 | **5** | **Synthetic Biology & Neurotechnology Governance** | Tier 1 | **High-risk emerging technology.** These fields pose profound ethical questions and potential irreversible risks to what it means to be human. The governance gap is widening extremely fast. *(Merged "Synthetic Biology" and "Neurotechnology & Cognitive Rights" for a unified focus on high-stakes biotech).* |

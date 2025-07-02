@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1200"
+   height="630"
+   viewBox="0 0 1200 630"
+   version="1.1"
+   id="svg28"
+   sodipodi:docname="data-fiduciary-standards.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview28"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.3428571"
+     inkscape:cx="654.20213"
+     inkscape:cy="431.91489"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg28" />
+  <defs
+     id="defs8">
+    <!-- Gradients -->
+    <linearGradient
+       id="backgroundGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#1e1b4b"
+         id="stop1" />
+      <stop
+         offset="50%"
+         stop-color="#312e81"
+         id="stop2" />
+      <stop
+         offset="100%"
+         stop-color="#4338ca"
+         id="stop3" />
+    </linearGradient>
+    <linearGradient
+       id="trustGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="0%">
+      <stop
+         offset="0%"
+         stop-color="#3b82f6"
+         id="stop4" />
+      <stop
+         offset="50%"
+         stop-color="#06b6d4"
+         id="stop5" />
+      <stop
+         offset="100%"
+         stop-color="#0ea5e9"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       id="goldGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="0%">
+      <stop
+         offset="0%"
+         stop-color="#f59e0b"
+         id="stop7" />
+      <stop
+         offset="100%"
+         stop-color="#fbbf24"
+         id="stop8" />
+    </linearGradient>
+    <!-- Shield pattern for security -->
+    <pattern
+       id="securityPattern"
+       x="0"
+       y="0"
+       width="50"
+       height="50"
+       patternUnits="userSpaceOnUse">
+      <path
+         d="M25,5 L40,15 L40,35 L25,45 L10,35 L10,15 Z"
+         stroke="#3b82f6"
+         stroke-width="1"
+         fill="none"
+         opacity="0.3"
+         id="path8" />
+    </pattern>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#trustGradient"
+       id="linearGradient1"
+       x1="-24.494897"
+       y1="-24.494897"
+       x2="24.494897"
+       y2="-24.494897"
+       gradientTransform="scale(1.6329932,0.61237244)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#trustGradient"
+       id="linearGradient2"
+       x1="-24.494897"
+       y1="-24.494897"
+       x2="24.494897"
+       y2="-24.494897"
+       gradientTransform="scale(1.6329932,0.61237244)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#trustGradient"
+       id="linearGradient3"
+       x1="-24.494897"
+       y1="-24.494897"
+       x2="24.494897"
+       y2="-24.494897"
+       gradientTransform="scale(1.6329932,0.61237244)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#trustGradient"
+       id="linearGradient4"
+       x1="-24.494897"
+       y1="-24.494897"
+       x2="24.494897"
+       y2="-24.494897"
+       gradientTransform="matrix(1.8306028,0,0,0.61237244,801.48938,480)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <!-- Background -->
+  <rect
+     width="1200"
+     height="630"
+     fill="url(#backgroundGradient)"
+     id="rect8" />
+  <!-- Security pattern overlay -->
+  <rect
+     x="0"
+     y="0"
+     width="1200"
+     height="630"
+     fill="url(#securityPattern)"
+     opacity="0.4"
+     id="rect9" />
+  <!-- Trust shields -->
+  <g
+     opacity="0.5"
+     id="g10">
+    <!-- Large shield left -->
+    <path
+       d="M150,200 L200,220 L200,280 L150,320 L100,280 L100,220 Z"
+       fill="url(#trustGradient)"
+       opacity="0.6"
+       id="path9" />
+    <!-- Large shield right -->
+    <path
+       d="M1050,150 L1100,170 L1100,230 L1050,270 L1000,230 L1000,170 Z"
+       fill="url(#trustGradient)"
+       opacity="0.6"
+       id="path10" />
+  </g>
+  <!-- Central content area -->
+  <rect
+     x="50"
+     y="80"
+     width="1100"
+     height="470"
+     fill="rgba(30, 27, 75, 0.85)"
+     stroke="url(#goldGradient)"
+     stroke-width="2"
+     rx="20"
+     id="rect10" />
+  <!-- Main quote -->
+  <text
+     x="599.92218"
+     y="186.53418"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-family="Georgia, serif"
+     font-size="39.447px"
+     font-weight="bold"
+     id="text12"
+     style="stroke-width:0.896524"><tspan
+       x="599.92218"
+       dy="0"
+       id="tspan10"
+       style="stroke-width:0.896524">&quot;Data breaches cost $4.45 billion annually.</tspan><tspan
+       x="599.92218"
+       dy="49.308865"
+       id="tspan11"
+       style="stroke-width:0.896524">The Aurora Accord makes platforms legally liable</tspan><tspan
+       x="599.92218"
+       dy="49.308865"
+       id="tspan12"
+       style="stroke-width:0.896524">for serving user interests over profit.&quot;</tspan></text>
+  <!-- Key benefit -->
+  <text
+     x="600"
+     y="350"
+     text-anchor="middle"
+     fill="url(#goldGradient)"
+     font-family="Arial, sans-serif"
+     font-size="28"
+     font-weight="700"
+     id="text13">
+    Trust Premium: Insurance costs drop 60% for ethical platforms
+  </text>
+  <!-- Economic transformation indicators -->
+  <g
+     id="g15"
+     transform="translate(200,480)">
+    <rect
+       x="-40"
+       y="-15"
+       width="80"
+       height="30"
+       fill="url(#trustGradient)"
+       rx="15"
+       opacity="0.8"
+       id="rect13"
+       style="fill:url(#linearGradient1)" />
+    <text
+       x="0"
+       y="5"
+       text-anchor="middle"
+       fill="#ffffff"
+       font-family="Arial, sans-serif"
+       font-size="12px"
+       font-weight="bold"
+       id="text14">📉 Breaches</text>
+    <text
+       x="0"
+       y="40"
+       text-anchor="middle"
+       fill="#3b82f6"
+       font-family="Arial, sans-serif"
+       font-size="14px"
+       font-weight="600"
+       id="text15">-43%</text>
+  </g>
+  <g
+     transform="translate(400,480)"
+     id="g17">
+    <rect
+       x="-40"
+       y="-15"
+       width="80"
+       height="30"
+       fill="url(#trustGradient)"
+       rx="15"
+       opacity="0.8"
+       id="rect15"
+       style="fill:url(#linearGradient2)" />
+    <text
+       x="0"
+       y="5"
+       text-anchor="middle"
+       fill="#ffffff"
+       font-family="Arial, sans-serif"
+       font-size="12px"
+       font-weight="bold"
+       id="text16">📈 Trust</text>
+    <text
+       x="0"
+       y="40"
+       text-anchor="middle"
+       fill="#3b82f6"
+       font-family="Arial, sans-serif"
+       font-size="14px"
+       font-weight="600"
+       id="text17">+61%</text>
+  </g>
+  <g
+     transform="translate(600,480)"
+     id="g19">
+    <rect
+       x="-40"
+       y="-15"
+       width="80"
+       height="30"
+       fill="url(#trustGradient)"
+       rx="15"
+       opacity="0.8"
+       id="rect17"
+       style="fill:url(#linearGradient3)" />
+    <text
+       x="0"
+       y="5"
+       text-anchor="middle"
+       fill="#ffffff"
+       font-family="Arial, sans-serif"
+       font-size="12px"
+       font-weight="bold"
+       id="text18">💰 Savings</text>
+    <text
+       x="0"
+       y="40"
+       text-anchor="middle"
+       fill="#3b82f6"
+       font-family="Arial, sans-serif"
+       font-size="14px"
+       font-weight="600"
+       id="text19">-60%</text>
+  </g>
+  <rect
+     x="756.64893"
+     y="465"
+     width="89.680855"
+     height="30"
+     fill="url(#trustGradient)"
+     rx="16.815161"
+     opacity="0.8"
+     id="rect19"
+     style="fill:url(#linearGradient4);stroke-width:1.05878" />
+  <text
+     x="800"
+     y="485"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     id="text20">✓ Compliance</text>
+  <text
+     x="800"
+     y="520"
+     text-anchor="middle"
+     fill="#3b82f6"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="600"
+     id="text21">75%</text>
+  <!-- Central fiduciary shield -->
+  <g
+     transform="translate(600, 120)"
+     id="g23">
+    <!-- Main shield -->
+    <path
+       d="M0,-30 L25,-20 L25,10 L0,30 L-25,10 L-25,-20 Z"
+       fill="url(#trustGradient)"
+       stroke="url(#goldGradient)"
+       stroke-width="2"
+       id="path22" />
+    <!-- Shield details -->
+    <circle
+       cx="0"
+       cy="-5"
+       r="8"
+       fill="url(#goldGradient)"
+       id="circle22" />
+    <text
+       x="0"
+       y="0"
+       text-anchor="middle"
+       fill="white"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       font-weight="bold"
+       id="text22">⚖️</text>
+  </g>
+  <!-- Data flow arrows showing transformation -->
+  <g
+     stroke="url(#trustGradient)"
+     stroke-width="3"
+     fill="none"
+     opacity="0.7"
+     id="g24">
+    <!-- From surveillance to stewardship -->
+    <path
+       d="M300,400 Q600,350 900,400"
+       marker-end="url(#arrowhead)"
+       id="path23" />
+  </g>
+  <!-- Arrow marker -->
+  <defs
+     id="defs24">
+    <marker
+       id="arrowhead"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#3b82f6"
+         id="polygon24" />
+    </marker>
+  </defs>
+  <!-- Simplified GGF Logo -->
+  <g
+     transform="translate(1050, 550)"
+     id="g28">
+    <circle
+       cx="0"
+       cy="0"
+       r="32"
+       fill="rgba(255,255,255,0.9)"
+       stroke="url(#goldGradient)"
+       stroke-width="1"
+       id="circle24" />
+    <circle
+       cx="0"
+       cy="0"
+       r="10"
+       fill="#2B4B8C"
+       id="circle25" />
+    <circle
+       cx="0"
+       cy="-18"
+       r="6"
+       fill="#B8860B"
+       id="circle26" />
+    <circle
+       cx="-15"
+       cy="9"
+       r="6"
+       fill="#B8860B"
+       id="circle27" />
+    <circle
+       cx="15"
+       cy="9"
+       r="6"
+       fill="#B8860B"
+       id="circle28" />
+  </g>
+  <!-- Website URL -->
+  <text
+     x="80"
+     y="590"
+     fill="rgba(255,255,255,0.8)"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     id="text28">
+    globalgovernanceframeworks.org/frameworks/aurora-accord
+  </text>
+</svg>

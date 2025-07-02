@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1200"
+   height="630"
+   viewBox="0 0 1200 630"
+   version="1.1"
+   id="svg33"
+   sodipodi:docname="call-to-action.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview33"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.94954339"
+     inkscape:cx="533.41428"
+     inkscape:cy="406.51118"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg33" />
+  <defs
+     id="defs11">
+    <!-- Gradients -->
+    <radialGradient
+       id="auroraGradient"
+       cx="50%"
+       cy="30%">
+      <stop
+         offset="0%"
+         stop-color="#a855f7"
+         id="stop1" />
+      <stop
+         offset="30%"
+         stop-color="#3b82f6"
+         id="stop2" />
+      <stop
+         offset="60%"
+         stop-color="#06b6d4"
+         id="stop3" />
+      <stop
+         offset="90%"
+         stop-color="#10b981"
+         id="stop4" />
+      <stop
+         offset="100%"
+         stop-color="#0f172a"
+         id="stop5" />
+    </radialGradient>
+    <linearGradient
+       id="actionGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="0%">
+      <stop
+         offset="0%"
+         stop-color="#f59e0b"
+         id="stop6" />
+      <stop
+         offset="50%"
+         stop-color="#fbbf24"
+         id="stop7" />
+      <stop
+         offset="100%"
+         stop-color="#fcd34d"
+         id="stop8" />
+    </linearGradient>
+    <linearGradient
+       id="futureGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#10b981"
+         id="stop9" />
+      <stop
+         offset="100%"
+         stop-color="#34d399"
+         id="stop10" />
+    </linearGradient>
+    <!-- Aurora light pattern -->
+    <pattern
+       id="auroraPattern"
+       x="0"
+       y="0"
+       width="100"
+       height="50"
+       patternUnits="userSpaceOnUse">
+      <path
+         d="M0,25 Q25,10 50,25 T100,25"
+         stroke="#a855f7"
+         stroke-width="2"
+         fill="none"
+         opacity="0.4"
+         id="path10">
+        <animate
+           attributeName="opacity"
+           values="0.2;0.8;0.2"
+           dur="3s"
+           repeatCount="indefinite" />
+      </path>
+      <path
+         d="M0,25 Q25,40 50,25 T100,25"
+         stroke="#3b82f6"
+         stroke-width="2"
+         fill="none"
+         opacity="0.3"
+         id="path11">
+        <animate
+           attributeName="opacity"
+           values="0.1;0.6;0.1"
+           dur="4s"
+           repeatCount="indefinite" />
+      </path>
+    </pattern>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#actionGradient"
+       id="linearGradient1"
+       x1="-28.055117"
+       y1="-32.285342"
+       x2="28.055117"
+       y2="-32.285342"
+       gradientTransform="scale(1.128639,0.88602288)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#actionGradient"
+       id="linearGradient2"
+       x1="-5.4772256"
+       y1="12.780193"
+       x2="5.4772256"
+       y2="12.780193"
+       gradientTransform="scale(3.6514837,0.27386128)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <!-- Background with aurora effect -->
+  <rect
+     width="1200"
+     height="630"
+     fill="url(#auroraGradient)"
+     id="rect11" />
+  <!-- Aurora light streams -->
+  <rect
+     x="0"
+     y="0"
+     width="1200"
+     height="630"
+     fill="url(#auroraPattern)"
+     opacity="0.6"
+     id="rect12" />
+  <!-- Moving light particles -->
+  <g
+     id="g14">
+    <circle
+       cx="200"
+       cy="150"
+       r="4"
+       fill="#a855f7"
+       opacity="0.8"
+       id="circle12">
+      <animateTransform
+         attributeName="transform"
+         type="translate"
+         values="0,0; 800,100; 0,0"
+         dur="6s"
+         repeatCount="indefinite" />
+      <animate
+         attributeName="opacity"
+         values="0.3;1;0.3"
+         dur="6s"
+         repeatCount="indefinite" />
+    </circle>
+    <circle
+       cx="100"
+       cy="300"
+       r="3"
+       fill="#3b82f6"
+       opacity="0.7"
+       id="circle13">
+      <animateTransform
+         attributeName="transform"
+         type="translate"
+         values="0,0; 1000,-50; 0,0"
+         dur="8s"
+         repeatCount="indefinite" />
+      <animate
+         attributeName="opacity"
+         values="0.2;0.9;0.2"
+         dur="8s"
+         repeatCount="indefinite" />
+    </circle>
+    <circle
+       cx="300"
+       cy="450"
+       r="5"
+       fill="#10b981"
+       opacity="0.9"
+       id="circle14">
+      <animateTransform
+         attributeName="transform"
+         type="translate"
+         values="0,0; 600,50; 0,0"
+         dur="10s"
+         repeatCount="indefinite" />
+      <animate
+         attributeName="opacity"
+         values="0.4;1;0.4"
+         dur="10s"
+         repeatCount="indefinite" />
+    </circle>
+  </g>
+  <!-- Central content area -->
+  <rect
+     x="50"
+     y="100"
+     width="1100"
+     height="430"
+     fill="rgba(15, 23, 42, 0.8)"
+     stroke="url(#actionGradient)"
+     stroke-width="3"
+     rx="25"
+     id="rect14" />
+  <!-- Main call to action -->
+  <text
+     x="600"
+     y="222"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-family="Georgia, serif"
+     font-size="42px"
+     font-weight="bold"
+     id="text15"><tspan
+       x="600"
+       dy="0"
+       id="tspan14">The age of digital colonialism is ending.</tspan><tspan
+       x="600"
+       dy="60"
+       id="tspan15">The era of data sovereignty begins now.</tspan></text>
+  <!-- Action items -->
+  <g
+     transform="translate(600, 320)"
+     fill="url(#actionGradient)"
+     font-family="Arial, sans-serif"
+     font-size="24"
+     font-weight="600"
+     id="g17">
+    <text
+       x="0"
+       y="0"
+       text-anchor="middle"
+       id="text17"><tspan
+         x="0"
+         dy="0"
+         id="tspan16">Join the movement for digital dignity:</tspan><tspan
+         x="0"
+         dy="40"
+         id="tspan17">Read • Share • Organize • Build</tspan></text>
+  </g>
+  <!-- Action icons -->
+  <g
+     transform="translate(200, 450)"
+     id="g26">
+    <!-- Read -->
+    <g
+       id="g19">
+      <circle
+         cx="0"
+         cy="0"
+         r="30"
+         fill="url(#futureGradient)"
+         opacity="0.8"
+         id="circle17" />
+      <text
+         x="0"
+         y="5"
+         text-anchor="middle"
+         fill="white"
+         font-family="Arial, sans-serif"
+         font-size="20"
+         font-weight="bold"
+         id="text18">📖</text>
+      <text
+         x="0"
+         y="50"
+         text-anchor="middle"
+         fill="#10b981"
+         font-family="Arial, sans-serif"
+         font-size="16"
+         font-weight="600"
+         id="text19">Read</text>
+    </g>
+    <!-- Share -->
+    <g
+       transform="translate(200, 0)"
+       id="g21">
+      <circle
+         cx="0"
+         cy="0"
+         r="30"
+         fill="url(#futureGradient)"
+         opacity="0.8"
+         id="circle19" />
+      <text
+         x="0"
+         y="5"
+         text-anchor="middle"
+         fill="white"
+         font-family="Arial, sans-serif"
+         font-size="20"
+         font-weight="bold"
+         id="text20">📢</text>
+      <text
+         x="0"
+         y="50"
+         text-anchor="middle"
+         fill="#10b981"
+         font-family="Arial, sans-serif"
+         font-size="16"
+         font-weight="600"
+         id="text21">Share</text>
+    </g>
+    <!-- Organize -->
+    <g
+       transform="translate(400, 0)"
+       id="g23">
+      <circle
+         cx="0"
+         cy="0"
+         r="30"
+         fill="url(#futureGradient)"
+         opacity="0.8"
+         id="circle21" />
+      <text
+         x="0"
+         y="5"
+         text-anchor="middle"
+         fill="white"
+         font-family="Arial, sans-serif"
+         font-size="20"
+         font-weight="bold"
+         id="text22">✊</text>
+      <text
+         x="0"
+         y="50"
+         text-anchor="middle"
+         fill="#10b981"
+         font-family="Arial, sans-serif"
+         font-size="16"
+         font-weight="600"
+         id="text23">Organize</text>
+    </g>
+    <!-- Build -->
+    <g
+       transform="translate(600, 0)"
+       id="g25">
+      <circle
+         cx="0"
+         cy="0"
+         r="30"
+         fill="url(#futureGradient)"
+         opacity="0.8"
+         id="circle23" />
+      <text
+         x="0"
+         y="5"
+         text-anchor="middle"
+         fill="white"
+         font-family="Arial, sans-serif"
+         font-size="20"
+         font-weight="bold"
+         id="text24">🔨</text>
+      <text
+         x="0"
+         y="50"
+         text-anchor="middle"
+         fill="#10b981"
+         font-family="Arial, sans-serif"
+         font-size="16"
+         font-weight="600"
+         id="text25">Build</text>
+    </g>
+  </g>
+  <!-- Central aurora symbol -->
+  <g
+     transform="translate(600,144)"
+     id="g29">
+    <!-- Aurora symbol - stylized A with flowing lines -->
+    <path
+       d="M -30,20 0,-25 30,20"
+       stroke="url(#actionGradient)"
+       stroke-width="4"
+       fill="none"
+       id="path26"
+       style="stroke:url(#linearGradient1)" />
+    <path
+       d="M -20,5 H 20"
+       stroke="url(#actionGradient)"
+       stroke-width="3"
+       id="path27"
+       style="stroke:url(#linearGradient2)" />
+    <!-- Flowing aurora lines -->
+    <path
+       d="m -40,25 q 20,-10 40,0 20,10 40,0"
+       stroke="#a855f7"
+       stroke-width="2"
+       fill="none"
+       opacity="0.8"
+       id="path28">
+      <animate
+         attributeName="opacity"
+         values="0.4;1;0.4"
+         dur="2s"
+         repeatCount="indefinite" />
+    </path>
+    <path
+       d="m -35,30 q 20,-10 40,0 20,10 40,0"
+       stroke="#3b82f6"
+       stroke-width="2"
+       fill="none"
+       opacity="0.6"
+       id="path29">
+      <animate
+         attributeName="opacity"
+         values="0.3;0.9;0.3"
+         dur="3s"
+         repeatCount="indefinite" />
+    </path>
+  </g>
+  <!-- Contact information -->
+  <!-- Simplified GGF Logo -->
+  <g
+     transform="translate(1050, 550)"
+     id="g33">
+    <circle
+       cx="0"
+       cy="0"
+       r="32"
+       fill="rgba(255,255,255,0.9)"
+       stroke="url(#actionGradient)"
+       stroke-width="1"
+       id="circle29" />
+    <circle
+       cx="0"
+       cy="0"
+       r="10"
+       fill="#2B4B8C"
+       id="circle30" />
+    <circle
+       cx="0"
+       cy="-18"
+       r="6"
+       fill="#B8860B"
+       id="circle31" />
+    <circle
+       cx="-15"
+       cy="9"
+       r="6"
+       fill="#B8860B"
+       id="circle32" />
+    <circle
+       cx="15"
+       cy="9"
+       r="6"
+       fill="#B8860B"
+       id="circle33" />
+  </g>
+  <!-- Website URL -->
+  <text
+     x="80"
+     y="590"
+     fill="rgba(255,255,255,0.8)"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     id="text33">globalgovernanceframeworks.org/frameworks/aurora-accord</text>
+</svg>

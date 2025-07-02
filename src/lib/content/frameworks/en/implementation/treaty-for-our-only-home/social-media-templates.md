@@ -9,7 +9,7 @@ section: social-media-templates
 
 Use these ready-to-post templates for a quick and impactful share. Each template corresponds to one of the "Narrative Card" graphics. Feel free to use these texts as a starting point and add your own personal voice to connect with your unique audience.
 
-**Always include a link to the main website:** https://globalgovernanceframework.org
+**Always include a link to the main website:** https://globalgovernanceframeworks.org
 
 ---
 
@@ -30,7 +30,7 @@ Our global institutions are stuck, often paralyzed by gridlock while crises like
 
 By reforming the UN Security Council veto, we can unlock the world's ability to take decisive, collective action. It's time to upgrade our systems for the challenges we actually face.
 
-Learn more about this foundational reform: https://globalgovernanceframework.org
+Learn more about this foundational reform: https://globalgovernanceframeworks.org
 
 **Hashtags:** #GlobalGovernance #UNReform #SecurityCouncil #Polycrisis #Future
 
@@ -41,7 +41,7 @@ Global gridlock is not an option when the planet is on the line.
 
 The "Treaty for Our Only Home" provides the upgrade our world needs, starting with UNSC veto reform to finally enable decisive climate and humanitarian action.
 
-Read the blueprint: https://globalgovernanceframework.org
+Read the blueprint: https://globalgovernanceframeworks.org
 
 #GlobalGovernance #UNReform
 ```
@@ -65,7 +65,7 @@ The climate crisis isn't just an environmental issue; it's a failure of internat
 
 The "Treaty for Our Only Home" changes that by establishing "Ecocide" as a prosecutable international crime, creating a powerful legal deterrent to protect our shared global commons. This is a critical step towards real climate justice.
 
-Explore the details: https://globalgovernanceframework.org
+Explore the details: https://globalgovernanceframeworks.org
 
 **Hashtags:** #ClimateAction #EcocideLaw #ClimateJustice #Sustainability #Accountability
 
@@ -76,7 +76,7 @@ It's time to make destroying our planet a crime.
 
 The "Treaty for Our Only Home" calls for establishing "Ecocide" as an international crime. This gives us the legal teeth to protect our ecosystems and hold polluters accountable.
 
-Learn how: https://globalgovernanceframework.org
+Learn how: https://globalgovernanceframeworks.org
 
 #EcocideLaw #ClimateAction
 ```
@@ -100,7 +100,7 @@ The debate over climate action often misses the most important point: the cost o
 
 The "Treaty for Our Only Home" presents a fiscally responsible path forward. By implementing tools like a global carbon tax, we can create sustainable, independent funding for the solutions that ensure our collective survival. This isn't just a moral imperative; it's a sound investment in a stable future.
 
-See the framework: https://globalgovernanceframework.org
+See the framework: https://globalgovernanceframeworks.org
 
 **Hashtags:** #GlobalEconomy #CarbonTax #ClimateFinance #ESG #Investment
 
@@ -113,7 +113,7 @@ The cost of smart reform? A fraction of that.
 
 The "Treaty for Our Only Home" offers a fiscally responsible plan to fund our survival.
 
-Learn more: https://globalgovernanceframework.org
+Learn more: https://globalgovernanceframeworks.org
 
 #ClimateFinance #CarbonTax
 ```
@@ -137,7 +137,7 @@ Many people feel that global decisions are made without their input. This democr
 
 The "Treaty for Our Only Home" tackles this head-on. The proposed "Global Citizens' Initiative" empowers as few as 10 million people from across the world to bring binding referendums to the global stage. This is a powerful step towards a more legitimate, participatory, and democratic world.
 
-Explore the proposal: https://globalgovernanceframework.org
+Explore the proposal: https://globalgovernanceframeworks.org
 
 **Hashtags:** #Democracy #CitizenEngagement #GlobalCitizenship #PeoplePower #Governance
 
@@ -148,7 +148,7 @@ What if 10 million citizens could demand a global vote on climate?
 
 The "Treaty for Our Only Home" proposes a Global Citizens' Initiative to make that a reality, giving people a real voice on the world stage.
 
-This is what real democracy looks like: https://globalgovernanceframework.org
+This is what real democracy looks like: https://globalgovernanceframeworks.org
 
 #Democracy #PeoplePower
 ```

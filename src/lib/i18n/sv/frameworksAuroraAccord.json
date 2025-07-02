@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "title": "Globalt ramverk för datastyrning & suveränitet | Aurora-avtalet",
+    "description": "Ett omfattande ramverk för datasuveränitet och digital rättvisa, som omvandlar data från utvinning till helig förvaltning"
+  },
+  "guideCard": {
+    "title": "Ny till datasuveränitet?",
+    "description": "Börja med vår sammanfattning designad för skeptiker—som tar upp praktiska bekymmer om datastyrningsomvandling.",
+    "buttonText": "Läs sammanfattning för skeptiker"
+  },
+  "badges": {
+    "indigenousSovereignty": "Urfolks datasuveränitet",
+    "youthAuthority": "Ungdomsledarskap",
+    "fiduciaryStandard": "Dataförvaltarstandard"
+  },
+  "categories": {
+    "overview": "Översikt",
+    "foundation": "Grund",
+    "framework": "Kärnramverk",
+    "implementation": "Implementering",
+    "resources": "Resurser"
+  },
+  "sections": {
+    "index": "Översikt",
+    "at-a-glance": "I korthet",
+    "executive-summary-for-the-skeptic": "Sammanfattning för skeptiker",
+    "introduction": "Förvalta kollektiv intelligens",
+    "theory-of-change": "Förändringsteori",
+    "core-principles": "Grundprinciper",
+    "aurora-accord": "Aurora-avtalet",
+    "key-mechanisms": "Nyckelmekanismer & policyer",
+    "ethical-tensions": "Etiska spänningar & avvägningar",
+    "implementation-pathways": "Implementeringsvägar",
+    "framework-integration": "Ramverksintegration",
+    "technical-specifications": "Tekniska specifikationer",
+    "advocacy-action": "Opinionsbildning & handling",
+    "appendices": "Viktiga verktyg & referenser",
+    "faq-and-challenges": "Vanliga frågor & utmaningar",
+    "glossary": "Ordlista",
+    "social-media-templates": "Sociala medier mallar",
+    "policy-briefs": "Policydokument"
+  },
+  "sectionsShort": {
+    "index": "Översikt",
+    "at-a-glance": "I korthet",
+    "executive-summary-for-the-skeptic": "För skeptiker",
+    "introduction": "Introduktion",
+    "theory-of-change": "Förändringsteori",
+    "core-principles": "Principer",
+    "aurora-accord": "Aurora-avtalet",
+    "key-mechanisms": "Nyckelmekanismer",
+    "ethical-tensions": "Etiska spänningar",
+    "implementation-pathways": "Implementering",
+    "framework-integration": "Integration",
+    "technical-specifications": "Tekniska spec",
+    "advocacy-action": "Opinionsbildning",
+    "appendices": "Bilagor",
+    "faq-and-challenges": "FAQ",
+    "glossary": "Ordlista",
+    "social-media-templates": "Sociala medier",
+    "policy-briefs": "Policydokument"
+  },
+  "progress": {
+    "text": "Avsnitt {current} av {total}"
+  },
+  "languageFallback": {
+    "title": "Innehåll på svenska kommer snart",
+    "description": "Detta avsnitt visas för närvarande på engelska tills den svenska översättningen är klar."
+  },
+  "navigation": {
+    "downloadPdf": "Ladda ner PDF-version",
+    "continueToFramework": "Fortsätt till fullständigt ramverk",
+    "previousSection": "Föregående avsnitt",
+    "nextSection": "Nästa avsnitt"
+  },
+  "errors": {
+    "sectionNotFound": "Avsnitt \"{section}\" hittades inte",
+    "contentInDevelopment": "Detta innehåll utvecklas fortfarande."
+  },
+  "loading": {
+    "text": "Laddar Aurora-avtalets innehåll..."
+  }
+}

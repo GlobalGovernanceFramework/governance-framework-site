@@ -94,10 +94,11 @@ The Peace Framework operates as part of an integrated ecosystem where each frame
 
 ## <a id="framework-sections"></a>Framework Sections
 
-The framework maintains its **comprehensive 36-section structure** while integrating Golden Triangle principles throughout. Each section shows its revision status for Golden Triangle alignment:
+The framework maintains its **comprehensive 37-section structure** while integrating Golden Triangle principles throughout. Each section shows its revision status for Golden Triangle alignment:
 
 ### **Cluster A: Foundations & Principles**
 
+0. **[Preamble](/frameworks/peace-and-conflict-resolution#preamble)**: *Updated* - Golden Triangle positioning and framework integration overview
 1. **[Introduction](/frameworks/peace-and-conflict-resolution#introduction)**: *Major Revision* - Framework positioning within Golden Triangle ecosystem and polycrisis response
 2. **[Core Peace & Conflict Resolution Principles](/frameworks/peace-and-conflict-resolution#core-principles)**: *Updated* - Integration with Treaty principles, Indigenous sovereignty, and Meta-Governance coordination  
 3. **[Developmental Value Systems & Peace](/frameworks/peace-and-conflict-resolution#developmental-value-systems)**: *Enhanced* - Indigenous knowledge systems integration and Traditional governance approaches
@@ -150,16 +151,16 @@ The framework maintains its **comprehensive 36-section structure** while integra
 29. **[Technical Guide for Policymakers and Mediators](/frameworks/peace-and-conflict-resolution#technical-guide-policymakers)**: *Enhanced* - Treaty implementation procedures, Indigenous consultation protocols, Meta-Governance coordination
 30. **[Community Peace Implementation Guide](/frameworks/peace-and-conflict-resolution#community-peace-guide)**: *Updated* - Traditional conflict transformation, ceremonial governance, and bioregional cooperation
 31. **[Youth Peace Action Guide](/frameworks/peace-and-conflict-resolution#youth-peace-action-guide)**: *Enhanced* - Indigenous youth leadership, Traditional Knowledge learning, and Meta-Governance participation
-32. **[Digital Peace Ethics Guide](/frameworks/peace-and-conflict-resolution#digital-peace-ethics-guide)**: *Updated* - Indigenous data sovereignty, Traditional Knowledge protection, and Treaty governance standards
+32. **[Indigenous Partnership Guide for Non-Indigenous Peace Practitioners](/frameworks/peace-and-conflict-resolution#indigenous-partnership-guide)** *New*
+33. **[Meta-Governance Coordination Primer for Peace Organizations](/frameworks/peace-and-conflict-resolution#meta-governance-coordination-primer)** *New*
+34. **[Digital Peace Ethics Guide](/frameworks/peace-and-conflict-resolution#digital-peace-ethics-guide)**: *Updated* - Indigenous data sovereignty, Traditional Knowledge protection, and Treaty governance standards
 
 ### **Cluster I: Synthesis & Conclusion**
 
-33. **[Conclusion](/frameworks/peace-and-conflict-resolution#conclusion)**: *Revised* - Golden Triangle integration summary, cross-framework pathway synthesis, and collective transformation vision
+35. **[Conclusion](/frameworks/peace-and-conflict-resolution#conclusion)**: *Revised* - Golden Triangle integration summary, cross-framework pathway synthesis, and collective transformation vision
 
 ### **Additional Reference Materials**
 
-34. **[Preamble](/frameworks/peace-and-conflict-resolution#preamble)**: *Updated* - Golden Triangle positioning and framework integration overview
-35. **[Index](/frameworks/peace-and-conflict-resolution#index)**: *Major Revision* - Complete Golden Triangle integration architecture and cross-framework navigation
 36. **[Glossary](/frameworks/peace-and-conflict-resolution#glossary)**: *Enhanced* - Treaty mechanisms, Indigenous governance terms, and Meta-Governance coordination concepts
 
 ## <a id="implementation-architecture"></a>Implementation Architecture
@@ -273,7 +274,7 @@ Access the complete enhanced toolkit in the [Peace & Conflict Resolution Seed Ki
 
 ### Contact and Engagement
 
-- **Primary Contact**: globalgovernanceframeworks@gmail.com
+- **Primary Contact**: contact@globalgovernanceframeworks.org
 - **Subject Lines for Specific Support**:
   - "Golden Triangle Peace Implementation" - for integrated framework coordination
   - "Treaty Peace Mechanisms" - for UNSC override, GEM, and taxation implementation
