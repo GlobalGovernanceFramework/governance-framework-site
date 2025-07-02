@@ -38,6 +38,7 @@
   $: sectionsToShow = (mounted && isPrintMode) ? Object.keys(data?.sections || {}) : [activeSection];
 
   // Accordion states - initialize in a way that prevents hydration issues
+  let overviewOpen = true; // Start with overview open
   let foundationsOpen = false;
   let governanceOpen = false;
   let modernOpen = false;
@@ -45,24 +46,85 @@
   let actorsOpen = false;
   let structuralOpen = false;
   let implementationOpen = false;
+  let guidesOpen = false;
 
-  // Define section groupings - match the original structure
+  // Define section groupings - match the cluster structure from index.md
   const sectionGroups = {
+    overview: ['preamble', 'index', 'quick-guide'],
     foundations: ['core-principles', 'developmental-value-systems', 'measuring-success'],
     governance: ['local-implementation', 'regional-implementation', 'global-implementation'],
     modern: ['digital-infrastructure', 'ai-ethics', 'emerging-technologies', 'climate-resource', 'media-information'],
     human: ['indigenous-integration', 'transitional-justice', 'mental-health', 'educational-cultural-infrastructure'],
     actors: ['non-state-actors', 'military-transformation', 'whistleblower-protection', 'peace-business-integration'],
     structural: ['structural-prevention', 'peace-financing', 'cross-domain-integration'],
-    implementation: ['context-specific-roadmaps', 'implementation-timeline', 'implementation-challenges', 'visualizations', 'conclusion']
+    implementation: ['context-specific-roadmaps', 'implementation-timeline', 'implementation-challenges', 'visualizations'],
+    guides: ['technical-guide-policymakers', 'community-peace-guide', 'youth-peace-action-guide', 'indigenous-partnership-guide', 'meta-governance-coordination-primer', 'digital-peace-ethics-guide'],
+    conclusion: ['conclusion']
   };
 
-  // Guide sections
-  const guideSections = ['technical-guide-policymakers', 'community-peace-guide', 'youth-peace-action-guide', 'digital-peace-ethics-guide'];
+  // Section icons - tailored to each individual section
+  const sectionIcons = {
+    // Overview cluster
+    'preamble': '🕊️',
+    'index': '🏠',
+    'quick-guide': '⚡',
+    
+    // Foundations & Principles
+    'core-principles': '⚖️',
+    'developmental-value-systems': '🌱',
+    'measuring-success': '📊',
+    
+    // Governance Across Scales
+    'local-implementation': '🏘️',
+    'regional-implementation': '🌍',
+    'global-implementation': '🌐',
+    
+    // Modern Conflict Arenas
+    'digital-infrastructure': '💾',
+    'ai-ethics': '🤖',
+    'emerging-technologies': '🔬',
+    'climate-resource': '🌊',
+    'media-information': '📺',
+    
+    // Human-Centered Approaches
+    'indigenous-integration': '🌿',
+    'transitional-justice': '⚖️',
+    'mental-health': '💚',
+    'educational-cultural-infrastructure': '📚',
+    
+    // Actor-Specific Engagement
+    'non-state-actors': '🎭',
+    'military-transformation': '🛡️',
+    'whistleblower-protection': '🔒',
+    'peace-business-integration': '🤝',
+    
+    // Structural & Systemic Dimensions
+    'structural-prevention': '🏗️',
+    'peace-financing': '💰',
+    'cross-domain-integration': '🔗',
+    
+    // Implementation & Learning
+    'context-specific-roadmaps': '🗺️',
+    'implementation-timeline': '📅',
+    'implementation-challenges': '⚠️',
+    'visualizations': '📈',
+    
+    // Practical Guides & Tools
+    'technical-guide-policymakers': '📋',
+    'community-peace-guide': '🏘️',
+    'youth-peace-action-guide': '🌱',
+    'indigenous-partnership-guide': '🌿',
+    'meta-governance-coordination-primer': '🔗',
+    'digital-peace-ethics-guide': '💻',
+    
+    // Synthesis & Conclusion
+    'conclusion': '🎯'
+  };
 
   // Initialize accordion states after mount
   function initializeAccordionStates() {
     // Reset all accordions
+    overviewOpen = false;
     foundationsOpen = false;
     governanceOpen = false;
     modernOpen = false;
@@ -70,10 +132,11 @@
     actorsOpen = false;
     structuralOpen = false;
     implementationOpen = false;
+    guidesOpen = false;
 
     // Set initial accordion states based on active section
-    if (activeSection === 'index' || guideSections.includes(activeSection)) {
-      foundationsOpen = true;
+    if (sectionGroups.overview.includes(activeSection)) {
+      overviewOpen = true;
     } else if (sectionGroups.foundations.includes(activeSection)) {
       foundationsOpen = true;
     } else if (sectionGroups.governance.includes(activeSection)) {
@@ -88,9 +151,13 @@
       structuralOpen = true;
     } else if (sectionGroups.implementation.includes(activeSection)) {
       implementationOpen = true;
+    } else if (sectionGroups.guides.includes(activeSection)) {
+      guidesOpen = true;
+    } else if (activeSection === 'conclusion') {
+      // Conclusion stands alone
     } else {
-      // Default state for overview
-      foundationsOpen = true;
+      // Default state for unknown sections
+      overviewOpen = true;
     }
   }
 
@@ -211,8 +278,8 @@
   }
 
   // Computed values - add safety checks
-  $: isGuideActive = guideSections.includes(activeSection);
-  $: isSupplementaryActive = sectionGroups.implementation.includes(activeSection);
+  $: allGuideSections = sectionGroups.guides;
+  $: isGuideActive = allGuideSections.includes(activeSection);
   $: allCoreSections = [
     ...sectionGroups.foundations,
     ...sectionGroups.governance,
@@ -236,6 +303,10 @@
   }
 
   // Toggle functions for accordions
+  function toggleOverview() {
+    overviewOpen = !overviewOpen;
+  }
+
   function toggleFoundations() {
     foundationsOpen = !foundationsOpen;
   }
@@ -262,6 +333,10 @@
 
   function toggleImplementation() {
     implementationOpen = !implementationOpen;
+  }
+
+  function toggleGuides() {
+    guidesOpen = !guidesOpen;
   }
 
   // For handling dropdown states
@@ -325,7 +400,7 @@
 
     <div class="content">
       <!-- Quick Access Card for Peace Guides -->
-      {#if !isPrintMode && !isGuideActive && activeSection === 'index'}
+      {#if !isPrintMode && !isGuideActive && (activeSection === 'index' || activeSection === 'preamble')}
         <div class="peace-guide-card">
           <div class="card-content">
             <div class="card-icon">📘</div>
@@ -375,16 +450,43 @@
       <!-- Sub-navigation for peace framework sections -->
       {#if !isPrintMode && !initializing} 
         <div class="section-nav">
-          <!-- Overview -->
-          <div class="nav-section">
+          <!-- Overview Accordion - featuring preamble prominently -->
+          <div class="nav-accordion">
             <button 
-              class="nav-item overview-item" 
-              class:active={activeSection === 'index'}
-              on:click={() => setActiveSection('index')}
+              class="accordion-header overview-header" 
+              class:open={overviewOpen}
+              class:has-active={sectionGroups.overview.some(section => activeSection === section)}
+              on:click={toggleOverview}
             >
-              <span class="nav-icon">🏠</span>
-              <span class="nav-title">{getSectionCategoryTitle('overview')}</span>
+              <span class="accordion-icon">🏠</span>
+              <span class="accordion-title">{getSectionCategoryTitle('overview')}</span>
+              <span class="section-count">({sectionGroups.overview.length})</span>
+              <span class="toggle-arrow" class:rotated={overviewOpen}>▼</span>
             </button>
+            {#if overviewOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                <!-- Feature preamble prominently -->
+                <button 
+                  class="nav-item subsection-item preamble-item" 
+                  class:active={activeSection === 'preamble'}
+                  on:click={() => setActiveSection('preamble')}
+                >
+                  <span class="nav-icon">{sectionIcons['preamble']}</span>
+                  <span class="nav-title">{getShortSectionTitle('preamble')}</span>
+                  <span class="featured-badge">Featured</span>
+                </button>
+                {#each sectionGroups.overview.filter(s => s !== 'preamble') as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-icon">{sectionIcons[section]}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
           </div>
 
           <!-- Foundations & Principles Accordion -->
@@ -392,33 +494,23 @@
             <button 
               class="accordion-header" 
               class:open={foundationsOpen}
-              class:has-active={isGuideActive || sectionGroups.foundations.some(section => activeSection === section)}
+              class:has-active={sectionGroups.foundations.some(section => activeSection === section)}
               on:click={toggleFoundations}
             >
               <span class="accordion-icon">📚</span>
               <span class="accordion-title">{getSectionCategoryTitle('foundations')}</span>
-              <span class="section-count">({guides.length + sectionGroups.foundations.length})</span>
+              <span class="section-count">({sectionGroups.foundations.length})</span>
               <span class="toggle-arrow" class:rotated={foundationsOpen}>▼</span>
             </button>
             {#if foundationsOpen}
               <div class="accordion-content" transition:slide={{ duration: 200 }}>
-                {#each guides as guide}
-                  <button 
-                    class="nav-item subsection-item" 
-                    class:active={activeSection === guide.id}
-                    on:click={() => setActiveSection(guide.id)}
-                  >
-                    <span class="nav-icon">{guide.icon}</span>
-                    <span class="nav-title">{getShortSectionTitle(guide.id)}</span>
-                  </button>
-                {/each}
                 {#each sectionGroups.foundations as section}
                   <button 
                     class="nav-item subsection-item" 
                     class:active={activeSection === section}
                     on:click={() => setActiveSection(section)}
                   >
-                    <span class="nav-icon">📜</span>
+                    <span class="nav-icon">{sectionIcons[section]}</span>
                     <span class="nav-title">{getShortSectionTitle(section)}</span>
                   </button>
                 {/each}
@@ -447,7 +539,7 @@
                     class:active={activeSection === section}
                     on:click={() => setActiveSection(section)}
                   >
-                    <span class="nav-icon">🏛️</span>
+                    <span class="nav-icon">{sectionIcons[section]}</span>
                     <span class="nav-title">{getShortSectionTitle(section)}</span>
                   </button>
                 {/each}
@@ -476,7 +568,7 @@
                     class:active={activeSection === section}
                     on:click={() => setActiveSection(section)}
                   >
-                    <span class="nav-icon">⚡</span>
+                    <span class="nav-icon">{sectionIcons[section]}</span>
                     <span class="nav-title">{getShortSectionTitle(section)}</span>
                   </button>
                 {/each}
@@ -505,7 +597,7 @@
                     class:active={activeSection === section}
                     on:click={() => setActiveSection(section)}
                   >
-                    <span class="nav-icon">💙</span>
+                    <span class="nav-icon">{sectionIcons[section]}</span>
                     <span class="nav-title">{getShortSectionTitle(section)}</span>
                   </button>
                 {/each}
@@ -534,7 +626,7 @@
                     class:active={activeSection === section}
                     on:click={() => setActiveSection(section)}
                   >
-                    <span class="nav-icon">🛡️</span>
+                    <span class="nav-icon">{sectionIcons[section]}</span>
                     <span class="nav-title">{getShortSectionTitle(section)}</span>
                   </button>
                 {/each}
@@ -563,7 +655,7 @@
                     class:active={activeSection === section}
                     on:click={() => setActiveSection(section)}
                   >
-                    <span class="nav-icon">🔧</span>
+                    <span class="nav-icon">{sectionIcons[section]}</span>
                     <span class="nav-title">{getShortSectionTitle(section)}</span>
                   </button>
                 {/each}
@@ -592,12 +684,53 @@
                     class:active={activeSection === section}
                     on:click={() => setActiveSection(section)}
                   >
-                    <span class="nav-icon">📋</span>
+                    <span class="nav-icon">{sectionIcons[section]}</span>
                     <span class="nav-title">{getShortSectionTitle(section)}</span>
                   </button>
                 {/each}
               </div>
             {/if}
+          </div>
+
+          <!-- Practical Guides & Tools Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={guidesOpen}
+              class:has-active={sectionGroups.guides.some(section => activeSection === section)}
+              on:click={toggleGuides}
+            >
+              <span class="accordion-icon">📖</span>
+              <span class="accordion-title">{getSectionCategoryTitle('guides')}</span>
+              <span class="section-count">({sectionGroups.guides.length})</span>
+              <span class="toggle-arrow" class:rotated={guidesOpen}>▼</span>
+            </button>
+            {#if guidesOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each sectionGroups.guides as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-icon">{sectionIcons[section]}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Conclusion - standalone -->
+          <div class="nav-section">
+            <button 
+              class="nav-item conclusion-item" 
+              class:active={activeSection === 'conclusion'}
+              on:click={() => setActiveSection('conclusion')}
+            >
+              <span class="nav-icon">{sectionIcons['conclusion']}</span>
+              <span class="nav-title">{getSectionCategoryTitle('conclusion')}</span>
+            </button>
           </div>
         </div>
       {/if}
@@ -617,7 +750,7 @@
         {#if data?.sections?.[section]}
           <div class="section-content" id={section}>
             <!-- Language fallback notice -->
-            {#if !isPrintMode && data.sectionsUsingEnglishFallback?.includes(section) && section !== 'index'}
+            {#if !isPrintMode && data.sectionsUsingEnglishFallback?.includes(section)}
               <div class="language-fallback-notice">
                 <div class="notice-icon">🌐</div>
                 <div class="notice-content">
@@ -628,7 +761,7 @@
             {/if}
             
             <!-- Handle guide sections specially -->
-            {#if guideSections.includes(section)}
+            {#if allGuideSections.includes(section)}
               <!-- Guide selector if we're in one of the guides and not in print mode -->
               {#if !isPrintMode}
                 <div class="guide-selector">
@@ -796,6 +929,16 @@
    border-bottom: 1px solid #e5e7eb;
  }
 
+ /* Special styling for overview header */
+ .overview-header {
+   background: linear-gradient(135deg, rgba(91, 111, 191, 0.1), rgba(138, 148, 214, 0.1));
+   border-bottom: 1px solid rgba(91, 111, 191, 0.2);
+ }
+
+ .overview-header.has-active {
+   background: linear-gradient(135deg, rgba(91, 111, 191, 0.15), rgba(138, 148, 214, 0.15));
+ }
+
  .accordion-icon {
    font-size: 1.1rem;
    flex-shrink: 0;
@@ -842,6 +985,7 @@
    color: #4b5563;
    text-align: left;
    border-bottom: 1px solid #e5e7eb;
+   position: relative;
  }
 
  .nav-item:last-child {
@@ -863,16 +1007,49 @@
    background-color: var(--peace-secondary);
  }
 
- .overview-item {
-   background: linear-gradient(135deg, rgba(91, 111, 191, 0.1), rgba(138, 148, 214, 0.1));
-   border: 1px solid rgba(91, 111, 191, 0.2);
+ /* Special styling for preamble item */
+ .preamble-item {
+   background: linear-gradient(135deg, rgba(91, 111, 191, 0.08), rgba(138, 148, 214, 0.08));
+   border: 1px solid rgba(91, 111, 191, 0.15);
+   border-radius: 0.25rem;
+   margin: 0.25rem;
+   padding-right: 3rem; /* Make space for badge */
+ }
+
+ .preamble-item.active {
+   background: var(--peace-primary);
+   border-color: var(--peace-primary);
+ }
+
+ .featured-badge {
+   position: absolute;
+   right: 0.5rem;
+   top: 50%;
+   transform: translateY(-50%);
+   background: var(--peace-accent);
+   color: white;
+   font-size: 0.7rem;
+   font-weight: 600;
+   padding: 0.2rem 0.4rem;
+   border-radius: 0.25rem;
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
+ }
+
+ .preamble-item.active .featured-badge {
+   background: rgba(255, 255, 255, 0.2);
+ }
+
+ .conclusion-item {
+   background: linear-gradient(135deg, rgba(147, 112, 219, 0.1), rgba(91, 111, 191, 0.1));
+   border: 1px solid rgba(147, 112, 219, 0.2);
    border-radius: 0.375rem;
    font-weight: 600;
    margin-bottom: 0.5rem;
  }
 
- .overview-item.active {
-   background: var(--peace-primary);
+ .conclusion-item.active {
+   background: var(--peace-accent);
    color: white;
  }
 
@@ -890,28 +1067,28 @@
    text-align: left;
  }
 
- /* Styles for Lite Guide card */
-  .lite-guide-card {
-    background: linear-gradient(135deg, #eef0fa 0%, #d1d6f0 100%);
-    border-radius: 0.75rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 6px rgba(91, 111, 191, 0.1);
-    border: 1px solid rgba(91, 111, 191, 0.2);
-    overflow: visible !important;
-    position: relative;
-    z-index: 1;
-  }
+ /* Peace Guide Card */
+ .peace-guide-card {
+   background: linear-gradient(135deg, #eef0fa 0%, #d1d6f0 100%);
+   border-radius: 0.75rem;
+   margin-bottom: 2rem;
+   box-shadow: 0 4px 6px rgba(91, 111, 191, 0.1);
+   border: 1px solid rgba(91, 111, 191, 0.2);
+   overflow: visible !important;
+   position: relative;
+   z-index: 1;
+ }
 
-  .card-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    align-items: center;
-    position: relative;
-    overflow: visible;
-  }
+ .card-actions {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 0.75rem;
+   align-items: center;
+   position: relative;
+   overflow: visible;
+ }
 
- .lite-guide-card .dropdown-menu {
+ .peace-guide-card .dropdown-menu {
    position: absolute;
    top: 100%;
    left: 0;
@@ -986,7 +1163,7 @@
    transform: translateY(-1px);
  }
  
- .lite-guide-navigation {
+ .guide-navigation {
    display: flex;
    justify-content: space-between;
    margin-top: 3rem;
@@ -1000,36 +1177,223 @@
    margin-left: 0.25rem;
  }
 
-  /* Progress indicator */
-  .progress-indicator {
-    margin-bottom: 2rem;
-    padding: 1rem;
-    background: linear-gradient(90deg, rgba(91, 111, 191, 0.1), rgba(138, 148, 214, 0.1));
-    border-radius: 0.5rem;
-    border-left: 4px solid var(--peace-primary);
-  }
+ /* Progress indicator */
+ .progress-indicator {
+   margin-bottom: 2rem;
+   padding: 1rem;
+   background: linear-gradient(90deg, rgba(91, 111, 191, 0.1), rgba(138, 148, 214, 0.1));
+   border-radius: 0.5rem;
+   border-left: 4px solid var(--peace-primary);
+ }
 
-  .progress-bar {
-    width: 100%;
-    height: 8px;
-    background-color: #e5e7eb;
-    border-radius: 4px;
-    overflow: hidden;
-    margin-bottom: 0.5rem;
-  }
+ .progress-bar {
+   width: 100%;
+   height: 8px;
+   background-color: #e5e7eb;
+   border-radius: 4px;
+   overflow: hidden;
+   margin-bottom: 0.5rem;
+ }
 
-  .progress-fill {
-    height: 100%;
-    background: linear-gradient(90deg, var(--peace-primary), var(--peace-secondary));
-    border-radius: 4px;
-    transition: width 0.3s ease;
-  }
+ .progress-fill {
+   height: 100%;
+   background: linear-gradient(90deg, var(--peace-primary), var(--peace-secondary));
+   border-radius: 4px;
+   transition: width 0.3s ease;
+ }
 
-  .progress-text {
-    font-size: 0.875rem;
-    color: var(--peace-primary);
-    font-weight: 500;
-  }
+ .progress-text {
+   font-size: 0.875rem;
+   color: var(--peace-primary);
+   font-weight: 500;
+ }
+
+ /* Guide selector styles */
+ .guide-selector {
+   margin-bottom: 2rem;
+   padding-bottom: 1rem;
+   border-bottom: 1px solid #e5e7eb;
+ }
+ 
+ .guide-cards {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+   margin-top: 1rem;
+ }
+ 
+ .guide-card {
+   flex: 1;
+   min-width: 200px;
+   max-width: 300px;
+   padding: 1.5rem;
+   border-radius: 0.5rem;
+   border: 1px solid #e5e7eb;
+   cursor: pointer;
+   transition: all 0.2s;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+ }
+ 
+ .guide-card:hover {
+   box-shadow: 0 4px 6px rgba(91, 111, 191, 0.1);
+   transform: translateY(-2px);
+   border-color: var(--peace-primary);
+ }
+ 
+ .guide-card.active {
+   border-color: var(--peace-primary);
+   background-color: var(--peace-light);
+ }
+ 
+ .guide-icon {
+   font-size: 2rem;
+   margin-bottom: 0.5rem;
+ }
+ 
+ .guide-title {
+   font-weight: 600;
+   margin-bottom: 0.5rem;
+   color: var(--peace-primary);
+ }
+ 
+ .guide-desc {
+   font-size: 0.875rem;
+   color: #6b7280;
+ }
+ 
+ .guide-info {
+   display: flex;
+   flex-direction: column;
+ }
+ 
+ .dropdown {
+   position: relative;
+   display: inline-block;
+ }
+
+ .dropdown-toggle {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   width: 100%;
+ }
+
+ .dropdown-menu {
+   position: absolute;
+   top: calc(100% + 4px);
+   left: 0;
+   z-index: 1001;
+   min-width: 320px;
+   max-width: 400px;
+   padding: 0.5rem 0;
+   background-color: #fff;
+   border: 1px solid rgba(91, 111, 191, 0.3);
+   border-radius: 0.375rem;
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+   white-space: normal;
+   /* Default hidden state */
+   visibility: hidden;
+   opacity: 0;
+   transform: translateY(-8px);
+   transition: all 0.2s ease;
+   pointer-events: none;
+ }
+
+ /* Show dropdown when open */
+ .dropdown-menu.show {
+   visibility: visible;
+   opacity: 1;
+   transform: translateY(0);
+   pointer-events: auto;
+ }
+
+ .dropdown-item {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   padding: 0.75rem 1.5rem;
+   clear: both;
+   font-weight: 400;
+   color: #212529;
+   text-align: inherit;
+   white-space: normal !important;
+   background-color: transparent;
+   border: 0;
+   cursor: pointer;
+   transition: background-color 0.15s ease;
+ }
+ 
+ .dropdown-item:hover, 
+ .dropdown-item:focus {
+   color: #16181b;
+   text-decoration: none;
+   background-color: var(--peace-light);
+ }
+
+ /* For dropdown guide items */
+ .dropdown-item .guide-icon {
+   font-size: 1.5rem;
+   margin-right: 1rem;
+   margin-bottom: 0;
+   display: inline-block;
+   width: 24px;
+   text-align: center;
+   flex-shrink: 0;
+ }
+ 
+ .dropdown-item .guide-info {
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+ }
+ 
+ .dropdown-item .guide-title {
+   font-weight: 600;
+   margin-bottom: 0.25rem;
+   color: var(--peace-primary);
+ }
+ 
+ .dropdown-item .guide-desc {
+   font-size: 0.8rem;
+   color: #6b7280;
+   line-height: 1.3;
+ }
+
+ /* Section Navigation */
+ .section-navigation {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 3rem;
+   padding-top: 1.5rem;
+   border-top: 1px solid #e5e7eb;
+ }
+
+ .nav-btn {
+   background-color: var(--peace-primary);
+   color: white;
+   border: none;
+   padding: 0.75rem 1.5rem;
+   border-radius: 0.375rem;
+   font-weight: 500;
+   cursor: pointer;
+   transition: all 0.2s;
+ }
+
+ .nav-btn:hover {
+   background-color: var(--peace-dark);
+   transform: translateY(-1px);
+ }
+
+ .prev-btn {
+   margin-right: auto;
+ }
+
+ .next-btn {
+   margin-left: auto;
+ }
 
  /* Content styling */
  .content :global(h1) {
@@ -1066,6 +1430,83 @@
    color: #4b5563;
  }
 
+ /* Lists - Simple and Clean Styling */
+ .content :global(ul), 
+ .content :global(ol) {
+   margin: 1rem 0 1.5rem 0;
+   padding-left: 1.5rem;
+   color: #4b5563;
+   line-height: 1.6;
+ }
+
+ /* Bullet Lists */
+ .content :global(ul) {
+   list-style-type: disc;
+ }
+
+ .content :global(ul li) {
+   margin-bottom: 0.5rem;
+   padding-left: 0.25rem;
+ }
+
+ /* Nested bullet lists */
+ .content :global(ul ul) {
+   margin: 0.5rem 0;
+   padding-left: 1.25rem;
+   list-style-type: circle;
+ }
+
+ .content :global(ul ul ul) {
+   list-style-type: square;
+ }
+
+ /* Numbered Lists */
+ .content :global(ol) {
+   list-style-type: decimal;
+ }
+
+ .content :global(ol li) {
+   margin-bottom: 0.5rem;
+   padding-left: 0.25rem;
+ }
+
+ /* Nested numbered lists */
+ .content :global(ol ol) {
+   margin: 0.5rem 0;
+   padding-left: 1.25rem;
+   list-style-type: lower-alpha;
+ }
+
+ .content :global(ol ol ol) {
+   list-style-type: lower-roman;
+ }
+
+ /* Mixed nested lists */
+ .content :global(ul ol), 
+ .content :global(ol ul) {
+   margin: 0.5rem 0;
+   padding-left: 1.25rem;
+ }
+
+ /* List markers styling */
+ .content :global(li::marker) {
+   color: var(--peace-primary);
+   font-weight: 500;
+ }
+
+ /* Better spacing for lists with paragraphs */
+ .content :global(li p) {
+   margin: 0.25rem 0;
+ }
+
+ .content :global(li p:first-child) {
+   margin-top: 0;
+ }
+
+ .content :global(li p:last-child) {
+   margin-bottom: 0;
+ }
+
  /* Blockquotes */
  :global(blockquote) {
    background-color: #f3f4fa;
@@ -1082,8 +1523,9 @@
    margin-bottom: 0.75rem;
  }
 
- :global(blockquote ul) {
-   margin-left: 1.5rem;
+ :global(blockquote ul),
+ :global(blockquote ol) {
+   margin-left: 0;
    margin-top: 0.75rem;
    margin-bottom: 0.75rem;
  }
@@ -1105,56 +1547,6 @@
 
  :global(blockquote a:hover) {
    color: var(--peace-dark);
- }
-
- /* Lists */
- .content :global(ul), .content :global(ol) {
-   margin-bottom: 1.5rem;
-   padding-left: 2rem;
-   color: #4b5563;
- }
-
- .content :global(ul) {
-   list-style-type: none;
- }
-
- .content :global(ul li) {
-   position: relative;
-   margin-bottom: 0.75rem;
-   padding-left: 1rem;
- }
-
- .content :global(ul li:not(.section-nav li))::before {
-   content: "☮";
-   position: absolute;
-   left: -0.5em;
-   color: var(--peace-primary);
-   top: 0.15em;
-   font-size: 0.9rem;
- }
-
- .content :global(ol) {
-   list-style-type: decimal;
- }
-
- .content :global(ol li) {
-   margin-bottom: 0.75rem;
-   padding-left: 0.5rem;
- }
-
- .content :global(ol li::marker) {
-   color: var(--peace-primary);
-   font-weight: 600;
- }
-
- .content :global(ul ul), .content :global(ol ul) {
-   margin-top: 0.5rem;
-   margin-bottom: 0;
- }
-
- .content :global(ul ul li::before) {
-   content: "•";
-   color: var(--peace-secondary);
  }
 
  /* Tables */
@@ -1249,176 +1641,87 @@
    font-size: 0.8em;
  }
 
- .content :global(a[href^="#"]) {
-   color: var(--peace-secondary);
-   text-decoration: none;
-   border-bottom: 1px dotted var(--peace-secondary);
- }
-
- .content :global(a[href^="#"]):hover {
-   color: var(--peace-primary);
-   border-bottom-color: var(--peace-primary);
- }
-
- .content :global(table a) {
-   color: var(--peace-primary);
-   font-weight: 600;
- }
- 
- 
- /* Guide selector styles */
- .guide-selector {
-   margin-bottom: 2rem;
-   padding-bottom: 1rem;
-   border-bottom: 1px solid #e5e7eb;
- }
- 
- .guide-cards {
+ /* Language fallback notice */
+ .language-fallback-notice {
    display: flex;
-   flex-wrap: wrap;
+   align-items: flex-start;
    gap: 1rem;
-   margin-top: 1rem;
- }
- 
- .guide-card {
-   flex: 1;
-   min-width: 200px;
-   max-width: 300px;
-   padding: 1.5rem;
+   background-color: rgba(138, 148, 214, 0.1);
+   border: 1px solid rgba(138, 148, 214, 0.3);
    border-radius: 0.5rem;
-   border: 1px solid #e5e7eb;
-   cursor: pointer;
-   transition: all 0.2s;
+   padding: 1rem 1.25rem;
+   margin-bottom: 1.5rem;
+ }
+
+ .notice-icon {
+   font-size: 1.25rem;
+   color: var(--peace-secondary);
+   flex-shrink: 0;
+   margin-top: 0.125rem;
+ }
+
+ .notice-content {
+   flex: 1;
+ }
+
+ .notice-content strong {
+   color: var(--peace-secondary);
+   font-size: 0.95rem;
+   display: block;
+   margin-bottom: 0.25rem;
+ }
+
+ .notice-content p {
+   color: #4b5563;
+   font-size: 0.875rem;
+   margin: 0;
+   line-height: 1.5;
+ }
+
+ /* Loading state */
+ .loading-container {
    display: flex;
    flex-direction: column;
    align-items: center;
+   justify-content: center;
+   min-height: 400px;
    text-align: center;
  }
- 
- .guide-card:hover {
-   box-shadow: 0 4px 6px rgba(91, 111, 191, 0.1);
-   transform: translateY(-2px);
-   border-color: var(--peace-primary);
+
+ .loading-spinner {
+   width: 3rem;
+   height: 3rem;
+   border: 3px solid var(--peace-light);
+   border-top: 3px solid var(--peace-primary);
+   border-radius: 50%;
+   animation: spin 1s linear infinite;
+   margin-bottom: 1rem;
  }
- 
- .guide-card.active {
-   border-color: var(--peace-primary);
-   background-color: var(--peace-light);
+
+ @keyframes spin {
+   0% { transform: rotate(0deg); }
+   100% { transform: rotate(360deg); }
  }
- 
- .guide-icon {
-   font-size: 2rem;
-   margin-bottom: 0.5rem;
+
+ /* Missing section styling */
+ .missing-section {
+   text-align: center;
+   padding: 3rem 2rem;
+   background-color: #fef2f2;
+   border: 1px solid #fecaca;
+   border-radius: 0.5rem;
+   margin: 2rem 0;
  }
- 
- .guide-title {
-   font-weight: 600;
-   margin-bottom: 0.5rem;
-   color: var(--peace-primary);
+
+ .missing-section h2 {
+   color: var(--peace-danger);
+   margin-bottom: 1rem;
  }
- 
- .guide-desc {
-   font-size: 0.875rem;
+
+ .missing-section p {
    color: #6b7280;
+   margin-bottom: 2rem;
  }
- 
- .guide-info {
-   display: flex;
-   flex-direction: column;
- }
- 
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-
-  .dropdown-toggle {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    width: 100%;
-  }
-
-  .dropdown-menu {
-    position: absolute;
-    top: calc(100% + 4px);
-    left: 0;
-    z-index: 1001;
-    min-width: 320px;
-    max-width: 400px;
-    padding: 0.5rem 0;
-    background-color: #fff;
-    border: 1px solid rgba(91, 111, 191, 0.3);
-    border-radius: 0.375rem;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    white-space: normal;
-    /* Default hidden state */
-    visibility: hidden;
-    opacity: 0;
-    transform: translateY(-8px);
-    transition: all 0.2s ease;
-    pointer-events: none;
-  }
-
-  /* Show dropdown when open */
-  .dropdown-menu.show {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-  }
-
-  .dropdown-item {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 0.75rem 1.5rem;
-    clear: both;
-    font-weight: 400;
-    color: #212529;
-    text-align: inherit;
-    white-space: normal !important;
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-    transition: background-color 0.15s ease;
-  }
-  
-  .dropdown-item:hover, 
-  .dropdown-item:focus {
-    color: #16181b;
-    text-decoration: none;
-    background-color: var(--peace-light);
-  }
-
-  /* For dropdown guide items */
-  .dropdown-item .guide-icon {
-    font-size: 1.5rem;
-    margin-right: 1rem;
-    margin-bottom: 0;
-    display: inline-block;
-    width: 24px;
-    text-align: center;
-    flex-shrink: 0;
-  }
-  
-  .dropdown-item .guide-info {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  }
-  
-  .dropdown-item .guide-title {
-    font-weight: 600;
-    margin-bottom: 0.25rem;
-    color: var(--peace-primary);
-  }
-  
-  .dropdown-item .guide-desc {
-    font-size: 0.8rem;
-    color: #6b7280;
-    line-height: 1.3;
-  }
 
  /* Responsive Design */
  @media (max-width: 768px) {
@@ -1455,12 +1758,12 @@
      justify-content: center;
    }
    
-   .lite-guide-navigation {
+   .guide-navigation {
      flex-direction: column;
      gap: 1rem;
    }
    
-   .lite-guide-navigation button {
+   .guide-navigation button {
      width: 100%;
    }
    
@@ -1471,134 +1774,60 @@
    .guide-card {
      max-width: none;
    }
+
+   .section-navigation {
+     flex-direction: column;
+     gap: 1rem;
+   }
+
+   .nav-btn {
+     width: 100%;
+     margin: 0 !important;
+   }
  }
 
  @media (max-width: 640px) {
-   :global(.content table) {
-     display: block;
-     overflow-x: auto;
+   .language-fallback-notice {
+     padding: 0.75rem 1rem;
    }
    
-   :global(.content th),
-   :global(.content td) {
-     white-space: nowrap;
+   .notice-icon {
+     font-size: 1.1rem;
+   }
+   
+   .notice-content strong {
+     font-size: 0.9rem;
+   }
+   
+   .notice-content p {
+     font-size: 0.8rem;
    }
  }
 
-  /* Language fallback notice */
-  .language-fallback-notice {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    background-color: rgba(138, 148, 214, 0.1);
-    border: 1px solid rgba(138, 148, 214, 0.3);
-    border-radius: 0.5rem;
-    padding: 1rem 1.25rem;
-    margin-bottom: 1.5rem;
-  }
+ .arrow-icon {
+   display: inline-block;
+   margin-left: 0.25rem;
+   transition: transform 0.2s ease;
+ }
 
-  .notice-icon {
-    font-size: 1.25rem;
-    color: var(--peace-secondary);
-    flex-shrink: 0;
-    margin-top: 0.125rem;
-  }
+ .arrow-icon.rotated {
+   transform: rotate(180deg);
+ }
 
-  .notice-content {
-    flex: 1;
-  }
+ html {
+   scroll-behavior: smooth;
+ }
 
-  .notice-content strong {
-    color: var(--peace-secondary);
-    font-size: 0.95rem;
-    display: block;
-    margin-bottom: 0.25rem;
-  }
+ #main-content {
+   scroll-margin-top: 2rem;
+ }
 
-  .notice-content p {
-    color: #4b5563;
-    font-size: 0.875rem;
-    margin: 0;
-    line-height: 1.5;
-  }
+ .section-content {
+   scroll-margin-top: 2rem;
+ }
 
-  /* Responsive notice */
-  @media (max-width: 640px) {
-    .language-fallback-notice {
-      padding: 0.75rem 1rem;
-    }
-    
-    .notice-icon {
-      font-size: 1.1rem;
-    }
-    
-    .notice-content strong {
-      font-size: 0.9rem;
-    }
-    
-    .notice-content p {
-      font-size: 0.8rem;
-    }
-  }
-
-  .arrow-icon {
-    display: inline-block;
-    margin-left: 0.25rem;
-    transition: transform 0.2s ease;
-  }
-
-  .arrow-icon.rotated {
-    transform: rotate(180deg);
-  }
-
-  .section-error {
-    text-align: center;
-    padding: 3rem 2rem;
-    background-color: #fef2f2;
-    border: 1px solid #fecaca;
-    border-radius: 0.5rem;
-    margin: 2rem 0;
-  }
-
-  .section-error h2 {
-    color: var(--peace-danger);
-    margin-bottom: 1rem;
-  }
-
-  .section-error p {
-    color: #6b7280;
-    margin-bottom: 2rem;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  #main-content {
-    scroll-margin-top: 2rem;
-  }
-
-  .section-content {
-    scroll-margin-top: 2rem;
-  }
-
-  .content {
-    scroll-margin-top: 2rem; /* Space above content when scrolled to */
-  }
-
-  .section-content {
-    scroll-margin-top: 1rem; /* Space above sections when scrolled to */
-  }
-
-  /* Ensure the content area is easily targetable */
-  .content {
-    position: relative;
-  }
-
-  .scroll-target {
-    height: 1px;
-    width: 1px;
-    visibility: hidden;
-  }
+ .content {
+   scroll-margin-top: 2rem;
+   position: relative;
+ }
 </style>
-

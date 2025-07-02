@@ -1,115 +1,108 @@
 {
   "meta": {
-    "title": "Ramverk för fred och konfliktlösning - Global Governance Framework",
-    "description": "Ett omfattande ramverk för fredsstyrning, konfliktprevention och hållbar lösning över alla samhällsnivåer"
+    "title": "Ramverk för fred och konfliktlösning - globalt ramverk för styrning",
+    "description": "Ett heltäckande ramverk för fredsstyrning, konfliktförebyggande och hållbar konfliktlösning på alla nivåer i samhället"
   },
   "guideCard": {
-    "title": "Nybörjare på ramverket för fred och konfliktlösning?",
+    "title": "Ny till ramverket för fred och konfliktlösning?",
     "description": "Börja med en av våra förenklade guider som förklarar kärnkoncepten för olika målgrupper.",
     "buttonText": "Välj guide"
   },
   "categories": {
     "overview": "Översikt",
     "foundations": "Grunder och principer",
-    "governance": "Styrning över skalor",
+    "governance": "Styrning på olika nivåer",
     "modern": "Moderna konfliktarenor",
     "human": "Människocentrerade tillvägagångssätt",
     "actors": "Aktörsspecifikt engagemang",
     "structural": "Strukturella och systemiska dimensioner",
-    "implementation": "Implementering och lärande"
+    "implementation": "Implementering och lärande",
+    "guides": "Praktiska guider och verktyg",
+    "conclusion": "Syntes och slutsats"
   },
   "sections": {
-    "index": "Översikt",
+    "index": "Ramverksöversikt",
     "preamble": "Inledning",
-    "quick-guide": "Snabbguide",
-    "core-principles": "Kärnprinciper",
-    "developmental-value-systems": "Utvecklingsbaserade värdesystem",
-    "measuring-success": "Mätning av fredsframgångar",
-    "local-implementation": "Lokal implementering",
-    "regional-implementation": "Regional implementering",
-    "global-implementation": "Global implementering",
+    "quick-guide": "Snabbstartsguide",
+    "core-principles": "Grundläggande fredsprinciper",
+    "developmental-value-systems": "Utvecklingsmässiga värdesystem",
+    "measuring-success": "Mätning av fredsframgång",
+    "local-implementation": "Lokal fredsimplementering",
+    "regional-implementation": "Regional fredssamordning",
+    "global-implementation": "Global fredsstyrning",
     "digital-infrastructure": "Digital fredsinfrastruktur",
     "ai-ethics": "AI och digital fredsetik",
-    "emerging-technologies": "Framväxande teknologier för fred",
+    "emerging-technologies": "Ny teknik för fred",
     "climate-resource": "Klimat- och resurskonflikter",
-    "media-information": "Media- och informationsfredskapaciteter",
-    "indigenous-integration": "Traditionell och ursprungsfolksfredsbyggande",
+    "media-information": "Media- och informationsfred",
+    "indigenous-integration": "Integrering av urfolks fredsbyggande",
     "transitional-justice": "Övergångsrättvisa och försoning",
-    "mental-health": "Psykiskt hälsostöd och psykosocialt stöd",
-    "educational-cultural-infrastructure": "Utbildnings- och kulturell fredsinfrastruktur",
-    "non-state-actors": "Hybrid- och icke-statligt aktörsengagemang",
-    "military-transformation": "Militär- och säkerhetstransformation",
-    "whistleblower-protection": "Visselblåsarskydd i auktoritära sammanhang",
-    "peace-business-integration": "Fred-företagsintegration",
-    "structural-prevention": "Strukturell konfliktprevention",
-    "peace-financing": "Fredsfinansiering och resursmobilisering",
-    "cross-domain-integration": "Tvärdomänintegration",
-    "context-specific-roadmaps": "Kontextspecifika implementeringsplaner",
-    "implementation-timeline": "Implementeringstidslinje",
-    "implementation-challenges": "Implementeringsutmaningar och misslyckanden",
-    "visualizations": "Visualiseringar för freds- och konfliktlösningsramverk",
-    "conclusion": "Slutsats",
+    "mental-health": "Psykisk hälsa och psykosocialt stöd",
+    "educational-cultural-infrastructure": "Utbildnings- och kulturfred",
+    "non-state-actors": "Engagemang med icke-statliga aktörer",
+    "military-transformation": "Militär och säkerhetstransformation",
+    "whistleblower-protection": "Visselblåsarskydd",
+    "peace-business-integration": "Integration av fred och näringsliv",
+    "structural-prevention": "Strukturellt konfliktförebyggande",
+    "peace-financing": "Fredsfinansiering och resurser",
+    "cross-domain-integration": "Domänöverskridande integration",
+    "context-specific-roadmaps": "Kontextspecifika färdplaner",
+    "implementation-timeline": "Tidsplan för implementering",
+    "implementation-challenges": "Utmaningar vid implementering",
+    "visualizations": "Visualiseringar av ramverket",
     "technical-guide-policymakers": "Teknisk guide för beslutsfattare",
-    "community-peace-guide": "Samhällsguide för fred",
-    "youth-peace-action-guide": "Fredshandlingsguide för ungdomar",
-    "digital-peace-ethics-guide": "Digital fredsetik guide"
+    "community-peace-guide": "Guide för lokalsamhällesfred",
+    "youth-peace-action-guide": "Handlingsguide för ungdomars fredsarbete",
+    "indigenous-partnership-guide": "Guide för partnerskap med urfolk",
+    "meta-governance-coordination-primer": "Introduktion till metastyrningssamordning",
+    "digital-peace-ethics-guide": "Guide till digital fredsetik",
+    "conclusion": "Ramverkets slutsats"
   },
   "sectionsShort": {
     "index": "Översikt",
     "preamble": "Inledning",
-    "quick-guide": "Snabbguide", 
+    "quick-guide": "Snabbstart",
     "core-principles": "Principer",
     "developmental-value-systems": "Värdesystem",
-    "measuring-success": "Mätning",
-    "local-implementation": "Lokalt",
-    "regional-implementation": "Regionalt",
-    "global-implementation": "Globalt",
+    "measuring-success": "Framgångsmått",
+    "local-implementation": "Lokal fred",
+    "regional-implementation": "Regional fred",
+    "global-implementation": "Global fred",
     "digital-infrastructure": "Digital infrastruktur",
-    "ai-ethics": "AI etik",
-    "emerging-technologies": "Framväxande teknik",
-    "climate-resource": "Klimat",
-    "media-information": "Media",
-    "indigenous-integration": "Ursprungsfolk",
-    "transitional-justice": "Rättvisa",
+    "ai-ethics": "AI-etik",
+    "emerging-technologies": "Ny teknik",
+    "climate-resource": "Klimatkonflikter",
+    "media-information": "Media och info",
+    "indigenous-integration": "Urfolksfred",
+    "transitional-justice": "Övergångsrättvisa",
     "mental-health": "Psykisk hälsa",
-    "educational-cultural-infrastructure": "Utbildning",
+    "educational-cultural-infrastructure": "Utbildning och kultur",
     "non-state-actors": "Icke-statliga aktörer",
-    "military-transformation": "Militärt",
-    "whistleblower-protection": "Visselblåsare",
-    "peace-business-integration": "Företag",
-    "structural-prevention": "Prevention",
+    "military-transformation": "Militärreform",
+    "whistleblower-protection": "Visselblåsarskydd",
+    "peace-business-integration": "Fred och näringsliv",
+    "structural-prevention": "Förebyggande",
     "peace-financing": "Finansiering",
     "cross-domain-integration": "Integration",
-    "context-specific-roadmaps": "Planer",
-    "implementation-timeline": "Tidslinje",
+    "context-specific-roadmaps": "Färdplaner",
+    "implementation-timeline": "Tidsplan",
     "implementation-challenges": "Utmaningar",
-    "visualizations": "Visuellt",
-    "conclusion": "Slutsats",
+    "visualizations": "Visualiseringar",
     "technical-guide-policymakers": "Teknisk guide",
-    "community-peace-guide": "Samhällsguide",
+    "community-peace-guide": "Communityguide",
     "youth-peace-action-guide": "Ungdomsguide",
-    "digital-peace-ethics-guide": "Digital etik"
-  },
-  "progress": {
-    "text": "Avsnitt {current} av {total}"
-  },
-  "languageFallback": {
-    "title": "Innehåll på svenska kommer snart",
-    "description": "Detta avsnitt visas för närvarande på engelska tills den svenska översättningen är klar."
-  },
-  "navigation": {
-    "downloadPdf": "Ladda ner PDF-versionen",
-    "continueToFramework": "Fortsätt till hela ramverket",
-    "previousSection": "Föregående avsnitt",
-    "nextSection": "Nästa avsnitt"
+    "indigenous-partnership-guide": "Urfolksguide",
+    "meta-governance-coordination-primer": "Introduktion till metastyrning",
+    "digital-peace-ethics-guide": "Guide till digital etik",
+    "conclusion": "Slutsats"
   },
   "guides": {
-    "new": "Nybörjare på ramverket för fred och konfliktlösning?",
+    "new": "Ny till ramverket för fred och konfliktlösning?",
     "start": "Börja med en av våra förenklade guider som förklarar kärnkoncepten för olika målgrupper.",
     "button": "Välj guide",
-    "title": "Guider för ramverk för fred och konfliktlösning",
+    "title": "Guider till ramverket för fred och konfliktlösning",
     "description": "Välj den guideversion som bäst passar dina behov:",
-    "download": "Ladda ner PDF-versionen",
+    "download": "Ladda ner PDF-version",
     "continue": "Fortsätt till hela ramverket",
     "guides": [
       {
@@ -120,32 +113,57 @@
       },
       {
         "id": "community-peace-guide",
-        "title": "Samhällsguide",
-        "description": "Implementeringsguide för lokala ledare, civilsamhället och samhällsmediatorer",
+        "title": "Guide för lokalsamhället",
+        "description": "Implementeringsguide för lokala ledare, civilsamhället och lokala medlare",
         "icon": "🤝"
       },
       {
         "id": "youth-peace-action-guide",
         "title": "Ungdomsguide",
-        "description": "Praktisk guide för ungdomar, pedagoger och samhällsgrupper",
+        "description": "Praktisk guide för ungdomar, pedagoger och lokala grupper",
         "icon": "🌱"
       },
       {
+        "id": "indigenous-partnership-guide",
+        "title": "Guide för partnerskap med urfolk",
+        "description": "Guide för fredsaktörer för respektfullt samarbete med urfolkssamhällen",
+        "icon": "🌿"
+      },
+      {
+        "id": "meta-governance-coordination-primer",
+        "title": "Introduktion till metastyrning",
+        "description": "Samordningsguide för fredsorganisationer som arbetar över olika styrningsdomäner",
+        "icon": "🔗"
+      },
+      {
         "id": "digital-peace-ethics-guide",
-        "title": "Digital etikguide",
-        "description": "Guide för digital fredsbyggande, etik och teknikstyrning",
+        "title": "Guide till digital etik",
+        "description": "Guide för digitalt fredsbyggande, etik och teknikstyrning",
         "icon": "💻"
       }
     ]
   },
+  "progress": {
+    "text": "Avsnitt {current} av {total}"
+  },
+  "languageFallback": {
+    "title": "Innehåll på ditt språk kommer snart",
+    "description": "Detta avsnitt visas för närvarande på engelska tills översättningen är klar."
+  },
+  "navigation": {
+    "downloadPdf": "Ladda ner PDF-version",
+    "continueToFramework": "Fortsätt till hela ramverket",
+    "previousSection": "Föregående avsnitt",
+    "nextSection": "Nästa avsnitt"
+  },
   "errors": {
-    "sectionNotFound": "Avsnitt \"{section}\" hittades inte",
-    "contentInDevelopment": "Detta innehåll håller fortfarande på att utvecklas.",
+    "sectionNotFound": "Avsnittet \"{section}\" hittades inte",
+    "contentInDevelopment": "Detta innehåll är fortfarande under utveckling.",
     "sectionNotAvailable": "Avsnitt inte tillgängligt",
-    "sectionLoadError": "Avsnittet \"{section}\" kunde inte laddas. Detta kan vara ett tillfälligt problem.",
-    "returnToOverview": "Återgå till översikt"
+    "sectionLoadError": "Avsnittet \"{section}\" kunde inte laddas. Det kan vara ett tillfälligt problem.",
+    "returnToOverview": "Återgå till översikten"
   },
   "loading": {
-    "text": "Laddar fredsramverkets innehåll..."
+    "text": "Laddar innehåll för fredsramverket..."
   }
 }

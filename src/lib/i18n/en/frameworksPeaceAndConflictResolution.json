@@ -16,92 +16,103 @@
     "human": "Human-Centered Approaches",
     "actors": "Actor-Specific Engagement",
     "structural": "Structural & Systemic Dimensions",
-    "implementation": "Implementation & Learning"
+    "implementation": "Implementation & Learning",
+    "guides": "Practical Guides & Tools",
+    "conclusion": "Synthesis & Conclusion"
   },
   "sections": {
-    "index": "Overview",
+    "index": "Framework Overview",
     "preamble": "Preamble",
-    "quick-guide": "Quick Guide",
-    "core-principles": "Core Principles",
+    "quick-guide": "Quick Start Guide",
+    
+    "core-principles": "Core Peace Principles",
     "developmental-value-systems": "Developmental Value Systems",
-    "measuring-success": "Measuring Peace Governance Success",
-    "local-implementation": "Local Implementation",
-    "regional-implementation": "Regional Implementation", 
-    "global-implementation": "Global Implementation",
+    "measuring-success": "Measuring Peace Success",
+    
+    "local-implementation": "Local Peace Implementation",
+    "regional-implementation": "Regional Peace Coordination", 
+    "global-implementation": "Global Peace Governance",
+    
     "digital-infrastructure": "Digital Peace Infrastructure",
     "ai-ethics": "AI & Digital Peace Ethics",
     "emerging-technologies": "Emerging Technologies for Peace",
     "climate-resource": "Climate & Resource Conflicts",
-    "media-information": "Media & Information Peace Capacities",
-    "indigenous-integration": "Traditional & Indigenous Peacebuilding",
+    "media-information": "Media & Information Peace",
+    
+    "indigenous-integration": "Indigenous Peacebuilding Integration",
     "transitional-justice": "Transitional Justice & Reconciliation",
     "mental-health": "Mental Health & Psychosocial Support",
-    "educational-cultural-infrastructure": "Educational & Cultural Peace Infrastructure",
-    "non-state-actors": "Hybrid & Non-State Actor Engagement",
+    "educational-cultural-infrastructure": "Educational & Cultural Peace",
+    
+    "non-state-actors": "Non-State Actor Engagement",
     "military-transformation": "Military & Security Transformation",
-    "whistleblower-protection": "Whistleblower Protection in Authoritarian Contexts",
+    "whistleblower-protection": "Whistleblower Protection",
     "peace-business-integration": "Peace-Business Integration",
+    
     "structural-prevention": "Structural Conflict Prevention",
-    "peace-financing": "Peace Financing & Resource Mobilization",
+    "peace-financing": "Peace Financing & Resources",
     "cross-domain-integration": "Cross-Domain Integration",
-    "context-specific-roadmaps": "Context-Specific Implementation Roadmaps",
+    
+    "context-specific-roadmaps": "Context-Specific Roadmaps",
     "implementation-timeline": "Implementation Timeline",
-    "implementation-challenges": "Implementation Challenges and Failures",
-    "visualizations": "Visualizations for Peace & Conflict Resolution Framework",
-    "conclusion": "Conclusion",
+    "implementation-challenges": "Implementation Challenges",
+    "visualizations": "Framework Visualizations",
+    
     "technical-guide-policymakers": "Technical Guide for Policymakers",
-    "community-peace-guide": "Community Peace Implementation Guide",
+    "community-peace-guide": "Community Peace Guide",
     "youth-peace-action-guide": "Youth Peace Action Guide",
-    "digital-peace-ethics-guide": "Digital Peace Ethics Guide"
+    "indigenous-partnership-guide": "Indigenous Partnership Guide",
+    "meta-governance-coordination-primer": "Meta-Governance Coordination Primer",
+    "digital-peace-ethics-guide": "Digital Peace Ethics Guide",
+    
+    "conclusion": "Framework Conclusion"
   },
   "sectionsShort": {
     "index": "Overview",
     "preamble": "Preamble",
-    "quick-guide": "Quick Guide",
+    "quick-guide": "Quick Start",
+    
     "core-principles": "Principles",
     "developmental-value-systems": "Value Systems",
-    "measuring-success": "Measuring Success",
-    "local-implementation": "Local",
-    "regional-implementation": "Regional",
-    "global-implementation": "Global", 
+    "measuring-success": "Success Metrics",
+    
+    "local-implementation": "Local Peace",
+    "regional-implementation": "Regional Peace",
+    "global-implementation": "Global Peace", 
+    
     "digital-infrastructure": "Digital Infrastructure",
     "ai-ethics": "AI Ethics",
     "emerging-technologies": "Emerging Tech",
-    "climate-resource": "Climate",
-    "media-information": "Media",
-    "indigenous-integration": "Indigenous",
-    "transitional-justice": "Justice",
+    "climate-resource": "Climate Conflicts",
+    "media-information": "Media & Info",
+    
+    "indigenous-integration": "Indigenous Peace",
+    "transitional-justice": "Transitional Justice",
     "mental-health": "Mental Health",
-    "educational-cultural-infrastructure": "Education",
+    "educational-cultural-infrastructure": "Education & Culture",
+    
     "non-state-actors": "Non-State Actors",
-    "military-transformation": "Military",
-    "whistleblower-protection": "Whistleblower",
-    "peace-business-integration": "Business",
+    "military-transformation": "Military Reform",
+    "whistleblower-protection": "Whistleblower Protection",
+    "peace-business-integration": "Peace & Business",
+    
     "structural-prevention": "Prevention",
     "peace-financing": "Financing",
     "cross-domain-integration": "Integration",
+    
     "context-specific-roadmaps": "Roadmaps",
     "implementation-timeline": "Timeline",
     "implementation-challenges": "Challenges",
-    "visualizations": "Visuals",
-    "conclusion": "Conclusion",
+    "visualizations": "Visualizations",
+    
     "technical-guide-policymakers": "Technical Guide",
     "community-peace-guide": "Community Guide",
     "youth-peace-action-guide": "Youth Guide",
-    "digital-peace-ethics-guide": "Digital Ethics"
-  },
-  "progress": {
-    "text": "Section {current} of {total}"
-  },
-  "languageFallback": {
-    "title": "Content in your language coming soon",
-    "description": "This section is currently displayed in English until translation is complete."
-  },
-  "navigation": {
-    "downloadPdf": "Download PDF Version",
-    "continueToFramework": "Continue to Full Framework",
-    "previousSection": "Previous Section", 
-    "nextSection": "Next Section"
+    "indigenous-partnership-guide": "Indigenous Guide",
+    "meta-governance-coordination-primer": "Meta-Governance Primer",
+    "digital-peace-ethics-guide": "Digital Ethics Guide",
+    
+    "conclusion": "Conclusion"
   },
   "guides": {
     "new": "New to the Peace & Conflict Resolution Framework?",
@@ -131,12 +142,37 @@
         "icon": "🌱"
       },
       {
+        "id": "indigenous-partnership-guide",
+        "title": "Indigenous Partnership Guide",
+        "description": "Guide for non-Indigenous peace practitioners working respectfully with Indigenous communities",
+        "icon": "🌿"
+      },
+      {
+        "id": "meta-governance-coordination-primer",
+        "title": "Meta-Governance Primer",
+        "description": "Coordination guide for peace organizations working across governance domains",
+        "icon": "🔗"
+      },
+      {
         "id": "digital-peace-ethics-guide",
         "title": "Digital Ethics Guide",
         "description": "Guide for digital peacebuilding, ethics, and tech governance", 
         "icon": "💻"
       }
     ]
+  },
+  "progress": {
+    "text": "Section {current} of {total}"
+  },
+  "languageFallback": {
+    "title": "Content in your language coming soon",
+    "description": "This section is currently displayed in English until translation is complete."
+  },
+  "navigation": {
+    "downloadPdf": "Download PDF Version",
+    "continueToFramework": "Continue to Full Framework",
+    "previousSection": "Previous Section", 
+    "nextSection": "Next Section"
   },
   "errors": {
     "sectionNotFound": "Section \"{section}\" not found",

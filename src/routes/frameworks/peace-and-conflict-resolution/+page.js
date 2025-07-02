@@ -29,53 +29,55 @@ export async function load({ depends, url, params }) {
     'preamble',
     'quick-guide',
     
-    // Core framework sections
+    // Core framework sections - Cluster A: Foundations & Principles
     'core-principles',
+    'developmental-value-systems',
+    'measuring-success',
+    
+    // Cluster B: Governance Across Scales
     'local-implementation',
-    'indigenous-integration',
     'regional-implementation',
     'global-implementation',
     
-    // Technology integration
+    // Cluster C: Modern Conflict Arenas
     'digital-infrastructure',
     'ai-ethics',
     'emerging-technologies',
+    'climate-resource',
+    'media-information',
     
-    // Actors and transformation
+    // Cluster D: Human-Centered Approaches
+    'indigenous-integration',
+    'transitional-justice',
+    'mental-health',
+    'educational-cultural-infrastructure',
+    
+    // Cluster E: Actor-Specific Engagement
     'non-state-actors',
     'military-transformation',
     'whistleblower-protection',
-    
-    // Prevention and justice
-    'structural-prevention',
-    'climate-resource',
-    'transitional-justice',
-    'mental-health',
-    
-    // Systems and culture
-    'developmental-value-systems',
-    'educational-cultural-infrastructure',
-    
-    // Integration and financing
-    'peace-financing',
     'peace-business-integration',
-    'media-information',
     
-    // Implementation and measurement
+    // Cluster F: Structural & Systemic Dimensions
+    'structural-prevention',
+    'peace-financing',
+    'cross-domain-integration',
+    
+    // Cluster G: Implementation & Learning
     'context-specific-roadmaps',
     'implementation-timeline',
     'implementation-challenges',
-    'measuring-success',
-    'cross-domain-integration',
     'visualizations',
     
-    // Guides and resources
+    // Cluster H: Practical Guides & Tools
     'technical-guide-policymakers',
     'community-peace-guide',
     'youth-peace-action-guide',
+    'indigenous-partnership-guide',
+    'meta-governance-coordination-primer',
     'digital-peace-ethics-guide',
     
-    // Conclusion
+    // Cluster I: Synthesis & Conclusion
     'conclusion'
   ];
   
@@ -163,7 +165,7 @@ export async function load({ depends, url, params }) {
     isComprehensiveFramework: true,
     implementationLevels: 3, // local, regional, global
     technologySections: 3, // digital-infrastructure, ai-ethics, emerging-technologies
-    specializedGuides: 4, // technical, community, youth, digital ethics
+    specializedGuides: 6, // technical, community, youth, digital ethics, indigenous, meta-governance
     
     // Framework characteristics
     focusAreas: [
