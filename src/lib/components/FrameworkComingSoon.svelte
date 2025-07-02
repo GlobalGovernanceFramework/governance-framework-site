@@ -72,6 +72,36 @@
         ]
       }
     },
+    soil: {
+      en: {
+        title: 'Soil Health & Land Use Governance Framework',
+        defaultDescription: "Transforming humanity's relationship with land from extractive property to regenerative stewardship, where soil is treated as a living, sacred commons essential for all life.",
+        defaultFeatures: [
+          'Global Soil Health Monitoring Service with TEK integration and real-time planetary dashboard',
+          'Bioregional Autonomous Zones (BAZs) with watershed governance and Indigenous authority',
+          'Land Rematriation & Justice Tribunal for historical redress and stewardship reparations',
+          'Global Regenerative Agriculture Fund with $50B+ transition support and risk-sharing pools',
+          'Knowledge Commons Platform protecting TEK while enabling global soil wisdom sharing',
+          'Regenerative Agriculture Mandates phasing out soil-degrading chemicals globally',
+          'Community Land Trusts preventing speculation and ensuring commons stewardship',
+          'Soil Carbon Rights Registry with community-owned credits and anti-speculation protections'
+        ]
+      },
+      sv: {
+        title: 'Markhälsa & markanvändnings-styrning ramverk',
+        defaultDescription: "Transformera mänsklighetens relation till mark från utvinningsegendom till regenerativ förvaltning, där jord behandlas som en levande, helig allmänning väsentlig för allt liv.",
+        defaultFeatures: [
+          'Global markhälsoövervakningsservice med TEK-integration och realtids planetär dashboard',
+          'Bioregionala autonoma zoner (BAZ) med vattendragsstyrning och ursprungsbefolkningsauktoritet',
+          'Markåterlämnande & rättvisedomstol för historisk gottgörelse och förvaltningsreparationer',
+          'Global regenerativ jordbruksfond med 50B$+ övergångsstöd och riskdelningspooler',
+          'Kunskapsgemenskapsplattform som skyddar TEK samtidigt som den möjliggör global markvisdomsdelning',
+          'Regenerativa jordbruksmandat som fasar ut markförstörande kemikalier globalt',
+          'Gemenskapsjordförtroenden som förhindrar spekulation och säkerställer allmänning förvaltning',
+          'Markkolrättighetsregister med gemenskapsägda krediter och anti-spekulationsskydd'
+        ]
+      }
+    },
     oceans: {
       en: {
         title: 'Oceans & Marine Framework',
@@ -426,6 +456,8 @@
                 {index === 0 ? '🚀' : index === 1 ? '🌍' : index === 2 ? '⚖️' : index === 3 ? '🛸' : '🔬'}
               {:else if frameworkName === 'wisdom'}
                 {index === 0 ? '🧠' : index === 1 ? '⚖️' : index === 2 ? '🔮' : index === 3 ? '📚' : '🧘'}
+              {:else if frameworkName === 'soil'}
+                {index === 0 ? '📊' : index === 1 ? '🌊' : index === 2 ? '⚖️' : index === 3 ? '💰' : index === 4 ? '📚' : index === 5 ? '🚜' : index === 6 ? '🏡' : '🌱'}
               {:else if frameworkName === 'rural'}
                 {index === 0 ? '🏛️' : index === 1 ? '💰' : index === 2 ? '📡' : index === 3 ? '🎓' : index === 4 ? '🏗️' : index === 5 ? '🌱' : index === 6 ? '👩‍💼' : '🔐'}
               {:else if frameworkName === 'existential'}
