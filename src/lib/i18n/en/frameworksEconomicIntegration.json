@@ -34,6 +34,9 @@
     "cross-domain": "Cross-Domain Integration",
     "adaptive-governance": "Adaptive Governance",
     "monitoring": "Monitoring & Evaluation",
+    "reparations-framework": "Reparations Framework",
+    "gph-implementation": "Gross Planetary Health Implementation",
+    "economic-meta-governance": "Economic Meta-Governance",
     "public-engagement": "Public Engagement",
     "timeline": "Implementation Timeline",
     "challenges-lessons": "Implementation Challenges",
@@ -59,11 +62,18 @@
     "cross-domain": "Integration",
     "adaptive-governance": "Governance",
     "monitoring": "Monitoring",
+    "reparations-framework": "Reparations",
+    "gph-implementation": "GPH Index",
+    "economic-meta-governance": "Meta-Governance",
     "public-engagement": "Engagement",
     "timeline": "Timeline",
     "challenges-lessons": "Challenges",
     "visualizations": "Visuals",
     "conclusion": "Conclusion"
+  },
+  "guideSelector": {
+    "title": "Economic Integration Framework Guides",
+    "description": "Choose the guide version that best matches your needs:"
   },
   "overview": {
     "title": "Economic Integration Framework",
@@ -114,11 +124,16 @@
     "downloadPdf": "Download PDF Version",
     "continueToFramework": "Continue to Full Framework",
     "previousSection": "Previous Section",
-    "nextSection": "Next Section"
+    "nextSection": "Next Section",
+    "sectionNav": "Framework sections"
   },
   "errors": {
     "sectionNotFound": "Section \"{section}\" not found",
-    "contentInDevelopment": "This content is still being developed."
+    "contentInDevelopment": "This content is still being developed.",
+    "loadingError": "Error loading content",
+    "tryAgain": "Please try refreshing the page.",
+    "refresh": "Refresh",
+    "checkBack": "Please check back later or contact support."
   },
   "loading": {
     "text": "Loading economic integration content..."

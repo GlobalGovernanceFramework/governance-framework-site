@@ -22,21 +22,53 @@
   // This will track the current locale for our component
   $: currentLocale = $locale;
 
-  // Check if we're in print mode - simplified to avoid hydration issues
-  let isPrintMode = false;
-  
-  // Client-side only initialization to avoid hydration mismatches
+  // Loading and initialization states - improved state management
   let mounted = false;
-  let initializing = true;
-
-  // If in print mode, we'll show all sections
-  $: sectionsToShow = (mounted && isPrintMode) ? Object.keys(data?.sections || {}) : [activeSection];
+  let loadingState = 'initializing'; // initializing, loading, loaded, error
+  let isPrintMode = false;
+  let showAllSections = false;
 
   // Accordion states - initialize in a way that prevents hydration issues
   let foundationOpen = false;
   let implementationOpen = false;
   let governanceOpen = false;
   let resourcesOpen = false;
+
+  // Section mappings with individual emojis
+  const sectionEmojiMap = {
+    // Foundation sections
+    'introduction': '🌱',
+    'core-principles': '⚖️',
+    
+    // Implementation sections
+    'local-implementation': '🏘️',
+    'regional-implementation': '🌊',
+    'global-implementation': '🌍',
+    'nested-support': '🤝',
+    'tech-commons': '💻',
+    'transitional-pathways': '🛤️',
+    
+    // Governance sections
+    'decision-protocols': '🗳️',
+    'cross-domain': '🔗',
+    'adaptive-governance': '📈',
+    'monitoring': '📊',
+    'reparations-framework': '⚖️',
+    'gph-implementation': '🌿',
+    'economic-meta-governance': '🏛️',
+    'public-engagement': '📢',
+    'timeline': '📅',
+    'challenges-lessons': '🧠',
+    'visualizations': '📈',
+    'conclusion': '🎯',
+    
+    // Resources sections
+    'technical-guide': '📋',
+    'community-guide': '🤝',
+    'youth-guide': '🌱',
+    'digital-ethics': '💻',
+    'indigenous-guide': '🌿'
+  };
 
   // Initialize accordion states after mount
   function initializeAccordionStates() {
@@ -45,7 +77,7 @@
       foundationOpen = true;
     } else if (['local-implementation', 'regional-implementation', 'global-implementation', 'nested-support', 'tech-commons', 'transitional-pathways'].includes(activeSection)) {
       implementationOpen = true;
-    } else if (['decision-protocols', 'cross-domain', 'adaptive-governance', 'monitoring', 'public-engagement', 'timeline', 'challenges-lessons', 'visualizations', 'conclusion'].includes(activeSection)) {
+    } else if (['decision-protocols', 'cross-domain', 'adaptive-governance', 'monitoring', 'reparations-framework', 'gph-implementation', 'economic-meta-governance', 'public-engagement', 'timeline', 'challenges-lessons', 'visualizations', 'conclusion'].includes(activeSection)) {
       governanceOpen = true;
     } else if (['technical-guide', 'community-guide', 'youth-guide', 'digital-ethics', 'indigenous-guide'].includes(activeSection)) {
       resourcesOpen = true;
@@ -55,73 +87,104 @@
     }
   }
 
+  // Improved mount function with better error handling
   onMount(async () => {
-    await tick();
-    mounted = true;
+    loadingState = 'loading';
     
-    if (browser) {
-      // Check print mode only on client
-      const urlParams = new URLSearchParams(window.location.search);
-      isPrintMode = urlParams.get('print') === 'true';
+    try {
+      await tick();
+      mounted = true;
       
-      // Make this function available globally for the PDF generator
-      window.showAllSectionsForPrint = () => {
-        isPrintMode = true;
-      };
+      if (browser) {
+        // Check print mode only on client
+        const urlParams = new URLSearchParams(window.location.search);
+        isPrintMode = urlParams.get('print') === 'true';
+        
+        // Make this function available globally for the PDF generator
+        window.showAllSectionsForPrint = () => {
+          showAllSections = true;
+          isPrintMode = true;
+        };
 
-      // Handle URL parameters and hash
-      const sectionParam = urlParams.get('section');
-      
-      if (sectionParam && data?.sections?.[sectionParam]) {
-        activeSection = sectionParam;
-      } else if (window.location.hash) {
-        const hash = window.location.hash.substring(1);
-        if (hash && data?.sections?.[hash]) {
-          activeSection = hash;
+        // Handle URL parameters and hash
+        const sectionParam = urlParams.get('section');
+        
+        if (sectionParam && data?.sections?.[sectionParam]) {
+          activeSection = sectionParam;
+        } else if (window.location.hash) {
+          const hash = window.location.hash.substring(1);
+          if (hash && data?.sections?.[hash]) {
+            activeSection = hash;
+          }
         }
-      }
 
-      // Initialize accordion states after setting active section
-      initializeAccordionStates();
+        // Initialize accordion states after setting active section
+        initializeAccordionStates();
 
-      // Listen for hash changes
-      const handleHashChange = () => {
-        const hash = window.location.hash.substring(1);
-        if (hash && data?.sections?.[hash] && activeSection !== hash) {
-          activeSection = hash;
-          initializeAccordionStates();
-          
-          // Scroll to content
-          setTimeout(() => {
-            const contentElement = document.querySelector('.content');
-            if (contentElement) {
-              contentElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            } else {
-              window.scrollTo({ top: 0, behavior: 'smooth' });
+        // Listen for hash changes
+        const handleHashChange = () => {
+          const hash = window.location.hash.substring(1);
+          if (hash && data?.sections?.[hash] && activeSection !== hash) {
+            activeSection = hash;
+            initializeAccordionStates();
+            
+            // Scroll to content
+            setTimeout(() => {
+              const contentElement = document.querySelector('.content');
+              if (contentElement) {
+                contentElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              } else {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }
+            }, 100);
+          }
+        };
+
+        window.addEventListener('hashchange', handleHashChange);
+        
+        // Listen for print events
+        window.addEventListener('beforeprint', () => {
+          showAllSections = true;
+        });
+        
+        window.addEventListener('afterprint', () => {
+          if (!isPrintMode) {
+            showAllSections = false;
+          }
+        });
+        
+        loadingState = 'loaded';
+        
+        // Cleanup
+        return () => {
+          window.removeEventListener('hashchange', handleHashChange);
+          window.removeEventListener('beforeprint', () => {
+            showAllSections = true;
+          });
+          window.removeEventListener('afterprint', () => {
+            if (!isPrintMode) {
+              showAllSections = false;
             }
-          }, 100);
-        }
-      };
-
-      window.addEventListener('hashchange', handleHashChange);
+          });
+          if (window.showAllSectionsForPrint) {
+            delete window.showAllSectionsForPrint;
+          }
+        };
+      }
       
-      initializing = false;
-      
-      // Cleanup
-      return () => {
-        window.removeEventListener('hashchange', handleHashChange);
-        if (window.showAllSectionsForPrint) {
-          delete window.showAllSectionsForPrint;
-        }
-      };
+      loadingState = 'loaded';
+    } catch (error) {
+      console.error('Error during component mount:', error);
+      loadingState = 'error';
     }
-    
-    initializing = false;
   });
 
-  // Function to set active section
+  // Function to set active section with improved error handling
   function setActiveSection(section) {
-    if (!data?.sections?.[section]) return;
+    if (!data?.sections?.[section]) {
+      console.warn(`Section ${section} not found in available sections`);
+      return;
+    }
     
     activeSection = section;
     initializeAccordionStates();
@@ -171,14 +234,17 @@
     document.body.removeChild(link);
   }
 
-  // Computed values - add safety checks
+  // Computed values - add safety checks and update for new sections
   $: isGuideActive = ['technical-guide', 'community-guide', 'youth-guide', 'digital-ethics', 'indigenous-guide'].includes(activeSection);
   $: isSupplementaryActive = isGuideActive;
   $: foundationSections = ['introduction', 'core-principles'];
   $: implementationSections = ['local-implementation', 'regional-implementation', 'global-implementation', 'nested-support', 'tech-commons', 'transitional-pathways'];
-  $: governanceSections = ['decision-protocols', 'cross-domain', 'adaptive-governance', 'monitoring', 'public-engagement', 'timeline', 'challenges-lessons', 'visualizations', 'conclusion'];
+  $: governanceSections = ['decision-protocols', 'cross-domain', 'adaptive-governance', 'monitoring', 'reparations-framework', 'gph-implementation', 'economic-meta-governance', 'public-engagement', 'timeline', 'challenges-lessons', 'visualizations', 'conclusion'];
   $: coreFrameworkSections = [...foundationSections, ...implementationSections, ...governanceSections];
   $: isCoreSection = coreFrameworkSections.includes(activeSection);
+
+  // Show active section, or all sections in print mode
+  $: sectionsToShow = (mounted && (isPrintMode || showAllSections)) ? Object.keys(data?.sections || {}) : [activeSection];
 
   function toggleFoundation() {
     foundationOpen = !foundationOpen;
@@ -209,7 +275,7 @@
     setActiveSection(guide);
   }
 
-  // Get guides from translation data
+  // Get guides from translation data with fallback
   $: guides = ef.guides || [
     { id: 'technical-guide', title: 'Technical Guide', description: 'Detailed guide for policymakers', icon: '📊' },
     { id: 'community-guide', title: 'Community Guide', description: 'Implementation guide for local leaders', icon: '🤝' },
@@ -228,18 +294,32 @@
   type="warning" 
   customContent={true}
 >
-  <p>{$t('common.notices.section.frameworks.text')}</p>
+  <p>{$t('common.notices.section.frameworks.text') || 'This framework is in active development. Content may be updated as we refine the approach based on feedback and implementation experience.'}</p>
 </SectionNotice>
 
-{#if mounted}
+<!-- Loading States -->
+{#if loadingState === 'loading' || loadingState === 'initializing'}
+  <div class="loading-container">
+    <div class="loading-spinner"></div>
+    <p>{ef.loading?.text || 'Loading economic integration content...'}</p>
+  </div>
+{:else if loadingState === 'error'}
+  <div class="error-container">
+    <h2>{ef.errors?.loadingError || 'Error loading content'}</h2>
+    <p>{ef.errors?.tryAgain || 'Please try refreshing the page.'}</p>
+    <button class="retry-btn" on:click={() => window.location.reload()}>
+      {ef.errors?.refresh || 'Refresh'}
+    </button>
+  </div>
+{:else if loadingState === 'loaded' && mounted}
   <div class="documentation-container">
-    {#if !isPrintMode}
+    {#if !isPrintMode && !showAllSections}
       <FrameworkSidebar />
     {/if}
 
     <div class="content">
       <!-- Quick Access Card for Economic Integration Framework -->
-      {#if !isPrintMode && !isGuideActive && activeSection === 'index'}
+      {#if !isPrintMode && !showAllSections && !isGuideActive && activeSection === 'index'}
         <div class="economic-guide-card">
           <div class="card-content">
             <div class="card-icon">💰</div>
@@ -257,14 +337,15 @@
       {/if}
 
       <!-- Sub-navigation for framework sections -->
-      {#if !isPrintMode && !initializing} 
-        <div class="section-nav">
+      {#if !isPrintMode && !showAllSections} 
+        <nav class="section-nav" role="navigation" aria-label="{ef.navigation?.sectionNav || 'Framework sections'}">
           <!-- Overview -->
           <div class="nav-section">
             <button 
               class="nav-item overview-item" 
               class:active={activeSection === 'index'}
               on:click={() => setActiveSection('index')}
+              aria-current={activeSection === 'index' ? 'page' : undefined}
             >
               <span class="nav-icon">🏠</span>
               <span class="nav-title">{getSectionCategoryTitle('overview')}</span>
@@ -278,6 +359,8 @@
               class:open={foundationOpen}
               class:has-active={foundationSections.some(section => activeSection === section)}
               on:click={toggleFoundation}
+              aria-expanded={foundationOpen}
+              aria-controls="foundation-sections"
             >
               <span class="accordion-icon">🏛️</span>
               <span class="accordion-title">{getSectionCategoryTitle('foundation')}</span>
@@ -285,15 +368,16 @@
               <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
             </button>
             {#if foundationOpen}
-              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+              <div class="accordion-content" id="foundation-sections" transition:slide={{ duration: 200 }}>
                 {#each foundationSections as section}
                   {#if data?.sections?.[section]}
                     <button 
                       class="nav-item subsection-item" 
                       class:active={activeSection === section}
                       on:click={() => setActiveSection(section)}
+                      aria-current={activeSection === section ? 'page' : undefined}
                     >
-                      <span class="nav-icon">📋</span>
+                      <span class="nav-icon">{sectionEmojiMap[section] || '📋'}</span>
                       <span class="nav-title">{getShortSectionTitle(section)}</span>
                     </button>
                   {/if}
@@ -309,6 +393,8 @@
               class:open={implementationOpen}
               class:has-active={implementationSections.some(section => activeSection === section)}
               on:click={toggleImplementation}
+              aria-expanded={implementationOpen}
+              aria-controls="implementation-sections"
             >
               <span class="accordion-icon">⚙️</span>
               <span class="accordion-title">{getSectionCategoryTitle('implementation')}</span>
@@ -316,193 +402,199 @@
               <span class="toggle-arrow" class:rotated={implementationOpen}>▼</span>
             </button>
             {#if implementationOpen}
-              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+              <div class="accordion-content" id="implementation-sections" transition:slide={{ duration: 200 }}>
                 {#each implementationSections as section}
                   {#if data?.sections?.[section]}
                     <button 
                       class="nav-item subsection-item" 
                       class:active={activeSection === section}
                       on:click={() => setActiveSection(section)}
+                      aria-current={activeSection === section ? 'page' : undefined}
                     >
-<span class="nav-icon">🔧</span>
-                     <span class="nav-title">{getShortSectionTitle(section)}</span>
-                   </button>
-                 {/if}
-               {/each}
-             </div>
-           {/if}
-         </div>
+                      <span class="nav-icon">{sectionEmojiMap[section] || '🔧'}</span>
+                      <span class="nav-title">{getShortSectionTitle(section)}</span>
+                    </button>
+                  {/if}
+                {/each}
+              </div>
+            {/if}
+          </div>
 
-         <!-- Governance & Operations Accordion -->
-         <div class="nav-accordion">
-           <button 
-             class="accordion-header" 
-             class:open={governanceOpen}
-             class:has-active={governanceSections.some(section => activeSection === section)}
-             on:click={toggleGovernance}
-           >
-             <span class="accordion-icon">⚖️</span>
-             <span class="accordion-title">{getSectionCategoryTitle('governance')}</span>
-             <span class="section-count">({governanceSections.length})</span>
-             <span class="toggle-arrow" class:rotated={governanceOpen}>▼</span>
-           </button>
-           {#if governanceOpen}
-             <div class="accordion-content" transition:slide={{ duration: 200 }}>
-               {#each governanceSections as section}
-                 {#if data?.sections?.[section]}
-                   <button 
-                     class="nav-item subsection-item" 
-                     class:active={activeSection === section}
-                     on:click={() => setActiveSection(section)}
-                   >
-                     <span class="nav-icon">📊</span>
-                     <span class="nav-title">{getShortSectionTitle(section)}</span>
-                   </button>
-                 {/if}
-               {/each}
-             </div>
-           {/if}
-         </div>
+          <!-- Governance & Operations Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={governanceOpen}
+              class:has-active={governanceSections.some(section => activeSection === section)}
+              on:click={toggleGovernance}
+              aria-expanded={governanceOpen}
+              aria-controls="governance-sections"
+            >
+              <span class="accordion-icon">⚖️</span>
+              <span class="accordion-title">{getSectionCategoryTitle('governance')}</span>
+              <span class="section-count">({governanceSections.length})</span>
+              <span class="toggle-arrow" class:rotated={governanceOpen}>▼</span>
+            </button>
+            {#if governanceOpen}
+              <div class="accordion-content" id="governance-sections" transition:slide={{ duration: 200 }}>
+                {#each governanceSections as section}
+                  {#if data?.sections?.[section]}
+                    <button 
+                      class="nav-item subsection-item" 
+                      class:active={activeSection === section}
+                      on:click={() => setActiveSection(section)}
+                      aria-current={activeSection === section ? 'page' : undefined}
+                    >
+                      <span class="nav-icon">{sectionEmojiMap[section] || '📊'}</span>
+                      <span class="nav-title">{getShortSectionTitle(section)}</span>
+                    </button>
+                  {/if}
+                {/each}
+              </div>
+            {/if}
+          </div>
 
-         <!-- Resources Accordion -->
-         <div class="nav-accordion">
-           <button 
-             class="accordion-header" 
-             class:open={resourcesOpen}
-             class:has-active={isSupplementaryActive}
-             on:click={toggleResources}
-           >
-             <span class="accordion-icon">📄</span>
-             <span class="accordion-title">{getSectionCategoryTitle('resources')}</span>
-             <span class="section-count">({guides.length})</span>
-             <span class="toggle-arrow" class:rotated={resourcesOpen}>▼</span>
-           </button>
-           {#if resourcesOpen}
-             <div class="accordion-content" transition:slide={{ duration: 200 }}>
-               {#each guides as guide}
-                 <button 
-                   class="nav-item subsection-item" 
-                   class:active={activeSection === guide.id}
-                   on:click={() => setActiveSection(guide.id)}
-                 >
-                   <span class="nav-icon">{guide.icon}</span>
-                   <span class="nav-title">{guide.title}</span>
-                 </button>
-               {/each}
-             </div>
-           {/if}
-         </div>
-       </div>
-     {/if}
+          <!-- Resources Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={resourcesOpen}
+              class:has-active={isSupplementaryActive}
+              on:click={toggleResources}
+              aria-expanded={resourcesOpen}
+              aria-controls="resources-sections"
+            >
+              <span class="accordion-icon">📄</span>
+              <span class="accordion-title">{getSectionCategoryTitle('resources')}</span>
+              <span class="section-count">({guides.length})</span>
+              <span class="toggle-arrow" class:rotated={resourcesOpen}>▼</span>
+            </button>
+            {#if resourcesOpen}
+              <div class="accordion-content" id="resources-sections" transition:slide={{ duration: 200 }}>
+                {#each guides as guide}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === guide.id}
+                    on:click={() => setActiveSection(guide.id)}
+                    aria-current={activeSection === guide.id ? 'page' : undefined}
+                  >
+                    <span class="nav-icon">{guide.icon}</span>
+                    <span class="nav-title">{guide.title}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+        </nav>
+      {/if}
 
-     <!-- Progress indicator for core sections -->
-     {#if !isPrintMode && isCoreSection && coreFrameworkSections.length > 0}
-       <div class="progress-indicator">
-         <div class="progress-bar">
-           <div class="progress-fill" style="width: {((coreFrameworkSections.indexOf(activeSection) + 1) / coreFrameworkSections.length * 100)}%"></div>
-         </div>
-         <span class="progress-text">{ef.progress?.text?.replace('{current}', coreFrameworkSections.indexOf(activeSection) + 1).replace('{total}', coreFrameworkSections.length) || `Section ${coreFrameworkSections.indexOf(activeSection) + 1} of ${coreFrameworkSections.length}`}</span>
-       </div>
-     {/if}
+      <!-- Progress indicator for core sections -->
+      {#if !isPrintMode && !showAllSections && isCoreSection && coreFrameworkSections.length > 0}
+        <div class="progress-indicator">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: {((coreFrameworkSections.indexOf(activeSection) + 1) / coreFrameworkSections.length * 100)}%"></div>
+          </div>
+          <span class="progress-text">{ef.progress?.text?.replace('{current}', coreFrameworkSections.indexOf(activeSection) + 1).replace('{total}', coreFrameworkSections.length) || `Section ${coreFrameworkSections.indexOf(activeSection) + 1} of ${coreFrameworkSections.length}`}</span>
+        </div>
+      {/if}
 
-     <!-- Show active section, or all sections in print mode -->
-     {#each sectionsToShow as section (section)}
-       {#if data?.sections?.[section]}
-         <div class="section-content" id={section}>
-           <!-- Language fallback notice -->
-           {#if !isPrintMode && data.sectionsUsingEnglishFallback?.includes(section)}
-             <div class="language-fallback-notice">
-               <div class="notice-icon">🌐</div>
-               <div class="notice-content">
-                 <strong>{ef.languageFallback?.title || 'Content in your language coming soon'}</strong>
-                 <p>{ef.languageFallback?.description || 'This section is currently displayed in English until translation is complete.'}</p>
-               </div>
-             </div>
-           {/if}
-           
-           {#if isGuideActive && section === activeSection}
-             <!-- Guide selector if we're in one of the guides and not in print mode -->
-             {#if !isPrintMode}
-               <div class="guide-selector">
-                 <h2>Economic Integration Framework Guides</h2>
-                 <p>Choose the guide version that best matches your needs:</p>
-                 
-                 <div class="guide-cards">
-                   {#each guides as guide}
-                     <div 
-                       class="guide-card" 
-                       class:active={activeSection === guide.id}
-                       on:click={() => selectGuide(guide.id)}
-                     >
-                       <div class="guide-icon">{guide.icon}</div>
-                       <div class="guide-title">{guide.title}</div>
-                       <div class="guide-desc">{guide.description}</div>
-                     </div>
-                   {/each}
-                 </div>
-               </div>
-             {/if}
-             
-             <!-- Render the selected Guide -->
-             <svelte:component this={data.sections[section].default} />
-             
-             <!-- Navigation buttons at bottom of guide -->
-             {#if !isPrintMode}
-               <div class="guide-navigation">
-                 <button class="secondary-btn" on:click={() => downloadFramework(section.replace('-guide', ''))}>
-                   {ef.navigation?.downloadPdf || 'Download PDF Version'} <span class="download-icon">↓</span>
-                 </button>
-                 <button class="primary-btn" on:click={() => setActiveSection('introduction')}>
-                   {ef.navigation?.continueToFramework || 'Continue to Full Framework'} <span class="arrow-icon">→</span>
-                 </button>
-               </div>
-             {/if}
+      <!-- Show active section, or all sections in print mode -->
+      {#each sectionsToShow as section (section)}
+        {#if data?.sections?.[section]}
+          <div class="section-content" id={section}>
+            <!-- Language fallback notice -->
+            {#if !isPrintMode && !showAllSections && data.sectionsUsingEnglishFallback?.includes(section)}
+              <div class="language-fallback-notice">
+                <div class="notice-icon">🌐</div>
+                <div class="notice-content">
+                  <strong>{ef.languageFallback?.title || 'Content in your language coming soon'}</strong>
+                  <p>{ef.languageFallback?.description || 'This section is currently displayed in English until translation is complete.'}</p>
+                </div>
+              </div>
+            {/if}
+            
+            {#if isGuideActive && section === activeSection}
+              <!-- Guide selector if we're in one of the guides and not in print mode -->
+              {#if !isPrintMode && !showAllSections}
+                <div class="guide-selector">
+                  <h2>{ef.guideSelector?.title || 'Economic Integration Framework Guides'}</h2>
+                  <p>{ef.guideSelector?.description || 'Choose the guide version that best matches your needs:'}</p>
+                  
+                  <div class="guide-cards">
+                    {#each guides as guide}
+                      <div 
+                        class="guide-card" 
+                        class:active={activeSection === guide.id}
+                        on:click={() => selectGuide(guide.id)}
+                        on:keydown={(e) => e.key === 'Enter' && selectGuide(guide.id)}
+                        role="button"
+                        tabindex="0"
+                        aria-pressed={activeSection === guide.id}
+                      >
+                        <div class="guide-icon">{guide.icon}</div>
+                        <div class="guide-title">{guide.title}</div>
+                        <div class="guide-desc">{guide.description}</div>
+                      </div>
+                    {/each}
+                  </div>
+                </div>
+              {/if}
+              
+              <!-- Render the selected Guide -->
+              <svelte:component this={data.sections[section].default} />
+              
+              <!-- Navigation buttons at bottom of guide -->
+              {#if !isPrintMode && !showAllSections}
+                <div class="guide-navigation">
+                  <button class="secondary-btn" on:click={() => downloadFramework(section.replace('-guide', ''))}>
+                    {ef.navigation?.downloadPdf || 'Download PDF Version'} <span class="download-icon">↓</span>
+                  </button>
+                  <button class="primary-btn" on:click={() => setActiveSection('introduction')}>
+                    {ef.navigation?.continueToFramework || 'Continue to Full Framework'} <span class="arrow-icon">→</span>
+                  </button>
+                </div>
+              {/if}
 
-           {:else}
-             <!-- Render ALL sections including index from markdown files -->
-             <svelte:component this={data.sections[section].default} t={translationFunction} />
-           {/if}
+            {:else}
+              <!-- Render ALL sections including index from markdown files -->
+              <svelte:component this={data.sections[section].default} t={translationFunction} />
+            {/if}
 
-           <!-- Section navigation at bottom of core sections -->
-           {#if isCoreSection && !isPrintMode && coreFrameworkSections.length > 0}
-             <div class="section-navigation">
-               {#if coreFrameworkSections.indexOf(activeSection) > 0}
-                 <button class="nav-btn prev-btn" on:click={() => {
-                   const currentIndex = coreFrameworkSections.indexOf(activeSection);
-                   const prevSection = coreFrameworkSections[currentIndex - 1];
-                   setActiveSection(prevSection);
-                 }}>
-                   ← {ef.navigation?.previousSection || 'Previous Section'}
-                 </button>
-               {/if}
-               
-               {#if coreFrameworkSections.indexOf(activeSection) < coreFrameworkSections.length - 1}
-                 <button class="nav-btn next-btn" on:click={() => {
-                   const currentIndex = coreFrameworkSections.indexOf(activeSection);
-                   const nextSection = coreFrameworkSections[currentIndex + 1];
-                   setActiveSection(nextSection);
-                 }}>
-                   {ef.navigation?.nextSection || 'Next Section'} →
-                 </button>
-               {/if}
-             </div>
-           {/if}
-         </div>
-       {:else}
-         <div class="missing-section">
-           <h2>{ef.errors?.sectionNotFound?.replace('{section}', section) || `Section "${section}" not found`}</h2>
-           <p>{ef.errors?.contentInDevelopment || 'This content is still being developed.'}</p>
-         </div>
-       {/if}
-     {/each}
-   </div>
- </div>
-{:else}
- <!-- Loading state to prevent hydration issues -->
- <div class="loading-container">
-   <div class="loading-spinner"></div>
-   <p>{ef.loading?.text || 'Loading economic integration content...'}</p>
- </div>
+            <!-- Section navigation at bottom of core sections -->
+            {#if isCoreSection && !isPrintMode && !showAllSections && coreFrameworkSections.length > 0}
+              <div class="section-navigation">
+                {#if coreFrameworkSections.indexOf(activeSection) > 0}
+                  <button class="nav-btn prev-btn" on:click={() => {
+                    const currentIndex = coreFrameworkSections.indexOf(activeSection);
+                    const prevSection = coreFrameworkSections[currentIndex - 1];
+                    setActiveSection(prevSection);
+                  }}>
+                    ← {ef.navigation?.previousSection || 'Previous Section'}
+                  </button>
+                {/if}
+                
+                {#if coreFrameworkSections.indexOf(activeSection) < coreFrameworkSections.length - 1}
+                  <button class="nav-btn next-btn" on:click={() => {
+                    const currentIndex = coreFrameworkSections.indexOf(activeSection);
+                    const nextSection = coreFrameworkSections[currentIndex + 1];
+                    setActiveSection(nextSection);
+                  }}>
+                    {ef.navigation?.nextSection || 'Next Section'} →
+                  </button>
+                {/if}
+              </div>
+            {/if}
+          </div>
+        {:else}
+          <div class="missing-section">
+            <h2>{ef.errors?.sectionNotFound?.replace('{section}', section) || `Section "${section}" not found`}</h2>
+            <p>{ef.errors?.contentInDevelopment || 'This content is still being developed.'}</p>
+            <p>{ef.errors?.checkBack || 'Please check back later or contact support.'}</p>
+          </div>
+        {/if}
+      {/each}
+    </div>
+  </div>
 {/if}
 
 <style>
@@ -1392,77 +1484,6 @@
   /* Economic Integration Framework specific theme elements */
 
   /* Special callouts for economic concepts */
-  .content :global(.prosperity-callout) {
-    background-color: rgba(8, 143, 143, 0.1);
-    border-radius: 0.5rem;
-    padding: 1rem;
-    margin: 1.5rem 0;
-    border-left: 4px solid var(--economic-primary);
-  }
-
-  .content :global(.sustainability-callout) {
-    background-color: rgba(72, 191, 145, 0.1);
-    border-radius: 0.5rem;
-    padding: 1rem;
-    margin: 1.5rem 0;
-    border-left: 4px solid var(--economic-secondary);
-  }
-
-  .content :global(.cooperation-callout) {
-    background-color: rgba(32, 178, 170, 0.1);
-    border-radius: 0.5rem;
-    padding: 1rem;
-    margin: 1.5rem 0;
-    border-left: 4px solid var(--economic-accent);
-  }
-
-  .content :global(.infrastructure-callout) {
-    background-color: rgba(70, 130, 180, 0.1);
-    border-radius: 0.5rem;
-    padding: 1rem;
-    margin: 1.5rem 0;
-    border-left: 4px solid var(--economic-earth);
-  }
-
-  /* Special styling for case studies */
-  .content :global(.case-study) {
-    background-color: rgba(0, 206, 209, 0.1);
-    border-radius: 0.5rem;
-    padding: 1.25rem;
-    margin: 1.5rem 0;
-    border-left: 4px solid var(--economic-prosperity);
-  }
-
-  .content :global(.case-study-title) {
-    color: var(--economic-prosperity);
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-  }
-
-  /* Alert/warning styling */
-  .content :global(.alert) {
-    background-color: rgba(255, 107, 107, 0.1);
-    border-radius: 0.5rem;
-    padding: 1.25rem;
-    margin: 1.5rem 0;
-    border-left: 4px solid #dc2626;
-  }
-
-  .content :global(.alert-title) {
-    color: #dc2626;
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-  }
-
-  /* Highlight boxes for important economic concepts */
-  .content :global(.concept-highlight) {
-    background-color: rgba(72, 191, 145, 0.1);
-    border-radius: 0.5rem;
-    padding: 1.25rem;
-    margin: 1.5rem 0;
-    border: 1px solid rgba(72, 191, 145, 0.3);
-  }
-
   .content :global(.concept-highlight-title) {
     color: var(--economic-secondary);
     font-weight: 600;
@@ -1627,5 +1648,109 @@
     .notice-content p {
       font-size: 0.8rem;
     }
+  }
+
+  /* Loading container */
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    gap: 1rem;
+  }
+
+  .loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #e5e7eb;
+    border-top: 4px solid var(--economic-primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .loading-container p {
+    color: #6b7280;
+    font-size: 0.875rem;
+  }
+
+  /* Missing section styling */
+  .missing-section {
+    text-align: center;
+    padding: 2rem;
+    color: #6b7280;
+  }
+
+  .missing-section h2 {
+    color: #ef4444;
+    margin-bottom: 1rem;
+  }
+
+  .content :global(.sustainability-callout) {
+    background-color: rgba(72, 191, 145, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--economic-secondary);
+  }
+
+  .content :global(.cooperation-callout) {
+    background-color: rgba(32, 178, 170, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--economic-accent);
+  }
+
+  .content :global(.infrastructure-callout) {
+    background-color: rgba(70, 130, 180, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--economic-earth);
+  }
+
+  /* Special styling for case studies */
+  .content :global(.case-study) {
+    background-color: rgba(0, 206, 209, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--economic-prosperity);
+  }
+
+  .content :global(.case-study-title) {
+    color: var(--economic-prosperity);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Alert/warning styling */
+  .content :global(.alert) {
+    background-color: rgba(255, 107, 107, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid #dc2626;
+  }
+
+  .content :global(.alert-title) {
+    color: #dc2626;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Highlight boxes for important economic concepts */
+  .content :global(.concept-highlight) {
+    background-color: rgba(72, 191, 145, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(72, 191, 145, 0.3);
   }
 </style>

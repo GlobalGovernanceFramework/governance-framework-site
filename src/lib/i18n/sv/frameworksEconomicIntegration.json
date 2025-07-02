@@ -34,6 +34,9 @@
     "cross-domain": "Tvärdomänintegration",
     "adaptive-governance": "Adaptiv styrning",
     "monitoring": "Övervakning & utvärdering",
+    "reparations-framework": "Reparationsramverk",
+    "gph-implementation": "Implementering av Planetär Hälsoindex",
+    "economic-meta-governance": "Ekonomisk meta-styrning",
     "public-engagement": "Offentligt engagemang",
     "timeline": "Implementeringstidslinje",
     "challenges-lessons": "Implementeringsutmaningar",
@@ -59,11 +62,18 @@
     "cross-domain": "Integration",
     "adaptive-governance": "Styrning",
     "monitoring": "Övervakning",
+    "reparations-framework": "Reparationer",
+    "gph-implementation": "Planetär Hälsoindex",
+    "economic-meta-governance": "Meta-styrning",
     "public-engagement": "Engagemang",
     "timeline": "Tidslinje",
     "challenges-lessons": "Utmaningar",
     "visualizations": "Visualiseringar",
     "conclusion": "Slutsats"
+  },
+  "guideSelector": {
+    "title": "Ekonomiskt Integrationssystem Guider",
+    "description": "Välj den guideversion som bäst passar dina behov:"
   },
   "overview": {
     "title": "Ekonomiskt Integrationssystem",
@@ -114,11 +124,16 @@
     "downloadPdf": "Ladda ner PDF-version",
     "continueToFramework": "Fortsätt till fullständigt ramverk",
     "previousSection": "Föregående avsnitt",
-    "nextSection": "Nästa avsnitt"
+    "nextSection": "Nästa avsnitt",
+    "sectionNav": "Ramverksavsnitt"
   },
   "errors": {
     "sectionNotFound": "Avsnitt \"{section}\" hittades inte",
-    "contentInDevelopment": "Detta innehåll utvecklas fortfarande."
+    "contentInDevelopment": "Detta innehåll utvecklas fortfarande.",
+    "loadingError": "Fel vid laddning av innehåll",
+    "tryAgain": "Försök uppdatera sidan.",
+    "refresh": "Uppdatera",
+    "checkBack": "Kontrollera igen senare eller kontakta support."
   },
   "loading": {
     "text": "Laddar ekonomiskt integrationsinnehåll..."

@@ -1,3 +1,8 @@
+---
+title: Gross Planetary Health (GPH) Implementation
+section: gph-implementation
+---
+
 # Gross Planetary Health (GPH) Implementation
 
 **In this document:**

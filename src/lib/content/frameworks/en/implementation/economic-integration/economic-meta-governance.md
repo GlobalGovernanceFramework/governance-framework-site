@@ -1,3 +1,8 @@
+---
+title: Economic Meta-Governance
+section: economic-meta-governance
+---
+
 # Economic Meta-Governance
 
 **In this document:**

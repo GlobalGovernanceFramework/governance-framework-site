@@ -44,6 +44,9 @@ export async function load({ depends, url, params }) {
     'cross-domain',
     'adaptive-governance',
     'monitoring',
+    'reparations-framework',
+    'gph-implementation',
+    'economic-meta-governance',
     'public-engagement',
     'timeline',
     'challenges-lessons',
@@ -128,23 +131,26 @@ export async function load({ depends, url, params }) {
     // Additional metadata for economic integration framework
     frameworkType: 'economic-integration',
     totalSections: sections.length,
-    coreFrameworkSections: 16, // introduction through conclusion
+    coreFrameworkSections: 19, 
     hasGuides: true,
     hasMultipleLevels: true,
     
     // Economic integration-specific metadata
-    economicVersion: '1.0',
+    economicVersion: '1.0', 
     isComprehensiveFramework: true,
-    focusArea: 'economic-transformation',
+    focusArea: 'regenerative-economic-transformation',
     implementationScope: 'multi-level-governance',
     
     // Framework characteristics
     keyComponents: [
-      'local-economic-sovereignty',
-      'regional-cooperation',
-      'global-coordination',
+      'indigenous-economic-sovereignty',
+      'bioregional-cooperation',
+      'planetary-coordination',
       'technology-commons',
       'adaptive-governance',
+      'reparations-framework',
+      'gph-implementation',
+      'economic-meta-governance',
       'inclusive-participation'
     ],
     
@@ -159,7 +165,8 @@ export async function load({ depends, url, params }) {
       availableSections: Object.keys(content),
       fallbackSections: Array.from(sectionsUsingEnglishFallback),
       loadSuccess: loadedSections === sections.length,
-      frameworkType: 'economic-integration'
+      frameworkType: 'economic-integration',
+      newSections: ['reparations-framework', 'gph-implementation', 'economic-meta-governance']
     }
   };
 }

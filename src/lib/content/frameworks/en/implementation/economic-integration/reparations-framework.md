@@ -1,3 +1,8 @@
+---
+title: Reparations Framework
+section: reparations-framework
+---
+
 # Reparations Framework
 
 **In this document:**
