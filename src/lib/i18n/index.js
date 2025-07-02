@@ -32,6 +32,7 @@ const pageSpecificTranslationsMap = [
   { route: '/frameworks/indigenous-governance-and-traditional-knowledge', dataKey: 'indigenousFramework', fileName: 'frameworksIndigenousGovernanceAndTraditionalKnowledge' },
   { route: '/frameworks/peace-and-conflict-resolution', dataKey: 'peaceFramework', fileName: 'frameworksPeaceAndConflictResolution' },
   { route: '/frameworks/climate-and-energy-governance', dataKey: 'climateFramework', fileName: 'frameworksClimateAndEnergyGovernance' },
+  { route: '/frameworks/migration-and-human-mobility', dataKey: 'migrationFramework', fileName: 'frameworksMigrationAndHumanMobility' },
   { route: '/frameworks/mental-health-governance', dataKey: 'mentalHealthFramework', fileName: 'frameworksMentalHealthGovernance' },
   { route: '/frameworks/water-and-sanitation-governance', dataKey: 'waterSanitationFramework', fileName: 'frameworksWaterAndSanitationGovernance' },
   { route: '/frameworks/environmental-stewardship', dataKey: 'environmentalStewardshipFramework', fileName: 'frameworksEnvironmentalStewardship' },

@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "title": "Global Governance Framework for Migration & Human Mobility",
+    "description": "Transforming migration from crisis management to sacred circulation that regenerates ecosystems and strengthens communities through Indigenous wisdom and sacred economics"
+  },
+  "badges": {
+    "sacredCirculation": "Sacred Circulation",
+    "indigenousSovereignty": "Indigenous Sovereignty",
+    "heartsCurrency": "Hearts Currency",
+    "youthAuthority": "Youth Authority"
+  },
+  "categories": {
+    "sacredOpening": "Sacred Opening",
+    "overview": "Overview",
+    "foundation": "Foundation",
+    "coreFramework": "Core Framework",
+    "implementation": "Implementation",
+    "resources": "Resources"
+  },
+  "sections": {
+    "preamble": "The Sacred Circulation",
+    "index": "Framework Overview",
+    "at-a-glance": "At a Glance",
+    "executive-summary-for-the-skeptic": "Executive Summary for the Skeptic",
+    "introduction": "Migration as Planetary Coordination",
+    "theory-of-change": "Theory of Change",
+    "core-principles": "Core Principles",
+    "radical-innovations": "Radical Innovations",
+    "planetary-migration-council": "Planetary Migration Council",
+    "implementation-pathways": "Implementation Pathways",
+    "framework-integration": "Framework Integration",
+    "cultural-adaptability": "Cultural Adaptability",
+    "monitoring-accountability": "Monitoring & Accountability",
+    "radical-faqs": "Radical FAQs",
+    "advocacy-action": "Advocacy & Action",
+    "glossary": "Glossary",
+    "appendices": "Tools & Resources",
+    "conclusion": "The Sacred Circulation We Choose"
+  },
+  "sectionsShort": {
+    "preamble": "Preamble",
+    "index": "Overview",
+    "at-a-glance": "At a Glance",
+    "executive-summary-for-the-skeptic": "For Skeptics",
+    "introduction": "Introduction",
+    "theory-of-change": "Theory of Change",
+    "core-principles": "Principles",
+    "radical-innovations": "Innovations",
+    "planetary-migration-council": "Migration Council",
+    "implementation-pathways": "Implementation",
+    "framework-integration": "Integration",
+    "cultural-adaptability": "Cultural Adaptation",
+    "monitoring-accountability": "Monitoring",
+    "radical-faqs": "FAQs",
+    "advocacy-action": "Action",
+    "glossary": "Glossary",
+    "appendices": "Appendices",
+    "conclusion": "Conclusion"
+  },
+  "progress": {
+    "text": "Section {current} of {total}"
+  },
+  "languageFallback": {
+    "title": "Content in your language coming soon",
+    "description": "This section is currently displayed in English until translation is complete."
+  },
+  "navigation": {
+    "downloadPdf": "Download PDF Version",
+    "continueToFramework": "Continue to Framework",
+    "previousSection": "Previous Section",
+    "nextSection": "Next Section"
+  },
+  "errors": {
+    "sectionNotFound": "Section \"{section}\" not found",
+    "contentInDevelopment": "This content is still being developed."
+  },
+  "loading": {
+    "text": "Loading Migration & Human Mobility framework..."
+  }
+}

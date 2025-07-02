@@ -22,35 +22,31 @@ export async function load({ depends, url, params }) {
   // Safe check for print mode that works during prerendering
   const isPrintMode = browser ? url.searchParams.get('print') === 'true' : false;
   
-  // Define sections to load - migration framework sections in correct order
+  // Define sections to load - Migration & Human Mobility framework sections in correct order
   const sections = [
-    // Entry point and overview
+    // Sacred opening and overview
+    'preamble',
     'index',
-    'migration-guide',
-    'community-guide',
-    'policy-guide',
+    'at-a-glance',
+    'executive-summary-for-the-skeptic',
     
     // Core framework sections
     'introduction',
-    'global-context',
-    'governance-principles',
-    'rights-protection',
-    'integration-pathways',
-    'economic-frameworks',
-    'social-cohesion',
-    'climate-migration',
-    'regional-cooperation',
-    'implementation-mechanisms',
-    'monitoring-evaluation',
-    'stakeholder-engagement',
-    'challenges-solutions',
-    'timeline-milestones',
-    'conclusion',
+    'theory-of-change',
+    'core-principles',
+    'radical-innovations',
+    'planetary-migration-council',
+    'implementation-pathways',
+    'framework-integration',
+    'cultural-adaptability',
+    'monitoring-accountability',
+    'radical-faqs',
+    'advocacy-action',
     
-    // Additional resources
-    'case-studies',
-    'legal-frameworks',
-    'best-practices'
+    // Essential resources
+    'glossary',
+    'appendices',
+    'conclusion'
   ];
   
   // Track which sections fell back to English
@@ -60,7 +56,7 @@ export async function load({ depends, url, params }) {
   const content = {};
   let loadedSections = 0;
   
-  console.log('Loading migration framework sections for locale:', currentLocale);
+  console.log('Loading Migration & Human Mobility sections for locale:', currentLocale);
   
   // Try to load each section with proper error handling
   for (const section of sections) {
@@ -69,7 +65,7 @@ export async function load({ depends, url, params }) {
       const modulePromise = import(`$lib/content/frameworks/${currentLocale}/implementation/migration-and-human-mobility/${section}.md`);
       content[section] = await modulePromise;
       loadedSections++;
-      console.log('Successfully loaded migration section:', section, 'in', currentLocale);
+      console.log('Successfully loaded section:', section, 'in', currentLocale);
     } catch (primaryError) {
       // Fall back to English if translation isn't available
       try {
@@ -81,9 +77,9 @@ export async function load({ depends, url, params }) {
         if (currentLocale !== 'en') {
           sectionsUsingEnglishFallback.add(section);
         }
-        console.log('Loaded migration section:', section, 'in English as fallback');
+        console.log('Loaded section:', section, 'in English as fallback');
       } catch (fallbackError) {
-        console.warn(`Could not load migration section ${section} in any language:`, fallbackError.message);
+        console.warn(`Could not load section ${section} in any language:`, fallbackError.message);
         
         // Create a safe placeholder for missing sections
         content[section] = {
@@ -103,15 +99,15 @@ export async function load({ depends, url, params }) {
     }
   }
   
-  console.log('Total migration sections loaded:', loadedSections, 'out of', sections.length);
-  console.log('Loaded migration sections:', Object.keys(content));
+  console.log('Total sections loaded:', loadedSections, 'out of', sections.length);
+  console.log('Loaded sections:', Object.keys(content));
   
-  // Validate that we have at least the index section
-  if (!content.index) {
-    console.error('Critical: Could not load migration framework index section');
+  // Validate that we have at least the preamble and index sections
+  if (!content.preamble || !content.index) {
+    console.error('Critical: Could not load preamble or index section');
     throw error(500, {
-      message: 'Failed to load migration framework content',
-      details: 'The main index section could not be loaded'
+      message: 'Failed to load Migration & Human Mobility content',
+      details: 'The preamble or main index section could not be loaded'
     });
   }
   
@@ -124,33 +120,58 @@ export async function load({ depends, url, params }) {
     loadedSectionsCount: loadedSections,
     totalSectionsCount: sections.length,
     
-    // Additional metadata for migration framework
+    // Additional metadata for Migration & Human Mobility framework
     frameworkType: 'migration-and-human-mobility',
     totalSections: sections.length,
-    coreFrameworkSections: 12, // introduction through conclusion
-    hasGuides: true,
-    hasMultipleLevels: true,
+    coreFrameworkSections: 11,
+    hasSupplementaryMaterials: true,
+    hasExecutiveSummary: true,
+    hasPreamble: true,
     
-    // Migration-specific metadata
-    migrationVersion: '1.0',
-    isComprehensiveFramework: true,
-    focusArea: 'human-mobility-governance',
-    implementationScope: 'global-regional-local',
+    // Migration & Human Mobility-specific metadata
+    frameworkVersion: '1.0',
+    isMigrationCoordinationFramework: true,
+    tier: 1, // Urgent Global Stability & Justice
+    implementationPhases: 4, // Phase 0-3 as described in implementation pathways
+    radicalInnovations: 5,
+    corePrinciples: 8,
+    governanceBodies: 1, // Planetary Migration Council
     
-    // Framework characteristics
-    keyComponents: [
-      'rights-based-approach',
-      'climate-migration',
-      'integration-pathways',
-      'regional-cooperation',
-      'social-cohesion',
-      'economic-inclusion'
-    ],
+    // Migration governance metadata
+    sacredCirculation: true,
+    climateMigrationProtection: true,
+    indigenousSovereignty: true,
+    youthAuthorityBinding: true,
+    heartsCurrencyIntegration: true,
     
-    // Guide characteristics
-    guideTypes: ['technical', 'community', 'policy'],
-    hasStakeholderEngagement: true,
-    hasRegionalFocus: true,
+    // Golden Triangle integration metadata
+    treatyIntegration: 'treaty-for-our-only-home',
+    metaGovernanceCoordination: 'planetary-migration-council',
+    indigenousFrameworkAlignment: 'bioregional-autonomous-zones',
+    financialSystemsIntegration: 'hearts-currency',
+    crossFrameworkSynergies: 4,
+    
+    // Implementation metadata
+    bioregionalAutonomousZones: true,
+    globalMobilityPassport: true,
+    climateResilienceVisas: true,
+    migrationJusticeTribunals: true,
+    coalitionSequencing: true,
+    
+    // Policy innovation metadata
+    fluidSovereignty: true,
+    ecologicalAlignment: true,
+    indigenousLedStewardship: true,
+    antiFragilityDesign: true,
+    intergenerationalJustice: true,
+    regenerativeCirculation: true,
+    
+    // Cultural adaptation metadata
+    culturalProtocolCompliance: true,
+    epistemologicalDiversity: true,
+    traditionalKnowledgeIntegration: true,
+    interfaithGovernance: true,
+    ceremonyGovernanceEvolution: true,
     
     // Debug information
     debug: {
@@ -158,7 +179,10 @@ export async function load({ depends, url, params }) {
       availableSections: Object.keys(content),
       fallbackSections: Array.from(sectionsUsingEnglishFallback),
       loadSuccess: loadedSections === sections.length,
-      frameworkType: 'migration-and-human-mobility'
+      frameworkTier: 'urgent-global-stability',
+      comprehensiveApplicationLayer: true,
+      goldenTriangleIntegration: true,
+      primaryDemonstration: 'meta-governance-coordination'
     }
   };
 }
