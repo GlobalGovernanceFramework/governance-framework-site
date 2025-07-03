@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "title": "Globala Leveranskedjor och Logistik Ramverk",
+    "description": "Transformera leveranskedjor från utvinning till regenerering genom bioregional styrning, Hearts-valuta och gemenskapsuveränitet"
+  },
+  "sections": {
+    "preamble": "Ramverkets Förord",
+    "index": "Ramverksöversikt",
+    "at-a-glance": "Snabb Överblick",
+    "executive-summary-for-the-skeptic": "För Skeptiker",
+    "introduction": "Introduktion",
+    "theory-of-change": "Förändringsmodell",
+    "framework-position": "Ramverkets Position",
+    "core-pillars": "Kärnpelare",
+    "economic-integration": "Ekonomisk Integration",
+    "technology-infrastructure": "Teknik & Infrastruktur",
+    "governance-compliance": "Styrning & Efterlevnad",
+    "implementation-roadmap": "Implementeringsplan",
+    "monitoring-evaluaton": "Övervakning & Utvärdering",
+    "global-alignment": "Global Anpassning",
+    "appendices": "Bilagor"
+  },
+  "sectionsShort": {
+    "preamble": "Förord",
+    "index": "Översikt",
+    "at-a-glance": "Snabbguide",
+    "executive-summary-for-the-skeptic": "Bevis",
+    "introduction": "Introduktion",
+    "theory-of-change": "Teori",
+    "framework-position": "Position",
+    "core-pillars": "Pelare",
+    "economic-integration": "Ekonomi",
+    "technology-infrastructure": "Teknik",
+    "governance-compliance": "Styrning",
+    "implementation-roadmap": "Färdplan",
+    "monitoring-evaluaton": "Utvärdering",
+    "global-alignment": "Anpassning",
+    "appendices": "Resurser"
+  },
+  "categories": {
+    "overview": "Översikt & Snabbstart",
+    "foundations": "Grunder & Teori",
+    "implementation": "Implementation & System",
+    "governance": "Styrning & Utvärdering",
+    "integration": "Integration & Resurser"
+  },
+  "quickStart": {
+    "new": "Ny inom leveranskedjetransformation?",
+    "start": "Börja med våra snabbguider som förklarar regenerativa leveranskedjor för olika målgrupper.",
+    "button": "Välj Guide",
+    "title": "GSCL Ramverk Snabbstart",
+    "description": "Välj den version som bäst passar dina behov:",
+    "download": "Ladda ner PDF-version",
+    "continue": "Fortsätt till Fullständigt Ramverk",
+    "guides": [
+      {
+        "id": "at-a-glance",
+        "icon": "⚡",
+        "title": "Snabb Överblick",
+        "description": "30-sekunders översikt av regenerativa leveranskedjor"
+      },
+      {
+        "id": "executive-summary-for-the-skeptic",
+        "icon": "🤔",
+        "title": "För Skeptiker",
+        "description": "Evidensbaserat argument för transformation"
+      }
+    ]
+  },
+  "preamble": {
+    "continue": "Fortsätt till Ramverksöversikt"
+  },
+  "progress": {
+    "text": "Avsnitt {current} av {total}"
+  },
+  "navigation": {
+    "previousSection": "Föregående Avsnitt",
+    "nextSection": "Nästa Avsnitt"
+  },
+  "languageFallback": {
+    "title": "Innehåll på ditt språk kommer snart",
+    "description": "Detta avsnitt visas för närvarande på engelska tills översättningen är klar."
+  },
+  "loading": {
+    "text": "Laddar leveranskedjans ramverksinnehåll..."
+  },
+  "errors": {
+    "sectionNotFound": "Avsnittet \"{section}\" kunde inte hittas",
+    "contentInDevelopment": "Detta innehåll utvecklas fortfarande."
+  }
+}

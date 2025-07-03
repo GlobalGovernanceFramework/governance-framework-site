@@ -26,6 +26,7 @@ const pageSpecificTranslationsMap = [
   { route: '/frameworks/educational-systems', dataKey: 'educationalFramework', fileName: 'frameworksEducationalSystems' },
   { route: '/frameworks/food-systems-and-agriculture', dataKey: 'foodSystemsFramework', fileName: 'frameworksFoodSystemsAndAgriculture' },
   { route: '/frameworks/economic-integration', dataKey: 'economicFramework', fileName: 'frameworksEconomicIntegration' },
+  { route: '/frameworks/global-supply-chains-and-logistics', dataKey: 'gscl', fileName: 'frameworksGlobalSupplyChainAndLogistics' },
   { route: '/frameworks/justice-systems', dataKey: 'justiceFramework', fileName: 'frameworksJusticeSystems' },
   { route: '/frameworks/disaster-risk-reduction', dataKey: 'disasterFramework', fileName: 'frameworksDisasterRiskReduction' },
   { route: '/frameworks/planetary-health', dataKey: 'planetaryHealthFramework', fileName: 'frameworksPlanetaryHealth' },

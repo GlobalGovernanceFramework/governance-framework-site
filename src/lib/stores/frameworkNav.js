@@ -82,6 +82,13 @@ export const allFrameworks = [
     path: '/frameworks/economic-integration'
   },
   {
+    slug: 'global-supply-chains-and-logistics',
+    titleKey: 'framework.docs.nav.frameworkTitles.globalSupplyChainsAndLogistics',
+    tier: 1,
+    status: 'review',
+    path: '/frameworks/global-supply-chains-and-logistics'
+  },
+  {
     slug: 'aurora-accord',
     titleKey: 'framework.docs.nav.frameworkTitles.globalDataGovernanceAndSovereignty',
     tier: 1,
@@ -92,7 +99,7 @@ export const allFrameworks = [
     slug: 'migration-and-human-mobility',
     titleKey: 'framework.docs.nav.frameworkTitles.migrationAndHumanMobility',
     tier: 1,
-    status: 'coming-soon',
+    status: 'review',
     path: '/frameworks/migration-and-human-mobility'
   },
 
