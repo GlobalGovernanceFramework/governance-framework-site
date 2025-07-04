@@ -45,27 +45,27 @@
   }
   
   :global(.tier-0) {
-    border-left: 4px solid #dc2626;
+    border-left: 4px solid #fbbf24;
     padding-left: 1rem;
   }
   
   :global(.tier-1) {
-    border-left: 4px solid #ea580c;
+    border-left: 4px solid #60a5fa;
     padding-left: 1rem;
   }
   
   :global(.tier-2) {
-    border-left: 4px solid #ca8a04;
+    border-left: 4px solid #34d399;
     padding-left: 1rem;
   }
   
   :global(.tier-3) {
-    border-left: 4px solid #16a34a;
+    border-left: 4px solid #a78bfa;
     padding-left: 1rem;
   }
   
   :global(.tier-4) {
-    border-left: 4px solid #7c3aed;
+    border-left: 4px solid #f472b6;
     padding-left: 1rem;
   }
 </style>

@@ -206,6 +206,7 @@ All nations accept mandatory ICJ and ICC jurisdiction over ecocide, crimes again
 
 **Ecocide Law Implementation:**
 Graduated penalties for large-scale ecosystem destruction include corporate fines scaled to revenue, individual criminal liability for executives, and state sanctions for systematic environmental crimes. Independent oversight prevents weaponization against developing economies.
+The legal definition of Ecocide is derived from the rights of ecosystems as articulated in the [MOS's Dynamic Rights Spectrum](/frameworks/moral-operating-system).
 
 **Corporate Accountability Revolution:**
 Transnational corporations face binding human rights and environmental obligations with meaningful enforcement mechanisms. Parent company liability for subsidiary violations ends shell company abuse.

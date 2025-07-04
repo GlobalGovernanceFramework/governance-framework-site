@@ -62,6 +62,13 @@
     },
     "founding": "Founding"
   },
+  "ui": {
+    "frameworkTiers": "Framework Tiers",
+    "hoverToExplore": "Hover to explore frameworks",
+    "tapAgainToExplore": "Tap again to explore this framework",
+    "clickToVisit": "click to visit the framework",
+    "clickOnTheNode": "Click on the node to visit the framework"
+  },
   "language": {
     "select": "Select language",
     "tooltip": "Change language"

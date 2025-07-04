@@ -185,7 +185,7 @@
           on:click={() => scrollToTier(0)}
           style="flex: 1; min-width: 200px; text-align: center; cursor: pointer; border: none; background: none; padding: 0;"
         >
-          <div style="background-color: #dc2626; color: white; padding: 0.5rem; border-radius: 0.375rem; font-weight: 600; margin-bottom: 0.5rem; transition: all 0.2s ease;">Tier 0</div>
+          <div style="background-color: #fbbf24; color: white; padding: 0.5rem; border-radius: 0.375rem; font-weight: 600; margin-bottom: 0.5rem; transition: all 0.2s ease;">Tier 0</div>
           <span style="font-size: 0.875rem; color: #374151; display: block;">{$t('framework.implementationFrameworks.tiers.tier0')}</span>
         </button>
         <button 
@@ -193,7 +193,7 @@
           on:click={() => scrollToTier(1)}
           style="flex: 1; min-width: 200px; text-align: center; cursor: pointer; border: none; background: none; padding: 0;"
         >
-          <div style="background-color: #ea580c; color: white; padding: 0.5rem; border-radius: 0.375rem; font-weight: 600; margin-bottom: 0.5rem; transition: all 0.2s ease;">Tier 1</div>
+          <div style="background-color: #60a5fa; color: white; padding: 0.5rem; border-radius: 0.375rem; font-weight: 600; margin-bottom: 0.5rem; transition: all 0.2s ease;">Tier 1</div>
           <span style="font-size: 0.875rem; color: #374151; display: block;">{$t('framework.implementationFrameworks.tiers.tier1')}</span>
         </button>
         <button 
@@ -201,7 +201,7 @@
           on:click={() => scrollToTier(2)}
           style="flex: 1; min-width: 200px; text-align: center; cursor: pointer; border: none; background: none; padding: 0;"
         >
-          <div style="background-color: #ca8a04; color: white; padding: 0.5rem; border-radius: 0.375rem; font-weight: 600; margin-bottom: 0.5rem; transition: all 0.2s ease;">Tier 2</div>
+          <div style="background-color: #34d399; color: white; padding: 0.5rem; border-radius: 0.375rem; font-weight: 600; margin-bottom: 0.5rem; transition: all 0.2s ease;">Tier 2</div>
           <span style="font-size: 0.875rem; color: #374151; display: block;">{$t('framework.implementationFrameworks.tiers.tier2')}</span>
         </button>
         <button 
@@ -209,7 +209,7 @@
           on:click={() => scrollToTier(3)}
           style="flex: 1; min-width: 200px; text-align: center; cursor: pointer; border: none; background: none; padding: 0;"
         >
-          <div style="background-color: #16a34a; color: white; padding: 0.5rem; border-radius: 0.375rem; font-weight: 600; margin-bottom: 0.5rem; transition: all 0.2s ease;">Tier 3</div>
+          <div style="background-color: #a78bfa; color: white; padding: 0.5rem; border-radius: 0.375rem; font-weight: 600; margin-bottom: 0.5rem; transition: all 0.2s ease;">Tier 3</div>
           <span style="font-size: 0.875rem; color: #374151; display: block;">{$t('framework.implementationFrameworks.tiers.tier3')}</span>
         </button>
         <button 
@@ -217,7 +217,7 @@
           on:click={() => scrollToTier(4)}
           style="flex: 1; min-width: 200px; text-align: center; cursor: pointer; border: none; background: none; padding: 0;"
         >
-          <div style="background-color: #7c3aed; color: white; padding: 0.5rem; border-radius: 0.375rem; font-weight: 600; margin-bottom: 0.5rem; transition: all 0.2s ease;">Tier 4</div>
+          <div style="background-color: #f472b6; color: white; padding: 0.5rem; border-radius: 0.375rem; font-weight: 600; margin-bottom: 0.5rem; transition: all 0.2s ease;">Tier 4</div>
           <span style="font-size: 0.875rem; color: #374151; display: block;">{$t('framework.implementationFrameworks.tiers.tier4')}</span>
         </button>
       </div>
@@ -520,11 +520,11 @@
   }
 
   /* Add visual feedback for button interaction */
-  .tier-0-button:hover div { box-shadow: 0 4px 8px rgba(220, 38, 38, 0.3); }
-  .tier-1-button:hover div { box-shadow: 0 4px 8px rgba(234, 88, 12, 0.3); }
-  .tier-2-button:hover div { box-shadow: 0 4px 8px rgba(202, 138, 4, 0.3); }
-  .tier-3-button:hover div { box-shadow: 0 4px 8px rgba(22, 163, 74, 0.3); }
-  .tier-4-button:hover div { box-shadow: 0 4px 8px rgba(124, 58, 237, 0.3); }
+  .tier-0-button:hover div { box-shadow: 0 4px 8px rgba(251, 191, 36, 0.3); }
+  .tier-1-button:hover div { box-shadow: 0 4px 8px rgba(96, 165, 250, 0.3); }
+  .tier-2-button:hover div { box-shadow: 0 4px 8px rgba(52, 211, 153, 0.3); }
+  .tier-3-button:hover div { box-shadow: 0 4px 8px rgba(167, 139, 250, 0.3); }
+  .tier-4-button:hover div { box-shadow: 0 4px 8px rgba(244, 114, 182, 0.3); }
   :global(.implementation-frameworks) {
     margin-top: 2rem;
   }
@@ -558,28 +558,28 @@
 
   /* Tier-specific color variables and styling */
   :global(.tier-0) {
-    --tier-color: #dc2626;
-    border-top: 4px solid #dc2626;
+    --tier-color: #fbbf24;
+    border-top: 4px solid #fbbf24;
   }
 
   :global(.tier-1) {
-    --tier-color: #ea580c;
-    border-top: 4px solid #ea580c;
+    --tier-color: #60a5fa;
+    border-top: 4px solid #60a5fa;
   }
 
   :global(.tier-2) {
-    --tier-color: #ca8a04;
-    border-top: 4px solid #ca8a04;
+    --tier-color: #34d399;
+    border-top: 4px solid #34d399;
   }
 
   :global(.tier-3) {
-    --tier-color: #16a34a;
-    border-top: 4px solid #16a34a;
+    --tier-color: #a78bfa;
+    border-top: 4px solid #a78bfa;
   }
 
   :global(.tier-4) {
-    --tier-color: #7c3aed;
-    border-top: 4px solid #7c3aed;
+    --tier-color: #f472b6;
+    border-top: 4px solid #f472b6;
   }
 
   /* Tier headers styling */

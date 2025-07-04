@@ -12,12 +12,13 @@ function slugToTitleKey(slug) {
 }
 
 // Master list of all frameworks - SINGLE SOURCE OF TRUTH
-// Using the new consistent i18n key structure
+// Using the new consistent i18n key structure with emojis
 export const allFrameworks = [
   // Tier 0: Global Institutional Reform
   {
     slug: 'treaty-for-our-only-home',
     titleKey: 'framework.docs.nav.frameworkTitles.treatyForOurOnlyHome',
+    emoji: '🌐',
     tier: 0,
     status: 'ready',
     version: '1.1',
@@ -28,6 +29,7 @@ export const allFrameworks = [
   {
     slug: 'indigenous-governance-and-traditional-knowledge',
     titleKey: 'framework.docs.nav.frameworkTitles.indigenousGovernanceAndTraditionalKnowledge',
+    emoji: '🪶',
     tier: 1,
     status: 'review',
     path: '/frameworks/indigenous-governance-and-traditional-knowledge'
@@ -35,6 +37,7 @@ export const allFrameworks = [
   {
     slug: 'climate-and-energy-governance',
     titleKey: 'framework.docs.nav.frameworkTitles.climateAndEnergyGovernance',
+    emoji: '⚡',
     tier: 1,
     status: 'review',
     path: '/frameworks/climate-and-energy-governance'
@@ -42,13 +45,24 @@ export const allFrameworks = [
   {
     slug: 'planetary-health',
     titleKey: 'framework.docs.nav.frameworkTitles.planetaryHealth',
+    emoji: '🩺',
     tier: 1,
     status: 'review',
     path: '/frameworks/planetary-health'
   },
+  // New Framework
+  {
+    slug: 'global-health-and-pandemic-security',
+    titleKey: 'framework.docs.nav.frameworkTitles.globalHealthAndPandemicSecurity',
+    emoji: '⚕️',
+    tier: 1,
+    status: 'planned',
+    path: '/frameworks/global-health-and-pandemic-security'
+  },
   {
     slug: 'food-systems-and-agriculture',
     titleKey: 'framework.docs.nav.frameworkTitles.foodSystemsAndAgriculture',
+    emoji: '🌱',
     tier: 1,
     status: 'review',
     path: '/frameworks/food-systems-and-agriculture'
@@ -56,6 +70,7 @@ export const allFrameworks = [
   {
     slug: 'disaster-risk-reduction',
     titleKey: 'framework.docs.nav.frameworkTitles.disasterRiskReduction',
+    emoji: '🌪️',
     tier: 1,
     status: 'review',
     path: '/frameworks/disaster-risk-reduction'
@@ -63,6 +78,7 @@ export const allFrameworks = [
   {
     slug: 'peace-and-conflict-resolution',
     titleKey: 'framework.docs.nav.frameworkTitles.peaceAndConflictResolution',
+    emoji: '🕊️',
     tier: 1,
     status: 'review',
     path: '/frameworks/peace-and-conflict-resolution'
@@ -70,13 +86,23 @@ export const allFrameworks = [
   {
     slug: 'justice-systems',
     titleKey: 'framework.docs.nav.frameworkTitles.justiceSystems',
+    emoji: '⚖️',
     tier: 1,
     status: 'review',
     path: '/frameworks/justice-systems'
   },
   {
+    slug: 'the-shield-protocol',
+    titleKey: 'framework.docs.nav.frameworkTitles.transnationalCrimeAndSecurity',
+    emoji: '🛡️',
+    tier: 1,
+    status: 'review',
+    path: '/frameworks/the-shield-protocol'
+  },
+  {
     slug: 'economic-integration',
     titleKey: 'framework.docs.nav.frameworkTitles.economicIntegration',
+    emoji: '💱',
     tier: 1,
     status: 'review',
     path: '/frameworks/economic-integration'
@@ -84,13 +110,23 @@ export const allFrameworks = [
   {
     slug: 'global-supply-chains-and-logistics',
     titleKey: 'framework.docs.nav.frameworkTitles.globalSupplyChainsAndLogistics',
+    emoji: '🚢',
     tier: 1,
     status: 'review',
     path: '/frameworks/global-supply-chains-and-logistics'
   },
   {
+    slug: 'gaian-trade-framework',
+    titleKey: 'framework.docs.nav.frameworkTitles.gaianTradeFramework',
+    emoji: '🌍',
+    tier: 1,
+    status: 'review',
+    path: '/frameworks/gaian-trade-framework'
+  },
+  {
     slug: 'aurora-accord',
     titleKey: 'framework.docs.nav.frameworkTitles.globalDataGovernanceAndSovereignty',
+    emoji: '🔮',
     tier: 1,
     status: 'review',
     path: '/frameworks/aurora-accord'
@@ -98,6 +134,7 @@ export const allFrameworks = [
   {
     slug: 'migration-and-human-mobility',
     titleKey: 'framework.docs.nav.frameworkTitles.migrationAndHumanMobility',
+    emoji: '🗺️',
     tier: 1,
     status: 'review',
     path: '/frameworks/migration-and-human-mobility'
@@ -107,20 +144,39 @@ export const allFrameworks = [
   {
     slug: 'technology-governance',
     titleKey: 'framework.docs.nav.frameworkTitles.technologyGovernance',
+    emoji: '🤖',
     tier: 2,
     status: 'review',
     path: '/frameworks/technology-governance'
   },
   {
+    slug: 'synthetic-biology-and-biotech-governance',
+    titleKey: 'framework.docs.nav.frameworkTitles.syntheticBiologyAndAdvancedBiotechGovernance',
+    emoji: '🧬',
+    tier: 2,
+    status: 'planned',
+    path: '/frameworks/synthetic-biology-and-biotech-governance'
+  },
+  {
     slug: 'financial-systems',
     titleKey: 'framework.docs.nav.frameworkTitles.financialSystems',
+    emoji: '❤️',
     tier: 2,
     status: 'review',
     path: '/frameworks/financial-systems'
   },
   {
+    slug: 'adaptive-universal-basic-income',
+    titleKey: 'framework.docs.nav.frameworkTitles.adaptiveUniversalBasicIncome',
+    emoji: '💰',
+    tier: 2,
+    status: 'planned',
+    path: '/frameworks/adaptive-universal-basic-income'
+  },
+  {
     slug: 'educational-systems',
     titleKey: 'framework.docs.nav.frameworkTitles.educationalSystems',
+    emoji: '🎓',
     tier: 2,
     status: 'review',
     path: '/frameworks/educational-systems'
@@ -128,6 +184,7 @@ export const allFrameworks = [
   {
     slug: 'mental-health-governance',
     titleKey: 'framework.docs.nav.frameworkTitles.mentalHealthGovernance',
+    emoji: '🧠',
     tier: 2,
     status: 'review',
     path: '/frameworks/mental-health-governance'
@@ -135,6 +192,7 @@ export const allFrameworks = [
   {
     slug: 'urban-and-community-development',
     titleKey: 'framework.docs.nav.frameworkTitles.urbanAndCommunityDevelopment',
+    emoji: '🏙️',
     tier: 2,
     status: 'coming-soon',
     path: '/frameworks/urban-and-community-development'
@@ -142,6 +200,7 @@ export const allFrameworks = [
   {
     slug: 'soil-health-and-land-use-governance',
     titleKey: 'framework.docs.nav.frameworkTitles.soilHealthAndLandUseGovernance',
+    emoji: '🌾',
     tier: 2,
     status: 'planned',
     path: '/frameworks/soil-health-and-land-use-governance'
@@ -149,6 +208,7 @@ export const allFrameworks = [
   {
     slug: 'water-and-sanitation-governance',
     titleKey: 'framework.docs.nav.frameworkTitles.waterAndSanitationGovernance',
+    emoji: '💧',
     tier: 2,
     status: 'review',
     path: '/frameworks/water-and-sanitation-governance'
@@ -156,13 +216,23 @@ export const allFrameworks = [
   {
     slug: 'environmental-stewardship',
     titleKey: 'framework.docs.nav.frameworkTitles.environmentalStewardship',
+    emoji: '🌿',
     tier: 2,
     status: 'review',
     path: '/frameworks/environmental-stewardship'
   },
   {
+    slug: 'the-phoenix-protocol',
+    titleKey: 'framework.docs.nav.frameworkTitles.wasteAndCircularEconomy',
+    emoji: '♻️',
+    tier: 2,
+    status: 'review',
+    path: '/frameworks/the-phoenix-protocol'
+  },
+  {
     slug: 'animal-welfare-governance',
     titleKey: 'framework.docs.nav.frameworkTitles.animalWelfareGovernance',
+    emoji: '🐾',
     tier: 2,
     status: 'review',
     path: '/frameworks/animal-welfare-governance'
@@ -170,6 +240,7 @@ export const allFrameworks = [
   {
     slug: 'biodiversity-governance',
     titleKey: 'framework.docs.nav.frameworkTitles.biodiversityGovernance',
+    emoji: '🦅',
     tier: 2,
     status: 'review',
     path: '/frameworks/biodiversity-governance'
@@ -177,6 +248,7 @@ export const allFrameworks = [
   {
     slug: 'oceans-and-marine-governance',
     titleKey: 'framework.docs.nav.frameworkTitles.oceansAndMarineGovernance',
+    emoji: '🌊',
     tier: 2,
     status: 'planned',
     path: '/frameworks/oceans-and-marine-governance'
@@ -184,6 +256,7 @@ export const allFrameworks = [
   {
     slug: 'labor-and-employment-governance',
     titleKey: 'framework.docs.nav.frameworkTitles.laborAndEmploymentGovernance',
+    emoji: '👥',
     tier: 2,
     status: 'planned',
     path: '/frameworks/labor-and-employment-governance'
@@ -191,6 +264,7 @@ export const allFrameworks = [
   {
     slug: 'disability-rights-and-inclusion',
     titleKey: 'framework.docs.nav.frameworkTitles.disabilityRightsAndInclusion',
+    emoji: '♿',
     tier: 2,
     status: 'coming-soon',
     path: '/frameworks/disability-rights-and-inclusion'
@@ -200,6 +274,7 @@ export const allFrameworks = [
   {
     slug: 'digital-commons',
     titleKey: 'framework.docs.nav.frameworkTitles.digitalCommons',
+    emoji: '💻',
     tier: 3,
     status: 'review',
     path: '/frameworks/digital-commons'
@@ -207,6 +282,7 @@ export const allFrameworks = [
   {
     slug: 'cultural-heritage-preservation',
     titleKey: 'framework.docs.nav.frameworkTitles.culturalHeritagePreservation',
+    emoji: '🏛️',
     tier: 3,
     status: 'planned',
     path: '/frameworks/cultural-heritage-preservation'
@@ -214,6 +290,7 @@ export const allFrameworks = [
   {
     slug: 'rural-development-governance',
     titleKey: 'framework.docs.nav.frameworkTitles.ruralDevelopmentGovernance',
+    emoji: '🚜',
     tier: 3,
     status: 'planned',
     path: '/frameworks/rural-development-governance'
@@ -221,6 +298,7 @@ export const allFrameworks = [
   {
     slug: 'religious-and-spiritual-dialogue-governance',
     titleKey: 'framework.docs.nav.frameworkTitles.religiousAndSpiritualDialogueGovernance',
+    emoji: '🕯️',
     tier: 3,
     status: 'review',
     path: '/frameworks/religious-and-spiritual-dialogue-governance'
@@ -228,6 +306,7 @@ export const allFrameworks = [
   {
     slug: 'youth-and-intergenerational-governance',
     titleKey: 'framework.docs.nav.frameworkTitles.youthAndIntergenerationalGovernance',
+    emoji: '👶',
     tier: 3,
     status: 'planned',
     path: '/frameworks/youth-and-intergenerational-governance'
@@ -235,6 +314,7 @@ export const allFrameworks = [
   {
     slug: 'global-citizenship-practice',
     titleKey: 'framework.docs.nav.frameworkTitles.globalCitizenshipPractice',
+    emoji: '🤝',
     tier: 3,
     status: 'review',
     path: '/frameworks/global-citizenship-practice'
@@ -242,6 +322,7 @@ export const allFrameworks = [
   {
     slug: 'global-ethics-and-rights-of-beings',
     titleKey: 'framework.docs.nav.frameworkTitles.globalEthicsAndRightsOfBeings',
+    emoji: '🦋',
     tier: 3,
     status: 'review',
     path: '/frameworks/global-ethics-and-rights-of-beings'
@@ -249,6 +330,7 @@ export const allFrameworks = [
   {
     slug: 'gender-equality-and-lgbtq-rights',
     titleKey: 'framework.docs.nav.frameworkTitles.genderEqualityAndLgbtqRights',
+    emoji: '🏳️‍🌈',
     tier: 3,
     status: 'planned',
     path: '/frameworks/gender-equality-and-lgbtq-rights'
@@ -256,6 +338,7 @@ export const allFrameworks = [
   {
     slug: 'aging-population-support-governance',
     titleKey: 'framework.docs.nav.frameworkTitles.agingPopulationSupportGovernance',
+    emoji: '🌳',
     tier: 3,
     status: 'review',
     path: '/frameworks/aging-population-support-governance'
@@ -265,6 +348,7 @@ export const allFrameworks = [
   {
     slug: 'space-governance',
     titleKey: 'framework.docs.nav.frameworkTitles.spaceGovernance',
+    emoji: '🚀',
     tier: 4,
     status: 'planned',
     path: '/frameworks/space-governance'
@@ -272,6 +356,7 @@ export const allFrameworks = [
   {
     slug: 'existential-risk-governance',
     titleKey: 'framework.docs.nav.frameworkTitles.existentialRiskGovernance',
+    emoji: '⚠️',
     tier: 4,
     status: 'planned',
     path: '/frameworks/existential-risk-governance'
@@ -279,6 +364,7 @@ export const allFrameworks = [
   {
     slug: 'consciousness-and-inner-development',
     titleKey: 'framework.docs.nav.frameworkTitles.consciousnessAndInnerDevelopment',
+    emoji: '🧘',
     tier: 4,
     status: 'review',
     path: '/frameworks/consciousness-and-inner-development'
@@ -286,6 +372,7 @@ export const allFrameworks = [
   {
     slug: 'implementation-methods-and-tools',
     titleKey: 'framework.docs.nav.frameworkTitles.implementationMethodsAndTools',
+    emoji: '🧰',
     tier: 4,
     status: 'review',
     path: '/frameworks/implementation-methods-and-tools'
@@ -293,33 +380,39 @@ export const allFrameworks = [
   {
     slug: 'wisdom-governance',
     titleKey: 'framework.docs.nav.frameworkTitles.wisdomGovernance',
+    emoji: '🦉',
     tier: 4,
     status: 'planned',
     path: '/frameworks/wisdom-governance'
   }
 ];
 
-// Tier metadata using the new consistent i18n structure
+// Tier metadata using the new consistent i18n structure with emojis
 export const tierMetadata = {
   0: {
     titleKey: 'framework.tier.0.title',
-    descriptionKey: 'framework.tier.0.description'
+    descriptionKey: 'framework.tier.0.description',
+    emoji: '⚖️'
   },
   1: {
     titleKey: 'framework.tier.1.title',
-    descriptionKey: 'framework.tier.1.description'
+    descriptionKey: 'framework.tier.1.description',
+    emoji: '🌍'
   },
   2: {
     titleKey: 'framework.tier.2.title',
-    descriptionKey: 'framework.tier.2.description'
+    descriptionKey: 'framework.tier.2.description',
+    emoji: '🌱'
   },
   3: {
     titleKey: 'framework.tier.3.title',
-    descriptionKey: 'framework.tier.3.description'
+    descriptionKey: 'framework.tier.3.description',
+    emoji: '🤝'
   },
   4: {
     titleKey: 'framework.tier.4.title',
-    descriptionKey: 'framework.tier.4.description'
+    descriptionKey: 'framework.tier.4.description',
+    emoji: '🔮'
   }
 };
 
@@ -372,7 +465,8 @@ function buildNavStructure(frameworks) {
           titleKey: framework.titleKey,
           path: framework.path,
           status: framework.status,
-          version: framework.version
+          version: framework.version,
+          emoji: framework.emoji
         }))
       }))
     },

@@ -62,6 +62,13 @@
     },
     "founding": "Grundande"
   },
+  "ui": {
+    "frameworkTiers": "Ramverksnivåer",
+    "hoverToExplore": "Håll muspekaren över för att utforska ramverk",
+    "tapAgainToExplore": "Tryck igen för att utforska detta ramverk",
+    "clickToVisit": "klicka för att besöka ramverket",
+    "clickOnTheNode": "Klicka på noden för att besöka ramverket"
+  },
   "language": {
     "select": "Välj språk",
     "tooltip": "Byt språk"

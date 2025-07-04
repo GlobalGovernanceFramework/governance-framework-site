@@ -18,19 +18,123 @@
   "title": "Global Governance Frameworks",
   "subtitle": "Connecting governance innovations across the world",
   "intro": {
-    "heading": "Frameworks for a new era of governance",
-    "text": "Developing interoperable systems and operating models for global governance that respect local autonomy while enabling effective coordination."
+    "heading": "What would it take for humanity to thrive together?",
+    "text": "Explore our living ecosystem of governance frameworks—an interconnected network of solutions for planetary transformation."
   },
   "treatyFeature": {
     "heading": "The Foundational Framework: Treaty for Our Only Home",
-    "lead": "Our comprehensive, ready-to-implement response to the global polycrisis. This Tier 0 framework is the essential operating system upgrade for 21st-century global governance.",
+    "lead": "Three cornerstone frameworks that transform how we govern together, heal our planet, and ensure everyone thrives.",
     "point1": "Reforms core institutions like the UN Security Council.",
     "point2": "Strengthens international law with concepts like Ecocide.",
     "point3": "Establishes sustainable funding for global public goods.",
     "button": "Explore the Treaty"
   },
+  "constellation": {
+    "taglines": {
+      "treatyforouronlyhome": "The Operating System Upgrade for a Planet in Crisis.",
+      "gaiantradeframework": "Building a Global Economy that Heals, Not Harms.",
+      "economicintegration": "An Economy of Care, Ensuring Universal Thriving.",
+      "indigenousgovernanceandtraditionalknowledge": "Governance Guided by the Wisdom of the Earth.",
+      "climateandenergygovernance": "Powering Our Planet, Protecting Our Future.",
+      "planetaryhealth": "One Planet, One Health: Governing as a Living System.",
+      "globalhealthandpandemicsecurity": "Never Again. Global Health Security for All.",
+      "foodsystemsandagriculture": "Nourishing Humanity, Regenerating the Earth.",
+      "disasterriskreduction": "From Reaction to Resilience: Preparing for a Changing World.",
+      "peaceandconflictresolution": "Building Peace by Healing, Not by Force.",
+      "justicesystems": "Justice That Restores, Includes, and Empowers.",
+      "globalsupplychainsandlogistics": "Goods That Flow with Integrity and Resilience.",
+      "auroraaccord": "The Paris Agreement for Data: Ensuring Digital Dignity.",
+      "migrationandhumanmobility": "Human Mobility with Dignity and Welcome.",
+      "theshieldprotocol": "A Unified Shield Against Transnational Threats.",
+      "thephoenixprotocol": "From Waste to Wealth: The Circular Economy in Action.",
+      "technologygovernance": "Technology in Service to Life.",
+      "syntheticbiologyandbiotechgovernance": "Wielding the Building Blocks of Life, Wisely.",
+      "financialsystems": "An Economy Powered by Trust, Care, and Connection.",
+      "adaptiveuniversalbasicincome": "Economic Security: The Foundation for Universal Flourishing.",
+      "educationalsystems": "Nurturing the Wisdom Keepers of Tomorrow.",
+      "mentalhealthgovernance": "Building Collective Well-being from the Inside Out.",
+      "urbanandcommunitydevelopment": "Cities and Communities Designed for People and Planet.",
+      "soilhealthandlandusegovernance": "The Groundwork for a Regenerative Civilization.",
+      "waterandsanitationgovernance": "Clean Water for All, Stewarded by All.",
+      "environmentalstewardship": "From Protection to Partnership: Active Care for Our Ecosystems.",
+      "animalwelfaregovernance": "A Larger Circle of Compassion: Rights for All Beings.",
+      "biodiversitygovernance": "Reweaving the Rich Tapestry of Life on Earth.",
+      "oceansandmarinegovernance": "Our Oceans, Our Collective Responsibility.",
+      "laborandemploymentgovernance": "Dignity, Equity, and Purpose in the Future of Work.",
+      "disabilityrightsandinclusion": "Designing a World Where Everyone Belongs.",
+      "digitalcommons": "Our Shared Digital World, Governed for the Common Good.",
+      "culturalheritagepreservation": "Protecting the Stories and Songs of Humanity.",
+      "ruraldevelopmentgovernance": "Thriving Rural Communities, Connected to the Whole.",
+      "religiousandspiritualdialoguegovernance": "Building Bridges of Wisdom Between Faiths and Traditions.",
+      "youthandintergenerationalgovernance": "The Future Has a Vote.",
+      "globalcitizenshippractice": "Your Pathway from Personal Values to Planetary Action.",
+      "globalethicsandrightsofbeings": "Expanding Our Moral Universe.",
+      "genderequalityandlgbtqrights": "Liberation and Justice for All Genders and Sexualities.",
+      "agingpopulationsupportgovernance": "Honoring Our Elders with Dignity, Care, and Connection.",
+      "spacegovernance": "Guiding Humanity's Journey to the Stars, Ethically.",
+      "existentialriskgovernance": "The Wisdom to Navigate Our Most Powerful Technologies.",
+      "consciousnessandinnerdevelopment": "The Inner Work for Outer Change.",
+      "implementationmethodsandtools": "The Practical Toolkit for Building a New World.",
+      "wisdomgovernance": "The Ultimate Goal: Governance that Arises from Within."
+    },
+    "descriptions": {
+      "treatyforouronlyhome": "The foundational treaty; the OS upgrade for global governance, enabling all other frameworks.",
+      "indigenousgovernanceandtraditionalknowledge": "Centering Indigenous wisdom and sovereignty as the heart of regenerative governance.",
+      "climateandenergygovernance": "A coordinated global response to the climate crisis, accelerating the transition to clean energy.",
+      "planetaryhealth": "Governing our world as a single, interconnected living system to ensure ecological thriving.",
+      "globalhealthandpandemicsecurity": "Building a resilient, equitable global health system to prevent and respond to future pandemics.",
+      "foodsystemsandagriculture": "Transforming how we grow and distribute food to ensure nourishment for all on a healthy planet.",
+      "disasterriskreduction": "Proactive systems to minimize the impact of disasters and build resilient communities.",
+      "peaceandconflictresolution": "New models for preventing conflict and fostering restorative justice and lasting peace.",
+      "justicesystems": "Reimagining justice to be equitable, restorative, and accessible to all.",
+      "economicintegration": "The internal OS for a regenerative economy, defining how value is created and shared.",
+      "globalsupplychainsandlogistics": "Creating resilient, ethical, and transparent global supply chains.",
+      "auroraaccord": "The 'Paris Agreement for Data,' ensuring digital dignity, sovereignty, and trust.",
+      "migrationandhumanmobility": "A humane and coordinated approach to managing global migration with dignity.",
+      "gaiantradeframework": "Governing the flow of physical resources to heal rather than harm the planet.",
+      "theshieldprotocol": "A global alliance to dismantle transnational crime and secure our communities.",
+      "thephoenixprotocol": "Implementing a truly circular economy to eliminate waste and regenerate resources.",
+      "technologygovernance": "Ensuring technological advancement serves human and planetary well-being.",
+      "syntheticbiologyandbiotechgovernance": "Ethical oversight for one of our most powerful emerging technologies.",
+      "financialsystems": "The architecture of a new economy, powered by currencies of care and connection like *Hearts*.",
+      "adaptiveuniversalbasicincome": "Ensuring universal economic security as a foundation for individual and collective thriving.",
+      "educationalsystems": "Nurturing wisdom, creativity, and ecological consciousness for all ages.",
+      "mentalhealthgovernance": "Building systems of care that support collective mental and emotional well-being.",
+      "urbanandcommunitydevelopment": "Fostering thriving, resilient, and human-scale cities and communities.",
+      "soilhealthandlandusegovernance": "Protocols for regenerating our soils and stewarding our lands.",
+      "waterandsanitationgovernance": "Ensuring equitable access to clean water and sanitation for all.",
+      "environmentalstewardship": "Active, hands-on care for our planet’s ecosystems.",
+      "animalwelfaregovernance": "Recognizing and protecting the rights and well-being of non-human beings.",
+      "biodiversitygovernance": "A coordinated strategy to halt biodiversity loss and restore vibrant ecosystems.",
+      "oceansandmarinegovernance": "Collective stewardship of our planet's oceans and marine life.",
+      "laborandemploymentgovernance": "Shaping the future of work to be dignified, equitable, and meaningful.",
+      "disabilityrightsandinclusion": "Building a world where people of all abilities can fully participate and thrive.",
+      "digitalcommons": "Stewarding our shared digital knowledge and infrastructure as a public good.",
+      "culturalheritagepreservation": "Protecting and revitalizing the rich tapestry of human cultures and languages.",
+      "ruraldevelopmentgovernance": "Ensuring thriving, resilient, and connected rural communities.",
+      "religiousandspiritualdialoguegovernance": "Fostering understanding and collaboration between the world's wisdom traditions.",
+      "youthandintergenerationalgovernance": "Empowering youth with a real voice and vote in decisions that shape their future.",
+      "globalcitizenshippractice": "The tools and pathways for individuals to engage as active planetary citizens.",
+      "globalethicsandrightsofbeings": "Expanding our ethical consideration to all living beings and future generations.",
+      "genderequalityandlgbtqrights": "Ensuring full rights, representation, and liberation for all genders and sexual orientations.",
+      "agingpopulationsupportgovernance": "Creating systems of dignity, care, and wisdom-sharing for our elders.",
+      "spacegovernance": "Ethical protocols for humanity's expansion into the solar system.",
+      "existentialriskgovernance": "Proactive strategies to mitigate risks that threaten humanity's future.",
+      "consciousnessandinnerdevelopment": "Supporting the inner growth and awareness needed to wield our technological power wisely.",
+      "implementationmethodsandtools": "The practical 'how-to' guides and resources for implementing all frameworks.",
+      "wisdomgovernance": "The ultimate aim: governance that emerges from collective wisdom and deep awareness."
+    },
+    "points": {
+      "gaiantrade1": "Trace products from source to store",
+      "gaiantrade2": "End colonial extraction patterns", 
+      "gaiantrade3": "Fund restoration with every purchase",
+      "economic1": "Reward care work and volunteering",
+      "economic2": "Ensure everyone has enough to thrive",
+      "economic3": "Launch local currencies and cooperatives"
+    }
+  },
   "features": {
-    "heading": "Key Features",
+    "heading": "Featured Frameworks",
     "interoperability": {
       "title": "Governance Interoperability",
       "description": "Frameworks that help different governance systems connect and collaborate effectively"
@@ -90,13 +194,43 @@
     "secondaryButton": "Get Involved"
   },
   "cta": "Explore the Frameworks",
+  "overview": {
+    "learnMore": "Learn More"
+  },
   "globalCitizenship": {
-    "title": "Discover Your Global Citizenship Path",
-    "lead": "An interactive journey to connect your personal values with planetary action.",
-    "description": "Our new Global Citizenship experience is a personalized gateway to understanding your place in the world. Take a short quiz to find your starting point, explore how your values connect to global systems on the interactive compass, and discover the governance frameworks that matter most to you.",
+    "title": "Find Your Place in the New Story",
+    "lead": "What is the most urgent starting point for planetary transformation?",
+    "description": "Each path leads to a personalized journey through our framework ecosystem, helping you discover where your values and skills can make the greatest impact.",
     "point1": "A 3-question quiz to personalize your journey.",
     "point2": "An interactive compass to visualize your path.",
     "point3": "Direct connections to the frameworks you care about.",
-    "button": "Begin Your Journey"
+    "button": "Begin Your Journey",
+    "paths": {
+      "ecological": {
+        "title": "Ecological Renewal",
+        "description": "Healing our relationship with the living world"
+      },
+      "justice": {
+        "title": "Social Justice", 
+        "description": "Ensuring dignity and opportunity for all people"
+      },
+      "systemic": {
+        "title": "Systemic Reform",
+        "description": "Transforming the rules and structures of power"
+      }
+    },
+    "quickStart": {
+      "title": "Start Your Global Citizenship Journey",
+      "subtitle": "Answer a quick question to discover your personalized path",
+      "progressText": "This is question 1 of 3 - takes less than 2 minutes",
+      "alternativeLink": "Or explore the full framework →"
+    },
+    "completed": {
+      "title": "Your Global Citizenship Path",
+      "subtitle": "You've discovered your personalized framework recommendations",
+      "topRecommendations": "Your Top Recommendations:",
+      "viewResults": "View Full Results",
+      "retakeQuiz": "Retake Quiz"
+    }
   }
 }

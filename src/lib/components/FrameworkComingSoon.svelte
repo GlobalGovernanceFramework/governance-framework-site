@@ -48,6 +48,186 @@
         ]
       }
     },
+    gaianTrade: {
+      en: {
+        title: 'The Gaian Trade Framework',
+        defaultDescription: "We're developing a revolutionary framework that transforms global trade from colonial extraction to regenerative exchange, treating commerce as a sacred covenant with Earth through planetary resource stewardship.",
+        defaultFeatures: [
+          'Digital Product & Material Passports with blockchain-verified ecological and labor justice scores',
+          'Regenerative Trade Zones (RTZs) replacing extractive agreements with planetary boundary compliance',
+          'Global Trade and Resource Council with Indigenous veto power and youth representation',
+          'Bioregional Trade and Resource Hubs managing zero-emission ports and circular infrastructure',
+          'Planetary Boundary Tariffs pricing embodied carbon, biodiversity impact, and resource depletion',
+          'Global Commons Contribution system funding restoration through resource royalties',
+          'Just Transition Corps supporting fossil fuel regions in developing regenerative economies',
+          'Hearts currency integration enabling trade incentives within the regenerative economy'
+        ]
+      },
+      sv: {
+        title: 'Det Gaianska Handelsramverket',
+        defaultDescription: "Vi utvecklar ett revolutionerande ramverk som transformerar global handel från kolonialt utvinning till regenerativt utbyte, och behandlar handel som ett heligt förbund med jorden genom planetär resursförvaltning.",
+        defaultFeatures: [
+          'Digitala produkt- och materialpass med blockchain-verifierade ekologiska och arbetarättvisepoäng',
+          'Regenerativa handelszoner (RTZ) som ersätter utvinningsavtal med planetära gränsefterlevnad',
+          'Globalt handels- och resursråd med ursprungsbefolknings vetorätt och ungdomsrepresentation',
+          'Bioregionala handels- och resurshub som förvaltar utsläppsfria hamnar och cirkulär infrastruktur',
+          'Planetära gränstariffer som prissätter förkroppsligat kol, biologisk mångfaldseffekt och resursutarmning',
+          'Globalt allmänningsbidragssystem som finansierar återställning genom resursroyalties',
+          'Rättvis övergångskår som stödjer fossilbränsleregioner i att utveckla regenerativa ekonomier',
+          'Hearts-valutaintegration som möjliggör handelsincitament inom den regenerativa ekonomin'
+        ]
+      }
+    },
+    synbio: {
+      en: {
+        title: 'Synthetic Biology & Advanced Biotech Governance',
+        defaultDescription: "We're developing a comprehensive framework for governing synthetic biology and biotechnology that balances innovation with safety, equity, and respect for life's sacred complexity.",
+        defaultFeatures: [
+          'Global Biosafety Council with mandatory safety protocols and containment systems for engineered organisms',
+          'Democratic Oversight Assembly with citizen juries and Indigenous councils holding veto power over high-risk research',
+          'Universal Access Mandate ensuring life-saving biotechnology reaches all communities through compulsory licensing',
+          'Rights of Nature Integration requiring ecosystem consent and integrity assessment for all bioengineering projects',
+          'Biopiracy Prevention Protocols protecting traditional knowledge and genetic resources with Indigenous sovereignty',
+          'Real-time Global Monitoring Network tracking engineered organisms with AI-powered early warning systems',
+          'Open Knowledge Commons sharing essential research while respecting Indigenous knowledge sovereignty',
+          'Precautionary Innovation Standards requiring extensive safety testing and reversibility mechanisms'
+        ]
+      },
+      sv: {
+        title: 'Syntetisk biologi & avancerad bioteknikstyrning',
+        defaultDescription: "Vi utvecklar ett omfattande ramverk för att styra syntetisk biologi och bioteknik som balanserar innovation med säkerhet, rättvisa och respekt för livets heliga komplexitet.",
+        defaultFeatures: [
+          'Globalt biosäkerhetsråd med obligatoriska säkerhetsprotokoll och inneslutningssystem för konstruerade organismer',
+          'Demokratisk tillsynsförsamling med medborgarjurys och ursprungsbefolkningsråd med vetorätt över högriskforskning',
+          'Universellt tillgångsmandat som säkerställer att livräddande bioteknik når alla samhällen genom tvångslicensiering',
+          'Integration av naturens rättigheter som kräver ekosystemsamtycke och integritetsbedömning för alla biotekniska projekt',
+          'Protokoll för förebyggande av biopiratkopiering som skyddar traditionell kunskap och genetiska resurser med ursprungsbefolknings suveränitet',
+          'Realtids globalt övervakningsnätverk som spårar konstruerade organismer med AI-drivna förvarningssystem',
+          'Öppna kunskapsallmänningar som delar väsentlig forskning samtidigt som de respekterar ursprungsbefolknings kunskapssuveränitet',
+          'Försiktighetsstandarder för innovation som kräver omfattande säkerhetstestning och reversiblitetsmekanismer'
+        ]
+      }
+    },
+    aubi: {
+      en: {
+        title: 'Adaptive Universal Basic Income (AUBI)',
+        defaultDescription: "We're developing a revolutionary framework that transforms traditional UBI into a living system for enacting the Treaty for Our Only Home's social promises, channeling Hearts and Leaves currencies to nurture Right Relationship, human flourishing, and ecological restoration.",
+        defaultFeatures: [
+          'Four-layer payout system rooted in Indigenous wisdom: relational wealth, universal baseline, contribution bonuses, and equity supplements',
+          'Hearts & Leaves dual currency rewarding care work and ecological restoration through blockchain-verified Love Ledger',
+          'Social Resilience Council with 40% Indigenous representation, FPIC 2.0 protocols, and Earth Council veto power',
+          'Love, Meaning & Connection Index (LMCI) replacing GDP with metrics of Right Relationship and human-land connections',
+          'Hybrid fiat/Hearts baseline (70/30) ensuring economic dignity while building regenerative economy',
+          'Indigenous-guided governance with ceremonial decision-making and Red Lines Clause protections',
+          'Treaty integration delivering social contract promises through Pillar 4 planetary health mechanisms',
+          'Global pilot program starting in Indigenous-led Bioregional Autonomous Zones with community sovereignty'
+        ]
+      },
+      sv: {
+        title: 'Adaptiv Universell Basinkomst (AUBI)',
+        defaultDescription: "Vi utvecklar ett revolutionerande ramverk som transformerar traditionell UBI till ett levande system för att förverkliga Fördraget för vårt enda hems sociala löften, genom att kanalisera Hearts och Leaves-valutor för att vårda rätta relationer, mänskligt välmående och ekologisk återställning.",
+        defaultFeatures: [
+          'Fyralagers utbetalningssystem rotat i ursprungsbefolknings visdom: relationell rikedom, universell grundnivå, bidragsbonusar och rättviseförstärkningar',
+          'Hearts & Leaves dubbelvaluta som belönar omsorgsarbete och ekologisk återställning genom blockchain-verifierad Kärleksregister',
+          'Social Motståndskraftsråd med 40% ursprungsbefolkningsrepresentation, FPIC 2.0-protokoll och Jordråds vetorätt',
+          'Kärlek, Mening & Anknytningsindex (LMCI) som ersätter BNP med mätvärden för rätta relationer och människa-land-förbindelser',
+          'Hybrid fiat/Hearts grundnivå (70/30) som säkerställer ekonomisk värdighet samtidigt som den bygger regenerativ ekonomi',
+          'Ursprungsbefolknings-guidat styre med ceremoniellt beslutsfattande och Red Lines Clause-skydd',
+          'Fördragsintegration som levererar sociala kontraktslöften genom Pelare 4 planetära hälsomekanismer',
+          'Globalt pilotprogram som startar i ursprungsbefolknings-ledda Bioregionala Autonoma Zoner med gemenskapssuveränitet'
+        ]
+      }
+    },
+    phoenix: {
+      en: {
+        title: 'The Phoenix Protocol: Waste & Circular Economy',
+        defaultDescription: "We're developing a revolutionary framework that eliminates the concept of 'waste' through superior design and regenerative systems, serving as the Material Reality operating system that transforms humanity's relationship with materials and resources.",
+        defaultFeatures: [
+          'Global Materials Passport System with quantum-encrypted blockchain tracking circularity, toxicity, and ecosystem impact',
+          'Five Core Pillars: Design standards, reverse logistics, circular finance, community composting, and toxic phase-out protocols',
+          'Material categorization from biological nutrients to monstrous hybrids targeted for elimination by 2040',
+          'Virgin Material Tax and Circularity Bonds creating economic incentives for regenerative design and Global South support',
+          'Community Work Teams managing organic waste through Hearts and Leaves rewards in the Love Ledger',
+          'Blue Circular Economy recovering 10 million tons of ocean plastic and managing maritime waste circularity',
+          'Cosmic Circularity extending principles to space manufacturing and 50% orbital debris recycling by 2040',
+          'Indigenous wisdom integration through Māori whakapapa stewardship and 7-generation decision-making frameworks'
+        ]
+      },
+      sv: {
+        title: 'Fenixprotokollet: Avfall & cirkulär ekonomi',
+        defaultDescription: "Vi utvecklar ett revolutionerande ramverk som eliminerar begreppet 'avfall' genom överlägsen design och regenerativa system, som fungerar som Material Reality-operativsystemet som transformerar mänsklighetens relation till material och resurser.",
+        defaultFeatures: [
+          'Globalt materialpasssystem med kvantumkrypterat blockchain som spårar cirkularitet, toxicitet och ekosystempåverkan',
+          'Fem kärnpelare: Designstandarder, omvänd logistik, cirkulär finansiering, kompostning och toxisk utfasning',
+          'Materialkategorisering från biologiska näringsämnen till monstruösa hybrider med målsättning för eliminering år 2040',
+          'Jungfrulig materialskatt och cirkularitetsobligationer som skapar ekonomiska incitament för regenerativ design och Global Syd-stöd',
+          'Samhällsarbetsteam som hanterar organiskt avfall genom Hearts och Leaves-belöningar i Kärleksregistret',
+          'Blå cirkulär ekonomi som återvinner 10 miljoner ton havsplast och hanterar maritim avfallscirkularitet',
+          'Kosmisk cirkularitet som utvidgar principer till rymdtillverkning och 50% återvinning av rymdskrot år 2040',
+          'Integration av ursprungsbefolknings visdom genom Māori whakapapa-förvaltning och 7-generationers beslutsramar'
+        ]
+      }
+    },
+    globalHealth: {
+      en: {
+        title: 'Global Health & Pandemic Security',
+        defaultDescription: "We're developing a comprehensive framework that strengthens health systems, ensures equitable access to care, and builds robust pandemic prevention mechanisms rooted in solidarity, scientific cooperation, and the lessons learned from COVID-19.",
+        defaultFeatures: [
+          'Global Health Observatory with AI-powered early warning systems for emerging health threats',
+          'Universal Health Access ensuring quality healthcare services regardless of geography or income',
+          'Pandemic Prevention & Preparedness with rapid vaccine development and international coordination',
+          'Open Health Research platforms accelerating medical breakthroughs while ensuring knowledge accessibility',
+          'Medical Manufacturing Security through distributed production networks for emergency scaling',
+          'Health System Strengthening with resilient infrastructure and workforce development',
+          'One Health Approach integrating human, animal, and environmental health monitoring',
+          'Climate Health Adaptation preparing systems for climate-related health impacts and displacement'
+        ]
+      },
+      sv: {
+        title: 'Global hälsa & pandemisäkerhet',
+        defaultDescription: "Vi utvecklar ett omfattande ramverk som stärker hälsosystem, säkerställer rättvis tillgång till vård och bygger robusta pandemiprevention baserat på solidaritet, vetenskapligt samarbete och lärdomar från COVID-19.",
+        defaultFeatures: [
+          'Globalt hälsoobservatorium med AI-drivna förvarningssystem för framväxande hälsohot',
+          'Universell hälsotillgång som säkerställer kvalitetsvård oavsett geografi eller inkomst',
+          'Pandemiprevention & beredskap med snabb vaccinutveckling och internationell koordination',
+          'Öppna hälsoforskningsplattformar som accelererar medicinska genombrott samtidigt som de säkerställer kunskapstillgänglighet',
+          'Medicinsk tillverkningssäkerhet genom distribuerade produktionsnätverk för nödskalning',
+          'Hälsosystemförstärkning med motståndskraftig infrastruktur och personalutveckling',
+          'One Health-tillvägagångssätt som integrerar övervakning av människors, djurs och miljöhälsa',
+          'Klimathälsoanpassning som förbereder system för klimatrelaterade hälsopåverkningar och förflyttning'
+        ]
+      }
+    },
+    shield: {
+     en: {
+       title: 'The Shield Protocol: Transnational Crime & Security',
+       defaultDescription: "We're developing a comprehensive framework to prevent, disrupt, and dismantle transnational criminal networks that drain $2.2 trillion annually, using AI-powered intelligence, sovereignty-respecting cooperation, and Spiral-Aware approaches to ensure justice while respecting human dignity.",
+       defaultFeatures: [
+         'Global Crime Intelligence Center with AI-powered threat mapping, quantum-resistant encryption, and behavioral analysis',
+         'Sovereignty safeguards including supermajority voting, cultural sensitivity protocols, and annual opt-out rights',
+         'Tiered threat classification from existential risks to emergent criminal vectors with appropriate responses',
+         'Global Enforcement Task Force conducting poly-jurisdictional investigations with community oversight',
+         'Illicit finance disruption through asset recovery, beneficial ownership registries, and transparency certificates',
+         'Spiral-Aware rehabilitation addressing consciousness stages behind criminal behavior with pro-social pathways',
+         'Victim-centered justice prioritizing rescue, support, and restitution funded by seized criminal assets',
+         'Sustainable funding through asset recovery (40%), sin taxes (25%), and carbon/Tobin taxes (20%)'
+       ]
+     },
+     sv: {
+       title: 'Skyddsprotokoll: Transnationell brottslighet & säkerhet',
+       defaultDescription: "Vi utvecklar ett omfattande ramverk för att förebygga, störa och avveckla transnationella kriminella nätverk som dränerar 2,2 biljoner dollar årligen, med AI-driven underrättelse, suveränitetrespekterande samarbete och Spiral-medvetna tillvägagångssätt för att säkerställa rättvisa samtidigt som mänsklig värdighet respekteras.",
+       defaultFeatures: [
+         'Globalt brottslighetsunderrättelsecentrum med AI-driven hotmappning, kvantumresistent kryptering och beteendeanalys',
+         'Suveränitetsskydd inklusive kvalificerad majoritet, kulturella känslighetsprotokoll och årliga opt-out-rättigheter',
+         'Nivåindelat hotklassificeringssystem från existentiella risker till framväxande kriminella vektorer med lämpliga svar',
+         'Global insatsstyrka som genomför poly-jurisdiktionella utredningar med samhällsövervakning',
+         'Störning av illegal finansiering genom tillgångsåtervinning, register över verkliga ägare och transparenscertifikat',
+         'Spiral-medveten rehabilitering som adresserar medvetandestadier bakom kriminellt beteende med pro-sociala vägar',
+         'Offer-centrerad rättvisa som prioriterar räddning, stöd och gottgörelse finansierad av beslagtagna kriminella tillgångar',
+         'Hållbar finansiering genom tillgångsåtervinning (40%), syndskatter (25%) och kol/Tobin-skatter (20%)'
+       ]
+     }
+    },
     urban: {
       en: {
         title: 'Urban & Community Development Framework',
@@ -436,7 +616,19 @@
         <ul class="features-list">
           {#each finalFeatures as feature, index}
             <li>
-              {#if frameworkName === 'migration'}
+              {#if frameworkName === 'shield'}
+                {index === 0 ? '🧠' : index === 1 ? '⚖️' : index === 2 ? '🎯' : index === 3 ? '🚔' : index === 4 ? '💰' : index === 5 ? '🔄' : index === 6 ? '❤️' : '🛡️'}
+              {:else if frameworkName === 'globalHealth'}
+                {index === 0 ? '🔬' : index === 1 ? '🏥' : index === 2 ? '🛡️' : index === 3 ? '📚' : index === 4 ? '🏭' : index === 5 ? '💪' : index === 6 ? '🌍' : '🌡️'}
+              {:else if frameworkName === 'phoenix'}
+                {index === 0 ? '📱' : index === 1 ? '🏗️' : index === 2 ? '🗂️' : index === 3 ? '💰' : index === 4 ? '🌱' : index === 5 ? '🌊' : index === 6 ? '🚀' : '🪶'}
+              {:else if frameworkName === 'aubi'}
+                {index === 0 ? '🌱' : index === 1 ? '💚' : index === 2 ? '🏛️' : index === 3 ? '📊' : index === 4 ? '💰' : index === 5 ? '🪶' : index === 6 ? '⚖️' : '🌍'}
+              {:else if frameworkName === 'synbio'}
+                {index === 0 ? '🛡️' : index === 1 ? '🏛️' : index === 2 ? '🌍' : index === 3 ? '⚖️' : index === 4 ? '🌾' : index === 5 ? '📡' : index === 6 ? '📚' : '🔬'}
+              {:else if frameworkName === 'gaianTrade'}
+                {index === 0 ? '📱' : index === 1 ? '🌱' : index === 2 ? '🏛️' : index === 3 ? '🚢' : index === 4 ? '💰' : index === 5 ? '🌊' : index === 6 ? '⚡' : '💚'}
+              {:else if frameworkName === 'migration'}
                 {index === 0 ? '🌡️' : index === 1 ? '💼' : index === 2 ? '🏛️' : index === 3 ? '⚖️' : '💻'}
               {:else if frameworkName === 'urban'}
                 {index === 0 ? '🏙️' : index === 1 ? '👥' : index === 2 ? '🌱' : index === 3 ? '🏠' : '🤝'}

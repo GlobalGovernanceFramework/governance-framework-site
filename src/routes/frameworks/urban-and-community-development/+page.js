@@ -1,4 +1,4 @@
-// src/routes/frameworks/docs/implementation/urban/+page.js
+// src/routes/frameworks/docs/implementation/urban-and-community-development/+page.js
 import { locale } from '$lib/i18n';
 import { get } from 'svelte/store';
 
