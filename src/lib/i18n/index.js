@@ -30,6 +30,7 @@ const pageSpecificTranslationsMap = [
   { route: '/frameworks/justice-systems', dataKey: 'justiceFramework', fileName: 'frameworksJusticeSystems' },
   { route: '/frameworks/disaster-risk-reduction', dataKey: 'disasterFramework', fileName: 'frameworksDisasterRiskReduction' },
   { route: '/frameworks/planetary-health-governance', dataKey: 'planetaryHealthGovernance', fileName: 'frameworksPlanetaryHealthGovernance' },
+  { route: '/frameworks/global-health-and-pandemic-security', dataKey: 'globalHealthPandemicSecurity', fileName: 'frameworksGlobalHealthAndPandemicSecurity' },
   { route: '/frameworks/indigenous-governance-and-traditional-knowledge', dataKey: 'indigenousFramework', fileName: 'frameworksIndigenousGovernanceAndTraditionalKnowledge' },
   { route: '/frameworks/peace-and-conflict-resolution', dataKey: 'peaceFramework', fileName: 'frameworksPeaceAndConflictResolution' },
   { route: '/frameworks/climate-and-energy-governance', dataKey: 'climateFramework', fileName: 'frameworksClimateAndEnergyGovernance' },

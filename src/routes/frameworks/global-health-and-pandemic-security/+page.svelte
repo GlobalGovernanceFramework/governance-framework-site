@@ -1,288 +1,830 @@
 <!-- src/routes/frameworks/global-health-and-pandemic-security/+page.svelte -->
 <script>
-  import { page } from '$app/stores';
   import { t, locale } from '$lib/i18n';
   import { browser } from '$app/environment';
   import { invalidate } from '$app/navigation';
   import { base } from '$app/paths';
+  import SectionNotice from '$lib/components/SectionNotice.svelte';
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
-  import FrameworkComingSoon from '$lib/components/FrameworkComingSoon.svelte';
-     
+  import { onMount, tick } from 'svelte';
+  import { slide } from 'svelte/transition';
+
   export let data;
 
-  $: if (browser && $locale) {
+  // Extract globalHealthPandemicSecurity translations for shorter references
+  $: ghps = $t('globalHealthPandemicSecurity') || {};
+  $: translationFunction = $t;
+  
+  // Debug logging
+  $: if (browser && mounted) {
+    console.log('Global Health & Pandemic Security translations:', ghps);
+    console.log('Has global health & pandemic security keys:', Object.keys(ghps));
+  }
+
+  // Keep track of which section is active (for sub-navigation)
+  let activeSection = 'index';
+
+  // This will track the current locale for our component
+  $: currentLocale = $locale;
+
+  // Check if we're in print mode - simplified to avoid hydration issues
+  let isPrintMode = false;
+  
+  // Client-side only initialization to avoid hydration mismatches
+  let mounted = false;
+  let initializing = true;
+
+  // If in print mode, we'll show all sections
+  $: sectionsToShow = (mounted && isPrintMode) ? Object.keys(data?.sections || {}) : [activeSection];
+
+  // Accordion states - initialize in a way that prevents hydration issues
+  let foundationOpen = false;
+  let governanceOpen = false;
+  let implementationOpen = false;
+  let toolsResourcesOpen = false;
+
+  // Dropdown states
+  let isDropdownOpen = false;
+
+  // Define section groupings for the Global Health & Pandemic Security framework
+  const sectionGroups = {
+    foundation: ['introduction', 'core-principles', 'universal-declaration'],
+    governance: ['governance-architecture', 'operational-systems', 'crisis-response'],
+    implementation: ['implementation-roadmap', 'funding-mechanisms', 'framework-integration', 'conclusion'],
+    toolsResources: ['appendices', 'at-a-glance', 'executive-summary-for-the-skeptic']
+  };
+
+  // Initialize accordion states after mount
+  function initializeAccordionStates() {
+    // Reset all accordions
+    foundationOpen = false;
+    governanceOpen = false;
+    implementationOpen = false;
+    toolsResourcesOpen = false;
+
+    // Set initial accordion states based on active section
+    if (activeSection === 'index') {
+      foundationOpen = true;
+    } else if (sectionGroups.foundation.includes(activeSection)) {
+      foundationOpen = true;
+    } else if (sectionGroups.governance.includes(activeSection)) {
+      governanceOpen = true;
+    } else if (sectionGroups.implementation.includes(activeSection)) {
+      implementationOpen = true;
+    } else if (sectionGroups.toolsResources.includes(activeSection)) {
+      toolsResourcesOpen = true;
+    } else {
+      // Default state for overview
+      foundationOpen = true;
+    }
+  }
+
+  onMount(async () => {
+    await tick(); // Wait for DOM to be ready
+    mounted = true;
+    
+    if (browser) {
+      // Check print mode only on client
+      const urlParams = new URLSearchParams(window.location.search);
+      isPrintMode = urlParams.get('print') === 'true';
+      
+      // Make this function available globally for the PDF generator
+      window.showAllSectionsForPrint = () => {
+        isPrintMode = true;
+      };
+
+      // Handle URL parameters and hash
+      const sectionParam = urlParams.get('section');
+      
+      if (sectionParam && data?.sections?.[sectionParam]) {
+        activeSection = sectionParam;
+      } else if (window.location.hash) {
+        const hash = window.location.hash.substring(1);
+        if (hash && data?.sections?.[hash]) {
+          activeSection = hash;
+        }
+      }
+
+      // Initialize accordion states after setting active section
+      initializeAccordionStates();
+
+      // Listen for hash changes
+      const handleHashChange = () => {
+        const hash = window.location.hash.substring(1);
+        if (hash && data?.sections?.[hash] && activeSection !== hash) {
+          activeSection = hash;
+          initializeAccordionStates();
+          
+          // Scroll to content
+          setTimeout(() => {
+            const contentElement = document.querySelector('.content');
+            if (contentElement) {
+              contentElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+          }, 100);
+        }
+      };
+
+      window.addEventListener('hashchange', handleHashChange);
+      
+      // Setup click outside handler for dropdowns
+      document.addEventListener('click', handleClickOutside);
+      
+      initializing = false;
+      
+      // Cleanup
+      return () => {
+        window.removeEventListener('hashchange', handleHashChange);
+        document.removeEventListener('click', handleClickOutside);
+        if (window.showAllSectionsForPrint) {
+          delete window.showAllSectionsForPrint;
+        }
+      };
+    }
+    
+    initializing = false;
+  });
+
+  // Function to set active section
+  function setActiveSection(section) {
+    if (!data?.sections?.[section]) return;
+    
+    activeSection = section;
+    initializeAccordionStates();
+    
+    if (browser) {
+      const url = new URL(window.location.href);
+      url.hash = section;
+      history.replaceState(null, '', url.toString());
+
+      setTimeout(() => {
+        const contentElement = document.querySelector('.section-content');
+        if (contentElement) {
+          contentElement.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start',
+            inline: 'nearest'
+          });
+        }
+      }, 100);
+    }
+  }
+
+  // Get section titles in current language using short references
+  function getSectionTitle(section) {
+    return ghps.sections?.[section] || section;
+  }
+
+  // Get section category titles using short references
+  function getSectionCategoryTitle(category) {
+    return ghps.categories?.[category] || category;
+  }
+
+  // Function to get shortened section titles for navigation using short references
+  function getShortSectionTitle(section) {
+    return ghps.sectionsShort?.[section] || getSectionTitle(section);
+  }
+
+  // Function to download the global health & pandemic security guide PDF
+  function downloadGlobalHealthPandemicSecurityGuide(version = '') {
+    const versionSuffix = version ? `-${version}` : '';
+    const pdfUrl = `${base}/assets/pdf/global-health-pandemic-security-guide${versionSuffix}-${currentLocale}.pdf`;
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = `global-health-pandemic-security-guide${versionSuffix}.pdf`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
+  // Computed values - add safety checks
+  $: allCoreSections = [
+    ...sectionGroups.foundation,
+    ...sectionGroups.governance,
+    ...sectionGroups.implementation
+  ];
+  $: isCoreSection = allCoreSections.includes(activeSection);
+  $: isToolsResourcesActive = sectionGroups.toolsResources.includes(activeSection);
+
+  // Toggle functions for accordions
+  function toggleFoundation() {
+    foundationOpen = !foundationOpen;
+  }
+
+  function toggleGovernance() {
+    governanceOpen = !governanceOpen;
+  }
+
+  function toggleImplementation() {
+    implementationOpen = !implementationOpen;
+  }
+
+  function toggleToolsResources() {
+    toolsResourcesOpen = !toolsResourcesOpen;
+  }
+
+  function toggleDropdown() {
+    isDropdownOpen = !isDropdownOpen;
+  }
+
+  // Close dropdowns when clicking outside
+  function handleClickOutside(event) {
+    if (!browser) return;
+    
+    const dropdown = document.querySelector('.card-actions .dropdown');
+    
+    if (dropdown && !dropdown.contains(event.target)) {
+      isDropdownOpen = false;
+    }
+  }
+
+  // Communication guides data
+  const communicationGuides = [
+    {
+      id: 'at-a-glance',
+      icon: '⚕️',
+      title: 'At-a-Glance Summary',
+      description: 'Quick 2-minute overview for busy health professionals'
+    },
+    {
+      id: 'executive-summary-for-the-skeptic',
+      icon: '🩺',
+      title: 'Executive Summary',
+      description: 'Evidence-based analysis for skeptical stakeholders'
+    },
+    {
+      id: 'universal-declaration',
+      icon: '🏥',
+      title: 'Universal Declaration',
+      description: 'Sacred covenant for health as a universal right'
+    }
+  ];
+
+  function selectCommunicationGuide(guide) {
+    setActiveSection(guide);
+    isDropdownOpen = false;
+  }
+
+  // Handle locale changes - add safety check
+  $: if (browser && mounted && $locale) {
     invalidate('app:locale');
   }
 </script>
 
-<div class="documentation-container">
-  <FrameworkSidebar />
+<svelte:head>
+  <title>{ghps.meta?.title || 'Global Health & Pandemic Security Framework - Global Governance Framework'}</title>
+  <meta name="description" content="{ghps.meta?.description || 'Community-controlled planetary immune system that prevents, detects, and defeats pandemics with speed, equity, and resilience while strengthening traditional knowledge and community sovereignty'}" />
+</svelte:head>
 
-  <div class="content">
-    <!-- Global Health & Pandemic Security Framework Coming Soon Card -->
-    <FrameworkComingSoon 
-      frameworkName="globalHealth"
-      icon="⚕️"
-      expectedQuarter="Q3 2025"
-      themeColors={{
-        primary: '#0369a1',
-        secondary: '#0284c7', 
-        accent: '#06b6d4',
-        light: '#f0f9ff'
-      }}
-      contactEmail="globalgovernanceframeworks@gmail.com"
-    />
+<SectionNotice 
+  type="warning" 
+  customContent={true}
+>
+  <p>{$t('common.notices.section.frameworks.text')}</p>
+</SectionNotice>
 
-    <!-- Additional Content Section -->
-    <div class="framework-preview">
-      <div class="preview-section">
-        <h2>🌍 Building Resilient Health Systems for All</h2>
-        <p>
-          The COVID-19 pandemic exposed critical gaps in global health preparedness and equity. Our framework addresses these challenges by strengthening health systems, ensuring equitable access to care, and building robust pandemic prevention mechanisms rooted in solidarity and scientific cooperation.
-        </p>
-        
-        <div class="key-principles">
-          <div class="principle-card">
-            <div class="principle-icon">🤝</div>
-            <h3>Health as a Human Right</h3>
-            <p>Universal healthcare access regardless of geography, income, or citizenship status</p>
-          </div>
-          
-          <div class="principle-card">
-            <div class="principle-icon">🔬</div>
-            <h3>Science-Based Prevention</h3>
-            <p>Early warning systems and rapid response grounded in open research and data sharing</p>
-          </div>
-          
-          <div class="principle-card">
-            <div class="principle-icon">⚖️</div>
-            <h3>Global Health Equity</h3>
-            <p>Addressing systemic inequalities that make communities vulnerable to health crises</p>
-          </div>
-          
-          <div class="principle-card">
-            <div class="principle-icon">🌱</div>
-            <h3>One Health Approach</h3>
-            <p>Recognizing connections between human, animal, and environmental health</p>
+{#if mounted}
+  <div class="documentation-container">
+    {#if !isPrintMode}
+      <FrameworkSidebar />
+    {/if}
+
+    <div class="content">
+      <!-- Entry Point Card for Communication Suite -->
+      {#if !isPrintMode && !isToolsResourcesActive && activeSection === 'index'}
+        <div class="communication-suite-card">
+          <div class="card-content">
+            <div class="card-icon">⚕️</div>
+            <div class="card-text">
+              <h3>{ghps.communicationCard?.title || 'How would you like to explore Global Health & Pandemic Security?'}</h3>
+              <p>{ghps.communicationCard?.description || 'Choose the format that best matches your needs and urgency level for pandemic preparedness.'}</p>
+            </div>
+            <div class="card-actions">
+              <div class="dropdown">
+                <button class="primary-btn dropdown-toggle" on:click={toggleDropdown}>
+                  {ghps.communicationCard?.buttonText || 'Choose Your Entry Point'} <span class="arrow-icon">▾</span>
+                </button>
+                {#if isDropdownOpen}
+                  <div class="dropdown-menu">
+                    {#each communicationGuides as guide}
+                      <button class="dropdown-item" on:click={() => selectCommunicationGuide(guide.id)}>
+                        <span class="comm-guide-icon">{guide.icon}</span>
+                        <div class="comm-guide-info">
+                          <span class="comm-guide-title">{guide.title}</span>
+                          <span class="comm-guide-desc">{guide.description}</span>
+                        </div>
+                      </button>
+                    {/each}
+                    <div class="dropdown-divider"></div>
+                    <button class="dropdown-item" on:click={() => { setActiveSection('introduction'); isDropdownOpen = false; }}>
+                      <span class="comm-guide-icon">🌍</span>
+                      <div class="comm-guide-info">
+                        <span class="comm-guide-title">Full Framework</span>
+                        <span class="comm-guide-desc">Complete planetary immune system architecture</span>
+                      </div>
+                    </button>
+                  </div>
+                {/if}
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      {/if}
 
-      <div class="preview-section">
-        <h2>🎯 Core Focus Areas</h2>
-        <div class="focus-areas">
-          <div class="focus-card prevention">
-            <div class="focus-icon">🛡️</div>
-            <h4>Pandemic Prevention & Preparedness</h4>
-            <p>Early warning systems, rapid response protocols, and coordinated international action to prevent outbreaks from becoming pandemics</p>
-            <ul>
-              <li>Global pathogen surveillance networks</li>
-              <li>Rapid vaccine and treatment development</li>
-              <li>International health emergency protocols</li>
-            </ul>
+      <!-- Sub-navigation for global health & pandemic security framework sections -->
+      {#if !isPrintMode && !initializing} 
+        <div class="section-nav">
+          <!-- Overview -->
+          <div class="nav-section">
+            <button 
+              class="nav-item overview-item" 
+              class:active={activeSection === 'index'}
+              on:click={() => setActiveSection('index')}
+            >
+              <span class="nav-icon">🏠</span>
+              <span class="nav-title">{getSectionCategoryTitle('overview')}</span>
+            </button>
           </div>
-          
-          <div class="focus-card access">
-            <div class="focus-icon">🏥</div>
-            <h4>Universal Health Access</h4>
-            <p>Ensuring everyone has access to quality healthcare services, from basic preventive care to emergency treatment and mental health support</p>
-            <ul>
-              <li>Community health worker networks</li>
-              <li>Telemedicine and digital health tools</li>
-              <li>Essential medicines and medical supplies</li>
-            </ul>
+
+          <!-- Foundation Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={foundationOpen}
+              class:has-active={sectionGroups.foundation.some(section => activeSection === section)}
+              on:click={toggleFoundation}
+            >
+              <span class="accordion-icon">⚕️</span>
+              <span class="accordion-title">{getSectionCategoryTitle('foundation')}</span>
+              <span class="section-count">({sectionGroups.foundation.length})</span>
+              <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
+            </button>
+            {#if foundationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === 'introduction'}
+                  on:click={() => setActiveSection('introduction')}
+                >
+                  <span class="nav-icon">🌍</span>
+                  <span class="nav-title">{getShortSectionTitle('introduction')}</span>
+                </button>
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === 'core-principles'}
+                  on:click={() => setActiveSection('core-principles')}
+                >
+                  <span class="nav-icon">⚖️</span>
+                  <span class="nav-title">{getShortSectionTitle('core-principles')}</span>
+                </button>
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === 'universal-declaration'}
+                  on:click={() => setActiveSection('universal-declaration')}
+                >
+                  <span class="nav-icon">🏥</span>
+                  <span class="nav-title">{getShortSectionTitle('universal-declaration')}</span>
+                </button>
+              </div>
+            {/if}
           </div>
-          
-          <div class="focus-card systems">
-            <div class="focus-icon">💪</div>
-            <h4>Health System Strengthening</h4>
-            <p>Building resilient healthcare infrastructure that can withstand crises while providing consistent, quality care to all populations</p>
-            <ul>
-              <li>Healthcare workforce development</li>
-              <li>Supply chain resilience</li>
-              <li>Health facility modernization</li>
-            </ul>
+
+          <!-- Governance & Architecture Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={governanceOpen}
+              class:has-active={sectionGroups.governance.some(section => activeSection === section)}
+              on:click={toggleGovernance}
+            >
+              <span class="accordion-icon">🏛️</span>
+              <span class="accordion-title">{getSectionCategoryTitle('governance')}</span>
+              <span class="section-count">({sectionGroups.governance.length})</span>
+              <span class="toggle-arrow" class:rotated={governanceOpen}>▼</span>
+            </button>
+            {#if governanceOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === 'governance-architecture'}
+                  on:click={() => setActiveSection('governance-architecture')}
+                >
+                  <span class="nav-icon">🧠</span>
+                  <span class="nav-title">{getShortSectionTitle('governance-architecture')}</span>
+                </button>
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === 'operational-systems'}
+                  on:click={() => setActiveSection('operational-systems')}
+                >
+                  <span class="nav-icon">⚙️</span>
+                  <span class="nav-title">{getShortSectionTitle('operational-systems')}</span>
+                </button>
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === 'crisis-response'}
+                  on:click={() => setActiveSection('crisis-response')}
+                >
+                  <span class="nav-icon">🚨</span>
+                  <span class="nav-title">{getShortSectionTitle('crisis-response')}</span>
+                </button>
+              </div>
+            {/if}
           </div>
-          
-          <div class="focus-card research">
-            <div class="focus-icon">🧬</div>
-            <h4>Open Health Research</h4>
-            <p>Collaborative research platforms that accelerate medical breakthroughs while ensuring knowledge remains accessible to all</p>
-            <ul>
-              <li>Open-source drug development</li>
-              <li>Global health data commons</li>
-              <li>Research capacity building</li>
-            </ul>
+
+          <!-- Implementation Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={implementationOpen}
+              class:has-active={sectionGroups.implementation.some(section => activeSection === section)}
+              on:click={toggleImplementation}
+            >
+              <span class="accordion-icon">🚀</span>
+              <span class="accordion-title">{getSectionCategoryTitle('implementation')}</span>
+              <span class="section-count">({sectionGroups.implementation.length})</span>
+              <span class="toggle-arrow" class:rotated={implementationOpen}>▼</span>
+            </button>
+            {#if implementationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === 'implementation-roadmap'}
+                  on:click={() => setActiveSection('implementation-roadmap')}
+                >
+                  <span class="nav-icon">🗺️</span>
+                  <span class="nav-title">{getShortSectionTitle('implementation-roadmap')}</span>
+                </button>
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === 'funding-mechanisms'}
+                  on:click={() => setActiveSection('funding-mechanisms')}
+                >
+                  <span class="nav-icon">💰</span>
+                  <span class="nav-title">{getShortSectionTitle('funding-mechanisms')}</span>
+                </button>
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === 'framework-integration'}
+                  on:click={() => setActiveSection('framework-integration')}
+                >
+                  <span class="nav-icon">🌐</span>
+                  <span class="nav-title">{getShortSectionTitle('framework-integration')}</span>
+                </button>
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === 'conclusion'}
+                  on:click={() => setActiveSection('conclusion')}
+                >
+                  <span class="nav-icon">🎯</span>
+                  <span class="nav-title">{getShortSectionTitle('conclusion')}</span>
+                </button>
+              </div>
+            {/if}
+          </div>
+
+          <!-- Tools & Resources Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={toolsResourcesOpen}
+              class:has-active={isToolsResourcesActive}
+              on:click={toggleToolsResources}
+            >
+              <span class="accordion-icon">🧰</span>
+              <span class="accordion-title">{getSectionCategoryTitle('toolsResources')}</span>
+              <span class="section-count">({sectionGroups.toolsResources.length})</span>
+              <span class="toggle-arrow" class:rotated={toolsResourcesOpen}>▼</span>
+            </button>
+            {#if toolsResourcesOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === 'appendices'}
+                  on:click={() => setActiveSection('appendices')}
+                >
+                  <span class="nav-icon">📚</span>
+                  <span class="nav-title">{getShortSectionTitle('appendices')}</span>
+                </button>
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === 'at-a-glance'}
+                  on:click={() => setActiveSection('at-a-glance')}
+                >
+                  <span class="nav-icon">⚕️</span>
+                  <span class="nav-title">{getShortSectionTitle('at-a-glance')}</span>
+                </button>
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === 'executive-summary-for-the-skeptic'}
+                  on:click={() => setActiveSection('executive-summary-for-the-skeptic')}
+                >
+                  <span class="nav-icon">🩺</span>
+                  <span class="nav-title">{getShortSectionTitle('executive-summary-for-the-skeptic')}</span>
+                </button>
+              </div>
+            {/if}
           </div>
         </div>
-      </div>
+      {/if}
 
-      <div class="preview-section">
-        <h2>🚨 Learning from COVID-19</h2>
-        <p>The pandemic taught us valuable lessons about what works and what needs improvement:</p>
-        <div class="lessons-grid">
-          <div class="lesson-card success">
-            <h4>✅ What Worked</h4>
-            <ul>
-              <li>Rapid vaccine development through global collaboration</li>
-              <li>Community health measures when supported properly</li>
-              <li>Digital health tools for remote care delivery</li>
-              <li>Scientific cooperation and data sharing</li>
-            </ul>
+      <!-- Progress indicator for core sections -->
+      {#if !isPrintMode && isCoreSection && allCoreSections.length > 0}
+        <div class="progress-indicator">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: {((allCoreSections.indexOf(activeSection) + 1) / allCoreSections.length * 100)}%"></div>
           </div>
-          
-          <div class="lesson-card challenge">
-            <h4>⚠️ Critical Gaps</h4>
-            <ul>
-              <li>Massive inequalities in vaccine and treatment access</li>
-              <li>Fragmented international coordination</li>
-              <li>Weak health systems in many regions</li>
-              <li>Insufficient investment in prevention</li>
-            </ul>
-          </div>
+          <span class="progress-text">{ghps.progress?.text?.replace('{current}', allCoreSections.indexOf(activeSection) + 1).replace('{total}', allCoreSections.length) || `Section ${allCoreSections.indexOf(activeSection) + 1} of ${allCoreSections.length}`}</span>
         </div>
-      </div>
+      {/if}
 
-      <div class="preview-section">
-        <h2>🌐 Potential Implementation Approach</h2>
-        <div class="implementation-areas">
-          <div class="impl-card">
-            <h4>🔬 Global Health Observatory</h4>
-            <p>Enhanced surveillance and early warning systems that can detect and track emerging health threats in real-time</p>
-          </div>
-          
-          <div class="impl-card">
-            <h4>🏭 Medical Manufacturing Security</h4>
-            <p>Distributed production networks ensuring rapid scaling of vaccines, treatments, and medical supplies during emergencies</p>
-          </div>
-          
-          <div class="impl-card">
-            <h4>💊 Global Medicine Access</h4>
-            <p>Mechanisms to ensure essential medicines and vaccines reach all populations, not just wealthy countries</p>
-          </div>
-          
-          <div class="impl-card">
-            <h4>👩‍⚕️ Health Workforce Mobility</h4>
-            <p>Coordination systems allowing health workers to rapidly deploy where needed most during crises</p>
-          </div>
-          
-          <div class="impl-card">
-            <h4>📊 Health Data Commons</h4>
-            <p>Secure, interoperable systems for sharing health data while protecting individual privacy</p>
-          </div>
-          
-          <div class="impl-card">
-            <h4>🌍 Climate Health Adaptation</h4>
-            <p>Preparing health systems for climate-related health impacts like extreme heat, vector-borne diseases, and displacement</p>
-          </div>
-        </div>
-      </div>
+      <!-- Show active section, or all sections in print mode -->
+      {#each sectionsToShow as section (section)}
+        {#if data?.sections?.[section]}
+          <div class="section-content" id={section}>
+            <!-- Language fallback notice -->
+            {#if !isPrintMode && data.sectionsUsingEnglishFallback?.includes(section) && section !== 'index'}
+              <div class="language-fallback-notice">
+                <div class="notice-icon">🌐</div>
+                <div class="notice-content">
+                  <strong>{ghps.languageFallback?.title || 'Content in your language coming soon'}</strong>
+                  <p>{ghps.languageFallback?.description || 'This section is currently displayed in English until translation is complete.'}</p>
+                </div>
+              </div>
+            {/if}
+            
+            <!-- Render ALL sections including index from markdown files -->
+            <svelte:component this={data.sections[section].default} t={translationFunction} />
 
-      <div class="preview-section">
-        <h2>🤝 Building on Existing Efforts</h2>
-        <p>This framework would complement and strengthen existing global health initiatives:</p>
-        <div class="existing-efforts">
-          <div class="effort-item">
-            <span class="effort-icon">🏛️</span>
-            <strong>WHO Reform</strong> - Supporting World Health Organization modernization
-          </div>
-          <div class="effort-item">
-            <span class="effort-icon">💰</span>
-            <strong>Pandemic Fund</strong> - Expanding resources for prevention and preparedness
-          </div>
-          <div class="effort-item">
-            <span class="effort-icon">🔬</span>
-            <strong>CEPI & GAVI</strong> - Strengthening vaccine development and distribution
-          </div>
-          <div class="effort-item">
-            <span class="effort-icon">📊</span>
-            <strong>Global Health Security</strong> - Building on existing surveillance networks
-          </div>
-          <div class="effort-item">
-            <span class="effort-icon">🌍</span>
-            <strong>One Health Networks</strong> - Integrating human, animal, and environmental health
-          </div>
-          <div class="effort-item">
-            <span class="effort-icon">🏥</span>
-            <strong>UHC 2030</strong> - Advancing universal health coverage goals
-          </div>
-        </div>
-      </div>
+            <!-- Navigation for communication documents -->
+            {#if isToolsResourcesActive && !isPrintMode}
+              <div class="communication-navigation">
+                <div class="nav-description">
+                  <h3>Communication Suite</h3>
+                  <p>These documents provide different entry points to the Global Health & Pandemic Security Framework for various audiences and urgency levels.</p>
+                </div>
+                <div class="communication-grid">
+                  {#each communicationGuides as guide}
+                    <button 
+                      class="communication-card" 
+                      class:active={activeSection === guide.id}
+                      on:click={() => setActiveSection(guide.id)}
+                    >
+                      <div class="comm-card-icon">{guide.icon}</div>
+                      <div class="comm-card-title">{guide.title}</div>
+                      <div class="comm-card-desc">{guide.description}</div>
+                    </button>
+                  {/each}
+                </div>
+                <div class="nav-actions">
+                  <button class="secondary-btn" on:click={() => downloadGlobalHealthPandemicSecurityGuide()}>
+                    {ghps.navigation?.downloadPdf || 'Download PDF Version'} <span class="download-icon">↓</span>
+                  </button>
+                  <button class="primary-btn" on:click={() => setActiveSection('introduction')}>
+                    {ghps.navigation?.continueToFramework || 'Explore Full Framework'} <span class="arrow-icon">→</span>
+                  </button>
+                </div>
+              </div>
+            {/if}
 
-      <div class="preview-section">
-        <h2>💡 Innovation Opportunities</h2>
-        <div class="innovation-areas">
-          <div class="innovation-item">
-            <div class="innovation-icon">🤖</div>
-            <h4>AI-Powered Early Warning</h4>
-            <p>Machine learning systems that can predict and track disease outbreaks from multiple data sources</p>
+            <!-- Section navigation at bottom of core sections -->
+            {#if isCoreSection && !isPrintMode && allCoreSections.length > 0}
+              <div class="section-navigation">
+                {#if allCoreSections.indexOf(activeSection) > 0}
+                  <button class="nav-btn prev-btn" on:click={() => {
+                    const currentIndex = allCoreSections.indexOf(activeSection);
+                    const prevSection = allCoreSections[currentIndex - 1];
+                    setActiveSection(prevSection);
+                  }}>
+                    ← {ghps.navigation?.previousSection || 'Previous Section'}
+                  </button>
+                {/if}
+                
+                {#if allCoreSections.indexOf(activeSection) < allCoreSections.length - 1}
+                  <button class="nav-btn next-btn" on:click={() => {
+                    const currentIndex = allCoreSections.indexOf(activeSection);
+                    const nextSection = allCoreSections[currentIndex + 1];
+                    setActiveSection(nextSection);
+                  }}>
+                    {ghps.navigation?.nextSection || 'Next Section'} →
+                  </button>
+                {/if}
+              </div>
+            {/if}
           </div>
-          
-          <div class="innovation-item">
-            <div class="innovation-icon">🧬</div>
-            <h4>Rapid Countermeasure Development</h4>
-            <p>Platform technologies that can quickly develop vaccines and treatments for new pathogens</p>
+        {:else}
+          <div class="missing-section">
+            <h2>{ghps.errors?.sectionNotFound?.replace('{section}', section) || `Section "${section}" not found`}</h2>
+            <p>{ghps.errors?.contentInDevelopment || 'This content is still being developed.'}</p>
           </div>
-          
-          <div class="innovation-item">
-            <div class="innovation-icon">📱</div>
-            <h4>Digital Health Equity</h4>
-            <p>Mobile health tools that work in low-resource settings and support community health workers</p>
-          </div>
-          
-          <div class="innovation-item">
-            <div class="innovation-icon">🌐</div>
-            <h4>Decentralized Manufacturing</h4>
-            <p>Distributed production networks that can rapidly scale medical supplies during emergencies</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="preview-section">
-        <h2>🔗 Framework Connections</h2>
-        <p>Global Health & Pandemic Security integrates with other governance frameworks:</p>
-        <div class="connections-grid">
-          <div class="connection-item">
-            <span class="connection-icon">⚖️</span>
-            <strong>Treaty for Our Only Home</strong> - Legal frameworks for health emergency response
-          </div>
-          <div class="connection-item">
-            <span class="connection-icon">🌱</span>
-            <strong>Planetary Health</strong> - Addressing environmental health determinants
-          </div>
-          <div class="connection-item">
-            <span class="connection-icon">🧬</span>
-            <strong>Biotech Governance</strong> - Ethical oversight of health technology development
-          </div>
-          <div class="connection-item">
-            <span class="connection-icon">🏛️</span>
-            <strong>Justice Systems</strong> - Health rights enforcement and accountability
-          </div>
-          <div class="connection-item">
-            <span class="connection-icon">💚</span>
-            <strong>Economic Integration</strong> - Health system financing and sustainability
-          </div>
-          <div class="connection-item">
-            <span class="connection-icon">🎓</span>
-            <strong>Educational Systems</strong> - Health literacy and professional training
-          </div>
-        </div>
-      </div>
-
-      <div class="preview-section realistic-tone">
-        <h2>⚖️ A Balanced Approach</h2>
-        <p>
-          We approach this framework with both hope and realism. Building effective global health governance is complex, requiring careful balance between national sovereignty and collective action, scientific rigor and rapid response, innovation and equity.
-        </p>
-        <p>
-          Our goal is not to create another bureaucratic layer, but to strengthen coordination, fill critical gaps, and ensure that future health crises don't devastate communities the way COVID-19 has. We're committed to learning from existing efforts, supporting proven initiatives, and focusing on practical solutions that can make a real difference.
-        </p>
-      </div>
+        {/if}
+      {/each}
     </div>
   </div>
-</div>
+{:else}
+  <!-- Loading state to prevent hydration issues -->
+  <div class="loading-container">
+    <div class="loading-spinner"></div>
+    <p>{ghps.loading?.text || 'Loading global health & pandemic security framework content...'}</p>
+  </div>
+{/if}
 
 <style>
+  /* Global Health & Pandemic Security color scheme - medical reds, healing blues, and immunity whites */
+  :root {
+    --health-primary: #dc2626; /* Medical Red - urgency, action, life-saving */
+    --health-secondary: #1d4ed8; /* Medical Blue - trust, healing, professional care */
+    --health-accent: #059669; /* Immunity Green - health, recovery, resilience */
+    --health-emergency: #b91c1c; /* Emergency Red - crisis response, critical care */
+    --health-deep: #1e3a8a; /* Deep Blue - depth, expertise, medical authority */
+    --health-bright: #3b82f6; /* Bright Blue - innovation, technology, modern medicine */
+    --health-care: #06b6d4; /* Care Cyan - compassion, global health, accessibility */
+    --health-warm: #f59e0b; /* Warm Amber - community, warmth, traditional healing */
+  }
+
+  .section-nav {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e5e7eb;
+    background: linear-gradient(to bottom, #fef2f2, #fee2e2);
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+
+  .nav-section {
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-accordion {
+    margin-bottom: 0.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    overflow: hidden;
+    background: white;
+  }
+
+  .accordion-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #374151;
+    text-align: left;
+  }
+
+  .accordion-header:hover {
+    background-color: rgba(220, 38, 38, 0.05);
+  }
+
+  .accordion-header.has-active {
+    background-color: rgba(220, 38, 38, 0.1);
+    color: var(--health-primary);
+    font-weight: 600;
+  }
+
+  .accordion-header.open {
+    background-color: rgba(220, 38, 38, 0.1);
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .accordion-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .accordion-title {
+    flex-grow: 1;
+    font-weight: 600;
+  }
+
+  .section-count {
+    font-size: 0.8rem;
+    color: #6b7280;
+    font-weight: 400;
+  }
+
+  .toggle-arrow {
+    font-size: 0.8rem;
+    color: #6b7280;
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .toggle-arrow.rotated {
+    transform: rotate(180deg);
+  }
+
+  .accordion-content {
+    border-top: 1px solid #e5e7eb;
+    background-color: #fafafa;
+  }
+
+  .nav-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+    color: #4b5563;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  .nav-item:hover {
+    background-color: rgba(220, 38, 38, 0.05);
+    color: #374151;
+  }
+
+  .nav-item.active {
+    background-color: var(--health-primary);
+    color: white;
+    font-weight: 600;
+  }
+
+  .nav-item.active:hover {
+    background-color: var(--health-emergency);
+  }
+
+  .overview-item {
+    background: linear-gradient(135deg, rgba(220, 38, 38, 0.1), rgba(29, 78, 216, 0.1));
+    border: 1px solid rgba(220, 38, 38, 0.2);
+    border-radius: 0.375rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .overview-item.active {
+    background: var(--health-primary);
+    color: white;
+  }
+
+  .subsection-item {
+    padding-left: 1.5rem;
+  }
+
+  .nav-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .nav-title {
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  /* Progress indicator */
+  .progress-indicator {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: linear-gradient(90deg, rgba(220, 38, 38, 0.1), rgba(29, 78, 216, 0.1));
+    border-radius: 0.5rem;
+    border-left: 4px solid var(--health-primary);
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--health-primary), var(--health-secondary));
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+
+  .progress-text {
+    font-size: 0.875rem;
+    color: var(--health-primary);
+    font-weight: 500;
+  }
+  
+  .section-content {
+    padding-top: 1rem;
+    scroll-margin-top: 2rem;
+  }
+
   .documentation-container {
     display: grid;
     grid-template-columns: 250px 1fr;
@@ -296,325 +838,533 @@
     .documentation-container {
       grid-template-columns: 1fr;
     }
+
+    .section-nav {
+      padding: 0.75rem;
+    }
+
+    .accordion-header {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-item {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.85rem;
+    }
+
+    .subsection-item {
+      padding-left: 1rem;
+    }
   }
   
   .content {
     min-width: 0;
   }
-
-  .framework-preview {
-    margin-top: 3rem;
-  }
-
-  .preview-section {
-    margin-bottom: 3rem;
-    padding: 2rem;
-    background: linear-gradient(135deg, rgba(3, 105, 161, 0.05) 0%, rgba(2, 132, 199, 0.05) 100%);
-    border-radius: 1rem;
-    border-left: 4px solid #0369a1;
-  }
-
-  .preview-section.realistic-tone {
-    background: linear-gradient(135deg, rgba(75, 85, 99, 0.05) 0%, rgba(107, 114, 128, 0.05) 100%);
-    border-left-color: #6b7280;
-  }
-
-  .preview-section h2 {
-    color: #0369a1;
+  
+  /* Additional styles for markdown content */
+  .content :global(h1) {
+    font-size: 2rem;
+    font-weight: 700;
     margin-bottom: 1.5rem;
+    color: var(--health-primary);
+  }
+  
+  .content :global(h2) {
     font-size: 1.5rem;
-  }
-
-  .realistic-tone h2 {
-    color: #6b7280;
-  }
-
-  .key-principles {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    font-weight: 600;
     margin-top: 2rem;
-  }
-
-  .principle-card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 0.75rem;
-    box-shadow: 0 4px 6px rgba(3, 105, 161, 0.1);
-    border: 1px solid rgba(3, 105, 161, 0.2);
-  }
-
-  .principle-icon {
-    font-size: 2rem;
     margin-bottom: 1rem;
+    color: var(--health-emergency);
   }
-
-  .principle-card h3 {
-    color: #0369a1;
-    margin-bottom: 0.75rem;
-    font-size: 1.1rem;
-  }
-
-  .principle-card p {
-    color: #4b5563;
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
-
-  .focus-areas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
+  
+  .content :global(h3) {
+    font-size: 1.25rem;
+    font-weight: 600;
     margin-top: 1.5rem;
-  }
-
-  .focus-card {
-    padding: 1.5rem;
-    border-radius: 0.75rem;
-    border: 2px solid;
-    background: rgba(255, 255, 255, 0.7);
-  }
-
-  .focus-card.prevention {
-    border-color: #059669;
-    background: rgba(5, 150, 105, 0.05);
-  }
-
-  .focus-card.access {
-    border-color: #dc2626;
-    background: rgba(220, 38, 38, 0.05);
-  }
-
-  .focus-card.systems {
-    border-color: #7c3aed;
-    background: rgba(124, 58, 237, 0.05);
-  }
-
-  .focus-card.research {
-    border-color: #ea580c;
-    background: rgba(234, 88, 12, 0.05);
-  }
-
-  .focus-icon {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  .focus-card h4 {
     margin-bottom: 0.75rem;
+    color: var(--health-secondary);
+  }
+
+  :global(h4) {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--health-accent);
+  }
+
+  :global(blockquote) {
+    background-color: rgba(59, 130, 246, 0.1);
+    border-left: 4px solid var(--health-care);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0.5rem;
+  }
+
+  :global(blockquote > p:first-child strong) {
     font-size: 1.1rem;
+    color: var(--health-care);
+    display: block;
+    margin-bottom: 0.75rem;
   }
-
-  .focus-card.prevention h4 { color: #059669; }
-  .focus-card.access h4 { color: #dc2626; }
-  .focus-card.systems h4 { color: #7c3aed; }
-  .focus-card.research h4 { color: #ea580c; }
-
-  .focus-card p {
-    color: #4b5563;
-    font-size: 0.9rem;
-    line-height: 1.5;
+  
+  .content :global(p) {
     margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #4b5563;
+  }
+  
+  /* Lists with health-themed bullets */
+  .content :global(ul), .content :global(ol) {
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    color: #4b5563;
   }
 
-  .focus-card ul {
-    list-style: none;
-    padding: 0;
+  .content :global(ul) {
+    list-style-type: none;
+  }
+
+  .content :global(ul li) {
+    position: relative;
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+  }
+
+  .content :global(ul li:not(.section-nav li))::before {
+    content: "⚕️";
+    position: absolute;
+    left: 0;
+    top: 0.1em;
+    font-size: 0.9rem;
+  }
+
+  .content :global(ol) {
+    list-style-type: decimal;
+  }
+
+  .content :global(ol li) {
+    margin-bottom: 0.75rem;
+    padding-left: 0.5rem;
+  }
+
+  .content :global(ol li::marker) {
+    color: var(--health-primary);
+    font-weight: 600;
+  }
+
+  .content :global(ul ul li::before) {
+    content: "🩺";
+    color: var(--health-accent);
+  }
+
+  /* Communication Suite Card */
+  .communication-suite-card {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(220, 38, 38, 0.1) 100%);
+    border-radius: 0.75rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(220, 38, 38, 0.1);
+    border: 1px solid rgba(220, 38, 38, 0.2);
+    overflow: visible !important;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .card-icon {
+    font-size: 2.5rem;
+    color: var(--health-primary);
+    flex-shrink: 0;
+  }
+  
+  .card-text {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .card-text h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--health-primary);
+    font-size: 1.25rem;
+  }
+  
+  .card-text p {
     margin: 0;
+    color: #4b5563;
+    font-size: 1rem;
+  }
+  
+  .card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    position: relative;
+    overflow: visible;
+  }
+  
+  .primary-btn {
+    background-color: var(--health-primary);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .primary-btn:hover {
+    background-color: var(--health-emergency);
+    transform: translateY(-1px);
   }
 
-  .focus-card li {
+  .secondary-btn {
+    background-color: white;
+    color: var(--health-primary);
+    border: 1px solid var(--health-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .secondary-btn:hover {
+    background-color: rgba(59, 130, 246, 0.1);
+    transform: translateY(-1px);
+  }
+
+  .arrow-icon {
+    display: inline-block;
+    margin-left: 0.25rem;
+  }
+
+  .download-icon {
+    display: inline-block;
+    margin-left: 0.25rem;
+  }
+
+  /* Dropdown styles */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    min-width: 350px;
+    max-width: 400px;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    background-color: #fff;
+    border: 1px solid rgba(220, 38, 38, 0.3);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+    white-space: normal;
+    display: block;
+  }
+
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    color: #212529;
+    text-align: inherit;
+    white-space: normal;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .dropdown-item:hover {
+    background-color: rgba(59, 130, 246, 0.1);
+    color: var(--health-primary);
+  }
+
+  .dropdown-divider {
+    height: 1px;
+    background-color: #e5e7eb;
+    margin: 0.5rem 0;
+  }
+  
+  .comm-guide-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+  }
+  
+  .comm-guide-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .comm-guide-title {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: var(--health-primary);
+  }
+  
+  .comm-guide-desc {
+    font-size: 0.875rem;
     color: #6b7280;
-    font-size: 0.85rem;
-    line-height: 1.4;
+  }
+
+  /* Communication Navigation */
+  .communication-navigation {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--health-primary);
+  }
+
+  .nav-description {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .nav-description h3 {
+    color: var(--health-primary);
     margin-bottom: 0.5rem;
-    padding-left: 1rem;
-    position: relative;
   }
 
-  .focus-card li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: inherit;
-  }
-
-  .lessons-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-  }
-
-  .lesson-card {
-    padding: 1.5rem;
-    border-radius: 0.75rem;
-    background: rgba(255, 255, 255, 0.7);
-  }
-
-  .lesson-card.success {
-    border: 2px solid #059669;
-    background: rgba(5, 150, 105, 0.05);
-  }
-
-  .lesson-card.challenge {
-    border: 2px solid #f59e0b;
-    background: rgba(245, 158, 11, 0.05);
-  }
-
-  .lesson-card h4 {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-  }
-
-  .lesson-card.success h4 { color: #059669; }
-  .lesson-card.challenge h4 { color: #d97706; }
-
-  .lesson-card ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .lesson-card li {
-    color: #4b5563;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin-bottom: 0.75rem;
-    padding-left: 1rem;
-    position: relative;
-  }
-
-  .lesson-card li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-  }
-
-  .implementation-areas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-  }
-
-  .impl-card {
-    background: rgba(255, 255, 255, 0.7);
-    padding: 1.5rem;
-    border-radius: 0.75rem;
-    border: 1px solid rgba(3, 105, 161, 0.2);
-  }
-
-  .impl-card h4 {
-    color: #0369a1;
-    margin-bottom: 0.75rem;
+  .nav-description p {
+    color: #6b7280;
     font-size: 1rem;
   }
 
-  .impl-card p {
-    color: #4b5563;
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
-
-  .existing-efforts {
+  .communication-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
-    margin-top: 1.5rem;
+    margin-bottom: 2rem;
   }
 
-  .effort-item {
+  .communication-card {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 0.75rem;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 0.5rem;
-    border: 1px solid rgba(3, 105, 161, 0.2);
-  }
-
-  .effort-icon {
-    font-size: 1.5rem;
-  }
-
-  .effort-item strong {
-    color: #0369a1;
-  }
-
-  .innovation-areas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-  }
-
-  .innovation-item {
-    background: rgba(255, 255, 255, 0.7);
     padding: 1.5rem;
+    border: 2px solid #e5e7eb;
     border-radius: 0.75rem;
-    border: 1px solid rgba(3, 105, 161, 0.2);
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s;
     text-align: center;
   }
 
-  .innovation-icon {
-    font-size: 2rem;
+  .communication-card:hover {
+    border-color: var(--health-primary);
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .communication-card.active {
+    border-color: var(--health-primary);
+    background: rgba(59, 130, 246, 0.1);
+  }
+
+  .comm-card-icon {
+    font-size: 2.5rem;
     margin-bottom: 1rem;
   }
 
-  .innovation-item h4 {
-    color: #0369a1;
-    margin-bottom: 0.75rem;
-    font-size: 1rem;
+  .comm-card-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--health-primary);
+    margin-bottom: 0.5rem;
   }
 
-  .innovation-item p {
-    color: #4b5563;
+  .comm-card-desc {
     font-size: 0.9rem;
+    color: #6b7280;
+  }
+
+  .nav-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  /* Link styles for content */
+  .content :global(a) {
+    color: var(--health-emergency);
+    text-decoration: underline;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+
+  .content :global(a:hover) {
+    color: var(--health-primary);
+    text-decoration: underline;
+  }
+
+  /* Section navigation for core framework sections */
+  .section-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .nav-btn {
+    background-color: var(--health-primary);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .nav-btn:hover {
+    background-color: var(--health-emergency);
+    transform: translateY(-1px);
+  }
+
+  .prev-btn {
+    margin-right: auto;
+  }
+
+  .next-btn {
+    margin-left: auto;
+  }
+
+  /* Language fallback notice */
+  .language-fallback-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: rgba(220, 38, 38, 0.1);
+    border: 1px solid rgba(220, 38, 38, 0.3);
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .notice-icon {
+    font-size: 1.25rem;
+    color: var(--health-primary);
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+  }
+
+  .notice-content {
+    flex: 1;
+  }
+
+  .notice-content strong {
+    color: var(--health-primary);
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .notice-content p {
+    color: #4b5563;
+    font-size: 0.875rem;
+    margin: 0;
     line-height: 1.5;
   }
 
-  .connections-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    margin-top: 1.5rem;
-  }
-
-  .connection-item {
+  /* Loading spinner */
+  .loading-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 0.75rem;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.6);
+    justify-content: center;
+    min-height: 400px;
+    gap: 1rem;
+  }
+
+  .loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #e5e7eb;
+    border-top: 4px solid var(--health-primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* Missing section styling */
+  .missing-section {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(220, 38, 38, 0.05);
     border-radius: 0.5rem;
-    border: 1px solid rgba(3, 105, 161, 0.2);
+    border: 1px solid rgba(220, 38, 38, 0.2);
   }
 
-  .connection-icon {
-    font-size: 1.5rem;
+  .missing-section h2 {
+    color: var(--health-primary);
+    margin-bottom: 1rem;
   }
 
-  .connection-item strong {
-    color: #0369a1;
+  .missing-section p {
+    color: #6b7280;
   }
 
-  @media (max-width: 768px) {
-    .preview-section {
-      padding: 1.5rem;
+  @media (max-width: 640px) {
+    .card-content {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
     }
     
-    .key-principles,
-    .focus-areas,
-    .lessons-grid,
-    .implementation-areas,
-    .innovation-areas {
+    .card-actions {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .section-navigation {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .section-navigation button {
+      width: 100%;
+    }
+
+    .communication-grid {
       grid-template-columns: 1fr;
     }
-    
-    .existing-efforts,
-    .connections-grid {
-      grid-template-columns: 1fr;
+
+    .nav-actions {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .nav-actions button {
+      width: 100%;
     }
   }
 </style>

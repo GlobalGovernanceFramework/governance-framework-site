@@ -33,6 +33,7 @@ Available categories:
 - environmental-stewardship
 - biodiversity
 - planetary-health-governance
+- global-health-and-pandemic-security
 - consciousness-and-inner-development
 - aging-population-support-governance
 - animal-welfare-governance 
@@ -71,6 +72,7 @@ const outputDirs = {
   'governance': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'governance'),
   'biodiversity-governance': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'biodiversity-governance'),
   'planetary-health-governance': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'planetary-health-governance'),
+  'global-health-and-pandemic-security': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'global-health-and-pandemic-security'),
   'mental-health-governance': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'mental-health-governance'),
   'consciousness-and-inner-development': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'consciousness-and-inner-development'),
   'youth': path.join(__dirname, '..', 'static', 'frameworks','tools', 'youth'),
@@ -4928,6 +4930,59 @@ const tools = [
       'cross-cutting-policies',
       'framework-integration',
       'implementation-roadmap',
+      'conclusion',
+      'appendices'
+    ]
+  },
+
+  // Global Health & Pandemic Security Framework
+  {
+    name: 'universal-declaration-health-rights',
+    category: 'global-health-and-pandemic-security',
+    fileNames: {
+      en: 'universal-declaration-health-rights',
+      sv: 'universal-declaration-health-rights'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'global-health-and-pandemic-security'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'global-health-and-pandemic-security')
+    },
+    pageFooter: {
+      en: 'Global Health & Pandemic Security Framework - Universal Declaration of Health Rights',
+      sv: 'Globalt ramverk för hälsa och pandemisäkerhet - Allmänna förklaringen om hälsorättigheter'
+    }
+  },
+  {
+    name: 'global-health-and-pandemic-security-framework',
+    category: 'global-health-and-pandemic-security',
+    fileNames: {
+      en: 'Global-Health-&-Pandemic-Security-Framework',
+      sv: 'Global-Health-&-Pandemic-Security-Framework'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'global-health-and-pandemic-security'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'global-health-and-pandemic-security')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Global Health & Pandemic Security Framework - Page ',
+      sv: 'Globalt ramverk för hälsa och pandemisäkerhet - Sida '
+    },
+    // Special config for full framework
+    sections: [
+      'index',
+      'introduction',
+      'core-principles',
+      'universal-declaration',
+      'governance-architecture',
+      'operational-systems',
+      'crisis-response',
+      'implementation-roadmap',
+      'funding-mechanisms',
+      'framework-integration',
       'conclusion',
       'appendices'
     ]

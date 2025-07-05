@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "title": "Global Health & Pandemic Security Framework - Global Governance Framework",
+    "description": "Community-controlled planetary immune system that prevents, detects, and defeats pandemics with speed, equity, and resilience while strengthening traditional knowledge and community sovereignty"
+  },
+  "communicationCard": {
+    "title": "How would you like to explore Global Health & Pandemic Security?",
+    "description": "Choose the format that best matches your needs and urgency level for pandemic preparedness.",
+    "buttonText": "Choose Your Entry Point"
+  },
+  "sections": {
+    "index": "Framework Overview",
+    "at-a-glance": "At-a-Glance Summary",
+    "executive-summary-for-the-skeptic": "Executive Summary for the Skeptic",
+    "universal-declaration": "Universal Declaration of Health Rights",
+    "introduction": "Building Our Planetary Immune System",
+    "core-principles": "Core Principles",
+    "governance-architecture": "Governance Architecture",
+    "operational-systems": "Operational Systems",
+    "crisis-response": "Crisis Response Protocols",
+    "implementation-roadmap": "Implementation Roadmap",
+    "funding-mechanisms": "Funding Mechanisms",
+    "framework-integration": "Framework Integration",
+    "conclusion": "Healing the Sacred Web of Life",
+    "appendices": "Appendices"
+  },
+  "sectionsShort": {
+    "index": "Overview",
+    "at-a-glance": "At-a-Glance",
+    "executive-summary-for-the-skeptic": "Executive Summary",
+    "universal-declaration": "Universal Declaration",
+    "introduction": "Introduction",
+    "core-principles": "Principles",
+    "governance-architecture": "Architecture",
+    "operational-systems": "Operations",
+    "crisis-response": "Crisis Response",
+    "implementation-roadmap": "Implementation",
+    "funding-mechanisms": "Funding",
+    "framework-integration": "Integration",
+    "conclusion": "Conclusion",
+    "appendices": "Appendices"
+  },
+  "categories": {
+    "overview": "Framework Overview",
+    "foundation": "Foundation & Principles",
+    "governance": "Planetary Immune System",
+    "implementation": "Implementation & Action",
+    "toolsResources": "Tools & Resources"
+  },
+  "progress": {
+    "text": "Section {current} of {total}"
+  },
+  "navigation": {
+    "previousSection": "Previous Section",
+    "nextSection": "Next Section",
+    "downloadPdf": "Download PDF Version",
+    "continueToFramework": "Explore Full Framework"
+  },
+  "languageFallback": {
+    "title": "Content in your language coming soon",
+    "description": "This section is currently displayed in English until translation is complete."
+  },
+  "loading": {
+    "text": "Loading global health & pandemic security framework content..."
+  },
+  "errors": {
+    "sectionNotFound": "Section \"{section}\" not found",
+    "contentInDevelopment": "This content is still being developed."
+  },
+  "immuneSystem": {
+    "metaphor": {
+      "title": "Planetary Immune System",
+      "description": "The framework operates like a biological immune system with specialized components working in coordination",
+      "components": {
+        "brainstem": "Global Health Security Council",
+        "whiteBloocCells": "Health Emergency Corps",
+        "tCells": "Community Health Legions",
+        "sensoryNerves": "Global Pathogen Surveillance Network",
+        "adaptiveMemory": "Planetary Health Assemblies"
+      }
+    }
+  },
+  "keyFeatures": {
+    "communityControl": {
+      "title": "Community-Controlled",
+      "description": "Health governance emerges from community relationships and traditional knowledge"
+    },
+    "traditionalKnowledge": {
+      "title": "Traditional Knowledge Integration", 
+      "description": "Indigenous healing systems as essential infrastructure for planetary health security"
+    },
+    "youthAuthority": {
+      "title": "Youth Authority",
+      "description": "Genuine decision-making power for those who will live longest with health decisions"
+    },
+    "rapidResponse": {
+      "title": "72-Hour Deployment",
+      "description": "Health Emergency Corps deployable globally within 72 hours during emergencies"
+    },
+    "pandemicPrevention": {
+      "title": "Prevention First",
+      "description": "Address zoonotic spillover and environmental health threats at their source"
+    },
+    "openScience": {
+      "title": "Open Science & Patent-Free Medicine",
+      "description": "All publicly funded health innovations become global public goods"
+    }
+  },
+  "healthRights": {
+    "universal": {
+      "title": "Health as Universal Right",
+      "description": "Clean air, pure water, nutritious food, and access to traditional and contemporary medicine"
+    },
+    "sovereignty": {
+      "title": "Community Health Sovereignty", 
+      "description": "Communities control their own health systems and traditional healing practices"
+    },
+    "intergenerational": {
+      "title": "Intergenerational Health Justice",
+      "description": "Health decisions serve future generations and ecological foundations"
+    },
+    "oneHealth": {
+      "title": "One Health Integration",
+      "description": "Human, animal, and ecosystem health recognized as inseparable"
+    }
+  },
+  "implementationPhases": {
+    "phase1": {
+      "title": "Health Sanctuary Development",
+      "timeframe": "Years 1-3",
+      "description": "Pilot implementation demonstrating community-controlled health governance"
+    },
+    "phase2": {
+      "title": "Continental Integration",
+      "timeframe": "Years 4-7", 
+      "description": "Scale successful approaches across bioregions while maintaining sovereignty"
+    },
+    "phase3": {
+      "title": "Planetary Health Security",
+      "timeframe": "Years 8-15",
+      "description": "Achieve full pandemic prevention capability through community networks"
+    }
+  },
+  "callToAction": {
+    "title": "Join the Health Security Movement",
+    "description": "Every stakeholder has a role in building health systems that serve community sovereignty and planetary wellbeing",
+    "actions": {
+      "communities": "Establish Community Health Legions with traditional knowledge integration",
+      "professionals": "Support patent-free medical innovation and traditional healing approaches", 
+      "governments": "Lead Health Sanctuary development with Indigenous consultation",
+      "youth": "Assert authority over health policies affecting your generation"
+    }
+  }
+}

@@ -1,3 +1,13 @@
+---
+title: Planetary Health Governance Framework
+section: index
+status: First draft
+revision: 1.0
+releaseDate: 2025-07-05
+lastUpdated: 2025-07-05
+nextReview: too be determined
+---
+
 # Planetary Health Governance Framework v1.0
 
 **In this document:**
