@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "Planetary Health Governance Framework - Global Governance Frameworks",
+    "description": "Comprehensive framework for governing planetary health through integrated coordination of human, animal, and ecosystem wellbeing"
+  },
+  "communicationCard": {
+    "title": "How would you like to explore Planetary Health Governance?",
+    "description": "Choose the format that best matches your needs and time availability.",
+    "buttonText": "Choose Your Entry Point"
+  },
+  "categories": {
+    "overview": "Overview",
+    "foundation": "Foundation",
+    "governance": "Governance & Architecture", 
+    "implementation": "Implementation",
+    "toolsResources": "Tools & Resources"
+  },
+  "sections": {
+    "index": "Overview",
+    "introduction": "Introduction: One Planet, One Health",
+    "planetary-health-charter": "The Planetary Health Charter",
+    "core-principles": "Core Principles",
+    "governance-architecture": "Governance Architecture", 
+    "cross-cutting-policies": "Cross-Cutting Policies",
+    "framework-integration": "Framework Integration",
+    "implementation-roadmap": "Implementation Roadmap",
+    "conclusion": "Conclusion: A Living Covenant with All Life",
+    "appendices": "Appendices",
+    "preamble": "Sacred Preamble",
+    "at-a-glance": "At-a-Glance Summary", 
+    "executive-summary-for-the-skeptic": "Executive Summary"
+  },
+  "sectionsShort": {
+    "index": "Overview",
+    "introduction": "Introduction",
+    "planetary-health-charter": "Charter",
+    "core-principles": "Principles", 
+    "governance-architecture": "Architecture",
+    "cross-cutting-policies": "Policies",
+    "framework-integration": "Integration",
+    "implementation-roadmap": "Implementation",
+    "conclusion": "Conclusion",
+    "appendices": "Appendices",
+     "preamble": "Preamble",
+     "at-a-glance": "At-a-Glance",
+     "executive-summary-for-the-skeptic": "Executive Summary"
+  },
+  "progress": {
+    "text": "Section {current} of {total}"
+  },
+  "languageFallback": {
+    "title": "Content in your language coming soon",
+    "description": "This section is currently displayed in English until translation is complete."
+  },
+  "navigation": {
+    "downloadPdf": "Download PDF Version",
+    "continueToFramework": "Continue to Full Framework",
+    "previousSection": "Previous Section", 
+    "nextSection": "Next Section"
+  },
+  "intro": {
+    "title": "Planetary Health Governance Framework",
+    "overview": "Overview",
+    "paragraph1": "The Planetary Health Governance Framework emerges as a revolutionary blueprint for transforming governance from systems that generate health crises into systems that generate planetary healing.",
+    "paragraph2": "This framework serves as the ethical compass and scientific foundation for all governance systems, ensuring that every human activity contributes to the flourishing of the entire web of life."
+  },
+  "buttons": {
+    "newToFramework": "New to Planetary Health Governance?",
+    "startWithGuides": "Start with our comprehensive framework that explains how to coordinate governance for the health of all life on Earth.",
+    "readFramework": "Read the Framework",
+    "downloadPdf": "Download PDF Version",
+    "continueToFull": "Continue to Full Framework"
+  },
+  "errors": {
+    "sectionNotFound": "Section \"{section}\" not found",
+    "contentInDevelopment": "This content is still being developed.",
+    "sectionNotAvailable": "Section Not Available",
+    "sectionLoadError": "The section \"{section}\" could not be loaded. This might be a temporary issue.",
+    "returnToOverview": "Return to Overview"
+  },
+  "loading": {
+    "text": "Loading planetary health governance framework content..."
+  }
+}

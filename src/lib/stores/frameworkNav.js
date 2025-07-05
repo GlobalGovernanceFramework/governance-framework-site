@@ -43,14 +43,13 @@ export const allFrameworks = [
     path: '/frameworks/climate-and-energy-governance'
   },
   {
-    slug: 'planetary-health',
+    slug: 'planetary-health-governance',
     titleKey: 'framework.docs.nav.frameworkTitles.planetaryHealth',
-    emoji: '🩺',
+    emoji: '💚',
     tier: 1,
     status: 'review',
-    path: '/frameworks/planetary-health'
+    path: '/frameworks/planetary-health-governance'
   },
-  // New Framework
   {
     slug: 'global-health-and-pandemic-security',
     titleKey: 'framework.docs.nav.frameworkTitles.globalHealthAndPandemicSecurity',

@@ -29,7 +29,7 @@ const pageSpecificTranslationsMap = [
   { route: '/frameworks/global-supply-chains-and-logistics', dataKey: 'gscl', fileName: 'frameworksGlobalSupplyChainAndLogistics' },
   { route: '/frameworks/justice-systems', dataKey: 'justiceFramework', fileName: 'frameworksJusticeSystems' },
   { route: '/frameworks/disaster-risk-reduction', dataKey: 'disasterFramework', fileName: 'frameworksDisasterRiskReduction' },
-  { route: '/frameworks/planetary-health', dataKey: 'planetaryHealthFramework', fileName: 'frameworksPlanetaryHealth' },
+  { route: '/frameworks/planetary-health-governance', dataKey: 'planetaryHealthGovernance', fileName: 'frameworksPlanetaryHealthGovernance' },
   { route: '/frameworks/indigenous-governance-and-traditional-knowledge', dataKey: 'indigenousFramework', fileName: 'frameworksIndigenousGovernanceAndTraditionalKnowledge' },
   { route: '/frameworks/peace-and-conflict-resolution', dataKey: 'peaceFramework', fileName: 'frameworksPeaceAndConflictResolution' },
   { route: '/frameworks/climate-and-energy-governance', dataKey: 'climateFramework', fileName: 'frameworksClimateAndEnergyGovernance' },

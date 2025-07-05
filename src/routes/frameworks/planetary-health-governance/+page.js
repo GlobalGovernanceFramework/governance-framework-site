@@ -1,4 +1,4 @@
-// src/routes/frameworks/planetary-health/+page.js
+// src/routes/frameworks/planetary-health-governance/+page.js
 import { locale, loadTranslations } from '$lib/i18n';
 import { get } from 'svelte/store';
 import { browser } from '$app/environment';
@@ -22,34 +22,22 @@ export async function load({ depends, url, params }) {
   // Safe check for print mode that works during prerendering
   const isPrintMode = browser ? url.searchParams.get('print') === 'true' : false;
   
-  // Define sections to load - planetary health framework sections in correct order
+  // Define sections to load - planetary health governance framework sections in correct order
   const sections = [
-    // Entry point and overview
+    // Core framework sections
     'index',
-    'planetary-health-accord-lite',
-    
-    // Core framework sections (00-17)
-    'manifesto',
-    'governance-structure',
-    'technology-data-infrastructure',
-    'financing-mechanisms',
-    'medical-innovation-access',
-    'pandemic-climate-preparedness',
-    'community-centered-healthcare',
-    'transparency-anti-corruption',
-    'health-literacy',
-    'borderless-health-rights',
-    'ethical-technology-governance',
+    'at-a-glance',
+    'preamble', 
+    'executive-summary-for-the-skeptic',
+    'introduction',
+    'planetary-health-charter',
+    'core-principles',
+    'governance-architecture',
+    'cross-cutting-policies',
+    'framework-integration',
     'implementation-roadmap',
-    'health-conflict-zones',
-    'global-knowledge-commons',
-    'visual-architecture-map',
-    'cross-cutting-mechanisms',
-    'spiritual-framing',
     'conclusion',
-    
-    // Supplementary materials
-    'childrens-health-rights-comic'
+    'appendices'
   ];
   
   // Track which sections fell back to English
@@ -59,20 +47,20 @@ export async function load({ depends, url, params }) {
   const content = {};
   let loadedSections = 0;
   
-  console.log('Loading planetary health framework sections for locale:', currentLocale);
+  console.log('Loading planetary health governance framework sections for locale:', currentLocale);
   
   // Try to load each section with proper error handling
   for (const section of sections) {
     try {
       // Try to load the current locale version first
-      const modulePromise = import(`$lib/content/frameworks/${currentLocale}/implementation/planetary-health/${section}.md`);
+      const modulePromise = import(`$lib/content/frameworks/${currentLocale}/implementation/planetary-health-governance/${section}.md`);
       content[section] = await modulePromise;
       loadedSections++;
-      console.log('Successfully loaded planetary health section:', section, 'in', currentLocale);
+      console.log('Successfully loaded planetary health governance section:', section, 'in', currentLocale);
     } catch (primaryError) {
       // Fall back to English if translation isn't available
       try {
-        const fallbackPromise = import(`$lib/content/frameworks/en/implementation/planetary-health/${section}.md`);
+        const fallbackPromise = import(`$lib/content/frameworks/en/implementation/planetary-health-governance/${section}.md`);
         content[section] = await fallbackPromise;
         loadedSections++;
         
@@ -80,9 +68,9 @@ export async function load({ depends, url, params }) {
         if (currentLocale !== 'en') {
           sectionsUsingEnglishFallback.add(section);
         }
-        console.log('Loaded planetary health section:', section, 'in English as fallback');
+        console.log('Loaded planetary health governance section:', section, 'in English as fallback');
       } catch (fallbackError) {
-        console.warn(`Could not load planetary health section ${section} in any language:`, fallbackError.message);
+        console.warn(`Could not load planetary health governance section ${section} in any language:`, fallbackError.message);
         
         // Create a safe placeholder for missing sections
         content[section] = {
@@ -102,14 +90,14 @@ export async function load({ depends, url, params }) {
     }
   }
   
-  console.log('Total planetary health sections loaded:', loadedSections, 'out of', sections.length);
-  console.log('Loaded planetary health sections:', Object.keys(content));
+  console.log('Total planetary health governance sections loaded:', loadedSections, 'out of', sections.length);
+  console.log('Loaded planetary health governance sections:', Object.keys(content));
   
   // Validate that we have at least the index section
   if (!content.index) {
-    console.error('Critical: Could not load planetary health framework index section');
+    console.error('Critical: Could not load planetary health governance framework index section');
     throw error(500, {
-      message: 'Failed to load planetary health framework content',
+      message: 'Failed to load planetary health governance framework content',
       details: 'The main index section could not be loaded'
     });
   }
@@ -123,33 +111,41 @@ export async function load({ depends, url, params }) {
     loadedSectionsCount: loadedSections,
     totalSectionsCount: sections.length,
     
-    // Additional metadata for planetary health framework
-    frameworkType: 'planetary-health',
+    // Additional metadata for planetary health governance framework
+    frameworkType: 'planetary-health-governance',
     totalSections: sections.length,
-    coreFrameworkSections: 18, // manifesto through conclusion
-    hasSupplementaryMaterials: true,
-    hasLiteVersion: true,
+    coreFrameworkSections: 13, // index through appendices (including the 3 new files)
+    hasSupplementaryMaterials: true, // now we have the 3 communication documents
+    hasLiteVersion: false,
     
-    // Planetary health-specific metadata
-    planetaryHealthVersion: '1.0',
+    // Planetary health governance-specific metadata
+    planetaryHealthGovernanceVersion: '1.0',
     isComprehensiveFramework: true,
-    focusArea: 'global-health-equity',
-    implementationScope: 'planetary',
+    focusArea: 'planetary-health-governance',
+    implementationScope: 'global',
     
     // Framework characteristics
     keyComponents: [
-      'health-equity',
-      'climate-adaptation',
-      'pandemic-preparedness',
-      'community-centered-care',
-      'technology-governance',
-      'borderless-rights'
+      'planetary-health-council',
+      'biosphere-health-index',
+      'rights-of-nature',
+      'planetary-health-assemblies',
+      'future-generations-council',
+      'health-commons-protection'
     ],
     
-    // Accord characteristics
-    accordType: 'planetary-health-governance',
-    hasLiteAccord: true,
-    supplementaryContent: ['childrens-health-rights-comic'],
+    // Communication suite characteristics
+    communicationSuite: [
+      'at-a-glance',
+      'preamble', 
+      'executive-summary-for-the-skeptic'
+    ],
+    
+    // Framework type characteristics
+    governanceType: 'planetary-health-coordination',
+    hasCharterDocument: true,
+    hasTribunalMechanism: true,
+    hasCommunicationSuite: true,
     
     // Debug information
     debug: {
@@ -157,7 +153,7 @@ export async function load({ depends, url, params }) {
       availableSections: Object.keys(content),
       fallbackSections: Array.from(sectionsUsingEnglishFallback),
       loadSuccess: loadedSections === sections.length,
-      frameworkType: 'planetary-health'
+      frameworkType: 'planetary-health-governance'
     }
   };
 }

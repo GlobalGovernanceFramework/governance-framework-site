@@ -32,7 +32,7 @@ Available categories:
 - governance
 - environmental-stewardship
 - biodiversity
-- planetary-health
+- planetary-health-governance
 - consciousness-and-inner-development
 - aging-population-support-governance
 - animal-welfare-governance 
@@ -70,7 +70,7 @@ const outputDirs = {
   'environmental-stewardship': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'environmental-stewardship'),
   'governance': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'governance'),
   'biodiversity-governance': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'biodiversity-governance'),
-  'planetary-health': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'planetary-health'),
+  'planetary-health-governance': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'planetary-health-governance'),
   'mental-health-governance': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'mental-health-governance'),
   'consciousness-and-inner-development': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'consciousness-and-inner-development'),
   'youth': path.join(__dirname, '..', 'static', 'frameworks','tools', 'youth'),
@@ -4881,531 +4881,55 @@ const tools = [
     ]
   },
 
-  // Planetary Health Framework
-
-  // Main framework files
+  // Planetary Health Governance Framework
   {
-    name: 'planetary-health-accord-lite',
-    category: 'planetary-health',
+    name: 'planetary-health-charter-1-page',
+    category: 'planetary-health-governance',
     fileNames: {
-      en: 'planetary-health-accord-lite-en',
-      sv: 'planetary-health-accord-lite-sv'
+      en: 'planetary-health-charter-1-page',
+      sv: 'planetary-health-charter-1-page'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health-governance'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health-governance')
     },
     pageFooter: {
-      en: 'Planetary Health Framework - Planetary Health Accord Lite - Page ',
-      sv: 'Planetariskt hälsoramverk - Planetariskt hälsoavtal Lite - Sida '
+      en: 'Planetary Health Governance Framework - Planetary Health Charter',
+      sv: 'Planetariskt hälsostyrningsramverk - Planetarisk hälsostadga'
     }
   },
-
   {
-    name: 'childrens-health-rights-comic',
-    category: 'planetary-health',
+    name: 'planetary-health-governance-framework',
+    category: 'planetary-health-governance',
     fileNames: {
-      en: 'childrens-health-rights-comic-en',
-      sv: 'childrens-health-rights-comic-sv'
+      en: 'Planetary-Health-Governance-Framework',
+      sv: 'Planetary-Health-Governance-Framework'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health')
-    },
-    pageFooter: {
-      en: 'Planetary Health Framework - Children\'s Health Rights Comic - Page ',
-      sv: 'Planetariskt hälsoramverk - Barns hälsorättigheter serietidning - Sida '
-    }
-  },
-
-  {
-    name: 'health-worker-charter',
-    category: 'planetary-health',
-    fileNames: {
-      en: 'health-worker-charter-en',
-      sv: 'health-worker-charter-sv'
-    },
-    sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health')
-    },
-    pageFooter: {
-      en: 'Planetary Health Framework - Health Worker Charter - Page ',
-      sv: 'Planetariskt hälsoramverk - Stadga för hälso- och sjukvårdspersonal - Sida '
-    }
-  },
-
-  {
-    name: 'executive-summary',
-    category: 'planetary-health',
-    fileNames: {
-      en: 'executive-summary-en',
-      sv: 'executive-summary-sv'
-    },
-    sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health')
-    },
-    pageFooter: {
-      en: 'Planetary Health Framework - Executive Summary - Page ',
-      sv: 'Planetariskt hälsoramverk - Sammanfattning - Sida '
-    }
-  },
-
-  {
-    name: 'health-sanctuary-guides',
-    category: 'planetary-health',
-    fileNames: {
-      en: 'health-sanctuary-guides-en',
-      sv: 'health-sanctuary-guides-sv'
-    },
-    sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health')
-    },
-    pageFooter: {
-      en: 'Planetary Health Framework - Health Sanctuary Implementation Guides - Page ',
-      sv: 'Planetariskt hälsoramverk - Implementeringsguider för Health Sanctuary - Sida '
-    }
-  },
-
-  // Core governance tools
-  {
-    name: 'global-health-equity-council-setup',
-    category: 'planetary-health',
-    fileNames: {
-      en: 'global-health-equity-council-setup-en',
-      sv: 'global-health-equity-council-setup-sv'
-    },
-    sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'core')
-    },
-    pageFooter: {
-      en: 'Planetary Health Framework - Global Health Equity Council Setup - Page ',
-      sv: 'Planetariskt hälsoramverk - Global hälsorättvisa råd setup - Sida '
-    }
-  },
-
-  {
-    name: 'regional-health-hub-implementation',
-    category: 'planetary-health',
-    fileNames: {
-      en: 'regional-health-hub-implementation-en',
-      sv: 'regional-health-hub-implementation-sv'
-    },
-    sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'core')
-    },
-    pageFooter: {
-      en: 'Planetary Health Framework - Regional Health Hub Implementation - Page ',
-      sv: 'Planetariskt hälsoramverk - Regional hälsohubb implementering - Sida '
-    }
-  },
-
-  {
-    name: 'conflict-resolution-protocols',
-    category: 'planetary-health',
-    fileNames: {
-      en: 'conflict-resolution-protocols-en',
-      sv: 'conflict-resolution-protocols-sv'
-    },
-    sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'core')
-    },
-    pageFooter: {
-      en: 'Planetary Health Framework - Conflict Resolution Protocols - Page ',
-      sv: 'Planetariskt hälsoramverk - Konfliktlösning protokoll - Sida '
-    }
-  },
-
-  {
-    name: 'youth-advisory-board-framework',
-    category: 'planetary-health',
-    fileNames: {
-      en: 'youth-advisory-board-framework-en',
-      sv: 'youth-advisory-board-framework-sv'
-    },
-    sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'core')
-    },
-    pageFooter: {
-      en: 'Planetary Health Framework - Youth Advisory Board Framework - Page ',
-      sv: 'Planetariskt hälsoramverk - Ungdomsrådgivande styrelse ramverk - Sida '
-    }
-  },
-
-  {
-    name: 'policy-integration-toolkit',
-    category: 'planetary-health',
-    fileNames: {
-      en: 'policy-integration-toolkit-en',
-      sv: 'policy-integration-toolkit-sv'
-    },
-    sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'core')
-    },
-    pageFooter: {
-      en: 'Planetary Health Framework - Policy Integration Toolkit - Page ',
-      sv: 'Planetariskt hälsoramverk - Verktygslåda för policyintegrering - Sida '
-    }
-  },
-
-  // Technology tools
-  {
-    name: 'ai-bias-audit-framework',
-    category: 'planetary-health',
-    fileNames: {
-      en: 'ai-bias-audit-framework-en',
-      sv: 'ai-bias-audit-framework-sv'
-    },
-    sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'technology'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'technology')
-    },
-    pageFooter: {
-      en: 'Planetary Health Framework - AI Bias Audit Framework - Page ',
-      sv: 'Planetariskt hälsoramverk - AI bias granskning ramverk - Sida '
-    }
-  },
-
-  {
-    name: 'ai-ethics-protocols',
-    category: 'planetary-health',
-    fileNames: {
-      en: 'ai-ethics-protocols-en',
-      sv: 'ai-ethics-protocols-sv'
-    },
-    sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'technology'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'technology')
-    },
-    pageFooter: {
-      en: 'Planetary Health Framework - AI Ethics Protocols - Page ',
-      sv: 'Planetariskt hälsoramverk - AI-etiska protokoll - Sida '
-    }
-  },
-
-  {
-    name: 'ai-literacy-certifications',
-    category: 'planetary-health',
-    fileNames: {
-      en: 'ai-literacy-certifications-en',
-      sv: 'ai-literacy-certifications-sv'
-    },
-    sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'technology'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'technology')
-    },
-    pageFooter: {
-      en: 'Planetary Health Framework - AI Literacy Certifications - Page ',
-      sv: 'Planetariskt hälsoramverk - AI-kompetenscertifieringar - Sida '
-    }
-  },
-
-  {
-    name: 'blockchain-health-records-setup',
-    category: 'planetary-health',
-    fileNames: {
-      en: 'blockchain-health-records-setup-en',
-      sv: 'blockchain-health-records-setup-sv'
-    },
-    sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'technology'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'technology')
-    },
-    pageFooter: {
-      en: 'Planetary Health Framework - Blockchain Health Records Setup - Page ',
-      sv: 'Planetariskt hälsoramverk - Blockchain hälsoregister setup - Sida '
-    }
-  },
-
-  {
-    name: 'federated-learning-implementation',
-    category: 'planetary-health',
-    fileNames: {
-      en: 'federated-learning-implementation-en',
-      sv: 'federated-learning-implementation-sv'
-    },
-    sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'technology'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'technology')
-    },
-    pageFooter: {
-      en: 'Planetary Health Framework - Federated Learning Implementation - Page ',
-      sv: 'Planetariskt hälsoramverk - Federerad inlärning implementering - Sida '
-    }
-  },
-
-  {
-    name: 'cybersecurity-framework-health',
-    category: 'planetary-health',
-    fileNames: {
-      en: 'cybersecurity-framework-health-en',
-      sv: 'cybersecurity-framework-health-sv'
-    },
-    sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'technology'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'technology')
-    },
-    pageFooter: {
-      en: 'Planetary Health Framework - Cybersecurity Framework for Health - Page ',
-      sv: 'Planetariskt hälsoramverk - Cybersäkerhet ramverk för hälsa - Sida '
-    }
-  },
-
-  // Community tools
-  {
-    name: 'community-health-legion-manual',
-    category: 'planetary-health',
-    fileNames: {
-      en: 'community-health-legion-manual-en',
-      sv: 'community-health-legion-manual-sv'
-    },
-    sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'community'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'community')
-    },
-    pageFooter: {
-      en: 'Planetary Health Framework - Community Health Legion Manual - Page ',
-      sv: 'Planetariskt hälsoramverk - Gemenskapshälsa legion manual - Sida '
-    }
-  },
-
-  {
-    name: 'cultural-competency-training',
-    category: 'planetary-health',
-    fileNames: {
-      en: 'cultural-competency-training-en',
-      sv: 'cultural-competency-training-sv'
-    },
-    sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'community'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'community')
-    },
-    pageFooter: {
-      en: 'Planetary Health Framework - Cultural Competency Training - Page ',
-      sv: 'Planetariskt hälsoramverk - Kulturell kompetens utbildning - Sida '
-    }
-  },
-
-  {
-    name: 'mental-health-integration-toolkit',
-    category: 'planetary-health',
-    fileNames: {
-      en: 'mental-health-integration-toolkit-en',
-      sv: 'mental-health-integration-toolkit-sv'
-    },
-    sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'community'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'community')
-    },
-    pageFooter: {
-      en: 'Planetary Health Framework - Mental Health Integration Toolkit - Page ',
-      sv: 'Planetariskt hälsoramverk - Mental hälsa integration verktygslåda - Sida '
-    }
-  },
-
-  {
-    name: 'trauma-informed-care-protocols',
-    category: 'planetary-health',
-    fileNames: {
-      en: 'trauma-informed-care-protocols-en',
-      sv: 'trauma-informed-care-protocols-sv'
-    },
-    sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'community'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'community')
-    },
-    pageFooter: {
-      en: 'Planetary Health Framework - Trauma-Informed Care Protocols - Page ',
-      sv: 'Planetariskt hälsoramverk - Traumainformerad vård protokoll - Sida '
-    }
-  },
-
-  // Financing tools
-  {
-    name: 'health-solidarity-fund-setup',
-    category: 'planetary-health',
-    fileNames: {
-      en: 'health-solidarity-fund-setup-en',
-      sv: 'health-solidarity-fund-setup-sv'
-    },
-    sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'financing'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'financing')
-    },
-    pageFooter: {
-      en: 'Planetary Health Framework - Health Solidarity Fund Setup - Page ',
-      sv: 'Planetariskt hälsoramverk - Hälsosolidaritet fond setup - Sida '
-    }
-  },
-
-  {
-    name: 'debt-for-health-swap-templates',
-    category: 'planetary-health',
-    fileNames: {
-      en: 'debt-for-health-swap-templates-en',
-      sv: 'debt-for-health-swap-templates-sv'
-    },
-    sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'financing'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'financing')
-    },
-    pageFooter: {
-      en: 'Planetary Health Framework - Debt-for-Health Swap Templates - Page ',
-      sv: 'Planetariskt hälsoramverk - Skuld-för-hälsa byte mallar - Sida '
-    }
-  },
-
-  {
-    name: 'open-source-pharma-toolkit',
-    category: 'planetary-health',
-    fileNames: {
-      en: 'open-source-pharma-toolkit-en',
-      sv: 'open-source-pharma-toolkit-sv'
-    },
-    sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'financing'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'financing')
-    },
-    pageFooter: {
-      en: 'Planetary Health Framework - Open-Source Pharma Toolkit - Page ',
-      sv: 'Planetariskt hälsoramverk - Öppen källkod pharma verktygslåda - Sida '
-    }
-  },
-
-  {
-    name: 'health-impact-bond-framework',
-    category: 'planetary-health',
-    fileNames: {
-      en: 'health-impact-bond-framework-en',
-      sv: 'health-impact-bond-framework-sv'
-    },
-    sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'financing'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'financing')
-    },
-    pageFooter: {
-      en: 'Planetary Health Framework - Health Impact Bond Framework - Page ',
-      sv: 'Planetariskt hälsoramverk - Hälsoeffekt obligation ramverk - Sida '
-    }
-  },
-
-  // Preparedness tools
-  {
-    name: 'one-health-surveillance-protocols',
-    category: 'planetary-health',
-    fileNames: {
-      en: 'one-health-surveillance-protocols-en',
-      sv: 'one-health-surveillance-protocols-sv'
-    },
-    sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'preparedness'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'preparedness')
-    },
-    pageFooter: {
-      en: 'Planetary Health Framework - One Health Surveillance Protocols - Page ',
-      sv: 'Planetariskt hälsoramverk - En hälsa övervakning protokoll - Sida '
-    }
-  },
-
-  {
-    name: 'pandemic-response-playbook',
-    category: 'planetary-health',
-    fileNames: {
-      en: 'pandemic-response-playbook-en',
-      sv: 'pandemic-response-playbook-sv'
-    },
-    sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'preparedness'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'preparedness')
-    },
-    pageFooter: {
-      en: 'Planetary Health Framework - Pandemic Response Playbook - Page ',
-      sv: 'Planetariskt hälsoramverk - Pandemi respons handbok - Sida '
-    }
-  },
-
-  {
-    name: 'climate-health-adaptation-guide',
-    category: 'planetary-health',
-    fileNames: {
-      en: 'climate-health-adaptation-guide-en',
-      sv: 'climate-health-adaptation-guide-sv'
-    },
-    sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'preparedness'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'preparedness')
-    },
-    pageFooter: {
-      en: 'Planetary Health Framework - Climate-Health Adaptation Guide - Page ',
-      sv: 'Planetariskt hälsoramverk - Klimat-hälsa anpassning guide - Sida '
-    }
-  },
-
-  {
-    name: 'mobile-clinic-deployment-kit',
-    category: 'planetary-health',
-    fileNames: {
-      en: 'mobile-clinic-deployment-kit-en',
-      sv: 'mobile-clinic-deployment-kit-sv'
-    },
-    sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'preparedness'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'preparedness')
-    },
-    pageFooter: {
-      en: 'Planetary Health Framework - Mobile Clinic Deployment Kit - Page ',
-      sv: 'Planetariskt hälsoramverk - Mobil klinik distribution kit - Sida '
-    }
-  },
-
-  // Full Planetary Health Framework
-  {
-    name: 'planetary-health-framework',
-    category: 'planetary-health',
-    fileNames: {
-      en: 'Planetary-Health-Framework',
-      sv: 'Planetary-Health-Framework'
-    },
-    sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health-governance'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health-governance')
     },
     outputDir: {
       en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
       sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
     },
     pageFooter: {
-      en: 'Planetary Health Implementation Framework - Page ',
-      sv: 'Planetär hälsa implementeringsramverk - Sida '
+      en: 'Planetary Health Governance Framework - Page ',
+      sv: 'Planetariskt hälsostyrningsramverk - Sida '
     },
     // Special config for full framework
     sections: [
+      'preamble',
       'index',
-      'manifesto',
-      'governance-structure',
-      'technology-data-infrastructure',
-      'financing-mechanisms',
-      'medical-innovation-access',
-      'pandemic-climate-preparedness',
-      'community-centered-healthcare',
-      'transparency-anti-corruption',
-      'health-literacy',
-      'borderless-health-rights',
-      'ethical-technology-governance',
+      'introduction',
+      'planetary-health-charter',
+      'core-principles',
+      'governance-architecture',
+      'cross-cutting-policies',
+      'framework-integration',
       'implementation-roadmap',
-      'health-conflict-zones',
-      'global-knowledge-commons',
-      'visual-architecture-map',
-      'cross-cutting-mechanisms',
-      'spiritual-framing',
-      'conclusion'
+      'conclusion',
+      'appendices'
     ]
   },
 
