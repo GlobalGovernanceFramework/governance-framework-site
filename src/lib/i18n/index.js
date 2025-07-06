@@ -24,7 +24,7 @@ const pageSpecificTranslationsMap = [
   { route: '/frameworks/consciousness-and-inner-development', dataKey: 'consciousnessFramework', fileName: 'frameworksConsciousnessAndInnerDevelopment' },
   { route: '/frameworks/technology-governance', dataKey: 'techFramework', fileName: 'frameworksTechnologyGovernance' },
   { route: '/frameworks/aurora-accord', dataKey: 'auroraAccord', fileName: 'frameworksAuroraAccord' },
-  { route: '/frameworks/financial-systems', dataKey: 'financialFramework', fileName: 'frameworksFinancialSystems' },
+  { route: '/frameworks/financial-systems', dataKey: 'financialSystems', fileName: 'frameworksFinancialSystems' },
   { route: '/frameworks/educational-systems', dataKey: 'educationalFramework', fileName: 'frameworksEducationalSystems' },
   { route: '/frameworks/food-systems-and-agriculture', dataKey: 'foodSystemsFramework', fileName: 'frameworksFoodSystemsAndAgriculture' },
   { route: '/frameworks/nested-economies', dataKey: 'nestedEconomies', fileName: 'frameworksNestedEconomies' },

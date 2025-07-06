@@ -1,90 +1,119 @@
 {
   "meta": {
-    "title": "Finansiella system-ramverk - Global Governance Framework",
-    "description": "En omfattande plan för att omforma globala finanssystem till förmån för mänskligt och ekologiskt välbefinnande"
-  },
-  "guideCard": {
-    "title": "Ny inom finansiella system-ramverket?",
-    "description": "Börja med en av våra förenklade guider som förklarar kärnkoncepten för olika målgrupper.",
-    "buttonText": "Välj en guide"
-  },
-  "categories": {
-    "overview": "Översikt",
-    "foundation": "Grund",
-    "implementation": "Implementation",
-    "operations": "Drift & utvärdering",
-    "resources": "Resurser"
+    "title": "Finansiella System Ramverk: Hjärtan & Löv Valuta - Globala Styrningsramverket",
+    "description": "Ett omfattande ramverk för att transformera finans genom Hjärtan-valuta, Löv ekologiska tokens, och Rätt Relation-ekonomi som hedrar omsorgsarbete och ekologisk restaurering"
   },
   "sections": {
-    "index": "Översikt",
-    "quick-guide": "Teknisk guide",
-    "quick-guide-medium": "Samhällsguide",
-    "quick-guide-youth": "Ungdoms & gräsrötters guide",
+    "index": "Ramverksöversikt",
+    "at-a-glance": "Snabböversikt",
+    "executive-summary-for-the-skeptic": "För Skeptiker",
     "introduction": "Introduktion",
-    "core-principles": "Kärnprinciper",
-    "structural-components": "Strukturella komponenter",
-    "implementation-approaches": "Implementeringsmetoder",
-    "metrics-evaluation": "Mätning & utvärdering",
-    "supporting-sections": "Stödjande sektioner",
+    "hearts-leaves-philosophy": "Hjärtan & Löv Filosofi",
+    "core-architecture": "Kärnarkitektur",
+    "value-systems-integration": "Värdesystemintegrering",
+    "hearts-leaves-currency": "Hjärtan & Löv Valuta",
+    "love-ledger-platform": "Kärleks-Reskontro Plattform",
+    "governance-model": "Styrningsmodell",
+    "implementation-roadmap": "Implementeringskarta",
+    "cultural-integration": "Kulturell Integrering",
+    "technical-infrastructure": "Teknisk Infrastruktur",
+    "crisis-response-protocols": "Krisresponsprotokoll",
+    "framework-integration": "Ramverksintegrering",
+    "conclusion": "Slutsats",
     "appendices": "Bilagor"
   },
   "sectionsShort": {
     "index": "Översikt",
-    "quick-guide": "Teknisk guide",
-    "quick-guide-medium": "Samhällsguide", 
-    "quick-guide-youth": "Ungdomsguide",
+    "at-a-glance": "Snabbstart",
+    "executive-summary-for-the-skeptic": "Evidensbaserad",
     "introduction": "Introduktion",
-    "core-principles": "Principer",
-    "structural-components": "Komponenter",
-    "implementation-approaches": "Implementation",
-    "metrics-evaluation": "Mätning",
-    "supporting-sections": "Stödjande",
-    "appendices": "Bilagor"
+    "hearts-leaves-philosophy": "Filosofi",
+    "core-architecture": "Arkitektur",
+    "value-systems-integration": "Värdeintegrering",
+    "hearts-leaves-currency": "Valutasystem",
+    "love-ledger-platform": "Kärleks-Reskontro",
+    "governance-model": "Styrning",
+    "implementation-roadmap": "Färdplan",
+    "cultural-integration": "Kulturell Anpassning",
+    "technical-infrastructure": "Teknologi",
+    "crisis-response-protocols": "Krisrespons",
+    "framework-integration": "Integrering",
+    "conclusion": "Slutsats",
+    "appendices": "Resurser"
+  },
+  "categories": {
+    "overview": "Ramverksöversikt",
+    "philosophy": "Filosofi & Grund",
+    "core": "Kärnramverk",
+    "implementation": "Implementering & Drift",
+    "resources": "Resurser & Bilagor"
+  },
+  "quickStart": {
+    "new": "Ny till Hjärtan & Löv?",
+    "start": "Börja med våra snabbguider som förklarar regenerativ finans och gemenskapskontrollerade valutor för olika målgrupper.",
+    "button": "Välj Guide",
+    "title": "Finansiella System Snabbstart",
+    "description": "Välj den version som bäst passar dina behov:",
+    "download": "Ladda ner PDF-Version",
+    "continue": "Fortsätt till Fullständigt Ramverk",
+    "guides": [
+      {
+        "id": "at-a-glance",
+        "icon": "⚡",
+        "title": "Snabböversikt",
+        "description": "5-minuters översikt av Hjärtan & Löv valutasystem"
+      },
+      {
+        "id": "executive-summary-for-the-skeptic",
+        "icon": "🤔",
+        "title": "För Skeptiker",
+        "description": "Evidensbaserat argument för regenerativ finans"
+      }
+    ]
+  },
+  "progress": {
+    "text": "Sektion {current} av {total}"
+  },
+  "navigation": {
+    "previousSection": "Föregående Sektion",
+    "nextSection": "Nästa Sektion",
+    "downloadPdf": "Ladda ner PDF-Version",
+    "continueToFull": "Fortsätt till Fullständigt Ramverk"
+  },
+  "languageFallback": {
+    "title": "Innehåll på ditt språk kommer snart",
+    "description": "Denna sektion visas för närvarande på engelska tills översättningen är klar."
+  },
+  "errors": {
+    "sectionNotFound": "Sektion \"{section}\" hittades inte",
+    "contentInDevelopment": "Detta innehåll utvecklas fortfarande."
+  },
+  "loading": {
+    "text": "Laddar finansiella system ramverk..."
+  },
+  "guideCard": {
+    "title": "Ny till Finansiella System Ramverket?",
+    "description": "Börja med en av våra förenklade guider som förklarar Hjärtan & Löv valutor och regenerativ finans för olika målgrupper.",
+    "buttonText": "Välj en Guide"
+  },
+  "intro": {
+    "title": "Finansiella System Ramverk",
+    "overview": "Hjärtan & Löv: Ekonomi av Rätt Relation",
+    "paragraph1": "Ett omfattande ramverk för att transformera globala finansiella system från extraktionsbaserad ekonomi till regenerativ överflöd genom Hjärtan-valuta (omsorgsekonomisk erkännande) och Löv-tokens (ekologiska restaureringsbelöningar).",
+    "paragraph2": "Detta ramverk ger den ekonomiska grunden för civilisation som tjänar snarare än exploaterar den heliga sammankopplingen av allt liv, väglett av inhemsk visdom och mätt genom kärlek, mening och koppling snarare än ackumulering och konkurrens."
   },
   "guides": [
     {
-      "id": "quick-guide",
-      "title": "Teknisk guide",
-      "description": "Detaljerad guide för beslutsfattare, finansinstitutioner och organisationer",
-      "icon": "📊"
+      "id": "at-a-glance",
+      "icon": "⚡",
+      "title": "Snabböversikt",
+      "description": "5-minuters introduktion till Hjärtan & Löv"
     },
     {
-      "id": "quick-guide-medium",
-      "title": "Samhällsguide",
-      "description": "Balanserad guide för lokala myndigheter, samhällsgrupper och ideella organisationer",
-      "icon": "🤝"
-    },
-    {
-      "id": "quick-guide-youth",
-      "title": "Ungdoms & gräsrötters guide",
-      "description": "Visuell, tillgänglig guide för ungdomsgrupper, skolor och olika samhällen",
-      "icon": "🌱"
+      "id": "executive-summary-for-the-skeptic",
+      "icon": "🤔",
+      "title": "Evidensbaserat Argument",
+      "description": "Forskning och data som stöder regenerativ finans"
     }
-  ],
-  "progress": {
-    "text": "Avsnitt {current} av {total}"
-  },
-  "languageFallback": {
-    "title": "Innehåll på svenska kommer snart",
-    "description": "Detta avsnitt visas för närvarande på engelska tills den svenska översättningen är klar."
-  },
-  "navigation": {
-    "downloadPdf": "Ladda ner PDF-version",
-    "continueToFull": "Fortsätt till fullständigt ramverk",
-    "previousSection": "Föregående avsnitt",
-    "nextSection": "Nästa avsnitt"
-  },
-  "errors": {
-    "sectionNotFound": "Avsnitt \"{section}\" hittades inte",
-    "contentInDevelopment": "Detta innehåll är fortfarande under utveckling."
-  },
-  "loading": {
-    "text": "Laddar ramverksinnehåll..."
-  },
-  "intro": {
-    "title": "Finansiella system-ramverk",
-    "overview": "Översikt", 
-    "paragraph1": "Finansiella system-ramverket är en omfattande plan för att omforma globala finanssystem till förmån för mänskligt och ekologiskt välbefinnande. Den integrerar olika uttryck av värde—från traditionella valutor till omsorg, tid och ekologiska bidrag—genom Hearts som en frivillig global valuta.",
-    "paragraph2": "Detta ramverk omdefinierar finanssystem som levande system som speglar våra kollektiva värderingar och formar våra sociala prioriteringar. Det skapar praktiska övergångsvägar från existerande system till mer holistiska alternativ."
-  }
+  ]
 }
