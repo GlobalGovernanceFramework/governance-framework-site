@@ -149,12 +149,12 @@ export const allFrameworks = [
     path: '/frameworks/technology-governance'
   },
   {
-    slug: 'synthetic-biology-and-biotech-governance',
+    slug: 'aethelred-accord',
     titleKey: 'framework.docs.nav.frameworkTitles.syntheticBiologyAndAdvancedBiotechGovernance',
     emoji: '🧬',
     tier: 2,
     status: 'planned',
-    path: '/frameworks/synthetic-biology-and-biotech-governance'
+    path: '/frameworks/aethelred-accord'
   },
   {
     slug: 'financial-systems',

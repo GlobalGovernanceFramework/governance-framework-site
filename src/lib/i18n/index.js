@@ -18,6 +18,7 @@ const locales = readable(supportedLocales);
 // Data-driven mapping for page-specific translations
 const pageSpecificTranslationsMap = [
   // Framework routes (most specific first)
+  { route: '/frameworks/aethelred-accord', dataKey: 'aethelred', fileName: 'frameworksAethelredAccord' },
   { route: '/frameworks/treaty-for-our-only-home', dataKey: 'treatyFramework', fileName: 'frameworksTreatyForOurOnlyHome' },
   { route: '/frameworks/consciousness-and-inner-development', dataKey: 'consciousnessFramework', fileName: 'frameworksConsciousnessAndInnerDevelopment' },
   { route: '/frameworks/technology-governance', dataKey: 'techFramework', fileName: 'frameworksTechnologyGovernance' },
@@ -73,6 +74,7 @@ const pageSpecificTranslationsMap = [
 
 // Reusable translation loader function
 async function loadAndAssignTranslation(locale, fileName, dataKey, translationData) {
+  console.log(`🔍 Attempting to load: ${locale}/${fileName}.json for dataKey: ${dataKey}`);
   try {
     const module = await import(`./${locale}/${fileName}.json`);
     translationData[dataKey] = module.default;
@@ -84,9 +86,11 @@ async function loadAndAssignTranslation(locale, fileName, dataKey, translationDa
       try {
         const fallbackModule = await import(`./en/${fileName}.json`);
         translationData[dataKey] = fallbackModule.default;
-        console.log(`Loaded ${dataKey} translations (English fallback)`);
+        console.log(`✅ Successfully loaded ${dataKey} translations for locale: ${locale}`);
+        console.log(`📄 Content preview:`, Object.keys(module.default));
       } catch (fallbackError) {
-        console.error(`Error loading ${dataKey} English fallback:`, fallbackError);
+        console.error(`❌ Error loading ${dataKey} translations for ${locale}:`, e);
+        console.error(`📁 Tried to import: ./${locale}/${fileName}.json`);
       }
     }
   }

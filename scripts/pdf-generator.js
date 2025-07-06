@@ -44,6 +44,7 @@ Available categories:
 - get-involved
 - frameworks-foundation
 - meta-governance
+- aethelred-accord
 
 Example: node tools-pdf-generator.js economic
   `);
@@ -74,6 +75,7 @@ const outputDirs = {
   'planetary-health-governance': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'planetary-health-governance'),
   'global-health-and-pandemic-security': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'global-health-and-pandemic-security'),
   'mental-health-governance': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'mental-health-governance'),
+  'aethelred-accord': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'aethelred-accord'),
   'consciousness-and-inner-development': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'consciousness-and-inner-development'),
   'youth': path.join(__dirname, '..', 'static', 'frameworks','tools', 'youth'),
   'aging-population-support-governance': path.join(__dirname, '..', 'static', 'frameworks','tools', 'aging-population-support-governance'),
@@ -7818,7 +7820,6 @@ const tools = [
       en: 'Integrated Meta Governance Framework - Page ',
       sv: 'Integrerat metastyrningsramverk - Sida '
     },
-    // THIS IS THE KEY FIX: Add all your meta-governance sections
     sections: [
       'introduction',
       'index', 
@@ -7833,6 +7834,90 @@ const tools = [
       'appendix',
       'related',
       'quick-start'
+    ]
+  },
+
+  // Aethelred-Accord, Biotechnology Governance
+
+  // Guides
+  {
+    name: 'at-a-glance',
+    category: 'aethelred-accord',
+    fileNames: {
+      en: 'aethelred-accord-framework-ata-glance-en',
+      sv: 'aethelred-accord-framework-ata-glance-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'aethelred-accord'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'aethelred-accord')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'assets', 'pdf'),
+      sv: path.join(__dirname, '..', 'static', 'assets', 'pdf')
+    },
+    pageFooter: {
+      en: 'Aethelred Accord - At a Glance',
+      sv: 'Aethelred-avtalet - En överblick'
+    }
+  },
+  {
+    name: 'executive-summary-for-the-skeptic',
+    category: 'aethelred-accord',
+    fileNames: {
+      en: 'aethelred-accord-framework-executivesummary-for-the-skeptic-en',
+      sv: 'aethelred-accord-framework-executivesummary-for-the-skeptic-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'aethelred-accord'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'aethelred-accord')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'assets', 'pdf'),
+      sv: path.join(__dirname, '..', 'static', 'assets', 'pdf')
+    },
+    pageFooter: {
+      en: 'Aethelred Accord - Executive Summary for the Skeptic',
+      sv: 'Aethelred-avtalet - Sammanfattning för skeptikern'
+    }
+  },
+
+  // Full framework
+  {
+    name: 'aethelred-accord-framework',
+    category: 'aethelred-accord',
+    fileNames: {
+      en: 'Aethelred-Accord-Full-Framework',
+      sv: 'Aethelred-Accord-Full-Framework'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'aethelred-accord'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'aethelred-accord')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Aethelred Accord - Page ',
+      sv: 'Aethelred-avtalet - Sida '
+    },
+    sections: [
+      'index',
+      'preamble',
+      'introduction',
+      'universal-declaration',
+      'core-principles',
+      'governance-architecture',
+      'operational-systems',
+      'crisis-response',
+      'implementation-roadmap',
+      'cross-cutting-mechanisms',
+      'funding-mechanisms',
+      'framework-integration',
+      'tools-and-resources',
+      'getting-started',
+      'conclusion',
+      'appendices'
     ]
   }
 ];
