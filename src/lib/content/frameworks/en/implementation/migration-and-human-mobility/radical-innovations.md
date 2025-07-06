@@ -62,7 +62,7 @@ Traditional migration policies operate through humanitarian protection (addressi
 
 **Funding Mechanisms**: Host community support funded through **Treaty Payment for Global Public Goods Fund** rather than voluntary aid:
 - **Carbon Tax Revenue**: Companies causing climate change fund climate displacement response through mandatory global taxation
-- **Hearts Community Dividends**: 10% of migrant Hearts earnings allocated to host communities through **Nested Sovereignty** assembly voting
+- **Hearts Community Dividends**: 10% of migrant Hearts earnings allocated to host communities through **Nested Economies** assembly voting
 - **Adaptation Investment**: Climate resilience funding prioritizes in-situ adaptation for communities choosing to remain with Traditional Knowledge guidance
 
 ### Heritage Mobility Pathways: Cultural Continuity Across Movement
@@ -249,7 +249,7 @@ Traditional migration policies operate through humanitarian protection (addressi
 
 ### Stateless Digital Nomad Hubs: Experimental Governance Zones
 
-**Governance Innovation Through Meta-Governance Protocols**: Special zones governed by **Nested Sovereignty** frameworks from **Meta-Governance** operating as experimental governance laboratories:
+**Governance Innovation Through Meta-Governance Protocols**: Special zones governed by **Nested Economies** frameworks from **Meta-Governance** operating as experimental governance laboratories:
 - **Polycentric Authority**: Multiple centers of decision-making including resident assemblies, Indigenous territorial authorities, youth councils, and migrant community representatives
 - **Cultural Protocol Integration**: Governance processes respect diverse traditional and contemporary governance systems rather than imposing singular administrative approaches
 - **Experimental Policy Testing**: Safe spaces for testing new migration governance approaches with systematic learning and adaptation protocols

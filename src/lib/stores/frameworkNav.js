@@ -47,7 +47,8 @@ export const allFrameworks = [
     titleKey: 'framework.docs.nav.frameworkTitles.planetaryHealth',
     emoji: '💚',
     tier: 1,
-    status: 'review',
+    status: 'ready',
+    version: '1.0',
     path: '/frameworks/planetary-health-governance'
   },
   {
@@ -55,7 +56,8 @@ export const allFrameworks = [
     titleKey: 'framework.docs.nav.frameworkTitles.globalHealthAndPandemicSecurity',
     emoji: '⚕️',
     tier: 1,
-    status: 'planned',
+    status: 'ready',
+    version: '1.0',
     path: '/frameworks/global-health-and-pandemic-security'
   },
   {
@@ -99,19 +101,46 @@ export const allFrameworks = [
     path: '/frameworks/the-shield-protocol'
   },
   {
-    slug: 'economic-integration',
-    titleKey: 'framework.docs.nav.frameworkTitles.economicIntegration',
+    slug: 'nested-economies',
+    titleKey: 'framework.docs.nav.frameworkTitles.nestedEconomies',
     emoji: '💱',
     tier: 1,
+    status: 'ready',
+    version: '1.0',
+    path: '/frameworks/nested-economies'
+  },
+  {
+    slug: 'financial-systems',
+    titleKey: 'framework.docs.nav.frameworkTitles.financialSystems',
+    emoji: '❤️',
+    tier: 1,
     status: 'review',
-    path: '/frameworks/economic-integration'
+    path: '/frameworks/financial-systems'
+  },
+  {
+    slug: 'labor-and-employment-governance',
+    titleKey: 'framework.docs.nav.frameworkTitles.laborAndEmploymentGovernance',
+    emoji: '👥',
+    tier: 1,
+    status: 'planned',
+    path: '/frameworks/labor-and-employment-governance'
+  },
+  {
+    slug: 'adaptive-universal-basic-income',
+    titleKey: 'framework.docs.nav.frameworkTitles.adaptiveUniversalBasicIncome',
+    emoji: '💰',
+    tier: 1,
+    status: 'ready',
+    version: '1.0',
+    path: '/frameworks/adaptive-universal-basic-income'
   },
   {
     slug: 'global-supply-chains-and-logistics',
     titleKey: 'framework.docs.nav.frameworkTitles.globalSupplyChainsAndLogistics',
     emoji: '🚢',
     tier: 1,
-    status: 'review',
+    status: 'ready',
+    version: '1.0',
     path: '/frameworks/global-supply-chains-and-logistics'
   },
   {
@@ -153,24 +182,9 @@ export const allFrameworks = [
     titleKey: 'framework.docs.nav.frameworkTitles.syntheticBiologyAndAdvancedBiotechGovernance',
     emoji: '🧬',
     tier: 2,
-    status: 'planned',
+    status: 'ready',
+    version: '1.0',
     path: '/frameworks/aethelred-accord'
-  },
-  {
-    slug: 'financial-systems',
-    titleKey: 'framework.docs.nav.frameworkTitles.financialSystems',
-    emoji: '❤️',
-    tier: 2,
-    status: 'review',
-    path: '/frameworks/financial-systems'
-  },
-  {
-    slug: 'adaptive-universal-basic-income',
-    titleKey: 'framework.docs.nav.frameworkTitles.adaptiveUniversalBasicIncome',
-    emoji: '💰',
-    tier: 2,
-    status: 'planned',
-    path: '/frameworks/adaptive-universal-basic-income'
   },
   {
     slug: 'educational-systems',
@@ -225,7 +239,7 @@ export const allFrameworks = [
     titleKey: 'framework.docs.nav.frameworkTitles.wasteAndCircularEconomy',
     emoji: '♻️',
     tier: 2,
-    status: 'review',
+    status: 'planned',
     path: '/frameworks/the-phoenix-protocol'
   },
   {
@@ -251,14 +265,6 @@ export const allFrameworks = [
     tier: 2,
     status: 'planned',
     path: '/frameworks/oceans-and-marine-governance'
-  },
-  {
-    slug: 'labor-and-employment-governance',
-    titleKey: 'framework.docs.nav.frameworkTitles.laborAndEmploymentGovernance',
-    emoji: '👥',
-    tier: 2,
-    status: 'planned',
-    path: '/frameworks/labor-and-employment-governance'
   },
   {
     slug: 'disability-rights-and-inclusion',

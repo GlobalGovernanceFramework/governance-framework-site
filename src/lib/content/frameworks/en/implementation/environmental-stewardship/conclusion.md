@@ -83,9 +83,9 @@ These actions represent entry points to framework implementation, creating momen
 
 The Environmental Stewardship Framework achieves its transformative potential through strategic integration with other global governance frameworks, creating synergies that address complex challenges more effectively than siloed approaches.
 
-### Nested Sovereignty Framework
+### Nested Economies Framework
 
-By incorporating Nested Sovereignty's economic mechanisms, the Environmental Stewardship Framework ensures that governance operates effectively across scales while respecting local determination. The AUBI system and commons governance approach create economic foundations for environmental stewardship while strengthening community resilience and autonomy.
+By incorporating Nested Economies's economic mechanisms, the Environmental Stewardship Framework ensures that governance operates effectively across scales while respecting local determination. The AUBI system and commons governance approach create economic foundations for environmental stewardship while strengthening community resilience and autonomy.
 
 ### Religious & Spiritual Dialogue Framework
 

@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "AUBI Framework: Adaptive Universal Basic Income - Global Governance Framework",
+    "description": "Economic security as the foundation for human flourishing through Indigenous-guided governance, care economy recognition, and regenerative abundance principles"
+  },
+  "loading": {
+    "text": "Loading economic transformation framework..."
+  },
+  "quickStart": {
+    "new": "New to Economic Transformation?",
+    "start": "Start with our quick guides that explain adaptive universal basic income for different audiences.",
+    "button": "Choose Guide",
+    "title": "AUBI Framework Quick Start",
+    "description": "Choose the version that best matches your needs:",
+    "download": "Download PDF Version",
+    "continue": "Continue to Full Framework",
+    "guides": [
+      {
+        "id": "at-a-glance",
+        "icon": "⚡",
+        "title": "At a Glance",
+        "description": "5-minute overview of economic transformation"
+      },
+      {
+        "id": "technical-fact-sheet",
+        "icon": "📊",
+        "title": "Technical Facts",
+        "description": "Comprehensive technical specifications"
+      },
+      {
+        "id": "executive-summary-for-the-skeptic",
+        "icon": "🤔",
+        "title": "For Skeptics",
+        "description": "Evidence-based case for economic security"
+      }
+    ]
+  },
+  "categories": {
+    "overview": "Overview & Quick Start",
+    "foundations": "Foundations & Philosophy",
+    "economics": "Economics & Currency",
+    "governance": "Governance & Culture",
+    "implementation": "Implementation & Infrastructure",
+    "resources": "Conclusion & Resources"
+  },
+  "sections": {
+    "index": "Framework Overview",
+    "at-a-glance": "At a Glance",
+    "technical-fact-sheet": "Technical Fact Sheet",
+    "executive-summary-for-the-skeptic": "Executive Summary for the Skeptic",
+    "introduction": "Introduction: Beyond Survival to Flourishing",
+    "aubi-philosophy": "The AUBI Philosophy",
+    "core-architecture": "Core Architecture",
+    "four-layer-payout-system": "Four-Layer Payout System",
+    "hearts-leaves-currency": "Hearts & Leaves Currency",
+    "framework-integration": "Framework Integration",
+    "governance-model": "Governance Model",
+    "cultural-integration": "Cultural Integration",
+    "crisis-response-protocols": "Crisis Response Protocols",
+    "implementation-roadmap": "Implementation Roadmap",
+    "technical-infrastructure": "Technical Infrastructure",
+    "conclusion": "Conclusion: The Promise of Economic Liberation",
+    "appendices": "Appendices: Implementation Support"
+  },
+  "sectionsShort": {
+    "index": "Overview",
+    "at-a-glance": "At a Glance",
+    "technical-fact-sheet": "Technical Facts",
+    "executive-summary-for-the-skeptic": "For Skeptics",
+    "introduction": "Introduction",
+    "aubi-philosophy": "Philosophy",
+    "core-architecture": "Architecture",
+    "four-layer-payout-system": "Payout Layers",
+    "hearts-leaves-currency": "Hearts & Leaves",
+    "framework-integration": "Integration",
+    "governance-model": "Governance",
+    "cultural-integration": "Cultural Integration",
+    "crisis-response-protocols": "Crisis Response",
+    "implementation-roadmap": "Implementation",
+    "technical-infrastructure": "Infrastructure",
+    "conclusion": "Conclusion",
+    "appendices": "Appendices"
+  },
+  "progress": {
+    "text": "Section {current} of {total}"
+  },
+  "navigation": {
+    "previousSection": "Previous Section",
+    "nextSection": "Next Section"
+  },
+  "index": {
+    "continue": "Continue to Framework Introduction"
+  },
+  "languageFallback": {
+    "title": "Content in your language coming soon",
+    "description": "This section is currently displayed in English until translation is complete."
+  },
+  "errors": {
+    "sectionNotFound": "Section \"{section}\" not found",
+    "contentInDevelopment": "This content is still being developed."
+  }
+}

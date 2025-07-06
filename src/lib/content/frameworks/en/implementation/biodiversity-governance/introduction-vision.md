@@ -144,7 +144,7 @@ This vision represents more than environmental recovery—it embodies civilizati
 
 Our framework integrates seamlessly with the broader Earth System Frameworks for Multi-Level Governance (ESFMLG), creating synergistic rather than competitive relationships across planetary governance domains:
 
-**Nested Sovereignty Integration**: Extends ESFMLG's localized governance principles through Indigenous Data Sovereignty Clauses and Traditional Knowledge Repatriation protocols that ensure indigenous communities control both physical territories and associated data/knowledge flows.
+**Nested Economies Integration**: Extends ESFMLG's localized governance principles through Indigenous Data Sovereignty Clauses and Traditional Knowledge Repatriation protocols that ensure indigenous communities control both physical territories and associated data/knowledge flows.
 
 **Technology Governance Alignment**: Builds on Technology Integration Framework's AI Consciousness Assessment Framework while adding biodiversity-specific innovations including Ethical AI Sentiment Analysis for public trust monitoring and energy-efficient blockchain systems with indigenous-controlled infrastructure.
 

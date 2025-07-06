@@ -338,7 +338,7 @@
       
       <!-- Back to Framework link -->
       <div class="back-link">
-        <a href="{base}/frameworks/economic-integration">
+        <a href="{base}/frameworks/nested-economies">
           <span class="back-icon">←</span>
           {currentLocale === 'sv' ? 'Tillbaka till ramverket för ekonomisk integration' : 'Back to Economic Integration Framework'}
         </a>

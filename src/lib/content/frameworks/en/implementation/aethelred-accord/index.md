@@ -238,7 +238,7 @@ This framework operates as the biotechnology stewardship specialist within the b
 - **Global Health & Pandemic Security**: Coordinates Biotech Emergency Corps with Health Emergency Corps and shares biosafety protocols
 - **Technology Governance (TGIF)**: Aligns AI-Bio protocols with Love Ledger APIs and ethical technology standards
 - **AUBI & Financial Systems**: Funds community biotechnology through Automation Tax and rewards environmental restoration with Leaves currency
-- **Nested Sovereignty**: Integrates bioregional governance through Social Resilience Council and Biotech Health Assemblies
+- **Nested Economies**: Integrates bioregional governance through Social Resilience Council and Biotech Health Assemblies
 
 The framework ensures that biotechnology governance strengthens rather than undermines other governance innovations, creating synergies across climate adaptation, community sovereignty, and economic justice initiatives.
 

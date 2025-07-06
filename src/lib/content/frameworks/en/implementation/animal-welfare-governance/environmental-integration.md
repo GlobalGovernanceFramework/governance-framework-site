@@ -8,7 +8,7 @@ revision: Version 2.0 (2025-06-05)
 
 **In this section:**
 - [Shared Governance Foundation](#shared-governance-foundation)
-- [Economic Integration and Financing](#economic-integration-and-financing)
+- [Economic Integration and Financing](#nested-economies-and-financing)
 - [One Health Implementation](#one-health-implementation)
 - [Coordinated Monitoring and Enforcement](#coordinated-monitoring-and-enforcement)
 - [Implementation Timeline and Coordination](#implementation-timeline-and-coordination)
@@ -43,7 +43,7 @@ The Global Guardian Framework operates in seamless coordination with the Environ
 
 **Shared Standard Development**: Technical standards for monitoring, certification, and enforcement coordinate across frameworks to create unified requirements that address both welfare and environmental concerns through single compliance systems.
 
-## <a id="economic-integration-and-financing"></a>7.2 Economic Integration and Financing
+## <a id="nested-economies-and-financing"></a>7.2 Economic Integration and Financing
 
 ### Unified Financial Mechanisms
 

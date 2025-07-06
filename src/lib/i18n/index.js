@@ -18,6 +18,7 @@ const locales = readable(supportedLocales);
 // Data-driven mapping for page-specific translations
 const pageSpecificTranslationsMap = [
   // Framework routes (most specific first)
+  { route: '/frameworks/adaptive-universal-basic-income', dataKey: 'aubi', fileName: 'frameworksAdaptiveUniversalBasicIncome' },
   { route: '/frameworks/aethelred-accord', dataKey: 'aethelred', fileName: 'frameworksAethelredAccord' },
   { route: '/frameworks/treaty-for-our-only-home', dataKey: 'treatyFramework', fileName: 'frameworksTreatyForOurOnlyHome' },
   { route: '/frameworks/consciousness-and-inner-development', dataKey: 'consciousnessFramework', fileName: 'frameworksConsciousnessAndInnerDevelopment' },
@@ -26,7 +27,7 @@ const pageSpecificTranslationsMap = [
   { route: '/frameworks/financial-systems', dataKey: 'financialFramework', fileName: 'frameworksFinancialSystems' },
   { route: '/frameworks/educational-systems', dataKey: 'educationalFramework', fileName: 'frameworksEducationalSystems' },
   { route: '/frameworks/food-systems-and-agriculture', dataKey: 'foodSystemsFramework', fileName: 'frameworksFoodSystemsAndAgriculture' },
-  { route: '/frameworks/economic-integration', dataKey: 'economicFramework', fileName: 'frameworksEconomicIntegration' },
+  { route: '/frameworks/nested-economies', dataKey: 'nestedEconomies', fileName: 'frameworksNestedEconomies' },
   { route: '/frameworks/global-supply-chains-and-logistics', dataKey: 'gscl', fileName: 'frameworksGlobalSupplyChainAndLogistics' },
   { route: '/frameworks/justice-systems', dataKey: 'justiceFramework', fileName: 'frameworksJusticeSystems' },
   { route: '/frameworks/disaster-risk-reduction', dataKey: 'disasterFramework', fileName: 'frameworksDisasterRiskReduction' },

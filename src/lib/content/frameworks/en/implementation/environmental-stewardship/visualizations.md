@@ -203,7 +203,7 @@ A comprehensive visual model showing how framework principles drive actions to a
 A visualization of connections between the Environmental Stewardship Framework and other governance frameworks:
 
 - Grid showing framework intersections
-- Highlighted integration points with Nested Sovereignty, TGIF, and other frameworks
+- Highlighted integration points with Nested Economies, TGIF, and other frameworks
 - Tool connections across frameworks
 - Governance overlap zones
 - Implementation synergy opportunities

@@ -105,7 +105,7 @@ The Meta-Governance Framework operates as the **coordination nervous system** co
 **Meta-Governance Role**: Establishes resource sharing protocols, economic transparency requirements, and corporate accountability mechanisms
 
 **Connected Frameworks**:
-- **Primary**: [Economic Integration](/frameworks/economic-integration), [Financial Systems](/frameworks/financial-systems)
+- **Primary**: [Nested Economies](/frameworks/nested-economies), [Financial Systems](/frameworks/financial-systems)
 - **Applied**: Economic elements in climate, health, education, and development frameworks
 - **Justice**: [Global Ethics & Human Rights](/frameworks/global-ethics-and-human-rights)
 

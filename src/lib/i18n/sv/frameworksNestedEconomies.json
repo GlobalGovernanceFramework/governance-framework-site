@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "title": "Nästlade ekonomier: Ramverk för ekonomisk integration - Globalt styrningsramverk",
+    "description": "Ett ramverk för att bygga ekonomier av rätt förhållande genom gemenskapssuveränitet, Hearts-valuta och regenerativ utveckling"
+  },
+  "loading": {
+    "text": "Laddar ramverk för ekonomisk integration..."
+  },
+  "languageFallback": {
+    "title": "Innehåll på ditt språk kommer snart",
+    "description": "Detta avsnitt visas för närvarande på engelska tills översättningen är klar."
+  },
+  "quickStart": {
+    "new": "Ny inom ekonomisk integration?",
+    "start": "Börja med våra snabbguider som förklarar gemenskapskontrollerade ekonomiska system för olika målgrupper.",
+    "button": "Välj Guide",
+    "title": "Nästlade ekonomier snabbstart",
+    "description": "Välj den version som bäst passar dina behov:",
+    "download": "Ladda ner PDF-version",
+    "continue": "Fortsätt till fullständigt ramverk",
+    "guides": [
+      {
+        "id": "at-a-glance",
+        "icon": "⚡",
+        "title": "Snabböversikt",
+        "description": "5-minuters översikt av kapslad ekonomisk suveränitet"
+      },
+      {
+        "id": "executive-summary-for-the-skeptic",
+        "icon": "🤔",
+        "title": "För Skeptiker",
+        "description": "Evidensbaserat argument för gemenskapskontrollerad ekonomi"
+      }
+    ]
+  },
+  "preamble": {
+    "continue": "Fortsätt till ramverksöversikt"
+  },
+  "progress": {
+    "text": "Avsnitt {current} av {total}"
+  },
+  "navigation": {
+    "previousSection": "Föregående avsnitt",
+    "nextSection": "Nästa avsnitt"
+  },
+  "errors": {
+    "sectionNotFound": "Avsnitt \"{section}\" hittades inte",
+    "contentInDevelopment": "Detta innehåll utvecklas fortfarande."
+  },
+  "categories": {
+    "overview": "Ramverksöversikt",
+    "core": "Kärnramverk",
+    "implementation": "Implementering",
+    "resources": "Resurser och nästa steg"
+  },
+  "sections": {
+    "preamble": "Förord: Gåvans ekonomi",
+    "index": "Ramverksöversikt",
+    "at-a-glance": "Kapslade ekonomier: Snabböversikt",
+    "executive-summary-for-the-skeptic": "Sammanfattning för skeptiker",
+    "introduction": "Introduktion: Rätt förhållandes ekonomi",
+    "core-principles": "Grundläggande ekonomiska integrationsprinciper",
+    "implementation-strategies": "Implementeringsstrategier",
+    "resource-disparities": "Överbrygga resursklyftor",
+    "governance-integration": "Integration med styrningsmekanismer",
+    "timeline": "Implementeringstidslinje",
+    "monitoring": "Övervakning och utvärdering",
+    "engagement": "Offentligt engagemang och utåtriktad verksamhet",
+    "conclusion": "Slutsats: Rätt förhållande som ekonomisk grund",
+    "appendices": "Bilagor: Implementeringsstöd"
+  },
+  "sectionsShort": {
+    "preamble": "Förord",
+    "index": "Översikt",
+    "at-a-glance": "Snabböversikt",
+    "executive-summary-for-the-skeptic": "För skeptiker",
+    "introduction": "Introduktion",
+    "core-principles": "Grundprinciper",
+    "implementation-strategies": "Implementering",
+    "resource-disparities": "Resursrättvisa",
+    "governance-integration": "Styrning",
+    "timeline": "Tidslinje",
+    "monitoring": "Övervakning",
+    "engagement": "Engagemang",
+    "conclusion": "Slutsats",
+    "appendices": "Bilagor"
+  },
+  "keyTerms": {
+    "heartsCurrency": "Hearts-valuta",
+    "leavesCurrency": "Leaves-valuta",
+    "loveLedger": "Kärleksbok",
+    "rightRelationship": "Rätt förhållande",
+    "resourceJustice": "Resursrättvisa",
+    "communityWeavers": "Gemenskapsknytare",
+    "bioregionalCoordination": "Bioregional koordination",
+    "aubiIntegration": "AUBI-integration",
+    "culturalSovereignty": "Kulturell suveränitet",
+    "regenerativeDevelopment": "Regenerativ utveckling",
+    "economicDemocracy": "Ekonomisk demokrati",
+    "careEconomy": "Omsorgsekonomi",
+    "proofOfCare": "Bevis för omsorg",
+    "lmciIndex": "Kärlek, mening och anknytningsindex",
+    "socialResilienceCouncil": "Sociala motståndskraftsrådet",
+    "earthCouncil": "Jordrådet",
+    "indigenousGovernance": "Ursprungsfolksstyrning",
+    "participatoryBudgeting": "Deltagande budgetering",
+    "cooperativeEnterprise": "Kooperativt företag",
+    "interCurrencyTranslation": "Valutaöverskridande översättning",
+    "globalCommons": "Globala allmänningar",
+    "planetaryBoundaries": "Planetära gränser",
+    "ecosystemServices": "Ekosystemtjänster",
+    "traditionalKnowledge": "Traditionell kunskap",
+    "ceremonialgGovernance": "Ceremoniell styrning",
+    "mutualAid": "Ömsesidig hjälp",
+    "solidarityEconomy": "Solidaritetsekonomi"
+  },
+  "keyPhrases": {
+    "economicsOfRightRelationship": "Rätt förhållandes ekonomi",
+    "communityControlledCurrency": "Gemenskapskontrollerad valuta",
+    "regenerativeAbundance": "Regenerativ överflöd",
+    "nestedSovereignty": "Kapslad suveränitet",
+    "globalCooperationLocalAutonomy": "Globalt samarbete, Lokal autonomi",
+    "careAsCapital": "Omsorg som kapital",
+    "wealthThroughHealing": "Välstånd genom helande",
+    "economicSovereignty": "Ekonomisk suveränitet",
+    "planetaryCoordination": "Planetär koordination",
+    "bioregionalNetworks": "Bioregionala nätverk",
+    "democraticOwnership": "Demokratiskt ägande",
+    "alternativeToCapitalism": "Alternativ till kapitalism",
+    "beyondExtraction": "Bortom utvinning",
+    "communityAsCommons": "Gemenskap som allmänning",
+    "indigenousEconomicWisdom": "Ursprungsfolkens ekonomiska visdom"
+  },
+  "implementationPhases": {
+    "foundation": {
+      "title": "Grundläggande uppbyggnad",
+      "timeframe": "År 1-3",
+      "description": "Gemenskapspilotprojekt och infrastrukturutveckling"
+    },
+    "regional": {
+      "title": "Regional Integration",
+      "timeframe": "År 3-5",
+      "description": "Bioregional koordination och handelsnätverk"
+    },
+    "global": {
+      "title": "Global Koordination",
+      "timeframe": "År 5-10",
+      "description": "Planetära allmänningar och universella system"
+    }
+  },
+  "coreMechanisms": {
+    "hearts": {
+      "title": "Hearts-valuta",
+      "description": "Gemenskapskontrollerad valuta som belönar omsorgsarbete och kulturell bevarande"
+    },
+    "leaves": {
+      "title": "Leaves-tokens",
+      "description": "Icke-fungibla tokens som erkänner bidrag till ekologisk restaurering"
+    },
+    "loveLedger": {
+      "title": "Kärleksbok",
+      "description": "Blockchain-plattform som spårar bidrag samtidigt som den skyddar gemenskapens datasuveränitet"
+    },
+    "aubi": {
+      "title": "AUBI-integration",
+      "description": "Fyrlagers Adaptiv Universell Grundinkomst som ger omfattande ekonomisk trygghet"
+    },
+    "lmci": {
+      "title": "LMCI-mätningar",
+      "description": "Kärlek, Mening och Anknytningsindex som ersätter BNP med holistiska välståndsmått"
+    },
+    "weavers": {
+      "title": "Gemenskapsknytare",
+      "description": "Professionella facilitatorer som säkerställer autentiskt gemenskapsdeltagande"
+    }
+  },
+  "benefits": {
+    "economicSecurity": "Universell ekonomisk trygghet genom AUBI-baslinje",
+    "careRecognition": "Ekonomiskt erkännande för omsorgsarbete och gemenskapsorganisering",
+    "ecologicalIncentives": "Ekonomiska belöningar för ekologisk restaurering och biologisk mångfald",
+    "culturalPreservation": "Ekonomiskt stöd för traditionell kunskap och språkbevarande",
+    "communityControl": "Demokratiskt ägande och kontroll över lokala ekonomiska beslut",
+    "regionalCooperation": "Bioregional koordination för delade resurser och krisberedskap",
+    "globalSolidarity": "Planetärt samarbete för att hantera klimatförändring och ojämlikhet",
+    "indigenousSovereignty": "Skydd och stärkande av ursprungsfolkens ekonomiska system",
+    "youthEmpowerment": "Ekonomiska möjligheter för ungdomar genom Hearts-valuta",
+    "conflictResolution": "Gemenskapskontrollerade medlings- och reparativ rättvisesystem"
+  },
+  "challenges": {
+    "technicalComplexity": "Blockchain-system kräver betydande teknisk infrastruktur",
+    "culturalAdaptation": "Ramverket måste respektera olika kulturella förhållningssätt till ekonomi",
+    "scalingDifficulties": "Koordinering över lokala, regionala och globala nivåer",
+    "resistanceToChange": "Befintliga ekonomiska intressen kan motsätta sig transformation",
+    "regulatoryBarriers": "Juridiska ramverk kanske inte stödjer alternativa valutor",
+    "digitalDivide": "Teknisk tillgång varierar betydligt mellan gemenskaper",
+    "fundingRequirements": "Implementering kräver betydande initial investering",
+    "governanceComplexity": "Demokratiskt deltagande samtidigt som man bibehåller effektivitet",
+    "measurementChallenges": "Att kvantifiera kärlek, mening och anknytning effektivt",
+    "timeToTransformation": "Full implementering tar 10-15 år"
+  }
+}

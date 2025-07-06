@@ -4,7 +4,7 @@
 - [Understanding Hybrid UBES](#understanding-hybrid-ubes)
 - [Community Assessment and Design](#community-assessment-design)
 - [Technical Infrastructure Setup](#technical-infrastructure-setup)
-- [Economic Integration Framework](#economic-integration-framework)
+- [Economic Integration Framework](#nested-economies-framework)
 - [Traditional Knowledge Integration](#traditional-knowledge-integration)
 - [Governance and Democratic Control](#governance-democratic-control)
 - [Implementation Timeline](#implementation-timeline)

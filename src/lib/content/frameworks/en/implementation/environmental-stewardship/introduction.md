@@ -29,7 +29,7 @@ The Environmental Stewardship Framework delivers a transformative approach to en
 This framework aligns with and enhances several existing global agreements and frameworks:
 - Paris Agreement climate targets
 - Sustainable Development Goals (particularly SDGs 13 and 15)
-- Nested Sovereignty Framework
+- Nested Economies Framework
 - Religious & Spiritual Dialogue Framework
 - Technology Governance Implementation Framework (TGIF)
 
@@ -93,7 +93,7 @@ This contingency planning ensures partial progress toward 2050 goals despite del
 
 The Environmental Stewardship Framework integrates with other frameworks to create a coherent global governance approach:
 
-### Nested Sovereignty
+### Nested Economies
 Incorporates core principles: Sovereignty, Interoperability, Justice, Adaptability via AUBI and commons governance structures that respect local determination while ensuring global coordination.
 
 ### Religious & Spiritual Dialogue
@@ -126,7 +126,7 @@ The Environmental Stewardship Framework offers a 2-page summary for NGOs, youth,
 
 **Guardianship of All Beings**: Recognizing rights for ecosystems, species, and AI through the *Dynamic Rights Spectrum* and establishing legal frameworks for their protection and representation.
 
-**Nested Sovereignty**: Empowering local-to-global governance through the Global Council for Environmental & Spiritual Stewardship (GCESS), Regional Hubs, and community nodes, with 50% indigenous representation in regional leadership.
+**Nested Economies**: Empowering local-to-global governance through the Global Council for Environmental & Spiritual Stewardship (GCESS), Regional Hubs, and community nodes, with 50% indigenous representation in regional leadership.
 
 **Sacred Tech**: Aligning technology with spiritual and ecological ethics through the *AI Consciousness Assessment Framework* and ethical tech certification, ensuring innovations serve all beings.
 
@@ -167,7 +167,7 @@ Designed for public action and engagement, available in 10 languages plus Quechu
 A 6-episode audio series discussing framework pillars, stakeholder roles, and success stories, hosted on globalgovernanceframework.org/podcast. Episodes include:
 
 1. "Rights of All Beings: The Dynamic Rights Spectrum Explained"
-2. "Nested Sovereignty in Action: Community Success Stories"
+2. "Nested Economies in Action: Community Success Stories"
 3. "Sacred Technology: Aligning Innovation with Ethics"
 4. "Interfaith Environmental Stewardship: Dialogue Across Traditions"
 5. "Youth Leadership in Environmental Governance"

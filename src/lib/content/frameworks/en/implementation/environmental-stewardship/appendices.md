@@ -20,7 +20,7 @@ This appendix details how the Environmental Stewardship Framework aligns with an
 
 ### Alignment with Existing Frameworks
 
-#### Nested Sovereignty Framework
+#### Nested Economies Framework
 
 | Principle | Environmental Stewardship Integration |
 |-----------|--------------------------------------|
@@ -29,7 +29,7 @@ This appendix details how the Environmental Stewardship Framework aligns with an
 | Justice | Reparations Protocol addresses historical environmental harms |
 | Adaptability | Community currencies enable locally appropriate economic solutions |
 
-The framework integrates Nested Sovereignty's economic mechanisms and multi-level governance approach, ensuring environmental stewardship operates effectively across scales while respecting local determination.
+The framework integrates Nested Economies economic mechanisms and multi-level governance approach, ensuring environmental stewardship operates effectively across scales while respecting local determination.
 
 #### Religious & Spiritual Dialogue Framework
 

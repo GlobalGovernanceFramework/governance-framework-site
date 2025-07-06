@@ -164,7 +164,7 @@ section: framework-integration
 
 ---
 
-## Nested Sovereignty Integration
+## Nested Economies Integration
 
 ### Social Resilience Council & Biotech Health Assemblies
 
@@ -178,7 +178,7 @@ section: framework-integration
 
 ### Hearts & Leaves Currency Integration
 
-**Community-Controlled Economic Coordination**: The Nested Sovereignty framework's Hearts and Leaves currencies provide mechanisms for biotechnology benefit-sharing and community compensation that respect local values and priorities.
+**Community-Controlled Economic Coordination**: The Nested Economies framework's Hearts and Leaves currencies provide mechanisms for biotechnology benefit-sharing and community compensation that respect local values and priorities.
 
 **Currency Coordination Mechanisms**:
 - **Traditional Knowledge Compensation**: Indigenous communities receive Hearts currency for biotechnology innovations building on traditional knowledge, with automated royalty systems through blockchain smart contracts
