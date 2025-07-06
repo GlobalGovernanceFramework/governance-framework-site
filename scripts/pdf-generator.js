@@ -7886,8 +7886,8 @@ const tools = [
     name: 'aethelred-accord-framework',
     category: 'aethelred-accord',
     fileNames: {
-      en: 'Aethelred-Accord-Full-Framework',
-      sv: 'Aethelred-Accord-Full-Framework'
+      en: 'Aethelred-Accord-Biotechnology-Governance',
+      sv: 'Aethelred-Accord-Biotechnology-Governance'
     },
     sourceDir: {
       en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'aethelred-accord'),
