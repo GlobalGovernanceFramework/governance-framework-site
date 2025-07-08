@@ -4,14 +4,30 @@ This repository contains the source code for the Global Governance Frameworks we
 
 ## Project Vision
 
-The Global Governance Frameworks project aims to create tools, patterns, and frameworks that enable different governance systems to interoperate, share lessons, and evolve together. Rather than proposing a single governance solution, we're building infrastructure that allows many models to coexist, communicate, and collaborate.
+The Global Governance Frameworks project aims to create tools, patterns, and frameworks that enable different governance systems to interoperate, share lessons, and evolve together. Rather than proposing a single governance solution, we're building the infrastructure that allows many models to coexist, communicate, and collaborate.
+
+This comprehensive blueprint is built upon three integrated pillars:
+
+* ⚖️ **The Hardware (The Treaty for Our Only Home):** The legal and institutional reforms for effective global action.
+* 🪶 **The Heart (Indigenous & Traditional Knowledge):** The ethical and philosophical compass ensuring our solutions are just and regenerative.
+* 🌐 **The Nervous System (Integrated Meta-Governance):** The coordination protocol allowing all parts of the system to work together adaptively.
+
+## What Are the Frameworks?
+
+The frameworks are a modular, tiered system of interconnected protocols designed to solve global challenges, from institutional reform to social and economic justice. They range from **Tier 0 (Global Institutional Reform)** to **Tier 4 (Visionary Governance)** and include practical solutions like:
+
+* The **Moral Operating System (MOS)** for defining the rights of all beings.
+* The **Adaptive Universal Basic Income (AUBI)** framework, an economic engine for security and purpose.
+* The **Financial Systems Framework**, which introduces new value currencies like `Hearts` and `Leaves` to reward care and ecological stewardship.
+
+Exploring these documents is the best way to understand the full scope of the project.
 
 ## Technologies
 
 - **Frontend**: SvelteKit, Tailwind CSS
 - **Internationalization**: Custom i18n implementation
 - **Form Handling**: Formspree
-- **Deployment**: [TBD]
+- **Deployment**: GitHub pages for now. [TBD]
 
 ## Development Setup
 
@@ -24,8 +40,8 @@ The Global Governance Frameworks project aims to create tools, patterns, and fra
 
 1. Clone the repository:
 ```bash
-git clone git@github.com:GlobalGovernanceFramework/governance-framework-site.git
-cd governance-framework-site
+git clone git@github.com:GlobalGovernanceFrameworks/governance-framework-site.git
+cd governance-frameworks-site
 ```
 
 2. Install dependencies:
@@ -79,55 +95,44 @@ module.exports = {
 
 ## Project Structure
 
-```
-├── src/
-│   ├── app.css           # Main CSS file with Tailwind directives
-│   ├── app.html          # HTML template
-│   ├── lib/
-│   │   ├── components/   # Reusable Svelte components
-│   │   ├── i18n/         # Internationalization system
-│   ├── routes/           # SvelteKit pages
-├── static/               # Static assets
-├── CONTRIBUTING.md       # Contribution guidelines
-├── README.md
-├── static/
-│   ├── get-involved/
-│   │   ├── STYLE_GUIDE.md # Documentation of standards and best practices for framework contributions
-├── svelte.config.js      # SvelteKit configuration
-├── tailwind.config.js    # Tailwind CSS configuration
-├── postcss.config.js     # PostCSS configuration
-└── package.json
-```
+The repository is organized into several key directories. Here is a high-level overview:
+
+- **/src/**: The main SvelteKit application source code.
+  - **/src/routes/**: Defines all pages and URL structures for the website. This is where you'll find the Svelte files for each page.
+  - **/src/lib/content/**: Contains the core Markdown content for all the frameworks. This is the primary location for editing framework text.
+  - **/src/lib/components/**: Contains reusable Svelte components used across the site (e.g., Header, custom cards, visualizations).
+  - **/src/lib/stores/**: Svelte stores for managing global state, such as the navigation structure (`frameworkNav.js`).
+  - **/src/lib/i18n/**: Holds the JSON files for internationalization and translation.
+- **/static/**: Contains static assets like images (logo.svg), PDFs, and other files that don't need processing.
+- **/documentation/**: Houses internal project documentation, including the `style-guide.md`, strategic plans, and archives. This content is for contributors and is not part of the live website.
+- **/CONTRIBUTING.md**: Guidelines for how to contribute to the project.
 
 
 ## Contributing
 
-Contributions are welcome in any area! Please feel free to submit a Pull Request. 
+We welcome contributions of all kinds, from code and content to translations and community outreach!
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+### Code Contributions
 
-Join the [Discord server](https://discord.gg/Zx4hMJf4JU) for discussions.
+If you'd like to contribute to the website code, please feel free to submit a Pull Request.
 
-### Website code
+1.  Fork the repository
+2.  Create your feature branch (`git checkout -b feature/amazing-feature`)
+3.  Commit your changes (`git commit -m 'Add some amazing feature'`)
+4.  Push to the branch (`git push origin feature/amazing-feature`)
+5.  Open a Pull Request
 
-For detailed guidelines on how to contribute to the website code, see the guide on the website or [in the repo](/src/lib/content/get-involved/website/en/technical-guide.md)
+### Frameworks, Translations, and Outreach
 
-### Frameworks
+Our project thrives on diverse forms of contribution. For detailed guidelines on how to get involved in specific areas, please see our guides:
 
-For detailed guidelines on how to contribute to the frameworks, see the guide on the website or [in the repo](/src/lib/content/get-involved/frameworks/en/frameworks-guide.md)
+- **Frameworks:** To contribute to the framework documents, see the [Frameworks Contribution Guide](/src/lib/content/get-involved/frameworks/en/frameworks-guide.md).
+- **Translations:** To help translate the frameworks and website, see the [Translation Guide](/src/lib/content/get-involved/translations/en/translation-guide).
+- **Outreach:** To help with community building and outreach, see the [Outreach Guide](/src/lib/content/get-involved/outreach/en/outreach-guide.md).
 
-### Translations
+### Community Discussion
 
-To contribute to translations, see the guide on the website or [in the repo]((/src/lib/content/get-involved/translations/en/translation-guide))
-
-### Outreach
-
-For detailed guidelines on how to contribute to outreach, see the guide on the website or [in the repo](/src/lib/content/get-involved/outreach/en/outreach-guide.md)
-
+For general questions or to contact the team, please email us at [globalgovernanceframeworks@gmail.com](mailto:globalgovernanceframeworks@gmail.com). We maintain a private Discord server for active, ongoing contributors to facilitate closer collaboration.
 
 ## License
 
@@ -141,4 +146,4 @@ Please see the [LICENSE.md](LICENSE.md) file for the full text of both licenses.
 ## Contact
 
 Email: globalgovernanceframeworks@gmail.com
-GitHub: https://github.com/GlobalGovernanceFramework
+GitHub: https://github.com/GlobalGovernanceFrameworks
