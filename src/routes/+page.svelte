@@ -378,7 +378,7 @@
               <h4 class="question-text">{$t('findYourPlace.quiz.questions.values.question', 'What global challenges matter most to you?')}</h4>
               
               <div class="quiz-options-grid">
-                <a href="{base}/frameworks/quiz?start=climate" class="quiz-option climate">
+                <a href="{base}/quiz?start=climate" class="quiz-option climate">
                   <div class="option-icon">🌍</div>
                   <div class="option-content">
                     <h5>{$t('findYourPlace.quiz.questions.values.options.climate.title', 'Climate & Environment')}</h5>
@@ -386,7 +386,7 @@
                   </div>
                 </a>
                 
-                <a href="{base}/frameworks/quiz?start=justice" class="quiz-option justice">
+                <a href="{base}/quiz?start=justice" class="quiz-option justice">
                   <div class="option-icon">⚖️</div>
                   <div class="option-content">
                     <h5>{$t('findYourPlace.quiz.questions.values.options.justice.title', 'Justice & Equality')}</h5>
@@ -394,7 +394,7 @@
                   </div>
                 </a>
                 
-                <a href="{base}/frameworks/quiz?start=technology" class="quiz-option technology">
+                <a href="{base}/quiz?start=technology" class="quiz-option technology">
                   <div class="option-icon">⚡</div>
                   <div class="option-content">
                     <h5>{$t('findYourPlace.quiz.questions.values.options.technology.title', 'Technology & Innovation')}</h5>
@@ -402,7 +402,7 @@
                   </div>
                 </a>
                 
-                <a href="{base}/frameworks/quiz?start=community" class="quiz-option community">
+                <a href="{base}/quiz?start=community" class="quiz-option community">
                   <div class="option-icon">🤝</div>
                   <div class="option-content">
                     <h5>{$t('findYourPlace.quiz.questions.values.options.community.title', 'Community & Culture')}</h5>
@@ -410,7 +410,7 @@
                   </div>
                 </a>
                 
-                <a href="{base}/frameworks/quiz?start=systems" class="quiz-option systems highlighted">
+                <a href="{base}/quiz?start=systems" class="quiz-option systems highlighted">
                   <div class="option-icon">🏛️</div>
                   <div class="option-content">
                     <h5>{$t('findYourPlace.quiz.questions.values.options.systems.title', 'Systems Thinking')}</h5>

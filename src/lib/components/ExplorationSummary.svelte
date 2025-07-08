@@ -3,61 +3,37 @@
   import { t } from '$lib/i18n';
   import { base } from '$app/paths';
   import { goto } from '$app/navigation';
+  import { onMount } from 'svelte';
   
-  // Use precomputed framework database instead of runtime computation
-  import { 
-    getFrameworkDetails
-  } from '$lib/data/precomputedFrameworkDatabase.js';
+  // Use precomputed framework database
+  import { getFrameworkDetails } from '$lib/data/precomputedFrameworkDatabase.js';
   
   export let quizResults;
   
-  // Compute data once when component initializes, not reactively
-  let primaryInterestName = '';
+  let primaryFramework = null;
+  let loading = true;
+  
+  onMount(async () => {
+    if (quizResults?.primaryInterest) {
+      try {
+        primaryFramework = await getFrameworkDetails(quizResults.primaryInterest);
+        loading = false;
+      } catch (error) {
+        console.error('Error loading primary framework:', error);
+        loading = false;
+      }
+    } else {
+      console.warn('No primary interest found in quiz results:', quizResults);
+      loading = false;
+    }
+  });
+  
+  // Compute total frameworks count
   let totalFrameworksCount = 0;
-  
-  // Only recalculate when quizResults actually changes
   $: if (quizResults) {
-    primaryInterestName = getPrimaryInterestNameComputed(quizResults);
-    totalFrameworksCount = getTotalFrameworksCountComputed(quizResults);
-  }
-  
-  // Pure functions that don't cause reactivity issues
-  function getPrimaryInterestNameComputed(results) {
-    // Try to get from quizResults.primaryInterest first
-    if (results?.primaryInterest) {
-      const framework = getFrameworkDetails(results.primaryInterest);
-      if (framework) {
-        return framework.name;
-      }
-    }
-    
-    // Fallback: try to infer from the first recommended framework
-    if (results?.recommendedFrameworks?.length > 0) {
-      const framework = getFrameworkDetails(results.recommendedFrameworks[0]);
-      if (framework) {
-        return framework.name;
-      }
-    }
-    
-    // Fallback: try to map from quiz values
-    if (results?.values) {
-      const valueMapping = {
-        'climate': 'framework.docs.nav.frameworkTitles.climateAndEnergyGovernance',
-        'justice': 'framework.docs.nav.frameworkTitles.justiceSystems', 
-        'technology': 'framework.docs.nav.frameworkTitles.technologyGovernance',
-        'community': 'framework.docs.nav.frameworkTitles.culturalHeritagePreservation',
-        'systems': 'framework.docs.nav.frameworkTitles.treatyForOurOnlyHome'
-      };
-      return valueMapping[results.values] || 'findYourPlace.recommendations.summary.unknown';
-    }
-    
-    return 'findYourPlace.recommendations.summary.unknown';
-  }
-  
-  function getTotalFrameworksCountComputed(results) {
-    const recommendedCount = results?.recommendedFrameworks?.length || 0;
-    const relatedCount = results?.relatedFrameworks?.length || 0;
-    return recommendedCount + relatedCount;
+    const recommendedCount = quizResults?.recommendedFrameworks?.length || 0;
+    const relatedCount = quizResults?.relatedFrameworks?.length || 0;
+    totalFrameworksCount = recommendedCount + relatedCount;
   }
 
   function handleRetakeQuiz(event) {
@@ -75,7 +51,13 @@
       <div class="summary-content">
         <div class="summary-item">
           <strong>{$t('findYourPlace.recommendations.summary.primaryInterest')}:</strong>
-          {$t(primaryInterestName)}
+          {#if loading}
+            <span class="loading-text">Loading...</span>
+          {:else if primaryFramework}
+            {$t(primaryFramework.name)}
+          {:else}
+            {$t('findYourPlace.recommendations.summary.unknown')}
+          {/if}
         </div>
         <div class="summary-item">
           <strong>{$t('findYourPlace.recommendations.summary.totalFrameworks')}:</strong>
@@ -136,6 +118,11 @@
   
   .summary-item strong {
     color: #1F2937;
+  }
+
+  .loading-text {
+    color: #6B7280;
+    font-style: italic;
   }
 
   .retake-section {

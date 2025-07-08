@@ -7,7 +7,10 @@
   import { browser } from '$app/environment';
   import { goto } from '$app/navigation';
   import { allFrameworks, tierMetadata, getFrameworksByTier, getAllTiers } from '$lib/stores/frameworkNav.js';
-  
+  import { dev } from '$app/environment';
+
+  const isDevMode = dev;
+
   // Handle language selection
   function handleLocaleChange(e) {
     const newLocale = e.target.value;
@@ -1033,22 +1036,43 @@
               
               <!-- Visual Separator -->
               <div class="dropdown-separator"></div>
+
+              {#if isDevMode}
               
-              <!-- Desktop: Implementation Frameworks with Tiered Sub-Sub-Menus -->
-              <div class="dropdown-submenu desktop-only">
-                <a href="{base}/frameworks" role="menuitem">
-                  {browser ? ($t('common.header.tieredFrameworks') || 'Tiered Frameworks') : 'Tiered Frameworks'}
-                </a>
-                <div class="dropdown-menu-level2">
-                  {#each tiers as tier}
-                    <div class="tier-submenu">
-                      <a href="{base}/frameworks/tier-{tier}" role="menuitem">
-                        {browser ? ($t(tierMetadata[tier]?.titleKey) || `Tier ${tier}`) : `Tier ${tier}`}
-                      </a>
-                      <div class="dropdown-menu-level3">
-                        {#if (frameworksByTier[tier] || []).length > 8}
-                          <!-- If more than 8 frameworks, add scrollable container -->
-                          <div class="dropdown-menu-level3-scrollable">
+                <!-- Desktop: Implementation Frameworks with Tiered Sub-Sub-Menus -->
+                <div class="dropdown-submenu desktop-only">
+                  <a href="{base}/frameworks" role="menuitem">
+                    {browser ? ($t('common.header.tieredFrameworks') || 'Tiered Frameworks') : 'Tiered Frameworks'}
+                  </a>
+                  <div class="dropdown-menu-level2">
+                    {#each tiers as tier}
+                      <div class="tier-submenu">
+                        <a href="{base}/frameworks/tier-{tier}" role="menuitem">
+                          {browser ? ($t(tierMetadata[tier]?.titleKey) || `Tier ${tier}`) : `Tier ${tier}`}
+                        </a>
+                        <div class="dropdown-menu-level3">
+                          {#if (frameworksByTier[tier] || []).length > 8}
+                            <!-- If more than 8 frameworks, add scrollable container -->
+                            <div class="dropdown-menu-level3-scrollable">
+                              {#each frameworksByTier[tier] || [] as framework}
+                                <a 
+                                  href="{base}{framework.path}" 
+                                  class:active={isActive(framework.path)}
+                                  class:primal={framework.slug === 'treaty-for-our-only-home'}
+                                  class:highlighted={
+                                    framework.slug === 'meta-governance' ||
+                                    framework.slug === 'global-citizenship-practice' ||
+                                    framework.slug === 'indigenous-governance-and-traditional-knowledge'
+                                  }
+                                  data-sveltekit-preload-data="hover" 
+                                  role="menuitem"
+                                >
+                                  {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
+                                </a>
+                              {/each}
+                            </div>
+                          {:else}
+                            <!-- If 8 or fewer frameworks, no scrolling needed -->
                             {#each frameworksByTier[tier] || [] as framework}
                               <a 
                                 href="{base}{framework.path}" 
@@ -1065,9 +1089,43 @@
                                 {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
                               </a>
                             {/each}
-                          </div>
-                        {:else}
-                          <!-- If 8 or fewer frameworks, no scrolling needed -->
+                          {/if}
+                        </div>
+                      </div>
+                    {/each}
+                  </div>
+                </div>
+
+                <!-- Mobile: Collapsible Tiered Frameworks -->
+                <div class="mobile-only">
+                  <button 
+                    type="button" 
+                    class={`mobile-submenu-toggle ${isTieredFrameworksOpen ? 'open' : ''}`}
+                    on:click|stopPropagation={(e) => toggleTieredFrameworks(e)}
+                    aria-label={isTieredFrameworksOpen ? 'Close tiered frameworks' : 'Open tiered frameworks'}
+                  >
+                    <span>{browser ? ($t('common.header.tieredFrameworks') || 'Tiered Frameworks') : 'Tiered Frameworks'}</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
+                  
+                  <div class={`mobile-submenu ${isTieredFrameworksOpen ? '' : 'hidden'}`}>
+                    {#each tiers as tier}
+                      <div>
+                        <button 
+                          type="button" 
+                          class={`mobile-tier-toggle ${openTiers[tier] ? 'open' : ''}`}
+                          on:click|stopPropagation={(e) => toggleTier(tier, e)}
+                          aria-label={openTiers[tier] ? `Close tier ${tier}` : `Open tier ${tier}`}
+                        >
+                          <span>{browser ? ($t(tierMetadata[tier]?.titleKey) || `Tier ${tier}`) : `Tier ${tier}`}</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                          </svg>
+                        </button>
+                        
+                        <div class={`mobile-tier-submenu ${openTiers[tier] ? '' : 'hidden'}`}>
                           {#each frameworksByTier[tier] || [] as framework}
                             <a 
                               href="{base}{framework.path}" 
@@ -1080,107 +1138,61 @@
                               }
                               data-sveltekit-preload-data="hover" 
                               role="menuitem"
+                              style="display: block; padding: 0.4rem 1.2rem; font-size: 0.85rem; color: #2B4B8C; text-decoration: none; border-left: 3px solid transparent; transition: all 0.2s;"
+                              on:mouseenter={(e) => {
+                                if (!e.target.classList.contains('primal') && !e.target.classList.contains('highlighted')) {
+                                  e.target.style.backgroundColor = '#f7f1e3';
+                                  e.target.style.color = '#DAA520';
+                                  e.target.style.borderLeftColor = '#DAA520';
+                                }
+                              }}
+                              on:mouseleave={(e) => {
+                                if (!e.target.classList.contains('active') && !e.target.classList.contains('highlighted') && !e.target.classList.contains('primal')) {
+                                  e.target.style.backgroundColor = 'transparent';
+                                  e.target.style.color = '#2B4B8C';
+                                  e.target.style.borderLeftColor = 'transparent';
+                                }
+                              }}
                             >
                               {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
                             </a>
                           {/each}
-                        {/if}
+                        </div>
                       </div>
-                    </div>
-                  {/each}
+                    {/each}
+                  </div>
                 </div>
-              </div>
-
-              <!-- Mobile: Collapsible Tiered Frameworks -->
-              <div class="mobile-only">
-                <button 
-                  type="button" 
-                  class={`mobile-submenu-toggle ${isTieredFrameworksOpen ? 'open' : ''}`}
-                  on:click|stopPropagation={(e) => toggleTieredFrameworks(e)}
-                  aria-label={isTieredFrameworksOpen ? 'Close tiered frameworks' : 'Open tiered frameworks'}
-                >
-                  <span>{browser ? ($t('common.header.tieredFrameworks') || 'Tiered Frameworks') : 'Tiered Frameworks'}</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                  </svg>
-                </button>
-                
-                <div class={`mobile-submenu ${isTieredFrameworksOpen ? '' : 'hidden'}`}>
-                  {#each tiers as tier}
-                    <div>
-                      <button 
-                        type="button" 
-                        class={`mobile-tier-toggle ${openTiers[tier] ? 'open' : ''}`}
-                        on:click|stopPropagation={(e) => toggleTier(tier, e)}
-                        aria-label={openTiers[tier] ? `Close tier ${tier}` : `Open tier ${tier}`}
-                      >
-                        <span>{browser ? ($t(tierMetadata[tier]?.titleKey) || `Tier ${tier}`) : `Tier ${tier}`}</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                        </svg>
-                      </button>
-                      
-                      <div class={`mobile-tier-submenu ${openTiers[tier] ? '' : 'hidden'}`}>
-                        {#each frameworksByTier[tier] || [] as framework}
-                          <a 
-                            href="{base}{framework.path}" 
-                            class:active={isActive(framework.path)}
-                            class:primal={framework.slug === 'treaty-for-our-only-home'}
-                            class:highlighted={
-                              framework.slug === 'meta-governance' ||
-                              framework.slug === 'global-citizenship-practice' ||
-                              framework.slug === 'indigenous-governance-and-traditional-knowledge'
-                            }
-                            data-sveltekit-preload-data="hover" 
-                            role="menuitem"
-                            style="display: block; padding: 0.4rem 1.2rem; font-size: 0.85rem; color: #2B4B8C; text-decoration: none; border-left: 3px solid transparent; transition: all 0.2s;"
-                            on:mouseenter={(e) => {
-                              if (!e.target.classList.contains('primal') && !e.target.classList.contains('highlighted')) {
-                                e.target.style.backgroundColor = '#f7f1e3';
-                                e.target.style.color = '#DAA520';
-                                e.target.style.borderLeftColor = '#DAA520';
-                              }
-                            }}
-                            on:mouseleave={(e) => {
-                              if (!e.target.classList.contains('active') && !e.target.classList.contains('highlighted') && !e.target.classList.contains('primal')) {
-                                e.target.style.backgroundColor = 'transparent';
-                                e.target.style.color = '#2B4B8C';
-                                e.target.style.borderLeftColor = 'transparent';
-                              }
-                            }}
-                          >
-                            {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
-                          </a>
-                        {/each}
-                      </div>
-                    </div>
-                  {/each}
-                </div>
-              </div>
               
               <!-- Visual Separator -->
               <div class="dropdown-separator"></div>
               
+              {/if}
+                             
               <!-- Scrollable Content Area for all the static links -->
               <div class="dropdown-scrollable-content">
                 <a href="{base}/frameworks" class={isActive('/frameworks') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
                   {browser ? ($t('common.header.frameworkOverview') || 'Overview') : 'Overview'}
                 </a>
+                {#if isDevMode}
                 <a href="{base}/frameworks/docs" class={isActive('/frameworks/docs') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
                   {browser ? ($t('common.header.frameworkDocs') || 'Documentation') : 'Documentation'}
                 </a>
+                {/if}
                 <a href="{base}/frameworks/docs/principles" class={isActive('/frameworks/docs/principles') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
                   {browser ? ($t('common.header.frameworkPrinciples') || 'Principles') : 'Principles'}
                 </a>
                 <a href="{base}/frameworks/docs/implementation" class={isActive('/frameworks/docs/implementation') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
                   {browser ? ($t('common.header.frameworkImplementation') || 'Implementation') : 'Implementation'}
                 </a>
+                {#if isDevMode}
                 <a href="{base}/frameworks/hubs" class={isActive('/frameworks/hubs') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
                   {browser ? ($t('common.header.frameworkHubs') || 'Hubs') : 'Hubs'}
                 </a>
+                {/if}
                 <a href="{base}/frameworks/tools" class={isActive('/frameworks/tools') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
                   {browser ? ($t('common.header.frameworkTools') || 'Tools') : 'Tools'}
                 </a>
+                {#if isDevMode}
                 <a href="{base}/frameworks/visuals" class={isActive('/frameworks/visuals') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
                   {browser ? ($t('common.header.frameworkVisuals') || 'Visuals') : 'Visuals'}
                 </a>
@@ -1199,6 +1211,7 @@
                 <a href="{base}/frameworks/docs/glossary" class={isActive('/frameworks/docs/glossary') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
                   {browser ? ($t('common.header.frameworkGlossary') || 'Glossary') : 'Glossary'}
                 </a>
+                {/if}
               </div>
             </div>
           </li>

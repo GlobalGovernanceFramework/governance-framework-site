@@ -2,54 +2,78 @@
 <script>
   import { t } from '$lib/i18n';
   import { base } from '$app/paths';
+  import { onMount } from 'svelte';
   import CitizenshipCompass from '$lib/components/CitizenshipCompass.svelte';
   
-  // Use precomputed framework database instead of computing at runtime
+  // Use precomputed framework database
   import { 
-    PRECOMPUTED_FRAMEWORK_DATABASE,
+    getPrecomputedFrameworkDatabase,
     getFrameworkDetails,
     getTierInfoOptimized 
   } from '$lib/data/precomputedFrameworkDatabase.js';
   
   export let quizResults;
-  
-  // Use the precomputed database directly - no expensive reduce operations
-  const frameworkDatabase = PRECOMPUTED_FRAMEWORK_DATABASE;
-  
-  // Add Spiral Dynamics as special case (keeping existing logic)
-  frameworkDatabase['spiral-dynamics'] = {
-    name: 'Spiral Dynamics',
-    description: 'Understanding how different value systems emerge and evolve helps navigate the complexity of global citizenship. This framework reveals why people approach the same challenges so differently.',
-    tier: 'developmental',
-    color: '#8B4513',
-    route: 'https://www.spiralize.org',
-    external: true,
-    icon: '🌀',
-    benefits: ['Cross-cultural understanding', 'Systems thinking', 'Conflict resolution'],
-    type: 'developmental'
-  };
-  
-  // Compute these once on mount instead of reactive statements
+
+  let database = {};
+  let loading = true;
   let relatedFrameworks = [];
   let showSpiralDynamics = false;
-  
-  // Compute data once when component initializes
-  $: if (quizResults) {
-    // Only recalculate if quizResults actually changes
-    relatedFrameworks = getRelatedFrameworksComputed(quizResults);
+
+  onMount(async () => {
+    try {
+      database = await getPrecomputedFrameworkDatabase();
+      
+      // Add Spiral Dynamics as special case
+      database['spiral-dynamics'] = {
+        name: 'Spiral Dynamics',
+        description: 'Understanding how different value systems emerge and evolve helps navigate the complexity of global citizenship. This framework reveals why people approach the same challenges so differently.',
+        tier: 'developmental',
+        color: '#8B4513',
+        route: 'https://www.spiralize.org',
+        external: true,
+        icon: '🌀',
+        benefits: ['Cross-cultural understanding', 'Systems thinking', 'Conflict resolution'],
+        type: 'developmental'
+      };
+      
+      // Load frameworks after database is ready
+      if (quizResults) {
+        await loadRelatedFrameworks();
+        showSpiralDynamics = shouldShowSpiralDynamicsComputed(quizResults);
+      }
+      
+      loading = false;
+    } catch (error) {
+      console.error('Error loading framework database:', error);
+      database = {};
+      loading = false;
+    }
+  });
+
+  // Watch for quiz results changes
+  $: if (quizResults && !loading) {
+    loadRelatedFrameworks();
     showSpiralDynamics = shouldShowSpiralDynamicsComputed(quizResults);
   }
   
-  // Pure functions that don't cause reactivity issues
-  function getRelatedFrameworksComputed(results) {
-    if (!results?.relatedFrameworks) return [];
-    return results.relatedFrameworks
-      .map(framework => {
+  async function loadRelatedFrameworks() {
+    if (!quizResults?.relatedFrameworks) {
+      relatedFrameworks = [];
+      return;
+    }
+    
+    try {
+      const frameworkPromises = quizResults.relatedFrameworks.map(async framework => {
         const id = typeof framework === 'object' ? framework.slug || framework.id : framework;
-        return getFrameworkDetails(id);
-      })
-      .filter(Boolean)
-      .slice(0, 6);
+        return await getFrameworkDetails(id);
+      });
+      
+      const frameworks = await Promise.all(frameworkPromises);
+      relatedFrameworks = frameworks.filter(Boolean).slice(0, 6);
+    } catch (error) {
+      console.error('Error loading related frameworks:', error);
+      relatedFrameworks = [];
+    }
   }
   
   function shouldShowSpiralDynamicsComputed(results) {
@@ -61,7 +85,7 @@
                            results.scale === 'connected';
     
     // Also show for users with diverse interests (multiple recommended frameworks)
-    const complexInterests = getRelatedFrameworksComputed(results).length >= 3;
+    const complexInterests = relatedFrameworks.length >= 3;
     
     return systemsThinking || complexInterests;
   }
@@ -72,120 +96,152 @@
   }
 </script>
 
-<section class="deeper-exploration-section">
-  <div class="container">
-    <!-- Related Frameworks -->
-    {#if relatedFrameworks.length > 0}
-      <div class="related-recommendations">
-        <div class="related-header">
-          <h3>Related Frameworks to Explore</h3>
-          <p class="related-description">
-            {$t('findYourPlace.recommendations.related.description')}
+{#if loading}
+  <div class="loading-state">
+    <div class="loading-spinner"></div>
+    <p>Loading framework data...</p>
+  </div>
+{:else}
+  <section class="deeper-exploration-section">
+    <div class="container">
+      <!-- Related Frameworks -->
+      {#if relatedFrameworks.length > 0}
+        <div class="related-recommendations">
+          <div class="related-header">
+            <h3>Related Frameworks to Explore</h3>
+            <p class="related-description">
+              {$t('findYourPlace.recommendations.related.description')}
+            </p>
+          </div>
+          
+          <div class="frameworks-grid related">
+            {#each relatedFrameworks as framework}
+              {@const tierInfo = getTierInfo(framework.tier)}
+              <a 
+                href="{base}{framework.route}" 
+                class="framework-card related-card {tierInfo.class}"
+              >
+                <div class="card-header compact">
+                  <div class="framework-icon small">{framework.icon}</div>
+                  <span class="tier-label">{$t(tierInfo.label)}</span>
+                </div>
+                
+                <div class="card-content compact">
+                  <h4>{$t(framework.name)}</h4>
+                  <p>{$t(framework.description)}</p>
+                </div>
+              </a>
+            {/each}
+          </div>
+          
+          <div class="explore-all">
+            <a href="{base}/frameworks/docs/implementation" class="explore-all-link">
+              {$t('findYourPlace.recommendations.exploreAll')} →
+            </a>
+          </div>
+        </div>
+      {/if}
+
+      <!-- Citizenship Compass Component -->
+      <div class="compass-section">
+        <div class="compass-header">
+          <h2>{$t('findYourPlace.compass.title')}</h2>
+          <p>
+            {$t('findYourPlace.compass.description')}
           </p>
         </div>
-        
-        <div class="frameworks-grid related">
-          {#each relatedFrameworks as framework}
-            {@const tierInfo = getTierInfo(framework.tier)}
+        <CitizenshipCompass {quizResults} />
+      </div>
+
+      <!-- Developmental Framework Section (Spiral Dynamics) -->
+      {#if showSpiralDynamics && database['spiral-dynamics']}
+        <div class="developmental-framework-section">
+          <div class="developmental-header">
+            <h3>{$t('findYourPlace.spiralDynamics.invitation.title')}</h3>
+            <p>{$t('findYourPlace.spiralDynamics.note.description')} <a href="https://www.spiralize.org" target="_blank" rel="noopener noreferrer" class="spiral-link">{$t('findYourPlace.spiralDynamics.note.linkText')}</a>, {$t('findYourPlace.spiralDynamics.note.subtitle')}.</p>
+          </div>
+          
+          <div class="developmental-framework-recommendation">
             <a 
-              href="{base}{framework.route}" 
-              class="framework-card related-card {tierInfo.class}"
+              href="https://www.spiralize.org" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="framework-card spiral-dynamics"
             >
-              <div class="card-header compact">
-                <div class="framework-icon small">{framework.icon}</div>
-                <span class="tier-label">{$t(tierInfo.label)}</span>
+              <div class="framework-header">
+                <div class="framework-icon-large">🌀</div>
+                <div class="framework-meta">
+                  <h4>Spiral Dynamics</h4>
+                  <div class="framework-badge developmental">
+                    {$t('findYourPlace.spiralDynamics.tiers.second')} & {$t('findYourPlace.spiralDynamics.tiers.third')}
+                  </div>
+                </div>
               </div>
               
-              <div class="card-content compact">
-                <h4>{$t(framework.name)}</h4>
-                <p>{$t(framework.description)}</p>
+              <div class="framework-content">
+                <p>{database['spiral-dynamics'].description}</p>
+                
+                <div class="framework-benefits">
+                  {#each database['spiral-dynamics'].benefits as benefit}
+                    <span class="benefit">{benefit}</span>
+                  {/each}
+                </div>
+                
+                <div class="spiral-stages-preview">
+                  <div class="stages-container">
+                    <div class="stage-dot beige" title="{$t('findYourPlace.spiralDynamics.stages.beige')}"></div>
+                    <div class="stage-dot purple" title="{$t('findYourPlace.spiralDynamics.stages.purple')}"></div>
+                    <div class="stage-dot red" title="{$t('findYourPlace.spiralDynamics.stages.red')}"></div>
+                    <div class="stage-dot blue" title="{$t('findYourPlace.spiralDynamics.stages.blue')}"></div>
+                    <div class="stage-dot orange" title="{$t('findYourPlace.spiralDynamics.stages.orange')}"></div>
+                    <div class="stage-dot green" title="{$t('findYourPlace.spiralDynamics.stages.green')}"></div>
+                    <div class="stage-dot yellow" title="{$t('findYourPlace.spiralDynamics.stages.yellow')}"></div>
+                    <div class="stage-dot turquoise" title="{$t('findYourPlace.spiralDynamics.stages.turquoise')}"></div>
+                  </div>
+                  <p class="stages-label">8 stages of human development</p>
+                </div>
+              </div>
+              
+              <div class="framework-action">
+                <span class="explore-framework">
+                  {$t('findYourPlace.spiralDynamics.invitation.linkText')} →
+                </span>
+                <span class="external-note">External link</span>
               </div>
             </a>
-          {/each}
+          </div>
         </div>
-        
-        <div class="explore-all">
-          <a href="{base}/frameworks/docs/implementation" class="explore-all-link">
-            {$t('findYourPlace.recommendations.exploreAll')} →
-          </a>
-        </div>
-      </div>
-    {/if}
-
-    <!-- Citizenship Compass Component -->
-    <div class="compass-section">
-      <div class="compass-header">
-        <h2>{$t('findYourPlace.compass.title')}</h2>
-        <p>
-          {$t('findYourPlace.compass.description')}
-        </p>
-      </div>
-      <CitizenshipCompass {quizResults} />
+      {/if}
     </div>
-
-    <!-- Developmental Framework Section (Spiral Dynamics) -->
-    {#if showSpiralDynamics}
-      <div class="developmental-framework-section">
-        <div class="developmental-header">
-          <h3>{$t('findYourPlace.spiralDynamics.invitation.title')}</h3>
-          <p>{$t('findYourPlace.spiralDynamics.note.description')} <a href="https://www.spiralize.org" target="_blank" rel="noopener noreferrer" class="spiral-link">{$t('findYourPlace.spiralDynamics.note.linkText')}</a>, {$t('findYourPlace.spiralDynamics.note.subtitle')}.</p>
-        </div>
-        
-        <div class="developmental-framework-recommendation">
-          <a 
-            href="https://www.spiralize.org" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            class="framework-card spiral-dynamics"
-          >
-            <div class="framework-header">
-              <div class="framework-icon-large">🌀</div>
-              <div class="framework-meta">
-                <h4>Spiral Dynamics</h4>
-                <div class="framework-badge developmental">
-                  {$t('findYourPlace.spiralDynamics.tiers.second')} & {$t('findYourPlace.spiralDynamics.tiers.third')}
-                </div>
-              </div>
-            </div>
-            
-            <div class="framework-content">
-              <p>{frameworkDatabase['spiral-dynamics'].description}</p>
-              
-              <div class="framework-benefits">
-                {#each frameworkDatabase['spiral-dynamics'].benefits as benefit}
-                  <span class="benefit">{benefit}</span>
-                {/each}
-              </div>
-              
-              <div class="spiral-stages-preview">
-                <div class="stages-container">
-                  <div class="stage-dot beige" title="{$t('findYourPlace.spiralDynamics.stages.beige')}"></div>
-                  <div class="stage-dot purple" title="{$t('findYourPlace.spiralDynamics.stages.purple')}"></div>
-                  <div class="stage-dot red" title="{$t('findYourPlace.spiralDynamics.stages.red')}"></div>
-                  <div class="stage-dot blue" title="{$t('findYourPlace.spiralDynamics.stages.blue')}"></div>
-                  <div class="stage-dot orange" title="{$t('findYourPlace.spiralDynamics.stages.orange')}"></div>
-                  <div class="stage-dot green" title="{$t('findYourPlace.spiralDynamics.stages.green')}"></div>
-                  <div class="stage-dot yellow" title="{$t('findYourPlace.spiralDynamics.stages.yellow')}"></div>
-                  <div class="stage-dot turquoise" title="{$t('findYourPlace.spiralDynamics.stages.turquoise')}"></div>
-                </div>
-                <p class="stages-label">8 stages of human development</p>
-              </div>
-            </div>
-            
-            <div class="framework-action">
-              <span class="explore-framework">
-                {$t('findYourPlace.spiralDynamics.invitation.linkText')} →
-              </span>
-              <span class="external-note">External link</span>
-            </div>
-          </a>
-        </div>
-      </div>
-    {/if}
-  </div>
-</section>
+  </section>
+{/if}
 
 <style>
+  .loading-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #6B7280;
+  }
+
+  .loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #e5e7eb;
+    border-top: 4px solid #2B4B8C;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
   .deeper-exploration-section {
     padding: 3rem 0;
     background: white;
@@ -197,26 +253,6 @@
     padding: 0 1rem;
   }
   
-  .section-header {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-  
-  .section-header h2 {
-    font-size: 2.25rem;
-    font-weight: 700;
-    color: #1F2937;
-    margin-bottom: 1rem;
-  }
-  
-  .section-description {
-    font-size: 1.125rem;
-    color: #6B7280;
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.6;
-  }
-
   /* Compass Section */
   .compass-section {
     margin-bottom: 4rem;
@@ -574,10 +610,6 @@
       gap: 1rem;
     }
     
-    .section-header h2 {
-      font-size: 1.875rem;
-    }
-    
     .related-recommendations {
       padding: 1.5rem;
     }
@@ -615,26 +647,6 @@
     .stage-dot {
       width: 20px;
       height: 20px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .card-header.compact {
-      flex-direction: row;
-      align-items: center;
-    }
-
-    .developmental-header h3 {
-      font-size: 1.5rem;
-    }
-    
-    .framework-content p {
-      font-size: 1rem;
-    }
-    
-    .benefit {
-      font-size: 0.8rem;
-      padding: 0.4rem 0.8rem;
     }
   }
 </style>

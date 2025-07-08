@@ -1,4 +1,4 @@
-<!-- src/routes/frameworks/docs/implementation/culture/+page.svelte -->
+<!-- src/routes/frameworks/cultural-heritage-preservation/+page.svelte -->
 <script>
   import { page } from '$app/stores';
   import { t, locale } from '$lib/i18n';

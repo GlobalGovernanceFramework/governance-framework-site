@@ -1,4 +1,4 @@
-// svelte.config.js - Alternative approach with better prerender configuration
+// svelte.config.js - Fixed without vite configuration
 import { mdsvex } from 'mdsvex';
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
@@ -46,6 +46,14 @@ const config = {
           return;
         }
 
+        // Handle module loading errors during prerendering
+        if (message && (message.includes('Not found: /src/lib/data/') || 
+                       message.includes('compassData.js') ||
+                       message.includes('precomputedFrameworkDatabase.js'))) {
+          console.warn(`Warning: Data module not found during prerendering: ${path} - ${message}`);
+          return;
+        }
+
         if (path.includes('/frameworks/meta-governance/') && 
             path !== '/frameworks/meta-governance' &&
             !path.includes('?')) {
@@ -83,6 +91,12 @@ const config = {
         // Handle 404 errors for missing routes during prerendering
         if (message && message.includes('Not found:') && message.includes('404')) {
           console.warn(`Warning: 404 error during prerendering for path: ${path} - ${message}`);
+          return;
+        }
+
+        // Handle top-level await errors
+        if (message && message.includes('Top-level await')) {
+          console.warn(`Warning: Top-level await error during prerendering for path: ${path} - ${message}`);
           return;
         }
         

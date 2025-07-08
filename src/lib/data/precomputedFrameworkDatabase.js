@@ -1,10 +1,13 @@
 // src/lib/data/precomputedFrameworkDatabase.js
-// Pre-compute framework database to avoid runtime delays
+// Simplified version without top-level await
 
-import { allFrameworks } from '$lib/stores/frameworkNav.js';
+// Import with try-catch to handle missing dependencies
+let allFrameworks = [];
+let isInitialized = false;
 
 // Pre-compute expensive operations at module load time
 function getIcon(slug) {
+  if (!slug) return '📋';
   if (slug.includes('treaty')) return '🏛️';
   if (slug.includes('climate') || slug.includes('energy')) return '🌍';
   if (slug.includes('peace')) return '🕊️';
@@ -28,66 +31,89 @@ const tierColors = {
   4: '#2F4F4F'
 };
 
-// Pre-compute the entire framework database at module initialization
-export const PRECOMPUTED_FRAMEWORK_DATABASE = allFrameworks.reduce((acc, framework) => {
-  const key = framework.slug;
+// Lazy initialization function
+async function initializeFrameworks() {
+  if (isInitialized) return allFrameworks;
   
-  acc[key] = {
-    name: framework.titleKey,
-    description: `findYourPlace.frameworks.database.${framework.slug.replace(/-/g, '')}.description`,
-    tier: framework.tier,
-    color: tierColors[framework.tier] || '#6B7280',
-    route: framework.path,
-    importance: framework.tier === 0 ? 'critical' : 'normal',
-    icon: getIcon(framework.slug),
-    status: framework.status,
-    version: framework.version,
-    slug: framework.slug
-  };
+  try {
+    const frameworkNav = await import('$lib/stores/frameworkNav.js');
+    allFrameworks = frameworkNav.allFrameworks || [];
+    isInitialized = true;
+    console.log('Framework database initialized with', allFrameworks.length, 'frameworks');
+  } catch (error) {
+    console.warn('Failed to load frameworkNav, using empty frameworks array:', error);
+    allFrameworks = [];
+    isInitialized = true;
+  }
   
-  return acc;
-}, {});
+  return allFrameworks;
+}
 
-// Pre-compute framework lookups
+// Export computed database as a function
+export async function getPrecomputedFrameworkDatabase() {
+  const frameworks = await initializeFrameworks();
+  
+  return frameworks.reduce((acc, framework) => {
+    const key = framework.slug;
+    
+    acc[key] = {
+      name: framework.titleKey,
+      description: `findYourPlace.frameworks.database.${framework.slug.replace(/-/g, '')}.description`,
+      tier: framework.tier,
+      color: tierColors[framework.tier] || '#6B7280',
+      route: framework.path,
+      importance: framework.tier === 0 ? 'critical' : 'normal',
+      icon: getIcon(framework.slug),
+      status: framework.status,
+      version: framework.version,
+      slug: framework.slug
+    };
+    
+    return acc;
+  }, {});
+}
+
+// Sync version that returns empty for build-time
+export const PRECOMPUTED_FRAMEWORK_DATABASE = {};
 export const FRAMEWORK_BY_SLUG = new Map();
 export const FRAMEWORKS_BY_TIER = new Map();
 
-allFrameworks.forEach(framework => {
-  FRAMEWORK_BY_SLUG.set(framework.slug, framework);
+// Async lookup functions
+export async function getFrameworkDetails(frameworkId) {
+  if (!frameworkId) return null;
   
-  if (!FRAMEWORKS_BY_TIER.has(framework.tier)) {
-    FRAMEWORKS_BY_TIER.set(framework.tier, []);
+  try {
+    const database = await getPrecomputedFrameworkDatabase();
+    
+    // Direct lookup from pre-computed database
+    if (database[frameworkId]) {
+      return database[frameworkId];
+    }
+    
+    // Try slug conversion
+    const slug = frameworkId.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+    if (database[slug]) {
+      return database[slug];
+    }
+    
+    return null;
+  } catch (error) {
+    console.warn('Error getting framework details:', error);
+    return null;
   }
-  FRAMEWORKS_BY_TIER.get(framework.tier).push(framework);
-});
-
-// Optimized lookup functions
-export function getFrameworkDetails(frameworkId) {
-  // Direct lookup from pre-computed database
-  if (PRECOMPUTED_FRAMEWORK_DATABASE[frameworkId]) {
-    return PRECOMPUTED_FRAMEWORK_DATABASE[frameworkId];
-  }
-  
-  // Try slug conversion
-  const slug = frameworkId.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
-  if (PRECOMPUTED_FRAMEWORK_DATABASE[slug]) {
-    return PRECOMPUTED_FRAMEWORK_DATABASE[slug];
-  }
-  
-  // Try direct framework lookup
-  const framework = FRAMEWORK_BY_SLUG.get(frameworkId);
-  if (framework) {
-    return PRECOMPUTED_FRAMEWORK_DATABASE[framework.slug];
-  }
-  
-  return null;
 }
 
-export function getFrameworksByTierOptimized(tier) {
-  return FRAMEWORKS_BY_TIER.get(tier) || [];
+export async function getFrameworksByTierOptimized(tier) {
+  try {
+    const frameworks = await initializeFrameworks();
+    return frameworks.filter(f => f.tier === tier);
+  } catch (error) {
+    console.warn('Error getting frameworks by tier:', error);
+    return [];
+  }
 }
 
-// Pre-compute tier info
+// Pre-compute tier info - this can stay synchronous
 export const TIER_INFO_CACHE = new Map([
   [0, { class: 'tier-0', priority: 'critical', label: 'framework.tier.0.title' }],
   [1, { class: 'tier-1', priority: 'urgent', label: 'framework.tier.1.title' }],
@@ -103,8 +129,3 @@ export function getTierInfoOptimized(tier) {
     priority: 'strategic'
   };
 }
-
-// Initialize framework computations immediately
-console.log('Framework database pre-computed:', Object.keys(PRECOMPUTED_FRAMEWORK_DATABASE).length, 'frameworks');
-console.log('Framework lookups initialized:', FRAMEWORK_BY_SLUG.size, 'entries');
-console.log('Tier mappings initialized:', FRAMEWORKS_BY_TIER.size, 'tiers');

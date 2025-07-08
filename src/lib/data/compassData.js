@@ -1,4 +1,4 @@
-// Enhanced src/lib/data/compassData.js - Adding personalized connections functionality
+// Fixed src/lib/data/compassData.js
 import { allFrameworks, getFrameworkBySlug, getFrameworksByTier } from '$lib/stores/frameworkNav.js';
 import { getConnectionReason as getI18nConnectionReason } from './connectionReasons.js';
 import { locale } from '$lib/i18n';
@@ -21,22 +21,29 @@ export const tiers = {
 };
 
 // Create a lookup object for frameworks using the centralized data
-export const frameworks = allFrameworks.reduce((acc, framework) => {
-  const id = framework.slug.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
-  
-  acc[id] = {
-    id,
-    slug: framework.slug,
-    tier: framework.tier,
-    status: framework.status,
-    path: framework.path,
-    priority: framework.tier + 1,
-    titleKey: framework.titleKey,
-    version: framework.version
-  };
-  
-  return acc;
-}, {});
+export const frameworks = (() => {
+  try {
+    return allFrameworks.reduce((acc, framework) => {
+      const id = framework.slug.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
+      
+      acc[id] = {
+        id,
+        slug: framework.slug,
+        tier: framework.tier,
+        status: framework.status,
+        path: framework.path,
+        priority: framework.tier + 1,
+        titleKey: framework.titleKey,
+        version: framework.version
+      };
+      
+      return acc;
+    }, {});
+  } catch (error) {
+    console.warn('Error creating frameworks lookup:', error);
+    return {};
+  }
+})();
 
 // Mapping from values to related frameworks (using slugs from frameworkNav.js)
 export const valueFrameworkConnections = {
@@ -261,7 +268,7 @@ export const quizToFrameworkMapping = {
   }
 };
 
-// NEW: Function to get personalized connections based on user's practices and quiz results
+// Function to get personalized connections based on user's practices and quiz results
 export function getPersonalizedConnections(userProgress, quizResults) {
   if (!userProgress && !quizResults) return [];
   
@@ -349,76 +356,101 @@ export function getPersonalizedConnections(userProgress, quizResults) {
     });
 }
 
-// NEW: Helper function to get connection reasoning with i18n support
+// Helper function to get connection reasoning with i18n support
 export function getConnectionReason(type, source, frameworkSlug) {
-  const currentLocale = get(locale);
-  const framework = getFrameworkBySlug(frameworkSlug);
-  if (!framework) return 'Connected to your interests';
-  
-  if (type === 'practice') {
-    const practice = source;
-    return getI18nConnectionReason(currentLocale, 'practice', practice, frameworkSlug);
+  try {
+    const currentLocale = get(locale);
+    const framework = getFrameworkBySlug(frameworkSlug);
+    if (!framework) return 'Connected to your interests';
+    
+    if (type === 'practice') {
+      const practice = source;
+      return getI18nConnectionReason(currentLocale, 'practice', practice, frameworkSlug);
+    }
+    
+    if (type === 'value') {
+      const value = source;
+      return getI18nConnectionReason(currentLocale, 'value', value, frameworkSlug);
+    }
+    
+    if (type === 'quiz') {
+      return getI18nConnectionReason(currentLocale, 'quiz', source, frameworkSlug);
+    }
+    
+    if (type === 'foundation') {
+      return getI18nConnectionReason(currentLocale, 'foundation', 'foundation', frameworkSlug);
+    }
+    
+    return 'Connected to your path';
+  } catch (error) {
+    console.warn('Error getting connection reason:', error);
+    return 'Connected to your interests';
   }
-  
-  if (type === 'value') {
-    const value = source;
-    return getI18nConnectionReason(currentLocale, 'value', value, frameworkSlug);
-  }
-  
-  if (type === 'quiz') {
-    return getI18nConnectionReason(currentLocale, 'quiz', source, frameworkSlug);
-  }
-  
-  if (type === 'foundation') {
-    return getI18nConnectionReason(currentLocale, 'foundation', 'foundation', frameworkSlug);
-  }
-  
-  return 'Connected to your path';
 }
 
 // Utility functions that now use the centralized data
 export function getFrameworksByStatus(status) {
-  return allFrameworks.filter(fw => fw.status === status);
+  try {
+    return allFrameworks.filter(fw => fw.status === status);
+  } catch (error) {
+    console.warn('Error getting frameworks by status:', error);
+    return [];
+  }
 }
 
 export function getFrameworksByTierLevel(tier) {
-  return getFrameworksByTier(tier);
+  try {
+    return getFrameworksByTier(tier);
+  } catch (error) {
+    console.warn('Error getting frameworks by tier:', error);
+    return [];
+  }
 }
 
 export function getConnectedFrameworks(elementType, elementId) {
-  let connectedSlugs = [];
-  
-  if (elementType === 'value') {
-    connectedSlugs = valueFrameworkConnections[elementId] || [];
-  } else if (elementType === 'practice') {
-    connectedSlugs = levelFrameworkConnections[elementId] || [];
+  try {
+    let connectedSlugs = [];
+    
+    if (elementType === 'value') {
+      connectedSlugs = valueFrameworkConnections[elementId] || [];
+    } else if (elementType === 'practice') {
+      connectedSlugs = levelFrameworkConnections[elementId] || [];
+    }
+    
+    // Convert slugs to framework objects from centralized data
+    return connectedSlugs
+      .map(slug => getFrameworkBySlug(slug))
+      .filter(Boolean);
+  } catch (error) {
+    console.warn('Error getting connected frameworks:', error);
+    return [];
   }
-  
-  // Convert slugs to framework objects from centralized data
-  return connectedSlugs
-    .map(slug => getFrameworkBySlug(slug))
-    .filter(Boolean);
 }
 
 export function generateRecommendations(quizResults) {
   if (!quizResults) return [];
   
-  const recommendationSlugs = new Set();
-  
-  // Always include foundation
-  recommendationSlugs.add('treaty-for-our-only-home');
-  
-  // Add frameworks based on quiz responses
-  Object.entries(quizResults).forEach(([category, response]) => {
-    const mappings = quizToFrameworkMapping[category];
-    if (mappings && mappings[response]) {
-      mappings[response].forEach(slug => recommendationSlugs.add(slug));
-    }
-  });
-  
-  // Convert slugs to framework objects and sort by priority (tier)
-  return Array.from(recommendationSlugs)
-    .map(slug => getFrameworkBySlug(slug))
-    .filter(Boolean)
-    .sort((a, b) => a.tier - b.tier);
+  try {
+    const recommendationSlugs = new Set();
+    
+    // Always include foundation
+    recommendationSlugs.add('treaty-for-our-only-home');
+    
+    // Add frameworks based on quiz responses
+    Object.entries(quizResults).forEach(([category, response]) => {
+      const mappings = quizToFrameworkMapping[category];
+      if (mappings && mappings[response]) {
+        mappings[response].forEach(slug => recommendationSlugs.add(slug));
+      }
+    });
+    
+    // Convert slugs to framework objects and sort by priority (tier)
+    return Array.from(recommendationSlugs)
+      .map(slug => getFrameworkBySlug(slug))
+      .filter(Boolean)
+      .sort((a, b) => a.tier - b.tier);
+  } catch (error) {
+    console.warn('Error generating recommendations:', error);
+    return [];
+  }
 }

@@ -12,22 +12,45 @@
   
   let quizResults = null;
   let quizLoading = true;
+  let dataLoadError = null;
   
   // Pre-load all framework data immediately to avoid hover-triggered delays
   async function preloadFrameworkData() {
     try {
-      // Force-load framework data modules that might be lazy-loaded
-      const modules = await Promise.all([
-        import('$lib/data/compassData.js'),
-        import('$lib/data/citizenshipConnections.js'),
-        import('$lib/data/connectionReasons.js'),
-        import('$lib/data/precomputedFrameworkDatabase.js')
+      // Force-load framework data modules that might be lazy-loaded with better error handling
+      const modules = await Promise.allSettled([
+        import('$lib/data/compassData.js').catch(err => {
+          console.error('Failed to load compassData:', err);
+          throw err;
+        }),
+        import('$lib/data/citizenshipConnections.js').catch(err => {
+          console.error('Failed to load citizenshipConnections:', err);
+          throw err;
+        }),
+        import('$lib/data/connectionReasons.js').catch(err => {
+          console.error('Failed to load connectionReasons:', err);
+          throw err;
+        }),
+        import('$lib/data/precomputedFrameworkDatabase.js').catch(err => {
+          console.error('Failed to load precomputedFrameworkDatabase:', err);
+          throw err;
+        })
       ]);
       
-      console.log('Framework data preloaded successfully');
+      // Check if any modules failed to load
+      const failedModules = modules.filter(result => result.status === 'rejected');
+      
+      if (failedModules.length > 0) {
+        console.error('Some framework data modules failed to load:', failedModules);
+        dataLoadError = `Failed to load ${failedModules.length} framework data modules`;
+      } else {
+        console.log('Framework data preloaded successfully');
+      }
+      
       return modules;
     } catch (error) {
       console.error('Error preloading framework data:', error);
+      dataLoadError = 'Critical error loading framework data';
       return null;
     }
   }
@@ -51,6 +74,7 @@
         quizLoading = false;
       } catch (error) {
         console.error('Error processing quiz results:', error);
+        dataLoadError = 'Error processing quiz results';
         goto(`${base}/quiz`);
       }
     } else {
@@ -73,7 +97,7 @@
     // This logic now only runs IF the page is not yet considered fully loaded.
     // Once isFullyLoaded is true, it will stay true and never flicker off.
     if (!isFullyLoaded) {
-      isFullyLoaded = !quizLoading && $isLocaleLoaded && quizResults;
+      isFullyLoaded = !quizLoading && $isLocaleLoaded && quizResults && !dataLoadError;
       showLoadingState = !isFullyLoaded;
     }
   }
@@ -88,7 +112,24 @@
   <link rel="modulepreload" href="/src/lib/data/precomputedFrameworkDatabase.js">
 </svelte:head>
 
-{#if showLoadingState}
+{#if dataLoadError}
+  <!-- Data Load Error State -->
+  <div class="error-container">
+    <div class="error-content">
+      <h1>Data Loading Error</h1>
+      <p>There was an issue loading the framework data: {dataLoadError}</p>
+      <p>This might be a temporary issue. Please try refreshing the page.</p>
+      <div class="error-actions">
+        <button on:click={() => window.location.reload()} class="retry-button">
+          Refresh Page
+        </button>
+        <button on:click={retakeQuiz} class="retake-button">
+          Return to Quiz
+        </button>
+      </div>
+    </div>
+  </div>
+{:else if showLoadingState}
   <div class="loading-container">
     <div class="loading-content">
       <div class="loading-spinner"></div>
@@ -97,6 +138,8 @@
       {:else if !$isLocaleLoaded}
         <p>Loading translations...</p>
         <p class="loading-detail">Preparing framework descriptions...</p>
+      {:else}
+        <p>Loading framework data...</p>
       {/if}
     </div>
   </div>
@@ -217,10 +260,19 @@
   
   .error-content p {
     color: #6B7280;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     line-height: 1.6;
   }
   
+  .error-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  
+  .retry-button,
   .retake-button {
     background: #2B4B8C;
     color: white;
@@ -232,8 +284,17 @@
     transition: background 0.2s ease;
   }
   
+  .retry-button:hover,
   .retake-button:hover {
     background: #1e3a72;
+  }
+  
+  .retry-button {
+    background: #059669;
+  }
+  
+  .retry-button:hover {
+    background: #047857;
   }
   
   @keyframes spin {
@@ -402,6 +463,17 @@
     .loading-content,
     .error-content {
       padding: 1rem;
+    }
+    
+    .error-actions {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .retry-button,
+    .retake-button {
+      width: 100%;
+      max-width: 200px;
     }
   }
 

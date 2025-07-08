@@ -463,11 +463,6 @@ function buildNavStructure(frameworks) {
   const navStructure = [
     { titleKey: 'framework.docs.nav.overview', path: '/frameworks/docs' },
     { titleKey: 'framework.docs.nav.principles', path: '/frameworks/docs/principles' },
-    { 
-      titleKey: 'framework.docs.nav.globalCitizenship', 
-      path: '/frameworks/global-citizenship',
-      status: 'ready'
-    },
     {
       titleKey: 'framework.docs.nav.implementation',
       path: '/frameworks',

@@ -6,15 +6,22 @@
   
   // Use precomputed framework database instead of runtime computation
   import { 
-    PRECOMPUTED_FRAMEWORK_DATABASE,
+    getPrecomputedFrameworkDatabase,
     getFrameworkDetails,
     getTierInfoOptimized 
   } from '$lib/data/precomputedFrameworkDatabase.js';
   
   export let quizResults;
+
+
+  let database = {};
+
+  onMount(async () => {
+    database = await getPrecomputedFrameworkDatabase();
+  });
   
   // Use the precomputed database directly - no expensive operations
-  const frameworkDatabase = PRECOMPUTED_FRAMEWORK_DATABASE;
+  const frameworkDatabase = database;
   
   // Optimized framework details lookup
   function getFrameworkDetailsOptimized(frameworkId) {
