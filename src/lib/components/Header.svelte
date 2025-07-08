@@ -702,6 +702,18 @@
      16. MOBILE STYLES
      -------------------------------------------------------------------------- */
   @media (max-width: 768px) {
+
+    .dropdown-menu {
+      z-index: 60;
+    }
+    
+    .mobile-submenu {
+      z-index: 61;
+    }
+    
+    .mobile-tier-submenu {
+      z-index: 62;
+    }
     /* Mobile menu button visibility */
     .menu-button {
       display: block;
@@ -717,8 +729,10 @@
       margin-bottom: 0.5rem;
       margin-left: 1rem;
       display: none;
-      max-height: 60vh;
+      max-height: 80vh;
       overflow-y: auto;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
       background-color: rgba(255, 255, 255, 0.95);
       border-radius: 0.375rem;
       padding: 0.5rem 0;
@@ -741,8 +755,10 @@
       background-color: #f9fafb;
       border-radius: 0.25rem;
       margin-top: 0.5rem;
-      max-height: 40vh;
+      max-height: 70vh;
       overflow-y: auto;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
     }
 
     .mobile-submenu.hidden {
@@ -755,13 +771,21 @@
       background-color: #f3f4f6;
       border-radius: 0.375rem;
       margin-top: 0.25rem;
-      max-height: 35vh;
+      max-height: 60vh;
       overflow-y: auto;
-      overflow: hidden;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 1rem;
     }
 
     .mobile-tier-submenu.hidden {
       display: none;
+    }
+
+    .mobile-submenu:not(.hidden) {
+      display: block;
+      max-height: 70vh;
+      overflow-y: auto;
     }
 
     /* Mobile toggle buttons */
@@ -823,20 +847,22 @@
     }
 
     /* Mobile framework links */
-    .mobile-framework-link {
-      display: block;
-      padding: 0.75rem 1.25rem !important;
-      font-size: 0.8rem !important;
-      color: #2B4B8C;
-      text-decoration: none;
-      border-left: 3px solid transparent;
-      transition: all 0.2s;
-      background-color: rgba(255, 255, 255, 0.5);
-      position: relative;
-      white-space: normal !important;
-      line-height: 1.4;
-      min-height: 2.5rem;
-    }
+   .mobile-framework-link {
+     display: block;
+     padding: 0.75rem 1.25rem !important;
+     font-size: 0.8rem !important;
+     color: #2B4B8C;
+     text-decoration: none;
+     border-left: 3px solid transparent;
+     transition: all 0.2s;
+     background-color: rgba(255, 255, 255, 0.5);
+     position: relative;
+     white-space: normal !important;
+     line-height: 1.4;
+     min-height: 2.5rem;
+     box-sizing: border-box;
+     width: 100%;
+   }
 
     .mobile-framework-link:hover {
       background-color: #f7f1e3;
@@ -923,9 +949,41 @@
     }
 
     .dropdown-scrollable-content {
-      max-height: 40vh;
+      max-height: 50vh;
+      overflow-y: auto;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 0.5rem;
+    }
+
+    .nav-container.open {
+      display: flex;
+      flex-direction: column;
+      max-height: none;
+      overflow: visible;
+    }
+    
+    .dropdown.open .dropdown-menu {
+      display: block;
+      position: static;
+      max-height: 80vh;
+      overflow-y: auto;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+    }
+    
+    .mobile-tier-submenu:not(.hidden) {
+      display: block;
+      max-height: 60vh;
       overflow-y: auto;
     }
+  }
+
+  .mobile-submenu,
+  .mobile-tier-submenu,
+  .dropdown-menu,
+  .dropdown-scrollable-content {
+    scroll-behavior: smooth;
   }
 
   /* --------------------------------------------------------------------------
