@@ -178,6 +178,32 @@
     "comingSoon": "Kommer snart",
     "planned": "Planerad"
   },
+  "groups": {
+    "planetaryHealthResilience": {
+      "title": "Planetär hälsa & motståndskraft",
+      "description": "Ramverk för klimat, hälsa, livsmedelssystem och katastrofmotståndskraft"
+    },
+    "socialFabricJustice": {
+      "title": "Social sammanhållning & rättvisa",
+      "description": "Ramverk för fred, rättvisa, säkerhet och social sammanhållning"
+    },
+    "globalEconomicSystems": {
+      "title": "Globala ekonomiska system",
+      "description": "Ramverk för ekonomisk styrning, handel, finans och data"
+    },
+    "ecologicalSystems": {
+      "title": "Ekologiska system",
+      "description": "Ramverk för miljöförvaltning och ekosystemstyrning"
+    },
+    "humanSocialSystems": {
+      "title": "Mänskliga & sociala system",
+      "description": "Ramverk för teknik, utbildning, hälsa och samhällsutveckling"
+    },
+    "other": {
+      "title": "Övriga ramverk",
+      "description": "Ytterligare ramverk som inte kategoriseras i huvudgrupperna"
+    }
+  },
   "docs": {
     "nav": {
       "overview": "Översikt",
@@ -187,6 +213,7 @@
       "regionalHubs": "Regionala nav",
       "implementationTools": "Implementeringsverktyg",
       "visualizations": "Visualiseringar",
+      "downloads": "Ramverk som PDF-nedladdningar",
       "caseStudies": "Fallstudier",
       "aiFutures": "AI och framtiden",
       "resources": "Resurser",

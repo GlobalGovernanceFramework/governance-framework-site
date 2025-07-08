@@ -132,19 +132,30 @@
     }
   },
   "spiralDynamics": {
+    "database": {
+      "name": "Spiral Dynamics",
+      "description": "Understanding how different value systems emerge and evolve helps navigate the complexity of global citizenship. This framework reveals why people approach the same challenges so differently.",
+      "benefits": [
+        "Cross-cultural understanding",
+        "Systems thinking", 
+        "Conflict resolution"
+      ]
+    },
     "invitation": {
       "title": "Deepen Your Understanding with Spiral Dynamics",
       "description1": "Understanding how different people and cultures approach values and change can enhance your global citizenship journey. Spiral Dynamics offers insights into the developmental stages that shape how we see the world - from survival-focused thinking to planetary and even cosmic consciousness.",
       "description2": "Explore this powerful framework for free at Spiralize.org - designed to help you understand the diverse worldviews that make global cooperation both challenging and essential. Discover all 11 stages across three tiers of human development.",
-      "linkText": "Explore Spiral Dynamics"
+      "linkText": "Explore Spiral Dynamics",
+      "externalLink": "External Link"
     },
     "note": {
       "title": "Understanding Diverse Worldviews",
       "description": "Different people approach global challenges from different developmental stages. Learn about these perspectives through",
-      "linkText": "Spiral Dynamics",
+      "linkText": "Spiralize.org",
       "subtitle": "a free educational resource that can enhance your global citizenship practice"
     },
     "stages": {
+      "eightStages": "Over eight stages of human development",
       "beige": "Survival",
       "purple": "Tribal", 
       "red": "Power",
@@ -155,7 +166,7 @@
       "turquoise": "Holistic",
       "coral": "Sovereign Unity",
       "ultraviolet": "Infinite Flow",
-      "clear": "Silent Transparency "
+      "clear": "Silent Transparency"
     },
     "tiers": {
       "second": "Second Tier",

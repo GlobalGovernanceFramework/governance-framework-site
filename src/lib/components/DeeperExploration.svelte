@@ -19,20 +19,45 @@
   let relatedFrameworks = [];
   let showSpiralDynamics = false;
 
+  // Helper function to get translated benefits array
+  function getSpiralDynamicsBenefits() {
+    try {
+      // Get the benefits array from the translation
+      const benefits = $t('findYourPlace.spiralDynamics.database.benefits');
+      // Handle case where it returns a key instead of array
+      if (Array.isArray(benefits)) {
+        return benefits;
+      }
+      // Fallback to English if translation fails
+      return [
+        'Cross-cultural understanding',
+        'Systems thinking', 
+        'Conflict resolution'
+      ];
+    } catch (error) {
+      console.warn('Error getting spiral dynamics benefits:', error);
+      return [
+        'Cross-cultural understanding',
+        'Systems thinking', 
+        'Conflict resolution'
+      ];
+    }
+  }
+
   onMount(async () => {
     try {
       database = await getPrecomputedFrameworkDatabase();
       
-      // Add Spiral Dynamics as special case
+      // Add Spiral Dynamics as special case with i18n support
       database['spiral-dynamics'] = {
-        name: 'Spiral Dynamics',
-        description: 'Understanding how different value systems emerge and evolve helps navigate the complexity of global citizenship. This framework reveals why people approach the same challenges so differently.',
+        name: $t('findYourPlace.spiralDynamics.database.name'),
+        description: $t('findYourPlace.spiralDynamics.database.description'),
         tier: 'developmental',
         color: '#8B4513',
         route: 'https://www.spiralize.org',
         external: true,
         icon: '🌀',
-        benefits: ['Cross-cultural understanding', 'Systems thinking', 'Conflict resolution'],
+        benefits: getSpiralDynamicsBenefits(), // Get translated benefits array
         type: 'developmental'
       };
       
@@ -171,7 +196,7 @@
               <div class="framework-header">
                 <div class="framework-icon-large">🌀</div>
                 <div class="framework-meta">
-                  <h4>Spiral Dynamics</h4>
+                  <h4>{database['spiral-dynamics'].name}</h4>
                   <div class="framework-badge developmental">
                     {$t('findYourPlace.spiralDynamics.tiers.second')} & {$t('findYourPlace.spiralDynamics.tiers.third')}
                   </div>
@@ -189,24 +214,51 @@
                 
                 <div class="spiral-stages-preview">
                   <div class="stages-container">
-                    <div class="stage-dot beige" title="{$t('findYourPlace.spiralDynamics.stages.beige')}"></div>
-                    <div class="stage-dot purple" title="{$t('findYourPlace.spiralDynamics.stages.purple')}"></div>
-                    <div class="stage-dot red" title="{$t('findYourPlace.spiralDynamics.stages.red')}"></div>
-                    <div class="stage-dot blue" title="{$t('findYourPlace.spiralDynamics.stages.blue')}"></div>
-                    <div class="stage-dot orange" title="{$t('findYourPlace.spiralDynamics.stages.orange')}"></div>
-                    <div class="stage-dot green" title="{$t('findYourPlace.spiralDynamics.stages.green')}"></div>
-                    <div class="stage-dot yellow" title="{$t('findYourPlace.spiralDynamics.stages.yellow')}"></div>
-                    <div class="stage-dot turquoise" title="{$t('findYourPlace.spiralDynamics.stages.turquoise')}"></div>
+                    <div class="stage-item">
+                      <div class="stage-dot beige"></div>
+                      <span class="stage-label">{$t('findYourPlace.spiralDynamics.stages.beige')}</span>
+                    </div>
+                    <div class="stage-item">
+                      <div class="stage-dot purple"></div>
+                      <span class="stage-label">{$t('findYourPlace.spiralDynamics.stages.purple')}</span>
+                    </div>
+                    <div class="stage-item">
+                      <div class="stage-dot red"></div>
+                      <span class="stage-label">{$t('findYourPlace.spiralDynamics.stages.red')}</span>
+                    </div>
+                    <div class="stage-item">
+                      <div class="stage-dot blue"></div>
+                      <span class="stage-label">{$t('findYourPlace.spiralDynamics.stages.blue')}</span>
+                    </div>
+                    <div class="stage-item">
+                      <div class="stage-dot orange"></div>
+                      <span class="stage-label">{$t('findYourPlace.spiralDynamics.stages.orange')}</span>
+                    </div>
+                    <div class="stage-item">
+                      <div class="stage-dot green"></div>
+                      <span class="stage-label">{$t('findYourPlace.spiralDynamics.stages.green')}</span>
+                    </div>
+                    <div class="stage-item">
+                      <div class="stage-dot yellow"></div>
+                      <span class="stage-label">{$t('findYourPlace.spiralDynamics.stages.yellow')}</span>
+                    </div>
+                    <div class="stage-item">
+                      <div class="stage-dot turquoise"></div>
+                      <span class="stage-label">{$t('findYourPlace.spiralDynamics.stages.turquoise')}</span>
+                    </div>
                   </div>
-                  <p class="stages-label">8 stages of human development</p>
+                  <p class="stages-label">{$t('findYourPlace.spiralDynamics.stages.eightStages')}</p>
                 </div>
               </div>
               
               <div class="framework-action">
-                <span class="explore-framework">
-                  {$t('findYourPlace.spiralDynamics.invitation.linkText')} →
-                </span>
-                <span class="external-note">External link</span>
+                <div class="action-left">
+                  <span class="explore-framework">
+                    {$t('findYourPlace.spiralDynamics.invitation.linkText')} →
+                  </span>
+                  <span class="website-url">spiralize.org</span>
+                </div>
+                <span class="external-note">{$t('findYourPlace.spiralDynamics.invitation.externalLink')}</span>
               </div>
             </a>
           </div>
@@ -216,6 +268,7 @@
   </section>
 {/if}
 
+<!-- Keep the existing styles exactly the same -->
 <style>
   .loading-state {
     display: flex;
@@ -339,11 +392,36 @@
     padding: 1.25rem;
   }
   
-  .tier-0 { border-top-color: #8B5A3C; }
-  .tier-1 { border-top-color: #DC2626; }
-  .tier-2 { border-top-color: #2563EB; }
-  .tier-3 { border-top-color: #7C3AED; }
-  .tier-4 { border-top-color: #059669; }
+  .tier-0 { border-top-color: #fbbf24; }
+  .tier-1 { border-top-color: #60a5fa; }
+  .tier-2 { border-top-color: #34d399; }
+  .tier-3 { border-top-color: #a78bfa; }
+  .tier-4 { border-top-color: #f472b6; }
+
+  :global(.tier-0) {
+    border-left: 4px solid #fbbf24;
+    padding-left: 1rem;
+  }
+  
+  :global(.tier-1) {
+    border-left: 4px solid #60a5fa;
+    padding-left: 1rem;
+  }
+  
+  :global(.tier-2) {
+    border-left: 4px solid #34d399;
+    padding-left: 1rem;
+  }
+  
+  :global(.tier-3) {
+    border-left: 4px solid #a78bfa;
+    padding-left: 1rem;
+  }
+  
+  :global(.tier-4) {
+    border-left: 4px solid #f472b6;
+    padding-left: 1rem;
+  }
   
   .card-header.compact {
     padding: 0 0 1rem 0;
@@ -531,26 +609,42 @@
   }
 
   .stages-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    justify-items: center;
+  }
+
+  .stage-item {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 0.5rem;
-    margin-bottom: 0.75rem;
-    flex-wrap: wrap;
+    text-align: center;
   }
 
   .stage-dot {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
-    display: inline-block;
-    border: 2px solid white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    cursor: help;
+    display: block;
+    border: 3px solid white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
     transition: transform 0.2s ease;
+    flex-shrink: 0;
   }
 
   .stage-dot:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+  }
+
+  .stage-label {
+    font-size: 0.7rem;
+    color: #4B5563;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: capitalize;
   }
 
   .stage-dot.beige { background: #8B7355; }
@@ -575,6 +669,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
+  }
+
+  .action-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
   }
 
   .explore-framework {
@@ -584,7 +685,7 @@
     font-size: 1.1rem;
     border-bottom: 2px solid rgba(218, 165, 32, 0.5);
     transition: all 0.2s ease;
-    flex-grow: 1;
+    flex-shrink: 0;
   }
 
   .explore-framework:hover {
@@ -593,10 +694,19 @@
     transform: translateX(3px);
   }
 
+  .website-url {
+    font-size: 0.9rem;
+    color: #8B4513;
+    font-weight: 500;
+    font-family: 'Monaco', 'Consolas', monospace;
+  }
+
   .external-note {
     font-size: 0.8rem;
-    color: #9CA3AF;
+    color: #6B7280;
     font-style: italic;
+    flex-shrink: 0;
+    text-align: right;
   }
   
   /* Responsive Design */
@@ -639,14 +749,23 @@
       align-items: stretch;
       text-align: center;
     }
+
+    .action-left {
+      align-items: center;
+    }
     
     .stages-container {
-      gap: 0.25rem;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.5rem;
     }
     
     .stage-dot {
-      width: 20px;
-      height: 20px;
+      width: 24px;
+      height: 24px;
+    }
+
+    .stage-label {
+      font-size: 0.65rem;
     }
   }
 </style>

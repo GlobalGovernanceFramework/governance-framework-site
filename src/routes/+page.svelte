@@ -450,7 +450,7 @@
               {/if}
               
               <div class="completed-actions">
-                <a href="{base}/frameworks/quiz" class="view-results-button">
+                <a href="{base}/quiz" class="view-results-button">
                   {$t('home.findYourPlace.completed.viewResults', 'View Full Results')} →
                 </a>
                 <button 

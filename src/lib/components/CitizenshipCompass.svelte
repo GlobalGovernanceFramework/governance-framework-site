@@ -107,9 +107,104 @@
   
   // Get recommended framework paths based on quiz results (for visual connections)
   function getRecommendedPaths() {
-    if (!recommendedFrameworks || recommendedFrameworks.length === 0) return [];
-    return recommendedFrameworks.slice(0, 3);
+    if (!quizResults?.recommendedFrameworks || quizResults.recommendedFrameworks.length === 0) return [];
+    return quizResults.recommendedFrameworks.slice(0, 3);
   }
+
+  // Calculate framework connection positions based on their tier and type
+  function getFrameworkConnectionPosition(framework, index, total) {
+    const centerX = 400;
+    const centerY = 300;
+    
+    // Base the angle on the framework's tier and characteristics
+    let angle;
+    
+    if (framework.slug === 'treaty-for-our-only-home') {
+      // Foundation framework - point upward
+      angle = -Math.PI / 2; // 270 degrees (straight up)
+    } else {
+      // Other frameworks - distribute around the compass based on their tier and index
+      const tierAngles = {
+        0: -Math.PI / 2, // Top (foundation)
+        1: Math.PI / 6,  // Upper right (urgent)
+        2: Math.PI / 2,  // Bottom (systems)
+        3: 5 * Math.PI / 6, // Upper left (equity)
+        4: Math.PI       // Left (visionary)
+      };
+      
+      let baseAngle = tierAngles[framework.tier] || 0;
+      
+      // Add slight offset for multiple frameworks in same tier
+      if (total > 1) {
+        const offset = (index - (total - 1) / 2) * (Math.PI / 8); // 22.5 degree spacing
+        angle = baseAngle + offset;
+      } else {
+        angle = baseAngle;
+      }
+    }
+    
+    // Calculate distance based on tier (closer tiers are closer to center)
+    const tierDistances = {
+      0: 120,  // Foundation - closest
+      1: 160,  // Urgent - close
+      2: 200,  // Systems - medium
+      3: 240,  // Equity - far
+      4: 280   // Visionary - farthest
+    };
+    
+    const distance = tierDistances[framework.tier] || 180;
+    
+    return {
+      x: centerX + Math.cos(angle) * distance,
+      y: centerY + Math.sin(angle) * distance,
+      angle: angle
+    };
+  }
+
+  let compassNeedle = { x2: 400, y2: 300, visible: false };
+  let allPracticesComplete = false;
+
+  // This reactive block will re-run whenever userProgress changes
+  $: {
+      const centerX = 400;
+      const centerY = 300;
+      
+      // Get a list of completed practices
+      const completedPractices = developmentLevels.filter(level => userProgress[level.id]);
+      
+      // Check for the "Golden Aura" state
+      allPracticesComplete = completedPractices.length === developmentLevels.length;
+
+      if (completedPractices.length > 0 && !allPracticesComplete) {
+          let totalVectorX = 0;
+          let totalVectorY = 0;
+
+          // Calculate the average vector of all completed practices
+          completedPractices.forEach(level => {
+              totalVectorX += level.position.cx - centerX;
+              totalVectorY += level.position.cy - centerY;
+          });
+
+          // Normalize the vector to get a pure direction
+          const magnitude = Math.sqrt(totalVectorX * totalVectorX + totalVectorY * totalVectorY);
+          
+          if (magnitude > 0) {
+              const normalizedX = totalVectorX / magnitude;
+              const normalizedY = totalVectorY / magnitude;
+              const needleLength = 100; // You can adjust the length of the needle
+
+              compassNeedle = {
+                  x2: centerX + normalizedX * needleLength,
+                  y2: centerY + normalizedY * needleLength,
+                  visible: true
+              };
+          }
+      } else {
+          // Hide the needle if no practices are selected or if all are complete
+          compassNeedle = { x2: centerX, y2: centerY, visible: false };
+      }
+  }
+
 </script>
 
 <div class="compass-container">
@@ -160,21 +255,99 @@
           class="orbital-path"
         />
       {/each}
+
+      {#if compassNeedle.visible}
+          <g class="compass-needle">
+              <defs>
+                  <linearGradient id="needleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#2B4B8C" stop-opacity="0.5"/>
+                      <stop offset="100%" stop-color="#DAA520"/>
+                  </linearGradient>
+                  <marker id="arrowhead" viewBox="0 0 10 10" refX="5" refY="5"
+                      markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                      <path d="M 0 0 L 10 5 L 0 10 z" fill="#DAA520"></path>
+                  </marker>
+              </defs>
+              <line
+                  x1="400"
+                  y1="300"
+                  x2={compassNeedle.x2}
+                  y2={compassNeedle.y2}
+                  stroke="url(#needleGradient)"
+                  stroke-width="4"
+                  marker-end="url(#arrowhead)"
+                  style="transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);"
+              />
+          </g>
+      {/if}
+
+      {#if allPracticesComplete}
+          <circle
+              class="golden-aura"
+              cx="400"
+              cy="300"
+              r="290" fill="none"
+              stroke="#DAA520"
+              stroke-width="5"
+              stroke-dasharray="15 10"
+              filter="url(#glow)" opacity="0.9"
+          >
+              <animateTransform 
+                  attributeName="transform"
+                  type="rotate"
+                  from="0 400 300"
+                  to="360 400 300"
+                  dur="60s"
+                  repeatCount="indefinite"
+              />
+          </circle>
+      {/if}
       
       <!-- Framework connection lines (when quiz completed) -->
-      {#if quizResults}
-        {#each getRecommendedPaths() as framework, index}
+      {#if quizResults?.recommendedFrameworks}
+        {@const recommendedPaths = getRecommendedPaths()}
+        {#each recommendedPaths as framework, index}
+          {@const position = getFrameworkConnectionPosition(framework, index, recommendedPaths.length)}
+          
+          <!-- Connection line -->
           <line
             x1="400"
             y1="300"
-            x2={400 + Math.cos(index * Math.PI * 2 / 3) * (200 + index * 40)}
-            y2={300 + Math.sin(index * Math.PI * 2 / 3) * (200 + index * 40)}
+            x2={position.x}
+            y2={position.y}
             stroke="#DAA520"
             stroke-width="2"
-            stroke-dasharray="3 3"
-            opacity="0.7"
+            stroke-dasharray="5 3"
+            opacity="0.8"
             class="framework-connection"
           />
+          
+          <!-- Framework indicator dot -->
+          <circle
+            cx={position.x}
+            cy={position.y}
+            r="8"
+            fill="#DAA520"
+            stroke="white"
+            stroke-width="2"
+            opacity="0.9"
+            class="framework-dot"
+          >
+            <title>{framework.titleKey ? $t(framework.titleKey) : framework.name}</title>
+          </circle>
+          
+          <!-- Framework label -->
+          <text
+            x={position.x}
+            y={position.y - 15}
+            text-anchor="middle"
+            class="framework-label"
+            fill="#2B4B8C"
+            font-size="11"
+            font-weight="600"
+          >
+            {framework.emoji || '🔗'}
+          </text>
         {/each}
       {/if}
       
@@ -430,6 +603,15 @@
   
   .framework-connection {
     animation: pulse 2s infinite;
+  }
+  
+  .framework-dot {
+    animation: glow 1.5s ease-in-out infinite alternate;
+  }
+  
+  .framework-label {
+    pointer-events: none;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
   }
   
   .completion-ring {

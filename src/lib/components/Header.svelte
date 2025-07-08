@@ -6,7 +6,15 @@
   import { onMount } from 'svelte';
   import { browser } from '$app/environment';
   import { goto } from '$app/navigation';
-  import { allFrameworks, tierMetadata, getFrameworksByTier, getAllTiers } from '$lib/stores/frameworkNav.js';
+  import { 
+    allFrameworks, 
+    tierMetadata, 
+    groupMetadata,
+    getFrameworksByTier, 
+    getFrameworksByTierAndGroup,
+    getGroupsForTier,
+    getAllTiers 
+  } from '$lib/stores/frameworkNav.js';
   import { dev } from '$app/environment';
 
   const isDevMode = dev;
@@ -165,6 +173,13 @@
 </script>
 
 <style>
+  /* ==========================================================================
+     HEADER STYLES - Organized Structure
+     ========================================================================== */
+
+  /* --------------------------------------------------------------------------
+     1. BASE HEADER STYLES
+     -------------------------------------------------------------------------- */
   header {
     background: linear-gradient(to bottom right, #2B4B8C, #6B5CA5);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -172,92 +187,74 @@
     top: 0;
     z-index: 50;
   }
-  
+
   .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
   }
-  
+
   .header-content {
     display: flex;
     flex-direction: column;
-    padding: 1rem 0; /* Increased from 0.75rem */
+    padding: 1rem 0;
   }
-  
-  @media (min-width: 768px) {
-    .header-content {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
-  }
-  
+
+  /* --------------------------------------------------------------------------
+     2. LOGO AND BRANDING
+     -------------------------------------------------------------------------- */
   .logo-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
   }
-  
-  @media (min-width: 768px) {
-    .logo-section {
-      width: auto;
-    }
-  }
-  
+
   .logo-link {
     display: flex;
     align-items: center;
     text-decoration: none;
   }
-  
+
   .logo-img {
-    height: 40px; /* Increased from 35px */
-    width: 40px; /* Increased from 35px */
-    margin-right: 0.75rem; /* Increased from 0.5rem */
+    height: 40px;
+    width: 40px;
+    margin-right: 0.75rem;
   }
-  
+
   .site-title {
-    font-size: 1.375rem !important; /* Increased from 1.125rem */
+    font-size: 1.375rem !important;
     font-weight: 600;
     color: #ffffff;
   }
-  
+
+  /* --------------------------------------------------------------------------
+     3. MOBILE MENU BUTTON
+     -------------------------------------------------------------------------- */
   .menu-button {
     background: none;
     border: none;
     color: #DAA520;
     cursor: pointer;
   }
-  
-  @media (min-width: 768px) {
-    .menu-button {
-      display: none;
-    }
-  }
-  
+
+  /* --------------------------------------------------------------------------
+     4. NAVIGATION CONTAINER
+     -------------------------------------------------------------------------- */
   .nav-container {
     display: none;
     width: 100%;
     margin-top: 1rem;
   }
-  
+
   .nav-container.open {
     display: flex;
     flex-direction: column;
   }
-  
-  @media (min-width: 768px) {
-    .nav-container {
-      display: flex !important;
-      flex-direction: row;
-      align-items: center;
-      width: auto;
-      margin-top: 0;
-    }
-  }
-  
+
+  /* --------------------------------------------------------------------------
+     5. NAVIGATION LIST AND ITEMS
+     -------------------------------------------------------------------------- */
   .nav-list {
     list-style-type: none;
     padding: 0;
@@ -265,61 +262,55 @@
     display: flex;
     flex-direction: column;
   }
-  
-  @media (min-width: 768px) {
-    .nav-list {
-      flex-direction: row;
-      margin-right: 1.5rem;
-      align-items: center;
-    }
-  }
-  
+
   .nav-item {
     margin-bottom: 1rem;
   }
-  
-  @media (min-width: 768px) {
-    .nav-item {
-      margin-bottom: 0;
-      margin-right: 1.5rem !important; /* Increased spacing due to more space */
-    }
-  }
 
-  .nav-link.nav-link-highlight {
-    color: #DAA520;
-  }
-  
+  /* --------------------------------------------------------------------------
+     6. NAVIGATION LINKS
+     -------------------------------------------------------------------------- */
   .nav-link {
     color: #ffffff;
     text-decoration: none;
     padding-bottom: 0.25rem;
     border-bottom: 2px solid transparent;
     transition: all 0.2s;
-    font-size: 1rem !important; /* Increased from 0.9rem */
+    font-size: 1rem !important;
     line-height: 1.2;
   }
-  
+
   .nav-link:hover {
     color: #DAA520;
-    border-bottom-color: #DAA520;
+    border-left-color: #DAA520;
   }
-  
+
   .nav-link.active {
     color: #DAA520;
-    border-bottom-color: #DAA520;
+    border-left-color: #DAA520;
     font-weight: 600;
   }
-  
+
+  .nav-link.nav-link-highlight {
+    color: #DAA520;
+  }
+
+  /* --------------------------------------------------------------------------
+     7. LANGUAGE SELECT
+     -------------------------------------------------------------------------- */
   .language-select {
-    padding: 0.4rem 0.7rem !important; /* Increased from 0.3rem 0.6rem */
+    padding: 0.4rem 0.7rem !important;
     border: 1px solid #2D5F2D;
     border-radius: 0.375rem;
     background-color: #ffffff;
     color: #2B4B8C;
     cursor: pointer;
-    font-size: 0.9rem !important; /* Increased from 0.8rem */
+    font-size: 0.9rem !important;
   }
 
+  /* --------------------------------------------------------------------------
+     8. DROPDOWN MENUS - BASE STYLES
+     -------------------------------------------------------------------------- */
   .dropdown {
     position: relative;
   }
@@ -337,27 +328,15 @@
     transform: rotate(180deg);
   }
 
-  .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 210px; /* Reduced from 280px (75% of 280px = 210px) */
-    background-color: #ffffff;
-    border: 1px solid #2D5F2D;
-    border-radius: 0.375rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 60;
-    margin-top: 0.25rem;
-    padding-top: 0.25rem;
-    flex-direction: column;
-    overflow-x: visible; /* Keep this */
+  .dropdown-toggle {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    padding: 0;
   }
 
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-
+  /* Hover bridge for dropdowns */
   .dropdown::after {
     content: '';
     position: absolute;
@@ -368,46 +347,94 @@
     background-color: transparent;
   }
 
-  .dropdown-menu a {
+  /* --------------------------------------------------------------------------
+     9. DROPDOWN MENU CONTAINERS
+     -------------------------------------------------------------------------- */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 210px;
+    background-color: #ffffff;
+    border: 1px solid #2D5F2D;
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 60;
+    margin-top: 0.25rem;
+    padding-top: 0.25rem;
+    flex-direction: column;
+    overflow-x: visible;
+  }
+
+  .dropdown:hover .dropdown-menu {
     display: block;
-    padding: 0.5rem 0.9rem !important; /* Increased padding */
+  }
+
+  .dropdown-scrollable-content {
+    max-height: 50vh;
+    overflow-y: auto;
+  }
+
+  /* --------------------------------------------------------------------------
+     10. DROPDOWN MENU ITEMS
+     -------------------------------------------------------------------------- */
+  .dropdown-menu a,
+  .dropdown-scrollable-content a {
+    display: block;
+    padding: 0.5rem 0.9rem !important;
     color: #2B4B8C;
     text-decoration: none;
     border-left: 3px solid transparent;
     transition: all 0.2s;
-    font-size: 0.9rem !important; /* Increased from 0.85rem */
+    font-size: 0.9rem !important;
     line-height: 1.3;
   }
 
-  .dropdown-menu a:hover {
+  .dropdown-menu a:hover,
+  .dropdown-scrollable-content a:hover {
     background-color: #f7f1e3;
     color: #DAA520;
     border-left-color: #DAA520;
   }
 
-  .dropdown-menu a.active {
+  .dropdown-menu a.active,
+  .dropdown-scrollable-content a.active {
     color: #DAA520;
     border-left-color: #DAA520;
     font-weight: 600;
   }
 
-  .dropdown-menu a.highlighted {
-    background-color: #f0f8ff;
-    font-weight: 600;
-    border-left-color: #6B5CA5; /* Use purple for Global Citizenship */
+  .dropdown-item-btn {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.9rem !important;
+    color: #2B4B8C;
+    text-decoration: none;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+    transition: all 0.2s;
+    font-size: 0.9rem !important;
+    line-height: 1.3;
   }
 
-  .dropdown-menu a.meta-governance {
+  .dropdown-item-btn:hover {
+    background-color: #f7f1e3;
     color: #DAA520;
-    font-weight: 700;
-    background-color: #fffbeb;
     border-left-color: #DAA520;
   }
 
-  .dropdown-menu a.meta-governance:hover {
-    background-color: #fef3c7;
+  .dropdown-item-btn:focus {
+    outline: 2px solid #DAA520;
+    outline-offset: -2px;
   }
 
+  /* --------------------------------------------------------------------------
+     11. DROPDOWN SEPARATORS AND SECTIONS
+     -------------------------------------------------------------------------- */
   .dropdown-separator {
     height: 1px;
     background-color: #e5e7eb;
@@ -424,35 +451,9 @@
     margin-top: 0.25rem;
   }
 
-  .dropdown-scrollable-content {
-    max-height: 50vh; /* Adjust height as needed */
-    overflow-y: auto;
-  }
-
-  .dropdown-scrollable-content a {
-    display: block;
-    padding: 0.5rem 0.9rem !important;
-    color: #2B4B8C;
-    text-decoration: none;
-    border-left: 3px solid transparent;
-    transition: all 0.2s;
-    font-size: 0.9rem !important;
-    line-height: 1.3;
-  }
-
-  .dropdown-scrollable-content a:hover {
-    background-color: #f7f1e3;
-    color: #DAA520;
-    border-left-color: #DAA520;
-  }
-
-  .dropdown-scrollable-content a.active {
-    color: #DAA520;
-    border-left-color: #DAA520;
-    font-weight: 600;
-  }
-
-  /* Sub-menu styles for tiered frameworks */
+  /* --------------------------------------------------------------------------
+     12. MULTI-LEVEL DROPDOWNS - LEVEL 2
+     -------------------------------------------------------------------------- */
   .dropdown-submenu {
     position: relative;
   }
@@ -474,24 +475,23 @@
     position: absolute;
     top: 0;
     left: calc(100% + 2px);
-    min-width: 200px; /* Reduced from 320px to adapt to content */
-    width: max-content; /* Adapt to content width */
-    max-width: 250px; /* Prevent it from getting too wide */
+    min-width: 220px;
+    width: max-content;
+    max-width: 250px;
     background-color: #ffffff;
     border: 1px solid #2D5F2D;
     border-radius: 0.375rem;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     z-index: 1000;
     overflow-x: visible;
-    overflow-y: visible; /* Remove scrolling from level 2 */
+    overflow-y: visible;
   }
 
-  /* FIXED: Proper hover activation for level 2 menu */
   .dropdown-submenu:hover > .dropdown-menu-level2 {
     display: block;
   }
 
-  /* FIXED: Add hover bridge for level 2 */
+  /* Hover bridge for level 2 */
   .dropdown-submenu::before {
     content: '';
     position: absolute;
@@ -503,26 +503,27 @@
     z-index: 999;
   }
 
-  /* Tier submenu styles */
+  /* --------------------------------------------------------------------------
+     13. MULTI-LEVEL DROPDOWNS - LEVEL 3 (TIERS)
+     -------------------------------------------------------------------------- */
   .tier-submenu {
     position: relative;
   }
 
- /* Replace it with this revised version */
   .tier-submenu > a {
     display: block;
     padding: 0.4rem 0.9rem !important;
-    color: #6b7280;                   
-    background-color: transparent;    
-    font-weight: 500;                 
+    color: #6b7280;
+    background-color: transparent;
+    font-weight: 500;
     text-decoration: none;
     border-left: 3px solid transparent;
     transition: all 0.2s;
-    font-size: 0.8rem !important;     
+    font-size: 0.8rem !important;
     line-height: 1.3;
     position: relative;
-    text-transform: uppercase;        
-    letter-spacing: 0.05em;           
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
 
   .tier-submenu > a:hover {
@@ -546,9 +547,9 @@
     position: absolute;
     top: 0;
     left: calc(100% + 2px);
-    min-width: 280px;
+    min-width: 300px;
     width: max-content;
-    max-width: 320px;
+    max-width: 350px;
     background-color: #ffffff;
     border: 1px solid #2D5F2D;
     border-radius: 0.375rem;
@@ -558,19 +559,11 @@
     padding-top: 0.25rem;
   }
 
-  /* Add scrollable content for level 3 if there are many frameworks */
-  .tier-submenu .dropdown-menu-level3-scrollable {
-    max-height: 400px;
-    overflow-y: auto;
-    padding-bottom: 0.25rem;
-  }
-
-  /* FIXED: Proper hover activation for level 3 menu */
   .tier-submenu:hover > .dropdown-menu-level3 {
     display: block;
   }
 
-  /* FIXED: Add hover bridge for level 3 */
+  /* Hover bridge for level 3 */
   .tier-submenu::before {
     content: '';
     position: absolute;
@@ -582,17 +575,26 @@
     z-index: 1000;
   }
 
+  .tier-submenu .dropdown-menu-level3-scrollable {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-bottom: 0.25rem;
+  }
+
+  /* Level 3 menu items */
   .tier-submenu .dropdown-menu-level3 a,
   .tier-submenu .dropdown-menu-level3-scrollable a {
-    padding: 0.4rem 1.2rem !important;
+    padding: 0.5rem 1.2rem !important;
     font-size: 0.85rem !important;
-    white-space: nowrap;
-    display: block;
+    white-space: normal !important;
+    display: flex;
+    align-items: center;
     color: #2B4B8C;
     text-decoration: none;
     border-left: 3px solid transparent;
     transition: all 0.2s;
     line-height: 1.3;
+    min-height: 2.5rem;
   }
 
   .tier-submenu .dropdown-menu-level3 a:hover,
@@ -609,45 +611,103 @@
     font-weight: 600;
   }
 
-  .hidden {
-    display: none;
-  }
-  
-  @media (min-width: 768px) {
-    .language-select {
-      margin-left: 1rem !important; /* Increased spacing */
-    }
-
-    .md\:hidden {
-      display: none;
-    }
-    
-    .md\:inline-block {
-      display: inline-block;
-    }
+  /* --------------------------------------------------------------------------
+     14. FRAMEWORK GROUPING
+     -------------------------------------------------------------------------- */
+  .framework-group-header {
+    padding: 0.5rem 1.2rem 0.25rem 1.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+    border-bottom: 1px solid #e5e7eb;
+    background-color: #f8fafc;
   }
 
-  /* Custom responsive visibility classes */
-  .desktop-only {
-    display: none;
+  .framework-group-header:first-child {
+    margin-top: 0.25rem;
   }
-  
-  .mobile-only {
+
+  .group-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
     display: block;
   }
-  
-  @media (min-width: 768px) {
-    .desktop-only {
+
+  .framework-group-header + a {
+    padding-left: 1.5rem !important;
+    font-size: 0.8rem !important;
+    border-left: 3px solid transparent;
+  }
+
+  .tier-submenu .dropdown-menu-level3 .framework-group-header ~ a {
+    padding-left: 1.5rem !important;
+    position: relative;
+  }
+
+  .tier-submenu .dropdown-menu-level3 .framework-group-header ~ a::before {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #d1d5db;
+    transition: background-color 0.2s;
+  }
+
+  .tier-submenu .dropdown-menu-level3 .framework-group-header ~ a:hover::before {
+    background-color: #DAA520;
+  }
+
+  /* --------------------------------------------------------------------------
+     15. SPECIAL FRAMEWORK HIGHLIGHTING
+     -------------------------------------------------------------------------- */
+  /* Primal highlight for foundational Treaty */
+  .dropdown-menu a.primal,
+  .tier-submenu .dropdown-menu-level3 a.primal,
+  .tier-submenu .dropdown-menu-level3-scrollable a.primal {
+    background-color: #e0f2fe !important;
+    font-weight: 700 !important;
+    color: #1e40af !important;
+    border-left: 3px solid #1d4ed8 !important;
+  }
+
+  /* Highlighted frameworks (Guiding Trio) */
+  .dropdown-menu a.highlighted,
+  .tier-submenu .dropdown-menu-level3 a.highlighted,
+  .tier-submenu .dropdown-menu-level3-scrollable a.highlighted {
+    background-color: #fffbeb !important;
+    font-weight: 700 !important;
+    color: #92400e !important;
+    border-left-color: #92400e !important;
+  }
+
+  /* Meta-governance special styling */
+  .dropdown-menu a.meta-governance {
+    color: #DAA520;
+    font-weight: 700;
+    background-color: #fffbeb;
+    border-left-color: #DAA520;
+  }
+
+  .dropdown-menu a.meta-governance:hover {
+    background-color: #fef3c7;
+  }
+
+  /* --------------------------------------------------------------------------
+     16. MOBILE STYLES
+     -------------------------------------------------------------------------- */
+  @media (max-width: 768px) {
+    /* Mobile menu button visibility */
+    .menu-button {
       display: block;
     }
     
-    .mobile-only {
-      display: none;
-    }
-  }
-
-  /* MOBILE-SPECIFIC STYLES */
-  @media (max-width: 768px) {
+    /* Mobile dropdown behavior */
     .dropdown-menu {
       position: static;
       box-shadow: none;
@@ -657,7 +717,6 @@
       margin-bottom: 0.5rem;
       margin-left: 1rem;
       display: none;
-      /* Add scrolling capability for mobile */
       max-height: 60vh;
       overflow-y: auto;
       background-color: rgba(255, 255, 255, 0.95);
@@ -675,7 +734,7 @@
       cursor: pointer;
     }
 
-    /* Mobile: Control the sub-menus with collapsible state */
+    /* Mobile submenu containers */
     .mobile-submenu {
       margin-left: 1rem;
       border-left: 2px solid #e5e7eb;
@@ -694,16 +753,18 @@
       margin-left: 1rem;
       border-left: 2px solid #e5e7eb;
       background-color: #f3f4f6;
-      border-radius: 0.25rem;
+      border-radius: 0.375rem;
       margin-top: 0.25rem;
-      max-height: 30vh;
+      max-height: 35vh;
       overflow-y: auto;
+      overflow: hidden;
     }
 
     .mobile-tier-submenu.hidden {
       display: none;
     }
 
+    /* Mobile toggle buttons */
     .mobile-submenu-toggle,
     .mobile-tier-toggle {
       display: flex;
@@ -738,7 +799,115 @@
       transform: rotate(90deg);
     }
 
-    /* Remove desktop sub-menu behavior on mobile */
+    /* Mobile group headers */
+    .mobile-group-header {
+      padding: 0.4rem 1rem 0.2rem 1rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.25rem;
+      background-color: #f1f5f9;
+      border-bottom: 1px solid #cbd5e1;
+      border-radius: 0.25rem 0.25rem 0 0;
+    }
+
+    .mobile-group-header:first-child {
+      margin-top: 0.25rem;
+    }
+
+    .mobile-group-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: #4b5563;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      display: block;
+    }
+
+    /* Mobile framework links */
+    .mobile-framework-link {
+      display: block;
+      padding: 0.75rem 1.25rem !important;
+      font-size: 0.8rem !important;
+      color: #2B4B8C;
+      text-decoration: none;
+      border-left: 3px solid transparent;
+      transition: all 0.2s;
+      background-color: rgba(255, 255, 255, 0.5);
+      position: relative;
+      white-space: normal !important;
+      line-height: 1.4;
+      min-height: 2.5rem;
+    }
+
+    .mobile-framework-link:hover {
+      background-color: #f7f1e3;
+      color: #DAA520;
+      border-left-color: #DAA520;
+    }
+
+    .mobile-framework-link.active {
+      color: #DAA520;
+      border-left-color: #DAA520;
+      font-weight: 600;
+      background-color: #fef3c7;
+    }
+
+    /* Mobile special framework styling */
+    .mobile-framework-link.highlighted {
+      background-color: #fffbeb !important;
+      font-weight: 700 !important;
+      color: #92400e !important;
+      border-left-color: #92400e !important;
+    }
+
+    .mobile-framework-link.highlighted::after {
+      content: '⭐';
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0.75rem;
+    }
+
+    .mobile-framework-link.primal {
+      background-color: #e0f2fe !important;
+      font-weight: 700 !important;
+      color: #1e40af !important;
+      border-left-color: #1d4ed8 !important;
+    }
+
+    .mobile-framework-link.primal::after {
+      content: '🌐';
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0.75rem;
+    }
+
+    /* Mobile group indicators */
+    .mobile-group-header + .mobile-framework-link::before {
+      content: '';
+      position: absolute;
+      left: 0.875rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background-color: #d1d5db;
+      transition: background-color 0.2s;
+    }
+
+    .mobile-framework-link:hover::before {
+      background-color: #DAA520;
+    }
+
+    /* Mobile group spacing */
+    .mobile-group-header + .mobile-framework-link + .mobile-group-header {
+      margin-top: 0.75rem;
+    }
+
+    /* Disable desktop submenu behavior on mobile */
     .dropdown-submenu .dropdown-menu-level2,
     .tier-submenu .dropdown-menu-level3 {
       position: static;
@@ -753,120 +922,77 @@
       display: none;
     }
 
-    /* Make sure scrollable content works on mobile */
     .dropdown-scrollable-content {
       max-height: 40vh;
       overflow-y: auto;
     }
   }
-  
-  .dropdown-toggle {
-    background: none;
-    border: none;
-    color: inherit;
-    cursor: pointer;
-    padding: 0;
+
+  /* --------------------------------------------------------------------------
+     17. DESKTOP STYLES
+     -------------------------------------------------------------------------- */
+  @media (min-width: 768px) {
+    /* Desktop layout adjustments */
+    .header-content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo-section {
+      width: auto;
+    }
+    
+    .menu-button {
+      display: none;
+    }
+    
+    .nav-container {
+      display: flex !important;
+      flex-direction: row;
+      align-items: center;
+      width: auto;
+      margin-top: 0;
+    }
+    
+    .nav-list {
+      flex-direction: row;
+      margin-right: 1.5rem;
+      align-items: center;
+    }
+    
+    .nav-item {
+      margin-bottom: 0;
+      margin-right: 1.5rem !important;
+    }
+    
+    .language-select {
+      margin-left: 1rem !important;
+    }
+
+    /* Right-side positioning for menus that would overflow */
+    .dropdown-submenu .dropdown-menu-level2.position-right {
+      left: auto;
+      right: calc(100% + 2px);
+    }
+
+    .tier-submenu .dropdown-menu-level3.position-right {
+      left: auto;
+      right: calc(100% + 2px);
+    }
   }
 
-  /* Existing highlighted class for the Guiding Trio */
-  .framework-link.highlighted {
-    background-color: #fffbeb !important; /* Light gold */
-    font-weight: 700 !important;
-    color: #92400e !important;
-  }
-  .framework-link.highlighted::before {
-    content: '⭐ '; 
-  }
-
-  /* Primal highlight for the foundational Treaty */
-  .framework-link.primal {
-    background-color: #e0f2fe !important; /* Light, stately blue */
-    font-weight: 700 !important;
-    color: #1e40af !important;
-    border-left: 3px solid #1d4ed8 !important;
-  }
-  .framework-link.primal::before {
-    content: '🌐 '; /* Globe emoji */
-  }
-
-  /* Apply to dropdown menu items */
-  .dropdown-menu a.highlighted {
-    background-color: #fffbeb !important;
-    font-weight: 700 !important;
-    color: #92400e !important;
-    border-left-color: #92400e !important;
-  }
-
-  .dropdown-menu a.highlighted::before {
-    content: '⭐ ';
-  }
-
-  .dropdown-menu a.primal {
-    background-color: #e0f2fe !important;
-    font-weight: 700 !important;
-    color: #1e40af !important;
-    border-left: 3px solid #1d4ed8 !important;
-  }
-
-  .dropdown-menu a.primal::before {
-    content: '🌐 ';
-  }
-
-  /* Apply to tier submenu items */
-  .tier-submenu .dropdown-menu-level3 a.highlighted,
-  .tier-submenu .dropdown-menu-level3-scrollable a.highlighted {
-    background-color: #fffbeb !important;
-    font-weight: 700 !important;
-    color: #92400e !important;
-  }
-
-  .tier-submenu .dropdown-menu-level3 a.highlighted::before,
-  .tier-submenu .dropdown-menu-level3-scrollable a.highlighted::before {
-    content: '⭐ ';
-  }
-
-  .tier-submenu .dropdown-menu-level3 a.primal,
-  .tier-submenu .dropdown-menu-level3-scrollable a.primal {
-    background-color: #e0f2fe !important;
-    font-weight: 700 !important;
-    color: #1e40af !important;
-    border-left: 3px solid #1d4ed8 !important;
-  }
-
-  .tier-submenu .dropdown-menu-level3 a.primal::before,
-  .tier-submenu .dropdown-menu-level3-scrollable a.primal::before {
-    content: '🌐 ';
-  }
-
-  /* Mobile highlighted styles */
-  .mobile-tier-submenu a.highlighted {
-    background-color: #fffbeb !important;
-    font-weight: 700 !important;
-    color: #92400e !important;
-  }
-
-  .mobile-tier-submenu a.highlighted::before {
-    content: '⭐ ';
-  }
-
-  .mobile-tier-submenu a.primal {
-    background-color: #e0f2fe !important;
-    font-weight: 700 !important;
-    color: #1e40af !important;
-    border-left: 3px solid #1d4ed8 !important;
-  }
-
-  .mobile-tier-submenu a.primal::before {
-    content: '🌐 ';
-  }
-
-  /* Responsive adjustments for larger text */
+  /* --------------------------------------------------------------------------
+     18. RESPONSIVE BREAKPOINTS
+     -------------------------------------------------------------------------- */
+  /* Large desktop adjustments */
   @media (max-width: 1300px) and (min-width: 768px) {
     .nav-item {
       margin-right: 1.3rem !important;
     }
   }
 
+  /* Medium desktop adjustments */
   @media (max-width: 1200px) and (min-width: 768px) {
     .nav-item {
       margin-right: 1.2rem !important;
@@ -881,6 +1007,7 @@
     }
   }
 
+  /* Small desktop adjustments */
   @media (max-width: 1100px) and (min-width: 768px) {
     .nav-item {
       margin-right: 1.1rem !important;
@@ -901,43 +1028,36 @@
     }
   }
 
-  .dropdown-item-btn {
+  /* --------------------------------------------------------------------------
+     19. UTILITY CLASSES
+     -------------------------------------------------------------------------- */
+  .hidden {
+    display: none;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
     display: block;
-    width: 100%;
-    padding: 0.5rem 0.9rem !important;
-    color: #2B4B8C;
-    text-decoration: none;
-    border: none;
-    background: none;
-    text-align: left;
-    cursor: pointer;
-    border-left: 3px solid transparent;
-    transition: all 0.2s;
-    font-size: 0.9rem !important;
-    line-height: 1.3;
   }
 
-  .dropdown-item-btn:hover {
-    background-color: #f7f1e3;
-    color: #DAA520;
-    border-left-color: #DAA520;
-  }
-
-  .dropdown-item-btn:focus {
-    outline: 2px solid #DAA520;
-    outline-offset: -2px;
-  }
-
-  /* Right-side positioning for menus that would overflow */
   @media (min-width: 768px) {
-    .dropdown-submenu .dropdown-menu-level2.position-right {
-      left: auto;
-      right: calc(100% + 2px);
+    .desktop-only {
+      display: block;
     }
-
-    .tier-submenu .dropdown-menu-level3.position-right {
-      left: auto;
-      right: calc(100% + 2px);
+    
+    .mobile-only {
+      display: none;
+    }
+    
+    .md\:hidden {
+      display: none;
+    }
+    
+    .md\:inline-block {
+      display: inline-block;
     }
   }
 </style>
@@ -1036,137 +1156,6 @@
               
               <!-- Visual Separator -->
               <div class="dropdown-separator"></div>
-
-              {#if isDevMode}
-              
-                <!-- Desktop: Implementation Frameworks with Tiered Sub-Sub-Menus -->
-                <div class="dropdown-submenu desktop-only">
-                  <a href="{base}/frameworks" role="menuitem">
-                    {browser ? ($t('common.header.tieredFrameworks') || 'Tiered Frameworks') : 'Tiered Frameworks'}
-                  </a>
-                  <div class="dropdown-menu-level2">
-                    {#each tiers as tier}
-                      <div class="tier-submenu">
-                        <a href="{base}/frameworks/tier-{tier}" role="menuitem">
-                          {browser ? ($t(tierMetadata[tier]?.titleKey) || `Tier ${tier}`) : `Tier ${tier}`}
-                        </a>
-                        <div class="dropdown-menu-level3">
-                          {#if (frameworksByTier[tier] || []).length > 8}
-                            <!-- If more than 8 frameworks, add scrollable container -->
-                            <div class="dropdown-menu-level3-scrollable">
-                              {#each frameworksByTier[tier] || [] as framework}
-                                <a 
-                                  href="{base}{framework.path}" 
-                                  class:active={isActive(framework.path)}
-                                  class:primal={framework.slug === 'treaty-for-our-only-home'}
-                                  class:highlighted={
-                                    framework.slug === 'meta-governance' ||
-                                    framework.slug === 'global-citizenship-practice' ||
-                                    framework.slug === 'indigenous-governance-and-traditional-knowledge'
-                                  }
-                                  data-sveltekit-preload-data="hover" 
-                                  role="menuitem"
-                                >
-                                  {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
-                                </a>
-                              {/each}
-                            </div>
-                          {:else}
-                            <!-- If 8 or fewer frameworks, no scrolling needed -->
-                            {#each frameworksByTier[tier] || [] as framework}
-                              <a 
-                                href="{base}{framework.path}" 
-                                class:active={isActive(framework.path)}
-                                class:primal={framework.slug === 'treaty-for-our-only-home'}
-                                class:highlighted={
-                                  framework.slug === 'meta-governance' ||
-                                  framework.slug === 'global-citizenship-practice' ||
-                                  framework.slug === 'indigenous-governance-and-traditional-knowledge'
-                                }
-                                data-sveltekit-preload-data="hover" 
-                                role="menuitem"
-                              >
-                                {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
-                              </a>
-                            {/each}
-                          {/if}
-                        </div>
-                      </div>
-                    {/each}
-                  </div>
-                </div>
-
-                <!-- Mobile: Collapsible Tiered Frameworks -->
-                <div class="mobile-only">
-                  <button 
-                    type="button" 
-                    class={`mobile-submenu-toggle ${isTieredFrameworksOpen ? 'open' : ''}`}
-                    on:click|stopPropagation={(e) => toggleTieredFrameworks(e)}
-                    aria-label={isTieredFrameworksOpen ? 'Close tiered frameworks' : 'Open tiered frameworks'}
-                  >
-                    <span>{browser ? ($t('common.header.tieredFrameworks') || 'Tiered Frameworks') : 'Tiered Frameworks'}</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                    </svg>
-                  </button>
-                  
-                  <div class={`mobile-submenu ${isTieredFrameworksOpen ? '' : 'hidden'}`}>
-                    {#each tiers as tier}
-                      <div>
-                        <button 
-                          type="button" 
-                          class={`mobile-tier-toggle ${openTiers[tier] ? 'open' : ''}`}
-                          on:click|stopPropagation={(e) => toggleTier(tier, e)}
-                          aria-label={openTiers[tier] ? `Close tier ${tier}` : `Open tier ${tier}`}
-                        >
-                          <span>{browser ? ($t(tierMetadata[tier]?.titleKey) || `Tier ${tier}`) : `Tier ${tier}`}</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                          </svg>
-                        </button>
-                        
-                        <div class={`mobile-tier-submenu ${openTiers[tier] ? '' : 'hidden'}`}>
-                          {#each frameworksByTier[tier] || [] as framework}
-                            <a 
-                              href="{base}{framework.path}" 
-                              class:active={isActive(framework.path)}
-                              class:primal={framework.slug === 'treaty-for-our-only-home'}
-                              class:highlighted={
-                                framework.slug === 'meta-governance' ||
-                                framework.slug === 'global-citizenship-practice' ||
-                                framework.slug === 'indigenous-governance-and-traditional-knowledge'
-                              }
-                              data-sveltekit-preload-data="hover" 
-                              role="menuitem"
-                              style="display: block; padding: 0.4rem 1.2rem; font-size: 0.85rem; color: #2B4B8C; text-decoration: none; border-left: 3px solid transparent; transition: all 0.2s;"
-                              on:mouseenter={(e) => {
-                                if (!e.target.classList.contains('primal') && !e.target.classList.contains('highlighted')) {
-                                  e.target.style.backgroundColor = '#f7f1e3';
-                                  e.target.style.color = '#DAA520';
-                                  e.target.style.borderLeftColor = '#DAA520';
-                                }
-                              }}
-                              on:mouseleave={(e) => {
-                                if (!e.target.classList.contains('active') && !e.target.classList.contains('highlighted') && !e.target.classList.contains('primal')) {
-                                  e.target.style.backgroundColor = 'transparent';
-                                  e.target.style.color = '#2B4B8C';
-                                  e.target.style.borderLeftColor = 'transparent';
-                                }
-                              }}
-                            >
-                              {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
-                            </a>
-                          {/each}
-                        </div>
-                      </div>
-                    {/each}
-                  </div>
-                </div>
-              
-              <!-- Visual Separator -->
-              <div class="dropdown-separator"></div>
-              
-              {/if}
                              
               <!-- Scrollable Content Area for all the static links -->
               <div class="dropdown-scrollable-content">
@@ -1213,6 +1202,245 @@
                 </a>
                 {/if}
               </div>
+
+              <!-- Visual Separator -->
+              <div class="dropdown-separator"></div>      
+                <!-- Desktop: Implementation Frameworks with Tiered Sub-Sub-Menus -->
+                <div class="dropdown-submenu desktop-only">
+                  <a href="{base}/frameworks" role="menuitem">
+                    {browser ? ($t('common.header.tieredFrameworks') || 'Tiered Frameworks') : 'Tiered Frameworks'}
+                  </a>
+                  <div class="dropdown-menu-level2">
+                    {#each tiers as tier}
+                      {@const tierFrameworks = frameworksByTier[tier] || []}
+                      {@const groups = getGroupsForTier(tier)}
+                      {@const ungroupedFrameworks = getFrameworksByTierAndGroup(tier, null)}
+                      
+                      <div class="tier-submenu">
+                        <a href="{base}/frameworks/tier-{tier}" role="menuitem">
+                          {browser ? ($t(tierMetadata[tier]?.titleKey) || `Tier ${tier}`) : `Tier ${tier}`}
+                        </a>
+                        <div class="dropdown-menu-level3">
+                          {#if groups.length > 0}
+                            <!-- Display grouped frameworks -->
+                            {#each groups as group}
+                              {@const groupFrameworks = getFrameworksByTierAndGroup(tier, group)}
+                              {@const groupInfo = groupMetadata[group]}
+                              
+                              {#if groupFrameworks.length > 0}
+                                <div class="framework-group-header">
+                                  <span class="group-label">
+                                    {groupInfo?.emoji || '📋'} {browser ? ($t(groupInfo?.titleKey) || group) : group}
+                                  </span>
+                                </div>
+                                {#each groupFrameworks as framework}
+                                  <a 
+                                    href="{base}{framework.path}" 
+                                    class:active={isActive(framework.path)}
+                                    class:primal={framework.slug === 'treaty-for-our-only-home'}
+                                    class:highlighted={
+                                      framework.slug === 'meta-governance' ||
+                                      framework.slug === 'global-citizenship-practice' ||
+                                      framework.slug === 'indigenous-governance-and-traditional-knowledge'
+                                    }
+                                    data-sveltekit-preload-data="hover" 
+                                    role="menuitem"
+                                  >
+                {#if framework.slug === 'treaty-for-our-only-home' || framework.slug === 'meta-governance' || framework.slug === 'global-citizenship-practice' || framework.slug === 'indigenous-governance-and-traditional-knowledge'}
+                                      {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
+                                    {:else}
+                    {#if framework.slug === 'treaty-for-our-only-home' || framework.slug === 'meta-governance' || framework.slug === 'global-citizenship-practice' || framework.slug === 'indigenous-governance-and-traditional-knowledge'}
+                                    {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
+                                  {:else}
+                    {#if framework.slug === 'treaty-for-our-only-home' || framework.slug === 'meta-governance' || framework.slug === 'global-citizenship-practice' || framework.slug === 'indigenous-governance-and-traditional-knowledge'}
+                                {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
+                              {:else}
+                                {framework.emoji || '🔗'} {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
+                              {/if}
+                                  {/if}
+                                    {/if}
+                                  </a>
+                                {/each}
+                              {/if}
+                            {/each}
+                            
+                            <!-- Display ungrouped frameworks if any -->
+                            {#if ungroupedFrameworks.length > 0}
+                              <div class="framework-group-header">
+                                <span class="group-label">
+                                  📌 {browser ? ($t('framework.groups.other.title') || 'Other') : 'Other'}
+                                </span>
+                              </div>
+                              {#each ungroupedFrameworks as framework}
+                                <a 
+                                  href="{base}{framework.path}" 
+                                  class:active={isActive(framework.path)}
+                                  class:primal={framework.slug === 'treaty-for-our-only-home'}
+                                  class:highlighted={
+                                    framework.slug === 'meta-governance' ||
+                                    framework.slug === 'global-citizenship-practice' ||
+                                    framework.slug === 'indigenous-governance-and-traditional-knowledge'
+                                  }
+                                  data-sveltekit-preload-data="hover" 
+                                  role="menuitem"
+                                >
+                                  {framework.emoji || '🔗'} {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
+                                </a>
+                              {/each}
+                            {/if}
+                          {:else}
+                            <!-- Display all frameworks without grouping if no groups exist -->
+                            {#each tierFrameworks as framework}
+                              <a 
+                                href="{base}{framework.path}" 
+                                class:active={isActive(framework.path)}
+                                class:primal={framework.slug === 'treaty-for-our-only-home'}
+                                class:highlighted={
+                                  framework.slug === 'meta-governance' ||
+                                  framework.slug === 'global-citizenship-practice' ||
+                                  framework.slug === 'indigenous-governance-and-traditional-knowledge'
+                                }
+                                data-sveltekit-preload-data="hover" 
+                                role="menuitem"
+                              >
+                                {framework.emoji || '🔗'} {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
+                              </a>
+                            {/each}
+                          {/if}
+                        </div>
+                      </div>
+                    {/each}
+                  </div>
+                </div>
+                <!-- Mobile: Collapsible Tiered Frameworks with Groups -->
+                <div class="mobile-only">
+                  <button 
+                    type="button" 
+                    class={`mobile-submenu-toggle ${isTieredFrameworksOpen ? 'open' : ''}`}
+                    on:click|stopPropagation={(e) => toggleTieredFrameworks(e)}
+                    aria-label={isTieredFrameworksOpen ? 'Close tiered frameworks' : 'Open tiered frameworks'}
+                  >
+                    <span>{browser ? ($t('common.header.tieredFrameworks') || 'Tiered Frameworks') : 'Tiered Frameworks'}</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
+                  
+                  <div class={`mobile-submenu ${isTieredFrameworksOpen ? '' : 'hidden'}`}>
+                    {#each tiers as tier}
+                      {@const tierFrameworks = frameworksByTier[tier] || []}
+                      {@const groups = getGroupsForTier(tier)}
+                      {@const ungroupedFrameworks = getFrameworksByTierAndGroup(tier, null)}
+                      
+                      <div>
+                        <button 
+                          type="button" 
+                          class={`mobile-tier-toggle ${openTiers[tier] ? 'open' : ''}`}
+                          on:click|stopPropagation={(e) => toggleTier(tier, e)}
+                          aria-label={openTiers[tier] ? `Close tier ${tier}` : `Open tier ${tier}`}
+                        >
+                          <span>{browser ? ($t(tierMetadata[tier]?.titleKey) || `Tier ${tier}`) : `Tier ${tier}`}</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                          </svg>
+                        </button>
+                        
+                        <div class={`mobile-tier-submenu ${openTiers[tier] ? '' : 'hidden'}`}>
+                          
+                          {#if groups.length > 0}
+                            <!-- Display grouped frameworks -->
+                            {#each groups as group}
+                              {@const groupFrameworks = getFrameworksByTierAndGroup(tier, group)}
+                              {@const groupInfo = groupMetadata[group]}
+                              
+                              {#if groupFrameworks.length > 0}
+                                <div class="mobile-group-header">
+                                  <span class="mobile-group-label">
+                                    {groupInfo?.emoji || '📋'} {browser ? ($t(groupInfo?.titleKey) || group) : group}
+                                  </span>
+                                </div>
+                                {#each groupFrameworks as framework}
+                                  <a 
+                                    href="{base}{framework.path}" 
+                                    class:active={isActive(framework.path)}
+                                    class:primal={framework.slug === 'treaty-for-our-only-home'}
+                                    class:highlighted={
+                                      framework.slug === 'meta-governance' ||
+                                      framework.slug === 'global-citizenship-practice' ||
+                                      framework.slug === 'indigenous-governance-and-traditional-knowledge'
+                                    }
+                                    data-sveltekit-preload-data="hover" 
+                                    role="menuitem"
+                                    class="mobile-framework-link"
+                                  >
+                {#if framework.slug === 'treaty-for-our-only-home' || framework.slug === 'meta-governance' || framework.slug === 'global-citizenship-practice' || framework.slug === 'indigenous-governance-and-traditional-knowledge'}
+                                      {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
+                                    {:else}
+                    {#if framework.slug === 'treaty-for-our-only-home' || framework.slug === 'meta-governance' || framework.slug === 'global-citizenship-practice' || framework.slug === 'indigenous-governance-and-traditional-knowledge'}
+                                    {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
+                                  {:else}
+                  {#if framework.slug === 'treaty-for-our-only-home' || framework.slug === 'meta-governance' || framework.slug === 'global-citizenship-practice' || framework.slug === 'indigenous-governance-and-traditional-knowledge'}
+                                  {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
+                                {:else}
+                                  {framework.emoji || '🔗'} {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
+                                {/if}
+                                  {/if}
+                                    {/if}
+                                  </a>
+                                {/each}
+                              {/if}
+                            {/each}
+                            
+                            <!-- Display ungrouped frameworks if any -->
+                            {#if ungroupedFrameworks.length > 0}
+                              <div class="mobile-group-header">
+                                <span class="mobile-group-label">
+                                  📌 {browser ? ($t('framework.groups.other.title') || 'Other') : 'Other'}
+                                </span>
+                              </div>
+                              {#each ungroupedFrameworks as framework}
+                                <a 
+                                  href="{base}{framework.path}" 
+                                  class:active={isActive(framework.path)}
+                                  class:primal={framework.slug === 'treaty-for-our-only-home'}
+                                  class:highlighted={
+                                    framework.slug === 'meta-governance' ||
+                                    framework.slug === 'global-citizenship-practice' ||
+                                    framework.slug === 'indigenous-governance-and-traditional-knowledge'
+                                  }
+                                  data-sveltekit-preload-data="hover" 
+                                  role="menuitem"
+                                  class="mobile-framework-link"
+                                >
+                                  {framework.emoji || '🔗'} {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
+                                </a>
+                              {/each}
+                            {/if}
+                          {:else}
+                            <!-- Display all frameworks without grouping if no groups exist -->
+                            {#each tierFrameworks as framework}
+                              <a 
+                                href="{base}{framework.path}" 
+                                class:active={isActive(framework.path)}
+                                class:primal={framework.slug === 'treaty-for-our-only-home'}
+                                class:highlighted={
+                                  framework.slug === 'meta-governance' ||
+                                  framework.slug === 'global-citizenship-practice' ||
+                                  framework.slug === 'indigenous-governance-and-traditional-knowledge'
+                                }
+                                data-sveltekit-preload-data="hover" 
+                                role="menuitem"
+                                class="mobile-framework-link"
+                              >
+                                {framework.emoji || '🔗'} {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
+                              </a>
+                            {/each}
+                          {/if}
+                        </div>
+                      </div>
+                    {/each}
+                  </div>
+                </div>
             </div>
           </li>
 

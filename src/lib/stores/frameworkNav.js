@@ -12,7 +12,7 @@ function slugToTitleKey(slug) {
 }
 
 // Master list of all frameworks - SINGLE SOURCE OF TRUTH
-// Using the new consistent i18n key structure with emojis
+// Using the new consistent i18n key structure with emojis and thematic groups
 export const allFrameworks = [
   // Tier 0: Global Institutional Reform
   {
@@ -26,19 +26,13 @@ export const allFrameworks = [
   },
 
   // Tier 1: Urgent Global Stability & Justice
-  {
-    slug: 'indigenous-governance-and-traditional-knowledge',
-    titleKey: 'framework.docs.nav.frameworkTitles.indigenousGovernanceAndTraditionalKnowledge',
-    emoji: '🪶',
-    tier: 1,
-    status: 'review',
-    path: '/frameworks/indigenous-governance-and-traditional-knowledge'
-  },
+  // Group: Planetary Health & Resilience
   {
     slug: 'climate-and-energy-governance',
     titleKey: 'framework.docs.nav.frameworkTitles.climateAndEnergyGovernance',
     emoji: '⚡',
     tier: 1,
+    group: 'planetaryHealthResilience',
     status: 'review',
     path: '/frameworks/climate-and-energy-governance'
   },
@@ -47,6 +41,7 @@ export const allFrameworks = [
     titleKey: 'framework.docs.nav.frameworkTitles.planetaryHealth',
     emoji: '💚',
     tier: 1,
+    group: 'planetaryHealthResilience',
     status: 'ready',
     version: '1.0',
     path: '/frameworks/planetary-health-governance'
@@ -56,6 +51,7 @@ export const allFrameworks = [
     titleKey: 'framework.docs.nav.frameworkTitles.globalHealthAndPandemicSecurity',
     emoji: '⚕️',
     tier: 1,
+    group: 'planetaryHealthResilience',
     status: 'ready',
     version: '1.0',
     path: '/frameworks/global-health-and-pandemic-security'
@@ -65,6 +61,7 @@ export const allFrameworks = [
     titleKey: 'framework.docs.nav.frameworkTitles.foodSystemsAndAgriculture',
     emoji: '🌱',
     tier: 1,
+    group: 'planetaryHealthResilience',
     status: 'review',
     path: '/frameworks/food-systems-and-agriculture'
   },
@@ -73,14 +70,18 @@ export const allFrameworks = [
     titleKey: 'framework.docs.nav.frameworkTitles.disasterRiskReduction',
     emoji: '🌪️',
     tier: 1,
+    group: 'planetaryHealthResilience',
     status: 'review',
     path: '/frameworks/disaster-risk-reduction'
   },
+
+  // Group: Social Fabric & Justice
   {
     slug: 'peace-and-conflict-resolution',
     titleKey: 'framework.docs.nav.frameworkTitles.peaceAndConflictResolution',
     emoji: '🕊️',
     tier: 1,
+    group: 'socialFabricJustice',
     status: 'review',
     path: '/frameworks/peace-and-conflict-resolution'
   },
@@ -89,6 +90,7 @@ export const allFrameworks = [
     titleKey: 'framework.docs.nav.frameworkTitles.justiceSystems',
     emoji: '⚖️',
     tier: 1,
+    group: 'socialFabricJustice',
     status: 'review',
     path: '/frameworks/justice-systems'
   },
@@ -97,14 +99,36 @@ export const allFrameworks = [
     titleKey: 'framework.docs.nav.frameworkTitles.transnationalCrimeAndSecurity',
     emoji: '🛡️',
     tier: 1,
+    group: 'socialFabricJustice',
     status: 'review',
     path: '/frameworks/the-shield-protocol'
   },
+  {
+    slug: 'migration-and-human-mobility',
+    titleKey: 'framework.docs.nav.frameworkTitles.migrationAndHumanMobility',
+    emoji: '🗺️',
+    tier: 1,
+    group: 'socialFabricJustice',
+    status: 'review',
+    path: '/frameworks/migration-and-human-mobility'
+  },
+  {
+    slug: 'indigenous-governance-and-traditional-knowledge',
+    titleKey: 'framework.docs.nav.frameworkTitles.indigenousGovernanceAndTraditionalKnowledge',
+    emoji: '🪶',
+    tier: 1,
+    group: 'socialFabricJustice',
+    status: 'review',
+    path: '/frameworks/indigenous-governance-and-traditional-knowledge'
+  },
+
+  // Group: Global Economic Systems
   {
     slug: 'nested-economies',
     titleKey: 'framework.docs.nav.frameworkTitles.nestedEconomies',
     emoji: '💱',
     tier: 1,
+    group: 'globalEconomicSystems',
     status: 'ready',
     version: '1.0',
     path: '/frameworks/nested-economies'
@@ -114,6 +138,7 @@ export const allFrameworks = [
     titleKey: 'framework.docs.nav.frameworkTitles.financialSystems',
     emoji: '❤️',
     tier: 1,
+    group: 'globalEconomicSystems',
     status: 'review',
     path: '/frameworks/financial-systems'
   },
@@ -122,6 +147,7 @@ export const allFrameworks = [
     titleKey: 'framework.docs.nav.frameworkTitles.laborAndEmploymentGovernance',
     emoji: '👥',
     tier: 1,
+    group: 'globalEconomicSystems',
     status: 'planned',
     path: '/frameworks/labor-and-employment-governance'
   },
@@ -130,6 +156,7 @@ export const allFrameworks = [
     titleKey: 'framework.docs.nav.frameworkTitles.adaptiveUniversalBasicIncome',
     emoji: '💰',
     tier: 1,
+    group: 'globalEconomicSystems',
     status: 'ready',
     version: '1.0',
     path: '/frameworks/adaptive-universal-basic-income'
@@ -139,6 +166,7 @@ export const allFrameworks = [
     titleKey: 'framework.docs.nav.frameworkTitles.globalSupplyChainsAndLogistics',
     emoji: '🚢',
     tier: 1,
+    group: 'globalEconomicSystems',
     status: 'ready',
     version: '1.0',
     path: '/frameworks/global-supply-chains-and-logistics'
@@ -148,6 +176,7 @@ export const allFrameworks = [
     titleKey: 'framework.docs.nav.frameworkTitles.gaianTradeFramework',
     emoji: '🌍',
     tier: 1,
+    group: 'globalEconomicSystems',
     status: 'review',
     path: '/frameworks/gaian-trade-framework'
   },
@@ -156,24 +185,84 @@ export const allFrameworks = [
     titleKey: 'framework.docs.nav.frameworkTitles.globalDataGovernanceAndSovereignty',
     emoji: '🔮',
     tier: 1,
+    group: 'globalEconomicSystems',
     status: 'review',
     path: '/frameworks/aurora-accord'
   },
-  {
-    slug: 'migration-and-human-mobility',
-    titleKey: 'framework.docs.nav.frameworkTitles.migrationAndHumanMobility',
-    emoji: '🗺️',
-    tier: 1,
-    status: 'review',
-    path: '/frameworks/migration-and-human-mobility'
-  },
 
   // Tier 2: Systems for Long-Term Thriving
+  // Group: Ecological Systems
+  {
+    slug: 'soil-health-and-land-use-governance',
+    titleKey: 'framework.docs.nav.frameworkTitles.soilHealthAndLandUseGovernance',
+    emoji: '🌾',
+    tier: 2,
+    group: 'ecologicalSystems',
+    status: 'planned',
+    path: '/frameworks/soil-health-and-land-use-governance'
+  },
+  {
+    slug: 'water-and-sanitation-governance',
+    titleKey: 'framework.docs.nav.frameworkTitles.waterAndSanitationGovernance',
+    emoji: '💧',
+    tier: 2,
+    group: 'ecologicalSystems',
+    status: 'review',
+    path: '/frameworks/water-and-sanitation-governance'
+  },
+  {
+    slug: 'environmental-stewardship',
+    titleKey: 'framework.docs.nav.frameworkTitles.environmentalStewardship',
+    emoji: '🌿',
+    tier: 2,
+    group: 'ecologicalSystems',
+    status: 'review',
+    path: '/frameworks/environmental-stewardship'
+  },
+  {
+    slug: 'the-phoenix-protocol',
+    titleKey: 'framework.docs.nav.frameworkTitles.wasteAndCircularEconomy',
+    emoji: '♻️',
+    tier: 2,
+    group: 'ecologicalSystems',
+    status: 'planned',
+    path: '/frameworks/the-phoenix-protocol'
+  },
+  {
+    slug: 'animal-welfare-governance',
+    titleKey: 'framework.docs.nav.frameworkTitles.animalWelfareGovernance',
+    emoji: '🐾',
+    tier: 2,
+    group: 'ecologicalSystems',
+    status: 'review',
+    path: '/frameworks/animal-welfare-governance'
+  },
+  {
+    slug: 'biodiversity-governance',
+    titleKey: 'framework.docs.nav.frameworkTitles.biodiversityGovernance',
+    emoji: '🦅',
+    tier: 2,
+    group: 'ecologicalSystems',
+    status: 'review',
+    path: '/frameworks/biodiversity-governance'
+  },
+  {
+    slug: 'oceans-and-marine-governance',
+    titleKey: 'framework.docs.nav.frameworkTitles.oceansAndMarineGovernance',
+    emoji: '🌊',
+    tier: 2,
+    group: 'ecologicalSystems',
+    status: 'planned',
+    path: '/frameworks/oceans-and-marine-governance'
+  },
+
+  // Group: Human & Social Systems
   {
     slug: 'technology-governance',
     titleKey: 'framework.docs.nav.frameworkTitles.technologyGovernance',
     emoji: '🤖',
     tier: 2,
+    group: 'humanSocialSystems',
     status: 'review',
     path: '/frameworks/technology-governance'
   },
@@ -182,6 +271,7 @@ export const allFrameworks = [
     titleKey: 'framework.docs.nav.frameworkTitles.syntheticBiologyAndAdvancedBiotechGovernance',
     emoji: '🧬',
     tier: 2,
+    group: 'humanSocialSystems',
     status: 'ready',
     version: '1.0',
     path: '/frameworks/aethelred-accord'
@@ -191,6 +281,7 @@ export const allFrameworks = [
     titleKey: 'framework.docs.nav.frameworkTitles.educationalSystems',
     emoji: '🎓',
     tier: 2,
+    group: 'humanSocialSystems',
     status: 'review',
     path: '/frameworks/educational-systems'
   },
@@ -199,6 +290,7 @@ export const allFrameworks = [
     titleKey: 'framework.docs.nav.frameworkTitles.mentalHealthGovernance',
     emoji: '🧠',
     tier: 2,
+    group: 'humanSocialSystems',
     status: 'review',
     path: '/frameworks/mental-health-governance'
   },
@@ -207,75 +299,21 @@ export const allFrameworks = [
     titleKey: 'framework.docs.nav.frameworkTitles.urbanAndCommunityDevelopment',
     emoji: '🏙️',
     tier: 2,
+    group: 'humanSocialSystems',
     status: 'coming-soon',
     path: '/frameworks/urban-and-community-development'
-  },
-  {
-    slug: 'soil-health-and-land-use-governance',
-    titleKey: 'framework.docs.nav.frameworkTitles.soilHealthAndLandUseGovernance',
-    emoji: '🌾',
-    tier: 2,
-    status: 'planned',
-    path: '/frameworks/soil-health-and-land-use-governance'
-  },
-  {
-    slug: 'water-and-sanitation-governance',
-    titleKey: 'framework.docs.nav.frameworkTitles.waterAndSanitationGovernance',
-    emoji: '💧',
-    tier: 2,
-    status: 'review',
-    path: '/frameworks/water-and-sanitation-governance'
-  },
-  {
-    slug: 'environmental-stewardship',
-    titleKey: 'framework.docs.nav.frameworkTitles.environmentalStewardship',
-    emoji: '🌿',
-    tier: 2,
-    status: 'review',
-    path: '/frameworks/environmental-stewardship'
-  },
-  {
-    slug: 'the-phoenix-protocol',
-    titleKey: 'framework.docs.nav.frameworkTitles.wasteAndCircularEconomy',
-    emoji: '♻️',
-    tier: 2,
-    status: 'planned',
-    path: '/frameworks/the-phoenix-protocol'
-  },
-  {
-    slug: 'animal-welfare-governance',
-    titleKey: 'framework.docs.nav.frameworkTitles.animalWelfareGovernance',
-    emoji: '🐾',
-    tier: 2,
-    status: 'review',
-    path: '/frameworks/animal-welfare-governance'
-  },
-  {
-    slug: 'biodiversity-governance',
-    titleKey: 'framework.docs.nav.frameworkTitles.biodiversityGovernance',
-    emoji: '🦅',
-    tier: 2,
-    status: 'review',
-    path: '/frameworks/biodiversity-governance'
-  },
-  {
-    slug: 'oceans-and-marine-governance',
-    titleKey: 'framework.docs.nav.frameworkTitles.oceansAndMarineGovernance',
-    emoji: '🌊',
-    tier: 2,
-    status: 'planned',
-    path: '/frameworks/oceans-and-marine-governance'
   },
   {
     slug: 'disability-rights-and-inclusion',
     titleKey: 'framework.docs.nav.frameworkTitles.disabilityRightsAndInclusion',
     emoji: '♿',
     tier: 2,
+    group: 'humanSocialSystems',
     status: 'coming-soon',
     path: '/frameworks/disability-rights-and-inclusion'
   },
 
-  // Tier 3: Equity, Culture & Future Generations
+  // Tier 3: Equity, Culture & Future Generations (keeping these ungrouped for now as there are fewer)
   {
     slug: 'digital-commons',
     titleKey: 'framework.docs.nav.frameworkTitles.digitalCommons',
@@ -349,7 +387,7 @@ export const allFrameworks = [
     path: '/frameworks/aging-population-support-governance'
   },
 
-  // Tier 4: Visionary Governance
+  // Tier 4: Visionary Governance (keeping these ungrouped for now as there are fewer)
   {
     slug: 'meta-governance',
     titleKey: 'framework.docs.nav.frameworkTitles.integratedMetaGovernance',
@@ -401,6 +439,35 @@ export const allFrameworks = [
   }
 ];
 
+// Group metadata for i18n
+export const groupMetadata = {
+  planetaryHealthResilience: {
+    titleKey: 'framework.groups.planetaryHealthResilience.title',
+    descriptionKey: 'framework.groups.planetaryHealthResilience.description',
+    emoji: '🌱'
+  },
+  socialFabricJustice: {
+    titleKey: 'framework.groups.socialFabricJustice.title',
+    descriptionKey: 'framework.groups.socialFabricJustice.description',
+    emoji: '⚖️'
+  },
+  globalEconomicSystems: {
+    titleKey: 'framework.groups.globalEconomicSystems.title',
+    descriptionKey: 'framework.groups.globalEconomicSystems.description',
+    emoji: '💱'
+  },
+  ecologicalSystems: {
+    titleKey: 'framework.groups.ecologicalSystems.title',
+    descriptionKey: 'framework.groups.ecologicalSystems.description',
+    emoji: '🌿'
+  },
+  humanSocialSystems: {
+    titleKey: 'framework.groups.humanSocialSystems.title',
+    descriptionKey: 'framework.groups.humanSocialSystems.description',
+    emoji: '🎓'
+  }
+};
+
 // Tier metadata using the new consistent i18n structure with emojis
 export const tierMetadata = {
   0: {
@@ -443,6 +510,20 @@ export function getFrameworksByTier(tier) {
   return allFrameworks.filter(framework => framework.tier === tier);
 }
 
+export function getFrameworksByTierAndGroup(tier, group = null) {
+  const tierFrameworks = getFrameworksByTier(tier);
+  if (group) {
+    return tierFrameworks.filter(framework => framework.group === group);
+  }
+  return tierFrameworks.filter(framework => !framework.group); // Ungrouped frameworks
+}
+
+export function getGroupsForTier(tier) {
+  const tierFrameworks = getFrameworksByTier(tier);
+  const groups = [...new Set(tierFrameworks.map(f => f.group).filter(Boolean))];
+  return groups;
+}
+
 export function getFrameworkBySlug(slug) {
   return allFrameworks.find(framework => framework.slug === slug);
 }
@@ -482,6 +563,7 @@ function buildNavStructure(frameworks) {
     { titleKey: 'framework.docs.nav.regionalHubs', path: '/frameworks/hubs' },
     { titleKey: 'framework.docs.nav.implementationTools', path: '/frameworks/tools' },
     { titleKey: 'framework.docs.nav.visualizations', path: '/frameworks/visuals' },
+    { titleKey: 'framework.docs.nav.downloads', path: '/downloads' },
     { titleKey: 'framework.docs.nav.caseStudies', path: '/frameworks/docs/case-studies' },
     { titleKey: 'framework.docs.nav.aiFutures', path: '/frameworks/ai-futures' },
     { titleKey: 'framework.docs.nav.resources', path: '/frameworks/docs/resources' },

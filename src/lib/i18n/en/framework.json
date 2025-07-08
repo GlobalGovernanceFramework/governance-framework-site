@@ -178,6 +178,32 @@
     "comingSoon": "Coming Soon",
     "planned": "Planned"
   },
+  "groups": {
+    "planetaryHealthResilience": {
+      "title": "Planetary Health & Resilience",
+      "description": "Frameworks addressing climate, health, food systems, and disaster resilience"
+    },
+    "socialFabricJustice": {
+      "title": "Social Fabric & Justice", 
+      "description": "Frameworks for peace, justice, security, and social cohesion"
+    },
+    "globalEconomicSystems": {
+      "title": "Global Economic Systems",
+      "description": "Frameworks for economic governance, trade, finance, and data"
+    },
+    "ecologicalSystems": {
+      "title": "Ecological Systems",
+      "description": "Frameworks for environmental stewardship and ecosystem governance"
+    },
+    "humanSocialSystems": {
+      "title": "Human & Social Systems", 
+      "description": "Frameworks for technology, education, health, and community development"
+    },
+    "other": {
+      "title": "Other Frameworks",
+      "description": "Additional frameworks not categorized in the main groups"
+    }
+  },
   "docs": {
     "nav": {
       "overview": "Overview",
@@ -187,6 +213,7 @@
       "regionalHubs": "Regional Hubs",
       "implementationTools": "Implementation Tools",
       "visualizations": "Visualizations",
+      "downloads": "Framework PDF Downloads",
       "caseStudies": "Case Studies",
       "aiFutures": "AI Futures",
       "resources": "Resources",

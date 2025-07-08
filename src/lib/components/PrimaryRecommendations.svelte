@@ -219,12 +219,12 @@
     border-top-color: #DAA520;
   }
   
-  .tier-0 { border-top-color: #8B5A3C; }
-  .tier-1 { border-top-color: #DC2626; }
-  .tier-2 { border-top-color: #2563EB; }
-  .tier-3 { border-top-color: #7C3AED; }
-  .tier-4 { border-top-color: #059669; }
-  
+  .tier-0 { border-top-color: #fbbf24; }
+  .tier-1 { border-top-color: #60a5fa; }
+  .tier-2 { border-top-color: #34d399; }
+  .tier-3 { border-top-color: #a78bfa; }
+  .tier-4 { border-top-color: #f472b6; }
+
   .card-header {
     padding: 1.5rem 1.5rem 1rem 1.5rem;
     display: flex;
@@ -250,12 +250,12 @@
     flex-wrap: wrap;
   }
 
-  .tier-badge.tier-0 { background: #8B5A3C; }
-  .tier-badge.tier-1 { background: #DC2626; }
-  .tier-badge.tier-2 { background: #2563EB; }
-  .tier-badge.tier-3 { background: #7C3AED; }
-  .tier-badge.tier-4 { background: #059669; }
-  
+  .tier-badge.tier-0 { background: #fbbf24; }
+  .tier-badge.tier-1 { background: #60a5fa; }
+  .tier-badge.tier-2 { background: #34d399; }
+  .tier-badge.tier-3 { background: #a78bfa; }
+  .tier-badge.tier-4 { background: #f472b6; }
+
   .priority-star {
     font-size: 1rem;
   }

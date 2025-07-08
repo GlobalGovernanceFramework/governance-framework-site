@@ -132,29 +132,40 @@
     }
   },
   "spiralDynamics": {
+    "database": {
+      "name": "Spiral Dynamics",
+      "description": "Att förstå hur olika värdesystem utvecklas hjälper till att navigera komplexiteten i globalt medborgarskap. Detta ramverk avslöjar varför människor närmar sig samma utmaningar så olika.",
+      "benefits": [
+        "Interkulturell förståelse",
+        "Systemtänkande",
+        "Konfliktlösning"
+      ]
+    },
     "invitation": {
       "title": "Fördjupa din förståelse med Spiral Dynamics",
-      "description1": "Att förstå hur olika människor och kulturer förhåller sig till värderingar och förändring kan förbättra din resa mot globalt medborgarskap. Spiral Dynamics erbjuder insikter i de utvecklingsstadier som formar hur vi ser på världen - från överlevnadsfokuserat tänkande till planetärt och till och med kosmiskt medvetande.",
-      "description2": "Utforska detta kraftfulla ramverk gratis på Spiralize.org - utformat för att hjälpa dig förstå de olika världsbilder som gör globalt samarbete både utmanande och avgörande. Upptäck alla 11 stadier över tre nivåer av mänsklig utveckling.",
-      "linkText": "Utforska Spiral Dynamics"
+      "description1": "Att förstå hur olika människor och kulturer närmar sig värderingar och förändring kan förbättra din globala medborgarskapsresa. Spiral Dynamics erbjuder insikter om de utvecklingsstadier som formar hur vi ser världen - från överlevnadsfokuserat tänkande till planetär och till och med kosmisk medvetenhet.",
+      "description2": "Utforska detta kraftfulla ramverk gratis på Spiralize.org - designat för att hjälpa dig förstå de olika världssyner som gör globalt samarbete både utmanande och viktigt. Upptäck alla 11 stadier över tre nivåer av mänsklig utveckling.",
+      "linkText": "Utforska Spiral Dynamics",
+      "externalLink": "Extern länk"
     },
     "note": {
       "title": "Förstå olika världsbilder",
       "description": "Olika människor närmar sig globala utmaningar från olika utvecklingsstadier. Lär dig om dessa perspektiv genom",
-      "linkText": "Spiral Dynamics",
-      "subtitle": "en kostnadsfri utbildningsresurs som kan förbättra din globala medborgarskapsutövning"
+      "linkText": "Spiralize.org",
+      "subtitle": "en gratis utbildningsresurs som kan förbättra din globala medborgarskapspraktik"
     },
     "stages": {
+      "eightStages": "Över åtta stadier av mänsklig utveckling",
       "beige": "Överlevnad",
-      "purple": "Stamkänsla", 
+      "purple": "Stambaserat",
       "red": "Makt",
       "blue": "Ordning",
       "orange": "Prestation",
       "green": "Gemenskap",
-      "yellow": "Integrerat",
-      "turquoise": "Holistiskt",
+      "yellow": "Integral",
+      "turquoise": "Holistisk",
       "coral": "Suverän enhet",
-      "ultraviolet": "Kosmiskt flöde",
+      "ultraviolet": "Oändligt flöde",
       "clear": "Tyst transparens"
     },
     "tiers": {
