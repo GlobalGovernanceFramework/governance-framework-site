@@ -92,11 +92,6 @@
           <h3 style="font-size: 1.25rem; font-weight: 600; color: #DAA520; margin-bottom: 0.75rem;">{$t('framework.components.applications.title')}</h3>
           <ul>
             <li>
-              <a class="menu-link" href="{base}/frameworks/global-citizenship">
-                {$t('common.header.frameworkGlobalCitizenship')}
-              </a>
-            </li>
-            <li>
               <a class="menu-link" href="{base}/frameworks/hubs">
                 {$t('common.header.frameworkHubs')}
               </a>
