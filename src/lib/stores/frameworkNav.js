@@ -351,6 +351,15 @@ export const allFrameworks = [
 
   // Tier 4: Visionary Governance
   {
+    slug: 'meta-governance',
+    titleKey: 'framework.docs.nav.frameworkTitles.integratedMetaGovernance',
+    emoji: '🏛️',
+    tier: 4,
+    status: 'ready',
+    version: '1.1',
+    path: '/frameworks/meta-governance'
+  },
+  {
     slug: 'space-governance',
     titleKey: 'framework.docs.nav.frameworkTitles.spaceGovernance',
     emoji: '🚀',

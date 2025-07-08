@@ -1,10 +1,13 @@
-// src/routes/frameworks/global-citizenship/components/compassData.js
+// Enhanced src/lib/data/compassData.js - Adding personalized connections functionality
 import { allFrameworks, getFrameworkBySlug, getFrameworksByTier } from '$lib/stores/frameworkNav.js';
+import { getConnectionReason as getI18nConnectionReason } from './connectionReasons.js';
+import { locale } from '$lib/i18n';
+import { get } from 'svelte/store';
 
 // Re-export framework status and tiers from the centralized source
 export const frameworkStatus = {
   READY: 'ready',
-  IN_REVIEW: 'review', // Updated to match frameworkNav.js
+  IN_REVIEW: 'review',
   PLANNED: 'planned',
   COMING_SOON: 'coming-soon'
 };
@@ -19,7 +22,6 @@ export const tiers = {
 
 // Create a lookup object for frameworks using the centralized data
 export const frameworks = allFrameworks.reduce((acc, framework) => {
-  // Convert slug to camelCase ID for backward compatibility
   const id = framework.slug.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
   
   acc[id] = {
@@ -28,18 +30,13 @@ export const frameworks = allFrameworks.reduce((acc, framework) => {
     tier: framework.tier,
     status: framework.status,
     path: framework.path,
-    priority: framework.tier + 1, // Priority based on tier
+    priority: framework.tier + 1,
     titleKey: framework.titleKey,
     version: framework.version
   };
   
   return acc;
 }, {});
-
-// Helper function to convert camelCase back to slug
-function camelCaseToSlug(camelCase) {
-  return camelCase.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
-}
 
 // Mapping from values to related frameworks (using slugs from frameworkNav.js)
 export const valueFrameworkConnections = {
@@ -48,12 +45,12 @@ export const valueFrameworkConnections = {
     'animal-welfare-governance', 
     'biodiversity-governance', 
     'environmental-stewardship', 
-    'planetary-health', 
+    'planetary-health-governance', 
     'existential-risk-governance'
   ],
   compassion: [
     'treaty-for-our-only-home', 
-    'planetary-health', 
+    'planetary-health-governance', 
     'mental-health-governance', 
     'migration-and-human-mobility', 
     'aging-population-support-governance', 
@@ -64,7 +61,7 @@ export const valueFrameworkConnections = {
     'justice-systems', 
     'global-ethics-and-rights-of-beings', 
     'gender-equality-and-lgbtq-rights', 
-    'economic-integration', 
+    'nested-economies', 
     'indigenous-governance-and-traditional-knowledge'
   ],
   truth: [
@@ -143,7 +140,7 @@ export const levelFrameworkConnections = {
   empathy: [
     'treaty-for-our-only-home', 
     'migration-and-human-mobility', 
-    'planetary-health', 
+    'planetary-health-governance', 
     'mental-health-governance', 
     'indigenous-governance-and-traditional-knowledge', 
     'religious-and-spiritual-dialogue-governance'
@@ -179,7 +176,7 @@ export const quizToFrameworkMapping = {
       'justice-systems', 
       'global-ethics-and-rights-of-beings', 
       'gender-equality-and-lgbtq-rights', 
-      'economic-integration'
+      'nested-economies'
     ],
     technology: [
       'technology-governance', 
@@ -214,7 +211,7 @@ export const quizToFrameworkMapping = {
     ],
     protecting: [
       'peace-and-conflict-resolution', 
-      'planetary-health', 
+      'planetary-health-governance', 
       'environmental-stewardship', 
       'disaster-risk-reduction'
     ],
@@ -241,8 +238,8 @@ export const quizToFrameworkMapping = {
     national: [
       'justice-systems', 
       'educational-systems', 
-      'planetary-health', 
-      'economic-integration'
+      'planetary-health-governance', 
+      'nested-economies'
     ],
     global: [
       'treaty-for-our-only-home', 
@@ -263,6 +260,121 @@ export const quizToFrameworkMapping = {
     ]
   }
 };
+
+// NEW: Function to get personalized connections based on user's practices and quiz results
+export function getPersonalizedConnections(userProgress, quizResults) {
+  if (!userProgress && !quizResults) return [];
+  
+  const connectionSlugs = new Set();
+  const connectionDetails = [];
+  
+  // Always include the foundation
+  connectionSlugs.add('treaty-for-our-only-home');
+  connectionDetails.push({
+    slug: 'treaty-for-our-only-home',
+    reasons: [getConnectionReason('foundation', 'foundation', 'treaty-for-our-only-home')],
+    sources: ['foundation']
+  });
+  
+  // Add connections from active practices
+  if (userProgress) {
+    Object.entries(userProgress).forEach(([practice, isActive]) => {
+      if (isActive && levelFrameworkConnections[practice]) {
+        levelFrameworkConnections[practice].forEach(slug => {
+          if (!connectionSlugs.has(slug)) {
+            connectionSlugs.add(slug);
+            connectionDetails.push({
+              slug,
+              reasons: [getConnectionReason('practice', practice, slug)],
+              sources: [`practice:${practice}`]
+            });
+          } else {
+            // Add additional reason for existing connection
+            const existing = connectionDetails.find(c => c.slug === slug);
+            if (existing) {
+              existing.reasons.push(getConnectionReason('practice', practice, slug));
+              existing.sources.push(`practice:${practice}`);
+            }
+          }
+        });
+      }
+    });
+  }
+  
+  // Add connections from quiz results
+  if (quizResults) {
+    Object.entries(quizResults).forEach(([category, response]) => {
+      if (quizToFrameworkMapping[category] && quizToFrameworkMapping[category][response]) {
+        quizToFrameworkMapping[category][response].forEach(slug => {
+          if (!connectionSlugs.has(slug)) {
+            connectionSlugs.add(slug);
+            connectionDetails.push({
+              slug,
+              reasons: [getConnectionReason('quiz', `${category}:${response}`, slug)],
+              sources: [`quiz:${category}:${response}`]
+            });
+          } else {
+            // Add additional reason for existing connection
+            const existing = connectionDetails.find(c => c.slug === slug);
+            if (existing) {
+              existing.reasons.push(getConnectionReason('quiz', `${category}:${response}`, slug));
+              existing.sources.push(`quiz:${category}:${response}`);
+            }
+          }
+        });
+      }
+    });
+  }
+  
+  // Convert to framework objects with reasoning
+  return connectionDetails
+    .map(detail => {
+      const framework = getFrameworkBySlug(detail.slug);
+      if (!framework) return null;
+      
+      return {
+        ...framework,
+        reasons: [...new Set(detail.reasons)], // Remove duplicates
+        sources: detail.sources,
+        connectionScore: detail.sources.length // How many ways this connects
+      };
+    })
+    .filter(Boolean)
+    .sort((a, b) => {
+      // Sort by connection score first, then by tier
+      if (b.connectionScore !== a.connectionScore) {
+        return b.connectionScore - a.connectionScore;
+      }
+      return a.tier - b.tier;
+    });
+}
+
+// NEW: Helper function to get connection reasoning with i18n support
+export function getConnectionReason(type, source, frameworkSlug) {
+  const currentLocale = get(locale);
+  const framework = getFrameworkBySlug(frameworkSlug);
+  if (!framework) return 'Connected to your interests';
+  
+  if (type === 'practice') {
+    const practice = source;
+    return getI18nConnectionReason(currentLocale, 'practice', practice, frameworkSlug);
+  }
+  
+  if (type === 'value') {
+    const value = source;
+    return getI18nConnectionReason(currentLocale, 'value', value, frameworkSlug);
+  }
+  
+  if (type === 'quiz') {
+    return getI18nConnectionReason(currentLocale, 'quiz', source, frameworkSlug);
+  }
+  
+  if (type === 'foundation') {
+    return getI18nConnectionReason(currentLocale, 'foundation', 'foundation', frameworkSlug);
+  }
+  
+  return 'Connected to your path';
+}
 
 // Utility functions that now use the centralized data
 export function getFrameworksByStatus(status) {

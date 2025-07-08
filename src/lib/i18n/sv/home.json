@@ -1,35 +1,42 @@
 {
-  "whyExists": {
-    "title": "Varför detta existerar",
-    "paragraph1": "Detta projekt började med en grundläggande fråga: Vad skulle det krävas för att mänskligheten ska blomstra tillsammans?",
-    "paragraph2": "Vi drivs av en livslång fascination för jorden som ett delat hem och behovet av etiska system som tjänar allt liv. Global Governance Frameworks är vårt svar; ett levande förslag för hur en mer sammankopplad, inkluderande och framtidsbereddskapsinriktad form av styrning skulle kunna se ut.",
-    "paragraph3": "",
-    "paragraph3b": " är vårt flaggskepp-ramverk, och framgången för alla andra ramverk hänger på det. Detta arbete erbjuds öppet, format av konversationer med AI-system som Claude och Gemini, och grundat i tron att god styrning måste uppstå från delad visdom.",
-    "paragraph4": "Utmaningarna vi möter är brådskande. Du är inbjuden att utforska, ifrågasätta och hjälpa oss bygga den framtid vi behöver."
-  },
-  "languageStatement": {
-    "title": "Språk och inkludering",
-    "paragraph1": "Sann global styrning måste tala alla språk. För att detta ramverk ska vara verkligt universellt måste det vara tillgängligt för alla. Vi är djupt engagerade i att göra",
-    "paragraph1b": "och allt relaterat material tillgängligt på så många språk som möjligt.",
-    "paragraph2": "För närvarande underhålls kärndokumenten aktivt på engelska, som ett globalt diplomatiskt språk, och svenska, Björn 'Pwnytale' Kenneth Holmströms modersmål. Vi inser att detta bara är en utgångspunkt.",
-    "paragraph3": "Vi tror att det viktiga arbetet med översättning tillhör gemenskapen. Det är ett kraftfullt sätt att säkerställa att ramverkens koncept anpassas korrekt och resonerar inom olika kulturer. Om du är en modersmålstalare och tror på detta arbete, inbjuder vi dig varmt att hjälpa till att föra dessa idéer till din gemenskap.",
-    "button": "Gå med i översättningsarbetet"
-  },
   "title": "Ramverk för global styrning",
   "subtitle": "Förbinder styrningsinnovationer över hela världen",
   "intro": {
     "heading": "Vad skulle det krävas för att mänskligheten ska blomstra tillsammans?",
     "text": "Utforska vårt levande ekosystem av styrningsramverk—ett sammankopplat nätverk av lösningar för planetär transformation."
   },
-  "treatyFeature": {
-    "heading": "Det grundläggande ramverket: Fördraget för vårt enda hem",
-    "lead": "Tre hörnstensramverk som transformerar hur vi styr tillsammans, helar vår planet och säkerställer att alla blomstrar.",
-    "point1": "Reformerar centrala institutioner som FN:s säkerhetsråd.",
-    "point2": "Stärker internationell rätt med begrepp som ekocid.",
-    "point3": "Etablerar hållbar finansiering för globala kollektiva nyttigheter.",
-    "button": "Utforska fördraget"
+  "threePillars": {
+    "title": "Ritningen för en regenerativ värld",
+    "intro": "Vår värld möter sammankopplade kriser som kräver ett nytt sätt att tänka och organisera. Ramverken för global styrning tillhandahåller en omfattande, öppen ritning för denna transformation, byggd på tre integrerade pelare:",
+    "pillar1": {
+      "label": "Hårdvaran",
+      "title": "Fördraget för vårt enda hem",
+      "description": "Den juridiska och institutionella grunden för effektiv global handling. Fördraget reformerar centrala internationella organ och etablerar verkställbar internationell rätt, vilket skapar den stabila struktur som behövs för att möjliggöra förändring.",
+      "link": "Utforska fördraget →"
+    },
+    "pillar2": {
+      "label": "Hjärtat",
+      "title": "Ursprungsfolks och traditionell kunskapsstyrning",
+      "description": "Den etiska och filosofiska kompass för hela ekosystemet. Den centrerar visdomen från rätt relation och ursprungsfolks suveränitet, vilket säkerställer att våra lösningar inte bara är effektiva, utan också rättvisa, visa och verkligt regenerativa.",
+      "link": "Lär dig om ursprungsfolks visdom →"
+    },
+    "pillar3": {
+      "label": "Nervsystemet",
+      "title": "Det integrerade meta-styrningsramverket",
+      "description": "Samordningsprotokollet som gör att alla delar av systemet kan arbeta tillsammans. Det tillhandahåller principer och strukturer för olika ramverk och gemenskaper att samverka, vilket skapar ett flexibelt och adaptivt nätverk som kan utvecklas med våra utmaningar.",
+      "link": "Upptäck meta-styrning →"
+    },
+    "integration": {
+      "title": "Hur det fungerar tillsammans: Ett levande system",
+      "flow1": "Ursprungsfolksramverket tillhandahåller det vägledande VARFÖR",
+      "flow2": "Fördraget tillhandahåller det grundläggande VAD och VAR",
+      "flow3": "Meta-styrningen tillhandahåller det operativa HUR",
+      "note": "Denna kärnarkitektur möjliggör utveckling och utplacering av specifika, domänlösningar inom klimat, ekonomi, hälsa, teknik och alla områden av planetärt förvaltarskap."
+    }
   },
   "constellation": {
+    "title": "Från arkitektur till handling: Ramverks-ekosystemet",
+    "subtitle": "Byggd på denna grund finns ett växande bibliotek av detaljerade ramverk som tillhandahåller praktiska lösningar för specifika globala utmaningar. Utforska den interaktiva konstellationen nedan:",
     "taglines": {
       "treatyforouronlyhome": "Operativsystemsuppgraderingen för en planet i kris.",
       "gaiantradeframework": "Bygger en global ekonomi som helar, inte skadar.",
@@ -87,7 +94,7 @@
       "disasterriskreduction": "Proaktiva system för att minimera effekterna av katastrofer och bygga motståndskraftiga samhällen.",
       "peaceandconflictresolution": "Nya modeller för att förebygga konflikter och främja återställande rättvisa och varaktig fred.",
       "justicesystems": "Omarbetar rättvisan för att vara opartisk, återställande och tillgänglig för alla.",
-      "economicintegration": "Det interna operativsystemet för en regenerativ ekonomi, som definierar hur värde skapas och delas.",
+      "nestedeconomies": "Det interna operativsystemet för en regenerativ ekonomi, som definierar hur värde skapas och delas.",
       "globalsupplychainsandlogistics": "Skapar motståndskraftiga, etiska och transparenta globala leveranskedjor.",
       "auroraaccord": "'Parisavtalet för data', som säkerställer digital värdighet, suveränitet och förtroende.",
       "migrationandhumanmobility": "Ett humant och samordnat tillvägagångssätt för att hantera global migration med värdighet.",
@@ -133,6 +140,14 @@
       "economic3": "Lansera lokala valutor och kooperativ"
     }
   },
+  "treatyFeature": {
+    "heading": "Det grundläggande ramverket: Fördraget för vårt enda hem",
+    "lead": "Tre hörnstensramverk som transformerar hur vi styr tillsammans, helar vår planet och säkerställer att alla blomstrar.",
+    "point1": "Reformerar centrala institutioner som FN:s säkerhetsråd.",
+    "point2": "Stärker internationell rätt med begrepp som ekocid.",
+    "point3": "Etablerar hållbar finansiering för globala kollektiva nyttigheter.",
+    "button": "Utforska fördraget"
+  },
   "features": {
     "heading": "Utvalda ramverk",
     "interoperability": {
@@ -151,7 +166,7 @@
   "performanceTeaser": {
     "heading": "Vårt åtagande för transparens",
     "text": "Varje ramverk utvärderas kontinuerligt mot sina egna kärnprinciper. Vi tror på att transparent följa våra framsteg och hålla detta arbete ansvarigt gentemot dess uttalade etiska mål.",
-    "button": "Utforska Prestandapanelen"
+    "button": "Utforska resultatpanelen"
   },
   "emergingPossibilities": {
     "heading": "Framväxande globala möjligheter",
@@ -197,9 +212,9 @@
   "overview": {
     "learnMore": "Läs mer"
   },
-  "globalCitizenship": {
-    "title": "Hitta din plats i den nya berättelsen",
-    "lead": "Vad är den mest brådskande utgångspunkten för planetär transformation?",
+  "findYourPlace": {
+    "title": "Din väg till planetarisk handling",
+    "lead": "Utmaningarna vi står inför är enorma, men varje stor omvandling börjar med ett samordnat första steg. Det är här du kan upptäcka den unika roll du kan spela.",
     "description": "Varje väg leder till en personlig resa genom vårt ramverks-ekosystem, och hjälper dig att upptäcka var dina värderingar och färdigheter kan göra störst skillnad.",
     "point1": "Ett test med 3 frågor för att personanpassa din resa.",
     "point2": "En interaktiv kompass för att visualisera din väg.",
@@ -220,10 +235,9 @@
       }
     },
     "quickStart": {
-      "title": "Börja din resa som globalt medborgare",
-      "subtitle": "Svara på en snabb fråga för att upptäcka din personliga väg",
-      "progressText": "Detta är fråga 1 av 3 - tar mindre än 2 minuter",
-      "alternativeLink": "Eller utforska hela ramverket →"
+      "title": "Upptäck din väg",
+      "subtitle": "Ta vårt 2-minutersquiz för att hitta de ramverk som bäst matchar dina värderingar och passioner.",
+      "progressText": "Detta är fråga 1 av 3 - tar mindre än 2 minuter"
     },
     "completed": {
       "title": "Din väg som globalt medborgare",

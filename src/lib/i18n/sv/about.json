@@ -56,14 +56,14 @@
   },
   "origins": {
     "title": "Projektets ursprung",
-    "paragraph1": "Detta projekt bygger på idéer som utforskades i 'Global Governance – Naturliga Steg mot en Blomstrande Värld', särskilt koncepten kring holarkiska styrningssystem, utveckling enligt Spiral Dynamics, och meta-styrningsramverk som möjliggör samverkan mellan olika styrningsmodeller.",
-    "paragraph2": "Istället för att föreslå en enda styrningslösning skapar vi verktyg och ramverk som låter många olika styrningsinnovationer kopplas samman, dela lärdomar och utvecklas tillsammans."
+    "paragraph1": "Vi drivs av en livslång fascination för jorden som ett gemensamt hem och behovet av etiska system som tjänar allt liv. Detta projekt började med en grundläggande fråga: Vad skulle krävas för att mänskligheten skulle blomstra tillsammans?",
+    "paragraph2": "Global Governance Frameworks är vårt svar. Det bygger på idéer som först utforskades i 'Global Governance - Natural Steps Toward a Thriving World', och tar koncept som holarkisk styrning och gör dem praktiska och tillgängliga för att bygga en mer sammankopplad, inkluderande och framtidsberedd värld."
   },
   "development": {
-    "title": "Kollaborativ utveckling",
-    "paragraph1": "Global Governance Frameworks återspeglar våra principer inte bara i innehåll utan också i process. Vi har utvecklat både ramverket och denna webbplats genom människa-AI-samarbete, med hjälp av verktyg som Claude, ChatGPT, Grok och DeepSeek.",
-    "paragraph2": "Detta tillvägagångssätt visar hur AI kan fungera som en partner i styrnings- och utvecklingsarbete—förstärka mänsklig kreativitet och insikt utan att ersätta mänskligt omdöme och etisk översyn. AI-verktyg har hjälpt oss att förfina koncept, utveckla implementeringsriktlinjer, skapa tillgängliga förklaringar och identifiera potentiella luckor i vårt ramverk.",
-    "paragraph3": "Genom att vara transparenta om vår användning av AI-assistans, exemplifierar vi den typ av etisk teknologistyrning som vi förespråkar: transparent, människostyrd och i linje med våra värderingar om tillgänglighet och kollektiv intelligens."
+    "title": "Vår utvecklingsprocess",
+    "paragraph1": "Detta arbete erbjuds öppet, format av samtal med AI-system som Claude, Gemini, ChatGPT, Grok och DeepSeek, och grundat i tron ​​att god styrning måste komma från gemensam visdom. Denna samarbetsprocess mellan människa och AI gör det möjligt för oss att uppnå en omfattande forskningssyntes och maximera mångfalden av analytiska perspektiv.",
+    "paragraph2": "Denna metod visar hur AI kan fungera som en partner i styrnings- och utvecklingsarbete – och förbättra mänsklig kreativitet och insikt utan att ersätta mänskligt omdöme och etisk tillsyn. Det är en praktisk tillämpning av den etiska teknikstyrning vi förespråkar: transparent, människostyrd och i linje med våra värderingar.",
+    "paragraph3": ""
   },
   "getInvolved": {
     "title": "Engagera dig",

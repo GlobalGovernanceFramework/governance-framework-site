@@ -7,6 +7,7 @@
   import { navigating, page } from '$app/stores';
   import { browser } from '$app/environment';
   import { base } from '$app/paths';
+  import { afterNavigate } from '$app/navigation';
   import { writable } from 'svelte/store';
   import Header from '$lib/components/Header.svelte';
   import GlobalNotice from '$lib/components/GlobalNotice.svelte';
@@ -52,13 +53,21 @@
     loadTranslations($locale, path)
       .catch(e => console.error("Translation loading error during navigation:", e));
   }
+
+  afterNavigate(() => {
+    if (browser) {
+      window.scrollTo(0, 0);
+    }
+  });
 </script>
 
-<div class="flex flex-col min-h-screen">
+<div class="min-h-screen">
   <Header />
   <GlobalNotice />
-  <main class="flex-grow container mx-auto px-4 py-8">
-    <slot />
+  <main class="container mx-auto px-4 py-8">
+    {#key $page.url.pathname}
+      <slot />
+    {/key}
   </main>
   
   <Footer />

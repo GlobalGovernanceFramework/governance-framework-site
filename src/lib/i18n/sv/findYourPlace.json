@@ -1,46 +1,81 @@
 {
   "meta": {
     "title": "Globalt medborgarskap",
-    "description": "Upptäck din väg till planetärt medborgarskap och koppla dina dagliga val till global förändring"
+    "description": "Upptäck din väg till planetärt medborgarskap och koppla dina dagliga val till global transformation"
   },
   "hero": {
-    "title": "Din resa mot globalt medborgarskap",
-    "subtitle": "Från personliga värderingar till planetär handling",
-    "description": "Upptäck hur dina dagliga val kopplas till global förändring genom personliga ramverksrekommendationer och interaktiva övningar.",
-    "retakeQuiz": "Gör om personlighetstest"
+    "title": "Välkommen, planetär medborgare",
+    "description": "Grattis till att du tagit det första steget. Nedan finns din personliga kompass och de ramverk som bäst stämmer överens med dina värderingar."
+  },
+  "personalizedConnections": {
+    "title": "🎯 Dina personliga ramverkskopplingar",
+    "description": "Baserat på dina kompassövningar och quizsvar, överensstämmer dessa ramverk mest med din resa mot globalt medborgarskap.",
+    "stats": {
+      "totalConnections": "Totala kopplingar",
+      "fromPractices": "Från dina övningar",
+      "fromInterests": "Från dina intressen"
+    },
+    "connectionCard": {
+      "whyConnects": "Varför detta kopplar till dig:",
+      "exploreFramework": "Utforska ramverk →",
+      "comingSoon": "Kommer snart",
+      "helpDevelop": "Hjälp till att utveckla →",
+      "connection": "koppling",
+      "connections": "kopplingar"
+    },
+    "tierDistribution": {
+      "title": "Din kopplingsfördelning per implementeringsnivå",
+      "tiers": {
+        "tier0": "Nivå 0: Grund",
+        "tier1": "Nivå 1: Brådskande åtgärder",
+        "tier2": "Nivå 2: System", 
+        "tier3": "Nivå 3: Rättvisa & kultur",
+        "tier4": "Nivå 4: Visionär"
+      }
+    },
+    "cta": {
+      "title": "Redo att vidta åtgärder?",
+      "description": "Dina personliga kopplingar visar var du kan göra störst skillnad. Börja med de ramverk som resonerar starkast med dina värderingar.",
+      "readGuides": "📖 Läs implementeringsguider",
+      "joinCommunity": "🤝 Gå med i gemenskapen"
+    },
+    "noConnections": {
+      "title": "Bygger dina kopplingar",
+      "description": "Slutför kompassövningarna ovan för att upptäcka dina personliga ramverkskopplingar."
+    }
   },
   "quiz": {
-    "title": "Upptäck din väg till globalt medborgarskap",
+    "title": "Upptäck din väg som global medborgare",
     "subtitle": "3 frågor för att personanpassa din resa mot planetärt medborgarskap",
     "questionCounter": "Fråga {current} av {total}",
-    "foundationBadge": "Grunden för alla ramverk",
+    "foundationBadge": "Grund för alla ramverk",
     "navigation": {
       "back": "Tillbaka",
       "next": "Nästa"
     },
     "questions": {
       "values": {
-        "question": "Vad är viktigast för dig idag?",
+        "question": "Vad betyder mest för dig idag?",
         "options": {
           "climate": {
-            "title": "Klimat & miljö",
-            "description": "Skydda vår planets ekosystem, hantera klimatförändringar och säkerställa miljömässig hållbarhet"
+            "title": "Klimat och miljö",
+            "description": "Skydda våra planetens ekosystem, hantera klimatförändringar och säkerställa miljömässig hållbarhet"
           },
           "justice": {
-            "title": "Rättvisa & jämlikhet", 
+            "title": "Rättvisa och jämlikhet", 
             "description": "Bygga rättvisa samhällen, skydda mänskliga rättigheter och säkerställa lika möjligheter för alla"
           },
           "technology": {
-            "title": "Teknik & framtid",
+            "title": "Teknik och framtid",
             "description": "Forma hur tekniken tjänar mänskligheten, digitala rättigheter och förbereda för framtida utmaningar"
           },
           "community": {
-            "title": "Gemenskap & kultur",
-            "description": "Stärka lokala gemenskaper, bevara kulturarv och främja mänsklig kontakt"
+            "title": "Gemenskap och kultur",
+            "description": "Stärka lokala gemenskaper, bevara kulturarv och främja mänsklig samhörighet"
           },
           "systems": {
             "title": "Alla system som arbetar tillsammans",
-            "description": "Förstå hur alla globala utmaningar hänger ihop och kräver samordnade lösningar"
+            "description": "Förstå hur alla globala utmaningar är sammankopplade och kräver samordnade lösningar"
           }
         }
       },
@@ -48,20 +83,20 @@
         "question": "Hur föredrar du att bidra till positiv förändring?",
         "options": {
           "learning": {
-            "title": "Lärande & undervisning",
-            "description": "Inhämta kunskap, dela visdom och hjälpa andra att förstå komplexa globala frågor"
+            "title": "Lärande och undervisning",
+            "description": "Få kunskap, dela visdom och hjälpa andra förstå komplexa globala frågor"
           },
           "building": {
-            "title": "Bygga & skapa",
+            "title": "Bygga och skapa",
             "description": "Utveckla lösningar, skapa infrastruktur och konstruera bättre system för mänskligheten"
           },
           "protecting": {
-            "title": "Skydda & läka",
-            "description": "Skydda sårbara människor och ekosystem, ge vård och återställa det som skadats"
+            "title": "Skydda och hela",
+            "description": "Skydda sårbara människor och ekosystem, ge omsorg och återställa det som skadats"
           },
           "advocating": {
-            "title": "Förespråka & organisera",
-            "description": "Tala för rättvisa, mobilisera gemenskaper och driva på för policyförändringar"
+            "title": "Förespråka och organisera",
+            "description": "Tala för rättvisa, mobilisera gemenskaper och driva på för politiska förändringar"
           },
           "transforming": {
             "title": "Transformera system",
@@ -73,20 +108,20 @@
         "question": "Vilken skala av förändring inspirerar dig mest?",
         "options": {
           "local": {
-            "title": "Personlig & lokal",
-            "description": "Börja med dig själv, din familj och din närmaste gemenskap för att skapa ringar på vattnet"
+            "title": "Personligt och lokalt",
+            "description": "Börja med dig själv, din familj och din närliggande gemenskap för att skapa ringeffekter"
           },
           "national": {
-            "title": "Nationell & regional",
-            "description": "Arbeta inom länder och regioner för att genomföra policyförändringar och institutionella reformer"
+            "title": "Nationellt och regionalt",
+            "description": "Arbeta inom länder och regioner för att implementera policyförändringar och institutionella reformer"
           },
           "global": {
-            "title": "Global & planetär",
+            "title": "Globalt och planetärt",
             "description": "Hantera utmaningar som påverkar hela mänskligheten och kräver internationellt samarbete"
           },
           "intergenerational": {
-            "title": "Intergenerationell & kosmisk",
-            "description": "Tänka på framtida generationer, artens långsiktiga överlevnad och mänsklighetens kosmiska syfte"
+            "title": "Generationsövergripande och kosmiskt",
+            "description": "Tänka på framtida generationer, långsiktig artöverlevnad och mänsklighetens kosmiska syfte"
           },
           "connected": {
             "title": "Alla nivåer sammankopplade",
@@ -128,14 +163,15 @@
     }
   },
   "compass": {
+    "whyConnects": "Varför detta ansluter:",
     "status": {
-      "ready": "Redo",
-      "inReview": "Under granskning",
+      "ready": "Färdig",
+      "inReview": "Under granskning", 
       "planned": "Planerad"
     },
-    "title": "Ramverk för globalt medborgarskap",
-    "description": "Klicka på värderingar, övningar eller i mitten för att utforska din väg till planetärt medborgarskap",
-    "readMore": "Läs hela praktikramverket",
+    "title": "Ramverk för global medborgarskapsutövning",
+    "description": "Klicka på värderingar, praktiker eller mitten för att utforska din väg till planetärt medborgarskap",
+    "readMore": "Läs det fullständiga praktikramverket",
     "center": {
       "title": "Gemensamma värderingar",
       "subtitle": "Grund"
@@ -251,37 +287,7 @@
         "tip": "Anslutna ramverk: Dessa övningar kopplar till specifika styrningsområden →"
       },
       "values": {
-        "tip": "Utforska hur detta värde kopplar till dagliga övningar och globala ramverk →",
-        "life": {
-          "description": "Erkänna den heliga sammankopplingen av alla levande varelser och ekosystem, från lokal biologisk mångfald till planetärt förvaltarskap."
-        },
-        "compassion": {
-          "description": "Agera med empati och omsorg för alla varelser, särskilt de som lider eller är sårbara."
-        },
-        "justice": {
-          "description": "Arbeta för rättvis behandling, lika möjligheter och systemförändring som tjänar det gemensamma bästa."
-        },
-        "truth": {
-          "description": "Söka förståelse genom öppen undersökning, erkänna komplexitet och förbli ödmjuk inför det vi inte vet."
-        },
-        "freedom": {
-          "description": "Respektera alla människors värdighet och självbestämmande samtidigt som vi erkänner vårt ansvar för varandra."
-        },
-        "earth": {
-          "description": "Agera som förvaltare av vårt planetära hem, skydda ekosystem och leva inom planetära gränser."
-        },
-        "peace": {
-          "description": "Bygga förståelse över skillnader och skapa system som löser konflikter konstruktivt."
-        },
-        "integrity": {
-          "description": "Anpassa våra handlingar efter våra värderingar och vara ärliga om våra påverkan och ansvar."
-        },
-        "gratitude": {
-          "description": "Uppskatta de gåvor vi fått och det sammankopplade nätverk som upprätthåller allt liv."
-        },
-        "wisdom": {
-          "description": "Integrera kunskap med medkänsla, lära från olika traditioner och fatta beslut som tjänar framtida generationer."
-        }
+        "tip": "Utforska hur detta värde kopplar till dagliga övningar och globala ramverk →"
       }
     },
     "legend": {
@@ -302,7 +308,7 @@
       "description": "Dessa ramverk anknyter till dina intressen och kompletterar dina primära rekommendationer. Utforska dem när du utvecklar din resa mot globalt medborgarskap."
     },
     "primaryBadge": "Primär",
-    "foundationNote": "⭐ Detta ramverk ger den styrningsgrund som möjliggör att alla andra kan fungera effektivt tillsammans.",
+    "foundationNote": "🌐 Detta ramverk ger den styrningsgrund som möjliggör att alla andra kan fungera effektivt tillsammans.",
     "exploreFramework": "Utforska ramverk",
     "exploreAll": "Visa alla implementeringsramverk",
     "summary": {
@@ -312,7 +318,9 @@
       "frameworks": "ramverk",
       "nextStep": "Nästa steg", 
       "nextStepText": "Utforska ditt primära ramverk och använd kompassen för att följa dina övningar",
-      "unknown": "Globalt systemtänkande"
+      "unknown": "Globalt systemtänkande",
+      "notFeelingRight": "Känns resultaten inte rätt?",
+      "retake": "Gör om testet"
     }
   },
   "frameworks": {
@@ -502,10 +510,10 @@
     }
   },
   "cta": {
-    "title": "Börja din resa mot globalt medborgarskap",
-    "description": "Redo att koppla dina värderingar till planetär handling? Utforska de ramverk som överensstämmer med dina intressen och börja göra skillnad.",
+    "title": "Börja din resa som global medborgare",
+    "description": "Redo att koppla dina värderingar till planetär handling? Utforska ramverken som stämmer överens med dina intressen och börja göra skillnad.",
     "exploreFrameworks": "Utforska alla ramverk",
-    "readTheFramework": "Läs det fulla medborgarskapspraktikramverket",
+    "readTheFramework": "Läs det fullständiga ramverket för global medborgarskapsutövning",
     "getInvolved": "Engagera dig",
     "beginJourney": "Börja din resa"
   }

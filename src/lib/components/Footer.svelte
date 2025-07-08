@@ -116,6 +116,29 @@
   .w-6 {
     width: 1.5rem;
   }
+
+  .accessibility-statement {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(218, 165, 32, 0.3);
+    text-align: center;
+  }
+
+  .accessibility-statement p {
+    font-size: 0.8rem;
+    color: #e2e8f0;
+    margin: 0;
+  }
+
+  .accessibility-statement a {
+    color: #DAA520;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+  .accessibility-statement a:hover {
+    color: #fbbf24;
+  }
 </style>
 
 <footer>
@@ -178,6 +201,19 @@
         <img src="{base}/logo.svg" alt="Global Governance Frameworks" class="h-6 w-6" />
         <span class="text-sm">Building frameworks for ethical global governance</span>
       </div>
+    </div>
+
+    <!-- NEW: Accessibility Statement -->
+    <div class="accessibility-statement">
+      <p>
+        {#if browser}
+          {$t('common.footer.accessibility.text')} 
+          <a href="{base}/get-involved/translations">{$t('common.footer.accessibility.link')}</a>
+        {:else}
+          The GGF is committed to global accessibility through community-led translation. 
+          <a href="{base}/get-involved/translations">Learn how to contribute.</a>
+        {/if}
+      </p>
     </div>
   </div>
 </footer>

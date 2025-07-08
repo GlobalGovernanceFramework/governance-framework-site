@@ -4,10 +4,45 @@
     "description": "Discover your path to planetary citizenship and connect your daily choices to global transformation"
   },
   "hero": {
-    "title": "Your Global Citizenship Journey",
-    "subtitle": "From Personal Values to Planetary Action",
-    "description": "Discover how your daily choices connect to global transformation through personalized framework recommendations and interactive practices.",
-    "retakeQuiz": "Retake Personalization Quiz"
+    "title": "Welcome, Planetary Citizen",
+    "description": "Congratulations on taking the first step. Below is your personalized compass and the frameworks that most deeply align with your values."
+  },
+  "personalizedConnections": {
+    "title": "🎯 Your Personalized Framework Connections",
+    "description": "Based on your compass practices and quiz responses, these frameworks align most deeply with your global citizenship journey.",
+    "stats": {
+      "totalConnections": "Total Connections",
+      "fromPractices": "From Your Practices",
+      "fromInterests": "From Your Interests"
+    },
+    "connectionCard": {
+      "whyConnects": "Why this connects to you:",
+      "exploreFramework": "Explore Framework →",
+      "comingSoon": "Coming Soon",
+      "helpDevelop": "Help Develop →",
+      "connection": "connection",
+      "connections": "connections"
+    },
+    "tierDistribution": {
+      "title": "Your Connection Distribution by Implementation Tier",
+      "tiers": {
+        "tier0": "Tier 0: Foundation",
+        "tier1": "Tier 1: Urgent Action",
+        "tier2": "Tier 2: Systems", 
+        "tier3": "Tier 3: Equity & Culture",
+        "tier4": "Tier 4: Visionary"
+      }
+    },
+    "cta": {
+      "title": "Ready to Take Action?",
+      "description": "Your personalized connections show where you can make the biggest impact. Start with the frameworks that resonate most strongly with your values.",
+      "readGuides": "📖 Read Implementation Guides",
+      "joinCommunity": "🤝 Join the Community"
+    },
+    "noConnections": {
+      "title": "Building Your Connections",
+      "description": "Complete the compass practices above to discover your personalized framework connections."
+    }
   },
   "quiz": {
     "title": "Discover Your Global Citizenship Path",
@@ -128,6 +163,7 @@
     }
   },
   "compass": {
+    "whyConnects": "Why this connects:",
     "status": {
       "ready": "Ready",
       "inReview": "In Review", 
@@ -251,37 +287,7 @@
         "tip": "Connected frameworks: These practices bridge to specific governance areas →"
       },
       "values": {
-        "tip": "Explore how this value connects to daily practices and global frameworks →",
-        "life": {
-          "description": "Recognizing the sacred interconnection of all living beings and ecosystems, from local biodiversity to planetary stewardship."
-        },
-        "compassion": {
-          "description": "Acting with empathy and care for all beings, especially those who are suffering or vulnerable."
-        },
-        "justice": {
-          "description": "Working toward fair treatment, equal opportunities, and systemic change that serves the common good."
-        },
-        "truth": {
-          "description": "Seeking understanding through open inquiry, acknowledging complexity, and remaining humble about what we don't know."
-        },
-        "freedom": {
-          "description": "Respecting the dignity and autonomy of all people while recognizing our responsibility to each other."
-        },
-        "earth": {
-          "description": "Acting as stewards of our planetary home, protecting ecosystems and living within planetary boundaries."
-        },
-        "peace": {
-          "description": "Building understanding across differences and creating systems that resolve conflicts constructively."
-        },
-        "integrity": {
-          "description": "Aligning our actions with our values and being honest about our impacts and responsibilities."
-        },
-        "gratitude": {
-          "description": "Appreciating the gifts we've received and the interconnected web that sustains all life."
-        },
-        "wisdom": {
-          "description": "Integrating knowledge with compassion, learning from diverse traditions, and making decisions that serve future generations."
-        }
+        "tip": "Explore how this value connects to daily practices and global frameworks →"
       }
     },
     "legend": {
@@ -302,7 +308,7 @@
       "description": "These frameworks connect to your interests and complement your primary recommendations. Explore them as you develop your global citizenship journey."
     },
     "primaryBadge": "Primary",
-    "foundationNote": "⭐ This framework provides the governance foundation that enables all others to work effectively together.",
+    "foundationNote": "🌐 This framework provides the governance foundation that enables all others to work effectively together.",
     "exploreFramework": "Explore Framework",
     "exploreAll": "View All Implementation Frameworks",
     "summary": {
@@ -312,7 +318,9 @@
       "frameworks": "frameworks",
       "nextStep": "Next Step", 
       "nextStepText": "Explore your primary framework and use the compass to track your practices",
-      "unknown": "Global Systems Thinking"
+      "unknown": "Global Systems Thinking",
+      "notFeelingRight": "Not feeling right?",
+      "retake": "Retake the quiz"
     }
   },
   "frameworks": {

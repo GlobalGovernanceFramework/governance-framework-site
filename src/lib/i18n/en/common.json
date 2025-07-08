@@ -20,6 +20,8 @@
     "getInvolved": "Get Involved",
     "downloads": "Downloads",
     "contact": "Contact",
+    "myPath": "My Path",
+    "findYourPlace": "Find Your Place",
     "metaGovernance": "Meta-Governance",
     "metaGovernanceOverview": "Overview",
     "metaGovernancePrinciples": "Core Principles",
@@ -33,7 +35,7 @@
     "frameworkOverview": "Overview",
     "frameworkDocs": "Documentation",
     "frameworkPrinciples": "Principles",
-    "frameworkGlobalCitizenship": "Global Citizenship",
+    "frameworkMyDashboard": "My Dashboard",
     "frameworkImplementation": "Implementation",
     "frameworkHubs": "Hubs",
     "frameworkVisuals": "Visuals",
@@ -60,7 +62,11 @@
     "discord": {
       "inviteLink": "https://discord.gg/Zx4hMJf4JUe"
     },
-    "founding": "Founding"
+    "founding": "Founding",
+    "accessibility": {
+      "text": "The GGF is committed to global accessibility through community-led translation.",
+      "link": "Learn how to contribute."
+    }
   },
   "ui": {
     "frameworkTiers": "Framework Tiers",

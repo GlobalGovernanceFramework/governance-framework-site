@@ -1,4 +1,4 @@
-<!-- src/routes/frameworks/global-citizenship/components/FoundationMessage.svelte -->
+<!-- src/routes/frameworks/find-your-place/components/FoundationMessage.svelte -->
 <script>
   import { t } from '$lib/i18n';
   import { base } from '$app/paths';
@@ -11,27 +11,27 @@
   const messageSlides = [
     {
       icon: '🏛️',
-      titleKey: 'globalCitizenship.foundation.slides.governance.title',
-      contentKey: 'globalCitizenship.foundation.slides.governance.content',
-      highlightKey: 'globalCitizenship.foundation.slides.governance.highlight'
+      titleKey: 'findYourPlace.foundation.slides.governance.title',
+      contentKey: 'findYourPlace.foundation.slides.governance.content',
+      highlightKey: 'findYourPlace.foundation.slides.governance.highlight'
     },
     {
       icon: '🌍',
-      titleKey: 'globalCitizenship.foundation.slides.planetary.title',
-      contentKey: 'globalCitizenship.foundation.slides.planetary.content',
-      highlightKey: 'globalCitizenship.foundation.slides.planetary.highlight'
+      titleKey: 'findYourPlace.foundation.slides.planetary.title',
+      contentKey: 'findYourPlace.foundation.slides.planetary.content',
+      highlightKey: 'findYourPlace.foundation.slides.planetary.highlight'
     },
     {
       icon: '🤝',
-      titleKey: 'globalCitizenship.foundation.slides.cooperation.title',
-      contentKey: 'globalCitizenship.foundation.slides.cooperation.content',
-      highlightKey: 'globalCitizenship.foundation.slides.cooperation.highlight'
+      titleKey: 'findYourPlace.foundation.slides.cooperation.title',
+      contentKey: 'findYourPlace.foundation.slides.cooperation.content',
+      highlightKey: 'findYourPlace.foundation.slides.cooperation.highlight'
     },
     {
       icon: '⚡',
-      titleKey: 'globalCitizenship.foundation.slides.action.title',
-      contentKey: 'globalCitizenship.foundation.slides.action.content',
-      highlightKey: 'globalCitizenship.foundation.slides.action.highlight'
+      titleKey: 'findYourPlace.foundation.slides.action.title',
+      contentKey: 'findYourPlace.foundation.slides.action.content',
+      highlightKey: 'findYourPlace.foundation.slides.action.highlight'
     }
   ];
   
@@ -67,9 +67,9 @@
     <!-- Header -->
     <div class="foundation-header">
       <div class="header-icon">🏛️</div>
-      <h2>{$t('globalCitizenship.foundation.title')}</h2>
+      <h2>{$t('findYourPlace.foundation.title')}</h2>
       <p class="foundation-subtitle">
-        {$t('globalCitizenship.foundation.subtitle')}
+        {$t('findYourPlace.foundation.subtitle')}
       </p>
     </div>
     
@@ -120,24 +120,24 @@
     
     <!-- Key Points Grid -->
     <div class="key-points">
-      <h3>{$t('globalCitizenship.foundation.keyPoints.title')}</h3>
+      <h3>{$t('findYourPlace.foundation.keyPoints.title')}</h3>
       <div class="points-grid">
         <div class="key-point">
           <div class="point-icon">🔗</div>
-          <h4>{$t('globalCitizenship.foundation.keyPoints.interconnected.title')}</h4>
-          <p>{$t('globalCitizenship.foundation.keyPoints.interconnected.description')}</p>
+          <h4>{$t('findYourPlace.foundation.keyPoints.interconnected.title')}</h4>
+          <p>{$t('findYourPlace.foundation.keyPoints.interconnected.description')}</p>
         </div>
         
         <div class="key-point">
           <div class="point-icon">⚖️</div>
-          <h4>{$t('globalCitizenship.foundation.keyPoints.coordination.title')}</h4>
-          <p>{$t('globalCitizenship.foundation.keyPoints.coordination.description')}</p>
+          <h4>{$t('findYourPlace.foundation.keyPoints.coordination.title')}</h4>
+          <p>{$t('findYourPlace.foundation.keyPoints.coordination.description')}</p>
         </div>
         
         <div class="key-point">
           <div class="point-icon">🌱</div>
-          <h4>{$t('globalCitizenship.foundation.keyPoints.enabling.title')}</h4>
-          <p>{$t('globalCitizenship.foundation.keyPoints.enabling.description')}</p>
+          <h4>{$t('findYourPlace.foundation.keyPoints.enabling.title')}</h4>
+          <p>{$t('findYourPlace.foundation.keyPoints.enabling.description')}</p>
         </div>
       </div>
     </div>
@@ -145,22 +145,22 @@
     <!-- Call to Action -->
     <div class="foundation-cta">
       <div class="cta-content">
-        <h3>{$t('globalCitizenship.foundation.cta.title')}</h3>
-        <p>{$t('globalCitizenship.foundation.cta.description')}</p>
+        <h3>{$t('findYourPlace.foundation.cta.title')}</h3>
+        <p>{$t('findYourPlace.foundation.cta.description')}</p>
         
         <div class="cta-buttons">
           <a 
             href="{base}/frameworks/treaty-for-our-only-home" 
             class="cta-button primary"
           >
-            {$t('globalCitizenship.foundation.cta.exploreTreaty')}
+            {$t('findYourPlace.foundation.cta.exploreTreaty')}
           </a>
           
           <a 
             href="{base}/frameworks/docs/implementation" 
             class="cta-button secondary"
           >
-            {$t('globalCitizenship.foundation.cta.allFrameworks')}
+            {$t('findYourPlace.foundation.cta.allFrameworks')}
           </a>
         </div>
       </div>
@@ -170,28 +170,28 @@
         <div class="foundation-diagram">
           <div class="center-node">
             <span class="node-icon">🏛️</span>
-            <span class="node-label">{$t('globalCitizenship.foundation.diagram.center')}</span>
+            <span class="node-label">{$t('findYourPlace.foundation.diagram.center')}</span>
           </div>
           
           <div class="connection-nodes">
             <div class="connection-node tier-1">
               <span class="node-icon">🌍</span>
-              <span class="node-label">{$t('globalCitizenship.foundation.diagram.climate')}</span>
+              <span class="node-label">{$t('findYourPlace.foundation.diagram.climate')}</span>
             </div>
             
             <div class="connection-node tier-2">
               <span class="node-icon">⚡</span>
-              <span class="node-label">{$t('globalCitizenship.foundation.diagram.technology')}</span>
+              <span class="node-label">{$t('findYourPlace.foundation.diagram.technology')}</span>
             </div>
             
             <div class="connection-node tier-3">
               <span class="node-icon">🤝</span>
-              <span class="node-label">{$t('globalCitizenship.foundation.diagram.culture')}</span>
+              <span class="node-label">{$t('findYourPlace.foundation.diagram.culture')}</span>
             </div>
             
             <div class="connection-node tier-4">
               <span class="node-icon">🚀</span>
-              <span class="node-label">{$t('globalCitizenship.foundation.diagram.future')}</span>
+              <span class="node-label">{$t('findYourPlace.foundation.diagram.future')}</span>
             </div>
           </div>
           

@@ -1,4 +1,4 @@
-<!-- src/routes/+page.svelte - Fixed Interactive Landing Page with i18n -->
+<!-- src/routes/+page.svelte - Reworked Homepage with Three Pillars Integration -->
 <script>
   import InfoBox from '$lib/components/InfoBox.svelte';
   import EthicalImpactDashboard from '$lib/components/EthicalImpactDashboard.svelte';
@@ -62,7 +62,7 @@
       color: '#2D5F2D'
     },
     {
-      ...getFrameworkBySlug('economic-integration'),
+      ...getFrameworkBySlug('nested-economies'),
       tagline: $t('home.constellation.taglines.economicintegration'),
       points: [
         $t('home.constellation.points.economic1'),
@@ -146,78 +146,7 @@
   <meta name="description" content="{$t('home.subtitle')}" />
 </svelte:head>
 
-<!-- Collapsible Info Boxes Section -->
-<section class="info-boxes-section">
-  <div class="container">
-    
-    <!-- Why This Exists - Collapsible -->
-    <div class="collapsible-info-box">
-      <button 
-        class="info-box-header why-exists-header"
-        on:click={toggleWhyExists}
-        aria-expanded={whyExistsExpanded}
-      >
-        <div class="header-content">
-          <span class="icon">💡</span>
-          <h3>{$t('home.whyExists.title')}</h3>
-        </div>
-        <span class="toggle-icon" class:rotated={whyExistsExpanded}>▼</span>
-      </button>
-      
-      {#if whyExistsExpanded}
-        <div class="info-box-content why-exists-content">
-          <p>{$t('home.whyExists.paragraph1')}</p>
-          <p>{$t('home.whyExists.paragraph2')}</p>
-          <p>
-            {$t('home.whyExists.paragraph3')} 
-            <a href="{base}/start-treaty/" class="treaty-link">
-              '{$t('home.treatyFeature.heading').split(': ')[1]}'
-            </a> 
-            {$t('home.whyExists.paragraph3b')}
-          </p>
-          <p>{$t('home.whyExists.paragraph4')}</p>
-        </div>
-      {/if}
-    </div>
-
-    <!-- Language Statement - Collapsible -->
-    <div class="collapsible-info-box">
-      <button 
-        class="info-box-header language-header"
-        on:click={toggleLanguage}
-        aria-expanded={languageExpanded}
-      >
-        <div class="header-content">
-          <span class="icon">🌐</span>
-          <h3>{$t('home.languageStatement.title')}</h3>
-        </div>
-        <span class="toggle-icon" class:rotated={languageExpanded}>▼</span>
-      </button>
-            
-      {#if languageExpanded}
-        <div class="info-box-content language-content">
-          <p>
-            {$t('home.languageStatement.paragraph1')} 
-            <a href="{base}/start-treaty/" class="treaty-link-alt">
-              '{$t('home.treatyFeature.heading').split(': ')[1]}'
-            </a> 
-            {$t('home.languageStatement.paragraph1b')}
-          </p>
-          <p>{$t('home.languageStatement.paragraph2')}</p>
-          <p>{$t('home.languageStatement.paragraph3')}</p>
-          <div class="button-center">
-            <a href="{base}/get-involved/translations" class="translation-button">
-              {$t('home.languageStatement.button')}
-            </a>
-          </div>
-        </div>
-      {/if}
-    </div>
-
-  </div>
-</section>
-
-<!-- Interactive Hero Section with Framework Constellation -->
+<!-- Hero Section with Core Message -->
 <section class="hero-section">
   <div class="hero-container">
     
@@ -228,6 +157,108 @@
       <h1 class="hero-title">{$t('home.title')}</h1>
       <p class="hero-subtitle">{$t('home.intro.heading')}</p>
       <p class="hero-tagline">{$t('home.intro.text')}</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Three Pillars Section - The Core Architecture -->
+<section class="three-pillars-section">
+  <div class="container">
+    <div class="pillars-header">
+      <h2 class="pillars-title">{$t('home.threePillars.title')}</h2>
+      <p class="pillars-intro">
+        {$t('home.threePillars.intro')}
+      </p>
+    </div>
+
+    <div class="pillars-grid">
+      
+      <!-- Pillar 1: Treaty for Our Only Home -->
+      <div class="pillar-card pillar-hardware">
+        <div class="pillar-header">
+          <div class="pillar-icon">⚖️</div>
+          <div class="pillar-number">1</div>
+          <div class="pillar-label">{$t('home.threePillars.pillar1.label')}</div>
+        </div>
+        <h3 class="pillar-title">{$t('home.threePillars.pillar1.title')}</h3>
+        <p class="pillar-description">
+          {$t('home.threePillars.pillar1.description')}
+        </p>
+        <a href="{base}/frameworks/treaty-for-our-only-home" class="pillar-link">
+          {$t('home.threePillars.pillar1.link')}
+        </a>
+      </div>
+
+      <!-- Pillar 2: Indigenous Governance -->
+      <div class="pillar-card pillar-heart">
+        <div class="pillar-header">
+          <div class="pillar-icon">🪶</div>
+          <div class="pillar-number">2</div>
+          <div class="pillar-label">{$t('home.threePillars.pillar2.label')}</div>
+        </div>
+        <h3 class="pillar-title">{$t('home.threePillars.pillar2.title')}</h3>
+        <p class="pillar-description">
+          {$t('home.threePillars.pillar2.description')}
+        </p>
+        <a href="{base}/frameworks/indigenous-governance-and-traditional-knowledge" class="pillar-link">
+          {$t('home.threePillars.pillar2.link')}
+        </a>
+      </div>
+
+      <!-- Pillar 3: Meta-Governance -->
+      <div class="pillar-card pillar-nervous-system">
+        <div class="pillar-header">
+          <div class="pillar-icon">🌐</div>
+          <div class="pillar-number">3</div>
+          <div class="pillar-label">{$t('home.threePillars.pillar3.label')}</div>
+        </div>
+        <h3 class="pillar-title">{$t('home.threePillars.pillar3.title')}</h3>
+        <p class="pillar-description">
+          {$t('home.threePillars.pillar3.description')}
+        </p>
+        <a href="{base}/frameworks/meta-governance" class="pillar-link">
+          {$t('home.threePillars.pillar3.link')}
+        </a>
+      </div>
+
+    </div>
+
+    <div class="pillars-integration">
+      <h3 class="integration-title">{$t('home.threePillars.integration.title')}</h3>
+      <div class="integration-flow">
+        <div class="flow-item">
+          <span class="flow-emoji">🪶</span>
+          <span class="flow-text">{$t('home.threePillars.integration.flow1')}</span>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-item">
+          <span class="flow-emoji">⚖️</span>
+          <span class="flow-text">{$t('home.threePillars.integration.flow2')}</span>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-item">
+          <span class="flow-emoji">🌐</span>
+          <span class="flow-text">{$t('home.threePillars.integration.flow3')}</span>
+        </div>
+      </div>
+      <p class="integration-note">
+        {$t('home.threePillars.integration.note')}
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Interactive Framework Constellation Section -->
+<section class="constellation-section">
+  <div class="hero-container">
+    
+    <div class="constellation-header">
+      <h2 class="constellation-title">{$t('home.constellation.title')}</h2>
+      <p class="constellation-subtitle">
+        {$t('home.constellation.subtitle')}
+      </p>
     </div>
 
     <!-- Constellation Layout: Legend + Chart + Info Panel -->
@@ -327,118 +358,72 @@
   </div>
 </section>
 
-<!-- Featured Frameworks Section -->
-<section class="featured-section">
+<!-- Enhanced Find Your Place Section -->
+<section class="findyourplace-section">
   <div class="container">
-    <h2 class="featured-title">{$t('home.features.heading')}</h2>
-    <p class="featured-subtitle">{$t('home.treatyFeature.lead')}</p>
-    
-    <div class="featured-grid">
-      {#each featuredFrameworks as framework}
-        <div class="featured-card" style="border-top-color: {framework.color};">
-          
-          <!-- Framework Icon -->
-          <div class="card-header">
-            <div class="card-icon" style="background-color: {framework.color}20;">
-              {framework.icon}
-            </div>
-            <div class="card-header-text">
-              <h3 class="card-title" style="color: {framework.color};">
-                {$t(framework.titleKey)}
-              </h3>
-              <p class="card-tagline">{framework.tagline}</p>
-            </div>
-          </div>
-          
-          <!-- Framework Points -->
-          <div class="card-points">
-            {#each framework.points as point}
-              <div class="point-item">
-                <span class="point-check" style="color: {framework.color};">✓</span>
-                <span class="point-text">{point}</span>
-              </div>
-            {/each}
-          </div>
-          
-          <!-- Learn More Button -->
-          <a href="{base}{framework.path}" class="card-button" style="background-color: {framework.color};">
-            {$t('home.overview.learnMore')}
-          </a>
-        </div>
-      {/each}
-    </div>
-  </div>
-</section>
-
-<!-- Enhanced Global Citizenship Section -->
-<section class="citizenship-section">
-  <div class="container">
-    <div class="citizenship-layout">
+    <div class="findyourplace-layout">
       
       <!-- Content Column -->
-      <div class="citizenship-content">
-        <h2 class="citizenship-title">{$t('home.globalCitizenship.title')}</h2>
-        <p class="citizenship-lead">{$t('home.globalCitizenship.lead')}</p>
+      <div class="findyourplace-content">
+        <h2 class="findyourplace-title">{$t('home.findYourPlace.title')}</h2>
+        <p class="citizenship-lead">{$t('home.findYourPlace.lead')}</p>
         
         <!-- Quick Quiz Starter or Results -->
         <div class="quick-quiz-starter">
           {#if !hasCompletedQuiz}
-            <h3 class="quiz-starter-title">{$t('home.globalCitizenship.quickStart.title', 'Start Your Global Citizenship Journey')}</h3>
-            <p class="quiz-starter-subtitle">{$t('home.globalCitizenship.quickStart.subtitle', 'Answer a quick question to discover your personalized path')}</p>
+            <h3 class="quiz-starter-title">{$t('home.findYourPlace.quickStart.title', 'Start Your Global Citizenship Journey')}</h3>
+            <p class="quiz-starter-subtitle">{$t('home.findYourPlace.quickStart.subtitle', 'Answer a quick question to discover your personalized path')}</p>
             
             <div class="quiz-question-preview">
-              <h4 class="question-text">{$t('globalCitizenship.quiz.questions.values.question', 'What global challenges matter most to you?')}</h4>
+              <h4 class="question-text">{$t('findYourPlace.quiz.questions.values.question', 'What global challenges matter most to you?')}</h4>
               
               <div class="quiz-options-grid">
-                <a href="{base}/frameworks/global-citizenship?start=climate" class="quiz-option climate">
+                <a href="{base}/frameworks/quiz?start=climate" class="quiz-option climate">
                   <div class="option-icon">🌍</div>
                   <div class="option-content">
-                    <h5>{$t('globalCitizenship.quiz.questions.values.options.climate.title', 'Climate & Environment')}</h5>
-                    <p>{$t('globalCitizenship.quiz.questions.values.options.climate.description', 'Protecting our planet and building sustainable systems')}</p>
+                    <h5>{$t('findYourPlace.quiz.questions.values.options.climate.title', 'Climate & Environment')}</h5>
+                    <p>{$t('findYourPlace.quiz.questions.values.options.climate.description', 'Protecting our planet and building sustainable systems')}</p>
                   </div>
                 </a>
                 
-                <a href="{base}/frameworks/global-citizenship?start=justice" class="quiz-option justice">
+                <a href="{base}/frameworks/quiz?start=justice" class="quiz-option justice">
                   <div class="option-icon">⚖️</div>
                   <div class="option-content">
-                    <h5>{$t('globalCitizenship.quiz.questions.values.options.justice.title', 'Justice & Equality')}</h5>
-                    <p>{$t('globalCitizenship.quiz.questions.values.options.justice.description', 'Fighting for fairness and human rights globally')}</p>
+                    <h5>{$t('findYourPlace.quiz.questions.values.options.justice.title', 'Justice & Equality')}</h5>
+                    <p>{$t('findYourPlace.quiz.questions.values.options.justice.description', 'Fighting for fairness and human rights globally')}</p>
                   </div>
                 </a>
                 
-                <a href="{base}/frameworks/global-citizenship?start=technology" class="quiz-option technology">
+                <a href="{base}/frameworks/quiz?start=technology" class="quiz-option technology">
                   <div class="option-icon">⚡</div>
                   <div class="option-content">
-                    <h5>{$t('globalCitizenship.quiz.questions.values.options.technology.title', 'Technology & Innovation')}</h5>
-                    <p>{$t('globalCitizenship.quiz.questions.values.options.technology.description', 'Using technology to solve global challenges')}</p>
+                    <h5>{$t('findYourPlace.quiz.questions.values.options.technology.title', 'Technology & Innovation')}</h5>
+                    <p>{$t('findYourPlace.quiz.questions.values.options.technology.description', 'Using technology to solve global challenges')}</p>
                   </div>
                 </a>
                 
-                <a href="{base}/frameworks/global-citizenship?start=community" class="quiz-option community">
+                <a href="{base}/frameworks/quiz?start=community" class="quiz-option community">
                   <div class="option-icon">🤝</div>
                   <div class="option-content">
-                    <h5>{$t('globalCitizenship.quiz.questions.values.options.community.title', 'Community & Culture')}</h5>
-                    <p>{$t('globalCitizenship.quiz.questions.values.options.community.description', 'Building strong communities and preserving culture')}</p>
+                    <h5>{$t('findYourPlace.quiz.questions.values.options.community.title', 'Community & Culture')}</h5>
+                    <p>{$t('findYourPlace.quiz.questions.values.options.community.description', 'Building strong communities and preserving culture')}</p>
                   </div>
                 </a>
                 
-                <a href="{base}/frameworks/global-citizenship?start=systems" class="quiz-option systems highlighted">
+                <a href="{base}/frameworks/quiz?start=systems" class="quiz-option systems highlighted">
                   <div class="option-icon">🏛️</div>
                   <div class="option-content">
-                    <h5>{$t('globalCitizenship.quiz.questions.values.options.systems.title', 'Systems Thinking')}</h5>
-                    <p>{$t('globalCitizenship.quiz.questions.values.options.systems.description', 'Understanding how everything connects globally')}</p>
+                    <h5>{$t('findYourPlace.quiz.questions.values.options.systems.title', 'Systems Thinking')}</h5>
+                    <p>{$t('findYourPlace.quiz.questions.values.options.systems.description', 'Understanding how everything connects globally')}</p>
                   </div>
                   <div class="highlight-badge">
-                    ⭐ {$t('globalCitizenship.quiz.foundationBadge', 'Foundation')}
+                    ⭐ {$t('findYourPlace.quiz.foundationBadge', 'Foundation')}
                   </div>
                 </a>
               </div>
               
               <div class="quiz-starter-footer">
-                <p class="quiz-progress-text">{$t('home.globalCitizenship.quickStart.progressText', 'This is question 1 of 3 - takes less than 2 minutes')}</p>
-                <a href="{base}/frameworks/global-citizenship" class="alternative-link">
-                  {$t('home.globalCitizenship.quickStart.alternativeLink', 'Or explore the full framework →')}
-                </a>
+                <p class="quiz-progress-text">{$t('home.findYourPlace.quickStart.progressText', 'This is question 1 of 3 - takes less than 2 minutes')}</p>
               </div>
             </div>
           {:else}
@@ -446,13 +431,13 @@
             <div class="quiz-completed-state">
               <div class="completed-header">
                 <div class="completed-icon">🎯</div>
-                <h3 class="completed-title">{$t('home.globalCitizenship.completed.title', 'Your Global Citizenship Path')}</h3>
-                <p class="completed-subtitle">{$t('home.globalCitizenship.completed.subtitle', 'You\'ve discovered your personalized framework recommendations')}</p>
+                <h3 class="completed-title">{$t('home.findYourPlace.completed.title', 'Your Global Citizenship Path')}</h3>
+                <p class="completed-subtitle">{$t('home.findYourPlace.completed.subtitle', 'You\'ve discovered your personalized framework recommendations')}</p>
               </div>
               
               {#if quizResults?.recommendedFrameworks?.length > 0}
                 <div class="top-recommendations">
-                  <h4 class="recommendations-title">{$t('home.globalCitizenship.completed.topRecommendations', 'Your Top Recommendations:')}</h4>
+                  <h4 class="recommendations-title">{$t('home.findYourPlace.completed.topRecommendations', 'Your Top Recommendations:')}</h4>
                   <div class="recommendation-chips">
                     {#each quizResults.recommendedFrameworks.slice(0, 3) as framework}
                       <div class="recommendation-chip">
@@ -465,8 +450,8 @@
               {/if}
               
               <div class="completed-actions">
-                <a href="{base}/frameworks/global-citizenship" class="view-results-button">
-                  {$t('home.globalCitizenship.completed.viewResults', 'View Full Results')} →
+                <a href="{base}/frameworks/quiz" class="view-results-button">
+                  {$t('home.findYourPlace.completed.viewResults', 'View Full Results')} →
                 </a>
                 <button 
                   class="retake-quiz-button" 
@@ -476,21 +461,15 @@
                     quizResults = null;
                   }}
                 >
-                  {$t('home.globalCitizenship.completed.retakeQuiz', 'Retake Quiz')}
+                  {$t('home.findYourPlace.completed.retakeQuiz', 'Retake Quiz')}
                 </button>
               </div>
             </div>
           {/if}
         </div>
 
-        <p class="citizenship-description">{$t('home.globalCitizenship.description')}</p>
+        <p class="citizenship-description">{$t('home.findYourPlace.description')}</p>
       </div>
-      
-      <!-- Visual Column -->
-      <div class="citizenship-visual">
-        <img src="{base}/images/new-global-citizenship-experience.png" alt="{$t('home.globalCitizenship.title')}" class="citizenship-image">
-      </div>
-      
     </div>
   </div>
 </section>
@@ -543,23 +522,6 @@
   </div>
 </section>
 
-<!-- Additional Info Section -->
-<section class="additional-info-section">
-  <div class="container">
-    <div class="info-content">
-      <h2 class="info-title">{$t('home.additionalInfo.heading')}</h2>
-      <p class="info-paragraph">{$t('home.additionalInfo.paragraph1')}</p>
-      <p class="info-paragraph">{$t('home.additionalInfo.paragraph2')}</p>
-      <ul class="info-list">
-        {#each $t('home.additionalInfo.listItems') as item}
-          <li class="info-list-item">{item}</li>
-        {/each}
-      </ul>
-      <p class="info-paragraph">{$t('home.additionalInfo.paragraph3')}</p>
-    </div>
-  </div>
-</section>
-
 <!-- Performance Teaser Section -->
 <section class="performance-section">
   <div class="performance-container">
@@ -574,20 +536,20 @@
 
 <!-- Call to Action Section -->
 <section class="final-cta-section">
-  <div class="container">
-    <div class="final-cta-content">
-      <h2 class="final-cta-title">{$t('home.callToAction.heading')}</h2>
-      <p class="final-cta-text">{$t('home.callToAction.text')}</p>
-      <div class="final-cta-buttons">
-        <a href="{base}/frameworks" class="primary-cta-button">
-          {$t('home.callToAction.primaryButton')}
-        </a>
-        <a href="{base}/contact" class="secondary-cta-button">
-          {$t('home.callToAction.secondaryButton')}
-        </a>
-      </div>
-    </div>
-  </div>
+ <div class="container">
+   <div class="final-cta-content">
+     <h2 class="final-cta-title">{$t('home.callToAction.heading')}</h2>
+     <p class="final-cta-text">{$t('home.callToAction.text')}</p>
+     <div class="final-cta-buttons">
+       <a href="{base}/frameworks" class="primary-cta-button">
+         {$t('home.callToAction.primaryButton')}
+       </a>
+       <a href="{base}/get-involved" class="secondary-cta-button">
+         {$t('home.callToAction.secondaryButton')}
+       </a>
+     </div>
+   </div>
+ </div>
 </section>
 
 <style>
@@ -604,7 +566,500 @@
     padding: 0 1rem;
   }
 
-  /* Info Boxes Section */
+  /* Hero Section - Simplified */
+  .hero-section {
+    padding: 3rem 0 2rem 0; /* Reduced padding since main content moved below */
+    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #1e40af 100%);
+    color: white;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-logo {
+    height: 80px; /* Slightly smaller */
+    width: 80px;
+    margin: 0 auto 1.5rem auto;
+    opacity: 0.9;
+  }
+
+  .hero-title {
+    font-size: 2.25rem; /* Slightly smaller */
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.35rem;
+    color: #ddd6fe;
+    margin-bottom: 1rem;
+    font-weight: 300;
+  }
+
+  .hero-tagline {
+    font-size: 1.6rem;
+    color: #fbbf24;
+    margin-bottom: 0;
+    font-weight: 600;
+  }
+
+  /* NEW: Three Pillars Section */
+  .three-pillars-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  }
+
+  .pillars-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pillars-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #2B4B8C 0%, #6B5CA5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .pillars-intro {
+    font-size: 1.25rem;
+    color: #475569;
+    line-height: 1.7;
+    margin-bottom: 0;
+  }
+
+  .pillars-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  @media (min-width: 768px) {
+    .pillars-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+  }
+
+  .pillar-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .pillar-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--pillar-color-1), var(--pillar-color-2));
+  }
+
+  .pillar-hardware {
+    --pillar-color-1: #2B4B8C;
+    --pillar-color-2: #3B82F6;
+  }
+
+  .pillar-heart {
+    --pillar-color-1: #065F46;
+    --pillar-color-2: #059669;
+  }
+
+  .pillar-nervous-system {
+    --pillar-color-1: #7C2D12;
+    --pillar-color-2: #EA580C;
+  }
+
+  .pillar-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  .pillar-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .pillar-icon {
+    font-size: 2rem;
+  }
+
+  .pillar-number {
+    background: linear-gradient(135deg, var(--pillar-color-1), var(--pillar-color-2));
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+
+  .pillar-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .pillar-title {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+
+  .pillar-description {
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .pillar-link {
+    color: var(--pillar-color-1);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    transition: all 0.2s ease;
+  }
+
+  .pillar-link:hover {
+    color: var(--pillar-color-2);
+    transform: translateX(4px);
+  }
+
+  /* Pillars Integration Flow */
+  .pillars-integration {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+  }
+
+  .integration-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .integration-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .integration-flow {
+      flex-direction: row;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+  }
+
+  .flow-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 200px;
+  }
+
+  @media (min-width: 768px) {
+    .flow-item {
+      flex-direction: row;
+      max-width: none;
+      text-align: left;
+    }
+  }
+
+  .flow-emoji {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .flow-emoji {
+      margin-bottom: 0;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .flow-text {
+    font-size: 0.9rem;
+    color: #475569;
+    line-height: 1.4;
+  }
+
+  .flow-arrow {
+    font-size: 1.5rem;
+    color: #94a3b8;
+    transform: rotate(90deg);
+  }
+
+  @media (min-width: 768px) {
+    .flow-arrow {
+      transform: rotate(0deg);
+    }
+  }
+
+  .integration-note {
+    color: #64748b;
+    text-align: center;
+    font-style: italic;
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  /* Constellation Section - Updated */
+  .constellation-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #1e40af 100%);
+    color: white;
+  }
+
+  .constellation-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .constellation-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: white;
+  }
+
+  .constellation-subtitle {
+    font-size: 1.2rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* Constellation Layout */
+  .constellation-layout {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .left-column {
+    min-width: 300px;
+    flex: 0 0 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .constellation-column {
+    flex: 1;
+    min-width: 600px;
+  }
+
+  .tier-legend {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .legend-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #e2e8f0;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+
+  .legend-item:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  .legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .tier-0-dot { background-color: #fbbf24; }
+  .tier-1-dot { background-color: #60a5fa; }
+  .tier-2-dot { background-color: #34d399; }
+  .tier-3-dot { background-color: #a78bfa; }
+  .tier-4-dot { background-color: #f472b6; }
+
+  .legend-content {
+    flex: 1;
+  }
+
+  .legend-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    line-height: 1.2;
+  }
+
+  .tier-0-text { color: #fbbf24 !important; }
+  .tier-1-text { color: #60a5fa !important; }
+  .tier-2-text { color: #34d399 !important; }
+  .tier-3-text { color: #a78bfa !important; }
+  .tier-4-text { color: #f472b6 !important; }
+
+  /* Explore Button Container */
+  .explore-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .explore-button {
+    display: inline-block;
+    background-color: #fbbf24;
+    color: #1e1b4b;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    text-align: center;
+    min-width: 200px;
+    border: 2px solid #fbbf24;
+  }
+
+  .explore-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(251, 191, 36, 0.4);
+    background-color: #f59e0b;
+    border-color: #f59e0b;
+  }
+
+  /* Wide Description Panel */
+  .wide-description-panel {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.08) 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 2rem;
+    transition: all 0.3s ease-out;
+    max-width: 100%;
+    min-height: 140px;
+  }
+
+  .wide-description-placeholder {
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.6);
+    padding: 2rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
+    margin-top: 2rem;
+    font-style: italic;
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-out;
+  }
+
+  .wide-description-placeholder p {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+
+  .description-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .framework-tagline {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fbbf24;
+    font-style: italic;
+    line-height: 1.4;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(251, 191, 36, 0.4);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease;
+  }
+
+  .framework-description {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.95);
+    text-align: left;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    transition: color 0.3s ease;
+  }
+
+  .mobile-hint {
+    margin-top: 1rem !important;
+    font-size: 0.9rem !important;
+    color: #fbbf24 !important;
+    font-style: italic;
+    text-align: center;
+    padding: 0.75rem;
+    background: rgba(251, 191, 36, 0.15);
+    border-radius: 0.5rem;
+    border: 1px solid rgba(251, 191, 36, 0.3);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Info Boxes Section - Moved and simplified */
   .info-boxes-section {
     padding: 2rem 0;
     background-color: #f8fafc;
@@ -746,504 +1201,57 @@
     transition: all 0.2s;
   }
 
-  /* Hero Section */
-  .hero-section {
+  /* Find Your Place Section */
+  .findyourplace-section {
     padding: 4rem 0;
-    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #1e40af 100%);
-    color: white;
-    min-height: 850px; /* Increased from 700px to accommodate the description panel */
+    background: linear-gradient(to right, #f0f9ff, #e0f2fe);
   }
 
-  .hero-content {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-
-  .hero-logo {
-    height: 100px;
-    width: 100px;
-    margin: 0 auto 2rem auto;
-    opacity: 0.9;
-  }
-
-  .hero-title {
-    font-size: 2.5rem;
-    line-height: 1.2;
-    font-weight: 700;
-    margin-bottom: 1rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1.5rem;
-    color: #ddd6fe;
-    margin-bottom: 1rem;
-    font-weight: 300;
-  }
-
-  .hero-tagline {
-    font-size: 1.8rem;
-    color: #fbbf24;
-    margin-bottom: 2rem;
-    font-weight: 600;
-  }
-
-  /* Constellation Layout */
-  .constellation-layout {
+  .findyourplace-layout {
     display: flex;
-    gap: 2rem;
-    align-items: flex-start;
     flex-wrap: wrap;
-  }
-
-  .left-column {
-    min-width: 300px;
-    flex: 0 0 320px;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  .constellation-column {
-    flex: 1;
-    min-width: 600px;
-  }
-
-  .tier-legend {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 1rem;
-    padding: 1.5rem;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  }
-
-  .legend-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: #e2e8f0;
-  }
-
-  .legend-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.75rem;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-  }
-
-  .legend-item:hover {
-    background-color: rgba(255, 255, 255, 0.05);
-  }
-
-  .legend-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    flex-shrink: 0;
-    margin-top: 0.1rem;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-  }
-
-  .tier-0-dot { background-color: #fbbf24; }
-  .tier-1-dot { background-color: #60a5fa; }
-  .tier-2-dot { background-color: #34d399; }
-  .tier-3-dot { background-color: #a78bfa; }
-  .tier-4-dot { background-color: #f472b6; }
-
-  .legend-content {
-    flex: 1;
-  }
-
-  .legend-name {
-    font-size: 0.9rem;
-    font-weight: 600;
-    margin-bottom: 0.25rem;
-    line-height: 1.2;
-  }
-
-  .tier-0-text { color: #fbbf24 !important; }
-  .tier-1-text { color: #60a5fa !important; }
-  .tier-2-text { color: #34d399 !important; }
-  .tier-3-text { color: #a78bfa !important; }
-  .tier-4-text { color: #f472b6 !important; }
-
-  .legend-description {
-    font-size: 0.8rem;
-    color: #cbd5e1 !important;
-    line-height: 1.3;
-  }
-
-  /* Explore Button Container - Fixed styling */
-  .explore-button-container {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 3rem;
   }
 
-  .explore-button {
-    display: inline-block;
-    background-color: #fbbf24;
-    color: #1e1b4b;
+  .findyourplace-content {
+    flex: 1 1 50%;
+    min-width: 320px;
+  }
+
+  .findyourplace-title {
+    font-size: 2.5rem;
     font-weight: 700;
-    padding: 1rem 2rem;
-    border-radius: 0.75rem;
-    text-decoration: none;
-    box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
-    transition: all 0.3s ease;
-    font-size: 1.1rem;
-    text-align: center;
-    min-width: 200px;
-    border: 2px solid #fbbf24;
+    color: #1e3a8a;
+    margin-bottom: 1rem;
   }
 
-  .explore-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(251, 191, 36, 0.4);
-    background-color: #f59e0b;
-    border-color: #f59e0b;
-  }
-
-  .explore-button:active {
-    transform: translateY(0);
-    box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
-  }
-
-  /* Wide Description Panel - Subtle transparent design */
-  .wide-description-panel {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.08) 100%);
-    color: white;
-    padding: 2rem;
-    border-radius: 1rem;
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    margin-top: 2rem;
-    transition: all 0.3s ease-out;
-    max-width: 100%;
-    min-height: 140px; /* Ensures consistent height */
-  }
-
-  .wide-description-placeholder {
-    background: rgba(255, 255, 255, 0.05);
-    color: rgba(255, 255, 255, 0.6);
-    padding: 2rem;
-    border-radius: 1rem;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    text-align: center;
-    margin-top: 2rem;
-    font-style: italic;
-    min-height: 140px; /* Same height as the description panel */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease-out;
-  }
-
-  .wide-description-placeholder p {
-    margin: 0;
-    font-size: 1.1rem;
-  }
-
-  .description-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .framework-tagline {
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #fbbf24;
-    font-style: italic;
-    line-height: 1.4;
-    text-align: center;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid rgba(251, 191, 36, 0.4);
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    transition: color 0.3s ease;
-  }
-
-  .framework-description {
-    margin: 0;
-    font-size: 1.1rem;
+  .citizenship-lead {
+    font-size: 1.25rem;
+    color: #1e40af;
+    margin-bottom: 2rem;
     line-height: 1.6;
-    color: rgba(255, 255, 255, 0.95);
-    text-align: left;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    transition: color 0.3s ease;
   }
 
-  /* Click instruction styling */
-  .click-instruction {
-    margin-top: 1.5rem;
-    padding: 1rem;
-    background: rgba(251, 191, 36, 0.1);
-    border: 1px solid rgba(251, 191, 36, 0.3);
-    border-radius: 0.5rem;
-    text-align: center;
-  }
-
-  .instruction-text {
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
+  .citizenship-description {
+    color: #1e293b;
     font-size: 1rem;
-    color: #fbbf24;
-    font-weight: 600;
+    line-height: 1.6;
   }
 
-  .instruction-icon {
-    font-size: 1.2rem;
-    animation: gentle-pulse 2s ease-in-out infinite;
-  }
-
-  @keyframes gentle-pulse {
-    0%, 100% { 
-      transform: scale(1);
-      opacity: 1;
-    }
-    50% { 
-      transform: scale(1.1);
-      opacity: 0.8;
-    }
-  }
-
-  .mobile-hint {
-    margin-top: 1rem !important;
-    font-size: 0.9rem !important;
-    color: #fbbf24 !important;
-    font-style: italic;
+  .citizenship-visual {
+    flex: 1 1 40%;
+    min-width: 320px;
     text-align: center;
-    padding: 0.75rem;
-    background: rgba(251, 191, 36, 0.15);
-    border-radius: 0.5rem;
-    border: 1px solid rgba(251, 191, 36, 0.3);
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   }
 
-  /* Featured Section */
-  .featured-section {
-    padding: 4rem 0;
-    background-color: #f9fafb;
-  }
-
-  .featured-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-align: center;
-    color: #1f2937;
-    margin-bottom: 1rem;
-  }
-
-  .featured-subtitle {
-    font-size: 1.25rem;
-    text-align: center;
-    color: #6b7280;
-    max-width: 800px;
-    margin: 0 auto 4rem auto;
-  }
-
-  .featured-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-  }
-
-  .featured-card {
-    background-color: white;
-    padding: 2rem;
+  .citizenship-image {
+    max-width: 100%;
     border-radius: 1rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    border-top: 4px solid;
-    transition: all 0.3s;
-    position: relative;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   }
 
-  .card-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1.5rem;
-  }
-
-  .card-icon {
-    font-size: 2.5rem;
-    margin-right: 1rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
-  }
-
-  .card-header-text {
-    flex: 1;
-  }
-
-  .card-title {
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-  }
-
-  .card-tagline {
-    font-size: 1rem;
-    color: #4b5563;
-    font-weight: 500;
-    margin: 0;
-  }
-
-  .card-points {
-    margin-bottom: 2rem;
-  }
-
-  .point-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.75rem;
-  }
-
-  .point-check {
-    font-size: 1.2rem;
-    margin-right: 0.75rem;
-  }
-
-  .point-text {
-    color: #374151;
-  }
-
-  .card-button {
-    display: inline-block;
-    color: white;
-    font-weight: 600;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    transition: all 0.2s;
-  }
-
-  /* Quiz Completed State */
-  .quiz-completed-state {
-    background: white;
-    border-radius: 0.75rem;
-    padding: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    text-align: center;
-  }
-
-  .completed-header {
-    margin-bottom: 1.5rem;
-  }
-
-  .completed-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-
-  .completed-title {
-    font-size: 1.375rem;
-    font-weight: 600;
-    color: #1f2937;
-    margin-bottom: 0.5rem;
-  }
-
-  .completed-subtitle {
-    font-size: 1rem;
-    color: #6b7280;
-    margin: 0;
-  }
-
-  .top-recommendations {
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
-    border-radius: 0.75rem;
-    border: 1px solid #bbf7d0;
-  }
-
-  .recommendations-title {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #166534;
-    margin-bottom: 1rem;
-  }
-
-  .recommendation-chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    justify-content: center;
-  }
-
-  .recommendation-chip {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: white;
-    border: 1px solid #16a34a;
-    border-radius: 1.5rem;
-    padding: 0.5rem 1rem;
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: #166534;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  }
-
-  .chip-icon {
-    font-size: 1rem;
-  }
-
-  .chip-title {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 150px;
-  }
-
-  .completed-actions {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .view-results-button {
-    background: #2563eb;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.2s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .view-results-button:hover {
-    background: #1d4ed8;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
-  }
-
-  .retake-quiz-button {
-    background: transparent;
-    color: #6b7280;
-    border: 2px solid #e5e7eb;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s ease;
-  }
-
-  .retake-quiz-button:hover {
-    border-color: #d1d5db;
-    color: #374151;
-    background: #f9fafb;
-  }
-
-  /* Quick Quiz Starter */
+  /* Quiz Styles */
   .quick-quiz-starter {
     background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
     border-radius: 1rem;
@@ -1377,107 +1385,125 @@
     text-decoration: underline;
   }
 
-  /* Citizenship Section */
-  .citizenship-section {
-    padding: 4rem 0;
-    background: linear-gradient(to right, #f0f9ff, #e0f2fe);
-  }
-
-  .citizenship-layout {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 3rem;
-  }
-
-  .citizenship-content {
-    flex: 1 1 50%;
-    min-width: 320px;
-  }
-
-  .citizenship-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #1e3a8a;
-    margin-bottom: 1rem;
-  }
-
-  .citizenship-lead {
-    font-size: 1.25rem;
-    color: #1e40af;
-    margin-bottom: 2rem;
-    line-height: 1.6;
-  }
-
-  .citizenship-paths {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  .path-card {
-    display: flex;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    background-color: white;
-    border: 2px solid;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    transition: all 0.2s;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-
-  .path-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  }
-
-  .ecological-path { border-color: #10b981; }
-  .justice-path { border-color: #f59e0b; }
-  .systemic-path { border-color: #6366f1; }
-
-  .path-emoji {
-    font-size: 1.5rem;
-    margin-right: 1rem;
-  }
-
-  .path-content {
-    flex: 1;
-  }
-
-  .path-title {
-    font-weight: 600;
-    margin-bottom: 0.25rem;
-    margin: 0 0 0.25rem 0;
-  }
-
-  .ecological-path .path-title { color: #10b981; }
-  .justice-path .path-title { color: #f59e0b; }
-  .systemic-path .path-title { color: #6366f1; }
-
-  .path-description {
-    color: #6b7280;
-    font-size: 0.9rem;
-    margin: 0;
-  }
-
-  .citizenship-description {
-    color: #1e293b;
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-
-  .citizenship-visual {
-    flex: 1 1 40%;
-    min-width: 320px;
+  /* Quiz Completed State */
+  .quiz-completed-state {
+    background: white;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     text-align: center;
   }
 
-  .citizenship-image {
-    max-width: 100%;
-    border-radius: 1rem;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  .completed-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .completed-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .completed-title {
+    font-size: 1.375rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+  }
+
+  .completed-subtitle {
+    font-size: 1rem;
+    color: #6b7280;
+    margin: 0;
+  }
+
+  .top-recommendations {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+    border-radius: 0.75rem;
+    border: 1px solid #bbf7d0;
+  }
+
+  .recommendations-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #166534;
+    margin-bottom: 1rem;
+  }
+
+  .recommendation-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+  }
+
+  .recommendation-chip {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: white;
+    border: 1px solid #16a34a;
+    border-radius: 1.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #166534;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .chip-icon {
+    font-size: 1rem;
+  }
+
+  .chip-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+  }
+
+  .completed-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .view-results-button {
+    background: #2563eb;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .view-results-button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+  }
+
+  .retake-quiz-button {
+    background: transparent;
+    color: #6b7280;
+    border: 2px solid #e5e7eb;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .retake-quiz-button:hover {
+    border-color: #d1d5db;
+    color: #374151;
+    background: #f9fafb;
   }
 
   /* Possibilities Section */
@@ -1500,7 +1526,7 @@
     margin-bottom: 1rem;
   }
 
-  .possibilities-intro {
+ .possibilities-intro {
     font-size: 1.125rem;
     color: #4b5563;
     max-width: 42rem;
@@ -1573,42 +1599,6 @@
     color: #6b7280;
   }
 
-  /* Additional Info Section */
-  .additional-info-section {
-    padding: 4rem 0;
-    background-color: #f9fafb;
-  }
-
-  .info-content {
-    max-width: 42rem;
-    margin: 0 auto;
-    line-height: 1.7;
-    font-size: 1.125rem;
-  }
-
-  .info-title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: #654321;
-  }
-
-  .info-paragraph {
-    margin-bottom: 1.5rem;
-    color: #4b5563;
-  }
-
-  .info-list {
-    margin-left: 1.5rem;
-    margin-bottom: 1.5rem;
-    list-style-type: disc;
-    color: #4b5563;
-  }
-
-  .info-list-item {
-    margin-bottom: 0.5rem;
-  }
-
   /* Performance Section */
   .performance-section {
     padding: 4rem 1rem;
@@ -1637,10 +1627,6 @@
     font-size: 1.125rem;
     color: #4b5563;
     line-height: 1.7;
-    margin-bottom: 2rem;
-  }
-
-  .dashboard-wrapper {
     margin-bottom: 2rem;
   }
 
@@ -1743,24 +1729,7 @@
     }
   }
 
-  /* Responsive adjustments for the side-by-side layout */
   @media (max-width: 900px) {
-    .description-layout {
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .click-instruction {
-      min-width: auto;
-      max-width: 100%;
-      align-self: stretch;
-    }
-
-    .instruction-text {
-      flex-direction: row;
-      gap: 0.5rem;
-    }
-
     .constellation-layout {
       flex-direction: column;
       align-items: center;
@@ -1777,7 +1746,7 @@
       flex: none;
     }
 
-    .citizenship-layout {
+    .findyourplace-layout {
       flex-direction: column;
     }
 
@@ -1824,6 +1793,18 @@
       max-width: 250px;
       justify-content: center;
     }
+
+    .pillars-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .integration-flow {
+      flex-direction: column;
+    }
+
+    .flow-arrow {
+      transform: rotate(90deg);
+    }
   }
 
   @media (max-width: 640px) {
@@ -1839,11 +1820,15 @@
       font-size: 1.5rem;
     }
 
-    .featured-title {
+    .pillars-title {
       font-size: 2rem;
     }
 
-    .citizenship-title {
+    .constellation-title {
+      font-size: 2rem;
+    }
+
+    .findyourplace-title       {
       font-size: 2rem;
     }
 
@@ -1888,6 +1873,14 @@
     .completed-actions {
       gap: 0.75rem;
     }
+
+    .pillar-card {
+      padding: 1.5rem;
+    }
+
+    .pillars-integration {
+      padding: 1.5rem;
+    }
   }
 
   /* Focus styles for accessibility */
@@ -1898,6 +1891,11 @@
 
   .explore-button:focus {
     outline: 2px solid #fbbf24;
+    outline-offset: 2px;
+  }
+
+  .pillar-link:focus {
+    outline: 2px solid var(--pillar-color-1);
     outline-offset: 2px;
   }
 </style>

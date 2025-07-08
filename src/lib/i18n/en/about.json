@@ -56,14 +56,14 @@
   },
   "origins": {
     "title": "Project Origins",
-    "paragraph1": "This project builds on ideas explored in 'Global Governance - Natural Steps Toward a Thriving World,' particularly the concepts of holarchic governance systems, spiral dynamics development, and meta-governance frameworks that enable diverse governance models to coexist and collaborate.",
-    "paragraph2": "Rather than proposing a single governance solution, we're creating tools and frameworks that allow many different governance innovations to connect, share lessons, and evolve together."
+    "paragraph1": "We are driven by a lifelong fascination with the Earth as a shared home and the need for ethical systems that serve all life. This project began with a fundamental question: What would it take for humanity to thrive together?",
+    "paragraph2": "Global Governance Frameworks is our response. It builds on ideas first explored in 'Global Governance - Natural Steps Toward a Thriving World,' taking concepts like holarchic governance and making them practical and accessible for building a more interconnected, inclusive, and future-ready world."
   },
   "development": {
-    "title": "Collaborative Development",
-    "paragraph1": "The Global Governance Framework reflects our principles not just in content but in process. We've developed both the framework and this website through human-AI collaboration, using tools like Claude, ChatGPT, Grok, and DeepSeek.",
-    "paragraph2": "This approach demonstrates how AI can serve as a partner in governance and development work—enhancing human creativity and insight without replacing human judgment and ethical oversight. AI tools have helped us refine concepts, develop implementation guidelines, generate accessible explanations, and identify potential gaps in our framework.",
-    "paragraph3": "By being transparent about our use of AI assistance, we're modeling the kind of ethical technology governance we advocate for: transparent, human-directed, and aligned with our values of accessibility and collective intelligence."
+    "title": "Our Development Process",
+    "paragraph1": "This work is offered openly, shaped by conversations with AI systems like Claude, Gemini, ChatGPT, Grok, and DeepSeek, and grounded in the belief that good governance must emerge from shared wisdom. This Human-AI collaborative process allows us to achieve a comprehensive research synthesis and maximize the diversity of analytical perspectives.",
+    "paragraph2": "This approach demonstrates how AI can serve as a partner in governance and development work—enhancing human creativity and insight without replacing human judgment and ethical oversight. It is a practical application of the ethical technology governance we advocate for: transparent, human-directed, and aligned with our values.",
+    "paragraph3": ""
   },
   "getInvolved": {
     "title": "Get Involved",

@@ -50,7 +50,12 @@ Kort sagt: Det är **styrningens styrning**, som hjälper system att dela idéer
 
 ### 🧠 **Hur det fungerar** Metastyrning använder enkla verktyg för att koppla samman system och människor. Så här går det till:  
 
-- **🧑‍🤝‍🧑 Metaråd**: Samlar experter inom hälsa, klimat eller ekonomi för att anpassa mål. *Exempel: Ett råd kopplar samman sjukhus och bönder för att förbereda för torka.* - **👥 Medborgarpaneler**: Vanliga människor, inte bara experter, formar beslut. *Exempel: Invånare på Irland hjälpte till att utforma klimatlagar.* - **🤖 Smarta AI-verktyg**: Upptäcker konflikter tidigt, som "Kommer denna energiplan att skada rent vatten?" *Exempel: AI varnar om en policy ignorerar ursprungsfolks markrättigheter.* - **🔍 Maktkontroller**: Oberoende granskningar hindrar stora aktörer från att ta över. *Exempel: Granskningar säkerställer att företag inte dominerar klimatsamtal.* #### ⚡ Metastyrning i praktiken: Översvämningen i Ådalen
+- **🧑‍🤝‍🧑 Metaråd**: Samlar experter inom hälsa, klimat eller ekonomi för att anpassa mål. *Exempel: Ett råd kopplar samman sjukhus och bönder för att förbereda för torka.* 
+- **👥 Medborgarpaneler**: Vanliga människor, inte bara experter, formar beslut. *Exempel: Invånare på Irland hjälpte till att utforma klimatlagar.* 
+- **🤖 Smarta AI-verktyg**: Upptäcker konflikter tidigt, som "Kommer denna energiplan att skada rent vatten?" *Exempel: AI varnar om en policy ignorerar ursprungsfolks markrättigheter.* 
+- **🔍 Maktkontroller**: Oberoende granskningar hindrar stora aktörer från att ta över. *Exempel: Granskningar säkerställer att företag inte dominerar klimatsamtal.* 
+
+#### ⚡ Metastyrning i praktiken: Översvämningen i Ådalen
 
 FÖRE: När översvämningen drabbade Ådalen 2022 arbetade myndigheterna separat:
 - Vattenmyndigheten fokuserade bara på dammar och ignorerade bostadsområden.
@@ -68,7 +73,10 @@ EFTER: Med metastyrning 2024:
 ---
 
 ### ⚠️ **Vad kan gå fel?** Metastyrning är inte perfekt, men den är byggd för att undvika vanliga fällor:  
-- **Maktövertagande?** Roterande ledare och vetorätt för marginaliserade grupper håller saker rättvisa. *Exempel: Representanter för ursprungsfolk kan blockera skadliga projekt.* - **Symbolisk inkludering?** Garanterade platser för olika röster säkerställer verkligt inflytande. *Exempel: Unga och lokalbor får lika mycket att säga till om i råden.* - **AI tar över?** Människor fattar alltid de slutgiltiga etiska besluten. *Exempel: AI föreslår, men människor bestämmer vad som är rätt.* > *“Metastyrning är inte naivt – det är utformat för att överlista gamla maktspel och förbli rättvist.”*
+- **Maktövertagande?** Roterande ledare och vetorätt för marginaliserade grupper håller saker rättvisa. *Exempel: Representanter för ursprungsfolk kan blockera skadliga projekt.* 
+- **Symbolisk inkludering?** Garanterade platser för olika röster säkerställer verkligt inflytande. *Exempel: Unga och lokalbor får lika mycket att säga till om i råden.* 
+- **AI tar över?** Människor fattar alltid de slutgiltiga etiska besluten. 
+*Exempel: AI föreslår, men människor bestämmer vad som är rätt.* > *“Metastyrning är inte naivt – det är utformat för att överlista gamla maktspel och förbli rättvist.”*
 
 ---
 
@@ -129,7 +137,7 @@ Berätta för oss vad du är intresserad av (t.ex. "Månadsuppdateringar", "Info
 
 ---
 
-### ✨ **En snabb visualisering** ![Meta-Governance Flowchart](/images/meta-governance-diagram.svg)
+### ✨ **En snabb visualisering** ![Meta-Governance Flowchart](/images/meta-governance-diagram-sv.svg)
 *Detta diagram visar hur de fyra nyckelkomponenterna i metastyrning arbetar tillsammans i en kontinuerlig cykel:*
 
 - **Medborgarpaneler** bidrar med samhällskunskap och prioriteringar.

@@ -65,6 +65,10 @@
           history.replaceState(null, null, redirectPath);
         }
       })();
+      // Prevent browser scroll restoration
+      if (history.scrollRestoration) {
+        history.scrollRestoration = 'manual';
+      }
     </script>
 	</head>
 	<body data-sveltekit-preload-data="hover">

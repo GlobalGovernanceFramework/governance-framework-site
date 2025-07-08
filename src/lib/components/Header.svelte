@@ -23,6 +23,10 @@
   let isTieredFrameworksOpen = false;
   let openTiers = {}; // Track which tiers are open
 
+  // Quiz state management for adaptive navigation
+  let hasCompletedQuiz = false;
+
+
   // Group frameworks by tier for the tiered menu
   const frameworksByTier = {};
   const tiers = getAllTiers();
@@ -109,19 +113,44 @@
   };
   
   let isMobile = false;
-  
+
   onMount(() => {
+    // Quiz-related logic
+    const checkQuizStatus = () => {
+      if (browser) {
+        hasCompletedQuiz = !!localStorage.getItem('globalCitizenshipQuiz');
+      }
+    };
+    
+    checkQuizStatus();
+    
+    const handleStorageChange = () => {
+      checkQuizStatus();
+    };
+    
+    // Mobile-related logic
     const checkMobile = () => {
       isMobile = window.innerWidth < 768;
     };
     
     checkMobile();
-    window.addEventListener('resize', checkMobile);
-    document.addEventListener('click', closeDropdowns);
     
+    // Event listeners
+    if (browser) {
+      window.addEventListener('storage', handleStorageChange);
+      window.addEventListener('focus', handleStorageChange);
+      window.addEventListener('resize', checkMobile);
+      document.addEventListener('click', closeDropdowns);
+    }
+    
+    // Combined cleanup
     return () => {
-      window.removeEventListener('resize', checkMobile);
-      document.removeEventListener('click', closeDropdowns);
+      if (browser) {
+        window.removeEventListener('storage', handleStorageChange);
+        window.removeEventListener('focus', handleStorageChange);
+        window.removeEventListener('resize', checkMobile);
+        document.removeEventListener('click', closeDropdowns);
+      }
     };
   });
 
@@ -736,6 +765,98 @@
     padding: 0;
   }
 
+  /* Existing highlighted class for the Guiding Trio */
+  .framework-link.highlighted {
+    background-color: #fffbeb !important; /* Light gold */
+    font-weight: 700 !important;
+    color: #92400e !important;
+  }
+  .framework-link.highlighted::before {
+    content: '⭐ '; 
+  }
+
+  /* Primal highlight for the foundational Treaty */
+  .framework-link.primal {
+    background-color: #e0f2fe !important; /* Light, stately blue */
+    font-weight: 700 !important;
+    color: #1e40af !important;
+    border-left: 3px solid #1d4ed8 !important;
+  }
+  .framework-link.primal::before {
+    content: '🌐 '; /* Globe emoji */
+  }
+
+  /* Apply to dropdown menu items */
+  .dropdown-menu a.highlighted {
+    background-color: #fffbeb !important;
+    font-weight: 700 !important;
+    color: #92400e !important;
+    border-left-color: #92400e !important;
+  }
+
+  .dropdown-menu a.highlighted::before {
+    content: '⭐ ';
+  }
+
+  .dropdown-menu a.primal {
+    background-color: #e0f2fe !important;
+    font-weight: 700 !important;
+    color: #1e40af !important;
+    border-left: 3px solid #1d4ed8 !important;
+  }
+
+  .dropdown-menu a.primal::before {
+    content: '🌐 ';
+  }
+
+  /* Apply to tier submenu items */
+  .tier-submenu .dropdown-menu-level3 a.highlighted,
+  .tier-submenu .dropdown-menu-level3-scrollable a.highlighted {
+    background-color: #fffbeb !important;
+    font-weight: 700 !important;
+    color: #92400e !important;
+  }
+
+  .tier-submenu .dropdown-menu-level3 a.highlighted::before,
+  .tier-submenu .dropdown-menu-level3-scrollable a.highlighted::before {
+    content: '⭐ ';
+  }
+
+  .tier-submenu .dropdown-menu-level3 a.primal,
+  .tier-submenu .dropdown-menu-level3-scrollable a.primal {
+    background-color: #e0f2fe !important;
+    font-weight: 700 !important;
+    color: #1e40af !important;
+    border-left: 3px solid #1d4ed8 !important;
+  }
+
+  .tier-submenu .dropdown-menu-level3 a.primal::before,
+  .tier-submenu .dropdown-menu-level3-scrollable a.primal::before {
+    content: '🌐 ';
+  }
+
+  /* Mobile highlighted styles */
+  .mobile-tier-submenu a.highlighted {
+    background-color: #fffbeb !important;
+    font-weight: 700 !important;
+    color: #92400e !important;
+  }
+
+  .mobile-tier-submenu a.highlighted::before {
+    content: '⭐ ';
+  }
+
+  .mobile-tier-submenu a.primal {
+    background-color: #e0f2fe !important;
+    font-weight: 700 !important;
+    color: #1e40af !important;
+    border-left: 3px solid #1d4ed8 !important;
+  }
+
+  .mobile-tier-submenu a.primal::before {
+    content: '🌐 ';
+  }
+
   /* Responsive adjustments for larger text */
   @media (max-width: 1300px) and (min-width: 768px) {
     .nav-item {
@@ -889,27 +1010,26 @@
             </div>
 
             <div class="dropdown-menu" on:click|stopPropagation={() => {}} role="menu">
-              <!-- Foundational Frameworks Section -->
-              
-              <!-- Meta-Governance - The Core Architecture -->
-              <a 
-                href="{base}/frameworks/meta-governance" 
-                class={`meta-governance ${browser && ($page.url.pathname === base + '/frameworks/meta-governance' || $page.url.pathname.startsWith(base + '/frameworks/meta-governance/')) ? 'active' : ''}`}
-                data-sveltekit-preload-data="hover" 
-                role="menuitem"
-              >
-                {browser ? ($t('common.header.metaGovernance') || 'Meta-Governance') : 'Meta-Governance'}
-              </a>
-              
-              <!-- Global Citizenship - The Human Foundation -->
-              <a 
-                href="{base}/frameworks/global-citizenship" 
-                class={`${isActive('/frameworks/global-citizenship') ? 'active' : ''} highlighted`} 
-                data-sveltekit-preload-data="hover" 
-                role="menuitem"
-              >
-                {browser ? ($t('common.header.frameworkGlobalCitizenship') || 'Global Citizenship') : 'Global Citizenship'}
-              </a>
+              <!-- Adaptive Quiz/My Path Navigation -->
+              {#if hasCompletedQuiz}
+                <a 
+                  href="{base}/my-path" 
+                  class={`${isActive('/my-path') ? 'active' : ''}`}
+                  data-sveltekit-preload-data="hover" 
+                  role="menuitem"
+                >
+                  👤 {browser ? ($t('common.header.myPath') || 'My Path') : 'My Path'}
+                </a>
+              {:else}
+                <a 
+                  href="{base}/quiz" 
+                  class={`${isActive('/quiz') ? 'active' : ''}`}
+                  data-sveltekit-preload-data="hover" 
+                  role="menuitem"
+                >
+                  🧭 {browser ? ($t('common.header.findYourPlace') || 'Find Your Place') : 'Find Your Place'}
+                </a>
+              {/if}
               
               <!-- Visual Separator -->
               <div class="dropdown-separator"></div>
@@ -932,7 +1052,13 @@
                             {#each frameworksByTier[tier] || [] as framework}
                               <a 
                                 href="{base}{framework.path}" 
-                                class={isActive(framework.path) ? 'active' : ''} 
+                                class:active={isActive(framework.path)}
+                                class:primal={framework.slug === 'treaty-for-our-only-home'}
+                                class:highlighted={
+                                  framework.slug === 'meta-governance' ||
+                                  framework.slug === 'global-citizenship-practice' ||
+                                  framework.slug === 'indigenous-governance-and-traditional-knowledge'
+                                }
                                 data-sveltekit-preload-data="hover" 
                                 role="menuitem"
                               >
@@ -945,7 +1071,13 @@
                           {#each frameworksByTier[tier] || [] as framework}
                             <a 
                               href="{base}{framework.path}" 
-                              class={isActive(framework.path) ? 'active' : ''} 
+                              class:active={isActive(framework.path)}
+                              class:primal={framework.slug === 'treaty-for-our-only-home'}
+                              class:highlighted={
+                                framework.slug === 'meta-governance' ||
+                                framework.slug === 'global-citizenship-practice' ||
+                                framework.slug === 'indigenous-governance-and-traditional-knowledge'
+                              }
                               data-sveltekit-preload-data="hover" 
                               role="menuitem"
                             >
@@ -992,17 +1124,25 @@
                         {#each frameworksByTier[tier] || [] as framework}
                           <a 
                             href="{base}{framework.path}" 
-                            class={`${isActive(framework.path) ? 'active' : ''}`} 
+                            class:active={isActive(framework.path)}
+                            class:primal={framework.slug === 'treaty-for-our-only-home'}
+                            class:highlighted={
+                              framework.slug === 'meta-governance' ||
+                              framework.slug === 'global-citizenship-practice' ||
+                              framework.slug === 'indigenous-governance-and-traditional-knowledge'
+                            }
                             data-sveltekit-preload-data="hover" 
                             role="menuitem"
                             style="display: block; padding: 0.4rem 1.2rem; font-size: 0.85rem; color: #2B4B8C; text-decoration: none; border-left: 3px solid transparent; transition: all 0.2s;"
                             on:mouseenter={(e) => {
-                              e.target.style.backgroundColor = '#f7f1e3';
-                              e.target.style.color = '#DAA520';
-                              e.target.style.borderLeftColor = '#DAA520';
+                              if (!e.target.classList.contains('primal') && !e.target.classList.contains('highlighted')) {
+                                e.target.style.backgroundColor = '#f7f1e3';
+                                e.target.style.color = '#DAA520';
+                                e.target.style.borderLeftColor = '#DAA520';
+                              }
                             }}
                             on:mouseleave={(e) => {
-                              if (!e.target.classList.contains('active')) {
+                              if (!e.target.classList.contains('active') && !e.target.classList.contains('highlighted') && !e.target.classList.contains('primal')) {
                                 e.target.style.backgroundColor = 'transparent';
                                 e.target.style.color = '#2B4B8C';
                                 e.target.style.borderLeftColor = 'transparent';

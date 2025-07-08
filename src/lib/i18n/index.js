@@ -12,11 +12,18 @@ const locale = writable(getLocalStorage('locale', 'en'));
 const translations = writable({});
 const currentRoute = writable('/');
 
+// Add loading state tracking
+const translationsLoading = writable(false);
+const translationsLoaded = writable(false);
+
 // Create a readable store for locales
 const locales = readable(supportedLocales);
 
 // Data-driven mapping for page-specific translations
 const pageSpecificTranslationsMap = [
+  { route: '/quiz', dataKey: 'findYourPlace', fileName: 'findYourPlace' },
+  { route: '/my-path', dataKey: 'findYourPlace', fileName: 'findYourPlace' },
+  
   // Framework routes (most specific first)
   { route: '/frameworks/adaptive-universal-basic-income', dataKey: 'aubi', fileName: 'frameworksAdaptiveUniversalBasicIncome' },
   { route: '/frameworks/aethelred-accord', dataKey: 'aethelred', fileName: 'frameworksAethelredAccord' },
@@ -47,7 +54,7 @@ const pageSpecificTranslationsMap = [
   { route: '/frameworks/global-citizenship-practice', dataKey: 'globalCitizenshipFramework', fileName: 'frameworksGlobalCitizenshipPractice' },
   { route: '/frameworks/religious-and-spiritual-dialogue-governance', dataKey: 'religiousSpiritualFramework', fileName: 'frameworksReligiousAndSpiritualDialogueGovernance' },
   { route: '/frameworks/aging-population-support-governance', dataKey: 'agingFramework', fileName: 'frameworksAgingPopulationSupportGovernance' },
-  { route: '/frameworks/global-citizenship', dataKey: 'globalCitizenship', fileName: 'globalCitizenship' },
+  { route: '/frameworks/find-your-place', dataKey: 'findYourPlace', fileName: 'findYourPlace' },
   { route: '/frameworks/ai-futures', dataKey: 'aiFutures', fileName: 'aiFutures' },
   { route: '/frameworks/docs/implementation/treaty-for-our-only-home/getting-started', dataKey: 'startTreaty', fileName: 'startTreaty' },
   
@@ -75,58 +82,103 @@ const pageSpecificTranslationsMap = [
 
 // Reusable translation loader function
 async function loadAndAssignTranslation(locale, fileName, dataKey, translationData) {
-  console.log(`🔍 Attempting to load: ${locale}/${fileName}.json for dataKey: ${dataKey}`);
+  console.log(`🔍 Loading: ${locale}/${fileName}.json for dataKey: ${dataKey}`);
   try {
     const module = await import(`./${locale}/${fileName}.json`);
     translationData[dataKey] = module.default;
-    console.log(`Loaded ${dataKey} translations for locale: ${locale}`);
+    console.log(`✅ Loaded ${dataKey} translations for locale: ${locale}`);
+    return true;
   } catch (e) {
-    console.error(`Error loading ${dataKey} translations for ${locale}:`, e);
+    console.error(`❌ Error loading ${dataKey} translations for ${locale}:`, e);
     // Fallback to English if the specified locale fails (and it's not English)
     if (locale !== 'en') {
       try {
         const fallbackModule = await import(`./en/${fileName}.json`);
         translationData[dataKey] = fallbackModule.default;
-        console.log(`✅ Successfully loaded ${dataKey} translations for locale: ${locale}`);
-        console.log(`📄 Content preview:`, Object.keys(module.default));
+        console.log(`✅ Fallback loaded ${dataKey} translations for locale: ${locale}`);
+        return true;
       } catch (fallbackError) {
-        console.error(`❌ Error loading ${dataKey} translations for ${locale}:`, e);
-        console.error(`📁 Tried to import: ./${locale}/${fileName}.json`);
+        console.error(`❌ Fallback failed for ${dataKey}:`, fallbackError);
       }
     }
+    return false;
   }
+}
+
+// Load ALL required translations immediately for /my-path
+async function loadAllMyPathTranslations(newLocale) {
+  const translationData = {};
+  
+  // Load ALL required translations in parallel
+  const loadPromises = [
+    // Always required
+    loadAndAssignTranslation(newLocale, 'common', 'common', translationData),
+    
+    // Framework navigation (required for framework data)
+    loadAndAssignTranslation(newLocale, 'framework', 'framework', translationData),
+    
+    // findYourPlace translations (CRITICAL - contains framework descriptions)
+    loadAndAssignTranslation(newLocale, 'findYourPlace', 'findYourPlace', translationData),
+    
+    // Home translations (contains constellation descriptions)
+    loadAndAssignTranslation(newLocale, 'home', 'home', translationData)
+  ];
+  
+  // Wait for ALL translations to load
+  const results = await Promise.allSettled(loadPromises);
+  
+  console.log('My-path translation loading results:', results.map((r, i) => ({
+    index: i,
+    status: r.status,
+    value: r.status === 'fulfilled' ? r.value : r.reason
+  })));
+  
+  return translationData;
 }
 
 // Load translations for a specific language and route
 async function loadTranslations(newLocale, route = '/') {
+  translationsLoading.set(true);
+  translationsLoaded.set(false);
+  
   // Normalize route path
   if (route.startsWith(base)) route = route.slice(base.length);
   if (!route) route = '/';
-
-  const translationData = {};
 
   try {
     currentRoute.set(route);
     console.log(`Loading translations for locale: ${newLocale}, route: ${route}`);
 
-    // 1. Load common translations
-    await loadAndAssignTranslation(newLocale, 'common', 'common', translationData);
+    let translationData = {};
 
-    // 2. Load framework nav translations if on a framework page
-    if (route.startsWith('/frameworks')) {
-      await loadAndAssignTranslation(newLocale, 'framework', 'framework', translationData);
-    }
+    // Special handling for /my-path route - load ALL required translations
+    if (route === '/my-path') {
+      translationData = await loadAllMyPathTranslations(newLocale);
+    } else {
+      // Standard loading for other routes
+      // 1. Load common translations
+      await loadAndAssignTranslation(newLocale, 'common', 'common', translationData);
 
-    // 3. Load page-specific translations using the map
-    for (const mapping of pageSpecificTranslationsMap) {
-      if (route.includes(mapping.route)) {
-        await loadAndAssignTranslation(newLocale, mapping.fileName, mapping.dataKey, translationData);
-        // Break after the first match to mimic 'if/else if' behavior
-        break; 
+      // 2. Load framework nav translations if on a framework page
+      if (route.startsWith('/frameworks')) {
+        await loadAndAssignTranslation(newLocale, 'framework', 'framework', translationData);
+      }
+
+      // 3. Special case: Load findYourPlace translations on home page
+      if (route === '/' || route === '') {
+        await loadAndAssignTranslation(newLocale, 'findYourPlace', 'findYourPlace', translationData);
+      }
+
+      // 4. Load page-specific translations using the map
+      for (const mapping of pageSpecificTranslationsMap) {
+        if (route.includes(mapping.route)) {
+          await loadAndAssignTranslation(newLocale, mapping.fileName, mapping.dataKey, translationData);
+          break; 
+        }
       }
     }
 
-    console.log('Loaded translations data for route:', route, translationData);
+    console.log('Loaded translations data for route:', route, Object.keys(translationData));
 
     // Update the stores
     locale.set(newLocale);
@@ -160,19 +212,30 @@ async function loadTranslations(newLocale, route = '/') {
       localStorage.setItem('locale', newLocale);
     }
 
+    // Mark translations as loaded
+    translationsLoaded.set(true);
+    translationsLoading.set(false);
+
     return translationData;
   } catch (e) {
     console.error('General error in loadTranslations:', e);
+    translationsLoading.set(false);
     return {};
   }
 }
 
 // Create a derived store that returns a translation function
 const t = derived(
-  [locale, translations],
-  ([$locale, $translations]) => {
+  [locale, translations, translationsLoaded],
+  ([$locale, $translations, $loaded]) => {
     // Return a function that takes a key and returns the translation
     return (key, params = {}) => {
+      // If translations are not loaded yet, return empty string to prevent flash
+      if (!$loaded) {
+        console.log('Translations not loaded yet for key:', key);
+        return '';
+      }
+      
       // If the key is empty or not a string, return an empty string
       if (!key || typeof key !== 'string') {
         return '';
@@ -189,7 +252,7 @@ const t = derived(
         } else {
           // If in development, log warning
           if (process.env.NODE_ENV === 'development') {
-            console.warn(`Translation key not found: ${key}`);
+            console.warn(`Translation key not found: ${key}`, 'Available translations:', Object.keys($translations));
           }
           // Return empty string instead of the key to avoid showing raw translation keys
           return '';
@@ -214,6 +277,12 @@ const t = derived(
       return result;
     };
   }
+);
+
+// Derived store to check if translations are ready
+const isLocaleLoaded = derived(
+  [translationsLoaded, translationsLoading],
+  ([$loaded, $loading]) => $loaded && !$loading
 );
 
 // Function to reload translations when locale changes
@@ -290,5 +359,8 @@ export {
   languageData,
   getLanguageName,
   currentRoute,
-  translations
+  translations,
+  isLocaleLoaded,
+  translationsLoaded,
+  translationsLoading
 };

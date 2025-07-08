@@ -1,12 +1,14 @@
-<!-- src/routes/frameworks/global-citizenship/components/CompassInfoPanel.svelte -->
+<!-- Enhanced src/lib/components/CompassInfoPanel.svelte -->
 <script>
   import { t } from '$lib/i18n';
   import { base } from '$app/paths';
-  import { getConnectedFrameworks, frameworkStatus } from './compassData.js';
+  import { getConnectedFrameworks, getConnectionReason } from '$lib/data/compassData.js';
   
   export let selectedElement = null;
   export let userProgress = {};
   export let closeInfoPanel = () => {};
+  export let panelElement = null;
+  export let position = 'right';
 
   $: connectedFrameworks = selectedElement 
     ? getConnectedFrameworks(selectedElement.type, selectedElement.id)
@@ -15,13 +17,13 @@
   function getStatusColor(status) {
     switch (status) {
       case 'ready':
-        return '#10B981'; // Green
+        return '#10B981';
       case 'review':
-        return '#F59E0B'; // Orange
+        return '#F59E0B';
       case 'planned':
-        return '#6B7280'; // Gray
+        return '#6B7280';
       case 'coming-soon':
-        return '#6B7280'; // Gray
+        return '#6B7280';
       default:
         return '#6B7280';
     }
@@ -30,21 +32,36 @@
   function getStatusText(status) {
     switch (status) {
       case 'ready':
-        return $t('globalCitizenship.compass.status.ready');
+        return $t('findYourPlace.compass.status.ready');
       case 'review':
-        return $t('globalCitizenship.compass.status.inReview');
+        return $t('findYourPlace.compass.status.inReview');
       case 'planned':
-        return $t('globalCitizenship.compass.status.planned');
+        return $t('findYourPlace.compass.status.planned');
       case 'coming-soon':
-        return $t('globalCitizenship.compass.status.planned');
+        return $t('findYourPlace.compass.status.planned');
       default:
         return '';
     }
   }
+  
+  // NEW: Get connection reasoning for each framework
+  function getFrameworkConnectionReason(framework) {
+    if (!selectedElement) return '';
+    
+    return getConnectionReason(
+      selectedElement.type, 
+      selectedElement.id, 
+      framework.slug
+    );
+  }
 </script>
 
 {#if selectedElement}
-  <div class="info-panel">
+  <div 
+    class="info-panel {position === 'left' ? 'panel-left' : 'panel-right'}" 
+    bind:this={panelElement} 
+    on:click={(e) => e.stopPropagation()}
+  >
     <button class="close-button" on:click={closeInfoPanel}>
       ✕
     </button>
@@ -52,24 +69,24 @@
     <div class="info-content">
       <!-- Center/Shared Values -->
       {#if selectedElement.type === 'center'}
-        <h3>{$t('globalCitizenship.compass.info.center.title')}</h3>
-        <p>{$t('globalCitizenship.compass.info.center.description')}</p>
+        <h3>{$t('findYourPlace.compass.info.center.title')}</h3>
+        <p>{$t('findYourPlace.compass.info.center.description')}</p>
         <div class="info-tip">
-          {$t('globalCitizenship.compass.info.center.tip')}
+          {$t('findYourPlace.compass.info.center.tip')}
         </div>
         
       <!-- Development Level/Practice -->
       {:else if selectedElement.type === 'practice'}
-        <h3>{$t(`globalCitizenship.compass.levels.${selectedElement.id}.title`)}</h3>
+        <h3>{$t(`findYourPlace.compass.levels.${selectedElement.id}.title`)}</h3>
         <p>
           {userProgress[selectedElement.id] 
-            ? $t('globalCitizenship.compass.info.practice.completed')
-            : $t('globalCitizenship.compass.info.practice.incomplete')}
+            ? $t('findYourPlace.compass.info.practice.completed')
+            : $t('findYourPlace.compass.info.practice.incomplete')}
         </p>
         
         {#if connectedFrameworks.length > 0}
           <div class="connected-frameworks">
-            <h4>{$t('globalCitizenship.compass.info.connectedFrameworks')}</h4>
+            <h4>{$t('findYourPlace.compass.info.connectedFrameworks')}</h4>
             <div class="framework-list">
               {#each connectedFrameworks as framework}
                 <div class="framework-item">
@@ -81,16 +98,24 @@
                     ></span>
                     {#if framework.status === 'ready' || framework.status === 'review'}
                       <a href="{base}{framework.path}" class="framework-link">
-                        {$t(framework.titleKey)}
+                        {$t(framework.titleKey) || framework.slug?.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}
                       </a>
                     {:else}
                       <span class="framework-name planned">
-                        {$t(framework.titleKey)}
+                        {$t(framework.titleKey) || framework.slug?.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}
                       </span>
                     {/if}
                   </div>
+                  
+                  <!-- NEW: Connection Reasoning -->
+                  {#if getFrameworkConnectionReason(framework)}
+                    <div class="connection-reason">
+                      <strong>{$t(`findYourPlace.compass.whyConnects`)}</strong> {getFrameworkConnectionReason(framework)}
+                    </div>
+                  {/if}
+                  
                   <p class="framework-description">
-                    {$t(`globalCitizenship.frameworks.database.${framework.slug.replace(/-/g, '')}.description`)}
+                    {$t(`home.constellation.descriptions.${framework.slug.replace(/-/g, '')}`)}
                   </p>
                 </div>
               {/each}
@@ -99,17 +124,17 @@
         {/if}
         
         <div class="info-tip">
-          {$t('globalCitizenship.compass.info.practice.tip')}
+          {$t('findYourPlace.compass.info.practice.tip')}
         </div>
         
       <!-- Core Values -->
       {:else if selectedElement.type === 'value'}
-        <h3>{$t(`globalCitizenship.compass.valueDetails.${selectedElement.id}.title`)}</h3>
-        <p>{$t(`globalCitizenship.compass.valueDetails.${selectedElement.id}.description`)}</p>
+        <h3>{$t(`findYourPlace.compass.valueDetails.${selectedElement.id}.title`)}</h3>
+        <p>{$t(`findYourPlace.compass.valueDetails.${selectedElement.id}.description`)}</p>
         
         {#if connectedFrameworks.length > 0}
           <div class="connected-frameworks">
-            <h4>{$t('globalCitizenship.compass.info.connectedFrameworks')}</h4>
+            <h4>{$t('findYourPlace.compass.info.connectedFrameworks')}</h4>
             <div class="framework-list">
               {#each connectedFrameworks as framework}
                 <div class="framework-item">
@@ -121,16 +146,24 @@
                     ></span>
                     {#if framework.status === 'ready' || framework.status === 'review'}
                       <a href="{base}{framework.path}" class="framework-link">
-                        {$t(framework.titleKey)}
+                        {$t(framework.titleKey) || framework.slug?.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}
                       </a>
                     {:else}
                       <span class="framework-name planned">
-                        {$t(framework.titleKey)}
+                        {$t(framework.titleKey) || framework.slug?.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}
                       </span>
                     {/if}
                   </div>
+                  
+                  <!-- NEW: Connection Reasoning -->
+                  {#if getFrameworkConnectionReason(framework)}
+                    <div class="connection-reason">
+                      <strong>{$t(`findYourPlace.compass.whyConnects`)}</strong> {getFrameworkConnectionReason(framework)}
+                    </div>
+                  {/if}
+                  
                   <p class="framework-description">
-                    {$t(`globalCitizenship.frameworks.database.${framework.slug.replace(/-/g, '')}.description`)}
+                    {$t(`home.constellation.descriptions.${framework.slug.replace(/-/g, '')}`)}
                   </p>
                 </div>
               {/each}
@@ -139,21 +172,17 @@
         {/if}
         
         <div class="info-tip">
-          {$t('globalCitizenship.compass.info.values.tip')}
+          {$t('findYourPlace.compass.info.values.tip')}
         </div>
       {/if}
       
       <!-- Planned Framework Contact Encouragement -->
       {#if connectedFrameworks.some(fw => fw.status === 'planned' || fw.status === 'coming-soon')}
         <div class="planned-frameworks-cta">
-          <p>{$t('globalCitizenship.compass.info.plannedFrameworks.text')}</p>
+          <p>{$t('findYourPlace.compass.info.plannedFrameworks.text')}</p>
           <div class="cta-buttons">
-            <a href="{base}/contact" class="contact-button">
-              {$t('globalCitizenship.compass.info.plannedFrameworks.button')}
-            </a>
-            <a href="https://discord.gg/Zx4hMJf4JU" target="_blank" rel="noopener noreferrer" class="discord-button">
-              <span class="discord-icon">💬</span>
-              {$t('globalCitizenship.compass.info.plannedFrameworks.discordButton')}
+            <a href="{base}/get-involved/frameworks" class="contact-button">
+                {$t('findYourPlace.compass.info.plannedFrameworks.button')}
             </a>
           </div>
         </div>
@@ -166,18 +195,27 @@
   .info-panel {
     position: absolute;
     top: 20px;
-    right: 20px;
     background: white;
     border-radius: 12px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-    max-width: 380px;
+    max-width: 400px;
     max-height: 80vh;
     overflow-y: auto;
     padding: 0;
-    border-left: 4px solid #2B4B8C;
     z-index: 10;
+    transition: all 0.3s ease;
   }
-  
+
+  .panel-right {
+    right: 20px;
+    border-left: 4px solid #2B4B8C;
+  }
+
+  .panel-left {
+    left: 20px;
+    border-right: 4px solid #2B4B8C;
+  }
+    
   .close-button {
     position: absolute;
     top: 12px;
@@ -288,6 +326,22 @@
     color: #6B7280;
   }
   
+  /* NEW: Connection Reasoning Styles */
+  .connection-reason {
+    font-size: 0.85rem;
+    color: #059669;
+    background: #ECFDF5;
+    padding: 8px 10px;
+    border-radius: 6px;
+    margin: 8px 0;
+    border-left: 3px solid #10B981;
+    line-height: 1.4;
+  }
+  
+  .connection-reason strong {
+    color: #047857;
+  }
+  
   .framework-description {
     font-size: 0.85rem;
     color: #6B7280;
@@ -315,8 +369,7 @@
     flex-wrap: wrap;
   }
   
-  .contact-button,
-  .discord-button {
+  .contact-button {
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -333,39 +386,39 @@
     min-width: 120px;
   }
   
-  .discord-button {
-    background-color: #5865F2; /* Discord brand color */
-  }
-  
-  .discord-icon {
-    font-size: 0.9rem;
-  }
-  
   .contact-button:hover {
     background-color: #D97706;
-    transform: translateY(-1px);
-  }
-  
-  .discord-button:hover {
-    background-color: #4752C4;
     transform: translateY(-1px);
   }
   
   /* Responsive Design */
   @media (max-width: 768px) {
     .info-panel {
-      position: static;
-      margin-top: 1rem;
-      max-width: none;
-      max-height: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90vw;
+      max-width: 400px;
+      max-height: 80vh;
+      z-index: 15;
     }
     
     .close-button {
-      display: none;
+      display: block;
+      font-size: 20px;
     }
     
     .info-content {
       padding-right: 20px;
+    }
+
+    .panel-left,
+    .panel-right {
+      left: 50%;
+      right: auto;
+      border-left: 4px solid #2B4B8C;
+      border-right: none;
     }
   }
 </style>

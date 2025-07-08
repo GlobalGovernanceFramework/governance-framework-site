@@ -1,35 +1,42 @@
 {
-  "whyExists": {
-    "title": "Why This Exists",
-    "paragraph1": "This project began with a fundamental question: What would it take for humanity to thrive together?",
-    "paragraph2": "We are driven by a lifelong fascination with the Earth as a shared home and the need for ethical systems that serve all life. Global Governance Frameworks is our response; a living proposal for what a more interconnected, inclusive, and future-ready form of governance could look like.",
-    "paragraph3": "The ",
-    "paragraph3b": " is our flagship framework, and the success of all other frameworks hinges upon it. This work is offered openly, shaped by conversations with AI systems like Claude and Gemini, and grounded in the belief that good governance must emerge from shared wisdom.",
-    "paragraph4": "The challenges we face are urgent. You are invited to explore, question, and help us build the future we need."
-  },
-  "languageStatement": {
-    "title": "Language and Inclusivity",
-    "paragraph1": "True global governance must speak every language. For the frameworks to be truly universal, they must be accessible to all. We are deeply committed to making the",
-    "paragraph1b": "and all related materials and frameworks available in as many languages as possible.",
-    "paragraph2": "Currently, the core documents are actively maintained in English, as a global language of diplomacy, and Swedish, the mother tongue of the initial researcher. We recognize this is only a starting point.",
-    "paragraph3": "We believe the vital work of translation belongs to the community. It is a powerful way to ensure the framework's concepts are adapted accurately and resonate within different cultures. If you are a native speaker and believe in this work, we warmly invite you to help bring these ideas to your community.",
-    "button": "Join the Translation Effort"
-  },
   "title": "Global Governance Frameworks",
   "subtitle": "Connecting governance innovations across the world",
   "intro": {
     "heading": "What would it take for humanity to thrive together?",
     "text": "Explore our living ecosystem of governance frameworks—an interconnected network of solutions for planetary transformation."
   },
-  "treatyFeature": {
-    "heading": "The Foundational Framework: Treaty for Our Only Home",
-    "lead": "Three cornerstone frameworks that transform how we govern together, heal our planet, and ensure everyone thrives.",
-    "point1": "Reforms core institutions like the UN Security Council.",
-    "point2": "Strengthens international law with concepts like Ecocide.",
-    "point3": "Establishes sustainable funding for global public goods.",
-    "button": "Explore the Treaty"
+  "threePillars": {
+    "title": "The Blueprint for a Regenerative World",
+    "intro": "Our world faces interconnected crises that require a new way of thinking and organizing. The Global Governance Frameworks provide a comprehensive, open-source blueprint for this transformation, built upon three integrated pillars:",
+    "pillar1": {
+      "label": "The Hardware",
+      "title": "The Treaty for Our Only Home",
+      "description": "The legal and institutional foundation for effective global action. The Treaty reforms core international bodies and establishes enforceable international law, creating the stable structure needed to make change possible.",
+      "link": "Explore the Treaty →"
+    },
+    "pillar2": {
+      "label": "The Heart",
+      "title": "Indigenous & Traditional Knowledge Governance",
+      "description": "The ethical and philosophical compass for the entire ecosystem. It centers the wisdom of Right Relationship and Indigenous sovereignty, ensuring that our solutions are not just effective, but also just, wise, and truly regenerative.",
+      "link": "Learn About Indigenous Wisdom →"
+    },
+    "pillar3": {
+      "label": "The Nervous System",
+      "title": "The Integrated Meta-Governance Framework",
+      "description": "The coordination protocol that allows all parts of the system to work together. It provides the principles and structures for different frameworks and communities to interoperate, creating a flexible and adaptive network that can evolve with our challenges.",
+      "link": "Discover Meta-Governance →"
+    },
+    "integration": {
+      "title": "How It Works Together: A Living System",
+      "flow1": "The Indigenous Framework provides the guiding WHY",
+      "flow2": "The Treaty provides the foundational WHAT and WHERE", 
+      "flow3": "The Meta-Governance provides the operational HOW",
+      "note": "This core architecture enables the development and deployment of specific, domain-level solutions across climate, economics, health, technology, and all areas of planetary stewardship."
+    }
   },
   "constellation": {
+    "title": "From Architecture to Action: The Framework Ecosystem",
+    "subtitle": "Built upon this foundation is a growing library of detailed frameworks that provide practical solutions for specific global challenges. Explore the interactive constellation below:",
     "taglines": {
       "treatyforouronlyhome": "The Operating System Upgrade for a Planet in Crisis.",
       "gaiantradeframework": "Building a Global Economy that Heals, Not Harms.",
@@ -87,7 +94,7 @@
       "disasterriskreduction": "Proactive systems to minimize the impact of disasters and build resilient communities.",
       "peaceandconflictresolution": "New models for preventing conflict and fostering restorative justice and lasting peace.",
       "justicesystems": "Reimagining justice to be equitable, restorative, and accessible to all.",
-      "economicintegration": "The internal OS for a regenerative economy, defining how value is created and shared.",
+      "nestedeconomies": "The internal OS for a regenerative economy, defining how value is created and shared.",
       "globalsupplychainsandlogistics": "Creating resilient, ethical, and transparent global supply chains.",
       "auroraaccord": "The 'Paris Agreement for Data,' ensuring digital dignity, sovereignty, and trust.",
       "migrationandhumanmobility": "A humane and coordinated approach to managing global migration with dignity.",
@@ -103,7 +110,7 @@
       "urbanandcommunitydevelopment": "Fostering thriving, resilient, and human-scale cities and communities.",
       "soilhealthandlandusegovernance": "Protocols for regenerating our soils and stewarding our lands.",
       "waterandsanitationgovernance": "Ensuring equitable access to clean water and sanitation for all.",
-      "environmentalstewardship": "Active, hands-on care for our planet’s ecosystems.",
+      "environmentalstewardship": "Active, hands-on care for our planet's ecosystems.",
       "animalwelfaregovernance": "Recognizing and protecting the rights and well-being of non-human beings.",
       "biodiversitygovernance": "A coordinated strategy to halt biodiversity loss and restore vibrant ecosystems.",
       "oceansandmarinegovernance": "Collective stewardship of our planet's oceans and marine life.",
@@ -132,6 +139,14 @@
       "economic2": "Ensure everyone has enough to thrive",
       "economic3": "Launch local currencies and cooperatives"
     }
+  },
+  "treatyFeature": {
+    "heading": "The Foundational Framework: Treaty for Our Only Home",
+    "lead": "Three cornerstone frameworks that transform how we govern together, heal our planet, and ensure everyone thrives.",
+    "point1": "Reforms core institutions like the UN Security Council.",
+    "point2": "Strengthens international law with concepts like Ecocide.",
+    "point3": "Establishes sustainable funding for global public goods.",
+    "button": "Explore the Treaty"
   },
   "features": {
     "heading": "Featured Frameworks",
@@ -197,9 +212,9 @@
   "overview": {
     "learnMore": "Learn More"
   },
-  "globalCitizenship": {
-    "title": "Find Your Place in the New Story",
-    "lead": "What is the most urgent starting point for planetary transformation?",
+  "findYourPlace": {
+    "title": "Your Pathway to Planetary Action",
+    "lead": "The challenges we face are vast, but every great transformation begins with an aligned first step. This is where you can discover the unique role you can play.",
     "description": "Each path leads to a personalized journey through our framework ecosystem, helping you discover where your values and skills can make the greatest impact.",
     "point1": "A 3-question quiz to personalize your journey.",
     "point2": "An interactive compass to visualize your path.",
@@ -219,11 +234,10 @@
         "description": "Transforming the rules and structures of power"
       }
     },
-    "quickStart": {
-      "title": "Start Your Global Citizenship Journey",
-      "subtitle": "Answer a quick question to discover your personalized path",
-      "progressText": "This is question 1 of 3 - takes less than 2 minutes",
-      "alternativeLink": "Or explore the full framework →"
+   "quickStart": {
+      "title": "Discover Your Path",
+      "subtitle": "Take our 2-minute quiz to find the frameworks that best match your values and passions.",
+      "progressText": "Question 1 of 3"
     },
     "completed": {
       "title": "Your Global Citizenship Path",

@@ -20,6 +20,8 @@
     "getInvolved": "Engagera dig",
     "downloads": "Nedladdningar",
     "contact": "Kontakt",
+    "myPath": "Min väg",
+    "findYourPlace": "Hitta din plats",
     "metaGovernance": "Meta-styrning",
     "metaGovernanceOverview": "Översikt",
     "metaGovernancePrinciples": "Grundläggande principer",
@@ -33,7 +35,7 @@
     "frameworkOverview": "Översikt",
     "frameworkDocs": "Dokumentation",
     "frameworkPrinciples": "Principer",
-    "frameworkGlobalCitizenship": "Globalt medborgarskap",
+    "frameworkMyDashboard": "Min översikt",
     "frameworkImplementation": "Implementering",
     "frameworkHubs": "Nav",
     "frameworkVisuals": "Visualiseringar",
@@ -60,7 +62,11 @@
     "discord": {
       "inviteLink": "https://discord.gg/Zx4hMJf4JUe"
     },
-    "founding": "Grundande"
+    "founding": "Grundande",
+    "accessibility": {
+      "text": "GGF är engagerat för global tillgänglighet genom gemensamhetsledda översättningar.",
+      "link": "Lär dig hur du kan bidra."
+    }
   },
   "ui": {
     "frameworkTiers": "Ramverksnivåer",

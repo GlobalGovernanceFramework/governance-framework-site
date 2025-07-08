@@ -3,7 +3,7 @@
    viewBox="0 0 800 600"
    version="1.1"
    id="svg40"
-   sodipodi:docname="meta-governance-diagram.svg"
+   sodipodi:docname="meta-governance-diagram-se.svg"
    inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -218,7 +218,7 @@
        fill="#6B5CA5"
        text-anchor="middle"
        font-weight="bold"
-       id="text13">Citizen Panels</text>
+       id="text13">Medborgarpaneler</text>
     <use
        href="#peopleIcon"
        x="-20"
@@ -233,7 +233,7 @@
        font-size="12"
        fill="white"
        text-anchor="middle"
-       id="text14">Public Voices</text>
+       id="text14">Allmänhetens röster</text>
   </g>
   <g
      id="metaCouncils"
@@ -253,7 +253,7 @@
        fill="#2B4B8C"
        text-anchor="middle"
        font-weight="bold"
-       id="text15">Meta-Councils</text>
+       id="text15">Meta-råd</text>
     <use
        href="#councilIcon"
        x="-20"
@@ -268,7 +268,7 @@
        font-size="12"
        fill="white"
        text-anchor="middle"
-       id="text16">Expert Coordination</text>
+       id="text16">Expertkoordinering</text>
   </g>
   <g
      id="powerAudits"
@@ -288,7 +288,7 @@
        fill="#B8860B"
        text-anchor="middle"
        font-weight="bold"
-       id="text17">Power Audits</text>
+       id="text17">Maktgranskningar</text>
     <use
        href="#auditIcon"
        x="-20"
@@ -303,7 +303,7 @@
        font-size="12"
        fill="white"
        text-anchor="middle"
-       id="text18">Fairness Checks</text>
+       id="text18">Rättvisekontroller</text>
   </g>
   <g
      id="aiTools"
@@ -323,7 +323,7 @@
        fill="#2D5F2D"
        text-anchor="middle"
        font-weight="bold"
-       id="text19">Smart AI Tools</text>
+       id="text19">Smarta AI-verktyg</text>
     <use
        href="#aiIcon"
        x="-20"
@@ -338,7 +338,7 @@
        font-size="12"
        fill="white"
        text-anchor="middle"
-       id="text20">Pattern Insights</text>
+       id="text20">Mönsterinsikter</text>
   </g>
   <g
      id="sharedGoals"
@@ -360,7 +360,7 @@
        fill="#333333"
        text-anchor="middle"
        font-weight="bold"
-       id="text21">Shared Goals</text>
+       id="text21">Gemensamma Mål</text>
     <text
        x="0"
        y="29"
@@ -368,7 +368,7 @@
        font-size="12"
        fill="#666666"
        text-anchor="middle"
-       id="text22">Aligned Action</text>
+       id="text22">Samordnad Handling</text>
     <use
        href="#goalIcon"
        x="-15"
@@ -444,22 +444,22 @@
      points="340,150 325,140 331,158 "
      id="polygon29"
      style="opacity:0.8;fill:#333333"
-     transform="rotate(135.60641,332.5,149)" />
+     transform="rotate(145.56938,336.20076,150.86809)" />
   <polygon
-     points="551,188 560,180 545,170 "
+     points="545,170 551,188 560,180 "
      id="polygon30"
      style="opacity:0.8;fill:#333333"
-     transform="rotate(177.02619,555.5,179.07788)" />
+     transform="rotate(178.83944,556.48987,180.04052)" />
   <polygon
      points="460,400 452,385 442,402 "
      id="polygon31"
      style="opacity:0.8;fill:#333333"
      transform="translate(4,6)" />
   <polygon
-     points="174,225 180,240 193,230 "
+     points="193,230 174,225 180,240 "
      id="polygon32"
      style="opacity:0.8;fill:#333333"
-     transform="rotate(-96.905815,183.34328,236.2321)" />
+     transform="rotate(-96.542192,183.28375,236.28375)" />
   <!-- Diagram title -->
   <text
      x="400"
@@ -469,7 +469,7 @@
      fill="#2B4B8C"
      text-anchor="middle"
      font-weight="bold"
-     id="text32">Meta-Governance Flow</text>
+     id="text32">Meta-Styrning Flöde</text>
   <text
      x="400"
      y="70"
@@ -477,7 +477,7 @@
      font-size="16"
      fill="#666666"
      text-anchor="middle"
-     id="text33">How the system works together</text>
+     id="text33">Hur systemet fungerar tillsammans</text>
   <!-- Legend (2x2 grid instead of 1x4) -->
   <g
      transform="translate(40, 520)"
@@ -506,7 +506,7 @@
        font-family="Arial, sans-serif"
        font-size="14"
        fill="#333"
-       id="text34">People's voices shape decisions</text>
+       id="text34">Allmänhetens röster formar beslut</text>
     <circle
        cx="330"
        cy="15"
@@ -519,7 +519,7 @@
        font-family="Arial, sans-serif"
        font-size="14"
        fill="#333"
-       id="text35">Experts coordinate across domains</text>
+       id="text35">Experter samordnar mellan domäner</text>
     <!-- Row 2 -->
     <circle
        cx="30"
@@ -533,7 +533,7 @@
        font-family="Arial, sans-serif"
        font-size="14"
        fill="#333"
-       id="text36">Fairness is protected</text>
+       id="text36">Rättvisa skyddas</text>
     <circle
        cx="330"
        cy="45"
@@ -546,7 +546,7 @@
        font-family="Arial, sans-serif"
        font-size="14"
        fill="#333"
-       id="text37">AI assists humans</text>
+       id="text37">AI hjälper människor</text>
   </g>
   <!-- Example application box -->
   <g
@@ -572,7 +572,7 @@
        fill="#2B4B8C"
        text-anchor="middle"
        font-weight="bold"
-       id="text38">Real Example</text>
+       id="text38">Verkligt Exempel</text>
     <text
        x="70"
        y="40"
@@ -580,7 +580,7 @@
        font-size="10"
        fill="#333"
        text-anchor="middle"
-       id="text39">River Valley Flood Response</text>
+       id="text39">River Valley Översvämning</text>
     <text
        x="70"
        y="55"
@@ -588,6 +588,6 @@
        font-size="10"
        fill="#333"
        text-anchor="middle"
-       id="text40">Coordination Saved Lives</text>
+       id="text40">Samordning Räddade Liv</text>
   </g>
 </svg>

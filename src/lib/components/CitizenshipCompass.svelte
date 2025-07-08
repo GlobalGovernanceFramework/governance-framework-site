@@ -1,14 +1,16 @@
-<!-- src/routes/frameworks/global-citizenship/components/CitizenshipCompass.svelte -->
+<!-- src/lib/components/CitizenshipCompass.svelte -->
 <script>
   import { t } from '$lib/i18n';
   import { onMount } from 'svelte';
-  import CompassInfoPanel from './CompassInfoPanel.svelte';
-  import { generateRecommendations } from './compassData.js';
+  import CompassInfoPanel from '$lib/components/CompassInfoPanel.svelte';
+  import { generateRecommendations } from '$lib/data/compassData.js';
   
   export let quizResults = null;
   
   let selectedElement = null;
   let userProgress = {};
+  let compassWrapper;
+  let infoPanelElement;
   
   // Core values data with positions
   const coreValues = [
@@ -40,8 +42,28 @@
     if (savedProgress) {
       userProgress = JSON.parse(savedProgress);
     }
+
+    const handleClickOutside = (event) => {
+      if (selectedElement && infoPanelElement && !infoPanelElement.contains(event.target)) {
+        // Check if the click was on an interactive SVG element
+        const clickedElement = event.target;
+        const isInteractiveElement = clickedElement.classList.contains('clickable-element') || 
+                                   clickedElement.closest('.clickable-element');
+        
+        // Only close if it's not an interactive element
+        if (!isInteractiveElement) {
+          selectedElement = null;
+        }
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
   });
-  
+
   function saveProgress(newProgress) {
     userProgress = newProgress;
     localStorage.setItem('citizenshipProgress', JSON.stringify(newProgress));
@@ -56,7 +78,29 @@
       saveProgress(newProgress);
     }
   }
-  
+
+  // Function to determine panel position
+  function getPanelPosition(elementId, type) {
+    // Define right-side elements that should trigger left panel
+    const rightSideElements = {
+      values: ['compassion', 'justice', 'truth'], // Right-side values
+      practices: ['understanding', 'empathy'] // Right-side practices
+    };
+    
+    if (type === 'value' && rightSideElements.values.includes(elementId)) {
+      return 'left';
+    }
+    
+    if (type === 'practice' && rightSideElements.practices.includes(elementId)) {
+      return 'left';
+    }
+    
+    return 'right'; // Default to right side
+  }
+
+  // Calculate panel position based on selected element
+  $: panelPosition = selectedElement ? getPanelPosition(selectedElement.id, selectedElement.type) : 'right';
+    
   function closeInfoPanel() {
     selectedElement = null;
   }
@@ -70,7 +114,7 @@
 
 <div class="compass-container">
   <!-- SVG Compass -->
-  <div class="compass-wrapper">
+  <div class="compass-wrapper" bind:this={compassWrapper}>
     <svg
       viewBox="0 0 800 600"
       class="citizenship-compass"
@@ -93,7 +137,14 @@
       </defs>
       
       <!-- Background rectangle -->
-      <rect width="800" height="600" fill="url(#bgGradient)" rx="15" ry="15" />
+      <rect 
+        width="800" 
+        height="600" 
+        fill="url(#bgGradient)" 
+        rx="15" 
+        ry="15"
+        class="background-clickable"
+      />
       
       <!-- Orbital paths with dynamic highlighting -->
       {#each [120, 190, 260, 330] as radius, index}
@@ -143,7 +194,7 @@
           text-anchor="middle"
           class="center-text-main"
         >
-          {$t('globalCitizenship.compass.center.title')}
+          {$t('findYourPlace.compass.center.title')}
         </text>
         <text
           x="400"
@@ -151,7 +202,7 @@
           text-anchor="middle"
           class="center-text-sub"
         >
-          {$t('globalCitizenship.compass.center.subtitle')}
+          {$t('findYourPlace.compass.center.subtitle')}
         </text>
       </g>
       
@@ -172,7 +223,7 @@
             text-anchor="middle"
             class="practice-text"
           >
-            {$t(`globalCitizenship.compass.levels.${level.id}.line1`)}
+            {$t(`findYourPlace.compass.levels.${level.id}.line1`)}
           </text>
           <text
             x={level.position.cx}
@@ -180,7 +231,7 @@
             text-anchor="middle"
             class="practice-text"
           >
-            {$t(`globalCitizenship.compass.levels.${level.id}.line2`)}
+            {$t(`findYourPlace.compass.levels.${level.id}.line2`)}
           </text>
           {#if userProgress[level.id]}
             <circle
@@ -214,7 +265,7 @@
             text-anchor="middle"
             class="value-emoji"
           >
-            {$t(`globalCitizenship.compass.valueDetails.${value.id}.icon`)}
+            {$t(`findYourPlace.compass.valueDetails.${value.id}.icon`)}
           </text>
           <!-- Value title text -->
           <text
@@ -223,7 +274,7 @@
             text-anchor="middle"
             class="value-text"
           >
-            {$t(`globalCitizenship.compass.valueDetails.${value.id}.title`)}
+            {$t(`findYourPlace.compass.valueDetails.${value.id}.title`)}
           </text>
         </g>
       {/each}
@@ -235,7 +286,7 @@
         text-anchor="middle"
         class="compass-title"
       >
-        {$t('globalCitizenship.compass.title')}
+        {$t('findYourPlace.compass.title')}
       </text>
     </svg>
     
@@ -244,34 +295,44 @@
       {selectedElement} 
       {userProgress} 
       {closeInfoPanel}
+      position={panelPosition}
+      bind:panelElement={infoPanelElement}
     />
   </div>
   
   <!-- Compass Legend -->
   <div class="compass-legend">
-    <h3>{$t('globalCitizenship.compass.legend.title')}</h3>
+    <h3>{$t('findYourPlace.compass.legend.title')}</h3>
     <div class="legend-items">
       <div class="legend-item">
         <div class="legend-color center-color"></div>
-        <span>{$t('globalCitizenship.compass.legend.values')}</span>
+        <span>{$t('findYourPlace.compass.legend.values')}</span>
       </div>
       <div class="legend-item">
         <div class="legend-color practice-color"></div>
-        <span>{$t('globalCitizenship.compass.legend.practices')}</span>
+        <span>{$t('findYourPlace.compass.legend.practices')}</span>
       </div>
       <div class="legend-item">
         <div class="legend-color value-color"></div>
-        <span>{$t('globalCitizenship.compass.legend.coreValues')}</span>
+        <span>{$t('findYourPlace.compass.legend.coreValues')}</span>
       </div>
       <div class="legend-item">
         <div class="legend-color completed-color"></div>
-        <span>{$t('globalCitizenship.compass.legend.completed')}</span>
+        <span>{$t('findYourPlace.compass.legend.completed')}</span>
       </div>
     </div>
   </div>
 </div>
 
 <style>
+  .background-clickable {
+    cursor: default;
+  }
+
+  .background-clickable:hover {
+    cursor: default;
+  }
+
   .compass-container {
     position: relative;
     width: 100%;

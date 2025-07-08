@@ -1,4 +1,4 @@
-<!-- src/routes/frameworks/global-citizenship/components/PersonalizationQuiz.svelte -->
+<!-- src/lib/components/PersonalizationQuiz.svelte -->
 <script>
   import { t } from '$lib/i18n';
   import { createEventDispatcher } from 'svelte';
@@ -9,7 +9,6 @@
   let currentQuestion = 0;
   let answers = {};
   
-  // Enhanced quiz structure with tiered mapping using frameworkNav.js data
   const quizStructure = [
     {
       id: 'values',
@@ -64,7 +63,7 @@
         },
         { 
           key: 'protecting',
-          primary: ['environmental-stewardship', 'planetary-health'],
+          primary: ['environmental-stewardship', 'planetary-health-governance'], 
           secondary: ['biodiversity-governance', 'mental-health-governance', 'animal-welfare-governance'],
           tertiary: ['treaty-for-our-only-home', 'existential-risk-governance']
         },
@@ -77,7 +76,7 @@
         { 
           key: 'transforming',
           primary: ['treaty-for-our-only-home'],
-          secondary: ['implementation-methods-and-tools', 'economic-integration'],
+          secondary: ['implementation-methods-and-tools', 'nested-economies'], 
           tertiary: ['wisdom-governance'],
           highlight: true
         }
@@ -94,8 +93,8 @@
         },
         { 
           key: 'national',
-          primary: ['economic-integration', 'educational-systems'],
-          secondary: ['planetary-health', 'labor-and-employment-governance', 'financial-systems'],
+          primary: ['nested-economies', 'educational-systems'], 
+          secondary: ['planetary-health-governance', 'labor-and-employment-governance', 'financial-systems'], // FIXED: was 'planetary-health'
           tertiary: ['treaty-for-our-only-home', 'implementation-methods-and-tools']
         },
         { 
@@ -138,17 +137,30 @@
     Object.values(answers).forEach(answer => {
       // Primary frameworks get 3 points
       answer.primary.forEach(frameworkSlug => {
-        frameworkScores[frameworkSlug] = (frameworkScores[frameworkSlug] || 0) + 3;
+        // ADDED: Validate framework exists before scoring
+        if (getFrameworkBySlug(frameworkSlug)) {
+          frameworkScores[frameworkSlug] = (frameworkScores[frameworkSlug] || 0) + 3;
+        } else {
+          console.warn(`Framework not found: ${frameworkSlug}`);
+        }
       });
       
       // Secondary frameworks get 2 points
       answer.secondary.forEach(frameworkSlug => {
-        frameworkScores[frameworkSlug] = (frameworkScores[frameworkSlug] || 0) + 2;
+        if (getFrameworkBySlug(frameworkSlug)) {
+          frameworkScores[frameworkSlug] = (frameworkScores[frameworkSlug] || 0) + 2;
+        } else {
+          console.warn(`Framework not found: ${frameworkSlug}`);
+        }
       });
       
       // Tertiary frameworks get 1 point
       answer.tertiary.forEach(frameworkSlug => {
-        frameworkScores[frameworkSlug] = (frameworkScores[frameworkSlug] || 0) + 1;
+        if (getFrameworkBySlug(frameworkSlug)) {
+          frameworkScores[frameworkSlug] = (frameworkScores[frameworkSlug] || 0) + 1;
+        } else {
+          console.warn(`Framework not found: ${frameworkSlug}`);
+        }
       });
     });
     
@@ -203,6 +215,8 @@
       allScores: frameworkScores
     };
     
+    console.log('Quiz Results:', results); // DEBUG: helpful for debugging
+    
     dispatch('complete', results);
   }
   
@@ -221,8 +235,8 @@
     <div class="quiz-container">
       <!-- Header -->
       <div class="quiz-header">
-        <h1>{$t('globalCitizenship.quiz.title')}</h1>
-        <p class="quiz-subtitle">{$t('globalCitizenship.quiz.subtitle')}</p>
+        <h1>{$t('findYourPlace.quiz.title') || 'Discover Your Global Citizenship Path'}</h1>
+        <p class="quiz-subtitle">{$t('findYourPlace.quiz.subtitle') || '3 questions to personalize your journey'}</p>
         
         <!-- Progress Bar -->
         <div class="progress-container">
@@ -231,17 +245,17 @@
         
         <!-- Question Counter -->
         <div class="question-counter">
-          {$t('globalCitizenship.quiz.questionCounter', { 
+          {$t('findYourPlace.quiz.questionCounter', { 
             current: currentQuestion + 1, 
             total: quizStructure.length 
-          })}
+          }) || `Question ${currentQuestion + 1} of ${quizStructure.length}`}
         </div>
       </div>
       
       <!-- Question -->
       <div class="question-container">
         <h2 class="question-title">
-          {$t(`globalCitizenship.quiz.questions.${currentQuestionData.id}.question`)}
+          {$t(`findYourPlace.quiz.questions.${currentQuestionData.id}.question`) || 'Please select an option'}
         </h2>
         
         <div class="options-grid">
@@ -252,11 +266,11 @@
               on:click={() => handleAnswer(option)}
             >
               <div class="option-content">
-                <h3>{$t(`globalCitizenship.quiz.questions.${currentQuestionData.id}.options.${option.key}.title`)}</h3>
-                <p>{$t(`globalCitizenship.quiz.questions.${currentQuestionData.id}.options.${option.key}.description`)}</p>
+                <h3>{$t(`findYourPlace.quiz.questions.${currentQuestionData.id}.options.${option.key}.title`) || option.key}</h3>
+                <p>{$t(`findYourPlace.quiz.questions.${currentQuestionData.id}.options.${option.key}.description`) || ''}</p>
                 {#if option.highlight}
                   <div class="highlight-badge">
-                    ⭐ {$t('globalCitizenship.quiz.foundationBadge')}
+                    ⭐ {$t('findYourPlace.quiz.foundationBadge') || 'Foundation'}
                   </div>
                 {/if}
               </div>
@@ -268,7 +282,7 @@
         <div class="quiz-navigation">
           {#if currentQuestion > 0}
             <button class="nav-button secondary" on:click={goBack}>
-              ← {$t('globalCitizenship.quiz.navigation.back')}
+              ← {$t('findYourPlace.quiz.navigation.back') || 'Back'}
             </button>
           {/if}
         </div>

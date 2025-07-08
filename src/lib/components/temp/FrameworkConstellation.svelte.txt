@@ -13,9 +13,6 @@
   export let isMobile = false;
 
   let windowWidth = 1200;
-
-  let constellationContainer; // A reference to the main div
-  let isVisible = false;
   
   // Constellation animation
   const pulseScale = tweened(1, { duration: 2000, easing: cubicOut });
@@ -38,29 +35,8 @@
     };
     pulse();
     
-    // Intersection Observer Logic
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        // Update the isVisible state based on whether the element is intersecting the viewport
-        isVisible = entry.isIntersecting;
-      },
-      {
-        // Optional: trigger when 10% of the element is visible
-        threshold: 0.1 
-      }
-    );
-
-    // Start observing the main container
-    if (constellationContainer) {
-      observer.observe(constellationContainer);
-    }
-
-    // Cleanup when the component is destroyed
     return () => {
       window.removeEventListener('resize', handleResize);
-      if (constellationContainer) {
-        observer.unobserve(constellationContainer);
-      }
     };
   });
 
@@ -316,7 +292,7 @@
   }
 </script>
 
-<div class="constellation-container" bind:this={constellationContainer}>
+<div class="constellation-container">
   <!-- Background area for mobile tap-to-deselect -->
   <div class="constellation-background" on:click={handleBackgroundClick}></div>
   
@@ -376,53 +352,56 @@
     {/each}
 
     <!-- Framework Nodes -->
-   {#each frameworkNodes as framework}
-     {@const isActive = hoveredFramework === framework.slug || activeFramework === framework.slug}
-     {@const isPulsing = framework.slug === 'treaty-for-our-only-home' && isVisible}
-     {@const tierColor = currentTierConfig[framework.tier].color}
-     
-     <g class="framework-node" class:active-node={activeFramework === framework.slug}>
-       
-       {#if isPulsing}
-         <circle
-           cx={framework.x}
-           cy={framework.y}
-           r={framework.size}
-           class="pulse-ring"
-         />
-       {/if}
-       
-       <circle
-         cx={framework.x}
-         cy={framework.y}
-         r={framework.size}
-         fill={tierColor}
-         stroke={isActive ? '#fbbf24' : 'white'}
-         stroke-width={isActive ? '0.8' : '0.4'}
-         class="node-circle"
-         class:highlighted={isActive}
-         style="cursor: pointer; pointer-events: all;"
-         on:click={() => handleNodeClick(framework)}
-         on:mouseenter={() => handleNodeHover(framework)}
-         on:mouseleave={handleNodeLeave}
-         role="button"
-         tabindex="0"
-         aria-label={getDisplayTitle(framework)}
-       />
-       
-       <text
-         x={framework.x}
-         y={framework.y}
-         text-anchor="middle"
-         dominant-baseline="central"
-         font-size={framework.tier === 0 ? '4' : framework.tier === 1 ? '3.5' : '3.0'}
-         style="pointer-events: none; user-select: none;"
-         class="framework-emoji"
-       >
-         {framework.emoji}
-       </text>
-     </g>
-   {/each}
+    {#each frameworkNodes as framework}
+      {@const isActive = hoveredFramework === framework.slug || activeFramework === framework.slug}
+      {@const isPulsing = framework.slug === 'treaty-for-our-only-home'}
+      {@const tierColor = currentTierConfig[framework.tier].color}
+      
+      <g class="framework-node" class:active-node={activeFramework === framework.slug}>
+        <!-- Invisible larger circle for better hover detection -->
+        <circle
+          cx={framework.x}
+          cy={framework.y}
+          r={framework.size + 2}
+          fill="transparent"
+          style="cursor: pointer;"
+          on:click={() => handleNodeClick(framework)}
+          on:mouseenter={() => handleNodeHover(framework)}
+          on:mouseleave={handleNodeLeave}
+          role="button"
+          tabindex="-1"
+          aria-label={getDisplayTitle(framework)}
+          class="hover-circle"
+        />
+        
+        <!-- Visible Node Circle -->
+        <circle
+          cx={framework.x}
+          cy={framework.y}
+          r={framework.size}
+          fill={tierColor}
+          stroke={isActive ? '#fbbf24' : 'white'}
+          stroke-width={isActive ? '0.8' : '0.4'}
+          class="node-circle"
+          class:pulsing={isPulsing}
+          class:highlighted={isActive}
+          style="pointer-events: none;"
+        />
+        
+        <!-- Framework Emoji -->
+        <text
+          x={framework.x}
+          y={framework.y}
+          text-anchor="middle"
+          dominant-baseline="central"
+          font-size={framework.tier === 0 ? '4' : framework.tier === 1 ? '3.5' : framework.tier === 2 ? '3.0' : framework.tier === 3 ? '2.5' : '2.0'}
+          style="pointer-events: none; user-select: none;"
+          class="framework-emoji"
+        >
+          {framework.emoji}
+        </text>
+      </g>
+    {/each}
 
     <!-- Framework Title Text Layer (rendered on top) -->
     {#each frameworkNodes as framework}
@@ -511,39 +490,6 @@
     box-shadow: none !important;
   }
 
-  /* DISABLED UNTIL FLICKERING ISSUE FIXED
-  .pulse-ring {
-    fill: none;
-    stroke: #fbbf24;
-    stroke-width: 0.5;
-    pointer-events: none;
-    transform-box: fill-box; 
-    transform: translateZ(0); 
-    transform-origin: center;
-    animation: smoothPulse 2.5s ease-out infinite;
-    will-change: transform, opacity;
-  }
-
-  @keyframes smoothPulse {
-    0% {
-      transform: scale(0.9);
-      opacity: 0.8;
-    }
-    80% {
-      transform: scale(2.5);
-      opacity: 0;
-    }
-    100% {
-      transform: scale(2.8);
-      opacity: 0;
-    }
-  }*/
-
-  /* Make sure the main node circle no longer has the old pulse animation */
-  .node-circle.pulsing {
-    animation: none;
-  }
-
   .node-circle {
     transition: stroke 0.2s ease, stroke-width 0.2s ease, r 0.2s ease;
     transform-box: fill-box;
@@ -555,6 +501,11 @@
     transform: scale(1.1);
     stroke: #fbbf24;
     stroke-width: 0.8;
+  }
+
+  .node-circle.pulsing {
+    /* Simplified pulse animation using transform only */
+    animation: simplePulse 4s ease-in-out infinite;
   }
 
   .framework-title-text {
