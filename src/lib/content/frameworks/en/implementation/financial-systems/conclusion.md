@@ -24,7 +24,7 @@ section: conclusion
 
 ## <a id="transformation-built"></a>The Transformation We've Built: From Extraction to Regeneration
 
-The Financial Systems Framework represents the most comprehensive blueprint ever developed for transforming global economic systems from engines of destruction into infrastructure for universal flourishing. Through seven years of development, community consultation, and integration with Indigenous wisdom, we have created not just an alternative currency but the economic foundation for regenerative civilization.
+The Financial Systems Framework represents on of the most comprehensive blueprint ever developed for transforming global economic systems from engines of destruction into infrastructure for universal flourishing. Through iterative refinement we have created not just an alternative currency but the economic foundation for regenerative civilization.
 
 ### From Invisible Care to Economic Recognition
 
@@ -308,25 +308,25 @@ The transformation from extractive economics to regenerative abundance requires 
 
 ### The Timeline: Transformation Milestones
 
-**2025-2027: Foundation Building**
+**Year 1-3: Foundation Building**
 - 100 Communities launch Minimum Viable Hearts Economies
 - 1,000 Community Weavers trained globally
 - Love Ledger blockchain infrastructure completed
 - Municipal pilot programs in 10 cities
 
-**2028-2030: Regional Scaling**
+**Year 4-6: Regional Scaling**
 - Hearts adoption in 25% of communities within 50 bioregions
 - AUBI integration in 20 countries
 - Banking integration and payment processor APIs
 - Leaves NFT markets for ecological restoration
 
-**2031-2035: Global Integration**
+**Year 7-11: Global Integration**
 - Hearts available in all Treaty-participating regions
 - Care economy recognition in 50% of economies
 - Ecological restoration major economic sector
 - Democratic economic governance demonstration
 
-**2036-2040: Regenerative Civilization**
+**Year 12-16: Regenerative Civilization**
 - Economic systems serve planetary boundaries
 - Community sovereignty and cultural diversity
 - Climate stability and biodiversity restoration
