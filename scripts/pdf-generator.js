@@ -45,6 +45,7 @@ Available categories:
 - frameworks-foundation
 - meta-governance
 - aethelred-accord
+- gaian-trade
 
 Example: node tools-pdf-generator.js economic
   `);
@@ -80,6 +81,7 @@ const outputDirs = {
   'youth': path.join(__dirname, '..', 'static', 'frameworks','tools', 'youth'),
   'aging-population-support-governance': path.join(__dirname, '..', 'static', 'frameworks','tools', 'aging-population-support-governance'),
   'animal-welfare-governance': path.join(__dirname, '..', 'static', 'frameworks','tools', 'animal-welfare-governance'),
+  'gaian-trade': path.join(__dirname, '..', 'static', 'frameworks','tools', 'gaian-trade'),
   'water-and-sanitation-governance': path.join(__dirname, '..', 'static', 'frameworks','tools', 'water-and-sanitation-governance'),
   'indigenous-governance-and-traditional-knowledge': path.join(__dirname, '..', 'static', 'frameworks','tools', 'indigenous-governance-and-traditional-knowledge'),
   'treaty-for-our-only-home': path.join(__dirname, '..', 'static', 'frameworks','tools', 'treaty-for-our-only-home'),
@@ -7918,6 +7920,88 @@ const tools = [
       'getting-started',
       'conclusion',
       'appendices'
+    ]
+  },
+
+  // Gaian Trade Framework, Global Trade & Resource Governance
+
+  // Guides
+  {
+    name: 'at-a-glance',
+    category: 'gaian-trade',
+    fileNames: {
+      en: 'gaian-trade-framework-ata-glance-en',
+      sv: 'gaian-trade-framework-ata-glance-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'gaian-trade'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'gaian-trade')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'assets', 'pdf'),
+      sv: path.join(__dirname, '..', 'static', 'assets', 'pdf')
+    },
+    pageFooter: {
+      en: 'Gaian Trade Framework - At a Glance',
+      sv: 'Gaianska handelsramverket - En överblick'
+    }
+  },
+  {
+    name: 'executive-summary-for-the-skeptic',
+    category: 'gaian-trade',
+    fileNames: {
+      en: 'gaiantrade-framework-executivesummary-for-the-skeptic-en',
+      sv: 'gaian-trade-framework-executivesummary-for-the-skeptic-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'gaian-trade'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'gaian-trade')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'assets', 'pdf'),
+      sv: path.join(__dirname, '..', 'static', 'assets', 'pdf')
+    },
+    pageFooter: {
+      en: 'Gaian Trade Framework - Executive Summary for the Skeptic',
+      sv: 'Gaian handelsramverket - Sammanfattning för skeptikern'
+    }
+  },
+
+  // Full framework
+  {
+    name: 'gaian-trade-framework',
+    category: 'gaian-trade',
+    fileNames: {
+      en: 'Gaian-Trade-Framework',
+      sv: 'Gaian-Trade-Framework'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'gaian-trade'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'gaian-trade')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Gaian Trade Framework - Page ',
+      sv: 'Gaianska handelsramverket - Sida '
+    },
+    sections: [
+    'index',
+    'introduction',
+    'sacred-covenant',
+    'core-principles',
+    'governance-architecture',
+    'key-mechanisms',
+    'implementation-pathways',
+    'regional-integration',
+    'crisis-response',
+    'monitoring-evaluation',
+    'tools-resources',
+    'getting-started',
+    'conclusion',
+    'appendices'
     ]
   }
 ];

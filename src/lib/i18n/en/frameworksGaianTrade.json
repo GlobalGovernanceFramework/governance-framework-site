@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "title": "Gaian Trade Framework: Regenerative Commerce for Planetary Healing",
+    "description": "A sacred covenant transforming global trade from extraction to regeneration through Indigenous sovereignty, planetary stewardship, and regenerative commerce"
+  },
+  "quickStart": {
+    "new": "New to Regenerative Trade?",
+    "start": "Start with our quick guides that explain transforming global commerce from extraction to regeneration.",
+    "button": "Choose Guide",
+    "title": "Gaian Trade Quick Start",
+    "description": "Choose the version that best matches your needs:",
+    "download": "Download PDF Version",
+    "continue": "Continue to Full Framework",
+    "guides": [
+      {
+        "id": "at-a-glance",
+        "icon": "⚡",
+        "title": "At a Glance",
+        "description": "5-minute overview of regenerative trade transformation"
+      },
+      {
+        "id": "executive-summary-for-the-skeptic",
+        "icon": "🤔",
+        "title": "For Skeptics",
+        "description": "Hard-nosed business case for trade transformation"
+      }
+    ]
+  },
+  "categories": {
+    "overview": "Framework Overview",
+    "foundations": "Sacred Foundations",
+    "governance": "Governance & Transformation",
+    "mechanisms": "Trade Mechanisms & Integration",
+    "implementation": "Tools & Implementation",
+    "resources": "Conclusion & Resources"
+  },
+  "sections": {
+    "index": "Framework Overview",
+    "at-a-glance": "At a Glance",
+    "executive-summary-for-the-skeptic": "Executive Summary for the Skeptic",
+    "introduction": "Introduction: Reweaving the Web of Material Kinship",
+    "sacred-covenant": "The Sacred Covenant",
+    "core-principles": "Core Principles: The Compass of Material Exchange",
+    "governance-architecture": "Governance Architecture: The Democracy of Planetary Resources",
+    "key-mechanisms": "Key Mechanisms & Policies: The Tools of Regenerative Trade",
+    "implementation-pathways": "Implementation Pathways: From Vision to Planetary Transformation",
+    "regional-integration": "Regional Integration: Honoring Local Wisdom in Global Commerce",
+    "crisis-response": "Crisis Response & Resilience: Stewardship Under Pressure",
+    "monitoring-evaluation": "Monitoring & Evaluation: Tracking Regenerative Impact",
+    "tools-resources": "Tools and Resources",
+    "getting-started": "Getting Started",
+    "conclusion": "Conclusion: Weaving the Future of Sacred Exchange",
+    "appendices": "Appendices"
+  },
+  "sectionsShort": {
+    "index": "Overview",
+    "at-a-glance": "At a Glance",
+    "executive-summary-for-the-skeptic": "For Skeptics",
+    "introduction": "Introduction",
+    "sacred-covenant": "Sacred Covenant",
+    "core-principles": "Core Principles",
+    "governance-architecture": "Governance Architecture",
+    "key-mechanisms": "Key Mechanisms",
+    "implementation-pathways": "Implementation Pathways",
+    "regional-integration": "Regional Integration",
+    "crisis-response": "Crisis Response",
+    "monitoring-evaluation": "Monitoring & Evaluation",
+    "tools-resources": "Tools & Resources",
+    "getting-started": "Getting Started",
+    "conclusion": "Conclusion",
+    "appendices": "Appendices"
+  },
+  "progress": {
+    "text": "Section {current} of {total}"
+  },
+  "navigation": {
+    "previousSection": "Previous Section",
+    "nextSection": "Next Section"
+  },
+  "introduction": {
+    "continue": "Continue to Sacred Covenant"
+  },
+  "languageFallback": {
+    "title": "Content in your language coming soon",
+    "description": "This section is currently displayed in English until translation is complete."
+  },
+  "loading": {
+    "text": "Loading regenerative trade framework..."
+  },
+  "errors": {
+    "sectionNotFound": "Section \"{section}\" not found",
+    "contentInDevelopment": "This content is still being developed."
+  }
+}

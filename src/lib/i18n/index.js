@@ -25,6 +25,7 @@ const pageSpecificTranslationsMap = [
   { route: '/my-path', dataKey: 'findYourPlace', fileName: 'findYourPlace' },
   
   // Framework routes (most specific first)
+  { route: '/frameworks/gaian-trade', dataKey: 'gaian-trade', fileName: 'frameworksGaianTrade' },
   { route: '/frameworks/adaptive-universal-basic-income', dataKey: 'aubi', fileName: 'frameworksAdaptiveUniversalBasicIncome' },
   { route: '/frameworks/aethelred-accord', dataKey: 'aethelred', fileName: 'frameworksAethelredAccord' },
   { route: '/frameworks/treaty-for-our-only-home', dataKey: 'treatyFramework', fileName: 'frameworksTreatyForOurOnlyHome' },

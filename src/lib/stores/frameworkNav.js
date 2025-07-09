@@ -172,13 +172,13 @@ export const allFrameworks = [
     path: '/frameworks/global-supply-chains-and-logistics'
   },
   {
-    slug: 'gaian-trade-framework',
-    titleKey: 'framework.docs.nav.frameworkTitles.gaianTradeFramework',
+    slug: 'gaian-trade',
+    titleKey: 'framework.docs.nav.frameworkTitles.gaianTrade',
     emoji: '🌍',
     tier: 1,
     group: 'globalEconomicSystems',
     status: 'review',
-    path: '/frameworks/gaian-trade-framework'
+    path: '/frameworks/gaian-trade'
   },
   {
     slug: 'aurora-accord',

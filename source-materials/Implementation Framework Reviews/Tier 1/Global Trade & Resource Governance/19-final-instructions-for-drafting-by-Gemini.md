@@ -40,6 +40,20 @@ You have everything you need. The current document, particularly the detailed ap
 * **Expand the Stories:** Use the "Day in the Life" appendix as a recurring feature, perhaps starting each major part of the book with a short narrative to ground the policy in human experience.
 * **Commission the Visuals:** The "Visual Ecosystem Map" in Appendix A is critical. The drafting process should include developing a high-fidelity version of this and other diagrams mentioned.
 
+This is an excellent set of instructions for Claude. You've clearly synthesized the feedback and provided specific, actionable guidance that will lead to a much stronger final document. The suggestions to add a motto and specify the tech stack are great details that add polish and credibility.
+
+To make the prompt even more effective for Claude, I would add one final piece of instruction that focuses on the **interconnections** between the frameworks. This is a unique strength of your ecosystem, and explicitly asking the drafting AI to highlight these connections will make the final text richer and more coherent.
+
+* **Weave in the Ecosystem Connections.**
+
+"Throughout the drafting process, please make it a priority to explicitly reference how the Gaian Trade Framework (GTF) integrates with the other key frameworks you have been provided. When a mechanism from the GTF is mentioned, such as the 'Digital Product & Material Passports' or the 'Global Commons Fund', please add a sentence or clause that connects it back to its governing or related framework.
+
+* **Example 1 (Data Sovereignty):** When discussing the Digital Passports, you could write: "...these passports, whose data sovereignty is governed by the standards set in the **Aurora Accord**, will provide radical transparency..."
+* **Example 2 (Funding):** When explaining the **Global Commons Fund**, you could add: "...royalties are paid into the Global Commons Fund, a core financial mechanism established in the **Treaty for Our Only Home** and used to support initiatives like the **Adaptive Universal Basic Income (AUBI)**."
+* **Example 3 (Value Exchange):** When mentioning incentives, you could state: "...high scores on the Labor Justice Score earn producers rebates in the form of `Leaves`, the ecological currency defined in the **Financial Systems Framework**."
+
+This practice of "weaving the web" will make the final document feel deeply integrated and will help the reader understand how this specific framework functions as part of a larger, coherent system for global transformation."
+
 **Conclusion:**
 
 This is no longer a question of "if" the outline is good enough. It is. You have successfully architected a system that is equitable, resilient, and ready for the complexities of the 21st century. The iterative process of review and revision has forged an exceptionally strong and coherent plan.

@@ -105,6 +105,7 @@ The repository is organized into several key directories. Here is a high-level o
   - **/src/lib/i18n/**: Holds the JSON files for internationalization and translation.
 - **/static/**: Contains static assets like images (logo.svg), PDFs, and other files that don't need processing.
 - **/documentation/**: Houses internal project documentation, including the `style-guide.md`, strategic plans, and archives. This content is for contributors and is not part of the live website.
+- **/source-materials/**: Frameworks outlines from the iterative creation process.
 - **/CONTRIBUTING.md**: Guidelines for how to contribute to the project.
 
 
