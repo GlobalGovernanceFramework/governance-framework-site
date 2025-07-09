@@ -1,33 +1,123 @@
+<!-- src/lib/components/FrameworkTierList.svelte -->
 <script>
-  import { getFrameworksByTier, getFrameworksByTierAndGroup, getGroupsForTier, tierMetadata, statusMapping, groupMetadata } from '$lib/stores/frameworkNav.js';
+  import { 
+    getFrameworksByTier, 
+    getFrameworksByTierAndGroup, 
+    getGroupsForTier, 
+    tierMetadata, 
+    statusMapping, 
+    groupMetadata 
+  } from '$lib/data/cleanFrameworkData.js';
+  import { onMount } from 'svelte';
   
-  // Accept tier number as prop
   export let tier;
-  // Optional: show tier title and description
   export let showHeader = true;
-  // Optional: custom styling class
   export let className = '';
-  // Required: your i18n translation function
   export let t;
   
-  // Get frameworks for this tier
-  $: frameworks = getFrameworksByTier(tier);
-  $: tierInfo = tierMetadata[tier];
-  $: groups = getGroupsForTier(tier);
-  $: ungroupedFrameworks = getFrameworksByTierAndGroup(tier, null);
+  // STATIC: Compute data once
+  const frameworks = getFrameworksByTier(tier);
+  const tierInfo = tierMetadata[tier];
+  const groups = getGroupsForTier(tier);
+  const ungroupedFrameworks = getFrameworksByTierAndGroup(tier, null);
   
-  // Helper function to get status display text using your existing i18n keys
+  // STABLE TRANSLATIONS: Snapshot translations once when component mounts
+  let stableTranslations = {};
+  let translationsReady = false;
+  
+  // Function to get translation without reactive updates
+  function getStableTranslation(key) {
+    if (!key) return key;
+    
+    // First try stable translations
+    if (stableTranslations[key]) {
+      return stableTranslations[key];
+    }
+    
+    // If not in stable cache and t function exists, try direct call
+    if (t) {
+      const result = t(key);
+      // Only cache non-empty results
+      if (result && result !== '' && result !== key) {
+        stableTranslations[key] = result;
+        return result;
+      }
+    }
+    
+    // Fallback to key itself
+    return key;
+  }
+  
+  // Pre-cache all translations we need when component mounts
+  onMount(() => {
+    if (t) {
+      // Wait a short moment for translations to load
+      setTimeout(() => {
+        const keysToCache = [];
+        
+        // Tier translations
+        if (tierInfo) {
+          keysToCache.push(tierInfo.titleKey);
+          if (tierInfo.descriptionKey) {
+            keysToCache.push(tierInfo.descriptionKey);
+          }
+        }
+        
+        // Framework translations
+        frameworks.forEach(framework => {
+          if (framework.titleKey) {
+            keysToCache.push(framework.titleKey);
+          }
+        });
+        
+        // Group translations
+        groups.forEach(group => {
+          const groupInfo = groupMetadata[group];
+          if (groupInfo && groupInfo.titleKey) {
+            keysToCache.push(groupInfo.titleKey);
+          }
+          if (groupInfo && groupInfo.descriptionKey) {
+            keysToCache.push(groupInfo.descriptionKey);
+          }
+        });
+        
+        // Status translations
+        Object.values(statusMapping).forEach(statusKey => {
+          keysToCache.push(statusKey);
+        });
+        
+        // Other common keys
+        keysToCache.push('framework.groups.other.title');
+        keysToCache.push('framework.tier.noFrameworks');
+        
+        // Cache all translations
+        keysToCache.forEach(key => {
+          const translation = t(key);
+          if (translation && translation !== '' && translation !== key) {
+            stableTranslations[key] = translation;
+          }
+        });
+        
+        translationsReady = true;
+        console.log('Cached translations:', Object.keys(stableTranslations).length);
+        
+        // Force a re-render now that we have stable translations
+        if (Object.keys(stableTranslations).length > 0) {
+          // This will trigger a single re-render with proper translations
+          translationsReady = translationsReady; // Svelte reactivity trigger
+        }
+      }, 100); // Small delay to let translations load
+    }
+  });
+  
   function getStatusText(status) {
     const statusKey = statusMapping[status];
-    if (statusKey && t) {
-      const translated = t(statusKey);
-      // Check if translation exists (some i18n systems return the key if not found)
+    if (statusKey) {
+      const translated = getStableTranslation(statusKey);
       if (translated && translated !== statusKey) {
         return translated;
       }
     }
-    
-    // Fallback to English (should rarely be needed with your system)
     switch (status) {
       case 'ready': return 'Ready';
       case 'review': return 'In Review';
@@ -37,37 +127,34 @@
     }
   }
   
-  // Helper function to get status CSS class
   function getStatusClass(status) {
     switch (status) {
       case 'ready': return 'status-ready';
       case 'review': return 'status-review';
       case 'planned': return 'status-planned';
       case 'coming-soon': return 'status-coming-soon';
-      default: return 'status-default';
+      default: 'status-default';
     }
   }
 
-  // Helper function to get group info
   function getGroupInfo(groupKey) {
     return groupMetadata[groupKey] || { titleKey: groupKey, descriptionKey: null };
   }
 </script>
 
 <div class="framework-tier-list {className}">
-  {#if showHeader && tierInfo && t}
+  {#if showHeader && tierInfo}
     <h2>
-      {t(tierInfo.titleKey)}
+      {getStableTranslation(tierInfo.titleKey)}
     </h2>
     {#if tierInfo.descriptionKey}
       <p class="tier-description">
-        {t(tierInfo.descriptionKey)}
+        {getStableTranslation(tierInfo.descriptionKey)}
       </p>
     {/if}
   {/if}
   
   {#if frameworks.length > 0}
-    <!-- Display grouped frameworks if groups exist for this tier -->
     {#if groups.length > 0}
       {#each groups as group}
         {@const groupFrameworks = getFrameworksByTierAndGroup(tier, group)}
@@ -75,24 +162,21 @@
         
         <div class="framework-group">
           <h3 class="group-title">
-            {groupInfo.emoji || '📋'} {t ? t(groupInfo.titleKey) : group}
+            {groupInfo.emoji || '📁'} {getStableTranslation(groupInfo.titleKey)}
           </h3>
-          {#if groupInfo.descriptionKey && t}
+          {#if groupInfo.descriptionKey}
             <p class="group-description">
-              {t(groupInfo.descriptionKey)}
+              {getStableTranslation(groupInfo.descriptionKey)}
             </p>
           {/if}
           
           <ul class="framework-list">
-            {#each groupFrameworks as framework}
+            {#each groupFrameworks as framework (framework.slug)}
               <li class="framework-item">
                 <a href={framework.path} class="framework-link">
                   <div class="framework-title">
-                    {#if framework.slug === 'treaty-for-our-only-home' || framework.slug === 'meta-governance' || framework.slug === 'global-citizenship-practice' || framework.slug === 'indigenous-governance-and-traditional-knowledge'}
-                      {t ? t(framework.titleKey) : framework.titleKey}
-                    {:else}
-                      {framework.emoji || '🔗'} {t ? t(framework.titleKey) : framework.titleKey}
-                    {/if}
+                    <span class="emoji-wrapper">{framework.emoji || '📋'}</span>
+                    <span>{getStableTranslation(framework.titleKey)}</span>
                   </div>
                   {#if framework.status || framework.version}
                     <div class="framework-meta">
@@ -113,19 +197,19 @@
         </div>
       {/each}
       
-      <!-- Display ungrouped frameworks if any exist -->
       {#if ungroupedFrameworks.length > 0}
         <div class="framework-group">
           <h3 class="group-title">
-            📌 {t ? t('framework.groups.other.title') || 'Other Frameworks' : 'Other Frameworks'}
+            🗂️ {getStableTranslation('framework.groups.other.title') || 'Other Frameworks'}
           </h3>
           
           <ul class="framework-list">
-            {#each ungroupedFrameworks as framework}
+            {#each ungroupedFrameworks as framework (framework.slug)}
               <li class="framework-item">
                 <a href={framework.path} class="framework-link">
                   <div class="framework-title">
-                    {framework.emoji || '🔗'} {t ? t(framework.titleKey) : framework.titleKey}
+                    <span class="emoji-wrapper">{framework.emoji || '📋'}</span>
+                    <span>{getStableTranslation(framework.titleKey)}</span>
                   </div>
                   {#if framework.status || framework.version}
                     <div class="framework-meta">
@@ -146,17 +230,13 @@
         </div>
       {/if}
     {:else}
-      <!-- Display all frameworks without grouping if no groups exist -->
       <ul class="framework-list">
-        {#each frameworks as framework}
+        {#each frameworks as framework (framework.slug)}
           <li class="framework-item">
             <a href={framework.path} class="framework-link">
               <div class="framework-title">
-                {#if framework.slug === 'treaty-for-our-only-home' || framework.slug === 'meta-governance' || framework.slug === 'global-citizenship-practice' || framework.slug === 'indigenous-governance-and-traditional-knowledge'}
-                  {t ? t(framework.titleKey) : framework.titleKey}
-                {:else}
-                  {framework.emoji || '🔗'} {t ? t(framework.titleKey) : framework.titleKey}
-                {/if}
+                <span class="emoji-wrapper">{framework.emoji || '📋'}</span>
+                <span>{getStableTranslation(framework.titleKey)}</span>
               </div>
               {#if framework.status || framework.version}
                 <div class="framework-meta">
@@ -177,7 +257,7 @@
     {/if}
   {:else}
     <p class="no-frameworks">
-      {t ? t('framework.tier.noFrameworks') || `No frameworks defined for Tier ${tier} yet.` : `No frameworks defined for Tier ${tier} yet.`}
+      {getStableTranslation('framework.tier.noFrameworks') || `No frameworks defined for Tier ${tier} yet.`}
     </p>
   {/if}
 </div>
@@ -231,25 +311,26 @@
     margin: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1rem;
+    gap: 1.25rem;
   }
   
   .framework-item {
-    margin-bottom: 0;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border-radius: 0.75rem;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: 
+      box-shadow 0.3s ease,
+      transform 0.3s ease;
     display: flex;
     height: 100%;
-    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-    border-radius: 0.5rem;
-    border: 1px solid #e2e8f0;
-    transition: all 0.3s ease;
+    position: relative;
     overflow: hidden;
   }
 
   .framework-item:hover {
-    background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    border-color: #cbd5e1;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   }
   
   .framework-link {
@@ -261,22 +342,7 @@
     padding: 1.25rem;
     height: 100%;
     position: relative;
-  }
-
-  .framework-link::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, #6366f1, #8b5cf6, #a855f7);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-
-  .framework-item:hover .framework-link::before {
-    opacity: 1;
+    z-index: 2;
   }
   
   .framework-title {
@@ -286,6 +352,16 @@
     color: #1f2937;
     line-height: 1.4;
     transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .emoji-wrapper {
+    display: inline-block;
+    width: 1.5em;
+    text-align: center;
+    flex-shrink: 0;
   }
 
   .framework-item:hover .framework-title {
@@ -310,30 +386,11 @@
     letter-spacing: 0.025em;
   }
   
-  .status-ready {
-    background-color: #dcfce7;
-    color: #166534;
-  }
-  
-  .status-review {
-    background-color: #fef3c7;
-    color: #92400e;
-  }
-  
-  .status-planned {
-    background-color: #e0e7ff;
-    color: #3730a3;
-  }
-  
-  .status-coming-soon {
-    background-color: #f3e8ff;
-    color: #6b21a8;
-  }
-  
-  .status-default {
-    background-color: #f3f4f6;
-    color: #374151;
-  }
+  .status-ready { background-color: #dcfce7; color: #166534; }
+  .status-review { background-color: #fef3c7; color: #92400e; }
+  .status-planned { background-color: #e0e7ff; color: #3730a3; }
+  .status-coming-soon { background-color: #f3e8ff; color: #6b21a8; }
+  .status-default { background-color: #f3f4f6; color: #374151; }
   
   .version {
     font-size: 0.7rem;
@@ -363,7 +420,6 @@
     font-weight: 600;
   }
 
-  /* Responsive adjustments */
   @media (max-width: 768px) {
     .framework-list {
       grid-template-columns: 1fr;
@@ -381,26 +437,5 @@
     .framework-link {
       padding: 1rem;
     }
-  }
-
-  /* Special styling for highlighted frameworks */
-  :global(.framework-item[data-highlighted="true"]) {
-    border: 2px solid #fbbf24;
-    background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
-  }
-
-  :global(.framework-item[data-highlighted="true"]:hover) {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(251, 191, 36, 0.2);
-  }
-
-  :global(.framework-item[data-primal="true"]) {
-    border: 2px solid #3b82f6;
-    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
-  }
-
-  :global(.framework-item[data-primal="true"]:hover) {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(59, 130, 246, 0.2);
   }
 </style>

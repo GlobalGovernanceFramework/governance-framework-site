@@ -1,3 +1,4 @@
+<!-- src/lib/components/AllFrameworksList.svelte -->
 <script>
   import { getAllTiers, tierMetadata } from '$lib/stores/frameworkNav.js';
   import FrameworkTierList from './FrameworkTierList.svelte';
@@ -35,7 +36,10 @@
     margin-bottom: 3rem;
     padding-bottom: 2rem;
     border-bottom: 2px solid #e5e7eb;
-    scroll-margin-top: 2rem; /* Add smooth scroll offset */
+    scroll-margin-top: 2rem;
+    
+    /* Clean positioning without competing optimizations */
+    position: relative;
   }
   
   .tier-section:last-child {
@@ -44,6 +48,7 @@
     padding-bottom: 0;
   }
   
+  /* The :global styles remain the same as they correctly style the child component */
   :global(.tier-0) {
     border-left: 4px solid #fbbf24;
     padding-left: 1rem;
@@ -67,5 +72,34 @@
   :global(.tier-4) {
     border-left: 4px solid #f472b6;
     padding-left: 1rem;
+  }
+
+  :global(.framework-tier-list .group-title) {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.2s ease;
+  }
+
+  :global(.framework-tier-list .group-description) {
+    color: #6b7280;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+  }
+
+  :global(.framework-tier-list .framework-list) {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    align-items: stretch;
   }
 </style>

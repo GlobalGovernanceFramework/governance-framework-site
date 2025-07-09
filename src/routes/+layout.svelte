@@ -61,10 +61,11 @@
   });
 </script>
 
-<div class="min-h-screen">
+<!-- FIXED: Remove ALL Tailwind classes that conflict with custom CSS -->
+<div class="site-layout">
   <Header />
   <GlobalNotice />
-  <main class="container mx-auto px-4 py-8">
+  <main class="main-content">
     {#key $page.url.pathname}
       <slot />
     {/key}
@@ -72,3 +73,37 @@
   
   <Footer />
 </div>
+
+<style>
+  /* FIXED: Use custom CSS instead of conflicting Tailwind classes */
+  .site-layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-content {
+    flex: 1;
+    /* Remove conflicting padding and margins that interfere with framework cards */
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Override any remaining Tailwind interference */
+  :global(.main-content *) {
+    /* Prevent Tailwind from overriding component styles */
+    box-sizing: border-box;
+  }
+
+  /* Specifically target and fix the framework cards interference */
+  :global(.main-content .framework-item) {
+    /* Ensure no Tailwind classes interfere */
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  :global(.main-content .framework-item *) {
+    /* Prevent any inherited Tailwind issues */
+    box-sizing: border-box;
+  }
+</style>

@@ -1,688 +1,1014 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   viewBox="0 0 800 600"
-   width="800"
-   height="600"
+   viewBox="0 0 900 700"
+   width="900"
+   height="700"
    version="1.1"
-   id="svg35"
+   id="svg61"
    sodipodi:docname="principles-interconnection-sv.svg"
-   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs35" />
-  <sodipodi:namedview
-     id="namedview35"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="1.41"
-     inkscape:cx="395.39007"
-     inkscape:cy="301.41844"
-     inkscape:window-width="2520"
-     inkscape:window-height="1048"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg35" />
-  <!-- Background -->
-  <rect
-     width="800"
-     height="600"
-     fill="#ffffff"
-     id="rect1" />
-  <path
-     d="M 580,282.15603 V 376"
-     stroke="#daa520"
-     stroke-width="1.5"
-     stroke-dasharray="5, 3"
-     id="path32"
-     sodipodi:nodetypes="cc" />
-  <path
-     d="m 182.15603,229.78723 355.5461,175.88653"
-     stroke="#6b5ca5"
-     stroke-width="1.5"
-     stroke-dasharray="5, 3"
-     id="path35"
-     sodipodi:nodetypes="cc" />
-  <path
-     d="M 178.63042,235.86372 421.41056,434.44529"
-     stroke="#6b5ca5"
-     stroke-width="1.5"
-     stroke-dasharray="5, 3"
-     id="path35-2"
-     sodipodi:nodetypes="cc" />
-  <path
-     d="M 313.48194,160.73655 429.31173,430.24011"
-     stroke="#6b5ca5"
-     stroke-width="1.5"
-     stroke-dasharray="5, 3"
-     id="path35-2-9"
-     sodipodi:nodetypes="cc" />
-  <path
-     d="m 267.68905,409.83516 138.52483,45.39008"
-     stroke="#6b5ca5"
-     stroke-width="1.5"
-     stroke-dasharray="5, 3"
-     id="path35-2-9-1"
-     sodipodi:nodetypes="cc" />
-  <path
-     d="M 240.56738,385.92908 373.04965,162.2695"
-     stroke="#2d5f2d"
-     stroke-width="1.5"
-     stroke-dasharray="5, 3"
-     id="path34"
-     sodipodi:nodetypes="cc" />
-  <!-- Center circle - Global Governance -->
-  <!-- Principle circles positioned in a clock-like arrangement -->
-  <!-- Decentralized Authority -->
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+   id="namedview2"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   inkscape:zoom="1.2085714"
+   inkscape:cx="449.7045"
+   inkscape:cy="350.00001"
+   inkscape:window-width="2520"
+   inkscape:window-height="1048"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg61" />
+<defs
+   id="defs10">
+  <!-- Gradients for modern look -->
+  <radialGradient
+     id="centerGradient"
+     cx="50%"
+     cy="50%"
+     r="50%">
+    <stop
+       offset="0%"
+       style="stop-color:#3B5FAE;stop-opacity:1"
+       id="stop1" />
+    <stop
+       offset="100%"
+       style="stop-color:#2B4B8C;stop-opacity:1"
+       id="stop2" />
+  </radialGradient>
+  <linearGradient
+     id="greenGradient"
+     x1="0%"
+     y1="0%"
+     x2="100%"
+     y2="100%">
+    <stop
+       offset="0%"
+       style="stop-color:#34855E;stop-opacity:1"
+       id="stop3" />
+    <stop
+       offset="100%"
+       style="stop-color:#2D5F2D;stop-opacity:1"
+       id="stop4" />
+  </linearGradient>
+  <linearGradient
+     id="brownGradient"
+     x1="0%"
+     y1="0%"
+     x2="100%"
+     y2="100%">
+    <stop
+       offset="0%"
+       style="stop-color:#7A5A3A;stop-opacity:1"
+       id="stop5" />
+    <stop
+       offset="100%"
+       style="stop-color:#654321;stop-opacity:1"
+       id="stop6" />
+  </linearGradient>
+  <linearGradient
+     id="goldGradient"
+     x1="0%"
+     y1="0%"
+     x2="100%"
+     y2="100%">
+    <stop
+       offset="0%"
+       style="stop-color:#E8B832;stop-opacity:1"
+       id="stop7" />
+    <stop
+       offset="100%"
+       style="stop-color:#DAA520;stop-opacity:1"
+       id="stop8" />
+  </linearGradient>
+  <linearGradient
+     id="purpleGradient"
+     x1="0%"
+     y1="0%"
+     x2="100%"
+     y2="100%">
+    <stop
+       offset="0%"
+       style="stop-color:#7B6CB5;stop-opacity:1"
+       id="stop9" />
+    <stop
+       offset="100%"
+       style="stop-color:#6B5CA5;stop-opacity:1"
+       id="stop10" />
+  </linearGradient>
+  <!-- Drop shadow filter -->
+  <filter
+     id="dropShadow"
+     x="0"
+     y="0"
+     width="1"
+     height="1">
+    <feDropShadow
+       dx="2"
+       dy="4"
+       stdDeviation="3"
+       flood-opacity="0.2" />
+  </filter>
+  <linearGradient
+     xlink:href="#goldGradient"
+     id="linearGradient61"
+     x1="536"
+     y1="191"
+     x2="584"
+     y2="239"
+     gradientUnits="userSpaceOnUse" />
+  <linearGradient
+     xlink:href="#brownGradient"
+     id="linearGradient62"
+     x1="316"
+     y1="191"
+     x2="364"
+     y2="239"
+     gradientUnits="userSpaceOnUse" />
+  <linearGradient
+     xlink:href="#greenGradient"
+     id="linearGradient63"
+     x1="536"
+     y1="241"
+     x2="584"
+     y2="289"
+     gradientUnits="userSpaceOnUse" />
+  <linearGradient
+     xlink:href="#brownGradient"
+     id="linearGradient64"
+     x1="206"
+     y1="326"
+     x2="254"
+     y2="374"
+     gradientUnits="userSpaceOnUse" />
+  <linearGradient
+     inkscape:collect="always"
+     xlink:href="#purpleGradient"
+     id="linearGradient2"
+     x1="126"
+     y1="326"
+     x2="174"
+     y2="374"
+     gradientUnits="userSpaceOnUse" />
+  <linearGradient
+     inkscape:collect="always"
+     xlink:href="#goldGradient"
+     id="linearGradient3"
+     x1="536"
+     y1="461"
+     x2="584"
+     y2="509"
+     gradientUnits="userSpaceOnUse" />
+  <linearGradient
+     inkscape:collect="always"
+     xlink:href="#greenGradient"
+     id="linearGradient4"
+     x1="536"
+     y1="411"
+     x2="584"
+     y2="459"
+     gradientUnits="userSpaceOnUse" />
+  <linearGradient
+     inkscape:collect="always"
+     xlink:href="#goldGradient"
+     id="linearGradient1"
+     x1="646"
+     y1="326"
+     x2="694"
+     y2="374"
+     gradientUnits="userSpaceOnUse" />
+</defs>
+<style
+   id="style10">
+    .principle-node {
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .principle-node:hover {
+      filter: brightness(1.2) saturate(1.3);
+      transform: scale(1.05);
+    }
+    
+    .principle-text {
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .principle-text:hover {
+      fill: #2B4B8C;
+      font-weight: bold;
+    }
+    
+    .connection-line {
+      transition: opacity 0.3s ease;
+    }
+    
+    .ring-path {
+      fill: none;
+      stroke: #e2e8f0;
+      stroke-width: 1;
+      opacity: 0.6;
+    }
+    
+    .center-hub {
+      filter: url(#dropShadow);
+    }
+  </style>
+<!-- Background -->
+<rect
+   width="900"
+   height="700"
+   fill="#f8fafc"
+   id="rect10"
+   x="-2.4822695"
+   y="-0.82742316" />
+<!-- Title -->
+<text
+   x="450"
+   y="40"
+   font-family="system-ui, -apple-system, sans-serif"
+   font-size="24"
+   text-anchor="middle"
+   fill="#2B4B8C"
+   font-weight="600"
+   id="text10">
+    Kärnprincipernas sammankoppling
+  </text>
+<!-- Concentric ring guides -->
+<circle
+   cx="450"
+   cy="350"
+   r="140"
+   class="ring-path"
+   id="circle10" />
+<circle
+   cx="450"
+   cy="350"
+   r="220"
+   class="ring-path"
+   id="circle11" />
+<circle
+   cx="450"
+   cy="350"
+   r="300"
+   class="ring-path"
+   id="circle12" />
+<!-- Center Hub - moved to end so it overlaps the connection lines -->
+<circle
+   cx="450"
+   cy="350"
+   r="80"
+   fill="url(#centerGradient)"
+   class="center-hub"
+   id="circle13" />
+<text
+   x="450"
+   y="335"
+   font-family="system-ui, -apple-system, sans-serif"
+   font-size="16"
+   text-anchor="middle"
+   fill="#ffffff"
+   font-weight="600"
+   id="text13">
+    Ramverk för
+  </text>
+<text
+   x="450"
+   y="355"
+   font-family="system-ui, -apple-system, sans-serif"
+   font-size="16"
+   text-anchor="middle"
+   fill="#ffffff"
+   font-weight="600"
+   id="text14">
+    Global Styrning
+  </text>
+
+=&quot;450&quot;
+     cy=&quot;350&quot;
+     r=&quot;80&quot;
+     fill=&quot;url(#centerGradient)&quot;
+     class=&quot;center-hub&quot;
+     id=&quot;circle13&quot; /&gt;
+  <text
+   x="450"
+   y="335"
+   font-family="system-ui, -apple-system, sans-serif"
+   font-size="16"
+   text-anchor="middle"
+   fill="#ffffff"
+   font-weight="600"
+   id="text1">
+    Ramverk för
+  </text>
+<text
+   x="450"
+   y="355"
+   font-family="system-ui, -apple-system, sans-serif"
+   font-size="16"
+   text-anchor="middle"
+   fill="#ffffff"
+   font-weight="600"
+   id="text2">
+    Global Styrning
+  </text>
+<!-- Connection lines from center to all principles -->
+<line
+   x1="450"
+   y1="270"
+   x2="450"
+   y2="210"
+   stroke="#2d5f2d"
+   stroke-width="2"
+   opacity="0.7"
+   class="connection-line"
+   id="line14" />
+<line
+   x1="508"
+   y1="301"
+   x2="560"
+   y2="265"
+   stroke="#2d5f2d"
+   stroke-width="2"
+   opacity="0.7"
+   class="connection-line"
+   id="line15" />
+<line
+   x1="508"
+   y1="399"
+   x2="560"
+   y2="435"
+   stroke="#2d5f2d"
+   stroke-width="2"
+   opacity="0.7"
+   class="connection-line"
+   id="line16" />
+<line
+   x1="370"
+   y1="350"
+   x2="230"
+   y2="350"
+   stroke="#654321"
+   stroke-width="2"
+   opacity="0.7"
+   class="connection-line"
+   id="line17" />
+<line
+   x1="408"
+   y1="415"
+   x2="340"
+   y2="485"
+   stroke="#654321"
+   stroke-width="2"
+   opacity="0.7"
+   class="connection-line"
+   id="line18" />
+<line
+   x1="408"
+   y1="285"
+   x2="340"
+   y2="215"
+   stroke="#654321"
+   stroke-width="2"
+   opacity="0.7"
+   class="connection-line"
+   id="line19" />
+<line
+   x1="530"
+   y1="350"
+   x2="670"
+   y2="350"
+   stroke="#daa520"
+   stroke-width="2"
+   opacity="0.7"
+   class="connection-line"
+   id="line20" />
+<line
+   x1="492"
+   y1="285"
+   x2="560"
+   y2="215"
+   stroke="#daa520"
+   stroke-width="2"
+   opacity="0.7"
+   class="connection-line"
+   id="line21" />
+<line
+   x1="492"
+   y1="415"
+   x2="560"
+   y2="485"
+   stroke="#daa520"
+   stroke-width="2"
+   opacity="0.7"
+   class="connection-line"
+   id="line22" />
+<line
+   x1="370"
+   y1="350"
+   x2="150"
+   y2="350"
+   stroke="#6b5ca5"
+   stroke-width="2"
+   opacity="0.7"
+   class="connection-line"
+   id="line23" />
+<line
+   x1="399.133"
+   y1="298.16776"
+   x2="240.0661"
+   y2="150.071"
+   stroke="#6b5ca5"
+   stroke-width="2.19403"
+   opacity="0.7"
+   class="connection-line"
+   id="line24"
+   style="stroke-width:2;stroke-dasharray:none" />
+<line
+   x1="399.133"
+   y1="401.83224"
+   x2="240.0661"
+   y2="549.92902"
+   stroke="#6b5ca5"
+   stroke-width="2.19403"
+   opacity="0.7"
+   class="connection-line"
+   id="line25"
+   style="stroke-width:2;stroke-dasharray:none" />
+<line
+   x1="503.51694"
+   y1="295.69882"
+   x2="659.94629"
+   y2="150.05769"
+   stroke="#6b5ca5"
+   stroke-width="2.15765"
+   opacity="0.7"
+   class="connection-line"
+   id="line26"
+   style="stroke-width:2;stroke-dasharray:none" />
+<!-- INNER RING: Governance Structure (Green) -->
+<!-- Decentralized Authority -->
+<g
+   class="principle-group"
+   id="g27">
   <circle
-     cx="400"
-     cy="120"
-     r="54"
-     fill="#2D5F2D"
-     id="circle3" />
-  <path
-     d="M 400,167.23404 V 250"
-     stroke="#2d5f2d"
-     stroke-width="3"
-     id="path3"
-     sodipodi:nodetypes="cc" />
-  <text
-     x="400"
-     y="112"
-     font-family="Arial, sans-serif"
-     font-size="12px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text4">Decentraliserad</text>
-  <text
-     x="400"
-     y="132"
-     font-family="Arial, sans-serif"
-     font-size="12px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text5">auktoritet</text>
-  <!-- Radical Transparency -->
-  <path
-     d="M 532.74468,246.00709 452.9078,265.67376"
-     stroke="#2d5f2d"
-     stroke-width="3"
-     id="path5"
-     sodipodi:nodetypes="cc" />
-  <path
-     d="m 550.61409,171.82525 -103.24113,77.8227"
-     stroke="#2d5f2d"
-     stroke-width="3"
-     id="path5-6"
-     sodipodi:nodetypes="cc" />
-  <circle
-     cx="580"
-     cy="234"
-     r="54"
-     fill="#2d5f2d"
-     id="circle5" />
-  <text
-     x="580"
-     y="224"
-     font-family="Arial, sans-serif"
-     font-size="12px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text6">Radikal</text>
-  <text
-     x="580"
-     y="244"
-     font-family="Arial, sans-serif"
-     font-size="12px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text7">transparens</text>
-  <!-- Direct Participation -->
-  <circle
-     cx="646"
-     cy="300"
-     r="54"
-     fill="#2d5f2d"
-     id="circle7" />
-  <path
-     d="M 596.56738,300 H 470"
-     stroke="#2d5f2d"
-     stroke-width="3"
-     id="path7"
-     sodipodi:nodetypes="cc" />
-  <text
-     x="646"
-     y="290"
-     font-family="Arial, sans-serif"
-     font-size="12px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text8">Direkt</text>
-  <text
-     x="646"
-     y="310"
-     font-family="Arial, sans-serif"
-     font-size="12px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text9">deltagande</text>
-  <!-- Universal Human Rights -->
-  <circle
-     cx="580"
-     cy="430"
-     r="54"
-     fill="#654321"
-     id="circle9" />
-  <path
-     d="M 540.5461,398.67376 456.4539,337.87234"
-     stroke="#654321"
-     stroke-width="3"
-     id="path9"
-     sodipodi:nodetypes="cc" />
-  <text
-     x="580"
-     y="414"
-     font-family="Arial, sans-serif"
-     font-size="12px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text10">Universella</text>
-  <text
-     x="580"
-     y="434"
-     font-family="Arial, sans-serif"
-     font-size="12px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text11"><tspan
-       sodipodi:role="line"
-       id="tspan36"
-       x="580"
-       y="434">mänskliga</tspan></text>
-  <text
-     x="579.20703"
-     y="455.69531"
-     font-family="Arial, sans-serif"
-     font-size="12px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text11-3"><tspan
-       sodipodi:role="line"
-       id="tspan36-6"
-       x="579.20703"
-       y="455.69531">rättigheter</tspan></text>
-  <!-- Environmental Stewardship -->
-  <circle
-     cx="332"
-     cy="474"
-     r="54"
-     fill="#654321"
-     id="circle11" />
-  <path
-     d="M 348.22695,426 375.1773,364.32624"
-     stroke="#654321"
-     stroke-width="3"
-     id="path11"
-     sodipodi:nodetypes="cc" />
-  <text
-     x="332"
-     y="464"
-     font-family="Arial, sans-serif"
-     font-size="12px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text12">Miljömässigt</text>
-  <text
-     x="332"
-     y="484"
-     font-family="Arial, sans-serif"
-     font-size="12px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text13">förvaltarskap</text>
-  <!-- Cultural Autonomy -->
-  <path
-     d="m 258.74468,397.25532 84.80142,-60.0922"
-     stroke="#654321"
-     stroke-width="3"
-     id="path13"
-     sodipodi:nodetypes="cc" />
-  <circle
-     cx="220"
-     cy="430"
-     r="54"
-     fill="#654321"
-     id="circle13" />
-  <text
-     x="220"
-     y="420"
-     font-family="Arial, sans-serif"
-     font-size="12"
-     text-anchor="middle"
-     fill="white"
-     font-weight="bold"
-     id="text14">Kulturell</text>
-  <!-- Ethical Technology Governance -->
-  <circle
-     cx="170"
-     cy="300"
-     r="54"
-     fill="#DAA520"
-     id="circle15" />
-  <path
-     d="M224 300 L330 300"
-     stroke="#DAA520"
-     stroke-width="3"
-     id="path15" />
-  <text
-     x="170"
-     y="294"
-     font-family="Arial, sans-serif"
-     font-size="11px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text16">Etisk Teknologi-</text>
-  <text
-     x="170"
-     y="314"
-     font-family="Arial, sans-serif"
-     font-size="11px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text17">styrning</text>
-  <path
-     d="M 541.25532,403.75887 251.65248,205.46099"
-     stroke="#654321"
-     stroke-width="1.5"
-     stroke-dasharray="5, 3"
-     id="path33"
-     sodipodi:nodetypes="cc" />
-  <path
-     d="m 533.60284,454.29788 -29.31915,9.50354"
-     stroke="#654321"
-     stroke-width="1.5"
-     stroke-dasharray="5, 3"
-     id="path33-5"
-     sodipodi:nodetypes="cc" />
-  <path
-     d="m 530.44681,451.69218 -29.31915,9.50354"
-     stroke="#654321"
-     stroke-width="1.5"
-     stroke-dasharray="5, 3"
-     id="path33-5-6"
-     sodipodi:nodetypes="cc" />
-  <!-- Resource Justice -->
-  <circle
-     cx="220"
-     cy="170"
-     r="54"
-     fill="#DAA520"
-     id="circle17" />
-  <path
-     d="m 255.19858,200.61702 89.05674,63.6383"
-     stroke="#daa520"
-     stroke-width="3"
-     id="path17"
-     sodipodi:nodetypes="cc" />
-  <text
-     x="220"
-     y="166"
-     font-family="Arial, sans-serif"
-     font-size="12px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text18">Resurs-</text>
-  <text
-     x="220"
-     y="186"
-     font-family="Arial, sans-serif"
-     font-size="12px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text19">rättvisa</text>
-  <!-- Peaceful Conflict Resolution -->
-  <circle
-     cx="296"
-     cy="110"
-     r="54"
-     fill="#daa520"
-     id="circle19" />
-  <path
-     d="M 319.43262,151.34752 370,240"
-     stroke="#daa520"
-     stroke-width="3"
-     id="path19"
-     sodipodi:nodetypes="cc" />
-  <text
-     x="296"
-     y="106"
-     font-family="Arial, sans-serif"
-     font-size="11px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text20">Fredlig</text>
-  <text
-     x="296"
-     y="126"
-     font-family="Arial, sans-serif"
-     font-size="11px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text21">konfliktlösning</text>
-  <!-- Adaptive Evolution -->
-  <circle
-     cx="502"
-     cy="104"
-     r="54"
-     fill="#6b5ca5"
-     id="circle21" />
-  <circle
-     cx="593.84399"
-     cy="140.85815"
-     r="54"
-     fill="#2d5f2d"
-     id="circle5-3" />
-  <text
-     x="594.17017"
-     y="121.85844"
-     font-family="Arial, sans-serif"
-     font-size="12px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text10-6">Motståndskraft</text>
-  <text
-     x="594.17017"
-     y="141.85843"
-     font-family="Arial, sans-serif"
-     font-size="12px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text11-7"><tspan
-       sodipodi:role="line"
-       id="tspan36-5"
-       x="594.17017"
-       y="141.85843">och</tspan></text>
-  <text
-     x="593.3772"
-     y="163.55374"
-     font-family="Arial, sans-serif"
-     font-size="12px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text11-3-3"><tspan
-       sodipodi:role="line"
-       id="tspan36-6-5"
-       x="593.3772"
-       y="163.55374">anti-fragilitet</tspan></text>
-  <path
-     d="M 478.43972,147.80142 430,240"
-     stroke="#6b5ca5"
-     stroke-width="3"
-     id="path21"
-     sodipodi:nodetypes="cc" />
-  <path
-     d="m 422.07257,360.86787 18.93617,65.24822"
-     stroke="#6b5ca5"
-     stroke-width="3"
-     id="path21-3"
-     sodipodi:nodetypes="cc" />
-  <text
-     x="502"
-     y="94"
-     font-family="Arial, sans-serif"
-     font-size="12px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text22">Adaptiv</text>
-  <!-- Balance of Integration & Diversity -->
-  <circle
-     cx="140"
-     cy="200"
-     r="54"
-     fill="#6B5CA5"
-     id="circle23" />
-  <path
-     d="M185 225 L340 280"
-     stroke="#6B5CA5"
-     stroke-width="3"
-     id="path23" />
-  <text
-     x="140"
-     y="186"
-     font-family="Arial, sans-serif"
-     font-size="11px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text24">Balans mellan</text>
-  <text
-     x="140"
-     y="206"
-     font-family="Arial, sans-serif"
-     font-size="11px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text25">integration</text>
-  <text
-     x="140"
-     y="226"
-     font-family="Arial, sans-serif"
-     font-size="11px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text26">och mångfald</text>
-  <circle
-     cx="454.10638"
-     cy="474.85107"
-     r="54"
-     fill="#6b5ca5"
-     id="circle23-3" />
-  <text
-     x="454.10638"
-     y="460.85107"
-     font-family="Arial, sans-serif"
-     font-size="11px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text24-6">Gemensamma/</text>
-  <text
-     x="454.10638"
-     y="480.85107"
-     font-family="Arial, sans-serif"
-     font-size="11px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text25-7">delade</text>
-  <text
-     x="454.10638"
-     y="500.85107"
-     font-family="Arial, sans-serif"
-     font-size="11px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text26-5">värderingar</text>
-  <!-- Cosmic Ethics -->
-  <circle
-     cx="140"
-     cy="400"
-     r="54"
-     fill="#6B5CA5"
+     cx="450"
+     cy="210"
+     r="24"
+     fill="url(#greenGradient)"
+     class="principle-node"
      id="circle26" />
-  <path
-     d="M 183.58156,381.38298 340,320"
-     stroke="#6b5ca5"
-     stroke-width="3"
-     id="path26"
-     sodipodi:nodetypes="cc" />
   <text
-     x="140"
-     y="390"
-     font-family="Arial, sans-serif"
+     x="450"
+     y="216"
+     font-family="system-ui, -apple-system, sans-serif"
+     font-size="14"
+     text-anchor="middle"
+     fill="#2D5F2D"
+     font-weight="500"
+     class="principle-text"
+     id="text26">
+      🏛️
+    </text>
+  <text
+     x="450"
+     y="165"
+     font-family="system-ui, -apple-system, sans-serif"
      font-size="12"
      text-anchor="middle"
-     fill="white"
-     font-weight="bold"
-     id="text27">Kosmisk</text>
-  <text
-     x="140"
-     y="410"
-     font-family="Arial, sans-serif"
-     font-size="12px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text28">etik</text>
-  <!-- Legend -->
-  <rect
-     x="620"
-     y="480"
-     width="20"
-     height="20"
      fill="#2D5F2D"
-     id="rect28" />
-  <text
-     x="650"
-     y="495"
-     font-family="Arial, sans-serif"
-     font-size="13"
-     text-anchor="start"
-     id="text29">Styrningsstruktur</text>
-  <rect
-     x="620"
-     y="510"
-     width="20"
-     height="20"
-     fill="#654321"
-     id="rect29" />
-  <text
-     x="650"
-     y="525"
-     font-family="Arial, sans-serif"
-     font-size="13"
-     text-anchor="start"
-     id="text30">Rättigheter &amp; miljö</text>
-  <rect
-     x="620"
-     y="540"
-     width="20"
-     height="20"
-     fill="#DAA520"
-     id="rect30" />
-  <text
-     x="650"
-     y="555"
-     font-family="Arial, sans-serif"
-     font-size="13"
-     text-anchor="start"
-     id="text31">Resurser &amp; konflikt</text>
-  <rect
-     x="620"
-     y="570"
-     width="20"
-     height="20"
-     fill="#6B5CA5"
-     id="rect31" />
-  <text
-     x="650"
-     y="585"
-     font-family="Arial, sans-serif"
-     font-size="13"
-     text-anchor="start"
-     id="text32">Evolution &amp; integration</text>
-  <!-- Small interconnection lines between principles -->
+     font-weight="500"
+     class="principle-text"
+     id="text27">
+      Decentraliserad Auktoritet
+    </text>
+</g>
+<!-- Radical Transparency -->
+<circle
+   cx="560"
+   cy="265"
+   r="24"
+   fill="url(#greenGradient)"
+   class="principle-node"
+   id="circle27"
+   style="fill:url(#linearGradient63)" />
+<text
+   x="560"
+   y="271"
+   font-family="system-ui, '-apple-system', sans-serif"
+   font-size="14px"
+   text-anchor="middle"
+   fill="#2d5f2d"
+   font-weight="500"
+   class="principle-text"
+   id="text28">🔍</text>
+<text
+   x="593.38062"
+   y="268.85342"
+   font-family="system-ui, '-apple-system', sans-serif"
+   font-size="12px"
+   text-anchor="start"
+   fill="#2d5f2d"
+   font-weight="500"
+   class="principle-text"
+   id="text29">Radikal Transparens</text>
+<!-- Direct Participation -->
+<circle
+   cx="560"
+   cy="435"
+   r="24"
+   fill="url(#greenGradient)"
+   class="principle-node"
+   id="circle29"
+   style="fill:url(#linearGradient4)" />
+<text
+   x="560"
+   y="441"
+   font-family="system-ui, '-apple-system', sans-serif"
+   font-size="14px"
+   text-anchor="middle"
+   fill="#2d5f2d"
+   font-weight="500"
+   class="principle-text"
+   id="text30">🗳️</text>
+<text
+   x="600"
+   y="439"
+   font-family="system-ui, '-apple-system', sans-serif"
+   font-size="12px"
+   text-anchor="start"
+   fill="#2d5f2d"
+   font-weight="500"
+   class="principle-text"
+   id="text31">Direkt Deltagande</text>
+<!-- MIDDLE RING: Rights & Environment (Brown) -->
+<!-- Universal Human Rights -->
+<circle
+   cx="230"
+   cy="350"
+   r="24"
+   fill="url(#brownGradient)"
+   class="principle-node"
+   id="circle31"
+   style="fill:url(#linearGradient64)" />
+<text
+   x="230"
+   y="356"
+   font-family="system-ui, '-apple-system', sans-serif"
+   font-size="14px"
+   text-anchor="middle"
+   fill="#654321"
+   font-weight="500"
+   class="principle-text"
+   id="text32">⚖️</text>
+<text
+   x="184"
+   y="318"
+   font-family="system-ui, '-apple-system', sans-serif"
+   font-size="12px"
+   text-anchor="start"
+   fill="#654321"
+   font-weight="500"
+   class="principle-text"
+   id="text33">Universella Mänskliga Rättigheter</text>
+<!-- Environmental Stewardship -->
+<g
+   class="principle-group"
+   id="g35">
   <circle
-     cx="400"
-     cy="300"
-     r="70"
+     cx="340"
+     cy="485"
+     r="24"
+     fill="url(#brownGradient)"
+     class="principle-node"
+     id="circle33" />
+  <text
+     x="340"
+     y="491"
+     font-family="system-ui, -apple-system, sans-serif"
+     font-size="14"
+     text-anchor="middle"
+     fill="#654321"
+     font-weight="500"
+     class="principle-text"
+     id="text34">
+      🌱
+    </text>
+  <text
+     x="340"
+     y="535"
+     font-family="system-ui, -apple-system, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     fill="#654321"
+     font-weight="500"
+     class="principle-text"
+     id="text35">
+      Miljöförvaltarskap
+    </text>
+</g>
+<!-- Cultural Autonomy -->
+<circle
+   cx="340"
+   cy="215"
+   r="24"
+   fill="url(#brownGradient)"
+   class="principle-node"
+   id="circle35"
+   style="fill:url(#linearGradient62)" />
+<text
+   x="340"
+   y="221"
+   font-family="system-ui, '-apple-system', sans-serif"
+   font-size="14px"
+   text-anchor="middle"
+   fill="#654321"
+   font-weight="500"
+   class="principle-text"
+   id="text36">🎭</text>
+<text
+   x="340"
+   y="181"
+   font-family="system-ui, '-apple-system', sans-serif"
+   font-size="12px"
+   text-anchor="middle"
+   fill="#654321"
+   font-weight="500"
+   class="principle-text"
+   id="text37">Kulturell Autonomi</text>
+<!-- MIDDLE RING: Resource & Conflict (Gold) -->
+<!-- Ethical Technology Governance -->
+<circle
+   cx="670"
+   cy="350"
+   r="24"
+   fill="url(#goldGradient)"
+   class="principle-node"
+   id="circle37"
+   style="fill:url(#linearGradient1)" />
+<text
+   x="670"
+   y="356"
+   font-family="system-ui, '-apple-system', sans-serif"
+   font-size="14px"
+   text-anchor="middle"
+   fill="#daa520"
+   font-weight="500"
+   class="principle-text"
+   id="text38">💻</text>
+<text
+   x="698.69977"
+   y="324.89362"
+   font-family="system-ui, '-apple-system', sans-serif"
+   font-size="12px"
+   text-anchor="start"
+   fill="#daa520"
+   font-weight="500"
+   class="principle-text"
+   id="text39">Etisk Teknikstyrning</text>
+<text
+   x="750"
+   y="325"
+   font-family="system-ui, '-apple-system', sans-serif"
+   font-size="12px"
+   text-anchor="start"
+   fill="#daa520"
+   font-weight="500"
+   class="principle-text"
+   id="text40" />
+<!-- Resource Justice -->
+<circle
+   cx="560"
+   cy="215"
+   r="24"
+   fill="url(#goldGradient)"
+   class="principle-node"
+   id="circle40"
+   style="fill:url(#linearGradient61)" />
+<text
+   x="560"
+   y="221"
+   font-family="system-ui, '-apple-system', sans-serif"
+   font-size="14px"
+   text-anchor="middle"
+   fill="#daa520"
+   font-weight="500"
+   class="principle-text"
+   id="text41">💎</text>
+<text
+   x="520.91254"
+   y="182.79196"
+   font-family="system-ui, '-apple-system', sans-serif"
+   font-size="12px"
+   text-anchor="start"
+   fill="#daa520"
+   font-weight="500"
+   class="principle-text"
+   id="text42">Resursrättvisa</text>
+<!-- Peaceful Conflict Resolution -->
+<circle
+   cx="560"
+   cy="485"
+   r="24"
+   fill="url(#goldGradient)"
+   class="principle-node"
+   id="circle42"
+   style="fill:url(#linearGradient3)" />
+<text
+   x="560"
+   y="491"
+   font-family="system-ui, '-apple-system', sans-serif"
+   font-size="14px"
+   text-anchor="middle"
+   fill="#daa520"
+   font-weight="500"
+   class="principle-text"
+   id="text43">🕊️</text>
+<text
+   x="578"
+   y="525"
+   font-family="system-ui, '-apple-system', sans-serif"
+   font-size="12px"
+   text-anchor="start"
+   fill="#daa520"
+   font-weight="500"
+   class="principle-text"
+   id="text44">Fredlig Konfliktlösning</text>
+<text
+   x="600"
+   y="540"
+   font-family="system-ui, '-apple-system', sans-serif"
+   font-size="12px"
+   text-anchor="start"
+   fill="#daa520"
+   font-weight="500"
+   class="principle-text"
+   id="text45" />
+<!-- OUTER RING: Evolution & Integration (Purple) -->
+<!-- Balance of Integration & Diversity -->
+<circle
+   cx="150"
+   cy="350"
+   r="24"
+   fill="url(#purpleGradient)"
+   class="principle-node"
+   id="circle45"
+   style="fill:url(#linearGradient2)" />
+<text
+   x="150"
+   y="356"
+   font-family="system-ui, '-apple-system', sans-serif"
+   font-size="14px"
+   text-anchor="middle"
+   fill="#6b5ca5"
+   font-weight="500"
+   class="principle-text"
+   id="text46">⚖️</text>
+<text
+   x="30"
+   y="311"
+   font-family="system-ui, '-apple-system', sans-serif"
+   font-size="12px"
+   text-anchor="start"
+   fill="#6b5ca5"
+   font-weight="500"
+   class="principle-text"
+   id="text47">Balans mellan Integration</text>
+<text
+   x="30"
+   y="326"
+   font-family="system-ui, '-apple-system', sans-serif"
+   font-size="12px"
+   text-anchor="start"
+   fill="#6b5ca5"
+   font-weight="500"
+   class="principle-text"
+   id="text48">Mångfald</text>
+<!-- Adaptive Evolution -->
+<g
+   class="principle-group"
+   id="g50">
+  <circle
+     cx="240"
+     cy="150"
+     r="24"
+     fill="url(#purpleGradient)"
+     class="principle-node"
+     id="circle48" />
+  <text
+     x="240"
+     y="156"
+     font-family="system-ui, -apple-system, sans-serif"
+     font-size="14"
+     text-anchor="middle"
+     fill="#6B5CA5"
+     font-weight="500"
+     class="principle-text"
+     id="text49">
+      🧬
+    </text>
+  <text
+     x="240"
+     y="110"
+     font-family="system-ui, -apple-system, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     fill="#6B5CA5"
+     font-weight="500"
+     class="principle-text"
+     id="text50">
+      Adaptiv Evolution
+    </text>
+</g>
+<!-- Cosmic Ethics -->
+<g
+   class="principle-group"
+   id="g52">
+  <circle
+     cx="240"
+     cy="550"
+     r="24"
+     fill="url(#purpleGradient)"
+     class="principle-node"
+     id="circle50" />
+  <text
+     x="240"
+     y="556"
+     font-family="system-ui, -apple-system, sans-serif"
+     font-size="14"
+     text-anchor="middle"
+     fill="#6B5CA5"
+     font-weight="500"
+     class="principle-text"
+     id="text51">
+      🌌
+    </text>
+  <text
+     x="240"
+     y="590"
+     font-family="system-ui, -apple-system, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     fill="#6B5CA5"
+     font-weight="500"
+     class="principle-text"
+     id="text52">
+      Kosmisk Etik
+    </text>
+</g>
+<!-- Resilience and Anti-Fragility -->
+<g
+   class="principle-group"
+   id="g55">
+  <circle
+     cx="660"
+     cy="150"
+     r="24"
+     fill="url(#purpleGradient)"
+     class="principle-node"
+     id="circle52" />
+  <text
+     x="660"
+     y="156"
+     font-family="system-ui, -apple-system, sans-serif"
+     font-size="14"
+     text-anchor="middle"
+     fill="#6B5CA5"
+     font-weight="500"
+     class="principle-text"
+     id="text53">
+      🛡️
+    </text>
+  <text
+     x="660"
+     y="105"
+     font-family="system-ui, -apple-system, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     fill="#6B5CA5"
+     font-weight="500"
+     class="principle-text"
+     id="text54">
+      Motståndskraft och
+    </text>
+  <text
+     x="660"
+     y="120"
+     font-family="system-ui, -apple-system, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     fill="#6B5CA5"
+     font-weight="500"
+     class="principle-text"
+     id="text55">
+      Anti-Bräcklighet
+    </text>
+</g>
+<!-- Updated Legend -->
+<g
+   class="legend"
+   transform="translate(50, 600)"
+   id="g61">
+  <text
+     x="0"
+     y="0"
+     font-family="system-ui, -apple-system, sans-serif"
+     font-size="16"
+     font-weight="600"
      fill="#2B4B8C"
-     id="circle1" />
-  <text
-     x="400"
-     y="288"
-     font-family="Arial, sans-serif"
-     font-size="15px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text1">Globala</text>
-  <text
-     x="400"
-     y="308"
-     font-family="Arial, sans-serif"
-     font-size="15px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text2">styrnings-</text>
-  <text
-     x="400"
-     y="328"
-     font-family="Arial, sans-serif"
-     font-size="15px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text3">ramverk</text>
-  <!-- Title -->
-  <text
-     x="400"
-     y="30"
-     font-family="Arial, sans-serif"
-     font-size="22"
-     text-anchor="middle"
-     fill="#2B4B8C"
-     font-weight="bold"
-     id="text35">Samband mellan kärnprinciper</text>
-  <text
-     x="502"
-     y="114"
-     font-family="Arial, sans-serif"
-     font-size="12px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text23">evolution</text>
-  <text
-     x="220"
-     y="440"
-     font-family="Arial, sans-serif"
-     font-size="12px"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="bold"
-     id="text15">autonomi</text>
+     id="text56">
+      Principkategorier:
+    </text>
+  <g
+     transform="translate(0, 25)"
+     id="g57">
+    <circle
+       cx="10"
+       cy="0"
+       r="8"
+       fill="url(#greenGradient)"
+       id="circle56" />
+    <text
+       x="25"
+       y="5"
+       font-family="system-ui, -apple-system, sans-serif"
+       font-size="13"
+       fill="#2D5F2D"
+       font-weight="500"
+       id="text57">
+        Styrningsstruktur
+      </text>
+  </g>
+  <g
+     transform="translate(200, 25)"
+     id="g58">
+    <circle
+       cx="10"
+       cy="0"
+       r="8"
+       fill="url(#brownGradient)"
+       id="circle57" />
+    <text
+       x="25"
+       y="5"
+       font-family="system-ui, -apple-system, sans-serif"
+       font-size="13"
+       fill="#654321"
+       font-weight="500"
+       id="text58">
+        Rättigheter  Miljö
+      </text>
+  </g>
+  <g
+     transform="translate(400, 25)"
+     id="g59">
+    <circle
+       cx="10"
+       cy="0"
+       r="8"
+       fill="url(#goldGradient)"
+       id="circle58" />
+    <text
+       x="25"
+       y="5"
+       font-family="system-ui, -apple-system, sans-serif"
+       font-size="13"
+       fill="#DAA520"
+       font-weight="500"
+       id="text59">
+        Resurser  Konflikter
+      </text>
+  </g>
+  <g
+     transform="translate(600, 25)"
+     id="g60">
+    <circle
+       cx="10"
+       cy="0"
+       r="8"
+       fill="url(#purpleGradient)"
+       id="circle59" />
+    <text
+       x="25"
+       y="5"
+       font-family="system-ui, -apple-system, sans-serif"
+       font-size="13"
+       fill="#6B5CA5"
+       font-weight="500"
+       id="text60">
+        Evolution  Integration
+      </text>
+  </g>
+</g>
 </svg>

@@ -1,18 +1,7 @@
-// src/lib/stores/frameworkNav.js
-import { writable } from 'svelte/store';
-
-// Helper function to convert kebab-case slug to camelCase translation key
-function slugToTitleKey(slug) {
-  return slug
-    .split('-')
-    .map((word, index) => 
-      index === 0 ? word : word.charAt(0).toUpperCase() + word.slice(1)
-    )
-    .join('');
-}
+// src/lib/data/cleanFrameworkData.js
+// CLEAN: No imports, no stores, no reactive dependencies
 
 // Master list of all frameworks - SINGLE SOURCE OF TRUTH
-// Using the new consistent i18n key structure with emojis and thematic groups
 export const allFrameworks = [
   // Tier 0: Global Institutional Reform
   {
@@ -313,7 +302,7 @@ export const allFrameworks = [
     path: '/frameworks/disability-rights-and-inclusion'
   },
 
-  // Tier 3: Equity, Culture & Future Generations (keeping these ungrouped for now as there are fewer)
+  // Tier 3: Equity, Culture & Future Generations
   {
     slug: 'digital-commons',
     titleKey: 'framework.docs.nav.frameworkTitles.digitalCommons',
@@ -387,7 +376,7 @@ export const allFrameworks = [
     path: '/frameworks/aging-population-support-governance'
   },
 
-  // Tier 4: Visionary Governance (keeping these ungrouped for now as there are fewer)
+  // Tier 4: Visionary Governance
   {
     slug: 'meta-governance',
     titleKey: 'framework.docs.nav.frameworkTitles.integratedMetaGovernance',
@@ -468,7 +457,7 @@ export const groupMetadata = {
   }
 };
 
-// Tier metadata using the new consistent i18n structure with emojis
+// Tier metadata
 export const tierMetadata = {
   0: {
     titleKey: 'framework.tier.0.title',
@@ -497,7 +486,7 @@ export const tierMetadata = {
   }
 };
 
-// Status mapping using the existing status system
+// Status mapping
 export const statusMapping = {
   'ready': 'framework.status.ready.label',
   'review': 'framework.status.review.label', 
@@ -505,7 +494,7 @@ export const statusMapping = {
   'coming-soon': 'framework.labels.comingSoon'
 };
 
-// Helper functions
+// CLEAN: Helper functions without any reactive dependencies
 export function getFrameworksByTier(tier) {
   return allFrameworks.filter(framework => framework.tier === tier);
 }
@@ -515,7 +504,7 @@ export function getFrameworksByTierAndGroup(tier, group = null) {
   if (group) {
     return tierFrameworks.filter(framework => framework.group === group);
   }
-  return tierFrameworks.filter(framework => !framework.group); // Ungrouped frameworks
+  return tierFrameworks.filter(framework => !framework.group);
 }
 
 export function getGroupsForTier(tier) {
@@ -530,90 +519,4 @@ export function getFrameworkBySlug(slug) {
 
 export function getAllTiers() {
   return [...new Set(allFrameworks.map(f => f.tier))].sort();
-}
-
-// Function to dynamically generate titleKey from slug (useful for validation)
-export function generateTitleKeyFromSlug(slug) {
-  const camelCase = slugToTitleKey(slug);
-  return `framework.docs.nav.frameworkTitles.${camelCase}`;
-}
-
-// Build navigation structure from the master list (for backwards compatibility)
-function buildNavStructure(frameworks) {
-  const tiers = getAllTiers();
-  const navStructure = [
-    { titleKey: 'framework.docs.nav.overview', path: '/frameworks' },
-    { titleKey: 'framework.docs.nav.documentation', path: '/frameworks/docs' },
-    { titleKey: 'framework.docs.nav.principles', path: '/frameworks/docs/principles' },
-    {
-      titleKey: 'framework.docs.nav.implementation',
-      path: '/frameworks',
-      status: 'ready',
-      subItems: tiers.map(tier => ({
-        titleKey: tierMetadata[tier].titleKey,
-        path: `/frameworks/tier-${tier}`,
-        subItems: getFrameworksByTier(tier).map(framework => ({
-          titleKey: framework.titleKey,
-          path: framework.path,
-          status: framework.status,
-          version: framework.version,
-          emoji: framework.emoji
-        }))
-      }))
-    },
-    { titleKey: 'framework.docs.nav.regionalHubs', path: '/frameworks/hubs' },
-    { titleKey: 'framework.docs.nav.implementationTools', path: '/frameworks/tools' },
-    { titleKey: 'framework.docs.nav.visualizations', path: '/frameworks/visuals' },
-    { titleKey: 'framework.docs.nav.downloads', path: '/downloads' },
-    { titleKey: 'framework.docs.nav.caseStudies', path: '/frameworks/docs/case-studies' },
-    { titleKey: 'framework.docs.nav.aiFutures', path: '/frameworks/ai-futures' },
-    { titleKey: 'framework.docs.nav.resources', path: '/frameworks/docs/resources' },
-    { titleKey: 'framework.docs.nav.glossary', path: '/frameworks/docs/glossary' },
-  ];
-
-  return navStructure;
-}
-
-// Create a writable store with the built navigation structure
-export const frameworkNav = writable(buildNavStructure(allFrameworks));
-
-// Existing update functions (maintained for backwards compatibility)
-export function updateNavItem(titleKey, newData) {
-  frameworkNav.update(nav => {
-    return nav.map(item => {
-      if (item.titleKey === titleKey) {
-        return { ...item, ...newData };
-      }
-      return item;
-    });
-  });
-}
-
-export function updateFrameworkVersion(path, version) {
-  // Update in master list
-  const frameworkIndex = allFrameworks.findIndex(f => f.path === path);
-  if (frameworkIndex !== -1) {
-    allFrameworks[frameworkIndex].version = version;
-  }
-  
-  // Update in nav store
-  frameworkNav.update(nav => {
-    return updateItemVersion(nav, path, version);
-  });
-}
-
-// Recursive function to find and update version in nested structure
-function updateItemVersion(items, targetPath, version) {
-  return items.map(item => {
-    if (item.path === targetPath) {
-      return { ...item, version };
-    }
-    if (item.subItems) {
-      return {
-        ...item,
-        subItems: updateItemVersion(item.subItems, targetPath, version)
-      };
-    }
-    return item;
-  });
 }

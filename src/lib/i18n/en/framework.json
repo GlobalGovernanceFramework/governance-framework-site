@@ -1,4 +1,79 @@
 {
+  "page": {
+    "title": "Frameworks",
+    "description": "Explore the comprehensive ecosystem of governance frameworks for planetary transformation"
+  },
+  "blueprintBridge": {
+    "title": "From Blueprint to Implementation",
+    "intro": "Remember the three foundational pillars from our blueprint? Here's how they come to life through our comprehensive framework ecosystem:",
+    "pillars": {
+      "hardware": {
+        "title": "The Hardware",
+        "framework": "Treaty for Our Only Home"
+      },
+      "heart": {
+        "title": "The Heart", 
+        "framework": "Indigenous Governance & Traditional Knowledge"
+      },
+      "nervousSystem": {
+        "title": "The Nervous System",
+        "framework": "Integrated Meta-Governance"
+      }
+    },
+    "transition": "These three pillars provide the foundational architecture. Now, let's explore how this vision translates into specific, actionable frameworks across every domain of planetary stewardship."
+  },
+  "implementation": {
+    "title": "The Tiered Implementation Roadmap",
+    "intro": "Built upon the three-pillar foundation, our frameworks are organized into five implementation tiers—from addressing immediate crises to enabling long-term flourishing. Each tier builds upon the previous, creating a clear pathway for systematic transformation.",
+    "roadmap": {
+      "title": "Strategic Implementation Sequence",
+      "description": "The frameworks are organized into five tiers representing a logical progression from addressing immediate crises to enabling long-term flourishing. This structure provides a clear implementation roadmap where foundational reforms create the stability needed for more advanced governance innovations.",
+      "tierLabel": "Tier",
+      "tiers": {
+        "tier0": "Global Institutional Reform",
+        "tier1": "Urgent Global Stability & Justice", 
+        "tier2": "Systems for Long-Term Thriving",
+        "tier3": "Equity, Culture & Future Generations",
+        "tier4": "Visionary & Meta Governance"
+      }
+    },
+    "groups": {
+      "title": "Framework Groups by Domain",
+      "intro": "Within each tier, frameworks are organized into thematic groups that address related challenges and opportunities:"
+    },
+    "directory": {
+      "title": "Complete Framework Directory",
+      "intro": "Explore all frameworks organized by tier and thematic group. Click on any framework to dive into its detailed documentation and implementation guidance."
+    },
+    "gettingStarted": {
+      "title": "Ready to Begin Implementation?",
+      "description": "Our comprehensive guides provide step-by-step approaches, decision allocation tools, and real-world case studies to help you implement these frameworks in your context.",
+      "implementationButton": "Implementation Guidelines",
+      "caseStudiesButton": "View Case Studies"
+    }
+  },
+  "documentation": {
+    "title": "Essential Documentation & Resources",
+    "intro": "Access comprehensive guides, tools, and resources to understand and implement the Global Governance Frameworks.",
+    "cards": {
+      "principles": {
+        "title": "Core Principles",
+        "description": "The foundational principles that guide all framework development and implementation"
+      },
+      "implementation": {
+        "title": "Implementation Guide",
+        "description": "Step-by-step guidance for implementing frameworks in real-world contexts"
+      },
+      "tools": {
+        "title": "Tools & Resources",
+        "description": "Practical tools, templates, and resources for framework deployment"
+      },
+      "caseStudies": {
+        "title": "Case Studies",
+        "description": "Real-world examples and lessons learned from framework implementations"
+      }
+    }
+  },
   "hero": {
     "title": "The Frameworks",
     "subtitle": "Tools for governance interoperability and evolution"
@@ -207,6 +282,7 @@
   "docs": {
     "nav": {
       "overview": "Overview",
+      "documentation": "Documentation",
       "principles": "Core Principles",
       "globalCitizenship": "Global Citizenship",
       "implementation": "Implementation",

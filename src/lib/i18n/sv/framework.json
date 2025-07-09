@@ -1,4 +1,79 @@
 {
+  "page": {
+    "title": "Ramverk",
+    "description": "Utforska det omfattande ekosystemet av styrningsramverk för planetär transformation"
+  },
+  "blueprintBridge": {
+    "title": "Från ritning till implementering",
+    "intro": "Minns du de tre grundläggande pelarna från vår ritning? Så här får de liv genom vårt omfattande ramverks-ekosystem:",
+    "pillars": {
+      "hardware": {
+        "title": "Hårdvaran",
+        "framework": "Fördraget för vårt enda hem"
+      },
+      "heart": {
+        "title": "Hjärtat",
+        "framework": "Ursprungsfolks och traditionell kunskapsstyrning"
+      },
+      "nervousSystem": {
+        "title": "Nervsystemet", 
+        "framework": "Integrerad meta-styrning"
+      }
+    },
+    "transition": "Dessa tre pelare utgör den grundläggande arkitekturen. Nu ska vi utforska hur denna vision översätts till specifika, handlingskraftiga ramverk inom alla områden av planetärt förvaltarskap."
+  },
+  "implementation": {
+    "title": "Den stegvisa implementeringsfärdplanen",
+    "intro": "Byggda på den tre-pelargrunden är våra ramverk organiserade i fem implementeringsnivåer—från att hantera omedelbara kriser till att möjliggöra långsiktigt välstånd. Varje nivå bygger på den föregående och skapar en tydlig väg för systematisk transformation.",
+    "roadmap": {
+      "title": "Strategisk implementeringssekvens", 
+      "description": "Ramverken är organiserade i fem nivåer som representerar en logisk progression från att hantera omedelbara kriser till att möjliggöra långsiktigt välmående. Denna struktur tillhandahåller en tydlig implementeringsfärdplan där grundläggande reformer skapar den stabilitet som behövs för mer avancerade styrningsinnovationer.",
+      "tierLabel": "Nivå",
+      "tiers": {
+        "tier0": "Global institutionell reform",
+        "tier1": "Akut global stabilitet och rättvisa",
+        "tier2": "System för långsiktigt välmående", 
+        "tier3": "Jämlikhet, kultur och framtida generationer",
+        "tier4": "Visionär och meta-styrning"
+      }
+    },
+    "groups": {
+      "title": "Ramverksgrupper per domän",
+      "intro": "Inom varje nivå är ramverken organiserade i tematiska grupper som hanterar relaterade utmaningar och möjligheter:"
+    },
+    "directory": {
+      "title": "Komplett ramverkskatalog",
+      "intro": "Utforska alla ramverk organiserade efter nivå och tematisk grupp. Klicka på vilket ramverk som helst för att fördjupa dig i dess detaljerade dokumentation och implementeringsvägledning."
+    },
+    "gettingStarted": {
+      "title": "Redo att börja implementera?",
+      "description": "Våra omfattande guider tillhandahåller steg-för-steg-metoder, verktyg för beslutsallokering och verkliga fallstudier för att hjälpa dig implementera dessa ramverk i ditt sammanhang.",
+      "implementationButton": "Implementeringsriktlinjer", 
+      "caseStudiesButton": "Visa fallstudier"
+    }
+  },
+  "documentation": {
+    "title": "Väsentlig dokumentation och resurser",
+    "intro": "Få tillgång till omfattande guider, verktyg och resurser för att förstå och implementera ramverken för global styrning.",
+    "cards": {
+      "principles": {
+        "title": "Kärnprinciper",
+        "description": "De grundläggande principerna som vägleder all ramverksutveckling och implementering"
+      },
+      "implementation": {
+        "title": "Implementeringsguide", 
+        "description": "Steg-för-steg-vägledning för att implementera ramverk i verkliga sammanhang"
+      },
+      "tools": {
+        "title": "Verktyg och resurser",
+        "description": "Praktiska verktyg, mallar och resurser för ramverksutplacering"
+      },
+      "caseStudies": {
+        "title": "Fallstudier",
+        "description": "Verkliga exempel och lärdomar från ramverksimplementeringar"
+      }
+    }
+  },
   "hero": {
     "title": "Ramverken",
     "subtitle": "Verktyg för interoperabilitet och utveckling inom styrning"
@@ -207,6 +282,7 @@
   "docs": {
     "nav": {
       "overview": "Översikt",
+      "documentation": "Dokumentation",
       "principles": "Kärnprinciper",
       "globalCitizenship": "Globalt medborgarskap",
       "implementation": "Implementering",
