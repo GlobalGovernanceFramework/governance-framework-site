@@ -7,7 +7,7 @@
     tierMetadata, 
     statusMapping, 
     groupMetadata 
-  } from '$lib/data/cleanFrameworkData.js';
+  } from '$lib/stores/frameworkNav.js';
   import { onMount } from 'svelte';
   
   export let tier;
