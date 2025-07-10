@@ -1,0 +1,326 @@
+#!/usr/bin/env node
+
+// scripts/generate-nav.js
+// THIS SCRIPT GENERATES frameworkNav.js FROM THE ACTUAL GGF MASTER SCHEMA
+
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+// ES modules compatibility
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Import from TypeScript files directly (tsx handles the compilation)
+async function loadSchemaData() {
+  try {
+    // Use relative import path for TypeScript file
+    const schemaModule = await import('../src/lib/data/schema/_index.ts');
+    
+    // Extract the data we need
+    const {
+      allEntities,
+      tierMetadata,
+      groupMetadata,
+      getFrameworksWithUI
+    } = schemaModule;
+
+    if (!allEntities || !tierMetadata || !groupMetadata) {
+      throw new Error('Missing required exports from schema. Check that _index.ts exports allEntities, tierMetadata, and groupMetadata');
+    }
+
+    return {
+      allEntities,
+      tierMetadata,
+      groupMetadata,
+      getFrameworksWithUI: getFrameworksWithUI || ((entities) => 
+        entities.filter(entity => entity.type === 'Framework' && entity.ui)
+      )
+    };
+
+  } catch (error) {
+    console.error('❌ Error loading schema data:', error);
+    console.log('');
+    console.log('💡 Possible solutions:');
+    console.log('   1. Ensure schema files exist in /src/lib/data/schema/');
+    console.log('   2. Make sure you have tsx installed: npm install --save-dev tsx');
+    console.log('   3. Check that _index.ts has the required exports');
+    console.log('   4. Verify all cluster files are properly created');
+    throw error;
+  }
+}
+
+// Helper functions to process schema data
+function getFrameworksByTier(frameworks, tier) {
+  return frameworks.filter(framework => framework.tier === tier);
+}
+
+function getAllTiers(frameworks) {
+  return [...new Set(frameworks.map(f => f.tier))].sort();
+}
+
+// Build the navigation structure
+function buildNavStructure(schemaData) {
+  const frameworks = schemaData.getFrameworksWithUI(schemaData.allEntities);
+  
+  // Convert schema entities to frameworkNav format
+  const allFrameworks = frameworks.map(entity => ({
+    slug: entity.ui.slug,
+    titleKey: entity.ui.titleKey,
+    emoji: entity.ui.emoji,
+    tier: entity.tier,
+    status: entity.status.toLowerCase().replace(/[^a-z0-9]/gi, '-'), // Convert to kebab-case
+    version: entity.ui.version,
+    path: entity.ui.path,
+    group: entity.ui.group
+  }));
+
+  const tiers = getAllTiers(frameworks);
+  
+  // Create tier metadata with translation keys
+  const processedTierMetadata = {};
+  Object.keys(schemaData.tierMetadata).forEach(tier => {
+    processedTierMetadata[tier] = {
+      ...schemaData.tierMetadata[tier],
+      titleKey: `framework.tier.${tier}.title`
+    };
+  });
+  
+  const navStructure = [
+    { titleKey: 'framework.docs.nav.overview', path: '/frameworks' },
+    { titleKey: 'framework.docs.nav.documentation', path: '/frameworks/docs' },
+    { titleKey: 'framework.docs.nav.principles', path: '/frameworks/docs/principles' },
+    {
+      titleKey: 'framework.docs.nav.implementation',
+      path: '/frameworks',
+      status: 'ready',
+      subItems: tiers.map(tier => ({
+        titleKey: `framework.tier.${tier}.title`, // ADD MISSING TIER TRANSLATION KEY
+        path: `/frameworks/tier-${tier}`,
+        subItems: getFrameworksByTier(frameworks, tier).map(framework => ({
+          titleKey: framework.ui.titleKey,
+          path: framework.ui.path,
+          status: framework.status.toLowerCase().replace(/[^a-z0-9]/gi, '-'),
+          version: framework.ui.version,
+          emoji: framework.ui.emoji
+        }))
+      }))
+    },
+    { titleKey: 'framework.docs.nav.regionalHubs', path: '/frameworks/hubs' },
+    { titleKey: 'framework.docs.nav.implementationTools', path: '/frameworks/tools' },
+    { titleKey: 'framework.docs.nav.visualizations', path: '/frameworks/visuals' },
+    { titleKey: 'framework.docs.nav.downloads', path: '/downloads' },
+    { titleKey: 'framework.docs.nav.caseStudies', path: '/frameworks/docs/case-studies' },
+    { titleKey: 'framework.docs.nav.aiFutures', path: '/frameworks/ai-futures' },
+    { titleKey: 'framework.docs.nav.resources', path: '/frameworks/docs/resources' },
+    { titleKey: 'framework.docs.nav.glossary', path: '/frameworks/docs/glossary' }
+  ];
+
+  return {
+    allFrameworks,
+    groupMetadata: schemaData.groupMetadata,
+    tierMetadata: processedTierMetadata, // Use processed tier metadata with titleKey
+    statusMapping: {
+      'ready': 'framework.status.ready.label',
+      'review': 'framework.status.review.label',
+      'planned': 'framework.labels.planned',
+      'coming-soon': 'framework.labels.comingSoon'
+    },
+    navStructure
+  };
+}
+
+// Generate the frameworkNav.js file content
+function generateNavFileContent(data) {
+  const timestamp = new Date().toISOString();
+  
+  return `// THIS FILE IS AUTOMATICALLY GENERATED FROM THE GGF SCHEMA
+// Generated on: ${timestamp}
+// Source: /src/lib/data/schema/_index.ts
+// Generator: scripts/generate-nav.js
+//
+// DO NOT EDIT THIS FILE MANUALLY - IT WILL BE OVERWRITTEN
+// To modify framework data, edit the schema files in /src/lib/data/schema/
+
+import { writable } from 'svelte/store';
+
+// Helper function to convert kebab-case slug to camelCase translation key
+function slugToTitleKey(slug) {
+  return slug
+    .split('-')
+    .map((word, index) => 
+      index === 0 ? word : word.charAt(0).toUpperCase() + word.slice(1)
+    )
+    .join('');
+}
+
+// Master list of all frameworks - GENERATED FROM SCHEMA
+export const allFrameworks = ${JSON.stringify(data.allFrameworks, null, 2)};
+
+// Group metadata for i18n - GENERATED FROM SCHEMA
+export const groupMetadata = ${JSON.stringify(data.groupMetadata, null, 2)};
+
+// Tier metadata - GENERATED FROM SCHEMA (with translation keys)
+export const tierMetadata = ${JSON.stringify(data.tierMetadata, null, 2)};
+
+// Status mapping - GENERATED FROM SCHEMA
+export const statusMapping = ${JSON.stringify(data.statusMapping, null, 2)};
+
+// Helper functions (preserved from original)
+export function getFrameworksByTier(tier) {
+  return allFrameworks.filter(framework => framework.tier === tier);
+}
+
+export function getFrameworksByTierAndGroup(tier, group = null) {
+  const tierFrameworks = getFrameworksByTier(tier);
+  if (group) {
+    return tierFrameworks.filter(framework => framework.group === group);
+  }
+  return tierFrameworks.filter(framework => !framework.group); // Ungrouped frameworks
+}
+
+export function getGroupsForTier(tier) {
+  const tierFrameworks = getFrameworksByTier(tier);
+  const groups = [...new Set(tierFrameworks.map(f => f.group).filter(Boolean))];
+  return groups;
+}
+
+export function getFrameworkBySlug(slug) {
+  return allFrameworks.find(framework => framework.slug === slug);
+}
+
+export function getAllTiers() {
+  return [...new Set(allFrameworks.map(f => f.tier))].sort();
+}
+
+// Function to dynamically generate titleKey from slug (useful for validation)
+export function generateTitleKeyFromSlug(slug) {
+  const camelCase = slugToTitleKey(slug);
+  return \`framework.docs.nav.frameworkTitles.\${camelCase}\`;
+}
+
+// Build navigation structure from the master list (for backwards compatibility)
+function buildNavStructure(frameworks) {
+  const navStructure = ${JSON.stringify(data.navStructure, null, 2)};
+  return navStructure;
+}
+
+// Create a writable store with the built navigation structure
+export const frameworkNav = writable(buildNavStructure(allFrameworks));
+
+// Existing update functions (maintained for backwards compatibility)
+export function updateNavItem(titleKey, newData) {
+  frameworkNav.update(nav => {
+    return nav.map(item => {
+      if (item.titleKey === titleKey) {
+        return { ...item, ...newData };
+      }
+      return item;
+    });
+  });
+}
+
+export function updateFrameworkVersion(path, version) {
+  // Update in master list
+  const frameworkIndex = allFrameworks.findIndex(f => f.path === path);
+  if (frameworkIndex !== -1) {
+    allFrameworks[frameworkIndex].version = version;
+  }
+  
+  // Update in nav store
+  frameworkNav.update(nav => {
+    return updateItemVersion(nav, path, version);
+  });
+}
+
+// Recursive function to find and update version in nested structure
+function updateItemVersion(items, targetPath, version) {
+  return items.map(item => {
+    if (item.path === targetPath) {
+      return { ...item, version };
+    }
+    if (item.subItems) {
+      return {
+        ...item,
+        subItems: updateItemVersion(item.subItems, targetPath, version)
+      };
+    }
+    return item;
+  });
+}
+
+// SCHEMA INTEGRATION NOTICE:
+// This file is now generated from the GGF Master Schema.
+// The schema serves as the single source of truth for:
+// - Framework names, descriptions, and metadata
+// - Implementation tiers and dependencies  
+// - UI routing and internationalization keys
+// - Status tracking and version management
+//
+// To add a new framework:
+// 1. Add it to the appropriate cluster file in /src/lib/data/schema/
+// 2. Include ui metadata for navigation generation
+// 3. Run: npm run generate:nav
+//
+// The navigation will be automatically updated with correct dependencies,
+// tier placement, and routing information.
+`;
+}
+
+// Main execution
+async function main() {
+  try {
+    console.log('🔄 Generating frameworkNav.js from GGF Master Schema...');
+    
+    // Load the schema data FROM THE ACTUAL SCHEMA FILES
+    const schemaData = await loadSchemaData();
+    
+    // Build the navigation structure
+    const navData = buildNavStructure(schemaData);
+    
+    // Generate the file content
+    const fileContent = generateNavFileContent(navData);
+    
+    // Determine the output path
+    const outputPath = path.join(__dirname, '../src/lib/stores/frameworkNav.js');
+    
+    // Write the file
+    fs.writeFileSync(outputPath, fileContent, 'utf8');
+    
+    console.log('✅ frameworkNav.js has been successfully generated!');
+    console.log(`📍 Output: ${outputPath}`);
+    console.log('📊 Statistics:');
+    
+    const frameworks = schemaData.getFrameworksWithUI(schemaData.allEntities);
+    const tiers = getAllTiers(frameworks);
+    
+    console.log(`   - Total frameworks: ${frameworks.length}`);
+    tiers.forEach(tier => {
+      const count = getFrameworksByTier(frameworks, tier).length;
+      console.log(`   - Tier ${tier}: ${count} frameworks`);
+    });
+    
+    console.log('');
+    console.log('🎯 Single Source of Truth: /src/lib/data/schema/_index.ts');
+    console.log('⚙️  To update frameworks, edit the schema files and re-run this script.');
+    console.log('🔧 FIXED: Added missing tier translation keys (framework.tier.X.title)');
+    
+    // Check completeness against backup expectation
+    if (frameworks.length >= 40) {
+      console.log('✅ Framework count looks complete!');
+    } else {
+      console.log(`⚠️  Only ${frameworks.length} frameworks found - may be missing some from backup (expected ~42)`);
+    }
+    
+  } catch (error) {
+    console.error('❌ Error generating frameworkNav.js:', error);
+    process.exit(1);
+  }
+}
+
+// Handle both direct execution and module import
+if (import.meta.url === `file://${process.argv[1]}`) {
+  main();
+}
+
+export { main as generateNav };

@@ -3,8 +3,8 @@
   export let t;
 </script>
 
-## Tier 3: Equity, Culture & Future Generations
+## Tier 3: The Equity & Cultural Flourishing Layer
 
-This tier focuses on ensuring inclusion, preserving diverse heritages, and representing those often overlooked—such as youth, Indigenous peoples, rural communities, and future generations. These frameworks ensure that the governance model reflects the full spectrum of humanity and honors our cultural and ecological legacy.
+Once a society is stable and its core systems are healthy, this tier ensures that it is also deeply just, inclusive, and culturally vibrant. These frameworks focus on protecting the rights of specific communities (`Gender & Kinship`, `Disability Justice`, `Youth & Elders`), preserving our collective heritage, and managing our shared knowledge commons.
 
 <FrameworkTierList tier={3} showHeader={false} {t} />

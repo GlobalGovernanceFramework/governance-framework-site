@@ -106,15 +106,15 @@
   },
   "implementationFrameworks": {
     "title": "Implementation Frameworks",
-    "description": "Domain-specific frameworks organized by priority tiers, from foundational reforms to visionary governance models. Each framework provides detailed implementation guidance for its respective area.",
-    "roadmapTitle": "Tiered Implementation Roadmap",
-    "roadmapDescription": "The frameworks are organized into five tiers representing a logical progression from addressing immediate crises to enabling long-term flourishing. This structure provides a clear implementation roadmap where foundational reforms create the stability needed for more advanced governance innovations.",
+    "description": "Domain-specific frameworks organized by a strategic, five-tier implementation roadmap, from the constitutional layer to visionary governance.",
+    "roadmapTitle": "The Tiered Implementation Roadmap",
+    "roadmapDescription": "The frameworks are organized into five tiers (0-4) representing a logical dependency stack. Foundational constitutional and operating system reforms (Tiers 0-1) create the stability and functionality needed for the essential applications and deeper cultural integrations of the subsequent tiers.",
     "tiers": {
-      "tier0": "Institutional Reform",
-      "tier1": "Urgent Stability",
-      "tier2": "Long-term Systems",
+      "tier0": "The Constitutional Layer",
+      "tier1": "The Core Operating Systems",
+      "tier2": "Foundational Applications",
       "tier3": "Equity & Culture",
-      "tier4": "Visionary Governance"
+      "tier4": "Visionary & Meta-Systems"
     },
     "gettingStarted": {
       "title": "Start Your Implementation Journey",
@@ -146,24 +146,24 @@
   },
   "tier": {
     "0": {
-      "title": "Tier 0: Global Institutional Reform",
-      "description": "This foundational tier serves as the prerequisite for all others. It is the operating system upgrade for global governance, focusing on the core rules, bodies, and legal frameworks that make coordinated international action possible."
+      "title": "Tier 0: The Constitutional Layer",
+      "description": "This foundational tier serves as the absolute prerequisite for all others. It provides the legal and institutional 'hardware' for the new global system, making coordinated international action possible."
     },
     "1": {
-      "title": "Tier 1: Urgent Global Stability & Justice",
-      "description": "This tier includes the most urgent domains of global governance—areas where failure to act can lead to irreversible harm, large-scale human suffering, or systemic collapse."
+      "title": "Tier 1: The Core Operating Systems",
+      "description": "This tier contains the fundamental frameworks that serve as the 'operating systems' for a regenerative civilization, providing the essential, cross-cutting functions for governance, ethics, justice, and the economy."
     },
     "2": {
-      "title": "Tier 2: Systems for Long-Term Thriving",
-      "description": "Tier 2 domains are foundational systems that enable sustainable human flourishing over time. They include governance of technology, finance, education, urban development, and employment."
+      "title": "Tier 2: The Foundational Application Layer",
+      "description": "With the core operating systems established, this tier represents the essential 'applications' needed to run a healthy society on a thriving planet, governing systems like food, health, and ecology."
     },
     "3": {
-      "title": "Tier 3: Equity, Culture & Future Generations",
-      "description": "This tier focuses on ensuring inclusion, preserving diverse heritages, and representing those often overlooked—such as youth, Indigenous peoples, rural communities, and future generations."
+      "title": "Tier 3: The Equity & Cultural Flourishing Layer",
+      "description": "This tier ensures that a stable and healthy society is also deeply just, inclusive, and culturally vibrant. These frameworks protect the rights of specific communities and preserve our collective heritage."
     },
     "4": {
-      "title": "Tier 4: Visionary & Meta Governance",
-      "description": "The fourth tier includes forward-looking and systemic domains of governance, addressing the deeper architecture of coordination, meaning-making, and planetary stewardship."
+      "title": "Tier 4: The Visionary & Meta-Systems Layer",
+      "description": "The highest tier contains frameworks for long-term, species-level stewardship and oversight. It includes protocols for handling existential risks, governing new domains, and cultivating collective wisdom."
     },
     "noFrameworks": "No frameworks defined for this tier yet."
   },
@@ -328,18 +328,20 @@
         "laborAndEmploymentGovernance": "Labor & Employment Governance",
         "disabilityRightsAndInclusion": "Disability Rights & Inclusion",
         "digitalCommons": "Digital Commons",
+        "synopticProtocol": "Media & Epistemic Integrity",
         "culturalHeritagePreservation": "Cultural Heritage & Linguistic Diversity Preservation",
         "ruralDevelopmentGovernance": "Rural Development Governance",
         "religiousAndSpiritualDialogueGovernance": "Religious & Spiritual Dialogue",
         "youthAndIntergenerationalGovernance": "Youth & Intergenerational Governance",
         "globalCitizenshipPractice": "Global Citizenship Practice",
-        "globalEthicsAndRightsOfBeings": "Global Ethics & Rights of Beings",
+        "moralOperatingSystem": "Moral Operating System",
         "genderEqualityAndLgbtqRights": "Gender Equality & LGBTQ+ Rights",
         "agingPopulationSupportGovernance": "Aging Population Support Governance",
         "spaceGovernance": "Space Governance",
         "existentialRiskGovernance": "Existential Risk Governance",
         "consciousnessAndInnerDevelopment": "Consciousness & Inner Development",
         "integratedMetaGovernance": "Integrated Meta-Governance",
+        "wiseDecisionMakingProtocol": "Wise Decision-Making & Integration Protocol",
         "implementationMethodsAndTools": "Implementation Methods & Tools",
         "wisdomGovernance": "Wisdom Governance"
       }

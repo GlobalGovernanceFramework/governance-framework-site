@@ -6,6 +6,9 @@
   import { base } from '$app/paths';
   import { t } from '$lib/i18n';
   import { allFrameworks, getFrameworksByTier, getFrameworkBySlug } from '$lib/stores/frameworkNav.js';
+  
+  // Import our schema data for dynamic connections
+  import { allEntities, allRelationships } from '$lib/data/schema/_index.ts';
 
   // Props
   export let hoveredFramework = null;
@@ -63,6 +66,91 @@
       }
     };
   });
+
+  // Helper function to map entity IDs to framework slugs
+  function getSlugFromEntityId(entityId) {
+    // Find the entity in our schema
+    const entity = allEntities.find(e => e.id === entityId);
+    if (!entity || !entity.ui) return null;
+    
+    return entity.ui.slug;
+  }
+
+  // Helper function to check if framework exists in our navigation
+  function frameworkExistsInNav(slug) {
+    return allFrameworks.some(f => f.slug === slug);
+  }
+
+  // Define connections between frameworks based on our schema
+  function getConnections() {
+    const connections = [];
+    
+    // Process all relationships from our schema
+    allRelationships.forEach(relationship => {
+      const fromSlug = getSlugFromEntityId(relationship.from);
+      const toSlug = getSlugFromEntityId(relationship.to);
+      
+      // Only include connections where both frameworks exist in our navigation
+      // and both are actual Framework entities
+      if (fromSlug && toSlug && 
+          frameworkExistsInNav(fromSlug) && 
+          frameworkExistsInNav(toSlug)) {
+        
+        // Find the entities to check if they're frameworks
+        const fromEntity = allEntities.find(e => e.id === relationship.from);
+        const toEntity = allEntities.find(e => e.id === relationship.to);
+        
+        // Only show connections between Framework entities (not councils, institutions, etc.)
+        if (fromEntity?.type === 'Framework' && toEntity?.type === 'Framework') {
+          // Filter for the most important relationship types for visualization
+          const importantRelationshipTypes = [
+            'ENABLES', 'DEPENDS_ON', 'INTEGRATES_WITH', 'COORDINATES_WITH', 
+            'GUIDES', 'ESTABLISHES', 'IMPLEMENTS', 'COLLABORATES_WITH',
+            'OVERSEES', 'FUNDS', 'INFORMS'
+          ];
+          
+          if (importantRelationshipTypes.includes(relationship.type)) {
+            connections.push([fromSlug, toSlug, {
+              type: relationship.type,
+              strength: relationship.strength || 'Medium',
+              description: relationship.description
+            }]);
+          }
+        }
+      }
+    });
+    
+    // Remove duplicates (in case there are bidirectional relationships)
+    const uniqueConnections = [];
+    const seen = new Set();
+    
+    connections.forEach(([from, to, meta]) => {
+      const key1 = `${from}-${to}`;
+      const key2 = `${to}-${from}`;
+      
+      if (!seen.has(key1) && !seen.has(key2)) {
+        uniqueConnections.push([from, to, meta]);
+        seen.add(key1);
+      }
+    });
+    
+    // Limit connections for visual clarity (show strongest/most important)
+    return uniqueConnections
+      .sort((a, b) => {
+        // Prioritize by strength and relationship type
+        const strengthOrder = { 'Strong': 3, 'Medium': 2, 'Weak': 1 };
+        const typeOrder = { 
+          'ENABLES': 5, 'DEPENDS_ON': 4, 'INTEGRATES_WITH': 3, 
+          'GUIDES': 2, 'ESTABLISHES': 1 
+        };
+        
+        const aScore = (strengthOrder[a[2].strength] || 2) + (typeOrder[a[2].type] || 1);
+        const bScore = (strengthOrder[b[2].strength] || 2) + (typeOrder[b[2].type] || 1);
+        
+        return bScore - aScore;
+      })
+      .slice(0, 25); // Limit to 25 most important connections for clarity
+  }
 
   // Dynamic tier configuration based on screen size - using i18n
   function getTierConfig(width) {
@@ -174,9 +262,9 @@
         const radius = currentTierConfig[1].radius + 3;
         const centerX = 50;
         const centerY = 50;
-        const angleStep = (2 * Math.PI) / 17;
+        const angleStep = (2 * Math.PI) / 14;
         
-        for (let i = 0; i < 17; i++) {
+        for (let i = 0; i < 14; i++) {
           const angle = i * angleStep - Math.PI / 2;
           const x = centerX + radius * Math.cos(angle);
           const y = centerY + radius * Math.sin(angle);
@@ -184,9 +272,9 @@
         }
         return positions;
       })(),
-      2: generateAsymmetricElliptical(2, 7, 6),
-      3: generateAsymmetricElliptical(3, 4, 5),
-      4: generateAsymmetricElliptical(4, 3, 2)
+      2: generateAsymmetricElliptical(2, 7, 7),
+      3: generateAsymmetricElliptical(3, 5, 6),
+      4: generateAsymmetricElliptical(4, 3, 3)
     };
 
     // Position frameworks using asymmetric elliptical layout
@@ -228,46 +316,9 @@
     return tagline !== translationKey ? tagline : null; // Return null if no tagline exists
   }
 
-  // Define connections between frameworks
-  function getConnections() {
-    return [
-      // Original Connections
-      ['treaty-for-our-only-home', 'climate-and-energy-governance'],
-      ['treaty-for-our-only-home', 'nested-economies'],
-      ['treaty-for-our-only-home', 'peace-and-conflict-resolution'],
-      ['treaty-for-our-only-home', 'gaian-trade-framework'],
-      ['aurora-accord', 'technology-governance'],
-      ['planetary-health', 'climate-and-energy-governance'],
-      ['financial-systems', 'nested-economies'],
-
-      // Golden Triangle Core Connections
-      ['treaty-for-our-only-home', 'indigenous-governance-and-traditional-knowledge'],
-      ['treaty-for-our-only-home', 'meta-governance'],
-      ['indigenous-governance-and-traditional-knowledge', 'meta-governance'],
-
-      // Socio-Economic Engine Cluster
-      ['nested-economies', 'adaptive-universal-basic-income'],
-      ['adaptive-universal-basic-income', 'labor-and-employment-governance'],
-      ['financial-systems', 'adaptive-universal-basic-income'],
-      ['gaian-trade-framework', 'nested-economies'],
-
-      // Planetary Health & Stewardship Suite
-      ['planetary-health', 'animal-welfare-governance'],
-      ['planetary-health', 'food-systems-and-agriculture'],
-      ['biodiversity-governance', 'animal-welfare-governance'],
-      ['planetary-health', 'biodiversity-governance'],
-
-      // Technology & Society Cluster
-      ['technology-governance', 'aethelred-accord'],
-      ['moral-operating-system', 'technology-governance'],
-      ['existential-risk-governance', 'aethelred-accord']
-    ];
-  }
-
-
   $: currentTierConfig = getTierConfig(windowWidth);
   $: frameworkNodes = createConstellationNodes();
-  $: connections = getConnections();
+  $: connections = getConnections(); // Now dynamic based on our schema!
 
   // Event handlers (dispatch events to parent)
   import { createEventDispatcher } from 'svelte';
@@ -357,21 +408,27 @@
       {/if}
     {/each}
     
-    <!-- Connection Lines -->
-    {#each connections as [from, to]}
+    <!-- Connection Lines - Now showing relationship strength -->
+    {#each connections as [from, to, meta]}
       {@const fromNode = frameworkNodes.find(n => n.slug === from)}
       {@const toNode = frameworkNodes.find(n => n.slug === to)}
       {#if fromNode && toNode}
+        {@const isHighlighted = hoveredFramework === from || hoveredFramework === to}
+        {@const strengthWidth = meta.strength === 'Strong' ? '0.25' : meta.strength === 'Medium' ? '0.18' : '0.12'}
+        {@const highlightedWidth = meta.strength === 'Strong' ? '1.0' : meta.strength === 'Medium' ? '0.8' : '0.6'}
         <line
           x1={fromNode.x}
           y1={fromNode.y}
           x2={toNode.x}
           y2={toNode.y}
-          stroke={hoveredFramework === from || hoveredFramework === to ? '#fbbf24' : 'rgba(255,255,255,0.12)'}
-          stroke-width={hoveredFramework === from || hoveredFramework === to ? '0.8' : '0.15'}
-          opacity={hoveredFramework === from || hoveredFramework === to ? '1' : '0.3'}
+          stroke={isHighlighted ? '#fbbf24' : 'rgba(255,255,255,0.12)'}
+          stroke-width={isHighlighted ? highlightedWidth : strengthWidth}
+          opacity={isHighlighted ? '1' : '0.4'}
           style="pointer-events: none;"
-        />
+          class="connection-line"
+        >
+          <title>{meta.description || `${meta.type}: ${from} → ${to}`}</title>
+        </line>
       {/if}
     {/each}
 
@@ -502,6 +559,10 @@
     transition: all 0.3s ease;
   }
 
+  .connection-line {
+    transition: stroke 0.2s ease, stroke-width 0.2s ease, opacity 0.2s ease;
+  }
+
   .hover-circle {
     outline: none !important;
   }
@@ -510,34 +571,6 @@
     outline: none !important;
     box-shadow: none !important;
   }
-
-  /* DISABLED UNTIL FLICKERING ISSUE FIXED
-  .pulse-ring {
-    fill: none;
-    stroke: #fbbf24;
-    stroke-width: 0.5;
-    pointer-events: none;
-    transform-box: fill-box; 
-    transform: translateZ(0); 
-    transform-origin: center;
-    animation: smoothPulse 2.5s ease-out infinite;
-    will-change: transform, opacity;
-  }
-
-  @keyframes smoothPulse {
-    0% {
-      transform: scale(0.9);
-      opacity: 0.8;
-    }
-    80% {
-      transform: scale(2.5);
-      opacity: 0;
-    }
-    100% {
-      transform: scale(2.8);
-      opacity: 0;
-    }
-  }*/
 
   /* Make sure the main node circle no longer has the old pulse animation */
   .node-circle.pulsing {

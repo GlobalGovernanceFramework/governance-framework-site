@@ -3,8 +3,8 @@
   export let t;
 </script>
 
-## Nivå 4: Visionär och metagovernance
+## Nivå 4: Det Visionära & Meta-Systemiska Lagret
 
-Den fjärde nivån omfattar framåtblickande och systemövergripande områden inom global styrning. Här utforskar vi hur mänskligheten kan samordna sig på nya sätt – genom rymdförvaltning, inre utveckling och integrerade metastrukturer – och skapar ramverk för framtidens globala medvetenhet och samarbete.
+Denna högsta nivå innehåller de ramverk som är ansvariga för långsiktigt förvaltarskap och tillsyn på artnivå. Den inkluderar protokoll för att hantera existentiella risker (`Planetärt immunförsvar`), styra vår expansion till nya domäner (`Rymdstyrning`), och kultivera det kollektiva medvetande och den visdom (`Visdomsstyrning`) som behövs for att leda hela GGF-ekosystemet in i en avlägsen framtid.
 
 <FrameworkTierList tier={4} showHeader={false} {t} />

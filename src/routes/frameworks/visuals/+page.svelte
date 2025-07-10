@@ -268,7 +268,7 @@
             <p style="color: #4b5563; margin-bottom: 1rem;">
               {texts.ethicsDesc}
             </p>
-            <a href="{base}/frameworks/visuals/global-ethics-and-rights-of-beings" style="display: inline-flex; align-items: center; background-color: #16a34a; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href="{base}/frameworks/visuals/moral-operating-system" style="display: inline-flex; align-items: center; background-color: #16a34a; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.ethicsButton}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />

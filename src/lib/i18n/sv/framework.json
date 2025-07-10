@@ -106,15 +106,15 @@
   },
   "implementationFrameworks": {
     "title": "Implementeringsramverken",
-    "description": "Domänspecifika ramverk organiserade efter prioritetsnivåer, från grundläggande reformer till visionära styrningsmodeller. Varje ramverk tillhandahåller detaljerad implementeringsvägledning för sitt respektive område.",
-    "roadmapTitle": "Stegvis implementeringsfärdplan",
-    "roadmapDescription": "Ramverken är organiserade i fem nivåer som representerar en logisk progression från att hantera omedelbara kriser till att möjliggöra långsiktigt välmående. Denna struktur tillhandahåller en tydlig implementeringsfärdplan där grundläggande reformer skapar den stabilitet som behövs för mer avancerade styrningsinnovationer.",
+    "description": "Domänspecifika ramverk organiserade enligt en strategisk, femdelad implementeringsfärdplan, från det konstitutionella lagret till visionärt styre.",
+    "roadmapTitle": "Den nivåindelade implementeringsfärdplanen",
+    "roadmapDescription": "Ramverken är organiserade i fem nivåer (0-4) som representerar en logisk beroendestruktur. Grundläggande konstitutionella och operativsystemreformer (Nivå 0-1) skapar den stabilitet och funktionalitet som krävs för de väsentliga applikationerna och djupare kulturella integrationerna i de efterföljande nivåerna.",
     "tiers": {
-      "tier0": "Institutionell reform",
-      "tier1": "Akut stabilitet",
-      "tier2": "Långsiktiga system",
-      "tier3": "Jämlikhet och kultur",
-      "tier4": "Visionär styrning"
+      "tier0": "Det konstitutionella lagret",
+      "tier1": "Kärnan av operativsystem",
+      "tier2": "Grundläggande applikationer",
+      "tier3": "Rättvisa och kultur",
+      "tier4": "Visionära och meta-system"
     },
     "gettingStarted": {
       "title": "Påbörja din implementeringsresa",
@@ -146,24 +146,24 @@
   },
   "tier": {
     "0": {
-      "title": "Nivå 0: Global institutionell reform",
-      "description": "Denna grundläggande nivå fungerar som förutsättning för alla andra. Det är uppgraderingen av operativsystemet för global styrning, med fokus på de centrala regler, organ och rättsliga ramverk som möjliggör samordnade internationella åtgärder."
+      "title": "Nivå 0: Det konstitutionella lagret",
+      "description": "Denna grundläggande nivå är den absoluta förutsättningen för alla andra. Den tillhandahåller den legala och institutionella 'hårdvaran' for det nya globala systemet, vilket möjliggör samordnade internationella åtgärder."
     },
     "1": {
-      "title": "Nivå 1: Global stabilitet och rättvisa",
-      "description": "Denna nivå omfattar de mest akuta områdena inom global styrning – där uteblivna åtgärder kan leda till oåterkallelig skada, mänskligt lidande i stor skala eller systemisk kollaps."
+      "title": "Nivå 1: Kärnan av operativsystem",
+      "description": "Denna nivå innehåller de fundamentala ramverken som fungerar som 'operativsystem' för en regenerativ civilisation, och tillhandahåller de väsentliga, tvärgående funktionerna för styre, etik, rättvisa och ekonomi."
     },
     "2": {
-      "title": "Nivå 2: System för långsiktigt välmående",
-      "description": "Denna nivå samlar grundläggande system som möjliggör hållbart mänskligt välmående över tid. Här ingår styrning av teknik, finans, utbildning, stadsutveckling och arbetsmarknad."
+      "title": "Nivå 2: Det grundläggande applikationslagret",
+      "description": "Med kärnan av operativsystem etablerad, representerar denna nivå de väsentliga 'applikationer' som behövs för att driva ett hälsosamt samhälle på en välmående planet, och styr system som mat, hälsa och ekologi."
     },
     "3": {
-      "title": "Nivå 3: Jämlikhet, kultur & framtida generationer",
-      "description": "Här ligger fokus på inkludering, kulturell mångfald och representation av dem som ofta förbises – såsom unga, urfolk, landsbygdsbor och framtida generationer."
+      "title": "Nivå 3: Lagret för rättvisa och kulturellt välstånd",
+      "description": "Denna nivå säkerställer att ett stabilt och hälsosamt samhälle också är djupt rättvist, inkluderande och kulturellt levande. Dessa ramverk skyddar rättigheterna för specifika grupper och bevarar vårt kollektiva arv."
     },
     "4": {
-      "title": "Nivå 4: Visionär och metagovernance",
-      "description": "Den fjärde nivån omfattar framåtblickande och systemövergripande områden inom global styrning. Här utforskar vi hur mänskligheten kan samordna sig på nya sätt."
+      "title": "Nivå 4: Det visionära och meta-systemiska lagret",
+      "description": "Den högsta nivån innehåller ramverk för långsiktigt förvaltarskap och tillsyn på artnivå. Den inkluderar protokoll for att hantera existentiella risker, styra nya domäner och kultivera kollektiv visdom."
     },
     "noFrameworks": "Inga ramverk definierade för denna nivå ännu."
   },
@@ -328,18 +328,20 @@
         "laborAndEmploymentGovernance": "Arbetsmarknad & sysselsättning",
         "disabilityRightsAndInclusion": "Funktionsrätt och inkludering",
         "digitalCommons": "Digitala allmänningar",
+        "synopticProtocol": "Media- och epistemisk integritet",
         "culturalHeritagePreservation": "Bevarande av kulturarv",
         "ruralDevelopmentGovernance": "Landsbygdsutvecklingsstyrning",
         "religiousAndSpiritualDialogueGovernance": "Religiös och andlig dialogstyrning",
         "youthAndIntergenerationalGovernance": "Ungdoms- & generationsstyrning",
         "globalCitizenshipPractice": "Globalt medborgarskapsarbete",
-        "globalEthicsAndRightsOfBeings": "Global etik och varelsers rättigheter",
+        "moralOperatingSystem": "Moraliskt operativsystem",
         "genderEqualityAndLgbtqRights": "Jämställdhet och HBTQ+-rättigheter",
         "agingPopulationSupportGovernance": "Åldrande befolkningsstöd",
         "spaceGovernance": "Rymdförvaltning",
         "existentialRiskGovernance": "Styrning av existentiella risker",
         "consciousnessAndInnerDevelopment": "Medvetande & inre utveckling",
         "integratedMetaGovernance": "Integrerad metagovernance",
+        "wiseDecisionMakingProtocol": "Klokt beslutsfattande och integrationsprotokoll",
         "implementationMethodsAndTools": "Metoder & verktyg för implementering",
         "wisdomGovernance": "Vishetsstyrning"
       }

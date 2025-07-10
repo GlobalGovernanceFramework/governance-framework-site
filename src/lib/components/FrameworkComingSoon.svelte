@@ -510,6 +510,66 @@
         ]
       }
     },
+    synoptic: {
+      en: {
+        title: 'The Synoptic Protocol: Media & Epistemic Integrity',
+        defaultDescription: "We're developing a revolutionary framework that transforms our global information ecosystem to foster truth-seeking, perspectival agility, and collective wisdom, protecting citizens from epistemic threats while cultivating the capacity for wise decision-making in our interconnected world.",
+        defaultFeatures: [
+          'Epistemic Curriculum teaching critical thinking, media literacy, and perspectival agility integrated into global education',
+          'Epistemic Institution Charter creating public-funded media organizations legally bound to truth-seeking principles',
+          'Algorithmic & Platform Governance mandating transparency, user choice, and epistemic circuit breakers for viral content',
+          'Digital Public Square fostering healthy discourse through Bridging Dialogues and Citizen Assemblies',
+          'Epistemic Justice & Accountability enforcing the Universal Right to Reality through Digital Justice Tribunal',
+          'Epistemic Crisis Response with Rapid Response Teams for disinformation warfare and AI-driven deepfake threats',
+          'Global Council for Epistemic Integrity with 50% Global South representation and Indigenous knowledge integration',
+          'Trauma-Informed Media Literacy and Spiral-Aware Communication for constructive cross-cultural dialogue'
+        ]
+      },
+      sv: {
+        title: 'Synoptiska Protokollet: Media & epistemisk integritet',
+        defaultDescription: "Vi utvecklar ett revolutionerande ramverk som transformerar vårt globala informationsekosystem för att främja sanningssökande, perspektivisk smidighet och kollektiv visdom, skydda medborgare från epistemiska hot samtidigt som det odlar kapacitet för klok beslutsfattande i vår sammankopplade värld.",
+        defaultFeatures: [
+          'Epistemisk läroplan som undervisar kritiskt tänkande, mediekunnighet och perspektivisk smidighet integrerat i global utbildning',
+          'Epistemisk institutionsstadga som skapar offentligt finansierade medieorganisationer juridiskt bundna till sanningssökande principer',
+          'Algoritmisk & plattformsstyrning som kräver transparens, användarval och epistemiska strömbrytare för viralt innehåll',
+          'Digitalt offentligt torg som främjar hälsosam diskurs genom överbryggande dialoger och medborgarförsamlingar',
+          'Epistemisk rättvisa & ansvarighet som genomdriver den universella rätten till verklighet genom Digital rättvisedomstol',
+          'Epistemisk krishantering med snabbinsatsteam för desinformationskrigföring och AI-drivna deepfake-hot',
+          'Globalt råd för epistemisk integritet med 50% Global Syd-representation och ursprungsbefolknings kunskapsintegration',
+          'Traumainformerad mediekunnighet och Spiral-medveten kommunikation för konstruktiv interkulturell dialog'
+        ]
+      }
+    },
+    wdip: {
+      en: {
+        title: 'Wise Decision-Making & Integration Protocol (WDIP)',
+        defaultDescription: "We're developing the universal methodology providing the 'How' for wise decision-making across the Global Governance Framework - a compassionate guide for navigating uncertainty, integrating diverse forms of wisdom, and arriving at choices that are not merely effective, but wise, just, and regenerative.",
+        defaultFeatures: [
+          'Five-Phase Process from Invitation & Framing through Deep Inquiry, Synthesis, Deliberation, to Living Implementation',
+          'Holistic Sensemaking integrating scientific, Indigenous, spiritual, artistic, and experiential perspectives',
+          'Seven-Generation Scoping evaluating all decisions for 200+ year impacts on future generations',
+          'Relational Accountability assessing choices based on their impact on relationships with all beings and Earth',
+          'Precautionary Wisdom placing burden of proof on demonstrating safety for existential risks',
+          'AI-Mediated Impact Simulation Tools stress-testing decisions against core principles and long-term consequences',
+          'Indigenous & Spiritual Council consultation with traditional knowledge and ceremonial guidance',
+          'Adaptive Implementation with reflexivity engines and learning loops for continuous course correction'
+        ]
+      },
+      sv: {
+        title: 'Kloka Besluts- & Integrationsprotokoll (WDIP)',
+        defaultDescription: "Vi utvecklar den universella metodik som tillhandahåller 'Hur' för kloka beslut inom Global Governance Framework - en medkänslig guide för att navigera osäkerhet, integrera olika former av visdom och komma fram till val som inte bara är effektiva, utan kloka, rättvisa och regenerativa.",
+        defaultFeatures: [
+          'Fem-fas process från Inbjudan & Inramning genom Djup utredning, Syntes, Deliberation till Levande implementering',
+          'Holistisk meningsskapande som integrerar vetenskapliga, ursprungsbefolknings-, andliga, konstnärliga och erfarenhetsbaserade perspektiv',
+          'Sju-generationers omfattning som utvärderar alla beslut för 200+ års påverkan på framtida generationer',
+          'Relationell ansvarighet som bedömer val baserat på deras påverkan på relationer med alla varelser och jorden',
+          'Försiktig visdom som placerar bevisbördan på att visa säkerhet för existentiella risker',
+          'AI-medierade påverkanssimuleringsverktyg som stresstestade beslut mot kärnprinciper och långsiktiga konsekvenser',
+          'Ursprungsbefolknings- & andliga rådskonsultation med traditionell kunskap och ceremoniell vägledning',
+          'Adaptiv implementering med reflexivitetsmotorer och inlärningsslingor för kontinuerlig kursjustering'
+        ]
+      }
+    },
     existential: {
       en: {
         title: 'Global Existential Risk Governance Framework',
@@ -618,6 +678,10 @@
             <li>
               {#if frameworkName === 'shield'}
                 {index === 0 ? '🧠' : index === 1 ? '⚖️' : index === 2 ? '🎯' : index === 3 ? '🚔' : index === 4 ? '💰' : index === 5 ? '🔄' : index === 6 ? '❤️' : '🛡️'}
+              {:else if frameworkName === 'wdip'}
+                {index === 0 ? '🔄' : index === 1 ? '🌀' : index === 2 ? '🌳' : index === 3 ? '❤️' : index === 4 ? '⚠️' : index === 5 ? '🤖' : index === 6 ? '🪶' : '🔄'}
+              {:else if frameworkName === 'synoptic'}
+                {index === 0 ? '🎓' : index === 1 ? '🏛️' : index === 2 ? '⚙️' : index === 3 ? '🗣️' : index === 4 ? '⚖️' : index === 5 ? '🚨' : index === 6 ? '🌍' : '🧠'}
               {:else if frameworkName === 'globalHealth'}
                 {index === 0 ? '🔬' : index === 1 ? '🏥' : index === 2 ? '🛡️' : index === 3 ? '📚' : index === 4 ? '🏭' : index === 5 ? '💪' : index === 6 ? '🌍' : '🌡️'}
               {:else if frameworkName === 'phoenix'}

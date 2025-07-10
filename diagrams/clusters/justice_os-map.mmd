@@ -1,0 +1,70 @@
+graph TD
+    %% Justice Operating System Cluster Map
+    %% Generated from GGF Master Schema
+    
+    subgraph EXT["🔗 Key Dependencies"]
+        direction LR
+        institution_dj_tribunal["🏢 Digital Justice Tribunal"]
+        mechanism_gcf["💰 Global Commons Fund"]
+    end
+
+    subgraph MAIN["🎯 Justice Operating System"]
+        direction TB
+        framework_peace["🕊️ Peace Framework"]
+        framework_justice["⚖️ Justice Systems"]
+        framework_shield["🛡️ Shield Protocol"]
+        council_gpc["🏛️ Global Peace Council"]
+        council_tsc["🏛️ Security Council"]
+        process_vbt["🔄 Spiral Peacecraft"]
+        process_trc["🔄 Truth & Reconciliation"]
+        subgraph INSTITUTION["🏢 Institutions"]
+            institution_rrt_peace["Peace Teams"]
+            institution_gjo["Global Justice Oversight"]
+            institution_cjet["Ecological Justice Tribunals"]
+            institution_gcic["GCIC"]
+            institution_getf["GETF"]
+        end
+    end
+
+    %% External dependencies
+    protocol_mos_rights -->|"guides"| framework_justice
+    institution_dj_tribunal -->|"establishes"| institution_cjet
+    mechanism_gcf -->|"funds"| framework_peace
+    mechanism_gcf -->|"funds"| framework_justice
+    mechanism_gcf -->|"funds"| framework_shield
+
+    %% Internal cluster relationships
+    framework_peace -->|"escalates to"| framework_justice
+    framework_justice -->|"escalates to"| framework_shield
+    institution_gjo -->|"delegates to"| framework_shield
+    framework_peace -->|"establishes"| council_gpc
+    framework_peace -->|"establishes"| process_vbt
+    council_gpc -->|"oversees"| process_vbt
+    process_vbt -->|"guides"| institution_rrt_peace
+    process_trc -->|"collaborates with"| framework_justice
+    framework_justice -->|"establishes"| institution_gjo
+    framework_justice -->|"establishes"| institution_cjet
+    institution_gjo -->|"oversees"| institution_cjet
+    framework_shield -->|"establishes"| council_tsc
+    framework_shield -->|"establishes"| institution_gcic
+    framework_shield -->|"establishes"| institution_getf
+    council_tsc -->|"oversees"| institution_getf
+    council_tsc -->|"oversees"| institution_gcic
+    institution_gcic -->|"informs"| institution_getf
+
+    %% Entity type styling (with tier colors for frameworks)
+    classDef framework fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    classDef council fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef institution fill:#e8f5e8,stroke:#388e3c,stroke-width:2px
+    classDef mechanism fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef external fill:#fafafa,stroke:#666,stroke-width:1px,stroke-dasharray: 5 5
+    
+    %% Tier-based colors for frameworks (matching website CSS)
+    classDef tier0 fill:#fbbf24,stroke:#d97706,stroke-width:3px,color:#000
+    classDef tier1 fill:#60a5fa,stroke:#2563eb,stroke-width:2px,color:#000
+    classDef tier2 fill:#34d399,stroke:#059669,stroke-width:2px,color:#000
+    classDef tier3 fill:#a78bfa,stroke:#7c3aed,stroke-width:2px,color:#000
+    classDef tier4 fill:#f472b6,stroke:#db2777,stroke-width:2px,color:#000
+    class framework_peace,framework_justice,framework_shield tier1
+    class council_gpc,council_tsc council
+    class institution_rrt_peace,institution_gjo,institution_cjet,institution_gcic,institution_getf institution

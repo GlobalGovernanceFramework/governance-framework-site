@@ -1,0 +1,39 @@
+graph TD
+    %% Ethical Operating System Cluster Map
+    %% Generated from GGF Master Schema
+    
+    subgraph MAIN["🎯 Ethical Operating System"]
+        direction TB
+        framework_indigenous["🪶 Indigenous Framework"]
+        framework_mos["🦋 MOS"]
+        council_earth["🏛️ Earth Council"]
+        institution_baz["🏢 BAZs"]
+        protocol_fpic2["⚖️ FPIC 2.0"]
+    end
+
+    %% External dependencies
+
+    %% Internal cluster relationships
+    framework_indigenous -->|"establishes"| council_earth
+    framework_indigenous -->|"establishes"| institution_baz
+    framework_indigenous -->|"establishes"| protocol_fpic2
+    framework_indigenous -->|"establishes"| framework_mos
+    council_earth -->|"oversees"| institution_baz
+    protocol_fpic2 -->|"implements"| institution_baz
+
+    %% Entity type styling (with tier colors for frameworks)
+    classDef framework fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    classDef council fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef institution fill:#e8f5e8,stroke:#388e3c,stroke-width:2px
+    classDef mechanism fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef external fill:#fafafa,stroke:#666,stroke-width:1px,stroke-dasharray: 5 5
+    
+    %% Tier-based colors for frameworks (matching website CSS)
+    classDef tier0 fill:#fbbf24,stroke:#d97706,stroke-width:3px,color:#000
+    classDef tier1 fill:#60a5fa,stroke:#2563eb,stroke-width:2px,color:#000
+    classDef tier2 fill:#34d399,stroke:#059669,stroke-width:2px,color:#000
+    classDef tier3 fill:#a78bfa,stroke:#7c3aed,stroke-width:2px,color:#000
+    classDef tier4 fill:#f472b6,stroke:#db2777,stroke-width:2px,color:#000
+    class framework_indigenous,framework_mos tier1
+    class council_earth council
+    class institution_baz institution

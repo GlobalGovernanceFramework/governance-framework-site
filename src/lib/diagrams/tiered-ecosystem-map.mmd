@@ -1,0 +1,108 @@
+graph TD
+    %% GGF Tiered Ecosystem Map - Generated from Master Schema
+    %% Shows the overall architecture across all tiers
+    
+    subgraph T0["🎯 Tier 0: Constitutional Layer"]
+        direction TB
+        framework_treaty["🌐 The Treaty"]
+    end
+
+    subgraph T1["🎯 Tier 1: Core Operating Systems"]
+        direction TB
+        framework_meta_gov["🏛️ Meta-Governance"]
+        council_mgcc["🏛️ MGCC"]
+        framework_indigenous["🪶 Indigenous Framework"]
+        council_earth["🏛️ Earth Council"]
+        framework_mos["🦋 MOS"]
+        framework_peace["🕊️ Peace Framework"]
+        council_gpc["🏛️ Global Peace Council"]
+        framework_justice["⚖️ Justice Systems"]
+        framework_shield["🛡️ Shield Protocol"]
+        council_tsc["🏛️ Security Council"]
+        framework_aubi["💰 AUBI"]
+        framework_financial_systems["❤️ Financial Systems"]
+        framework_work_liberation["👥 Work in Liberation"]
+        framework_nested_sovereignty["💱 Nested Economies"]
+        framework_gaian_trade["🌍 Gaian Trade"]
+        framework_gscl["🚢 Supply Chains"]
+        council_social_resilience["🏛️ SRC"]
+        council_flp["🏛️ FLP"]
+        framework_aurora_accord["🔮 Aurora Accord"]
+        framework_technology_governance["🤖 TGIF"]
+        council_gtc["🏛️ GTC"]
+        council_phc["🏛️ PHC"]
+    end
+
+    subgraph T2["🎯 Tier 2: Foundational Application Layer"]
+        direction TB
+        framework_aethelred_accord["🧬 Aethelred Accord"]
+        framework_planetary_health["💚 Planetary Health"]
+        framework_eco_intel["🌿 Eco Intel"]
+        framework_climate_energy["⚡ Climate & Energy"]
+        framework_food["🌱 Kinship Garden"]
+        framework_soil_health["🌾 Soil Health"]
+        framework_water_sanitation["💧 Water & Sanitation"]
+        framework_biodiversity["🦅 Biodiversity"]
+        framework_oceans_marine["🌊 Oceans & Marine"]
+        framework_animal_welfare["🐾 Animal Welfare"]
+        framework_phoenix_protocol["♻️ Phoenix Protocol"]
+        framework_drr["🌪️ DRR&R"]
+        framework_education["🎓 Education"]
+        framework_global_health["⚕️ Global Health"]
+        framework_mental_health["🧠 Mental Health"]
+        framework_synoptic["👁️ Synoptic Protocol"]
+    end
+
+    subgraph T3["🎯 Tier 3: Equity & Cultural Flourishing Layer"]
+        direction TB
+        framework_disability["♿ Disability Justice"]
+        framework_gender["🏳️‍🌈 Gender & Kinship"]
+        framework_youth["👶 Youth & Future Gens"]
+        framework_elder["🌳 Elder Justice"]
+        framework_migration["🗺️ Migration"]
+        framework_cultural_heritage["🏛️ Cultural Heritage"]
+        framework_digital_commons["💻 Digital Commons"]
+        framework_religious_dialogue["🕯️ Spiritual Dialogue"]
+        framework_global_citizenship["🤝 Global Citizenship"]
+        framework_urban_community["🏙️ Urban Development"]
+        framework_rural_development["🚜 Rural Development"]
+    end
+
+    subgraph T4["🎯 Tier 4: Visionary & Meta-Governance Layer"]
+        direction TB
+        framework_inner_dev["🧘 IDLP"]
+        framework_wdmip["🧰 WDIP"]
+        framework_planetary_immune_system["⚠️ PIS"]
+        framework_space_governance["🚀 Space Governance"]
+        framework_wisdom_governance["🦉 Wisdom Governance"]
+        framework_implementation_tools["🧰 Implementation Tools"]
+    end
+
+    %% Key cross-tier relationships
+    framework_treaty -->|"enables"| framework_meta_gov
+    framework_meta_gov -->|"establishes"| council_mgcc
+    framework_indigenous -->|"establishes"| council_earth
+    framework_indigenous -->|"establishes"| framework_mos
+    framework_peace -->|"establishes"| council_gpc
+    framework_shield -->|"establishes"| council_tsc
+    framework_aurora_accord -->|"enables"| framework_digital_commons
+    framework_technology_governance -->|"establishes"| council_gtc
+    framework_aubi -->|"funds"| framework_drr
+    framework_education -->|"enables"| framework_global_citizenship
+    framework_migration -->|"establishes"| council_pmc
+    framework_cultural_heritage -->|"establishes"| council_cawc
+    framework_digital_commons -->|"establishes"| council_dcc
+    framework_education -->|"enables"| framework_global_citizenship
+    framework_inner_dev -->|"enables"| framework_digital_commons
+
+    %% Tier-based styling (matching website CSS)
+    classDef tier0 fill:#fbbf24,stroke:#d97706,stroke-width:3px,color:#000
+    classDef tier1 fill:#60a5fa,stroke:#2563eb,stroke-width:2px,color:#000
+    classDef tier2 fill:#34d399,stroke:#059669,stroke-width:2px,color:#000
+    classDef tier3 fill:#a78bfa,stroke:#7c3aed,stroke-width:2px,color:#000
+    classDef tier4 fill:#f472b6,stroke:#db2777,stroke-width:2px,color:#000
+    class framework_treaty tier0
+    class framework_meta_gov,council_mgcc,framework_indigenous,council_earth,framework_mos,framework_peace,council_gpc,framework_justice,framework_shield,council_tsc,framework_aubi,framework_financial_systems,framework_work_liberation,framework_nested_sovereignty,framework_gaian_trade,framework_gscl,council_social_resilience,council_flp,framework_aurora_accord,framework_technology_governance,council_gtc,council_phc tier1
+    class framework_aethelred_accord,framework_planetary_health,framework_eco_intel,framework_climate_energy,framework_food,framework_soil_health,framework_water_sanitation,framework_biodiversity,framework_oceans_marine,framework_animal_welfare,framework_phoenix_protocol,framework_drr,framework_education,framework_global_health,framework_mental_health,framework_synoptic tier2
+    class framework_disability,framework_gender,framework_youth,framework_elder,framework_migration,framework_cultural_heritage,framework_digital_commons,framework_religious_dialogue,framework_global_citizenship,framework_urban_community,framework_rural_development tier3
+    class framework_inner_dev,framework_wdmip,framework_planetary_immune_system,framework_space_governance,framework_wisdom_governance,framework_implementation_tools tier4

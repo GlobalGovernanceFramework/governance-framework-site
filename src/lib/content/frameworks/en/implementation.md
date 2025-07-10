@@ -116,7 +116,15 @@ Implementing the frameworks works best as a gradual, evolutionary process:
 
 ## Domain-Specific Implementation
 
-The Global Governance Frameworks are organized into five distinct tiers, each representing a logical and dependent stage in a global implementation journey. The tiers are ordered by priority, moving from addressing immediate, foundational crises to enabling long-term, visionary goals. This structure provides a clear roadmap, ensuring that efforts to build stability and justice (Tier 1) create the necessary foundation for developing systems for thriving, equity, and meta-governance in the subsequent tiers. This tiered roadmap aligns with the Phased Implementation Approach, where foundation-building enables more integrated forms of cooperation over time.
+The Global Governance Frameworks are organized into a five-tier implementation roadmap (Tiers 0-4), representing a logical dependency stack where each layer builds upon the one before it. This journey begins with the absolute prerequisite legal and institutional reforms and progresses towards visionary, long-term goals.
+
+* **Tier 0 (Global Institutional Reform):** The foundational **constitutional layer** that makes coordinated global action legally and institutionally possible.
+* **Tier 1 (Urgent Global Stability & Justice):** The core **operating systems** for the GGF, defining the fundamental rules for governance, ethics, justice, and the economy.
+* **Tier 2 (Systems for Long-Term Thriving):** The essential **application layer** for societal and ecological health, running on the stable foundation provided by Tier 1.
+* **Tier 3 (Equity, Culture & Future Generations):** The frameworks that ensure **deep equity, inclusion, and cultural richness** across the thriving systems built in Tier 2.
+* **Tier 4 (Visionary & Meta-Governance):** The highest-level protocols for **systemic oversight, future-readiness, and existential stewardship.**
+
+This structure provides a clear implementation pathway, ensuring foundational stability (Tiers 0-1) enables the development of systems for thriving (Tier 2), equity (Tier 3), and long-term stewardship (Tier 4). This tiered roadmap aligns with a Phased Implementation Approach, where robust core systems enable more advanced and specialized forms of cooperation over time.
 
 <AllFrameworksList {t} />
 

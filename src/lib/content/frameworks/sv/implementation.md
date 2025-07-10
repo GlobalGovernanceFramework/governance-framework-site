@@ -116,7 +116,15 @@ Att införa ramverken fungerar bäst som en gradvis, evolutionär process:
 
 ## Domänspecifik implementering
 
-Ramverken för global styrning är organiserade i fem distinkta nivåer, som var och en representerar ett logiskt och beroende steg i en global implementeringsresa. Nivåerna är ordnade efter prioritet och går från att hantera omedelbara, grundläggande kriser till att möjliggöra långsiktiga, visionära mål. Denna struktur ger en tydlig färdplan som säkerställer att insatser för att bygga stabilitet och rättvisa (nivå 1) skapar den nödvändiga grunden för att utveckla system för välstånd, jämlikhet och metastyrning i de efterföljande nivåerna. Denna nivåindelade färdplan överensstämmer med den etappvisa implementeringsmetoden, där grundbyggande möjliggör mer integrerade former av samarbete över tid.
+Global Governance Frameworks är organiserade i en implementeringsfärdplan med fem nivåer (Nivå 0-4), vilket representerar en logisk beroendestruktur där varje lager bygger på det föregående. Denna resa börjar med de absolut nödvändiga legala och institutionella reformerna och fortskrider mot visionära, långsiktiga mål.
+
+* **Nivå 0 (Global institutionell reform):** Det grundläggande **konstitutionella lagret** som möjliggör samordnade globala åtgärder på ett legalt och institutionellt plan.
+* **Nivå 1 (Akut global stabilitet & rättvisa):** Kärnan av **operativsystem** för GGF, som definierar de grundläggande reglerna för styre, etik, rättvisa och ekonomi.
+* **Nivå 2 (System för långsiktigt välstånd):** Det väsentliga **applikationslagret** för samhällelig och ekologisk hälsa, som körs på den stabila grund som Nivå 1 tillhandahåller.
+* **Nivå 3 (Rättvisa, kultur och framtida generationer):** De ramverk som säkerställer **djupgående rättvisa, inkludering och kulturell rikedom** i de välmående system som byggts i Nivå 2.
+* **Nivå 4 (Visionärt och meta-styre):** De högsta nivåns protokoll för **systemisk tillsyn, framtidsberedskap och existentiellt förvaltarskap.**
+
+Denna struktur ger en tydlig implementeringsväg, där grundläggande stabilitet (Nivå 0-1) möjliggör utvecklingen av system för välstånd (Nivå 2), rättvisa (Nivå 3) och långsiktigt förvaltarskap (Nivå 4). Denna nivåindelade färdplan är i linje med en fasad implementeringsstrategi, där robusta kärnsystem möjliggör mer avancerade och specialiserade former av samarbete över tid.
 
 <AllFrameworksList {t} />
 

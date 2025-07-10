@@ -3,8 +3,8 @@
   export let t;
 </script>
 
-## Nivå 3: Jämlikhet, kultur & framtida generationer
+## Nivå 3: Lagret för Rättvisa & Kulturellt Välstånd
 
-Här ligger fokus på inkludering, kulturell mångfald och representation av dem som ofta förbises – såsom unga, urfolk, landsbygdsbor och framtida generationer. Dessa ramverk syftar till att ge röst åt hela mänskligheten och bevara vår gemensamma kulturella och ekologiska arv.
+När ett samhälle är stabilt och dess kärnsystem är hälsosamma, säkerställer denna nivå att det också är djupt rättvist, inkluderande och kulturellt levande. Dessa ramverk fokuserar på att skydda rättigheterna för specifika grupper (`Kön och släktskap`, `Rättvisa för funktionsnedsatta`, `Ungdomar och äldre`), bevara vårt kollektiva arv och förvalta våra gemensamma kunskapsresurser.
 
 <FrameworkTierList tier={3} showHeader={false} {t} />

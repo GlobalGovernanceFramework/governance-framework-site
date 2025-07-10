@@ -3,8 +3,8 @@
   export let t;
 </script>
 
-## Tier 1: Urgent Global Stability & Justice
+## Tier 1: The Core Operating Systems
 
-This tier includes the most urgent domains of global governance—areas where failure to act can lead to irreversible harm, large-scale human suffering, or systemic collapse. These frameworks focus on core needs like peace, healthcare, justice, food security, and climate action. They aim to stabilize our world, reduce inequality, and build resilience where it is most needed.
+This tier contains the fundamental frameworks that serve as the "operating systems" for a regenerative civilization. They don't solve one specific problem; instead, they provide the essential, cross-cutting functions for governance (`Meta-Governance`), ethics (`Indigenous Framework`), justice (`Justice & Peace Cluster`), economy (`AUBI`, `Financial Systems`), and technology (`TGIF`, `Aurora Accord`) that all other frameworks rely on to function.
 
 <FrameworkTierList tier={1} showHeader={false} {t} />

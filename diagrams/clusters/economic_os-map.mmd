@@ -1,0 +1,68 @@
+graph TD
+    %% Economic Operating System Cluster Map
+    %% Generated from GGF Master Schema
+    
+    subgraph EXT["🔗 Key Dependencies"]
+        direction LR
+        mechanism_gcf["💰 Global Commons Fund"]
+        framework_aurora_accord["🔮 Aurora Accord"]
+    end
+
+    subgraph MAIN["🎯 Economic Operating System"]
+        direction TB
+        subgraph FRAMEWORK["📋 Frameworks"]
+            framework_aubi["AUBI"]
+            framework_financial_systems["Financial Systems"]
+            framework_work_liberation["Work in Liberation"]
+            framework_nested_sovereignty["Nested Economies"]
+            framework_gaian_trade["Gaian Trade"]
+            framework_gscl["Supply Chains"]
+        end
+        council_social_resilience["🏛️ SRC"]
+        council_flp["🏛️ FLP"]
+        mechanism_hearts["💰 Hearts"]
+        mechanism_leaves["💰 Leaves"]
+        platform_love_ledger["⚙️ Love Ledger"]
+        institution_cwt["🏢 CWTs"]
+        process_proof_of_care["🔄 Proof of Care"]
+        tool_dpp["🛠️ DPPs"]
+        metric_lmci["📊 LMCI"]
+    end
+
+    %% External dependencies
+    mechanism_gcf -->|"funds"| framework_aubi
+    framework_aurora_accord -->|"guides"| platform_love_ledger
+
+    %% Internal cluster relationships
+    council_social_resilience -->|"oversees"| framework_aubi
+    council_flp -->|"oversees"| framework_work_liberation
+    council_social_resilience -->|"coordinates with"| council_flp
+    framework_aubi -->|"rewards"| mechanism_hearts
+    framework_aubi -->|"rewards"| mechanism_leaves
+    platform_love_ledger -->|"implements"| process_proof_of_care
+    institution_cwt -->|"uses data from"| platform_love_ledger
+    framework_nested_sovereignty -->|"implements"| mechanism_hearts
+    framework_nested_sovereignty -->|"implements"| mechanism_leaves
+    framework_gaian_trade -->|"establishes"| tool_dpp
+    tool_dpp -->|"uses data from"| platform_love_ledger
+    framework_gscl -->|"implements"| framework_gaian_trade
+    metric_lmci -->|"informs"| council_social_resilience
+    framework_aubi -->|"enables"| framework_work_liberation
+
+    %% Entity type styling (with tier colors for frameworks)
+    classDef framework fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    classDef council fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef institution fill:#e8f5e8,stroke:#388e3c,stroke-width:2px
+    classDef mechanism fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef external fill:#fafafa,stroke:#666,stroke-width:1px,stroke-dasharray: 5 5
+    
+    %% Tier-based colors for frameworks (matching website CSS)
+    classDef tier0 fill:#fbbf24,stroke:#d97706,stroke-width:3px,color:#000
+    classDef tier1 fill:#60a5fa,stroke:#2563eb,stroke-width:2px,color:#000
+    classDef tier2 fill:#34d399,stroke:#059669,stroke-width:2px,color:#000
+    classDef tier3 fill:#a78bfa,stroke:#7c3aed,stroke-width:2px,color:#000
+    classDef tier4 fill:#f472b6,stroke:#db2777,stroke-width:2px,color:#000
+    class framework_aubi,framework_financial_systems,framework_work_liberation,framework_nested_sovereignty,framework_gaian_trade,framework_gscl tier1
+    class council_social_resilience,council_flp council
+    class institution_cwt institution
+    class mechanism_hearts,mechanism_leaves mechanism

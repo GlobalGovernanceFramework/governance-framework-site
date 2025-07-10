@@ -3,8 +3,8 @@
   export let t;
 </script>
 
-## Tier 0: Global Institutional Reform
+## Tier 0: The Constitutional Layer
 
-This foundational tier serves as the prerequisite for all others. It is the operating system upgrade for global governance, focusing on the core rules, bodies, and legal frameworks that make coordinated international action possible. By reforming the fundamental architecture of our global institutions, Tier 0 unlocks the capacity to effectively address the challenges in every subsequent tier.
+This foundational tier is the absolute prerequisite for the entire Global Governance Framework. It contains the singular **`Treaty for Our Only Home`**, which provides the legal and institutional "hardware" for the new global system. By reforming the core architecture of international law and authority, Tier 0 makes all subsequent coordination and enforcement possible.
 
 <FrameworkTierList tier={0} showHeader={false} {t} />
