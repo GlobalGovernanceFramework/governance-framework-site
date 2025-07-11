@@ -4,7 +4,6 @@
  import { browser } from '$app/environment';
  import { invalidate } from '$app/navigation';
  import { base } from '$app/paths';
- import SectionNotice from '$lib/components/SectionNotice.svelte';
  import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
  import { onMount, tick } from 'svelte';
  import { slide } from 'svelte/transition';
@@ -342,13 +341,6 @@
  <title>{aethelred.meta?.title || 'Aethelred Accord: Biotechnology Governance Framework - Global Governance Framework'}</title>
  <meta name="description" content="{aethelred.meta?.description || 'A covenant for responsible stewardship of life\'s code through community sovereignty, Indigenous rights, and democratic oversight of biotechnology'}" />
 </svelte:head>
-
-<SectionNotice 
- type="warning" 
- customContent={true}
->
- <p>{$t('common.notices.section.frameworks.text')}</p>
-</SectionNotice>
 
 {#if mounted}
  <div class="documentation-container">

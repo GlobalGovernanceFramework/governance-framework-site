@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "title": "Work in Liberation Framework: Transformativ arbets- och sysselsättningsstyrning",
+    "description": "Organisera arbete kring omsorg, kreativitet och planetär hälsa genom Community Work Teams, kooperativ styrning och övergången från överlevnadsarbete till meningsfulla bidrag"
+  },
+  "quickStart": {
+    "new": "Ny inom Work in Liberation?",
+    "start": "Börja med våra snabbguider som förklarar hur man förvandlar arbete från exploatering till meningsfulla bidrag.",
+    "button": "Välj guide",
+    "title": "Work in Liberation snabbstart",
+    "description": "Välj den version som bäst passar dina behov:",
+    "download": "Ladda ner PDF-version",
+    "continue": "Fortsätt till det fullständiga ramverket",
+    "guides": [
+      {
+        "id": "at-a-glance",
+        "icon": "⚡",
+        "title": "Snabböversikt",
+        "description": "5-minuters översikt av transformativ arbetsorganisation"
+      },
+      {
+        "id": "executive-summary-for-the-skeptic",
+        "icon": "🤔",
+        "title": "För skeptiker",
+        "description": "Affärsargument för demokratisk arbetsstransformation"
+      }
+    ]
+  },
+  "categories": {
+    "overview": "Ramverksöversikt",
+    "foundations": "Grundvalar & filosofi",
+    "framework": "Ramverk & verktyg",
+    "implementation": "Implementering & bedömning",
+    "integration": "Integration & global strategi",
+    "resources": "Slutsats & resurser"
+  },
+  "sections": {
+    "index": "Ramverksöversikt",
+    "at-a-glance": "Snabböversikt",
+    "executive-summary-for-the-skeptic": "Sammanfattning för skeptiker",
+    "preamble": "Inledning: Befrielsen av mänsklig potential",
+    "introduction": "Introduktion: Organisera arbete med syfte",
+    "core-principles": "Grundprinciper: Grunden för befrielse",
+    "core-components": "Kärnkomponenter: Bygga demokratiskt arbete",
+    "implementation-plan": "25-årig implementeringsplan",
+    "tools-technologies": "Nyckelverktyg och teknologier",
+    "monitoring-evaluation": "Övervakning och utvärdering",
+    "crisis-response": "Krishanteringsprotokoll",
+    "expected-outcomes": "Förväntade resultat",
+    "framework-integration": "Ramverksintegration",
+    "global-implementation": "Global implementeringsstrategi",
+    "conclusion": "Slutsats: Arbetet med befrielse",
+    "appendices": "Bilagor"
+  },
+  "sectionsShort": {
+    "index": "Översikt",
+    "at-a-glance": "Snabböversikt",
+    "executive-summary-for-the-skeptic": "För skeptiker",
+    "preamble": "Inledning",
+    "introduction": "Introduktion",
+    "core-principles": "Grundprinciper",
+    "core-components": "Kärnkomponenter",
+    "implementation-plan": "Implementeringsplan",
+    "tools-technologies": "Verktyg & teknologier",
+    "monitoring-evaluation": "Övervakning & utvärdering",
+    "crisis-response": "Krishantering",
+    "expected-outcomes": "Förväntade resultat",
+    "framework-integration": "Ramverksintegration",
+    "global-implementation": "Global implementering",
+    "conclusion": "Slutsats",
+    "appendices": "Bilagor"
+  },
+  "progress": {
+    "text": "Avsnitt {current} av {total}"
+  },
+  "navigation": {
+    "previousSection": "Föregående avsnitt",
+    "nextSection": "Nästa avsnitt"
+  },
+  "introduction": {
+    "continue": "Fortsätt till grundprinciper"
+  },
+  "languageFallback": {
+    "title": "Innehåll på ditt språk kommer snart",
+    "description": "Detta avsnitt visas för närvarande på engelska tills översättningen är klar."
+  },
+  "loading": {
+    "text": "Laddar ramverk för arbetsbefrielse..."
+  },
+  "errors": {
+    "sectionNotFound": "Avsnitt \"{section}\" hittades inte",
+    "contentInDevelopment": "Detta innehåll utvecklas fortfarande."
+  }
+}

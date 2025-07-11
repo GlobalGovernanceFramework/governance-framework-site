@@ -46,6 +46,7 @@ Available categories:
 - meta-governance
 - aethelred-accord
 - gaian-trade
+- work-in-liberation
 
 Example: node tools-pdf-generator.js economic
   `);
@@ -82,6 +83,7 @@ const outputDirs = {
   'aging-population-support-governance': path.join(__dirname, '..', 'static', 'frameworks','tools', 'aging-population-support-governance'),
   'animal-welfare-governance': path.join(__dirname, '..', 'static', 'frameworks','tools', 'animal-welfare-governance'),
   'gaian-trade': path.join(__dirname, '..', 'static', 'frameworks','tools', 'gaian-trade'),
+  'work-in-liberation': path.join(__dirname, '..', 'static', 'frameworks','tools', 'work-in-liberation'),
   'water-and-sanitation-governance': path.join(__dirname, '..', 'static', 'frameworks','tools', 'water-and-sanitation-governance'),
   'indigenous-governance-and-traditional-knowledge': path.join(__dirname, '..', 'static', 'frameworks','tools', 'indigenous-governance-and-traditional-knowledge'),
   'treaty-for-our-only-home': path.join(__dirname, '..', 'static', 'frameworks','tools', 'treaty-for-our-only-home'),
@@ -8000,6 +8002,86 @@ const tools = [
     'monitoring-evaluation',
     'tools-resources',
     'getting-started',
+    'conclusion',
+    'appendices'
+    ]
+  },
+  // Work in Liberation, Labor & Employment Governance
+
+  // Guides
+  {
+    name: 'at-a-glance',
+    category: 'work-in-liberation',
+    fileNames: {
+      en: 'work-in-liberation-ata-glance-en',
+      sv: 'work-in-liberation-ata-glance-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'work-in-liberation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'work-in-liberation')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'assets', 'pdf'),
+      sv: path.join(__dirname, '..', 'static', 'assets', 'pdf')
+    },
+    pageFooter: {
+      en: 'Work in Liberation - At a Glance',
+      sv: 'Frigjort arbete - En överblick'
+    }
+  },
+  {
+    name: 'executive-summary-for-the-skeptic',
+    category: 'work-in-liberation',
+    fileNames: {
+      en: 'work-in-liberation-executivesummary-for-the-skeptic-en',
+      sv: 'work-in-liberation-executivesummary-for-the-skeptic-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'work-in-liberation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'work-in-liberation')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'assets', 'pdf'),
+      sv: path.join(__dirname, '..', 'static', 'assets', 'pdf')
+    },
+    pageFooter: {
+      en: 'Work in Liberation - Executive Summary for the Skeptic',
+      sv: 'Frigjort arbete - Sammanfattning för skeptikern'
+    }
+  },
+
+  // Full framework
+  {
+    name: 'work-in-liberation-framework',
+    category: 'work-in-liberation',
+    fileNames: {
+      en: 'Work-in-Liberation-Framework',
+      sv: 'Work-in-Liberation-Framework'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'work-in-liberation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'work-in-liberation')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Work in Liberation Framework - Page ',
+      sv: 'Ramverket för frigjort arbete - Sida '
+    },
+    sections: [
+    'index',
+    'introduction',
+    'core-principles',
+    'core-components',
+    'implementation-plan',
+    'tools-technologies',
+    'monitoring-evaluation',
+    'crisis-response',
+    'expected-outcomes',
+    'framework-integration',
+    'global-implementation',
     'conclusion',
     'appendices'
     ]

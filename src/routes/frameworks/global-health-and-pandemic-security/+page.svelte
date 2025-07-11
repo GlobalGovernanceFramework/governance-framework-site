@@ -4,7 +4,6 @@
   import { browser } from '$app/environment';
   import { invalidate } from '$app/navigation';
   import { base } from '$app/paths';
-  import SectionNotice from '$lib/components/SectionNotice.svelte';
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
   import { onMount, tick } from 'svelte';
   import { slide } from 'svelte/transition';
@@ -277,13 +276,6 @@
   <title>{ghps.meta?.title || 'Global Health & Pandemic Security Framework - Global Governance Framework'}</title>
   <meta name="description" content="{ghps.meta?.description || 'Community-controlled planetary immune system that prevents, detects, and defeats pandemics with speed, equity, and resilience while strengthening traditional knowledge and community sovereignty'}" />
 </svelte:head>
-
-<SectionNotice 
-  type="warning" 
-  customContent={true}
->
-  <p>{$t('common.notices.section.frameworks.text')}</p>
-</SectionNotice>
 
 {#if mounted}
   <div class="documentation-container">

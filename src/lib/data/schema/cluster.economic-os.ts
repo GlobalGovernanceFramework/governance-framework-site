@@ -65,10 +65,10 @@ export const economicOSEntities: GgfEntity[] = [
     dependencies: ['framework_aubi'],
     enables: ['institution_cwt'],
     ui: {
-      path: '/frameworks/labor-and-employment-governance',
+      path: '/frameworks/work-in-liberation',
       titleKey: 'framework.docs.nav.frameworkTitles.laborAndEmploymentGovernance',
       emoji: '👥',
-      slug: 'labor-and-employment-governance',
+      slug: 'work-in-liberation',
       group: 'globalEconomicSystems'
     }
   },

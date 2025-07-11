@@ -4,7 +4,6 @@
   import { browser } from '$app/environment';
   import { invalidate } from '$app/navigation';
   import { base } from '$app/paths';
-  import SectionNotice from '$lib/components/SectionNotice.svelte';
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
   import { onMount, tick } from 'svelte';
   import { slide } from 'svelte/transition';
@@ -327,13 +326,6 @@
   <title>{gscl.meta?.title || 'Global Supply Chain & Logistics Framework - Global Governance Framework'}</title>
   <meta name="description" content="{gscl.meta?.description || 'Transform supply chains from extraction to regeneration through bioregional governance, Hearts currency, and community sovereignty'}" />
 </svelte:head>
-
-<SectionNotice 
-  type="warning" 
-  customContent={true}
->
-  <p>{$t('common.notices.section.frameworks.text')}</p>
-</SectionNotice>
 
 {#if mounted}
   <div class="documentation-container">

@@ -38,6 +38,9 @@
       financialTitle: "Financial Systems Framework Tools",
       financialDesc: "Resources for implementing financial systems that prioritize human and ecological flourishing, including Hearts currency implementation, Love Ledger guides, validator training, and tools for integrating with traditional financial systems.",
       financialButton: "Access Financial Systems Tools",
+      workInLiberationTitle: "Work in Liberation Framework Tools",
+      workInLiberationDesc: "Resources for transforming work from exploitation to meaningful contribution through Community Work Teams, Hearts & Leaves currencies, democratic governance, and just transition from extractive industries to regenerative alternatives.",
+      workInLiberationButton: "Access Work in Liberation Tools",
       educationTitle: "Education Framework Tools",
       educationDesc: "Tools for implementing the Educational Systems Framework, including project guides, assessment tools, and advocacy resources.",
       educationButton: "Access Education Tools",
@@ -116,6 +119,9 @@
       financialTitle: "Verktyg för Finansiella Systems Ramverk",
       financialDesc: "Resurser för implementering av finansiella system som prioriterar mänskligt och ekologiskt välbefinnande, inklusive Hearts valutaimplementering, Love Ledger-guider, validatorträning och verktyg för integrering med traditionella finansiella system.",
       financialButton: "Öppna finansiella systemverktyg",
+      workInLiberationTitle: "Verktyg för ramverket för frigjort arbete, ",
+      workInLiberationDesc: "Resurser för att omvandla arbete från exploatering till meningsfulla bidrag genom Gemenskapliga Arbetslag, Hearts & Leaves valutor, demokratisk styrning och rättvis övergång från utvinningsindustrier till regenerativa alternativ.",
+      workInLiberationButton: "Öppna Arbete i Befrielse Verktyg",
       educationTitle: "Verktyg för utbildningsramverket",
       educationDesc: "Verktyg för att implementera utbildningsramverket, inklusive projektguider, bedömningsverktyg och opinionsbildningsresurser.",
       educationButton: "Öppna utbildningsverktyg",
@@ -389,6 +395,25 @@
             </p>
             <a href="{base}/frameworks/tools/financial-systems" style="display: inline-flex; align-items: center; background-color: #3A6EA5; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.financialButton}
+              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Work in Liberation Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2C5282; margin-bottom: 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+          <div style="font-size: 2.5rem; color: #2C5282;">🤝</div>
+          <div style="flex: 1; min-width: 200px;">
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #2C5282;">{texts.workInLiberationTitle}</h2>
+            <p style="color: #4b5563; margin-bottom: 1rem;">
+              {texts.workInLiberationDesc}
+            </p>
+            <a href="{base}/frameworks/tools/work-in-liberation" style="display: inline-flex; align-items: center; background-color: #2C5282; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.workInLiberationButton}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>

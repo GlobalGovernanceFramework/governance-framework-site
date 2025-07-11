@@ -24,7 +24,17 @@ const pageSpecificTranslationsMap = [
   { route: '/quiz', dataKey: 'findYourPlace', fileName: 'findYourPlace' },
   { route: '/my-path', dataKey: 'findYourPlace', fileName: 'findYourPlace' },
   
+  // Tools routes (specific before general)
+  { route: '/frameworks/tools/work-in-liberation', dataKey: 'toolsWorkInLiberation', fileName: 'toolsWorkInLiberation' },
+  { route: '/frameworks/tools/financial-systems', dataKey: 'toolsFinancialSystems', fileName: 'toolsFinancialSystems' },
+  { route: '/frameworks/tools/indigenous-governance-and-traditional-knowledge', dataKey: 'toolsIndigenous', fileName: 'toolsIndigenous' },
+  { route: '/frameworks/tools/aubi', dataKey: 'toolsAubi', fileName: 'toolsAubi' },
+  { route: '/frameworks/tools/treaty-for-our-only-home', dataKey: 'toolsTreaty', fileName: 'toolsTreaty' },
+  { route: '/frameworks/tools/meta-governance', dataKey: 'toolsMetaGovernance', fileName: 'toolsMetaGovernance' },
+  { route: '/frameworks/tools', dataKey: 'tools', fileName: 'tools' },
+  
   // Framework routes (most specific first)
+  { route: '/frameworks/work-in-liberation', dataKey: 'work-in-liberation', fileName: 'frameworksWorkInLiberation' },
   { route: '/frameworks/gaian-trade', dataKey: 'gaian-trade', fileName: 'frameworksGaianTrade' },
   { route: '/frameworks/adaptive-universal-basic-income', dataKey: 'aubi', fileName: 'frameworksAdaptiveUniversalBasicIncome' },
   { route: '/frameworks/aethelred-accord', dataKey: 'aethelred', fileName: 'frameworksAethelredAccord' },
