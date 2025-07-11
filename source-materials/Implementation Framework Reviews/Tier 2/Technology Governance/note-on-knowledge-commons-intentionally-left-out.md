@@ -1,1 +1,0 @@
-To access the full Knowledge Commons or contribute resources, visit [knowledge.globalgovernanceframework.org](https://knowledge.globalgovernanceframework.org) or contact education@globalgovernanceframework.org.
