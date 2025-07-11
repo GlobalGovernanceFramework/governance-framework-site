@@ -84,6 +84,18 @@ This framework emerged through organic processes of Indigenous-led dialogue, res
 
 **Core Commitment**: This framework remains under Indigenous control, with a **Red Lines Clause** that allows Indigenous communities to modify, withdraw from, or redirect implementation if the framework becomes co-opted by colonial or extractive interests.
 
+### Version 1.0 Community Invitation
+
+This framework represents the first comprehensive release (Version 1.0) of the Indigenous & Traditional Knowledge Governance Framework, developed through extensive research synthesis and guided by established principles of Indigenous sovereignty, Traditional Ecological Knowledge, and decolonization practices documented globally.
+
+**Community Review and Refinement**: While this framework demonstrates deep respect for Indigenous governance traditions and incorporates established cultural protocols, Version 1.0 is explicitly designed as a **community review edition**. We recognize that authentic Indigenous governance frameworks must emerge from and be validated by Indigenous communities themselves.
+
+**Indigenous Authority**: The Red Lines Clause ensures that Indigenous communities maintain complete authority to modify, redirect, or withdraw from any framework components that do not serve Indigenous sovereignty or cultural integrity. This framework serves Indigenous leadership rather than directing it.
+
+**Invitation for Engagement**: Indigenous communities, traditional knowledge keepers, and cultural authorities are invited to engage with this framework through culturally appropriate protocols. All feedback will be incorporated into future versions while maintaining Indigenous control over the terms of engagement.
+
+**Living Document Commitment**: This framework will evolve based on Indigenous community guidance, implementation experience, and emerging traditional knowledge applications, ensuring it remains responsive to community needs and cultural wisdom.
+
 ## <a id="how-to-engage"></a>How to Engage with This Framework
 
 This framework is designed for multiple audiences while maintaining Indigenous leadership and self-determination:

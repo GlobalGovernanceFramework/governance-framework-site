@@ -1,10 +1,10 @@
 ---
 title: Indigenous & Traditional Knowledge Governance Framework
 section: index
-status: First draft
-revision: 0.5
-releaseDate: too be determined
-lastUpdated: 2025-06-24
+status: First release
+revision: 1.0
+releaseDate: 2025-07-11
+lastUpdated: 2025-07-11
 nextReview: too be determined
 ---
 
@@ -27,6 +27,14 @@ In a world facing ecological collapse and spiritual disconnection, the *Indigeno
 **Framework Position**: This Indigenous & Traditional Knowledge Governance Framework serves as the primary, leading model for cultural and ecological governance within the broader [Integrated Meta-Governance ecosystem](/frameworks/meta-governance). It provides the foundational wisdom and practical implementation pathways for meta-governance principles, demonstrating how polycentric coordination, subsidiarity, and planetary stewardship can be realized through Indigenous sovereignty and Traditional Ecological Knowledge. While meta-governance provides the coordination architecture for diverse systems to work together, this framework offers the proven, land-based approaches that have sustained human-Earth relationships for millennia.
 
 This framework advances a revolutionary **Global Framework for Indigenous Governance & Traditional Knowledge Governance**, moving beyond reform to fundamental transformation. It integrates bioregional governance, non-human rights, and ceremonial stewardship with practical implementation mechanisms, comprehensive legal strategies, and technological sovereignty protocols. Aligned with the United Nations Declaration on the Rights of Indigenous Peoples (UNDRIP), the Paris Agreement, and emerging Rights of Nature legislation, it prioritizes Indigenous authority, ecological restoration, and seventh-generation accountability.
+
+### Version 1.0 Status and Community Engagement
+
+This framework has reached Version 1.0 status as a comprehensive blueprint ready for serious consideration and community review. Developed through extensive research and guided by established Indigenous governance principles worldwide, it provides detailed mechanisms for Indigenous-led planetary transformation while maintaining strict cultural integrity safeguards.
+
+**Indigenous Community Invitation**: Version 1.0 serves as a community review edition, explicitly designed for feedback from Indigenous communities, traditional knowledge keepers, and cultural authorities. The framework's Red Lines Clause ensures Indigenous communities retain complete authority over their engagement and can modify or withdraw from any components that do not serve Indigenous sovereignty. We recognize that authentic governance transformation must be Indigenous-led at every level.
+
+**Implementation Readiness**: While comprehensive enough for pilot implementations, all framework applications must follow Free, Prior, and Informed Consent protocols and traditional governance systems. Communities interested in implementation should begin with elder consultation and cultural protocol assessment before proceeding with any framework components.
 
 **Vision**: Transform planetary governance from extractive colonial systems to regenerative Indigenous-led stewardship, where Traditional Ecological Knowledge guides AI, bioregional autonomy replaces nation-states, and ceremonial governance emerges as humanity's path forward.
 
