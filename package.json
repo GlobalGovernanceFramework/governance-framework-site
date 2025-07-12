@@ -61,6 +61,7 @@
 	 	 "marked": "^15.0.11",
 	 	 "mermaid": "^11.8.1",
 	 	 "node-emoji": "^2.2.0",
+	 	 "qrcode": "^1.5.4",
 	 	 "sveltekit-i18n": "^2.4.2"
 	 }
 }

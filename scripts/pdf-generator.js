@@ -25,7 +25,6 @@ Available categories:
 - peace-and-conflict-resolution
 - economic-integration
 - digital-commons
-- global-ethics-and-rights-of-beings
 - justice-systems
 - religious-and-spiritual-dialogue-governance
 - financial-systems
@@ -40,6 +39,7 @@ Available categories:
 - water-and-sanitation-governance
 - indigenous-governance-and-traditional-knowledge
 - mental-health-governance
+- moral-operating-system
 - treaty-for-our-only-home
 - get-involved
 - frameworks-foundation
@@ -67,7 +67,6 @@ const outputDirs = {
   'peace-and-conflict-resolution': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'peace-and-conflict-resolution'),
   'economic-integration': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'economic-integration'),
   'digital-commons': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'digital-commons'),
-  'global-ethics-and-rights-of-beings': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'global-ethics-and-rights-of-beings'),
   'justice-systems': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'justice-systems'),
   'spiritual-and-religious-dialogue-governance': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'religious-and-spiritual-dialogue-governance'),
   'financial-systems': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'financial-systems'),
@@ -77,6 +76,7 @@ const outputDirs = {
   'planetary-health-governance': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'planetary-health-governance'),
   'global-health-and-pandemic-security': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'global-health-and-pandemic-security'),
   'mental-health-governance': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'mental-health-governance'),
+  'moral-operating-system': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'moral-operating-system'),
   'aethelred-accord': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'aethelred-accord'),
   'consciousness-and-inner-development': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'consciousness-and-inner-development'),
   'youth': path.join(__dirname, '..', 'static', 'frameworks','tools', 'youth'),
@@ -8084,6 +8084,110 @@ const tools = [
     'global-implementation',
     'conclusion',
     'appendices'
+    ]
+  },
+  // Moral Operating System, former Ethics and Rights of Beings
+
+  // Guides
+  {
+    name: 'mos-essence',
+    category: 'moral-operating-system',
+    fileNames: {
+      en: 'mos-essentials-en',
+      sv: 'mos-essentials-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'moral-operating-system'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'moral-operating-system')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'moral-operating-system'),
+      sv: path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'moral-operating-system')
+    },
+    pageFooter: {
+      en: 'Moral Operating System - Essentials',
+      sv: 'Moraliskt operativsystem - Nödvändigheter'
+    }
+  },
+  {
+    name: 'essence',
+    category: 'moral-operating-system',
+    fileNames: {
+      en: 'moral-operating-system-framework-essence-en',
+      sv: 'moral-operating-system-framework-essence-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'moral-operating-system'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'moral-operating-system')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'assets', 'pdf'),
+      sv: path.join(__dirname, '..', 'static', 'assets', 'pdf')
+    },
+    pageFooter: {
+      en: 'Moral Operating System - Essence',
+      sv: 'Moraliskt operativsystem - Essens'
+    }
+  },
+  {
+    name: 'executive-summary-for-the-skeptic',
+    category: 'moral-operating-system',
+    fileNames: {
+      en: 'moral-operating-system-framework-executivesummary-for-the-skeptic-en',
+      sv: 'moral-operating-system-framework-executivesummary-for-the-skeptic-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'moral-operating-system'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'moral-operating-system')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'assets', 'pdf'),
+      sv: path.join(__dirname, '..', 'static', 'assets', 'pdf')
+    },
+    pageFooter: {
+      en: 'Moral Operating System - Executive Summary for the Skeptic',
+      sv: 'Moraliskt operativsystem - Sammanfattning för skeptikern'
+    }
+  },
+
+  // Full framework
+  {
+    name: 'moral-operating-system-framework',
+    category: 'moral-operating-system',
+    fileNames: {
+      en: 'Moral-Operating-System-Framework',
+      sv: 'Moral-Operating-System-Framework'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'moral-operating-system'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'moral-operating-system')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Moral Operating System Framework- Page ',
+      sv: 'Moraliskt Operativsystem, ramverk - Sida '
+    },
+    sections: [
+     'index',
+     'preamble',
+     'introduction',
+     'foundational-values-principles',
+     'rights-commitments',
+     'governance-integration',
+     'implementation-plan',
+     'appendix-a',
+     'appendix-b',
+     'appendix-c',
+     'appendix-d',
+     'what-is-a-right',
+     'living-continuum-worth',
+     'entitlement-to-entanglement',
+     'spiral-ethical-growth',
+     'ontological-humility',
+     'rights-promise-future'
     ]
   }
 ];

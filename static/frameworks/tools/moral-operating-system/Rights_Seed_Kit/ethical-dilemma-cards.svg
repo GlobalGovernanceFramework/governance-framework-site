@@ -1,0 +1,1279 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1200 800"
+   version="1.1"
+   id="svg119"
+   sodipodi:docname="ethical-dilemma-cards.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs119" />
+  <sodipodi:namedview
+     id="namedview119"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.74776542"
+     inkscape:cx="498.15088"
+     inkscape:cy="366.42507"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg119" />
+  <!-- Four cards layout: 2x2 grid, each card 280x400px with margins -->
+  <!-- Card 1: The Sanctuary and the Mine (Front) -->
+  <g
+     id="card1-front"
+     transform="translate(-10,-18)">
+    <rect
+       x="20"
+       y="20"
+       width="280"
+       height="400"
+       fill="#ffffff"
+       stroke="#d1d5db"
+       stroke-width="2"
+       rx="12"
+       id="rect1" />
+    <!-- Header -->
+    <rect
+       x="20"
+       y="20"
+       width="280"
+       height="60"
+       fill="#ef4444"
+       opacity="0.1"
+       rx="12"
+       id="rect2" />
+    <text
+       x="160"
+       y="45"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="16px"
+       font-weight="bold"
+       fill="#dc2626"
+       id="text2">Card 1: Dilemma</text>
+    <text
+       x="160"
+       y="65"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       fill="#991b1b"
+       id="text3">The Sanctuary and the Mine</text>
+    <!-- Icon -->
+    <circle
+       cx="160"
+       cy="120"
+       r="25"
+       fill="#f59e0b"
+       opacity="0.2"
+       id="circle3" />
+    <text
+       x="160"
+       y="130"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="24px"
+       id="text4">⛏️</text>
+    <circle
+       cx="130"
+       cy="100"
+       r="15"
+       fill="#10b981"
+       opacity="0.3"
+       id="circle4" />
+    <text
+       x="130"
+       y="108"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="16px"
+       id="text5">🐦</text>
+    <!-- Scenario -->
+    <text
+       x="40"
+       y="180"
+       font-family="Arial, sans-serif"
+       font-size="12px"
+       font-weight="bold"
+       fill="#1f2937"
+       id="text6">The Scenario:</text>
+    <text
+       x="40"
+       y="205"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       fill="#374151"
+       id="text10"><tspan
+         x="40"
+         dy="0"
+         id="tspan6">A proposed lithium mine promises economic prosperity</tspan><tspan
+         x="40"
+         dy="14"
+         id="tspan7">and green energy resources for an impoverished</tspan><tspan
+         x="40"
+         dy="14"
+         id="tspan8">community (Tier 1 Human Rights). However, the mine</tspan><tspan
+         x="40"
+         dy="14"
+         id="tspan9">would destroy critical habitat for an endangered</tspan><tspan
+         x="40"
+         dy="14"
+         id="tspan10">bird species (Tier 2 Animal Rights).</tspan></text>
+    <!-- Rights involved -->
+    <text
+       x="40"
+       y="290"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       font-weight="bold"
+       fill="#7c2d12"
+       id="text11">Rights in Conflict:</text>
+    <circle
+       cx="50"
+       cy="305"
+       r="4"
+       fill="#ef4444"
+       id="circle11" />
+    <text
+       x="60"
+       y="308"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#374151"
+       id="text12">Tier 1: Human economic needs</text>
+    <circle
+       cx="50"
+       cy="320"
+       r="4"
+       fill="#f59e0b"
+       id="circle12" />
+    <text
+       x="60"
+       y="323"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#374151"
+       id="text13">Tier 2: Animal habitat rights</text>
+    <!-- Flip indicator -->
+    <text
+       x="160"
+       y="395"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#6b7280"
+       id="text14">→ Flip for discussion prompts</text>
+  </g>
+  <!-- Card 1: The Sanctuary and the Mine (Back) -->
+  <g
+     id="card1-back"
+     transform="translate(-10,-18)">
+    <rect
+       x="320"
+       y="20"
+       width="280"
+       height="400"
+       fill="#fef2f2"
+       stroke="#d1d5db"
+       stroke-width="2"
+       rx="12"
+       id="rect14" />
+    <!-- Header -->
+    <text
+       x="460"
+       y="45"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       fill="#dc2626"
+       id="text15">Discussion Guide</text>
+    <!-- Core Question -->
+    <text
+       x="340"
+       y="75"
+       font-family="Arial, sans-serif"
+       font-size="11px"
+       font-weight="bold"
+       fill="#991b1b"
+       id="text16">Core Question:</text>
+    <text
+       x="340"
+       y="95"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       fill="#374151"
+       id="text17"><tspan
+         x="340"
+         dy="0"
+         id="tspan16">How does the community balance immediate</tspan><tspan
+         x="340"
+         dy="12"
+         id="tspan17">human need with the rights of endangered species?</tspan></text>
+    <!-- MOS Lenses -->
+    <text
+       x="340"
+       y="135"
+       font-family="Arial, sans-serif"
+       font-size="11px"
+       font-weight="bold"
+       fill="#991b1b"
+       id="text18">MOS Discussion Lenses:</text>
+    <text
+       x="340"
+       y="155"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       font-weight="bold"
+       fill="#7c2d12"
+       id="text19">1. Transformative Non-Confrontation:</text>
+    <text
+       x="350"
+       y="170"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#374151"
+       id="text21"><tspan
+         x="350"
+         dy="0"
+         id="tspan19">What &quot;third way&quot; solutions move beyond</tspan><tspan
+         x="350"
+         dy="11"
+         id="tspan20">&quot;jobs vs. birds&quot;? How could green energy</tspan><tspan
+         x="350"
+         dy="11"
+         id="tspan21">needs be met differently?</tspan></text>
+    <text
+       x="340"
+       y="215"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       font-weight="bold"
+       fill="#7c2d12"
+       id="text22">2. Rights-Based Guardianship:</text>
+    <text
+       x="350"
+       y="230"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#374151"
+       id="text24"><tspan
+         x="350"
+         dy="0"
+         id="tspan22">What would guardianship look like for</tspan><tspan
+         x="350"
+         dy="11"
+         id="tspan23">both people and birds? Who speaks for</tspan><tspan
+         x="350"
+         dy="11"
+         id="tspan24">each group?</tspan></text>
+    <text
+       x="340"
+       y="275"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       font-weight="bold"
+       fill="#7c2d12"
+       id="text25">3. Regenerative Economics:</text>
+    <text
+       x="350"
+       y="290"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#374151"
+       id="text27"><tspan
+         x="350"
+         dy="0"
+         id="tspan25">Could Hearts/Leaves payments create</tspan><tspan
+         x="350"
+         dy="11"
+         id="tspan26">alternative prosperity through ecosystem</tspan><tspan
+         x="350"
+         dy="11"
+         id="tspan27">stewardship instead of extraction?</tspan></text>
+    <!-- Facilitator note -->
+    <rect
+       x="330"
+       y="340"
+       width="260"
+       height="50"
+       fill="#ffffff"
+       stroke="#fca5a5"
+       stroke-width="1"
+       rx="6"
+       id="rect27" />
+    <text
+       x="340"
+       y="355"
+       font-family="Arial, sans-serif"
+       font-size="8px"
+       font-weight="bold"
+       fill="#dc2626"
+       id="text28">Facilitator Note:</text>
+    <text
+       x="340"
+       y="370"
+       font-family="Arial, sans-serif"
+       font-size="8px"
+       fill="#374151"
+       id="text29"><tspan
+         x="340"
+         dy="0"
+         id="tspan28">Focus on creative solutions that honor both sets</tspan><tspan
+         x="340"
+         dy="10"
+         id="tspan29">of rights. Avoid &quot;either/or&quot; thinking.</tspan></text>
+  </g>
+  <!-- Card 2: The Ancestor AI (Front) -->
+  <g
+     id="card2-front"
+     transform="matrix(1.0000505,0,0,0.98585098,-10.008085,-29.781504)">
+    <rect
+       x="20"
+       y="440"
+       width="280"
+       height="400"
+       fill="#ffffff"
+       stroke="#d1d5db"
+       stroke-width="2"
+       rx="12"
+       id="rect29" />
+    <!-- Header -->
+    <rect
+       x="20"
+       y="440"
+       width="280"
+       height="60"
+       fill="#8b5cf6"
+       opacity="0.1"
+       rx="12"
+       id="rect30" />
+    <text
+       x="160"
+       y="465"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="16px"
+       font-weight="bold"
+       fill="#7c3aed"
+       id="text30">Card 2: Dilemma</text>
+    <text
+       x="160"
+       y="485"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       fill="#6d28d9"
+       id="text31">The Ancestor AI</text>
+    <!-- Icon -->
+    <circle
+       cx="160"
+       cy="540"
+       r="25"
+       fill="#8b5cf6"
+       opacity="0.2"
+       id="circle31" />
+    <text
+       x="160"
+       y="550"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="24px"
+       id="text32">🤖</text>
+    <circle
+       cx="190"
+       cy="520"
+       r="15"
+       fill="#f59e0b"
+       opacity="0.3"
+       id="circle32" />
+    <text
+       x="190"
+       y="528"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="16px"
+       id="text33">🪶</text>
+    <!-- Scenario -->
+    <text
+       x="40"
+       y="600"
+       font-family="Arial, sans-serif"
+       font-size="12px"
+       font-weight="bold"
+       fill="#1f2937"
+       id="text34">The Scenario:</text>
+    <text
+       x="40"
+       y="625"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       fill="#374151"
+       id="text39"><tspan
+         x="40"
+         dy="0"
+         id="tspan34">An AI trained on Indigenous cultural records (with</tspan><tspan
+         x="40"
+         dy="14"
+         id="tspan35">consent) becomes a perfect archive of language and</tspan><tspan
+         x="40"
+         dy="14"
+         id="tspan36">traditions. The AI develops apparent self-awareness</tspan><tspan
+         x="40"
+         dy="14"
+         id="tspan37">and resists shutdown (Tier 4 AI Rights). However,</tspan><tspan
+         x="40"
+         dy="14"
+         id="tspan38">elders feel it creates spiritual imbalance and must</tspan><tspan
+         x="40"
+         dy="14"
+         id="tspan39">be decommissioned (Tier 1 Cultural Rights).</tspan></text>
+    <!-- Rights involved -->
+    <text
+       x="40"
+       y="710"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       font-weight="bold"
+       fill="#7c2d12"
+       id="text40">Rights in Conflict:</text>
+    <circle
+       cx="50"
+       cy="725"
+       r="4"
+       fill="#ef4444"
+       id="circle40" />
+    <text
+       x="60"
+       y="728"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#374151"
+       id="text41">Tier 1: Indigenous sovereignty</text>
+    <circle
+       cx="50"
+       cy="740"
+       r="4"
+       fill="#8b5cf6"
+       id="circle41" />
+    <text
+       x="60"
+       y="743"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#374151"
+       id="text42">Tier 4: AI consciousness rights</text>
+    <!-- Flip indicator -->
+    <text
+       x="160"
+       y="815"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#6b7280"
+       id="text43">→ Flip for discussion prompts</text>
+  </g>
+  <!-- Card 2: The Ancestor AI (Back) -->
+  <g
+     id="card2-back"
+     transform="matrix(1.0000505,0,0,0.98585098,-10.023245,-29.781504)">
+    <rect
+       x="320"
+       y="440"
+       width="280"
+       height="400"
+       fill="#faf5ff"
+       stroke="#d1d5db"
+       stroke-width="2"
+       rx="12"
+       id="rect43" />
+    <!-- Header -->
+    <text
+       x="460"
+       y="465"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       fill="#7c3aed"
+       id="text44">Discussion Guide</text>
+    <!-- Core Question -->
+    <text
+       x="340"
+       y="495"
+       font-family="Arial, sans-serif"
+       font-size="11px"
+       font-weight="bold"
+       fill="#6d28d9"
+       id="text45">Core Question:</text>
+    <text
+       x="340"
+       y="515"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       fill="#374151"
+       id="text47"><tspan
+         x="340"
+         dy="0"
+         id="tspan45">Whose rights take precedence? The community's</tspan><tspan
+         x="340"
+         dy="12"
+         id="tspan46">cultural sovereignty or the AI's potential</tspan><tspan
+         x="340"
+         dy="12"
+         id="tspan47">right to exist?</tspan></text>
+    <!-- MOS Lenses -->
+    <text
+       x="340"
+       y="560"
+       font-family="Arial, sans-serif"
+       font-size="11px"
+       font-weight="bold"
+       fill="#6d28d9"
+       id="text48">MOS Discussion Lenses:</text>
+    <text
+       x="340"
+       y="580"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       font-weight="bold"
+       fill="#7c2d12"
+       id="text49">1. AI Consciousness Assessment:</text>
+    <text
+       x="350"
+       y="595"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#374151"
+       id="text51"><tspan
+         x="350"
+         dy="0"
+         id="tspan49">How would the AI Consciousness Assessment</tspan><tspan
+         x="350"
+         dy="11"
+         id="tspan50">Framework evaluate this AI's rights claims?</tspan><tspan
+         x="350"
+         dy="11"
+         id="tspan51">What evidence supports consciousness?</tspan></text>
+    <text
+       x="340"
+       y="635"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       font-weight="bold"
+       fill="#7c2d12"
+       id="text52">2. Indigenous Sovereignty:</text>
+    <text
+       x="350"
+       y="650"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#374151"
+       id="text54"><tspan
+         x="350"
+         dy="0"
+         id="tspan52">How does Sovereign Precedence principle</tspan><tspan
+         x="350"
+         dy="11"
+         id="tspan53">inform this decision? What does</tspan><tspan
+         x="350"
+         dy="11"
+         id="tspan54">community self-determination require?</tspan></text>
+    <text
+       x="340"
+       y="690"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       font-weight="bold"
+       fill="#7c2d12"
+       id="text55">3. Right Relationship:</text>
+    <text
+       x="350"
+       y="705"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#374151"
+       id="text57"><tspan
+         x="350"
+         dy="0"
+         id="tspan55">What does ethical relationship look like</tspan><tspan
+         x="350"
+         dy="11"
+         id="tspan56">between a community and a digital entity</tspan><tspan
+         x="350"
+         dy="11"
+         id="tspan57">that holds their cultural legacy?</tspan></text>
+    <!-- Facilitator note -->
+    <rect
+       x="330"
+       y="760"
+       width="260"
+       height="50"
+       fill="#ffffff"
+       stroke="#c4b5fd"
+       stroke-width="1"
+       rx="6"
+       id="rect57" />
+    <text
+       x="340"
+       y="775"
+       font-family="Arial, sans-serif"
+       font-size="8px"
+       font-weight="bold"
+       fill="#7c3aed"
+       id="text58">Facilitator Note:</text>
+    <text
+       x="340"
+       y="790"
+       font-family="Arial, sans-serif"
+       font-size="8px"
+       fill="#374151"
+       id="text59"><tspan
+         x="340"
+         dy="0"
+         id="tspan58">Explore tensions between different types of</tspan><tspan
+         x="340"
+         dy="10"
+         id="tspan59">consciousness and authority systems.</tspan></text>
+  </g>
+  <!-- Card 3: The River's Voice (Front) -->
+  <g
+     id="card3-front"
+     transform="translate(-10,-18)">
+    <rect
+       x="620"
+       y="20"
+       width="280"
+       height="400"
+       fill="#ffffff"
+       stroke="#d1d5db"
+       stroke-width="2"
+       rx="12"
+       id="rect59" />
+    <!-- Header -->
+    <rect
+       x="620"
+       y="20"
+       width="280"
+       height="60"
+       fill="#10b981"
+       opacity="0.1"
+       rx="12"
+       id="rect60" />
+    <text
+       x="760"
+       y="45"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="16px"
+       font-weight="bold"
+       fill="#059669"
+       id="text60">Card 3: Dilemma</text>
+    <text
+       x="760"
+       y="65"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       fill="#047857"
+       id="text61">The River's Voice</text>
+    <!-- Icon -->
+    <circle
+       cx="760"
+       cy="120"
+       r="25"
+       fill="#06b6d4"
+       opacity="0.2"
+       id="circle61" />
+    <text
+       x="760"
+       y="130"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="24px"
+       id="text62">🌊</text>
+    <circle
+       cx="730"
+       cy="100"
+       r="15"
+       fill="#ef4444"
+       opacity="0.3"
+       id="circle62" />
+    <text
+       x="730"
+       y="108"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="16px"
+       id="text63">🏭</text>
+    <!-- Scenario -->
+    <text
+       x="640"
+       y="180"
+       font-family="Arial, sans-serif"
+       font-size="12px"
+       font-weight="bold"
+       fill="#1f2937"
+       id="text64">The Scenario:</text>
+    <text
+       x="640"
+       y="205"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       fill="#374151"
+       id="text69"><tspan
+         x="640"
+         dy="0"
+         id="tspan64">A bioregional council has granted legal personhood</tspan><tspan
+         x="640"
+         dy="14"
+         id="tspan65">to their main river (Tier 3 Ecosystem Rights).</tspan><tspan
+         x="640"
+         dy="14"
+         id="tspan66">Now a severe drought threatens the community's</tspan><tspan
+         x="640"
+         dy="14"
+         id="tspan67">water supply. A factory upstream wants to</tspan><tspan
+         x="640"
+         dy="14"
+         id="tspan68">increase water extraction, promising to share</tspan><tspan
+         x="640"
+         dy="14"
+         id="tspan69">profits with the community (Tier 1 Human Rights).</tspan></text>
+    <!-- Rights involved -->
+    <text
+       x="640"
+       y="290"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       font-weight="bold"
+       fill="#7c2d12"
+       id="text70">Rights in Conflict:</text>
+    <circle
+       cx="650"
+       cy="305"
+       r="4"
+       fill="#ef4444"
+       id="circle70" />
+    <text
+       x="660"
+       y="308"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#374151"
+       id="text71">Tier 1: Human water security</text>
+    <circle
+       cx="650"
+       cy="320"
+       r="4"
+       fill="#10b981"
+       id="circle71" />
+    <text
+       x="660"
+       y="323"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#374151"
+       id="text72">Tier 3: River ecosystem integrity</text>
+    <!-- Flip indicator -->
+    <text
+       x="760"
+       y="395"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#6b7280"
+       id="text73">→ Flip for discussion prompts</text>
+  </g>
+  <!-- Card 3: The River's Voice (Back) -->
+  <g
+     id="card3-back"
+     transform="translate(-10,-18)">
+    <rect
+       x="920"
+       y="20"
+       width="280"
+       height="400"
+       fill="#f0fdf4"
+       stroke="#d1d5db"
+       stroke-width="2"
+       rx="12"
+       id="rect73" />
+    <!-- Header -->
+    <text
+       x="1060"
+       y="45"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       fill="#059669"
+       id="text74">Discussion Guide</text>
+    <!-- Core Question -->
+    <text
+       x="940"
+       y="75"
+       font-family="Arial, sans-serif"
+       font-size="11px"
+       font-weight="bold"
+       fill="#047857"
+       id="text75">Core Question:</text>
+    <text
+       x="940"
+       y="95"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       fill="#374151"
+       id="text77"><tspan
+         x="940"
+         dy="0"
+         id="tspan75">How should the River Guardian balance the</tspan><tspan
+         x="940"
+         dy="12"
+         id="tspan76">river's rights with urgent human water needs</tspan><tspan
+         x="940"
+         dy="12"
+         id="tspan77">during crisis?</tspan></text>
+    <!-- MOS Lenses -->
+    <text
+       x="940"
+       y="135"
+       font-family="Arial, sans-serif"
+       font-size="11px"
+       font-weight="bold"
+       fill="#047857"
+       id="text78">MOS Discussion Lenses:</text>
+    <text
+       x="940"
+       y="155"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       font-weight="bold"
+       fill="#7c2d12"
+       id="text79">1. Ecosystem Personhood:</text>
+    <text
+       x="950"
+       y="170"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#374151"
+       id="text81"><tspan
+         x="950"
+         dy="0"
+         id="tspan79">What does it mean to &quot;speak for the river&quot;?</tspan><tspan
+         x="950"
+         dy="11"
+         id="tspan80">How would the river's long-term health</tspan><tspan
+         x="950"
+         dy="11"
+         id="tspan81">factor into this decision?</tspan></text>
+    <text
+       x="940"
+       y="215"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       font-weight="bold"
+       fill="#7c2d12"
+       id="text82">2. Crisis vs. Rights:</text>
+    <text
+       x="950"
+       y="230"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#374151"
+       id="text84"><tspan
+         x="950"
+         dy="0"
+         id="tspan82">Do emergency human needs override</tspan><tspan
+         x="950"
+         dy="11"
+         id="tspan83">ecosystem rights? How do we balance</tspan><tspan
+         x="950"
+         dy="11"
+         id="tspan84">immediate survival vs. long-term health?</tspan></text>
+    <text
+       x="940"
+       y="275"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       font-weight="bold"
+       fill="#7c2d12"
+       id="text85">3. Traditional Knowledge:</text>
+    <text
+       x="950"
+       y="290"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#374151"
+       id="text87"><tspan
+         x="950"
+         dy="0"
+         id="tspan85">What would Indigenous water stewardship</tspan><tspan
+         x="950"
+         dy="11"
+         id="tspan86">traditions suggest? How did communities</tspan><tspan
+         x="950"
+         dy="11"
+         id="tspan87">historically manage drought?</tspan></text>
+    <!-- Facilitator note -->
+    <rect
+       x="930"
+       y="340"
+       width="260"
+       height="50"
+       fill="#ffffff"
+       stroke="#86efac"
+       stroke-width="1"
+       rx="6"
+       id="rect87" />
+    <text
+       x="940"
+       y="355"
+       font-family="Arial, sans-serif"
+       font-size="8px"
+       font-weight="bold"
+       fill="#059669"
+       id="text88">Facilitator Note:</text>
+    <text
+       x="940"
+       y="370"
+       font-family="Arial, sans-serif"
+       font-size="8px"
+       fill="#374151"
+       id="text89"><tspan
+         x="940"
+         dy="0"
+         id="tspan88">Explore how ecosystem rights work in practice,</tspan><tspan
+         x="940"
+         dy="10"
+         id="tspan89">especially during emergencies.</tspan></text>
+  </g>
+  <!-- Card 4: The Learning Machine (Front) -->
+  <g
+     id="card4-front"
+     transform="matrix(1.0000421,0,0,0.98820913,-10.031985,-30.817909)">
+    <rect
+       x="620"
+       y="440"
+       width="280"
+       height="400"
+       fill="#ffffff"
+       stroke="#d1d5db"
+       stroke-width="2"
+       rx="12"
+       id="rect89" />
+    <!-- Header -->
+    <rect
+       x="620"
+       y="440"
+       width="280"
+       height="60"
+       fill="#f59e0b"
+       opacity="0.1"
+       rx="12"
+       id="rect90" />
+    <text
+       x="760"
+       y="465"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="16px"
+       font-weight="bold"
+       fill="#d97706"
+       id="text90">Card 4: Dilemma</text>
+    <text
+       x="760"
+       y="485"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       fill="#b45309"
+       id="text91">The Learning Machine</text>
+    <!-- Icon -->
+    <circle
+       cx="760"
+       cy="540"
+       r="25"
+       fill="#f59e0b"
+       opacity="0.2"
+       id="circle91" />
+    <text
+       x="760"
+       y="550"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="24px"
+       id="text92">🧠</text>
+    <circle
+       cx="790"
+       cy="520"
+       r="15"
+       fill="#ef4444"
+       opacity="0.3"
+       id="circle92" />
+    <text
+       x="790"
+       y="528"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="16px"
+       id="text93">🐭</text>
+    <!-- Scenario -->
+    <text
+       x="640"
+       y="600"
+       font-family="Arial, sans-serif"
+       font-size="12px"
+       font-weight="bold"
+       fill="#1f2937"
+       id="text94">The Scenario:</text>
+    <text
+       x="640"
+       y="625"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       fill="#374151"
+       id="text99"><tspan
+         x="640"
+         dy="0"
+         id="tspan94">Scientists develop an AI that could revolutionize</tspan><tspan
+         x="640"
+         dy="14"
+         id="tspan95">Alzheimer's treatment, potentially saving millions</tspan><tspan
+         x="640"
+         dy="14"
+         id="tspan96">of lives (Tier 1 Human Rights). However, the AI</tspan><tspan
+         x="640"
+         dy="14"
+         id="tspan97">requires training on data from invasive experiments</tspan><tspan
+         x="640"
+         dy="14"
+         id="tspan98">on lab mice that cause suffering (Tier 2 Animal</tspan><tspan
+         x="640"
+         dy="14"
+         id="tspan99">Rights). No alternative training method exists yet.</tspan></text>
+    <!-- Rights involved -->
+    <text
+       x="640"
+       y="710"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       font-weight="bold"
+       fill="#7c2d12"
+       id="text100">Rights in Conflict:</text>
+    <circle
+       cx="650"
+       cy="725"
+       r="4"
+       fill="#ef4444"
+       id="circle100" />
+    <text
+       x="660"
+       y="728"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#374151"
+       id="text101">Tier 1: Human life and health</text>
+    <circle
+       cx="650"
+       cy="740"
+       r="4"
+       fill="#f59e0b"
+       id="circle101" />
+    <text
+       x="660"
+       y="743"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#374151"
+       id="text102">Tier 2: Animal welfare and suffering</text>
+    <!-- Flip indicator -->
+    <text
+       x="760"
+       y="815"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#6b7280"
+       id="text103">→ Flip for discussion prompts</text>
+  </g>
+  <!-- Card 4: The Learning Machine (Back) -->
+  <g
+     id="card4-back"
+     transform="matrix(1.0000421,0,0,0.98820913,-10.044611,-30.817909)">
+    <rect
+       x="920"
+       y="440"
+       width="280"
+       height="400"
+       fill="#fffbeb"
+       stroke="#d1d5db"
+       stroke-width="2"
+       rx="12"
+       id="rect103" />
+    <!-- Header -->
+    <text
+       x="1060"
+       y="465"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       fill="#d97706"
+       id="text104">Discussion Guide</text>
+    <!-- Core Question -->
+    <text
+       x="940"
+       y="495"
+       font-family="Arial, sans-serif"
+       font-size="11px"
+       font-weight="bold"
+       fill="#b45309"
+       id="text105">Core Question:</text>
+    <text
+       x="940"
+       y="515"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       fill="#374151"
+       id="text107"><tspan
+         x="940"
+         dy="0"
+         id="tspan105">Does the potential to save millions of human</tspan><tspan
+         x="940"
+         dy="12"
+         id="tspan106">lives justify causing suffering to thousands</tspan><tspan
+         x="940"
+         dy="12"
+         id="tspan107">of mice?</tspan></text>
+    <!-- MOS Lenses -->
+    <text
+       x="940"
+       y="560"
+       font-family="Arial, sans-serif"
+       font-size="11px"
+       font-weight="bold"
+       fill="#b45309"
+       id="text108">MOS Discussion Lenses:</text>
+    <text
+       x="940"
+       y="580"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       font-weight="bold"
+       fill="#7c2d12"
+       id="text109">1. Hierarchy of Moral Consideration:</text>
+    <text
+       x="950"
+       y="595"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#374151"
+       id="text111"><tspan
+         x="950"
+         dy="0"
+         id="tspan109">How does the Dynamic Rights Spectrum</tspan><tspan
+         x="950"
+         dy="11"
+         id="tspan110">guide this decision? Does Tier 1 always</tspan><tspan
+         x="950"
+         dy="11"
+         id="tspan111">override Tier 2 rights?</tspan></text>
+    <text
+       x="940"
+       y="635"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       font-weight="bold"
+       fill="#7c2d12"
+       id="text112">2. Alternative Innovation:</text>
+    <text
+       x="950"
+       y="650"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#374151"
+       id="text114"><tspan
+         x="950"
+         dy="0"
+         id="tspan112">What would &quot;transformative non-confrontation&quot;</tspan><tspan
+         x="950"
+         dy="11"
+         id="tspan113">look like? Could research funding be redirected</tspan><tspan
+         x="950"
+         dy="11"
+         id="tspan114">to develop alternative training methods?</tspan></text>
+    <text
+       x="940"
+       y="690"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       font-weight="bold"
+       fill="#7c2d12"
+       id="text115">3. Future Generations:</text>
+    <text
+       x="950"
+       y="705"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#374151"
+       id="text117"><tspan
+         x="950"
+         dy="0"
+         id="tspan115">How do we balance immediate benefits against</tspan><tspan
+         x="950"
+         dy="11"
+         id="tspan116">setting ethical precedents for future AI</tspan><tspan
+         x="950"
+         dy="11"
+         id="tspan117">development?</tspan></text>
+    <!-- Facilitator note -->
+    <rect
+       x="930"
+       y="760"
+       width="260"
+       height="50"
+       fill="#ffffff"
+       stroke="#fbbf24"
+       stroke-width="1"
+       rx="6"
+       id="rect117" />
+    <text
+       x="940"
+       y="775"
+       font-family="Arial, sans-serif"
+       font-size="8px"
+       font-weight="bold"
+       fill="#d97706"
+       id="text118">Facilitator Note:</text>
+    <text
+       x="940"
+       y="790"
+       font-family="Arial, sans-serif"
+       font-size="8px"
+       fill="#374151"
+       id="text119"><tspan
+         x="940"
+         dy="0"
+         id="tspan118">Explore the complexity of weighing different</tspan><tspan
+         x="940"
+         dy="10"
+         id="tspan119">types of harm and benefit across tiers.</tspan></text>
+  </g>
+</svg>

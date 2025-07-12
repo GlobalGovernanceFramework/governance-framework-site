@@ -354,6 +354,22 @@
       </div>
 
       <div class="card-grid">
+
+        <!-- Integrated Meta-Governance -->
+        <div class="download-card">
+          <div class="card-emoji" style="color: #5E4B8B;">🔄</div>
+          <div class="card-content">
+            <h2 class="card-title" style="color: #B8860B;">{$t('downloads.implementationFrameworks.meta.title')}</h2>
+            <p class="card-description">{$t('downloads.implementationFrameworks.meta.description')}</p>
+            <a href={getPdfPath('Meta-Governance')} download class="download-button" style="background-color: #5E4B8B;">
+              {$t('downloads.downloadButton')}
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
         <!-- Indigenous & Traditional Knowledge Governance -->
         <div class="download-card">
           <div class="card-emoji" style="color: #1c2b1a;">🪶</div>
@@ -369,13 +385,13 @@
           </div>
         </div>
 
-        <!-- Climate & Energy Governance -->
+        <!-- Moral Operating System Framework -->
         <div class="download-card">
-          <div class="card-emoji" style="color: #2C8A78;">⚡</div>
+          <div class="card-emoji" style="color: #6B46C1;">🦋</div>
           <div class="card-content">
-            <h2 class="card-title" style="color: #B8860B;">{$t('downloads.implementationFrameworks.climateEnergy.title')}</h2>
-            <p class="card-description">{$t('downloads.implementationFrameworks.climateEnergy.description')}</p>
-            <a href={getPdfPath('Climate-Energy-Governance')} download class="download-button" style="background-color: #2C8A78;">
+            <h2 class="card-title" style="color: #6B46C1;">{$t('downloads.implementationFrameworks.moralOperatingSystem.title')}</h2>
+            <p class="card-description">{$t('downloads.implementationFrameworks.moralOperatingSystem.description')}</p>
+            <a href={getPdfPath('Moral-Operating-System-Framework')} download class="download-button" style="background-color: #6B46C1;">
               {$t('downloads.downloadButton')}
               <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -444,21 +460,6 @@
           </div>
         </div>
 
-        <!-- Economic Integration -->
-        <div class="download-card">
-          <div class="card-emoji" style="color: #B8860B;">💱</div>
-          <div class="card-content">
-            <h2 class="card-title" style="color: #B8860B;">{$t('downloads.implementationFrameworks.economic.title')}</h2>
-            <p class="card-description">{$t('downloads.implementationFrameworks.economic.description')}</p>
-            <a href={getPdfPath('Economic-Integration')} download class="download-button" style="background-color: #B8860B;">
-              {$t('downloads.downloadButton')}
-              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
         <!-- Financial Systems Framework -->
         <div class="download-card">
           <div class="card-emoji" style="color: #3A6EA5;">❤️</div>
@@ -481,6 +482,21 @@
             <h2 class="card-title" style="color: #B8860B;">{$t('downloads.implementationFrameworks.workInLiberation.title')}</h2>
             <p class="card-description">{$t('downloads.implementationFrameworks.workInLiberation.description')}</p>
             <a href={getPdfPath('Work-in-Liberation-Framework')} download class="download-button" style="background-color: #2C5282;">
+              {$t('downloads.downloadButton')}
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Economic Integration -->
+        <div class="download-card">
+          <div class="card-emoji" style="color: #B8860B;">💱</div>
+          <div class="card-content">
+            <h2 class="card-title" style="color: #B8860B;">{$t('downloads.implementationFrameworks.economic.title')}</h2>
+            <p class="card-description">{$t('downloads.implementationFrameworks.economic.description')}</p>
+            <a href={getPdfPath('Economic-Integration')} download class="download-button" style="background-color: #B8860B;">
               {$t('downloads.downloadButton')}
               <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -534,51 +550,6 @@
           </div>
         </div>
 
-        <!-- Educational Systems -->
-        <div class="download-card">
-          <div class="card-emoji" style="color: #3f51b5;">🎓</div>
-          <div class="card-content">
-            <h2 class="card-title" style="color: #B8860B;">{$t('downloads.implementationFrameworks.education.title')}</h2>
-            <p class="card-description">{$t('downloads.implementationFrameworks.education.description')}</p>
-            <a href={getPdfPath('Educational-Systems')} download class="download-button" style="background-color: #3f51b5;">
-              {$t('downloads.downloadButton')}
-              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- Mental Health Framework -->
-        <div class="download-card">
-          <div class="card-emoji" style="color: #1e3a8a;">🧠</div>
-          <div class="card-content">
-            <h2 class="card-title" style="color: #1e3a8a;">{$t('downloads.implementationFrameworks.mentalHealth.title')}</h2>
-            <p class="card-description">{$t('downloads.implementationFrameworks.mentalHealth.description')}</p>
-            <a href={getPdfPath('Mental-Health-Framework')} download class="download-button" style="background-color: #1e3a8a;">
-              {$t('downloads.downloadButton')}
-              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- Water & Sanitation Framework -->
-        <div class="download-card">
-          <div class="card-emoji" style="color: #0369a1;">💧</div>
-          <div class="card-content">
-            <h2 class="card-title" style="color: #0369a1;">{$t('downloads.implementationFrameworks.water.title')}</h2>
-            <p class="card-description">{$t('downloads.implementationFrameworks.water.description')}</p>
-            <a href={getPdfPath('Water-&-Sanitation-Framework')} download class="download-button" style="background-color: #0369a1;">
-              {$t('downloads.downloadButton')}
-              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
         <!-- Environmental Stewardship -->
         <div class="download-card">
           <div class="card-emoji" style="color: #2D5F2D;">🌿</div>
@@ -594,13 +565,28 @@
           </div>
         </div>
 
-        <!-- Digital Commons -->
+        <!-- Climate & Energy Governance -->
         <div class="download-card">
-          <div class="card-emoji" style="color: #6d28d9;">💻</div>
+          <div class="card-emoji" style="color: #2C8A78;">⚡</div>
           <div class="card-content">
-            <h2 class="card-title" style="color: #6d28d9;">{$t('downloads.implementationFrameworks.digital.title')}</h2>
-            <p class="card-description">{$t('downloads.implementationFrameworks.digital.description')}</p>
-            <a href={getPdfPath('Digital-Commons-Framework')} download class="download-button" style="background-color: #6d28d9;">
+            <h2 class="card-title" style="color: #B8860B;">{$t('downloads.implementationFrameworks.climateEnergy.title')}</h2>
+            <p class="card-description">{$t('downloads.implementationFrameworks.climateEnergy.description')}</p>
+            <a href={getPdfPath('Climate-Energy-Governance')} download class="download-button" style="background-color: #2C8A78;">
+              {$t('downloads.downloadButton')}
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Water & Sanitation Framework -->
+        <div class="download-card">
+          <div class="card-emoji" style="color: #0369a1;">💧</div>
+          <div class="card-content">
+            <h2 class="card-title" style="color: #0369a1;">{$t('downloads.implementationFrameworks.water.title')}</h2>
+            <p class="card-description">{$t('downloads.implementationFrameworks.water.description')}</p>
+            <a href={getPdfPath('Water-&-Sanitation-Framework')} download class="download-button" style="background-color: #0369a1;">
               {$t('downloads.downloadButton')}
               <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -639,13 +625,13 @@
           </div>
         </div>
 
-        <!-- Religious & Spiritual Dialogue -->
+        <!-- Educational Systems -->
         <div class="download-card">
-          <div class="card-emoji" style="color: #9B6A8F;">🕯️</div>
+          <div class="card-emoji" style="color: #3f51b5;">🎓</div>
           <div class="card-content">
-            <h2 class="card-title" style="color: #B8860B;">{$t('downloads.implementationFrameworks.spiritual.title')}</h2>
-            <p class="card-description">{$t('downloads.implementationFrameworks.spiritual.description')}</p>
-            <a href={getPdfPath('Spiritual-Dialogue')} download class="download-button" style="background-color: #9B6A8F;">
+            <h2 class="card-title" style="color: #B8860B;">{$t('downloads.implementationFrameworks.education.title')}</h2>
+            <p class="card-description">{$t('downloads.implementationFrameworks.education.description')}</p>
+            <a href={getPdfPath('Educational-Systems')} download class="download-button" style="background-color: #3f51b5;">
               {$t('downloads.downloadButton')}
               <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -654,13 +640,43 @@
           </div>
         </div>
 
-        <!-- Global Ethics & Rights of Beings -->
+        <!-- Mental Health Framework -->
         <div class="download-card">
-          <div class="card-emoji" style="color: #166534;">🦋</div>
+          <div class="card-emoji" style="color: #1e3a8a;">🧠</div>
           <div class="card-content">
-            <h2 class="card-title" style="color: #B8860B;">{$t('downloads.implementationFrameworks.ethics.title')}</h2>
-            <p class="card-description">{$t('downloads.implementationFrameworks.ethics.description')}</p>
-            <a href={getPdfPath('Global-Ethics-Rights')} download class="download-button" style="background-color: #166534;">
+            <h2 class="card-title" style="color: #1e3a8a;">{$t('downloads.implementationFrameworks.mentalHealth.title')}</h2>
+            <p class="card-description">{$t('downloads.implementationFrameworks.mentalHealth.description')}</p>
+            <a href={getPdfPath('Mental-Health-Framework')} download class="download-button" style="background-color: #1e3a8a;">
+              {$t('downloads.downloadButton')}
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Digital Commons -->
+        <div class="download-card">
+          <div class="card-emoji" style="color: #6d28d9;">💻</div>
+          <div class="card-content">
+            <h2 class="card-title" style="color: #6d28d9;">{$t('downloads.implementationFrameworks.digital.title')}</h2>
+            <p class="card-description">{$t('downloads.implementationFrameworks.digital.description')}</p>
+            <a href={getPdfPath('Digital-Commons-Framework')} download class="download-button" style="background-color: #6d28d9;">
+              {$t('downloads.downloadButton')}
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Religious & Spiritual Dialogue -->
+        <div class="download-card">
+          <div class="card-emoji" style="color: #9B6A8F;">🕯️</div>
+          <div class="card-content">
+            <h2 class="card-title" style="color: #B8860B;">{$t('downloads.implementationFrameworks.spiritual.title')}</h2>
+            <p class="card-description">{$t('downloads.implementationFrameworks.spiritual.description')}</p>
+            <a href={getPdfPath('Spiritual-Dialogue')} download class="download-button" style="background-color: #9B6A8F;">
               {$t('downloads.downloadButton')}
               <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -691,21 +707,6 @@
             <h2 class="card-title" style="color: #4c1d95;">{$t('downloads.implementationFrameworks.consciousness.title')}</h2>
             <p class="card-description">{$t('downloads.implementationFrameworks.consciousness.description')}</p>
             <a href={getPdfPath('Consciousness-Inner-Development-Framework')} download class="download-button" style="background-color: #4c1d95;">
-              {$t('downloads.downloadButton')}
-              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- Integrated Meta-Governance -->
-        <div class="download-card">
-          <div class="card-emoji" style="color: #5E4B8B;">🔄</div>
-          <div class="card-content">
-            <h2 class="card-title" style="color: #B8860B;">{$t('downloads.implementationFrameworks.meta.title')}</h2>
-            <p class="card-description">{$t('downloads.implementationFrameworks.meta.description')}</p>
-            <a href={getPdfPath('Meta-Governance')} download class="download-button" style="background-color: #5E4B8B;">
               {$t('downloads.downloadButton')}
               <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />

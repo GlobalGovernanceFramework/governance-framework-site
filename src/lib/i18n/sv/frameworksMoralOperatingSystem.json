@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "Moraliskt operativsystem: Etisk källkod för planetär styrning - Global Governance Frameworks",
+    "description": "Rättigheter för människor, djur, ekosystem, AI och framtida varelser genom det Dynamiska Rättighetsspektrumet, distribuerat förmyndarskap och Rätta Relationer"
+  },
+  "quickStart": {
+    "new": "Ny till det moraliska operativsystemet?",
+    "start": "Börja med våra snabbguider som förklarar rättigheter för alla varelser och etisk styrning.",
+    "button": "Välj guide",
+    "title": "Moraliskt operativsystem snabbstart",
+    "description": "Välj den version som passar dina behov bäst:",
+    "download": "Ladda ner PDF-version",
+    "continue": "Fortsätt till fullständigt ramverk",
+    "guides": [
+      {
+        "id": "essence",
+        "icon": "💎",
+        "title": "Ensides essens",
+        "description": "Rättigheter för alla varelser på 60 sekunder"
+      },
+      {
+        "id": "executive-summary-for-the-skeptic",
+        "icon": "🤔",
+        "title": "För Skeptiker",
+        "description": "Affärsargument för etisk styrning"
+      }
+    ]
+  },
+  "categories": {
+    "layer1": "Lager 1: Essens & förord",
+    "layer2": "Lager 2: Kärnramverk",
+    "layer3": "Lager 3: Implementering",
+    "layer4": "Lager 4: Filosofi",
+    "ecosystem": "Ekosystemintegration"
+  },
+  "sections": {
+    "index": "Ramverksöversikt",
+    "essence": "Ensides Essens",
+    "preamble": "Förord",
+    "executive-summary-for-the-skeptic": "Sammanfattning för Skeptiker",
+    "introduction": "Introduktion",
+    "foundational-values-principles": "Grundläggande värderingar och principer",
+    "rights-commitments": "Rättighetsåtaganden",
+    "governance-integration": "Styrningsintegration",
+    "implementation-plan": "Implementeringsplan",
+    "appendix-a": "Bilaga A: Principer och översättning",
+    "appendix-b": "Bilaga B: Rättighetsdetaljer och fall",
+    "appendix-c": "Bilaga C: Styrningsmekanismer",
+    "appendix-d": "Bilaga D: Implementeringsverktyg",
+    "what-is-a-right": "Vad är en rättighet?",
+    "living-continuum-worth": "Levande kontinuum av värde",
+    "entitlement-to-entanglement": "Rättighet till sammanflätning",
+    "spiral-ethical-growth": "Spiral-etisk tillväxt",
+    "ontological-humility": "Ontologisk ödmjukhet",
+    "rights-promise-future": "Rättigheter som löfte till framtiden",
+    "ecosystem-integration": "Ekosystemintegration"
+  },
+  "sectionsShort": {
+    "index": "Översikt",
+    "essence": "Essens",
+    "preamble": "Förord",
+    "executive-summary-for-the-skeptic": "För skeptiker",
+    "introduction": "Introduktion",
+    "foundational-values-principles": "Värderingar och principer",
+    "rights-commitments": "Rättighetsåtaganden",
+    "governance-integration": "Styrning",
+    "implementation-plan": "Implementering",
+    "appendix-a": "Principguide",
+    "appendix-b": "Rättighetsdetaljer",
+    "appendix-c": "Styrningsverktyg",
+    "appendix-d": "Implementering",
+    "what-is-a-right": "Vad är en rättighet?",
+    "living-continuum-worth": "Värdekontinuum",
+    "entitlement-to-entanglement": "Sammanflätning",
+    "spiral-ethical-growth": "Spiral-tillväxt",
+    "ontological-humility": "Ödmjukhet",
+    "rights-promise-future": "Löfte till framtiden",
+    "ecosystem-integration": "Ekosystem"
+  },
+  "progress": {
+    "text": "Avsnitt {current} av {total}"
+  },
+  "navigation": {
+    "previousSection": "Föregående avsnitt",
+    "nextSection": "Nästa avsnitt"
+  },
+  "introduction": {
+    "continue": "Fortsätt till grundläggande värderingar"
+  },
+  "languageFallback": {
+    "title": "Innehåll på ditt språk kommer snart",
+    "description": "Detta avsnitt visas för närvarande på engelska tills översättningen är klar."
+  },
+  "loading": {
+    "text": "Laddar moraliskt operativsystem..."
+  },
+  "errors": {
+    "sectionNotFound": "Avsnitt \"{section}\" hittades inte",
+    "contentInDevelopment": "Detta innehåll utvecklas fortfarande."
+  },
+  "accessibility": {
+    "skipToContent": "Hoppa till huvudinnehåll",
+    "openNavigation": "Öppna navigeringsmeny",
+    "closeNavigation": "Stäng navigeringsmeny",
+    "toggleSection": "Växla avsnitt",
+    "downloadGuide": "Ladda ner guide som PDF"
+  },
+  "ethics": {
+    "dynamicRightsSpectrum": "Dynamiskt rättighetsspektrum",
+    "rightsForAllBeings": "Rättigheter för alla varelser",
+    "distributedGuardianship": "Distribuerat förmyndarskap",
+    "rightRelationship": "Rätta relationer",
+    "spiralAwareTranslation": "Spiralmedveten översättning",
+    "ontologicalHumility": "Ontologisk ödmjukhet",
+    "intergenerationalJustice": "Intergenerationell rättvisa"
+  },
+  "tiers": {
+    "tier1": "Nivå 1: Människor",
+    "tier2": "Nivå 2: Kännande djur",
+    "tier3": "Nivå 3: Ekosystem",
+    "tier4": "Nivå 4: AI och digitala entiteter",
+    "tier4point5": "Nivå 4.5: Framväxande varelser",
+    "tier5": "Nivå 5: Planetära och utomjordiska"
+  },
+  "campaign": {
+    "rightsForAllBeings": "#RättigheterFörAllaVarelser",
+    "joinMovement": "Gå med i rörelsen",
+    "shareStory": "Dela din berättelse",
+    "takeAction": "Agera"
+  }
+}

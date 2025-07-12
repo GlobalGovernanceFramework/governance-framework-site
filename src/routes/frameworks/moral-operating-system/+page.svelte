@@ -1,135 +1,113 @@
 <!-- src/routes/frameworks/moral-operating-system/+page.svelte -->
 <script>
-  import { page } from '$app/stores';
   import { t, locale } from '$lib/i18n';
   import { browser } from '$app/environment';
   import { invalidate } from '$app/navigation';
   import { base } from '$app/paths';
-  import SectionNotice from '$lib/components/SectionNotice.svelte';
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
-  import { onMount, afterUpdate, tick } from 'svelte';
+  import { onMount, tick } from 'svelte';
   import { slide } from 'svelte/transition';
 
   export let data;
 
-  // Extract globalEthicsFramework translations for shorter references
-  $: gef = $t('globalEthicsFramework') || {};
+  // Extract Moral Operating System translations for shorter references
+  $: moralOperatingSystem = $t('moral-operating-system') || {};
   $: translationFunction = $t;
-  
+
   // Debug logging
   $: if (browser && mounted) {
-    console.log('Global Ethics Framework translations:', gef);
-    console.log('Has global ethics framework keys:', Object.keys(gef));
-    console.log('Data available:', !!data);
-    console.log('Data has content:', data?.hasContent);
-    console.log('Available sections:', data?.availableSections);
+    console.log('Moral Operating System translations:', moralOperatingSystem);
+    console.log('Has MOS keys:', Object.keys(moralOperatingSystem));
   }
 
-  // Keep track of which section is active
-  let activeSection = 'index';
+  // Keep track of which section is active (for sub-navigation)
+  let activeSection = 'introduction';
 
-  // Add support for accessibility level selection
-  $: currentLevel = data?.currentLevel || 'standard';
-  $: accessibilityLevels = data?.accessibilityLevels || ['visual', 'essential', 'standard', 'technical'];
-  
   // This will track the current locale for our component
   $: currentLocale = $locale;
 
   // Check if we're in print mode - simplified to avoid hydration issues
   let isPrintMode = false;
-  
+
   // Client-side only initialization to avoid hydration mismatches
   let mounted = false;
   let initializing = true;
 
   // If in print mode, we'll show all sections
-  $: sectionsToShow = (mounted && isPrintMode) ? 
-    (data?.availableSections?.[currentLevel] || []) : 
-    [activeSection];
+  $: sectionsToShow = (mounted && isPrintMode) ? Object.keys(data?.sections || {}) : [activeSection];
 
-  // For handling accordion states
-  let accordionStates = {
-    'overview': true,
-    'introduction': false,
-    'foundational-values': false,
-    'commitments-traditional': false,
-    'commitments-emerging': false,
-    'commitments-conflict': false,
-    'governance-basic': false,
-    'governance-councils': false,
-    'governance-operations': false,
-    'implementation-planning': false,
-    'implementation-education': false,
-    'implementation-cooperation': false,
-    'implementation-management': false,
-    'appendices': false
+  // Accordion states - initialize in a way that prevents hydration issues
+  let layer1Open = true; // Start with layer 1 (essence) open
+  let layer2Open = false;
+  let layer3Open = false;
+  let layer4Open = false;
+  let ecosystemOpen = false;
+
+  // Define section groupings by MOS layers
+  const sectionGroups = {
+    layer1: ['index', 'essence', 'executive-summary-for-the-skeptic', 'preamble'],
+    layer2: ['introduction', 'foundational-values-principles', 'rights-commitments', 'governance-integration', 'implementation-plan'],
+    layer3: ['appendix-a', 'appendix-b', 'appendix-c', 'appendix-d'],
+    layer4: ['what-is-a-right', 'living-continuum-worth', 'entitlement-to-entanglement', 'spiral-ethical-growth', 'ontological-humility', 'rights-promise-future'],
+    ecosystem: ['ecosystem-integration']
   };
 
-  // Function to change the accessibility level
-  function changeLevel(level) {
-    if (browser) {
-      window.location.href = constructLevelChangeUrl(level);
-    }
-  }
-
-  // Function to construct the correct URL for changing levels
-  function constructLevelChangeUrl(newLevel) {
-    const basePath = `${base}/frameworks/moral-operating-system`;
-    const targetSection = data?.availableSections?.[newLevel]?.includes(activeSection) 
-      ? activeSection
-      : findFallbackSection(newLevel);
-    return `${basePath}?level=${newLevel}#${targetSection}`;
-  }
-
-  // Helper to find a fallback section when the current one isn't available
-  function findFallbackSection(level) {
-    const preferredSections = ['index', '0-preamble', '1-introduction'];
+  // Section icons - tailored to ethical framework and rights theme
+  const sectionIcons = {
+    // Layer 1: Essence & Preamble
+    'index': '🦋',
+    'essence': '💎',
+    'preamble': '🌟',
+    'executive-summary-for-the-skeptic': '🤔',
     
-    for (const section of preferredSections) {
-      if (data?.availableSections?.[level]?.includes(section)) {
-        return section;
-      }
-    }
+    // Layer 2: Core Framework
+    'introduction': '🔮',
+    'foundational-values-principles': '⚖️',
+    'rights-commitments': '📜',
+    'governance-integration': '🔗',
+    'implementation-plan': '🗺️',
     
-    return data?.availableSections?.[level]?.length > 0 
-      ? data.availableSections[level][0] 
-      : 'index';
-  }
+    // Layer 3: Implementation Appendices
+    'appendix-a': '🧭',
+    'appendix-b': '📊',
+    'appendix-c': '⚙️',
+    'appendix-d': '🛠️',
+    
+    // Layer 4: Philosophical Treatise
+    'what-is-a-right': '❓',
+    'living-continuum-worth': '🌈',
+    'entitlement-to-entanglement': '🕸️',
+    'spiral-ethical-growth': '🌀',
+    'ontological-humility': '🙏',
+    'rights-promise-future': '🌅',
+    
+    // Ecosystem Integration
+    'ecosystem-integration': '🌍'
+  };
 
   // Initialize accordion states after mount
   function initializeAccordionStates() {
+    // Reset all accordions
+    layer1Open = false;
+    layer2Open = false;
+    layer3Open = false;
+    layer4Open = false;
+    ecosystemOpen = false;
+
     // Set initial accordion states based on active section
-    if (['index', 'access-guide'].includes(activeSection)) {
-      accordionStates['overview'] = true;
-    } else if (['0-preamble', 'youth-guide', '1-introduction'].includes(activeSection)) {
-      accordionStates['introduction'] = true;
-    } else if (activeSection.startsWith('2')) {
-      accordionStates['foundational-values'] = true;
-    } else if (activeSection.startsWith('3.1') || activeSection === '3-commitments') {
-      accordionStates['commitments-traditional'] = true;
-    } else if (activeSection.startsWith('3.2') && !activeSection.startsWith('3.3')) {
-      accordionStates['commitments-emerging'] = true;
-    } else if (activeSection.startsWith('3.3')) {
-      accordionStates['commitments-conflict'] = true;
-    } else if (['4-governance-mechanisms', '4.1-transparency', '4.2-inclusive-decision-making', '4.3-conflict-resolution'].includes(activeSection)) {
-      accordionStates['governance-basic'] = true;
-    } else if (activeSection.startsWith('4.4')) {
-      accordionStates['governance-councils'] = true;
-    } else if (activeSection.startsWith('4.5') || activeSection.startsWith('4.6') || activeSection.startsWith('4.7') || activeSection.startsWith('4.8') || activeSection.startsWith('4.9') || activeSection.startsWith('4.10')) {
-      accordionStates['governance-operations'] = true;
-    } else if (['5-implementation', '5.1-quick-wins', '5.1.1-cost-analysis', '5.2-phased-rollout', '5.2.1-space-ethics'].includes(activeSection)) {
-      accordionStates['implementation-planning'] = true;
-    } else if (activeSection.startsWith('5.3')) {
-      accordionStates['implementation-education'] = true;
-    } else if (activeSection.startsWith('5.4') || activeSection.startsWith('5.5') || activeSection.startsWith('5.6') || activeSection.startsWith('5.7')) {
-      accordionStates['implementation-cooperation'] = true;
-    } else if (activeSection.startsWith('5.8') || activeSection.startsWith('5.9') || activeSection.startsWith('5.10') || activeSection.startsWith('5.11')) {
-      accordionStates['implementation-management'] = true;
-    } else if (activeSection.startsWith('6')) {
-      accordionStates['appendices'] = true;
+    if (sectionGroups.layer1.includes(activeSection)) {
+      layer1Open = true;
+    } else if (sectionGroups.layer2.includes(activeSection)) {
+      layer2Open = true;
+    } else if (sectionGroups.layer3.includes(activeSection)) {
+      layer3Open = true;
+    } else if (sectionGroups.layer4.includes(activeSection)) {
+      layer4Open = true;
+    } else if (sectionGroups.ecosystem.includes(activeSection)) {
+      ecosystemOpen = true;
     } else {
-      // Default state for overview
-      accordionStates['overview'] = true;
+      // Default state for unknown sections
+      layer1Open = true;
     }
   }
 
@@ -150,40 +128,16 @@
       // Handle URL parameters and hash
       const sectionParam = urlParams.get('section');
       
-      // Check if we have any content first
-      if (!data?.hasContent) {
-        console.error('No content available');
-        initializing = false;
-        return;
-      }
-      
-      let sectionToShow = null;
-      
-      if (sectionParam && data?.availableSections?.[currentLevel]?.includes(sectionParam)) {
-        sectionToShow = sectionParam;
+      if (sectionParam && data?.sections?.[sectionParam]) {
+        activeSection = sectionParam;
       } else if (window.location.hash) {
         const hash = window.location.hash.substring(1);
-        if (hash && data?.availableSections?.[currentLevel]?.includes(hash)) {
-          sectionToShow = hash;
+        if (hash && data?.sections?.[hash]) {
+          activeSection = hash;
         }
-      }
-      
-      // Find a fallback section if none specified or available
-      if (!sectionToShow) {
-        if (data?.availableSections?.[currentLevel]?.includes('index')) {
-          sectionToShow = 'index';
-        } else if (data?.availableSections?.[currentLevel]?.includes('1-introduction')) {
-          sectionToShow = '1-introduction';
-        } else if (data?.availableSections?.[currentLevel]?.length > 0) {
-          sectionToShow = data.availableSections[currentLevel][0];
-        } else {
-          console.warn('No sections available for current level');
-          sectionToShow = 'index'; // Fallback even if not available
-        }
-      }
-
-      if (sectionToShow) {
-        setActiveSection(sectionToShow);
+      } else {
+        // Default to essence instead of index
+        activeSection = 'essence';
       }
 
       // Initialize accordion states after setting active section
@@ -192,13 +146,13 @@
       // Listen for hash changes
       const handleHashChange = () => {
         const hash = window.location.hash.substring(1);
-        if (hash && data?.availableSections?.[currentLevel]?.includes(hash) && activeSection !== hash) {
+        if (hash && data?.sections?.[hash] && activeSection !== hash) {
           activeSection = hash;
           initializeAccordionStates();
           
           // Scroll to content
           setTimeout(() => {
-            const contentElement = document.querySelector('.section-content');
+            const contentElement = document.querySelector('.content');
             if (contentElement) {
               contentElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
             } else {
@@ -226,576 +180,523 @@
 
   // Function to set active section
   function setActiveSection(section) {
-    // Check if section exists in data
-    if (section && data?.sections?.[section] && data?.sections?.[section]?.[currentLevel]) {
-      activeSection = section;
-      initializeAccordionStates();
-      
-      if (browser) {
-        const url = new URL(window.location.href);
-        url.hash = section;
-        history.replaceState(null, '', url.toString());
-
-        setTimeout(() => {
-          const contentElement = document.querySelector('.section-content');
-          if (contentElement) {
-            contentElement.scrollIntoView({ 
-              behavior: 'smooth', 
-              block: 'start',
-              inline: 'nearest'
-            });
-          }
-        }, 100);
-      }
-    } else {
-      console.warn(`Section ${section} not available at level ${currentLevel}`);
-    }
-  }
-
-  // Function to fix internal links after content is loaded
-  function fixInternalLinks() {
+    if (!data?.sections?.[section]) return;
+    
+    activeSection = section;
+    initializeAccordionStates();
+    
     if (browser) {
-      const links = document.querySelectorAll('.section-content a');
-      
-      links.forEach(link => {
-        const href = link.getAttribute('href');
-        
-        if (href && (
-          href.includes('/frameworks/moral-operating-system/') ||
-          href.startsWith('#')
-        )) {
-          if (href.includes('/frameworks/moral-operating-system/')) {
-            const parts = href.split('/');
-            const linkLevel = parts[parts.length - 2];
-            const linkSection = parts[parts.length - 1];
-            
-            const newHref = `${base}/frameworks/moral-operating-system?level=${linkLevel}#${linkSection}`;
-            link.setAttribute('href', newHref);
-          } else if (href.startsWith('#')) {
-            const targetSection = href.substring(1);
-            
-            if (data?.availableSections?.[currentLevel]?.includes(targetSection)) {
-              const newHref = `${base}/frameworks/moral-operating-system?level=${currentLevel}#${targetSection}`;
-              link.setAttribute('href', newHref);
-            }
-          }
+      const url = new URL(window.location.href);
+      url.hash = section;
+      history.replaceState(null, '', url.toString());
+
+      setTimeout(() => {
+        const contentElement = document.querySelector('.section-content');
+        if (contentElement) {
+          contentElement.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start',
+            inline: 'nearest'
+          });
         }
-      });
+      }, 100);
     }
   }
 
-  // Call the link fixing function after content updates
-  afterUpdate(() => {
-    setTimeout(fixInternalLinks, 100);
-  });
-
-  // Group the sections by their main category for navigation with level-aware structure
-  function groupSectionsForLevel(sections, level) {
-    const groups = {
-      'overview': [],
-      'introduction': [],
-      'foundational-values': [],
-      'commitments': [],
-      'governance': [],
-      'implementation': [],
-      'appendices': []
-    };
-    
-    sections.forEach(section => {
-      if (section === 'index' || section === 'access-guide') {
-        groups['overview'].push(section);
-      } else if (section.startsWith('0-') || section === 'youth-guide' || section.startsWith('1-')) {
-        groups['introduction'].push(section);
-      } else if (section.startsWith('2')) {
-        groups['foundational-values'].push(section);
-      } else if (section.startsWith('3')) {
-        groups['commitments'].push(section);
-      } else if (section.startsWith('4')) {
-        groups['governance'].push(section);
-      } else if (section.startsWith('5')) {
-        groups['implementation'].push(section);
-      } else if (section.startsWith('6')) {
-        groups['appendices'].push(section);
-      }
-    });
-    
-    // Create subcategories for complex sections
-    const subcategorizedGroups = {};
-    
-    Object.keys(groups).forEach(group => {
-      if (group === 'commitments' && groups[group].length > 0) {
-        subcategorizedGroups[`${group}-traditional`] = groups[group].filter(s => 
-          s.startsWith('3.1') || s === '3-commitments'
-        );
-        subcategorizedGroups[`${group}-emerging`] = groups[group].filter(s => 
-          s.startsWith('3.2') && !s.startsWith('3.3')
-        );
-        subcategorizedGroups[`${group}-conflict`] = groups[group].filter(s => 
-          s.startsWith('3.3')
-        );
-      } else if (group === 'governance' && groups[group].length > 0) {
-        subcategorizedGroups[`${group}-basic`] = groups[group].filter(s => 
-          ['4-governance-mechanisms', '4.1-transparency', '4.2-inclusive-decision-making', '4.3-conflict-resolution'].includes(s)
-        );
-        subcategorizedGroups[`${group}-councils`] = groups[group].filter(s => 
-          s.startsWith('4.4')
-        );
-        subcategorizedGroups[`${group}-operations`] = groups[group].filter(s => 
-          s.startsWith('4.5') || s.startsWith('4.6') || s.startsWith('4.7') || s.startsWith('4.8') || s.startsWith('4.9') || s.startsWith('4.10')
-        );
-      } else if (group === 'implementation' && groups[group].length > 0) {
-        subcategorizedGroups[`${group}-planning`] = groups[group].filter(s => 
-          ['5-implementation', '5.1-quick-wins', '5.1.1-cost-analysis', '5.2-phased-rollout', '5.2.1-space-ethics'].includes(s)
-        );
-        subcategorizedGroups[`${group}-education`] = groups[group].filter(s => 
-          s.startsWith('5.3')
-        );
-        subcategorizedGroups[`${group}-cooperation`] = groups[group].filter(s => 
-          s.startsWith('5.4') || s.startsWith('5.5') || s.startsWith('5.6') || s.startsWith('5.7')
-        );
-        subcategorizedGroups[`${group}-management`] = groups[group].filter(s => 
-          s.startsWith('5.8') || s.startsWith('5.9') || s.startsWith('5.10') || s.startsWith('5.11')
-        );
-      } else {
-        subcategorizedGroups[group] = groups[group];
-      }
-    });
-    
-    return subcategorizedGroups;
-  }
-  
-  $: availableSectionsForLevel = data?.availableSections?.[currentLevel] || [];
-  $: sectionGroups = groupSectionsForLevel(availableSectionsForLevel, currentLevel);
-  
-  // Progress calculation functions
-  function getAllOrderedSections() {
-    const allSections = availableSectionsForLevel;
-    const ordered = [];
-    
-    // Add overview sections first
-    if (allSections.includes('index')) ordered.push('index');
-    if (allSections.includes('access-guide')) ordered.push('access-guide');
-    
-    // Add preamble
-    if (allSections.includes('0-preamble')) ordered.push('0-preamble');
-    if (allSections.includes('youth-guide')) ordered.push('youth-guide');
-    
-    // Add numbered sections in order
-    const numberedSections = allSections
-      .filter(s => s.match(/^\d+(-|\.)/))
-      .sort((a, b) => {
-        const aMainNum = parseInt(a.split(/[-\.]/)[0]);
-        const bMainNum = parseInt(b.split(/[-\.]/)[0]);
-        
-        if (aMainNum !== bMainNum) {
-          return aMainNum - bMainNum;
-        }
-        
-        const aNumStr = a.match(/^[\d\.]+/)[0];
-        const bNumStr = b.match(/^[\d\.]+/)[0];
-        
-        const aParts = aNumStr.split('.').map(n => parseInt(n) || 0);
-        const bParts = bNumStr.split('.').map(n => parseInt(n) || 0);
-        
-        const maxLength = Math.max(aParts.length, bParts.length);
-        
-        for (let i = 0; i < maxLength; i++) {
-          const aVal = aParts[i] || 0;
-          const bVal = bParts[i] || 0;
-          if (aVal !== bVal) {
-            return aVal - bVal;
-          }
-        }
-        
-        return 0;
-      });
-    
-    ordered.push(...numberedSections);
-    return ordered;
-  }
-
-  // Progress indicators
-  $: orderedSections = getAllOrderedSections();
-  $: currentSectionIndex = orderedSections.indexOf(activeSection);
-  $: totalSections = orderedSections.length;
-  $: progressPercentage = currentSectionIndex >= 0 && totalSections > 0 
-    ? Math.round(((currentSectionIndex + 1) / totalSections) * 100) 
-    : 0;
-  $: currentSectionNumber = currentSectionIndex >= 0 ? currentSectionIndex + 1 : 0;
-  $: nextSection = currentSectionIndex >= 0 && currentSectionIndex < orderedSections.length - 1 
-    ? orderedSections[currentSectionIndex + 1] 
-    : null;
-  $: previousSection = currentSectionIndex > 0 
-    ? orderedSections[currentSectionIndex - 1] 
-    : null;
-  
-  // Check if we should show progress (not for overview sections)
-  $: showProgress = activeSection !== 'index' && activeSection !== 'access-guide' && !isPrintMode;
-
-  // Translation functions using the framework translations
+  // Get section titles in current language using short references
   function getSectionTitle(section) {
-    return gef.sections?.[section] || section;
-  }
-  
-  function getGroupTitle(group) {
-    return gef.categories?.[group] || group;
-  }
-  
-  function getLevelIcon(level) {
-    const icons = {
-      'visual': '🌱',
-      'essential': '🌿',
-      'standard': '🌲',
-      'technical': '🌳'
-    };
-    return icons[level] || '';
-  }
-  
-  function getLevelDescription(level) {
-    return gef.accessibility?.levels?.[level] || '';
+    return moralOperatingSystem.sections?.[section] || section;
   }
 
-  function getLocalizedText(key) {
-    return gef.accessibility?.[key] || key;
+  // Get section category titles using short references
+  function getSectionCategoryTitle(category) {
+    return moralOperatingSystem.categories?.[category] || category;
   }
 
-  // Get icon for each group
-  function getGroupIcon(group) {
-    const icons = {
-      'overview': '🏠',
-      'preamble': '📖',
-      'introduction': '🌟',
-      'foundational-values': '⚖️',
-      'commitments-traditional': '📜',
-      'commitments-emerging': '🔮',
-      'commitments-conflict': '🤝',
-      'governance-basic': '🏛️',
-      'governance-councils': '👥',
-      'governance-operations': '⚙️',
-      'implementation-planning': '📋',
-      'implementation-education': '🎓',
-      'implementation-cooperation': '🌍',
-      'implementation-management': '📊',
-      'appendices': '📄'
-    };
-    
-    return icons[group] || '📑';
+  // Function to get shortened section titles for navigation using short references
+  function getShortSectionTitle(section) {
+    return moralOperatingSystem.sectionsShort?.[section] || getSectionTitle(section);
   }
 
-  // Check if group has active sections
-  function hasActiveSection(group) {
-    return sectionGroups[group] && sectionGroups[group].includes(activeSection);
+  // Function to download the MOS guide PDF
+  function downloadMOSGuide(version = '') {
+    const versionSuffix = version ? `-${version}` : '';
+    const pdfUrl = `${base}/assets/pdf/moral-operating-system-framework${versionSuffix}-${currentLocale}.pdf`;
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = `moral-operating-system-framework${versionSuffix}.pdf`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   }
 
-  function toggleAccordion(group) {
-    accordionStates[group] = !accordionStates[group];
+  // Computed values - add safety checks
+  $: allQuickStartSections = ['essence', 'executive-summary-for-the-skeptic'];
+  $: isQuickStartActive = allQuickStartSections.includes(activeSection);
+  $: allCoreSections = [
+    ...sectionGroups.layer2,
+    ...sectionGroups.layer3,
+    ...sectionGroups.layer4,
+    ...sectionGroups.ecosystem
+  ];
+  $: isCoreSection = allCoreSections.includes(activeSection);
+
+  // Get quick start guides from translations
+  $: quickStartGuides = moralOperatingSystem.quickStart?.guides || [
+    {
+      id: 'essence',
+      icon: '💎',
+      title: 'One-Page Essence',
+      description: 'Rights for all beings in 60 seconds'
+    },
+    {
+      id: 'executive-summary-for-the-skeptic',
+      icon: '🤔',
+      title: 'For Skeptics',
+      description: 'Business case for ethical governance'
+    }
+  ];
+
+  // For the guide selector
+  let selectedGuide = 'essence';
+
+  function selectGuide(guide) {
+    selectedGuide = guide;
+    setActiveSection(guide);
   }
 
-  // Auto-open accordion if it contains the active section
-  $: {
-    Object.keys(sectionGroups).forEach(group => {
-      if (hasActiveSection(group)) {
-        accordionStates[group] = true;
-      }
-    });
+  // Toggle functions for accordions
+  function toggleLayer1() {
+    layer1Open = !layer1Open;
   }
 
-  // Check if we should show the access guide
-  $: showAccessGuide = data?.accessGuide && !isPrintMode;
+  function toggleLayer2() {
+    layer2Open = !layer2Open;
+  }
+
+  function toggleLayer3() {
+    layer3Open = !layer3Open;
+  }
+
+  function toggleLayer4() {
+    layer4Open = !layer4Open;
+  }
+
+  function toggleEcosystem() {
+    ecosystemOpen = !ecosystemOpen;
+  }
+
+  // For handling dropdown states
+  let isDropdownOpen = false;
+
+  function toggleDropdown() {
+    isDropdownOpen = !isDropdownOpen;
+  }
 
   // Close dropdowns when clicking outside
   function handleClickOutside(event) {
     if (browser) {
-      const dropdown = document.querySelector('.level-selector .dropdown');
-      
-      if (dropdown && !dropdown.contains(event.target)) {
-        // Handle dropdown close if needed
+      const clickedInsideDropdown = event.target.closest('.dropdown');
+      if (!clickedInsideDropdown && isDropdownOpen) {
+        isDropdownOpen = false;
       }
+    }
+  }
+
+  // Close dropdown when pressing Escape key
+  function handleKeydown(event) {
+    if (event.key === 'Escape') {
+      isDropdownOpen = false;
     }
   }
 
   onMount(() => {
     if (browser) {
       document.addEventListener('click', handleClickOutside);
+      document.addEventListener('keydown', handleKeydown);
       return () => {
         document.removeEventListener('click', handleClickOutside);
+        document.removeEventListener('keydown', handleKeydown);
       };
     }
   });
 
-  // Handle locale changes
+  // Handle locale changes - add safety check
   $: if (browser && mounted && $locale) {
     invalidate('app:locale');
   }
 </script>
 
 <svelte:head>
-  <title>{gef.meta?.title || 'Global Ethics and Rights of Beings - Framework'}</title>
-  <meta name="description" content="{gef.meta?.description || 'A comprehensive framework for global ethics and rights of all beings'}" />
+<title>{moralOperatingSystem.meta?.title || 'Moral Operating System: Ethical Source Code for Planetary Governance - Global Governance Framework'}</title>
+<meta name="description" content="{moralOperatingSystem.meta?.description || 'Rights for humans, animals, ecosystems, AI, and future beings through the Dynamic Rights Spectrum, distributed guardianship, and Right Relationship principles'}" />
 </svelte:head>
 
-<svelte:window on:click={handleClickOutside}/>
-
-<SectionNotice 
-  type="warning" 
-  customContent={true}
->
-  <p>{$t('common.notices.section.frameworks.text')}</p>
-</SectionNotice>
-
 {#if mounted}
-  <div class="documentation-container">
-    {#if !isPrintMode}
-      <FrameworkSidebar />
-    {/if}
+<div class="documentation-container">
+  {#if !isPrintMode}
+    <FrameworkSidebar />
+  {/if}
 
-    <div class="content">
-      {#if !isPrintMode}
-        <!-- Accessibility Level Selector -->
-        <div class="level-selector">
-          <h3>{getLocalizedText('chooseLevel')}</h3>
-          <div class="level-buttons">
-            {#each accessibilityLevels as level}
-              <a 
-                href={constructLevelChangeUrl(level)}
-                class="level-btn" 
-                class:active={currentLevel === level}
-              >
-                <span class="level-icon">{getLevelIcon(level)}</span>
-                <div class="level-content">
-                  <span class="level-name">{level.charAt(0).toUpperCase() + level.slice(1)}</span>
-                </div>
-              </a>
-            {/each}
+  <div class="content">
+    <!-- Quick Access Card for MOS Quick Start -->
+    {#if !isPrintMode && !isQuickStartActive && (activeSection === 'index' || activeSection === 'introduction')}
+      <div class="mos-guide-card">
+        <div class="card-content">
+          <div class="card-icon">🦋</div>
+          <div class="card-text">
+            <h3>{moralOperatingSystem.quickStart?.new || 'New to the Moral Operating System?'}</h3>
+            <p>{moralOperatingSystem.quickStart?.start || 'Start with our quick guides that explain rights for all beings and ethical governance.'}</p>
           </div>
-          <div class="level-description">
-            {getLevelDescription(currentLevel)}
+          <div class="card-actions">
+            <div class="dropdown">
+              <button 
+                class="primary-btn dropdown-toggle" 
+                on:click={toggleDropdown}
+                aria-expanded={isDropdownOpen}
+                aria-haspopup="true"
+                type="button"
+              >
+                {moralOperatingSystem.quickStart?.button || 'Choose Guide'} 
+                <span class="arrow-icon" class:rotated={isDropdownOpen}>▾</span>
+              </button>
+              <div 
+                class="dropdown-menu" 
+                class:show={isDropdownOpen}
+                role="menu"
+                aria-hidden={!isDropdownOpen}
+              >
+                {#each quickStartGuides as guide}
+                  <button 
+                    class="dropdown-item" 
+                    on:click|stopPropagation={() => selectGuide(guide.id)}
+                    role="menuitem"
+                    type="button"
+                  >
+                    <span class="guide-icon">{guide.icon}</span>
+                    <div class="guide-info">
+                      <span class="guide-title">{guide.title}</span>
+                      <span class="guide-desc">{guide.description}</span>
+                    </div>
+                  </button>
+                {/each}
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+    {/if}
 
-        <!-- Show Access Guide if available -->
-        {#if showAccessGuide && activeSection === 'index'}
-          <div class="access-guide-banner">
-            <div class="banner-content">
-              <div class="banner-icon">🧭</div>
-              <div class="banner-text">
-                <h3>{getLocalizedText('frameworkAccessGuide')}</h3>
-                <p>{getLocalizedText('accessGuideDescription')}</p>
+    <!-- Sub-navigation for MOS framework sections by layers -->
+    {#if !isPrintMode && !initializing} 
+      <div class="section-nav">
+        <!-- Layer 1: Essence & Preamble -->
+        <div class="nav-accordion">
+          <button 
+            class="accordion-header layer1-header" 
+            class:open={layer1Open}
+            class:has-active={sectionGroups.layer1.some(section => activeSection === section)}
+            on:click={toggleLayer1}
+          >
+            <span class="accordion-icon">💎</span>
+            <span class="accordion-title">{getSectionCategoryTitle('layer1') || 'Layer 1: Essence & Preamble'}</span>
+            <span class="section-count">({sectionGroups.layer1.length})</span>
+            <span class="toggle-arrow" class:rotated={layer1Open}>▼</span>
+          </button>
+          {#if layer1Open}
+            <div class="accordion-content" transition:slide={{ duration: 200 }}>
+              {#each sectionGroups.layer1 as section}
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === section}
+                  class:featured-item={section === 'essence' || section === 'executive-summary-for-the-skeptic'}
+                  on:click={() => setActiveSection(section)}
+                >
+                  <span class="nav-icon">{sectionIcons[section]}</span>
+                  <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  {#if section === 'essence'}
+                    <span class="featured-badge">Quick</span>
+                  {:else if section === 'executive-summary-for-the-skeptic'}
+                    <span class="featured-badge">Business</span>
+                  {/if}
+                </button>
+              {/each}
+            </div>
+          {/if}
+        </div>
+
+        <!-- Layer 2: Core Framework -->
+        <div class="nav-accordion">
+          <button 
+            class="accordion-header" 
+            class:open={layer2Open}
+            class:has-active={sectionGroups.layer2.some(section => activeSection === section)}
+            on:click={toggleLayer2}
+          >
+            <span class="accordion-icon">🔮</span>
+            <span class="accordion-title">{getSectionCategoryTitle('layer2') || 'Layer 2: Core Framework'}</span>
+            <span class="section-count">({sectionGroups.layer2.length})</span>
+            <span class="toggle-arrow" class:rotated={layer2Open}>▼</span>
+          </button>
+          {#if layer2Open}
+            <div class="accordion-content" transition:slide={{ duration: 200 }}>
+              {#each sectionGroups.layer2 as section}
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === section}
+                  on:click={() => setActiveSection(section)}
+                >
+                  <span class="nav-icon">{sectionIcons[section]}</span>
+                  <span class="nav-title">{getShortSectionTitle(section)}</span>
+                </button>
+              {/each}
+            </div>
+          {/if}
+        </div>
+
+        <!-- Layer 3: Implementation Appendices -->
+        <div class="nav-accordion">
+          <button 
+            class="accordion-header" 
+            class:open={layer3Open}
+            class:has-active={sectionGroups.layer3.some(section => activeSection === section)}
+            on:click={toggleLayer3}
+          >
+            <span class="accordion-icon">🛠️</span>
+            <span class="accordion-title">{getSectionCategoryTitle('layer3') || 'Layer 3: Implementation'}</span>
+            <span class="section-count">({sectionGroups.layer3.length})</span>
+            <span class="toggle-arrow" class:rotated={layer3Open}>▼</span>
+          </button>
+          {#if layer3Open}
+            <div class="accordion-content" transition:slide={{ duration: 200 }}>
+              {#each sectionGroups.layer3 as section}
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === section}
+                  on:click={() => setActiveSection(section)}
+                >
+                  <span class="nav-icon">{sectionIcons[section]}</span>
+                  <span class="nav-title">{getShortSectionTitle(section)}</span>
+                </button>
+              {/each}
+            </div>
+          {/if}
+        </div>
+
+        <!-- Layer 4: Philosophical Treatise -->
+        <div class="nav-accordion">
+          <button 
+            class="accordion-header" 
+            class:open={layer4Open}
+            class:has-active={sectionGroups.layer4.some(section => activeSection === section)}
+            on:click={toggleLayer4}
+          >
+            <span class="accordion-icon">🌀</span>
+            <span class="accordion-title">{getSectionCategoryTitle('layer4') || 'Layer 4: Philosophy'}</span>
+            <span class="section-count">({sectionGroups.layer4.length})</span>
+            <span class="toggle-arrow" class:rotated={layer4Open}>▼</span>
+          </button>
+          {#if layer4Open}
+            <div class="accordion-content" transition:slide={{ duration: 200 }}>
+              {#each sectionGroups.layer4 as section}
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === section}
+                  on:click={() => setActiveSection(section)}
+                >
+                  <span class="nav-icon">{sectionIcons[section]}</span>
+                  <span class="nav-title">{getShortSectionTitle(section)}</span>
+                </button>
+              {/each}
+            </div>
+          {/if}
+        </div>
+
+        <!-- Ecosystem Integration -->
+        <div class="nav-accordion">
+          <button 
+            class="accordion-header" 
+            class:open={ecosystemOpen}
+            class:has-active={sectionGroups.ecosystem.some(section => activeSection === section)}
+            on:click={toggleEcosystem}
+          >
+            <span class="accordion-icon">🌍</span>
+            <span class="accordion-title">{getSectionCategoryTitle('ecosystem') || 'Ecosystem Integration'}</span>
+            <span class="section-count">({sectionGroups.ecosystem.length})</span>
+            <span class="toggle-arrow" class:rotated={ecosystemOpen}>▼</span>
+          </button>
+          {#if ecosystemOpen}
+            <div class="accordion-content" transition:slide={{ duration: 200 }}>
+              {#each sectionGroups.ecosystem as section}
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === section}
+                  on:click={() => setActiveSection(section)}
+                >
+                  <span class="nav-icon">{sectionIcons[section]}</span>
+                  <span class="nav-title">{getShortSectionTitle(section)}</span>
+                </button>
+              {/each}
+            </div>
+          {/if}
+        </div>
+      </div>
+    {/if}
+
+    <!-- Progress indicator for core sections -->
+    {#if !isPrintMode && isCoreSection && allCoreSections.length > 0}
+      <div class="progress-indicator">
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: {((allCoreSections.indexOf(activeSection) + 1) / allCoreSections.length * 100)}%"></div>
+        </div>
+        <span class="progress-text">{moralOperatingSystem.progress?.text?.replace('{current}', allCoreSections.indexOf(activeSection) + 1).replace('{total}', allCoreSections.length) || `Section ${allCoreSections.indexOf(activeSection) + 1} of ${allCoreSections.length}`}</span>
+      </div>
+    {/if}
+
+    <!-- Show active section, or all sections in print mode -->
+    {#each sectionsToShow as section (section)}
+      {#if data?.sections?.[section]}
+        <div class="section-content" id={section}>
+          <!-- Language fallback notice -->
+          {#if !isPrintMode && data.sectionsUsingEnglishFallback?.includes(section)}
+            <div class="language-fallback-notice">
+              <div class="notice-icon">🌐</div>
+              <div class="notice-content">
+                <strong>{moralOperatingSystem.languageFallback?.title || 'Content in your language coming soon'}</strong>
+                <p>{moralOperatingSystem.languageFallback?.description || 'This section is currently displayed in English until translation is complete.'}</p>
               </div>
-              <div class="banner-actions">
-                <button class="guide-btn" on:click={() => setActiveSection('access-guide')}>
-                  {getLocalizedText('viewCompleteGuide')}
+            </div>
+          {/if}
+          
+          <!-- Handle quick start sections specially -->
+          {#if allQuickStartSections.includes(section) && section !== 'index' && section !== 'introduction'}
+            <!-- Quick start selector if we're in one of the guides and not in print mode -->
+            {#if !isPrintMode}
+              <div class="guide-selector">
+                <h2>{moralOperatingSystem.quickStart?.title || 'Moral Operating System Quick Start'}</h2>
+                <p>{moralOperatingSystem.quickStart?.description || 'Choose the version that best matches your needs:'}</p>
+                
+                <div class="guide-cards">
+                  {#each quickStartGuides as guide}
+                    <div 
+                      class="guide-card" 
+                      class:active={activeSection === guide.id}
+                      on:click={() => selectGuide(guide.id)}
+                    >
+                      <div class="guide-icon">{guide.icon}</div>
+                      <div class="guide-title">{guide.title}</div>
+                      <div class="guide-desc">{guide.description}</div>
+                    </div>
+                  {/each}
+                </div>
+              </div>
+            {/if}
+            
+            <!-- Render the selected Quick Start -->
+            <svelte:component this={data.sections[section].default} t={translationFunction} />
+            
+            <!-- Navigation buttons at bottom of quick start -->
+            {#if !isPrintMode}
+              <div class="guide-navigation">
+                <button class="secondary-btn" on:click={() => downloadMOSGuide(section.replace('-', ''))}>
+                  {moralOperatingSystem.quickStart?.download || 'Download PDF Version'} <span class="download-icon">↓</span>
+                </button>
+                <button class="primary-btn" on:click={() => setActiveSection('introduction')}>
+                  {moralOperatingSystem.quickStart?.continue || 'Continue to Full Framework'} <span class="arrow-icon">→</span>
                 </button>
               </div>
+            {/if}
+          {:else}
+            <!-- Render sections from markdown files -->
+            <svelte:component this={data.sections[section].default} t={translationFunction} />
+          {/if}
+
+          {#if activeSection === 'introduction' && !isPrintMode}
+            <div class="introduction-navigation">
+              <button class="primary-btn" on:click={() => setActiveSection('foundational-values-principles')}>
+                {moralOperatingSystem.introduction?.continue || 'Continue to Foundational Values'} 
+                <span class="arrow-icon">→</span>
+              </button>
             </div>
-          </div>
-        {/if}
-      {/if}
+          {/if}
 
-      <!-- Check for content availability first -->
-      {#if data?.hasContent}
-        <!-- Main navigation for framework sections -->
-        {#if !isPrintMode && !initializing}
-          <div class="section-nav">
-            {#each Object.keys(sectionGroups) as group}
-              {#if sectionGroups[group].length > 0}
-                <div class="nav-accordion">
-                  <button 
-                    class="accordion-header" 
-                    class:open={accordionStates[group]}
-                    class:has-active={hasActiveSection(group)}
-                    on:click={() => toggleAccordion(group)}
-                  >
-                    <span class="accordion-icon">{getGroupIcon(group)}</span>
-                    <span class="accordion-title">{getGroupTitle(group)}</span>
-                    <span class="section-count">({sectionGroups[group].length})</span>
-                    <span class="toggle-arrow" class:rotated={accordionStates[group]}>▼</span>
-                  </button>
-                  {#if accordionStates[group]}
-                    <div class="accordion-content" transition:slide={{ duration: 200 }}>
-                      {#each sectionGroups[group] as section}
-                        <button 
-                          class="nav-item" 
-                          class:active={activeSection === section}
-                          on:click={() => setActiveSection(section)}
-                        >
-                          <span class="nav-icon">
-                            {#if section.match(/^\d/)}
-                              <span class="nav-number">{section.substring(0, section.indexOf('-'))}</span>
-                            {:else}
-                              📑
-                            {/if}
-                          </span>
-                          <span class="nav-title">{getSectionTitle(section)}</span>
-                          {#if !data.availableSections[currentLevel].includes(section)}
-                            <span class="unavailable-indicator">⚠️</span>
-                          {/if}
-                        </button>
-                      {/each}
-                    </div>
-                  {/if}
-                </div>
+          <!-- Section navigation at bottom of core sections -->
+          {#if isCoreSection && !isPrintMode && allCoreSections.length > 0}
+            <div class="section-navigation">
+              {#if allCoreSections.indexOf(activeSection) > 0}
+                <button class="nav-btn prev-btn" on:click={() => {
+                  const currentIndex = allCoreSections.indexOf(activeSection);
+                  const prevSection = allCoreSections[currentIndex - 1];
+                  setActiveSection(prevSection);
+                }}>
+                  ← {moralOperatingSystem.navigation?.previousSection || 'Previous Section'}
+                </button>
               {/if}
-            {/each}
-          </div>
-        {/if}
-
-        <!-- Progress Indicator -->
-        {#if showProgress}
-          <div class="progress-indicator">
-            <div class="progress-content">
-              <div class="progress-info">
-                <div class="progress-text">
-                  <span class="progress-section">{gef.progress?.of?.replace('{current}', currentSectionNumber).replace('{total}', totalSections) || `Section ${currentSectionNumber} of ${totalSections}`}</span>
-                  <span class="progress-percentage">{gef.progress?.percentage?.replace('{percentage}', progressPercentage) || `${progressPercentage}% complete`}</span>
-                </div>
-                <div class="progress-navigation">
-                  {#if previousSection}
-                    <button class="progress-nav-btn prev" on:click={() => setActiveSection(previousSection)}>
-                      ← {gef.progress?.previousSection || 'Previous section'}
-                    </button>
-                  {/if}
-                  {#if nextSection}
-                    <button class="progress-nav-btn next" on:click={() => setActiveSection(nextSection)}>
-                      {gef.progress?.nextSection || 'Next section'} →
-                    </button>
-                  {/if}
-                </div>
-              </div>
-              <div class="progress-bar-container">
-                <div class="progress-bar">
-                  <div class="progress-fill" style="width: {progressPercentage}%"></div>
-                  <div class="progress-marker" style="left: {progressPercentage}%"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        {/if}
-
-        <!-- Show active section, or all sections in print mode -->
-        {#each sectionsToShow as section (section)}
-          <!-- Better section availability checking -->
-          {#if data.sections?.[section] && data.sections?.[section]?.[currentLevel]}
-            <div class="section-content" id={section}>
-              <!-- Language fallback notice -->
-              {#if !isPrintMode && data.sectionsUsingEnglishFallback?.includes(`${section}-${currentLevel}`) && section !== 'index' && section !== 'access-guide'}
-                <div class="language-fallback-notice">
-                  <div class="notice-icon">🌐</div>
-                  <div class="notice-content">
-                    <strong>{gef.languageFallback?.title || 'Content in your language coming soon'}</strong>
-                    <p>{gef.languageFallback?.description || 'This section is currently displayed in English until translation is complete.'}</p>
-                  </div>
-                </div>
-              {/if}
-              <div class="section-header">
-                <h2>{getSectionTitle(section)}</h2>
-                
-                {#if !isPrintMode}
-                  <!-- Layer navigation for this section -->
-                  <div class="layer-navigation">
-                    {#each accessibilityLevels as level}
-                      {#if data.availableSections?.[level]?.includes(section)}
-                        <a 
-                          href={`${base}/frameworks/moral-operating-system?level=${level}#${section}`} 
-                          class="layer-link" 
-                          class:active={currentLevel === level}
-                        >
-                          {getLevelIcon(level)} {level}
-                        </a>
-                      {/if}
-                    {/each}
-                  </div>
-                {/if}
-              </div>
               
-              <svelte:component this={data.sections[section][currentLevel].default} t={translationFunction} />
-
-              <!-- Section navigation at bottom -->
-              {#if showProgress && !isPrintMode}
-                <div class="section-footer-navigation">
-                  {#if previousSection}
-                    <button class="footer-nav-btn prev" on:click={() => setActiveSection(previousSection)}>
-                      <span class="nav-arrow">←</span>
-                      <div class="nav-text">
-                        <span class="nav-label">{gef.progress?.previousSection || 'Previous section'}</span>
-                        <span class="nav-title">{getSectionTitle(previousSection)}</span>
-                      </div>
-                    </button>
-                  {/if}
-                  
-                  {#if nextSection}
-                    <button class="footer-nav-btn next" on:click={() => setActiveSection(nextSection)}>
-                      <div class="nav-text">
-                        <span class="nav-label">{gef.progress?.nextSection || 'Next section'}</span>
-                        <span class="nav-title">{getSectionTitle(nextSection)}</span>
-                      </div>
-                      <span class="nav-arrow">→</span>
-                    </button>
-                  {/if}
-                </div>
+              {#if allCoreSections.indexOf(activeSection) < allCoreSections.length - 1}
+                <button class="nav-btn next-btn" on:click={() => {
+                  const currentIndex = allCoreSections.indexOf(activeSection);
+                  const nextSection = allCoreSections[currentIndex + 1];
+                  setActiveSection(nextSection);
+                }}>
+                  {moralOperatingSystem.navigation?.nextSection || 'Next Section'} →
+                </button>
               {/if}
             </div>
-          {:else if sectionsToShow.length === 1}
-            <div class="section-unavailable">
-              <h3>{getLocalizedText('sectionUnavailable')}</h3>
-              <p>{getLocalizedText('notAvailableAtLevel').replace('{level}', currentLevel)}</p>
-              <div class="alternative-levels">
-                <p>{getLocalizedText('viewAtAnotherLevel')}</p>
-                <div class="level-buttons small">
-                 {#each accessibilityLevels as level}
-                   {#if data.availableSections?.[level]?.includes(section)}
-                     <a 
-                       href={`${base}/frameworks/moral-operating-system?level=${level}#${section}`}
-                       class="level-btn small"
-                     >
-                       <span class="level-icon">{getLevelIcon(level)}</span>
-                       <div class="level-content">
-                         <span class="level-name">{level}</span>
-                       </div>
-                     </a>
-                   {/if}
-                 {/each}
-               </div>
-             </div>
-           </div>
-         {/if}
-       {/each}
-     {:else}
-       <!-- Show error message when no content is available -->
-       <div class="no-content-message">
-         <h2>⚠️ {gef.errors?.noContent || 'Content not available'}</h2>
-         <p>{gef.errors?.contentDescription || 'No content could be loaded for this framework. This might be due to:'}</p>
-         <ul>
-           <li>Missing content files in the expected directory structure</li>
-           <li>Incorrect file paths or naming conventions</li>
-           <li>Network issues preventing content loading</li>
-         </ul>
-         <p>Loaded sections count: {data?.loadedSectionsCount || 0}</p>
-         <p>Current level: {currentLevel}</p>
-         <p>Available sections: {JSON.stringify(data?.availableSections || {})}</p>
-       </div>
-     {/if}
-   </div>
- </div>
+          {/if}
+        </div>
+      {:else}
+        <div class="missing-section">
+          <h2>{moralOperatingSystem.errors?.sectionNotFound?.replace('{section}', section) || `Section "${section}" not found`}</h2>
+          <p>{moralOperatingSystem.errors?.contentInDevelopment || 'This content is still being developed.'}</p>
+        </div>
+      {/if}
+    {/each}
+  </div>
+</div>
 {:else}
- <!-- Loading state to prevent hydration issues -->
- <div class="loading-container">
-   <div class="loading-spinner"></div>
-   <p>{gef.loading?.text || 'Loading framework content...'}</p>
- </div>
+<!-- Loading state to prevent hydration issues -->
+<div class="loading-container">
+  <div class="loading-spinner"></div>
+  <p>{moralOperatingSystem.loading?.text || 'Loading moral operating system...'}</p>
+</div>
 {/if}
 
- <style>
-  /* Ethics framework color scheme (green-based palette) */
+<style>
+  /* Ethereal Wisdom & Rights theme for Moral Operating System */
   :root {
-    --ethics-primary: #166534; /* Dark green for ethics framework */
-    --ethics-secondary: #6b7280; /* Gray */
-    --ethics-accent: #16a34a; /* Medium green */
-    --ethics-light: #f0fdf4; /* Light green */
-    --ethics-medium: #dcfce7; /* Medium light green */
-    --ethics-hover: #059669; /* Darker green for hover states */
+    --primary-brand: #6B46C1;        /* Deep mystical purple (for headers, primary buttons) */
+    --accent-action: #EC4899;        /* Vibrant pink/magenta (for CTAs, highlights, love/care) */
+    --text-primary: #1F2937;         /* Dark charcoal (instead of pure black for text) */
+    --text-secondary: #4B5563;       /* Muted gray for subtitles and secondary info */
+    --background-main: #FEFCFF;      /* Very light lavender background */
+    --background-alt: #F3F0FF;       /* Light purple for cards or alternate sections */
+    --border-color: #E5E7EB;         /* Subtle border color */
+    /* Semantic Colors */
+    --color-warning: #F59E0B;        /* Golden amber for warnings */
+    --color-danger: #DC2626;         /* Deep red for errors */
+    --color-success: #10B981;        /* Emerald green for success */
+    --color-wisdom: #8B5CF6;         /* Lighter purple for wisdom elements */
+    
+    /* MOS specific colors */
+    --mos-primary: var(--primary-brand);
+    --mos-secondary: #8B5CF6;        /* Lighter purple */
+    --mos-accent: var(--accent-action);
+    --mos-rights: #3B82F6;           /* Blue for rights */
+    --mos-consciousness: #F59E0B;    /* Amber for consciousness */
+    --mos-spirit: #EC4899;           /* Pink for spiritual elements */
+    --mos-light: #F3F0FF;            /* Very light purple */
+    --mos-dark: #553C9A;             /* Dark purple */
+    
+    /* Dynamic Rights Spectrum colors */
+    --tier1-human: #3B82F6;          /* Blue for humans */
+    --tier2-animals: #10B981;        /* Green for animals */
+    --tier3-ecosystems: #059669;     /* Dark green for ecosystems */
+    --tier4-ai: #F59E0B;             /* Amber for AI */
+    --tier5-planetary: #8B5CF6;      /* Purple for planetary */
   }
 
+  /* Layout */
   .documentation-container {
     display: grid;
     grid-template-columns: 250px 1fr;
@@ -804,297 +705,37 @@
     margin: 0 auto;
     padding: 2rem 1rem;
   }
-  
-  @media (max-width: 768px) {
-    .documentation-container {
-      grid-template-columns: 1fr;
-    }
-  }
-  
+
   .content {
     min-width: 0;
   }
-  
-  /* Accessibility Level Selector */
-  .level-selector {
-    background: linear-gradient(135deg, var(--ethics-light) 0%, var(--ethics-medium) 100%);
-    border: 1px solid var(--ethics-accent);
-    border-radius: 0.75rem;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 6px rgba(22, 101, 52, 0.1);
-  }
-  
-  .level-selector h3 {
-    margin-top: 0;
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--ethics-primary);
-  }
-  
-  .level-buttons {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1rem;
-    margin-bottom: 1.25rem;
-  }
-  
-  .level-btn {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 1rem 1.25rem;
-    border: 2px solid transparent;
-    border-radius: 0.5rem;
-    background: white;
-    color: var(--ethics-primary);
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    position: relative;
-    overflow: hidden;
+
+  .section-content {
+    padding-top: 1rem;
+    scroll-margin-top: 2rem; /* Adds space above when scrolled to */
   }
 
-  .level-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(22, 101, 52, 0.1), transparent);
-    transition: left 0.5s ease;
-  }
-  
-  .level-btn:hover {
-    background: var(--ethics-light);
-    border-color: var(--ethics-accent);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(22, 101, 52, 0.15);
-  }
-
-  .level-btn:hover::before {
-    left: 100%;
-  }
-  
-  .level-btn.active {
-    background: var(--ethics-accent);
-    color: white;
-    border-color: var(--ethics-accent);
-    transform: translateY(-1px);
-    box-shadow: 0 6px 16px rgba(22, 101, 52, 0.25);
-  }
-
-  .level-btn.active::before {
-    display: none;
-  }
-  
-  .level-icon {
-    font-size: 1.5rem;
-    flex-shrink: 0;
-  }
-
-  .level-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .level-name {
-    font-size: 1rem;
-    font-weight: 600;
-  }
-  
-  .level-description {
-    font-size: 0.9rem;
-    color: var(--ethics-primary);
-    line-height: 1.5;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 0.5rem;
-    border: 1px solid rgba(22, 101, 52, 0.2);
-  }
-
-  /* Progress Indicator */
-  .progress-indicator {
-    background: linear-gradient(135deg, var(--ethics-light) 0%, var(--ethics-medium) 100%);
-    border-radius: 0.75rem;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-    border: 1px solid var(--ethics-accent);
-    box-shadow: 0 2px 8px rgba(22, 101, 52, 0.1);
-  }
-
-  .progress-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .progress-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-
-  .progress-text {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-  }
-
-  .progress-section {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--ethics-primary);
-  }
-
-  .progress-percentage {
-    font-size: 0.9rem;
-    color: var(--ethics-hover);
-    font-weight: 500;
-  }
-
-  .progress-navigation {
-    display: flex;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-  }
-
-  .progress-nav-btn {
-    padding: 0.5rem 1rem;
-    border: 1px solid var(--ethics-accent);
-    border-radius: 0.375rem;
-    background: white;
-    color: var(--ethics-primary);
-    font-size: 0.875rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s;
-    text-decoration: none;
-  }
-
-  .progress-nav-btn:hover {
-    background: var(--ethics-accent);
-    color: white;
-    transform: translateY(-1px);
-  }
-
-  .progress-bar-container {
-    width: 100%;
-  }
-
-  .progress-bar {
-    position: relative;
-    width: 100%;
-    height: 8px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 4px;
-    overflow: visible;
-    border: 1px solid rgba(22, 101, 52, 0.2);
-  }
-
-  .progress-fill {
-    height: 100%;
-    background: linear-gradient(90deg, var(--ethics-accent), var(--ethics-hover));
-    border-radius: 4px;
-    transition: width 0.3s ease;
-    position: relative;
-  }
-
-  .progress-marker {
-    position: absolute;
-    top: -2px;
-    width: 12px;
-    height: 12px;
-    background: var(--ethics-primary);
-    border-radius: 50%;
-    transform: translateX(-50%);
-    transition: left 0.3s ease;
-    border: 2px solid white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Access Guide Banner */
-  .access-guide-banner {
-    background: linear-gradient(135deg, var(--ethics-medium) 0%, #bbf7d0 100%);
-    border-radius: 0.75rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 6px rgba(34, 197, 94, 0.1);
-    border: 1px solid rgba(34, 197, 94, 0.2);
-  }
-  
-  .banner-content {
-    display: flex;
-    align-items: center;
-    padding: 1.5rem;
-    gap: 1.5rem;
-  }
-
-  .banner-icon {
-    font-size: 2.5rem;
-    color: var(--ethics-primary);
-    flex-shrink: 0;
-  }
-
-  .banner-text {
-    flex: 1;
-  }
-  
-  .banner-content h3 {
-    margin: 0 0 0.5rem 0;
-    color: var(--ethics-primary);
-    font-size: 1.25rem;
-  }
-  
-  .banner-content p {
-    margin: 0;
-    color: #374151;
-  }
-
-  .banner-actions {
-    flex-shrink: 0;
-  }
-
-  .guide-btn {
-    background: var(--ethics-accent);
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-
-  .guide-btn:hover {
-    background: var(--ethics-hover);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  }
-  
   /* Section Navigation */
   .section-nav {
     margin-bottom: 2rem;
-    background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
+    border-bottom: 1px solid var(--border-color);
+    background: linear-gradient(135deg, var(--background-main), var(--background-alt));
     border-radius: 0.75rem;
-    padding: 1.25rem;
-    border: 1px solid #e5e7eb;
+    padding: 1rem;
+    border: 1px solid rgba(107, 70, 193, 0.1);
+  }
+
+  .nav-section {
+    margin-bottom: 0.5rem;
   }
 
   .nav-accordion {
-    margin-bottom: 0.75rem;
-    border: 1px solid #e5e7eb;
+    margin-bottom: 0.5rem;
+    border: 1px solid rgba(139, 92, 246, 0.2);
     border-radius: 0.5rem;
     overflow: hidden;
     background: white;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 4px rgba(107, 70, 193, 0.05);
   }
 
   .accordion-header {
@@ -1102,7 +743,7 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    padding: 0.875rem 1.25rem;
+    padding: 0.75rem 1rem;
     background: none;
     border: none;
     cursor: pointer;
@@ -1114,22 +755,32 @@
   }
 
   .accordion-header:hover {
-    background-color: rgba(22, 101, 52, 0.05);
+    background-color: rgba(107, 70, 193, 0.05);
   }
 
   .accordion-header.has-active {
-    background-color: rgba(22, 101, 52, 0.1);
-    color: var(--ethics-primary);
+    background-color: rgba(107, 70, 193, 0.1);
+    color: var(--mos-primary);
     font-weight: 600;
   }
 
   .accordion-header.open {
-    background-color: rgba(22, 101, 52, 0.1);
-    border-bottom: 1px solid #e5e7eb;
+    background-color: rgba(139, 92, 246, 0.1);
+    border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+  }
+
+  /* Special styling for layer 1 header (essence) */
+  .layer1-header {
+    background: linear-gradient(135deg, rgba(107, 70, 193, 0.1), rgba(139, 92, 246, 0.1));
+    border-bottom: 1px solid rgba(107, 70, 193, 0.2);
+  }
+
+  .layer1-header.has-active {
+    background: linear-gradient(135deg, rgba(107, 70, 193, 0.15), rgba(139, 92, 246, 0.15));
   }
 
   .accordion-icon {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     flex-shrink: 0;
   }
 
@@ -1142,9 +793,6 @@
     font-size: 0.8rem;
     color: #6b7280;
     font-weight: 400;
-    background: #f3f4f6;
-    padding: 0.25rem 0.5rem;
-    border-radius: 0.25rem;
   }
 
   .toggle-arrow {
@@ -1159,8 +807,8 @@
   }
 
   .accordion-content {
-    border-top: 1px solid #e5e7eb;
-    background-color: #fafafa;
+    border-top: 1px solid rgba(139, 92, 246, 0.2);
+    background-color: #fefcff;
   }
 
   .nav-item {
@@ -1168,7 +816,7 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    padding: 0.75rem 1.25rem;
+    padding: 0.75rem 1rem;
     background: none;
     border: none;
     cursor: pointer;
@@ -1176,7 +824,8 @@
     font-size: 0.9rem;
     color: #4b5563;
     text-align: left;
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1px solid rgba(139, 92, 246, 0.1);
+    position: relative;
   }
 
   .nav-item:last-child {
@@ -1184,18 +833,55 @@
   }
 
   .nav-item:hover {
-    background-color: rgba(22, 101, 52, 0.05);
+    background-color: rgba(107, 70, 193, 0.05);
     color: #374151;
   }
 
   .nav-item.active {
-    background-color: var(--ethics-primary);
+    background-color: var(--mos-primary);
     color: white;
     font-weight: 600;
   }
 
   .nav-item.active:hover {
-    background-color: var(--ethics-accent);
+    background-color: var(--mos-dark);
+  }
+
+  /* Special styling for featured items (essence and executive summary) */
+  .featured-item {
+    background: linear-gradient(135deg, rgba(107, 70, 193, 0.08), rgba(139, 92, 246, 0.08));
+    border: 1px solid rgba(107, 70, 193, 0.15);
+    border-radius: 0.25rem;
+    margin: 0.25rem;
+    padding-right: 3rem; /* Make space for badge */
+  }
+
+  .featured-item.active {
+    background: var(--mos-primary);
+    border-color: var(--mos-primary);
+  }
+
+  .featured-badge {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--mos-accent);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .featured-item.active .featured-badge {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .subsection-item {
+    padding-left: 1.5rem;
   }
 
   .nav-icon {
@@ -1203,500 +889,583 @@
     flex-shrink: 0;
   }
 
-  .nav-number {
-    font-size: 0.8rem;
-    background-color: rgba(22, 101, 52, 0.1);
-    color: var(--ethics-primary);
-    padding: 0.25rem 0.5rem;
-    border-radius: 0.25rem;
-    font-weight: 600;
-    min-width: 2rem;
-    text-align: center;
-    flex-shrink: 0;
-  }
-
-  .nav-item.active .nav-number {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-  }
-
   .nav-title {
     flex-grow: 1;
     text-align: left;
   }
 
-  .unavailable-indicator {
-    font-size: 0.8rem;
-    opacity: 0.6;
-  }
-  
-  /* Section Content */
-  .section-content {
-    padding-top: 1rem;
-    margin-bottom: 3rem;
-    scroll-margin-top: 2rem;
-  }
-  
-  .section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #e5e7eb;
-  }
-  
-  .section-header h2 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: var(--ethics-primary);
-    margin: 0;
-  }
-  
-  .layer-navigation {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .layer-link {
-    padding: 0.375rem 0.75rem;
-    border-radius: 0.375rem;
-    font-size: 0.8rem;
-    color: var(--ethics-primary);
-    text-decoration: none;
-    background-color: var(--ethics-light);
-    transition: all 0.2s;
-    border: 1px solid transparent;
-  }
-  
-  .layer-link:hover {
-    background-color: var(--ethics-medium);
-    border-color: var(--ethics-accent);
-  }
-  
-  .layer-link.active {
-    background-color: var(--ethics-accent);
-    color: white;
-    border-color: var(--ethics-accent);
+  /* MOS Guide Card */
+  .mos-guide-card {
+    background: linear-gradient(135deg, #fefcff 0%, #f3f0ff 100%);
+    border-radius: 0.75rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(107, 70, 193, 0.1);
+    border: 1px solid rgba(107, 70, 193, 0.2);
+    overflow: visible !important;
+    position: relative;
+    z-index: 1;
   }
 
-  /* Section Footer Navigation */
-  .section-footer-navigation {
+  .card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    position: relative;
+    overflow: visible;
+  }
+
+  .mos-guide-card .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1001;
+    min-width: 300px;
+    max-width: 350px;
+    overflow: visible;
+    border: 1px solid rgba(107, 70, 193, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .card-icon {
+    font-size: 2.5rem;
+    color: var(--mos-primary);
+    flex-shrink: 0;
+  }
+
+  .card-text {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .card-text h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--mos-primary);
+    font-size: 1.25rem;
+  }
+
+  .card-text p {
+    margin: 0;
+    color: #4b5563;
+    font-size: 1rem;
+  }
+
+  .primary-btn {
+    background-color: var(--mos-primary);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .primary-btn:hover {
+    background-color: var(--mos-dark);
+    transform: translateY(-1px);
+  }
+
+  .secondary-btn {
+    background-color: white;
+    color: var(--mos-primary);
+    border: 1px solid var(--mos-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .secondary-btn:hover {
+    background-color: var(--mos-light);
+    transform: translateY(-1px);
+  }
+
+  .guide-navigation {
     display: flex;
     justify-content: space-between;
     margin-top: 3rem;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     border-top: 1px solid #e5e7eb;
-    gap: 1rem;
   }
 
-  .footer-nav-btn {
+  .download-icon,
+  .arrow-icon {
+    display: inline-block;
+    margin-left: 0.25rem;
+  }
+
+  /* Progress indicator */
+  .progress-indicator {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: linear-gradient(90deg, rgba(107, 70, 193, 0.1), rgba(139, 92, 246, 0.1));
+    border-radius: 0.5rem;
+    border-left: 4px solid var(--mos-primary);
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--mos-primary), var(--mos-secondary));
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+
+  .progress-text {
+    font-size: 0.875rem;
+    color: var(--mos-primary);
+    font-weight: 500;
+  }
+
+  /* Guide selector styles */
+  .guide-selector {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .guide-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .guide-card {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .guide-card:hover {
+    box-shadow: 0 4px 6px rgba(107, 70, 193, 0.1);
+    transform: translateY(-2px);
+    border-color: var(--mos-primary);
+  }
+
+  .guide-card.active {
+    border-color: var(--mos-primary);
+    background-color: var(--mos-light);
+  }
+
+  .guide-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .guide-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--mos-primary);
+  }
+
+  .guide-desc {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+
+  .guide-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-toggle {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    padding: 1rem 1.5rem;
-    border: 2px solid var(--ethics-accent);
-    border-radius: 0.5rem;
-    background: white;
-    color: var(--ethics-primary);
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    z-index: 1001;
+    min-width: 320px;
+    max-width: 400px;
+    padding: 0.5rem 0;
+    background-color: #fff;
+    border: 1px solid rgba(107, 70, 193, 0.3);
+    border-radius: 0.375rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    white-space: normal;
+    /* Default hidden state */
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: all 0.2s ease;
+    pointer-events: none;
+  }
+
+  /* Show dropdown when open */
+  .dropdown-menu.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: normal !important;
+    background-color: transparent;
+    border: 0;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: background-color 0.15s ease;
+  }
+
+  .dropdown-item:hover, 
+  .dropdown-item:focus {
+    color: #16181b;
     text-decoration: none;
-    max-width: 300px;
+    background-color: var(--mos-light);
+  }
+
+  /* For dropdown guide items */
+  .dropdown-item .guide-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    margin-bottom: 0;
+    display: inline-block;
+    width: 24px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .dropdown-item .guide-info {
+    display: flex;
+    flex-direction: column;
     flex: 1;
   }
 
-  .footer-nav-btn.prev {
-    justify-content: flex-start;
+  .dropdown-item .guide-title {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: var(--mos-primary);
   }
 
-  .footer-nav-btn.next {
-    justify-content: flex-end;
+  .dropdown-item .guide-desc {
+    font-size: 0.8rem;
+    color: #6b7280;
+    line-height: 1.3;
+  }
+
+  /* Section Navigation */
+  .section-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .nav-btn {
+    background-color: var(--mos-primary);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .nav-btn:hover {
+    background-color: var(--mos-dark);
+    transform: translateY(-1px);
+  }
+
+  .prev-btn {
+    margin-right: auto;
+  }
+
+  .next-btn {
     margin-left: auto;
   }
 
-  .footer-nav-btn:hover {
-    background: var(--ethics-accent);
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(22, 101, 52, 0.2);
-  }
-
-  .nav-arrow {
-    font-size: 1.25rem;
-    font-weight: bold;
-  }
-
-  .nav-text {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-  }
-
-  .footer-nav-btn.next .nav-text {
-    text-align: right;
-  }
-
-  .nav-label {
-    font-size: 0.8rem;
-    font-weight: 500;
-    opacity: 0.8;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-  .nav-title {
-    font-size: 0.9rem;
-    font-weight: 600;
-    margin-top: 0.25rem;
-  }
-  
-  /* Section Unavailable Message */
-  .section-unavailable {
-    padding: 2rem;
-    background-color: #f9fafb;
-    border-radius: 0.75rem;
-    text-align: center;
-    margin: 2rem 0;
-    border: 1px solid #e5e7eb;
-  }
-
-  .section-unavailable h3 {
-    color: var(--ethics-primary);
-    margin-bottom: 1rem;
-  }
-  
-  .section-unavailable p {
-    font-size: 1.125rem;
-    color: #4b5563;
-    margin-bottom: 1.5rem;
-  }
-  
-  .alternative-levels {
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  
-  .level-buttons.small {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 0.75rem;
-    justify-content: center;
-  }
-  
-  .level-btn.small {
-    font-size: 0.875rem;
-    padding: 0.5rem 0.75rem;
-  }
-
-  .level-btn.small .level-content {
-    align-items: center;
-  }
-
-  .level-btn.small .level-name {
-    font-size: 0.875rem;
-  }
-  
-  /* Markdown Content Styling */
+  /* Content styling */
   .content :global(h1) {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: var(--ethics-primary);
+    color: var(--mos-primary);
   }
-  
+
   .content :global(h2) {
     font-size: 1.5rem;
     font-weight: 600;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    color: var(--ethics-primary);
+    color: var(--mos-secondary);
   }
-  
-  .content :global(h3) {
+
+  .content :global(h3),
+  :global(h4) {
     font-size: 1.25rem;
     font-weight: 600;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
-    color: var(--ethics-primary);
+    color: var(--mos-rights);
   }
-  
-  .content :global(h4) {
-    font-size: 1.125rem;
-    font-weight: 600;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-    color: var(--ethics-primary);
+
+  :global(h4) {
+    font-size: 1.2rem;
   }
-  
+
   .content :global(p) {
     margin-bottom: 1rem;
     line-height: 1.7;
-    color: #374151;
-  }
-  
-  .content :global(ul), .content :global(ol) {
-    margin-bottom: 1.5rem;
-    padding-left: 1.5rem;
-    color: #374151;
-  }
-  
-  .content :global(li) {
-    margin-bottom: 0.5rem;
+    color: #4b5563;
   }
 
-  .content :global(blockquote) {
-    background-color: var(--ethics-light);
-    border-left: 4px solid var(--ethics-accent);
+  /* Lists - Simple and Clean Styling */
+  .content :global(ul), 
+  .content :global(ol) {
+    margin: 1rem 0 1.5rem 0;
+    padding-left: 1.5rem;
+    color: #4b5563;
+    line-height: 1.6;
+  }
+
+  /* Bullet Lists */
+  .content :global(ul) {
+    list-style-type: disc;
+  }
+
+  .content :global(ul li) {
+    margin-bottom: 0.5rem;
+    padding-left: 0.25rem;
+  }
+
+  /* Nested bullet lists */
+  .content :global(ul ul) {
+    margin: 0.5rem 0;
+    padding-left: 1.25rem;
+    list-style-type: circle;
+  }
+
+  .content :global(ul ul ul) {
+    list-style-type: square;
+  }
+
+  /* Numbered Lists */
+  .content :global(ol) {
+    list-style-type: decimal;
+  }
+
+  .content :global(ol li) {
+    margin-bottom: 0.5rem;
+    padding-left: 0.25rem;
+  }
+
+  /* Nested numbered lists */
+  .content :global(ol ol) {
+    margin: 0.5rem 0;
+    padding-left: 1.25rem;
+    list-style-type: lower-alpha;
+  }
+
+  .content :global(ol ol ol) {
+    list-style-type: lower-roman;
+  }
+
+  /* Mixed nested lists */
+  .content :global(ul ol), 
+  .content :global(ol ul) {
+    margin: 0.5rem 0;
+    padding-left: 1.25rem;
+  }
+
+  /* List markers styling */
+  .content :global(li::marker) {
+    color: var(--mos-primary);
+    font-weight: 500;
+  }
+
+  /* Better spacing for lists with paragraphs */
+  .content :global(li p) {
+    margin: 0.25rem 0;
+  }
+
+  .content :global(li p:first-child) {
+    margin-top: 0;
+  }
+
+  .content :global(li p:last-child) {
+    margin-bottom: 0;
+  }
+
+  /* Blockquotes */
+  :global(blockquote) {
+    background-color: var(--mos-light);
+    border-left: 4px solid var(--mos-primary);
     padding: 1rem 1.5rem;
     margin: 1.5rem 0;
     border-radius: 0.5rem;
   }
-  
-  .content :global(a) {
-    color: var(--ethics-accent);
-    text-decoration: none;
+
+  :global(blockquote > p:first-child strong) {
+    font-size: 1.1rem;
+    color: var(--mos-primary);
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+
+  :global(blockquote ul),
+  :global(blockquote ol) {
+    margin-left: 0;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  :global(blockquote li) {
+    margin-bottom: 0.5rem;
+  }
+
+  :global(blockquote p:last-child) {
+    margin-top: 0.75rem;
+    font-style: italic;
+  }
+
+  :global(blockquote a) {
+    color: var(--mos-primary);
+    text-decoration: underline;
     font-weight: 500;
-    transition: all 0.2s;
-    border-bottom: 1px solid transparent;
   }
-  
-  .content :global(a:hover) {
-    color: var(--ethics-hover);
-    border-bottom-color: var(--ethics-hover);
+
+  :global(blockquote a:hover) {
+    color: var(--mos-dark);
   }
-  
-  /* Table styles */
-  .content :global(table) {
+
+  /* Tables */
+  :global(.content table) {
     width: 100%;
     border-collapse: collapse;
     margin: 1.5rem 0;
     font-size: 0.95rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    border-radius: 0.5rem;
+    border-radius: 0.375rem;
     overflow: hidden;
   }
-  
-  .content :global(thead) {
-    background: linear-gradient(to right, var(--ethics-primary), var(--ethics-accent));
+
+  :global(.content thead) {
+    background: linear-gradient(to right, var(--mos-primary), var(--mos-secondary));
   }
 
-  .content :global(th) {
+  :global(.content th) {
     padding: 0.75rem 1rem;
-    color: white;
     font-weight: 600;
     text-align: left;
+    color: #ffffff;
+    border: none;
+    border-bottom: 2px solid var(--mos-primary);
   }
-  
-  .content :global(td) {
+
+  :global(.content td) {
     padding: 0.75rem 1rem;
     border: 1px solid #e5e7eb;
     border-left: none;
     border-right: none;
     vertical-align: top;
   }
-  
-  .content :global(tr:nth-child(odd)) {
-    background-color: #f8f9fa;
+
+  :global(.content tr:nth-child(odd)) {
+    background-color: #fefcff;
   }
-  
-  .content :global(tr:nth-child(even)) {
+
+  :global(.content tr:nth-child(even)) {
     background-color: #ffffff;
   }
-  
-  .content :global(tr:hover) {
-    background-color: var(--ethics-light);
+
+  :global(.content tr:hover) {
+    background-color: var(--mos-light);
   }
-  
-  /* Custom bullet points for unordered lists */
-  .content :global(ul) {
-    list-style-type: none;
+
+  :global(.content tbody tr:last-child td) {
+    border-bottom: none;
   }
-  
-  .content :global(ul li) {
-    position: relative;
-    padding-left: 1.5rem;
+
+  :global(.content table caption),
+  :global(.content table tfoot) {
+    background-color: var(--mos-light);
+    padding: 0.75rem;
+    font-size: 0.875rem;
+    color: var(--mos-primary);
+    text-align: left;
+    border-top: 1px solid var(--mos-primary);
   }
-  
-  .content :global(ul li::before) {
-    content: "✧";
-    position: absolute;
-    left: 0;
-    color: var(--ethics-accent);
-    font-size: 0.9rem;
+
+  :global(.content td.highlight) {
+    color: var(--mos-primary);
+    font-weight: 600;
   }
-  
-  .content :global(ul ul li::before) {
-    content: "⋄";
-    color: #22c55e;
+
+  /* Links */
+  .content :global(a) {
+    color: var(--mos-primary);
+    text-decoration: underline;
+    font-weight: 500;
+    transition: all 0.2s;
   }
-    
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .section-header {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1rem;
-    }
-    
-    .layer-navigation {
-      width: 100%;
-      justify-content: flex-start;
-    }
-    
-    .level-buttons {
-      grid-template-columns: 1fr;
-    }
 
-    .banner-content {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1rem;
-    }
-
-    .banner-actions {
-      width: 100%;
-    }
-
-    .guide-btn {
-      width: 100%;
-      text-align: center;
-    }
-
-    .section-nav {
-      padding: 1rem;
-    }
-
-    .accordion-header {
-      padding: 0.75rem 1rem;
-      font-size: 0.9rem;
-    }
-
-    .nav-item {
-      padding: 0.625rem 1rem;
-      font-size: 0.85rem;
-    }
-
-    .progress-info {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 0.75rem;
-    }
-
-    .progress-navigation {
-      flex-direction: column;
-      width: 100%;
-    }
-
-    .progress-nav-btn {
-      width: 100%;
-      text-align: center;
-    }
-
-    .section-footer-navigation {
-      flex-direction: column;
-    }
-
-    .footer-nav-btn {
-      max-width: none;
-      justify-content: center;
-    }
-
-    .footer-nav-btn.next {
-      margin-left: 0;
-    }
-
-    .footer-nav-btn .nav-text {
-      text-align: center;
-    }
+  .content :global(a:hover) {
+    color: var(--mos-dark);
+    text-decoration: underline;
   }
-  
-  @media (max-width: 480px) {
-    .level-btn {
-      flex-direction: column;
-      text-align: center;
-      gap: 0.5rem;
-    }
 
-    .level-content {
-      align-items: center;
-    }
-
-    .banner-content {
-      padding: 1.25rem;
-    }
-
-    .banner-icon {
-      font-size: 2rem;
-    }
-
-    .banner-text h3 {
-      font-size: 1.1rem;
-    }
-
-    .banner-text p {
-      font-size: 0.9rem;
-    }
-
-    .progress-indicator {
-      padding: 1rem;
-    }
-
-    .progress-text {
-      align-items: center;
-      text-align: center;
-    }
-
-    .footer-nav-btn {
-      padding: 0.75rem 1rem;
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-
-    .nav-arrow {
-      font-size: 1rem;
-    }
+  .content :global(a:active) {
+    color: var(--mos-dark);
   }
-  
-  /* Print mode adjustments */
-  @media print {
-    /* Force all content to be visible */
-    body * {
-      visibility: visible !important;
-      opacity: 1 !important;
-      display: block !important;
-    }
-    
-    /* Hide navigation and interactive elements */
-    .level-selector, .section-nav, .access-guide-banner,
-    .accordion-header, .accordion-content, .nav-accordion,
-    .layer-navigation, .banner-actions, .progress-indicator,
-    .section-footer-navigation {
-      display: none !important;
-    }
-    
-    /* Ensure proper spacing for print */
-    .section-content {
-      page-break-inside: avoid;
-      page-break-after: always;
-      margin-bottom: 2cm !important;
-    }
-    
-    /* Adjust header sizes for print */
-    h1 { font-size: 24pt !important; }
-    h2 { font-size: 18pt !important; }
-    h3 { font-size: 14pt !important; }
-    
-    /* Ensure proper link display */
-    a::after {
-      content: " (" attr(href) ")";
-      font-size: 80%;
-      font-weight: normal;
-      color: #666;
-    }
+
+  .content :global(a[href^="http"]):after, 
+  .content :global(a[href^="https://"]):after {
+    content: " ↗";
+    font-size: 0.8em;
+    vertical-align: super;
+  }
+
+  .content :global(a[href$=".pdf"]):after {
+    content: " ↓";
+    font-size: 0.8em;
   }
 
   /* Language fallback notice */
@@ -1704,8 +1473,8 @@
     display: flex;
     align-items: flex-start;
     gap: 1rem;
-    background-color: rgba(22, 163, 74, 0.1);
-    border: 1px solid rgba(22, 163, 74, 0.3);
+    background-color: rgba(139, 92, 246, 0.1);
+    border: 1px solid rgba(139, 92, 246, 0.3);
     border-radius: 0.5rem;
     padding: 1rem 1.25rem;
     margin-bottom: 1.5rem;
@@ -1713,7 +1482,7 @@
 
   .notice-icon {
     font-size: 1.25rem;
-    color: var(--ethics-accent);
+    color: var(--mos-secondary);
     flex-shrink: 0;
     margin-top: 0.125rem;
   }
@@ -1723,7 +1492,7 @@
   }
 
   .notice-content strong {
-    color: var(--ethics-accent);
+    color: var(--mos-secondary);
     font-size: 0.95rem;
     display: block;
     margin-bottom: 0.25rem;
@@ -1736,7 +1505,114 @@
     line-height: 1.5;
   }
 
-  /* Responsive notice */
+  /* Loading state */
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    text-align: center;
+  }
+
+  .loading-spinner {
+    width: 3rem;
+    height: 3rem;
+    border: 3px solid var(--mos-light);
+    border-top: 3px solid var(--mos-primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* Missing section styling */
+  .missing-section {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+  }
+
+  .missing-section h2 {
+    color: var(--color-danger);
+    margin-bottom: 1rem;
+  }
+
+  .missing-section p {
+    color: #6b7280;
+    margin-bottom: 2rem;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .documentation-container {
+      grid-template-columns: 1fr;
+    }
+
+    .section-nav {
+      padding: 0.75rem;
+    }
+
+    .accordion-header {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-item {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.85rem;
+    }
+
+    .subsection-item {
+      padding-left: 1rem;
+    }
+
+    .card-content {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    
+    .card-actions {
+      width: 100%;
+      justify-content: center;
+    }
+    
+    .guide-navigation {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .guide-navigation button {
+      width: 100%;
+    }
+    
+    .guide-cards {
+      flex-direction: column;
+    }
+    
+    .guide-card {
+      max-width: none;
+    }
+
+    .section-navigation {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .nav-btn {
+      width: 100%;
+      margin: 0 !important;
+    }
+  }
+
   @media (max-width: 640px) {
     .language-fallback-notice {
       padding: 0.75rem 1rem;
@@ -1753,5 +1629,47 @@
     .notice-content p {
       font-size: 0.8rem;
     }
+  }
+
+  .arrow-icon {
+    display: inline-block;
+    margin-left: 0.25rem;
+    transition: transform 0.2s ease;
+  }
+
+  .arrow-icon.rotated {
+    transform: rotate(180deg);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  #main-content {
+    scroll-margin-top: 2rem;
+  }
+
+  .section-content {
+    scroll-margin-top: 2rem;
+  }
+
+  .content {
+    scroll-margin-top: 2rem;
+    position: relative;
+  }
+
+  .introduction-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  /* Special styling for introduction in navigation */
+  .nav-item[data-section="introduction"] {
+    font-weight: 600;
+    background: linear-gradient(135deg, rgba(107, 70, 193, 0.05), rgba(139, 92, 246, 0.05));
+    border-left: 3px solid var(--mos-primary);
   }
 </style>

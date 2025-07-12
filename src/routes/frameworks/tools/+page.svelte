@@ -53,6 +53,9 @@
       indigenousTitle: "Indigenous & Traditional Knowledge Governance Framework Tools",
       indigenousDesc: "Sacred technologies for Indigenous-led planetary transformation and Traditional Knowledge protection, including Bioregional Autonomous Zones, Earth Council formation, Indigenous AI governance, land rematriation, and tools for protecting Traditional Ecological Knowledge while advancing Indigenous sovereignty.",
       indigenousButton: "Access Indigenous Knowledge Tools",
+      mosTitle: "Moral Operating System Tools",
+      mosDesc: "Ethical frameworks and practical tools for recognizing rights and dignity across all beings, including the Rights Seed Kit for community dialogue, spiral translation guides, and AI consciousness assessment protocols.",
+      mosButton: "Access Moral Operating System Tools",
       environmentalTitle: "Environmental Stewardship Framework Tools",
       environmentalDesc: "Resources for regenerative environmental governance, including sacred seed kits for interfaith restoration, ecosystem health monitoring, rights recognition for all beings, and tools for climate adaptation and biodiversity protection.",
       environmentalButton: "Access Environmental Stewardship Tools",
@@ -77,9 +80,6 @@
       spiritualTitle: "Religious & Spiritual Dialogue Framework Tools",
       spiritualDesc: "Resources for fostering meaningful dialogue among religious, spiritual, and non-theistic communities, including facilitation guides, ethics charters, wisdom documentation templates, and tools for policy translation that honor diverse spiritual perspectives.",
       spiritualButton: "Access Spiritual Dialogue Tools",
-      ethicsTitle: "Global Ethics & Rights of Beings Framework Tools",
-      ethicsDesc: "Resources for implementing the Rights of Beings Framework, including assessment methodologies, guardianship council guides, and practical tools for recognizing and protecting the rights of all beings across human, animal, ecosystem, and digital domains.",
-      ethicsButton: "Access Ethics & Rights Tools",
       agingTitle: "Aging Population Support Framework Tools",
       agingDesc: "Resources for implementing elder-led transformation through AUBI pilots, innovation hubs, political organizing, and regenerative aging economics that position elders as wisdom keepers and community leaders.",
       agingButton: "Access Aging Support Tools",
@@ -104,6 +104,12 @@
       treatyTitle: "Verktyg för Fördraget för Vårt Enda Hem",
       treatyDesc: "Top-down-resurser för systemförändring. Detta kit tillhandahåller verktygen för att genomföra fördragets övergripande reformer av vår globala arkitektur. Det innehåller reformguider för FN:s säkerhetsråd, mallar för koldioxidskatter och påverkansmaterial för att bygga den globala förvaltningsalliansen.",
       treatyButton: "Öppna fördragsverktyg",
+      indigenousTitle: "Verktyg för Ursprungsfolk & Traditionell Kunskap Styrningsramverk",
+      indigenousDesc: "Heliga teknologier för ursprungsfolksledd planetär transformation och skydd av traditionell kunskap, inklusive bioregionala autonoma zoner, jordrådsformation, ursprungsfolks AI-styrning, jordåterlämnande och verktyg för att skydda traditionell ekologisk kunskap samtidigt som ursprungsfolks suveränitet främjas.",
+      indigenousButton: "Öppna verktyg för ursprungsfolk kunskap",
+      mosTitle: "Verktyg för det moraliska operativsystemet",
+      mosDesc: "Etiska ramverk och praktiska verktyg för att erkänna rättigheter och värdighet för alla varelser, inklusive rättighetsfrösatsen för samhällsdialog, spiralöversättningsguider och AI-medvetandebedömningsprotokoll.",
+      mosButton: "Öppna verktyg för det moraliska operativsystemet",
       governanceTitle: "Verktyg för samhälls- och lokalstyrning",
       governanceDesc: "Bottom-up-verktyg som demonstrerar fördragets principer i praktiken. Denna samling erbjuder praktiska resurser för att tillämpa subsidiaritetsprincipen på lokal nivå. Den inkluderar plattformar för digital demokrati, mallar för intressentengagemang och ramverk för samhällets välbefinnande.",
       governanceButton: "Få tillgång till communityverktyg",
@@ -131,9 +137,6 @@
       waterTitle: "Vatten & Sanitet (WASH) Styrningsramverk Verktyg",
       waterDesc: "Resurser för att implementera vattenrättvisetransformation genom samhällskontroll, regenerativ teknik och rättighetsbaserad styrning, inklusive heliga vattenkit, mikronätplanering, statliga förmögenhetsfonder och verktyg för att etablera vattenförsamlingar och juridiska ramverk.",
       waterButton: "Öppna vatten- och sanitetsverktyg",
-      indigenousTitle: "Verktyg för Ursprungsfolk & Traditionell Kunskap Styrningsramverk",
-      indigenousDesc: "Heliga teknologier för ursprungsfolksledd planetär transformation och skydd av traditionell kunskap, inklusive bioregionala autonoma zoner, jordrådsformation, ursprungsfolks AI-styrning, jordåterlämnande och verktyg för att skydda traditionell ekologisk kunskap samtidigt som ursprungsfolks suveränitet främjas.",
-      indigenousButton: "Öppna verktyg för ursprungsfolk kunskap",
       environmentalTitle: "Verktyg för Miljöförvaltningsramverk",
       environmentalDesc: "Resurser för regenerativ miljöstyrning, inklusive heliga fröpaket för interfaith-restaurering, övervakning av ekosystemhälsa, rättighetserkännande för alla varelser och verktyg för klimatanpassning och biologisk mångfaldsskydd.",
       environmentalButton: "Öppna miljöförvaltningsverktyg",
@@ -158,9 +161,6 @@
       spiritualTitle: "Verktyg för ramverket för religiös och andlig dialog",
       spiritualDesc: "Resurser för att främja meningsfull dialog mellan religiösa, andliga och icke-teistiska gemenskaper, inklusive faciliteringsguider, etiska stadgar, mallar för visdomsdokumentation och verktyg för policyöversättning som hedrar olika andliga perspektiv.",
       spiritualButton: "Öppna verktyg för andlig dialog",
-      ethicsTitle: "Verktyg för globalt etiskt ramverk och väsens rättigheter",
-      ethicsDesc: "Resurser för att implementera ramverket för väsens rättigheter, inklusive bedömningsmetoder, vägledning för förmyndarskapsråd och praktiska verktyg för att erkänna och skydda rättigheterna för alla väsen inom mänskliga, djur-, ekosystem- och digitala domäner.",
-      ethicsButton: "Öppna etik- och rättighetsverktyg",
       agingTitle: "Verktyg för Åldrande Befolkningsstöd Ramverk",
       agingDesc: "Resurser för att implementera äldreledda transformationer genom AUBI-piloter, innovationshubbar, politisk organisering och regenerativ åldrandeekonomi som positionerar äldre som visdomsbevarare och samhällsledare.",
       agingButton: "Öppna åldrandestödverktyg",
@@ -270,17 +270,17 @@
         </div>
       </div>
 
-      <!-- Climate & Energy Framework Card -->
-      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2C8A78; margin-bottom: 2rem;">
+      <!-- Moral Operating System Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #6B46C1; margin-bottom: 2rem;">
         <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
-          <div style="font-size: 2.5rem; color: #2C8A78;">⚡</div>
+          <div style="font-size: 2.5rem; color: #6B46C1;">🦋</div>
           <div style="flex: 1; min-width: 200px;">
-            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #2C8A78;">{texts.climateTitle}</h2>
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #6B46C1;">{texts.mosTitle}</h2>
             <p style="color: #4b5563; margin-bottom: 1rem;">
-              {texts.climateDesc}
+              {texts.mosDesc}
             </p>
-            <a href="{base}/frameworks/tools/climate-and-energy-governance" style="display: inline-flex; align-items: center; background-color: #2C8A78; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.climateButton}
+            <a href="{base}/frameworks/tools/moral-operating-system" style="display: inline-flex; align-items: center; background-color: #6B46C1; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.mosButton}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
@@ -289,25 +289,6 @@
         </div>
       </div>
 
-      <!-- Planetary Health Framework Card -->
-      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #1e3a8a; margin-bottom: 2rem;">
-        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
-          <div style="font-size: 2.5rem; color: #1e3a8a;">🩺</div>
-          <div style="flex: 1; min-width: 200px;">
-            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #1e3a8a;">{texts.planetaryHealthTitle}</h2>
-            <p style="color: #4b5563; margin-bottom: 1rem;">
-              {texts.planetaryHealthDesc}
-            </p>
-            <a href="{base}/frameworks/tools/healthcare-governance" style="display: inline-flex; align-items: center; background-color: #1e3a8a; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.planetaryHealthButton}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-      
       <!-- Food Systems Framework Card -->
       <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2e7d32; margin-bottom: 2rem;">
         <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
@@ -365,25 +346,6 @@
         </div>
       </div>
 
-      <!-- Economic Framework Card (to be added to Available Resources section) -->
-      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #088F8F; margin-bottom: 2rem;">
-        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
-          <div style="font-size: 2.5rem; color: #088F8F;">💱</div>
-          <div style="flex: 1; min-width: 200px;">
-            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #088F8F;">{texts.economicTitle}</h2>
-            <p style="color: #4b5563; margin-bottom: 1rem;">
-              {texts.economicDesc}
-            </p>
-            <a href="{base}/frameworks/tools/economic-integration" style="display: inline-flex; align-items: center; background-color: #088F8F; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.economicButton}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-
       <!-- Financial Systems Framework Card -->
       <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #3A6EA5; margin-bottom: 2rem;">
         <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
@@ -422,17 +384,17 @@
         </div>
       </div>
 
-      <!-- Education Framework Card -->
-      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2D5F2D; margin-bottom: 2rem;">
+      <!-- Economic Framework Card (to be added to Available Resources section) -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #088F8F; margin-bottom: 2rem;">
         <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
-          <div style="font-size: 2.5rem; color: #2D5F2D;">🎓</div>
+          <div style="font-size: 2.5rem; color: #088F8F;">💱</div>
           <div style="flex: 1; min-width: 200px;">
-            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #2D5F2D;">{texts.educationTitle}</h2>
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #088F8F;">{texts.economicTitle}</h2>
             <p style="color: #4b5563; margin-bottom: 1rem;">
-              {texts.educationDesc}
+              {texts.economicDesc}
             </p>
-            <a href="{base}/frameworks/tools/educational-systems" style="display: inline-flex; align-items: center; background-color: #2D5F2D; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.educationButton}
+            <a href="{base}/frameworks/tools/economic-integration" style="display: inline-flex; align-items: center; background-color: #088F8F; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.economicButton}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
@@ -441,36 +403,17 @@
         </div>
       </div>
 
-      <!-- Mental Health Framework Card -->
+      <!-- Planetary Health Framework Card -->
       <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #1e3a8a; margin-bottom: 2rem;">
         <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
-          <div style="font-size: 2.5rem; color: #1e3a8a;">🧠</div>
+          <div style="font-size: 2.5rem; color: #1e3a8a;">🩺</div>
           <div style="flex: 1; min-width: 200px;">
-            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #1e3a8a;">{texts.mentalHealthTitle}</h2>
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #1e3a8a;">{texts.planetaryHealthTitle}</h2>
             <p style="color: #4b5563; margin-bottom: 1rem;">
-              {texts.mentalHealthDesc}
+              {texts.planetaryHealthDesc}
             </p>
-            <a href="{base}/frameworks/tools/mental-health-governance" style="display: inline-flex; align-items: center; background-color: #1e3a8a; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.mentalHealthButton}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Water & Sanitation Framework Card -->
-      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #0369a1; margin-bottom: 2rem;">
-        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
-          <div style="font-size: 2.5rem; color: #0369a1;">💧</div>
-          <div style="flex: 1; min-width: 200px;">
-            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #0369a1;">{texts.waterTitle}</h2>
-            <p style="color: #4b5563; margin-bottom: 1rem;">
-              {texts.waterDesc}
-            </p>
-            <a href="{base}/frameworks/tools/water-and-sanitation-governance" style="display: inline-flex; align-items: center; background-color: #0369a1; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.waterButton}
+            <a href="{base}/frameworks/tools/healthcare-governance" style="display: inline-flex; align-items: center; background-color: #1e3a8a; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.planetaryHealthButton}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
@@ -498,17 +441,36 @@
         </div>
       </div>
 
-      <!-- Digital Commons Framework Card -->
-      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #6d28d9; margin-bottom: 2rem;">
+      <!-- Climate & Energy Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2C8A78; margin-bottom: 2rem;">
         <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
-          <div style="font-size: 2.5rem; color: #6d28d9;">💻</div>
+          <div style="font-size: 2.5rem; color: #2C8A78;">⚡</div>
           <div style="flex: 1; min-width: 200px;">
-            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #6d28d9;">{texts.digitalTitle}</h2>
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #2C8A78;">{texts.climateTitle}</h2>
             <p style="color: #4b5563; margin-bottom: 1rem;">
-              {texts.digitalDesc}
+              {texts.climateDesc}
             </p>
-            <a href="{base}/frameworks/tools/digital-commons" style="display: inline-flex; align-items: center; background-color: #6d28d9; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.digitalButton}
+            <a href="{base}/frameworks/tools/climate-and-energy-governance" style="display: inline-flex; align-items: center; background-color: #2C8A78; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.climateButton}
+              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Water & Sanitation Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #0369a1; margin-bottom: 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+          <div style="font-size: 2.5rem; color: #0369a1;">💧</div>
+          <div style="flex: 1; min-width: 200px;">
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #0369a1;">{texts.waterTitle}</h2>
+            <p style="color: #4b5563; margin-bottom: 1rem;">
+              {texts.waterDesc}
+            </p>
+            <a href="{base}/frameworks/tools/water-and-sanitation-governance" style="display: inline-flex; align-items: center; background-color: #0369a1; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.waterButton}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
@@ -555,17 +517,17 @@
         </div>
       </div>
 
-      <!-- Religious & Spiritual Dialogue Framework Card -->
-      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #9B6A8F; margin-bottom: 2rem;">
+      <!-- Education Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2D5F2D; margin-bottom: 2rem;">
         <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
-          <div style="font-size: 2.5rem; color: #9B6A8F;">🕯️</div>
+          <div style="font-size: 2.5rem; color: #2D5F2D;">🎓</div>
           <div style="flex: 1; min-width: 200px;">
-            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #9B6A8F;">{texts.spiritualTitle}</h2>
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #2D5F2D;">{texts.educationTitle}</h2>
             <p style="color: #4b5563; margin-bottom: 1rem;">
-              {texts.spiritualDesc}
+              {texts.educationDesc}
             </p>
-            <a href="{base}/frameworks/tools/religious-and-spiritual-dialogue-governance" style="display: inline-flex; align-items: center; background-color: #9B6A8F; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.spiritualButton}
+            <a href="{base}/frameworks/tools/educational-systems" style="display: inline-flex; align-items: center; background-color: #2D5F2D; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.educationButton}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
@@ -574,17 +536,17 @@
         </div>
       </div>
 
-      <!-- Ethics & Rights of Beings Framework Card -->
-      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #166534; margin-bottom: 2rem;">
+      <!-- Mental Health Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #1e3a8a; margin-bottom: 2rem;">
         <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
-          <div style="font-size: 2.5rem; color: #166534;">🦋</div>
+          <div style="font-size: 2.5rem; color: #1e3a8a;">🧠</div>
           <div style="flex: 1; min-width: 200px;">
-            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #166534;">{texts.ethicsTitle}</h2>
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #1e3a8a;">{texts.mentalHealthTitle}</h2>
             <p style="color: #4b5563; margin-bottom: 1rem;">
-              {texts.ethicsDesc}
+              {texts.mentalHealthDesc}
             </p>
-            <a href="{base}/frameworks/tools/moral-operating-system" style="display: inline-flex; align-items: center; background-color: #166534; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.ethicsButton}
+            <a href="{base}/frameworks/tools/mental-health-governance" style="display: inline-flex; align-items: center; background-color: #1e3a8a; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.mentalHealthButton}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
@@ -604,6 +566,44 @@
             </p>
             <a href="{base}/frameworks/tools/aging-population-support-governance" style="display: inline-flex; align-items: center; background-color: #7c2d12; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.agingButton}
+              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Digital Commons Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #6d28d9; margin-bottom: 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+          <div style="font-size: 2.5rem; color: #6d28d9;">💻</div>
+          <div style="flex: 1; min-width: 200px;">
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #6d28d9;">{texts.digitalTitle}</h2>
+            <p style="color: #4b5563; margin-bottom: 1rem;">
+              {texts.digitalDesc}
+            </p>
+            <a href="{base}/frameworks/tools/digital-commons" style="display: inline-flex; align-items: center; background-color: #6d28d9; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.digitalButton}
+              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Religious & Spiritual Dialogue Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #9B6A8F; margin-bottom: 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+          <div style="font-size: 2.5rem; color: #9B6A8F;">🕯️</div>
+          <div style="flex: 1; min-width: 200px;">
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #9B6A8F;">{texts.spiritualTitle}</h2>
+            <p style="color: #4b5563; margin-bottom: 1rem;">
+              {texts.spiritualDesc}
+            </p>
+            <a href="{base}/frameworks/tools/religious-and-spiritual-dialogue-governance" style="display: inline-flex; align-items: center; background-color: #9B6A8F; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.spiritualButton}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>

@@ -25,7 +25,8 @@ const pageSpecificTranslationsMap = [
   { route: '/my-path', dataKey: 'findYourPlace', fileName: 'findYourPlace' },
   
   // Tools routes (specific before general)
-  { route: '/frameworks/tools/work-in-liberation', dataKey: 'toolsWorkInLiberation', fileName: 'toolsWorkInLiberation' },
+  { route: '/frameworks/tools/moral-operating-system', dataKey: 'toolsMoralOperatingSystem', fileName: 'toolsMoralOperatingSystem' },
+  { route: '/frameworks/tools/work-in-liberation', dataKey: 'moral-operating-system', fileName: 'toolsWorkInLiberation' },
   { route: '/frameworks/tools/financial-systems', dataKey: 'toolsFinancialSystems', fileName: 'toolsFinancialSystems' },
   { route: '/frameworks/tools/indigenous-governance-and-traditional-knowledge', dataKey: 'toolsIndigenous', fileName: 'toolsIndigenous' },
   { route: '/frameworks/tools/aubi', dataKey: 'toolsAubi', fileName: 'toolsAubi' },
@@ -34,6 +35,7 @@ const pageSpecificTranslationsMap = [
   { route: '/frameworks/tools', dataKey: 'tools', fileName: 'tools' },
   
   // Framework routes (most specific first)
+  { route: '/frameworks/moral-operating-system', dataKey: 'moral-operating-system', fileName: 'frameworksMoralOperatingSystem' },
   { route: '/frameworks/work-in-liberation', dataKey: 'work-in-liberation', fileName: 'frameworksWorkInLiberation' },
   { route: '/frameworks/gaian-trade', dataKey: 'gaian-trade', fileName: 'frameworksGaianTrade' },
   { route: '/frameworks/adaptive-universal-basic-income', dataKey: 'aubi', fileName: 'frameworksAdaptiveUniversalBasicIncome' },

@@ -1,0 +1,67 @@
+{
+  "title": "Verktyg för det moraliska operativsystemet",
+  "subtitle": "Etiska ramverk och praktiska verktyg för att erkänna rättigheter och värdighet för alla varelser",
+  "backToTools": "Tillbaka till verktygen",
+  "intro": "Det moraliska operativsystemet tillhandahåller praktiska verktyg för att implementera etisk styrning som erkänner rättigheter och värdighet för människor, djur, ekosystem, AI och framtida varelser. Dessa verktyg stödjer samhällsdialog, styrningsbeslut och implementering av etiska ramverk.",
+  
+  "seedKitTitle": "Rättighetsfrösatsen",
+  "seedKitDesc": "Komplett paket för att starta samhällskonversationer om rättigheter för alla varelser. Inkluderar ensidig sammanfattning, etiska dilemmakort och facilitationsguide.",
+  "seedKitButton": "Ladda ner komplett sats",
+  
+  "guidesTitle": "Ramverksguider",
+  "guidesDesc": "Grundläggande sammanfattningar och översikter av det moraliska operativsystemets ramverk.",
+  
+  "essenceTitle": "Ensidig sammanfattning",
+  "essenceDesc": "Snabb, delbar sammanfattning av MOS-visionen som betonar värdighet, rättvisa och rättigheter för alla varelser.",
+  
+  "executiveSummaryTitle": "Verkställande sammanfattning för skeptiker",
+  "executiveSummaryDesc": "Praktisk översikt som tar upp vanliga bekymmer och visar verkligt värde av etisk styrning.",
+  
+  "coreToolsTitle": "Grundläggande ramverksverktyg",
+  "coreToolsDesc": "Nödvändiga verktyg för etiskt beslutsfattande och implementering, direkt härledda från MOS-ramverket.",
+  
+  "rightsSpectrumTitle": "Rättighetsspektrum beslutsmatris",
+  "rightsSpectrumDesc": "Praktisk checklista för att utvärdera förslag mot ramverket för det dynamiska rättighetsspektrumet.",
+  
+  "spiralTranslationTitle": "Spiralöversättningsguide",
+  "spiralTranslationDesc": "Ramverk för att kommunicera etiska koncept över olika utvecklingsstadier och världsåskådningar.",
+  
+  "aiConsciousnessTitle": "AI-medvetandebedömningsprotokoll",
+  "aiConsciousnessDesc": "Steg-för-steg utvärderingsramverk för AI-medvetenhet och rättighetsbestämning.",
+  
+  "spiralMicrolearningTitle": "Spiralmedveten mikrolärningsmodul",
+  "spiralMicrolearningDesc": "Interaktivt utbildningsinnehåll för att lära rättighetsmedvetenhet i skolor och samhällen.",
+  
+  "implementationToolsTitle": "Implementeringsverktyg",
+  "implementationToolsDesc": "Praktiska guider för att tillämpa MOS-principer i styrning och samhällsmiljöer.",
+  
+  "ecosystemPersonhoodTitle": "Implementeringsguide för ekosystempersonskap",
+  "ecosystemPersonhoodDesc": "Praktisk guide för att etablera juridiskt personskap för floder, skogar och andra ekosystem.",
+  
+  "communityEthicsTitle": "Verktygsats för samhällsetisk revision",
+  "communityEthicsDesc": "Enkel checklista och process för samhällen att granska projekt mot MOS grundprinciper.",
+  
+  "individualFilesTitle": "Individuella frösatsfiler",
+  "individualFilesDesc": "Individuella komponenter från rättighetsfrösatsen, tillgängliga separat för specifika användningar.",
+  
+  "onePageEssenceTitle": "Ensidig sammanfattning (utskriftsvänlig)",
+  "onePageEssenceDesc": "Vackert utformad ensidiga översikt perfekt för delning och publicering.",
+  
+  "ethicalDilemmaTitle": "Etiska dilemmakort",
+  "ethicalDilemmaDesc": "Fem diskussionskort med utmanande scenarion för att utforska MOS-principer.",
+  
+  "dialogueFacilitationTitle": "Guide för samhällsdialogfacilitering",
+  "dialogueFacilitationDesc": "Steg-för-steg guide för att hålla produktiva konversationer om rättigheter och etik.",
+  
+  "requestTitle": "Begär ytterligare verktyg",
+  "requestDesc": "Behöver du ett specifikt verktyg eller har förslag på nya resurser?",
+  "contactLink": "Kontakta oss",
+  
+  "languagesTitle": "Tillgängliga språk",
+  
+  "downloadPDF": "Ladda ner PDF",
+  "downloadMarkdown": "Ladda ner Markdown",
+  "downloadODT": "Ladda ner ODT",
+  "downloadImage": "Ladda ner bild",
+  "downloadSVG": "Ladda ner SVG"
+}

@@ -1,226 +1,286 @@
 // src/routes/frameworks/moral-operating-system/+page.js
-import { locale } from '$lib/i18n';
+import { locale, loadTranslations } from '$lib/i18n';
 import { get } from 'svelte/store';
+import { browser } from '$app/environment';
+import { error } from '@sveltejs/kit';
 
-export const prerender = false;
 export const csr = true;
 
-export async function load({ depends, url, platform }) {
-  // Declare dependency on locale
-  depends('app:locale');
-  
-  const currentLocale = get(locale);
-
-  // Track which sections fell back to English
-  let sectionsUsingEnglishFallback = new Set();
-  
-  // Safe handling of URL parameters during prerendering
-  let isPrintMode = false;
-  let accessibilityLevel = 'standard';
-  
-  // Only try to access searchParams when not prerendering
-  if (typeof url.searchParams !== 'undefined') {
-    isPrintMode = url.searchParams.get('print') === 'true';
-    accessibilityLevel = url.searchParams.get('level') || 'standard';
-  }
-  
-  // Define the available accessibility levels
-  const accessibilityLevels = ['visual', 'essential', 'standard', 'technical'];
-  
-  // Validate the level
-  let level = accessibilityLevels.includes(accessibilityLevel) ? accessibilityLevel : 'standard';
-  
-  // When loading sections, ensure print mode gets all content
-  if (isPrintMode) {
-    // You might want to force a specific level for print
-    level = 'standard'; // or another level that has all content
-  }  
-  
-  // Define sections to load - all framework sections
-  const sections = [
-    '0-preamble',
-    '1-introduction',
-    '2-foundational-values',
-    '2.3-global-ethical-traditions',
-    '2.5-rights-of-beings',
-    '2.6-scientific-foundations',
-    '3-commitments',
-    '3.1-traditional-rights',
-    '3.2-emerging-rights',
-    '3.2.1-ai-consciousness',
-    '3.2.1a-assessment-hub-network',
-    '3.2.1b-scientific-standards',
-    '3.2.2-ambiguous-entities',
-    '3.2.3-measurement-standards',
-    '3.2.4-recognition-pathways',
-    '3.2.5-non-western-recognition',
-    '3.3-conflict-resolution',
-    '3.3.1-moon-wish-test',
-    '4-governance-mechanisms',
-    '4.1-transparency',
-    '4.2-inclusive-decision-making',
-    '4.3-conflict-resolution',
-    '4.4-guardianship-councils',
-    '4.4.1-enforcement-mechanisms',
-    '4.4.2-non-compliance-strategy',
-    '4.5-funding-model',
-    '4.5.1-hub-sustainability',
-    '4.5.2-resource-optimization',
-    '4.6-governance-accountability',
-    '4.7-entity-conflict-resolution',
-    '4.8-interoperability',
-    '4.9-decision-making',
-    '4.10-coordination-mechanisms',
-    '5-implementation',
-    '5.1-quick-wins',
-    '5.1.1-cost-analysis',
-    '5.2-phased-rollout',
-    '5.2.1-space-ethics',
-    '5.3-education-accessibility',
-    '5.3.1-resource-constraint',
-    '5.3.2-cultural-accessibility',
-    '5.3.3-knowledge-integration',
-    '5.4-global-cooperation',
-    '5.5-monitoring',
-    '5.6-public-engagement',
-    '5.7-stakeholder-strategy',
-    '5.7.1-consensus-building',
-    '5.7.2-resistant-stakeholder',
-    '5.8-resistance-handling',
-    '5.8.1-opposition-response',
-    '5.8.2-learning-system',
-    '5.9-benchmarks-metrics',
-    '5.10-scenario-planning',
-    '5.11-accessibility-matrix',
-    '6-appendices',
-    '6.1-emerging-rights-toolkit',
-    '6.2-case-studies',
-    '6.3-ethical-forecasting',
-    '6.3.1-speculative-paradigm',
-    '6.3.2-validation-protocols',
-    '6.4-reporting-portal',
-    '6.5-plain-language',
-    '6.6-edge-case-protocols',
-    '6.7-philosophy-of-rights',
-    '6.8-spiral-aware-primer',
-    '6.9-impact-assessment',
-    '6.10-pioneer-pilots',
-    '6.11-crisis-ethics',
-    '6.12-technical-protocols'
-  ];
-  
-  // Additional files that may be present
-  const additionalFiles = [
-    'index',
-    'access-guide'
-  ];
-  
-  // Guide files (directly in the implementation/moral-operating-system folder)
-  const guideFiles = [
-    'youth-guide',
-    'educators-guide',
-    'community-guide',
-    'crisis-guide',
-    'policy-guide',
-    'indigenous-communities-guide',
-    'religious-communities-guide',
-    'business-guide' // Added this as it appears in your file structure
-  ];
-  
-  // Combine all possible files
-  const allFiles = [...sections, ...additionalFiles];
-  
-  // Track available sections for each accessibility level
-  const availableSections = {};
-  for (const l of accessibilityLevels) {
-    availableSections[l] = [];
-  }
-  
-  // Load modular content
-  const content = {};
-  let loadedSections = 0;
-  
-  // For each file, try to load it at each accessibility level
-  for (const section of allFiles) {
-    content[section] = {};
-    
-    for (const l of accessibilityLevels) {
-      try {
-        // Try to load the current locale version - FIXED PATH
-        const module = await import(`$lib/content/frameworks/${currentLocale}/implementation/moral-operating-system/${l}/${section}.md`);
-        content[section][l] = module;
-        availableSections[l].push(section);
-        loadedSections++;
-      } catch (e) {
-        // Fall back to English if translation isn't available - FIXED PATH
-        try {
-          const module = await import(`$lib/content/frameworks/en/implementation/moral-operating-system/${l}/${section}.md`);
-          content[section][l] = module;
-          availableSections[l].push(section);
-          loadedSections++;
-          // Track that this section is using English fallback
-          if (currentLocale !== 'en') {
-            sectionsUsingEnglishFallback.add(`${section}-${l}`);
-          }
-        } catch (e2) {
-          // Section not available at this level, which is expected for many sections
-        }
-      }
-    }
-  }
-  
-  // Load guide files directly from the main folder (not in level-specific folders)
-  for (const guide of guideFiles) {
-    content[guide] = {};
-    
-    try {
-      // Try to load the current locale version - FIXED PATH
-      const module = await import(`$lib/content/frameworks/${currentLocale}/implementation/moral-operating-system/${guide}.md`);
-      content[guide]['standard'] = module; // Store in 'standard' level for simplicity
-      loadedSections++;
-    } catch (e) {
-      // Fall back to English if translation isn't available - FIXED PATH
-      try {
-        const module = await import(`$lib/content/frameworks/en/implementation/moral-operating-system/${guide}.md`);
-        content[guide]['standard'] = module; // Store in 'standard' level for simplicity
-        loadedSections++;
-        // Track that this guide is using English fallback
-        if (currentLocale !== 'en') {
-          sectionsUsingEnglishFallback.add(`${guide}-standard`);
-        }
-      } catch (e2) {
-        // Guide not available, which is okay
-        console.log(`Guide not found: ${guide}`);
-      }
-    }
-  }
-  
-  // Check if we have any content loaded
-  const hasContent = loadedSections > 0;
-  
-  // If no modular content was loaded, this indicates a serious configuration issue
-  if (!hasContent) {
-    console.error("No modular content could be loaded for global ethics framework. Check file structure and paths.");
-    throw new Error("Global Ethics framework content not available");
-  }
-  
-  // Get access guide if available
-  let accessGuide = null;
-  if (content['access-guide'] && content['access-guide'][level]) {
-    accessGuide = content['access-guide'][level];
-  } else if (content['access-guide'] && content['access-guide']['standard']) {
-    accessGuide = content['access-guide']['standard'];
-  }
-  
-  return {
-    sections: content,
-    availableSections,
-    hasContent,
-    loadedSectionsCount: loadedSections,
-    isPrintMode,
-    currentLevel: level,
-    accessibilityLevels,
-    accessGuide,
-    sectionsUsingEnglishFallback: Array.from(sectionsUsingEnglishFallback)
-  };
+export async function load({ depends, url, params }) {
+ console.log('🦋 Moral Operating System Framework +page.js - URL pathname:', url.pathname);
+ console.log('🦋 Moral Operating System Framework +page.js - Full URL:', url.href);
+ 
+ // Declare dependency on locale
+ depends('app:locale');
+ 
+ const currentLocale = get(locale);
+ console.log('🦋 Current locale:', currentLocale);
+ 
+ 
+ // Load framework translations for navigation
+ try {
+   console.log('🦋 About to call loadTranslations with:', currentLocale, url.pathname);
+   await loadTranslations(currentLocale, url.pathname);
+   console.log('🦋 loadTranslations completed');
+ } catch (e) {
+   console.warn('🦋 Failed to load translations:', e);
+ }
+ 
+ // Safe check for print mode that works during prerendering
+ const isPrintMode = browser ? url.searchParams.get('print') === 'true' : false;
+ 
+ // Define sections to load - Moral Operating System Framework sections in correct order
+ const sections = [
+   // Layer 1: One-Page Essence & Preamble
+   'index',
+   'essence',
+   'preamble',
+   'executive-summary-for-the-skeptic',
+   
+   // Layer 2: Core Framework
+   'introduction',
+   'foundational-values-principles',
+   'rights-commitments',
+   'governance-integration',
+   'implementation-plan',
+   
+   // Layer 3: Implementation Appendices
+   'appendix-a',
+   'appendix-b',
+   'appendix-c',
+   'appendix-d',
+   
+   // Layer 4: Philosophical Treatise
+   'what-is-a-right',
+   'living-continuum-worth',
+   'entitlement-to-entanglement',
+   'spiral-ethical-growth',
+   'ontological-humility',
+   'rights-promise-future',
+   
+   // Ecosystem Integration
+   'ecosystem-integration'
+ ];
+ 
+ // Track which sections fell back to English
+ const sectionsUsingEnglishFallback = new Set();
+ 
+ // Try to load modular content
+ const content = {};
+ let loadedSections = 0;
+ 
+ console.log('Loading Moral Operating System Framework sections for locale:', currentLocale);
+ 
+ // Try to load each section with proper error handling
+ for (const section of sections) {
+   try {
+     // Try to load the current locale version first
+     const modulePromise = import(`$lib/content/frameworks/${currentLocale}/implementation/moral-operating-system/${section}.md`);
+     content[section] = await modulePromise;
+     loadedSections++;
+     console.log('Successfully loaded section:', section, 'in', currentLocale);
+   } catch (primaryError) {
+     // Fall back to English if translation isn't available
+     try {
+       const fallbackPromise = import(`$lib/content/frameworks/en/implementation/moral-operating-system/${section}.md`);
+       content[section] = await fallbackPromise;
+       loadedSections++;
+       
+       // Track that this section is using English fallback
+       if (currentLocale !== 'en') {
+         sectionsUsingEnglishFallback.add(section);
+       }
+       console.log('Loaded section:', section, 'in English as fallback');
+     } catch (fallbackError) {
+       console.warn(`Could not load section ${section} in any language:`, fallbackError.message);
+       
+       // Create a safe placeholder for missing sections
+       content[section] = {
+         default: function MissingSection() {
+           return {
+             render: () => ({
+               html: `<div class="missing-section-content">
+                 <h2>Section "${section}" not found</h2>
+                 <p>This content is still being developed.</p>
+               </div>`,
+               css: { code: '', map: null }
+             })
+           };
+         }
+       };
+     }
+   }
+ }
+ 
+ console.log('Total sections loaded:', loadedSections, 'out of', sections.length);
+ console.log('Loaded sections:', Object.keys(content));
+ 
+ // Validate that we have at least the index section
+ if (!content.index) {
+   console.error('Critical: Could not load index section');
+   throw error(500, {
+     message: 'Failed to load Moral Operating System Framework content',
+     details: 'The main index section could not be loaded'
+   });
+ }
+ 
+ return {
+   sections: content,
+   // Always use modular approach
+   isModular: true,
+   isPrintMode,
+   sectionsUsingEnglishFallback: Array.from(sectionsUsingEnglishFallback),
+   loadedSectionsCount: loadedSections,
+   totalSectionsCount: sections.length,
+   
+   // Additional metadata for Moral Operating System Framework
+   frameworkType: 'moral-operating-system',
+   totalSections: sections.length,
+   coreFrameworkSections: 5,
+   hasSupplementaryMaterials: true,
+   hasExecutiveSummary: true,
+   
+   // Moral Operating System Framework-specific metadata
+   frameworkVersion: '2.4',
+   isEthicalFramework: true,
+   tier: 1, // Foundational Ethical Layer
+   implementationPhases: 5,
+   transformationYears: 26, // 2024-2050
+   layeredArchitecture: 4,
+   
+   // Core ethical governance metadata
+   dynamicRightsSpectrum: true,
+   distributedGuardianship: true,
+   earthCouncil: true,
+   planetaryHealthCouncil: true,
+   digitalJusticeTribunal: true,
+   globalTechnologyCouncil: true,
+   
+   // Key components metadata
+   rightsForAllBeings: true,
+   spiralAwareTranslation: true,
+   aiConsciousnessAssessment: true,
+   ecosystemPersonhood: true,
+   rightsStatusDashboard: true,
+   citizenReportingPortal: true,
+   
+   // Rights framework metadata
+   humanRightsTier1: true,
+   animalRightsTier2: true,
+   ecosystemRightsTier3: true,
+   aiRightsTier4: true,
+   emergentRightsTier45: true,
+   planetaryRightsTier5: true,
+   
+   // Philosophical foundations metadata
+   rightRelationship: true,
+   ontologicalHumility: true,
+   spiralEthicalGrowth: true,
+   entitlementToEntanglement: true,
+   livingContinuumWorth: true,
+   rightsAsPromiseFuture: true,
+   
+   // Implementation tools metadata
+   rightsSeedKit: true,
+   ethicalDilemmaCards: true,
+   communityDialogueFacilitation: true,
+   spiralAwareMicrolearning: true,
+   moonWishTest: true,
+   multiculturalEthicsTranslation: true,
+   
+   // Campaign and engagement metadata
+   rightsForAllBeingsCampaign: true,
+   socialMediaEngagement: true,
+   communityDialogues: true,
+   rightsSeedKitDistribution: true,
+   youthEthicsEducation: true,
+   elderWisdomIntegration: true,
+   
+   // Framework integration metadata
+   treatyEnforcement: 'treaty-for-our-only-home',
+   aubiEthicalFoundation: 'aubi-framework',
+   workLiberationEthics: 'work-in-liberation',
+   indigenousEthicalGuidance: 'indigenous-governance',
+   metaGovernanceEthics: 'meta-governance-framework',
+   educationalEthicsIntegration: 'educational-systems',
+   
+   // Technology ethics metadata
+   humanCenteredAI: true,
+   aiEthicsCompliance: true,
+   digitalRights: true,
+   technologyGovernance: true,
+   algorithmicTransparency: true,
+   communityTechnologySovereignty: true,
+   
+   // Environmental and intergenerational metadata
+   ecocideEnforcement: true,
+   sevenGenerationThinking: true,
+   planetaryBoundaries: true,
+   biodiversityProtection: true,
+   climateJustice: true,
+   indigenousSovereignty: true,
+   
+   // Cultural integration metadata
+   culturalEthicsTranslation: true,
+   indigenousWisdomIntegration: true,
+   ancestralKnowledgeRespect: true,
+   ceremonyProtocolIntegration: true,
+   traditionalEcologicalKnowledge: true,
+   multiculturalEthics: true,
+   
+   // Implementation timeline metadata
+   quickWinsPhase: '2024-2025',
+   animalsEcosystemsPhase: '2025-2030',
+   spaceGovernancePhase: '2030-2035',
+   aiDigitalPhase: '2030-2040',
+   comprehensiveSpacePhase: '2040+',
+   fiftyYearVision: '2024-2074',
+   
+   // Monitoring and accountability metadata
+   rightsStatusAtlas: true,
+   realTimeMonitoring: true,
+   transparentAccountability: true,
+   citizenOversight: true,
+   blockchainAudits: true,
+   performanceIndicators: true,
+   
+   // Global coordination metadata
+   universalHumanRights: true,
+   planetsSystemsProtection: true,
+   emergentConsciousnessProtection: true,
+   intergalacticEthics: true,
+   futureGenerationsAdvocacy: true,
+   cosmicConsciousnessIntegration: true,
+   
+   // Access and participation metadata
+   layeredAccessModel: true,
+   multilingualResources: true,
+   accessibilitySupport: true,
+   communityControlledAccess: true,
+   indigenousDataSovereignty: true,
+   redLinesProtection: true,
+   
+   // Stakeholder engagement metadata
+   governmentPartnership: true,
+   corporateEthicsCompliance: true,
+   civilSocietyAlliance: true,
+   youthLeadership: true,
+   elderWisdom: true,
+   faithCommunityEngagement: true,
+   
+   // Debug information
+   debug: {
+     currentLocale,
+     availableSections: Object.keys(content),
+     fallbackSections: Array.from(sectionsUsingEnglishFallback),
+     loadSuccess: loadedSections === sections.length,
+     frameworkTier: 'foundational-ethical-layer',
+     ethicalSourceCode: true,
+     planetaryGovernanceReady: true,
+     rightsForAllBeingsActivated: true,
+     dynamicRightsSpectrumOperational: true,
+     distributedGuardianshipImplemented: true,
+     moralOperatingSystemActive: true
+   }
+ };
 }
