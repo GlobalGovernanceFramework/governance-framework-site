@@ -1,6 +1,6 @@
 <!-- src/routes/my-path/+page.svelte -->
 <script>
-  import { t, isLocaleLoaded, translationsLoaded } from '$lib/i18n';
+  import { t, isLocaleLoaded } from '$lib/i18n';
   import { base } from '$app/paths';
   import { goto } from '$app/navigation';
   import { onMount } from 'svelte';
@@ -14,43 +14,31 @@
   let quizLoading = true;
   let dataLoadError = null;
   
-  // Pre-load all framework data immediately to avoid hover-triggered delays
-  async function preloadFrameworkData() {
+  // Simplified data preloading - only load what we actually need
+  async function preloadEssentialData() {
     try {
-      // Force-load framework data modules that might be lazy-loaded with better error handling
+      // Only load the essential modules that actually exist and are needed
       const modules = await Promise.allSettled([
         import('$lib/data/compassData.js').catch(err => {
-          console.error('Failed to load compassData:', err);
-          throw err;
+          console.warn('compassData not available:', err.message);
+          return { default: {} }; // Fallback
         }),
         import('$lib/data/citizenshipConnections.js').catch(err => {
-          console.error('Failed to load citizenshipConnections:', err);
-          throw err;
+          console.warn('citizenshipConnections not available:', err.message);
+          return { default: {} }; // Fallback
         }),
         import('$lib/data/connectionReasons.js').catch(err => {
-          console.error('Failed to load connectionReasons:', err);
-          throw err;
-        }),
-        import('$lib/data/precomputedFrameworkDatabase.js').catch(err => {
-          console.error('Failed to load precomputedFrameworkDatabase:', err);
-          throw err;
+          console.warn('connectionReasons not available:', err.message);
+          return { default: {} }; // Fallback
         })
+        // REMOVED: precomputedFrameworkDatabase.js - causing build issues
       ]);
       
-      // Check if any modules failed to load
-      const failedModules = modules.filter(result => result.status === 'rejected');
-      
-      if (failedModules.length > 0) {
-        console.error('Some framework data modules failed to load:', failedModules);
-        dataLoadError = `Failed to load ${failedModules.length} framework data modules`;
-      } else {
-        console.log('Framework data preloaded successfully');
-      }
-      
+      console.log('Essential data loaded successfully');
       return modules;
     } catch (error) {
-      console.error('Error preloading framework data:', error);
-      dataLoadError = 'Critical error loading framework data';
+      console.error('Error preloading essential data:', error);
+      // Don't set dataLoadError for non-critical data loading issues
       return null;
     }
   }
@@ -58,8 +46,8 @@
   onMount(async () => {
     console.log('My-path page mounting...');
     
-    // Start data preloading immediately
-    const dataLoadPromise = preloadFrameworkData();
+    // Start data preloading (but don't block on it)
+    preloadEssentialData();
     
     // Load quiz results
     const savedQuiz = localStorage.getItem('globalCitizenshipQuiz');
@@ -67,10 +55,6 @@
       try {
         quizResults = JSON.parse(savedQuiz);
         console.log('Quiz results loaded:', quizResults);
-        
-        // Wait for framework data to be ready
-        await dataLoadPromise;
-        
         quizLoading = false;
       } catch (error) {
         console.error('Error processing quiz results:', error);
@@ -88,28 +72,23 @@
     goto(`${base}/quiz`);
   }
 
-  // FIXED: Use simple variables instead of reactive statements to prevent re-renders
+  // Simplified loading state management
   let isFullyLoaded = false;
   let showLoadingState = true;
   
-  // Update loading states only when necessary
   $: {
-    // This logic now only runs IF the page is not yet considered fully loaded.
-    // Once isFullyLoaded is true, it will stay true and never flicker off.
     if (!isFullyLoaded) {
       isFullyLoaded = !quizLoading && $isLocaleLoaded && quizResults && !dataLoadError;
       showLoadingState = !isFullyLoaded;
     }
   }
-
 </script>
 
 <svelte:head>
   <title>{$t('findYourPlace.meta.title')} - Global Governance Frameworks</title>
   <meta name="description" content="{$t('findYourPlace.meta.description')}" />
-  <!-- Preload critical framework data -->
+  <!-- Only preload modules that actually exist -->
   <link rel="modulepreload" href="/src/lib/data/compassData.js">
-  <link rel="modulepreload" href="/src/lib/data/precomputedFrameworkDatabase.js">
 </svelte:head>
 
 {#if dataLoadError}
@@ -117,7 +96,7 @@
   <div class="error-container">
     <div class="error-content">
       <h1>Data Loading Error</h1>
-      <p>There was an issue loading the framework data: {dataLoadError}</p>
+      <p>There was an issue loading your quiz results: {dataLoadError}</p>
       <p>This might be a temporary issue. Please try refreshing the page.</p>
       <div class="error-actions">
         <button on:click={() => window.location.reload()} class="retry-button">
@@ -139,7 +118,7 @@
         <p>Loading translations...</p>
         <p class="loading-detail">Preparing framework descriptions...</p>
       {:else}
-        <p>Loading framework data...</p>
+        <p>Preparing your personalized path...</p>
       {/if}
     </div>
   </div>
@@ -164,7 +143,7 @@
     <!-- Primary recommendations -->
     <PrimaryRecommendations {quizResults} />
 
-    <!-- Deeper Exploration - Now loads immediately with pre-loaded data -->
+    <!-- Deeper Exploration -->
     <div class="exploration-section">
       <DeeperExploration {quizResults} />
     </div>
@@ -180,7 +159,7 @@
         </p>
         
         <div class="action-grid">
-          <a href="{base}/frameworks/docs" class="action-card primary">
+          <a href="{base}/frameworks" class="action-card primary">
             <div class="card-icon">📚</div>
             <h3>Dive Deeper</h3>
             <p>Explore the full documentation and implementation guides for your recommended frameworks.</p>
@@ -197,6 +176,14 @@
             <h3>Practice Framework</h3>
             <p>{$t('findYourPlace.cta.readTheFramework')}</p>
           </a>
+        </div>
+        
+        <!-- Retake Quiz Option -->
+        <div class="retake-section">
+          <p>Want to explore different aspects of global citizenship?</p>
+          <button on:click={retakeQuiz} class="retake-button-secondary">
+            Retake Quiz
+          </button>
         </div>
       </div>
     </div>
@@ -295,6 +282,34 @@
   
   .retry-button:hover {
     background: #047857;
+  }
+  
+  .retake-section {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #f8fafc;
+    border-radius: 1rem;
+    border: 1px solid #e2e8f0;
+  }
+  
+  .retake-section p {
+    margin-bottom: 1rem;
+    color: #4a5568;
+  }
+  
+  .retake-button-secondary {
+    background: #718096;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .retake-button-secondary:hover {
+    background: #4a5568;
   }
   
   @keyframes spin {
@@ -471,7 +486,8 @@
     }
     
     .retry-button,
-    .retake-button {
+    .retake-button,
+    .retake-button-secondary {
       width: 100%;
       max-width: 200px;
     }

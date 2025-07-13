@@ -14,11 +14,10 @@ export async function load({ depends, url, params }) {
   
   console.log('=== +page.js load function ===');
   console.log('URL pathname:', url.pathname);
-  console.log('URL search:', url.search);
   console.log('Current locale:', currentLocale);
   
   // IMPORTANT: url.hash is not available in load functions!
-  // If the pathname looks wrong, it might be because SvelteKit is misinterpreting the URL
+  // url.search is also not available during prerendering
   
   // Load framework translations for navigation and page-specific translations
   try {
@@ -52,7 +51,16 @@ export async function load({ depends, url, params }) {
   }
   
   // Safe check for print mode that works during prerendering
-  const isPrintMode = browser ? url.searchParams.get('print') === 'true' : false;
+  // Only access url.search on the client side
+  let isPrintMode = false;
+  if (browser) {
+    try {
+      isPrintMode = url.search ? url.searchParams.get('print') === 'true' : false;
+    } catch (e) {
+      console.warn('Could not access URL search params:', e);
+      isPrintMode = false;
+    }
+  }
   
   // Define sections to load - institutional regeneration framework sections in correct order
   const sections = [
@@ -157,7 +165,7 @@ export async function load({ depends, url, params }) {
     sections: content,
     // Always use modular approach
     isModular: true,
-    isPrintMode,
+    isPrintMode, // This will be false during prerendering, true/false on client
     sectionsUsingEnglishFallback: Array.from(sectionsUsingEnglishFallback),
     loadedSectionsCount: loadedSections,
     totalSectionsCount: sections.length,
@@ -181,7 +189,11 @@ export async function load({ depends, url, params }) {
       currentLocale,
       availableSections: Object.keys(content),
       fallbackSections: Array.from(sectionsUsingEnglishFallback),
-      loadSuccess: loadedSections === sections.length
+      loadSuccess: loadedSections === sections.length,
+      pathHandling: {
+        originalPath: url.pathname,
+        cleanedPath: '/frameworks/institutional-regeneration'
+      }
     }
   };
 }

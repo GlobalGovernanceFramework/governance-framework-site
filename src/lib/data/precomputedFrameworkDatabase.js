@@ -1,119 +1,49 @@
 // src/lib/data/precomputedFrameworkDatabase.js
-// Simplified version without top-level await
+// Improved version with better caching and error handling
 
-// Import with try-catch to handle missing dependencies
-let allFrameworks = [];
-let isInitialized = false;
+import { writable, derived } from 'svelte/store';
+
+// Singleton pattern for database state
+let frameworksStore = null;
+let databaseStore = null;
 
 // Pre-compute expensive operations at module load time
-function getIcon(slug) {
-  if (!slug) return '📋';
-  if (slug.includes('treaty')) return '🏛️';
-  if (slug.includes('climate') || slug.includes('energy')) return '🌍';
-  if (slug.includes('peace')) return '🕊️';
-  if (slug.includes('technology')) return '⚡';
-  if (slug.includes('education')) return '📚';
-  if (slug.includes('digital')) return '💻';
-  if (slug.includes('culture')) return '🏛️';
-  if (slug.includes('space')) return '🚀';
-  if (slug.includes('consciousness')) return '🧠';
-  if (slug.includes('environment')) return '🌱';
-  if (slug.includes('urban')) return '🏙️';
-  if (slug.includes('ethics')) return '⚖️';
-  return '📋';
-}
+const getIcon = (() => {
+  const iconMap = new Map([
+    ['treaty', '🏛️'],
+    ['climate', '🌍'],
+    ['energy', '🌍'],
+    ['peace', '🕊️'],
+    ['technology', '⚡'],
+    ['education', '📚'],
+    ['digital', '💻'],
+    ['culture', '🏛️'],
+    ['space', '🚀'],
+    ['consciousness', '🧠'],
+    ['environment', '🌱'],
+    ['urban', '🏙️'],
+    ['ethics', '⚖️']
+  ]);
+  
+  return (slug) => {
+    if (!slug) return '📋';
+    
+    for (const [key, icon] of iconMap) {
+      if (slug.includes(key)) return icon;
+    }
+    return '📋';
+  };
+})();
 
-const tierColors = {
+const tierColors = Object.freeze({
   0: '#8B5A3C',
   1: '#2D5F2D', 
   2: '#6B5CA5',
   3: '#DEB887',
   4: '#2F4F4F'
-};
+});
 
-// Lazy initialization function
-async function initializeFrameworks() {
-  if (isInitialized) return allFrameworks;
-  
-  try {
-    const frameworkNav = await import('$lib/stores/frameworkNav.js');
-    allFrameworks = frameworkNav.allFrameworks || [];
-    isInitialized = true;
-    console.log('Framework database initialized with', allFrameworks.length, 'frameworks');
-  } catch (error) {
-    console.warn('Failed to load frameworkNav, using empty frameworks array:', error);
-    allFrameworks = [];
-    isInitialized = true;
-  }
-  
-  return allFrameworks;
-}
-
-// Export computed database as a function
-export async function getPrecomputedFrameworkDatabase() {
-  const frameworks = await initializeFrameworks();
-  
-  return frameworks.reduce((acc, framework) => {
-    const key = framework.slug;
-    
-    acc[key] = {
-      name: framework.titleKey,
-      description: `findYourPlace.frameworks.database.${framework.slug.replace(/-/g, '')}.description`,
-      tier: framework.tier,
-      color: tierColors[framework.tier] || '#6B7280',
-      route: framework.path,
-      importance: framework.tier === 0 ? 'critical' : 'normal',
-      icon: getIcon(framework.slug),
-      status: framework.status,
-      version: framework.version,
-      slug: framework.slug
-    };
-    
-    return acc;
-  }, {});
-}
-
-// Sync version that returns empty for build-time
-export const PRECOMPUTED_FRAMEWORK_DATABASE = {};
-export const FRAMEWORK_BY_SLUG = new Map();
-export const FRAMEWORKS_BY_TIER = new Map();
-
-// Async lookup functions
-export async function getFrameworkDetails(frameworkId) {
-  if (!frameworkId) return null;
-  
-  try {
-    const database = await getPrecomputedFrameworkDatabase();
-    
-    // Direct lookup from pre-computed database
-    if (database[frameworkId]) {
-      return database[frameworkId];
-    }
-    
-    // Try slug conversion
-    const slug = frameworkId.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
-    if (database[slug]) {
-      return database[slug];
-    }
-    
-    return null;
-  } catch (error) {
-    console.warn('Error getting framework details:', error);
-    return null;
-  }
-}
-
-export async function getFrameworksByTierOptimized(tier) {
-  try {
-    const frameworks = await initializeFrameworks();
-    return frameworks.filter(f => f.tier === tier);
-  } catch (error) {
-    console.warn('Error getting frameworks by tier:', error);
-    return [];
-  }
-}
-
-// Pre-compute tier info - this can stay synchronous
+// Cached tier info
 export const TIER_INFO_CACHE = new Map([
   [0, { class: 'tier-0', priority: 'critical', label: 'framework.tier.0.title' }],
   [1, { class: 'tier-1', priority: 'urgent', label: 'framework.tier.1.title' }],
@@ -128,4 +58,148 @@ export function getTierInfoOptimized(tier) {
     class: 'tier-developmental',
     priority: 'strategic'
   };
+}
+
+// Create stores for reactive framework data
+function createFrameworkStores() {
+  if (frameworksStore) return { frameworksStore, databaseStore };
+  
+  // Store for raw frameworks data
+  frameworksStore = writable([]);
+  
+  // Derived store for computed database
+  databaseStore = derived(
+    frameworksStore,
+    ($frameworks, set) => {
+      const database = $frameworks.reduce((acc, framework) => {
+        const key = framework.slug;
+        
+        acc[key] = {
+          name: framework.titleKey,
+          description: `findYourPlace.frameworks.database.${framework.slug.replace(/-/g, '')}.description`,
+          tier: framework.tier,
+          color: tierColors[framework.tier] || '#6B7280',
+          route: framework.path,
+          importance: framework.tier === 0 ? 'critical' : 'normal',
+          icon: getIcon(framework.slug),
+          status: framework.status,
+          version: framework.version,
+          slug: framework.slug
+        };
+        
+        return acc;
+      }, {});
+      
+      set(database);
+    },
+    {} // Initial value
+  );
+  
+  return { frameworksStore, databaseStore };
+}
+
+// Lazy initialization with better error handling
+async function initializeFrameworks() {
+  const { frameworksStore: fStore } = createFrameworkStores();
+  
+  try {
+    const frameworkNav = await import('$lib/stores/frameworkNav.js');
+    const frameworks = frameworkNav.allFrameworks || [];
+    
+    fStore.set(frameworks);
+    console.log('Framework database initialized with', frameworks.length, 'frameworks');
+    
+    return frameworks;
+  } catch (error) {
+    console.warn('Failed to load frameworkNav:', error);
+    fStore.set([]);
+    return [];
+  }
+}
+
+// Main export - returns a promise to the database
+export async function getPrecomputedFrameworkDatabase() {
+  const { databaseStore: dbStore } = createFrameworkStores();
+  
+  // Initialize if not already done
+  await initializeFrameworks();
+  
+  // Return current value from store
+  return new Promise((resolve) => {
+    const unsubscribe = dbStore.subscribe((database) => {
+      unsubscribe();
+      resolve(database);
+    });
+  });
+}
+
+// Optimized lookup with caching
+const frameworkCache = new Map();
+
+export async function getFrameworkDetails(frameworkId) {
+  if (!frameworkId) return null;
+  
+  // Check cache first
+  if (frameworkCache.has(frameworkId)) {
+    return frameworkCache.get(frameworkId);
+  }
+  
+  try {
+    const database = await getPrecomputedFrameworkDatabase();
+    
+    // Direct lookup
+    let framework = database[frameworkId];
+    
+    // Try slug conversion if direct lookup fails
+    if (!framework) {
+      const slug = frameworkId.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+      framework = database[slug];
+    }
+    
+    // Cache the result (even if null)
+    frameworkCache.set(frameworkId, framework || null);
+    
+    return framework || null;
+  } catch (error) {
+    console.warn('Error getting framework details:', error);
+    return null;
+  }
+}
+
+export async function getFrameworksByTierOptimized(tier) {
+  try {
+    // Get from store instead of re-initializing
+    const { frameworksStore: fStore } = createFrameworkStores();
+    
+    return new Promise((resolve) => {
+      const unsubscribe = fStore.subscribe((frameworks) => {
+        unsubscribe();
+        resolve(frameworks.filter(f => f.tier === tier));
+      });
+    });
+  } catch (error) {
+    console.warn('Error getting frameworks by tier:', error);
+    return [];
+  }
+}
+
+// Store-based reactive API for components
+export function useFrameworkDatabase() {
+  const { frameworksStore, databaseStore } = createFrameworkStores();
+  
+  // Initialize if needed
+  initializeFrameworks();
+  
+  return {
+    frameworks: frameworksStore,
+    database: databaseStore,
+    loading: derived(databaseStore, db => Object.keys(db).length === 0)
+  };
+}
+
+// Cleanup function for testing
+export function resetFrameworkCache() {
+  frameworkCache.clear();
+  frameworksStore = null;
+  databaseStore = null;
 }
