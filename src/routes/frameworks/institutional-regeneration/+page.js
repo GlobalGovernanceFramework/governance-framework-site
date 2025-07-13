@@ -1,4 +1,4 @@
-// src/routes/frameworks/treaty-for-our-only-home/+page.js
+// src/routes/frameworks/institutional-regeneration/+page.js
 import { locale, loadTranslations } from '$lib/i18n';
 import { get } from 'svelte/store';
 import { browser } from '$app/environment';
@@ -22,7 +22,7 @@ export async function load({ depends, url, params }) {
   
   // Load framework translations for navigation and page-specific translations
   try {
-    // The pathname should always be /frameworks/treaty-for-our-only-home
+    // The pathname should always be /frameworks/institutional-regeneration
     // If it's not, we need to handle this case
     let cleanPath = url.pathname;
     
@@ -31,19 +31,12 @@ export async function load({ depends, url, params }) {
     // Check if the pathname looks corrupted (contains section names instead of the base path)
     if (cleanPath.includes('/frameworks/') && 
         (cleanPath.includes('executive-summary') || 
-         cleanPath.includes('at-a-glance') ||
+         cleanPath.includes('regeneration-compact') ||
          cleanPath.includes('introduction') ||
-         cleanPath.includes('core-principles') ||
-         cleanPath.includes('five-pillars') ||
-         cleanPath.includes('implementation-strategies') ||
-         cleanPath.includes('monitoring-evaluation') ||
-         cleanPath.includes('conclusion') ||
-         cleanPath.includes('faq-and-challenges') ||
-         cleanPath.includes('glossary') ||
-         cleanPath.includes('social-media-templates'))) {
+         cleanPath.includes('module-'))) {
       
       console.log('⚠️  Detected corrupted pathname, correcting to base framework path');
-      cleanPath = '/frameworks/treaty-for-our-only-home';
+      cleanPath = '/frameworks/institutional-regeneration';
     }
     
     console.log('Clean path for translations:', cleanPath);
@@ -61,27 +54,18 @@ export async function load({ depends, url, params }) {
   // Safe check for print mode that works during prerendering
   const isPrintMode = browser ? url.searchParams.get('print') === 'true' : false;
   
-  // Define sections to load - treaty framework sections in correct order
+  // Define sections to load - institutional regeneration framework sections in correct order
   const sections = [
     // Entry point and overview
-    'index',
-    'at-a-glance',
-    'executive-summary-for-the-skeptic',
+    'executive-summary',
+    'regeneration-compact',
     
-    // Core treaty sections
-    'introduction',
-    'core-principles',
-    'five-pillars',
-    'implementation-strategies',
-    'monitoring-evaluation',
-    'conclusion',
-    
-    // Supplementary materials
-    'faq-and-challenges',
-    'glossary',
-
-    // Communication resources
-    'social-media-templates'
+    // Seed Track MVP sections
+    'seed-track-mvp/introduction',
+    'seed-track-mvp/module-1',
+    'seed-track-mvp/module-2', 
+    'seed-track-mvp/module-3',
+    'seed-track-mvp/next-steps'
   ];
   
   // Track which sections fell back to English
@@ -91,13 +75,23 @@ export async function load({ depends, url, params }) {
   const content = {};
   let loadedSections = 0;
   
-  console.log('Loading treaty sections for locale:', currentLocale);
+  console.log('Loading institutional regeneration sections for locale:', currentLocale);
   
   // Try to load each section with proper error handling
   for (const section of sections) {
     try {
-      // Try to load the current locale version first
-      const modulePromise = import(`$lib/content/frameworks/${currentLocale}/implementation/treaty-for-our-only-home/${section}.md`);
+      let modulePromise;
+      
+      // Handle nested seed-track-mvp sections differently
+      if (section.startsWith('seed-track-mvp/')) {
+        // For seed track sections, construct the path properly
+        const subSection = section.replace('seed-track-mvp/', '');
+        modulePromise = import(`$lib/content/frameworks/${currentLocale}/implementation/institutional-regeneration/seed-track-mvp/${subSection}.md`);
+      } else {
+        // For main sections, use the direct path
+        modulePromise = import(`$lib/content/frameworks/${currentLocale}/implementation/institutional-regeneration/${section}.md`);
+      }
+      
       content[section] = await modulePromise;
       loadedSections++;
       console.log('Successfully loaded section:', section, 'in', currentLocale);
@@ -107,7 +101,16 @@ export async function load({ depends, url, params }) {
       
       // Fall back to English if translation isn't available
       try {
-        const fallbackPromise = import(`$lib/content/frameworks/en/implementation/treaty-for-our-only-home/${section}.md`);
+        let fallbackPromise;
+        
+        // Handle nested seed-track-mvp sections in fallback too
+        if (section.startsWith('seed-track-mvp/')) {
+          const subSection = section.replace('seed-track-mvp/', '');
+          fallbackPromise = import(`$lib/content/frameworks/en/implementation/institutional-regeneration/seed-track-mvp/${subSection}.md`);
+        } else {
+          fallbackPromise = import(`$lib/content/frameworks/en/implementation/institutional-regeneration/${section}.md`);
+        }
+        
         content[section] = await fallbackPromise;
         loadedSections++;
         
@@ -141,12 +144,12 @@ export async function load({ depends, url, params }) {
   console.log('Total sections loaded:', loadedSections, 'out of', sections.length);
   console.log('Loaded sections:', Object.keys(content));
   
-  // Validate that we have at least the index section
-  if (!content.index) {
-    console.error('Critical: Could not load index section');
+  // Validate that we have at least the executive summary section
+  if (!content['executive-summary']) {
+    console.error('Critical: Could not load executive summary section');
     throw error(500, {
-      message: 'Failed to load treaty content',
-      details: 'The main index section could not be loaded'
+      message: 'Failed to load institutional regeneration content',
+      details: 'The main executive summary section could not be loaded'
     });
   }
   
@@ -159,30 +162,26 @@ export async function load({ depends, url, params }) {
     loadedSectionsCount: loadedSections,
     totalSectionsCount: sections.length,
     
-    // Additional metadata for treaty framework
-    frameworkType: 'treaty-for-our-only-home',
+    // Additional metadata for institutional regeneration framework
+    frameworkType: 'institutional-regeneration',
     totalSections: sections.length,
-    coreFrameworkSections: 6, // introduction through conclusion
-    foundationSections: 2, // at-a-glance and executive-summary
-    resourceSections: 3, // faq, glossary, social-media
+    coreFrameworkSections: 2,
+    seedTrackSections: 5,
     hasExecutiveSummary: true,
+    hasRegenerationCompact: true,
     
-    // Treaty-specific metadata
-    treatyVersion: '1.0',
-    isLandmarkDocument: true,
-    implementationPhases: 3,
-    keystoneReforms: 5,
+    // Framework-specific metadata
+    frameworkVersion: '0.8',
+    isImplementationReady: true,
+    moduleCount: 5,
+    pilotInstitutions: 0,
     
     // Debug information
     debug: {
       currentLocale,
       availableSections: Object.keys(content),
       fallbackSections: Array.from(sectionsUsingEnglishFallback),
-      loadSuccess: loadedSections === sections.length,
-      pathHandling: {
-        originalPath: url.pathname,
-        cleanedPath: '/frameworks/treaty-for-our-only-home'
-      }
+      loadSuccess: loadedSections === sections.length
     }
   };
 }

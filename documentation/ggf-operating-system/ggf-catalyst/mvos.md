@@ -6,10 +6,10 @@
 #### **Preamble (Ingress)**
 
 **English:**
-This document serves as the internal operating agreement for the founding members of The Global Governance Frameworks Catalyst. It is a living document, intended to be simple, agile, and true to our core mission. It acts as the bridge between our legal statutes (`stadgar`) and the broader vision of the GGF-OS v2.1. Our primary goal is to create the conditions for collective flow and minimize egoic friction as we begin our work.
+This document is the Minimum Viable Operating System (MVOS) for the founding members of The Global Governance Frameworks Catalyst. It represents the initial, living version of our internal Global Governance Frameworks Operating System (GGF-OS). The purpose of this internal OS is to guide our culture, decisions, and collective workflow, enabling us to effectively serve our core mission: to catalyze a global network that co-creates a regenerative operating system for earth civilization.
 
 **Svenska:**
-Detta dokument utgör den interna arbetsordningen for grundarna av The Global Governance Frameworks Catalyst. Det är ett levande dokument, avsett att vara enkelt, agilt och troget vårt kärnuppdrag. Det fungerar som en bro mellan våra juridiska stadgar och den större visionen i GGF-OS v2.1. Vårt främsta mål är att skapa förutsättningar för kollektivt flöde och minimera egobaserad friktion när vi inleder vårt arbete.
+Detta dokument är ett Minimum Viable Operating System (MVOS) för grundarna av The Global Governance Frameworks Catalyst. Det utgör den initiala, levande versionen av vårt interna operativsystem (GGF-OS). Syftet med detta interna OS är att vägleda vår kultur, våra beslut och vårt kollektiva arbetsflöde, så att vi effektivt kan tjäna vårt kärnuppdrag: att katalysera ett globalt nätverk som samskapar ett regenerativt operativsystem för en global civilisation.
 
 ---
 

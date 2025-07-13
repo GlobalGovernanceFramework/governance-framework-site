@@ -26,15 +26,19 @@ This layer focuses on proactive measures to prevent conflicts by addressing stru
 - **3.1 Structural Violence Analysis**:
   - Identify systemic inequalities (e.g., economic disparities, resource access) using **AUBI**’s economic justice metrics and **MOS**’s *Rights Status Dashboard*.
   - Tools: AI-driven analytics from **Global Collective Intelligence Constellation (GCIC)** to map poverty, education, and resource gaps; includes **Spiritual/Religious Driver Assessment** to identify spiritual conflict dimensions, referring cases to GCRSD.
-  - **Example**: South Asian village receives irrigation funding to prevent water disputes.
+  - **New: Values Alignment Audits**: Organizations conduct annual audits to identify friction points (e.g., misaligned priorities between leadership and staff) using AI-driven surveys and stakeholder interviews, cross-referenced with **MOS** rights metrics.
+  - **New: Community-Based Values Mapping**: Local facilitators, including Indigenous and Global South practitioners, map community values (e.g., tradition, fairness) through participatory workshops to anticipate conflict dynamics.
+  - **Example**: South Asian village receives irrigation funding and conducts values mapping to prevent water disputes.
+
 - **3.2 Conflict Prediction Systems**:
   - AI-powered early warning systems, integrated with **GCIC**, analyze social, economic, environmental, and spiritual indicators (e.g., water scarcity, migration patterns, religious tensions).
-  - Offline tools: Community surveys and local reporting networks.
+  - Offline tools: Community surveys, local reporting networks, and values mapping workshops.
   - **Example**: Predict rising tensions in climate-stressed regions to deploy preventive diplomacy.
+
 - **3.3 Preventive Diplomacy**:
   - Deploy neutral mediators, including GCRSD representatives for spiritual conflicts, to address emerging tensions (e.g., trade disputes, border issues).
   - Protocols: Stakeholder dialogues, **FPIC 2.0** for Indigenous communities, and **Treaty**’s diplomatic channels.
-  - **Example**: Mediators prevent escalation in Oceania land dispute via early Indigenous-led talks.
+  - **Example**: Mediators prevent escalation in Oceania land dispute via early Indigenous-led talks informed by values mapping.
 
 ## 4. Layer 2: Active Conflict Resolution
 This layer uses the values-based (*Spiral Peacecraft*) methodology to resolve active conflicts, tailored to value systems, with GCRSD’s **Transformative Dialogue Protocol** for spiritual conflicts.
@@ -42,29 +46,35 @@ This layer uses the values-based (*Spiral Peacecraft*) methodology to resolve ac
 - **4.1 Diagnosing Values**:
   - **Public/Policy**: Identify core values (e.g., tradition, power, fairness, progress, inclusion, dignity, justice) via surveys, interviews, cultural mapping, and **Spiritual/Religious Driver Assessment**.
   - **Practitioner**: Map *vMemes* (Purple 🔵: tradition, Red 🔴: power, Blue ⚖️: fairness, Orange 💡: progress, Green 🌱: inclusion, Yellow 🌐: systems, Turquoise 🌍: holism, Coral 🌌: paradigm shift, Clear ✨: unity).
+  - **New: Mixed-Values Guidance**: Use decision trees to prioritize interventions when parties hold multiple values (e.g., Purple tradition + Green inclusion) by assessing dominant and secondary values via AI diagnostics or facilitator-led interviews.
   - Tools: AI chatbot or paper-based diagnostics, audited by **Office of Algorithmic Accountability**.
-  - **Example**: Village dispute reveals tradition (Purple), fairness (Blue), and progress (Orange) needs.
+  - **Example**: Village dispute reveals tradition (Purple), fairness (Blue), and progress (Orange) needs; mixed-values protocol prioritizes Purple rituals with Blue agreements.
+
 - **4.2 Tiered Resolution Strategies**:
   - **Survival (Tier 1)**:
-    - Tradition: Rituals (e.g., peace ceremonies). **Contraindication**: Avoid if trust is broken.
-    - Power: Honor agreements (e.g., leader recognition). **Contraindication**: Avoid reinforcing harmful power.
-    - Fairness: Legal frameworks (e.g., water-sharing rules). **Contraindication**: Avoid if authority is rejected.
-    - Progress: Economic incentives (e.g., irrigation funding). **Contraindication**: Avoid fostering greed.
+    - Tradition: Rituals (e.g., peace ceremonies). **Contraindication**: Avoid if trust is broken; assess via community trust surveys (70% trust threshold).
+    - Power: Honor agreements (e.g., leader recognition). **Contraindication**: Avoid reinforcing harmful power; verify via **MOS** rights audits.
+    - Fairness: Legal frameworks (e.g., water-sharing rules). **Contraindication**: Avoid if authority is rejected; confirm via stakeholder consensus (80% agreement).
+    - Progress: Economic incentives (e.g., irrigation funding). **Contraindication**: Avoid fostering greed; monitor via **AUBI** economic impact metrics.
     - Trauma-informed protocols (Levine, 2010).
-    - **Example**: Village uses rituals, leader acknowledgment, and agreements.
+    - **New: Assessment Criteria**: Use standardized checklists (e.g., trust levels, power dynamics) to evaluate contraindications before applying strategies.
+    - **Example**: Village uses rituals, leader acknowledgment, and agreements, vetted by trust surveys.
   - **Community (Tier 2)**:
-    - Inclusion: Dialogue circles (e.g., community forums). **Contraindication**: Avoid if cohesion is low.
-    - Systems: Map interconnections (e.g., water systems). **Contraindication**: Avoid if data is unreliable.
-    - Holism: Vision shared goals (e.g., sustainability). **Contraindication**: Avoid if abstract thinking is limited.
-    - **Example**: Village forums lead to a water plan.
+    - Inclusion: Dialogue circles (e.g., community forums). **Contraindication**: Avoid if cohesion is low; assess via social cohesion index (<60% score).
+    - Systems: Map interconnections (e.g., water systems). **Contraindication**: Avoid if data is unreliable; verify via **GCIC** data audits.
+    - Holism: Vision shared goals (e.g., sustainability). **Contraindication**: Avoid if abstract thinking is limited; test via community workshops.
+    - **Example**: Village forums lead to a water plan, supported by cohesion metrics.
   - **Visionary (Tier 3)**:
     - Paradigm Shift: Question deeper purposes (e.g., reframe water ownership).
-    - Unity: Contemplative practices (e.g., retreats). **Preconditions**: Stable Tier 2, processed trauma.
-    - **Example**: Village retreat fosters unity.
+    - Unity: Contemplative practices (e.g., retreats). **Preconditions**: Stable Tier 2, processed trauma (verified by trauma recovery assessments).
+    - **Example**: Village retreat fosters unity after Tier 2 stabilization.
+  - **New: Intervention Protocol Clarity**: Select tier based on value dominance (e.g., >50% Purple triggers Tier 1) and escalate if unresolved after 30 days, guided by decision trees.
+
 - **4.3 Emergency Mediation Protocols**:
   - **Rapid Response Peace Teams**, including GCRSD’s **Rapid Response Interfaith Teams**, deploy for crises (e.g., riots, cyberattacks), using **Treaty**’s Crisis Governance Protocols.
   - Tools: Virtual mediation platforms, blockchain-verified agreements.
   - **Example**: Cyber conflict resolved via secure virtual negotiations.
+
 - **4.4 Ceasefire Mechanisms**:
   - Temporary agreements to halt violence, facilitated by neutral mediators, including GCRSD for spiritual conflicts.
   - **Example**: Latin American strike uses Blue fairness agreements to pause hostilities.
@@ -74,15 +84,19 @@ This layer ensures sustainable peace through reconciliation and rebuilding, with
 
 - **5.1 Truth and Reconciliation**:
   - Establish community-led processes, modeled on South Africa’s TRC, with **FPIC 2.0** for Indigenous communities, led by GCRSD’s truth and reconciliation branch using spiritual and ethical practices.
+  - **New: Restorative Justice Integration**: Explicitly align with **Indigenous Governance Framework** by deferring to Indigenous tribunals for culturally resonant processes, co-designed with local elders.
   - Tools: Storytelling, public apologies, and trauma healing (Levine, 2010).
-  - **Example**: Oceania dispute uses Indigenous-led reconciliation ceremonies.
+  - **Example**: Oceania dispute uses Indigenous-led reconciliation ceremonies, co-designed with Maori elders.
+
 - **5.2 Institutional Rebuilding**:
   - Strengthen local governance with **Justice Systems** training and **AUBI**-funded infrastructure.
   - **Example**: Village rebuilds water management systems with co-op funding.
+
 - **5.3 Long-Term Peace Sustainability**:
   - Peace dividends: Fund education, infrastructure, and civic tech via **AUBI** and **Global Commons Fund**.
   - Mentorship programs train leaders for value transitions (e.g., fairness to inclusion).
-  - **Example**: Village receives schools and community apps.
+  - **New: Long-Term Monitoring**: Implement 5-year monitoring plans using **Rights Status Dashboard** to track value shifts (e.g., from Purple to Green) via community surveys and **LMCI** metrics, ensuring sustainable outcomes.
+  - **Example**: Village receives schools, community apps, and monitors value shifts annually.
 
 ## 6. Layer 4: Governance Integration
 This layer embeds the framework within the GGF ecosystem, with a permanent role for GCRSD.
@@ -90,28 +104,38 @@ This layer embeds the framework within the GGF ecosystem, with a permanent role 
 - **6.1 Integration with MOS**:
   - Mediates conflicts across *Dynamic Rights Spectrum* (e.g., Tier 1 human needs vs. Tier 3 ecosystem rights) using value diagnostics.
   - **Example**: Balances community water needs (Tier 1) with ecosystem protection (Tier 3).
+
 - **6.2 Integration with Justice Systems**:
   - Serves as a restorative justice step before escalation to **Digital Justice Tribunals**.
   - **Example**: AUBI Hearts/Leaves disputes resolved via mediation before formal arbitration.
+
 - **6.3 Integration with Indigenous Governance**:
-  - Defers to Indigenous tribunals in BAZs, using **FPIC 2.0** protocols.
-  - **Example**: Oceania dispute prioritizes Maori-led processes.
+  - **New: Sovereignty Precedence**: Indigenous tribunals take precedence in BAZs for disputes involving Indigenous lands, resources, or cultural values, as determined by **FPIC 2.0** consensus (80% community approval). Non-Indigenous disputes follow standard framework unless overlapping with Indigenous issues.
+  - **Example**: Oceania dispute prioritizes Maori-led processes under **FPIC 2.0**.
+
 - **6.4 Integration with AUBI and Financial Systems**:
   - Resolves economic disputes (e.g., Love Ledger fraud, worker cooperatives) with **AUBI**’s economic justice principles.
+  - **New: Strengthened Economic Justice**: Prioritize **AUBI**-funded peace dividends (e.g., microgrants for cooperatives) to address economic roots of conflict, tracked via **AUBI**’s equity metrics.
   - Funds peace dividends via **Global Commons Fund**.
+  - **Example**: Post-conflict village receives **AUBI**-funded irrigation and cooperative grants.
+
 - **6.5 Integration with Global Data Governance**:
   - Uses blockchain for secure mediation records and AI tools audited by **Office of Algorithmic Accountability**.
   - Ensures data privacy with **Data Fiduciary Standard**.
+
 - **6.6 Integration with GCRSD**:
   - **Permanent Seat**: GCRSD holds a permanent seat on the **Global Peace Council** to ensure spiritual and ethical perspectives in peace strategy.
   - **Joint Rapid Response Teams**: For conflicts with spiritual dimensions, **Rapid Response Peace Teams** include GCRSD’s **Rapid Response Interfaith Teams**.
   - **Spiritual/Religious Driver Assessment**: During **Layer 1**, conflicts flagged as spiritual are referred to GCRSD’s **Regional Hubs** for mediation using **Transformative Dialogue Protocol**.
   - **Truth and Reconciliation Leadership**: GCRSD leads all truth and reconciliation processes, designing culturally and spiritually resonant programs.
   - **Resource Sharing**: GCRSD’s **Wisdom Repository** is a mandatory resource for peacebuilders; co-developed **Interfaith Conflict Transformation** training.
+
 - **6.7 Integration with Treaty for Our Only Home**:
   - Coordinates with **Global Enforcement Mechanism** for peace enforcement.
+
 - **6.8 Integration with Shield Protocol**:
   - Collaborates on rehabilitation for conflict perpetrators.
+
 - **6.9 Integration with Digital Commons**:
   - Uses **Knowledge Commons** for peacebuilding resources.
 
@@ -121,12 +145,15 @@ Dedicated approaches for different conflict scales ensure comprehensive coverage
 - **7.1 Interstate Conflicts**:
   - Use **Treaty**’s diplomatic channels and arbitration courts for trade or border disputes.
   - **Example**: Mediators resolve maritime dispute in Asia-Pacific with Blue fairness agreements.
+
 - **7.2 Mass Atrocity Prevention**:
   - Deploy **Rapid Response Peace Teams**, including GCRSD representatives, for genocide or ethnic cleansing risks, integrated with **Treaty**’s enforcement.
   - Tools: AI prediction models, trauma-informed mediation.
+
 - **7.3 Climate-Induced Conflicts**:
   - Address resource scarcity and migration with **Climate and Ecological Justice Tribunals** and **AUBI**-funded solutions.
   - **Example**: Water scarcity dispute resolved with Green inclusion dialogues and Orange funding.
+
 - **7.4 Digital/Cyber Conflicts**:
   - Resolve data breaches or AI ethics disputes with blockchain agreements and **Digital Justice Tribunal** escalation.
   - Tools: Quantum-secure communications, VR empathy-building simulations.
@@ -139,18 +166,23 @@ This section establishes governance structures for peacebuilding.
   - Selection Criteria: 50% elected, 50% nominated by networks; audited annually.
   - Role: Oversees policy, sets peacebuilding strategy, coordinates with **Treaty**’s Pillar 3, and monitors peace metrics.
   - Decision-Making: Consensus-based; disputes resolved by neutral mediators.
+
 - **8.2 Regional Peace Hubs**:
   - Adapt global standards to regional contexts, integrating BAZs and **FPIC 2.0**, with GCRSD representatives for spiritual conflicts.
   - Dissolution Clause: Hubs violating principles disbanded by 2/3 vote.
   - **Example**: Latin America hub prioritizes Indigenous land disputes.
+
 - **8.3 Rapid Response Peace Teams**:
   - Deploy for crises, trained in trauma-informed mediation, **Treaty** protocols, and GCRSD’s **Transformative Dialogue Protocol**.
   - **Example**: Teams stabilize post-coup tensions with Red power agreements.
+
 - **8.4 Truth and Reconciliation Processes**:
-  - Scale community-led models globally, led by GCRSD’s truth and reconciliation branch, integrated with **Justice Systems**.
+  - Scale community-led models globally, led by GCRSD’s truth and reconciliation branch, integrated with **Justice Systems** and Indigenous tribunals.
+
 - **8.5 Advisory Board**:
   - Members: Conflict resolution experts, ethicists, and GCRSD representatives.
   - Function: Guide strategy, mediator selection, and crisis response.
+
 - **8.6 Working Groups**:
   - Purpose: Address specific conflicts (e.g., resource disputes, cultural tensions).
   - Structure: Rotating teams, including GCRSD members for spiritual conflicts.
@@ -161,8 +193,10 @@ This section links peacebuilding to economic frameworks.
 - **9.1 Peace Dividends**:
   - Fund education, infrastructure, and civic tech via **AUBI** and **Global Commons Fund**.
   - **Example**: Village receives irrigation and schools post-conflict.
+
 - **9.2 Economic Sanctions/Incentives**:
   - Use **Treaty**’s enforcement mechanisms to incentivize peace (e.g., access to trade networks) or impose sanctions.
+
 - **9.3 Reconstruction Finance**:
   - Allocate **AUBI**-funded resources for post-conflict rebuilding.
   - **Example**: Worker cooperatives rebuild local economies.
@@ -172,10 +206,13 @@ Advanced tools enhance peacebuilding while ensuring ethical use.
 
 - **10.1 Blockchain-Verified Agreements**:
   - Secure mediation records with blockchain, compliant with **Data Fiduciary Standard**.
+
 - **10.2 AI-Mediated Negotiation Support**:
   - AI diagnostics and scenario planning, audited by **Office of Algorithmic Accountability**.
+
 - **10.3 Quantum-Secure Communications**:
   - Protect diplomatic channels with quantum encryption.
+
 - **10.4 VR Empathy-Building Tools**:
   - Use virtual reality for cross-cultural understanding, accessible via **Global Data Commons Trust**.
   - **Example**: VR simulations foster empathy in digital privacy disputes.

@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "title": "Ramverk för institutionell förnyelse – global governance framework",
+    "description": "Ett heltäckande ramverk för att omvandla internationella organisationer mot ökad flexibilitet, inkludering och effektivitet genom en frivillig, incitamentsdriven utvecklingsprocess."
+  },
+  "guideCard": {
+    "title": "Börja att omvandla er institution",
+    "description": "Börja med vår sammanfattning för att förstå utmaningen, och utforska sedan förnyelsepakten för att påbörja er omvandlingsresa.",
+    "toolButton": "Prova verktyget för intressentkartläggning",
+    "compactButton": "Utforska regenereringspakten"
+  },
+  "categories": {
+    "foundation": "Ramverkets grunder",
+    "seedTrack": "Startpaket (MVP)"
+  },
+  "sections": {
+    "executive-summary": "Sammanfattning och investeringsmöjlighet",
+    "regeneration-compact": "Förnyelsepakt (samförståndsavtal)",
+    "seed-track-mvp/introduction": "Introduktion till startpaketet",
+    "seed-track-mvp/module-1": "Modul 1: Granskning av syfte och mandat",
+    "seed-track-mvp/module-2": "Modul 2: Paket för uppgraderad styrning",
+    "seed-track-mvp/module-3": "Modul 3: Verktygslåda för kulturell omvandling",
+    "seed-track-mvp/next-steps": "Implementeringskarta och nästa steg"
+  },
+  "sectionsShort": {
+    "executive-summary": "Sammanfattning",
+    "regeneration-compact": "Samförståndsavtal",
+    "seed-track-mvp/introduction": "Introduktion",
+    "seed-track-mvp/module-1": "Syfte och mandat",
+    "seed-track-mvp/module-2": "Uppgraderad styrning",
+    "seed-track-mvp/module-3": "Kulturell omvandling",
+    "seed-track-mvp/next-steps": "Nästa steg"
+  },
+  "progress": {
+    "text": "Modul {current} av {total}"
+  },
+  "actions": {
+    "downloadExecutive": "Ladda ner sammanfattning (PDF)",
+    "downloadCompact": "Ladda ner förnyelsepakt (PDF)",
+    "downloadSeedTrack": "Ladda ner startpaket (MVP) (PDF)",
+    "openTool": "Öppna verktyget för intressentkartläggning"
+  },
+  "navigation": {
+    "previousModule": "Föregående modul",
+    "nextModule": "Nästa modul",
+    "downloadPdf": "Ladda ner som PDF",
+    "continueToFramework": "Fortsätt till det fullständiga ramverket"
+  },
+  "languageFallback": {
+    "title": "Översättning pågår",
+    "description": "Detta avsnitt visas för närvarande på engelska tills översättningen är klar."
+  },
+  "loading": {
+    "text": "Laddar ramverkets innehåll..."
+  },
+  "errors": {
+    "sectionNotFound": "Avsnittet \"{section}\" hittades inte",
+    "contentInDevelopment": "Innehållet för detta avsnitt är under utveckling och kommer att publiceras inom kort"
+  },
+  "stakeholderTool": {
+    "title": "Verktyg för intressent- och maktkartläggning",
+    "description": "Ett interaktivt verktyg för att kartlägga er institutions politiska landskap. Identifiera supportrar, motståndare och inflytandemönster som grund för er förnyelseplanering.",
+    "openButton": "Öppna kartläggningsverktyget",
+    "downloadButton": "Ladda ner verktyget (HTML)"
+  },
+  "downloads": {
+    "executiveSummary": {
+      "title": "Sammanfattning och investeringsmöjlighet",
+      "description": "En heltäckande översikt av utmaningen, lösningen och implementeringsstrategin för institutionell omvandling.",
+      "size": "ca 2 sidor"
+    },
+    "regenerationCompact": {
+      "title": "Förnyelsepakt (samförståndsavtal)",
+      "description": "En färdig mall för samförståndsavtal för institutioner som påbörjar sin omvandlingsresa.",
+      "size": "ca 2 sidor"
+    },
+    "seedTrackMvp": {
+      "title": "Implementeringsguide för startpaket (MVP)",
+      "description": "Ett komplett och slimmat ramverk för organisationer med begränsade resurser, för att påbörja en förnyelseprocess med omedelbar verkan.",
+      "size": "ca 15 sidor"
+    },
+    "stakeholderTool": {
+      "title": "Interaktivt verktyg för intressentkartläggning",
+      "description": "Ett enkelsidigt HTML-baserat arbetsblad för att kartlägga det institutionella politiska landskapet och planera en förnyelsestrategi.",
+      "size": "Interaktiv HTML"
+    }
+  },
+  "framework": {
+    "version": "0.8",
+    "status": "Redo för implementering",
+    "modules": "5 kärnmoduler",
+    "seedTrackModules": "3 grundläggande moduler",
+    "targetOrganizations": "Mellanstatliga organisationer, FN-organ, regionala organ",
+    "implementationTime": "6–24 månader",
+    "resourceRequirement": "20–30 % för startpaketet"
+  },
+  "quickStats": {
+    "institutionsTargeted": "Fler än 200 mellanstatliga organisationer globalt",
+    "combinedBudgets": "Över 50 miljarder dollar årligen",
+    "efficiencyGains": "25–40 % potential för effektivitetsvinster",
+    "implementationCost": "2,5 miljoner dollar för fas 1",
+    "expectedRoi": "5x förväntad effektivitetsförbättring"
+  }
+}

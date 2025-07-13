@@ -1,6 +1,6 @@
 <!-- src/routes/frameworks/treaty-for-our-only-home/+page.svelte -->
 <script>
-  import { t, locale } from '$lib/i18n';
+  import { t, locale, isLocaleLoaded, loadTranslations } from '$lib/i18n';
   import { browser } from '$app/environment';
   import { invalidate } from '$app/navigation';
   import { base } from '$app/paths';
@@ -10,81 +10,86 @@
 
   export let data;
 
-  // Extract treatyFramework translations for shorter references
-  $: tf = $t('treatyFramework') || {};
-  $: translationFunction = $t;
-  
-  // Debug logging
-  $: if (browser && mounted) {
-    console.log('Treaty Framework translations:', tf);
-    console.log('Has treaty framework keys:', Object.keys(tf));
-  }
-
-  // Keep track of which section is active (for sub-navigation)
-  let activeSection = 'index';
-
-  // This will track the current locale for our component
+  // Translation state - use isLocaleLoaded for better reactivity
+  $: translationsReady = $isLocaleLoaded;
+  $: tf = translationsReady ? ($t('treatyFramework') || {}) : {};
   $: currentLocale = $locale;
 
-  // Check if we're in print mode - simplified to avoid hydration issues
-  let isPrintMode = false;
-  
-  // Client-side only initialization to avoid hydration mismatches
+  // Component state
+  let activeSection = 'index';
   let mounted = false;
-  let initializing = true;
-
-  // If in print mode, we'll show all sections
-  $: sectionsToShow = (mounted && isPrintMode) ? Object.keys(data?.sections || {}) : [activeSection];
-
-  // Accordion states - initialize in a way that prevents hydration issues
+  let isPrintMode = false;
   let foundationOpen = false;
   let coreFrameworkOpen = false;
   let resourcesOpen = false;
 
-  // Initialize accordion states after mount
+  // Computed values - add safety checks
+  $: sectionsToShow = (mounted && isPrintMode) ? Object.keys(data?.sections || {}) : [activeSection];
+  $: coreFrameworkSections = Object.keys(data?.sections || {}).filter(section => 
+    !['index', 'at-a-glance', 'executive-summary-for-the-skeptic', 'faq-and-challenges', 'glossary', 'social-media-templates'].includes(section)
+  );
+  $: isCoreSection = coreFrameworkSections.includes(activeSection);
+  $: foundationSections = ['at-a-glance', 'executive-summary-for-the-skeptic'];
+  $: resourceSections = ['faq-and-challenges', 'glossary', 'social-media-templates'];
+  $: isExecutiveSummaryActive = activeSection === 'executive-summary-for-the-skeptic';
+  $: isSupplementaryActive = resourceSections.includes(activeSection);
+
   function initializeAccordionStates() {
     // Set initial accordion states based on active section
-    if (['at-a-glance', 'executive-summary-for-the-skeptic'].includes(activeSection)) {
-      foundationOpen = true;
-    } else if (coreFrameworkSections.includes(activeSection)) {
-      coreFrameworkOpen = true;
-    } else if (['faq-and-challenges', 'glossary', 'social-media-templates'].includes(activeSection)) {
-      resourcesOpen = true;
-    } else {
-      // Default state for overview
-      foundationOpen = true;
-    }
+    foundationOpen = foundationSections.includes(activeSection);
+    coreFrameworkOpen = coreFrameworkSections.includes(activeSection);
+    resourcesOpen = resourceSections.includes(activeSection);
   }
 
   onMount(async () => {
-    await tick(); // Wait for DOM to be ready
+    await tick();
     mounted = true;
     
     if (browser) {
-      // Check print mode only on client
+      // Fix URL corruption and preserve hash fragments
+      let extractedHash = window.location.hash;
+      
+      if (window.location.pathname !== '/frameworks/treaty-for-our-only-home') {
+        const pathname = window.location.pathname;
+        const lastPart = pathname.split('/').pop();
+        
+        // Extract section from corrupted pathname
+        if (data?.sections?.[lastPart] && !extractedHash) {
+          extractedHash = `#${lastPart}`;
+        }
+        
+        // Correct the URL
+        const correctUrl = `/frameworks/treaty-for-our-only-home${window.location.search}${extractedHash}`;
+        window.history.replaceState(null, '', correctUrl);
+      }
+      
+      // Force reload translations if needed
+      if (!translationsReady) {
+        try {
+          await loadTranslations($locale, '/frameworks/treaty-for-our-only-home');
+        } catch (e) {
+          console.error('Failed to reload translations:', e);
+        }
+      }
+      
+      // Set initial section from URL
       const urlParams = new URLSearchParams(window.location.search);
       isPrintMode = urlParams.get('print') === 'true';
       
-      // Make this function available globally for the PDF generator
-      window.showAllSectionsForPrint = () => {
-        isPrintMode = true;
-      };
-
-      // Handle URL parameters and hash
       const sectionParam = urlParams.get('section');
+      const hashSection = (extractedHash || window.location.hash).substring(1);
       
       if (sectionParam && data?.sections?.[sectionParam]) {
         activeSection = sectionParam;
-      } else if (window.location.hash) {
-        const hash = window.location.hash.substring(1);
-        if (hash && data?.sections?.[hash]) {
-          activeSection = hash;
-        }
+      } else if (hashSection && data?.sections?.[hashSection]) {
+        activeSection = hashSection;
       }
-
-      // Initialize accordion states after setting active section
+      
       initializeAccordionStates();
-
+      
+      // Global function for PDF generation
+      window.showAllSectionsForPrint = () => { isPrintMode = true; };
+      
       // Listen for hash changes
       const handleHashChange = () => {
         const hash = window.location.hash.substring(1);
@@ -94,7 +99,7 @@
           
           // Scroll to content
           setTimeout(() => {
-            const contentElement = document.querySelector('.content');
+            const contentElement = document.querySelector('.section-content');
             if (contentElement) {
               contentElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
             } else {
@@ -106,8 +111,6 @@
 
       window.addEventListener('hashchange', handleHashChange);
       
-      initializing = false;
-      
       // Cleanup
       return () => {
         window.removeEventListener('hashchange', handleHashChange);
@@ -116,8 +119,6 @@
         }
       };
     }
-    
-    initializing = false;
   });
 
   // Function to set active section
@@ -128,9 +129,8 @@
     initializeAccordionStates();
     
     if (browser) {
-      const url = new URL(window.location.href);
-      url.hash = section;
-      history.replaceState(null, '', url.toString());
+      const newUrl = `/frameworks/treaty-for-our-only-home${window.location.search}#${section}`;
+      history.replaceState(null, '', newUrl);
 
       setTimeout(() => {
         const contentElement = document.querySelector('.section-content');
@@ -145,19 +145,22 @@
     }
   }
 
-  // Get section titles in current language using short references
+  // Translation helper functions with fallbacks
   function getSectionTitle(section) {
-    return tf.sections?.[section] || section;
+    return translationsReady ? (tf.sections?.[section] || section.replace(/[-_]/g, ' ')) 
+                             : section.replace(/[-_]/g, ' ');
   }
 
-  // Group sections logically with multi-lingual support using short references
   function getSectionCategoryTitle(category) {
-    return tf.categories?.[category] || category;
+    return translationsReady ? (tf.categories?.[category] || category) : category;
   }
 
-  // Function to get shortened section titles for navigation using short references
   function getShortSectionTitle(section) {
-    return tf.sectionsShort?.[section] || getSectionTitle(section);
+    return translationsReady ? (tf.sectionsShort?.[section] || getSectionTitle(section)) : getSectionTitle(section);
+  }
+
+  function getTextWithFallback(key, fallback) {
+    return translationsReady ? ($t(key) || fallback) : fallback;
   }
 
   // Function to download the treaty PDF
@@ -172,35 +175,20 @@
     document.body.removeChild(link);
   }
 
-  // Computed values - add safety checks
-  $: isExecutiveSummaryActive = activeSection === 'executive-summary-for-the-skeptic';
-  $: isSupplementaryActive = ['faq-and-challenges', 'glossary', 'social-media-templates'].includes(activeSection);
-  $: coreFrameworkSections = Object.keys(data?.sections || {}).filter(section => 
-    !['index', 'at-a-glance', 'executive-summary-for-the-skeptic', 'faq-and-challenges', 'glossary', 'social-media-templates'].includes(section)
-  );
-  $: isCoreSection = coreFrameworkSections.includes(activeSection);
+  // Accordion toggle functions
+  function toggleFoundation() { foundationOpen = !foundationOpen; }
+  function toggleCoreFramework() { coreFrameworkOpen = !coreFrameworkOpen; }
+  function toggleResources() { resourcesOpen = !resourcesOpen; }
 
-  function toggleFoundation() {
-    foundationOpen = !foundationOpen;
-  }
-
-  function toggleCoreFramework() {
-    coreFrameworkOpen = !coreFrameworkOpen;
-  }
-
-  function toggleResources() {
-    resourcesOpen = !resourcesOpen;
-  }
-
-  // Handle locale changes - add safety check
+  // Handle locale changes
   $: if (browser && mounted && $locale) {
     invalidate('app:locale');
   }
 </script>
 
 <svelte:head>
-  <title>{tf.meta?.title || 'Treaty for Our Only Home - Global Governance Framework'}</title>
-  <meta name="description" content="{tf.meta?.description || 'A comprehensive treaty framework for global governance transformation and sustainability'}" />
+  <title>{getTextWithFallback('treatyFramework.meta.title', 'Treaty for Our Only Home - Global Governance Framework')}</title>
+  <meta name="description" content="{getTextWithFallback('treatyFramework.meta.description', 'A comprehensive treaty framework for global governance transformation and sustainability')}" />
 </svelte:head>
 
 {#if mounted}
@@ -211,7 +199,7 @@
 
     <div class="content">
       <!-- Quick Access Card for Treaty -->
-      {#if !isPrintMode && !isExecutiveSummaryActive && activeSection === 'index'}
+      {#if !isPrintMode && !isExecutiveSummaryActive && activeSection === 'index' && translationsReady}
         <div class="treaty-guide-card">
           <div class="card-content">
             <div class="card-icon">🌍</div>
@@ -229,7 +217,7 @@
       {/if}
 
       <!-- Sub-navigation for treaty sections -->
-      {#if !isPrintMode && !initializing} 
+      {#if !isPrintMode} 
         <div class="section-nav">
           <!-- Overview -->
           <div class="nav-section">
@@ -248,7 +236,7 @@
             <button 
               class="accordion-header" 
               class:open={foundationOpen}
-              class:has-active={['at-a-glance', 'executive-summary-for-the-skeptic'].some(section => activeSection === section)}
+              class:has-active={foundationSections.includes(activeSection)}
               on:click={toggleFoundation}
             >
               <span class="accordion-icon">📚</span>
@@ -258,26 +246,18 @@
             </button>
             {#if foundationOpen}
               <div class="accordion-content" transition:slide={{ duration: 200 }}>
-                {#if data?.sections?.['at-a-glance']}
-                  <button 
-                    class="nav-item subsection-item" 
-                    class:active={activeSection === 'at-a-glance'}
-                    on:click={() => setActiveSection('at-a-glance')}
-                  >
-                    <span class="nav-icon">⚡</span>
-                    <span class="nav-title">{getSectionTitle('at-a-glance')}</span>
-                  </button>
-                {/if}
-                {#if data?.sections?.['executive-summary-for-the-skeptic']}
-                  <button 
-                    class="nav-item subsection-item" 
-                    class:active={activeSection === 'executive-summary-for-the-skeptic'}
-                    on:click={() => setActiveSection('executive-summary-for-the-skeptic')}
-                  >
-                    <span class="nav-icon">🤔</span>
-                    <span class="nav-title">{getShortSectionTitle('executive-summary-for-the-skeptic')}</span>
-                  </button>
-                {/if}
+                {#each foundationSections as section}
+                  {#if data?.sections?.[section]}
+                    <button 
+                      class="nav-item subsection-item" 
+                      class:active={activeSection === section}
+                      on:click={() => setActiveSection(section)}
+                    >
+                      <span class="nav-icon">{section === 'at-a-glance' ? '⚡' : '🤔'}</span>
+                      <span class="nav-title">{getSectionTitle(section)}</span>
+                    </button>
+                  {/if}
+                {/each}
               </div>
             {/if}
           </div>
@@ -288,7 +268,7 @@
               <button 
                 class="accordion-header" 
                 class:open={coreFrameworkOpen}
-                class:has-active={coreFrameworkSections.some(section => activeSection === section)}
+                class:has-active={isCoreSection}
                 on:click={toggleCoreFramework}
               >
                 <span class="accordion-icon">🏛️</span>
@@ -328,36 +308,23 @@
             </button>
             {#if resourcesOpen}
               <div class="accordion-content" transition:slide={{ duration: 200 }}>
-                {#if data?.sections?.['faq-and-challenges']}
-                  <button 
-                    class="nav-item subsection-item" 
-                    class:active={activeSection === 'faq-and-challenges'}
-                    on:click={() => setActiveSection('faq-and-challenges')}
-                  >
-                    <span class="nav-icon">❓</span>
-                    <span class="nav-title">{getSectionTitle('faq-and-challenges')}</span>
-                  </button>
-                {/if}
-                {#if data?.sections?.['glossary']}
-                  <button 
-                    class="nav-item subsection-item" 
-                    class:active={activeSection === 'glossary'}
-                    on:click={() => setActiveSection('glossary')}
-                  >
-                    <span class="nav-icon">📖</span>
-                    <span class="nav-title">{getSectionTitle('glossary')}</span>
-                  </button>
-                {/if}
-                {#if data?.sections?.['social-media-templates']}
-                  <button 
-                    class="nav-item subsection-item" 
-                    class:active={activeSection === 'social-media-templates'}
-                    on:click={() => setActiveSection('social-media-templates')}
-                  >
-                    <span class="nav-icon">📱</span>
-                    <span class="nav-title">{getSectionTitle('social-media-templates')}</span>
-                  </button>
-                {/if}
+                {#each resourceSections as section}
+                  {#if data?.sections?.[section]}
+                    <button 
+                      class="nav-item subsection-item" 
+                      class:active={activeSection === section}
+                      on:click={() => setActiveSection(section)}
+                    >
+                      <span class="nav-icon">
+                        {#if section === 'faq-and-challenges'}❓
+                        {:else if section === 'glossary'}📖
+                        {:else if section === 'social-media-templates'}📱
+                        {:else}📄{/if}
+                      </span>
+                      <span class="nav-title">{getSectionTitle(section)}</span>
+                    </button>
+                  {/if}
+                {/each}
               </div>
             {/if}
           </div>
@@ -365,7 +332,7 @@
       {/if}
 
       <!-- Progress indicator for core sections -->
-      {#if !isPrintMode && isCoreSection && coreFrameworkSections.length > 0}
+      {#if !isPrintMode && isCoreSection && coreFrameworkSections.length > 0 && translationsReady}
         <div class="progress-indicator">
           <div class="progress-bar">
             <div class="progress-fill" style="width: {((coreFrameworkSections.indexOf(activeSection) + 1) / coreFrameworkSections.length * 100)}%"></div>
@@ -379,7 +346,7 @@
         {#if data?.sections?.[section]}
           <div class="section-content" id={section}>
             <!-- Language fallback notice -->
-            {#if !isPrintMode && data.sectionsUsingEnglishFallback?.includes(section) && section !== 'index'}
+            {#if !isPrintMode && data.sectionsUsingEnglishFallback?.includes(section) && section !== 'index' && translationsReady}
               <div class="language-fallback-notice">
                 <div class="notice-icon">🌐</div>
                 <div class="notice-content">
@@ -390,10 +357,10 @@
             {/if}
             
             <!-- Render sections from markdown files -->
-            <svelte:component this={data.sections[section].default} t={translationFunction} />
+            <svelte:component this={data.sections[section].default} t={$t} />
             
             <!-- Navigation buttons at bottom of executive summary -->
-            {#if section === 'executive-summary-for-the-skeptic' && !isPrintMode}
+            {#if section === 'executive-summary-for-the-skeptic' && !isPrintMode && translationsReady}
               <div class="guide-navigation">
                 <button class="secondary-btn" on:click={() => downloadTreaty('executive-summary')}>
                   {tf.navigation?.downloadPdf || 'Download PDF Version'} <span class="download-icon">↓</span>
@@ -405,7 +372,7 @@
             {/if}
 
             <!-- Section navigation at bottom of core sections -->
-            {#if isCoreSection && !isPrintMode && coreFrameworkSections.length > 0}
+            {#if isCoreSection && !isPrintMode && coreFrameworkSections.length > 0 && translationsReady}
               <div class="section-navigation">
                 {#if coreFrameworkSections.indexOf(activeSection) > 0}
                   <button class="nav-btn prev-btn" on:click={() => {
@@ -431,8 +398,8 @@
           </div>
         {:else}
           <div class="missing-section">
-            <h2>{tf.errors?.sectionNotFound?.replace('{section}', section) || `Section "${section}" not found`}</h2>
-            <p>{tf.errors?.contentInDevelopment || 'This content is still being developed.'}</p>
+            <h2>{getTextWithFallback('treatyFramework.errors.sectionNotFound', `Section "${section}" not found`).replace('{section}', section)}</h2>
+            <p>{getTextWithFallback('treatyFramework.errors.contentInDevelopment', 'This content is still being developed.')}</p>
           </div>
         {/if}
       {/each}
@@ -442,7 +409,7 @@
   <!-- Loading state to prevent hydration issues -->
   <div class="loading-container">
     <div class="loading-spinner"></div>
-    <p>{tf.loading?.text || 'Loading treaty content...'}</p>
+    <p>{getTextWithFallback('treatyFramework.loading.text', 'Loading treaty content...')}</p>
   </div>
 {/if}
 

@@ -7,6 +7,7 @@
 
 // Import all cluster data
 import { constitutionalFoundationEntities, constitutionalFoundationRelationships } from './cluster.constitutional-foundation';
+import { institutionalRegenerationEntities, institutionalRegenerationRelationships } from './cluster.institutional-regeneration';
 import { governanceOSEntities, governanceOSRelationships } from './cluster.governance-os';
 import { ethicalOSEntities, ethicalOSRelationships } from './cluster.ethical-os';
 import { justiceOSEntities, justiceOSRelationships } from './cluster.justice-os';
@@ -158,6 +159,7 @@ const completeApplicationLayerRelationships: GgfRelationship[] = [
 // === AGGREGATE ALL ENTITIES AND RELATIONSHIPS ===
 export const allEntities: GgfEntity[] = [
   ...constitutionalFoundationEntities,
+  ...institutionalRegenerationEntities,
   ...governanceOSEntities,
   ...ethicalOSEntities,
   ...justiceOSEntities,
@@ -175,6 +177,7 @@ export const allEntities: GgfEntity[] = [
 
 export const allRelationships: GgfRelationship[] = [
   ...constitutionalFoundationRelationships,
+  ...institutionalRegenerationRelationships,
   ...governanceOSRelationships,
   ...ethicalOSRelationships,
   ...justiceOSRelationships,
@@ -203,6 +206,14 @@ export const clusters: GgfCluster[] = [
   },
 
   // TIER 1: CORE OPERATING SYSTEMS
+  {
+    id: 'institutional_regeneration_cluster',
+    name: 'Institutional Regeneration System',
+    description: 'Practical framework for transforming existing global governance institutions from bureaucratic inertia to agile, mission-driven service',
+    tier: 1,
+    entities: institutionalRegenerationEntities.map(e => e.id),
+    color: '#7c3aed'
+  },
   {
     id: 'governance_os',
     name: 'Governance Operating System',

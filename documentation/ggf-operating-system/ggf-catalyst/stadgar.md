@@ -17,11 +17,11 @@ Föreningens styrelse har sitt säte i Upplands Väsby kommun, Stockholms län.
 **§ 3 Ändamål och syfte (Aims and Purpose)**
 Föreningen är en partipolitiskt och religiöst obunden ideell förening.
 
-Föreningens syfte är att, i enlighet med principerna i GGF-OS, agera som en startpunkt och katalysator för ett globalt nätverk. Detta nätverk ska samskapa, kurera och sprida styrningsramverk med öppen källkod för planetens välbefinnande. Föreningen ska främja utvecklingen av resilienta, rättvisa och hållbara system som grundas i delat förvaltarskap och principen om "Right Relationship".
+Föreningens syfte är att, med vägledning av sitt interna operativsystem (GGF-OS), agera som en startpunkt och katalysator för ett globalt nätverk. Föreningens huvudsakliga verksamhet är att stödja detta nätverk i att samskapa, kurera och sprida styrningsramverk med öppen källkod. Dessa ramverk utgör tillsammans ett förslag till ett operativsystem för en hållbar global civilisation. Föreningen ska främja utvecklingen av resilienta, rättvisa och hållbara system som grundas i delat förvaltarskap och principen om "Right Relationship".
 
 (The association is a politically and religiously independent non-profit association.
 
-The purpose of the association is, in accordance with the principles of the GGF-OS, to act as a starting point and catalyst for a global network. This network shall co-create, curate, and disseminate open-source governance frameworks for planetary well-being. The association shall promote the development of resilient, equitable, and sustainable systems founded on shared stewardship and the principle of "Right Relationship".)
+The purpose of the association is, guided by its internal operating system (GGF-OS), to act as a starting point and catalyst for a global network. The association's main activity is to support this network in co-creating, curating, and disseminating open-source governance frameworks. These frameworks collectively constitute a proposal for an operating system for a sustainable global civilization. The association shall promote the development of resilient, equitable, and sustainable systems founded on shared stewardship and the principle of "Right Relationship".)
 
 **§ 4 Verksamhet (Activities)**
 Föreningen ska uppnå sitt syfte genom att bedriva verksamhet inom två primära arbetsgrupper ("Labs"):

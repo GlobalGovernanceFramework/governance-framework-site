@@ -19,6 +19,7 @@ if (args.length === 0) {
 Usage: node tools-pdf-generator.js [category]
 
 Available categories:
+- institutional-regeneration
 - educational-systems
 - food-systems-and-agriculture
 - climate-and-energy-governance
@@ -61,6 +62,7 @@ const __dirname = path.dirname(__filename);
 // Configuration
 const languages = ['en', 'sv', 'es', 'fr'];
 const outputDirs = {
+  'institutional-regeneration': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'institutional-regeneration'),
   'educational-systems': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'educational-systems'),
   'food-systems-and-agriculture': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'food-systems-and-agriculture'),
   'climate-and-energy-governance': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'climate-and-energy-governance'),
@@ -101,6 +103,77 @@ if (targetCategory && !Object.keys(outputDirs).includes(targetCategory)) {
 
 // Define tools to process
 const tools = [
+  // Institutional Regeneration
+  {
+    name: 'institutional-regeneration-executive-summary',
+    category: 'institutional-regeneration',
+    fileNames: {
+      en: 'institutional-regeneration-executive-summary-en',
+      sv: 'institutional-regeneration-executive-summary-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'institutional-regeneration'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'institutional-regeneration')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'assets', 'pdf'),
+      sv: path.join(__dirname, '..', 'static', 'assets', 'pdf')
+    },
+    pageFooter: {
+      en: 'Institutional Regeneration - Executive Summary',
+      sv: 'Institutionell förnyelse - Sammanfattning'
+    }
+  },
+  {
+    name: 'regeneration-compact',
+    category: 'institutional-regeneration',
+    fileNames: {
+      en: 'institutional-regeneration-compact-en',
+      sv: 'institutional-regeneration-compact-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'institutional-regeneration'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'institutional-regeneration')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'assets', 'pdf'),
+      sv: path.join(__dirname, '..', 'static', 'assets', 'pdf')
+    },
+    pageFooter: {
+      en: 'Institutional Regeneration - Regeneration Compact',
+      sv: 'Institutionell förnyelse - Förnyelsepakt'
+    }
+  },
+
+  // Seed Track (MVP)
+  {
+    name: 'moral-operating-system-framework',
+    category: 'institutional-regeneration',
+    fileNames: {
+      en: 'institutional-regeneration-seed-track-mvp-en',
+      sv: 'institutional-regeneration-seed-track-mvp-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'institutional-regeneration', 'seed-track-mvp'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'institutional-regeneration', 'seed-track-mvp')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'assets', 'pdf'),
+      sv: path.join(__dirname, '..', 'static', 'assets', 'pdf')
+    },
+    pageFooter: {
+      en: 'Institutional Regeneration - Seed Track (MVP) - Page ',
+      sv: 'Institutionell förnyelse - Fröspåret (MVP) - Sida '
+    },
+    sections: [
+     'introduction',
+     'module-1',
+     'module-2',
+     'module-3',
+     'next-steps'
+    ]
+  },
+
   // Regenerative Educational Systems Framework
   // Full framework combined PDF
   {

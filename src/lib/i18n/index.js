@@ -41,6 +41,7 @@ const pageSpecificTranslationsMap = [
   { route: '/frameworks/adaptive-universal-basic-income', dataKey: 'aubi', fileName: 'frameworksAdaptiveUniversalBasicIncome' },
   { route: '/frameworks/aethelred-accord', dataKey: 'aethelred', fileName: 'frameworksAethelredAccord' },
   { route: '/frameworks/treaty-for-our-only-home', dataKey: 'treatyFramework', fileName: 'frameworksTreatyForOurOnlyHome' },
+  { route: '/frameworks/institutional-regeneration', dataKey: 'institutionalRegeneration', fileName: 'frameworksInstitutionalRegeneration' },
   { route: '/frameworks/consciousness-and-inner-development', dataKey: 'consciousnessFramework', fileName: 'frameworksConsciousnessAndInnerDevelopment' },
   { route: '/frameworks/technology-governance', dataKey: 'techFramework', fileName: 'frameworksTechnologyGovernance' },
   { route: '/frameworks/aurora-accord', dataKey: 'auroraAccord', fileName: 'frameworksAuroraAccord' },
@@ -151,47 +152,75 @@ async function loadAllMyPathTranslations(newLocale) {
 
 // Load translations for a specific language and route
 async function loadTranslations(newLocale, route = '/') {
+  console.log('=== loadTranslations called ===');
+  console.log('Locale:', newLocale);
+  console.log('Route:', route);
+  
   translationsLoading.set(true);
   translationsLoaded.set(false);
   
-  // Normalize route path
+  // Normalize route path and remove hash fragments
   if (route.startsWith(base)) route = route.slice(base.length);
   if (!route) route = '/';
+  
+  // Remove hash fragments and query parameters for translation matching
+  // Hash fragments and query params shouldn't affect which translations are loaded
+  const cleanRoute = route.split('#')[0].split('?')[0];
+  
+  console.log(`Loading translations - Original route: ${route}, Clean route: ${cleanRoute}, Locale: ${newLocale}`);
 
   try {
-    currentRoute.set(route);
-    console.log(`Loading translations for locale: ${newLocale}, route: ${route}`);
-
+    currentRoute.set(cleanRoute); // Store the clean route
+    
     let translationData = {};
 
     // Special handling for /my-path route - load ALL required translations
-    if (route === '/my-path') {
+    if (cleanRoute === '/my-path') {
+      console.log('Loading all translations for /my-path');
       translationData = await loadAllMyPathTranslations(newLocale);
     } else {
       // Standard loading for other routes
+      console.log('Standard translation loading for route:', cleanRoute);
+      
       // 1. Load common translations
+      console.log('Loading common translations...');
       await loadAndAssignTranslation(newLocale, 'common', 'common', translationData);
 
       // 2. Load framework nav translations if on a framework page
-      if (route.startsWith('/frameworks')) {
+      if (cleanRoute.startsWith('/frameworks')) {
+        console.log('Loading framework navigation translations...');
         await loadAndAssignTranslation(newLocale, 'framework', 'framework', translationData);
       }
 
       // 3. Special case: Load findYourPlace translations on home page
-      if (route === '/' || route === '') {
+      if (cleanRoute === '/' || cleanRoute === '') {
+        console.log('Loading findYourPlace translations for home page...');
         await loadAndAssignTranslation(newLocale, 'findYourPlace', 'findYourPlace', translationData);
       }
 
       // 4. Load page-specific translations using the map
+      // Use cleanRoute for matching against the translation map
+      console.log('Checking page-specific translations for route:', cleanRoute);
+      console.log('Available mappings:', pageSpecificTranslationsMap.map(m => m.route));
+      
+      let matchFound = false;
       for (const mapping of pageSpecificTranslationsMap) {
-        if (route.includes(mapping.route)) {
-          await loadAndAssignTranslation(newLocale, mapping.fileName, mapping.dataKey, translationData);
+        // Use exact match or startsWith for route matching
+        if (cleanRoute === mapping.route || cleanRoute.startsWith(mapping.route)) {
+          console.log(`✅ Found translation mapping for route ${cleanRoute}: ${mapping.dataKey} -> ${mapping.fileName}`);
+          const success = await loadAndAssignTranslation(newLocale, mapping.fileName, mapping.dataKey, translationData);
+          console.log(`Translation loading success for ${mapping.dataKey}:`, success);
+          matchFound = true;
           break; 
         }
       }
+      
+      if (!matchFound) {
+        console.log('❌ No translation mapping found for route:', cleanRoute);
+      }
     }
 
-    console.log('Loaded translations data for route:', route, Object.keys(translationData));
+    console.log('Final loaded translations data for clean route:', cleanRoute, Object.keys(translationData));
 
     // Update the stores
     locale.set(newLocale);
@@ -204,7 +233,7 @@ async function loadTranslations(newLocale, route = '/') {
       // Always preserve climateFramework translations if they exist and we're not explicitly updating them
       const shouldPreserveClimateFramework = existingTranslations.climateFramework && 
         !translationData.climateFramework && 
-        !route.includes('/frameworks/climate-and-energy-governance');
+        !cleanRoute.includes('/frameworks/climate-and-energy-governance');
       
       if (shouldPreserveClimateFramework) {
         console.log('Preserving existing climateFramework translations');
@@ -218,6 +247,7 @@ async function loadTranslations(newLocale, route = '/') {
       // Default merge
       const merged = { ...existingTranslations, ...translationData };
       console.log('Merged translations:', Object.keys(merged));
+      console.log('institutionalRegeneration in merged?', !!merged.institutionalRegeneration);
       return merged;
     });
 
@@ -228,15 +258,18 @@ async function loadTranslations(newLocale, route = '/') {
     // Mark translations as loaded
     translationsLoaded.set(true);
     translationsLoading.set(false);
+    
+    console.log('=== Translation loading complete ===');
+    console.log('Returning translation data:', Object.keys(translationData));
 
     return translationData;
   } catch (e) {
     console.error('General error in loadTranslations:', e);
+    console.error('Error stack:', e.stack);
     translationsLoading.set(false);
     return {};
   }
 }
-
 // Create a derived store that returns a translation function
 const t = derived(
   [locale, translations, translationsLoaded],
