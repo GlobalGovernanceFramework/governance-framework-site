@@ -1,0 +1,1107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1000 800"
+   role="img"
+   aria-labelledby="title desc"
+   version="1.1"
+   id="svg103"
+   sodipodi:docname="module-1-implementation-pathway-flowchart.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview103"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.0575"
+     inkscape:cx="499.76359"
+     inkscape:cy="400"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg103" />
+  <!-- Main title -->
+  <title
+     id="flowchart-title">Module 1: Regenerative Core Implementation Pathway - 36-Month Journey</title>
+  <!-- Brief description for quick context -->
+  <desc
+     id="flowchart-brief">A horizontal three-phase implementation flowchart showing the 36-month journey from traditional corporate governance to full regenerative stakeholder governance. Phase 1 (blue, months 1-6) establishes foundations through governance assessment and legal preparation. Phase 2 (purple, months 6-18) transforms structure via charter revision, stakeholder councils, and reparations programs. Phase 3 (green, months 18-36) integrates operations through policy development and performance measurement. Timeline flows left to right with key milestones, parallel workstreams, and critical success factors displayed below.</desc>
+  <!-- Detailed description for comprehensive understanding -->
+  <desc
+     id="flowchart-detailed">
+This implementation flowchart maps the comprehensive 36-month transformation journey from traditional shareholder-focused governance to regenerative stakeholder governance, organized in three sequential but overlapping phases.
+
+HEADER SECTION:
+The top banner displays the framework title &quot;Module 1: Regenerative Core Implementation Pathway&quot; with subtitle &quot;36-Month Transformation Journey to Stakeholder Governance&quot; in white text on a dark blue background.
+
+PHASE 1: FOUNDATION AND ASSESSMENT (Months 1-6, Blue Theme):
+Located on the left side with light blue gradient background and dark blue borders.
+Contains three main activity boxes:
+- Governance Assessment (top left): Includes current audit of existing decision-making, purpose clarification beyond profit, and comprehensive stakeholder mapping
+- Historical Impact Research (top right): Features community-led impact documentation, ecological damage evaluation, and economic extraction analysis
+- Legal and Regulatory Preparation (bottom center): Covers legal counsel engagement, compliance planning, and community relationship building
+Internal arrows show progression from assessment activities to legal preparation.
+
+PHASE 2: STRUCTURE TRANSFORMATION (Months 6-18, Purple Theme):
+Positioned in the center with light purple gradient background and dark purple borders.
+Contains three main transformation areas:
+- Charter and Legal Structure (top left): Includes benefit corporation conversion, charter revision with stakeholder primacy, and steward-ownership implementation
+- Stakeholder Council Setup (top right): Features representative selection processes, governance training in consensus methods, and authority transition from traditional board
+- Reparations Program Development (bottom center): Covers community council establishment, reparations index baseline calculation, and payment system development with community control
+Internal arrows show coordination between charter work and stakeholder council establishment, flowing to reparations program.
+
+PHASE 3: OPERATIONS INTEGRATION (Months 18-36, Green Theme):
+Located on the right side with light green gradient background and dark green borders.
+Contains three integration components:
+- Policy Development (top left): Includes stakeholder-driven policy creation, environmental stewardship standards, and supply chain transformation
+- Performance Measurement (top right): Features LMCI tracking implementation, reparations index monitoring, and mission alignment evaluation
+- Continuous Improvement (bottom center): Covers quarterly stakeholder feedback, annual governance review, and adaptive management systems
+Internal arrows show policy development informing performance measurement, both feeding into continuous improvement.
+
+FLOW CONNECTIONS:
+Gray arrows with arrowheads connect the phases horizontally, showing the sequential progression from foundation through transformation to integration.
+
+MILESTONES SECTION (Yellow Background):
+A horizontal timeline below the phases shows five key milestones:
+- Month 6 (blue dot): Governance audit complete
+- Month 12 (purple dot): B Corp status achieved  
+- Month 18 (purple dot): Stakeholder council operational
+- Month 24 (green dot): LMCI baseline established
+- Month 36 (green dot): Full regenerative governance implemented
+
+CRITICAL SUCCESS FACTORS (Light Purple Background):
+Five boxes display essential elements for successful transformation:
+- Community Leadership: Authentic partnerships and community-controlled reparations
+- Legal Protection: Mission lock in charter and steward ownership structure
+- Democratic Process: Consensus training, conflict resolution, and facilitation support
+- Transparency: Open book accounting, regular reporting, and stakeholder access
+- Adaptive Management: Continuous improvement processes
+
+RISK MITIGATION NOTE (Light Red Background):
+Warning section highlighting potential 6-month delays for complex legal structures, 20% budget contingency for community engagement, and emphasis that success depends on authentic community partnerships rather than mere consultation.
+
+FOOTER INFORMATION:
+Bottom text explains that the timeline shows parallel processes, with legal and community engagement continuing throughout all phases, and notes that integration with GGF systems (Aurora Accord, Work in Liberation, Hearts/Leaves) occurs primarily in Phase 3.
+
+The flowchart uses color coding, clear typography, and logical flow to guide readers through the complex governance transformation while highlighting critical dependencies, timelines, and success factors for effective implementation.
+  </desc>
+  <!-- Background and grid -->
+  <defs
+     id="defs6">
+    <pattern
+       id="grid"
+       width="50"
+       height="50"
+       patternUnits="userSpaceOnUse">
+      <path
+         d="M 50 0 L 0 0 0 50"
+         fill="none"
+         stroke="#f0f0f0"
+         stroke-width="1"
+         id="path1" />
+    </pattern>
+    <!-- Gradient definitions -->
+    <linearGradient
+       id="phase1Gradient"
+       x1="27.626323"
+       y1="247.26417"
+       x2="132.52628"
+       y2="352.16413"
+       gradientTransform="matrix(2.7600919,0,0,0.39938216,-20.545132,0.29951833)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color:#e3f2fd;stop-opacity:1"
+         id="stop1" />
+      <stop
+         offset="100%"
+         style="stop-color:#bbdefb;stop-opacity:1"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="phase2Gradient"
+       x1="147.74077"
+       y1="247.26417"
+       x2="252.64072"
+       y2="352.16413"
+       gradientTransform="matrix(2.6967315,0,0,0.39961865,-39.860712,0.22863655)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color:#f3e5f5;stop-opacity:1"
+         id="stop3" />
+      <stop
+         offset="100%"
+         style="stop-color:#e1bee7;stop-opacity:1"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="phase3Gradient"
+       x1="267.85522"
+       y1="247.26417"
+       x2="372.75517"
+       y2="352.16413"
+       gradientTransform="scale(2.4976179,0.4003815)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color:#e8f5e8;stop-opacity:1"
+         id="stop5" />
+      <stop
+         offset="100%"
+         style="stop-color:#c8e6c9;stop-opacity:1"
+         id="stop6" />
+    </linearGradient>
+    <!-- Arrow marker -->
+    <marker
+       id="arrowhead"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#666"
+         id="polygon6" />
+    </marker>
+  </defs>
+  <rect
+     width="100%"
+     height="100%"
+     fill="url(#grid)"
+     opacity="0.3"
+     id="rect6" />
+  <!-- Timeline header -->
+  <rect
+     x="50"
+     y="20"
+     width="900"
+     height="60"
+     fill="#2c3e50"
+     rx="5"
+     id="rect7" />
+  <text
+     x="500"
+     y="40"
+     text-anchor="middle"
+     fill="white"
+     font-size="20"
+     font-weight="bold"
+     id="text7">
+    Module 1: Regenerative Core Implementation Pathway
+  </text>
+  <text
+     x="500"
+     y="65"
+     text-anchor="middle"
+     fill="white"
+     font-size="14"
+     id="text8">
+    36-Month Transformation Journey to Stakeholder Governance
+  </text>
+  <!-- Phase 1: Foundation & Assessment (Months 1-6) -->
+  <rect
+     x="56.81115"
+     y="100.04992"
+     width="287.32333"
+     height="39.900162"
+     fill="url(#phase1Gradient)"
+     stroke="#1976d2"
+     stroke-width="2.09984"
+     rx="5.5254483"
+     id="rect8"
+     style="fill:url(#phase1Gradient)" />
+  <text
+     x="200"
+     y="115"
+     text-anchor="middle"
+     font-size="14px"
+     font-weight="bold"
+     fill="#1976d2"
+     id="text9">Phase 1: Foundation &amp; Assessment</text>
+  <text
+     x="200"
+     y="132"
+     text-anchor="middle"
+     font-size="12px"
+     fill="#1976d2"
+     id="text10">Months 1-6</text>
+  <rect
+     x="80"
+     y="160"
+     width="110"
+     height="80"
+     fill="#e3f2fd"
+     stroke="#1976d2"
+     stroke-width="1"
+     rx="3"
+     id="rect10" />
+  <text
+     x="135"
+     y="175"
+     text-anchor="middle"
+     font-size="11px"
+     font-weight="bold"
+     id="text11">Governance</text>
+  <text
+     x="135"
+     y="188"
+     text-anchor="middle"
+     font-size="11px"
+     font-weight="bold"
+     id="text12">Assessment</text>
+  <text
+     x="135"
+     y="205"
+     text-anchor="middle"
+     font-size="9px"
+     id="text13">• Current audit</text>
+  <text
+     x="135"
+     y="218"
+     text-anchor="middle"
+     font-size="9px"
+     id="text14">• Purpose clarity</text>
+  <text
+     x="135"
+     y="231"
+     text-anchor="middle"
+     font-size="9px"
+     id="text15">• Stakeholder map</text>
+  <rect
+     x="210"
+     y="160"
+     width="110"
+     height="80"
+     fill="#e3f2fd"
+     stroke="#1976d2"
+     stroke-width="1"
+     rx="3"
+     id="rect15" />
+  <text
+     x="265"
+     y="175"
+     text-anchor="middle"
+     font-size="11px"
+     font-weight="bold"
+     id="text16">Historical</text>
+  <text
+     x="265"
+     y="188"
+     text-anchor="middle"
+     font-size="11px"
+     font-weight="bold"
+     id="text17">Impact Research</text>
+  <text
+     x="265"
+     y="205"
+     text-anchor="middle"
+     font-size="9px"
+     id="text18">• Community-led</text>
+  <text
+     x="265"
+     y="218"
+     text-anchor="middle"
+     font-size="9px"
+     id="text19">• Ecological audit</text>
+  <text
+     x="265"
+     y="231"
+     text-anchor="middle"
+     font-size="9px"
+     id="text20">• Economic analysis</text>
+  <rect
+     x="145"
+     y="260"
+     width="110"
+     height="80"
+     fill="#e3f2fd"
+     stroke="#1976d2"
+     stroke-width="1"
+     rx="3"
+     id="rect20" />
+  <text
+     x="200"
+     y="275"
+     text-anchor="middle"
+     font-size="11px"
+     font-weight="bold"
+     id="text21">Legal &amp;</text>
+  <text
+     x="200"
+     y="288"
+     text-anchor="middle"
+     font-size="11px"
+     font-weight="bold"
+     id="text22">Regulatory Prep</text>
+  <text
+     x="200"
+     y="305"
+     text-anchor="middle"
+     font-size="9px"
+     id="text23">• Legal counsel</text>
+  <text
+     x="200"
+     y="318"
+     text-anchor="middle"
+     font-size="9px"
+     id="text24">• Compliance plan</text>
+  <text
+     x="200"
+     y="331"
+     text-anchor="middle"
+     font-size="9px"
+     id="text25">• Community build</text>
+  <!-- Phase 2: Structure Transformation (Months 6-18) -->
+  <rect
+     x="359.6362"
+     y="100.0381"
+     width="280.72757"
+     height="39.92379"
+     fill="url(#phase2Gradient)"
+     stroke="#7b1fa2"
+     stroke-width="2.07621"
+     rx="5.3986068"
+     id="rect25"
+     style="fill:url(#phase2Gradient)" />
+  <text
+     x="500"
+     y="115"
+     text-anchor="middle"
+     font-size="14px"
+     font-weight="bold"
+     fill="#7b1fa2"
+     id="text26">Phase 2: Structure Transformation</text>
+  <text
+     x="500"
+     y="132"
+     text-anchor="middle"
+     font-size="12px"
+     fill="#7b1fa2"
+     id="text27">Months 6-18</text>
+  <rect
+     x="380"
+     y="160"
+     width="110"
+     height="80"
+     fill="#f3e5f5"
+     stroke="#7b1fa2"
+     stroke-width="1"
+     rx="3"
+     id="rect27" />
+  <text
+     x="435"
+     y="175"
+     text-anchor="middle"
+     font-size="11px"
+     font-weight="bold"
+     id="text28">Charter &amp;</text>
+  <text
+     x="435"
+     y="188"
+     text-anchor="middle"
+     font-size="11px"
+     font-weight="bold"
+     id="text29">Legal Structure</text>
+  <text
+     x="435"
+     y="205"
+     text-anchor="middle"
+     font-size="9px"
+     id="text30">• B Corp conversion</text>
+  <text
+     x="435"
+     y="218"
+     text-anchor="middle"
+     font-size="9px"
+     id="text31">• Charter revision</text>
+  <text
+     x="435"
+     y="231"
+     text-anchor="middle"
+     font-size="9px"
+     id="text32">• Steward ownership</text>
+  <rect
+     x="510"
+     y="160"
+     width="110"
+     height="80"
+     fill="#f3e5f5"
+     stroke="#7b1fa2"
+     stroke-width="1"
+     rx="3"
+     id="rect32" />
+  <text
+     x="565"
+     y="175"
+     text-anchor="middle"
+     font-size="11px"
+     font-weight="bold"
+     id="text33">Stakeholder</text>
+  <text
+     x="565"
+     y="188"
+     text-anchor="middle"
+     font-size="11px"
+     font-weight="bold"
+     id="text34">Council Setup</text>
+  <text
+     x="565"
+     y="205"
+     text-anchor="middle"
+     font-size="9px"
+     id="text35">• Representative selection</text>
+  <text
+     x="565"
+     y="218"
+     text-anchor="middle"
+     font-size="9px"
+     id="text36">• Governance training</text>
+  <text
+     x="565"
+     y="231"
+     text-anchor="middle"
+     font-size="9px"
+     id="text37">• Authority transition</text>
+  <rect
+     x="445"
+     y="260"
+     width="110"
+     height="80"
+     fill="#f3e5f5"
+     stroke="#7b1fa2"
+     stroke-width="1"
+     rx="3"
+     id="rect37" />
+  <text
+     x="500"
+     y="275"
+     text-anchor="middle"
+     font-size="11px"
+     font-weight="bold"
+     id="text38">Reparations</text>
+  <text
+     x="500"
+     y="288"
+     text-anchor="middle"
+     font-size="11px"
+     font-weight="bold"
+     id="text39">Program Dev</text>
+  <text
+     x="500"
+     y="305"
+     text-anchor="middle"
+     font-size="9px"
+     id="text40">• Community councils</text>
+  <text
+     x="500"
+     y="318"
+     text-anchor="middle"
+     font-size="9px"
+     id="text41">• Index baseline</text>
+  <text
+     x="500"
+     y="331"
+     text-anchor="middle"
+     font-size="9px"
+     id="text42">• Payment systems</text>
+  <!-- Phase 3: Operations Integration (Months 18-36) -->
+  <rect
+     x="670"
+     y="100"
+     width="260"
+     height="40"
+     fill="url(#phase3Gradient)"
+     stroke="#388e3c"
+     stroke-width="2"
+     rx="5"
+     id="rect42"
+     style="fill:url(#phase3Gradient)" />
+  <text
+     x="800"
+     y="115"
+     text-anchor="middle"
+     font-size="14px"
+     font-weight="bold"
+     fill="#388e3c"
+     id="text43">Phase 3: Operations Integration</text>
+  <text
+     x="800"
+     y="132"
+     text-anchor="middle"
+     font-size="12px"
+     fill="#388e3c"
+     id="text44">Months 18-36</text>
+  <rect
+     x="680"
+     y="160"
+     width="110"
+     height="80"
+     fill="#e8f5e8"
+     stroke="#388e3c"
+     stroke-width="1"
+     rx="3"
+     id="rect44" />
+  <text
+     x="735"
+     y="175"
+     text-anchor="middle"
+     font-size="11px"
+     font-weight="bold"
+     id="text45">Policy</text>
+  <text
+     x="735"
+     y="188"
+     text-anchor="middle"
+     font-size="11px"
+     font-weight="bold"
+     id="text46">Development</text>
+  <text
+     x="735"
+     y="205"
+     text-anchor="middle"
+     font-size="9px"
+     id="text47">• Stakeholder-driven</text>
+  <text
+     x="735"
+     y="218"
+     text-anchor="middle"
+     font-size="9px"
+     id="text48">• Environmental</text>
+  <text
+     x="735"
+     y="231"
+     text-anchor="middle"
+     font-size="9px"
+     id="text49">• Supply chain</text>
+  <rect
+     x="810"
+     y="160"
+     width="110"
+     height="80"
+     fill="#e8f5e8"
+     stroke="#388e3c"
+     stroke-width="1"
+     rx="3"
+     id="rect49" />
+  <text
+     x="865"
+     y="175"
+     text-anchor="middle"
+     font-size="11px"
+     font-weight="bold"
+     id="text50">Performance</text>
+  <text
+     x="865"
+     y="188"
+     text-anchor="middle"
+     font-size="11px"
+     font-weight="bold"
+     id="text51">Measurement</text>
+  <text
+     x="865"
+     y="205"
+     text-anchor="middle"
+     font-size="9px"
+     id="text52">• LMCI tracking</text>
+  <text
+     x="865"
+     y="218"
+     text-anchor="middle"
+     font-size="9px"
+     id="text53">• Reparations index</text>
+  <text
+     x="865"
+     y="231"
+     text-anchor="middle"
+     font-size="9px"
+     id="text54">• Mission alignment</text>
+  <rect
+     x="745"
+     y="260"
+     width="110"
+     height="80"
+     fill="#e8f5e8"
+     stroke="#388e3c"
+     stroke-width="1"
+     rx="3"
+     id="rect54" />
+  <text
+     x="800"
+     y="275"
+     text-anchor="middle"
+     font-size="11px"
+     font-weight="bold"
+     id="text55">Continuous</text>
+  <text
+     x="800"
+     y="288"
+     text-anchor="middle"
+     font-size="11px"
+     font-weight="bold"
+     id="text56">Improvement</text>
+  <text
+     x="800"
+     y="305"
+     text-anchor="middle"
+     font-size="9px"
+     id="text57">• Quarterly feedback</text>
+  <text
+     x="800"
+     y="318"
+     text-anchor="middle"
+     font-size="9px"
+     id="text58">• Annual review</text>
+  <text
+     x="800"
+     y="331"
+     text-anchor="middle"
+     font-size="9px"
+     id="text59">• Adaptive mgmt</text>
+  <!-- Flow arrows between phases -->
+  <path
+     d="M 330 200 L 370 200"
+     stroke="#666"
+     stroke-width="2"
+     fill="none"
+     marker-end="url(#arrowhead)"
+     id="path59" />
+  <path
+     d="M 630 200 L 670 200"
+     stroke="#666"
+     stroke-width="2"
+     fill="none"
+     marker-end="url(#arrowhead)"
+     id="path60" />
+  <!-- Internal phase flow arrows -->
+  <!-- Phase 1 internal flows -->
+  <path
+     d="M 200 240 L 200 260"
+     stroke="#1976d2"
+     stroke-width="1"
+     fill="none"
+     marker-end="url(#arrowhead)"
+     id="path61" />
+  <!-- Phase 2 internal flows -->
+  <path
+     d="M 500 240 L 500 260"
+     stroke="#7b1fa2"
+     stroke-width="1"
+     fill="none"
+     marker-end="url(#arrowhead)"
+     id="path62" />
+  <!-- Phase 3 internal flows -->
+  <path
+     d="M 800 240 L 800 260"
+     stroke="#388e3c"
+     stroke-width="1"
+     fill="none"
+     marker-end="url(#arrowhead)"
+     id="path63" />
+  <!-- Key milestones -->
+  <g
+     id="milestones">
+    <rect
+       x="50"
+       y="380"
+       width="900"
+       height="100"
+       fill="#fff9c4"
+       stroke="#f57f17"
+       stroke-width="2"
+       rx="5"
+       id="rect63" />
+    <text
+       x="500"
+       y="400"
+       text-anchor="middle"
+       font-size="16"
+       font-weight="bold"
+       fill="#f57f17"
+       id="text63">
+      Key Milestones &amp; Success Indicators
+    </text>
+    <!-- Milestone markers -->
+    <circle
+       cx="150"
+       cy="430"
+       r="6"
+       fill="#1976d2"
+       id="circle63" />
+    <text
+       x="150"
+       y="450"
+       text-anchor="middle"
+       font-size="10"
+       font-weight="bold"
+       id="text64">Month 6</text>
+    <text
+       x="150"
+       y="465"
+       text-anchor="middle"
+       font-size="9"
+       id="text65">Governance audit</text>
+    <text
+       x="150"
+       y="475"
+       text-anchor="middle"
+       font-size="9"
+       id="text66">complete</text>
+    <circle
+       cx="350"
+       cy="430"
+       r="6"
+       fill="#7b1fa2"
+       id="circle66" />
+    <text
+       x="350"
+       y="450"
+       text-anchor="middle"
+       font-size="10"
+       font-weight="bold"
+       id="text67">Month 12</text>
+    <text
+       x="350"
+       y="465"
+       text-anchor="middle"
+       font-size="9"
+       id="text68">B Corp status</text>
+    <text
+       x="350"
+       y="475"
+       text-anchor="middle"
+       font-size="9"
+       id="text69">achieved</text>
+    <circle
+       cx="550"
+       cy="430"
+       r="6"
+       fill="#7b1fa2"
+       id="circle69" />
+    <text
+       x="550"
+       y="450"
+       text-anchor="middle"
+       font-size="10"
+       font-weight="bold"
+       id="text70">Month 18</text>
+    <text
+       x="550"
+       y="465"
+       text-anchor="middle"
+       font-size="9"
+       id="text71">Stakeholder council</text>
+    <text
+       x="550"
+       y="475"
+       text-anchor="middle"
+       font-size="9"
+       id="text72">operational</text>
+    <circle
+       cx="750"
+       cy="430"
+       r="6"
+       fill="#388e3c"
+       id="circle72" />
+    <text
+       x="750"
+       y="450"
+       text-anchor="middle"
+       font-size="10"
+       font-weight="bold"
+       id="text73">Month 24</text>
+    <text
+       x="750"
+       y="465"
+       text-anchor="middle"
+       font-size="9"
+       id="text74">LMCI baseline</text>
+    <text
+       x="750"
+       y="475"
+       text-anchor="middle"
+       font-size="9"
+       id="text75">established</text>
+    <circle
+       cx="850"
+       cy="430"
+       r="6"
+       fill="#388e3c"
+       id="circle75" />
+    <text
+       x="850"
+       y="450"
+       text-anchor="middle"
+       font-size="10"
+       font-weight="bold"
+       id="text76">Month 36</text>
+    <text
+       x="850"
+       y="465"
+       text-anchor="middle"
+       font-size="9"
+       id="text77">Full regenerative</text>
+    <text
+       x="850"
+       y="475"
+       text-anchor="middle"
+       font-size="9"
+       id="text78">governance</text>
+  </g>
+  <!-- Critical success factors -->
+  <g
+     id="success-factors">
+    <rect
+       x="50"
+       y="520"
+       width="900"
+       height="120"
+       fill="#f3e5f5"
+       stroke="#7b1fa2"
+       stroke-width="2"
+       rx="5"
+       id="rect78" />
+    <text
+       x="500"
+       y="545"
+       text-anchor="middle"
+       font-size="16"
+       font-weight="bold"
+       fill="#7b1fa2"
+       id="text79">
+      Critical Success Factors
+    </text>
+    <!-- Success factor boxes -->
+    <rect
+       x="70"
+       y="560"
+       width="170"
+       height="65"
+       fill="white"
+       stroke="#7b1fa2"
+       stroke-width="1"
+       rx="3"
+       id="rect79" />
+    <text
+       x="155"
+       y="575"
+       text-anchor="middle"
+       font-size="11"
+       font-weight="bold"
+       id="text80">Community Leadership</text>
+    <text
+       x="155"
+       y="590"
+       text-anchor="middle"
+       font-size="9"
+       id="text81">• Authentic partnerships</text>
+    <text
+       x="155"
+       y="603"
+       text-anchor="middle"
+       font-size="9"
+       id="text82">• Community-controlled</text>
+    <text
+       x="155"
+       y="616"
+       text-anchor="middle"
+       font-size="9"
+       id="text83">reparations</text>
+    <rect
+       x="260"
+       y="560"
+       width="170"
+       height="65"
+       fill="white"
+       stroke="#7b1fa2"
+       stroke-width="1"
+       rx="3"
+       id="rect83" />
+    <text
+       x="345"
+       y="575"
+       text-anchor="middle"
+       font-size="11"
+       font-weight="bold"
+       id="text84">Legal Protection</text>
+    <text
+       x="345"
+       y="590"
+       text-anchor="middle"
+       font-size="9"
+       id="text85">• Mission lock in charter</text>
+    <text
+       x="345"
+       y="603"
+       text-anchor="middle"
+       font-size="9"
+       id="text86">• Steward ownership</text>
+    <text
+       x="345"
+       y="616"
+       text-anchor="middle"
+       font-size="9"
+       id="text87">structure</text>
+    <rect
+       x="450"
+       y="560"
+       width="170"
+       height="65"
+       fill="white"
+       stroke="#7b1fa2"
+       stroke-width="1"
+       rx="3"
+       id="rect87" />
+    <text
+       x="535"
+       y="575"
+       text-anchor="middle"
+       font-size="11"
+       font-weight="bold"
+       id="text88">Democratic Process</text>
+    <text
+       x="535"
+       y="590"
+       text-anchor="middle"
+       font-size="9"
+       id="text89">• Consensus training</text>
+    <text
+       x="535"
+       y="603"
+       text-anchor="middle"
+       font-size="9"
+       id="text90">• Conflict resolution</text>
+    <text
+       x="535"
+       y="616"
+       text-anchor="middle"
+       font-size="9"
+       id="text91">• Facilitation support</text>
+    <rect
+       x="640"
+       y="560"
+       width="170"
+       height="65"
+       fill="white"
+       stroke="#7b1fa2"
+       stroke-width="1"
+       rx="3"
+       id="rect91" />
+    <text
+       x="725"
+       y="575"
+       text-anchor="middle"
+       font-size="11"
+       font-weight="bold"
+       id="text92">Transparency</text>
+    <text
+       x="725"
+       y="590"
+       text-anchor="middle"
+       font-size="9"
+       id="text93">• Open book accounting</text>
+    <text
+       x="725"
+       y="603"
+       text-anchor="middle"
+       font-size="9"
+       id="text94">• Regular reporting</text>
+    <text
+       x="725"
+       y="616"
+       text-anchor="middle"
+       font-size="9"
+       id="text95">• Stakeholder access</text>
+    <rect
+       x="830"
+       y="560"
+       width="100"
+       height="65"
+       fill="white"
+       stroke="#7b1fa2"
+       stroke-width="1"
+       rx="3"
+       id="rect95" />
+    <text
+       x="880"
+       y="575"
+       text-anchor="middle"
+       font-size="11"
+       font-weight="bold"
+       id="text96">Adaptive</text>
+    <text
+       x="880"
+       y="588"
+       text-anchor="middle"
+       font-size="11"
+       font-weight="bold"
+       id="text97">Management</text>
+    <text
+       x="880"
+       y="603"
+       text-anchor="middle"
+       font-size="9"
+       id="text98">• Continuous</text>
+    <text
+       x="880"
+       y="616"
+       text-anchor="middle"
+       font-size="9"
+       id="text99">improvement</text>
+  </g>
+  <!-- Risk mitigation note -->
+  <rect
+     x="9.3602104"
+     y="660.02216"
+     width="982.22516"
+     height="59.955704"
+     fill="#ffebee"
+     stroke="#d32f2f"
+     stroke-width="1.0443"
+     rx="5.4568067"
+     id="rect99" />
+  <text
+     x="500"
+     y="680"
+     text-anchor="middle"
+     font-size="14px"
+     font-weight="bold"
+     fill="#d32f2f"
+     id="text100">Risk Mitigation: Expect 6-month delays for complex legal structures. Budget 20% contingency for community engagement.</text>
+  <text
+     x="500"
+     y="700"
+     text-anchor="middle"
+     font-size="12px"
+     fill="#d32f2f"
+     id="text101">Success depends on authentic community partnerships, not just consultation.</text>
+  <!-- Footer -->
+  <text
+     x="500"
+     y="740"
+     text-anchor="middle"
+     font-size="12"
+     fill="#666"
+     id="text102">
+    Timeline shows parallel processes. Legal and community engagement continue throughout all phases.
+  </text>
+  <text
+     x="500"
+     y="760"
+     text-anchor="middle"
+     font-size="10"
+     fill="#999"
+     id="text103">
+    Integration with GGF systems (Aurora Accord, Work in Liberation, Hearts/Leaves) occurs in Phase 3
+  </text>
+</svg>

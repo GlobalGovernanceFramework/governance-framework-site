@@ -281,6 +281,10 @@
   <p>{$t('common.notices.section.frameworks.text')}</p>
 </SectionNotice>
 
+<SectionNotice type="info" title="Current Status: Internal Review (V0.9 Draft)" customContent={true} dismissible={true}>
+  <p>This framework is a comprehensive architectural blueprint. To ensure the highest level of cohesion and integrity, it is currently undergoing a thorough internal review. This foundational work is essential to prepare the materials for the vital next phase of community engagement and co-creation, particularly with Indigenous leaders and governance practitioners. We are meticulously refining all documentation and tools to ensure they are ready for collaborative development.</p>
+</SectionNotice>
+
 {#if mounted}
   <div class="documentation-container">
     {#if !isPrintMode}

@@ -136,6 +136,9 @@
       "label": "Under granskning",
       "description": "Nästan färdigt utkast som genomgår granskning"
     },
+    "community-review": {
+      "label": "Utkast till granskning av gemenskapen"
+    },
     "ready": {
       "label": "Färdig",
       "description": "Fullt utvecklad och redo för implementering"
@@ -298,6 +301,7 @@
       "frameworkTitles": {
         "treatyForOurOnlyHome": "Fördraget för vårt enda hem",
         "institutionalRegeneration": "Institutionell förnyelse",
+        "regenerativeEnterprise": "Regenerativa företag",
         "climateAndEnergyGovernance": "Klimat och energistyrning",
         "peaceAndConflictResolution": "Fred och konflikthantering",
         "indigenousGovernanceAndTraditionalKnowledge": "Ursprungsfolk & traditionell kunskap",
@@ -341,7 +345,7 @@
         "spaceGovernance": "Rymdförvaltning",
         "existentialRiskGovernance": "Styrning av existentiella risker",
         "consciousnessAndInnerDevelopment": "Medvetande & inre utveckling",
-        "integratedMetaGovernance": "Integrerad metagovernance",
+        "integratedMetaGovernance": "Integrerad metastyrning",
         "wiseDecisionMakingProtocol": "Klokt beslutsfattande och integrationsprotokoll",
         "implementationMethodsAndTools": "Metoder & verktyg för implementering",
         "wisdomGovernance": "Vishetsstyrning"

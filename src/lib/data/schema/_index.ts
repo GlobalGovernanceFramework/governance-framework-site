@@ -8,6 +8,7 @@
 // Import all cluster data
 import { constitutionalFoundationEntities, constitutionalFoundationRelationships } from './cluster.constitutional-foundation';
 import { institutionalRegenerationEntities, institutionalRegenerationRelationships } from './cluster.institutional-regeneration';
+import { regenerativeEnterpriseEntities, regenerativeEnterpriseRelationships } from './cluster.regenerative-enterprise';
 import { governanceOSEntities, governanceOSRelationships } from './cluster.governance-os';
 import { ethicalOSEntities, ethicalOSRelationships } from './cluster.ethical-os';
 import { justiceOSEntities, justiceOSRelationships } from './cluster.justice-os';
@@ -160,6 +161,7 @@ const completeApplicationLayerRelationships: GgfRelationship[] = [
 export const allEntities: GgfEntity[] = [
   ...constitutionalFoundationEntities,
   ...institutionalRegenerationEntities,
+  ...regenerativeEnterpriseEntities,
   ...governanceOSEntities,
   ...ethicalOSEntities,
   ...justiceOSEntities,
@@ -178,6 +180,7 @@ export const allEntities: GgfEntity[] = [
 export const allRelationships: GgfRelationship[] = [
   ...constitutionalFoundationRelationships,
   ...institutionalRegenerationRelationships,
+  ...regenerativeEnterpriseRelationships,
   ...governanceOSRelationships,
   ...ethicalOSRelationships,
   ...justiceOSRelationships,
@@ -272,6 +275,14 @@ export const clusters: GgfCluster[] = [
   },
 
   // TIER 2: FOUNDATIONAL APPLICATIONS
+  {
+    id: 'regenerative_enterprise_cluster',
+    name: 'Regenerative Enterprise System',
+    description: 'Voluntary framework for transforming corporate purpose to align with planetary well-being through systemic business model innovation',
+    tier: 2,
+    entities: regenerativeEnterpriseEntities.map(e => e.id),
+    color: '#059669'
+  },
   {
     id: 'ecological_life_support_cluster',
     name: 'Ecological Life Support Systems',

@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="800"
+   height="600"
+   viewBox="0 0 800 600"
+   version="1.1"
+   id="value-retention-pyramid-diagram"
+   role="img"
+   aria-labelledby="pyramid-title"
+   aria-describedby="pyramid-brief pyramid-detailed"
+   sodipodi:docname="module-2-value-retention-pyramid.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview43"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.41"
+     inkscape:cx="400.35461"
+     inkscape:cy="300"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="value-retention-pyramid-diagram" />
+  <!-- Main title -->
+  <title
+     id="pyramid-title">Value Retention Pyramid - Circular Economy Hierarchy</title>
+  <!-- Brief description for quick context -->
+  <desc
+     id="pyramid-brief">A pyramid diagram showing the hierarchy of circular economy strategies from highest to lowest value retention. From top to bottom: Reuse (highest value), Refurbish and Remanufacture (high value), Recycle (medium value), and Recovery (lowest value but still better than disposal).</desc>
+  <!-- Detailed description for comprehensive understanding -->
+  <desc
+     id="pyramid-detailed">
+This pyramid illustrates the value hierarchy for circular economy strategies, guiding enterprises to prioritize approaches that maintain maximum material and economic value:
+
+Level 1 - Reuse (Top, Highest Value):
+Products are used again for their original purpose without any processing or modification. This maintains 100% of the original value and requires minimal energy input. Examples include refillable bottles, reusable shipping containers, and second-hand goods markets.
+
+Level 2 - Refurbish and Remanufacture (High Value):
+Refurbish involves restoring products to working condition with minimal intervention, such as cleaning, minor repairs, or software updates. Remanufacture means fully restoring products to like-new condition through comprehensive restoration processes. Both approaches maintain high value while extending product lifecycles significantly.
+
+Level 3 - Recycle (Medium Value): 
+Materials are processed into new products, though this typically involves some value loss through downcycling or energy-intensive processing. However, recycling still captures significant material value and prevents waste while reducing demand for virgin resources.
+
+Level 4 - Recovery (Base, Lowest Value):
+Energy recovery through processes like waste-to-energy represents the last resort before disposal. While this captures some value from materials that cannot be reused, refurbished, or recycled, it should only be used when higher-value options are not feasible.
+
+The pyramid structure emphasizes that enterprises should always prioritize strategies higher on the pyramid, only moving to lower levels when upper options are exhausted. This hierarchy provides a practical decision-making framework for implementing circular economy principles while maximizing both environmental and economic benefits.
+  </desc>
+  <defs
+     id="defs8">
+    <!-- Gradients for pyramid levels -->
+    <linearGradient
+       id="reuseGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#2ecc71"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#27ae60"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="refurbishGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#3498db"
+         id="stop3" />
+      <stop
+         offset="100%"
+         stop-color="#2980b9"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="recycleGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#f39c12"
+         id="stop5" />
+      <stop
+         offset="100%"
+         stop-color="#e67e22"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       id="recoveryGradient"
+       x1="64.024641"
+       y1="1360.2526"
+       x2="194.1627"
+       y2="1490.3906"
+       gradientTransform="scale(3.0985253,0.32273418)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#e74c3c"
+         id="stop7" />
+      <stop
+         offset="100%"
+         stop-color="#c0392b"
+         id="stop8" />
+    </linearGradient>
+    <!-- Arrow marker for value flow -->
+    <marker
+       id="valueArrow"
+       markerWidth="12"
+       markerHeight="8"
+       refX="11"
+       refY="4"
+       orient="auto"
+       markerUnits="strokeWidth">
+      <polygon
+         points="0 0, 12 4, 0 8"
+         fill="#34495e"
+         id="polygon8" />
+    </marker>
+  </defs>
+  <!-- Background -->
+  <rect
+     width="800"
+     height="600"
+     fill="#f8fffe"
+     aria-hidden="true"
+     id="rect8" />
+  <!-- Title -->
+  <text
+     x="400"
+     y="40"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="24"
+     font-weight="bold"
+     fill="#2c3e50"
+     aria-hidden="true"
+     id="text8">Value Retention Pyramid</text>
+  <text
+     x="400"
+     y="65"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     fill="#7f8c8d"
+     aria-hidden="true"
+     id="text9">Circular Economy Hierarchy</text>
+  <!-- Value retention arrow -->
+  <g
+     role="img"
+     aria-label="Arrow indicating increasing value retention from bottom to top"
+     id="g10">
+    <line
+       x1="120"
+       y1="500"
+       x2="120"
+       y2="150"
+       stroke="#34495e"
+       stroke-width="3"
+       marker-end="url(#valueArrow)"
+       id="line9" />
+    <text
+       x="90"
+       y="325"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       font-weight="bold"
+       fill="#34495e"
+       transform="rotate(-90, 90, 325)"
+       aria-hidden="true"
+       id="text10">VALUE RETENTION</text>
+  </g>
+  <!-- Level 4: Recovery (Base) -->
+  <polygon
+     points="580,440 220,440 200,480 600,480 "
+     fill="url(#recoveryGradient)"
+     stroke="#c0392b"
+     stroke-width="2"
+     id="polygon10"
+     style="fill:url(#recoveryGradient)" />
+  <text
+     x="400"
+     y="459"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text11">RECOVERY</text>
+  <text
+     x="400"
+     y="474"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text12">Energy recovery • Last resort</text>
+  <!-- Level 3: Recycle -->
+  <g
+     role="img"
+     aria-label="Recycle level - medium value retention, materials processed into new products"
+     id="g15">
+    <polygon
+       points="240,440 560,440 520,360 280,360"
+       fill="url(#recycleGradient)"
+       stroke="#e67e22"
+       stroke-width="2"
+       id="polygon12" />
+    <text
+       x="400"
+       y="390"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="18"
+       font-weight="bold"
+       fill="white"
+       aria-hidden="true"
+       id="text13">RECYCLE</text>
+    <text
+       x="400"
+       y="405"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="white"
+       aria-hidden="true"
+       id="text14">Materials into new products</text>
+    <text
+       x="400"
+       y="420"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="white"
+       aria-hidden="true"
+       id="text15">Some value loss</text>
+  </g>
+  <!-- Level 2: Refurbish/Remanufacture -->
+  <g
+     role="img"
+     aria-label="Refurbish and Remanufacture level - high value retention, products restored to working or like-new condition"
+     id="g19">
+    <polygon
+       points="280,360 520,360 480,280 320,280"
+       fill="url(#refurbishGradient)"
+       stroke="#2980b9"
+       stroke-width="2"
+       id="polygon15" />
+    <text
+       x="400"
+       y="305"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="18"
+       font-weight="bold"
+       fill="white"
+       aria-hidden="true"
+       id="text16">REFURBISH</text>
+    <text
+       x="400"
+       y="320"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="18"
+       font-weight="bold"
+       fill="white"
+       aria-hidden="true"
+       id="text17">REMANUFACTURE</text>
+    <text
+       x="400"
+       y="335"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="white"
+       aria-hidden="true"
+       id="text18">Restore to working/like-new condition</text>
+    <text
+       x="400"
+       y="350"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="white"
+       aria-hidden="true"
+       id="text19">High value retention</text>
+  </g>
+  <!-- Level 1: Reuse (Top) -->
+  <g
+     role="img"
+     aria-label="Reuse level - highest value retention, products used again for original purpose without processing"
+     id="g22">
+    <polygon
+       points="320,280 480,280 440,200 360,200"
+       fill="url(#reuseGradient)"
+       stroke="#27ae60"
+       stroke-width="2"
+       id="polygon19" />
+    <text
+       x="400"
+       y="230"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="20"
+       font-weight="bold"
+       fill="white"
+       aria-hidden="true"
+       id="text20">REUSE</text>
+    <text
+       x="400"
+       y="245"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="white"
+       aria-hidden="true"
+       id="text21">Original purpose</text>
+    <text
+       x="400"
+       y="260"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="white"
+       aria-hidden="true"
+       id="text22">100% value retention</text>
+  </g>
+  <!-- Side descriptions -->
+  <g
+     role="img"
+     aria-label="Examples and characteristics for each pyramid level"
+     id="g37">
+    <!-- Recovery examples -->
+    <text
+       x="650"
+       y="450"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       font-weight="bold"
+       fill="#c0392b"
+       aria-hidden="true"
+       id="text23">Examples:</text>
+    <text
+       x="650"
+       y="465"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="#7f8c8d"
+       aria-hidden="true"
+       id="text24">• Waste-to-energy</text>
+    <text
+       x="650"
+       y="480"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="#7f8c8d"
+       aria-hidden="true"
+       id="text25">• Thermal recovery</text>
+    <!-- Recycle examples -->
+    <text
+       x="650"
+       y="380"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       font-weight="bold"
+       fill="#e67e22"
+       aria-hidden="true"
+       id="text26">Examples:</text>
+    <text
+       x="650"
+       y="395"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="#7f8c8d"
+       aria-hidden="true"
+       id="text27">• Plastic to fleece</text>
+    <text
+       x="650"
+       y="410"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="#7f8c8d"
+       aria-hidden="true"
+       id="text28">• Paper recycling</text>
+    <text
+       x="650"
+       y="425"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="#7f8c8d"
+       aria-hidden="true"
+       id="text29">• Metal reclamation</text>
+    <!-- Refurbish examples -->
+    <text
+       x="650"
+       y="310"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       font-weight="bold"
+       fill="#2980b9"
+       aria-hidden="true"
+       id="text30">Examples:</text>
+    <text
+       x="650"
+       y="325"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="#7f8c8d"
+       aria-hidden="true"
+       id="text31">• Smartphone refurb</text>
+    <text
+       x="650"
+       y="340"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="#7f8c8d"
+       aria-hidden="true"
+       id="text32">• Engine remanufacture</text>
+    <text
+       x="650"
+       y="355"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="#7f8c8d"
+       aria-hidden="true"
+       id="text33">• Furniture restoration</text>
+    <!-- Reuse examples -->
+    <text
+       x="650"
+       y="230"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       font-weight="bold"
+       fill="#27ae60"
+       aria-hidden="true"
+       id="text34">Examples:</text>
+    <text
+       x="650"
+       y="245"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="#7f8c8d"
+       aria-hidden="true"
+       id="text35">• Refillable bottles</text>
+    <text
+       x="650"
+       y="260"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="#7f8c8d"
+       aria-hidden="true"
+       id="text36">• Second-hand markets</text>
+    <text
+       x="650"
+       y="275"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="#7f8c8d"
+       aria-hidden="true"
+       id="text37">• Shipping containers</text>
+  </g>
+  <!-- Value indicators -->
+  <g
+     role="img"
+     aria-label="Value indicators showing economic and environmental benefit of each level"
+     id="g41">
+    <!-- Percentage indicators -->
+    <circle
+       cx="150"
+       cy="240"
+       r="20"
+       fill="#2ecc71"
+       stroke="white"
+       stroke-width="2"
+       aria-hidden="true"
+       id="circle37" />
+    <text
+       x="150"
+       y="245"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       font-weight="bold"
+       fill="white"
+       aria-hidden="true"
+       id="text38">100%</text>
+    <circle
+       cx="150"
+       cy="320"
+       r="18"
+       fill="#3498db"
+       stroke="white"
+       stroke-width="2"
+       aria-hidden="true"
+       id="circle38" />
+    <text
+       x="150"
+       y="325"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="11"
+       font-weight="bold"
+       fill="white"
+       aria-hidden="true"
+       id="text39">85%</text>
+    <circle
+       cx="150"
+       cy="400"
+       r="16"
+       fill="#f39c12"
+       stroke="white"
+       stroke-width="2"
+       aria-hidden="true"
+       id="circle39" />
+    <text
+       x="150"
+       y="405"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="10"
+       font-weight="bold"
+       fill="white"
+       aria-hidden="true"
+       id="text40">45%</text>
+    <circle
+       cx="150"
+       cy="460"
+       r="14"
+       fill="#e74c3c"
+       stroke="white"
+       stroke-width="2"
+       aria-hidden="true"
+       id="circle40" />
+    <text
+       x="150"
+       y="465"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="9"
+       font-weight="bold"
+       fill="white"
+       aria-hidden="true"
+       id="text41">15%</text>
+  </g>
+  <!-- Key principle callout -->
+  <g
+     role="img"
+     aria-label="Key principle highlighting priority order for circular strategies"
+     id="g43">
+    <rect
+       x="50"
+       y="520"
+       width="700"
+       height="60"
+       fill="#ecf0f1"
+       stroke="#bdc3c7"
+       stroke-width="2"
+       rx="10"
+       id="rect41" />
+    <text
+       x="400"
+       y="540"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="16"
+       font-weight="bold"
+       fill="#2c3e50"
+       aria-hidden="true"
+       id="text42">Key Principle</text>
+    <text
+       x="400"
+       y="560"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       fill="#34495e"
+       aria-hidden="true"
+       id="text43">Always prioritize strategies higher on the pyramid. Only move to lower levels when upper options are exhausted.</text>
+  </g>
+</svg>

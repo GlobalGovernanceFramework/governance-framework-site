@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="800"
+   height="600"
+   viewBox="0 0 800 600"
+   version="1.1"
+   id="svg36"
+   role="img"
+   aria-labelledby="flowchart-title" 
+   aria-describedby="flowchart-brief flowchart-detailed"
+   sodipodi:docname="module-0-justice-override-process-flowchart.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview36"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.41"
+     inkscape:cx="401.06383"
+     inkscape:cy="300"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg36" />
+  <!-- Main title -->
+  <title id="flowchart-title">Justice Override Process Flowchart</title>
+
+  <!-- Brief description for quick context -->
+  <desc id="flowchart-brief">A decision tree showing how AI decisions are reviewed for human oversight. The process begins with an AI system making a decision and includes decision points for basic needs assessment, mandatory human review, community consultation, and potential escalation to the GGF Digital Justice Tribunal.</desc>
+  
+  <!-- Detailed description for comprehensive understanding -->
+  <desc id="flowchart-detailed">
+This flowchart illustrates the Justice Override process ensuring human oversight of AI decisions affecting stakeholders. The process has six main stages:
+
+Stage 1: AI System Decision - An AI system makes an automated decision that may affect stakeholders.
+
+Stage 2: Basic Needs Assessment - A decision point evaluates whether the AI decision affects basic human needs such as housing, healthcare, employment, or education. If No, the decision proceeds directly to implementation without additional oversight. If Yes, mandatory human review is triggered.
+
+Stage 3: Human Review Process - When basic needs are affected, a 24-hour human review process begins, involving qualified human reviewers and community representatives.
+
+Stage 4: Community Consultation - Affected community members are consulted and provide input on the AI decision through democratic processes.
+
+Stage 5: Community Approval Assessment - A second decision point determines if the community approves the AI decision after human review. If Yes, the decision proceeds to implementation. If No, or if the community exercises its veto power, the decision goes to modification or rejection.
+
+Stage 6: Escalation Path - If the community veto or modification process fails to resolve harm, the case can escalate to the Global Governance Framework's Digital Justice Tribunal for final adjudication.
+
+The diagram emphasizes that community authority increases at each stage, with ultimate veto power residing in affected communities, and a fail-safe escalation to independent justice systems when local processes are insufficient.
+  </desc>
+
+  <!-- Background -->
+  <rect
+     width="800"
+     height="600"
+     fill="#f8fafc"
+     id="rect1" />
+  <text
+     x="318.67969"
+     y="143.98242"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#374151"
+     id="text26-6">NO</text>
+  <!-- Title -->
+  <text
+     x="400"
+     y="30"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="18"
+     font-weight="bold"
+     fill="#1e293b"
+     id="text1">Justice Override Process Flow</text>
+  <!-- AI Decision Box -->
+  <rect
+     x="50"
+     y="60"
+     width="120"
+     height="60"
+     rx="10"
+     fill="#3b82f6"
+     stroke="#1e40af"
+     stroke-width="2"
+     id="rect2" />
+  <text
+     x="110"
+     y="85"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="white"
+     font-weight="bold"
+     id="text2">AI System</text>
+  <text
+     x="110"
+     y="100"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="white"
+     id="text3">Makes Decision</text>
+  <!-- Decision Diamond -->
+  <polygon
+     points="250,90 310,70 370,90 310,110"
+     fill="#fbbf24"
+     stroke="#f59e0b"
+     stroke-width="2"
+     id="polygon3" />
+  <text
+     x="310"
+     y="85"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="10"
+     fill="#92400e"
+     id="text4">Affects Basic</text>
+  <text
+     x="310"
+     y="95"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="10"
+     fill="#92400e"
+     id="text5">Needs?</text>
+  <!-- Human Review Box -->
+  <rect
+     x="450"
+     y="60"
+     width="120"
+     height="60"
+     rx="10"
+     fill="#10b981"
+     stroke="#059669"
+     stroke-width="2"
+     id="rect5" />
+  <text
+     x="510"
+     y="85"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="white"
+     font-weight="bold"
+     id="text6">24-Hour Human</text>
+  <text
+     x="510"
+     y="100"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="white"
+     id="text7">Review Required</text>
+  <!-- Community Input Box -->
+  <rect
+     x="450"
+     y="160"
+     width="120"
+     height="60"
+     rx="10"
+     fill="#8b5cf6"
+     stroke="#7c3aed"
+     stroke-width="2"
+     id="rect7" />
+  <text
+     x="510"
+     y="185"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="white"
+     font-weight="bold"
+     id="text8">Community</text>
+  <text
+     x="510"
+     y="200"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="white"
+     id="text9">Consultation</text>
+  <path
+     d="M310 110 L310 360"
+     stroke="#374151"
+     stroke-width="2"
+     fill="none"
+     marker-end="url(#arrowhead)"
+     id="path26" />
+  <!-- Decision Diamond 2 -->
+  <polygon
+     points="250,190 310,170 370,190 310,210"
+     fill="#fbbf24"
+     stroke="#f59e0b"
+     stroke-width="2"
+     id="polygon9" />
+  <text
+     x="310"
+     y="185"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="10"
+     fill="#92400e"
+     id="text10">Community</text>
+  <text
+     x="310"
+     y="195"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="10"
+     fill="#92400e"
+     id="text11">Approves?</text>
+  <!-- Implementation Box -->
+  <rect
+     x="50"
+     y="260"
+     width="120"
+     height="60"
+     rx="10"
+     fill="#10b981"
+     stroke="#059669"
+     stroke-width="2"
+     id="rect11" />
+  <text
+     x="110"
+     y="285"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="white"
+     font-weight="bold"
+     id="text12">Decision</text>
+  <text
+     x="110"
+     y="300"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="white"
+     id="text13">Implemented</text>
+  <!-- Community Veto Box -->
+  <rect
+     x="450"
+     y="260"
+     width="120"
+     height="60"
+     rx="10"
+     fill="#ef4444"
+     stroke="#dc2626"
+     stroke-width="2"
+     id="rect13" />
+  <text
+     x="510"
+     y="285"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="white"
+     font-weight="bold"
+     id="text14">Community Veto</text>
+  <text
+     x="510"
+     y="300"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="white"
+     id="text15">or Modification</text>
+  <!-- Escalation Box -->
+  <rect
+     x="600"
+     y="360"
+     width="140"
+     height="80"
+     rx="10"
+     fill="#7c2d12"
+     stroke="#92400e"
+     stroke-width="2"
+     id="rect15" />
+  <text
+     x="670"
+     y="385"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     fill="white"
+     font-weight="bold"
+     id="text16">Escalation to GGF</text>
+  <text
+     x="670"
+     y="400"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     fill="white"
+     id="text17">Digital Justice</text>
+  <text
+     x="670"
+     y="415"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     fill="white"
+     id="text18">Tribunal</text>
+  <!-- Direct Implementation Box -->
+  <rect
+     x="250"
+     y="360"
+     width="120"
+     height="60"
+     rx="10"
+     fill="#6b7280"
+     stroke="#4b5563"
+     stroke-width="2"
+     id="rect18" />
+  <text
+     x="310"
+     y="385"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="white"
+     font-weight="bold"
+     id="text19">Direct</text>
+  <text
+     x="310"
+     y="400"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="white"
+     id="text20">Implementation</text>
+  <!-- Arrows -->
+  <!-- AI to Decision Diamond -->
+  <path
+     d="M170 90 L250 90"
+     stroke="#374151"
+     stroke-width="2"
+     fill="none"
+     marker-end="url(#arrowhead)"
+     id="path20" />
+  <!-- YES arrow to Human Review -->
+  <path
+     d="M370 90 L450 90"
+     stroke="#374151"
+     stroke-width="2"
+     fill="none"
+     marker-end="url(#arrowhead)"
+     id="path21" />
+  <text
+     x="410"
+     y="85"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="10"
+     fill="#374151"
+     id="text21">YES</text>
+  <!-- Human Review to Community -->
+  <path
+     d="M510 120 L510 160"
+     stroke="#374151"
+     stroke-width="2"
+     fill="none"
+     marker-end="url(#arrowhead)"
+     id="path22" />
+  <!-- Community to Decision Diamond 2 -->
+  <path
+     d="M450 190 L370 190"
+     stroke="#374151"
+     stroke-width="2"
+     fill="none"
+     marker-end="url(#arrowhead)"
+     id="path23" />
+  <!-- YES to Implementation -->
+  <path
+     d="M250 190 L110 190 L110 260"
+     stroke="#374151"
+     stroke-width="2"
+     fill="none"
+     marker-end="url(#arrowhead)"
+     id="path24" />
+  <text
+     x="180"
+     y="185"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="10"
+     fill="#374151"
+     id="text24">YES</text>
+  <!-- NO to Community Veto -->
+  <path
+     d="M370 190 L450 190 L450 260"
+     stroke="#374151"
+     stroke-width="2"
+     fill="none"
+     marker-end="url(#arrowhead)"
+     id="path25" />
+  <text
+     x="415.67377"
+     y="185"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#374151"
+     id="text25">NO/VETO</text>
+  <!-- NO from first diamond to Direct Implementation -->
+  <text
+     x="320"
+     y="235"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="10"
+     fill="#374151"
+     id="text26">NO</text>
+  <!-- Escalation arrow -->
+  <path
+     d="m 570,290 31.41844,73.82979"
+     stroke="#374151"
+     stroke-width="2"
+     fill="none"
+     marker-end="url(#arrowhead)"
+     id="path27"
+     sodipodi:nodetypes="cc" />
+  <text
+     x="607.69501"
+     y="322.2695"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     fill="#374151"
+     id="text27">Unresolved</text>
+  <text
+     x="607.69501"
+     y="332.2695"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     fill="#374151"
+     id="text28">Harm</text>
+  <!-- Legend -->
+  <rect
+     x="50"
+     y="480"
+     width="700"
+     height="100"
+     rx="5"
+     fill="#f1f5f9"
+     stroke="#cbd5e1"
+     stroke-width="1"
+     id="rect28" />
+  <text
+     x="70"
+     y="500"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     fill="#1e293b"
+     id="text29">Legend:</text>
+  <rect
+     x="70"
+     y="510"
+     width="15"
+     height="15"
+     fill="#3b82f6"
+     id="rect29" />
+  <text
+     x="95"
+     y="522"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     fill="#1e293b"
+     id="text30">AI System Decision</text>
+  <rect
+     x="220"
+     y="510"
+     width="15"
+     height="15"
+     fill="#fbbf24"
+     id="rect30" />
+  <text
+     x="245"
+     y="522"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     fill="#1e293b"
+     id="text31">Decision Points</text>
+  <rect
+     x="350"
+     y="510"
+     width="15"
+     height="15"
+     fill="#10b981"
+     id="rect31" />
+  <text
+     x="375"
+     y="522"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     fill="#1e293b"
+     id="text32">Human/Community Review</text>
+  <rect
+     x="520"
+     y="510"
+     width="15"
+     height="15"
+     fill="#ef4444"
+     id="rect32" />
+  <text
+     x="545"
+     y="522"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     fill="#1e293b"
+     id="text33">Community Veto</text>
+  <rect
+     x="70"
+     y="535"
+     width="15"
+     height="15"
+     fill="#8b5cf6"
+     id="rect33" />
+  <text
+     x="95"
+     y="547"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     fill="#1e293b"
+     id="text34">Stakeholder Consultation</text>
+  <rect
+     x="250"
+     y="535"
+     width="15"
+     height="15"
+     fill="#7c2d12"
+     id="rect34" />
+  <text
+     x="275"
+     y="547"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     fill="#1e293b"
+     id="text35">GGF Justice System Escalation</text>
+  <rect
+     x="450"
+     y="535"
+     width="15"
+     height="15"
+     fill="#6b7280"
+     id="rect35" />
+  <text
+     x="475"
+     y="547"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     fill="#1e293b"
+     id="text36">Direct Implementation (No Review Needed)</text>
+  <!-- Arrow marker definition -->
+  <defs
+     id="defs36">
+    <marker
+       id="arrowhead"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#374151"
+         id="polygon36" />
+    </marker>
+  </defs>
+</svg>

@@ -15,7 +15,7 @@ export const ethicalOSEntities: GgfEntity[] = [
     shortName: 'Indigenous Framework',
     description: 'Ethical guidance framework centering Indigenous sovereignty and TEK',
     tier: 1,
-    status: 'Ready',
+    status: 'Review',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
@@ -24,7 +24,7 @@ export const ethicalOSEntities: GgfEntity[] = [
       path: '/frameworks/indigenous-governance-and-traditional-knowledge',
       titleKey: 'framework.docs.nav.frameworkTitles.indigenousGovernanceAndTraditionalKnowledge',
       emoji: '🪶',
-      version: '1.0',
+      version: '0.9',
       slug: 'indigenous-governance-and-traditional-knowledge',
       group: 'socialFabricJustice'
     }

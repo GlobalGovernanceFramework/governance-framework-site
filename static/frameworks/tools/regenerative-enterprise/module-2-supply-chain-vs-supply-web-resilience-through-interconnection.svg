@@ -1,0 +1,1226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1000"
+   height="700"
+   viewBox="0 0 1000 700"
+   version="1.1"
+   id="supply-chain-vs-web"
+   role="img"
+   aria-labelledby="supply-comparison-title"
+   aria-describedby="supply-comparison-brief supply-comparison-detailed"
+   sodipodi:docname="module-2-supply-chain-vs-supply-web-resilience-through-interconnection.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview73"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.2085714"
+     inkscape:cx="500.1773"
+     inkscape:cy="350"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="supply-chain-vs-web" />
+  <!-- Main title -->
+  <title
+     id="supply-comparison-title">Supply Chain vs. Supply Web - Resilience Through Interconnection</title>
+  <!-- Brief description for quick context -->
+  <desc
+     id="supply-comparison-brief">A side-by-side comparison showing the vulnerability of linear supply chains versus the resilience of interconnected supply webs. The left side shows a rigid straight line of suppliers vulnerable to disruption, while the right side shows a robust network of interconnected local and bioregional suppliers creating multiple pathways and resilience.</desc>
+  <!-- Detailed description for comprehensive understanding -->
+  <desc
+     id="supply-comparison-detailed">
+This comparison illustrates the strategic transformation from vulnerable linear supply chains to resilient regenerative supply webs:
+
+Left Side - Linear Supply Chain (Vulnerable):
+Shows a rigid, straight-line progression: Raw Materials Supplier → Component Manufacturer → Assembly Factory → Distributor → Retailer → Customer. Each entity is represented as isolated boxes connected only to the next step in sequence. This linear structure demonstrates several vulnerabilities:
+
+- Single points of failure: If any one supplier fails, the entire chain breaks down
+- Geographic concentration: Long-distance shipping and centralized production create disruption risks
+- Limited redundancy: No backup suppliers or alternative pathways when problems occur
+- Brittle efficiency: Optimized for cost and speed but fragile under stress
+- Power imbalances: Dominant players can exploit dependent suppliers
+- Vulnerability indicators show potential break points where disruptions cascade through the system
+
+A disruption symbol (lightning bolt) demonstrates how a single failure point can break the entire chain, leaving the customer without products and the factory without inputs.
+
+Right Side - Regenerative Supply Web (Resilient):
+Shows an interconnected network where the central factory connects to multiple local and bioregional suppliers who also connect to each other, creating a web-like structure with multiple pathways and redundancies:
+
+Local Suppliers include community-based producers, local manufacturers, and bioregional resource providers, all within shorter geographic distances. These suppliers also connect to each other, creating industrial symbiosis where one's waste becomes another's input.
+
+Bioregional Network shows suppliers organized around ecosystem boundaries rather than political borders, supporting both ecological health and supply resilience.
+
+Multiple Connection Pathways demonstrate that if one supplier has problems, multiple alternatives exist. The web structure shows horizontal connections between suppliers, not just vertical connections to the factory.
+
+Community Integration shows suppliers embedded in local communities with democratic governance and worker ownership, creating stability through community relationships rather than just market contracts.
+
+Regenerative Practices are indicated throughout the web, showing suppliers who restore ecosystems, pay living wages, and build community wealth while providing high-quality inputs.
+
+Resilience Features include:
+- Redundant pathways: Multiple suppliers for critical inputs prevent single points of failure
+- Local production: Shorter supply lines reduce transportation disruptions and emissions
+- Community stability: Local ownership and democratic governance create reliable partnerships
+- Ecological integration: Suppliers who restore rather than degrade ecosystems provide long-term sustainability
+- Economic circulation: Value stays within bioregional communities rather than extracting to distant shareholders
+- Innovation sharing: Suppliers collaborate on regenerative innovations rather than competing destructively
+
+This supply web structure demonstrates antifragility - the network actually becomes stronger under stress because disruptions reveal new connections and innovations rather than causing system failure.
+  </desc>
+  <defs
+     id="defs6">
+    <!-- Gradients for visual appeal -->
+    <linearGradient
+       id="chainGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#e74c3c"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#c0392b"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="webGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#2ecc71"
+         id="stop3" />
+      <stop
+         offset="100%"
+         stop-color="#27ae60"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="factoryGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#3498db"
+         id="stop5" />
+      <stop
+         offset="100%"
+         stop-color="#2980b9"
+         id="stop6" />
+    </linearGradient>
+    <!-- Arrow markers -->
+    <marker
+       id="chainArrow"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto"
+       markerUnits="strokeWidth">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#e74c3c"
+         id="polygon6" />
+    </marker>
+    <marker
+       id="webConnection"
+       markerWidth="8"
+       markerHeight="8"
+       refX="4"
+       refY="4">
+      <circle
+         cx="4"
+         cy="4"
+         r="3"
+         fill="#27ae60"
+         id="circle6" />
+    </marker>
+    <!-- Disruption symbol -->
+    <g
+       id="disruptionBolt">
+      <path
+         d="M0 0 L8 0 L5 6 L10 6 L2 14 L5 8 L0 8 Z"
+         fill="#f39c12"
+         id="path6" />
+    </g>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#factoryGradient"
+       id="linearGradient73"
+       x1="546.28349"
+       y1="356.10128"
+       x2="626.83782"
+       y2="436.65561"
+       gradientTransform="matrix(1.2786402,0,0,0.78208087,0,28)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#webGradient"
+       id="linearGradient74"
+       x1="426.9433"
+       y1="208.17987"
+       x2="481.93421"
+       y2="263.17078"
+       gradientTransform="matrix(1.3093073,0,0,0.76376262,0,28)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#webGradient"
+       id="linearGradient75"
+       x1="518.59482"
+       y1="181.99372"
+       x2="573.58572"
+       y2="236.98463"
+       gradientTransform="matrix(1.3093073,0,0,0.76376262,0,28)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#webGradient"
+       id="linearGradient76"
+       x1="610.24633"
+       y1="208.17987"
+       x2="665.23724"
+       y2="263.17078"
+       gradientTransform="matrix(1.3093073,0,0,0.76376262,0,28)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#webGradient"
+       id="linearGradient77"
+       x1="396.3928"
+       y1="352.20367"
+       x2="451.38371"
+       y2="407.19458"
+       gradientTransform="matrix(1.3093073,0,0,0.76376262,0,28)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#webGradient"
+       id="linearGradient78"
+       x1="663.70971"
+       y1="352.20367"
+       x2="718.70062"
+       y2="407.19458"
+       gradientTransform="matrix(1.3093073,0,0,0.76376262,0,28)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#webGradient"
+       id="linearGradient79"
+       x1="426.9433"
+       y1="522.41363"
+       x2="481.93421"
+       y2="577.40454"
+       gradientTransform="matrix(1.3093073,0,0,0.76376262,0,28)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#webGradient"
+       id="linearGradient80"
+       x1="610.24633"
+       y1="522.41363"
+       x2="665.23724"
+       y2="577.40454"
+       gradientTransform="matrix(1.3093073,0,0,0.76376262,0,28)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#chainGradient"
+       id="linearGradient81"
+       x1="39.02032"
+       y1="224.78032"
+       x2="104.31963"
+       y2="290.07963"
+       gradientTransform="scale(1.255756,0.79633306)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#chainGradient"
+       id="linearGradient82"
+       x1="150.50695"
+       y1="224.78032"
+       x2="215.80626"
+       y2="290.07963"
+       gradientTransform="matrix(1.4354625,0,0,0.79417619,-33.741857,0.55524381)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#factoryGradient"
+       id="linearGradient83"
+       x1="261.99358"
+       y1="224.78032"
+       x2="327.29289"
+       y2="290.07963"
+       gradientTransform="scale(1.255756,0.79633306)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#chainGradient"
+       id="linearGradient84"
+       x1="39.02032"
+       y1="350.35592"
+       x2="104.31963"
+       y2="415.65523"
+       gradientTransform="scale(1.255756,0.79633306)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#chainGradient"
+       id="linearGradient85"
+       x1="150.50695"
+       y1="350.35592"
+       x2="215.80626"
+       y2="415.65523"
+       gradientTransform="scale(1.255756,0.79633306)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <!-- Background -->
+  <rect
+     width="1000"
+     height="700"
+     fill="#f8fffe"
+     aria-hidden="true"
+     id="rect6" />
+  <line
+     x1="575.25256"
+     y1="301.07803"
+     x2="574.74744"
+     y2="224.92197"
+     stroke="#27ae60"
+     stroke-width="2"
+     opacity="0.7"
+     id="line60" />
+  <!-- Main Title -->
+  <text
+     x="500"
+     y="40"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="26"
+     font-weight="bold"
+     fill="#2c3e50"
+     aria-hidden="true"
+     id="text6">Supply Chain vs. Supply Web</text>
+  <text
+     x="500"
+     y="65"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     fill="#7f8c8d"
+     aria-hidden="true"
+     id="text7">From Brittle Efficiency to Resilient Partnerships</text>
+  <!-- Dividing line -->
+  <line
+     x1="500"
+     y1="90"
+     x2="500"
+     y2="650"
+     stroke="#bdc3c7"
+     stroke-width="3"
+     aria-hidden="true"
+     id="line7" />
+  <!-- LEFT SIDE - LINEAR SUPPLY CHAIN -->
+  <text
+     x="250"
+     y="120"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="20px"
+     font-weight="bold"
+     fill="#e74c3c"
+     aria-hidden="true"
+     id="text8">⚠️ Linear Supply Chain</text>
+  <text
+     x="250"
+     y="145"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     fill="#7f8c8d"
+     aria-hidden="true"
+     id="text9">Brittle efficiency • Single points of failure</text>
+  <rect
+     x="50"
+     y="180"
+     width="80"
+     height="50"
+     fill="url(#chainGradient)"
+     stroke="#c0392b"
+     stroke-width="2"
+     rx="5"
+     id="rect9"
+     style="fill:url(#linearGradient81)" />
+  <text
+     x="90"
+     y="200"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text10">RAW</text>
+  <text
+     x="90"
+     y="212"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text11">MATERIALS</text>
+  <text
+     x="90"
+     y="224"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text12">SUPPLIER</text>
+  <line
+     x1="140"
+     y1="205"
+     x2="180"
+     y2="205"
+     stroke="#e74c3c"
+     stroke-width="4"
+     marker-end="url(#chainArrow)"
+     id="line12" />
+  <rect
+     x="183.44832"
+     y="180.0677"
+     width="91.448502"
+     height="49.864574"
+     fill="url(#chainGradient)"
+     stroke="#c0392b"
+     stroke-width="2.13543"
+     rx="5.7155313"
+     id="rect12"
+     style="fill:url(#linearGradient82)" />
+  <text
+     x="230"
+     y="200"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text13">COMPONENT</text>
+  <text
+     x="230"
+     y="212"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text14">MANUFACTURER</text>
+  <line
+     x1="280"
+     y1="205"
+     x2="320"
+     y2="205"
+     stroke="#e74c3c"
+     stroke-width="4"
+     marker-end="url(#chainArrow)"
+     id="line14" />
+  <rect
+     x="330"
+     y="180"
+     width="80"
+     height="50"
+     fill="url(#factoryGradient)"
+     stroke="#2980b9"
+     stroke-width="2"
+     rx="5"
+     id="rect14"
+     style="fill:url(#linearGradient83)" />
+  <text
+     x="370"
+     y="200"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text15">ASSEMBLY</text>
+  <text
+     x="370"
+     y="212"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text16">FACTORY</text>
+  <line
+     x1="420"
+     y1="205"
+     x2="460"
+     y2="205"
+     stroke="#e74c3c"
+     stroke-width="4"
+     marker-end="url(#chainArrow)"
+     id="line16" />
+  <rect
+     x="50"
+     y="280"
+     width="80"
+     height="50"
+     fill="url(#chainGradient)"
+     stroke="#c0392b"
+     stroke-width="2"
+     rx="5"
+     id="rect16"
+     style="fill:url(#linearGradient84)" />
+  <text
+     x="90"
+     y="300"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text17">DISTRIBUTOR</text>
+  <line
+     x1="374"
+     y1="240"
+     x2="374"
+     y2="270"
+     stroke="#e74c3c"
+     stroke-width="4"
+     marker-end="url(#chainArrow)"
+     id="line17" />
+  <line
+     x1="370"
+     y1="270"
+     x2="140"
+     y2="270"
+     stroke="#e74c3c"
+     stroke-width="4"
+     id="line18" />
+  <line
+     x1="134"
+     y1="270"
+     x2="134"
+     y2="280"
+     stroke="#e74c3c"
+     stroke-width="4"
+     marker-end="url(#chainArrow)"
+     id="line19" />
+  <line
+     x1="140"
+     y1="305"
+     x2="180"
+     y2="305"
+     stroke="#e74c3c"
+     stroke-width="4"
+     marker-end="url(#chainArrow)"
+     id="line20" />
+  <rect
+     x="190"
+     y="280"
+     width="80"
+     height="50"
+     fill="url(#chainGradient)"
+     stroke="#c0392b"
+     stroke-width="2"
+     rx="5"
+     id="rect20"
+     style="fill:url(#linearGradient85)" />
+  <text
+     x="230"
+     y="305"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text20">RETAILER</text>
+  <line
+     x1="280"
+     y1="305"
+     x2="320"
+     y2="305"
+     stroke="#e74c3c"
+     stroke-width="4"
+     marker-end="url(#chainArrow)"
+     id="line21" />
+  <rect
+     x="330"
+     y="280"
+     width="80"
+     height="50"
+     fill="#7f8c8d"
+     stroke="#34495e"
+     stroke-width="2"
+     rx="5"
+     id="rect21" />
+  <text
+     x="370"
+     y="305"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text21">CUSTOMER</text>
+  <use
+     href="#disruptionBolt"
+     x="225"
+     y="240"
+     transform="scale(2)"
+     id="use21" />
+  <text
+     x="240"
+     y="256"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#f39c12"
+     aria-hidden="true"
+     id="text22">DISRUPTION!</text>
+  <text
+     x="50"
+     y="380"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     fill="#e74c3c"
+     aria-hidden="true"
+     id="text23">⚠️ Vulnerabilities:</text>
+  <text
+     x="50"
+     y="400"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#7f8c8d"
+     aria-hidden="true"
+     id="text24">• Single points of failure</text>
+  <text
+     x="50"
+     y="415"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#7f8c8d"
+     aria-hidden="true"
+     id="text25">• Geographic concentration</text>
+  <text
+     x="50"
+     y="430"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#7f8c8d"
+     aria-hidden="true"
+     id="text26">• Limited redundancy</text>
+  <text
+     x="50"
+     y="445"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#7f8c8d"
+     aria-hidden="true"
+     id="text27">• Power imbalances</text>
+  <text
+     x="50"
+     y="460"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#7f8c8d"
+     aria-hidden="true"
+     id="text28">• Long supply lines</text>
+  <rect
+     x="180"
+     y="500"
+     width="140"
+     height="40"
+     fill="#ecf0f1"
+     stroke="#e74c3c"
+     stroke-width="2"
+     rx="10"
+     id="rect28" />
+  <text
+     x="250"
+     y="515"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#e74c3c"
+     aria-hidden="true"
+     id="text29">CHAIN BROKEN</text>
+  <text
+     x="250"
+     y="530"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#7f8c8d"
+     aria-hidden="true"
+     id="text30">No alternatives available</text>
+  <!-- RIGHT SIDE - REGENERATIVE SUPPLY WEB -->
+  <text
+     x="750"
+     y="120"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="20px"
+     font-weight="bold"
+     fill="#27ae60"
+     aria-hidden="true"
+     id="text31">✅ Regenerative Supply Web</text>
+  <text
+     x="750"
+     y="145"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     fill="#7f8c8d"
+     aria-hidden="true"
+     id="text32">Resilient networks • Multiple pathways</text>
+  <rect
+     x="700"
+     y="308"
+     width="100"
+     height="60"
+     fill="url(#factoryGradient)"
+     stroke="#2980b9"
+     stroke-width="3"
+     rx="10"
+     id="rect32"
+     style="fill:url(#linearGradient73)" />
+  <text
+     x="750"
+     y="333"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text33">REGENERATIVE</text>
+  <text
+     x="750"
+     y="348"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text34">FACTORY</text>
+  <rect
+     x="560"
+     y="188"
+     width="70"
+     height="40"
+     fill="url(#webGradient)"
+     stroke="#27ae60"
+     stroke-width="2"
+     rx="5"
+     id="rect34"
+     style="fill:url(#linearGradient74)" />
+  <text
+     x="595"
+     y="203"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text35">LOCAL</text>
+  <text
+     x="595"
+     y="213"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text36">ORGANIC</text>
+  <text
+     x="595"
+     y="223"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text37">FARM</text>
+  <rect
+     x="680"
+     y="168"
+     width="70"
+     height="40"
+     fill="url(#webGradient)"
+     stroke="#27ae60"
+     stroke-width="2"
+     rx="5"
+     id="rect37"
+     style="fill:url(#linearGradient75)" />
+  <text
+     x="715"
+     y="183"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text38">COMMUNITY</text>
+  <text
+     x="715"
+     y="193"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text39">WORKSHOP</text>
+  <rect
+     x="800"
+     y="188"
+     width="70"
+     height="40"
+     fill="url(#webGradient)"
+     stroke="#27ae60"
+     stroke-width="2"
+     rx="5"
+     id="rect39"
+     style="fill:url(#linearGradient76)" />
+  <text
+     x="835"
+     y="203"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text40">COOPERATIVE</text>
+  <text
+     x="835"
+     y="213"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text41">MILL</text>
+  <rect
+     x="520"
+     y="298"
+     width="70"
+     height="40"
+     fill="url(#webGradient)"
+     stroke="#27ae60"
+     stroke-width="2"
+     rx="5"
+     id="rect41"
+     style="fill:url(#linearGradient77)" />
+  <text
+     x="555"
+     y="313"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text42">BIOREGIONAL</text>
+  <text
+     x="555"
+     y="323"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text43">MATERIALS</text>
+  <rect
+     x="870"
+     y="298"
+     width="70"
+     height="40"
+     fill="url(#webGradient)"
+     stroke="#27ae60"
+     stroke-width="2"
+     rx="5"
+     id="rect43"
+     style="fill:url(#linearGradient78)" />
+  <text
+     x="905"
+     y="313"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text44">RENEWABLE</text>
+  <text
+     x="905"
+     y="323"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text45">ENERGY COOP</text>
+  <rect
+     x="560"
+     y="428"
+     width="70"
+     height="40"
+     fill="url(#webGradient)"
+     stroke="#27ae60"
+     stroke-width="2"
+     rx="5"
+     id="rect45"
+     style="fill:url(#linearGradient79)" />
+  <text
+     x="595"
+     y="443"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text46">RECYCLING</text>
+  <text
+     x="595"
+     y="453"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text47">NETWORK</text>
+  <rect
+     x="800"
+     y="428"
+     width="70"
+     height="40"
+     fill="url(#webGradient)"
+     stroke="#27ae60"
+     stroke-width="2"
+     rx="5"
+     id="rect47"
+     style="fill:url(#linearGradient80)" />
+  <text
+     x="835"
+     y="443"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text48">INDIGENOUS</text>
+  <text
+     x="835"
+     y="453"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text49">ENTERPRISE</text>
+  <rect
+     x="940"
+     y="346"
+     width="50"
+     height="40"
+     fill="#7f8c8d"
+     stroke="#34495e"
+     stroke-width="2"
+     rx="5"
+     id="rect49" />
+  <text
+     x="965"
+     y="361"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text50">LOCAL</text>
+  <text
+     x="965"
+     y="371"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text51">MARKET</text>
+  <line
+     x1="630"
+     y1="208"
+     x2="700"
+     y2="318"
+     stroke="#27ae60"
+     stroke-width="3"
+     stroke-dasharray="2, 2"
+     id="line51" />
+  <line
+     x1="715"
+     y1="208"
+     x2="730"
+     y2="308"
+     stroke="#27ae60"
+     stroke-width="3"
+     stroke-dasharray="2, 2"
+     id="line52" />
+  <line
+     x1="800"
+     y1="208"
+     x2="770"
+     y2="308"
+     stroke="#27ae60"
+     stroke-width="3"
+     stroke-dasharray="2, 2"
+     id="line53" />
+  <line
+     x1="590"
+     y1="318"
+     x2="700"
+     y2="338"
+     stroke="#27ae60"
+     stroke-width="3"
+     stroke-dasharray="2, 2"
+     id="line54" />
+  <line
+     x1="870"
+     y1="318"
+     x2="800"
+     y2="338"
+     stroke="#27ae60"
+     stroke-width="3"
+     stroke-dasharray="2, 2"
+     id="line55" />
+  <line
+     x1="630"
+     y1="448"
+     x2="720"
+     y2="368"
+     stroke="#27ae60"
+     stroke-width="3"
+     stroke-dasharray="2, 2"
+     id="line56" />
+  <line
+     x1="800"
+     y1="448"
+     x2="780"
+     y2="368"
+     stroke="#27ae60"
+     stroke-width="3"
+     stroke-dasharray="2, 2"
+     id="line57" />
+  <line
+     x1="630"
+     y1="208"
+     x2="680"
+     y2="188"
+     stroke="#27ae60"
+     stroke-width="2"
+     opacity="0.7"
+     id="line58" />
+  <line
+     x1="750"
+     y1="188"
+     x2="800"
+     y2="208"
+     stroke="#27ae60"
+     stroke-width="2"
+     opacity="0.7"
+     id="line59" />
+  <line
+     x1="876"
+     y1="298"
+     x2="841"
+     y2="228"
+     stroke="#27ae60"
+     stroke-width="2"
+     opacity="0.7"
+     id="line61" />
+  <line
+     x1="600"
+     y1="428"
+     x2="560"
+     y2="338"
+     stroke="#27ae60"
+     stroke-width="2"
+     opacity="0.7"
+     id="line62" />
+  <line
+     x1="866"
+     y1="428"
+     x2="901"
+     y2="338"
+     stroke="#27ae60"
+     stroke-width="2"
+     opacity="0.7"
+     id="line63" />
+  <line
+     x1="801.61383"
+     y1="343.7316"
+     x2="940.42303"
+     y2="364.51666"
+     stroke="#34495e"
+     stroke-width="3"
+     marker-end="url(#chainArrow)"
+     id="line64" />
+  <text
+     x="550"
+     y="500"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     fill="#27ae60"
+     aria-hidden="true"
+     id="text64">✅ Resilience Features:</text>
+  <text
+     x="550"
+     y="520"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#7f8c8d"
+     aria-hidden="true"
+     id="text65">• Multiple pathways redundancy</text>
+  <text
+     x="550"
+     y="535"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#7f8c8d"
+     aria-hidden="true"
+     id="text66">• Local bioregional production</text>
+  <text
+     x="550"
+     y="550"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#7f8c8d"
+     aria-hidden="true"
+     id="text67">• Community ownership democracy</text>
+  <text
+     x="550"
+     y="565"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#7f8c8d"
+     aria-hidden="true"
+     id="text68">• Ecological restoration integration</text>
+  <text
+     x="550"
+     y="580"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#7f8c8d"
+     aria-hidden="true"
+     id="text69">• Value circulation in bioregion</text>
+  <rect
+     x="777.78674"
+     y="500.061"
+     width="158.08133"
+     height="39.878014"
+     fill="#e8f5e8"
+     stroke="#27ae60"
+     stroke-width="2.12198"
+     rx="11.291523"
+     id="rect69" />
+  <text
+     x="856"
+     y="515"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#27ae60"
+     aria-hidden="true"
+     id="text70">ANTIFRAGILE NETWORK</text>
+  <text
+     x="856"
+     y="530"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#27ae60"
+     aria-hidden="true"
+     id="text71">Stronger under stress</text>
+  <!-- Bottom comparison summary -->
+  <rect
+     x="100"
+     y="620"
+     width="800"
+     height="50"
+     fill="#ecf0f1"
+     stroke="#bdc3c7"
+     stroke-width="1"
+     rx="15"
+     aria-hidden="true"
+     id="rect71" />
+  <text
+     x="500"
+     y="640"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     font-weight="bold"
+     fill="#2c3e50"
+     aria-hidden="true"
+     id="text72">Regenerative Supply Webs: From Extraction to Regeneration</text>
+  <text
+     x="500"
+     y="655"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#34495e"
+     aria-hidden="true"
+     id="text73">Building resilient partnerships that strengthen communities and ecosystems while ensuring reliable supply</text>
+</svg>

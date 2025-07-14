@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="900"
+   height="700"
+   viewBox="0 0 900 700"
+   version="1.1"
+   id="digital-product-passport-coffee"
+   role="img"
+   aria-labelledby="dpp-title"
+   aria-describedby="dpp-brief dpp-detailed"
+   sodipodi:docname="module-2-digital-product-passport-fair-trade-coffee-example.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview70"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.2085714"
+     inkscape:cx="449.70449"
+     inkscape:cy="350"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="digital-product-passport-coffee" />
+  <!-- Main title -->
+  <title
+     id="dpp-title">Digital Product Passport - Fair Trade Coffee Example</title>
+  <!-- Brief description for quick context -->
+  <desc
+     id="dpp-brief">A Digital Product Passport infographic for fair trade coffee showing comprehensive transparency across social, ecological, and economic journeys. The coffee bag is at the center with branching information about worker conditions, environmental impact, and community economic benefits.</desc>
+  <!-- Detailed description for comprehensive understanding -->
+  <desc
+     id="dpp-detailed">
+This Digital Product Passport demonstrates complete supply chain transparency for fair trade coffee from Coopedota Cooperative in Costa Rica's Tarrazú region. The central coffee bag connects to three main journey categories:
+
+Social Journey (Left Side):
+- Living wages: $4.20 per pound versus commodity price of $1.80 per pound, representing a 133% premium for farmers
+- Democratic governance: 800 small-scale farmers with equal voting rights in cooperative decision-making
+- Gender equity: 35% women cooperative members with equal participation in governance
+- Education investment: $50,000 annually supporting children's scholarships and adult literacy programs
+
+Ecological Journey (Top):
+- Biodiversity support: Shade-grown coffee supporting over 200 bird species in forest canopy
+- Soil health: Composting program sequestering 50 tons of CO2 annually through improved soil management
+- Water conservation: Processing methods using 50% less water than conventional techniques
+- Forest protection: 500 acres of forest preserved through fair trade premiums
+
+Economic Journey (Right Side):
+- Local economic multiplier: 73% of coffee income remains in the local community rather than extracting to distant shareholders
+- Community investments: $200,000 annually funding community health clinic and school infrastructure
+- Fair trade premium: Additional $0.20 per pound dedicated specifically to community development projects
+- Long-term partnerships: 15-year relationship between cooperative and Equal Exchange ensuring stability
+
+Product Identity (Bottom):
+- Origin and processing details: Bourbon and Caturra arabica varieties, washed method, sun-dried
+- Quality specifications: Medium roast processed at Equal Exchange facility
+- Traceability: Complete chain from specific farms through processing to final retail
+
+This passport demonstrates how Digital Product Passports enable consumers to understand the complete social and environmental impact of their purchasing decisions while supporting transparent, regenerative supply chains.
+  </desc>
+  <defs
+     id="defs9">
+    <!-- Gradients for visual appeal -->
+    <radialGradient
+       id="coffeeGradient"
+       cx="0.3"
+       cy="0.3">
+      <stop
+         offset="0%"
+         stop-color="#8B4513"
+         id="stop1" />
+      <stop
+         offset="70%"
+         stop-color="#654321"
+         id="stop2" />
+      <stop
+         offset="100%"
+         stop-color="#3E2723"
+         id="stop3" />
+    </radialGradient>
+    <linearGradient
+       id="socialGradient"
+       x1="8"
+       y1="450"
+       x2="108"
+       y2="550"
+       gradientTransform="matrix(2.2352246,0,0,0.4,12.047281,0)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#3498db"
+         id="stop4" />
+      <stop
+         offset="100%"
+         stop-color="#2980b9"
+         id="stop5" />
+    </linearGradient>
+    <linearGradient
+       id="ecologicalGradient"
+       x1="130"
+       y1="300"
+       x2="230"
+       y2="400"
+       gradientTransform="scale(2.5,0.4)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#2ecc71"
+         id="stop6" />
+      <stop
+         offset="100%"
+         stop-color="#27ae60"
+         id="stop7" />
+    </linearGradient>
+    <linearGradient
+       id="economicGradient"
+       x1="252"
+       y1="450"
+       x2="352"
+       y2="550"
+       gradientTransform="matrix(2.3014185,0,0,0.4,69.900709,0)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#f39c12"
+         id="stop8" />
+      <stop
+         offset="100%"
+         stop-color="#e67e22"
+         id="stop9" />
+    </linearGradient>
+    <!-- Connection line marker -->
+    <marker
+       id="connectionDot"
+       markerWidth="8"
+       markerHeight="8"
+       refX="4"
+       refY="4">
+      <circle
+         cx="4"
+         cy="4"
+         r="3"
+         fill="#34495e"
+         id="circle9" />
+    </marker>
+  </defs>
+  <!-- Background -->
+  <rect
+     width="900"
+     height="700"
+     fill="#f8fffe"
+     aria-hidden="true"
+     id="rect9" />
+  <!-- Title and QR Code Header -->
+  <text
+     x="450"
+     y="40"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="24"
+     font-weight="bold"
+     fill="#2c3e50"
+     aria-hidden="true"
+     id="text9">Digital Product Passport</text>
+  <text
+     x="450"
+     y="65"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     fill="#7f8c8d"
+     aria-hidden="true"
+     id="text10">Scan QR code or tap NFC for complete transparency</text>
+  <!-- QR Code placeholder -->
+  <g
+     role="img"
+     aria-label="QR code for accessing complete Digital Product Passport information"
+     id="g15">
+    <rect
+       x="420"
+       y="80"
+       width="60"
+       height="60"
+       fill="white"
+       stroke="#34495e"
+       stroke-width="2"
+       id="rect10" />
+    <rect
+       x="425"
+       y="85"
+       width="50"
+       height="50"
+       fill="#34495e"
+       id="rect11" />
+    <rect
+       x="430"
+       y="90"
+       width="8"
+       height="8"
+       fill="white"
+       id="rect12" />
+    <rect
+       x="442"
+       y="90"
+       width="8"
+       height="8"
+       fill="white"
+       id="rect13" />
+    <rect
+       x="454"
+       y="90"
+       width="8"
+       height="8"
+       fill="white"
+       id="rect14" />
+    <rect
+       x="466"
+       y="90"
+       width="8"
+       height="8"
+       fill="white"
+       id="rect15" />
+    <text
+       x="450"
+       y="155"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="10"
+       fill="#7f8c8d"
+       aria-hidden="true"
+       id="text15">Instant Access</text>
+  </g>
+  <!-- Central Coffee Bag -->
+  <g
+     role="img"
+     aria-label="Fair trade coffee bag from Coopedota Cooperative, Costa Rica"
+     id="g23">
+    <!-- Coffee bag shape -->
+    <rect
+       x="380"
+       y="280"
+       width="140"
+       height="180"
+       rx="15"
+       fill="url(#coffeeGradient)"
+       stroke="#2c3e50"
+       stroke-width="3"
+       id="rect16" />
+    <!-- Coffee bag label -->
+    <rect
+       x="390"
+       y="300"
+       width="120"
+       height="80"
+       fill="#ecf0f1"
+       rx="5"
+       id="rect17" />
+    <text
+       x="450"
+       y="320"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       font-weight="bold"
+       fill="#2c3e50"
+       aria-hidden="true"
+       id="text17">FAIR TRADE</text>
+    <text
+       x="450"
+       y="335"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="#2c3e50"
+       aria-hidden="true"
+       id="text18">COFFEE</text>
+    <text
+       x="450"
+       y="355"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="10"
+       fill="#7f8c8d"
+       aria-hidden="true"
+       id="text19">Coopedota Cooperative</text>
+    <text
+       x="450"
+       y="370"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="10"
+       fill="#7f8c8d"
+       aria-hidden="true"
+       id="text20">Tarrazú, Costa Rica</text>
+    <!-- Coffee beans decoration -->
+    <ellipse
+       cx="420"
+       cy="420"
+       rx="8"
+       ry="12"
+       fill="#8B4513"
+       transform="rotate(15 420 420)"
+       id="ellipse20" />
+    <ellipse
+       cx="440"
+       cy="430"
+       rx="8"
+       ry="12"
+       fill="#8B4513"
+       transform="rotate(-10 440 430)"
+       id="ellipse21" />
+    <ellipse
+       cx="460"
+       cy="425"
+       rx="8"
+       ry="12"
+       fill="#8B4513"
+       transform="rotate(25 460 425)"
+       id="ellipse22" />
+    <ellipse
+       cx="480"
+       cy="435"
+       rx="8"
+       ry="12"
+       fill="#8B4513"
+       transform="rotate(-5 480 435)"
+       id="ellipse23" />
+  </g>
+  <!-- Connection lines from coffee bag to data points -->
+  <g
+     role="img"
+     aria-label="Connection lines linking coffee bag to social, ecological, and economic data"
+     id="g31">
+    <!-- To Social Journey (Left) -->
+    <line
+       x1="380"
+       y1="350"
+       x2="280"
+       y2="250"
+       stroke="#3498db"
+       stroke-width="3"
+       stroke-dasharray="5,5"
+       id="line23" />
+    <line
+       x1="380"
+       y1="380"
+       x2="280"
+       y2="350"
+       stroke="#3498db"
+       stroke-width="3"
+       stroke-dasharray="5,5"
+       id="line24" />
+    <line
+       x1="380"
+       y1="410"
+       x2="280"
+       y2="450"
+       stroke="#3498db"
+       stroke-width="3"
+       stroke-dasharray="5,5"
+       id="line25" />
+    <!-- To Ecological Journey (Top) -->
+    <line
+       x1="420"
+       y1="280"
+       x2="350"
+       y2="200"
+       stroke="#27ae60"
+       stroke-width="3"
+       stroke-dasharray="5,5"
+       id="line26" />
+    <line
+       x1="450"
+       y1="280"
+       x2="450"
+       y2="200"
+       stroke="#27ae60"
+       stroke-width="3"
+       stroke-dasharray="5,5"
+       id="line27" />
+    <line
+       x1="480"
+       y1="280"
+       x2="550"
+       y2="200"
+       stroke="#27ae60"
+       stroke-width="3"
+       stroke-dasharray="5,5"
+       id="line28" />
+    <!-- To Economic Journey (Right) -->
+    <line
+       x1="520"
+       y1="350"
+       x2="620"
+       y2="250"
+       stroke="#f39c12"
+       stroke-width="3"
+       stroke-dasharray="5,5"
+       id="line29" />
+    <line
+       x1="520"
+       y1="380"
+       x2="620"
+       y2="350"
+       stroke="#f39c12"
+       stroke-width="3"
+       stroke-dasharray="5,5"
+       id="line30" />
+    <line
+       x1="520"
+       y1="410"
+       x2="620"
+       y2="450"
+       stroke="#f39c12"
+       stroke-width="3"
+       stroke-dasharray="5,5"
+       id="line31" />
+  </g>
+  <!-- SOCIAL JOURNEY (Left side) -->
+  <rect
+     x="29.929077"
+     y="180"
+     width="223.52246"
+     height="40"
+     fill="url(#socialGradient)"
+     rx="17.881796"
+     id="rect31"
+     style="fill:url(#socialGradient);stroke-width:0.945563" />
+  <text
+     x="141"
+     y="205"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text31">👥 SOCIAL JOURNEY</text>
+  <rect
+     x="30"
+     y="240"
+     width="220"
+     height="50"
+     fill="#ecf0f1"
+     stroke="#3498db"
+     stroke-width="2"
+     rx="10"
+     id="rect32" />
+  <text
+     x="50"
+     y="255"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     fill="#2c3e50"
+     aria-hidden="true"
+     id="text32">💰 Living Wages</text>
+  <text
+     x="50"
+     y="270"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#34495e"
+     aria-hidden="true"
+     id="text33">$4.20/lb vs. commodity $1.80/lb</text>
+  <text
+     x="50"
+     y="285"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#27ae60"
+     aria-hidden="true"
+     id="text34">133% premium to farmers</text>
+  <rect
+     x="30"
+     y="340"
+     width="220"
+     height="50"
+     fill="#ecf0f1"
+     stroke="#3498db"
+     stroke-width="2"
+     rx="10"
+     id="rect34" />
+  <text
+     x="50"
+     y="355"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     fill="#2c3e50"
+     aria-hidden="true"
+     id="text35">🗳️ Democratic Governance</text>
+  <text
+     x="50"
+     y="370"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#34495e"
+     aria-hidden="true"
+     id="text36">800 small-scale farmers</text>
+  <text
+     x="50"
+     y="385"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#34495e"
+     aria-hidden="true"
+     id="text37">Equal voting rights</text>
+  <rect
+     x="30"
+     y="440"
+     width="220"
+     height="50"
+     fill="#ecf0f1"
+     stroke="#3498db"
+     stroke-width="2"
+     rx="10"
+     id="rect37" />
+  <text
+     x="50"
+     y="455"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     fill="#2c3e50"
+     aria-hidden="true"
+     id="text38">📚 Education Investment</text>
+  <text
+     x="50"
+     y="470"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#34495e"
+     aria-hidden="true"
+     id="text39">$50,000 annually</text>
+  <text
+     x="50"
+     y="485"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#34495e"
+     aria-hidden="true"
+     id="text40">Scholarships literacy</text>
+  <!-- ECOLOGICAL JOURNEY (Top) -->
+  <rect
+     x="325"
+     y="120"
+     width="250"
+     height="40"
+     fill="url(#ecologicalGradient)"
+     rx="20"
+     id="rect40"
+     style="fill:url(#ecologicalGradient)" />
+  <text
+     x="450"
+     y="145"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text41">🌿 ECOLOGICAL JOURNEY</text>
+  <rect
+     x="268"
+     y="170"
+     width="120"
+     height="60"
+     fill="#ecf0f1"
+     stroke="#27ae60"
+     stroke-width="2"
+     rx="10"
+     id="rect41" />
+  <text
+     x="278"
+     y="185"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#2c3e50"
+     aria-hidden="true"
+     id="text42">🦅 Biodiversity</text>
+  <text
+     x="278"
+     y="200"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     fill="#34495e"
+     aria-hidden="true"
+     id="text43">+200 bird species</text>
+  <text
+     x="278"
+     y="215"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     fill="#34495e"
+     aria-hidden="true"
+     id="text44">supported</text>
+  <text
+     x="278"
+     y="225"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#27ae60"
+     aria-hidden="true"
+     id="text45">(shade-grown)</text>
+  <rect
+     x="398"
+     y="170"
+     width="120"
+     height="60"
+     fill="#ecf0f1"
+     stroke="#27ae60"
+     stroke-width="2"
+     rx="10"
+     id="rect45" />
+  <text
+     x="408"
+     y="185"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#2c3e50"
+     aria-hidden="true"
+     id="text46">🌱 Soil Health</text>
+  <text
+     x="408"
+     y="200"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     fill="#34495e"
+     aria-hidden="true"
+     id="text47">50 tons CO₂</text>
+  <text
+     x="408"
+     y="215"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     fill="#34495e"
+     aria-hidden="true"
+     id="text48">sequestered</text>
+  <text
+     x="408"
+     y="225"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#27ae60"
+     aria-hidden="true"
+     id="text49">annually</text>
+  <rect
+     x="528"
+     y="170"
+     width="120"
+     height="60"
+     fill="#ecf0f1"
+     stroke="#27ae60"
+     stroke-width="2"
+     rx="10"
+     id="rect49" />
+  <text
+     x="520"
+     y="185"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#2c3e50"
+     aria-hidden="true"
+     id="text50">🌲 Forest Protection</text>
+  <text
+     x="538"
+     y="200"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     fill="#34495e"
+     aria-hidden="true"
+     id="text51">500 acres</text>
+  <text
+     x="538"
+     y="215"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     fill="#34495e"
+     aria-hidden="true"
+     id="text52">preserved</text>
+  <text
+     x="538"
+     y="225"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#27ae60"
+     aria-hidden="true"
+     id="text53">via premiums</text>
+  <!-- ECONOMIC JOURNEY (Right side) -->
+  <rect
+     x="649.85815"
+     y="180"
+     width="230.14185"
+     height="40"
+     fill="url(#economicGradient)"
+     rx="18.411348"
+     id="rect53"
+     style="fill:url(#economicGradient);stroke-width:0.959462" />
+  <text
+     x="755"
+     y="205"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text54">💰 ECONOMIC JOURNEY</text>
+  <rect
+     x="650"
+     y="240"
+     width="220"
+     height="50"
+     fill="#ecf0f1"
+     stroke="#f39c12"
+     stroke-width="2"
+     rx="10"
+     id="rect54" />
+  <text
+     x="670"
+     y="255"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     fill="#2c3e50"
+     aria-hidden="true"
+     id="text55">🏘️ Local Economic Impact</text>
+  <text
+     x="670"
+     y="270"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#27ae60"
+     aria-hidden="true"
+     id="text56">73% of income stays</text>
+  <text
+     x="670"
+     y="285"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#34495e"
+     aria-hidden="true"
+     id="text57">in local community</text>
+  <rect
+     x="650"
+     y="340"
+     width="220"
+     height="50"
+     fill="#ecf0f1"
+     stroke="#f39c12"
+     stroke-width="2"
+     rx="10"
+     id="rect57" />
+  <text
+     x="670"
+     y="355"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     fill="#2c3e50"
+     aria-hidden="true"
+     id="text58">🏥 Community Investment</text>
+  <text
+     x="670"
+     y="370"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#34495e"
+     aria-hidden="true"
+     id="text59">$200,000 annually</text>
+  <text
+     x="670"
+     y="385"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#34495e"
+     aria-hidden="true"
+     id="text60">Health clinic school</text>
+  <rect
+     x="650"
+     y="440"
+     width="220"
+     height="50"
+     fill="#ecf0f1"
+     stroke="#f39c12"
+     stroke-width="2"
+     rx="10"
+     id="rect60" />
+  <text
+     x="670"
+     y="455"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     fill="#2c3e50"
+     aria-hidden="true"
+     id="text61">🤝 Partnership</text>
+  <text
+     x="670"
+     y="470"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#34495e"
+     aria-hidden="true"
+     id="text62">15-year relationship</text>
+  <text
+     x="670"
+     y="485"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#34495e"
+     aria-hidden="true"
+     id="text63">Cooperative Equal Exchange</text>
+  <!-- PRODUCT IDENTITY (Bottom) -->
+  <rect
+     x="250"
+     y="520"
+     width="423.16785"
+     height="80"
+     fill="#34495e"
+     rx="15.868794"
+     id="rect63"
+     style="stroke-width:1.02855" />
+  <text
+     x="450"
+     y="540"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text64">📋 PRODUCT IDENTITY</text>
+  <text
+     x="270"
+     y="560"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#ecf0f1"
+     aria-hidden="true"
+     id="text65">Origin: Coopedota Cooperative, Tarrazú region, Costa Rica</text>
+  <text
+     x="270"
+     y="575"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#ecf0f1"
+     aria-hidden="true"
+     id="text66">Variety: Bourbon and Caturra arabica • Processing: Washed, sun-dried</text>
+  <text
+     x="270"
+     y="590"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#ecf0f1"
+     aria-hidden="true"
+     id="text67">Roast: Medium roast • Roasted at: Equal Exchange, West Bridgewater, MA</text>
+  <!-- Consumer Action Callout -->
+  <g
+     role="img"
+     aria-label="Call to action for consumers to use Digital Product Passport information"
+     id="g70">
+    <rect
+       x="50"
+       y="620"
+       width="800"
+       height="60"
+       fill="#e8f5e8"
+       stroke="#27ae60"
+       stroke-width="2"
+       rx="15"
+       id="rect67" />
+    <text
+       x="450"
+       y="640"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       font-weight="bold"
+       fill="#2c3e50"
+       aria-hidden="true"
+       id="text68">🌟 Your Purchase Makes a Difference</text>
+    <text
+       x="450"
+       y="655"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="#34495e"
+       aria-hidden="true"
+       id="text69">Every cup supports living wages, protects 200+ bird species, and keeps wealth in farming communities</text>
+    <text
+       x="450"
+       y="670"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="#27ae60"
+       aria-hidden="true"
+       id="text70">Complete impact data updates in real-time • View full audit trail at [website link]</text>
+  </g>
+</svg>

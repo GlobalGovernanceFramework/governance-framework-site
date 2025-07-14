@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1000"
+   height="600"
+   viewBox="0 0 1000 600"
+   version="1.1"
+   id="beyond-carbon-tunnel-vision"
+   role="img"
+   aria-labelledby="carbon-comparison-title"
+   aria-describedby="carbon-comparison-brief carbon-comparison-detailed"
+   sodipodi:docname="module-2-beyond-carbon-tunnel-vision-living-systems-accounting.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview69"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.41"
+     inkscape:cx="500.35461"
+     inkscape:cy="300"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="beyond-carbon-tunnel-vision" />
+  <!-- Main title -->
+  <title
+     id="carbon-comparison-title">Beyond Carbon Tunnel Vision - Living Systems Accounting Comparison</title>
+  <!-- Brief description for quick context -->
+  <desc
+     id="carbon-comparison-brief">A side-by-side comparison showing the limitations of carbon-only accounting versus comprehensive living systems accounting. The left side shows a factory with only CO₂ monitoring, while the right side shows the same factory connected to a vibrant ecosystem with biodiversity, soil health, and water systems indicators.</desc>
+  <!-- Detailed description for comprehensive understanding -->
+  <desc
+     id="carbon-comparison-detailed">
+This comparison illustrates why regenerative operations require comprehensive ecological accounting beyond carbon emissions:
+
+Left Side - Carbon Tunnel Vision:
+Shows a factory with industrial smokestacks emitting CO₂, monitored by a single carbon dioxide gauge. This represents the limitation of focusing solely on greenhouse gas emissions while ignoring broader ecological impacts. The factory appears isolated from any environmental context, suggesting disconnection from living systems. This narrow focus can miss critical impacts on biodiversity, soil health, water quality, and ecosystem services that are essential for planetary and human wellbeing.
+
+Right Side - Living Systems Accounting:
+Shows the same factory but now integrated with a vibrant ecosystem showing comprehensive ecological monitoring:
+
+Biodiversity indicators show various wildlife species including birds, butterflies, bees, and ground animals, representing healthy habitat and species abundance. Trees and diverse plant life demonstrate ecosystem vitality and carbon sequestration beyond just emissions reduction.
+
+Soil Health section displays rich, dark earth with visible soil biology, earthworms, and root systems, representing soil organic matter, microbial diversity, and natural nutrient cycling that supports both agriculture and carbon storage.
+
+Water Systems show a clean, flowing river with aquatic life including fish and aquatic plants, representing water quality, watershed protection, and aquatic ecosystem health.
+
+The factory in the living systems model is connected to these natural systems through visible relationships, showing how regenerative operations can enhance rather than degrade ecosystems. Measurement tools monitor all these dimensions simultaneously, providing comprehensive feedback on ecological health.
+
+This visual demonstrates that regenerative ecological accounting tracks biodiversity, soil health, water quality, ecosystem services, and the intricate relationships between living systems, ensuring that carbon reduction efforts also support overall planetary health and resilience.
+  </desc>
+  <defs
+     id="defs10">
+    <!-- Gradients for visual appeal -->
+    <linearGradient
+       id="factoryGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#7f8c8d"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#34495e"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="smokeGradient"
+       x1="0%"
+       y1="100%"
+       x2="0%"
+       y2="0%">
+      <stop
+         offset="0%"
+         stop-color="#95a5a6"
+         stop-opacity="0.8"
+         id="stop3" />
+      <stop
+         offset="100%"
+         stop-color="#bdc3c7"
+         stop-opacity="0.3"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="soilGradient"
+       x1="314.94047"
+       y1="974.94615"
+       x2="369.71273"
+       y2="1029.7184"
+       gradientTransform="scale(2.1908902,0.45643546)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#8B4513"
+         id="stop5" />
+      <stop
+         offset="100%"
+         stop-color="#654321"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       id="waterGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#3498db"
+         id="stop7" />
+      <stop
+         offset="100%"
+         stop-color="#2980b9"
+         id="stop8" />
+    </linearGradient>
+    <radialGradient
+       id="leafGradient"
+       cx="0.3"
+       cy="0.3">
+      <stop
+         offset="0%"
+         stop-color="#2ecc71"
+         id="stop9" />
+      <stop
+         offset="100%"
+         stop-color="#27ae60"
+         id="stop10" />
+    </radialGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#factoryGradient"
+       id="linearGradient69"
+       x1="516.91708"
+       y1="260.54904"
+       x2="625.86202"
+       y2="369.49398"
+       gradientTransform="scale(1.3125896,0.76185273)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#leafGradient"
+       id="radialGradient69"
+       cx="870.2"
+       cy="200.2"
+       fx="870.2"
+       fy="200.2"
+       r="12"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#leafGradient"
+       id="radialGradient70"
+       cx="901"
+       cy="196"
+       fx="901"
+       fy="196"
+       r="10"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#leafGradient"
+       id="radialGradient71"
+       cx="941.8"
+       cy="206.8"
+       fx="941.8"
+       fy="206.8"
+       r="8"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#waterGradient"
+       id="linearGradient71"
+       x1="222.43691"
+       y1="885.73281"
+       x2="273.69812"
+       y2="936.99401"
+       gradientTransform="scale(2.377155,0.42067093)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#waterGradient"
+       id="linearGradient72"
+       x1="206.91066"
+       y1="994.77464"
+       x2="254.4264"
+       y2="1042.2904"
+       gradientTransform="scale(2.5567247,0.39112541)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <!-- Background -->
+  <rect
+     width="1000"
+     height="600"
+     fill="#f8fffe"
+     aria-hidden="true"
+     id="rect10" />
+  <!-- Main Title -->
+  <text
+     x="500"
+     y="40"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="26"
+     font-weight="bold"
+     fill="#2c3e50"
+     aria-hidden="true"
+     id="text10">Beyond Carbon Tunnel Vision</text>
+  <!-- Dividing line -->
+  <line
+     x1="500"
+     y1="70"
+     x2="500"
+     y2="550"
+     stroke="#bdc3c7"
+     stroke-width="3"
+     aria-hidden="true"
+     id="line10" />
+  <!-- LEFT SIDE - CARBON TUNNEL VISION -->
+  <g
+     role="img"
+     aria-label="Carbon tunnel vision showing factory with only CO₂ monitoring, missing broader ecological impacts"
+     id="g29">
+    <!-- Section title -->
+    <text
+       x="250"
+       y="90"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="20"
+       font-weight="bold"
+       fill="#e74c3c"
+       aria-hidden="true"
+       id="text11">❌ Carbon Tunnel Vision</text>
+    <text
+       x="250"
+       y="115"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       fill="#7f8c8d"
+       aria-hidden="true"
+       id="text12">Narrow focus misses ecosystem health</text>
+    <!-- Factory building -->
+    <rect
+       x="180"
+       y="200"
+       width="140"
+       height="80"
+       fill="url(#factoryGradient)"
+       stroke="#2c3e50"
+       stroke-width="2"
+       id="rect12" />
+    <!-- Smokestacks -->
+    <rect
+       x="200"
+       y="180"
+       width="20"
+       height="30"
+       fill="#7f8c8d"
+       id="rect13" />
+    <rect
+       x="230"
+       y="170"
+       width="20"
+       height="40"
+       fill="#7f8c8d"
+       id="rect14" />
+    <rect
+       x="260"
+       y="175"
+       width="20"
+       height="35"
+       fill="#7f8c8d"
+       id="rect15" />
+    <rect
+       x="290"
+       y="185"
+       width="20"
+       height="25"
+       fill="#7f8c8d"
+       id="rect16" />
+    <!-- Smoke/CO₂ emissions -->
+    <ellipse
+       cx="210"
+       cy="165"
+       rx="12"
+       ry="20"
+       fill="url(#smokeGradient)"
+       id="ellipse16" />
+    <ellipse
+       cx="240"
+       cy="155"
+       rx="12"
+       ry="25"
+       fill="url(#smokeGradient)"
+       id="ellipse17" />
+    <ellipse
+       cx="270"
+       cy="160"
+       rx="12"
+       ry="22"
+       fill="url(#smokeGradient)"
+       id="ellipse18" />
+    <ellipse
+       cx="300"
+       cy="170"
+       rx="12"
+       ry="18"
+       fill="url(#smokeGradient)"
+       id="ellipse19" />
+    <!-- CO₂ labels -->
+    <text
+       x="210"
+       y="140"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       font-weight="bold"
+       fill="#e74c3c"
+       aria-hidden="true"
+       id="text19">CO₂</text>
+    <text
+       x="240"
+       y="125"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       font-weight="bold"
+       fill="#e74c3c"
+       aria-hidden="true"
+       id="text20">CO₂</text>
+    <text
+       x="270"
+       y="130"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       font-weight="bold"
+       fill="#e74c3c"
+       aria-hidden="true"
+       id="text21">CO₂</text>
+    <!-- Single CO₂ gauge -->
+    <circle
+       cx="250"
+       cy="350"
+       r="50"
+       fill="#ecf0f1"
+       stroke="#e74c3c"
+       stroke-width="4"
+       id="circle21" />
+    <path
+       d="M 220 350 A 30 30 0 0 1 280 350"
+       stroke="#e74c3c"
+       stroke-width="6"
+       fill="none"
+       id="path21" />
+    <circle
+       cx="265"
+       cy="335"
+       r="4"
+       fill="#e74c3c"
+       id="circle22" />
+    <text
+       x="250"
+       y="355"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       font-weight="bold"
+       fill="#e74c3c"
+       aria-hidden="true"
+       id="text22">CO₂</text>
+    <text
+       x="250"
+       y="370"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="10"
+       fill="#7f8c8d"
+       aria-hidden="true"
+       id="text23">ONLY</text>
+    <!-- Barren ground -->
+    <rect
+       x="100"
+       y="450"
+       width="300"
+       height="30"
+       fill="#95a5a6"
+       id="rect23" />
+    <text
+       x="250"
+       y="490"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="#7f8c8d"
+       aria-hidden="true"
+       id="text24">Missing: biodiversity, soil health, water quality</text>
+    <!-- Warning indicators -->
+    <text
+       x="80"
+       y="300"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       fill="#e74c3c"
+       aria-hidden="true"
+       id="text25">⚠️ Ignores:</text>
+    <text
+       x="80"
+       y="320"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="#7f8c8d"
+       aria-hidden="true"
+       id="text26">• Biodiversity loss</text>
+    <text
+       x="80"
+       y="335"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="#7f8c8d"
+       aria-hidden="true"
+       id="text27">• Soil degradation</text>
+    <text
+       x="80"
+       y="350"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="#7f8c8d"
+       aria-hidden="true"
+       id="text28">• Water pollution</text>
+    <text
+       x="80"
+       y="365"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="#7f8c8d"
+       aria-hidden="true"
+       id="text29">• Ecosystem services</text>
+  </g>
+  <!-- RIGHT SIDE - LIVING SYSTEMS ACCOUNTING -->
+  <text
+     x="750"
+     y="90"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="20px"
+     font-weight="bold"
+     fill="#27ae60"
+     aria-hidden="true"
+     id="text30">✅ Living Systems Accounting</text>
+  <text
+     x="750"
+     y="115"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     fill="#7f8c8d"
+     aria-hidden="true"
+     id="text31">Comprehensive ecosystem health monitoring</text>
+  <rect
+     x="680"
+     y="200"
+     width="140"
+     height="80"
+     fill="url(#factoryGradient)"
+     stroke="#27ae60"
+     stroke-width="3"
+     id="rect31"
+     style="fill:url(#linearGradient69)" />
+  <rect
+     x="700"
+     y="180"
+     width="20"
+     height="30"
+     fill="#27ae60"
+     id="rect32" />
+  <rect
+     x="730"
+     y="170"
+     width="20"
+     height="40"
+     fill="#27ae60"
+     id="rect33" />
+  <rect
+     x="760"
+     y="175"
+     width="20"
+     height="35"
+     fill="#27ae60"
+     id="rect34" />
+  <rect
+     x="790"
+     y="185"
+     width="20"
+     height="25"
+     fill="#27ae60"
+     id="rect35" />
+  <ellipse
+     cx="710"
+     cy="165"
+     rx="8"
+     ry="15"
+     fill="#ffffff"
+     opacity="0.7"
+     id="ellipse35" />
+  <ellipse
+     cx="740"
+     cy="155"
+     rx="8"
+     ry="20"
+     fill="#ffffff"
+     opacity="0.7"
+     id="ellipse36" />
+  <ellipse
+     cx="770"
+     cy="160"
+     rx="8"
+     ry="18"
+     fill="#ffffff"
+     opacity="0.7"
+     id="ellipse37" />
+  <ellipse
+     cx="800"
+     cy="170"
+     rx="8"
+     ry="15"
+     fill="#ffffff"
+     opacity="0.7"
+     id="ellipse38" />
+  <rect
+     x="850"
+     y="140"
+     width="140"
+     height="100"
+     fill="#e8f5e8"
+     stroke="#27ae60"
+     stroke-width="2"
+     rx="10"
+     id="rect38" />
+  <text
+     x="920"
+     y="155"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     fill="#27ae60"
+     aria-hidden="true"
+     id="text38">🦅 BIODIVERSITY</text>
+  <text
+     x="860"
+     y="175"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     aria-hidden="true"
+     id="text39">🦋</text>
+  <text
+     x="885"
+     y="175"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     aria-hidden="true"
+     id="text40">🐝</text>
+  <text
+     x="910"
+     y="175"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     aria-hidden="true"
+     id="text41">🦌</text>
+  <text
+     x="935"
+     y="175"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     aria-hidden="true"
+     id="text42">🐿️</text>
+  <text
+     x="960"
+     y="175"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     aria-hidden="true"
+     id="text43">🦎</text>
+  <circle
+     cx="875"
+     cy="205"
+     r="12"
+     fill="url(#leafGradient)"
+     id="circle43"
+     style="fill:url(#radialGradient69)" />
+  <rect
+     x="873"
+     y="210"
+     width="4"
+     height="15"
+     fill="#8b4513"
+     id="rect43" />
+  <circle
+     cx="905"
+     cy="200"
+     r="10"
+     fill="url(#leafGradient)"
+     id="circle44"
+     style="fill:url(#radialGradient70)" />
+  <rect
+     x="903"
+     y="205"
+     width="4"
+     height="12"
+     fill="#8b4513"
+     id="rect44" />
+  <circle
+     cx="945"
+     cy="210"
+     r="8"
+     fill="url(#leafGradient)"
+     id="circle45"
+     style="fill:url(#radialGradient71)" />
+  <rect
+     x="943"
+     y="215"
+     width="4"
+     height="10"
+     fill="#8b4513"
+     id="rect45" />
+  <text
+     x="920"
+     y="235"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#27ae60"
+     aria-hidden="true"
+     id="text45">Species abundance tracked</text>
+  <rect
+     x="680"
+     y="420"
+     width="140"
+     height="80"
+     fill="#f4e4bc"
+     stroke="#8b4513"
+     stroke-width="2"
+     rx="10"
+     id="rect46" />
+  <text
+     x="748"
+     y="435"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     fill="#8b4513"
+     aria-hidden="true"
+     id="text46">🌱 SOIL HEALTH</text>
+  <rect
+     x="690"
+     y="445"
+     width="120"
+     height="25"
+     fill="url(#soilGradient)"
+     id="rect47"
+     style="fill:url(#soilGradient)" />
+  <ellipse
+     cx="710"
+     cy="457"
+     rx="3"
+     ry="8"
+     fill="#cd853f"
+     id="ellipse47" />
+  <ellipse
+     cx="730"
+     cy="455"
+     rx="3"
+     ry="8"
+     fill="#cd853f"
+     id="ellipse48" />
+  <ellipse
+     cx="750"
+     cy="460"
+     rx="3"
+     ry="8"
+     fill="#cd853f"
+     id="ellipse49" />
+  <path
+     d="m 720,445 q -5,10 -10,20"
+     stroke="#228b22"
+     stroke-width="2"
+     fill="none"
+     id="path49" />
+  <path
+     d="m 740,445 q 5,10 10,20"
+     stroke="#228b22"
+     stroke-width="2"
+     fill="none"
+     id="path50" />
+  <path
+     d="m 770,445 q -5,10 -10,20"
+     stroke="#228b22"
+     stroke-width="2"
+     fill="none"
+     id="path51" />
+  <text
+     x="750"
+     y="485"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#8b4513"
+     aria-hidden="true"
+     id="text51">Organic matter biology</text>
+  <text
+     x="750"
+     y="495"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#8b4513"
+     aria-hidden="true"
+     id="text52">Carbon sequestration</text>
+  <rect
+     x="520"
+     y="350"
+     width="140"
+     height="120"
+     fill="#e6f3ff"
+     stroke="#3498db"
+     stroke-width="2"
+     rx="10"
+     id="rect52" />
+  <text
+     x="590"
+     y="365"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     fill="#3498db"
+     aria-hidden="true"
+     id="text53">💧 WATER SYSTEMS</text>
+  <path
+     d="m 530,380 q 60,10 120,5"
+     stroke="url(#waterGradient)"
+     stroke-width="15"
+     fill="none"
+     id="path53"
+     style="stroke:url(#linearGradient71)" />
+  <path
+     d="m 530,395 q 60,10 120,5"
+     stroke="url(#waterGradient)"
+     stroke-width="12"
+     fill="none"
+     id="path54"
+     style="stroke:url(#linearGradient72)" />
+  <ellipse
+     cx="630.90454"
+     cy="229.53098"
+     rx="8"
+     ry="4"
+     fill="#ffa500"
+     transform="rotate(15)"
+     id="ellipse54" />
+  <ellipse
+     cx="492.74939"
+     cy="487.97852"
+     rx="6"
+     ry="3"
+     fill="#ff6347"
+     transform="rotate(-10)"
+     id="ellipse55" />
+  <ellipse
+     cx="706.60034"
+     cy="157.84784"
+     rx="7"
+     ry="4"
+     fill="#32cd32"
+     transform="rotate(20)"
+     id="ellipse56" />
+  <ellipse
+     cx="505.00565"
+     cy="549.42633"
+     rx="5"
+     ry="3"
+     fill="#4169e1"
+     transform="rotate(-15)"
+     id="ellipse57" />
+  <path
+     d="m 540,410 q 5,10 0,20"
+     stroke="#228b22"
+     stroke-width="3"
+     fill="none"
+     id="path57" />
+  <path
+     d="m 580,415 q 5,10 0,20"
+     stroke="#228b22"
+     stroke-width="3"
+     fill="none"
+     id="path58" />
+  <path
+     d="m 620,412 q 5,10 0,20"
+     stroke="#228b22"
+     stroke-width="3"
+     fill="none"
+     id="path59" />
+  <text
+     x="590"
+     y="450"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#3498db"
+     aria-hidden="true"
+     id="text59">Clean water aquatic life</text>
+  <text
+     x="590"
+     y="460"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#3498db"
+     aria-hidden="true"
+     id="text60">Watershed protection</text>
+  <line
+     x1="750"
+     y1="280"
+     x2="850"
+     y2="190"
+     stroke="#27ae60"
+     stroke-width="2"
+     stroke-dasharray="3, 3"
+     id="line60" />
+  <line
+     x1="750"
+     y1="280"
+     x2="680"
+     y2="450"
+     stroke="#8b4513"
+     stroke-width="2"
+     stroke-dasharray="3, 3"
+     id="line61" />
+  <line
+     x1="750"
+     y1="280"
+     x2="590"
+     y2="380"
+     stroke="#3498db"
+     stroke-width="2"
+     stroke-dasharray="3, 3"
+     id="line62" />
+  <rect
+     x="530"
+     y="500"
+     width="226.24113"
+     height="50"
+     fill="#2c3e50"
+     rx="11.312057"
+     id="rect62"
+     style="stroke-width:1.06358" />
+  <text
+     x="642"
+     y="515"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#ffffff"
+     aria-hidden="true"
+     id="text62">🌿 COMPREHENSIVE MONITORING</text>
+  <text
+     x="550"
+     y="530"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#ecf0f1"
+     aria-hidden="true"
+     id="text63">Carbon: ✓</text>
+  <text
+     x="598"
+     y="530"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#ecf0f1"
+     aria-hidden="true"
+     id="text64">Biodiversity: ✓</text>
+  <text
+     x="668"
+     y="530"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#ecf0f1"
+     aria-hidden="true"
+     id="text65">Soil: ✓</text>
+  <text
+     x="702"
+     y="530"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#ecf0f1"
+     aria-hidden="true"
+     id="text66">Water: ✓</text>
+  <text
+     x="544"
+     y="542"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#ecf0f1"
+     aria-hidden="true"
+     id="text67">Ecosystem Services: ✓</text>
+  <text
+     x="650"
+     y="542"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#ecf0f1"
+     aria-hidden="true"
+     id="text68">Community Health: ✓</text>
+  <!-- Bottom comparison summary -->
+  <rect
+     x="100"
+     y="560"
+     width="800"
+     height="30"
+     fill="#ecf0f1"
+     stroke="#bdc3c7"
+     stroke-width="1"
+     rx="15"
+     aria-hidden="true"
+     id="rect68" />
+  <text
+     x="500"
+     y="580"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     fill="#2c3e50"
+     aria-hidden="true"
+     id="text69">Living Systems Accounting = Comprehensive planetary health beyond carbon tunnel vision</text>
+</svg>

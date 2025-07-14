@@ -570,6 +570,36 @@
         ]
       }
     },
+    regenerativeEnterprise: {
+      en: {
+        title: 'Regenerative Enterprise Framework',
+        defaultDescription: "A revolutionary framework transforming businesses from extractive to regenerative models, aligning corporate purpose with planetary well-being. Through six comprehensive modules, we're redefining governance, operations, finance, culture, and advocacy to heal ecosystems, equitably distribute value, and foster human flourishing.",
+        defaultFeatures: [
+          'Module 0: Digital Foundations with Ethical AI Governance through Turing Councils and regenerative digital twins',
+          'Module 1: Regenerative Core with stakeholder governance, steward-ownership models, and Rights of Nature integration',
+          'Module 2: Regenerative Operations featuring circular design, Digital Product Passports, and ecological impact accounting',
+          'Module 3: Equitable Finance with Hearts/Leaves currencies, community wealth building, and living asset depreciation',
+          'Module 4: Thriving Cultures achieving Work in Liberation certification with psychological safety and flexible arrangements',
+          'Module 5: Ecosystemic Engagement through Regenerative Trade Zone charters and open-source Patent Commons',
+          'Pathfinder Program implementation pathway from exploration to systemic leadership over 2-4 years',
+          'Integration with Global Governance Frameworks including AUBI, Gaian Trade, and Aurora Accord systems'
+        ]
+      },
+      sv: {
+        title: 'Ramverk för regenerativa företag',
+        defaultDescription: "Ett revolutionerande ramverk som transformerar företag från utvinningsmodeller till regenerativa modeller, och anpassar företagssyfte med planetär välmående. Genom sex omfattande moduler omdefinierar vi styrning, verksamhet, finans, kultur och advocacy för att läka ekosystem, rättvist fördela värde och främja mänskligt välmående.",
+        defaultFeatures: [
+          'Modul 0: Digitala grunder med etisk AI-styrning genom Turing-råd och regenerativa digitala tvillingar',
+          'Modul 1: Regenerativ kärna med intressentstyrning, förvaltarägarskap och integration av naturens rättigheter',
+          'Modul 2: Regenerativ verksamhet med cirkulär design, digitala produktpass och ekologisk påverkansbokföring',
+          'Modul 3: Rättvis finans med Hearts/Leaves-valutor, samhällsvälstånd och levande tillgångsavskrivning',
+          'Modul 4: Blomstrande kulturer som uppnår arbete-i-befrielse-certifiering med psykologisk säkerhet och flexibla arrangemang',
+          'Modul 5: Ekosystemiskt engagemang genom regenerativa handelszon-stadgar och öppen källkods gemensamma patent',
+          'Implementeringsväg av stigfinnarprogram, från utforskning till systemiskt ledarskap över 2-4 år',
+          'Integration med Global Governance Frameworks inklusive AUBI, Gaian Trade och Aurora Accord-system'
+        ]
+      }
+    },
     existential: {
       en: {
         title: 'Global Existential Risk Governance Framework',

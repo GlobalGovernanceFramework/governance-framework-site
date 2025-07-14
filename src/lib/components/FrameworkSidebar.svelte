@@ -328,6 +328,11 @@
     background-color: #E0E7FF; /* Light purple */
     color: #4338CA;
   }
+
+  .status-badge.community-review {
+    background-color: #FEF3C7;
+    color: #92400E;
+  }
   
   .status-badge.ready {
     background-color: #D1FAE5; /* Light green */

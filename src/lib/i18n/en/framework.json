@@ -136,6 +136,9 @@
       "label": "In Review",
       "description": "Near-final draft undergoing review"
     },
+    "community-review": {
+      "label": "Community Review Draft"
+    },
     "ready": {
       "label": "Ready",
       "description": "Fully developed and ready for implementation"
@@ -298,6 +301,7 @@
       "frameworkTitles": {
         "treatyForOurOnlyHome": "Treaty for Our Only Home",
         "institutionalRegeneration": "Institutional Regeneration",
+        "regenerativeEnterprise": "Regenerative Enterprise",
         "climateAndEnergyGovernance": "Climate & Energy Governance",
         "peaceAndConflictResolution": "Peace & Conflict Resolution",
         "indigenousGovernanceAndTraditionalKnowledge": "Indigenous Governance & Traditional Knowledge",

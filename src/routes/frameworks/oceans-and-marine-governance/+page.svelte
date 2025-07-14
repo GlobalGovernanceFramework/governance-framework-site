@@ -30,7 +30,7 @@
         accent: '#0284c7',
         light: '#f0f9ff'
       }}
-      contactEmail="globalgovernanceframeworks@gmail.com"
+      contactEmail="contact@globalgovernanceframeworks.org"
     />
 
     <!-- Original content (if any legacy content exists) -->

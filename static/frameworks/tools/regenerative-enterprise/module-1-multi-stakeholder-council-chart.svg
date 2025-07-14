@@ -1,0 +1,1558 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1200 900"
+   role="img"
+   aria-labelledby="council-title council-brief council-detailed"
+   version="1.1"
+   id="svg137"
+   sodipodi:docname="module-1-multi-stakeholder-council-chart.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview137"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.66468037"
+     inkscape:cx="560.41974"
+     inkscape:cy="440.81338"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg137" />
+  <!-- Main title -->
+  <title
+     id="council-title">Multi-Stakeholder Council Organizational Structure</title>
+  <!-- Brief description for quick context -->
+  <desc
+     id="council-brief">A circular organizational chart showing democratic governance structure with the Stakeholder Council at the center, surrounded by five constituency groups: Worker Representatives (25%, blue), Community Representatives (25%, green), Ecological Representatives (20%, purple), Investor/Economic Representatives (15%, orange), and Specialist/Advisory Representatives (15%, red). Each constituency shows specific representative types and connects to the central council through democratic selection processes. Decision-making flows use sociocratic principles with consent-based decisions and circle governance.</desc>
+  <!-- Detailed description for comprehensive understanding -->
+  <desc
+     id="council-detailed">
+This organizational chart illustrates the democratic structure of a Multi-Stakeholder Council that replaces traditional shareholder-dominated corporate governance with inclusive representation from all affected parties.
+
+CENTRAL COUNCIL STRUCTURE:
+At the center is the Stakeholder Council (large blue circle), which serves as the primary decision-making body for enterprise governance. The council operates through sociocratic principles including consent-based decisions, circle governance with nested authority, and double-linking between constituencies and the central body.
+
+CONSTITUENCY BREAKDOWN (Five Sectors, Clockwise from Top):
+
+WORKER REPRESENTATIVES (25% - Blue Sector, Top):
+Located at the 12 o'clock position with medium blue background.
+Includes four representative types:
+- Elected Worker Delegates: Chosen democratically from different departments and skill levels
+- Union Representatives: From organized labor where applicable
+- Contractor/Gig Representatives: For enterprises using significant contingent labor
+- Professional/Managerial Reps: Ensuring all worker categories have voice
+Connected to central council via blue arrow labeled &quot;Democratic Election Process&quot;
+
+COMMUNITY REPRESENTATIVES (25% - Green Sector, Top Right):
+Positioned at the 2 o'clock position with medium green background.
+Includes four representative types:
+- Local Community Delegates: From areas where enterprise operates
+- Indigenous Community Reps: When operations affect traditional territories
+- Environmental Justice Advocates: Representing communities affected by environmental impacts
+- Customer/User Representatives: For enterprises with significant consumer impact
+Connected via green arrow labeled &quot;Community Assembly Selection&quot;
+
+ECOLOGICAL REPRESENTATIVES (20% - Purple Sector, Right):
+Located at the 4 o'clock position with medium purple background.
+Includes four representative types:
+- Environmental Scientists: With expertise in enterprise ecological impacts
+- Indigenous Knowledge Keepers: Traditional ecological knowledge holders
+- Conservation Advocates: Representing non-human species and ecosystems
+- Future Generations Reps: Often youth advocates speaking for long-term ecological health
+Connected via purple arrow labeled &quot;Expertise  Advocacy Selection&quot;
+
+INVESTOR/ECONOMIC REPRESENTATIVES (15% - Orange Sector, Bottom):
+Positioned at the 7 o'clock position with medium orange background.
+Includes three representative types:
+- Financial Stakeholder Reps: Shareholders, lenders, impact investors
+- Local Economic Representatives: Suppliers, business partners, economic development advocates
+- Cooperative/Solidarity Economy Reps: When relevant to enterprise operations
+Connected via orange arrow labeled &quot;Economic Stakeholder Appointment&quot;
+
+SPECIALIST/ADVISORY REPRESENTATIVES (15% - Red Sector, Left):
+Located at the 10 o'clock position with medium red background.
+Includes four representative types:
+- Technical Expertise: Relevant to enterprise operations and social/environmental impact
+- Legal/Regulatory Expertise: Ensuring compliance and advocacy for supportive policy
+- Cultural/Spiritual Representatives: When relevant to enterprise purpose and community impact
+- International/Global Perspective: For enterprises with global operations
+Connected via red arrow labeled &quot;Expertise Nomination Process&quot;
+
+DECISION-MAKING AUTHORITY (Bottom Section):
+Three authority domains are displayed in rounded rectangles:
+- Strategic Planning Authority (left): Mission development, strategic direction, capital allocation, partnerships
+- Policy Development Authority (center): Environmental policy, labor policy, community engagement, supply chain standards
+- Accountability/Oversight Authority (right): Executive compensation, stakeholder impact assessment, conflict resolution, transparency requirements
+
+DEMOCRATIC PROCESSES (Side Annotations):
+Left side shows &quot;Sociocratic Decision-Making Principles&quot;:
+- Consent-Based Decisions: No fundamental objections rather than unanimous enthusiasm
+- Circle Governance: Nested circles with clear role definitions
+- Double-Linking: Representative accountability to constituencies
+- Continuous Improvement: Regular review and adaptation
+
+Right side shows &quot;Selection and Accountability&quot;:
+- Term Limits: Rotating representation to prevent entrenchment
+- Recall Procedures: Constituencies can replace representatives
+- Regular Reporting: Representatives maintain connection to constituencies
+- Training Support: Governance skills development for all representatives
+
+CONNECTING ARROWS:
+Each constituency sector connects to the central council through colored arrows that match the sector color, representing the democratic flow of authority from constituencies to the council. Additional dotted arrows show information flow back from council to constituencies for accountability.
+
+VISUAL DESIGN ELEMENTS:
+- Percentage sizes reflected in sector arc lengths
+- Color coding maintains consistency between sectors and connecting elements
+- Clear typography hierarchy distinguishes representative types from constituency labels
+- Central council prominence reflects its decision-making authority while showing dependence on constituent input
+
+The chart demonstrates how democratic enterprise governance distributes power equitably among all stakeholders rather than concentrating it in financial shareholders, creating accountability to the full community affected by enterprise decisions.
+  </desc>
+  <defs
+     id="defs13">
+    <!-- Gradient definitions for each constituency -->
+    <radialGradient
+       id="centerGradient"
+       cx="600"
+       cy="400"
+       r="81.5"
+       fx="600"
+       fy="400"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,28)">
+      <stop
+         offset="0%"
+         style="stop-color:#e3f2fd;stop-opacity:1"
+         id="stop1" />
+      <stop
+         offset="100%"
+         style="stop-color:#1976d2;stop-opacity:1"
+         id="stop2" />
+    </radialGradient>
+    <linearGradient
+       id="workerGradient"
+       x1="423.894"
+       y1="152.90274"
+       x2="505.622"
+       y2="234.63073"
+       gradientTransform="matrix(1.2909944,0,0,0.77459667,1.5957447,105.9149)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color:#e8f4fd;stop-opacity:1"
+         id="stop3" />
+      <stop
+         offset="100%"
+         style="stop-color:#2196f3;stop-opacity:1"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="communityGradient"
+       x1="1057.9894"
+       y1="125.72126"
+       x2="1160.054"
+       y2="227.78587"
+       gradientTransform="matrix(0.70794661,0,0,1.4125359,0,28)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color:#e8f5e8;stop-opacity:1"
+         id="stop5" />
+      <stop
+         offset="100%"
+         style="stop-color:#4caf50;stop-opacity:1"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       id="ecologicalGradient"
+       x1="956.7717"
+       y1="291.06488"
+       x2="1067.2993"
+       y2="401.59252"
+       gradientTransform="matrix(0.76961934,0,0,1.2993437,12.765957,33.319149)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color:#f3e5f5;stop-opacity:1"
+         id="stop7" />
+      <stop
+         offset="100%"
+         style="stop-color:#9c27b0;stop-opacity:1"
+         id="stop8" />
+    </linearGradient>
+    <linearGradient
+       id="economicGradient"
+       x1="283.88741"
+       y1="976.01467"
+       x2="381.84279"
+       y2="1073.9701"
+       gradientTransform="matrix(1.5767604,0,0,0.63421178,-14.62766,-13.297873)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color:#fff3e0;stop-opacity:1"
+         id="stop9" />
+      <stop
+         offset="100%"
+         style="stop-color:#ff9800;stop-opacity:1"
+         id="stop10" />
+    </linearGradient>
+    <linearGradient
+       id="specialistGradient"
+       x1="534.98907"
+       y1="126.18744"
+       x2="637.05369"
+       y2="228.25205"
+       gradientTransform="matrix(0.70794661,0,0,1.4125359,0,28)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color:#ffebee;stop-opacity:1"
+         id="stop11" />
+      <stop
+         offset="100%"
+         style="stop-color:#f44336;stop-opacity:1"
+         id="stop12" />
+    </linearGradient>
+    <!-- Arrow marker -->
+    <marker
+       id="arrowhead"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#666"
+         id="polygon12" />
+    </marker>
+    <!-- Dotted arrow marker for feedback -->
+    <marker
+       id="dotted-arrow"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#999"
+         opacity="0.7"
+         id="polygon13" />
+    </marker>
+    <radialGradient
+       id="centerGradient-3"
+       cx="600"
+       cy="400"
+       r="81.5"
+       fx="600"
+       fy="400"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,0.90862812,-686.5,5.0487534)">
+      <stop
+         offset="0%"
+         style="stop-color:#e3f2fd;stop-opacity:1"
+         id="stop1-6" />
+      <stop
+         offset="100%"
+         style="stop-color:#1976d2;stop-opacity:1"
+         id="stop2-7" />
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect
+     width="100%"
+     height="100%"
+     fill="#fafafa"
+     id="rect13" />
+  <!-- Title -->
+  <rect
+     x="50"
+     y="20"
+     width="1100"
+     height="50"
+     fill="#263238"
+     rx="5"
+     id="rect14" />
+  <text
+     x="600"
+     y="40"
+     text-anchor="middle"
+     fill="white"
+     font-size="20"
+     font-weight="bold"
+     id="text14">
+    Multi-Stakeholder Council: Democratic Enterprise Governance
+  </text>
+  <text
+     x="600"
+     y="60"
+     text-anchor="middle"
+     fill="white"
+     font-size="14"
+     id="text15">
+    Replacing Shareholder Primacy with Inclusive Stakeholder Democracy
+  </text>
+  <!-- Central Council -->
+  <circle
+     cx="600"
+     cy="428"
+     r="80"
+     fill="url(#centerGradient)"
+     stroke="#1976d2"
+     stroke-width="3"
+     id="circle15"
+     style="fill:url(#centerGradient)" />
+  <text
+     x="600"
+     y="418"
+     text-anchor="middle"
+     font-size="14px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text16">Stakeholder</text>
+  <text
+     x="600"
+     y="436"
+     text-anchor="middle"
+     font-size="14px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text17">Council</text>
+  <text
+     x="600"
+     y="453"
+     text-anchor="middle"
+     font-size="11px"
+     fill="#ffffff"
+     id="text18">Democratic Decision-Making</text>
+  <!-- Worker Representatives (25% - Top, 12 o'clock) -->
+  <text
+     x="603.19153"
+     y="174.46806"
+     text-anchor="middle"
+     font-size="14px"
+     font-weight="bold"
+     fill="#1976d2"
+     id="text19">Worker Representatives (25%)</text>
+  <rect
+     x="348"
+     y="88"
+     width="120"
+     height="60"
+     fill="#e3f2fd"
+     stroke="#2196f3"
+     stroke-width="1"
+     rx="3"
+     id="rect19" />
+  <text
+     x="408"
+     y="103"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text20">Elected Worker</text>
+  <text
+     x="408"
+     y="116"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text21">Delegates</text>
+  <text
+     x="408"
+     y="133"
+     text-anchor="middle"
+     font-size="9px"
+     id="text22">All departments</text>
+  <text
+     x="408"
+     y="143"
+     text-anchor="middle"
+     font-size="9px"
+     id="text23">skill levels</text>
+  <rect
+     x="478"
+     y="88"
+     width="120"
+     height="60"
+     fill="#e3f2fd"
+     stroke="#2196f3"
+     stroke-width="1"
+     rx="3"
+     id="rect23" />
+  <text
+     x="538"
+     y="103"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text24">Union</text>
+  <text
+     x="538"
+     y="116"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text25">Representatives</text>
+  <text
+     x="538"
+     y="133"
+     text-anchor="middle"
+     font-size="9px"
+     id="text26">Where organized</text>
+  <text
+     x="538"
+     y="143"
+     text-anchor="middle"
+     font-size="9px"
+     id="text27">labor exists</text>
+  <rect
+     x="608"
+     y="88"
+     width="120"
+     height="60"
+     fill="#e3f2fd"
+     stroke="#2196f3"
+     stroke-width="1"
+     rx="3"
+     id="rect27" />
+  <text
+     x="668"
+     y="103"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text28">Contractor/Gig</text>
+  <text
+     x="668"
+     y="116"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text29">Representatives</text>
+  <text
+     x="668"
+     y="133"
+     text-anchor="middle"
+     font-size="9px"
+     id="text30">Contingent</text>
+  <text
+     x="668"
+     y="143"
+     text-anchor="middle"
+     font-size="9px"
+     id="text31">workforce</text>
+  <rect
+     x="738"
+     y="88"
+     width="120"
+     height="60"
+     fill="#e3f2fd"
+     stroke="#2196f3"
+     stroke-width="1"
+     rx="3"
+     id="rect31" />
+  <text
+     x="798"
+     y="103"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text32">Professional/</text>
+  <text
+     x="798"
+     y="116"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text33">Managerial Reps</text>
+  <text
+     x="798"
+     y="133"
+     text-anchor="middle"
+     font-size="9px"
+     id="text34">All worker</text>
+  <text
+     x="798"
+     y="143"
+     text-anchor="middle"
+     font-size="9px"
+     id="text35">categories</text>
+  <path
+     d="M 600,280.59574 V 344"
+     stroke="#2196f3"
+     stroke-width="3"
+     fill="none"
+     marker-end="url(#arrowhead)"
+     id="path35"
+     sodipodi:nodetypes="cc" />
+  <text
+     x="614.68085"
+     y="304.63831"
+     font-size="10px"
+     fill="#2196f3"
+     font-weight="bold"
+     id="text36">Democratic</text>
+  <text
+     x="614.68085"
+     y="317.63831"
+     font-size="10px"
+     fill="#2196f3"
+     font-weight="bold"
+     id="text37">Election</text>
+  <!-- Community Representatives (25% - Top Right, 2 o'clock) -->
+  <text
+     x="778.40424"
+     y="227.2766"
+     text-anchor="middle"
+     font-size="14px"
+     font-weight="bold"
+     fill="#2e7d32"
+     id="text38">Community Reps (25%)</text>
+  <rect
+     x="850"
+     y="248"
+     width="120"
+     height="60"
+     fill="#e8f5e8"
+     stroke="#4caf50"
+     stroke-width="1"
+     rx="3"
+     id="rect38" />
+  <text
+     x="910"
+     y="263"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text39">Local Community</text>
+  <text
+     x="910"
+     y="276"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text40">Delegates</text>
+  <text
+     x="910"
+     y="293"
+     text-anchor="middle"
+     font-size="9px"
+     id="text41">Operation areas</text>
+  <text
+     x="910"
+     y="303"
+     text-anchor="middle"
+     font-size="9px"
+     id="text42">representatives</text>
+  <rect
+     x="980"
+     y="248"
+     width="120"
+     height="60"
+     fill="#e8f5e8"
+     stroke="#4caf50"
+     stroke-width="1"
+     rx="3"
+     id="rect42" />
+  <text
+     x="1040"
+     y="263"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text43">Indigenous</text>
+  <text
+     x="1040"
+     y="276"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text44">Community Reps</text>
+  <text
+     x="1040"
+     y="293"
+     text-anchor="middle"
+     font-size="9px"
+     id="text45">Traditional</text>
+  <text
+     x="1040"
+     y="303"
+     text-anchor="middle"
+     font-size="9px"
+     id="text46">territories</text>
+  <rect
+     x="850"
+     y="318"
+     width="120"
+     height="60"
+     fill="#e8f5e8"
+     stroke="#4caf50"
+     stroke-width="1"
+     rx="3"
+     id="rect46" />
+  <text
+     x="910"
+     y="333"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text47">Environmental</text>
+  <text
+     x="910"
+     y="346"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text48">Justice Advocates</text>
+  <text
+     x="910"
+     y="363"
+     text-anchor="middle"
+     font-size="9px"
+     id="text49">Frontline</text>
+  <text
+     x="910"
+     y="373"
+     text-anchor="middle"
+     font-size="9px"
+     id="text50">communities</text>
+  <rect
+     x="980"
+     y="318"
+     width="120"
+     height="60"
+     fill="#e8f5e8"
+     stroke="#4caf50"
+     stroke-width="1"
+     rx="3"
+     id="rect50" />
+  <text
+     x="1040"
+     y="333"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text51">Customer/User</text>
+  <text
+     x="1040"
+     y="346"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text52">Representatives</text>
+  <text
+     x="1040"
+     y="363"
+     text-anchor="middle"
+     font-size="9px"
+     id="text53">Consumer</text>
+  <text
+     x="1040"
+     y="373"
+     text-anchor="middle"
+     font-size="9px"
+     id="text54">impact areas</text>
+  <path
+     d="m 750,348 -70,60"
+     stroke="#4caf50"
+     stroke-width="3"
+     fill="none"
+     marker-end="url(#arrowhead)"
+     id="path54" />
+  <text
+     x="737.23407"
+     y="374.91489"
+     font-size="10px"
+     fill="#4caf50"
+     font-weight="bold"
+     id="text55">Community</text>
+  <text
+     x="737.23407"
+     y="387.91489"
+     font-size="10px"
+     fill="#4caf50"
+     font-weight="bold"
+     id="text56">Assembly</text>
+  <!-- Ecological Representatives (20% - Right, 4 o'clock) -->
+  <text
+     x="761.91492"
+     y="571.40424"
+     text-anchor="middle"
+     font-size="14px"
+     font-weight="bold"
+     fill="#7b1fa2"
+     id="text57">Ecological Reps (20%)</text>
+  <rect
+     x="850"
+     y="408"
+     width="120"
+     height="60"
+     fill="#f3e5f5"
+     stroke="#9c27b0"
+     stroke-width="1"
+     rx="3"
+     id="rect57" />
+  <text
+     x="910"
+     y="423"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text58">Environmental</text>
+  <text
+     x="910"
+     y="436"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text59">Scientists</text>
+  <text
+     x="910"
+     y="453"
+     text-anchor="middle"
+     font-size="9px"
+     id="text60">Impact expertise</text>
+  <text
+     x="910"
+     y="463"
+     text-anchor="middle"
+     font-size="9px"
+     id="text61">analysis</text>
+  <rect
+     x="980"
+     y="408"
+     width="120"
+     height="60"
+     fill="#f3e5f5"
+     stroke="#9c27b0"
+     stroke-width="1"
+     rx="3"
+     id="rect61" />
+  <text
+     x="1040"
+     y="423"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text62">Indigenous</text>
+  <text
+     x="1040"
+     y="436"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text63">Knowledge Keepers</text>
+  <text
+     x="1040"
+     y="453"
+     text-anchor="middle"
+     font-size="9px"
+     id="text64">Traditional</text>
+  <text
+     x="1040"
+     y="463"
+     text-anchor="middle"
+     font-size="9px"
+     id="text65">ecological wisdom</text>
+  <rect
+     x="850"
+     y="488"
+     width="120"
+     height="60"
+     fill="#f3e5f5"
+     stroke="#9c27b0"
+     stroke-width="1"
+     rx="3"
+     id="rect65" />
+  <text
+     x="910"
+     y="503"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text66">Conservation</text>
+  <text
+     x="910"
+     y="516"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text67">Advocates</text>
+  <text
+     x="910"
+     y="533"
+     text-anchor="middle"
+     font-size="9px"
+     id="text68">Species</text>
+  <text
+     x="910"
+     y="543"
+     text-anchor="middle"
+     font-size="9px"
+     id="text69">ecosystem reps</text>
+  <rect
+     x="980"
+     y="488"
+     width="120"
+     height="60"
+     fill="#f3e5f5"
+     stroke="#9c27b0"
+     stroke-width="1"
+     rx="3"
+     id="rect69" />
+  <text
+     x="1040"
+     y="503"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text70">Future Generations</text>
+  <text
+     x="1040"
+     y="516"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text71">Representatives</text>
+  <text
+     x="1040"
+     y="533"
+     text-anchor="middle"
+     font-size="9px"
+     id="text72">Youth advocates</text>
+  <text
+     x="1040"
+     y="543"
+     text-anchor="middle"
+     font-size="9px"
+     id="text73">long-term view</text>
+  <path
+     d="M 750,478 680,448"
+     stroke="#9c27b0"
+     stroke-width="3"
+     fill="none"
+     marker-end="url(#arrowhead)"
+     id="path73" />
+  <text
+     x="684.57446"
+     y="430.87234"
+     font-size="10px"
+     fill="#9c27b0"
+     font-weight="bold"
+     id="text74">Expertise</text>
+  <text
+     x="684.57446"
+     y="443.87234"
+     font-size="10px"
+     fill="#9c27b0"
+     font-weight="bold"
+     id="text75">Advocacy</text>
+  <!-- Economic Representatives (15% - Bottom, 7 o'clock) -->
+  <text
+     x="442.81915"
+     y="594.25525"
+     text-anchor="middle"
+     font-size="14px"
+     font-weight="bold"
+     fill="#f57c00"
+     id="text76">Economic Reps (15%)</text>
+  <rect
+     x="238.29787"
+     y="675.31915"
+     width="120"
+     height="60"
+     fill="#fff3e0"
+     stroke="#ff9800"
+     stroke-width="1"
+     rx="3"
+     id="rect76" />
+  <text
+     x="298.29788"
+     y="690.31915"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text77">Financial</text>
+  <text
+     x="298.29788"
+     y="703.31915"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text78">Stakeholder Reps</text>
+  <text
+     x="298.29788"
+     y="720.31915"
+     text-anchor="middle"
+     font-size="9px"
+     id="text79">Shareholders, lenders</text>
+  <text
+     x="298.29788"
+     y="730.31915"
+     text-anchor="middle"
+     font-size="9px"
+     id="text80">impact investors</text>
+  <rect
+     x="368.29788"
+     y="675.31915"
+     width="120"
+     height="60"
+     fill="#fff3e0"
+     stroke="#ff9800"
+     stroke-width="1"
+     rx="3"
+     id="rect80" />
+  <text
+     x="428.29788"
+     y="690.31915"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text81">Local Economic</text>
+  <text
+     x="428.29788"
+     y="703.31915"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text82">Representatives</text>
+  <text
+     x="428.29788"
+     y="720.31915"
+     text-anchor="middle"
+     font-size="9px"
+     id="text83">Suppliers, partners</text>
+  <text
+     x="428.29788"
+     y="730.31915"
+     text-anchor="middle"
+     font-size="9px"
+     id="text84">development orgs</text>
+  <rect
+     x="498.29788"
+     y="675.31915"
+     width="120"
+     height="60"
+     fill="#fff3e0"
+     stroke="#ff9800"
+     stroke-width="1"
+     rx="3"
+     id="rect84" />
+  <text
+     x="558.29785"
+     y="690.31915"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text85">Cooperative/</text>
+  <text
+     x="558.29785"
+     y="703.31915"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text86">Solidarity Economy</text>
+  <text
+     x="558.29785"
+     y="720.31915"
+     text-anchor="middle"
+     font-size="9px"
+     id="text87">Alternative</text>
+  <text
+     x="558.29785"
+     y="730.31915"
+     text-anchor="middle"
+     font-size="9px"
+     id="text88">economic models</text>
+  <path
+     d="m 536.17021,603.40426 30,-100"
+     stroke="#ff9800"
+     stroke-width="3"
+     fill="none"
+     marker-end="url(#arrowhead)"
+     id="path88" />
+  <text
+     x="479.04257"
+     y="558.10638"
+     font-size="10px"
+     fill="#ff9800"
+     font-weight="bold"
+     id="text89">Economic</text>
+  <text
+     x="479.04257"
+     y="543.10638"
+     font-size="10px"
+     fill="#ff9800"
+     font-weight="bold"
+     id="text90">Stakeholder</text>
+  <!-- Specialist Representatives (15% - Left, 10 o'clock) -->
+  <text
+     x="431.70212"
+     y="281.29788"
+     text-anchor="middle"
+     font-size="14px"
+     font-weight="bold"
+     fill="#d32f2f"
+     id="text91">Specialist Reps (15%)</text>
+  <rect
+     x="80"
+     y="208"
+     width="120"
+     height="60"
+     fill="#ffebee"
+     stroke="#f44336"
+     stroke-width="1"
+     rx="3"
+     id="rect91" />
+  <text
+     x="140"
+     y="223"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text92">Technical</text>
+  <text
+     x="140"
+     y="236"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text93">Expertise</text>
+  <text
+     x="140"
+     y="253"
+     text-anchor="middle"
+     font-size="9px"
+     id="text94">Operations</text>
+  <text
+     x="140"
+     y="263"
+     text-anchor="middle"
+     font-size="9px"
+     id="text95">impact specialties</text>
+  <rect
+     x="210"
+     y="208"
+     width="120"
+     height="60"
+     fill="#ffebee"
+     stroke="#f44336"
+     stroke-width="1"
+     rx="3"
+     id="rect95" />
+  <text
+     x="270"
+     y="223"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text96">Legal/Regulatory</text>
+  <text
+     x="270"
+     y="236"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text97">Expertise</text>
+  <text
+     x="270"
+     y="253"
+     text-anchor="middle"
+     font-size="9px"
+     id="text98">Compliance</text>
+  <text
+     x="270"
+     y="263"
+     text-anchor="middle"
+     font-size="9px"
+     id="text99">policy advocacy</text>
+  <rect
+     x="80"
+     y="278"
+     width="120"
+     height="60"
+     fill="#ffebee"
+     stroke="#f44336"
+     stroke-width="1"
+     rx="3"
+     id="rect99" />
+  <text
+     x="140"
+     y="293"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text100">Cultural/Spiritual</text>
+  <text
+     x="140"
+     y="306"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text101">Representatives</text>
+  <text
+     x="140"
+     y="323"
+     text-anchor="middle"
+     font-size="9px"
+     id="text102">Purpose</text>
+  <text
+     x="140"
+     y="333"
+     text-anchor="middle"
+     font-size="9px"
+     id="text103">community impact</text>
+  <rect
+     x="210"
+     y="278"
+     width="120"
+     height="60"
+     fill="#ffebee"
+     stroke="#f44336"
+     stroke-width="1"
+     rx="3"
+     id="rect103" />
+  <text
+     x="270"
+     y="293"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text104">International/</text>
+  <text
+     x="270"
+     y="306"
+     text-anchor="middle"
+     font-size="10px"
+     font-weight="bold"
+     id="text105">Global Perspective</text>
+  <text
+     x="270"
+     y="323"
+     text-anchor="middle"
+     font-size="9px"
+     id="text106">Global operations</text>
+  <text
+     x="270"
+     y="333"
+     text-anchor="middle"
+     font-size="9px"
+     id="text107">coordination</text>
+  <path
+     d="M 435.10638,340.55319 520,408"
+     stroke="#f44336"
+     stroke-width="3"
+     fill="none"
+     marker-end="url(#arrowhead)"
+     id="path107"
+     sodipodi:nodetypes="cc" />
+  <text
+     x="422.12766"
+     y="385.02127"
+     font-size="10px"
+     fill="#f44336"
+     font-weight="bold"
+     id="text108">Expertise</text>
+  <text
+     x="422.12766"
+     y="398.02127"
+     font-size="10px"
+     fill="#f44336"
+     font-weight="bold"
+     id="text109">Nomination</text>
+  <!-- Decision-Making Authority -->
+  <rect
+     x="100"
+     y="750"
+     width="1000"
+     height="80"
+     fill="#f5f5f5"
+     stroke="#757575"
+     stroke-width="2"
+     rx="5"
+     id="rect109" />
+  <text
+     x="600"
+     y="770"
+     text-anchor="middle"
+     font-size="16px"
+     font-weight="bold"
+     fill="#424242"
+     id="text110">Decision-Making Authority Domains</text>
+  <rect
+     x="113.24032"
+     y="780.0105"
+     width="292.01489"
+     height="39.979038"
+     fill="#e3f2fd"
+     stroke="#1976d2"
+     stroke-width="1.02097"
+     rx="3.128731"
+     id="rect110" />
+  <text
+     x="260"
+     y="795"
+     text-anchor="middle"
+     font-size="11px"
+     font-weight="bold"
+     id="text111">Strategic Planning Authority</text>
+  <text
+     x="260"
+     y="810"
+     text-anchor="middle"
+     font-size="9px"
+     id="text112">Mission • Strategic direction • Capital allocation • Partnerships</text>
+  <rect
+     x="411.99255"
+     y="780.01044"
+     width="292.01489"
+     height="39.979038"
+     fill="#e8f5e8"
+     stroke="#4caf50"
+     stroke-width="1.02096"
+     rx="3.128731"
+     id="rect112" />
+  <text
+     x="558"
+     y="795"
+     text-anchor="middle"
+     font-size="11px"
+     font-weight="bold"
+     id="text113">Policy Development Authority</text>
+  <text
+     x="558"
+     y="810"
+     text-anchor="middle"
+     font-size="9px"
+     id="text114">Environmental • Labor • Community • Supply chain standards</text>
+  <rect
+     x="712.43274"
+     y="780.08063"
+     width="379.13455"
+     height="39.838711"
+     fill="#f3e5f5"
+     stroke="#9c27b0"
+     stroke-width="1.16129"
+     rx="4.0621557"
+     id="rect114" />
+  <text
+     x="902"
+     y="795"
+     text-anchor="middle"
+     font-size="11px"
+     font-weight="bold"
+     id="text115">Accountability Oversight</text>
+  <text
+     x="902"
+     y="810"
+     text-anchor="middle"
+     font-size="9px"
+     id="text116">Executive compensation • Impact assessment • Conflict resolution • Transparency</text>
+  <!-- Sociocratic Principles (Left side) -->
+  <g
+     id="g137">
+    <rect
+       x="80.74604"
+       y="481.1716"
+       width="221.27388"
+       height="119.78452"
+       fill="#fff9c4"
+       stroke="#f57f17"
+       stroke-width="2.21548"
+       rx="6.1464968"
+       id="rect116" />
+    <text
+       x="188.7234"
+       y="501.06384"
+       text-anchor="middle"
+       font-size="13px"
+       font-weight="bold"
+       fill="#ef6c00"
+       id="text117">Sociocratic Decision-Making</text>
+    <text
+       x="108.7234"
+       y="521.06384"
+       font-size="10px"
+       font-weight="bold"
+       fill="#ef6c00"
+       id="text118">• Consent-Based Decisions</text>
+    <text
+       x="113.7234"
+       y="533.06384"
+       font-size="9px"
+       fill="#ef6c00"
+       id="text119">No fundamental objections</text>
+    <text
+       x="108.7234"
+       y="549.06384"
+       font-size="10px"
+       font-weight="bold"
+       fill="#ef6c00"
+       id="text120">• Circle Governance</text>
+    <text
+       x="113.7234"
+       y="561.06384"
+       font-size="9px"
+       fill="#ef6c00"
+       id="text121">Nested authority circles</text>
+    <text
+       x="108.7234"
+       y="577.06384"
+       font-size="10px"
+       font-weight="bold"
+       fill="#ef6c00"
+       id="text122">• Double-Linking</text>
+    <text
+       x="113.7234"
+       y="589.06384"
+       font-size="9px"
+       fill="#ef6c00"
+       id="text123">Representative accountability</text>
+  </g>
+  <!-- Selection and Accountability (Right side) -->
+  <rect
+     x="911.7309"
+     y="573.64575"
+     width="190.58086"
+     height="119.94255"
+     fill="#fff9c4"
+     stroke="#f57f17"
+     stroke-width="2.05745"
+     rx="5.2939124"
+     id="rect123" />
+  <text
+     x="1007.0213"
+     y="593.617"
+     text-anchor="middle"
+     font-size="13px"
+     font-weight="bold"
+     fill="#ef6c00"
+     id="text124">Selection Accountability</text>
+  <text
+     x="927.0213"
+     y="613.617"
+     font-size="10px"
+     font-weight="bold"
+     fill="#ef6c00"
+     id="text125">• Term Limits</text>
+  <text
+     x="932.0213"
+     y="625.617"
+     font-size="9px"
+     fill="#ef6c00"
+     id="text126">Rotating representation</text>
+  <text
+     x="927.0213"
+     y="641.617"
+     font-size="10px"
+     font-weight="bold"
+     fill="#ef6c00"
+     id="text127">• Recall Procedures</text>
+  <text
+     x="932.0213"
+     y="653.617"
+     font-size="9px"
+     fill="#ef6c00"
+     id="text128">Constituency replacement</text>
+  <text
+     x="927.0213"
+     y="669.617"
+     font-size="10px"
+     font-weight="bold"
+     fill="#ef6c00"
+     id="text129">• Regular Reporting</text>
+  <text
+     x="932.0213"
+     y="681.617"
+     font-size="9px"
+     fill="#ef6c00"
+     id="text130">Ongoing connection</text>
+  <!-- Feedback arrows from council back to constituencies -->
+  <path
+     d="M 580,368 V 283.85106"
+     stroke="#2196f3"
+     stroke-width="2"
+     stroke-dasharray="5, 5"
+     fill="none"
+     marker-end="url(#dotted-arrow)"
+     id="path130"
+     sodipodi:nodetypes="cc" />
+  <text
+     x="532.23401"
+     y="325.25531"
+     font-size="9px"
+     fill="#2196f3"
+     id="text131">Feedback</text>
+  <path
+     d="m 665.31915,381.61702 83.29787,-69.04255"
+     stroke="#4caf50"
+     stroke-width="2"
+     stroke-dasharray="5, 5"
+     fill="none"
+     marker-end="url(#dotted-arrow)"
+     id="path131"
+     sodipodi:nodetypes="cc" />
+  <text
+     x="656.80853"
+     y="350.87231"
+     font-size="9px"
+     fill="#4caf50"
+     id="text132">Reporting</text>
+  <path
+     d="m 667.44681,472.78723 84.3617,46.9149"
+     stroke="#9c27b0"
+     stroke-width="2"
+     stroke-dasharray="5, 5"
+     fill="none"
+     marker-end="url(#dotted-arrow)"
+     id="path132"
+     sodipodi:nodetypes="cc" />
+  <text
+     x="663.19147"
+     y="507.36169"
+     font-size="9px"
+     fill="#9c27b0"
+     id="text133">Updates</text>
+  <path
+     x="620 460 L 570 540"
+     stroke="#ff9800"
+     stroke-width="2"
+     stroke-dasharray="5, 5"
+     fill="none"
+     marker-end="url(#dotted-arrow)"
+     id="path133"
+     d="" />
+  <text
+     x="590"
+     y="533"
+     font-size="9px"
+     fill="#ff9800"
+     id="text134">Reports</text>
+  <path
+     d="M 535.21277,382.68085 451.38298,313.6383"
+     stroke="#f44336"
+     stroke-width="2"
+     stroke-dasharray="5, 5"
+     fill="none"
+     marker-end="url(#dotted-arrow)"
+     id="path134"
+     sodipodi:nodetypes="cc" />
+  <text
+     x="494.68085"
+     y="342.36169"
+     font-size="9px"
+     fill="#f44336"
+     id="text135">Findings</text>
+  <!-- Implementation notes -->
+  <g
+     id="implementation">
+    <rect
+       x="50"
+       y="850"
+       width="1100"
+       height="40"
+       fill="#e8f5e8"
+       stroke="#4caf50"
+       stroke-width="1"
+       rx="5"
+       id="rect135" />
+    <text
+       x="600"
+       y="865"
+       text-anchor="middle"
+       font-size="12"
+       font-weight="bold"
+       fill="#2e7d32"
+       id="text136">
+      Implementation: Representatives serve 2-3 year terms with staggered rotation to maintain institutional knowledge
+    </text>
+    <text
+       x="600"
+       y="880"
+       text-anchor="middle"
+       font-size="11"
+       fill="#2e7d32"
+       id="text137">
+      Council meets monthly with quarterly all-stakeholder assemblies for major decisions and annual governance review
+    </text>
+  </g>
+  <path
+     style="opacity:0.88005;fill:#6fbbf7;fill-opacity:1;stroke:#60a5fa;stroke-width:2.04457;stroke-linecap:round"
+     id="path137"
+     sodipodi:type="arc"
+     sodipodi:cx="-583.87408"
+     sodipodi:cy="-369.65268"
+     sodipodi:rx="80.477715"
+     sodipodi:ry="80.477715"
+     sodipodi:start="0"
+     sodipodi:end="1.5707963"
+     sodipodi:arc-type="slice"
+     d="m -503.39637,-369.65268 a 80.477715,80.477715 0 0 1 -80.47771,80.47772 v -80.47772 z"
+     transform="rotate(170.97516)" />
+  <path
+     style="opacity:0.88005;fill:#c47fd0;fill-opacity:1;stroke:#b315fa;stroke-width:2.04457;stroke-linecap:round;stroke-opacity:1"
+     id="path137-0"
+     sodipodi:type="arc"
+     sodipodi:cx="666.52466"
+     sodipodi:cy="573.83624"
+     sodipodi:rx="80.477715"
+     sodipodi:ry="80.477715"
+     sodipodi:start="0"
+     sodipodi:end="1.2566371"
+     sodipodi:arc-type="slice"
+     d="M 747.00237,573.83624 A 80.477715,80.477715 0 0 1 691.39364,650.3751 L 666.52466,573.83624 Z"
+     transform="rotate(-7.5132081)" />
+  <path
+     style="opacity:0.88005;fill:#a9d9aa;fill-opacity:1;stroke:#60a566;stroke-width:2.04457;stroke-linecap:round;stroke-opacity:1"
+     id="path137-6"
+     sodipodi:type="arc"
+     sodipodi:cx="-469.15326"
+     sodipodi:cy="685.86304"
+     sodipodi:rx="80.477715"
+     sodipodi:ry="80.477715"
+     sodipodi:start="0"
+     sodipodi:end="1.5707963"
+     sodipodi:arc-type="slice"
+     d="m -388.67554,685.86304 a 80.477715,80.477715 0 0 1 -80.47772,80.47771 v -80.47771 z"
+     transform="rotate(-99.404992)" />
+  <path
+     style="opacity:0.88005;fill:#f8867f;fill-opacity:1;stroke:#d41f2a;stroke-width:2.04457;stroke-linecap:round;stroke-opacity:1"
+     id="path137-6-9"
+     sodipodi:type="arc"
+     sodipodi:cx="328.64853"
+     sodipodi:cy="-439.49408"
+     sodipodi:rx="80.477715"
+     sodipodi:ry="80.477715"
+     sodipodi:start="0.62831853"
+     sodipodi:end="1.5707963"
+     sodipodi:arc-type="slice"
+     d="m 393.75637,-392.19047 a 80.477715,80.477715 0 0 1 -65.10784,33.1741 v -80.47771 z"
+     transform="rotate(86.621031)" />
+  <path
+     style="opacity:0.88005;fill:#ffb74b;fill-opacity:1;stroke:#e87c14;stroke-width:2.04457;stroke-linecap:round;stroke-opacity:1"
+     id="path137-6-9-2"
+     sodipodi:type="arc"
+     sodipodi:cx="777.47382"
+     sodipodi:cy="175.01366"
+     sodipodi:rx="80.477715"
+     sodipodi:ry="80.477715"
+     sodipodi:start="0.62831853"
+     sodipodi:end="1.5707963"
+     sodipodi:arc-type="slice"
+     d="m 842.58165,222.31727 a 80.477715,80.477715 0 0 1 -65.10783,33.1741 v -80.47771 z"
+     transform="rotate(32.988652)" />
+</svg>

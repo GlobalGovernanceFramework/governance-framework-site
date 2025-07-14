@@ -58,7 +58,7 @@ export const economicOSEntities: GgfEntity[] = [
     shortName: 'Work in Liberation',
     description: 'Framework defining and organizing "Work with Purpose" and Community Work Teams',
     tier: 1,
-    status: 'Planned',
+    status: 'Ready',
     primaryDomain: 'Economic',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
@@ -68,6 +68,7 @@ export const economicOSEntities: GgfEntity[] = [
       path: '/frameworks/work-in-liberation',
       titleKey: 'framework.docs.nav.frameworkTitles.laborAndEmploymentGovernance',
       emoji: '👥',
+      version: '1.0',
       slug: 'work-in-liberation',
       group: 'globalEconomicSystems'
     }

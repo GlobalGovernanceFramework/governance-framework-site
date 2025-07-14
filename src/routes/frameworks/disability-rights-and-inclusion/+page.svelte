@@ -35,7 +35,7 @@
         accent: '#f59e0b',
         light: '#fef7ed'
       }}
-      contactEmail="globalgovernanceframeworks@gmail.com"
+      contactEmail="contact@globalgovernanceframeworks.org"
       frameworksPageUrl="{base}/frameworks"
     />
 
