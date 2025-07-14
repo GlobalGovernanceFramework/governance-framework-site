@@ -53,17 +53,25 @@ I enlighet med principen om radikal transparens ska föreningens hela ekonomi (i
 
 ---
 
-#### **4. Work & Communication Protocol (Protokoll för Arbete och Kommunikation)**
+### **4. Protocol for Autonomy & Coordination (Protokoll för Autonomi och Koordination)**
 
 **English:**
-* **Asynchronous-First:** Our primary mode of communication is asynchronous (e.g., via Mattermost/Matrix) to respect different time zones and work styles, and to encourage deep work.
-* **Meeting Rhythm:** We hold one (1) weekly asynchronous check-in and one (1) optional monthly video call for strategic alignment.
-* **Right to Unplug:** Members are encouraged to disconnect to prevent burnout and maintain well-being.
+Our organization is a high-trust, high-freedom network built on the principle of **Radical Autonomy**.
+
+* **Freedom of Contribution:** Members have complete freedom over their working hours, location, and choice of equipment. Contribution is measured by impact and progress toward our shared mission, not by hours logged.
+* **Coordination through Documentation:** In exchange for this freedom, our primary responsibility is to make our work and thinking visible and accessible through meticulous asynchronous documentation. Our shared digital workspace is our collective brain; keeping it updated is our core discipline.
+* **Optional Synchronicity:** Meetings are not compulsory. They are treated as a valuable resource: always optional, with clear agendas, and for the express purpose of co-creation or strategic alignment that cannot be achieved asynchronously. Their value must be self-evident.
+* **Intentional Connection:** While we are remote-first, we actively foster relational integrity through optional, funded opportunities for connection, such as regional co-working days or strategic annual gatherings.
+* **Right to Unplug:** Members are trusted to manage their own energy and well-being. Disconnecting is not just a right but a responsibility for sustainable contribution.
 
 **Svenska:**
-* **Asynkront Först:** Vårt primära kommunikationssätt är asynkront (t.ex. via Mattermost/Matrix) för att respektera olika tidszoner och arbetsstilar, samt för att uppmuntra till fokuserat arbete.
-* **Mötesrytm:** Vi håller en (1) veckovis asynkron incheckning och ett (1) valfritt månatligt videosamtal för strategisk synkronisering.
-* **Rätt att Koppla Ned:** Medlemmar uppmuntras att koppla ned för att förebygga utbrändhet och värna om sitt välmående.
+Vår organisation är ett nätverk byggt på högt förtroende och stor frihet, grundat i principen om **Radikal Autonomi**.
+
+* **Frihet i Bidrag:** Medlemmar har fullständig frihet över sina arbetstider, sin arbetsplats och sitt val av utrustning. Bidrag mäts i resultat och framsteg mot vårt gemensamma uppdrag, inte i loggade timmar.
+* **Koordination genom Dokumentation:** I utbyte mot denna frihet är vår främsta skyldighet att göra vårt arbete och våra tankeprocesser synliga och tillgängliga genom noggrann asynkron dokumentation. Vår gemensamma digitala arbetsyta är vår kollektiva hjärna; att hålla den uppdaterad är vår kärndisciplin.
+* **Valfri Synkronicitet:** Möten är inte obligatoriska. De behandlas som en värdefull resurs: alltid valfria, med tydliga agendor, och med det uttryckliga syftet att samskapa eller strategiskt synkronisera på ett sätt som inte kan uppnås asynkront. Deras värde måste vara självklart.
+* **Avsiktlig Samhörighet:** Även om vi primärt arbetar på distans, främjar vi aktivt relationell integritet genom valfria, finansierade möjligheter till samhörighet, såsom regionala co-workingdagar eller strategiska årliga sammankomster.
+* **Rätt att Koppla Ned:** Medlemmar förväntas hantera sin egen energi och sitt välbefinnande. Att koppla ned är inte bara en rättighet utan ett ansvar för ett hållbart engagemang.
 
 ---
 
@@ -82,6 +90,17 @@ Allt arbete som produceras är ett bidrag till den globala allmänningen.
 * Detta ska tydligt framgå i alla offentliga arkiv och publikationer.
 
 ---
+
+### **6. Fractal Governance Protocol (Protokoll för Fraktal Styrning)**
+
+**English:**
+> The GGF Catalyst is not merely building new governance models; it *is* one. Our internal structure is a fractal expression of the principles we advocate for globally: polycentric, trust-based, and radically autonomous. We "walk the talk" by embodying the change we wish to see. Our operating system is therefore not just a set of rules, but a living, evolving prototype of a new way of organizing for planetary well-being.
+
+**Svenska:**
+ GGF Catalyst bygger inte bara nya styrningsmodeller; vi *är* en. Vår interna struktur är ett fraktalt uttryck för de principer vi förespråkar globalt: polycentrisk, förtroendebaserad och radikalt autonom. Vi lever som vi lär genom att förkroppsliga den förändring vi vill se. Vårt operativsystem är därför inte bara en samling regler, utan en levande, utvecklande prototyp för ett nytt sätt att organisera sig för planetens välbefinnande.
+
+---
+
 #### **Initial Structure (Initial Struktur)**
 
 **English:**
