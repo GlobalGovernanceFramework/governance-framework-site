@@ -1,3 +1,5 @@
+<!-- This file is automatically copied from documentation/ggf-operating-system/ggf-catalyst/strategic-goals.md -->
+
 # Strategic Goals Developed by Gemini
 
 These goals are designed to be ambitious yet achievable for a small founding team over the next 6-12 months, focusing on building a solid foundation and generating momentum.

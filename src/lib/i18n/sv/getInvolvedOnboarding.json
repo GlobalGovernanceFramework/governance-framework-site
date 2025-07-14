@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "Introduktion - Global Governance Framework",
+    "description": "Kom igång med Global Governance Framework-projektet. Lär dig våra verktyg, processer och hur du bidrar effektivt."
+  },
+  "title": "Komma igång med GGF",
+  "subtitle": "Allt du behöver veta för att börja bidra till Global Governance Framework-projektet",
+  "categories": {
+    "welcomeKit": "Välkomstpaket",
+    "foundational": "Grundläggande verktyg"
+  },
+  "sections": {
+    "overview": "Projektöversikt",
+    "statutes": "Juridiska stadgar",
+    "work-system-guide": "Vårt sätt att arbeta",
+    "operating-system": "Operativsystem",
+    "strategic-goals": "Strategiska mål",
+    "first-love-ledger": "Love Ledger grunderna",
+    "git-and-documentation-flow": "Git & dokumentation",
+    "time-tracking": "Tidsregistrering",
+    "working-with-ai": "Arbeta med AI"
+  },
+  "languageFallback": {
+    "title": "Tvåspråkigt innehåll.",
+    "description": "Detta avsnitt visas för närvarande på både engelska och svenska."
+  },
+  "errors": {
+    "sectionNotFound": "Avsnitt \"{section}\" hittades inte",
+    "contentInDevelopment": "Detta innehåll utvecklas fortfarande."
+  },
+  "loading": {
+    "text": "Laddar introduktionsinnehåll..."
+  },
+  "navigation": {
+    "previousSection": "Föregående avsnitt",
+    "nextSection": "Nästa avsnitt"
+  }
+}

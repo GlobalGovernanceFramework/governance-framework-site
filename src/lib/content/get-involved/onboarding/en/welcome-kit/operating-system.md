@@ -1,3 +1,5 @@
+<!-- This file is automatically copied from documentation/ggf-operating-system/ggf-catalyst/operating-system.md -->
+
 ### **Minimum Viable Operating System (MVOS) for The Global Governance Frameworks Catalyst**
 **Version 1.1 (2025-07-14)**
 

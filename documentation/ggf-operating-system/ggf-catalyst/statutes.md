@@ -24,15 +24,19 @@ Föreningens syfte är att, med vägledning av sitt interna operativsystem (GGF-
 The purpose of the association is, guided by its internal operating system (GGF-OS), to act as a starting point and catalyst for a global network. The association's main activity is to support this network in co-creating, curating, and disseminating open-source governance frameworks. These frameworks collectively constitute a proposal for an operating system for a sustainable global civilization. The association shall promote the development of resilient, equitable, and sustainable systems founded on shared stewardship and the principle of "Right Relationship".)
 
 **§ 4 Verksamhet (Activities)**
-Föreningen ska uppnå sitt syfte genom att bedriva verksamhet inom två primära arbetsgrupper ("Labs"):
+Föreningen ska uppnå sitt syfte genom att bedriva verksamhet inom fyra primära arbetsgrupper ("Labs"):
 
 1.  **Frameworks Lab:** Forska, författa, revidera och förvalta de styrningsramverk som utgör kärnan i GGF-ekosystemet.
 2.  **Ecosystem Lab:** Bygga en global gemenskap av bidragsgivare, kommunicera föreningens arbete, skapa partnerskap och säkra finansiering för verksamheten.
+3.  **Translations Lab:** Översätta och kulturanpassa ramverken och kommunikationsmaterialet för att säkerställa global tillgänglighet, med initialt fokus på svenska.
+4.  **Tech Lab:** Utveckla den mjukvara och de digitala verktyg med öppen källkod som ramverken beskriver, såsom Love Ledger och andra tekniska plattformar.
 
-(The association shall achieve its purpose by conducting activities within two primary working groups ("Labs"):
+(The association shall achieve its purpose by conducting activities within four primary working groups ("Labs"):
 
 1.  **Frameworks Lab:** To research, author, revise, and curate the governance frameworks that form the core of the GGF ecosystem.
-2.  **Ecosystem Lab:** To build a global community of contributors, communicate the association's work, create partnerships, and secure financing for the activities.)
+2.  **Ecosystem Lab:** To build a global community of contributors, communicate the association's work, create partnerships, and secure financing for the activities.
+3.  **Translations Lab:** To translate and culturally adapt the frameworks and communication materials to ensure global accessibility, with an initial focus on Swedish.
+4.  **Tech Lab:** To develop the open-source software and digital tools that the frameworks describe, such as the Love Ledger and other technical platforms.
 
 **§ 5 Medlemskap (Membership)**
 Medlemskap beviljas av styrelsen, eller av den styrelsen utser, till varje enskild person som stöder föreningens ändamål (§ 3) och förbinder sig att följa dessa stadgar.
@@ -102,11 +106,11 @@ För upplösning av föreningen krävs beslut vid ett årsmöte med minst två t
 
 (Dissolution of the association requires a decision at an Annual Meeting with at least a two-thirds (2/3) majority of the votes cast. Upon dissolution, any remaining assets of the association shall be transferred to another non-profit organization with a purpose compatible with that of the association, in accordance with the principle of "Graceful Obsolescence".)
 
-**§ 13 Principer för Verksamheten (Operating Principles)**
+**§ 13 Principer för verksamheten (Operating Principles)**
 Föreningens verksamhet ska, utöver svensk lag, vägledas av ett "Minimum Viable Operating System" som grundas i GGF-OS. Detta inkluderar:
-1.  **Radikal Transparens:** Föreningens ekonomi och beslut ska vara offentligt tillgängliga, exempelvis via plattformen OpenCollective.
-2.  **Relationell Integritet:** Intern och extern kommunikation ska präglas av medkänsla och ömsesidig respekt, med inspiration från principer som Nonviolent Communication.
-3.  **Immateriella Rättigheter med Öppen Källkod:** Allt material som produceras av föreningen ska som standard licensieras under öppna licenser (t.ex. Creative Commons CC-BY-SA för innehåll och MIT/Apache 2.0 för kod) för att säkerställa att kunskapen förblir en global allmänning.
+1.  **Radikal transparens:** Föreningens ekonomi och beslut ska vara offentligt tillgängliga, exempelvis via plattformen OpenCollective.
+2.  **Relationell integritet:** Intern och extern kommunikation ska präglas av medkänsla och ömsesidig respekt, med inspiration från principer som Nonviolent Communication.
+3.  **Immateriella rättigheter med öppen källkod:** Allt material som produceras av föreningen ska som standard licensieras under öppna licenser (t.ex. Creative Commons CC-BY-SA för innehåll och MIT/Apache 2.0 för kod) för att säkerställa att kunskapen förblir en global allmänning.
 
 (The association's activities shall, in addition to Swedish law, be guided by a "Minimum Viable Operating System" founded on the GGF-OS. This includes:
 1.  **Radical Transparency:** The association's finances and decisions shall be publicly accessible, for example, via the OpenCollective platform.

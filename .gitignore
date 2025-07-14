@@ -1,6 +1,8 @@
 test-results
 node_modules
 
+/src/lib/content/welcome-kit/
+
 # Output
 .output
 .vercel

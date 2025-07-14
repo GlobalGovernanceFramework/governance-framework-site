@@ -23,7 +23,15 @@ const locales = readable(supportedLocales);
 const pageSpecificTranslationsMap = [
   { route: '/quiz', dataKey: 'findYourPlace', fileName: 'findYourPlace' },
   { route: '/my-path', dataKey: 'findYourPlace', fileName: 'findYourPlace' },
-  
+
+  // Get-involved routes
+  { route: '/get-involved/onboarding', dataKey: 'onboardingContent', fileName: 'getInvolvedOnboarding' },
+  { route: '/get-involved/website', dataKey: 'website', fileName: 'website' },
+  { route: '/get-involved/translations', dataKey: 'translations', fileName: 'translations' },
+  { route: '/get-involved/outreach', dataKey: 'outreach', fileName: 'outreach' },
+  { route: '/get-involved/frameworks', dataKey: 'frameworks', fileName: 'frameworks' },
+  { route: '/get-involved', dataKey: 'getInvolved', fileName: 'getInvolved' },
+    
   // Tools routes (specific before general)
   { route: '/frameworks/tools/moral-operating-system', dataKey: 'toolsMoralOperatingSystem', fileName: 'toolsMoralOperatingSystem' },
   { route: '/frameworks/tools/work-in-liberation', dataKey: 'moral-operating-system', fileName: 'toolsWorkInLiberation' },
@@ -71,13 +79,6 @@ const pageSpecificTranslationsMap = [
   { route: '/frameworks/find-your-place', dataKey: 'findYourPlace', fileName: 'findYourPlace' },
   { route: '/frameworks/ai-futures', dataKey: 'aiFutures', fileName: 'aiFutures' },
   { route: '/frameworks/docs/implementation/treaty-for-our-only-home/getting-started', dataKey: 'startTreaty', fileName: 'startTreaty' },
-  
-  // Get-involved routes
-  { route: '/get-involved/website', dataKey: 'website', fileName: 'website' },
-  { route: '/get-involved/translations', dataKey: 'translations', fileName: 'translations' },
-  { route: '/get-involved/outreach', dataKey: 'outreach', fileName: 'outreach' },
-  { route: '/get-involved/frameworks', dataKey: 'frameworks', fileName: 'frameworks' },
-  { route: '/get-involved', dataKey: 'getInvolved', fileName: 'getInvolved' },
   
   // Other specific routes
   { route: '/start-treaty', dataKey: 'startTreaty', fileName: 'startTreaty' },

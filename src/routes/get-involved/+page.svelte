@@ -14,6 +14,10 @@
       title: 'Get Involved',
       subtitle: 'Join our global community building better governance systems',
       heroIntro: 'Choose how you\'d like to contribute to creating tools that enable different governance systems to communicate, collaborate, and evolve together.',
+
+      onboardingTitle: 'Get Started - Onboarding',
+      onboardingDescription: 'New to the project? Learn our tools, processes, and how to contribute effectively with our comprehensive onboarding guide.',
+      onboardingCta: 'Start Onboarding',
       
       foundingTitle: 'Founding Organization',
       foundingDescription: 'Help establish the formal organization that will carry our mission forward for generations to come.',
@@ -48,6 +52,10 @@
       title: 'Engagera dig',
       subtitle: 'Gå med i vår globala gemenskap som bygger bättre styrningssystem',
       heroIntro: 'Välj hur du vill bidra till att skapa verktyg som gör det möjligt för olika styrningssystem att kommunicera, samarbeta och utvecklas tillsammans.',
+
+      onboardingTitle: 'Kom igång - Introduktion',
+      onboardingDescription: 'Ny i projektet? Lär dig våra verktyg, processer och hur du bidrar effektivt med vår omfattande introduktionsguide.',
+      onboardingCta: 'Börja introduktion',
       
       foundingTitle: 'Grundande organisation',
       foundingDescription: 'Hjälp till att etablera den formella organisation som kommer att föra vårt uppdrag framåt för kommande generationer.',
@@ -119,6 +127,21 @@
 
     <!-- Contribution Cards -->
     <div class="contribution-cards">
+
+      <!-- Onboarding Card - Featured for new users -->
+      <a href="{base}/get-involved/onboarding" class="contribution-card onboarding-card featured">
+        <div class="featured-badge">
+          {currentLocale === 'sv' ? 'Börja här' : 'Start Here'}
+        </div>
+        <div class="card-icon">🚀</div>
+        <div class="card-content">
+          <h3>{getText('onboardingTitle')}</h3>
+          <p>{getText('onboardingDescription')}</p>
+          <div class="card-cta">
+            {getText('onboardingCta')} <span class="arrow">→</span>
+          </div>
+        </div>
+      </a>
       
       <!-- Founding Organization Card - Featured at top -->
       <a href="{base}/get-involved/founding" class="contribution-card founding-card featured">
@@ -262,6 +285,10 @@
     max-width: 700px;
     margin: 0 auto;
     opacity: 0.85;
+  }
+
+  .onboarding-card::before {
+    background: linear-gradient(90deg, #22c55e, #16a34a);
   }
 
   /* Contribution Cards */

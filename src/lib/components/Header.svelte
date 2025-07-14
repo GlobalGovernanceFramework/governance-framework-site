@@ -1531,6 +1531,9 @@
             </div>
 
             <div class="dropdown-menu" on:click|stopPropagation={() => {}} role="menu">
+              <a href="{base}/get-involved/onboarding" class={isActive('/get-involved/onboarding') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
+                {browser ? ($t('common.header.getInvolvedOnboarding') ||  'Onboarding') : 'Onboarding'}
+              </a>
               <a href="{base}/get-involved/founding" class={isActive('/get-involved/founding') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
                 {browser ? ($t('common.header.getInvolvedFounding') ||  'Founding Organization') : 'Founding Organization'}
               </a>
