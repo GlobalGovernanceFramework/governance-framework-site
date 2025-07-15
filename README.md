@@ -4,23 +4,29 @@ This repository contains the source code for the Global Governance Frameworks we
 
 ## Project Vision
 
-The Global Governance Frameworks project aims to create tools, patterns, and frameworks that enable different governance systems to interoperate, share lessons, and evolve together. Rather than proposing a single governance solution, we're building the infrastructure that allows many models to coexist, communicate, and collaborate.
+The Global Governance Frameworks project is an open and evolving repository of ideas. Some of these explorations might offer patterns for addressing planetary challenges. Others might simply spark new thinking or serve as compost for entirely different solutions. Both outcomes are valuable.
 
-This comprehensive blueprint is built upon three integrated pillars:
+Our goal is not to prescribe what the world needs, but to offer a mycelial network of possibilities—ideas that can take root in your work, adapt to your context, or inspire something completely unexpected. Think of this as a library to borrow from, spores to plant in different soil, and a conversation to join—freely and without obligation.
 
-* ⚖️ **The Hardware (The Treaty for Our Only Home):** The legal and institutional reforms for effective global action.
-* 🪶 **The Heart (Indigenous & Traditional Knowledge):** The ethical and philosophical compass ensuring our solutions are just and regenerative.
-* 🌐 **The Nervous System (Integrated Meta-Governance):** The coordination protocol allowing all parts of the system to work together adaptively.
+The ideas within this repository often explore three interconnected themes:
+
+* ⚖️ **The Hardware (The Treaty for Our Only Home):** Explorations in legal and institutional patterns for effective collective action.
+* 🪶 **The Heart (Indigenous & Traditional Knowledge):** An ethical and philosophical compass for ensuring solutions are just and regenerative.
+* 🌐 **The Nervous System (Integrated Meta-Governance):** Inspirations for adaptive coordination and collaboration between diverse systems.
+
+You are free to adopt, adapt, ignore, or use any part of this work as inspiration for something entirely different. The world has enough comprehensive solutions—what it needs is more freedom to experiment, more ways for good work to connect, and more permission to start small and see what grows.
 
 ## What Are the Frameworks?
 
-The frameworks are a modular, tiered system of interconnected protocols designed to solve global challenges, from institutional reform to social and economic justice. They range from **Tier 0 (Global Institutional Reform)** to **Tier 4 (Visionary Governance)** and include practical solutions like:
+The "frameworks" are a collection of thought experiments, patterns, and proposals. Think of them not as a rigid, interconnected system to be implemented, but as a library of starting points. You are free to adopt, adapt, or discard any part of them. They are offered as inspiration for tackling challenges related to social, economic, and ecological well-being.
 
-* The **Moral Operating System (MOS)** for defining the rights of all beings.
-* The **Adaptive Universal Basic Income (AUBI)** framework, an economic engine for security and purpose.
-* The **Financial Systems Framework**, which introduces new value currencies like `Hearts` and `Leaves` to reward care and ecological stewardship.
+Some of the concepts explored in this repository include:
 
-Exploring these documents is the best way to understand the full scope of the project.
+* The **Moral Operating System (MOS)**, a thought experiment for defining the rights of all beings.
+* The **Adaptive Universal Basic Income (AUBI)** framework, a conceptual engine for security and purpose.
+* The **Financial Systems Framework**, which explores new value currencies like `Hearts` and `Leaves` to reward care and ecological stewardship.
+
+Exploring these documents is the best way to find ideas that might be useful for your own work.
 
 ## Technologies
 
