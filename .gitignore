@@ -2,6 +2,7 @@ test-results
 node_modules
 
 /src/lib/content/welcome-kit/
+/src/lib/stores/frameworkNav.js
 
 # Output
 .output
