@@ -1,3 +1,7 @@
+---
+title: The Core Principles
+section: the-core-principles
+
 # The Core Principles
 
 *"The principles you live by create the world you live in."* — Blaine Lee

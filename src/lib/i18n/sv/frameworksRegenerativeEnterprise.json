@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "title": "Regenerativt företagsramverk - En guide till företagstransformation",
+    "description": "Ett omfattande ramverk för att transformera företag att tjäna liv, samhällen och planetens välbefinnande"
+  },
+  "guideCard": {
+    "title": "Redo att börja din regenerativa resa?",
+    "description": "Utforska praktiska vägar för att transformera ditt företag att tjäna liv, skapa delat välstånd och bygga motståndskraftiga samhällen.",
+    "buttonText": "Utforska sätt att börja"
+  },
+  "categories": {
+    "introduction": "Komma igång",
+    "foundations": "Kärngrundlag",
+    "coreModules": "Transformationsmoduler", 
+    "implementation": "Implementeringsvägledning",
+    "justice": "Rättvisa och dekolonisering",
+    "ecosystem": "Ekosystemintegration",
+    "resources": "Verktyg och resurser"
+  },
+  "sections": {
+    "foreword": "Förord",
+    "a-compass-for-changemakers": "En kompass för förändringsskapare",
+    "ways-to-begin-the-journey": "Sätt att börja resan",
+    "the-case-for-regeneration": "Argumentet för regeneration",
+    "the-core-principles": "Kärnprinciperna",
+    "module-0": "Modul 0: Digitala grundlagen",
+    "module-1": "Modul 1: Den regenerativa kärnan",
+    "module-2": "Modul 2: Regenerativa operationer",
+    "module-3": "Modul 3: Rättvis finansiering",
+    "module-4": "Modul 4: Blomstrande kulturer", 
+    "module-5": "Modul 5: Ekosystemisk delaktighet",
+    "beginning-the-journey": "Att börja resan",
+    "deepening-the-practice": "Fördjupa praktiken",
+    "a-commitment": "Ett åtagande till dekolonisering och läkning",
+    "weaving-with-the-wider-ecosystem": "Väva med det bredare ekosystemet",
+    "tools": "Verktyg för att stödja din resa",
+    "keeping-the-framework-alive": "Hålla ramverket levande",
+    "appendices": "Bilagor"
+  },
+  "sectionsShort": {
+    "a-compass-for-changemakers": "Kompass för förändringsskapare",
+    "ways-to-begin-the-journey": "Sätt att börja",
+    "the-case-for-regeneration": "Argument för regeneration",
+    "the-core-principles": "Kärnprinciper",
+    "module-0": "Digitala grundlagen",
+    "module-1": "Regenerativa kärnan",
+    "module-2": "Regenerativa operationer",
+    "module-3": "Rättvis finansiering",
+    "module-4": "Blomstrande kulturer",
+    "module-5": "Ekosystemisk delaktighet", 
+    "beginning-the-journey": "Börja resan",
+    "deepening-the-practice": "Fördjupa praktiken",
+    "a-commitment": "Dekolonisering och läkning",
+    "weaving-with-the-wider-ecosystem": "Bredare ekosystemet",
+    "tools": "Verktyg och resurser",
+    "keeping-the-framework-alive": "Hålla ramverket levande",
+    "appendices": "Bilagor"
+  },
+  "progress": {
+    "text": "Modul {current} av {total}"
+  },
+  "navigation": {
+    "downloadPdf": "Ladda ner ramverk PDF",
+    "continueToFramework": "Fortsätt till fullständigt ramverk",
+    "previousModule": "Föregående modul",
+    "nextModule": "Nästa modul"
+  },
+  "languageFallback": {
+    "title": "Innehåll på ditt språk kommer snart",
+    "description": "Detta avsnitt visas för närvarande på engelska tills översättningen är klar."
+  },
+  "loading": {
+    "text": "Laddar ramverksinnehåll..."
+  },
+  "errors": {
+    "sectionNotFound": "Avsnitt \"{section}\" hittades inte",
+    "contentInDevelopment": "Detta innehåll utvecklas fortfarande."
+  }
+}
