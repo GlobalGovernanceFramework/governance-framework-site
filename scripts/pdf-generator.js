@@ -19,6 +19,7 @@ if (args.length === 0) {
 Usage: node tools-pdf-generator.js [category]
 
 Available categories:
+- regenerative-enterprise
 - institutional-regeneration
 - educational-systems
 - food-systems-and-agriculture
@@ -62,6 +63,7 @@ const __dirname = path.dirname(__filename);
 // Configuration
 const languages = ['en', 'sv', 'es', 'fr'];
 const outputDirs = {
+  'regenerative-enterprise': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'regenerative-enterprise'),
   'institutional-regeneration': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'institutional-regeneration'),
   'educational-systems': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'educational-systems'),
   'food-systems-and-agriculture': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'food-systems-and-agriculture'),
@@ -103,6 +105,69 @@ if (targetCategory && !Object.keys(outputDirs).includes(targetCategory)) {
 
 // Define tools to process
 const tools = [
+
+  // Regenerative Enterprise
+  {
+    name: 'a-compass-for-changemakers',
+    category: 'regenerative-enterprise',
+    fileNames: {
+      en: 'regenerative-enterprise-a-compass-for-changemakers-en',
+      sv: 'regenerative-enterprise-a-compass-for-changemakers-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'regenerative-enterprise'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'regenerative-enterprise')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'assets', 'pdf'),
+      sv: path.join(__dirname, '..', 'static', 'assets', 'pdf')
+    },
+    pageFooter: {
+      en: 'Regenerative Eenterprise - A Compass for Changemakers',
+      sv: 'Regenerativa företag - En kompass för förändringsskapare'
+    }
+  },
+
+  // Full framework
+  {
+    name: 'regenerative-enterprise-framework',
+    category: 'regenerative-enterprise',
+    fileNames: {
+      en: 'Regenerative-Enterprise-Framework',
+      sv: 'Regenerative-Enterprise-Framework'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'regenerative-enterprise'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'regenerative-enterprise')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Regenerative Enterprise Framework - Page ',
+      sv: 'Ramverk för regenerativa företag - Sida '
+    },
+    sections: [
+      'foreword',
+      'ways-to-begin-the-journey',
+      'the-case-for-regeneration',
+      'the-core-principles',
+      'module-0',
+      'module-1', 
+      'module-2',
+      'module-3',
+      'module-4',
+      'module-5',
+      'beginning-the-journey',
+      'deepening-the-practice',
+      'a-commitment',
+      'weaving-with-the-wider-ecosystem',
+      'tools',
+      'keeping-the-framework-alive',
+      'appendices'
+    ]
+  },
   // Institutional Regeneration
   {
     name: 'institutional-regeneration-executive-summary',
