@@ -272,7 +272,7 @@
         }
         return positions;
       })(),
-      2: generateAsymmetricElliptical(2, 8, 7),
+      2: generateAsymmetricElliptical(2, 9, 9),
       3: generateAsymmetricElliptical(3, 5, 6),
       4: generateAsymmetricElliptical(4, 3, 3)
     };

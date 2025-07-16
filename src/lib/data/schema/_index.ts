@@ -18,7 +18,7 @@ import { ecologicalEntities, ecologicalRelationships } from './cluster.ecologica
 import { humanFlourishingEntities, humanFlourishingRelationships } from './cluster.human-flourishing';
 import { socialEquityEntities, socialEquityRelationships } from './cluster.social-equity';
 import { culturalKnowledgeEntities, culturalKnowledgeRelationships } from './cluster.cultural-knowledge';
-import { developmentEntities, developmentRelationships } from './cluster.development';
+import { mobilityCommonsEntities, mobilityCommonsRelationships, developmentEntities, developmentRelationships } from './cluster.development';
 import { visionaryMetaEntities, visionaryMetaRelationships } from './cluster.visionary-meta';
 import { dataOSEntities, dataOSRelationships } from './cluster.data-os';
 
@@ -172,6 +172,7 @@ export const allEntities: GgfEntity[] = [
   ...humanFlourishingEntities, 
   ...socialEquityEntities,
   ...culturalKnowledgeEntities,
+  ...mobilityCommonsEntities,
   ...developmentEntities, 
   ...visionaryMetaEntities,
   ...completeApplicationLayerEntities
@@ -191,6 +192,7 @@ export const allRelationships: GgfRelationship[] = [
   ...humanFlourishingRelationships,
   ...socialEquityRelationships,
   ...culturalKnowledgeRelationships,
+  ...mobilityCommonsRelationships,
   ...developmentRelationships,
   ...visionaryMetaRelationships,
   ...completeApplicationLayerRelationships
@@ -348,7 +350,10 @@ export const clusters: GgfCluster[] = [
     name: 'Development Applications',
     description: 'Sustainable urban and rural development frameworks coordinating human settlements with ecological systems',
     tier: 3,
-    entities: developmentEntities.map(e => e.id),
+    entities: [
+      ...developmentEntities.map(e => e.id),
+      ...mobilityCommonsEntities.map(e => e.id)
+    ],
     color: '#dc2626'
   },
   // TIER 4: VISIONARY & META-SYSTEMS

@@ -2,6 +2,151 @@
 
 import type { GgfEntity, GgfRelationship } from './_types';
 
+// Entities for The Mobility Commons
+export const mobilityCommonsEntities: GgfEntity[] = [
+  {
+    id: 'framework_mobility_commons',
+    type: 'Framework',
+    name: 'The Mobility Commons: A Framework for Regenerative Transportation & Mobility',
+    shortName: 'The Mobility Commons',
+    description: 'A GGF framework to govern transportation as a regenerative, equitable, and shared global resource, prioritizing fossil-free, universally accessible mobility.',
+    tier: 2,
+    status: 'Draft', // Status is Draft as it's a newly defined outline
+    primaryDomain: 'Governance',
+    geographicScope: 'Global',
+    implementationPriority: 'High',
+    dependencies: [
+      'framework_treaty', 
+      'framework_meta_gov', 
+      'framework_indigenous',
+      'framework_climate_energy',
+      'framework_aurora_accord',
+      'framework_disability_justice'
+    ],
+    enables: ['council_gmc'],
+    ui: {
+      path: '/frameworks/the-mobility-commons',
+      titleKey: 'framework.docs.nav.frameworkTitles.theMobilityCommons',
+      emoji: '🚆',
+      slug: 'the-mobility-commons',
+      group: 'planetaryHealthResilience' // Or 'globalEconomicSystems'
+    }
+  },
+
+  {
+    id: 'council_gmc',
+    type: 'Council',
+    name: 'Global Mobility Council',
+    shortName: 'GMC',
+    description: 'A specialized sub-council within the Meta-Governance Framework responsible for setting standards and coordinating transnational mobility projects.',
+    tier: 2,
+    status: 'Proposed',
+    primaryDomain: 'Governance',
+    geographicScope: 'Global',
+    implementationPriority: 'High',
+    dependencies: ['framework_mobility_commons', 'framework_meta_gov']
+  }
+];
+
+// Key Relationships for The Mobility Commons
+export const mobilityCommonsRelationships: GgfRelationship[] = [
+  // Relationship to the "Golden Triangle"
+  {
+    from: 'framework_treaty',
+    to: 'framework_mobility_commons',
+    type: 'ENABLES',
+    description: 'The Treaty provides the legal authority and enforcement mechanisms (via the Digital Justice Tribunal) for the Mobility Commons\' standards and charters.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_meta_gov',
+    to: 'framework_mobility_commons',
+    type: 'COORDINATES_WITH',
+    description: 'Meta-Governance provides the coordination architecture and hosts the Global Mobility Council as a specialized sub-council.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_indigenous',
+    to: 'framework_mobility_commons',
+    type: 'GUIDES',
+    description: 'The Indigenous Framework provides non-negotiable guidance on BAZ-led governance, FPIC 2.0 protocols, and the protection of sacred travel routes.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  
+  // Core Functional Relationships
+  {
+    from: 'framework_mobility_commons',
+    to: 'council_gmc',
+    type: 'ESTABLISHES',
+    description: 'The Mobility Commons framework establishes the Global Mobility Council as its primary governance body.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_climate_energy',
+    to: 'framework_mobility_commons',
+    type: 'INFORMS',
+    description: 'The Climate & Energy framework sets the decarbonization targets that the Mobility Commons is responsible for implementing in the transport sector.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_gscl',
+    to: 'framework_mobility_commons',
+    type: 'COORDINATES_WITH',
+    description: 'Coordinates on shared infrastructure (ports, hubs) and policies to ensure the efficient movement of both goods and people.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+
+  // Justice and Equity Layer Integration
+  {
+    from: 'framework_disability_justice',
+    to: 'framework_mobility_commons',
+    type: 'VALIDATES',
+    description: 'The Disability Justice Layer provides mandatory universal design standards and auditing for all mobility infrastructure and services.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_gender_justice',
+    to: 'framework_mobility_commons',
+    type: 'VALIDATES',
+    description: 'The Gender & Kinship Justice Council audits mobility projects for safety and equity, ensuring they serve marginalized communities.',
+    strength: 'Medium',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_youth_justice',
+    to: 'framework_mobility_commons',
+    type: 'VALIDATES',
+    description: 'The Youth & Future Generations framework provides veto power and seven-generation impact assessments for long-term mobility projects.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+
+  // Economic and Technological Integration
+  {
+    from: 'framework_aubi',
+    to: 'framework_mobility_commons',
+    type: 'INTEGRATES_WITH',
+    description: 'AUBI provides the Hearts/Leaves system to economically reward sustainable mobility choices and supports workers during the just transition.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_aurora_accord',
+    to: 'framework_mobility_commons',
+    type: 'GUIDES',
+    description: 'The Aurora Accord provides the data sovereignty and privacy rules for all digital platforms used in the Mobility Commons, such as the MaaS platform.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  }
+];
+
 /**
  * TIER 3: DEVELOPMENT APPLICATIONS CLUSTER
  * Frameworks for sustainable urban and rural development coordinating 

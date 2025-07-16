@@ -633,6 +633,40 @@
           'Globala insatsteam med Interpol-liknande jurisdiktion och övervakningsdomstolsskydd'
         ]
       }
+    },
+    mobilityCommons: {
+      en: {
+        title: 'The Mobility Commons: Regenerative Transportation & Mobility Framework',
+        defaultDescription: "We're developing a revolutionary framework that reimagines transportation as a regenerative, equitable, and shared global resource, integral to human flourishing and planetary coordination. This Tier 2 Life Support System establishes a fossil-free, universally accessible mobility system through Indigenous sovereignty, bioregional governance, and emergent technologies.",
+        defaultFeatures: [
+          'Global Mobility Council (GMC) with Indigenous leadership, youth veto power, and ceremonial governance protocols',
+          'Global Pathways Initiative: high-speed rail networks, sustainable maritime corridors, and living infrastructure',
+          'Mobility as a Service (MaaS) Commons with AI optimization for Biosphere Health Index and Indigenous knowledge',
+          'Hearts & Leaves integration rewarding sustainable transport use through the Love Ledger system',
+          'Climate Migration Transportation Corridors and Disaster Response Mobile Units for crisis resilience',
+          'Universal Access Audits ensuring disability justice and bioregional integration with wildlife corridors',
+          'Transportation Reparations Fund addressing spatial injustice and supporting community ownership models',
+          'Mobility Innovation Commons for speculative technologies (levitation, consciousness-assisted navigation)',
+          'Sacred Timing & Landscape Consciousness respecting ceremonial calendars and ancestral pathways',
+          'Right to Movement Charter enforceable by Digital Justice Tribunal with green displacement protections'
+        ]
+      },
+      sv: {
+        title: 'Rörlighetsallmänningen: Regenerativ transport & rörlighetsramverk',
+        defaultDescription: "Vi utvecklar ett revolutionerande ramverk som omtänker transport som en regenerativ, rättvis och delad global resurs, integrerad med mänskligt välmående och planetär koordination. Detta Tier 2 livsstödssystem etablerar ett fossilfritt, universellt tillgängligt rörlighetssystem genom ursprungsbefolkningssuveränitet, bioregional styrning och framväxande teknologier.",
+        defaultFeatures: [
+          'Global rörlighetsråd (GMC) med ursprungsbefolkningsledarskap, ungdomsvetorätt och ceremoniella styrningsprotokoll',
+          'Global väginitiativ: höghastighetsjärnvägsnätverk, hållbara maritima korridorer och levande infrastruktur',
+          'Rörlighet som en tjänst (MaaS) allmänning med AI-optimering för Biosfärhälsoindex och ursprungsbefolkningskunskap',
+          'Hearts & Leaves-integration som belönar hållbar transportanvändning genom Kärleksregistersystemet',
+          'Klimatmigrationstransportkorridorer och katastrofresponsmobila enheter för krishanteringskapacitet',
+          'Universell tillgänglighetsrevision som säkerställer funktionshinderrättvisa och bioregional integration med vildlivskorridorer',
+          'Transportreparationsfond som adresserar rumslig orättvisa och stödjer gemenskapsägarskapsmodeller',
+          'Rörlighetsallmänning för innovation för spekulativa teknologier (levitation, medvetenhetsassisterad navigation)',
+          'Helig timing & landskapsmedvetenhet som respekterar ceremoniella kalendrar och förfädersvägar',
+          'Rätt till rörelse-stadga som kan verkställas av Digital rättvisedomstol med skydd mot grön förskjutning'
+        ]
+      }
     }
   };
 
@@ -708,6 +742,8 @@
             <li>
               {#if frameworkName === 'shield'}
                 {index === 0 ? '🧠' : index === 1 ? '⚖️' : index === 2 ? '🎯' : index === 3 ? '🚔' : index === 4 ? '💰' : index === 5 ? '🔄' : index === 6 ? '❤️' : '🛡️'}
+              {:else if frameworkName === 'mobilityCommons'}
+               {index === 0 ? '🏛️' : index === 1 ? '🛤️' : index === 2 ? '🤖' : index === 3 ? '💚' : index === 4 ? '🚑' : index === 5 ? '♿' : index === 6 ? '⚖️' : index === 7 ? '🔬' : index === 8 ? '🪶' : '📜'}
               {:else if frameworkName === 'wdip'}
                 {index === 0 ? '🔄' : index === 1 ? '🌀' : index === 2 ? '🌳' : index === 3 ? '❤️' : index === 4 ? '⚠️' : index === 5 ? '🤖' : index === 6 ? '🪶' : '🔄'}
               {:else if frameworkName === 'synoptic'}
