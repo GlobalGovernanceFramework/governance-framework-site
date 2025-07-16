@@ -13,7 +13,7 @@ export const dataOSEntities: GgfEntity[] = [
     type: 'Framework',
     name: 'Aurora Accord - Global Data Governance',
     shortName: 'Aurora Accord',
-    description: 'Digital-first world data governance rules',
+    description: 'Digital-first world data governance rules, including enhanced, quantum-resistant cybersecurity protocols to protect sensitive data, especially Traditional Ecological Knowledge held within the Digital Commons.',
     tier: 1,
     status: 'Review',
     primaryDomain: 'Technology',

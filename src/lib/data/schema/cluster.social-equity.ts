@@ -96,7 +96,7 @@ export const socialEquityEntities: GgfEntity[] = [
     type: 'Framework',
     name: 'Migration & Human Mobility Framework',
     shortName: 'Migration',
-    description: 'Equitable migration governance and rights protection for people in motion',
+    description: 'Equitable migration governance and rights protection for people in motion, including specific Climate Migration and Sanctuary Protocols guided by Indigenous hospitality principles.',
     tier: 3,
     status: 'Review',
     primaryDomain: 'Justice',
@@ -535,6 +535,16 @@ export const socialEquityRelationships: GgfRelationship[] = [
     description: 'Youth engagement and future generations advocacy implemented through BAZ governance',
     strength: 'Medium',
     frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+
+  // === CONNECTIONS TO INDIGENOUS FRAMEWORK ===
+  {
+    from: 'framework_indigenous',
+    to: 'framework_migration',
+    type: 'GUIDES',
+    description: 'Provides guiding principles of traditional hospitality, sanctuary, and "right relationship" for the development of climate migration protocols.',
+    strength: 'Strong',
     sequenceType: 'Parallel'
   },
 

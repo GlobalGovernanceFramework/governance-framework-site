@@ -118,5 +118,14 @@ export const governanceOSRelationships: GgfRelationship[] = [
     strength: 'Strong',
     frequency: 'Crisis-Only',
     sequenceType: 'Conditional'
+  },
+  // === EXTERNAL RELATIONSHIPS ===
+  {
+    from: 'framework_meta_gov',
+    to: 'institution_baz',
+    type: 'COORDINATES_WITH',
+    description: 'Provides the polycentric coordination protocols for how BAZs can interoperate and form "fractal governance networks" while maintaining sovereignty.',
+    strength: 'Medium',
+    sequenceType: 'Parallel'
   }
 ];

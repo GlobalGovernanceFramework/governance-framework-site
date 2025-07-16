@@ -136,6 +136,14 @@ export const technologyOSRelationships: GgfRelationship[] = [
 
   // === CONNECTIONS TO ETHICAL OS ===
   {
+    from: 'framework_indigenous',
+    to: 'framework_technology_governance',
+    type: 'GUIDES',
+    description: 'Provides the ethical guardrails and sovereignty protocols for any technology, including "Indigenous AI Oracles," that interacts with or is trained on Traditional Ecological Knowledge (TEK).',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  }
+  {
     from: 'framework_technology_governance',
     to: 'framework_mos',
     type: 'IMPLEMENTS',

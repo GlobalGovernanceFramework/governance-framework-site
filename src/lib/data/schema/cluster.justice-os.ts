@@ -434,6 +434,16 @@ export const justiceOSRelationships: GgfRelationship[] = [
     sequenceType: 'Parallel'
   },
 
+  // === CONNECTIONS TO AURORA ACCORD ===
+  {
+    from: 'framework_shield',
+    to: 'framework_aurora_accord',
+    type: 'ENFORCES',
+    description: 'The Shield Protocol investigates and prosecutes major violations of the Aurora Accord\'s cybersecurity mandates, particularly attacks on Indigenous data sovereignty.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+
   // === FUNDING CONNECTIONS ===
   {
     from: 'mechanism_gcf',

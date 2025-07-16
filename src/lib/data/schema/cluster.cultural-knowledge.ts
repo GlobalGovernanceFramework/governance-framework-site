@@ -35,7 +35,7 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     type: 'Framework',
     name: 'Digital Commons Framework',
     shortName: 'Digital Commons',
-    description: 'Knowledge commons preservation and democratic access to information',
+    description: 'Knowledge commons preservation and democratic access to information, with specific protocols and decentralized infrastructure for protecting Traditional Ecological Knowledge (TEK) under the principles of Indigenous data sovereignty.',
     tier: 3,
     status: 'Review',
     primaryDomain: 'Technology',
@@ -334,6 +334,14 @@ export const culturalKnowledgeRelationships: GgfRelationship[] = [
   },
 
   // === CONNECTIONS TO ETHICAL OS ===
+  {
+    from: 'framework_indigenous',
+    to: 'framework_digital_commons',
+    type: 'GUIDES',
+    description: 'The Indigenous Framework provides the core ethical protocols for how the Digital Commons must steward and protect Traditional Ecological Knowledge (TEK).',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  }
   {
     from: 'council_cawc',
     to: 'council_earth',
