@@ -10,14 +10,14 @@ revision: Version 1.0 (2025-01-11)
 
 **In this section:**
 - [Learning from the Journeys of Others](#learning-from-journeys)
-- [Navigating Potential Challenges with Wisdom](#navigating-challenges)
+- [Navigating Potential Considerations with Wisdom](#navigating-considerations)
 - [On Gathering and Sharing Resources](#gathering-sharing-resources)
-- [Knowing We Are on a Good Path](#knowing-good-path)
+- [Recognizing When We Walk in Good Relation](#recognizing-good-relation)
 - [On Being Resilient and Adaptable](#being-resilient-adaptable)
 
 **Estimated Reading Time**: 22 minutes
 
-Any meaningful journey toward greater sovereignty and healing will have its challenges. This is not cause for fear, but recognition of the strength and wisdom that Indigenous communities have always carried. Indigenous ancestors faced seemingly impossible obstacles and not only survived, but created the foundation for the thriving communities that can emerge today.
+Any meaningful journey toward greater sovereignty and healing will have its considerations and challenges. This is not cause for fear, but recognition of the strength and wisdom that Indigenous communities have always carried. Indigenous ancestors faced seemingly impossible obstacles and not only survived, but created the foundation for the thriving communities that can emerge today.
 
 What follows are stories and reflections shared in the spirit of preparation and mutual support. These considerations are offered not to create anxiety about what might go wrong, but to honor the deep resilience and strategic wisdom that have always been part of Indigenous traditions. Every challenge also carries within it the seeds of greater strength, deeper connection, and more creative solutions.
 
@@ -29,7 +29,7 @@ What follows are stories and reflections shared in the spirit of preparation and
 
 **The River That Became a Person**
 
-In Aotearoa, the Whanganui River became the first river in the world to gain legal personhood, but this victory came after more than a century of patient, determined advocacy by the Whakatōhea people. For generations, they maintained their understanding that the river was not a resource to be owned but an ancestor to be honored. When colonial courts finally recognized this truth in 2017, it was because the community had never stopped living and speaking this relationship, even when the dominant culture refused to listen.
+In Aotearoa, the Whanganui River became the first river in the world to gain legal personhood, but this victory came after more than a century of patient, determined advocacy by the Whanganui iwi. For generations, they maintained their understanding that the river was not a resource to be owned but an ancestor to be honored. When colonial courts finally recognized this truth in 2017, it was because the community had never stopped living and speaking this relationship, even when the dominant culture refused to listen.
 
 The wisdom here lies not just in the legal victory, but in the patience to hold a vision across generations. The community understood that transformation often happens slowly, and that maintaining cultural integrity while engaging colonial systems requires both flexibility and unshakeable grounding in core principles. They also learned that legal recognition, while important, is just one step in a longer journey toward living in right relationship.
 
@@ -67,27 +67,27 @@ These stories also teach us about the delicate balance between innovation and tr
 
 Perhaps most importantly, they maintained their spiritual and ceremonial connections throughout their struggles. Political victories and legal recognition became expressions of deeper spiritual relationships rather than ends in themselves.
 
-## <a id="navigating-challenges"></a>Navigating Potential Challenges with Wisdom
+## <a id="navigating-considerations"></a>Navigating Potential Considerations with Wisdom
 
 *A core teaching found across Indigenous traditions is that every obstacle also serves as a teacher, showing communities how to become stronger, wiser, and more united.*
 
-### The Challenge of Colonial Resistance
+### Considering Colonial Resistance
 
 **Understanding the Nature of Opposition**
 
-Communities that choose this path will almost certainly face resistance from colonial governments, extractive corporations, and other institutions that benefit from the current system. This opposition might take many forms—legal challenges, economic pressure, surveillance, or attempts to divide communities against themselves.
+Communities that choose paths toward greater sovereignty will likely face resistance from colonial governments, extractive corporations, and other institutions that benefit from current systems. This opposition might take many forms—legal challenges, economic pressure, surveillance, or attempts to divide communities against themselves.
 
 Indigenous ancestors faced far more severe opposition and not only survived but maintained their cultures and connections to the land. The same strategic wisdom that carried Indigenous peoples through the darkest periods can guide communities today. The key is understanding that this resistance, while challenging, is also a sign that the work is threatening systems that need to be changed.
 
-**Wisdom from the Underground**
+**Wisdom from Experience**
 
-Many communities have learned to operate in multiple layers—maintaining traditional governance systems regardless of colonial recognition while strategically engaging existing institutions when beneficial. This dual approach allows communities to build their own strength while creating space within dominant systems.
+Many communities have learned to operate in multiple layers—maintaining traditional governance systems regardless of colonial recognition while strategically engaging existing institutions when beneficial. This approach allows communities to build their own strength while creating space within dominant systems.
 
-Cybersecurity and communication security have become as important as traditional security practices. Communities have learned to combine traditional protocols for protecting sensitive information with contemporary tools for secure communication. The elders' wisdom about when to speak and when to remain silent applies to digital spaces as much as physical ones.
+Security practices have become important for protecting community communications and cultural information. Communities have learned to combine traditional protocols for protecting sensitive information with contemporary tools for secure communication. The elders' wisdom about when to speak and when to remain silent applies to digital spaces as much as physical ones.
 
 Building networks of solidarity with other Indigenous communities and allied organizations provides mutual support and makes it harder for opponents to target individual communities. Traditional diplomatic relationships between Indigenous nations become especially important when external pressure increases.
 
-### The Challenge of Internal Differences
+### Considering Internal Differences
 
 **Honoring Diverse Perspectives**
 
@@ -103,7 +103,7 @@ Some communities have found success in creating multiple pathways for engagement
 
 Clear protocols for decision-making help prevent conflicts from escalating. Traditional consensus processes, when properly facilitated, ensure that all voices are heard while building toward decisions that the community can support together.
 
-### The Challenge of Resource Limitations
+### Considering Resource Needs
 
 **Beyond Money to True Wealth**
 
@@ -115,13 +115,13 @@ Traditional reciprocity networks and gift economy practices can supplement cash 
 
 **Seeking Allies and Resources Wisely**
 
-Finding funding and other support often requires building relationships with foundations, government agencies, or other organizations that share some common goals. The challenge is maintaining community control over priorities and decision-making while accepting support from external sources.
+Finding funding and other support often requires building relationships with organizations that share some common goals. The challenge is maintaining community control over priorities and decision-making while accepting support from external sources.
 
-Some communities have found success in diversifying their support base so they're not dependent on any single funding source. This might include traditional economic activities, contemporary enterprises, grants from sympathetic organizations, and ongoing reparations campaigns against institutions that have caused historical harm.
+Some communities have found success in diversifying their support base so they're not dependent on any single funding source. This might include traditional economic activities, contemporary enterprises, grants from sympathetic organizations, and ongoing accountability campaigns against institutions that have caused historical harm.
 
 The most sustainable approach often involves building the community's own capacity to generate resources over time rather than remaining dependent on external funding indefinitely.
 
-### The Challenge of Technology and Security
+### Considering Technology and Security
 
 **Protecting What's Sacred**
 
@@ -169,11 +169,11 @@ Many successful initiatives have started with very modest resources by focusing 
 
 Sometimes the most important resource is simply the commitment of a small group of people who share a vision and are willing to work together patiently over time. Traditional teaching suggests that a few people with clear intention and strong relationships can accomplish more than large groups without shared purpose.
 
-**Building Relationships with Funders**
+**Building Relationships with Supporters**
 
 When external funding is needed, the most sustainable approach often involves finding supporters who understand that they are joining a movement rather than funding a project. Look for organizations and individuals whose values align with community priorities and who are willing to support community-controlled decision-making.
 
-Diversifying funding sources provides more security and autonomy than depending on any single supporter. This might include traditional economic activities, grants from foundations, support from allied organizations, individual donations, and campaigns for reparations from institutions that have caused historical harm.
+Diversifying support sources provides more security and autonomy than depending on any single supporter. This might include traditional economic activities, grants from organizations, support from allied communities, individual donations, and campaigns for accountability from institutions that have caused historical harm.
 
 Some communities have found success in educating potential supporters about Indigenous approaches to wealth and success, helping them understand that the goal is not to replicate dominant economic models but to create alternatives that serve both community and ecological wellbeing.
 
@@ -189,11 +189,11 @@ Some communities have found that their most successful economic activities are t
 
 **Creating Regenerative Cycles**
 
-The goal is not just to gather enough resources to achieve immediate objectives, but to create systems that continue generating what the community needs over time. This might involve developing ongoing revenue sources, building endowments for long-term support, or creating cooperative enterprises that serve community needs while generating surplus for community priorities.
+The goal is not just to gather enough resources to achieve immediate objectives, but to create systems that continue generating what the community needs over time. This might involve developing ongoing revenue sources, building funds for long-term support, or creating cooperative enterprises that serve community needs while generating surplus for community priorities.
 
 Traditional ecological knowledge teaches us that healthy systems are regenerative—they create more abundance over time rather than depleting their resource base. Economic activities that follow these principles contribute to long-term community sustainability rather than short-term financial gain.
 
-## <a id="knowing-good-path"></a>Knowing We Are on a Good Path
+## <a id="recognizing-good-relation"></a>Recognizing When We Walk in Good Relation
 
 *Traditional Indigenous teachings suggest that success is measured not by what a community accumulates, but by what it leaves for the children—not by what it takes, but by what it restores.*
 
@@ -203,67 +203,67 @@ Rather than rigid metrics or quantitative targets, communities might ask themsel
 
 **About the Land and Our Relationships with It**
 
-*Is the water in our territory healthier and clearer this year than it was last year?* When communities work in right relationship with the land, one of the first signs is often improvement in local environmental conditions.
+*How is the water in our territory?* When communities work in right relationship with the land, one of the first signs is often improvement in local environmental conditions.
 
-*Are we seeing more birds, more diverse plants, more signs of abundant life in our territory?* Traditional knowledge teaches us that human activities should support rather than diminish the flourishing of other beings.
+*What do we notice about the birds, the plants, the signs of life in our territory?* Traditional knowledge teaches us that human activities should support rather than diminish the flourishing of other beings.
 
-*Do our children spend more time learning from the land and less time disconnected from it?* The health of the relationship between young people and the natural world is often a good indicator of whether community activities are supporting traditional values.
+*How do our children relate to the land?* The health of the relationship between young people and the natural world is often a good indicator of whether community activities are supporting traditional values.
 
-*Are our traditional food systems stronger and more abundant than they were before?* Food sovereignty is both a practical necessity and a cultural practice that connects communities to traditional knowledge and seasonal cycles.
+*How are our traditional food systems?* Food sovereignty is both a practical necessity and a cultural practice that connects communities to traditional knowledge and seasonal cycles.
 
 **About Our Culture and Knowledge**
 
-*Are our children hearing and speaking our language more often in their daily lives?* Language vitality is one of the most important indicators of cultural health and intergenerational knowledge transmission.
+*How often do our children hear and speak our language in their daily lives?* Language vitality is one of the most important indicators of cultural health and intergenerational knowledge transmission.
 
-*Are more people participating in traditional ceremonies and cultural practices?* When communities are on a healthy path, cultural activities usually become stronger and more central to community life.
+*How do people feel about participating in traditional ceremonies and cultural practices?* When communities are on a healthy path, cultural activities usually become stronger and more central to community life.
 
-*Are our elders sharing their knowledge more freely and our youth receiving it more eagerly?* The relationship between generations is often a good measure of whether community initiatives are strengthening traditional knowledge transmission.
+*How are our elders and youth connecting?* The relationship between generations is often a good measure of whether community initiatives are strengthening traditional knowledge transmission.
 
-*Are we creating new expressions of our culture that honor traditional principles while addressing contemporary challenges?* Healthy cultures are living systems that grow and adapt while maintaining their essential character.
+*How do we express our culture in contemporary ways?* Healthy cultures are living systems that grow and adapt while maintaining their essential character.
 
 **About Our Governance and Decision-Making**
 
-*Do our people feel that our decision-making processes are fair, respectful, and guided by our deepest values?* The quality of governance is often more important than any specific decision or outcome.
+*How do our people feel about our decision-making processes?* The quality of governance is often more important than any specific decision or outcome.
 
-*Are more people willing to take on leadership responsibilities and participate in community governance?* When governance systems are working well, people usually want to be involved rather than avoiding responsibility.
+*Who wants to take on leadership responsibilities?* When governance systems are working well, people usually want to be involved rather than avoiding responsibility.
 
-*Are we able to address conflicts and disagreements in ways that strengthen rather than weaken our relationships?* Traditional governance focuses on healing relationships rather than simply making decisions.
+*How do we handle conflicts and disagreements?* Traditional governance focuses on healing relationships rather than simply making decisions.
 
-*Do our decisions consistently consider the impact on future generations?* Seven-generation thinking is both a traditional value and a practical approach to sustainable community development.
+*How often do we think about the impact on future generations?* Seven-generation thinking is both a traditional value and a practical approach to sustainable community development.
 
 **About Our Economic Life**
 
-*Are more families able to meet their basic needs through activities that align with our values?* Economic health should support cultural and ecological health rather than undermining them.
+*Can families meet their basic needs through activities that align with our values?* Economic health should support cultural and ecological health rather than undermining them.
 
-*Is wealth circulating within our community rather than flowing away to distant centers?* Traditional economies are designed to strengthen local relationships and community resilience.
+*How does wealth move within our community?* Traditional economies are designed to strengthen local relationships and community resilience.
 
-*Are our economic activities creating more opportunities for people to use their gifts in service of the community?* Work should be meaningful and contribute to collective wellbeing rather than being separate from community life.
+*Do people find their work meaningful?* Work should contribute to collective wellbeing rather than being separate from community life.
 
-*Are we less dependent on systems that require us to compromise our values?* Building economic sovereignty is a gradual process of creating alternatives to exploitative economic relationships.
+*How dependent are we on systems that require us to compromise our values?* Building economic sovereignty is a gradual process of creating alternatives to exploitative economic relationships.
 
 **About Our Relationships with Others**
 
-*Are we building stronger alliances with other Indigenous communities and supportive allies?* Solidarity and mutual support are essential for sustaining community initiatives over time.
+*How are our alliances with other Indigenous communities and supportive allies?* Solidarity and mutual support are essential for sustaining community initiatives over time.
 
-*Are we able to engage with dominant institutions when necessary while maintaining our sovereignty and integrity?* Strategic engagement requires the ability to work within existing systems without being co-opted by them.
+*How do we engage with dominant institutions when necessary?* Strategic engagement requires the ability to work within existing systems without being co-opted by them.
 
-*Are we contributing to the healing and transformation of the broader society rather than just focusing on our own community?* Traditional teachings suggest that individual and community healing is connected to the healing of all relationships.
+*How do we contribute to healing beyond our own community?* Traditional teachings suggest that individual and community healing is connected to the healing of all relationships.
 
-*Are we modeling ways of living that others can learn from and adapt to their own contexts?* Success is often measured not just by what a community achieves internally, but by how it contributes to broader transformation.
+*What can others learn from our example?* Success is often measured not just by what a community achieves internally, but by how it contributes to broader transformation.
 
-### Signs of a Healthy Path
+### Signs of Walking in Good Relation
 
 **Growing Confidence and Joy**
 
-When communities are on a good path, there's usually a palpable sense of growing confidence and collective joy. People feel more hopeful about the future and more connected to each other. Children and elders both seem more engaged with community life.
+When communities are on a good path, there's usually a sense of growing confidence and collective joy. People feel more hopeful about the future and more connected to each other. Children and elders both seem more engaged with community life.
 
-Cultural activities become sources of celebration rather than obligation. Traditional practices feel relevant and alive rather than like historical reenactments. People find themselves laughing together more often and arguing less bitterly.
+Cultural activities become sources of celebration rather than obligation. Traditional practices feel relevant and alive rather than like historical preservation. People find themselves laughing together more often and arguing less bitterly.
 
 **Increasing Capacity and Resilience**
 
 Communities on a healthy path usually find that their capacity to handle challenges grows over time rather than diminishing. Each obstacle that's overcome builds skills and relationships that help address future challenges more effectively.
 
-Problems that once seemed insurmountable begin to feel manageable when addressed collectively. Community members develop a wider range of skills and more confidence in their ability to create the changes they want to see.
+Problems that once seemed overwhelming begin to feel manageable when addressed collectively. Community members develop a wider range of skills and more confidence in their ability to create the changes they want to see.
 
 **Deepening Relationships**
 
