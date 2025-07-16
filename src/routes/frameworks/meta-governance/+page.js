@@ -30,8 +30,8 @@ export async function load({ depends, url }) {
   
   // Define sections to load - ADD 'introduction' section here
   const sections = [
+    'introduction',
     'quick-start',
-    'introduction',  // NEW: Add introduction section for introduction.md content
     'index',         // This will be the overview (index.md)
     'principles',
     'value-proposition',
