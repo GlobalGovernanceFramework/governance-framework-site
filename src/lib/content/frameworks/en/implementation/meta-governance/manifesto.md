@@ -285,7 +285,7 @@ What remains is the collective will to choose coordination over fragmentation, i
 
 Your journey can start today. Whether you're ready to explore, contribute, or co-create, there's a pathway designed for your framework's capacity and interests.
 
-**[Get Started: Find Your Role in Meta-Governance](/frameworks/meta-governance#getting-started)**
+**[Get Started: Find Your Global Citizenship Role](/my-path)**
 
 Take our interactive quiz to discover how your framework can contribute to planetary coordination, explore detailed participation options, and connect with the resources and communities that align with your coordination interests and capacity.
 

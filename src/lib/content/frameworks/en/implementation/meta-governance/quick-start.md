@@ -129,11 +129,11 @@ You don't have to do everything. Pick a level that fits:
 
 Your journey can start today. Whether you want to learn more, test the waters, or dive deep into co-creating the future, there's a pathway designed for you.
 
-**Ready to find your role?** Explore the full framework, take our 'Meta-Governance Role' quiz to see where you fit, and discover the right pathway for your interests and capacity.
+**Ready to find your role?** Explore the full framework, take our 'Global Citizenship' quiz to see where you fit, and discover the right pathway for your interests and capacity.
 
-**[Get Started: Find Your Role in Meta-Governance](/frameworks/meta-governance/getting-started)**
+**[Find Your Place in the Global Transformation: Take the Global Citizenship Quiz](/my-path)**
 
-Take the interactive quiz, explore detailed participation options, and connect with the resources and communities that align with your coordination interests. You'll find everything you need to begin your meta-governance journey in one place.
+Take the interactive quiz, explore detailed participation options, and connect with the resources and communities that align with your coordination interests. You'll find everything you need to begin your journey in one place.
 
 > *"Meta-governance isn't about ruling—it's about relating. Join us to build a future where systems work for everyone."*
 
