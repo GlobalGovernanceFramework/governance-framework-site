@@ -1,15 +1,15 @@
 ---
-title: Treaty for Our Only Home v1.0
+title: Treaty for Our Only Home v1.1
 section: index
 status: Second release
 revision: 1.1
 revision_description: Ethically Revised
 releaseDate: 2025-06-15
 lastUpdated: 2025-06-25
-nextReview: too be determined
+nextReview: to be determined
 ---
 
-# Treaty for Our Only Home v1.0
+# Treaty for Our Only Home v1.1
 
 **In this document:**
 - [Introduction](#introduction)
@@ -28,9 +28,15 @@ nextReview: too be determined
 
 **Framework Development**: This treaty represents comprehensive research synthesis developed through iterative refinement using multiple AI systems, integrating evidence-based practices with established principles in international law and systems thinking. While developed by an individual researcher leveraging analytical diversity, it stands on a foundation of proven governance mechanisms and urgent global necessity.
 
+## An Architecture of Hope, Forged in Crisis
+
 Humanity faces an unprecedented **polycrisis**: cascading failures in climate, economic, and political systems that threaten global stability and human survival. From rising seas destroying island nations to supply chain collapses triggering economic instability, from disinformation wars undermining democracy to pandemic risks exposing institutional failures, our 20th-century governance systems are fundamentally inadequate for 21st-century challenges.
 
-The **Treaty for Our Only Home** is not just another reform proposal—it is the coordinated response to civilizational crisis. This framework transforms global governance from a system that generates crises into one that generates resilience, **unlocking global action on climate, preventing future pandemics, and building an economy that serves all.** It evolves governance from nation-state competition into an agile, legitimate, and cooperative ecosystem that ensures ecological integrity, fosters intergenerational equity, and invites every voice to build a civilization of stewardship and conscience.
+The **Treaty for Our Only Home** is not just another reform proposal—it is the coordinated response to civilizational crisis. This framework transforms global governance from a system that generates crises into one that generates resilience, providing a blueprint to **unlock** a deadlocked world, **legitimize** global action, **enforce** our shared values, **fuel** a regenerative future, and **guide** humanity with wisdom.
+
+It evolves governance from nation-state competition into an agile, legitimate, and cooperative ecosystem that ensures ecological integrity, fosters intergenerational equity, and invites every voice to build a civilization of stewardship and conscience.
+
+**This Treaty provides the institutional architecture—the reformed councils, laws, and funding mechanisms—necessary to implement the deep wisdom of our planet's most ancient and successful governance systems. It is the hardware built to run the software of Traditional Ecological Knowledge, as detailed in our partner document, the [Indigenous & Traditional Knowledge Governance Framework](/frameworks/indigenous-governance-and-traditional-knowledge). No Treaty mechanism should be implemented without Indigenous guidance and consent.**
 
 ## <a id="introduction"></a>Introduction: The Polycrisis Response
 
@@ -71,12 +77,16 @@ The treaty's architecture is built on five interlocking pillars, each designed t
 
 **Keystone Reform**: **UNSC Veto Override** - Enable 3/4 majority for security issues, 2/3 for humanitarian/climate crises
 
+**Impact**: *For Ambassador Chen, this means climate adaptation funding for her island nation is no longer held hostage by great power politics—urgent climate action can proceed when two-thirds of the Security Council agrees, ending the paralysis that currently condemns vulnerable nations to bear the costs of other nations' emissions.*
+
 ### Pillar 2: Integrating New Actors & Voices
 **Goal**: Incorporate non-state actors and grassroots perspectives into global governance
 
 **Key Mechanisms**: United Nations Parliamentary Assembly, Global Council for the Future, formal roles for cities and regions, Global Citizens' Initiative for referendums, and Youth Transition Chambers with guaranteed representation.
 
 **Keystone Reform**: **Global Citizens' Initiative** - Enable binding referendums with 10M signatures across 50+ nations
+
+**Impact**: *For Maya, this means her community's traditional ecological knowledge can directly influence global climate policy through citizen initiatives, while her scientific research can inform policies that are no longer filtered solely through nation-state representatives who may not understand local conditions.*
 
 ### Pillar 3: Strengthening Global Law & Enforcement
 **Goal**: Ensure universal application of international law with effective enforcement
@@ -85,6 +95,8 @@ The treaty's architecture is built on five interlocking pillars, each designed t
 
 **Keystone Reform**: **Ecocide Law** - Mandate ICC prosecution of large-scale environmental destruction
 
+**Impact**: *For all three women, this means the corporations and governments responsible for pharmaceutical price-gouging, climate destruction, and ecosystem damage face real legal consequences—ending the impunity that allows powerful actors to externalize costs onto vulnerable communities.*
+
 ### Pillar 4: Reimagining Funding & Resources
 **Goal**: Create independent funding to enable innovative and equitable financial systems
 
@@ -92,12 +104,16 @@ The treaty's architecture is built on five interlocking pillars, each designed t
 
 **Keystone Reform**: **Carbon Tax** - Global levy on fossil fuels funding climate adaptation
 
+**Impact**: *For Dr. Williams, this means pharmaceutical research funded by public money is recouped through digital services taxes that fund the next generation of essential medicines. For Ambassador Chen, predictable climate adaptation funding flows from carbon tax revenues rather than depending on political charity.*
+
 ### Pillar 5: Building Ethical & Epistemic Infrastructure
 **Goal**: Foster trust, truth, and collective purpose in governance
 
 **Key Mechanisms**: Global Knowledge Stewardship Council, transdisciplinary foresight labs, AI-assisted governance with ethical safeguards, Global Civic Curriculum, and Office of the Adversary for institutional red-teaming.
 
 **Keystone Reform**: **Debt Justice** - Automatic debt pauses during crises (cross-pillar integration)
+
+**Impact**: *For Maya, this means traditional knowledge receives equal institutional standing with academic science in policy-making. For Dr. Williams, it means medical research is protected from corporate bias through transparent, ethical review processes. For Ambassador Chen, it means small nations can't be crushed by debt during climate disasters.*
 
 [Learn more about the Five Pillars](/frameworks/treaty-for-our-only-home#five-pillars)
 
@@ -296,32 +312,36 @@ This Treaty is designed not just to be read, but to be wielded. The following st
 2. Review the [Executive Summary for the Skeptic](/frameworks/treaty-for-our-only-home#executive-summary) 
 3. Study the [Indigenous governance integration requirements](/frameworks/indigenous-governance-and-traditional-knowledge#interface-existing-systems)
 4. Explore the [Keystone Reform Playbooks] *This playbook series is in development and will be released as a key resource for policymakers following the initial launch phase.*
-5. Contact globalgovernanceframeworks@gmail.com with subject "Indigenous Partnership Development"
+5. **Your First Move**: Convene a preliminary briefing with Indigenous leaders in your jurisdiction to discuss the Treaty's FPIC protocols and the vision for bioregional coordination.
+6. Contact globalgovernanceframeworks@gmail.com with subject "Indigenous Partnership Development"
 
 **Civil Society & Advocacy Organizations**:
 1. **Build relationships with Indigenous-led organizations** in your bioregion following appropriate cultural protocols
 2. Download the [Global Stewardship Advocacy Kit](/frameworks/tools/treaty-for-our-only-home/global-stewardship-advocacy-kit-en.zip)
 3. Study [Indigenous solidarity principles](/frameworks/indigenous-governance-and-traditional-knowledge#pathways-broader-engagement) for ethical ally engagement
 4. Review the [Implementation Strategies](/frameworks/treaty-for-our-only-home#implementation-strategies)
-5. Contact globalgovernanceframeworks@gmail.com with subject "Indigenous-Allied Partnership"
+5. **Your First Move**: Email globalgovernanceframeworks@gmail.com with the subject "Indigenous-Allied Partnership" to join the working group for ethical advocacy coordination.
+6. Contact globalgovernanceframeworks@gmail.com with subject "Indigenous-Allied Partnership"
 
 **Academic & Research Institutions**:
 
-1.  **Adopt Indigenous Research Protocols** and commit to community-controlled data sovereignty before initiating any research, as detailed in the [Indigenous Framework's guide for ethical academic engagement](https://www.google.com/search?q=/frameworks/indigenous-governance-and-traditional-knowledge%23scientists-academics).
-2.  Access the full [Treaty framework documentation](https://www.google.com/search?q=/frameworks/treaty-for-our-only-home).
-3.  Review the [Monitoring & Evaluation](https://www.google.com/search?q=/frameworks/treaty-for-our-only-home%23monitoring-evaluation) protocols for collaborative opportunities.
+1.  **Adopt Indigenous Research Protocols** and commit to community-controlled data sovereignty before initiating any research, as detailed in the [Indigenous Framework's guide for ethical academic engagement](/frameworks/indigenous-governance-and-traditional-knowledge#scientists-academics).
+2.  Access the full [Treaty framework documentation](/frameworks/treaty-for-our-only-home).
+3.  Review the [Monitoring & Evaluation](/frameworks/treaty-for-our-only-home#monitoring-evaluation) protocols for collaborative opportunities.
 4.  Explore partnership in the Reform Accelerator Labs.
-5.  Contact globalgovernanceframeworks@gmail.com with subject "**Ethical Research Partnership**".
+5.  **Your First Move**: Email globalgovernanceframeworks@gmail.com with the subject "Ethical Research Partnership" to join the working group for the Reform Accelerator Labs.
+6.  Contact globalgovernanceframeworks@gmail.com with subject "**Ethical Research Partnership**".
 
 **Cities & Regional Governments**:
 
-1.  **Initiate formal consultation with the Indigenous nations** whose traditional territories your municipality occupies, following the partnership models outlined in the [Indigenous Governance Framework](https://www.google.com/search?q=/frameworks/indigenous-governance-and-traditional-knowledge%23allied-bioregional-stewards).
-2.  Explore formal city roles in [Pillar 2: New Actors & Voices](https://www.google.com/search?q=/frameworks/treaty-for-our-only-home%23five-pillars).
-3.  Review pilot program opportunities in the [Implementation Strategies](https://www.google.com/search?q=/frameworks/treaty-for-our-only-home%23implementation-strategies).
+1.  **Initiate formal consultation with the Indigenous nations** whose traditional territories your municipality occupies, following the partnership models outlined in the [Indigenous Governance Framework](/frameworks/indigenous-governance-and-traditional-knowledge#allied-bioregional-stewards).
+2.  Explore formal city roles in [Pillar 2: New Actors & Voices](/frameworks/treaty-for-our-only-home#five-pillars).
+3.  Review pilot program opportunities in the [Implementation Strategies](/frameworks/treaty-for-our-only-home#implementation-strategies).
 4.  Connect with supportive networks like C40 Cities to share best practices for Indigenous-municipal collaboration.
-5.  Contact globalgovernanceframeworks@gmail.com with subject "**Indigenous-Municipal Partnership**".
+5.  **Your First Move**: Schedule a meeting with the Indigenous nations whose territory you occupy to discuss how municipal governance can support rather than undermine traditional sovereignty.
+6.  Contact globalgovernanceframeworks@gmail.com with subject "**Indigenous-Municipal Partnership**".
 
-## \<a id="next-steps"\>\</a\>Next Steps
+## <a id="next-steps"></a>Next Steps
 
 The Treaty for Our Only Home represents a complete architectural blueprint for global governance transformation. The next phase focuses on building the political will and strategic alliances necessary for implementation. This entire process is guided by one overarching principle: **all implementation steps must be taken in authentic partnership with and under the leadership of Indigenous peoples.**
 
@@ -384,7 +404,7 @@ The following requirements are non-negotiable prerequisites that will inform all
 
 **Implementation Guidance**: The treaty provides evidence-based guidance for global governance transformation. Implementation should involve consultation with international law experts, diplomatic professionals, and stakeholders familiar with specific geopolitical and cultural contexts.
 
-**Living Document Status**: This treaty is designed for continuous improvement based on implementation experience and emerging research. Version 1.0 represents comprehensive analysis as of June 2025, with regular updates planned based on feedback and new developments.
+**Living Document Status**: This treaty is designed for continuous improvement based on implementation experience and emerging research. Version 1.1 represents comprehensive analysis as of June 2025, with regular updates planned based on feedback and new developments.
 
 **The Urgency of Now**: The polycrisis demands action. Traditional governance systems are failing in real-time, with mounting costs in human suffering and planetary degradation. The tools for transformation exist. The knowledge is available. What remains is the collective will to choose cooperation over competition, stewardship over exploitation, and conscience over convenience.
 

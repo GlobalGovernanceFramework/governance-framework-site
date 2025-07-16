@@ -6,7 +6,22 @@ title: Core Principles - Global Governance Frameworks
 
 The Global Governance Frameworks is built on several foundational principles that provide its ethical foundation and practical guidance. These principles work together to create governance systems that are democratic, adaptive, and respectful of diversity.
 
-## 1. Decentralized Authority (Subsidiarity)
+## 1. Post-Growth & Regenerative by Design
+
+**Principle**: Governance and economic systems must be designed for societal and ecological well-being within planetary boundaries, not for perpetual material growth. The goal is to shift from an extractive economy to a regenerative one, where success is measured by the health of our communities and ecosystems.
+
+**In Practice**:
+- Prioritizing circular flows, where "waste" is eliminated by design.
+- Valuing care, community, and ecological restoration as core economic activities.
+- Moving beyond GDP as the primary measure of societal success.
+- Ensuring that technological progress serves genuine human needs and ecological regeneration, not just market expansion.
+
+**Real-World Applications**:
+- **Doughnut Economics Action Lab**: Cities like Amsterdam are applying the "Doughnut" model to create social and ecological goals that define a safe and just space for humanity, moving beyond a focus on growth alone.
+- **The "Wellbeing Economy" Movement**: Nations like New Zealand, Scotland, and Iceland are collaborating to create economic policies that prioritize citizen and ecological well-being over simple economic growth metrics.
+- **Transition Town Network**: This global movement focuses on building community resilience by relocalizing economies and reducing dependence on long, fragile supply chains, a core tenet of degrowth.
+
+## 2. Decentralized Authority (Subsidiarity)
 
 **Principle**: Power should be distributed across multiple levels, with decisions made at the lowest effective level of governance. Higher levels only handle issues that cannot be effectively addressed locally.
 
@@ -27,7 +42,7 @@ This principle prevents the concentration of power that leads to authoritarianis
 - **Indigenous Guardianship Programs**: In Canada and Australia, Indigenous communities manage environmental protection of their territories through cooperative agreements with regional and national governments, keeping decision-making rooted in local knowledge.
 
 
-## 2. Radical Transparency
+## 3. Radical Transparency
 
 **Principle**: All governance processes must be fully visible and accessible to citizens, with no secret decision-making or hidden resource allocation.
 
@@ -48,7 +63,7 @@ Transparency is the immune system of good governance—it prevents corruption, b
 - **OpenCorporates**: This global database makes corporate ownership structures transparent, helping identify shell companies and prevent corruption, demonstrating how transparency tools can cross jurisdictions.
 
 
-## 3. Direct Participation
+## 4. Direct Participation
 
 **Principle**: Every individual has the right to participate in decisions affecting them, through multiple channels of engagement.
 
@@ -68,7 +83,7 @@ Participation ensures that governance reflects collective wisdom rather than eli
 - **Crowdlaw Initiatives**: Cities like New York, Madrid, and Mexico City use digital platforms to involve citizens directly in drafting legislation, moving beyond consultation to co-creation of laws.
 - **Participatory Land Use Planning in Medellin**: This Colombian city transformed from violence to innovation partly through neighborhood planning processes where residents collectively designed public spaces and infrastructure priorities.
 
-## 4. Universal Human Rights
+## 5. Universal Human Rights
 
 **Principle**: Certain rights are non-negotiable and must be protected for all people, regardless of nationality, culture, or circumstance.
 
@@ -89,7 +104,7 @@ Human rights establish the ethical floor below which no governance system can fa
 - **Ecuador's Rights of Nature Constitutional Provisions**: Ecuador's constitution recognizes nature's right to exist and regenerate, expanding rights frameworks beyond humans to ecosystems.
 - **The Internet Rights & Principles Coalition**: This multi-stakeholder group translates offline human rights to the online world, creating frameworks for digital rights implementation across jurisdictions.
 
-## 5. Environmental Stewardship
+## 6. Environmental Stewardship
 
 **Principle**: Earth's ecosystems have inherent rights and must be protected, with resources managed for long-term regeneration rather than short-term extraction.
 
@@ -98,6 +113,7 @@ Human rights establish the ethical floor below which no governance system can fa
 - Global commons management of essential resources
 - Intergenerational equity in resource decisions
 - Ecological impact assessments for all major decisions
+- Designing economic activity that operates within a "post-growth" paradigm, respecting the Earth's finite limits.
 
 This principle recognizes that humanity is part of Earth's living system, not separate from it, and that governance must operate within planetary boundaries.
 
@@ -110,7 +126,7 @@ This principle recognizes that humanity is part of Earth's living system, not se
 - **Community Conserved Areas in India**: Local communities legally manage conservation areas based on traditional ecological knowledge, demonstrating how environmental stewardship can combine local autonomy with higher-level protection.
 - **China's "Ecological Red Lines" Policy**: Legally protects approximately 25% of China's territory from development, demonstrating large-scale environmental conservation integrated with economic planning.
 
-## 6. Cultural Autonomy
+## 7. Cultural Autonomy
 
 **Principle**: Communities retain the right to preserve and develop their cultural practices, languages, and governance models within the ethical framework of universal rights.
 
@@ -130,7 +146,7 @@ Cultural autonomy ensures that global governance strengthens diversity rather th
 - **New Zealand's Māori Language Revitalization**: Government policies supporting Māori immersion schools and media have helped revitalize an indigenous language while respecting community leadership of the process.
 - **UNESCO Creative Cities Network**: This program supports cultural distinctiveness while enabling knowledge exchange between cities globally, demonstrating how cultural autonomy can thrive within cooperative frameworks.
 
-## 7. Ethical Technology Governance
+## 8. Ethical Technology Governance
 
 **Principle**: AI and advanced technologies must remain under transparent human oversight, serving humanity rather than controlling it.
 
@@ -154,7 +170,7 @@ As technology becomes increasingly powerful, governance must ensure it remains a
 - **The EU's General Data Protection Regulation (GDPR)**: Implements a citizen-centric approach to data sovereignty, giving individuals control over their personal information across borders.
 - **Estonia's e-Governance**: Provides transparent digital services while maintaining strong privacy protections, demonstrating how governments can utilize technology while respecting citizens' digital rights.
 
-## 8. Resource Justice
+## 9. Resource Justice
 
 **Principle**: Essential resources must be distributed fairly, preventing both scarcity and excessive concentration of wealth and power.
 
@@ -162,7 +178,7 @@ As technology becomes increasingly powerful, governance must ensure it remains a
 - Adaptive Universal Basic Income (AUBI) and other fair distribution systems
 - Progressive taxation on automation, resource extraction, and financial speculation
 - Prevention of resource monopolization
-- Regenerative economic models
+- Creating regenerative economic models that measure well-being, not just material throughput.
 
 Resource justice ensures that technological progress and natural abundance benefit all of humanity, not just a privileged few.
 
@@ -174,7 +190,7 @@ Resource justice ensures that technological progress and natural abundance benef
 - **Bhutan's Gross National Happiness Framework**: Bhutan evaluates policies based on happiness and well-being rather than solely economic metrics, redefining resource allocation priorities.
 - **Community Land Trusts**: From Boston to Brussels, these democratically governed entities hold land in trust for community benefit, preventing speculation and ensuring affordable housing.
 
-## 9. Peaceful Conflict Resolution
+## 10. Peaceful Conflict Resolution
 
 **Principle**: Global governance must provide mechanisms for resolving disputes without violence, transitioning from military competition to cooperation.
 
@@ -194,7 +210,7 @@ This principle recognizes that violence is inefficient, destructive, and ultimat
 - **Colombia's Truth and Reconciliation Commission**: Colombia's peace process included comprehensive mechanisms for acknowledging past harms and rebuilding community relationships.
 - **Shared Waters Data Exchange**: Israel and Jordan maintain technical water cooperation despite political conflicts, demonstrating how resource management can build peace through practical collaboration.
 
-## 10. Adaptive Evolution
+## 11. Adaptive Evolution
 
 **Principle**: Governance systems must be designed to evolve through regular review and revision, allowing for systemic learning and adaptation.
 
@@ -214,7 +230,7 @@ Adaptive governance avoids becoming rigid or outdated, instead evolving with new
 - **New Zealand's Regulatory Sandboxes**: These controlled environments allow testing of innovations under regulatory supervision before broader implementation, balancing innovation with risk management.
 - **Cities Coalition for Digital Rights**: This evolving alliance of cities develops digital rights principles through iterative implementation and mutual learning, demonstrating adaptive governance across jurisdictions.
 
-## 11. Balance of Integration & Diversity
+## 12. Balance of Integration & Diversity
 
 **Principle**: Global unity must not come at the cost of homogenization—governance should strengthen both unity and diversity simultaneously.
 
@@ -234,7 +250,7 @@ This principle rejects the false choice between fragmentation and homogenization
 - **Mondragon Cooperative Corporation**: This network of cooperatives maintains individual business autonomy while sharing resources and values, balancing local control with the benefits of scale.
 - **Asia-Pacific Economic Cooperation (APEC)**: This forum allows diverse economies to integrate gradually through non-binding commitments, respecting different development paths while working toward shared prosperity.
 
-## 12. Cosmic Ethics
+## 13. Cosmic Ethics
 
 **Principle**: As humanity expands beyond Earth, the same ethical principles apply to space governance, preventing exploitation and ensuring sustainable expansion.
 
@@ -254,7 +270,7 @@ Cosmic ethics extends our governance principles beyond Earth, ensuring that spac
 - **SETI Protocols**: The search for extraterrestrial intelligence community has developed protocols for responding to potential contact, demonstrating proactive ethical frameworks for unprecedented scenarios.
 - **Dark Sky Preserves**: These protected areas reduce light pollution for astronomical observation and wildlife protection, showing how terrestrial governance can incorporate cosmic awareness.
 
-## 13. Resilience & Anti-Fragility
+## 14. Resilience & Anti-Fragility
 
 **The Principle**: In our current transition period, governance systems must be designed to not only withstand shocks and disruptions but to learn, adapt, and evolve through challenges. Resilience serves as a bridge toward a future where humanity has resolved its major systemic issues.
 
@@ -275,7 +291,7 @@ Cosmic ethics extends our governance principles beyond Earth, ensuring that spac
 - **New Zealand's Living Standards Framework**: This policy tool measures multiple forms of capital (natural, social, human, financial) to ensure governance decisions maintain resources needed for long-term resilience.
 - **Rotterdam's Water Management System**: This Dutch city has transformed its relationship with flooding by creating multi-purpose infrastructure that adapts to different water levels while enhancing urban quality of life.
 
-## 14. Common/Shared Values
+## 15. Common/Shared Values
 
 **Principle**: Governance must identify, articulate, and uphold fundamental ethical values that transcend cultural, religious, and philosophical differences while respecting diverse expressions of those values.
 

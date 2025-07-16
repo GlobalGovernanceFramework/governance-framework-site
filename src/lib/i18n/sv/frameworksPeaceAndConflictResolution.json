@@ -1,169 +1,142 @@
 {
   "meta": {
-    "title": "Ramverk för fred och konfliktlösning - globalt ramverk för styrning",
-    "description": "Ett heltäckande ramverk för fredsstyrning, konfliktförebyggande och hållbar konfliktlösning på alla nivåer i samhället"
+    "title": "Ramverk för fred och konfliktlösning - Globalt styrningsramverk",
+    "description": "Bygga hållbar fred genom värdebaserad transformation och regenerativ konfliktlösning"
+  },
+  "loading": {
+    "text": "Laddar ramverk för fred..."
   },
   "guideCard": {
-    "title": "Ny till ramverket för fred och konfliktlösning?",
-    "description": "Börja med en av våra förenklade guider som förklarar kärnkoncepten för olika målgrupper.",
-    "buttonText": "Välj guide"
+    "title": "Ny till värdebaserad fredstransformation?",
+    "description": "Börja med vår snabböversikt för att förstå hur detta ramverk förvandlar konflikter till möjligheter för regenerativa relationer.",
+    "buttonText": "Läs snabböversikt"
   },
   "categories": {
-    "overview": "Översikt",
-    "foundations": "Grunder och principer",
-    "governance": "Styrning på olika nivåer",
-    "modern": "Moderna konfliktarenor",
-    "human": "Människocentrerade tillvägagångssätt",
-    "actors": "Aktörsspecifikt engagemang",
-    "structural": "Strukturella och systemiska dimensioner",
-    "implementation": "Implementering och lärande",
-    "guides": "Praktiska guider och verktyg",
-    "conclusion": "Syntes och slutsats"
+    "overview": "Ramverksöversikt",
+    "foundation": "Del I: Grunder",
+    "operational": "Del II: Operativt ramverk",
+    "implementation": "Del III: Implementering", 
+    "deployment": "Del IV: Utbyggnad",
+    "resources": "Resurser och verktyg"
   },
   "sections": {
     "index": "Ramverksöversikt",
-    "preamble": "Inledning",
-    "quick-guide": "Snabbstartsguide",
-    "core-principles": "Grundläggande fredsprinciper",
-    "developmental-value-systems": "Utvecklingsmässiga värdesystem",
-    "measuring-success": "Mätning av fredsframgång",
-    "local-implementation": "Lokal fredsimplementering",
-    "regional-implementation": "Regional fredssamordning",
-    "global-implementation": "Global fredsstyrning",
-    "digital-infrastructure": "Digital fredsinfrastruktur",
-    "ai-ethics": "AI och digital fredsetik",
-    "emerging-technologies": "Ny teknik för fred",
-    "climate-resource": "Klimat- och resurskonflikter",
-    "media-information": "Media- och informationsfred",
-    "indigenous-integration": "Integrering av urfolks fredsbyggande",
-    "transitional-justice": "Övergångsrättvisa och försoning",
-    "mental-health": "Psykisk hälsa och psykosocialt stöd",
-    "educational-cultural-infrastructure": "Utbildnings- och kulturfred",
-    "non-state-actors": "Engagemang med icke-statliga aktörer",
-    "military-transformation": "Militär och säkerhetstransformation",
-    "whistleblower-protection": "Visselblåsarskydd",
-    "peace-business-integration": "Integration av fred och näringsliv",
-    "structural-prevention": "Strukturellt konfliktförebyggande",
-    "peace-financing": "Fredsfinansiering och resurser",
-    "cross-domain-integration": "Domänöverskridande integration",
-    "context-specific-roadmaps": "Kontextspecifika färdplaner",
-    "implementation-timeline": "Tidsplan för implementering",
-    "implementation-challenges": "Utmaningar vid implementering",
-    "visualizations": "Visualiseringar av ramverket",
-    "technical-guide-policymakers": "Teknisk guide för beslutsfattare",
-    "community-peace-guide": "Guide för lokalsamhällesfred",
-    "youth-peace-action-guide": "Handlingsguide för ungdomars fredsarbete",
-    "indigenous-partnership-guide": "Guide för partnerskap med urfolk",
-    "meta-governance-coordination-primer": "Introduktion till metastyrningssamordning",
-    "digital-peace-ethics-guide": "Guide till digital fredsetik",
-    "conclusion": "Ramverkets slutsats"
+    "at-a-glance": "Snabböversikt",
+    "executive-summary-for-the-skeptic": "Sammanfattning för skeptiker",
+    "preamble": "Förord: Den heliga väven",
+    "framework-overview": "Ramverksöversikt",
+    "theoretical-foundation": "Teoretisk grund",
+    "governance-architecture": "Styrningsarkitektur",
+    "prevention-early-warning": "Prevention och tidig varning",
+    "active-conflict-resolution": "Aktiv konfliktlösning",
+    "post-conflict-transformation": "Transformation efter konflikter",
+    "scale-specific-applications": "Skalespecifika tillämpningar",
+    "ggf-integration": "Integration med GGF-system",
+    "technology-tools": "Teknik och verktyg",
+    "training-professional-development": "Utbildning och professionell utveckling",
+    "cultural-adaptation-decolonization": "Kulturell anpassning och avkolonisering",
+    "implementation-roadmap": "Implementeringskarta",
+    "measurement-evaluation": "Mätning och uvärdering",
+    "risk-management": "Riskhantering",
+    "resources-sustainability": "Resurser och hållbarhet",
+    "conclusion": "Slutsats: Den levande freden",
+    "implementation-tools": "Implementeringsverktyg"
   },
   "sectionsShort": {
     "index": "Översikt",
-    "preamble": "Inledning",
-    "quick-guide": "Snabbstart",
-    "core-principles": "Principer",
-    "developmental-value-systems": "Värdesystem",
-    "measuring-success": "Framgångsmått",
-    "local-implementation": "Lokal fred",
-    "regional-implementation": "Regional fred",
-    "global-implementation": "Global fred",
-    "digital-infrastructure": "Digital infrastruktur",
-    "ai-ethics": "AI-etik",
-    "emerging-technologies": "Ny teknik",
-    "climate-resource": "Klimatkonflikter",
-    "media-information": "Media och info",
-    "indigenous-integration": "Urfolksfred",
-    "transitional-justice": "Övergångsrättvisa",
-    "mental-health": "Psykisk hälsa",
-    "educational-cultural-infrastructure": "Utbildning och kultur",
-    "non-state-actors": "Icke-statliga aktörer",
-    "military-transformation": "Militärreform",
-    "whistleblower-protection": "Visselblåsarskydd",
-    "peace-business-integration": "Fred och näringsliv",
-    "structural-prevention": "Förebyggande",
-    "peace-financing": "Finansiering",
-    "cross-domain-integration": "Integration",
-    "context-specific-roadmaps": "Färdplaner",
-    "implementation-timeline": "Tidsplan",
-    "implementation-challenges": "Utmaningar",
-    "visualizations": "Visualiseringar",
-    "technical-guide-policymakers": "Teknisk guide",
-    "community-peace-guide": "Communityguide",
-    "youth-peace-action-guide": "Ungdomsguide",
-    "indigenous-partnership-guide": "Urfolksguide",
-    "meta-governance-coordination-primer": "Introduktion till metastyrning",
-    "digital-peace-ethics-guide": "Guide till digital etik",
-    "conclusion": "Slutsats"
-  },
-  "guides": {
-    "new": "Ny till ramverket för fred och konfliktlösning?",
-    "start": "Börja med en av våra förenklade guider som förklarar kärnkoncepten för olika målgrupper.",
-    "button": "Välj guide",
-    "title": "Guider till ramverket för fred och konfliktlösning",
-    "description": "Välj den guideversion som bäst passar dina behov:",
-    "download": "Ladda ner PDF-version",
-    "continue": "Fortsätt till hela ramverket",
-    "guides": [
-      {
-        "id": "technical-guide-policymakers",
-        "title": "Teknisk guide",
-        "description": "Detaljerad guide för beslutsfattare, medlare och regeringstjänstemän",
-        "icon": "📊"
-      },
-      {
-        "id": "community-peace-guide",
-        "title": "Guide för lokalsamhället",
-        "description": "Implementeringsguide för lokala ledare, civilsamhället och lokala medlare",
-        "icon": "🤝"
-      },
-      {
-        "id": "youth-peace-action-guide",
-        "title": "Ungdomsguide",
-        "description": "Praktisk guide för ungdomar, pedagoger och lokala grupper",
-        "icon": "🌱"
-      },
-      {
-        "id": "indigenous-partnership-guide",
-        "title": "Guide för partnerskap med urfolk",
-        "description": "Guide för fredsaktörer för respektfullt samarbete med urfolkssamhällen",
-        "icon": "🌿"
-      },
-      {
-        "id": "meta-governance-coordination-primer",
-        "title": "Introduktion till metastyrning",
-        "description": "Samordningsguide för fredsorganisationer som arbetar över olika styrningsdomäner",
-        "icon": "🔗"
-      },
-      {
-        "id": "digital-peace-ethics-guide",
-        "title": "Guide till digital etik",
-        "description": "Guide för digitalt fredsbyggande, etik och teknikstyrning",
-        "icon": "💻"
-      }
-    ]
+    "at-a-glance": "Snabböversikt",
+    "executive-summary-for-the-skeptic": "Sammanfattning",
+    "preamble": "Förord",
+    "framework-overview": "Ramverksöversikt",
+    "theoretical-foundation": "Teoretisk grund",
+    "governance-architecture": "Styrningsarkitektur",
+    "prevention-early-warning": "Prevention och varning",
+    "active-conflict-resolution": "Aktiv lösning",
+    "post-conflict-transformation": "Transformation efter konflikter",
+    "scale-specific-applications": "Skalespecifika tillämpningar",
+    "ggf-integration": "GGF-integration",
+    "technology-tools": "Teknik och verktyg",
+    "training-professional-development": "Utbildning och uveckling",
+    "cultural-adaptation-decolonization": "Kulturell anpassning",
+    "implementation-roadmap": "Implementeringskarta",
+    "measurement-evaluation": "Mätning och utvärdering",
+    "risk-management": "Riskhantering",
+    "resources-sustainability": "Resurser och hållbarhet",
+    "conclusion": "Slutsats",
+    "implementation-tools": "Implementeringsverktyg"
   },
   "progress": {
     "text": "Avsnitt {current} av {total}"
+  },
+  "navigation": {
+    "previousSection": "Föregående avsnitt",
+    "nextSection": "Nästa avsnitt", 
+    "downloadPdf": "Ladda ner PDF-version",
+    "continueToFramework": "Fortsätt till fullständigt ramverk"
   },
   "languageFallback": {
     "title": "Innehåll på ditt språk kommer snart",
     "description": "Detta avsnitt visas för närvarande på engelska tills översättningen är klar."
   },
-  "navigation": {
-    "downloadPdf": "Ladda ner PDF-version",
-    "continueToFramework": "Fortsätt till hela ramverket",
-    "previousSection": "Föregående avsnitt",
-    "nextSection": "Nästa avsnitt"
-  },
   "errors": {
-    "sectionNotFound": "Avsnittet \"{section}\" hittades inte",
-    "contentInDevelopment": "Detta innehåll är fortfarande under utveckling.",
-    "sectionNotAvailable": "Avsnitt inte tillgängligt",
-    "sectionLoadError": "Avsnittet \"{section}\" kunde inte laddas. Det kan vara ett tillfälligt problem.",
-    "returnToOverview": "Återgå till översikten"
+    "sectionNotFound": "Avsnitt \"{section}\" hittades inte",
+    "contentInDevelopment": "Detta innehåll utvecklas fortfarande."
   },
-  "loading": {
-    "text": "Laddar innehåll för fredsramverket..."
+  "framework": {
+    "title": "Ramverk för Fred & Konfliktlösning",
+    "subtitle": "Bygga hållbar fred genom värdebaserad transformation",
+    "description": "Förvandla konflikter till möjligheter för regenerativa relationer genom värdebaserad medling, ursprungsfolkens visdom och koordinerad global handling.",
+    "keyFeatures": [
+      "Värdebaserad konflikttransformation med Spiral Dynamics",
+      "Integration av ursprungsfolkens suveränitet och traditionell kunskap",
+      "Fyrdelad struktur: Grunder → Verksamhet → Implementering → Utbyggnad", 
+      "Gyllene triangelintegration med fördrag, ursprungsfolk och meta-styrningsramverk",
+      "Skalespecifika tillämpningar från lokala till globala konflikter",
+      "Kulturell anpassning och avkoloniseringsprotokoll",
+      "AI-förstärkt diagnostik med lågtekniska alternativ",
+      "Sanning och försoningsprocesser ledda av andlig visdom"
+    ],
+    "coreInnovations": {
+      "title": "Kärninnovationer",
+      "valuesBasedTransformation": {
+        "title": "Värdebaserad transformation",
+        "description": "Revolutionerande metod som adresserar konflikterande värden vid roten av konflikter snarare än bara konkurrerande intressen"
+      },
+      "goldenTriangleIntegration": {
+        "title": "Gyllene triangelintegration",
+        "description": "Sömlös koordination med fördragsmekanismer, ursprungsfolkens visdom och meta-styrningssystem"
+      },
+      "regenerativePeace": {
+        "title": "Regenerativ fred",
+        "description": "Förvandlar konfliktsystem som vidmakthåller våld till fredsinfrastruktur som genererar läkning och samarbete"
+      },
+      "culturalAdaptation": {
+        "title": "Kulturell Anpassning", 
+        "description": "Regionspecifika ramverk som samskapas med lokala utövare med Ubuntu, Sulh, Dharma och ursprungsfolkens kunskap"
+      }
+    },
+    "implementationApproach": {
+      "title": "Implementeringsmetod",
+      "fourPartStructure": {
+        "title": "Fyrdelad Struktur",
+        "foundations": "Förståelse av teoretiskt ramverk och styrningsarkitektur",
+        "operational": "Praktisk vägledning för prevention, lösning och transformation",
+        "implementation": "Systemintegration, teknikutbyggnad och professionell utveckling",
+        "deployment": "Strategisk färdplan, mätning, riskhantering och hållbarhet"
+      },
+      "pilotStrategy": {
+        "title": "Tre-kontext pilotstrategi (2026-2030)",
+        "urban": "Urban mångkulturell kontext (Nairobi) - testa värdeintegration över kultursystem",
+        "indigenous": "Ursprungsfolkskontext (Māori, på inbjudan) - testa suveränitetsprotokoll",
+        "postConflict": "Efterkonfliktkontext (Colombia) - testa traumainformerade försoningsmetoder"
+      }
+    },
+    "getStarted": {
+      "title": "Komma Igång",
+      "forIndigenous": "Ursprungsfolk: Granska suveränitetsprotokoll och FPIC 2.0-krav",
+      "forGovernment": "Regeringstjänstemän: Studera fördragsmekanismintegration och institutionell beredskap",
+      "forMediators": "Samhällsledare: Ladda ner värdebaserad diagnostisk verktygslåda för omedelbar tillämpning",
+      "forCivilSociety": "Civilsamhälle: Gå med i utveckling av regionala fredshubbar och utövarnätverk"
+    }
   }
 }

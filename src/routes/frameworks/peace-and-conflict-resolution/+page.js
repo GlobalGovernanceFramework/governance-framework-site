@@ -12,73 +12,101 @@ export async function load({ depends, url, params }) {
   
   const currentLocale = get(locale);
   
-  // Load framework translations for navigation
+  console.log('=== Peace Framework +page.js load function ===');
+  console.log('URL pathname:', url.pathname);
+  console.log('Current locale:', currentLocale);
+  
+  // Load framework translations for navigation and page-specific translations
   try {
-    await loadTranslations(currentLocale, url.pathname);
+    let cleanPath = url.pathname;
+    
+    console.log('Original pathname:', cleanPath);
+    
+    // Check if the pathname looks corrupted (contains section names instead of the base path)
+    if (cleanPath.includes('/frameworks/') && 
+        (cleanPath.includes('executive-summary') || 
+         cleanPath.includes('at-a-glance') ||
+         cleanPath.includes('framework-overview') ||
+         cleanPath.includes('theoretical-foundation') ||
+         cleanPath.includes('governance-architecture') ||
+         cleanPath.includes('prevention-early-warning') ||
+         cleanPath.includes('active-conflict-resolution') ||
+         cleanPath.includes('post-conflict-transformation') ||
+         cleanPath.includes('scale-specific-applications') ||
+         cleanPath.includes('ggf-integration') ||
+         cleanPath.includes('technology-tools') ||
+         cleanPath.includes('training-professional-development') ||
+         cleanPath.includes('cultural-adaptation-decolonization') ||
+         cleanPath.includes('implementation-roadmap') ||
+         cleanPath.includes('measurement-evaluation') ||
+         cleanPath.includes('risk-management') ||
+         cleanPath.includes('resources-sustainability') ||
+         cleanPath.includes('conclusion') ||
+         cleanPath.includes('implementation-tools') ||
+         cleanPath.includes('preamble'))) {
+      
+      console.log('⚠️  Detected corrupted pathname, correcting to base framework path');
+      cleanPath = '/frameworks/peace-and-conflict-resolution';
+    }
+    
+    console.log('Clean path for translations:', cleanPath);
+    
+    // Load translations for this specific page path
+    console.log('About to call loadTranslations with:', currentLocale, cleanPath);
+    const loadedTranslations = await loadTranslations(currentLocale, cleanPath);
+    console.log('loadTranslations returned:', Object.keys(loadedTranslations || {}));
+    console.log('Loaded translations for path:', cleanPath, 'with locale:', currentLocale);
   } catch (e) {
-    console.warn('Failed to load translations:', e);
+    console.error('Failed to load translations:', e);
+    console.error('Error details:', e.stack);
   }
   
   // Safe check for print mode that works during prerendering
-  const isPrintMode = browser ? url.searchParams.get('print') === 'true' : false;
-  
-  // Define sections to load - peace framework sections in correct order
+  let isPrintMode = false;
+  if (browser) {
+    try {
+      isPrintMode = url.search ? url.searchParams.get('print') === 'true' : false;
+      console.log('Print mode detected:', isPrintMode);
+    } catch (e) {
+      console.warn('Could not access URL search params:', e);
+      isPrintMode = false;
+    }
+  }
+
+  // Define sections to load - peace framework sections in correct order following 4-part structure
   const sections = [
     // Entry point and overview
     'index',
+    'at-a-glance',
+    'executive-summary-for-the-skeptic',
     'preamble',
-    'quick-guide',
     
-    // Core framework sections - Cluster A: Foundations & Principles
-    'core-principles',
-    'developmental-value-systems',
-    'measuring-success',
+    // PART I: FOUNDATIONS
+    'framework-overview',
+    'theoretical-foundation',
+    'governance-architecture',
     
-    // Cluster B: Governance Across Scales
-    'local-implementation',
-    'regional-implementation',
-    'global-implementation',
+    // PART II: OPERATIONAL FRAMEWORK
+    'prevention-early-warning',
+    'active-conflict-resolution',
+    'post-conflict-transformation',
+    'scale-specific-applications',
     
-    // Cluster C: Modern Conflict Arenas
-    'digital-infrastructure',
-    'ai-ethics',
-    'emerging-technologies',
-    'climate-resource',
-    'media-information',
+    // PART III: IMPLEMENTATION
+    'ggf-integration',
+    'technology-tools',
+    'training-professional-development',
+    'cultural-adaptation-decolonization',
     
-    // Cluster D: Human-Centered Approaches
-    'indigenous-integration',
-    'transitional-justice',
-    'mental-health',
-    'educational-cultural-infrastructure',
+    // PART IV: DEPLOYMENT
+    'implementation-roadmap',
+    'measurement-evaluation',
+    'risk-management',
+    'resources-sustainability',
     
-    // Cluster E: Actor-Specific Engagement
-    'non-state-actors',
-    'military-transformation',
-    'whistleblower-protection',
-    'peace-business-integration',
-    
-    // Cluster F: Structural & Systemic Dimensions
-    'structural-prevention',
-    'peace-financing',
-    'cross-domain-integration',
-    
-    // Cluster G: Implementation & Learning
-    'context-specific-roadmaps',
-    'implementation-timeline',
-    'implementation-challenges',
-    'visualizations',
-    
-    // Cluster H: Practical Guides & Tools
-    'technical-guide-policymakers',
-    'community-peace-guide',
-    'youth-peace-action-guide',
-    'indigenous-partnership-guide',
-    'meta-governance-coordination-primer',
-    'digital-peace-ethics-guide',
-    
-    // Cluster I: Synthesis & Conclusion
-    'conclusion'
+    // Conclusion and Tools
+    'conclusion',
+    'implementation-tools'
   ];
   
   // Track which sections fell back to English
@@ -97,8 +125,11 @@ export async function load({ depends, url, params }) {
       const modulePromise = import(`$lib/content/frameworks/${currentLocale}/implementation/peace-and-conflict-resolution/${section}.md`);
       content[section] = await modulePromise;
       loadedSections++;
-      console.log('Successfully loaded peace section:', section, 'in', currentLocale);
+      console.log('Successfully loaded section:', section, 'in', currentLocale);
+      
     } catch (primaryError) {
+      console.warn(`Primary load failed for section ${section}:`, primaryError.message);
+      
       // Fall back to English if translation isn't available
       try {
         const fallbackPromise = import(`$lib/content/frameworks/en/implementation/peace-and-conflict-resolution/${section}.md`);
@@ -109,9 +140,10 @@ export async function load({ depends, url, params }) {
         if (currentLocale !== 'en') {
           sectionsUsingEnglishFallback.add(section);
         }
-        console.log('Loaded peace section:', section, 'in English as fallback');
+        console.log('Loaded section:', section, 'in English as fallback');
+        
       } catch (fallbackError) {
-        console.warn(`Could not load peace section ${section} in any language:`, fallbackError.message);
+        console.warn(`Could not load section ${section} in any language:`, fallbackError.message);
         
         // Create a safe placeholder for missing sections
         content[section] = {
@@ -131,12 +163,12 @@ export async function load({ depends, url, params }) {
     }
   }
   
-  console.log('Total peace sections loaded:', loadedSections, 'out of', sections.length);
-  console.log('Loaded peace sections:', Object.keys(content));
+  console.log('Total sections loaded:', loadedSections, 'out of', sections.length);
+  console.log('Loaded sections:', Object.keys(content));
   
   // Validate that we have at least the index section
   if (!content.index) {
-    console.error('Critical: Could not load peace framework index section');
+    console.error('Critical: Could not load index section');
     throw error(500, {
       message: 'Failed to load peace framework content',
       details: 'The main index section could not be loaded'
@@ -147,7 +179,7 @@ export async function load({ depends, url, params }) {
     sections: content,
     // Always use modular approach
     isModular: true,
-    isPrintMode,
+    isPrintMode, // This will be false during prerendering, true/false on client
     sectionsUsingEnglishFallback: Array.from(sectionsUsingEnglishFallback),
     loadedSectionsCount: loadedSections,
     totalSectionsCount: sections.length,
@@ -155,26 +187,49 @@ export async function load({ depends, url, params }) {
     // Additional metadata for peace framework
     frameworkType: 'peace-and-conflict-resolution',
     totalSections: sections.length,
-    coreFrameworkSections: 5, // core-principles through global-implementation
-    hasImplementationGuides: true,
-    hasTechnologyIntegration: true,
-    hasSpecializedGuides: true,
+    
+    // Peace framework structure metadata
+    foundationSections: 4, // preamble, at-a-glance, executive-summary, framework-overview
+    coreSections: 3, // theoretical-foundation, governance-architecture (Part I)
+    operationalSections: 4, // prevention through scale-specific (Part II)
+    implementationSections: 4, // ggf-integration through cultural-adaptation (Part III)
+    deploymentSections: 4, // implementation-roadmap through resources-sustainability (Part IV)
+    conclusionSections: 2, // conclusion, implementation-tools
+    
+    hasExecutiveSummary: true,
+    hasAtAGlance: true,
+    hasPreamble: true,
+    hasImplementationTools: true,
     
     // Peace-specific metadata
-    peaceVersion: '1.0',
-    isComprehensiveFramework: true,
-    implementationLevels: 3, // local, regional, global
-    technologySections: 3, // digital-infrastructure, ai-ethics, emerging-technologies
-    specializedGuides: 6, // technical, community, youth, digital ethics, indigenous, meta-governance
+    frameworkVersion: '1.0',
+    isGoldenTriangleIntegrated: true, // Treaty + Indigenous + Meta-Governance
+    valuesBasedApproach: true,
+    fourPartStructure: true,
     
-    // Framework characteristics
-    focusAreas: [
-      'prevention',
-      'transformation',
-      'justice',
-      'integration',
-      'sustainability'
-    ],
+    // Framework capabilities
+    capabilities: {
+      preventionEarlyWarning: true,
+      activeConflictResolution: true,
+      postConflictTransformation: true,
+      scaleSpecificApplications: true,
+      ggfIntegration: true,
+      technologyTools: true,
+      culturalAdaptation: true,
+      riskManagement: true,
+      sustainableResources: true
+    },
+    
+    // Integration points
+    integrationWith: {
+      treatyForOurOnlyHome: true,
+      indigenousGovernance: true,
+      metaGovernance: true,
+      aubi: true,
+      globalHealth: true,
+      climateEnergy: true,
+      justiceSystemsImplementation: true
+    },
     
     // Debug information
     debug: {
@@ -182,7 +237,19 @@ export async function load({ depends, url, params }) {
       availableSections: Object.keys(content),
       fallbackSections: Array.from(sectionsUsingEnglishFallback),
       loadSuccess: loadedSections === sections.length,
-      frameworkType: 'peace-and-conflict-resolution'
+      pathHandling: {
+        originalPath: url.pathname,
+        cleanedPath: '/frameworks/peace-and-conflict-resolution'
+      },
+      // Only log search params on client side
+      searchParams: browser ? (url.search || 'none') : 'prerendering',
+      structureValidation: {
+        hasFoundations: content['framework-overview'] && content['theoretical-foundation'] && content['governance-architecture'],
+        hasOperational: content['prevention-early-warning'] && content['active-conflict-resolution'] && content['post-conflict-transformation'] && content['scale-specific-applications'],
+        hasImplementation: content['ggf-integration'] && content['technology-tools'] && content['training-professional-development'] && content['cultural-adaptation-decolonization'],
+        hasDeployment: content['implementation-roadmap'] && content['measurement-evaluation'] && content['risk-management'] && content['resources-sustainability'],
+        hasConclusion: content['conclusion'] && content['implementation-tools']
+      }
     }
   };
 }
