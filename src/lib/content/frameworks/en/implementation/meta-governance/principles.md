@@ -131,6 +131,8 @@ Each principle includes specific mechanisms for implementation and built-in prot
 - Asymmetrical voting rights giving greater weight to vulnerable communities on issues affecting them
 - Independent power audits with public reporting and corrective action requirements
 
+**GGF Integration**: These mechanisms are operationalized throughout the GGF ecosystem through the Treaty's institutional reforms and find specific implementation in dedicated frameworks including the *Universal Access & Disability Justice Layer* and the *Gender & Kinship Justice Layer*.
+
 **Real-World Example**: The Forest Stewardship Council's three-chamber structure (environmental, social, economic) with equal voting prevents any single interest from dominating forest governance decisions.
 
 ### 🤖 Human-Centered AI
@@ -231,6 +233,8 @@ Each principle includes specific mechanisms for implementation and built-in prot
 - Support for diverse economic models including cooperatives, commons-based peer production, and public banking
 - Value circulation requirements ensuring community benefit from coordination activities
 
+**GGF Integration**: Within the GGF ecosystem, this principle is operationalized through the *Adaptive Universal Basic Income Framework* and its regenerative `Hearts` and `Leaves` currency systems, which are designed to reward community well-being and ecological restoration rather than extraction.
+
 **Real-World Example**: The Transition Towns movement demonstrates economic relocalization and circulation, while platform cooperatives like Stocksy show how digital economic models can distribute value equitably among contributors rather than extracting to distant shareholders.
 
 ### ❤️ Holistic Health and Well-being
@@ -245,6 +249,8 @@ Each principle includes specific mechanisms for implementation and built-in prot
 - Prioritization of preventative health measures in policy and infrastructure design
 - Recognition of and support for traditional and Indigenous healing modalities within pluriversal frameworks
 - Community health indicators integrated into coordination effectiveness metrics
+
+**GGF Integration**: This principle provides the ethical orientation for the GGF's application-layer frameworks, including the *Global Health & Pandemic Security Framework* and the *Mental Health Governance Framework*.
 
 **Real-World Example**: Costa Rica's focus on health and environmental protection shows how health-centered governance can achieve better outcomes with fewer resources.
 
@@ -264,6 +270,8 @@ Each principle includes specific mechanisms for implementation and built-in prot
 - **Memetic health metrics** tracking informational climate and cultural coherence
 - **AI truth alignment audits** for generative technologies shaping public discourse
 - **Epistemic justice protocols** ensuring all knowledge systems receive appropriate recognition and protection
+
+**GGF Integration**: The primary implementation vehicle for this principle is *The Synoptic Protocol - Media & Epistemic Integrity*, which establishes the `institution_epi_institution` (Public Epistemic Institutions) and the legal `protocol_right_to_reality` to protect healthy information ecosystems.
 
 **Real-World Example**: Taiwan's Polis platform enables structured, non-polarizing dialogue by surfacing common ground, while some Indigenous governance systems require elders to speak in metaphor to protect meaning from reductionism.
 
@@ -375,7 +383,7 @@ Taiwan's vTaiwan platform enables direct citizen participation in technology pol
 
 ## <a id="principle-integration-and-conflict-resolution"></a>Principle Integration and Conflict Resolution
 
-These ten principles work together as a living system, but tensions inevitably arise between competing values. The framework includes specific protocols for navigating these tensions constructively:
+These thirteen principles work together as a living system, but tensions inevitably arise between competing values. The framework includes specific protocols for navigating these tensions constructively:
 
 ### Tension Navigation Protocols
 

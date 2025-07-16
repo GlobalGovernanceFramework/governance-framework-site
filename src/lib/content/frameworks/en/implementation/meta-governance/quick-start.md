@@ -106,13 +106,13 @@ REALITY: Elements are already working in places like New Zealand (environmental 
 
 ### 📊 **How to Join**  
 
-You don’t have to do everything. Pick a level that fits:  
+You don't have to do everything. Pick a level that fits:  
 
-| Level | What You Do | What You Get |
-|-------|-------------|--------------|
-| **👀 Explore** | Learn about meta-governance, share feedback. | Access to governance maps and open forums. |
-| **🛠️ Contribute** | Test tools or share your community’s wisdom. | Training, toolkits, and a voice in working groups. |
-| **🌀 Co-Create** | Help design rules and shape the future. | Veto power on key issues, co-lead councils. |
+| Level | What You Do | What You Get | Your First Step |
+|-------|-------------|--------------|-----------------|
+| **👀 Explore** | Learn about meta-governance, share feedback. | Access to governance maps and open forums. | **Take the Role Quiz** |
+| **🛠️ Contribute** | Test tools or share your community's wisdom. | Training, toolkits, and a voice in working groups. | **Join a Community Dialogue** |
+| **🌀 Co-Create** | Help design rules and shape the future. | Veto power on key issues, co-lead councils. | **Apply to a Working Group** |
 
 **Fairness Guarantees**:  
 - Travel funds for Global South participants.  
@@ -127,28 +127,15 @@ You don’t have to do everything. Pick a level that fits:
 
 ### 🌱 **Get Involved: Your Journey**
 
-There are many ways to get involved, whether you want to start small or participate deeply. Here’s how you can contribute today and in the future.
+Your journey can start today. Whether you want to learn more, test the waters, or dive deep into co-creating the future, there's a pathway designed for you.
 
-#### **What You Can Do Right Now:**
+**Ready to find your role?** Explore the full framework, take our 'Meta-Governance Role' quiz to see where you fit, and discover the right pathway for your interests and capacity.
 
-* **📚 Learn More**: Dive into the [full frameworks](https://globalgovernanceframeworks.org/frameworks) for deeper insights into the principles and structures.
-* **📥 Share Your Wisdom**: Tell us about your community’s governance ideas (e.g., Indigenous consensus or local co-ops). Email your insights to us at [globalgovernanceframeworks@gmail.com](mailto:globalgovernanceframeworks@gmail.com).
+**[Get Started: Find Your Role in Meta-Governance](/frameworks/meta-governance/getting-started)**
 
-#### **Future Opportunities & How to Stay Informed:**
+Take the interactive quiz, explore detailed participation options, and connect with the resources and communities that align with your coordination interests. You'll find everything you need to begin your meta-governance journey in one place.
 
-We are constantly developing new interactive tools and forums. Our future plans include:
-* An interactive **quiz** to help you find your meta-governance role.
-* **Testing tools** like our policy simulator and governance map (planned for 2026).
-* **Community dialogues** and workshops for collaboration and knowledge sharing.
-
-The best way to get notified when these become available is to register your interest.
-
-**Register Your Interest via Email:**
-Let us know what you're interested in (e.g., "Monthly Updates," "Workshop Info," or "Tool Testing").
-
-**[Click here to send us an email](mailto:globalgovernanceframeworks@gmail.com?subject=Interest%20in%20Meta-Governance%20Updates)**
-
-> *“Meta-governance isn’t about ruling—it’s about relating. Join us to build a future where systems work for everyone.”*
+> *"Meta-governance isn't about ruling—it's about relating. Join us to build a future where systems work for everyone."*
 
 ---
 

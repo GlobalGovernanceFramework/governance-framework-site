@@ -75,7 +75,7 @@ Every governance framework faces coordination challenges that cannot be solved i
 
 The next pandemic, climate disaster, or technological disruption will test every governance framework's capacity to coordinate effectively under pressure. Meta-governance transforms crisis response from chaotic improvisation to coordinated action that protects vulnerable populations while maintaining democratic accountability.
 
-**24-Hour Crisis Activation**: Any participating framework can trigger coordinated crisis response within 24 hours, bringing together health, emergency management, economic support, education, and community resources in ways that were impossible during COVID-19's fragmented response.
+**24-Hour Crisis Activation**: Any participating framework can trigger coordinated crisis response within 24 hours, bringing together health, emergency management, economic support, education, and community resources in ways that were impossible during COVID-19's fragmented response. This capability is operationalized through the **Crisis Command Protocol (`process_crisis_command`)**, which enables rapid multi-domain coordination while maintaining democratic safeguards.
 
 **Multi-Domain Assessment Teams**: Within 72 hours of crisis activation, cultural and technical experts deploy to affected areas, combining Indigenous knowledge, community organizing experience, and specialized technical knowledge to assess coordination needs and develop response strategies that serve rather than displace local communities.
 
@@ -133,7 +133,7 @@ Meta-governance operates from the understanding that cultural diversity makes co
 
 Meta-governance recognizes that effective coordination requires genuine youth authority rather than tokenistic consultation, since young people will live longest with coordination decisions and bring essential perspectives on future possibilities and long-term consequences.
 
-**Youth Councils with Binding Authority**: Youth councils parallel to adult councils with actual veto power over decisions with harmful long-term consequences, not just advisory roles that adults can ignore when convenient.
+**Youth Councils with Binding Authority**: Youth councils parallel to adult councils with actual veto power over decisions with harmful long-term consequences, not just advisory roles that adults can ignore when convenient. This authority is institutionally grounded through the **Global Youth Assembly (`institution_gya`)**, which provides young people with formal decision-making power in planetary coordination while building their capacity for systems thinking and cross-cultural bridge-building.
 
 **Innovation Initiative Authority**: Youth councils can propose and fund experimental coordination approaches with dedicated innovation budgets and governance innovation sandboxes providing safe spaces for testing new approaches.
 
@@ -209,11 +209,11 @@ Meta-governance recognizes that effective planetary coordination requires the wi
 
 ### Pathways for Contribution and Leadership
 
-**Observer Participation**: Learn about meta-governance, explore coordination connections, provide feedback on approaches, and test coordination tools while maintaining full autonomy over your framework's coordination relationships.
+**Explore**: Learn about meta-governance, explore coordination connections, provide feedback on approaches, and test coordination tools while maintaining full autonomy over your framework's coordination relationships.
 
-**Active Contribution**: Share coordination innovations, participate in working groups, implement selected protocols, and contribute to capacity building while accessing resources, training, and peer learning networks.
+**Contribute**: Share coordination innovations, participate in working groups, implement selected protocols, and contribute to capacity building while accessing resources, training, and peer learning networks.
 
-**Leadership Authority**: Co-develop coordination mechanisms, participate in council governance, exercise cultural veto authority, and shape framework evolution while accessing comprehensive coordination capabilities and innovation support.
+**Co-Create**: Co-develop coordination mechanisms, participate in council governance, exercise cultural veto authority, and shape framework evolution while accessing comprehensive coordination capabilities and innovation support.
 
 **Cultural Bridge-Building**: Facilitate understanding across governance traditions, translate coordination concepts between cultural contexts, and ensure meta-governance honors rather than appropriates traditional knowledge while enabling beneficial coordination.
 
@@ -283,9 +283,10 @@ What remains is the collective will to choose coordination over fragmentation, i
 
 **Ready to explore coordination possibilities for your framework?**
 
-- **Learn More**: Explore detailed framework documentation at globalgovernanceframeworks.org/frameworks
-- **Connect**: Reach out to discuss your framework's coordination interests at globalgovernanceframeworks@gmail.com
-- **Experience**: Participate in coordination simulations and cultural exchange programs at globalgovernanceframeworks.org/events
-- **Contribute**: Share your framework's coordination innovations and governance wisdom through our community platforms
+Your journey can start today. Whether you're ready to explore, contribute, or co-create, there's a pathway designed for your framework's capacity and interests.
+
+**[Get Started: Find Your Role in Meta-Governance](/frameworks/meta-governance#getting-started)**
+
+Take our interactive quiz to discover how your framework can contribute to planetary coordination, explore detailed participation options, and connect with the resources and communities that align with your coordination interests and capacity.
 
 **Together, we can build the coordination capacity humanity needs for conscious planetary stewardship and species-level thriving.**

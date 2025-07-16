@@ -6,29 +6,31 @@ section: structural
 # Structural Components
 
 **In this section:**
-- [Overview: Six-Category Architecture](#overview-six-category-architecture)
+- [Overview: Seven-Category Architecture](#overview-seven-category-architecture)
 - [I. Coordination Architecture](#i-coordination-architecture)
 - [II. Power and Participation](#ii-power-and-participation)
 - [III. Knowledge and Technology](#iii-knowledge-and-technology)
-- [IV. Economic and Resource Coordination](#iv-economic-and-resource-coordination)
-- [V. Security and Resilience](#v-security-and-resilience)
-- [VI. Learning and Evolution](#vi-learning-and-evolution)
+- [IV. Resource Sharing and Commons Governance](#iv-resource-sharing-and-commons-governance)
+- [V. Funding the Coordination Infrastructure](#v-funding-the-coordination-infrastructure)
+- [VI. Security and Resilience](#vi-security-and-resilience)
+- [VII. Learning and Evolution](#vii-learning-and-evolution)
 - [Integration and Interoperability](#integration-and-interoperability)
 
 **Estimated Reading Time**: 15 minutes
 
-The enhanced meta-governance framework operates through interconnected structural components organized into six major categories that enable coordination while preserving autonomy. These components work together to create a comprehensive system for governance interoperability across cultures, scales, and domains, from crisis response to consciousness evolution.
+The enhanced meta-governance framework operates through interconnected structural components organized into seven major categories that enable coordination while preserving autonomy. These components work together to create a comprehensive system for governance interoperability across cultures, scales, and domains, from crisis response to consciousness evolution.
 
-## <a id="overview-six-category-architecture"></a>Overview: Six-Category Architecture
+## <a id="overview-seven-category-architecture"></a>Overview: Seven-Category Architecture
 
 The structural architecture balances coordination effectiveness with cultural sovereignty, democratic participation with technical efficiency, and immediate crisis response with long-term consciousness evolution:
 
 **I. Coordination Architecture**: The technical backbone enabling systems to work together
 **II. Power and Participation**: Democratic safeguards and inclusive engagement mechanisms
 **III. Knowledge and Technology**: Information systems and AI governance with human oversight
-**IV. Economic and Resource Coordination**: Financial flows and resource sharing protocols
-**V. Security and Resilience**: Crisis response and conflict prevention systems
-**VI. Learning and Evolution**: Reflexivity engines and adaptive capacity building
+**IV. Resource Sharing and Commons Governance**: Non-financial resource coordination and shared asset management
+**V. Funding the Coordination Infrastructure**: Financial mechanisms sustaining meta-governance operations
+**VI. Security and Resilience**: Crisis response and conflict prevention systems
+**VII. Learning and Evolution**: Reflexivity engines and adaptive capacity building
 
 Each category includes multiple components with specific implementation mechanisms, cultural adaptation protocols, and integration standards that maintain interoperability while respecting local autonomy.
 
@@ -51,10 +53,13 @@ The foundation of meta-governance lies in structures that enable diverse systems
 **Indigenous Leadership Integration**: The primary expression of coordination councils guided by Traditional Ecological Knowledge is the **Earth Council (Kawsay Pacha)** as detailed in the [Indigenous Governance Framework](/frameworks/indigenous-governance-and-traditional-knowledge#structural-components). Meta-governance councils must operate under Indigenous sovereignty principles and bioregional governance protocols to ensure coordination serves rather than supplants traditional authority structures.
 
 **Decision Protocols**:
-- **Standard Decisions**: Modified consensus with 80% threshold enabling integrative solutions
-- **Crisis Decisions**: Streamlined consensus (60% threshold) with **democratic safeguards** ensuring all emergency decisions expire in 90 days unless renewed
-- **Long-term Decisions**: **Intergenerational consensus** requiring youth council approval for decisions affecting future generations
-- **Cultural Protection**: **Extraordinary cultural justification** required for decisions affecting sacred sites or spiritual obligations
+
+| Decision Type | Threshold/Rule | Safeguard |
+|---------------|----------------|-----------|
+| **Standard** | 80% Consensus | Integrative solutions required |
+| **Crisis** | 60% Consensus | 90-day automatic expiration |
+| **Long-term** | Youth Council Approval | Intergenerational justice assessment |
+| **Cultural** | Extraordinary Justification | Sacred site protection protocols |
 
 **Operational Framework**:
 - **Multi-level Operation**: Councils at global, regional, and local levels with clear coordination pathways
@@ -153,7 +158,7 @@ Democratic legitimacy and equity safeguards prevent meta-governance from being c
 - **Knowledge Sovereignty Protection** with anti-appropriation protocols and community-controlled research standards
 
 **Implementation Safeguards**:
-- **Free, Prior, and Informed Consent (FPIC)** protocols for all decisions affecting Indigenous territories or knowledge
+- **Free, Prior, and Informed Consent (FPIC)** protocols (`protocol_fpic2`) for all decisions affecting Indigenous territories or knowledge
 - **Cultural Consultation Requirements** with mandatory engagement before implementing coordination mechanisms
 - **Language Preservation Support** enabling coordination in Indigenous languages with skilled interpretation
 - **Economic Sovereignty Protection** preventing coordination from undermining community economic autonomy
@@ -194,7 +199,7 @@ Information systems and AI governance ensure technology serves human wisdom whil
 - **Cultural Sensitivity Testing** across multiple governance traditions with adaptation requirements
 
 **Technology Sovereignty Protection**:
-- **Community Veto Power** over intrusive technologies including facial recognition and surveillance systems
+- **Community Veto Power** over intrusive technologies including facial recognition and surveillance systems, implementing the sovereignty principles articulated in the *Indigenous Governance Framework* and its "Red Lines Clause"
 - **Indigenous Data Sovereignty** protocols protecting traditional knowledge from extraction and commercialization
 - **Technology Impact Assessment** evaluating effects on social cohesion, cultural practices, and community autonomy
 - **Localized Technology Support** for community-controlled platforms and alternative technology stacks
@@ -249,13 +254,19 @@ Information systems and AI governance ensure technology serves human wisdom whil
 - **Anti-Manipulation Training** building individual and community capacity to recognize and resist influence operations
 - **Epistemic Justice Protocols** ensuring all knowledge systems receive appropriate recognition and protection
 
-## <a id="iv-economic-and-resource-coordination"></a>IV. Economic and Resource Coordination
+## <a id="iv-resource-sharing-and-commons-governance"></a>IV. Resource Sharing and Commons Governance
 
-Economic systems and resource flows aligned with regenerative principles and community benefit rather than extraction and accumulation.
+Coordination of non-financial resources and governance of shared assets including data, knowledge, infrastructure, and natural commons.
 
-### Resource Sharing and Commons Governance
+### Shared Infrastructure and Asset Coordination
 
-**Regenerative Economic Integration**: Economic coordination fostering sufficiency, circulation, and planetary boundaries rather than infinite growth models.
+**Resource Optimization**: Coordination of operational resources, expertise, and infrastructure to maximize effectiveness while reducing duplication and costs.
+
+**Operational Resource Coordination**:
+- **Shared Service Centers** reducing duplication across frameworks with efficiency gains
+- **Joint Procurement Programs** achieving economies of scale while maintaining ethical sourcing
+- **Expertise Exchange Systems** enabling knowledge sharing through time-banking and skill networks
+- **Infrastructure Sharing** for coordination facilities, technology, and specialized equipment
 
 **Crisis Resource Mobilization**:
 - **Pre-negotiated Sharing Agreements** between governance frameworks with rapid deployment protocols
@@ -263,17 +274,27 @@ Economic systems and resource flows aligned with regenerative principles and com
 - **Crisis Resource Tracking** with real-time monitoring and accountability measures
 - **Community Resilience Funds** supporting under-resourced frameworks during emergencies
 
-**Operational Resource Optimization**:
-- **Shared Service Centers** reducing duplication across frameworks with efficiency gains
-- **Joint Procurement Programs** achieving economies of scale while maintaining ethical sourcing
-- **Expertise Exchange Systems** enabling knowledge sharing through time-banking and skill networks
-- **Infrastructure Sharing** for coordination facilities, technology, and specialized equipment
+### Commons Governance Integration
 
-**Commons Governance Integration**:
-- **Digital Commons Protocols** for shared data and knowledge resources with community ownership
-- **Natural Commons Coordination** (water, forests, oceans) integrating traditional stewardship knowledge
-- **Knowledge Commons Protection** ensuring research and innovation benefits all participants
-- **Cultural Commons Safeguards** preventing appropriation of traditional knowledge and practices
+**Digital and Knowledge Commons**: Governance of shared information resources, data systems, and intellectual property within the coordination network.
+
+**Digital Commons Protocols**:
+- **Shared Data Resources** with community ownership and democratic governance rather than corporate control
+- **Open Source Technology** development and maintenance with collaborative innovation models
+- **Community-Controlled Platforms** preventing platform capitalism and ensuring democratic technology governance
+- **Innovation Commons** enabling collaborative development of governance tools and approaches
+
+**Natural Commons Coordination**:
+- **Water Commons Governance** integrating traditional stewardship knowledge with contemporary conservation
+- **Forest Stewardship** coordinating conservation with Indigenous territorial rights and traditional management
+- **Ocean Governance** balancing marine conservation, fishing, and shipping with traditional maritime knowledge
+- **Biodiversity Protection** supporting Indigenous stewardship and community livelihoods
+
+**Knowledge Commons Protection**:
+- **Traditional Knowledge Safeguards** preventing appropriation while enabling respectful learning exchange
+- **Research Collaboration** protocols ensuring community benefit from coordination-related research
+- **Cultural Commons** protection preventing commercialization of traditional governance knowledge
+- **Innovation Sharing** mechanisms for spreading successful approaches with appropriate cultural adaptation
 
 ### Corporate Integration and Accountability
 
@@ -297,9 +318,26 @@ Economic systems and resource flows aligned with regenerative principles and com
 - **Fair Trade Integration** ensuring coordination benefits producers and workers throughout supply chains
 - **Environmental Sustainability** standards incorporating ecological limits into economic coordination
 
-### Financial Transparency and Flow Tracking
+## <a id="v-funding-the-coordination-infrastructure"></a>V. Funding the Coordination Infrastructure
 
-**Economic Justice Systems**: Transparent resource flows with accountability measures preventing extraction and ensuring equitable benefit distribution.
+Sustainable meta-governance requires a funding stream independent of the political pressures of voluntary contributions. The framework establishes comprehensive financial mechanisms for sustaining coordination operations while ensuring equity and preventing capture.
+
+### Primary Funding Mechanism: Coordination Infrastructure Tax
+
+**"Coordination Infrastructure Tax"**: A fractional levy (0.1%-1%) on global high-frequency trading (HFT) and algorithmic transaction revenues, recognizing that actors who benefit most from global stability and coordinated systems should contribute to their upkeep.
+
+**Implementation Structure**:
+- **Independent Allocation Council**: Manages revenue distribution with rotating membership from diverse stakeholder groups
+- **Transparency Requirements**: Public reporting of all revenue collection and allocation with real-time dashboards
+- **Anti-Capture Safeguards**: No single entity can influence more than 15% of allocation decisions
+- **Democratic Oversight**: Regular review by citizen panels with authority to modify allocation formulas
+
+**Revenue Distribution Formula**:
+- **50% to Core Functions**: Funding for reflexivity engines, interoperability tools, and power-balancing audits
+- **30% to Equity Participation**: Grants ensuring under-resourced domains (Indigenous groups, Global South NGOs, youth organizations) can participate fully
+- **20% to Transgenerational Lockbox**: Endowment funding long-term coordination needs and rights of future generations
+
+### Financial Transparency and Accountability
 
 **Resource Flow Monitoring**:
 - **Real-time Financial Tracking** of contributions, expenditures, and resource allocation with public dashboards
@@ -313,13 +351,23 @@ Economic systems and resource flows aligned with regenerative principles and com
 - **Regenerative Investment Requirements** directing resources toward healing historical governance failures
 - **Community Wealth Building** supporting local economic development and cooperative enterprises
 
-**Economic Equity Mechanisms**:
-- **Progressive Contribution Formulas** based on capacity rather than flat fees
+### Equity and Access Mechanisms
+
+**Participation Support Systems**:
+- **Progressive Contribution Formulas** based on capacity rather than flat fees for voluntary participants
 - **Participation Support Funding** ensuring economic constraints don't limit meaningful engagement
+- **Technology Access Grants** providing equipment, connectivity, and digital literacy support
+- **Cultural Bridge-Builder Support** funding Indigenous knowledge keepers and traditional authorities in coordination roles
+
+**Economic Justice Integration**:
 - **Economic Impact Assessment** evaluating how coordination affects wealth and resource distribution
 - **Anti-Extraction Protocols** preventing coordination from enabling resource appropriation or community exploitation
+- **Community Benefit Requirements** ensuring coordination activities support rather than undermine local economic autonomy
+- **Cooperative Enterprise Support** prioritizing funding for community-controlled economic development
 
-## <a id="v-security-and-resilience"></a>V. Security and Resilience
+**Relationship to Global Commons Fund**: The coordination infrastructure tax complements and coordinates with the **Global Commons Fund (`mechanism_gcf`)** established by the *Treaty for Our Only Home*, with clear delineation between funding streams: the GCF focuses on planetary restoration and global public goods, while the coordination tax specifically funds the governance infrastructure enabling effective cooperation across domains and scales.
+
+## <a id="vi-security-and-resilience"></a>VI. Security and Resilience
 
 Crisis prevention, conflict resolution, and peace-building systems that address root causes while maintaining rapid response capabilities.
 
@@ -369,7 +417,7 @@ Crisis prevention, conflict resolution, and peace-building systems that address 
 
 ### Crisis Response and Recovery
 
-**Coordinated Emergency Response**: Rapid, effective crisis response that maintains democratic accountability while enabling decisive action.
+**Coordinated Emergency Response**: Rapid, effective crisis response that maintains democratic accountability while enabling decisive action through the **Crisis Command Protocol (`process_crisis_command`)** from the Governance OS cluster.
 
 **Emergency Coordination Protocols**:
 - **Crisis Classification Systems** (single-domain, multi-domain, civilizational) with appropriate response levels
@@ -389,7 +437,7 @@ Crisis prevention, conflict resolution, and peace-building systems that address 
 - **Infrastructure Rebuilding** with resilience and sustainability improvements
 - **Trauma and Healing Support** addressing psychological and social impacts of crises
 
-## <a id="vi-learning-and-evolution"></a>VI. Learning and Evolution
+## <a id="vii-learning-and-evolution"></a>VII. Learning and Evolution
 
 Reflexivity engines and adaptive capacity building that enable meta-governance systems to learn, evolve, and eventually transcend the need for external coordination.
 
@@ -443,7 +491,7 @@ Reflexivity engines and adaptive capacity building that enable meta-governance s
 
 **Renewal and Assessment Cycles**:
 - **Regular Reauthorization** of all coordination mechanisms based on demonstrated value and community support
-- **Performance Threshold Triggers** requiring automatic review when effectiveness declines
+- **Performance Threshold Triggers** requiring automatic review when effectiveness declines, potentially using metrics from the `mechanism_regeneration_index` from the *Institutional Regeneration Framework*
 - **Community Satisfaction Assessment** with binding authority for affected populations to modify or discontinue coordination
 - **Innovation Integration Requirements** ensuring systems incorporate lessons and adapt to changing conditions
 
@@ -461,7 +509,7 @@ Reflexivity engines and adaptive capacity building that enable meta-governance s
 
 ## <a id="integration-and-interoperability"></a>Integration and Interoperability
 
-All six structural categories work together through sophisticated integration mechanisms that maintain coherence while allowing for local adaptation and cultural diversity.
+All seven structural categories work together through sophisticated integration mechanisms that maintain coherence while allowing for local adaptation and cultural diversity.
 
 ### Cross-Category Integration Protocols
 
@@ -489,9 +537,9 @@ All six structural categories work together through sophisticated integration me
 - Create public interface systems with citizen oversight authority
 - Build trust and demonstrate value through effective crisis coordination
 
-**Integration Phase** (Knowledge/Technology + Economic Coordination):
+**Integration Phase** (Knowledge/Technology + Resource Sharing + Funding):
 - Deploy AI governance systems with human oversight and cultural protection
-- Implement resource sharing protocols and economic transparency systems
+- Implement resource sharing protocols and funding mechanisms
 - Create digital participation infrastructure with equity safeguards
 - Scale successful approaches across regions and domains
 
@@ -517,4 +565,4 @@ All six structural categories work together through sophisticated integration me
 - **Principle Evolution** allowing for refined understanding while maintaining core commitments
 - **Transcendence Preparation** supporting eventual evolution beyond current structural forms
 
-The six-category structural architecture provides comprehensive coordination capability while maintaining flexibility, cultural sensitivity, and consciousness evolution support. This architecture enables meta-governance to address current coordination challenges while building toward a future where external governance becomes unnecessary as communities develop natural coordination capacity grounded in wisdom, compassion, and mutual care.
+The seven-category structural architecture provides comprehensive coordination capability while maintaining flexibility, cultural sensitivity, and consciousness evolution support. This architecture enables meta-governance to address current coordination challenges while building toward a future where external governance becomes unnecessary as communities develop natural coordination capacity grounded in wisdom, compassion, and mutual care.
