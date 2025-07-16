@@ -265,7 +265,7 @@ export const ecologicalEntities: GgfEntity[] = [
     name: 'Biosphere Health Index (BHI)',
     shortName: 'BHI',
     description: 'A comprehensive, real-time metric of planetary well-being designed to replace GDP as the primary measure of civilizational success. It integrates scientific data with Indigenous-led indicators of ecological health, cultural vitality, and community well-being (incorporating the concept of Gross Planetary Health).',
-    tier: 2, // It's an application-layer metric that depends on Tier 1 systems.
+    tier: 2,
     status: 'Draft',
     primaryDomain: 'Ecological',
     geographicScope: 'Global',
@@ -274,9 +274,9 @@ export const ecologicalEntities: GgfEntity[] = [
       'framework_planetary_health',
       'framework_indigenous',
       'framework_aurora_accord',
-      'metric_lmci' // The Love, Meaning, and Connection Index
+      'metric_lmci'
     ],
-    enables: ['council_phc'] // The PHC uses it to perform its function.
+    enables: ['council_phc']
   }
 ];
 
@@ -585,7 +585,7 @@ export const ecologicalRelationships: GgfRelationship[] = [
     description: 'The BHI\'s human flourishing component is computed directly from the Love, Meaning, and Connection Index (LMCI), ensuring a holistic view of well-being.',
     strength: 'Strong',
     sequenceType: 'Parallel'
-  }
+  },
 
   // === CONNECTIONS TO ETHICAL OS ===
   {

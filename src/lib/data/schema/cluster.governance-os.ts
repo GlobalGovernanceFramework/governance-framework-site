@@ -67,6 +67,47 @@ export const governanceOSEntities: GgfEntity[] = [
     geographicScope: 'Global',
     implementationPriority: 'Critical',
     dependencies: ['framework_meta_gov']
+  },
+  {
+    id: 'protocol_cross_temporal',
+    type: 'Protocol',
+    name: 'Cross-Temporal Coordination Protocol',
+    shortName: 'Temporal Coordination',
+    description: 'A core protocol of the Meta-Governance Framework for harmonizing linear, cyclical, and multi-horizon timeframes across diverse governance systems, enabling effective coordination between institutional and Indigenous frameworks.',
+    tier: 1,
+    status: 'Draft',
+    primaryDomain: 'Governance',
+    geographicScope: 'Global',
+    implementationPriority: 'Critical',
+    dependencies: ['framework_meta_gov', 'framework_indigenous'],
+    // No UI entry needed if it's considered an internal protocol of Meta-Gov, 
+    // or it could have its own page.
+  },
+  {
+    id: 'council_global_metrology',
+    type: 'Council',
+    name: 'Global Metrology Council',
+    shortName: 'Metrology Council',
+    description: 'A specialized council under the MGCC responsible for overseeing universal metrology governance. Its mandated composition (40% Indigenous/traditional, 30% scientific, 30% Global South) ensures metrics are just, pluralistic, and decolonial. It oversees the Metric Lifecycle Process.',
+    tier: 1,
+    status: 'Proposed',
+    primaryDomain: 'Governance',
+    geographicScope: 'Global',
+    implementationPriority: 'High',
+    dependencies: ['framework_meta_gov']
+  },
+  {
+    id: 'process_metric_lifecycle',
+    type: 'Process',
+    name: 'Metric Lifecycle Governance Process',
+    shortName: 'Metric Lifecycle',
+    description: 'The official GGF process for the proposal, co-development, piloting, standardization, periodic review, and sunsetting of all universal metrics (e.g., BHI, LMCI). This process ensures metrics are ethically designed, culturally relevant, and scientifically robust.',
+    tier: 1,
+    status: 'Proposed',
+    primaryDomain: 'Governance',
+    geographicScope: 'Global',
+    implementationPriority: 'High',
+    dependencies: ['council_global_metrology']
   }
 ];
 
@@ -126,6 +167,51 @@ export const governanceOSRelationships: GgfRelationship[] = [
     type: 'COORDINATES_WITH',
     description: 'Provides the polycentric coordination protocols for how BAZs can interoperate and form "fractal governance networks" while maintaining sovereignty.',
     strength: 'Medium',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'protocol_cross_temporal',
+    to: 'framework_deep_time',
+    type: 'ENABLES',
+    description: 'The foundational principles of cross-temporal coordination are the prerequisite for, and evolve into, the advanced applications of Deep Time & Relativistic Governance.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+
+  {
+    from: 'council_global_metrology',
+    to: 'council_mgcc',
+    type: 'REPORTS_TO',
+    description: 'The Global Metrology Council is a specialized sub-council that reports to and operates within the Meta-Governance Coordination Council.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'council_global_metrology',
+    to: 'process_metric_lifecycle',
+    type: 'OVERSEES',
+    description: 'The Metrology Council is the governing body that manages and enforces the Metric Lifecycle Governance Process.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'process_metric_lifecycle',
+    to: 'metric_bhi',
+    type: 'GUIDES',
+    description: 'The lifecycle process governs the development, validation, and evolution of the Biosphere Health Index.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'process_metric_lifecycle',
+    to: 'metric_lmci',
+    type: 'GUIDES',
+    description: 'The lifecycle process governs the development, validation, and evolution of the Love, Meaning, and Connection Index.',
+    strength: 'Strong',
+    frequency: 'Regular',
     sequenceType: 'Parallel'
   }
 ];

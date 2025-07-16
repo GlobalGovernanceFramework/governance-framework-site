@@ -667,6 +667,104 @@
           'Rätt till rörelse-stadga som kan verkställas av Digital rättvisedomstol med skydd mot grön förskjutning'
         ]
       }
+    },
+    millenniumProtocol: {
+      en: {
+        title: 'The Millennium Protocol',
+        defaultDescription: "We're developing a supreme Tier 4 constitutional charter for guiding humanity's evolution into a responsible, wise, and participatory cosmic civilization over deep time. This framework ensures unity, survival, ethical flourishing, and universal joy across millennia and interstellar space, rooted in wisdom, humility, and the recognition that consciousness evolution may be a primary cosmic purpose.",
+        defaultFeatures: [
+          'Deep Time Governance Architecture with Interstellar Commission and Generational Continuity Framework',
+          'Cosmic Civilization Charter including Prime Directive Protocol and Post-Contact Governance Framework',
+          'Interstellar Economic & Resource Governance with Cosmic Commons and post-scarcity transition protocols',
+          'Species Evolution & Transcendence Governance for human enhancement, AI rights, and consciousness evolution',
+          'Cosmic Wisdom & Purpose framework defining humanity\'s role in universal consciousness development',
+          'The Great Unknown governance for incomprehensible discoveries like simulation escape and divine contact',
+          'Temporal & Universe-Scale Governance including Chronocide prevention and Heat Death preparation',
+          'Light-Speed Democracy Protocols and Constitutional mechanisms for multi-generational space voyages',
+          'Cosmic Heritage Protection and Universal Knowledge Preservation across galactic timescales',
+          'Implementation through Deep Time Layers from current-century actionables to end-of-universe preparation'
+        ]
+      },
+      sv: {
+        title: 'Millenniumprotokollet',
+        defaultDescription: "Vi utvecklar en högsta Tier 4 konstitutionell stadga för att vägleda mänsklighetens evolution till en ansvarsfull, vis och deltagande kosmisk civilisation över djup tid. Detta ramverk säkerställer enhet, överlevnad, etiskt blomstrande och universell glädje över millennier och interstellärt rum, grundat i visdom, ödmjukhet och erkännandet att medvetandeutveckling kan vara ett primärt kosmiskt syfte.",
+        defaultFeatures: [
+          'Djuptids-styrningsarkitektur med Interstellär kommission och Generationsfortsättningsramverk',
+          'Kosmisk civilisationsstadga inklusive Primära direktiv-protokoll och Post-kontakt styrningsramverk',
+          'Interstellär ekonomisk & resursstyrning med Kosmisk allmänning och post-briststyrningsprotokoll',
+          'Artevolution & transcendensstyrning för mänsklig förbättring, AI-rättigheter och medvetandeutveckling',
+          'Kosmisk visdom & syfte-ramverk som definierar mänsklighetens roll i universell medvetandeutveckling',
+          'Det Stora Okända-styrning för obegripliga upptäckter som simulationsflykt och gudomlig kontakt',
+          'Temporal & universell skala-styrning inklusive Chronocide-förebyggande och Värmeddöd-förberedelse',
+          'Ljushastighetssdemokrati-protokoll och Konstitutionella mekanismer för multigenerationsrymdresor',
+          'Kosmiskt arvsskydd och Universell kunskapsbevarande över galaktiska tidsramar',
+          'Implementering genom Djuptidslagre från nuvarande århundrade-åtgärder till slutet-av-universum förberedelse'
+        ]
+      }
+    },
+    regenerativeJourneys: {
+      en: {
+        title: 'The Regenerative Journeys Framework',
+        defaultDescription: "We're developing a revolutionary framework that transforms tourism from extractive practice to sacred exchange, healing communities, restoring ecosystems, and fostering reciprocal relationships between guests and hosts through Indigenous sovereignty, bioregional governance, and regenerative design.",
+        defaultFeatures: [
+          'BAZ Tourism Councils with Indigenous leadership, youth representation, and community veto power over tourism decisions',
+          'Guest Hearts currency rewarding regenerative travel choices through certified local businesses and restoration projects',
+          'Climate-adaptive dual-purpose infrastructure serving both tourists and climate migrants with community-first design',
+          'Sacred Journey Protocols protecting Indigenous sites with FPIC 2.0, ceremonial calendar integration, and anti-commodification safeguards',
+          'Tourism Impact Assessments measuring Biosphere Health Index, cultural continuity, and seven-generation impacts',
+          'Dynamic Regenerative Tourism Levy funding ecosystem restoration, community healing, and youth innovation projects',
+          'Climate Migration Integration with diaspora tourism protocols and managed retreat planning for vulnerable regions',
+          'Decolonization Scorecard tracking land rematriation, language preservation, and Indigenous economic sovereignty'
+        ]
+      },
+      sv: {
+        title: 'Det Regenerativa Reseramverket',
+        defaultDescription: "Vi utvecklar ett revolutionerande ramverk som transformerar turism från utvinningspraktik till heligt utbyte, läker samhällen, återställer ekosystem och främjar ömsesidiga relationer mellan gäster och värdar genom ursprungsbefolkningssuveränitet, bioregional styrning och regenerativ design.",
+        defaultFeatures: [
+          'BAZ-turisråd med ursprungsbefolkningsledarskap, ungdomsrepresentation och gemenskapsvetorätt över turismsbeslut',
+          'Guest Hearts-valuta som belönar regenerativa reseval genom certifierade lokala företag och återställningsprojekt',
+          'Klimatadaptiv infrastruktur med dubbla syften som tjänar både turister och klimatmigranter med samhällsförstadesign',
+          'Heliga reseprotokoll som skyddar ursprungsbefolkningsplatser med FPIC 2.0, ceremoniell kalenderintegration och anti-kommodifieringsskydd',
+          'Turismeffektbedömningar som mäter Biosfärhälsoindex, kulturell kontinuitet och sjugenerationseffekter',
+          'Dynamisk regenerativ turismalavgift som finansierar ekosystemåterställning, samhällsläkning och ungdomsinnovationsprojekt',
+          'Klimatmigrationsintegration med diasporaturismprotokoll och förvaltad reträttplanering för sårbara regioner',
+          'Avkoloniseringsscorekort som spårar markåterlämnande, språkbevarande och ursprungsbefolknings ekonomisk suveränitet'
+        ]
+      }
+    },
+    deepTime: {
+      en: {
+        title: 'Deep Time & Relativistic Governance Framework',
+        defaultDescription: "We're developing a visionary framework governing relativistic, causal, and temporal ethics for a multi-planetary civilization, as required by the Millennium Protocol. This advanced system includes governance of temporal paradoxes, deep time decision-making, light-speed democracy protocols, and causality preservation laws for humanity's cosmic future.",
+        defaultFeatures: [
+          'Relativistic Coordination with Light-Speed Democracy Protocols maintaining consent across interstellar colonies with time dilation',
+          'Causality & Communication Governance managing faster-than-light communication and causality disruption prevention',
+          'Temporal Justice & Ethics with legal frameworks for time travel governance and historical timeline protection',
+          'Butterfly Courts specialized chamber of Digital Justice Tribunal with jurisdiction over Chronocide temporal crimes',
+          'Quantum Governance Lab researching causality preservation laws and relativistic governance mechanisms',
+          'Cross-Temporal Coordination enabling governance systems across linear, cyclical, and ceremonial timeframes',
+          'Multi-Horizon Decision Protocols weighting decisions across crisis, decadal, and seven-generation impacts',
+          'Temporal Impact Assessments evaluating all decisions for immediate, generational, and deep-time consequences',
+          'Emergency Temporal Override protocols for crisis situations with strict safeguards and post-crisis healing',
+          'Indigenous Temporal Sovereignty Charter recognizing rights to seasonal, cyclical, and ceremonial governance'
+        ]
+      },
+      sv: {
+        title: 'Djup tid & relativistisk styrningsramverk',
+        defaultDescription: "Vi utvecklar ett visionärt ramverk som styr relativistiska, kausala och temporala etik för en multi-planetär civilisation, som krävs av Millenniumprotokollet. Detta avancerade system inkluderar styrning av temporala paradoxer, djuptidsbeslut, ljuhastighetssdemokratiprotokoll och kausalitetsbevarande lagar för mänsklighetens kosmiska framtid.",
+        defaultFeatures: [
+          'Relativistisk koordination med ljuhastighetssdemokratiprotokoll som upprätthåller samtycke över interstellära kolonier med tidsdilatation',
+          'Kausalitet & kommunikationsstyrning som hanterar snabbare-än-ljus kommunikation och kausalitetsstörningsförebyggande',
+          'Temporal rättvisa & etik med juridiska ramverk för tidsresestyrning och historisk tidslinjeskydd',
+          'Fjärilsdomstolar specialiserad kammare av Digital rättvisedomstol med jurisdiktion över Chronocide temporala brott',
+          'Kvantumstyrningslabb som forskar om kausalitetsbevarande lagar och relativistiska styrningsmekanismer',
+          'Kross-temporal koordination som möjliggör styrningssystem över linjära, cykliska och ceremoniella tidsramar',
+          'Multi-horisont beslutsprotokoll som väger beslut över kris-, decennal- och sjugenerationseffekter',
+          'Temporala effektbedömningar som utvärderar alla beslut för omedelbara, generationella och djuptidskonsekvenser',
+          'Nödsituation temporal överridning protokoll för krissituationer med strikta skydd och post-kris läkning',
+          'Ursprungsbefolknings temporal suveränitetsstadga som erkänner rättigheter till säsongs-, cyklisk och ceremoniell styrning'
+        ]
+      }
     }
   };
 
@@ -740,7 +838,13 @@
         <ul class="features-list">
           {#each finalFeatures as feature, index}
             <li>
-              {#if frameworkName === 'shield'}
+              {#if frameworkName === 'millenniumProtocol'}
+                {index === 0 ? '🏛️' : index === 1 ? '🚀' : index === 2 ? '💰' : index === 3 ? '🧬' : index === 4 ? '🧠' : index === 5 ? '❓' : index === 6 ? '⏳' : index === 7 ? '🗳️' : index === 8 ? '📚' : '🔄'}
+              {:else if frameworkName === 'deepTime'}
+                {index === 0 ? '🚀' : index === 1 ? '⚡' : index === 2 ? '⚖️' : index === 3 ? '🦋' : index === 4 ? '🔬' : index === 5 ? '🌀' : index === 6 ? '⚖️' : index === 7 ? '📊' : index === 8 ? '🚨' : '🪶'}
+              {:else if frameworkName === 'regenerativeJourneys'}
+                {index === 0 ? '🏛️' : index === 1 ? '💚' : index === 2 ? '🏗️' : index === 3 ? '🪶' : index === 4 ? '📊' : index === 5 ? '💰' : index === 6 ? '🌡️' : '⚖️'}
+              {:else if frameworkName === 'shield'}
                 {index === 0 ? '🧠' : index === 1 ? '⚖️' : index === 2 ? '🎯' : index === 3 ? '🚔' : index === 4 ? '💰' : index === 5 ? '🔄' : index === 6 ? '❤️' : '🛡️'}
               {:else if frameworkName === 'mobilityCommons'}
                {index === 0 ? '🏛️' : index === 1 ? '🛤️' : index === 2 ? '🤖' : index === 3 ? '💚' : index === 4 ? '🚑' : index === 5 ? '♿' : index === 6 ? '⚖️' : index === 7 ? '🔬' : index === 8 ? '🪶' : '📜'}

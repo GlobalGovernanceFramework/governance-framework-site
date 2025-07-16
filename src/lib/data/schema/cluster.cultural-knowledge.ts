@@ -341,7 +341,7 @@ export const culturalKnowledgeRelationships: GgfRelationship[] = [
     description: 'The Indigenous Framework provides the core ethical protocols for how the Digital Commons must steward and protect Traditional Ecological Knowledge (TEK).',
     strength: 'Strong',
     sequenceType: 'Parallel'
-  }
+  },
   {
     from: 'council_cawc',
     to: 'council_earth',

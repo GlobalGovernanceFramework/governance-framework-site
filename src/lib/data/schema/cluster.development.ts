@@ -193,6 +193,94 @@ export const developmentEntities: GgfEntity[] = [
       emoji: '🚜',
       slug: 'rural-development-governance'
     }
+  },
+
+  // === TOURISM AND TRAVEL ===
+  {
+    id: 'framework_regenerative_journeys',
+    type: 'Framework',
+    name: 'The Regenerative Journeys Framework',
+    shortName: 'Regenerative Journeys',
+    description: 'A GGF Tier 3 framework to govern global tourism as a regenerative practice that heals communities, restores ecosystems, and fosters reciprocal relationships between guests and hosts.',
+    tier: 3,
+    status: 'Ready', // Based on the v3.3 designation and detail level.
+    primaryDomain: 'Governance',
+    geographicScope: 'Global',
+    implementationPriority: 'High',
+    dependencies: [
+      'framework_mobility_commons',
+      'framework_planetary_health',
+      'framework_aubi',
+      'framework_indigenous',
+      'framework_cultural_heritage',
+      'framework_disability',
+      'framework_drr'
+    ],
+    enables: [
+      'council_baz_tourism',
+      'mechanism_regenerative_tourism_levy',
+      'process_tourism_impact_assessment',
+      'council_regenerative_tourism_assembly'
+    ],
+    ui: {
+      path: '/frameworks/regenerative-journeys',
+      titleKey: 'framework.docs.nav.frameworkTitles.regenerativeJourneys', // Needs to be added
+      emoji: '✈️',
+      slug: 'regenerative-journeys',
+      group: 'humanSocialSystems'
+    }
+  },
+  {
+    id: 'council_baz_tourism',
+    type: 'Council',
+    name: 'BAZ Tourism Council',
+    shortName: 'BAZ Tourism Council',
+    description: 'A decentralized, community-led council established in each BAZ to govern local tourism, set carrying capacities, and enforce ethical protocols with veto power.',
+    tier: 3,
+    status: 'Proposed',
+    primaryDomain: 'Governance',
+    geographicScope: 'BAZ', // BAZ-level institution
+    implementationPriority: 'High',
+    dependencies: ['framework_regenerative_journeys', 'institution_baz']
+  },
+  {
+    id: 'mechanism_regenerative_tourism_levy',
+    type: 'EconomicMechanism',
+    name: 'Dynamic Regenerative Tourism Levy',
+    shortName: 'Tourism Levy',
+    description: 'A BAZ-adjusted levy on international travel that funds the Global Commons Fund for ecological restoration, community microgrants, and a Migration Solidarity Economy.',
+    tier: 3,
+    status: 'Proposed',
+    primaryDomain: 'Economic',
+    geographicScope: 'Global',
+    implementationPriority: 'High',
+    dependencies: ['framework_regenerative_journeys', 'mechanism_gcf']
+  },
+  {
+    id: 'process_tourism_impact_assessment',
+    type: 'Process',
+    name: 'Tourism Impact Assessment (TIA)',
+    shortName: 'TIA',
+    description: 'A mandatory assessment for tourism projects measuring impacts on the BHI, LMCI, and a Decolonization Scorecard, ensuring accountability to regenerative principles.',
+    tier: 3,
+    status: 'Draft',
+    primaryDomain: 'Governance',
+    geographicScope: 'BAZ',
+    implementationPriority: 'High',
+    dependencies: ['framework_regenerative_journeys', 'metric_bhi', 'metric_lmci']
+  },
+  {
+    id: 'council_regenerative_tourism_assembly',
+    type: 'Council',
+    name: 'Regenerative Tourism Assembly',
+    shortName: 'Tourism Assembly',
+    description: 'A facilitative Meta-Governance sub-council for BAZ Tourism Councils to coordinate, share resources, and manage cross-bioregion tourism corridors.',
+    tier: 3,
+    status: 'Proposed',
+    primaryDomain: 'Governance',
+    geographicScope: 'Global',
+    implementationPriority: 'Medium',
+    dependencies: ['framework_regenerative_journeys', 'framework_meta_gov']
   }
 ];
 
@@ -413,5 +501,114 @@ export const developmentRelationships: GgfRelationship[] = [
     strength: 'Medium',
     frequency: 'Regular',
     sequenceType: 'Parallel'
-  }
+  },
+  // --- Core Framework Establishment & Dependencies ---
+  {
+    from: 'framework_regenerative_journeys',
+    to: 'council_baz_tourism',
+    type: 'ESTABLISHES',
+    description: 'The Journeys framework establishes BAZ Tourism Councils as its primary local governance bodies.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_regenerative_journeys',
+    to: 'mechanism_regenerative_tourism_levy',
+    type: 'ESTABLISHES',
+    description: 'The Journeys framework establishes the Tourism Levy as its core economic engine.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_regenerative_journeys',
+    to: 'process_tourism_impact_assessment',
+    type: 'ESTABLISHES',
+    description: 'The Journeys framework establishes mandatory TIAs as its core accountability process.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_indigenous',
+    to: 'framework_regenerative_journeys',
+    type: 'GUIDES',
+    description: 'The Indigenous Framework holds ultimate authority, providing non-negotiable guidance and veto power (FPIC 2.0) over all tourism activities.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_planetary_health',
+    to: 'framework_regenerative_journeys',
+    type: 'GUIDES',
+    description: 'The Planetary Health framework provides the ecological standards and carrying capacity limits that tourism must adhere to.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+
+  // --- Economic & Financial Integration ---
+  {
+    from: 'framework_regenerative_journeys',
+    to: 'framework_aubi',
+    type: 'INTEGRATES_WITH',
+    description: 'The Journeys framework uses the AUBI system and Love Ledger to implement its Guest Hearts program.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'mechanism_regenerative_tourism_levy',
+    to: 'mechanism_gcf',
+    type: 'FUNDS',
+    description: 'The Tourism Levy is a primary funding stream for the Global Commons Fund.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_regenerative_journeys',
+    to: 'framework_migration',
+    type: 'FUNDS',
+    description: 'A portion of the Tourism Levy is allocated to a Migration Solidarity Economy, supporting climate migrants.',
+    strength: 'Medium',
+    sequenceType: 'Parallel'
+  },
+
+  // --- Governance & Accountability Integration ---
+  {
+    from: 'council_baz_tourism',
+    to: 'council_regenerative_tourism_assembly',
+    type: 'COORDINATES_WITH',
+    description: 'Local BAZ Tourism Councils coordinate through the global Regenerative Tourism Assembly for mutual aid and resource sharing.',
+    strength: 'Medium',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'process_tourism_impact_assessment',
+    to: 'metric_bhi',
+    type: 'USES_DATA_FROM',
+    description: 'TIAs use the Biosphere Health Index as a core indicator for measuring ecological impact.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'process_tourism_impact_assessment',
+    to: 'metric_lmci',
+    type: 'USES_DATA_FROM',
+    description: 'TIAs use the Love, Meaning, and Connection Index to measure social and cultural well-being.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_regenerative_journeys',
+    to: 'framework_drr',
+    type: 'INTEGRATES_WITH',
+    description: 'The framework co-designs Community-First Resource Allocation and evacuation plans with the DRR Framework.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_regenerative_journeys',
+    to: 'framework_disability',
+    type: 'VALIDATES',
+    description: 'The framework\'s inclusivity protocols are validated against the standards of the Universal Access & Disability Justice Layer.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  }  
 ];

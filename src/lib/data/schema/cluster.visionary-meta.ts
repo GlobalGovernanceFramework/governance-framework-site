@@ -48,6 +48,50 @@ export const visionaryMetaEntities: GgfEntity[] = [
       slug: 'space-governance'
     }
   },
+  {
+    id: 'framework_millennium_protocol',
+    type: 'Framework',
+    name: 'The Millennium Protocol',
+    shortName: 'Millennium Protocol',
+    description: 'A supreme Tier 4 constitutional charter for guiding humanity\'s evolution into a responsible, wise, and participatory cosmic civilization over deep time.',
+    tier: 4,
+    status: 'Planned',
+    primaryDomain: 'Governance',
+    geographicScope: 'Global',
+    implementationPriority: 'Low',
+    dependencies: [
+      'framework_deep_time',
+      'framework_wisdom_governance',
+      'framework_planetary_immune_system',
+      'framework_treaty'
+    ],
+    ui: {
+      path: '/frameworks/the-millennium-protocol',
+      titleKey: 'framework.docs.nav.frameworkTitles.theMillenniumProtocol', // You would add this key to your i18n files
+      emoji: '🌌',
+      version: '6.0',
+      slug: 'the-millennium-protocol'
+    }
+  },
+  {
+    id: 'framework_deep_time',
+    type: 'Framework',
+    name: 'Deep Time & Relativistic Governance Framework',
+    shortName: 'Deep Time Governance',
+    description: 'A visionary framework governing relativistic, causal, and temporal ethics for a multi-planetary civilization, as required by the Millennium Protocol. Includes governance of temporal paradoxes and deep time decision-making.',
+    tier: 4,
+    status: 'Planned',
+    primaryDomain: 'Governance',
+    geographicScope: 'Global',
+    implementationPriority: 'Low', // Low for now, high in the far future
+    dependencies: ['protocol_cross_temporal', 'framework_millennium_protocol', 'institution_dj_tribunal'],
+    ui: {
+      path: '/frameworks/deep-time-governance',
+      titleKey: 'framework.docs.nav.frameworkTitles.deepTimeGovernance', // You would add this key
+      emoji: '⏳',
+      slug: 'deep-time-governance'
+    }
+  },
 
   // === WISDOM & META-GOVERNANCE ===
   {

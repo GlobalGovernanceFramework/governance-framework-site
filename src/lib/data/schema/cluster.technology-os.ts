@@ -54,6 +54,21 @@ export const technologyOSEntities: GgfEntity[] = [
       group: 'humanSocialSystems'
     }
   },
+  {
+    id: 'institution_quantum_lab',
+    type: 'Institution',
+    name: 'Quantum Governance Lab',
+    shortName: 'Quantum Lab',
+    description: 'A specialized research and governance institution responsible for developing protocols and ethical guidelines for emerging quantum technologies, including quantum-resistant encryption, computation, and their impact on causality.',
+    tier: 2, // A Tier 2 institution that enables advanced Tier 4 governance.
+    status: 'Proposed',
+    primaryDomain: 'Technology',
+    geographicScope: 'Global',
+    implementationPriority: 'High', // High due to near-term cybersecurity threats from quantum computing.
+    dependencies: ['framework_technology_governance', 'council_gtc'],
+    enables: ['framework_deep_time']
+    // No UI block needed as it's a sub-institution, not a primary navigable framework.
+  },
 
   // === GOVERNANCE COUNCIL ===
   {
@@ -142,7 +157,7 @@ export const technologyOSRelationships: GgfRelationship[] = [
     description: 'Provides the ethical guardrails and sovereignty protocols for any technology, including "Indigenous AI Oracles," that interacts with or is trained on Traditional Ecological Knowledge (TEK).',
     strength: 'Strong',
     sequenceType: 'Parallel'
-  }
+  },
   {
     from: 'framework_technology_governance',
     to: 'framework_mos',
@@ -233,5 +248,46 @@ export const technologyOSRelationships: GgfRelationship[] = [
     strength: 'Medium',
     frequency: 'Regular',
     sequenceType: 'Parallel'
+  },
+
+  // --- Quantum Lab's role within the Technology OS ---
+  {
+    from: 'council_gtc',
+    to: 'institution_quantum_lab',
+    type: 'OVERSEES',
+    description: 'The Global Technology Council oversees the work of the Quantum Governance Lab, ensuring its alignment with overall technology ethics.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'institution_quantum_lab',
+    to: 'framework_aurora_accord',
+    type: 'INFORMS',
+    description: 'The Quantum Lab provides the technical standards for the quantum-resistant cybersecurity protocols required by the Aurora Accord.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+
+  // --- Quantum Lab's connection to Deep Time Governance ---
+  {
+    from: 'institution_quantum_lab',
+    to: 'framework_deep_time',
+    type: 'COLLABORATES_WITH',
+    description: 'The Lab collaborates with the Deep Time Governance framework to draft "Causality Preservation Laws" and understand the implications of quantum phenomena on temporal ethics.',
+    strength: 'Strong',
+    frequency: 'As-Needed',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'institution_quantum_lab',
+    to: 'institution_dj_tribunal',
+    type: 'INFORMS',
+    description: 'The Lab provides expert technical testimony to the Digital Justice Tribunal, particularly its "Butterfly Courts" chamber, on matters of causality and temporal mechanics.',
+    strength: 'Medium',
+    frequency: 'As-Needed',
+    sequenceType: 'Parallel'
   }
+
 ];
