@@ -21,7 +21,9 @@ import { culturalKnowledgeEntities, culturalKnowledgeRelationships } from './clu
 import { mobilityCommonsEntities, mobilityCommonsRelationships, developmentEntities, developmentRelationships } from './cluster.development';
 import { visionaryMetaEntities, visionaryMetaRelationships } from './cluster.visionary-meta';
 import { dataOSEntities, dataOSRelationships } from './cluster.data-os';
-import { hearthstoneEntities, hearthstoneRelationships } from './cluster.property-stewardship'; // <-- ADDED
+import { hearthstoneEntities, hearthstoneRelationships } from './cluster.property-stewardship';
+import { conduitProtocolEntities, conduitProtocolRelationships } from './cluster.infrastructure';
+
 
 // Import types and metadata
 import type { GgfEntity, GgfRelationship, GgfCluster, ValidationResult } from './_types';
@@ -174,7 +176,8 @@ export const allEntities: GgfEntity[] = [
   ...developmentEntities, 
   ...visionaryMetaEntities,
   ...completeApplicationLayerEntities,
-  ...hearthstoneEntities
+  ...hearthstoneEntities,
+  ...conduitProtocolEntities
 ];
 
 export const allRelationships: GgfRelationship[] = [
@@ -195,7 +198,8 @@ export const allRelationships: GgfRelationship[] = [
   ...developmentRelationships,
   ...visionaryMetaRelationships,
   ...completeApplicationLayerRelationships,
-  ...hearthstoneRelationships
+  ...hearthstoneRelationships,
+  ...conduitProtocolRelationships
 ];
 
 // === CLUSTER DEFINITIONS ===
@@ -284,6 +288,14 @@ export const clusters: GgfCluster[] = [
     tier: 2,
     entities: hearthstoneEntities.map(e => e.id),
     color: '#059669'
+  },
+  {
+    id: 'infrastructure_cluster',
+    name: 'Shared Infrastructure Systems',
+    description: 'The Conduit Protocol: The circulatory system for a resilient planetary civilization.',
+    tier: 2,
+    entities: conduitProtocolEntities.map(e => e.id),
+    color: '#059669' // Green for Tier 2
   },
   {
     id: 'regenerative_enterprise_cluster',

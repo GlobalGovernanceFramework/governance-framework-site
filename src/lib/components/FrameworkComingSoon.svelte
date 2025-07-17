@@ -799,6 +799,40 @@
           'Ungdomsförvaltningsstipendium som stärker nästa generation med vetorätt över intergenerationella beslut'
         ]
       }
+    },
+    conduitProtocol: {
+      en: {
+        title: 'The Conduit Protocol: A Framework for Shared Infrastructure',
+        defaultDescription: "We're developing a revolutionary framework that transforms the world's fragmented infrastructure into a unified, resilient global commons serving as the circulatory system for planetary civilization—ensuring every community has access to clean energy, secure data networks, and clean water while respecting Indigenous sovereignty and enabling a just transition to a regenerative future.",
+        defaultFeatures: [
+          'Global Infrastructure Council setting interoperability standards with community-led governance and crisis coordination',
+          'Bioregional Grid Authorities managing local infrastructure with 40% community representation and public audits',
+          'Open Grid Protocol with quantum-resistant design, analog backup systems, and cultural interoperability standards',
+          'Just Transition Service Corps retraining fossil fuel workers with union wages and trauma-informed support',
+          'Crisis Infrastructure Command with 72-hour emergency response and community override protections',
+          'Climate Criticality Accelerator fast-tracking essential climate infrastructure with Indigenous co-design',
+          'Sacred Infrastructure Design integrating community art and storytelling into energy and data systems',
+          'Regenerative Infrastructure Credits rewarding community-controlled projects without financial speculation',
+          'Universal Access mandate ensuring clean energy, data, and water services as fundamental human rights',
+          'Fossil Fuel Decommissioning Trust funding reparations and ecosystem restoration in affected communities'
+        ]
+      },
+      sv: {
+        title: 'Conduit-protokollet: Ett ramverk för delad infrastruktur',
+        defaultDescription: "Vi utvecklar ett revolutionerande ramverk som transformerar världens fragmenterade infrastruktur till en enhetlig, motståndskraftig global allmänning som tjänar som cirkulationssystem för planetär civilisation—säkerställer att varje gemenskap har tillgång till ren energi, säkra datanätverk och rent vatten samtidigt som ursprungsbefolknings suveränitet respekteras och möjliggör en rättvis övergång till en regenerativ framtid.",
+        defaultFeatures: [
+          'Global infrastrukturråd som sätter interoperabilitetsstandarder med gemenskapsledd styrning och krishantering',
+          'Bioregionala nätmyndigheter som förvaltar lokal infrastruktur med 40% gemenskapsrepresentation och offentliga revisioner',
+          'Öppet nätprotokoll med kvantumresistent design, analoga backup-system och kulturella interoperabilitetsstandarder',
+          'Rättvis övergångstjänstekår som omskolar fossilbränsleworkers med fackliga löner och traumainformerat stöd',
+          'Krisinfrastrukturkommando med 72-timmars akutrespons och gemenskapsöverridningsskydd',
+          'Klimatkritisk accelerator som snabbspårar väsentlig klimatinfrastruktur med ursprungsbefolknings samdesign',
+          'Helig infrastrukturdesign som integrerar gemenskapskonst och berättande i energi- och datasystem',
+          'Regenerativa infrastrukturkrediter som belönar gemenskapskontrollerade projekt utan finansiell spekulation',
+          'Universell tillgångsmandat som säkerställer ren energi, data och vattentjänster som grundläggande mänskliga rättigheter',
+          'Fossilbränsleavvecklingsförtroende som finansierar reparationer och ekosystemåterställning i drabbade gemenskaper'
+        ]
+      }
     }
   };
 
@@ -874,6 +908,8 @@
             <li>
               {#if frameworkName === 'millenniumProtocol'}
                 {index === 0 ? '🏛️' : index === 1 ? '🚀' : index === 2 ? '💰' : index === 3 ? '🧬' : index === 4 ? '🧠' : index === 5 ? '❓' : index === 6 ? '⏳' : index === 7 ? '🗳️' : index === 8 ? '📚' : '🔄'}
+              {:else if frameworkName === 'conduitProtocol'}
+                {index === 0 ? '🏛️' : index === 1 ? '⚡' : index === 2 ? '🔗' : index === 3 ? '👷' : index === 4 ? '🚨' : index === 5 ? '🌡️' : index === 6 ? '🎨' : index === 7 ? '💰' : index === 8 ? '🌍' : '🏭'}
               {:else if frameworkName === 'hearthstoneProtocol'}
                 {index === 0 ? '🏛️' : index === 1 ? '🌍' : index === 2 ? '📊' : index === 3 ? '🌿' : index === 4 ? '🛡️' : index === 5 ? '🏢' : index === 6 ? '💰' : index === 7 ? '⚖️' : index === 8 ? '📜' : '👥'}
               {:else if frameworkName === 'deepTime'}
