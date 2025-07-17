@@ -186,5 +186,15 @@ export const ethicalOSRelationships: GgfRelationship[] = [
     strength: 'Medium',
     frequency: 'Regular',
     sequenceType: 'Parallel'
+  },
+
+  // === COMMONS RELATIONSHIP ===
+  {
+    from: 'framework_indigenous',
+    to: 'framework_hearthstone',
+    type: 'GUIDES',
+    description: 'The Indigenous Framework provides the core principles of Rematriation, Rightful Relationship, and stewardship that are foundational to the Hearthstone Protocol.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
   }
 ];

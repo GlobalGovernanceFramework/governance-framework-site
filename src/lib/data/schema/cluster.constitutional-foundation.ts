@@ -20,7 +20,7 @@ export const constitutionalFoundationEntities: GgfEntity[] = [
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
-    enables: ['framework_meta_gov', 'framework_justice', 'framework_shield', 'mechanism_gcf'],
+    enables: ['framework_meta_gov', 'framework_justice', 'framework_shield', 'mechanism_gcf', 'framework_hearthstone'],
     ui: {
       path: '/frameworks/treaty-for-our-only-home',
       titleKey: 'framework.docs.nav.frameworkTitles.treatyForOurOnlyHome',
@@ -163,5 +163,15 @@ export const constitutionalFoundationRelationships: GgfRelationship[] = [
     strength: 'Strong',
     frequency: 'Regular',
     sequenceType: 'Parallel'
+  },
+  
+  // === COMMONS RELATIONSHIP ===
+  {
+    from: 'framework_treaty',
+    to: 'framework_hearthstone',
+    type: 'ENABLES',
+    description: 'The Treaty provides the constitutional authority and enforcement mechanisms for the Hearthstone Protocol\'s legal tools, like Stewardship Trusts.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
   }
 ];

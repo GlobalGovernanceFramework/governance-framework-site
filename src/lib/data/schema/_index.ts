@@ -21,13 +21,11 @@ import { culturalKnowledgeEntities, culturalKnowledgeRelationships } from './clu
 import { mobilityCommonsEntities, mobilityCommonsRelationships, developmentEntities, developmentRelationships } from './cluster.development';
 import { visionaryMetaEntities, visionaryMetaRelationships } from './cluster.visionary-meta';
 import { dataOSEntities, dataOSRelationships } from './cluster.data-os';
+import { hearthstoneEntities, hearthstoneRelationships } from './cluster.property-stewardship'; // <-- ADDED
 
 // Import types and metadata
 import type { GgfEntity, GgfRelationship, GgfCluster, ValidationResult } from './_types';
 import { tierMetadata, groupMetadata } from './_types';
-
-// === COMPLETE TIER 2+ ENTITIES ===
-// Including ALL frameworks from the backup navigation
 
 const completeApplicationLayerEntities: GgfEntity[] = [
 
@@ -175,7 +173,8 @@ export const allEntities: GgfEntity[] = [
   ...mobilityCommonsEntities,
   ...developmentEntities, 
   ...visionaryMetaEntities,
-  ...completeApplicationLayerEntities
+  ...completeApplicationLayerEntities,
+  ...hearthstoneEntities
 ];
 
 export const allRelationships: GgfRelationship[] = [
@@ -195,7 +194,8 @@ export const allRelationships: GgfRelationship[] = [
   ...mobilityCommonsRelationships,
   ...developmentRelationships,
   ...visionaryMetaRelationships,
-  ...completeApplicationLayerRelationships
+  ...completeApplicationLayerRelationships,
+  ...hearthstoneRelationships
 ];
 
 // === CLUSTER DEFINITIONS ===
@@ -277,6 +277,14 @@ export const clusters: GgfCluster[] = [
   },
 
   // TIER 2: FOUNDATIONAL APPLICATIONS
+  {
+    id: 'property_stewardship_cluster',
+    name: 'Property & Stewardship Transition',
+    description: 'The Hearthstone Protocol: The bridge from extractive ownership to regenerative stewardship.',
+    tier: 2,
+    entities: hearthstoneEntities.map(e => e.id),
+    color: '#059669'
+  },
   {
     id: 'regenerative_enterprise_cluster',
     name: 'Regenerative Enterprise System',

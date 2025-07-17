@@ -471,5 +471,25 @@ export const justiceOSRelationships: GgfRelationship[] = [
     strength: 'Medium',
     frequency: 'Regular',
     sequenceType: 'Parallel'
+  },
+
+  // === RELATIONSHIPS FOR HEARTHSTONE PROTOCOL ===
+  {
+    from: 'framework_justice',
+    to: 'framework_hearthstone',
+    type: 'INTEGRATES_WITH',
+    description: 'The Justice OS, via Truth and Reconciliation Processes, provides the restorative justice mechanisms necessary for the Hearthstone Protocol\'s Rematriation work.',
+    strength: 'Strong',
+    frequency: 'As-Needed',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_shield',
+    to: 'framework_hearthstone',
+    type: 'ENFORCES',
+    description: 'The Shield Protocol, via the Global Enforcement Task Force (GETF), provides the Tier 3 (Hard) enforcement for Rematriation Legal Protocols against non-compliant actors.',
+    strength: 'Strong',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
   }
 ];

@@ -422,6 +422,17 @@ export const humanFlourishingRelationships: GgfRelationship[] = [
     sequenceType: 'Parallel'
   },
 
+  // === CONNECTIONS TO HEARTHSTONE PROTOCOL ===
+  {
+    from: 'framework_education',
+    to: 'framework_hearthstone',
+    type: 'SUPPORTS',
+    description: 'The Educational Systems framework develops and deploys the "Commons Curriculum" and "Stewardship Law" certifications required by the Hearthstone Protocol.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+
   // === CONNECTIONS TO ECOLOGICAL SYSTEMS ===
   {
     from: 'framework_drr',

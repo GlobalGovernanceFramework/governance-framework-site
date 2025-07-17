@@ -419,6 +419,16 @@ export const culturalKnowledgeRelationships: GgfRelationship[] = [
     sequenceType: 'Parallel'
   },
 
+  // === CONNECTIONS TO HEARTHSTONE PROTOCOL ===
+  {
+    from: 'framework_digital_commons',
+    to: 'framework_hearthstone',
+    type: 'INTEGRATES_WITH',
+    description: 'The Digital Commons provides the governance and infrastructure for managing the intangible and intellectual property assets transitioned via the Hearthstone Protocol.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+
   // === CONNECTIONS TO ECONOMIC OS ===
   {
     from: 'institution_cst',

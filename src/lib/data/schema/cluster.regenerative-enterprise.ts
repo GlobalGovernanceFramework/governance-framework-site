@@ -394,5 +394,16 @@ export const regenerativeEnterpriseRelationships: GgfRelationship[] = [
     strength: 'Strong',
     frequency: 'Regular',
     sequenceType: 'Parallel'
+  },
+
+  // === RELATIONSHIP FOR HEARTHSTONE PROTOCOL ===
+  {
+    from: 'framework_regenerative_enterprise',
+    to: 'framework_hearthstone',
+    type: 'COLLABORATES_WITH',
+    description: 'The REF provides the "Corporate Co-op Conversion Process" that allows certified enterprises to voluntarily transition their assets into Stewardship Trusts under the Hearthstone Protocol.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
   }
 ];

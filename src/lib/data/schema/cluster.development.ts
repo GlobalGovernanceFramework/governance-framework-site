@@ -544,6 +544,17 @@ export const developmentRelationships: GgfRelationship[] = [
     sequenceType: 'Parallel'
   },
 
+  // --- Commons Integration ---
+  {
+    from: 'framework_urban_community',
+    to: 'framework_hearthstone',
+    type: 'INTEGRATES_WITH',
+    description: 'The Urban Development framework provides the context and pilots for the "Urban Commons Transition Protocol," while the Hearthstone Protocol provides the legal tools to achieve it.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+
   // --- Economic & Financial Integration ---
   {
     from: 'framework_regenerative_journeys',

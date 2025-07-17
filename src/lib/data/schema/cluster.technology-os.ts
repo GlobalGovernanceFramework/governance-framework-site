@@ -288,6 +288,15 @@ export const technologyOSRelationships: GgfRelationship[] = [
     strength: 'Medium',
     frequency: 'As-Needed',
     sequenceType: 'Parallel'
-  }
+  },
 
+  // === CONNECTION TO HEARTHSTONE PROTOCOL ===
+  {
+    from: 'framework_technology_governance',
+    to: 'framework_hearthstone',
+    type: 'GUIDES',
+    description: 'Technology Governance provides the ethical principles for how intangible digital assets, such as AI models, are managed as part of the commons under the Hearthstone Protocol.',
+    strength: 'Medium',
+    sequenceType: 'Parallel'
+  }
 ];

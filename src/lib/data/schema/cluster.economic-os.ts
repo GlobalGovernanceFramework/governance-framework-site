@@ -478,5 +478,39 @@ export const economicOSRelationships: GgfRelationship[] = [
     strength: 'Medium',
     frequency: 'Regular',
     sequenceType: 'Parallel'
+  },
+
+  // === CONNECTIONS TO HEARTHSTONE PROTOCOL ===
+  {
+    from: 'framework_financial_systems',
+    to: 'framework_hearthstone',
+    type: 'INTEGRATES_WITH',
+    description: 'Provides the mechanisms (e.g., currency exchanges, Tobin Tax) to ensure economic stability during asset transitions and prevent capital flight.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_gaian_trade',
+    to: 'framework_hearthstone',
+    type: 'INTEGRATES_WITH',
+    description: 'Provides the Gaian Trade Council and protocols for establishing Transitional Trade Agreements that incentivize nations to participate in the commons transition.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_work_liberation',
+    to: 'framework_hearthstone',
+    type: 'SUPPORTS',
+    description: 'Provides the framework for organizing roles like "Commons Scribes" to ensure hybrid digital/physical access to the Commons Title Registry.',
+    strength: 'Medium',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_hearthstone',
+    to: 'framework_aubi',
+    type: 'ENABLES',
+    description: 'The stewarded assets and regenerative value captured by the Hearthstone Protocol provide backing for the Hearts and Leaves currencies distributed by the AUBI system.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
   }
 ];

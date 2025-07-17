@@ -616,5 +616,15 @@ export const ecologicalRelationships: GgfRelationship[] = [
     strength: 'Strong',
     frequency: 'Regular',
     sequenceType: 'Parallel'
+  },
+
+  // === CONNECTION TO HEARTHSTONE PROTOCOL ===
+  {
+    from: 'framework_hearthstone',
+    to: 'framework_planetary_health',
+    type: 'ENABLES',
+    description: 'The Hearthstone Protocol provides the legal mechanisms (Stewardship Trusts) to manage entire ecosystems, enabling the large-scale, integrated management required by the Planetary Health framework.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
   }
 ];

@@ -213,5 +213,14 @@ export const governanceOSRelationships: GgfRelationship[] = [
     strength: 'Strong',
     frequency: 'Regular',
     sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_meta_gov',
+    to: 'framework_hearthstone',
+    type: 'INTEGRATES_WITH',
+    description: 'Meta-Governance provides the "Emergency Stewardship Protocol" trigger via its Crisis Command Protocol, allowing Hearthstone to secure endangered commons during crises.',
+    strength: 'Strong',
+    frequency: 'Crisis-Only',
+    sequenceType: 'Conditional'
   }
 ];

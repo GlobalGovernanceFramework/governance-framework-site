@@ -51,5 +51,15 @@ export const dataOSRelationships: GgfRelationship[] = [
     strength: 'Medium',
     frequency: 'Continuous',
     sequenceType: 'Parallel'
+  },
+ 
+  // CONNECTION TO HEARTHSTONE FRAMEWORK
+  {
+    from: 'framework_aurora_accord',
+    to: 'framework_hearthstone',
+    type: 'GUIDES',
+    description: 'The Aurora Accord provides the essential data sovereignty, privacy, and cybersecurity rules for all digital platforms within the Hearthstone Protocol, especially the Commons Title Registry.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
   }
 ];
