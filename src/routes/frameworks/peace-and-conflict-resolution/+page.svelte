@@ -23,22 +23,25 @@
   let operationalOpen = false;
   let implementationOpen = false;
   let deploymentOpen = false;
+  let appendicesOpen = false;
 
   // Framework structure based on the peace framework sections
   $: foundationSections = ['at-a-glance', 'executive-summary-for-the-skeptic', 'preamble', 'framework-overview', 'theoretical-foundation', 'governance-architecture'];
   $: operationalSections = ['prevention-early-warning', 'active-conflict-resolution', 'post-conflict-transformation', 'scale-specific-applications'];
   $: implementationSections = ['ggf-integration', 'technology-tools', 'training-professional-development', 'cultural-adaptation-decolonization'];
   $: deploymentSections = ['implementation-roadmap', 'measurement-evaluation', 'risk-management', 'resources-sustainability'];
+  $: appendixSections = ['appendix-a-case-studies', 'appendix-b-templates', 'appendix-c-cultural-adaptation', 'appendix-d-technical', 'appendix-e-reference'];
   $: conclusionSections = ['conclusion', 'implementation-tools'];
 
   // Computed values - add safety checks
   $: sectionsToShow = (mounted && isPrintMode) ? Object.keys(data?.sections || {}) : [activeSection];
-  $: allCoreSections = [...foundationSections, ...operationalSections, ...implementationSections, ...deploymentSections, ...conclusionSections];
+  $: allCoreSections = [...foundationSections, ...operationalSections, ...implementationSections, ...deploymentSections, ...conclusionSections, ...appendixSections];
   $: isCoreSection = allCoreSections.includes(activeSection);
   $: isFoundationSection = foundationSections.includes(activeSection);
   $: isOperationalSection = operationalSections.includes(activeSection);
   $: isImplementationSection = implementationSections.includes(activeSection);
   $: isDeploymentSection = deploymentSections.includes(activeSection);
+  $: isAppendixSection = appendixSections.includes(activeSection);
   $: isConclusionSection = conclusionSections.includes(activeSection);
   $: isExecutiveSummaryActive = activeSection === 'executive-summary-for-the-skeptic';
 
@@ -47,6 +50,7 @@
     operationalOpen = operationalSections.includes(activeSection);
     implementationOpen = implementationSections.includes(activeSection);
     deploymentOpen = deploymentSections.includes(activeSection);
+    appendicesOpen = appendixSections.includes(activeSection);
   }
 
   onMount(async () => {
@@ -188,6 +192,7 @@
   function toggleOperational() { operationalOpen = !operationalOpen; }
   function toggleImplementation() { implementationOpen = !implementationOpen; }
   function toggleDeployment() { deploymentOpen = !deploymentOpen; }
+  function toggleAppendices() { appendicesOpen = !appendicesOpen; }
 
   // Handle locale changes
   $: if (browser && mounted && $locale) {
@@ -380,6 +385,44 @@
                         {:else if section === 'measurement-evaluation'}📈
                         {:else if section === 'risk-management'}⚠️
                         {:else if section === 'resources-sustainability'}💰
+                        {:else}📋{/if}
+                      </span>
+                      <span class="nav-title">{getShortSectionTitle(section)}</span>
+                    </button>
+                  {/if}
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Appendices Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={appendicesOpen}
+              class:has-active={isAppendixSection}
+              on:click={toggleAppendices}
+            >
+              <span class="accordion-icon">📚</span>
+              <span class="accordion-title">Appendices</span>
+              <span class="section-count">({appendixSections.length})</span>
+              <span class="toggle-arrow" class:rotated={appendicesOpen}>▼</span>
+            </button>
+            {#if appendicesOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each appendixSections as section}
+                  {#if data?.sections?.[section]}
+                    <button 
+                      class="nav-item subsection-item" 
+                      class:active={activeSection === section}
+                      on:click={() => setActiveSection(section)}
+                    >
+                      <span class="nav-icon">
+                        {#if section === 'appendix-a-case-studies'}📖
+                        {:else if section === 'appendix-b-templates'}📝
+                        {:else if section === 'appendix-c-cultural-adaptation'}🌍
+                        {:else if section === 'appendix-d-technical'}⚙️
+                        {:else if section === 'appendix-e-reference'}📚
                         {:else}📋{/if}
                       </span>
                       <span class="nav-title">{getShortSectionTitle(section)}</span>

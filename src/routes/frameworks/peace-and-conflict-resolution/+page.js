@@ -43,6 +43,7 @@ export async function load({ depends, url, params }) {
          cleanPath.includes('resources-sustainability') ||
          cleanPath.includes('conclusion') ||
          cleanPath.includes('implementation-tools') ||
+         cleanPath.includes('appendix') ||
          cleanPath.includes('preamble'))) {
       
       console.log('⚠️  Detected corrupted pathname, correcting to base framework path');
@@ -106,7 +107,14 @@ export async function load({ depends, url, params }) {
     
     // Conclusion and Tools
     'conclusion',
-    'implementation-tools'
+    'implementation-tools',
+    
+    // APPENDICES
+    'appendix-a-case-studies',
+    'appendix-b-templates',
+    'appendix-c-cultural-adaptation',
+    'appendix-d-technical',
+    'appendix-e-reference'
   ];
   
   // Track which sections fell back to English
@@ -195,11 +203,13 @@ export async function load({ depends, url, params }) {
     implementationSections: 4, // ggf-integration through cultural-adaptation (Part III)
     deploymentSections: 4, // implementation-roadmap through resources-sustainability (Part IV)
     conclusionSections: 2, // conclusion, implementation-tools
+    appendixSections: 5, // appendix-a through appendix-e
     
     hasExecutiveSummary: true,
     hasAtAGlance: true,
     hasPreamble: true,
     hasImplementationTools: true,
+    hasAppendices: true,
     
     // Peace-specific metadata
     frameworkVersion: '1.0',
@@ -217,7 +227,8 @@ export async function load({ depends, url, params }) {
       technologyTools: true,
       culturalAdaptation: true,
       riskManagement: true,
-      sustainableResources: true
+      sustainableResources: true,
+      comprehensiveAppendices: true
     },
     
     // Integration points
@@ -248,7 +259,8 @@ export async function load({ depends, url, params }) {
         hasOperational: content['prevention-early-warning'] && content['active-conflict-resolution'] && content['post-conflict-transformation'] && content['scale-specific-applications'],
         hasImplementation: content['ggf-integration'] && content['technology-tools'] && content['training-professional-development'] && content['cultural-adaptation-decolonization'],
         hasDeployment: content['implementation-roadmap'] && content['measurement-evaluation'] && content['risk-management'] && content['resources-sustainability'],
-        hasConclusion: content['conclusion'] && content['implementation-tools']
+        hasConclusion: content['conclusion'] && content['implementation-tools'],
+        hasAppendices: content['appendix-a-case-studies'] && content['appendix-b-templates'] && content['appendix-c-cultural-adaptation'] && content['appendix-d-technical'] && content['appendix-e-reference']
       }
     }
   };

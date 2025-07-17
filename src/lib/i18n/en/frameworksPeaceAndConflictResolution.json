@@ -12,12 +12,13 @@
     "buttonText": "Read At-a-Glance Overview"
   },
   "categories": {
-    "overview": "Framework Overview",
+    "overview": "Overview",
     "foundation": "Part I: Foundations",
     "operational": "Part II: Operational Framework", 
     "implementation": "Part III: Implementation",
     "deployment": "Part IV: Deployment",
-    "resources": "Resources & Tools"
+    "resources": "Resources & Tools",
+    "appendices": "Appendices"
   },
   "sections": {
     "index": "Framework Overview",
@@ -40,7 +41,12 @@
     "risk-management": "14. Risk Management",
     "resources-sustainability": "15. Resources & Sustainability",
     "conclusion": "Conclusion: The Living Peace",
-    "implementation-tools": "Implementation Tools"
+    "implementation-tools": "Implementation Tools",
+    "appendix-a-case-studies": "Case Studies & Examples",
+    "appendix-b-templates": "Documentation Templates", 
+    "appendix-c-cultural-adaptation": "Cultural Adaptation Playbook",
+    "appendix-d-technical": "Technical Specifications",
+    "appendix-e-reference": "Reference Materials"
   },
   "sectionsShort": {
     "index": "Overview",
@@ -63,16 +69,27 @@
     "risk-management": "Risk Management",
     "resources-sustainability": "Resources & Sustainability",
     "conclusion": "Conclusion",
-    "implementation-tools": "Implementation Tools"
+    "implementation-tools": "Implementation Tools",
+    "appendix-a-case-studies": "Case Studies",
+    "appendix-b-templates": "Templates",
+    "appendix-c-cultural-adaptation": "Cultural Adaptation", 
+    "appendix-d-technical": "Technical Specs",
+    "appendix-e-reference": "References"
   },
   "progress": {
     "text": "Section {current} of {total}"
   },
   "navigation": {
-    "previousSection": "Previous Section",
-    "nextSection": "Next Section",
+    "appendicesSection": "Appendices",
+    "caseStudies": "Case Studies & Examples",
+    "templates": "Documentation Templates",
+    "culturalAdaptation": "Cultural Adaptation Playbook", 
+    "technicalSpecs": "Technical Specifications",
+    "references": "Reference Materials",
     "downloadPdf": "Download PDF Version",
-    "continueToFramework": "Continue to Full Framework"
+    "continueToFramework": "Continue to Full Framework",
+    "previousSection": "Previous Section",
+    "nextSection": "Next Section"
   },
   "languageFallback": {
     "title": "Content in your language coming soon",

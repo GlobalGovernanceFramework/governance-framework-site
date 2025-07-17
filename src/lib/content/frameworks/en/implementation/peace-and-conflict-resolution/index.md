@@ -212,6 +212,43 @@ All Peace Framework tools updated with Golden Triangle integration:
 
 Access the complete enhanced toolkit: **[Peace & Conflict Resolution Seed Kit](/frameworks/tools/peace-and-conflict-resolution/seed-kit-en.zip)**
 
+## <a id="appendices"></a>Appendices & Reference Materials
+
+### Comprehensive Documentation Suite
+
+The Peace & Conflict Resolution Framework includes extensive appendices providing detailed implementation guidance, case studies, and reference materials:
+
+#### **[Case Studies and Examples](/frameworks/peace-and-conflict-resolution#appendix-a-case-studies)**
+- **Colombia's Peace Process**: Values-based transformation in post-conflict institutional rebuilding
+- **Rwanda's Reconciliation**: Community-led healing and Truth and Reconciliation integration
+- **South Asian Village Water Dispute**: Tradition vs. fairness mediation using "Samaj" and "Sulh" frameworks
+- **Oceania Indigenous Land Dispute**: FPIC 2.0 protocols and Māori-led ceremonial governance
+- **Urban Digital Privacy Conflict**: Cross-cultural values integration in technology disputes
+
+#### **[Documentation Templates](/frameworks/peace-and-conflict-resolution#appendix-b-templates)**
+- **Mediation Case Study Template**: Standardized intervention documentation for Success Story Repository
+- **Cultural Adaptation Logs**: Framework modification tracking with FPIC 2.0 approval records
+- **Outcome Attribution Analysis**: Mixed-methods impact assessment validated by Office of Algorithmic Accountability
+- **Values Mapping Worksheets**: Community-based diagnostic tools with region-specific frameworks
+
+#### **[Cultural Adaptation Playbook](/frameworks/peace-and-conflict-resolution#appendix-c-cultural-adaptation)**
+- **Guidelines for Cultural Context Adaptation**: Templates, case studies, and FPIC 2.0 protocols
+- **Region-Specific Value Frameworks**: Ubuntu (African inclusion), Sulh (Middle Eastern fairness), Dharma (South Asian duty)
+- **Cultural Appropriation Prevention Protocols**: Sacred practice protection and Indigenous Data Sovereignty compliance
+- **Local Practitioner Partnership Models**: Co-creation approaches with Global South and Indigenous communities
+
+#### **[Technical Specifications](/frameworks/peace-and-conflict-resolution/appendix-d-technical)**
+- **Conflict Typology Matrix**: Intervention strategy mapping (resource, cultural, spiritual conflicts)
+- **Visual Frameworks**: Governance diagrams, resolution flowcharts, ecosystem integration matrices
+- **Blockchain Implementation Specifications**: Secure mediation records and agreement verification protocols
+- **AI Diagnostic Tool Architecture**: Cultural sensitivity algorithms and Office of Algorithmic Accountability compliance
+
+#### **[Reference Materials](/frameworks/peace-and-conflict-resolution/appendix-e-reference)**
+- **Value Phrase Glossary**: Multi-language terminology (Tradition: "Community, unity, Samaj, Kinship")
+- **Practitioner Selection Criteria**: 50% elected, 50% nominated protocols with conflict expertise requirements
+- **Academic Bibliography**: Beck & Cowan (Spiral Dynamics), Fisher & Ury (Principled Negotiation), Levine (Trauma-Informed Practice)
+- **Integration Protocol Specifications**: Golden Triangle coordination procedures and cross-framework alignment standards
+
 ## <a id="getting-started"></a>Getting Started
 
 ### For Different Stakeholder Groups
