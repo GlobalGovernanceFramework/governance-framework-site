@@ -22,7 +22,7 @@ export const dataOSEntities: GgfEntity[] = [
     enables: ['framework_digital_commons'],
     ui: {
       path: '/frameworks/aurora-accord',
-      titleKey: 'framework.docs.nav.frameworkTitles.globalDataGovernanceAndSovereignty',
+      titleKey: 'framework.docs.nav.frameworkTitles.auroraAccord',
       emoji: '🔮',
       slug: 'aurora-accord',
       group: 'globalEconomicSystems'

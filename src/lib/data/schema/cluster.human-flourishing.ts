@@ -88,10 +88,10 @@ export const humanFlourishingEntities: GgfEntity[] = [
     dependencies: ['framework_aurora_accord', 'framework_meta_gov'],
     enables: ['council_gcei', 'protocol_right_to_reality', 'institution_epi_institution', 'tool_epistemic_curriculum'],
     ui: {
-      path: '/frameworks/the-synoptic-protocol',
+      path: '/frameworks/synoptic-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.synopticProtocol',
       emoji: '👁️',
-      slug: 'the-synoptic-protocol',
+      slug: 'synoptic-protocol',
       group: 'humanSocialSystems'
     }
   },

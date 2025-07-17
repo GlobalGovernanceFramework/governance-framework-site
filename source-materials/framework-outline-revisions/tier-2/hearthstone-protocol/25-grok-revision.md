@@ -1,4 +1,4 @@
-# The Commons & Commonwealth Framework: A Property & Stewardship Transition Protocol - v1.5
+# The Hearthstone Protocol: A Framework for Commons & Stewardship - v1.5
 
 **Framework ID:** `framework_property_stewardship`  
 **Tier:** 2  

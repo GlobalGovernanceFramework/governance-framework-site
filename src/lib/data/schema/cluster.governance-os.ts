@@ -23,7 +23,7 @@ export const governanceOSEntities: GgfEntity[] = [
     enables: ['council_mgcc', 'process_crisis_command'],
     ui: {
       path: '/frameworks/meta-governance',
-      titleKey: 'framework.docs.nav.frameworkTitles.integratedMetaGovernance',
+      titleKey: 'framework.docs.nav.frameworkTitles.metaGovernance',
       emoji: '🏛️',
       version: '1.1',
       slug: 'meta-governance'

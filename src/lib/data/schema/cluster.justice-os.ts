@@ -146,10 +146,10 @@ export const justiceOSEntities: GgfEntity[] = [
     dependencies: ['framework_treaty', 'institution_gem'],
     enables: ['council_tsc', 'institution_gcic', 'institution_getf'],
     ui: {
-      path: '/frameworks/the-shield-protocol',
-      titleKey: 'framework.docs.nav.frameworkTitles.transnationalCrimeAndSecurity',
+      path: '/frameworks/shield-protocol',
+      titleKey: 'framework.docs.nav.frameworkTitles.shieldProtocol',
       emoji: '🛡️',
-      slug: 'the-shield-protocol',
+      slug: 'shield-protocol',
       group: 'socialFabricJustice'
     }
   },

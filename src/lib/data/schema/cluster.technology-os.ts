@@ -47,7 +47,7 @@ export const technologyOSEntities: GgfEntity[] = [
     dependencies: ['framework_technology_governance'],
     ui: {
       path: '/frameworks/aethelred-accord',
-      titleKey: 'framework.docs.nav.frameworkTitles.syntheticBiologyAndAdvancedBiotechGovernance',
+      titleKey: 'framework.docs.nav.frameworkTitles.aethelredAccord',
       emoji: '🧬',
       version: '1.0',
       slug: 'aethelred-accord',

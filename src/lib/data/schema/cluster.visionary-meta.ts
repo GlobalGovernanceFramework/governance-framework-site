@@ -66,11 +66,11 @@ export const visionaryMetaEntities: GgfEntity[] = [
       'framework_treaty'
     ],
     ui: {
-      path: '/frameworks/the-millennium-protocol',
-      titleKey: 'framework.docs.nav.frameworkTitles.theMillenniumProtocol', // You would add this key to your i18n files
+      path: '/frameworks/millennium-protocol',
+      titleKey: 'framework.docs.nav.frameworkTitles.millenniumProtocol',
       emoji: '🌌',
       version: '6.0',
-      slug: 'the-millennium-protocol'
+      slug: 'millennium-protocol'
     }
   },
   {
@@ -87,7 +87,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
     dependencies: ['protocol_cross_temporal', 'framework_millennium_protocol', 'institution_dj_tribunal'],
     ui: {
       path: '/frameworks/deep-time-governance',
-      titleKey: 'framework.docs.nav.frameworkTitles.deepTimeGovernance', // You would add this key
+      titleKey: 'framework.docs.nav.frameworkTitles.deepTimeGovernance',
       emoji: '⏳',
       slug: 'deep-time-governance'
     }

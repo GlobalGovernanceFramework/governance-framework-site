@@ -765,6 +765,40 @@
           'Ursprungsbefolknings temporal suveränitetsstadga som erkänner rättigheter till säsongs-, cyklisk och ceremoniell styrning'
         ]
       }
+    },
+    hearthstoneProtocol: {
+      en: {
+        title: 'The Hearthstone Protocol: A Framework for Commons & Stewardship',
+        defaultDescription: "We're developing a revolutionary framework providing the legal, ethical, and practical pathways for a just transition from private, extractive ownership to shared, regenerative stewardship. This framework is the bridge that enables land, capital, and enterprise to be returned to the commons as sacred trusts governed for the well-being of all beings and future generations.",
+        defaultFeatures: [
+          'Stewardship Trusts replacing corporate ownership with regenerative governance and stakeholder councils',
+          'Land Rematriation Initiative returning ecologically significant land to Indigenous stewardship through BAZs',
+          'Commons Title Registry with blockchain-based tracking integrated with the Love Ledger system',
+          'Bio-Cultural Stewardship Trusts for assets where ecology and culture are inseparable',
+          'Sacred Trust Designation Process led by Earth Council for inalienable spiritual and cultural sites',
+          'Corporate Co-op Conversion pathways with incentives for voluntary transition to stewardship models',
+          'Commons Dividend Protocol distributing surplus as Hearts and Leaves through regenerative performance',
+          'International Commons Court providing specialized dispute resolution within Digital Justice Tribunal',
+          'Rematriation Legal Protocol with tiered enforcement from negotiation to trade sanctions',
+          'Youth Stewardship Fellowship empowering next generation with veto power over intergenerational decisions'
+        ]
+      },
+      sv: {
+        title: 'Hearthstone-protokollet: Ett ramverk för allmänning & förvaltning',
+        defaultDescription: "Vi utvecklar ett revolutionerande ramverk som tillhandahåller de juridiska, etiska och praktiska vägarna för en rättvis övergång från privat, utvinningsägarskap till delad, regenerativ förvaltning. Detta ramverk är bryggan som möjliggör att mark, kapital och företag återlämnas till allmänningen som heliga förtroenden styrda för alla varelsers och framtida generationers välbefinnande.",
+        defaultFeatures: [
+          'Förvaltningsförtroenden som ersätter företagsägarskap med regenerativ styrning och intressentråd',
+          'Markåterlämnande-initiativ som återlämnar ekologiskt betydelsefull mark till ursprungsbefolknings förvaltning genom BAZ',
+          'Allmänningstitellregister med blockchain-baserad spårning integrerat med Kärleksregistersystemet',
+          'Bio-kulturella förvaltningsförtroenden för tillgångar där ekologi och kultur är oskiljaktiga',
+          'Helig förtroendedesignation ledd av Jordrådet för oförytterliga andliga och kulturella platser',
+          'Företags-koop konverteringsvägar med incitament för frivillig övergång till förvaltningsmodeller',
+          'Allmänningsdividendprotokoll som distribuerar överskott som Hearts och Leaves genom regenerativ prestanda',
+          'Internationell allmänningsdomstol som tillhandahåller specialiserad tvistlösning inom Digital rättvisedomstol',
+          'Återlämnande juridiskt protokoll med nivåindelad verkställighet från förhandling till handelssanktioner',
+          'Ungdomsförvaltningsstipendium som stärker nästa generation med vetorätt över intergenerationella beslut'
+        ]
+      }
     }
   };
 
@@ -840,6 +874,8 @@
             <li>
               {#if frameworkName === 'millenniumProtocol'}
                 {index === 0 ? '🏛️' : index === 1 ? '🚀' : index === 2 ? '💰' : index === 3 ? '🧬' : index === 4 ? '🧠' : index === 5 ? '❓' : index === 6 ? '⏳' : index === 7 ? '🗳️' : index === 8 ? '📚' : '🔄'}
+              {:else if frameworkName === 'hearthstoneProtocol'}
+                {index === 0 ? '🏛️' : index === 1 ? '🌍' : index === 2 ? '📊' : index === 3 ? '🌿' : index === 4 ? '🛡️' : index === 5 ? '🏢' : index === 6 ? '💰' : index === 7 ? '⚖️' : index === 8 ? '📜' : '👥'}
               {:else if frameworkName === 'deepTime'}
                 {index === 0 ? '🚀' : index === 1 ? '⚡' : index === 2 ? '⚖️' : index === 3 ? '🦋' : index === 4 ? '🔬' : index === 5 ? '🌀' : index === 6 ? '⚖️' : index === 7 ? '📊' : index === 8 ? '🚨' : '🪶'}
               {:else if frameworkName === 'regenerativeJourneys'}

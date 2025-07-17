@@ -25,7 +25,7 @@ export const ecologicalEntities: GgfEntity[] = [
     enables: ['council_phc'],
     ui: {
       path: '/frameworks/planetary-health-governance',
-      titleKey: 'framework.docs.nav.frameworkTitles.planetaryHealth',
+      titleKey: 'framework.docs.nav.frameworkTitles.planetaryHealthGovernance',
       emoji: '💚',
       version: '1.0',
       slug: 'planetary-health-governance',
@@ -213,10 +213,10 @@ export const ecologicalEntities: GgfEntity[] = [
     implementationPriority: 'Medium',
     dependencies: ['framework_eco_intel'],
     ui: {
-      path: '/frameworks/the-phoenix-protocol',
-      titleKey: 'framework.docs.nav.frameworkTitles.wasteAndCircularEconomy',
+      path: '/frameworks/phoenix-protocol',
+      titleKey: 'framework.docs.nav.frameworkTitles.phoenixProtocol',
       emoji: '♻️',
-      slug: 'the-phoenix-protocol',
+      slug: 'phoenix-protocol',
       group: 'ecologicalSystems'
     }
   },

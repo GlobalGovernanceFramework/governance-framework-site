@@ -66,7 +66,7 @@ export const economicOSEntities: GgfEntity[] = [
     enables: ['institution_cwt'],
     ui: {
       path: '/frameworks/work-in-liberation',
-      titleKey: 'framework.docs.nav.frameworkTitles.laborAndEmploymentGovernance',
+      titleKey: 'framework.docs.nav.frameworkTitles.workInLiberation',
       emoji: '👥',
       version: '1.0',
       slug: 'work-in-liberation',

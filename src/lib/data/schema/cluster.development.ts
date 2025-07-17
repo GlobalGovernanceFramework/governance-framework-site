@@ -25,10 +25,10 @@ export const mobilityCommonsEntities: GgfEntity[] = [
     ],
     enables: ['council_gmc'],
     ui: {
-      path: '/frameworks/the-mobility-commons',
-      titleKey: 'framework.docs.nav.frameworkTitles.theMobilityCommons',
+      path: '/frameworks/mobility-commons',
+      titleKey: 'framework.docs.nav.frameworkTitles.mobilityCommons',
       emoji: '🚆',
-      slug: 'the-mobility-commons',
+      slug: 'mobility-commons',
       group: 'planetaryHealthResilience' // Or 'globalEconomicSystems'
     }
   },
