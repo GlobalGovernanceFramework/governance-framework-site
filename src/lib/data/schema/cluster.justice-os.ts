@@ -90,7 +90,7 @@ export const justiceOSEntities: GgfEntity[] = [
     shortName: 'Justice Systems',
     description: 'Comprehensive framework for equitable global justice systems',
     tier: 1,
-    status: 'Review',
+    status: 'Ready',
     primaryDomain: 'Justice',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
@@ -100,6 +100,7 @@ export const justiceOSEntities: GgfEntity[] = [
       path: '/frameworks/justice-systems',
       titleKey: 'framework.docs.nav.frameworkTitles.justiceSystems',
       emoji: '⚖️',
+      version: '1.0',
       slug: 'justice-systems',
       group: 'socialFabricJustice'
     }

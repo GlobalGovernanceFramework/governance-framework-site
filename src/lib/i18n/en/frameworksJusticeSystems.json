@@ -1,45 +1,49 @@
 {
   "meta": {
-    "title": "Justice Systems Implementation Framework - Global Governance Framework",
-    "description": "A comprehensive framework for transforming global justice systems through restorative justice, indigenous legal traditions, and innovative technologies"
+    "title": "Justice Systems Implementation Framework - Global Justice Transformation",
+    "description": "A comprehensive framework for implementing equitable, transparent, and resilient global justice systems aligned with the Moral Operating System"
+  },
+  "loading": {
+    "text": "Loading justice systems content..."
   },
   "guideCard": {
     "title": "New to the Justice Systems Framework?",
-    "description": "Start with one of our simplified guides that explain the core concepts for different audiences.",
-    "buttonText": "Choose a Guide"
+    "description": "Start with our executive summary designed for skeptics—addressing practical concerns about transforming global justice systems while maintaining stability and fairness.",
+    "buttonText": "Read Executive Summary for Skeptics"
   },
   "categories": {
     "overview": "Overview",
     "foundation": "Foundation",
-    "implementation": "Implementation",
-    "operations": "Operations & Monitoring",
+    "framework": "Core Framework",
     "resources": "Resources"
   },
   "sections": {
-    "index": "Overview",
-    "justice-framework-lite-guide": "Technical Guide",
-    "youth-justice-guide": "Youth Justice Guide",
+    "index": "Framework Overview",
+    "at-a-glance": "At-a-Glance",
+    "executive-summary-for-the-skeptic": "Executive Summary for the Skeptic",
     "introduction": "Introduction",
     "governance-structure": "Governance Structure",
     "legal-framework": "Legal Framework",
+    "institutional-relationships": "Institutional Relationships",
     "implementation-mechanisms": "Implementation Mechanisms",
     "digital-justice-innovation": "Digital Justice & Innovation",
-    "monitoring-accountability": "Monitoring & Accountability",
+    "monitoring-accountability": "Monitoring and Accountability",
     "stakeholder-engagement": "Stakeholder Engagement",
-    "challenges-mitigation": "Challenges & Mitigation",
-    "timeline-milestones": "Timeline & Milestones",
+    "challenges-mitigation": "Challenges and Mitigation",
+    "timeline-milestones": "Timeline and Milestones",
     "conclusion": "Conclusion",
     "appendices": "Appendices"
   },
   "sectionsShort": {
     "index": "Overview",
-    "justice-framework-lite-guide": "Technical Guide",
-    "youth-justice-guide": "Youth Guide",
+    "at-a-glance": "At-a-Glance",
+    "executive-summary-for-the-skeptic": "Executive Summary",
     "introduction": "Introduction",
     "governance-structure": "Governance",
-    "legal-framework": "Legal",
+    "legal-framework": "Legal Framework",
+    "institutional-relationships": "Integration",
     "implementation-mechanisms": "Implementation",
-    "digital-justice-innovation": "Digital Justice",
+    "digital-justice-innovation": "Digital Innovation",
     "monitoring-accountability": "Monitoring",
     "stakeholder-engagement": "Stakeholders",
     "challenges-mitigation": "Challenges",
@@ -47,26 +51,12 @@
     "conclusion": "Conclusion",
     "appendices": "Appendices"
   },
-  "overview": {
-    "title": "Justice Systems Implementation Framework",
-    "subtitle": "Overview",
-    "paragraph1": "The Justice Systems Implementation Framework is a comprehensive, adaptable blueprint for transforming global justice systems. It integrates restorative justice, indigenous legal traditions, and innovative technologies to create sustainable, equitable, and resilient justice systems.",
-    "paragraph2": "This framework reimagines global justice systems as transparent, inclusive, and effective, with goals to increase public trust by 25%, achieve 80% fair access to justice, and resolve 70% of cases without escalation to higher courts by 2035."
+  "navigation": {
+    "previousSection": "Previous Section",
+    "nextSection": "Next Section",
+    "downloadPdf": "Download PDF Version",
+    "continueToFramework": "Continue to Full Framework"
   },
-  "guides": [
-    {
-      "id": "justice-framework-lite-guide",
-      "title": "Technical Guide",
-      "description": "Detailed guide for policy implementers, government officials, and organizations",
-      "icon": "⚖️"
-    },
-    {
-      "id": "youth-justice-guide",
-      "title": "Youth Justice Guide",
-      "description": "Visual, accessible guide for youth groups, schools, and diverse communities",
-      "icon": "🧑‍⚖️"
-    }
-  ],
   "progress": {
     "text": "Section {current} of {total}"
   },
@@ -74,17 +64,79 @@
     "title": "Content in your language coming soon",
     "description": "This section is currently displayed in English until translation is complete."
   },
-  "navigation": {
-    "downloadPdf": "Download PDF Version",
-    "continueToFramework": "Continue to Full Framework",
-    "previousSection": "Previous Section",
-    "nextSection": "Next Section"
-  },
   "errors": {
     "sectionNotFound": "Section \"{section}\" not found",
     "contentInDevelopment": "This content is still being developed."
   },
-  "loading": {
-    "text": "Loading justice systems content..."
+  "accessibility": {
+    "skipToContent": "Skip to main content",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "toggleSection": "Toggle section {section}",
+    "sectionProgress": "You are viewing section {current} of {total}",
+    "languageSelector": "Select language",
+    "printVersion": "Print-friendly version"
+  },
+  "quickActions": {
+    "downloadFramework": "Download Complete Framework",
+    "printFriendly": "Print-Friendly View",
+    "shareSection": "Share This Section",
+    "bookmark": "Bookmark This Page"
+  },
+  "features": {
+    "mosIntegration": "MOS Rights Integration",
+    "indigenousRights": "Indigenous Sovereignty",
+    "digitalJustice": "Digital Innovation",
+    "globalGovernance": "Global Coordination",
+    "restorativeJustice": "Restorative Approach",
+    "climateJustice": "Climate & Ecological Justice"
+  },
+  "stakeholderPathways": {
+    "policymakers": "For Policymakers",
+    "indigenous": "For Indigenous Communities",
+    "legal": "For Legal Practitioners",
+    "civil": "For Civil Society",
+    "technology": "For Tech Sector"
+  },
+  "implementation": {
+    "phase1": "Foundation Phase",
+    "phase2": "Regional Piloting",
+    "phase3": "Evaluation & Tribunals",
+    "phase4": "Global Scaling",
+    "phase5": "Continuous Improvement",
+    "timeline": "12-18 months",
+    "prerequisites": "Prerequisites met",
+    "inProgress": "In progress",
+    "completed": "Completed"
+  },
+  "metrics": {
+    "trustIncrease": "Trust increase target",
+    "fairAccess": "Fair access perception",
+    "communityMediation": "Community mediation rate",
+    "globalCoverage": "Global jurisdiction coverage",
+    "digitalAccess": "Digital platform access"
+  },
+  "tribunals": {
+    "climate": "Climate & Ecological Justice Tribunal",
+    "digital": "Digital Rights Tribunal",
+    "indigenous": "Indigenous Sovereignty Tribunals",
+    "economic": "Economic Justice Chambers",
+    "human": "Human Rights Tribunals"
+  },
+  "frameworks": {
+    "treaty": "Treaty for Our Only Home",
+    "mos": "Moral Operating System",
+    "indigenous": "Indigenous Governance Framework",
+    "aubi": "AUBI Framework",
+    "peace": "Peace & Conflict Resolution",
+    "shield": "Shield Protocol",
+    "aurora": "Aurora Accord"
+  },
+  "tools": {
+    "assessmentTool": "Justice Assessment Tool",
+    "implementationKit": "Implementation Toolkit",
+    "stakeholderGuide": "Stakeholder Engagement Guide",
+    "digitalPlatform": "Digital Justice Platform",
+    "monitoringDashboard": "Rights Monitoring Dashboard"
   }
 }

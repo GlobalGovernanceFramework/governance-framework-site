@@ -1,45 +1,49 @@
 {
   "meta": {
-    "title": "Implementeringsramverk för Rättssystem - Global Governance Framework",
-    "description": "Ett omfattande ramverk för att omvandla globala rättssystem genom restaurativ rättvisa, ursprungsfolks rättstraditioner och innovativa teknologier"
+    "title": "Rättssystemsimplementeringsramverk - Global rättviseförändring",
+    "description": "Ett omfattande ramverk för att implementera rättvisa, transparenta och motståndskraftiga globala rättssystem i linje med det moraliska operativsystemet"
+  },
+  "loading": {
+    "text": "Laddar rättssystemsinnehåll..."
   },
   "guideCard": {
-    "title": "Ny till Rättssystemsramverket?",
-    "description": "Börja med en av våra förenklade guider som förklarar kärnkoncepten för olika målgrupper.",
-    "buttonText": "Välj en guide"
+    "title": "Ny till rättssystemsramverket?",
+    "description": "Börja med vår sammanfattning utformad för skeptiker—som tar upp praktiska farhågor om att förändra globala rättssystem samtidigt som stabilitet och rättvisa bibehålls.",
+    "buttonText": "Läs sammanfattning för skeptiker"
   },
   "categories": {
     "overview": "Översikt",
     "foundation": "Grund",
-    "implementation": "Implementering",
-    "operations": "Drift & övervakning",
+    "framework": "Kärnramverk",
     "resources": "Resurser"
   },
   "sections": {
-    "index": "Översikt",
-    "justice-framework-lite-guide": "Teknisk guide",
-    "youth-justice-guide": "Ungdomsrättvisa guide",
+    "index": "Ramverksöversikt",
+    "at-a-glance": "Snabböversikt",
+    "executive-summary-for-the-skeptic": "Sammanfattning för skeptiker",
     "introduction": "Introduktion",
     "governance-structure": "Styrningsstruktur",
     "legal-framework": "Rättsligt ramverk",
+    "institutional-relationships": "Institutionella relationer",
     "implementation-mechanisms": "Implementeringsmekanismer",
     "digital-justice-innovation": "Digital rättvisa & innovation",
-    "monitoring-accountability": "Övervakning & ansvarsskyldighet",
+    "monitoring-accountability": "Övervakning och ansvarsskyldighet",
     "stakeholder-engagement": "Intressentengagemang",
-    "challenges-mitigation": "Utmaningar & riskreducering",
-    "timeline-milestones": "Tidslinje & milstolpar",
+    "challenges-mitigation": "Utmaningar och lindring",
+    "timeline-milestones": "Tidslinje och milstolpar",
     "conclusion": "Slutsats",
     "appendices": "Bilagor"
   },
   "sectionsShort": {
     "index": "Översikt",
-    "justice-framework-lite-guide": "Teknisk guide",
-    "youth-justice-guide": "Ungdomsguide",
+    "at-a-glance": "Snabböversikt",
+    "executive-summary-for-the-skeptic": "Sammanfattning",
     "introduction": "Introduktion",
     "governance-structure": "Styrning",
-    "legal-framework": "Rättsligt",
+    "legal-framework": "Rättsramverk",
+    "institutional-relationships": "Integration",
     "implementation-mechanisms": "Implementering",
-    "digital-justice-innovation": "Digital rättvisa",
+    "digital-justice-innovation": "Digital innovation",
     "monitoring-accountability": "Övervakning",
     "stakeholder-engagement": "Intressenter",
     "challenges-mitigation": "Utmaningar",
@@ -47,44 +51,92 @@
     "conclusion": "Slutsats",
     "appendices": "Bilagor"
   },
-  "overview": {
-    "title": "Implementeringsramverk för Rättssystem",
-    "subtitle": "Översikt",
-    "paragraph1": "Implementeringsramverket för Rättssystem är en omfattande, anpassningsbar plan för att omvandla globala rättssystem. Det integrerar restaurativ rättvisa, ursprungsfolks rättstraditioner, och innovativa teknologier för att skapa hållbara, rättvisa och motståndskraftiga rättssystem.",
-    "paragraph2": "Detta ramverk omdefinerar globala rättssystem som transparenta, inkluderande och effektiva, med mål att öka förtroendet för rättssystemen med 25%, uppnå 80% rättvis tillgång till rättvisa, och lösa 70% av fallen utan upptrappning till högre domstolar till 2035."
+  "navigation": {
+    "previousSection": "Föregående avsnitt",
+    "nextSection": "Nästa avsnitt",
+    "downloadPdf": "Ladda ner PDF-version",
+    "continueToFramework": "Fortsätt till fullständigt ramverk"
   },
-  "guides": [
-    {
-      "id": "justice-framework-lite-guide",
-      "title": "Teknisk guide",
-      "description": "Detaljerad guide för policyimplementerare, regeringstjänstemän och organisationer",
-      "icon": "⚖️"
-    },
-    {
-      "id": "youth-justice-guide",
-      "title": "Ungdomsrättvisa guide",
-      "description": "Visuell, tillgänglig guide för ungdomsgrupper, skolor och olika samhällen",
-      "icon": "🧑‍⚖️"
-    }
-  ],
   "progress": {
     "text": "Avsnitt {current} av {total}"
   },
   "languageFallback": {
-    "title": "Innehåll på svenska kommer snart",
-    "description": "Detta avsnitt visas för närvarande på engelska tills den svenska översättningen är klar."
-  },
-  "navigation": {
-    "downloadPdf": "Ladda ner PDF-version",
-    "continueToFramework": "Fortsätt till fullständigt ramverk",
-    "previousSection": "Föregående avsnitt",
-    "nextSection": "Nästa avsnitt"
+    "title": "Innehåll på ditt språk kommer snart",
+    "description": "Detta avsnitt visas för närvarande på engelska tills översättningen är klar."
   },
   "errors": {
     "sectionNotFound": "Avsnitt \"{section}\" hittades inte",
     "contentInDevelopment": "Detta innehåll utvecklas fortfarande."
   },
-  "loading": {
-    "text": "Laddar rättssystemsinnehåll..."
+  "accessibility": {
+    "skipToContent": "Hoppa till huvudinnehåll",
+    "openMenu": "Öppna navigeringsmeny",
+    "closeMenu": "Stäng navigeringsmeny",
+    "toggleSection": "Växla avsnitt {section}",
+    "sectionProgress": "Du tittar på avsnitt {current} av {total}",
+    "languageSelector": "Välj språk",
+    "printVersion": "Utskriftsvänlig version"
+  },
+  "quickActions": {
+    "downloadFramework": "Ladda ner komplett ramverk",
+    "printFriendly": "Utskriftsvänlig vy",
+    "shareSection": "Dela detta avsnitt",
+    "bookmark": "Bokmärk denna sida"
+  },
+  "features": {
+    "mosIntegration": "MOS-rättighetsintegration",
+    "indigenousRights": "Ursprungsfolkens suveränitet",
+    "digitalJustice": "Digital innovation",
+    "globalGovernance": "Global koordination",
+    "restorativeJustice": "Återställande approach",
+    "climateJustice": "Klimat- & ekologisk rättvisa"
+  },
+  "stakeholderPathways": {
+    "policymakers": "För beslutsfattare",
+    "indigenous": "För ursprungssamhällen",
+    "legal": "För juridiska praktiker",
+    "civil": "För civilsamhället",
+    "technology": "För tekniksektorn"
+  },
+  "implementation": {
+    "phase1": "Grundfas",
+    "phase2": "Regional pilotverksamhet",
+    "phase3": "Utvärdering & tribunaler",
+    "phase4": "Global uppskalning",
+    "phase5": "Kontinuerlig förbättring",
+    "timeline": "12-18 månader",
+    "prerequisites": "Förutsättningar uppfyllda",
+    "inProgress": "Pågående",
+    "completed": "Slutförd"
+  },
+  "metrics": {
+    "trustIncrease": "Förtroendehöjningsmål",
+    "fairAccess": "Rättvis tillgångsuppfattning",
+    "communityMediation": "Samhällsmediationsgrad",
+    "globalCoverage": "Global jurisdiktionstäckning",
+    "digitalAccess": "Digital plattformstillgång"
+  },
+  "tribunals": {
+    "climate": "Klimat- & ekologisk rättvisedomstol",
+    "digital": "Digital rättighetsdomstol",
+    "indigenous": "Ursprungsfolkens suveränitetsdomstolar",
+    "economic": "Ekonomisk rättviseenhet",
+    "human": "Mänskliga rättighetsdomstolar"
+  },
+  "frameworks": {
+    "treaty": "Fördraget för vårt enda hem",
+    "mos": "Moraliska operativsystemet",
+    "indigenous": "Ursprungsfolkens styrningsramverk",
+    "aubi": "AUBI-ramverket",
+    "peace": "Fred & konfliktlösning",
+    "shield": "Sköldprotokollet",
+    "aurora": "Aurora-avtalet"
+  },
+  "tools": {
+    "assessmentTool": "Rättvisebedomningsverktyg",
+    "implementationKit": "Implementeringsverktygslåda",
+    "stakeholderGuide": "Intressentengagemangsguide",
+    "digitalPlatform": "Digital rättviseplatform",
+    "monitoringDashboard": "Rättighetsövervakningspanel"
   }
 }
