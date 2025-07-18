@@ -56,6 +56,10 @@
       "title": "Ramverk för det moraliska operativsystemet", 
       "description": "Etisk källkod för planetär styrning som ger den moraliska grunden för alla ramverk, inklusive det dynamiska rättighetsspektrumet, förmyndarskapsprotokoll och verktyg för att erkänna rättigheter för människor, djur, ekosystem, AI och framtida varelser."
     },
+    "justiceSystems": {
+      "title": "Rättssystemsimplementeringsramverk",
+      "description": "Ett omfattande ramverk för att implementera rättvisa, transparenta och motståndskraftiga globala rättssystem. Inkluderar specialiserade domstolar, MOS-rättighetsupprätthållande, ursprungsfolkens suveränitetsprotokoller och digital rättviseinnnovation."
+    },
     "digital": {
       "title": "Digital Commons",
       "description": "Ett omfattande tillvägagångssätt för att hantera digitala resurser—data, mjukvara, kunskap och infrastruktur—som delade globala allmänningar, vilket säkerställer rättvist tillträde, etisk användning och deltagande styrning."

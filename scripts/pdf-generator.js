@@ -145,8 +145,8 @@ const tools = [
       sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
     },
     pageFooter: {
-      en: 'Regenerative Enterprise Framework - Page ',
-      sv: 'Ramverk för regenerativa företag - Sida '
+      en: 'Regenerative Enterprise Framework',
+      sv: 'Ramverk för regenerativa företag'
     },
     sections: [
       'foreword',
@@ -227,8 +227,8 @@ const tools = [
       sv: path.join(__dirname, '..', 'static', 'assets', 'pdf')
     },
     pageFooter: {
-      en: 'Institutional Regeneration - Seed Track (MVP) - Page ',
-      sv: 'Institutionell förnyelse - Fröspåret (MVP) - Sida '
+      en: 'Institutional Regeneration - Seed Track (MVP)',
+      sv: 'Institutionell förnyelse - Fröspåret (MVP)'
     },
     sections: [
      'introduction',
@@ -257,8 +257,8 @@ const tools = [
       sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
     },
     pageFooter: {
-      en: 'Education Framework - Page ',
-      sv: 'Utbildningsramverk - Sida '
+      en: 'Education Framework',
+      sv: 'Utbildningsramverk'
     },
     // Special config for full framework
     sections: [
@@ -1062,8 +1062,8 @@ const tools = [
       sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
     },
     pageFooter: {
-      en: 'Climate & Energy Governance Framework - Page ',
-      sv: 'Ramverk för klimat- och energistyrning - Sida '
+      en: 'Climate & Energy Governance Framework',
+      sv: 'Ramverk för klimat- och energistyrning'
     },
     // Special config for full framework
     sections: [
@@ -1182,8 +1182,8 @@ const tools = [
       sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
     },
     pageFooter: {
-      en: 'Peace & Conflict Resolution Framework - Page ',
-      sv: 'Ramverk för fred & konfliktlösning - Sida '
+      en: 'Peace & Conflict Resolution Framework',
+      sv: 'Ramverk för fred & konfliktlösning'
     },
     // Special config for full framework
     sections: [
@@ -1224,8 +1224,8 @@ const tools = [
       sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
     },
     pageFooter: {
-      en: 'Rights of Beings Standard - Page ',
-      sv: 'Rättigheter för Varelser Standard - Sida '
+      en: 'Rights of Beings Standard',
+      sv: 'Rättigheter för Varelser Standard'
     },
     // Full framework combined sections in proper order
     sections: [
@@ -3287,6 +3287,79 @@ const tools = [
   },
   // Justice Framework
   {
+    name: 'at-a-glance',
+    category: 'justice-systems',
+    fileNames: {
+      en: 'justice-at-a-glance',
+      sv: 'justice-at-a-glance'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'justice-systems'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'justice-systems')
+    },
+    pageFooter: {
+      en: 'Justice Systems Framework At A Glance - Page ',
+      sv: 'Överblick över rättssystemsramverk - Sida '
+    }
+  },
+  {
+    name: 'executive-summary-for-the-skeptic',
+    category: 'justice-systems',
+    fileNames: {
+      en: 'justice-systems-framework-executive-summary-en',
+      sv: 'justice-systems-framework-executive-summary-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'justice-systems'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'justice-systems')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'assets', 'pdf'),
+      sv: path.join(__dirname, '..', 'static', 'assets', 'pdf')
+    },
+    pageFooter: {
+      en: 'Justice Systems Framework Executive Summary for the Skeptic - Page ',
+      sv: 'Rättssystemsramverk - Sammanfattning för skeptiker - Sida '
+    }
+  },
+  // Full framework
+  {
+    name: 'justice-systems-framework',
+    category: 'justice-systems',
+    fileNames: {
+      en: 'Justice-Systems-Framework',
+      sv: 'Justice-Systems-Framework'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'justice-systems'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'justice-systems')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Justice Systems Framework',
+      sv: 'Rättsystemsramverk'
+    },
+    sections: [
+      'index',
+      'introduction',
+      'governance-structure',
+      'legal-framework',
+      'institutional-relationships',
+      'implementation-mechanisms',
+      'digital-justice-innovation',
+      'monitoring-accountability',
+      'stakeholder-engagement',
+      'challenges-mitigation',
+      'timeline-milestones',
+      'conclusion',
+      'appendices'
+    ]
+  },
+
+/*  {
     name: 'justice-framework-lite-guide',
     category: 'justice-systems',
     fileNames: {
@@ -3497,7 +3570,7 @@ const tools = [
       en: 'Cost-Benefit Analysis Model - Page ',
       sv: 'Modell för kostnads-nyttoanalys - Sida '
     }
-  },
+  },*/
 
   // Simulation Tools
   {
@@ -3946,8 +4019,8 @@ const tools = [
       sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
     },
     pageFooter: {
-      en: 'Religious & Spiritual Dialogue Framework - Page ',
-      sv: 'Religiös & Spirituell Dialog Ramverk - Sida '
+      en: 'Religious & Spiritual Dialogue Framework',
+      sv: 'Religiös & Spirituell Dialog Ramverk'
     },
     // Special config for full framework
     sections: [
@@ -4184,8 +4257,8 @@ const tools = [
       sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
     },
     pageFooter: {
-      en: 'Financial Systems Framework - Page ',
-      sv: 'Finansiella Systems Ramverk - Sida '
+      en: 'Financial Systems Framework',
+      sv: 'Finansiella Systems Ramverk'
     },
     // Special config for full framework
     sections: [
@@ -4367,8 +4440,8 @@ const tools = [
       sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
     },
     pageFooter: {
-      en: 'Environmental Stewardship Framework for Multi-Level Governance - Page ',
-      sv: 'Miljöförvaltningsramverk för Flernivåstyrning - Sida '
+      en: 'Environmental Stewardship Framework for Multi-Level Governance',
+      sv: 'Miljöförvaltningsramverk för Flernivåstyrning'
     },
     // Special config for full framework
     sections: [
@@ -4978,8 +5051,8 @@ const tools = [
       sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
     },
     pageFooter: {
-      en: 'Global Governance Biodiversity Implementation Framework - Page ',
-      sv: 'Global Styrning Biodiversitet Implementering Ramverk - Sida '
+      en: 'Global Governance Biodiversity Implementation Framework',
+      sv: 'Global Styrning Biodiversitet Implementering Ramverk'
     },
     // Special config for full framework
     sections: [
@@ -5045,8 +5118,8 @@ const tools = [
       sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
     },
     pageFooter: {
-      en: 'Planetary Health Governance Framework - Page ',
-      sv: 'Planetariskt hälsostyrningsramverk - Sida '
+      en: 'Planetary Health Governance Framework',
+      sv: 'Planetariskt hälsostyrningsramverk'
     },
     // Special config for full framework
     sections: [
@@ -5097,8 +5170,8 @@ const tools = [
       sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
     },
     pageFooter: {
-      en: 'Global Health & Pandemic Security Framework - Page ',
-      sv: 'Globalt ramverk för hälsa och pandemisäkerhet - Sida '
+      en: 'Global Health & Pandemic Security Framework',
+      sv: 'Globalt ramverk för hälsa och pandemisäkerhet'
     },
     // Special config for full framework
     sections: [
@@ -5552,8 +5625,8 @@ const tools = [
       sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
     },
     pageFooter: {
-      en: 'Consciousness & Inner Development Implementation Framework - Page ',
-      sv: 'Medvetande och inre utveckling implementeringsramverk - Sida '
+      en: 'Consciousness & Inner Development Implementation Framework',
+      sv: 'Medvetande och inre utveckling implementeringsramverk'
     },
     // Special config for full framework
     sections: [
@@ -5920,8 +5993,8 @@ const tools = [
       sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
     },
     pageFooter: {
-      en: 'Aging Population Support Framework - Page ',
-      sv: 'Åldrande befolkningsstödsramverk - Sida '
+      en: 'Aging Population Support Framework',
+      sv: 'Åldrande befolkningsstödsramverk'
     },
     // Special config for full framework
     sections: [
@@ -6377,8 +6450,8 @@ const tools = [
       sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
     },
     pageFooter: {
-      en: 'Animal Welfare Framework - Page ',
-      sv: 'Djurskyddsramverk - Sida '
+      en: 'Animal Welfare Framework',
+      sv: 'Djurskyddsramverk'
     },
     // Special config for full framework
     sections: [
@@ -6775,8 +6848,8 @@ const tools = [
       sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
     },
     pageFooter: {
-      en: 'Water & Sanitation Framework - Page ',
-      sv: 'Vatten och sanitetsramverk - Sida '
+      en: 'Water & Sanitation Framework',
+      sv: 'Vatten och sanitetsramverk'
     },
     // Special config for full framework
     sections: [
@@ -7103,8 +7176,8 @@ const tools = [
       sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
     },
     pageFooter: {
-      en: 'Indigenous & Traditional Knowledge Framework - Page ',
-      sv: 'Ramverk för ursprungsfolk och traditionell kunskap - Sida '
+      en: 'Indigenous & Traditional Knowledge Framework',
+      sv: 'Ramverk för ursprungsfolk och traditionell kunskap'
     },
     // Special config for full framework
     sections: [
@@ -7527,8 +7600,8 @@ const tools = [
       sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
     },
     pageFooter: {
-      en: 'Mental Health Framework - Page ',
-      sv: 'Psykisk hälsoramverk - Sida '
+      en: 'Mental Health Framework',
+      sv: 'Psykisk hälsoramverk'
     },
     // Special config for full framework
     sections: [
@@ -7620,8 +7693,8 @@ const tools = [
       sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
     },
     pageFooter: {
-      en: 'Treaty for Our Only Home - Global Institutional Reform Framework - Page ',
-      sv: 'Fördraget för vårt enda hem - Globalt institutionellt reform-ramverk Sida '
+      en: 'Treaty for Our Only Home - Global Institutional Reform Framework',
+      sv: 'Fördraget för vårt enda hem - Globalt institutionellt reform-ramverk'
     },
     // Special config for full framework
     sections: [
@@ -7944,8 +8017,8 @@ const tools = [
       sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
     },
     pageFooter: {
-      en: 'Integrated Meta Governance Framework - Page ',
-      sv: 'Integrerat metastyrningsramverk - Sida '
+      en: 'Integrated Meta Governance Framework',
+      sv: 'Integrerat metastyrningsramverk'
     },
     sections: [
       'introduction',
@@ -8025,8 +8098,8 @@ const tools = [
       sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
     },
     pageFooter: {
-      en: 'Aethelred Accord - Page ',
-      sv: 'Aethelred-avtalet - Sida '
+      en: 'Aethelred Accord',
+      sv: 'Aethelred-avtalet'
     },
     sections: [
       'index',
@@ -8109,8 +8182,8 @@ const tools = [
       sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
     },
     pageFooter: {
-      en: 'Gaian Trade Framework - Page ',
-      sv: 'Gaianska handelsramverket - Sida '
+      en: 'Gaian Trade Framework',
+      sv: 'Gaianska handelsramverket'
     },
     sections: [
     'index',
@@ -8190,8 +8263,8 @@ const tools = [
       sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
     },
     pageFooter: {
-      en: 'Work in Liberation Framework - Page ',
-      sv: 'Ramverket för frigjort arbete - Sida '
+      en: 'Work in Liberation Framework',
+      sv: 'Ramverket för frigjort arbete'
     },
     sections: [
     'index',
@@ -8290,8 +8363,8 @@ const tools = [
       sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
     },
     pageFooter: {
-      en: 'Moral Operating System Framework- Page ',
-      sv: 'Moraliskt Operativsystem, ramverk - Sida '
+      en: 'Moral Operating System Framework',
+      sv: 'Moraliskt Operativsystem, ramverk'
     },
     sections: [
      'index',

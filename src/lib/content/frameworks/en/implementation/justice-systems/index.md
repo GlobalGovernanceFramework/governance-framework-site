@@ -166,8 +166,8 @@ This version introduces comprehensive integration with the broader Global Govern
 To support global adoption, a comprehensive implementation toolkit is in development. The following resources are planned as the framework matures, with community collaboration welcome in their creation.
 
 ### **Available Now**
-- **[Justice Systems Framework At-a-Glance](/frameworks/tools/justice/justice-at-a-glance-en.pdf)**: Quick overview for busy stakeholders
-- **[Executive Summary for the Skeptic](/frameworks/tools/justice/executive-summary-skeptic-en.pdf)**: Addressing common concerns and objections
+- **[Justice Systems Framework At-a-Glance](/frameworks/tools/justice-systems/en/justice-at-a-glance.pdf)**: Quick overview for busy stakeholders
+- **[Executive Summary for the Skeptic](/assets/pdf/justice-systems-framework-executive-summary-en.pdf)**: Addressing common concerns and objections
 
 ### **Core Implementation Package [Status: In Development]**
 - **Justice Systems v1.0 Implementation Kit**: Complete package for launching comprehensive pilot projects
