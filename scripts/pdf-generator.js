@@ -49,6 +49,8 @@ Available categories:
 - aethelred-accord
 - gaian-trade
 - work-in-liberation
+- regenerative-resources
+- great-transition
 
 Example: node tools-pdf-generator.js economic
   `);
@@ -88,6 +90,8 @@ const outputDirs = {
   'animal-welfare-governance': path.join(__dirname, '..', 'static', 'frameworks','tools', 'animal-welfare-governance'),
   'gaian-trade': path.join(__dirname, '..', 'static', 'frameworks','tools', 'gaian-trade'),
   'work-in-liberation': path.join(__dirname, '..', 'static', 'frameworks','tools', 'work-in-liberation'),
+  'regenerative-resources': path.join(__dirname, '..', 'static', 'frameworks','tools', 'regenerative-resources'),
+  'great-transition': path.join(__dirname, '..', 'static', 'frameworks','tools', 'great-transition'),
   'water-and-sanitation-governance': path.join(__dirname, '..', 'static', 'frameworks','tools', 'water-and-sanitation-governance'),
   'indigenous-governance-and-traditional-knowledge': path.join(__dirname, '..', 'static', 'frameworks','tools', 'indigenous-governance-and-traditional-knowledge'),
   'treaty-for-our-only-home': path.join(__dirname, '..', 'static', 'frameworks','tools', 'treaty-for-our-only-home'),
@@ -105,6 +109,74 @@ if (targetCategory && !Object.keys(outputDirs).includes(targetCategory)) {
 
 // Define tools to process
 const tools = [
+
+  // Great Transition
+  // Full guide
+  {
+    name: 'great-transition-guide',
+    category: 'great-transition',
+    fileNames: {
+      en: 'ggf-guide-great-transition-v1.0',
+      sv: 'ggf-guide-great-transition-v1.0'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'guides', 'en', 'great-transition'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'guides', 'sv', 'great-transition')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Great Transition Guide',
+      sv: 'Guide till den stora omställningen'
+    },
+    sections: [
+      'introduction',
+      'table-of-contents',
+      'sunsetting',
+      'healing',
+      'empowering',
+      'building',
+      'case-study',
+      'conclusion'
+    ]
+  },
+
+  // Regenerative Resources
+  // Full guide
+  {
+    name: 'regenerative-resources-guide',
+    category: 'regenerative-resources',
+    fileNames: {
+      en: 'ggf-guide-regenerative-resources-v1.0',
+      sv: 'ggf-guide-regenerative-resources-v1.0'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'guides', 'en', 'regenerative-resources'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'guides', 'sv', 'regenerative-resources')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Regenerative Resources Guide',
+      sv: 'Guide till regenerativa resurser'
+    },
+    sections: [
+    'introduction',
+    'table-of-contents',
+    'core-principle',
+    'pillar-1',
+    'pillar-2', 
+    'pillar-3',
+    'pillar-4',
+    'pillar-5',
+    'unified-workflow',
+    'conclusion'
+    ]
+  },
 
   // Regenerative Enterprise
   {

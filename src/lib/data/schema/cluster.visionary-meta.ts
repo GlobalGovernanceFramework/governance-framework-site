@@ -133,7 +133,39 @@ export const visionaryMetaEntities: GgfEntity[] = [
       emoji: '🧰',
       slug: 'implementation-methods-and-tools'
     }
-  }
+  },
+
+  // === COUNCILS & GUILDS ===
+  {
+      id: 'council_interstellar_commission',
+      type: 'Council',
+      name: 'The Interstellar Commission',
+      shortName: 'Interstellar Commission',
+      description: 'A supreme Tier 4 council for multi-century strategic planning, cosmic treaty oversight, and the governance of stellar engineering and first-contact protocols.',
+      tier: 4,
+      status: 'Proposed',
+      primaryDomain: 'Governance',
+      dependencies: [
+          'framework_millennium_protocol',
+          'council_gtc', // Global Technology Council
+          'council_phc'  // Planetary Health Council
+      ],
+      enables: ['institution_cosmic_artisan_guilds']
+  },
+  {
+      id: 'institution_cosmic_artisan_guilds',
+      type: 'Institution',
+      name: 'Cosmic Artisan Guilds',
+      shortName: 'Artisan Guilds',
+      description: 'Specialized institutions, structured as advanced Community Work Teams, responsible for evaluating and scoring Aesthetic Impact Assessments (AIAs) for cosmic-scale projects.',
+      tier: 4,
+      status: 'Proposed',
+      primaryDomain: 'Governance',
+      dependencies: [
+          'framework_millennium_protocol',
+          'institution_cwt' // Community Work Teams
+      ]
+  },
 ];
 
 export const visionaryMetaRelationships: GgfRelationship[] = [
@@ -293,5 +325,40 @@ export const visionaryMetaRelationships: GgfRelationship[] = [
     strength: 'Medium',
     frequency: 'Regular',
     sequenceType: 'Parallel'
-  }
+  },
+
+  // === COUNCILS & GUILDS ===
+  {
+      from: 'framework_millennium_protocol',
+      to: 'council_interstellar_commission',
+      type: 'ESTABLISHES',
+      description: 'The Millennium Protocol establishes the Interstellar Commission as its primary long-term strategic governance body.',
+      strength: 'Strong',
+      sequenceType: 'Sequential'
+  },
+  {
+      from: 'council_interstellar_commission',
+      to: 'institution_cosmic_artisan_guilds',
+      type: 'COMMISSIONS',
+      description: 'The Interstellar Commission commissions and relies on the assessments of the Cosmic Artisan Guilds to enforce the "Beauty Mandate" for stellar projects.',
+      strength: 'Strong',
+      frequency: 'As-Needed',
+      sequenceType: 'Parallel'
+  },
+  {
+      from: 'institution_cwt', // Community Work Teams
+      to: 'institution_cosmic_artisan_guilds',
+      type: 'ENABLES',
+      description: 'The Artisan Guilds are a specialized, advanced evolution of the Community Work Teams model, applying the principle of "Work With Purpose" to cosmic aesthetics.',
+      strength: 'Medium',
+      sequenceType: 'Parallel'
+  },
+  {
+      from: 'institution_cosmic_artisan_guilds',
+      to: 'mechanism_leaves', // Leaves Currency
+      type: 'REWARDS',
+      description: 'Projects that receive high scores on Aesthetic Impact Assessments from the Artisan Guilds generate Leaves for the responsible community, creating a regenerative economic incentive for cosmic beauty.',
+      strength: 'Medium',
+      sequenceType: 'Parallel'
+  },
 ];

@@ -106,7 +106,7 @@ A **crime** is a significant and willful violation of the fundamental rights of 
 ## 5. Core Pillars
 
 ### Pillar 1: Global Intelligence Fusion & Analysis
-- **Mechanism:** **Global Crime Intelligence Center (GCIC)**, integrated with **Aurora Accord** standards. [Ref: Aurora Accord Whitepaper]  
+- **Mechanism:** **Global Crime Intelligence Center (GCIC)**, integrated with **Aurora Accord** standards. [Ref: Aurora Accord Whitepaper]. The GCIC represents the Shield Protocol within the Global Intelligence & Foresight Council, providing critical data on transnational criminal and cyber threats to the GGF's unified intelligence picture.  
 - **Functions:**  
   - Hub for intelligence sharing among law enforcement, INTERPOL, ethical hackers, and non-state actors (e.g., NGOs, cybersecurity firms).  
   - Uses AI, **blockchain-based evidence chains**, and **zero-knowledge proofs** to map networks, trace flows, and predict threats, with a focus on cybercrime threats to **Global Governance Framework (GGF)** digital infrastructure (e.g., **AUBI**, **Love Ledger**).  

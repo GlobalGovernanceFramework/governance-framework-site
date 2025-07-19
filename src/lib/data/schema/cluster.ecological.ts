@@ -223,24 +223,32 @@ export const ecologicalEntities: GgfEntity[] = [
 
   // === RESILIENCE & DISASTER MANAGEMENT ===
   {
-    id: 'framework_drr',
-    type: 'Framework',
-    name: 'Disaster Risk Reduction & Resilience Framework',
-    shortName: 'DRR&R',
-    description: 'Framework for disaster resilience and adaptive capacity to planetary system dynamics',
-    tier: 2,
-    status: 'Review',
-    primaryDomain: 'Ecological',
-    geographicScope: 'Global',
-    implementationPriority: 'High',
-    dependencies: ['framework_planetary_health'],
-    ui: {
-      path: '/frameworks/disaster-risk-reduction',
-      titleKey: 'framework.docs.nav.frameworkTitles.disasterRiskReduction',
-      emoji: '🌪️',
-      slug: 'disaster-risk-reduction',
-      group: 'planetaryHealthResilience'
-    }
+      id: 'framework_drr',
+      type: 'Framework',
+      name: 'Disaster Risk Reduction & Resilience Framework',
+      shortName: 'DRR&R',
+      description: 'Framework for disaster resilience and adaptive capacity to planetary system dynamics',
+      tier: 2,
+      status: 'Review',
+      primaryDomain: 'Ecological',
+      geographicScope: 'Global',
+      implementationPriority: 'High',
+      dependencies: [
+          'framework_planetary_health',
+          'framework_conduit_protocol',
+          'framework_gscl'
+      ],
+      enables: [
+          'protocol_duty_of_care',
+          'mechanism_resilience_bonds'
+      ],
+      ui: {
+        path: '/frameworks/disaster-risk-reduction',
+        titleKey: 'framework.docs.nav.frameworkTitles.disasterRiskReduction',
+        emoji: '🌪️',
+        slug: 'disaster-risk-reduction',
+        group: 'planetaryHealthResilience'
+      }
   },
 
   // === GOVERNANCE COUNCIL ===
@@ -277,7 +285,33 @@ export const ecologicalEntities: GgfEntity[] = [
       'metric_lmci'
     ],
     enables: ['council_phc']
-  }
+  },
+
+  // === INSURANCE ===
+  {
+      id: 'mechanism_resilience_bonds',
+      type: 'EconomicMechanism',
+      name: 'Resilience Bonds',
+      shortName: 'Resilience Bonds',
+      description: 'A financial instrument for capitalizing the Global Resilience Pool, with returns tied to improvements in a BAZ\'s Community Resilience Score (CRS).',
+      tier: 2,
+      status: 'Proposed',
+      primaryDomain: 'Economic',
+      dependencies: ['framework_drr', 'framework_financial_systems'],
+      enables: ['mechanism_gcf']
+  },
+  {
+      id: 'protocol_duty_of_care',
+      type: 'LegalProtocol',
+      name: 'Planetary Duty of Care',
+      shortName: 'Duty of Care',
+      description: 'A legal principle establishing the proactive responsibility of governance bodies to identify and mitigate disaster risks, making a lack of preparedness prosecutable.',
+      tier: 2,
+      status: 'Proposed',
+      primaryDomain: 'Justice',
+      dependencies: ['framework_drr', 'framework_justice'],
+      enables: ['institution_dj_tribunal']
+  },
 ];
 
 export const ecologicalRelationships: GgfRelationship[] = [
@@ -540,6 +574,79 @@ export const ecologicalRelationships: GgfRelationship[] = [
     strength: 'Strong',
     frequency: 'Regular',
     sequenceType: 'Parallel'
+  },
+
+  // === GLOBAL RESILIENCE POOL ===
+  {
+      from: 'mechanism_gcf',
+      to: 'framework_drr',
+      type: 'FUNDS',
+      description: 'The Global Commons Fund acts as the steward of the Global Resilience Pool, providing proactive funding for resilience-building and recovery as defined by the DRR&R Framework.',
+      strength: 'Strong',
+      sequenceType: 'Parallel'
+  },
+  {
+      from: 'framework_drr',
+      to: 'mechanism_resilience_bonds',
+      type: 'ESTABLISHES',
+      description: 'The DRR&R framework establishes the design and governance for Resilience Bonds to capitalize the Global Resilience Pool.',
+      strength: 'Strong',
+      sequenceType: 'Sequential'
+  },
+  {
+      from: 'mechanism_resilience_bonds',
+      to: 'mechanism_gcf',
+      type: 'FUNDS',
+      description: 'Resilience Bonds serve as a primary capitalization instrument for the Global Resilience Pool managed by the GCF.',
+      strength: 'Strong',
+      sequenceType: 'Parallel'
+  },
+
+  // === CONDUIT PROTOCOL INTEGRATION ===
+  {
+      from: 'framework_conduit_protocol',
+      to: 'framework_drr',
+      type: 'GUIDES',
+      description: 'The Conduit Protocol provides mandatory resilience and redundancy standards for all critical infrastructure (energy, water, data) within the DRR&R framework.',
+      strength: 'Strong',
+      sequenceType: 'Parallel'
+  },
+  {
+      from: 'framework_drr',
+      to: 'institution_bga', // Bioregional Grid Authority
+      type: 'COORDINATES_WITH',
+      description: 'The DRR&R framework coordinates with Bioregional Grid Authorities on infrastructure hardening and resilient post-disaster reconstruction.',
+      strength: 'Strong',
+      sequenceType: 'Parallel'
+  },
+
+  // === SUPPLY CHAIN INTEGRATION ===
+  {
+      from: 'framework_drr',
+      to: 'framework_gscl', // Global Supply Chains & Logistics
+      type: 'INTEGRATES_WITH',
+      description: 'Coordinates on supply chain vulnerability mapping and the establishment of Emergency Supply Corridors to ensure the flow of critical goods during a disaster.',
+      strength: 'Strong',
+      sequenceType: 'Parallel'
+  },
+
+  // === PLANETARY DUTY OF CARE ===
+  {
+      from: 'framework_drr',
+      to: 'protocol_duty_of_care',
+      type: 'ESTABLISHES',
+      description: 'The DRR&R framework establishes the Planetary Duty of Care as a core legal principle for proactive resilience.',
+      strength: 'Strong',
+      sequenceType: 'Sequential'
+  },
+  {
+      from: 'protocol_duty_of_care',
+      to: 'institution_dj_tribunal', // Digital Justice Tribunal
+      type: 'ENFORCES',
+      description: 'The Digital Justice Tribunal is empowered to adjudicate failures to uphold the Planetary Duty of Care.',
+      strength: 'Strong',
+      frequency: 'As-Needed',
+      sequenceType: 'Parallel'
   },
 
   // === CONNECTIONS TO META-GOVERNANCE ===

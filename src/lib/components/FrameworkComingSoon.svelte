@@ -833,6 +833,40 @@
           'Fossilbränsleavvecklingsförtroende som finansierar reparationer och ekosystemåterställning i drabbade gemenskaper'
         ]
       }
+    },
+    artsFlourishing: {
+      en: {
+        title: 'Creative & Arts Flourishing Framework (The Muse Protocol)',
+        defaultDescription: "We're developing a revolutionary framework that moves beyond preserving past art to catalyzing the creative flourishing of the present and future. Art is not a luxury but a vital organ of our collective body—a medium for metabolizing grief, envisioning futures, weaving the sacred into communities, and healing historical and ecological traumas through cultural sovereignty, justice, and regenerative creativity.",
+        defaultFeatures: [
+          'Global Arts Council with Indigenous storytellers, Bioregional Arts Hub representatives, and Arts Ombudsperson for cultural harm',
+          'Global Arts Commons with decentralized digital repository using Holochain for provenance and Traditional Knowledge Protection Protocols',
+          'Bioregional Arts Hubs managing Hearts grants, physical commons spaces, Artistic Emergency Response teams, and Eco-Anxiety Healing Circles',
+          'Aesthetic Impact Assessments for major GGF projects evaluating community sense of place, beauty, story, and ecological connection',
+          'Cultural Consent License requiring non-Indigenous artists to secure agreements with local elders specifying motif usage and royalties',
+          'Hearts economy rewarding creative work through community engagement, peer validation, and commons contribution with sliding scale',
+          'Art-based restorative justice, cultural trauma healing, and climate grief programs integrated with mental health frameworks',
+          'Cultural Mycelium Mapping using Neo4j/ArangoDB to visualize and strengthen artist-community networks and connections',
+          'Land-Based Art Programs celebrating soil health and microbial commons through artist-farmer-Indigenous steward collaboration',
+          'Creative Mentorship Loops pairing youth digital artists with traditional craft elders tracked via the Commons platform'
+        ]
+      },
+      sv: {
+        title: 'Kreativ & konstnärlig blomstring ramverk (Musprotokoll)',
+        defaultDescription: "Vi utvecklar ett revolutionerande ramverk som går bortom att bevara tidigare konst till att katalysera kreativ blomstring av nutid och framtid. Konst är inte en lyx utan ett vitalt organ i vår kollektiva kropp—ett medium för att metabolisera sorg, föreställa framtider, väva det heliga in i gemenskaper och läka historiska och ekologiska trauman genom kulturell suveränitet, rättvisa och regenerativ kreativitet.",
+        defaultFeatures: [
+          'Globalt konstråd med ursprungsbefolknings berättare, Bioregionala konsthub-representanter och Konstombudsman för kulturell skada',
+          'Global konstallmänning med decentraliserat digitalt arkiv som använder Holochain för provenienser och Traditionell kunskapsschutzprotokoll',
+          'Bioregionala konsthub som förvaltar Hearts-bidrag, fysiska allmänningsutrymmen, Konstnärliga akutinsatsteam och Eko-ångest läkningscirklar',
+          'Estetiska effektbedömningar för stora GGF-projekt som utvärderar gemenskapskänsla för plats, skönhet, berättelse och ekologisk koppling',
+          'Kulturell samtyckelicens som kräver att icke-ursprungsbefolknings konstnärer säkrar avtal med lokala äldre som specificerar motivanvändning och royalties',
+          'Hearts-ekonomi som belönar kreativt arbete genom gemenskapsengagemang, kamratvalidering och allmänningsbidrag med glidande skala',
+          'Konstbaserad återställande rättvisa, kulturell traumaläkning och klimatsorgprogram integrerade med mental hälsoramverk',
+          'Kulturell mykorrhiza-mappning med Neo4j/ArangoDB för att visualisera och stärka konstnär-gemenskapsnätverk och förbindelser',
+          'Markbaserade konstprogram som firar markhälsa och mikrobförbindelser genom konstnär-bonde-ursprungsbefolknings förvaltarsamarbete',
+          'Kreativa mentorskapsslingor som parar ungdomsdigitalkonstnärer med traditionella hantverksmästare spårade via Commons-plattformen'
+        ]
+      }
     }
   };
 
@@ -908,6 +942,8 @@
             <li>
               {#if frameworkName === 'millenniumProtocol'}
                 {index === 0 ? '🏛️' : index === 1 ? '🚀' : index === 2 ? '💰' : index === 3 ? '🧬' : index === 4 ? '🧠' : index === 5 ? '❓' : index === 6 ? '⏳' : index === 7 ? '🗳️' : index === 8 ? '📚' : '🔄'}
+              {:else if frameworkName === 'artsFlourishing'}
+                {index === 0 ? '🏛️' : index === 1 ? '💾' : index === 2 ? '🎭' : index === 3 ? '📊' : index === 4 ? '📜' : index === 5 ? '💰' : index === 6 ? '❤️‍🩹' : index === 7 ? '🕸️' : index === 8 ? '🌱' : '🔄'}
               {:else if frameworkName === 'conduitProtocol'}
                 {index === 0 ? '🏛️' : index === 1 ? '⚡' : index === 2 ? '🔗' : index === 3 ? '👷' : index === 4 ? '🚨' : index === 5 ? '🌡️' : index === 6 ? '🎨' : index === 7 ? '💰' : index === 8 ? '🌍' : '🏭'}
               {:else if frameworkName === 'hearthstoneProtocol'}

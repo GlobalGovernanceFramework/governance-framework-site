@@ -106,6 +106,7 @@ function buildNavStructure(schemaData) {
         }))
       }))
     },
+    { titleKey: 'framework.docs.nav.guides', path: '/frameworks/guides' },
     { titleKey: 'framework.docs.nav.regionalHubs', path: '/frameworks/hubs' },
     { titleKey: 'framework.docs.nav.implementationTools', path: '/frameworks/tools' },
     { titleKey: 'framework.docs.nav.visualizations', path: '/frameworks/visuals' },

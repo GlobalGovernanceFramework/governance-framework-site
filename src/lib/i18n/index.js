@@ -41,6 +41,11 @@ const pageSpecificTranslationsMap = [
   { route: '/frameworks/tools/treaty-for-our-only-home', dataKey: 'toolsTreaty', fileName: 'toolsTreaty' },
   { route: '/frameworks/tools/meta-governance', dataKey: 'toolsMetaGovernance', fileName: 'toolsMetaGovernance' },
   { route: '/frameworks/tools', dataKey: 'tools', fileName: 'tools' },
+
+  // Guides routes
+  { route: '/frameworks/guides/great-transition', dataKey: 'greatTransitionGuide', fileName: 'guidesGreatTransition' },
+  { route: '/frameworks/guides/regenerative-resources', dataKey: 'regenerativeResourcesGuide', fileName: 'guidesRegenerativeResources' },
+  { route: '/frameworks/guides', dataKey: 'guidesOverview', fileName: 'guidesOverview' },
   
   // Framework routes (most specific first)
   { route: '/frameworks/regenerative-enterprise', dataKey: 'regenerativeFramework', fileName: 'frameworksRegenerativeEnterprise' },

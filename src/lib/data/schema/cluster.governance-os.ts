@@ -43,6 +43,24 @@ export const governanceOSEntities: GgfEntity[] = [
     dependencies: ['framework_meta_gov']
   },
   {
+    id: 'council_gifc',
+    type: 'Council',
+    name: 'Global Intelligence & Foresight Council',
+    shortName: 'GIF-Council',
+    description: 'A specialized meta-level council that synthesizes intelligence from the ERO, GCIC, and Peace Prediction units to create a unified global threat assessment for the MGCC.',
+    tier: 1,
+    status: 'Proposed',
+    primaryDomain: 'Governance',
+    geographicScope: 'Global',
+    implementationPriority: 'Critical',
+    dependencies: [
+      'framework_meta_gov',
+      'institution_ero', // Assumed ID for Existential Risk Observatory
+      'institution_gcic', // Assumed ID for Global Crime Intelligence Center
+      'framework_peace'
+    ]
+  },
+  {
     id: 'process_crisis_command',
     type: 'Process',
     name: 'Crisis Command Protocol',
@@ -222,5 +240,41 @@ export const governanceOSRelationships: GgfRelationship[] = [
     strength: 'Strong',
     frequency: 'Crisis-Only',
     sequenceType: 'Conditional'
+  },
+  // === GIF-Council Integration Relationships ===
+  {
+    from: 'council_mgcc',
+    to: 'council_gifc',
+    type: 'OVERSEES',
+    description: 'The Meta-Governance Coordination Council oversees the GIF-Council as a specialized sub-body.',
+    strength: 'Strong'
+  },
+  {
+    from: 'council_gifc',
+    to: 'council_mgcc',
+    type: 'REPORTS_TO',
+    description: 'The GIF-Council provides synthesized intelligence and unified threat assessments to the MGCC.',
+    strength: 'Strong'
+  },
+  {
+    from: 'institution_ero', // From Planetary Immune System
+    to: 'council_gifc',
+    type: 'PARTICIPATES_IN',
+    description: 'The ERO provides existential risk intelligence to the GIF-Council.',
+    strength: 'Strong'
+  },
+  {
+    from: 'institution_gcic', // From The Shield Protocol
+    to: 'council_gifc',
+    type: 'PARTICIPATES_IN',
+    description: 'The GCIC provides transnational crime and cybercrime intelligence to the GIF-Council.',
+    strength: 'Strong'
+  },
+  {
+    from: 'framework_peace', // Representing its prediction units
+    to: 'council_gifc',
+    type: 'PARTICIPATES_IN',
+    description: 'The Peace Framework provides conflict prediction intelligence to the GIF-Council.',
+    strength: 'Strong'
   }
 ];

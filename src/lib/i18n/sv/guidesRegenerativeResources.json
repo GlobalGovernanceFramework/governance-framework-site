@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "title": "Guide för regenerativ resursförvaltning - Globala styrningsramverk",
+    "description": "En omfattande implementeringsguide för styrning av mineral- och resursförvaltning med hjälp av GGF-ramverk för att förhindra extraktiv kolonialism och säkerställa rättvisa övergångar."
+  },
+  "loading": {
+    "text": "Laddar guide för regenerativa resurser..."
+  },
+  "guideCard": {
+    "title": "Guide för regenerativ resursförvaltning",
+    "description": "En praktisk implementeringsguide för styrning av mineral- och resursförvaltning med integrerade GGF-ramverk för att förhindra extraktiv kolonialism.",
+    "downloadText": "Ladda ned komplett guide (PDF)"
+  },
+  "navigation": {
+    "downloadPdf": "Ladda ned komplett guide (PDF)",
+    "previousPillar": "Föregående pelare",
+    "nextPillar": "Nästa pelare",
+    "toSynthesis": "Fortsätt till syntes",
+    "backToGuides": "Tillbaka till implementeringsguider",
+    "frameworks": "Ramverk",
+    "guides": "Implementeringsguider",
+    "currentGuide": "Regenerativa resurser"
+  },
+  "progress": {
+    "text": "Pelare {current} av {total}"
+  },
+  "categories": {
+    "introduction": "Introduktion",
+    "tableOfContents": "Innehållsförteckning",
+    "principles": "Grundprinciper",
+    "pillars": "Fem pelare för regenerativ förvaltning",
+    "synthesis": "Syntes och tillämpning"
+  },
+  "sections": {
+    "introduction": "Introduktion",
+    "table-of-contents": "Detaljerad innehållsförteckning",
+    "core-principle": "GGF:s grundprincip: Förvaltning över utvinning",
+    "pillar-1": "Första pelaren - Urfolkens suveränitet",
+    "pillar-2": "Andra pelaren - Det cirkulära mandatet",
+    "pillar-3": "Tredje pelaren - Övergången till allmänning",
+    "pillar-4": "Fjärde pelaren - Det juridiska skyddsnätet",
+    "pillar-5": "Femte pelaren - Etiska leveranskedjor",
+    "unified-workflow": "Ett enhetligt arbetsflöde - Från förslag till produkt",
+    "conclusion": "Att bygga en regenerativ materialkultur"
+  },
+  "sectionsShort": {
+    "introduction": "Introduktion",
+    "table-of-contents": "Innehållsförteckning",
+    "core-principle": "Grundprincip",
+    "pillar-1": "Urfolkens suveränitet",
+    "pillar-2": "Cirkulärt mandat",
+    "pillar-3": "Övergång till allmänning",
+    "pillar-4": "Juridiskt skyddsnät",
+    "pillar-5": "Etiska leveranskedjor",
+    "unified-workflow": "Enhetligt arbetsflöde",
+    "conclusion": "Slutsats"
+  },
+  "languageFallback": {
+    "title": "Innehåll på ditt språk kommer snart",
+    "description": "Detta avsnitt visas för närvarande på engelska tills översättningen är klar."
+  },
+  "errors": {
+    "sectionNotFound": "Avsnitt \"{section}\" hittades inte",
+    "contentInDevelopment": "Detta innehåll utvecklas fortfarande."
+  }
+}

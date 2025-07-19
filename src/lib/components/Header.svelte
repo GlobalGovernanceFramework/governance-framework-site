@@ -1231,6 +1231,9 @@
                 <a href="{base}/frameworks/docs/implementation" class={isActive('/frameworks/docs/implementation') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
                   {browser ? ($t('common.header.frameworkImplementation') || 'Implementation') : 'Implementation'}
                 </a>
+                <a href="{base}/frameworks/guides" class={browser && $page.url.pathname.startsWith(base + '/frameworks/guides') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
+                  {browser ? ($t('common.header.frameworkGuides') || 'Implementation Guides') : 'Implementation Guides'}
+                </a>
                 {#if isDevMode}
                 <a href="{base}/frameworks/hubs" class={isActive('/frameworks/hubs') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
                   {browser ? ($t('common.header.frameworkHubs') || 'Hubs') : 'Hubs'}

@@ -151,6 +151,20 @@ export const humanFlourishingEntities: GgfEntity[] = [
     implementationPriority: 'High',
     dependencies: ['framework_synoptic', 'mechanism_gcf']
   },
+  {
+    id: 'institution_gimn',
+    type: 'Institution',
+    name: 'Global Indigenous Media Network (GIMN)',
+    shortName: 'GIMN',
+    description: 'A globally-chartered, Indigenous-led Public Epistemic Institution dedicated to amplifying Indigenous narratives, languages, and ways of knowing. It serves as a primary vehicle for epistemic reparations and cultural storytelling.',
+    tier: 2, // As an application-layer institution
+    status: 'Proposed',
+    primaryDomain: 'Governance',
+    geographicScope: 'Global',
+    implementationPriority: 'High',
+    dependencies: ['framework_synoptic', 'framework_indigenous'],
+    enables: ['framework_arts_flourishing'] // Enables the Arts Ambassadors program
+  },
 
   // === PROCESSES, PROTOCOLS & TOOLS ===
   {

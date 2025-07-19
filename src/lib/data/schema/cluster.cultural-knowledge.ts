@@ -89,6 +89,33 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     }
   },
 
+  {
+    id: 'framework_arts_flourishing',
+    type: 'Framework',
+    name: 'Creative & Arts Flourishing Framework',
+    shortName: 'Arts Flourishing',
+    description: 'A framework for fostering new cultural creation and stewarding the arts as a regenerative contribution to planetary well-being and collective consciousness.',
+    tier: 3,
+    status: 'Planned', // Starting status
+    primaryDomain: 'Governance',
+    geographicScope: 'Global',
+    implementationPriority: 'Medium',
+    dependencies: [
+      'framework_cultural_heritage', 
+      'framework_aubi', 
+      'framework_education',
+      'framework_digital_commons'
+      ],
+    enables: ['institution_cosmic_artisan_guilds'], // Enables the future Tier 4 institution
+    ui: {
+      path: '/frameworks/arts-flourishing',
+      titleKey: 'framework.docs.nav.frameworkTitles.artsFlourishing', // New key needed
+      emoji: '🎨',
+      slug: 'arts-flourishing',
+      group: 'humanSocialSystems' // Fits well here
+    }
+  },
+
   // === TIER 4: WISDOM & CONSCIOUSNESS FRAMEWORKS ===
   {
     id: 'framework_inner_dev',
@@ -457,6 +484,12 @@ export const culturalKnowledgeRelationships: GgfRelationship[] = [
     frequency: 'Regular',
     sequenceType: 'Parallel'
   },
+  {
+    from: 'mechanism_hearts',
+    to: 'framework_arts_flourishing',
+    type: 'REWARDS',
+    description: 'The Hearts currency is a primary economic mechanism for valuing and rewarding artistic and creative contributions to community well-being.'
+  },
 
   // === CONNECTIONS TO HUMAN FLOURISHING ===
   {
@@ -485,6 +518,18 @@ export const culturalKnowledgeRelationships: GgfRelationship[] = [
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_arts_flourishing',
+    to: 'framework_cultural_heritage',
+    type: 'COLLABORATES_WITH',
+    description: 'The Arts Flourishing framework collaborates with Cultural Heritage to ensure new creations can draw from and honor ancestral wisdom without appropriation.'
+  },
+  {
+    from: 'framework_arts_flourishing',
+    to: 'institution_cosmic_artisan_guilds',
+    type: 'ENABLES',
+    description: 'Provides the foundational principles and training for Aesthetic Impact Assessments (AIAs) that are later utilized by the Cosmic Artisan Guilds at a stellar scale.'
   },
 
   // === CONNECTIONS TO DATA OS ===

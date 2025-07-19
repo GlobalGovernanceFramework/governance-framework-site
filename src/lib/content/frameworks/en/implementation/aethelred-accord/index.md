@@ -408,8 +408,8 @@ The Aethelred Accord provides the comprehensive architecture for transforming bi
 - **Researchers**: Contribute to patent-free biotechnology, community-based research, and biotech justice studies
 
 **Contact Information**:
-- **Primary Contact**: aethelredaccord@globalgovernanceframeworks.org
-- **Website**: aethelredaccord.org
+- **Primary Contact**: contact@globalgovernanceframeworks.org
+- **Website**: globalgovernanceframeworks.org/frameworks/aethelredaccord
 - **Subject Lines for Specific Support**:
   - "Community Biotechnology" - for genetic sovereignty and traditional knowledge protection
   - "Open Innovation" - for patent-free biotechnology and commons-based research

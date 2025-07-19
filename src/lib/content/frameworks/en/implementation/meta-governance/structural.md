@@ -115,6 +115,20 @@ The foundation of meta-governance lies in structures that enable diverse systems
 - **Conflict Resolution Interfaces** connecting different dispute resolution traditions
 - **Innovation Scaling Mechanisms** for spreading successful approaches across contexts
 
+### Global Intelligence & Foresight Council (GIF-Council)
+
+To ensure a coherent and unified understanding of global threats, the Meta-Governance Framework establishes the **Global Intelligence & Foresight Council (GIF-Council)**. This is not an operational intelligence agency itself, but a high-level coordination body where the leaders of the GGF's primary intelligence centers convene.
+
+**Composition and Mandate:**
+The council is composed of the heads of the **Existential Risk Observatory (ERO)** from the Planetary Immune System, the **Global Crime Intelligence Center (GCIC)** from the Shield Protocol, and the **Conflict Prediction Systems** from the Peace & Conflict Resolution Framework.
+
+Its core mandate is to:
+
+1.  **Synthesize a Unified Threat Assessment:** Produce a single, integrated "Global Threat & Foresight Briefing" for the main Meta-Governance Coordination Council, merging existential, criminal, and conflict-based intelligence.
+2.  **Deconflict Jurisdiction:** Serve as the primary venue for determining which body takes the lead on hybrid threats that cross multiple domains.
+3.  **Share Methodologies:** Act as a hub for sharing best practices in AI modeling, data fusion, and foresight analysis across the GGF's intelligence bodies.
+4.  **Provide a Formal Interface:** Serve as the single point of contact for integrating intelligence from national agencies and other external partners.
+
 ## <a id="ii-power-and-participation"></a>II. Power and Participation
 
 Democratic legitimacy and equity safeguards prevent meta-governance from being captured by powerful actors while ensuring genuine participation across all stakeholders.
