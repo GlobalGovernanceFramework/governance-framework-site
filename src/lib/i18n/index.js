@@ -48,6 +48,7 @@ const pageSpecificTranslationsMap = [
   { route: '/frameworks/guides', dataKey: 'guidesOverview', fileName: 'guidesOverview' },
   
   // Framework routes (most specific first)
+  { route: '/frameworks/shield-protocol', dataKey: 'shieldProtocol', fileName: 'frameworksShieldProtocol' },
   { route: '/frameworks/regenerative-enterprise', dataKey: 'regenerativeFramework', fileName: 'frameworksRegenerativeEnterprise' },
   { route: '/frameworks/moral-operating-system', dataKey: 'moral-operating-system', fileName: 'frameworksMoralOperatingSystem' },
   { route: '/frameworks/work-in-liberation', dataKey: 'work-in-liberation', fileName: 'frameworksWorkInLiberation' },

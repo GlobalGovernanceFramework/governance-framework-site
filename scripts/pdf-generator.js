@@ -49,6 +49,7 @@ Available categories:
 - aethelred-accord
 - gaian-trade
 - work-in-liberation
+- shield-protocol
 - regenerative-resources
 - great-transition
 
@@ -90,6 +91,7 @@ const outputDirs = {
   'animal-welfare-governance': path.join(__dirname, '..', 'static', 'frameworks','tools', 'animal-welfare-governance'),
   'gaian-trade': path.join(__dirname, '..', 'static', 'frameworks','tools', 'gaian-trade'),
   'work-in-liberation': path.join(__dirname, '..', 'static', 'frameworks','tools', 'work-in-liberation'),
+  'shield-protocol': path.join(__dirname, '..', 'static', 'frameworks','tools', 'shield-protocol'),
   'regenerative-resources': path.join(__dirname, '..', 'static', 'frameworks','tools', 'regenerative-resources'),
   'great-transition': path.join(__dirname, '..', 'static', 'frameworks','tools', 'great-transition'),
   'water-and-sanitation-governance': path.join(__dirname, '..', 'static', 'frameworks','tools', 'water-and-sanitation-governance'),
@@ -178,6 +180,66 @@ const tools = [
     ]
   },
 
+  // Shield Protocol
+  {
+    name: 'executive-summary-for-the-skeptic',
+    category: 'shield-protocol',
+    fileNames: {
+      en: 'shield-protocol-executive-summary-en',
+      sv: 'shield-protocol-executive-summary-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'shield-protocol'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'shield-protocol')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'assets', 'pdf'),
+      sv: path.join(__dirname, '..', 'static', 'assets', 'pdf')
+    },
+    pageFooter: {
+      en: 'Shield Protocol - Executive Summary for the Skeptic',
+      sv: 'Sköldprotokollet - Sammanfattning för skeptiker'
+    }
+  },
+
+  // Full framework
+  {
+    name: 'shield-protocol-framework',
+    category: 'shield-protocol',
+    fileNames: {
+      en: 'Shield-Protocol-Framework',
+      sv: 'Shield-Protocol-Framework'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'shield-protocol'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'shield-protocol')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Shield Protocol',
+      sv: 'Sköldprotokollet'
+    },
+    sections: [
+      'index',
+      'introduction',
+      'core-principles',
+      'governance-architecture',
+      'operational-systems',
+      'crisis-response',
+      'implementation-roadmap',
+      'cross-cutting-mechanisms',
+      'funding-mechanisms',
+      'framework-integration',
+      'case-studies',
+      'getting-started',
+      'conclusion',
+      'appendices'
+    ]
+  },
+
   // Regenerative Enterprise
   {
     name: 'a-compass-for-changemakers',
@@ -195,7 +257,7 @@ const tools = [
       sv: path.join(__dirname, '..', 'static', 'assets', 'pdf')
     },
     pageFooter: {
-      en: 'Regenerative Eenterprise - A Compass for Changemakers',
+      en: 'Regenerative Enterprise - A Compass for Changemakers',
       sv: 'Regenerativa företag - En kompass för förändringsskapare'
     }
   },

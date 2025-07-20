@@ -1,784 +1,1160 @@
-<!-- src/routes/frameworks/the-shield-protocol/+page.svelte -->
+<!-- src/routes/frameworks/shield-protocol/+page.svelte -->
 <script>
-  import { page } from '$app/stores';
-  import { t, locale } from '$lib/i18n';
-  import { browser } from '$app/environment';
-  import { invalidate } from '$app/navigation';
-  import { base } from '$app/paths';
-  import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
-  import FrameworkComingSoon from '$lib/components/FrameworkComingSoon.svelte';
-     
-  export let data;
+ import { t, locale, isLocaleLoaded, loadTranslations } from '$lib/i18n';
+ import { browser } from '$app/environment';
+ import { invalidate } from '$app/navigation';
+ import { base } from '$app/paths';
+ import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
+ import { onMount, tick } from 'svelte';
+ import { slide } from 'svelte/transition';
 
-  $: if (browser && $locale) {
-    invalidate('app:locale');
-  }
+ export let data;
+
+ // Translation state - use isLocaleLoaded for better reactivity
+ $: translationsReady = $isLocaleLoaded;
+ $: sf = translationsReady ? ($t('shieldProtocol') || {}) : {};
+ $: currentLocale = $locale;
+
+ // Component state
+ let activeSection = 'index';
+ let mounted = false;
+ let isPrintMode = false;
+ let foundationOpen = false;
+ let coreFrameworkOpen = false;
+ let implementationOpen = false;
+ let resourcesOpen = false;
+
+ // Computed values - add safety checks
+ $: sectionsToShow = (mounted && isPrintMode) ? Object.keys(data?.sections || {}) : [activeSection];
+ $: coreFrameworkSections = Object.keys(data?.sections || {}).filter(section => 
+   ['introduction', 'core-principles', 'governance-architecture', 'operational-systems', 
+    'crisis-response', 'implementation-roadmap', 'cross-cutting-mechanisms', 'funding-mechanisms', 
+    'framework-integration'].includes(section)
+ );
+ $: isCoreSection = coreFrameworkSections.includes(activeSection);
+ $: foundationSections = ['at-a-glance', 'executive-summary-for-the-skeptic'];
+ $: implementationSections = ['case-studies', 'getting-started', 'conclusion'];
+ $: resourceSections = ['appendices'];
+ $: isExecutiveSummaryActive = activeSection === 'executive-summary-for-the-skeptic';
+ $: isImplementationActive = implementationSections.includes(activeSection);
+ $: isResourcesActive = resourceSections.includes(activeSection);
+
+ function initializeAccordionStates() {
+   // Set initial accordion states based on active section
+   foundationOpen = foundationSections.includes(activeSection);
+   coreFrameworkOpen = coreFrameworkSections.includes(activeSection);
+   implementationOpen = implementationSections.includes(activeSection);
+   resourcesOpen = resourceSections.includes(activeSection);
+ }
+
+ onMount(async () => {
+   await tick();
+   mounted = true;
+   
+   if (browser) {
+     // Fix URL corruption and preserve hash fragments
+     let extractedHash = window.location.hash;
+     
+     if (window.location.pathname !== '/frameworks/shield-protocol') {
+       const pathname = window.location.pathname;
+       const lastPart = pathname.split('/').pop();
+       
+       // Extract section from corrupted pathname
+       if (data?.sections?.[lastPart] && !extractedHash) {
+         extractedHash = `#${lastPart}`;
+       }
+       
+       // Correct the URL
+       const correctUrl = `/frameworks/shield-protocol${window.location.search}${extractedHash}`;
+       window.history.replaceState(null, '', correctUrl);
+     }
+     
+     // Force reload translations if needed
+     if (!translationsReady) {
+       try {
+         await loadTranslations($locale, '/frameworks/shield-protocol');
+       } catch (e) {
+         console.error('Failed to reload translations:', e);
+       }
+     }
+     
+     // Set initial section from URL
+     const urlParams = new URLSearchParams(window.location.search);
+     isPrintMode = urlParams.get('print') === 'true';
+     
+     const sectionParam = urlParams.get('section');
+     const hashSection = (extractedHash || window.location.hash).substring(1);
+     
+     if (sectionParam && data?.sections?.[sectionParam]) {
+       activeSection = sectionParam;
+     } else if (hashSection && data?.sections?.[hashSection]) {
+       activeSection = hashSection;
+     }
+     
+     initializeAccordionStates();
+     
+     // Global function for PDF generation
+     window.showAllSectionsForPrint = () => { isPrintMode = true; };
+     
+     // Listen for hash changes
+     const handleHashChange = () => {
+       const hash = window.location.hash.substring(1);
+       if (hash && data?.sections?.[hash] && activeSection !== hash) {
+         activeSection = hash;
+         initializeAccordionStates();
+         
+         // Scroll to content
+         setTimeout(() => {
+           const contentElement = document.querySelector('.section-content');
+           if (contentElement) {
+             contentElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+           } else {
+             window.scrollTo({ top: 0, behavior: 'smooth' });
+           }
+         }, 100);
+       }
+     };
+
+     window.addEventListener('hashchange', handleHashChange);
+     
+     // Cleanup
+     return () => {
+       window.removeEventListener('hashchange', handleHashChange);
+       if (window.showAllSectionsForPrint) {
+         delete window.showAllSectionsForPrint;
+       }
+     };
+   }
+ });
+
+ // Function to set active section
+ function setActiveSection(section) {
+   if (!data?.sections?.[section]) return;
+   
+   activeSection = section;
+   initializeAccordionStates();
+   
+   if (browser) {
+     const newUrl = `/frameworks/shield-protocol${window.location.search}#${section}`;
+     history.replaceState(null, '', newUrl);
+
+     setTimeout(() => {
+       const contentElement = document.querySelector('.section-content');
+       if (contentElement) {
+         contentElement.scrollIntoView({ 
+           behavior: 'smooth', 
+           block: 'start',
+           inline: 'nearest'
+         });
+       }
+     }, 100);
+   }
+ }
+
+ // Translation helper functions with fallbacks
+ function getSectionTitle(section) {
+   return translationsReady ? (sf.sections?.[section] || section.replace(/[-_]/g, ' ')) 
+                            : section.replace(/[-_]/g, ' ');
+ }
+
+ function getSectionCategoryTitle(category) {
+   return translationsReady ? (sf.categories?.[category] || category) : category;
+ }
+
+ function getShortSectionTitle(section) {
+   return translationsReady ? (sf.sectionsShort?.[section] || getSectionTitle(section)) : getSectionTitle(section);
+ }
+
+ function getTextWithFallback(key, fallback) {
+   return translationsReady ? ($t(key) || fallback) : fallback;
+ }
+
+ // Function to download the Shield Protocol PDF
+ function downloadShieldProtocol(version = '') {
+   const versionSuffix = version ? `-${version}` : '';
+   const pdfUrl = `${base}/assets/pdf/shield-protocol${versionSuffix}-${currentLocale}.pdf`;
+   const link = document.createElement('a');
+   link.href = pdfUrl;
+   link.download = `shield-protocol${versionSuffix}.pdf`;
+   document.body.appendChild(link);
+   link.click();
+   document.body.removeChild(link);
+ }
+
+ // Accordion toggle functions
+ function toggleFoundation() { foundationOpen = !foundationOpen; }
+ function toggleCoreFramework() { coreFrameworkOpen = !coreFrameworkOpen; }
+ function toggleImplementation() { implementationOpen = !implementationOpen; }
+ function toggleResources() { resourcesOpen = !resourcesOpen; }
+
+ // Handle locale changes
+ $: if (browser && mounted && $locale) {
+   invalidate('app:locale');
+ }
 </script>
 
-<div class="documentation-container">
-  <FrameworkSidebar />
+<svelte:head>
+ <title>{getTextWithFallback('shieldProtocol.meta.title', 'The Shield Protocol - Framework for Eradicating Transnational Crime')}</title>
+ <meta name="description" content="{getTextWithFallback('shieldProtocol.meta.description', 'A comprehensive framework for transforming transnational crime governance through coordinated prevention and healing')}" />
+</svelte:head>
 
-  <div class="content">
-    <!-- Shield Protocol Coming Soon Card -->
-    <FrameworkComingSoon 
-      frameworkName="shield"
-      icon="🛡️"
-      expectedQuarter="Q3 2025"
-      themeColors={{
-        primary: '#1e293b',
-        secondary: '#334155', 
-        accent: '#e11d48',
-        light: '#f8fafc'
-      }}
-      contactEmail="contact@globalgovernanceframeworks.org"
-    />
+{#if mounted}
+ <div class="documentation-container">
+   {#if !isPrintMode}
+     <FrameworkSidebar />
+   {/if}
 
-    <!-- Additional Content Section -->
-    <div class="framework-preview">
-      <div class="preview-section">
-        <h2>🛡️ Shielding Regenerative Civilization from Predatory Networks</h2>
-        <p>
-          The Shield Protocol creates a comprehensive global architecture to prevent, disrupt, and dismantle transnational criminal networks that drain $2.2 trillion annually and undermine governance. Using advanced technology, sovereignty-respecting cooperation, and Spiral-Aware approaches, it ensures justice is swift while respecting human dignity and developmental diversity.
-        </p>
-        
-        <div class="key-innovations">
-          <div class="innovation-card">
-            <div class="innovation-icon">🧠</div>
-            <h3>AI-Powered Intelligence Fusion</h3>
-            <p>Global Crime Intelligence Center uses AI, blockchain evidence chains, and zero-knowledge proofs to map criminal networks while protecting privacy.</p>
-          </div>
-          
-          <div class="innovation-card">
-            <div class="innovation-icon">⚖️</div>
-            <h3>Sovereignty-Respecting Enforcement</h3>
-            <p>Supermajority voting, cultural sensitivity protocols, and sovereignty safeguards ensure cooperation without compromising national autonomy.</p>
-          </div>
-          
-          <div class="innovation-card">
-            <div class="innovation-icon">🔄</div>
-            <h3>Spiral-Aware Rehabilitation</h3>
-            <p>Developmental rehabilitation protocols address consciousness stages behind criminal behavior, offering pro-social pathways for transformation.</p>
-          </div>
-          
-          <div class="innovation-card">
-            <div class="innovation-icon">💰</div>
-            <h3>Illicit Finance Disruption</h3>
-            <p>Global asset recovery and financial transparency protocols trace and seize criminal proceeds, funding victim restitution and prevention programs.</p>
-          </div>
-        </div>
-      </div>
+   <div class="content">
+     <!-- Quick Access Card for Shield Protocol -->
+     {#if !isPrintMode && !isExecutiveSummaryActive && activeSection === 'index' && translationsReady}
+       <div class="shield-guide-card">
+         <div class="card-content">
+           <div class="card-icon">🛡️</div>
+           <div class="card-text">
+             <h3>{sf.guideCard?.title || 'New to the Shield Protocol?'}</h3>
+             <p>{sf.guideCard?.description || 'Start with our executive summary designed for skeptics—addressing practical concerns about global crime governance and sovereignty safeguards.'}</p>
+           </div>
+           <div class="card-actions">
+             <button class="primary-btn" on:click={() => setActiveSection('executive-summary-for-the-skeptic')}>
+               {sf.guideCard?.buttonText || 'Read Executive Summary for Skeptics'} <span class="arrow-icon">→</span>
+             </button>
+           </div>
+         </div>
+       </div>
+     {/if}
 
-      <div class="preview-section">
-        <h2>🎯 Threat Classification System</h2>
-        <div class="threat-tiers">
-          <div class="tier-card tier-0">
-            <div class="tier-label">Tier 0</div>
-            <h4>Existential Threats</h4>
-            <p>Threats to global survival or systemic collapse</p>
-            <div class="examples">AI-driven criminal super-networks, bio-terrorism, large-scale cyberattacks</div>
-          </div>
-          
-          <div class="tier-card tier-1">
-            <div class="tier-label">Tier 1</div>
-            <h4>Systemic Threats</h4>
-            <p>Threats to stability, financial systems, or peace (>$1B/year)</p>
-            <div class="examples">State capture, sanctions evasion, terrorism financing, weapons trafficking</div>
-          </div>
-          
-          <div class="tier-card tier-2">
-            <div class="tier-label">Tier 2</div>
-            <h4>High-Harm Networks</h4>
-            <p>Enterprises causing widespread suffering ($100M-$1B/year)</p>
-            <div class="examples">Human trafficking, drug cartels, illegal logging/mining</div>
-          </div>
-          
-          <div class="tier-card tier-3">
-            <div class="tier-label">Tier 3</div>
-            <h4>Emergent Threats</h4>
-            <p>New criminal vectors (&lt;$100M/year)</p>
-            <div class="examples">AI-enabled fraud, synthetic biology markets, climate migration exploitation</div>
-          </div>
-        </div>
-      </div>
+     <!-- Sub-navigation for Shield Protocol sections -->
+     {#if !isPrintMode} 
+       <div class="section-nav">
+         <!-- Overview -->
+         <div class="nav-section">
+           <button 
+             class="nav-item overview-item" 
+             class:active={activeSection === 'index'}
+             on:click={() => setActiveSection('index')}
+           >
+             <span class="nav-icon">🏠</span>
+             <span class="nav-title">{getSectionCategoryTitle('overview')}</span>
+           </button>
+         </div>
 
-      <div class="preview-section">
-        <h2>🏗️ Six Core Pillars</h2>
-        <div class="pillars-grid">
-          <div class="pillar-card">
-            <div class="pillar-number">1</div>
-            <h4>Global Intelligence Fusion & Analysis</h4>
-            <p>Global Crime Intelligence Center with AI-powered threat mapping, quantum-resistant encryption, and Spiral Dynamics behavioral analysis</p>
-          </div>
-          
-          <div class="pillar-card">
-            <div class="pillar-number">2</div>
-            <h4>Unified Legal & Judicial Framework</h4>
-            <p>Global Convention 2.0 with Digital Justice Tribunal, mediation ladders, and developmental rehabilitation protocols</p>
-          </div>
-          
-          <div class="pillar-card">
-            <div class="pillar-number">3</div>
-            <h4>Coordinated Enforcement & Operations</h4>
-            <p>Global Enforcement Task Force conducting poly-jurisdictional investigations with cultural sensitivity and community oversight</p>
-          </div>
-          
-          <div class="pillar-card">
-            <div class="pillar-number">4</div>
-            <h4>Illicit Finance Disruption</h4>
-            <p>Global asset recovery protocols, beneficial ownership registries, and privacy coin regulation with transparency certificates</p>
-          </div>
-          
-          <div class="pillar-card">
-            <div class="pillar-number">5</div>
-            <h4>Prevention, Resilience & Victim Support</h4>
-            <p>Community safety programs, victim restitution, technology transfer, and Stage Red rehabilitation pathways</p>
-          </div>
-          
-          <div class="pillar-card">
-            <div class="pillar-number">6</div>
-            <h4>Governance & Implementation</h4>
-            <p>Transnational Security Council with civil society oversight, performance tracking, and crisis response protocols</p>
-          </div>
-        </div>
-      </div>
+         <!-- Foundation Accordion -->
+         <div class="nav-accordion">
+           <button 
+             class="accordion-header" 
+             class:open={foundationOpen}
+             class:has-active={foundationSections.includes(activeSection)}
+             on:click={toggleFoundation}
+           >
+             <span class="accordion-icon">📚</span>
+             <span class="accordion-title">{getSectionCategoryTitle('foundation')}</span>
+             <span class="section-count">(2)</span>
+             <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
+           </button>
+           {#if foundationOpen}
+             <div class="accordion-content" transition:slide={{ duration: 200 }}>
+               {#each foundationSections as section}
+                 {#if data?.sections?.[section]}
+                   <button 
+                     class="nav-item subsection-item" 
+                     class:active={activeSection === section}
+                     on:click={() => setActiveSection(section)}
+                   >
+                     <span class="nav-icon">{section === 'at-a-glance' ? '⚡' : '🤔'}</span>
+                     <span class="nav-title">{getSectionTitle(section)}</span>
+                   </button>
+                 {/if}
+               {/each}
+             </div>
+           {/if}
+         </div>
 
-      <div class="preview-section">
-        <h2>🌍 Spiral-Aware Justice Approach</h2>
-        <p>The Shield Protocol recognizes that crime emerges from different consciousness stages and tailors responses accordingly:</p>
-        <div class="spiral-stages">
-          <div class="stage-card red">
-            <div class="stage-icon">🔴</div>
-            <h4>Stage Red (Egocentric Power)</h4>
-            <p><strong>Criminal Expression:</strong> Cartels, violent hierarchies</p>
-            <p><strong>Healthy Pathway:</strong> Sports leagues, disaster response teams, heroic roles</p>
-          </div>
-          
-          <div class="stage-card blue">
-            <div class="stage-icon">🔵</div>
-            <h4>Stage Blue (Order & Rules)</h4>
-            <p><strong>Criminal Expression:</strong> Bureaucratic oppression, authoritarian abuse</p>
-            <p><strong>Healthy Pathway:</strong> Governance roles, law enforcement, structured service</p>
-          </div>
-          
-          <div class="stage-card orange">
-            <div class="stage-icon">🟠</div>
-            <h4>Stage Orange (Achievement)</h4>
-            <p><strong>Criminal Expression:</strong> Predatory capitalism, sophisticated fraud</p>
-            <p><strong>Healthy Pathway:</strong> Entrepreneurship, innovation, competitive achievement</p>
-          </div>
-          
-          <div class="stage-card green">
-            <div class="stage-icon">🟢</div>
-            <h4>Stage Green (Community)</h4>
-            <p><strong>Criminal Expression:</strong> Ideological extremism, misguided activism</p>
-            <p><strong>Healthy Pathway:</strong> Social justice work, cooperative movements, environmental protection</p>
-          </div>
-        </div>
-      </div>
+         <!-- Core Framework Accordion -->
+         {#if coreFrameworkSections.length > 0}
+           <div class="nav-accordion">
+             <button 
+               class="accordion-header" 
+               class:open={coreFrameworkOpen}
+               class:has-active={isCoreSection}
+               on:click={toggleCoreFramework}
+             >
+               <span class="accordion-icon">🛡️</span>
+               <span class="accordion-title">{getSectionCategoryTitle('framework')}</span>
+               <span class="section-count">({coreFrameworkSections.length})</span>
+               <span class="toggle-arrow" class:rotated={coreFrameworkOpen}>▼</span>
+             </button>
+             {#if coreFrameworkOpen}
+               <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                 {#each coreFrameworkSections as section}
+                   <button 
+                     class="nav-item subsection-item" 
+                     class:active={activeSection === section}
+                     on:click={() => setActiveSection(section)}
+                   >
+                     <span class="nav-icon">
+                       {#if section === 'introduction'}📋
+                       {:else if section === 'core-principles'}⚖️
+                       {:else if section === 'governance-architecture'}🏛️
+                       {:else if section === 'operational-systems'}⚙️
+                       {:else if section === 'crisis-response'}🚨
+                       {:else if section === 'implementation-roadmap'}🗺️
+                       {:else if section === 'cross-cutting-mechanisms'}🔗
+                       {:else if section === 'funding-mechanisms'}💰
+                       {:else if section === 'framework-integration'}🌐
+                       {:else}📋{/if}
+                     </span>
+                     <span class="nav-title">{getShortSectionTitle(section)}</span>
+                   </button>
+                 {/each}
+               </div>
+             {/if}
+           </div>
+         {/if}
 
-      <div class="preview-section">
-        <h2>⚖️ Sovereignty Safeguards</h2>
-        <div class="safeguards-grid">
-          <div class="safeguard-item">
-            <div class="safeguard-icon">🗳️</div>
-            <h4>Supermajority Voting</h4>
-            <p>51% for standard operations, 67% for high-intervention, 75% for constitutional changes</p>
-          </div>
-          
-          <div class="safeguard-item">
-            <div class="safeguard-icon">⚖️</div>
-            <h4>Sovereignty Dispute Tribunal</h4>
-            <p>Independent mediation for opt-out appeals using Wise Decision-Making protocols</p>
-          </div>
-          
-          <div class="safeguard-item">
-            <div class="safeguard-icon">🛡️</div>
-            <h4>Annual Opt-Out Rights</h4>
-            <p>Three minor or one major opt-out annually with transparent sovereignty index ranking</p>
-          </div>
-          
-          <div class="safeguard-item">
-            <div class="safeguard-icon">🎭</div>
-            <h4>Cultural Sensitivity Protocols</h4>
-            <p>Indigenous and traditional justice systems integration with elder council validation</p>
-          </div>
-        </div>
-      </div>
+         <!-- Implementation Accordion -->
+         <div class="nav-accordion">
+           <button 
+             class="accordion-header" 
+             class:open={implementationOpen}
+             class:has-active={isImplementationActive}
+             on:click={toggleImplementation}
+           >
+             <span class="accordion-icon">🚀</span>
+             <span class="accordion-title">{getSectionCategoryTitle('implementation')}</span>
+             <span class="section-count">(3)</span>
+             <span class="toggle-arrow" class:rotated={implementationOpen}>▼</span>
+           </button>
+           {#if implementationOpen}
+             <div class="accordion-content" transition:slide={{ duration: 200 }}>
+               {#each implementationSections as section}
+                 {#if data?.sections?.[section]}
+                   <button 
+                     class="nav-item subsection-item" 
+                     class:active={activeSection === section}
+                     on:click={() => setActiveSection(section)}
+                   >
+                     <span class="nav-icon">
+                       {#if section === 'case-studies'}📊
+                       {:else if section === 'getting-started'}🎯
+                       {:else if section === 'conclusion'}✅
+                       {:else}📄{/if}
+                     </span>
+                     <span class="nav-title">{getSectionTitle(section)}</span>
+                   </button>
+                 {/if}
+               {/each}
+             </div>
+           {/if}
+         </div>
 
-      <div class="preview-section">
-        <h2>💰 Sustainable Funding Architecture</h2>
-        <div class="funding-breakdown">
-          <div class="funding-item">
-            <div class="funding-percentage">40%</div>
-            <h4>Asset Recovery</h4>
-            <p>Seized criminal proceeds redirected to operations and victim restitution</p>
-          </div>
-          
-          <div class="funding-item">
-            <div class="funding-percentage">25%</div>
-            <h4>Sin Tax</h4>
-            <p>Taxes on harmful activities collected via national authorities</p>
-          </div>
-          
-          <div class="funding-item">
-            <div class="funding-percentage">20%</div>
-            <h4>Carbon & Tobin Taxes</h4>
-            <p>Environmental and financial transaction taxes supporting global security</p>
-          </div>
-          
-          <div class="funding-item">
-            <div class="funding-percentage">15%</div>
-            <h4>Other Sources</h4>
-            <p>Nation contributions (10%) and private partnerships (5%)</p>
-          </div>
-        </div>
-      </div>
+         <!-- Resources Accordion -->
+         <div class="nav-accordion">
+           <button 
+             class="accordion-header" 
+             class:open={resourcesOpen}
+             class:has-active={isResourcesActive}
+             on:click={toggleResources}
+           >
+             <span class="accordion-icon">📄</span>
+             <span class="accordion-title">{getSectionCategoryTitle('resources')}</span>
+             <span class="section-count">(1)</span>
+             <span class="toggle-arrow" class:rotated={resourcesOpen}>▼</span>
+           </button>
+           {#if resourcesOpen}
+             <div class="accordion-content" transition:slide={{ duration: 200 }}>
+               {#each resourceSections as section}
+                 {#if data?.sections?.[section]}
+                   <button 
+                     class="nav-item subsection-item" 
+                     class:active={activeSection === section}
+                     on:click={() => setActiveSection(section)}
+                   >
+                     <span class="nav-icon">📚</span>
+                     <span class="nav-title">{getSectionTitle(section)}</span>
+                   </button>
+                 {/if}
+               {/each}
+             </div>
+           {/if}
+         </div>
+       </div>
+     {/if}
 
-      <div class="preview-section">
-        <h2>🚀 Implementation Roadmap</h2>
-        <div class="implementation-phases">
-          <div class="phase-item">
-            <div class="phase-marker">0</div>
-            <div class="phase-content">
-              <h4>Stakeholder Buy-In (Year 0)</h4>
-              <p>Secure G20 endorsement through bilateral engagement, starting with Canada, Norway, Singapore as early adopters</p>
-            </div>
-          </div>
-          
-          <div class="phase-item">
-            <div class="phase-marker">1</div>
-            <div class="phase-content">
-              <h4>Pilot Programs (Years 1-2)</h4>
-              <p>Launch GCIC and GETF pilots in 3-5 diverse Bioregional Autonomous Zones with minimal viable pilots</p>
-            </div>
-          </div>
-          
-          <div class="phase-item">
-            <div class="phase-marker">2</div>
-            <div class="phase-content">
-              <h4>Regional Expansion (Years 3-5)</h4>
-              <p>Scale to additional BAZs, operationalize global asset recovery, fund Stage Red rehabilitation programs</p>
-            </div>
-          </div>
-          
-          <div class="phase-item">
-            <div class="phase-marker">3</div>
-            <div class="phase-content">
-              <h4>Global Integration (Years 6-10)</h4>
-              <p>Achieve full participation in Global Convention 2.0, expand Digital Justice Tribunal for Tier 0-1 cases</p>
-            </div>
-          </div>
-        </div>
-      </div>
+     <!-- Progress indicator for core sections -->
+     {#if !isPrintMode && isCoreSection && coreFrameworkSections.length > 0 && translationsReady}
+       <div class="progress-indicator">
+         <div class="progress-bar">
+           <div class="progress-fill" style="width: {((coreFrameworkSections.indexOf(activeSection) + 1) / coreFrameworkSections.length * 100)}%"></div>
+         </div>
+         <span class="progress-text">{sf.progress?.text?.replace('{current}', coreFrameworkSections.indexOf(activeSection) + 1).replace('{total}', coreFrameworkSections.length) || `Section ${coreFrameworkSections.indexOf(activeSection) + 1} of ${coreFrameworkSections.length}`}</span>
+       </div>
+     {/if}
 
-      <div class="preview-section">
-        <h2>📊 Case Study: Dismantling a Drug Cartel</h2>
-        <div class="case-study">
-          <div class="scenario">
-            <h4>🎯 Scenario</h4>
-            <p>A cartel moves $500M/year across three BAZs, driven by Stage Red dynamics seeking power and territory.</p>
-          </div>
-          
-          <div class="action">
-            <h4>⚡ GETF Action</h4>
-            <p>GCIC uses Spiral Dynamics Analysis to map hierarchy, secures Digital Justice Tribunal warrants, coordinates poly-jurisdictional raids.</p>
-          </div>
-          
-          <div class="outcome">
-            <h4>✅ Outcome</h4>
-            <p>Cartel dismantled, $300M repatriated for victim restitution, 35% reduction in local violence, Stage Red members enrolled in sports leagues and disaster response teams.</p>
-          </div>
-        </div>
-      </div>
+     <!-- Show active section, or all sections in print mode -->
+     {#each sectionsToShow as section (section)}
+       {#if data?.sections?.[section]}
+         <div class="section-content" id={section}>
+           <!-- Language fallback notice -->
+           {#if !isPrintMode && data.sectionsUsingEnglishFallback?.includes(section) && section !== 'index' && translationsReady}
+             <div class="language-fallback-notice">
+               <div class="notice-icon">🌐</div>
+               <div class="notice-content">
+                 <strong>{sf.languageFallback?.title || 'Content in your language coming soon'}</strong>
+                 <p>{sf.languageFallback?.description || 'This section is currently displayed in English until translation is complete.'}</p>
+               </div>
+             </div>
+           {/if}
+           
+           <!-- Render sections from markdown files -->
+           <svelte:component this={data.sections[section].default} t={$t} />
+           
+           <!-- Navigation buttons at bottom of executive summary -->
+           {#if section === 'executive-summary-for-the-skeptic' && !isPrintMode && translationsReady}
+             <div class="guide-navigation">
+               <button class="secondary-btn" on:click={() => downloadShieldProtocol('executive-summary')}>
+                 {sf.navigation?.downloadPdf || 'Download PDF Version'} <span class="download-icon">↓</span>
+               </button>
+               <button class="primary-btn" on:click={() => setActiveSection('introduction')}>
+                 {sf.navigation?.continueToProtocol || 'Continue to Full Protocol'} <span class="arrow-icon">→</span>
+               </button>
+             </div>
+           {/if}
 
-      <div class="preview-section">
-        <h2>🔗 Framework Connections</h2>
-        <p>The Shield Protocol integrates with other governance frameworks as a specialized security layer:</p>
-        <div class="connections-grid">
-          <div class="connection-item">
-            <span class="connection-icon">⚖️</span>
-            <strong>Treaty for Our Only Home</strong> - Legal foundation and Digital Justice Tribunal enforcement
-          </div>
-          <div class="connection-item">
-            <span class="connection-icon">🧠</span>
-            <strong>Meta-Governance</strong> - Transnational Security Council coordination and crisis protocols
-          </div>
-          <div class="connection-item">
-            <span class="connection-icon">💚</span>
-            <strong>AUBI Framework</strong> - Addressing crime's socioeconomic roots through basic income security
-          </div>
-          <div class="connection-item">
-            <span class="connection-icon">🔮</span>
-            <strong>Aurora Accord</strong> - AI governance, blockchain evidence chains, and quantum-resistant encryption
-          </div>
-          <div class="connection-item">
-            <span class="connection-icon">🌱</span>
-            <strong>Environmental Stewardship</strong> - Combating ecocide and environmental crimes
-          </div>
-          <div class="connection-item">
-            <span class="connection-icon">🏛️</span>
-            <strong>Justice Systems</strong> - Unified legal frameworks and restorative justice principles
-          </div>
-        </div>
-      </div>
-
-      <div class="preview-section balanced-tone">
-        <h2>🎯 A Balanced Approach to Global Security</h2>
-        <p>
-          The Shield Protocol recognizes that effective crime prevention requires both strength and wisdom. We're not seeking to create a global police state, but rather a coordinated response system that respects sovereignty while ensuring criminals cannot exploit jurisdictional gaps.
-        </p>
-        <p>
-          By addressing the developmental roots of criminal behavior and offering pro-social pathways for transformation, we aim to build a security framework that heals rather than merely punishes, creating lasting safety for regenerative civilization.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
+           <!-- Section navigation at bottom of core sections -->
+           {#if isCoreSection && !isPrintMode && coreFrameworkSections.length > 0 && translationsReady}
+             <div class="section-navigation">
+               {#if coreFrameworkSections.indexOf(activeSection) > 0}
+                 <button class="nav-btn prev-btn" on:click={() => {
+                   const currentIndex = coreFrameworkSections.indexOf(activeSection);
+                   const prevSection = coreFrameworkSections[currentIndex - 1];
+                   setActiveSection(prevSection);
+                 }}>
+                   ← {sf.navigation?.previousSection || 'Previous Section'}
+                 </button>
+               {/if}
+               
+               {#if coreFrameworkSections.indexOf(activeSection) < coreFrameworkSections.length - 1}
+                 <button class="nav-btn next-btn" on:click={() => {
+                   const currentIndex = coreFrameworkSections.indexOf(activeSection);
+                   const nextSection = coreFrameworkSections[currentIndex + 1];
+                   setActiveSection(nextSection);
+                 }}>
+                   {sf.navigation?.nextSection || 'Next Section'} →
+                 </button>
+               {/if}
+             </div>
+           {/if}
+         </div>
+       {:else}
+         <div class="missing-section">
+           <h2>{getTextWithFallback('shieldProtocol.errors.sectionNotFound', `Section "${section}" not found`).replace('{section}', section)}</h2>
+           <p>{getTextWithFallback('shieldProtocol.errors.contentInDevelopment', 'This content is still being developed.')}</p>
+         </div>
+       {/if}
+     {/each}
+   </div>
+ </div>
+{:else}
+ <!-- Loading state to prevent hydration issues -->
+ <div class="loading-container">
+   <div class="loading-spinner"></div>
+   <p>{getTextWithFallback('shieldProtocol.loading.text', 'Loading Shield Protocol content...')}</p>
+ </div>
+{/if}
 
 <style>
-  .documentation-container {
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-  }
+ /* Shield Protocol color scheme - Security/Justice themed with blue-red-silver palette */
+ :root {
+   --shield-primary: #1E3A8A;      /* Deep Blue - Authority and Trust */
+   --shield-secondary: #DC2626;     /* Strong Red - Urgency and Action */
+   --shield-accent: #475569;        /* Steel Gray - Technology and Precision */
+   --shield-success: #059669;       /* Green - Justice and Resolution */
+   --shield-warning: #D97706;       /* Orange - Threat Level */
+   --shield-danger: #B91C1C;        /* Dark Red - Critical Threats */
+   --shield-light: #F1F5F9;         /* Light Gray - Clean background */
+   --shield-dark: #0F172A;          /* Dark Blue - Strong contrast */
+   --shield-cyber: #3B82F6;         /* Bright Blue - Cybersecurity */
+   --shield-steel: #64748B;         /* Medium Gray - Neutrality */
+ }
+
+ /* Loading state */
+ .loading-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   min-height: 60vh;
+   gap: 1rem;
+ }
+
+ .loading-spinner {
+   width: 40px;
+   height: 40px;
+   border: 4px solid #e5e7eb;
+   border-top: 4px solid var(--shield-primary);
+   border-radius: 50%;
+   animation: spin 1s linear infinite;
+ }
+
+ @keyframes spin {
+   0% { transform: rotate(0deg); }
+   100% { transform: rotate(360deg); }
+ }
+
+ /* Layout */
+ .documentation-container {
+   display: grid;
+   grid-template-columns: 250px 1fr;
+   gap: 2rem;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 2rem 1rem;
+ }
+ 
+ .content {
+   min-width: 0;
+ }
+ 
+ .section-content {
+   padding-top: 1rem;
+   scroll-margin-top: 2rem;
+ }
+
+ .missing-section {
+   background-color: #f3f4f6;
+   border: 1px solid #d1d5db;
+   border-radius: 0.5rem;
+   padding: 2rem;
+   text-align: center;
+   color: #6b7280;
+ }
+
+ .missing-section h2 {
+   color: #374151;
+   margin-bottom: 0.5rem;
+ }
+
+ /* Section Navigation */
+ .section-nav {
+   margin-bottom: 2rem;
+   border-bottom: 1px solid #e5e7eb;
+   background: linear-gradient(to bottom, var(--shield-light), #e2e8f0);
+   border-radius: 0.5rem;
+   padding: 1rem;
+ }
+
+ .nav-section {
+   margin-bottom: 1rem;
+ }
+
+ .nav-accordion {
+   margin-bottom: 1rem;
+   border: 1px solid #e5e7eb;
+   border-radius: 0.375rem;
+   overflow: hidden;
+   background: white;
+ }
+
+ .accordion-header {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   gap: 0.75rem;
+   padding: 0.75rem 1rem;
+   background: none;
+   border: none;
+   cursor: pointer;
+   transition: all 0.2s;
+   font-size: 0.95rem;
+   font-weight: 500;
+   color: #374151;
+   text-align: left;
+ }
+
+ .accordion-header:hover {
+   background-color: rgba(30, 58, 138, 0.05);
+ }
+
+ .accordion-header:focus-visible {
+   outline: 2px solid var(--shield-accent);
+   outline-offset: 2px;
+   background-color: rgba(30, 58, 138, 0.1);
+ }
+
+ .accordion-header.has-active {
+   background-color: rgba(30, 58, 138, 0.1);
+   color: var(--shield-primary);
+   font-weight: 600;
+ }
+
+ .accordion-header.open {
+   background-color: rgba(220, 38, 38, 0.1);
+   border-bottom: 1px solid #e5e7eb;
+ }
+
+ .accordion-icon {
+   font-size: 1.1rem;
+   flex-shrink: 0;
+ }
+
+ .accordion-title {
+   flex-grow: 1;
+   font-weight: 600;
+ }
+
+ .section-count {
+   font-size: 0.8rem;
+   color: #6b7280;
+   font-weight: 400;
+ }
+
+ .toggle-arrow {
+   font-size: 0.8rem;
+   color: #6b7280;
+   transition: transform 0.2s ease;
+   flex-shrink: 0;
+ }
+
+ .toggle-arrow.rotated {
+   transform: rotate(180deg);
+ }
+
+ .accordion-content {
+   border-top: 1px solid #e5e7eb;
+   background-color: #fafafa;
+ }
+
+ .nav-item {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   gap: 0.75rem;
+   padding: 0.75rem 1rem;
+   background: none;
+   border: none;
+   cursor: pointer;
+   transition: all 0.2s;
+   font-size: 0.9rem;
+   color: #4b5563;
+   text-align: left;
+   margin-bottom: 0.25rem;
+ }
+
+ .nav-item:last-child {
+   margin-bottom: 0;
+ }
+
+ .nav-item:hover {
+   background-color: rgba(30, 58, 138, 0.05);
+   color: #374151;
+ }
+
+ .nav-item:focus-visible {
+   outline: 2px solid var(--shield-accent);
+   outline-offset: 2px;
+   background-color: rgba(30, 58, 138, 0.1);
+ }
+
+ .nav-item.active {
+   background-color: var(--shield-primary);
+   color: white;
+   font-weight: 600;
+ }
+
+ .nav-item.active:hover {
+   background-color: var(--shield-secondary);
+ }
+
+ .overview-item {
+   background: linear-gradient(135deg, rgba(30, 58, 138, 0.1), rgba(220, 38, 38, 0.1));
+   border: 1px solid rgba(30, 58, 138, 0.2);
+   border-radius: 0.375rem;
+   font-weight: 600;
+   margin-bottom: 0.5rem;
+ }
+
+ .overview-item.active {
+   background: var(--shield-primary);
+   color: white;
+ }
+
+ .subsection-item {
+   padding-left: 1.5rem;
+ }
+
+ .nav-icon {
+   font-size: 1.1rem;
+   flex-shrink: 0;
+ }
+
+ .nav-title {
+   flex-grow: 1;
+   text-align: left;
+ }
+
+ /* Progress indicator */
+ .progress-indicator {
+   margin-bottom: 2rem;
+   padding: 1rem;
+   background: linear-gradient(90deg, rgba(30, 58, 138, 0.1), rgba(220, 38, 38, 0.1));
+   border-radius: 0.5rem;
+   border-left: 4px solid var(--shield-primary);
+ }
+
+ .progress-bar {
+   width: 100%;
+   height: 8px;
+   background-color: #e5e7eb;
+   border-radius: 4px;
+   overflow: hidden;
+   margin-bottom: 0.5rem;
+ }
+
+ .progress-fill {
+   height: 100%;
+   background: linear-gradient(90deg, var(--shield-primary), var(--shield-secondary));
+   border-radius: 4px;
+   transition: width 0.3s ease;
+ }
+
+ .progress-text {
+   font-size: 0.875rem;
+   color: var(--shield-primary);
+   font-weight: 500;
+ }
+
+ /* Shield Protocol guide card */
+ .shield-guide-card {
+   background: linear-gradient(135deg, rgba(30, 58, 138, 0.1) 0%, rgba(220, 38, 38, 0.1) 100%);
+   border-radius: 0.75rem;
+   margin-bottom: 2rem;
+   box-shadow: 0 4px 6px rgba(30, 58, 138, 0.1);
+   border: 1px solid rgba(30, 58, 138, 0.2);
+   position: relative;
+   z-index: 1;
+ }
+ 
+ .card-content {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 1.5rem;
+   align-items: center;
+   gap: 1.5rem;
+ }
+ 
+ .card-icon {
+   font-size: 2.5rem;
+   color: var(--shield-primary);
+   flex-shrink: 0;
+ }
+ 
+ .card-text {
+   flex: 1;
+   min-width: 200px;
+ }
+ 
+ .card-text h3 {
+   margin: 0 0 0.5rem 0;
+   color: var(--shield-primary);
+   font-size: 1.25rem;
+ }
+ 
+ .card-text p {
+   margin: 0;
+   color: #4b5563;
+   font-size: 1rem;
+ }
+ 
+ .card-actions {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 0.75rem;
+   align-items: center;
+   position: relative;
+   overflow: visible;
+ }
+ 
+ .primary-btn {
+   background-color: var(--shield-primary);
+   color: white;
+   border: none;
+   padding: 0.5rem 1rem;
+   border-radius: 0.375rem;
+   font-weight: 500;
+   cursor: pointer;
+   transition: all 0.2s;
+ }
+ 
+ .primary-btn:hover {
+   background-color: var(--shield-secondary);
+   transform: translateY(-1px);
+ }
+
+ .primary-btn:focus-visible {
+   outline: 2px solid var(--shield-accent);
+   outline-offset: 2px;
+   background-color: var(--shield-secondary);
+   transform: translateY(-1px);
+ }
+ 
+ .secondary-btn {
+   background-color: white;
+   color: var(--shield-primary);
+   border: 1px solid var(--shield-primary);
+   padding: 0.5rem 1rem;
+   border-radius: 0.375rem;
+   font-weight: 500;
+   cursor: pointer;
+   transition: all 0.2s;
+ }
+ 
+ .secondary-btn:hover {
+   background-color: rgba(30, 58, 138, 0.1);
+   transform: translateY(-1px);
+ }
+
+ .secondary-btn:focus-visible {
+   outline: 2px solid var(--shield-accent);
+   outline-offset: 2px;
+   background-color: rgba(30, 58, 138, 0.1);
+   transform: translateY(-1px);
+ }
+ 
+ .guide-navigation {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 3rem;
+   padding-top: 1.5rem;
+   border-top: 1px solid #e5e7eb;
+ }
+
+ .section-navigation {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 3rem;
+   padding-top: 1.5rem;
+   border-top: 1px solid #e5e7eb;
+ }
+
+ .nav-btn {
+   background-color: var(--shield-primary);
+   color: white;
+   border: none;
+   padding: 0.75rem 1.5rem;
+   border-radius: 0.375rem;
+   font-weight: 500;
+   cursor: pointer;
+   transition: all 0.2s;
+ }
+
+ .nav-btn:hover {
+   background-color: var(--shield-secondary);
+   transform: translateY(-1px);
+ }
+
+ .nav-btn:focus-visible {
+   outline: 2px solid var(--shield-accent);
+   outline-offset: 2px;
+   background-color: var(--shield-secondary);
+   transform: translateY(-1px);
+ }
+
+ .prev-btn {
+   margin-right: auto;
+ }
+
+ .next-btn {
+   margin-left: auto;
+ }
+
+ .download-icon,
+ .arrow-icon {
+   display: inline-block;
+   margin-left: 0.25rem;
+ }
+
+ /* Language fallback notice */
+ .language-fallback-notice {
+   display: flex;
+   align-items: flex-start;
+   gap: 1rem;
+   background-color: rgba(30, 58, 138, 0.1);
+   border: 1px solid rgba(30, 58, 138, 0.3);
+   border-radius: 0.5rem;
+   padding: 1rem 1.25rem;
+   margin-bottom: 1.5rem;
+ }
+
+ .notice-icon {
+   font-size: 1.25rem;
+   color: var(--shield-cyber);
+   flex-shrink: 0;
+   margin-top: 0.125rem;
+ }
+
+ .notice-content {
+   flex: 1;
+ }
+
+ .notice-content strong {
+   color: var(--shield-primary);
+   font-size: 0.95rem;
+   display: block;
+   margin-bottom: 0.25rem;
+ }
+
+ .notice-content p {
+   color: #4b5563;
+   font-size: 0.875rem;
+   margin: 0;
+   line-height: 1.5;
+ }
+
+ /* Content styling */
+ .content :global(h1) {
+   font-size: 2rem;
+   font-weight: 700;
+   margin-bottom: 1.5rem;
+   color: var(--shield-primary);
+ }
+ 
+ .content :global(h2) {
+   font-size: 1.5rem;
+   font-weight: 600;
+   margin-top: 2rem;
+   margin-bottom: 1rem;
+   color: var(--shield-secondary);
+ }
+ 
+ .content :global(h3),
+ .content :global(h4) {
+   font-size: 1.25rem;
+   font-weight: 600;
+   margin-top: 1.5rem;
+   margin-bottom: 0.75rem;
+   color: var(--shield-accent);
+ }
+
+ .content :global(h4) {
+   font-size: 1.2rem;
+ }
+ 
+ .content :global(p) {
+   margin-bottom: 1rem;
+   line-height: 1.7;
+   color: #4b5563;
+ }
+
+ /* Blockquotes */
+ .content :global(blockquote) {
+   background-color: rgba(30, 58, 138, 0.1);
+   border-left: 4px solid var(--shield-primary);
+   padding: 1rem 1.5rem;
+   margin: 1.5rem 0;
+   border-radius: 0.5rem;
+ }
+
+ /* Lists */
+ .content :global(ul), .content :global(ol) {
+   margin-bottom: 1.5rem;
+   padding-left: 1rem;
+   color: #4b5563;
+ }
+
+ .content :global(ul) {
+   list-style-type: none;
+ }
+
+ .content :global(ul li) {
+   position: relative;
+   margin-bottom: 0.75rem;
+   padding-left: 1.5rem;
+ }
+
+ .content :global(ul li:not(.section-nav li))::before {
+   content: "🛡️";
+   position: absolute;
+   left: 0;
+   top: 0.1em;
+   font-size: 0.9rem;
+   opacity: 0.7;
+ }
+
+ /* Ordered lists */
+ .content :global(ol) {
+   list-style-type: decimal;
+   counter-reset: item;
+ }
+
+ .content :global(ol li) {
+   position: relative;
+   margin-bottom: 0.75rem;
+   padding-left: 0.5rem;
+   color: #4b5563;
+ }
+
+ .content :global(ol li::marker) {
+   color: var(--shield-primary);
+   font-weight: 600;
+ }
+
+ /* Links */
+ .content :global(a) {
+   color: var(--shield-cyber);
+   text-decoration: underline;
+   font-weight: 500;
+   transition: all 0.2s;
+ }
+
+ .content :global(a:hover) {
+   color: var(--shield-secondary);
+ }
+
+ /* Tables for threat classification and other data */
+ .content :global(table) {
+   width: 100%;
+   border-collapse: collapse;
+   margin: 1.5rem 0;
+   background: white;
+   border-radius: 0.5rem;
+   overflow: hidden;
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+ }
+
+ .content :global(th) {
+   background: var(--shield-primary);
+   color: white;
+   padding: 0.75rem;
+   text-align: left;
+   font-weight: 600;
+   font-size: 0.9rem;
+ }
+
+ .content :global(td) {
+   padding: 0.75rem;
+   border-bottom: 1px solid #e5e7eb;
+   font-size: 0.9rem;
+ }
+
+ .content :global(tr:hover) {
+   background-color: rgba(30, 58, 138, 0.05);
+ }
+
+ /* Code blocks */
+ .content :global(pre) {
+   background-color: var(--shield-dark);
+   color: #e2e8f0;
+   padding: 1rem;
+   border-radius: 0.5rem;
+   overflow-x: auto;
+   font-size: 0.875rem;
+   margin: 1rem 0;
+ }
+
+ .content :global(code) {
+   background-color: rgba(30, 58, 138, 0.1);
+   color: var(--shield-primary);
+   padding: 0.125rem 0.25rem;
+   border-radius: 0.25rem;
+   font-size: 0.875rem;
+ }
+
+ .content :global(pre code) {
+   background: none;
+   color: inherit;
+   padding: 0;
+ }
+
+ /* Special styling for threat tiers */
+ .content :global(.threat-tier-0) {
+   border-left: 4px solid var(--shield-danger);
+   background-color: rgba(185, 28, 28, 0.1);
+ }
+
+ .content :global(.threat-tier-1) {
+   border-left: 4px solid var(--shield-secondary);
+   background-color: rgba(220, 38, 38, 0.1);
+ }
+
+ .content :global(.threat-tier-2) {
+   border-left: 4px solid var(--shield-warning);
+   background-color: rgba(217, 119, 6, 0.1);
+ }
+
+ .content :global(.threat-tier-3) {
+   border-left: 4px solid var(--shield-cyber);
+   background-color: rgba(59, 130, 246, 0.1);
+ }
+
+ .content :global(.threat-tier-4) {
+   border-left: 4px solid var(--shield-success);
+   background-color: rgba(5, 150, 105, 0.1);
+ }
+
+ /* Responsive Design */
+ @media (max-width: 768px) {
+   .documentation-container {
+     grid-template-columns: 1fr;
+   }
+
+   .section-nav {
+     padding: 0.75rem;
+   }
+
+   .accordion-header {
+     padding: 0.5rem 0.75rem;
+     font-size: 0.9rem;
+   }
+
+   .nav-item {
+     padding: 0.5rem 0.75rem;
+     font-size: 0.85rem;
+   }
+
+   .subsection-item {
+     padding-left: 1rem;
+   }
+
+   .card-content {
+     flex-direction: column;
+     align-items: flex-start;
+     gap: 1rem;
+   }
   
-  @media (max-width: 768px) {
-    .documentation-container {
-      grid-template-columns: 1fr;
-    }
-  }
+   .card-actions {
+     width: 100%;
+     justify-content: center;
+   }
   
-  .content {
-    min-width: 0;
-  }
-
-  .framework-preview {
-    margin-top: 3rem;
-  }
-
-  .preview-section {
-    margin-bottom: 3rem;
-    padding: 2rem;
-    background: linear-gradient(135deg, rgba(30, 41, 59, 0.05) 0%, rgba(51, 65, 85, 0.05) 100%);
-    border-radius: 1rem;
-    border-left: 4px solid #1e293b;
-  }
-
-  .preview-section.balanced-tone {
-    background: linear-gradient(135deg, rgba(75, 85, 99, 0.05) 0%, rgba(107, 114, 128, 0.05) 100%);
-    border-left-color: #6b7280;
-  }
-
-  .preview-section h2 {
-    color: #1e293b;
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-  }
-
-  .balanced-tone h2 {
-    color: #6b7280;
-  }
-
-  .key-innovations {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
-  }
-
-  .innovation-card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 0.75rem;
-    box-shadow: 0 4px 6px rgba(30, 41, 59, 0.1);
-    border: 1px solid rgba(30, 41, 59, 0.2);
-  }
-
-  .innovation-icon {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  .innovation-card h3 {
-    color: #1e293b;
-    margin-bottom: 0.75rem;
-    font-size: 1.1rem;
-  }
-
-  .innovation-card p {
-    color: #4b5563;
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
-
-  .threat-tiers {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-  }
-
-  .tier-card {
-    padding: 1.5rem;
-    border-radius: 0.75rem;
-    border: 2px solid;
-    background: rgba(255, 255, 255, 0.7);
-    position: relative;
-  }
-
-  .tier-card.tier-0 {
-    border-color: #dc2626;
-    background: rgba(220, 38, 38, 0.05);
-  }
-
-  .tier-card.tier-1 {
-    border-color: #ea580c;
-    background: rgba(234, 88, 12, 0.05);
-  }
-
-  .tier-card.tier-2 {
-    border-color: #d97706;
-    background: rgba(217, 119, 6, 0.05);
-  }
-
-  .tier-card.tier-3 {
-    border-color: #059669;
-    background: rgba(5, 150, 105, 0.05);
-  }
-
-  .tier-label {
-    position: absolute;
-    top: -10px;
-    left: 15px;
-    padding: 0.25rem 0.75rem;
-    border-radius: 1rem;
-    font-size: 0.8rem;
-    font-weight: bold;
-    color: white;
-  }
-
-  .tier-card.tier-0 .tier-label { background: #dc2626; }
-  .tier-card.tier-1 .tier-label { background: #ea580c; }
-  .tier-card.tier-2 .tier-label { background: #d97706; }
-  .tier-card.tier-3 .tier-label { background: #059669; }
-
-  .tier-card h4 {
-    margin-bottom: 0.75rem;
-    margin-top: 0.5rem;
-    font-size: 1.1rem;
-  }
-
-  .tier-card.tier-0 h4 { color: #dc2626; }
-  .tier-card.tier-1 h4 { color: #ea580c; }
-  .tier-card.tier-2 h4 { color: #d97706; }
-  .tier-card.tier-3 h4 { color: #059669; }
-
-  .tier-card p {
-    color: #4b5563;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-  }
-
-  .examples {
-    font-size: 0.8rem;
-    font-style: italic;
-    color: #6b7280;
-    padding: 0.5rem;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 0.25rem;
-  }
-
-  .pillars-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-  }
-
-  .pillar-card {
-    background: rgba(255, 255, 255, 0.7);
-    padding: 1.5rem;
-    border-radius: 0.75rem;
-    border: 1px solid rgba(30, 41, 59, 0.2);
-    position: relative;
-  }
-
-  .pillar-number {
-    position: absolute;
-    top: -15px;
-    left: 20px;
-    background: #1e293b;
-    color: white;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-  }
-
-  .pillar-card h4 {
-    color: #1e293b;
-    margin-bottom: 0.75rem;
-    margin-top: 0.5rem;
-    font-size: 1.1rem;
-  }
-
-  .pillar-card p {
-    color: #4b5563;
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
-
-  .spiral-stages {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-  }
-
-  .stage-card {
-    padding: 1.5rem;
-    border-radius: 0.75rem;
-    border: 2px solid;
-    background: rgba(255, 255, 255, 0.7);
-  }
-
-  .stage-card.red {
-    border-color: #dc2626;
-    background: rgba(220, 38, 38, 0.05);
-  }
-
-  .stage-card.blue {
-    border-color: #2563eb;
-    background: rgba(37, 99, 235, 0.05);
-  }
-
-  .stage-card.orange {
-    border-color: #ea580c;
-    background: rgba(234, 88, 12, 0.05);
-  }
-
-  .stage-card.green {
-    border-color: #059669;
-    background: rgba(5, 150, 105, 0.05);
-  }
-
-  .stage-icon {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  .stage-card h4 {
-    margin-bottom: 0.75rem;
-    font-size: 1rem;
-  }
-
-  .stage-card.red h4 { color: #dc2626; }
-  .stage-card.blue h4 { color: #2563eb; }
-  .stage-card.orange h4 { color: #ea580c; }
-  .stage-card.green h4 { color: #059669; }
-
-  .stage-card p {
-    color: #4b5563;
-    font-size: 0.85rem;
-    line-height: 1.4;
-    margin-bottom: 0.5rem;
-  }
-
-  .safeguards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-  }
-
-  .safeguard-item {
-    background: rgba(255, 255, 255, 0.7);
-    padding: 1.5rem;
-    border-radius: 0.75rem;
-    border: 1px solid rgba(30, 41, 59, 0.2);
-    text-align: center;
-  }
-
-  .safeguard-icon {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  .safeguard-item h4 {
-    color: #1e293b;
-    margin-bottom: 0.75rem;
-    font-size: 1rem;
-  }
-
-  .safeguard-item p {
-    color: #4b5563;
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
-
-  .funding-breakdown {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-  }
-
-  .funding-item {
-    background: rgba(255, 255, 255, 0.7);
-    padding: 1.5rem;
-    border-radius: 0.75rem;
-    border: 1px solid rgba(30, 41, 59, 0.2);
-    text-align: center;
-  }
-
-  .funding-percentage {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #e11d48;
-    margin-bottom: 0.5rem;
-  }
-
-  .funding-item h4 {
-    color: #1e293b;
-    margin-bottom: 0.75rem;
-    font-size: 1.1rem;
-  }
-
-  .funding-item p {
-    color: #4b5563;
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
-
-  .implementation-phases {
-    margin-top: 1.5rem;
-  }
-
-  .phase-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-  }
-
-  .phase-marker {
-    background: #1e293b;
-    color: white;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    flex-shrink: 0;
-  }
-
-  .phase-content h4 {
-    color: #1e293b;
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
-  }
-
-  .phase-content p {
-    color: #4b5563;
-    line-height: 1.6;
-  }
-
-  .case-study {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-  }
-
-  .scenario, .action, .outcome {
-    padding: 1.5rem;
-    border-radius: 0.75rem;
-    background: rgba(255, 255, 255, 0.7);
-  }
-
-  .scenario {
-    border-left: 4px solid #e11d48;
-  }
-
-  .action {
-    border-left: 4px solid #3b82f6;
-  }
-
-  .outcome {
-    border-left: 4px solid #059669;
-  }
-
-  .scenario h4 { color: #e11d48; }
-  .action h4 { color: #3b82f6; }
-  .outcome h4 { color: #059669; }
-
-  .case-study h4 {
-    margin-bottom: 0.75rem;
-    font-size: 1rem;
-  }
-
-  .case-study p {
-    color: #4b5563;
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
-
-  .connections-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    margin-top: 1.5rem;
-  }
-
-  .connection-item {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 0.5rem;
-    border: 1px solid rgba(30, 41, 59, 0.2);
-  }
-
-  .connection-icon {
-    font-size: 1.5rem;
-  }
-
-  .connection-item strong {
-    color: #1e293b;
-  }
-
-  @media (max-width: 768px) {
-    .preview-section {
-      padding: 1.5rem;
-    }
-    
-    .key-innovations,
-    .threat-tiers,
-    .pillars-grid,
-    .spiral-stages,
-    .safeguards-grid,
-    .funding-breakdown,
-    .case-study {
-      grid-template-columns: 1fr;
-    }
-    
-    .connections-grid {
-      grid-template-columns: 1fr;
-    }
-    
-    .phase-item {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  }
+   .guide-navigation {
+     flex-direction: column;
+     gap: 1rem;
+   }
+  
+   .guide-navigation button {
+     width: 100%;
+   }
+
+   .section-navigation {
+     flex-direction: column;
+     gap: 1rem;
+   }
+
+   .section-navigation button {
+     width: 100%;
+   }
+
+   .loading-container {
+     padding: 2rem 1rem;
+   }
+
+   .content :global(table) {
+     font-size: 0.8rem;
+   }
+
+   .content :global(th),
+   .content :global(td) {
+     padding: 0.5rem;
+   }
+ }
 </style>
