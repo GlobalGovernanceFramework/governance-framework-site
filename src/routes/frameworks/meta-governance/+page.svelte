@@ -6,6 +6,7 @@
   import { invalidate } from '$app/navigation';
   import { base } from '$app/paths';
   import ConstellationMap from '$lib/components/ConstellationMap.svelte';
+  import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
   import { onMount, afterUpdate } from 'svelte';
   import { slide } from 'svelte/transition';
      
@@ -13,8 +14,10 @@
 
   // Keep track of which section is active (for sub-navigation)
   let activeSection = data.initialSection || 'introduction'; // Start with the section from load function
+  let mounted = false;
 
   onMount(() => {
+    mounted = true;
     if (browser) {
       // Function to handle hash changes and initial load
       const handleHashNavigation = () => {
@@ -332,252 +335,249 @@
 
 <svelte:window on:click={handleClickOutside}/>
 
-<div class="content">
-  <!-- Quick Access Card for Lite Guide -->
-  {#if !isPrintMode && !isLiteActive && activeSection === 'introduction'}
-    <div class="lite-guide-card">
-      <div class="card-content">
-        <div class="card-icon">📘</div>
-        <div class="card-text">
-          <h3>{getLocalizedText('newToFramework')}</h3>
-          <p>{getLocalizedText('startWithLite')}</p>
-        </div>
-        <div class="card-actions">
-          <button class="primary-btn" on:click={() => setActiveSection('quick-start')}>
-            {getLocalizedText('readLite')} <span class="arrow-icon">→</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  {/if}
 
-  {#if data.isModular}
-    <!-- Sub-navigation for framework sections -->
-    {#if !isPrintMode} 
-      <div class="section-nav">
-        <!-- Introduction -->
-        <div class="nav-section">
-          <button 
-            class="nav-item introduction-item" 
-            class:active={activeSection === 'introduction'}
-            on:click={() => setActiveSection('introduction')}
-          >
-            <span class="nav-icon">🌟</span>
-            <span class="nav-title">{getSectionTitle('introduction')}</span>
-          </button>
-        </div>
-
-        <!-- Lite Guide -->
-        <div class="nav-section">
-          <button 
-            class="nav-item lite-item" 
-            class:active={activeSection === 'quick-start'}
-            on:click={() => setActiveSection('quick-start')}
-          >
-            <span class="nav-icon">📘</span>
-            <span class="nav-title">{getSectionTitle('quick-start')}</span>
-          </button>
-        </div>
-
-        <!-- Foundation Accordion - NOW INCLUDES INTRODUCTION AND OVERVIEW -->
-        <div class="nav-accordion">
-          <button 
-            class="accordion-header" 
-            class:open={foundationOpen}
-            class:has-active={isFoundationActive}
-            on:click={toggleFoundation}
-          >
-            <span class="accordion-icon">🌟</span>
-            <span class="accordion-title">{getSectionCategoryTitle('foundation')}</span>
-            <span class="section-count">({foundationSections.length})</span>
-            <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
-          </button>
-          {#if foundationOpen}
-            <div class="accordion-content" transition:slide={{ duration: 200 }}>
-              {#each foundationSections as section}
-                <button 
-                  class="nav-item subsection-item" 
-                  class:active={activeSection === section}
-                  on:click={() => setActiveSection(section)}
-                >
-                  <span class="nav-icon">{getSectionIcon(section)}</span>
-                  <span class="nav-title">{getShortSectionTitle(section)}</span>
-                </button>
-              {/each}
-            </div>
-          {/if}
-        </div>
-
-        <!-- Implementation Accordion -->
-        <div class="nav-accordion">
-          <button 
-            class="accordion-header" 
-            class:open={implementationOpen}
-            class:has-active={isImplementationActive}
-            on:click={toggleImplementation}
-          >
-            <span class="accordion-icon">🚀</span>
-            <span class="accordion-title">{getSectionCategoryTitle('implementation')}</span>
-            <span class="section-count">({implementationSections.length})</span>
-            <span class="toggle-arrow" class:rotated={implementationOpen}>▼</span>
-          </button>
-          {#if implementationOpen}
-            <div class="accordion-content" transition:slide={{ duration: 200 }}>
-              {#each implementationSections as section}
-                <button 
-                  class="nav-item subsection-item" 
-                  class:active={activeSection === section}
-                  on:click={() => setActiveSection(section)}
-                >
-                  <span class="nav-icon">{getSectionIcon(section)}</span>
-                  <span class="nav-title">{getShortSectionTitle(section)}</span>
-                </button>
-              {/each}
-            </div>
-          {/if}
-        </div>
-
-        <!-- Resources Accordion -->
-        <div class="nav-accordion">
-          <button 
-            class="accordion-header" 
-            class:open={resourcesOpen}
-            class:has-active={isResourceActive}
-            on:click={toggleResources}
-          >
-            <span class="accordion-icon">📚</span>
-            <span class="accordion-title">{getSectionCategoryTitle('resources')}</span>
-            <span class="section-count">({resourceSections.length})</span>
-            <span class="toggle-arrow" class:rotated={resourcesOpen}>▼</span>
-          </button>
-          {#if resourcesOpen}
-            <div class="accordion-content" transition:slide={{ duration: 200 }}>
-              {#each resourceSections as section}
-                <button 
-                  class="nav-item subsection-item" 
-                  class:active={activeSection === section}
-                  on:click={() => setActiveSection(section)}
-                >
-                  <span class="nav-icon">{getSectionIcon(section)}</span>
-                  <span class="nav-title">{getShortSectionTitle(section)}</span>
-                </button>
-              {/each}
-            </div>
-          {/if}
-        </div>
-      </div>
+{#if mounted}
+  <div class="documentation-container">
+    {#if !isPrintMode}
+      <FrameworkSidebar />
     {/if}
+    <div class="content">
 
-    <!-- Progress indicator for numbered sections -->
-    {#if !isPrintMode && isNumberedSection}
-      <div class="progress-indicator">
-        <div class="progress-bar">
-          <div class="progress-fill" style="width: {((currentSectionIndex + 1) / numberedSections.length) * 100}%"></div>
+      <!-- Quick Access Card for Lite Guide -->
+      {#if !isPrintMode && !isLiteActive && activeSection === 'introduction'}
+        <div class="lite-guide-card">
+          <div class="card-content">
+            <div class="card-icon">📘</div>
+            <div class="card-text">
+              <h3>{getLocalizedText('newToFramework')}</h3>
+              <p>{getLocalizedText('startWithLite')}</p>
+            </div>
+            <div class="card-actions">
+              <button class="primary-btn" on:click={() => setActiveSection('quick-start')}>
+                {getLocalizedText('readLite')} <span class="arrow-icon">→</span>
+              </button>
+            </div>
+          </div>
         </div>
-        <span class="progress-text">Section {currentSectionIndex + 1} of {numberedSections.length}</span>
-      </div>
-    {/if}
+      {/if}
 
-    <!-- Show active section, or all sections in print mode -->
-    {#each sectionsToShow as section}
-      <div class="section-content" id={section}>
-        <!-- Language fallback notice (skip for introduction since we have custom text) -->
-        {#if !isPrintMode && data.sectionsUsingEnglishFallback?.includes(section) && section !== 'introduction'}
-          <div class="language-fallback-notice">
-            <div class="notice-icon">🌐</div>
-            <div class="notice-content">
-              <strong>{currentLocale === 'sv' ? 'Innehåll på svenska kommer snart' : 'Content in your language coming soon'}</strong>
-              <p>{currentLocale === 'sv' ? 'Detta avsnitt visas för närvarande på engelska tills den svenska översättningen är klar.' : 'This section is currently displayed in English until translation is complete.'}</p>
+      {#if data.isModular}
+        <!-- Sub-navigation for framework sections -->
+        {#if !isPrintMode} 
+          <div class="section-nav">
+            <!-- Lite Guide -->
+            <div class="nav-section">
+              <button 
+                class="nav-item lite-item" 
+                class:active={activeSection === 'quick-start'}
+                on:click={() => setActiveSection('quick-start')}
+              >
+                <span class="nav-icon">📘</span>
+                <span class="nav-title">{getSectionTitle('quick-start')}</span>
+              </button>
+            </div>
+
+            <!-- Foundation Accordion - NOW INCLUDES INTRODUCTION AND OVERVIEW -->
+            <div class="nav-accordion">
+              <button 
+                class="accordion-header" 
+                class:open={foundationOpen}
+                class:has-active={isFoundationActive}
+                on:click={toggleFoundation}
+              >
+                <span class="accordion-icon">🌟</span>
+                <span class="accordion-title">{getSectionCategoryTitle('foundation')}</span>
+                <span class="section-count">({foundationSections.length})</span>
+                <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
+              </button>
+              {#if foundationOpen}
+                <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                  {#each foundationSections as section}
+                    <button 
+                      class="nav-item subsection-item" 
+                      class:active={activeSection === section}
+                      on:click={() => setActiveSection(section)}
+                    >
+                      <span class="nav-icon">{getSectionIcon(section)}</span>
+                      <span class="nav-title">{getShortSectionTitle(section)}</span>
+                    </button>
+                  {/each}
+                </div>
+              {/if}
+            </div>
+
+            <!-- Implementation Accordion -->
+            <div class="nav-accordion">
+              <button 
+                class="accordion-header" 
+                class:open={implementationOpen}
+                class:has-active={isImplementationActive}
+                on:click={toggleImplementation}
+              >
+                <span class="accordion-icon">🚀</span>
+                <span class="accordion-title">{getSectionCategoryTitle('implementation')}</span>
+                <span class="section-count">({implementationSections.length})</span>
+                <span class="toggle-arrow" class:rotated={implementationOpen}>▼</span>
+              </button>
+              {#if implementationOpen}
+                <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                  {#each implementationSections as section}
+                    <button 
+                      class="nav-item subsection-item" 
+                      class:active={activeSection === section}
+                      on:click={() => setActiveSection(section)}
+                    >
+                      <span class="nav-icon">{getSectionIcon(section)}</span>
+                      <span class="nav-title">{getShortSectionTitle(section)}</span>
+                    </button>
+                  {/each}
+                </div>
+              {/if}
+            </div>
+
+            <!-- Resources Accordion -->
+            <div class="nav-accordion">
+              <button 
+                class="accordion-header" 
+                class:open={resourcesOpen}
+                class:has-active={isResourceActive}
+                on:click={toggleResources}
+              >
+                <span class="accordion-icon">📚</span>
+                <span class="accordion-title">{getSectionCategoryTitle('resources')}</span>
+                <span class="section-count">({resourceSections.length})</span>
+                <span class="toggle-arrow" class:rotated={resourcesOpen}>▼</span>
+              </button>
+              {#if resourcesOpen}
+                <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                  {#each resourceSections as section}
+                    <button 
+                      class="nav-item subsection-item" 
+                      class:active={activeSection === section}
+                      on:click={() => setActiveSection(section)}
+                    >
+                      <span class="nav-icon">{getSectionIcon(section)}</span>
+                      <span class="nav-title">{getShortSectionTitle(section)}</span>
+                    </button>
+                  {/each}
+                </div>
+              {/if}
             </div>
           </div>
         {/if}
-        
-        {#if section === 'quick-start'}
-          <!-- Render Lite Guide -->
-          <svelte:component this={data.sections[section].default} />
-          
-          <!-- Navigation buttons at bottom of lite guide -->
-          {#if !isPrintMode}
-            <div class="lite-guide-navigation">
-              <button class="secondary-btn" on:click={downloadLiteGuide}>
-                {getLocalizedText('downloadPdf')} <span class="download-icon">↓</span>
-              </button>
-              <button class="primary-btn" on:click={() => setActiveSection('introduction')}>
-                {getLocalizedText('continueToFull')} <span class="arrow-icon">→</span>
-              </button>
-            </div>
-          {/if}
 
-        {:else if section === 'introduction'}
-          <!-- Render Introduction (custom text + constellation map) -->
-          <div class="introduction-section">
-            <h1>{introductionText.title}</h1>
-            <h2>{introductionText.subtitle}</h2>
-            <p>{introductionText.paragraph1}</p>
-            <p>{introductionText.paragraph2}</p>
+        <!-- Progress indicator for numbered sections -->
+        {#if !isPrintMode && isNumberedSection}
+          <div class="progress-indicator">
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: {((currentSectionIndex + 1) / numberedSections.length) * 100}%"></div>
+            </div>
+            <span class="progress-text">Section {currentSectionIndex + 1} of {numberedSections.length}</span>
           </div>
-          <!-- Show constellation map for introduction section -->
-          <ConstellationMap />
-          
-        {:else if section === 'index'}
-          <!-- Render Overview section from index.md -->
-          {#if data.sections[section]}
-            <svelte:component this={data.sections[section].default} />
-          {:else}
-            <p>Overview section not found</p>
-          {/if}
-          
-        {:else if data.sections[section]}
-          <!-- Render normal sections from markdown files -->
-          <svelte:component this={data.sections[section].default} />
-        {:else}
-          <p>Section {section} not found</p>
         {/if}
 
-        <!-- Section navigation at bottom of numbered sections -->
-        {#if isNumberedSection && !isPrintMode}
-          <div class="section-navigation">
-            {#if currentSectionIndex > 0}
-              <button class="nav-btn prev-btn" on:click={() => {
-                const currentIndex = numberedSections.indexOf(activeSection);
-                const prevSection = numberedSections[currentIndex - 1];
-                setActiveSection(prevSection);
-              }}>
-                ← Previous Section
-              </button>
+        <!-- Show active section, or all sections in print mode -->
+        {#each sectionsToShow as section}
+          <div class="section-content" id={section}>
+            <!-- Language fallback notice (skip for introduction since we have custom text) -->
+            {#if !isPrintMode && data.sectionsUsingEnglishFallback?.includes(section) && section !== 'introduction'}
+              <div class="language-fallback-notice">
+                <div class="notice-icon">🌐</div>
+                <div class="notice-content">
+                  <strong>{currentLocale === 'sv' ? 'Innehåll på svenska kommer snart' : 'Content in your language coming soon'}</strong>
+                  <p>{currentLocale === 'sv' ? 'Detta avsnitt visas för närvarande på engelska tills den svenska översättningen är klar.' : 'This section is currently displayed in English until translation is complete.'}</p>
+                </div>
+              </div>
             {/if}
             
-            {#if currentSectionIndex < numberedSections.length - 1}
-              <button class="nav-btn next-btn" on:click={() => {
-                const currentIndex = numberedSections.indexOf(activeSection);
-                const nextSection = numberedSections[currentIndex + 1];
-                setActiveSection(nextSection);
-              }}>
-                Next Section →
-              </button>
+            {#if section === 'quick-start'}
+              <!-- Render Lite Guide -->
+              <svelte:component this={data.sections[section].default} />
+              
+              <!-- Navigation buttons at bottom of lite guide -->
+              {#if !isPrintMode}
+                <div class="lite-guide-navigation">
+                  <button class="secondary-btn" on:click={downloadLiteGuide}>
+                    {getLocalizedText('downloadPdf')} <span class="download-icon">↓</span>
+                  </button>
+                  <button class="primary-btn" on:click={() => setActiveSection('introduction')}>
+                    {getLocalizedText('continueToFull')} <span class="arrow-icon">→</span>
+                  </button>
+                </div>
+              {/if}
+
+            {:else if section === 'introduction'}
+              <!-- Render Introduction (custom text + constellation map) -->
+              <div class="introduction-section">
+                <h1>{introductionText.title}</h1>
+                <h2>{introductionText.subtitle}</h2>
+                <p>{introductionText.paragraph1}</p>
+                <p>{introductionText.paragraph2}</p>
+              </div>
+              <!-- Show constellation map for introduction section -->
+              <ConstellationMap />
+              
+            {:else if section === 'index'}
+              <!-- Render Overview section from index.md -->
+              {#if data.sections[section]}
+                <svelte:component this={data.sections[section].default} />
+              {:else}
+                <p>Overview section not found</p>
+              {/if}
+              
+            {:else if data.sections[section]}
+              <!-- Render normal sections from markdown files -->
+              <svelte:component this={data.sections[section].default} />
+            {:else}
+              <p>Section {section} not found</p>
+            {/if}
+
+            <!-- Section navigation at bottom of numbered sections -->
+            {#if isNumberedSection && !isPrintMode}
+              <div class="section-navigation">
+                {#if currentSectionIndex > 0}
+                  <button class="nav-btn prev-btn" on:click={() => {
+                    const currentIndex = numberedSections.indexOf(activeSection);
+                    const prevSection = numberedSections[currentIndex - 1];
+                    setActiveSection(prevSection);
+                  }}>
+                    ← Previous Section
+                  </button>
+                {/if}
+                
+                {#if currentSectionIndex < numberedSections.length - 1}
+                  <button class="nav-btn next-btn" on:click={() => {
+                    const currentIndex = numberedSections.indexOf(activeSection);
+                    const nextSection = numberedSections[currentIndex + 1];
+                    setActiveSection(nextSection);
+                  }}>
+                    Next Section →
+                  </button>
+                {/if}
+              </div>
             {/if}
           </div>
-        {/if}
-      </div>
-    {/each}
-  {:else}
-    <!-- Legacy single file display -->
-    <div class="introduction-section">
-      <h1>{introductionText.title}</h1>
-      <h2>{introductionText.subtitle}</h2>
-      <p>{introductionText.paragraph1}</p>
-      <p>{introductionText.paragraph2}</p>
-    </div>
-    
-    <!-- Show constellation map -->
-    <ConstellationMap />
+        {/each}
+      {:else}
+        <!-- Legacy single file display -->
+        <div class="introduction-section">
+          <h1>{introductionText.title}</h1>
+          <h2>{introductionText.subtitle}</h2>
+          <p>{introductionText.paragraph1}</p>
+          <p>{introductionText.paragraph2}</p>
+        </div>
+        
+        <!-- Show constellation map -->
+        <ConstellationMap />
 
-    <!-- The rest of the content -->
-    <div class="remaining-content">
-      <svelte:component this={data.component} />
+        <!-- The rest of the content -->
+        <div class="remaining-content">
+          <svelte:component this={data.component} />
+        </div>
+      {/if}
     </div>
-  {/if}
-</div>
+  </div>
+{/if}
 
 <style>
   /* Meta-governance cosmic color scheme */
@@ -588,6 +588,16 @@
     --meta-earth: #2D5F2D; /* Earthy green - grounding, sustainability, balance */
     --meta-light: #f0f4ff; /* Light cosmic blue - clarity, openness */
     --meta-medium: #e6f7ff; /* Medium cosmic blue */
+  }
+
+  /* Layout */
+  .documentation-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
   }
 
   .content {

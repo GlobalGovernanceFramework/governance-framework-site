@@ -52,6 +52,7 @@ Available categories:
 - shield-protocol
 - regenerative-resources
 - great-transition
+- emergent-governance-protocol
 
 Example: node tools-pdf-generator.js economic
   `);
@@ -96,6 +97,7 @@ const outputDirs = {
   'great-transition': path.join(__dirname, '..', 'static', 'frameworks','tools', 'great-transition'),
   'water-and-sanitation-governance': path.join(__dirname, '..', 'static', 'frameworks','tools', 'water-and-sanitation-governance'),
   'indigenous-governance-and-traditional-knowledge': path.join(__dirname, '..', 'static', 'frameworks','tools', 'indigenous-governance-and-traditional-knowledge'),
+  'emergent-governance-protocol': path.join(__dirname, '..', 'static', 'frameworks','tools', 'emergent-governance-protocol'),
   'treaty-for-our-only-home': path.join(__dirname, '..', 'static', 'frameworks','tools', 'treaty-for-our-only-home'),
   'get-involved': path.join(__dirname, '..', 'static', 'get-involved'),
   'frameworks-foundation': path.join(__dirname, '..', 'static', 'downloads'),
@@ -111,6 +113,34 @@ if (targetCategory && !Object.keys(outputDirs).includes(targetCategory)) {
 
 // Define tools to process
 const tools = [
+
+  // Emergent Governance Protocol, Full framework
+  {
+    name: 'emergent-governance-protocol-framework',
+    category: 'emergent-governance-protocol',
+    fileNames: {
+      en: 'Emergent-Governance-Protocol-Framework',
+      sv: 'Emergent-Governance-Protocol-Framework'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'emergent-governance-protocol'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'emergent-governance-protocol')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Emergent Governance Protocol',
+      sv: 'Protokoll för framväxande styrning'
+    },
+    sections: [
+      'emergent-governance-protocol',
+      'egp-one-page-summary',
+      'egp-appendix',
+      'egp-glossary'
+    ]
+  },
 
   // Great Transition
   // Full guide
@@ -9139,49 +9169,60 @@ function getMimeType(ext) {
   return mimeTypes[ext.toLowerCase()] || 'image/png';
 }
 
-// Enhanced section processing with page breaks
-function addSectionPageBreaks(markdown) {
-  console.log(`📄 ADDING SECTION PAGE BREAKS...`);
+function addSectionPageBreaks(combinedContent, processedSections) {
+  console.log(`📄 ADDING PAGE BREAKS BETWEEN FILES ONLY...`);
   
-  // Split content by the section separators we added
-  const sections = markdown.split(/^---\s*$/m);
+  if (!processedSections || processedSections.length <= 1) {
+    console.log(`   Single file/section detected - no page breaks needed`);
+    return combinedContent;
+  }
   
-  console.log(`   Found ${sections.length} sections to process`);
+  console.log(`   Processing ${processedSections.length} separate files for page breaks`);
+  
+  // The combined content should have been built with '---' separators between files
+  // Split on the file separators (the --- we added between files)
+  const fileSections = combinedContent.split(/\n---\n/);
+  
+  console.log(`   Found ${fileSections.length} file sections to process`);
   
   let processedContent = '';
   
-  for (let i = 0; i < sections.length; i++) {
-    const section = sections[i].trim();
-    if (!section) continue;
+  for (let i = 0; i < fileSections.length; i++) {
+    const fileContent = fileSections[i].trim();
+    if (!fileContent) continue;
     
-    // Find the first heading in this section
-    const headingMatch = section.match(/^(#{1,2})\s+(.+)$/m);
+    // Find the first heading in this file
+    const headingMatch = fileContent.match(/^(#{1,6})\s+(.+)$/m);
     
     if (headingMatch && i > 0) {
-      // Add page break for sections after the first one
+      // Add page break for files after the first one
       const level = headingMatch[1];
       const title = headingMatch[2];
+      const sectionName = processedSections[i] || `Section ${i + 1}`;
       
-      console.log(`   Section ${i + 1}: "${title}" (${level}) - adding page break`);
+      console.log(`   File ${i + 1} (${sectionName}): "${title}" - adding page break`);
       
-      // Use HTML div for page break, keep markdown heading clean
+      // Add page break div before the file content
       const pageBreakDiv = '<div class="section-break"></div>\n\n';
-      const cleanHeading = `${level} ${title}`;
       
-      // Replace the original heading with page break + clean heading
-      const sectionWithBreak = section.replace(/^#{1,2}\s+.+$/m, pageBreakDiv + cleanHeading);
-      
-      processedContent += sectionWithBreak + '\n\n';
+      // Keep the file content exactly as is, just add page break before it
+      processedContent += pageBreakDiv + fileContent;
     } else {
-      // First section or no heading found
+      // First file or no heading found - no page break
       if (headingMatch) {
-        console.log(`   Section ${i + 1}: "${headingMatch[2]}" (first section, no page break)`);
+        const sectionName = processedSections[i] || `Section ${i + 1}`;
+        console.log(`   File ${i + 1} (${sectionName}): "${headingMatch[2]}" (first file, no page break)`);
       }
-      processedContent += section + '\n\n';
+      processedContent += fileContent;
+    }
+    
+    // Add spacing between files (but not after the last one)
+    if (i < fileSections.length - 1) {
+      processedContent += '\n\n';
     }
   }
   
-  console.log(`📄 Page break processing complete - no trailing artifacts`);
+  console.log(`📄 Page break processing complete - breaks only between ${processedSections.length} files`);
   return processedContent;
 }
 
@@ -9312,7 +9353,6 @@ function detectContentStructure(tool, sourceDir, lang) {
   return structure;
 }
 
-// NEW: Enhanced content loading that handles all structure types
 function loadContentByStructure(tool, sourceDir, lang, structure) {
   console.log(`\n📚 LOADING CONTENT using ${structure.type} strategy`);
   
@@ -9329,7 +9369,11 @@ function loadContentByStructure(tool, sourceDir, lang, structure) {
           const result = processSection(sectionFile, section, sourceDir);
           
           if (result.exists && result.content.trim()) {
-            combinedContent += result.content + '\n\n---\n\n';
+            // Add file separator ONLY between different files
+            if (combinedContent.trim()) {
+              combinedContent += '\n---\n'; // File boundary marker
+            }
+            combinedContent += result.content;
             processedSections.push(section);
             debugSuccess(`${section}`, `${result.content.length} chars`);
           } else {
@@ -9345,7 +9389,7 @@ function loadContentByStructure(tool, sourceDir, lang, structure) {
         const result = processSection(sectionFile, tool.sections[0], sourceDir);
         
         if (result.exists && result.content.trim()) {
-          combinedContent = result.content;
+          combinedContent = result.content; // No separators for single file
           processedSections.push(tool.sections[0]);
           debugSuccess(`${tool.sections[0]}`, `${result.content.length} chars`);
         } else {
@@ -9366,7 +9410,7 @@ function loadContentByStructure(tool, sourceDir, lang, structure) {
           content = content.replace(/^(---|\+\+\+)\s*\n([\s\S]*?)\n\s*(---|\+\+\+)\s*/m, '');
           
           if (content.trim()) {
-            combinedContent = content;
+            combinedContent = content; // No separators for single file
             processedSections.push(structure.foundFile.replace('.md', ''));
             debugSuccess(`${structure.foundFile}`, `${content.length} chars`);
           } else {
@@ -9513,14 +9557,14 @@ async function generateFinalPDFs() {
           const outputFile = path.join(outputDir, `${fileName}.pdf`);
           
           // Step 1: Add section page breaks (ORIGINAL FEATURE)
-          console.log(`\n📄 STEP 1: Processing page breaks...`);
+          console.log(`\n📄 STEP 1: Processing page breaks between files...`);
           let contentWithBreaks;
-          
+
           if (isMultiSection) {
-            console.log(`   Multi-section document: Adding section page breaks`);
-            contentWithBreaks = addSectionPageBreaks(contentResult.content);
+            console.log(`   Multi-section document: Adding page breaks between ${contentResult.sections.length} files`);
+            contentWithBreaks = addSectionPageBreaks(contentResult.content, contentResult.sections);
           } else {
-            console.log(`   Single document: No section breaks needed`);
+            console.log(`   Single document: No file breaks needed`);
             contentWithBreaks = contentResult.content;
           }
           

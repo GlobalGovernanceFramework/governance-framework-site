@@ -126,6 +126,67 @@ export const governanceOSEntities: GgfEntity[] = [
     geographicScope: 'Global',
     implementationPriority: 'High',
     dependencies: ['council_global_metrology']
+  },
+  {
+    id: 'framework_egp',
+    type: 'Framework',
+    name: "Emergent Governance Protocol (The GGF's Minimum Viable Grammar)",
+    shortName: 'EGP / MVG',
+    description: "The foundational Tier 1 operational protocol defining the 'Minimum Viable Grammar' (`sense`, `propose`, `adopt`) for all interactions within the GGF ecosystem, enabling decentralized, bottom-up, and adaptive governance.",
+    tier: 1,
+    status: 'Ready',
+    primaryDomain: 'Governance',
+    geographicScope: 'Global',
+    implementationPriority: 'Critical',
+    dependencies: ['framework_treaty', 'framework_meta_gov'],
+    enables: ['protocol_sense', 'protocol_propose', 'protocol_adopt'],
+    ui: {
+      path: '/frameworks/emergent-governance-protocol',
+      titleKey: 'framework.docs.nav.frameworkTitles.emergentGovernanceProtocol', // Note: This titleKey would need to be created
+      emoji: '🗣️',
+      version: '1.0',
+      slug: 'emergent-governance-protocol'
+    }
+  },
+  {
+    id: 'protocol_sense',
+    type: 'Protocol',
+    name: 'Sense Protocol',
+    description: "The universal EGP system call for any agent (human, AI, sensor) to flag a system stressor and generate a standardized 'stress packet'.",
+    tier: 1,
+    status: 'Proposed',
+    primaryDomain: 'Governance',
+    dependencies: ['framework_egp']
+  },
+  {
+    id: 'protocol_propose',
+    type: 'Protocol',
+    name: 'Propose Protocol',
+    description: "The universal EGP system call for any agent to suggest a response to a 'sense' signal, including context, test criteria, and a sunset clause.",
+    tier: 1,
+    status: 'Proposed',
+    primaryDomain: 'Governance',
+    dependencies: ['framework_egp', 'protocol_sense']
+  },
+  {
+    id: 'protocol_adopt',
+    type: 'Protocol',
+    name: 'Adopt Protocol',
+    description: "The universal EGP system call for a community or institution to temporarily implement a proposal as a time-bound experiment.",
+    tier: 1,
+    status: 'Proposed',
+    primaryDomain: 'Governance',
+    dependencies: ['framework_egp', 'protocol_propose']
+  },
+  {
+    id: 'tool_egp_app',
+    type: 'Tool',
+    name: 'EGP Prototyping App',
+    description: 'A minimum viable app or platform that serves as a reference implementation and experimental environment for the EGP system calls.',
+    tier: 1,
+    status: 'Pilot',
+    primaryDomain: 'Technology',
+    dependencies: ['framework_egp']
   }
 ];
 
@@ -276,5 +337,67 @@ export const governanceOSRelationships: GgfRelationship[] = [
     type: 'PARTICIPATES_IN',
     description: 'The Peace Framework provides conflict prediction intelligence to the GIF-Council.',
     strength: 'Strong'
+  },
+
+  // === EGP INTERNAL RELATIONSHIPS ===
+  {
+    from: 'framework_egp',
+    to: 'protocol_sense',
+    type: 'ESTABLISHES',
+    description: 'The EGP framework establishes the `sense` system call as its primary input mechanism.'
+  },
+  {
+    from: 'framework_egp',
+    to: 'protocol_propose',
+    type: 'ESTABLISHES',
+    description: 'The EGP framework establishes the `propose` system call for generating solutions.'
+  },
+  {
+    from: 'framework_egp',
+    to: 'protocol_adopt',
+    type: 'ESTABLISHES',
+    description: 'The EGP framework establishes the `adopt` system call for experimental implementation.'
+  },
+
+  // === EGP INTEGRATION WITH GGF CORE ===
+  {
+    from: 'framework_treaty',
+    to: 'framework_egp',
+    type: 'ENABLES',
+    description: 'The Treaty (Tier 0) provides the constitutional and legal container within which the EGP (Tier 1) can operate safely and effectively.'
+  },
+  {
+    from: 'framework_meta_gov',
+    to: 'framework_egp',
+    type: 'INTEGRATES_WITH',
+    description: 'Meta-Governance provides the coordination architecture (the "bazaar") where EGP interactions are processed, while the EGP provides the generative grammar for those interactions.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_egp',
+    to: 'framework_meta_gov',
+    type: 'GUIDES',
+    description: 'The EGP provides the agile, bottom-up operational logic that the Meta-Governance framework is designed to coordinate.'
+  },
+
+  // === EGP AS THE UNIVERSAL GRAMMAR FOR OTHER FRAMEWORKS (EXAMPLES) ===
+  {
+    from: 'framework_egp',
+    to: 'framework_cairn_protocol', // Example
+    type: 'GUIDES',
+    description: "The EGP provides the universal grammar for the Cairn Protocol's operations; for instance, its 'Grief Feedback Pathway' is a specific implementation of the `sense` protocol."
+  },
+  {
+    from: 'framework_egp',
+    to: 'framework_shield_protocol', // Example
+    type: 'GUIDES',
+    description: "The EGP guides the Shield Protocol's community interactions, where a BAZ reporting a threat is using the `sense` protocol."
+  },
+  {
+      from: 'tool_egp_app',
+      to: 'framework_egp',
+      type: 'IMPLEMENTS',
+      description: 'The prototyping app serves as the reference implementation and experimental testbed for the EGP.'
   }
 ];

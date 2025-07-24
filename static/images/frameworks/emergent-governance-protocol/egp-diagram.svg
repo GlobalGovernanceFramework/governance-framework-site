@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 500 400"
+   version="1.1"
+   id="svg14"
+   sodipodi:docname="egp-diagram.svg"
+   width="500"
+   height="400"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview14"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.4955308"
+     inkscape:cx="131.39147"
+     inkscape:cy="209.95889"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg14" />
+  <!-- Background circle -->
+  <circle
+     cx="266"
+     cy="200"
+     r="150"
+     fill="none"
+     stroke="#e5e7eb"
+     stroke-width="2"
+     stroke-dasharray="5, 5"
+     id="circle1" />
+  <!-- Central text -->
+  <text
+     x="266"
+     y="190"
+     text-anchor="middle"
+     font-family="system-ui, '-apple-system', sans-serif"
+     font-size="16px"
+     font-weight="600"
+     fill="#374151"
+     id="text1">Community</text>
+  <text
+     x="266"
+     y="210"
+     text-anchor="middle"
+     font-family="system-ui, '-apple-system', sans-serif"
+     font-size="16px"
+     font-weight="600"
+     fill="#374151"
+     id="text2">Learning Loop</text>
+  <!-- SENSE node -->
+  <circle
+     cx="266"
+     cy="80"
+     r="35"
+     fill="#fef3c7"
+     stroke="#f59e0b"
+     stroke-width="2"
+     id="circle2" />
+  <text
+     x="266"
+     y="75"
+     text-anchor="middle"
+     font-family="system-ui, '-apple-system', sans-serif"
+     font-size="20px"
+     id="text3">🔍</text>
+  <text
+     x="266"
+     y="90"
+     text-anchor="middle"
+     font-family="system-ui, '-apple-system', sans-serif"
+     font-size="12px"
+     font-weight="600"
+     fill="#92400e"
+     id="text4">SENSE</text>
+  <!-- PROPOSE node -->
+  <circle
+     cx="386"
+     cy="280"
+     r="35"
+     fill="#dbeafe"
+     stroke="#3b82f6"
+     stroke-width="2"
+     id="circle4" />
+  <text
+     x="386"
+     y="275"
+     text-anchor="middle"
+     font-family="system-ui, '-apple-system', sans-serif"
+     font-size="20px"
+     id="text5">💡</text>
+  <text
+     x="386"
+     y="290"
+     text-anchor="middle"
+     font-family="system-ui, '-apple-system', sans-serif"
+     font-size="12px"
+     font-weight="600"
+     fill="#1e40af"
+     id="text6">PROPOSE</text>
+  <!-- ADOPT node -->
+  <circle
+     cx="146"
+     cy="280"
+     r="35"
+     fill="#dcfce7"
+     stroke="#22c55e"
+     stroke-width="2"
+     id="circle6" />
+  <text
+     x="146"
+     y="275"
+     text-anchor="middle"
+     font-family="system-ui, '-apple-system', sans-serif"
+     font-size="20px"
+     id="text7">⚡</text>
+  <text
+     x="146"
+     y="290"
+     text-anchor="middle"
+     font-family="system-ui, '-apple-system', sans-serif"
+     font-size="12px"
+     font-weight="600"
+     fill="#15803d"
+     id="text8">ADOPT</text>
+  <!-- Arrows -->
+  <!-- SENSE to PROPOSE -->
+  <path
+     d="m 291,105 q 75,45 70,150"
+     fill="none"
+     stroke="#6b7280"
+     stroke-width="2"
+     marker-end="url(#arrowhead)"
+     id="path8" />
+  <!-- PROPOSE to ADOPT -->
+  <path
+     d="M 351,280 H 181"
+     fill="none"
+     stroke="#6b7280"
+     stroke-width="2"
+     marker-end="url(#arrowhead)"
+     id="path9" />
+  <!-- ADOPT to SENSE -->
+  <path
+     d="M 171,255 Q 196,150 241,105"
+     fill="none"
+     stroke="#6b7280"
+     stroke-width="2"
+     marker-end="url(#arrowhead)"
+     id="path10" />
+  <!-- Arrow marker definition -->
+  <defs
+     id="defs10">
+    <marker
+       id="arrowhead"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0,7 0,0 10,3.5 "
+         fill="#6b7280"
+         id="polygon10" />
+    </marker>
+  </defs>
+  <!-- External labels -->
+  <text
+     x="266"
+     y="40"
+     text-anchor="middle"
+     font-family="system-ui, '-apple-system', sans-serif"
+     font-size="11px"
+     fill="#6b7280"
+     id="text10">Flag a stressor</text>
+  <text
+     x="426"
+     y="285"
+     text-anchor="start"
+     font-family="system-ui, '-apple-system', sans-serif"
+     font-size="11px"
+     fill="#6b7280"
+     id="text11">Suggest an</text>
+  <text
+     x="426"
+     y="297"
+     text-anchor="start"
+     font-family="system-ui, '-apple-system', sans-serif"
+     font-size="11px"
+     fill="#6b7280"
+     id="text12">experiment</text>
+  <text
+     x="106"
+     y="285"
+     text-anchor="end"
+     font-family="system-ui, '-apple-system', sans-serif"
+     font-size="11px"
+     fill="#6b7280"
+     id="text13">Try a time-bound</text>
+  <text
+     x="106"
+     y="297"
+     text-anchor="end"
+     font-family="system-ui, '-apple-system', sans-serif"
+     font-size="11px"
+     fill="#6b7280"
+     id="text14">solution</text>
+</svg>
