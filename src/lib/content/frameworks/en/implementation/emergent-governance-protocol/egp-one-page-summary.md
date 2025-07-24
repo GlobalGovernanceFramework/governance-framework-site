@@ -108,6 +108,6 @@ Pick one stress signal. Try the three operations. See what grows.
 ---
 
 📧 **Contact:** governance@globalgovernanceframeworks.org  
-🌐 **Full Document:** [Link to complete EGP framework]  
-💻 **GitHub:** github.com/ggf/egp  
+🌐 **Full Document:** [Link to complete EGP framework](https://globalgovernanceframeworks.org/frameworks/emergent-governance-protocol)  
+💻 **GitHub:** github.com/GlobalGovernanceFrameworks/egp  
 📋 **License:** Creative Commons - Adapt freely, share improvements

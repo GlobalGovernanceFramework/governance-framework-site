@@ -258,7 +258,7 @@ The revolution isn't in the design—it's in the recognition that the future is 
 - **One-Page Summary:** [Quick reference guide](#egp-one-page-summary)
 - **EGP Appendix:** [Detailed implementation guidance](#egp-appendix)  
 - **Glossary:** [Key terms and definitions](#egp-glossary)
-- **GitHub Repository:** [github.com/ggf/egp] - Technical specs and prototypes
+- **GitHub Repository:** [github.com/GlobalGovernanceFrameworks/egp] - Technical specs and prototypes
 - **Community Examples:** [Real-world case studies and lessons learned]
 
 ---
