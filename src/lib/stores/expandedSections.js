@@ -8,9 +8,36 @@ const initialExpandedSections = typeof localStorage !== 'undefined'
 
 export const expandedSections = writable(initialExpandedSections);
 
-// Subscribe to changes and save to localStorage
-expandedSections.subscribe(value => {
-  if (typeof localStorage !== 'undefined') {
-    localStorage.setItem('expandedSections', JSON.stringify(value));
+// Debounced localStorage saving with batching
+let saveTimeout;
+let pendingValue = null;
+const SAVE_DELAY = 250; // Reduced delay for better responsiveness
+
+function debouncedSave(value) {
+  if (typeof localStorage === 'undefined') return;
+  
+  // Store the latest value
+  pendingValue = value;
+  
+  // Clear existing timeout
+  if (saveTimeout) {
+    clearTimeout(saveTimeout);
   }
+  
+  // Set new timeout with the latest value
+  saveTimeout = setTimeout(() => {
+    if (pendingValue !== null) {
+      try {
+        localStorage.setItem('expandedSections', JSON.stringify(pendingValue));
+        pendingValue = null;
+      } catch (error) {
+        console.warn('Failed to save expanded sections to localStorage:', error);
+      }
+    }
+  }, SAVE_DELAY);
+}
+
+// Subscribe to changes and save to localStorage with debouncing
+expandedSections.subscribe(value => {
+  debouncedSave(value);
 });
