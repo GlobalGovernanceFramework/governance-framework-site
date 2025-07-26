@@ -1,77 +1,94 @@
 {
   "meta": {
-    "title": "Teknikstyrningsimplementeringsramverk - Global Governance Framework",
-    "description": "Ett omfattande ramverk för att implementera effektiva teknikstyrningssystem"
+    "title": "Ramverk för teknologistyrning - Globalt styrningsramverk",
+    "description": "Omfattande ramverk för att styra teknikutveckling genom adaptiv, inkluderande och etiskt anpassad styrning"
   },
   "guideCard": {
-    "title": "Ny inom teknikstyrningsimplementeringsramverket?",
-    "description": "Börja med vår introduktion som förklarar ramverkets vision, grundprinciper och omfattande metod för teknikstyrning.",
-    "buttonText": "Läs introduktionen"
+    "title": "Ny inom teknologistyrning?",
+    "description": "Börja med vår sammanfattning designad för skeptiker—som tar upp praktiska frågor om teknologistyrning och implementering.",
+    "buttonText": "Läs sammanfattning för skeptiker"
   },
   "categories": {
     "overview": "Översikt",
-    "foundation": "Grund & förståelse",
-    "structure": "Bygga styrningssystem",
-    "operation": "Få styrning att fungera",
-    "adaptation": "Hålla sig i framkant",
-    "learning": "Lärande & förbättring"
+    "foundation": "Grund",
+    "structure": "Struktur",
+    "operation": "Drift",
+    "implementation": "Implementering",
+    "examples": "Exempel och samarbete",
+    "reference": "Referensmaterial",
+    "tools": "Implementeringsverktyg",
+    "crisis": "Kris och säkerhet",
+    "coordination": "Koordinering",
+    "evaluation": "Utvärdering och dokumentation"
   },
   "sections": {
-    "index": "Ramverköversikt",
-    "introduction": "Introduktion & grundprinciper",
-    "context": "Sammanhang & omfattning",
-    "governance-model": "Styrningsmodellkomponenter",
-    "implementation": "Implementeringsplan",
-    "tools": "Verktyg & teknologier",
-    "operational": "Operativa riktlinjer",
-    "emerging": "Förutseende av ny teknik",
-    "evaluation": "Utvärdering & mätmetoder",
-    "case-studies": "Fallstudier & exempel",
-    "appendices": "Bilagor & resurser"
+    "index": "Ramverk för teknologistyrning",
+    "at-a-glance": "I korthet",
+    "executive-summary-for-the-skeptic": "Sammanfattning för skeptiker",
+    "principles": "Grundprinciper",
+    "position": "Ramverkets position",
+    "gtc": "Globala teknologirådet",
+    "trrt": "Teknikrisk och ansvarsnivåer",
+    "oversight": "Tillsyn och ansvarsskyldighet",
+    "indigenous": "Ursprungsfolks teknologisuveränitet",
+    "mechanisms": "Viktiga styrningsmekanismer",
+    "economy": "Regenerativ teknikekonomi",
+    "roadmap": "Implementeringskarta",
+    "tools": "Verktyg och teknologier",
+    "emerging": "Framväxande teknikanticiperande",
+    "evaluation": "Utvärdering och mått",
+    "case-studies": "Fallstudier och exempel",
+    "international": "Internationellt samarbete",
+    "glossary": "Ordlista",
+    "references": "Referenser och standarder",
+    "contributing": "Bidragsriktlinjer",
+    "playbook": "Styrningshandbok",
+    "trrt-detailed": "TRRT-system detaljerat",
+    "starter-kit-detailed": "Startpaket för teknologistyrning",
+    "circuit-breaker": "Etisk kretsbrytarprotokoll",
+    "crisis-unit": "Teknikkrisenhet",
+    "international-detailed": "Internationellt samarbetsramverk",
+    "implementation-strategy": "Implementeringsstrategi",
+    "documentation": "Dokumentation och utvärdering",
+    "philosophy": "Filosofiska grunder"
   },
   "sectionsShort": {
-    "index": "Översikt",
-    "introduction": "Introduktion",
-    "context": "Sammanhang",
-    "governance-model": "Styrningsmodell",
-    "implementation": "Implementation",
+    "executive-summary-for-the-skeptic": "Sammanfattning",
+    "trrt": "Risknivåer (TRRT)",
+    "indigenous": "Ursprungsfolks suveränitet",
+    "mechanisms": "Viktiga mekanismer",
+    "economy": "Teknikekonomi",
+    "roadmap": "Karta",
     "tools": "Verktyg",
-    "operational": "Drift",
-    "emerging": "Ny teknik",
+    "emerging": "Framväxande teknik",
     "evaluation": "Utvärdering",
     "case-studies": "Fallstudier",
-    "appendices": "Bilagor"
-  },
-  "progress": {
-    "text": "Avsnitt {current} av {total}"
-  },
-  "languageFallback": {
-    "title": "Innehåll på svenska kommer snart",
-    "description": "Detta avsnitt visas för närvarande på engelska tills den svenska översättningen är klar."
+    "international": "Internationellt",
+    "references": "Referenser",
+    "contributing": "Bidrag",
+    "playbook": "Handbok",
+    "trrt-detailed": "TRRT detaljerat",
+    "starter-kit-detailed": "Startpaket",
+    "circuit-breaker": "Kretsbrytare",
+    "crisis-unit": "Krisenhet",
+    "international-detailed": "Internationellt detaljerat",
+    "implementation-strategy": "Strategi",
+    "documentation": "Dokumentation",
+    "philosophy": "Filosofi"
   },
   "navigation": {
     "downloadPdf": "Ladda ner PDF-version",
-    "continueToFull": "Fortsätt till fullständigt ramverk",
-    "previousSection": "Föregående avsnitt",
-    "nextSection": "Nästa avsnitt"
+    "continueToFramework": "Fortsätt till fullständigt ramverk"
+  },
+  "languageFallback": {
+    "title": "Innehåll på ditt språk kommer snart",
+    "description": "Detta avsnitt visas för närvarande på engelska tills översättningen är klar."
+  },
+  "loading": {
+    "text": "Laddar innehåll för teknologistyrning..."
   },
   "errors": {
     "sectionNotFound": "Avsnitt \"{section}\" hittades inte",
-    "contentInDevelopment": "Detta innehåll är fortfarande under utveckling."
-  },
-  "loading": {
-    "text": "Laddar ramverksinnehåll..."
-  },
-  "localizedText": {
-    "newToFramework": "Ny inom teknikstyrningsimplementeringsramverket?",
-    "startWithIntroduction": "Börja med vår introduktion som förklarar ramverkets vision, grundprinciper och omfattande metod för teknikstyrning.",
-    "readIntroduction": "Läs introduktionen",
-    "downloadPdf": "Ladda ner PDF-version",
-    "continueToFull": "Fortsätt till fullständigt ramverk",
-    "foundationTitle": "Grund & förståelse",
-    "structureTitle": "Bygga styrningssystem",
-    "operationTitle": "Få styrning att fungera",
-    "adaptationTitle": "Hålla sig i framkant",
-    "learningTitle": "Lärande & förbättring"
+    "contentInDevelopment": "Detta innehåll utvecklas fortfarande."
   }
 }

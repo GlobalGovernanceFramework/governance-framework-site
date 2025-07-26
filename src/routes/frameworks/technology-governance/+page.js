@@ -1,4 +1,4 @@
-// src/routes/frameworks/docs/implementation/technology/+page.js
+// src/routes/frameworks/technology-governance/+page.js
 import { locale, loadTranslations } from '$lib/i18n';
 import { get } from 'svelte/store';
 import { browser } from '$app/environment';
@@ -12,41 +12,126 @@ export async function load({ depends, url, params }) {
   
   const currentLocale = get(locale);
   
-  // Load framework translations for navigation
+  console.log('=== +page.js load function ===');
+  console.log('URL pathname:', url.pathname);
+  console.log('Current locale:', currentLocale);
+  
+  // Load framework translations for navigation and page-specific translations
   try {
-    await loadTranslations(currentLocale, url.pathname);
+    let cleanPath = url.pathname;
+    
+    console.log('Original pathname:', cleanPath);
+    
+    // Check if the pathname looks corrupted (contains section names instead of the base path)
+    if (cleanPath.includes('/frameworks/') && 
+        (cleanPath.includes('at-a-glance') || 
+         cleanPath.includes('executive-summary-for-the-skeptic') ||
+         cleanPath.includes('principles') || 
+         cleanPath.includes('position') ||
+         cleanPath.includes('gtc') ||
+         cleanPath.includes('trrt') ||
+         cleanPath.includes('oversight') ||
+         cleanPath.includes('indigenous') ||
+         cleanPath.includes('mechanisms') ||
+         cleanPath.includes('economy') ||
+         cleanPath.includes('roadmap') ||
+         cleanPath.includes('tools') ||
+         cleanPath.includes('emerging') ||
+         cleanPath.includes('evaluation') ||
+         cleanPath.includes('case-studies') ||
+         cleanPath.includes('international') ||
+         cleanPath.includes('glossary') ||
+         cleanPath.includes('references') ||
+         cleanPath.includes('contributing') ||
+         cleanPath.includes('playbook') ||
+         cleanPath.includes('trrt-detailed') ||
+         cleanPath.includes('starter-kit-detailed') ||
+         cleanPath.includes('circuit-breaker') ||
+         cleanPath.includes('crisis-unit') ||
+         cleanPath.includes('international-detailed') ||
+         cleanPath.includes('implementation-strategy') ||
+         cleanPath.includes('documentation') ||
+         cleanPath.includes('philosophy'))) {
+      
+      console.log('⚠️  Detected corrupted pathname, correcting to base framework path');
+      cleanPath = '/frameworks/technology-governance';
+    }
+    
+    console.log('Clean path for translations:', cleanPath);
+    
+    console.log('About to call loadTranslations with:', currentLocale, cleanPath);
+    const loadedTranslations = await loadTranslations(currentLocale, cleanPath);
+    console.log('loadTranslations returned:', Object.keys(loadedTranslations || {}));
+    console.log('Loaded translations for path:', cleanPath, 'with locale:', currentLocale);
   } catch (e) {
-    console.warn('Failed to load translations:', e);
+    console.error('Failed to load translations:', e);
+    console.error('Error details:', e.stack);
   }
   
   // Safe check for print mode that works during prerendering
-  const isPrintMode = browser ? url.searchParams.get('print') === 'true' : false;
-  
-  // Define sections to load - technology governance framework sections in correct order
+  let isPrintMode = false;
+  if (browser) {
+    try {
+      isPrintMode = url.search ? url.searchParams.get('print') === 'true' : false;
+      console.log('Print mode detected:', isPrintMode);
+    } catch (e) {
+      console.warn('Could not access URL search params:', e);
+      isPrintMode = false;
+    }
+  }
+
+  // Define sections to load - technology governance framework sections in logical order
   const sections = [
     // Entry point and overview
     'index',
-    'tech-guide',
-    'policy-guide',
-    'ethics-guide',
-    'innovation-guide',
+    'at-a-glance',
+    'executive-summary-for-the-skeptic',
     
-    // Core framework sections
-    'introduction',
-    'context',
-    'governance-model',
-    'implementation',
+    // Foundation sections
+    'principles',
+    'position',
+    
+    // Structure sections
+    'gtc',
+    'trrt',
+    'oversight',
+    
+    // Operation sections
+    'indigenous',
+    'mechanisms',
+    'economy',
+    
+    // Implementation sections
+    'roadmap',
     'tools',
-    'operational',
     'emerging',
     'evaluation',
-    'conclusion',
     
-    // Additional resources
+    // Examples and cooperation
     'case-studies',
-    'appendices',
-    'best-practices',
-    'regulatory-frameworks'
+    'international',
+    
+    // Reference materials
+    'glossary',
+    'references',
+    'contributing',
+    
+    // Implementation tools
+    'playbook',
+    'trrt-detailed',
+    'starter-kit-detailed',
+    
+    // Crisis & security protocols
+    'circuit-breaker',
+    'crisis-unit',
+    
+    // Coordination & cooperation
+    'international-detailed',
+    'implementation-strategy',
+    
+    // Evaluation & documentation
+    'documentation',
+    'philosophy'
   ];
   
   // Track which sections fell back to English
@@ -56,7 +141,7 @@ export async function load({ depends, url, params }) {
   const content = {};
   let loadedSections = 0;
   
-  console.log('Loading technology governance framework sections for locale:', currentLocale);
+  console.log('Loading technology governance sections for locale:', currentLocale);
   
   // Try to load each section with proper error handling
   for (const section of sections) {
@@ -65,8 +150,11 @@ export async function load({ depends, url, params }) {
       const modulePromise = import(`$lib/content/frameworks/${currentLocale}/implementation/technology-governance/${section}.md`);
       content[section] = await modulePromise;
       loadedSections++;
-      console.log('Successfully loaded technology governance section:', section, 'in', currentLocale);
+      console.log('Successfully loaded section:', section, 'in', currentLocale);
+      
     } catch (primaryError) {
+      console.warn(`Primary load failed for section ${section}:`, primaryError.message);
+      
       // Fall back to English if translation isn't available
       try {
         const fallbackPromise = import(`$lib/content/frameworks/en/implementation/technology-governance/${section}.md`);
@@ -77,9 +165,10 @@ export async function load({ depends, url, params }) {
         if (currentLocale !== 'en') {
           sectionsUsingEnglishFallback.add(section);
         }
-        console.log('Loaded technology governance section:', section, 'in English as fallback');
+        console.log('Loaded section:', section, 'in English as fallback');
+        
       } catch (fallbackError) {
-        console.warn(`Could not load technology governance section ${section} in any language:`, fallbackError.message);
+        console.warn(`Could not load section ${section} in any language:`, fallbackError.message);
         
         // Create a safe placeholder for missing sections
         content[section] = {
@@ -99,14 +188,14 @@ export async function load({ depends, url, params }) {
     }
   }
   
-  console.log('Total technology governance sections loaded:', loadedSections, 'out of', sections.length);
-  console.log('Loaded technology governance sections:', Object.keys(content));
+  console.log('Total sections loaded:', loadedSections, 'out of', sections.length);
+  console.log('Loaded sections:', Object.keys(content));
   
   // Validate that we have at least the index section
   if (!content.index) {
-    console.error('Critical: Could not load technology governance framework index section');
+    console.error('Critical: Could not load index section');
     throw error(500, {
-      message: 'Failed to load technology governance framework content',
+      message: 'Failed to load technology governance content',
       details: 'The main index section could not be loaded'
     });
   }
@@ -123,30 +212,35 @@ export async function load({ depends, url, params }) {
     // Additional metadata for technology governance framework
     frameworkType: 'technology-governance',
     totalSections: sections.length,
-    coreFrameworkSections: 9, // introduction through conclusion
-    hasGuides: true,
-    hasMultipleLevels: true,
+    foundationSections: 5, // index, at-a-glance, executive-summary, principles, position
+    structureSections: 3, // gtc, trrt, oversight
+    operationSections: 3, // indigenous, mechanisms, economy
+    implementationSections: 4, // roadmap, tools, emerging, evaluation
+    examplesSections: 2, // case-studies, international
+    referenceSections: 3, // glossary, references, contributing
+    toolsSections: 3, // playbook, trrt-detailed, starter-kit-detailed
+    crisisSections: 2, // circuit-breaker, crisis-unit
+    coordinationSections: 2, // international-detailed, implementation-strategy
+    evaluationSections: 2, // documentation, philosophy
     
-    // Technology governance-specific metadata
-    technologyVersion: '1.0',
-    isComprehensiveFramework: true,
-    focusArea: 'emerging-technology-governance',
-    implementationScope: 'multi-stakeholder-governance',
+    // Technology governance specific metadata
+    frameworkVersion: '3.2',
+    tgifVersion: '1.0',
+    hasCybersecurityCouncil: true,
+    implementationMilestones: 4,
+    riskTiers: 4,
+    hasEthicalCircuitBreaker: true,
+    hasCrisisResponseUnit: true,
+    hasAmnestyProgram: true,
     
-    // Framework characteristics
-    keyComponents: [
-      'ai-governance',
-      'data-protection',
-      'algorithmic-accountability',
-      'digital-rights',
-      'innovation-ethics',
-      'regulatory-frameworks'
+    // Core innovations
+    coreInnovations: [
+      'Cybersecurity & Resilience Council',
+      'Ethical Circuit Breaker Protocol',
+      'Tech Crisis Response Unit',
+      'Technology Amnesty Program',
+      'Digital Well-being by Design'
     ],
-    
-    // Guide characteristics
-    guideTypes: ['technical', 'policy', 'ethics', 'innovation'],
-    hasStakeholderEngagement: true,
-    hasEthicsFramework: true,
     
     // Debug information
     debug: {
@@ -154,7 +248,11 @@ export async function load({ depends, url, params }) {
       availableSections: Object.keys(content),
       fallbackSections: Array.from(sectionsUsingEnglishFallback),
       loadSuccess: loadedSections === sections.length,
-      frameworkType: 'technology-governance'
+      pathHandling: {
+        originalPath: url.pathname,
+        cleanedPath: '/frameworks/technology-governance'
+      },
+      searchParams: browser ? (url.search || 'none') : 'prerendering'
     }
   };
 }

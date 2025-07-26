@@ -17,7 +17,7 @@ export const technologyOSEntities: GgfEntity[] = [
     shortName: 'TGIF',
     description: 'Comprehensive technology governance and AI ethics framework providing parent governance for all tech applications',
     tier: 1,
-    status: 'Review',
+    status: 'Ready',
     primaryDomain: 'Technology',
     geographicScope: 'Global',
     implementationPriority: 'High',
@@ -27,6 +27,7 @@ export const technologyOSEntities: GgfEntity[] = [
       path: '/frameworks/technology-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.technologyGovernance',
       emoji: '🤖',
+      version: '3.2',
       slug: 'technology-governance',
       group: 'humanSocialSystems'
     }

@@ -1,92 +1,125 @@
-<!-- src/routes/frameworks/docs/implementation/technology/+page.svelte -->
+<!-- src/routes/frameworks/technology-governance/+page.svelte -->
 <script>
-  import { page } from '$app/stores';
-  import { t, locale } from '$lib/i18n';
+  import { t, locale, isLocaleLoaded, loadTranslations } from '$lib/i18n';
   import { browser } from '$app/environment';
   import { invalidate } from '$app/navigation';
   import { base } from '$app/paths';
-  import SectionNotice from '$lib/components/SectionNotice.svelte';
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
   import { onMount, tick } from 'svelte';
   import { slide } from 'svelte/transition';
 
   export let data;
 
-  // Extract techFramework translations for shorter references
-  $: tf = $t('techFramework') || {};
-  $: translationFunction = $t;
-  
-  // Keep track of which section is active (for sub-navigation)
-  let activeSection = 'index';
-
-  // This will track the current locale for our component
+  // Translation state - use isLocaleLoaded for better reactivity
+  $: translationsReady = $isLocaleLoaded;
+  $: tf = translationsReady ? ($t('technologyGovernance') || {}) : {};
   $: currentLocale = $locale;
 
-  // Check if we're in print mode - simplified to avoid hydration issues
-  let isPrintMode = false;
-  
-  // Client-side only initialization to avoid hydration mismatches
+  // Component state
+  let activeSection = 'index';
   let mounted = false;
-  let initializing = true;
-
-  // If in print mode, we'll show all sections
-  $: sectionsToShow = (mounted && isPrintMode) ? Object.keys(data?.sections || {}) : [activeSection];
-
-  // Accordion states - initialize in a way that prevents hydration issues
+  let isPrintMode = false;
   let foundationOpen = false;
   let structureOpen = false;
   let operationOpen = false;
-  let adaptationOpen = false;
-  let learningOpen = false;
+  let implementationOpen = false;
+  let examplesOpen = false;
+  let referenceOpen = false;
+  let toolsOpen = false;
+  let crisisOpen = false;
+  let coordinationOpen = false;
+  let evaluationOpen = false;
 
-  // Initialize accordion states after mount
+  // Computed values - add safety checks
+  $: sectionsToShow = (mounted && isPrintMode) ? Object.keys(data?.sections || {}) : [activeSection];
+  
+  // Define section categories based on the data structure
+  $: foundationSections = ['at-a-glance', 'executive-summary-for-the-skeptic', 'principles', 'position'];
+  $: structureSections = ['gtc', 'trrt', 'oversight'];
+  $: operationSections = ['indigenous', 'mechanisms', 'economy'];
+  $: implementationSections = ['roadmap', 'tools', 'emerging', 'evaluation'];
+  $: examplesSections = ['case-studies', 'international'];
+  $: referenceSections = ['glossary', 'references', 'contributing'];
+  $: toolsSections = ['playbook', 'trrt-detailed', 'starter-kit-detailed'];
+  $: crisisSections = ['circuit-breaker', 'crisis-unit'];
+  $: coordinationSections = ['international-detailed', 'implementation-strategy'];
+  $: evaluationSections = ['documentation', 'philosophy'];
+
+  $: isFoundationSection = foundationSections.includes(activeSection);
+  $: isStructureSection = structureSections.includes(activeSection);
+  $: isOperationSection = operationSections.includes(activeSection);
+  $: isImplementationSection = implementationSections.includes(activeSection);
+  $: isExamplesSection = examplesSections.includes(activeSection);
+  $: isReferenceSection = referenceSections.includes(activeSection);
+  $: isToolsSection = toolsSections.includes(activeSection);
+  $: isCrisisSection = crisisSections.includes(activeSection);
+  $: isCoordinationSection = coordinationSections.includes(activeSection);
+  $: isEvaluationSection = evaluationSections.includes(activeSection);
+  $: isExecutiveSummaryActive = activeSection === 'executive-summary-for-the-skeptic';
+
   function initializeAccordionStates() {
     // Set initial accordion states based on active section
-    if (['introduction', 'context'].includes(activeSection)) {
-      foundationOpen = true;
-    } else if (['governance-model', 'implementation'].includes(activeSection)) {
-      structureOpen = true;
-    } else if (['tools', 'operational'].includes(activeSection)) {
-      operationOpen = true;
-    } else if (['emerging', 'evaluation'].includes(activeSection)) {
-      adaptationOpen = true;
-    } else if (['case-studies', 'appendices'].includes(activeSection)) {
-      learningOpen = true;
-    } else {
-      // Default state for overview
-      foundationOpen = true;
-    }
+    foundationOpen = foundationSections.includes(activeSection);
+    structureOpen = structureSections.includes(activeSection);
+    operationOpen = operationSections.includes(activeSection);
+    implementationOpen = implementationSections.includes(activeSection);
+    examplesOpen = examplesSections.includes(activeSection);
+    referenceOpen = referenceSections.includes(activeSection);
+    toolsOpen = toolsSections.includes(activeSection);
+    crisisOpen = crisisSections.includes(activeSection);
+    coordinationOpen = coordinationSections.includes(activeSection);
+    evaluationOpen = evaluationSections.includes(activeSection);
   }
 
   onMount(async () => {
-    await tick(); // Wait for DOM to be ready
+    await tick();
     mounted = true;
     
     if (browser) {
-      // Check print mode only on client
+      // Fix URL corruption and preserve hash fragments
+      let extractedHash = window.location.hash;
+      
+      if (window.location.pathname !== '/frameworks/technology-governance') {
+        const pathname = window.location.pathname;
+        const lastPart = pathname.split('/').pop();
+        
+        // Extract section from corrupted pathname
+        if (data?.sections?.[lastPart] && !extractedHash) {
+          extractedHash = `#${lastPart}`;
+        }
+        
+        // Correct the URL
+        const correctUrl = `/frameworks/technology-governance${window.location.search}${extractedHash}`;
+        window.history.replaceState(null, '', correctUrl);
+      }
+      
+      // Force reload translations if needed
+      if (!translationsReady) {
+        try {
+          await loadTranslations($locale, '/frameworks/technology-governance');
+        } catch (e) {
+          console.error('Failed to reload translations:', e);
+        }
+      }
+      
+      // Set initial section from URL
       const urlParams = new URLSearchParams(window.location.search);
       isPrintMode = urlParams.get('print') === 'true';
       
-      // Make this function available globally for the PDF generator
-      window.showAllSectionsForPrint = () => {
-        isPrintMode = true;
-      };
-
-      // Handle URL parameters and hash
       const sectionParam = urlParams.get('section');
+      const hashSection = (extractedHash || window.location.hash).substring(1);
       
       if (sectionParam && data?.sections?.[sectionParam]) {
         activeSection = sectionParam;
-      } else if (window.location.hash) {
-        const hash = window.location.hash.substring(1);
-        if (hash && data?.sections?.[hash]) {
-          activeSection = hash;
-        }
+      } else if (hashSection && data?.sections?.[hashSection]) {
+        activeSection = hashSection;
       }
-
-      // Initialize accordion states after setting active section
+      
       initializeAccordionStates();
-
+      
+      // Global function for PDF generation
+      window.showAllSectionsForPrint = () => { isPrintMode = true; };
+      
       // Listen for hash changes
       const handleHashChange = () => {
         const hash = window.location.hash.substring(1);
@@ -96,7 +129,7 @@
           
           // Scroll to content
           setTimeout(() => {
-            const contentElement = document.querySelector('.content');
+            const contentElement = document.querySelector('.section-content');
             if (contentElement) {
               contentElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
             } else {
@@ -108,8 +141,6 @@
 
       window.addEventListener('hashchange', handleHashChange);
       
-      initializing = false;
-      
       // Cleanup
       return () => {
         window.removeEventListener('hashchange', handleHashChange);
@@ -118,8 +149,6 @@
         }
       };
     }
-    
-    initializing = false;
   });
 
   // Function to set active section
@@ -130,9 +159,8 @@
     initializeAccordionStates();
     
     if (browser) {
-      const url = new URL(window.location.href);
-      url.hash = section;
-      history.replaceState(null, '', url.toString());
+      const newUrl = `/frameworks/technology-governance${window.location.search}#${section}`;
+      history.replaceState(null, '', newUrl);
 
       setTimeout(() => {
         const contentElement = document.querySelector('.section-content');
@@ -147,69 +175,58 @@
     }
   }
 
-  // Get section titles in current language
+  // Translation helper functions with fallbacks
   function getSectionTitle(section) {
-    return tf.sections?.[section] || section;
+    return translationsReady ? (tf.sections?.[section] || section.replace(/[-_]/g, ' ')) 
+                             : section.replace(/[-_]/g, ' ');
   }
 
-  // Group sections logically with multi-lingual support using short references
   function getSectionCategoryTitle(category) {
-    return tf.categories?.[category] || category;
+    return translationsReady ? (tf.categories?.[category] || category) : category;
   }
 
-  // Function to get shortened section titles for navigation using short references
   function getShortSectionTitle(section) {
-    return tf.sectionsShort?.[section] || getSectionTitle(section);
+    return translationsReady ? (tf.sectionsShort?.[section] || getSectionTitle(section)) : getSectionTitle(section);
   }
 
-  // Computed values - add safety checks
-  $: coreFrameworkSections = ['introduction', 'context', 'governance-model', 'implementation', 'tools', 'operational', 'emerging', 'evaluation', 'case-studies', 'appendices'].filter(section => 
-    data?.sections?.[section]
-  );
-  $: isCoreSection = coreFrameworkSections.includes(activeSection) && activeSection !== 'index';
-
-  function toggleFoundation() {
-    foundationOpen = !foundationOpen;
+  function getTextWithFallback(key, fallback) {
+    return translationsReady ? ($t(key) || fallback) : fallback;
   }
 
-  function toggleStructure() {
-    structureOpen = !structureOpen;
+  // Function to download the framework PDF
+  function downloadFramework(version = '') {
+    const versionSuffix = version ? `-${version}` : '';
+    const pdfUrl = `${base}/assets/pdf/technology-governance${versionSuffix}-${currentLocale}.pdf`;
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = `technology-governance${versionSuffix}.pdf`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   }
 
-  function toggleOperation() {
-    operationOpen = !operationOpen;
-  }
+  // Accordion toggle functions
+  function toggleFoundation() { foundationOpen = !foundationOpen; }
+  function toggleStructure() { structureOpen = !structureOpen; }
+  function toggleOperation() { operationOpen = !operationOpen; }
+  function toggleImplementation() { implementationOpen = !implementationOpen; }
+  function toggleExamples() { examplesOpen = !examplesOpen; }
+  function toggleReference() { referenceOpen = !referenceOpen; }
+  function toggleTools() { toolsOpen = !toolsOpen; }
+  function toggleCrisis() { crisisOpen = !crisisOpen; }
+  function toggleCoordination() { coordinationOpen = !coordinationOpen; }
+  function toggleEvaluation() { evaluationOpen = !evaluationOpen; }
 
-  function toggleAdaptation() {
-    adaptationOpen = !adaptationOpen;
-  }
-
-  function toggleLearning() {
-    learningOpen = !learningOpen;
-  }
-
-  // Handle locale changes - add safety check
+  // Handle locale changes
   $: if (browser && mounted && $locale) {
     invalidate('app:locale');
-  }
-
-  // Get localized text for buttons and UI elements
-  function getLocalizedText(key) {
-    return tf.localizedText?.[key] || key;
   }
 </script>
 
 <svelte:head>
-  <title>{tf.meta?.title || 'Technology Governance Implementation Framework - Global Governance Framework'}</title>
-  <meta name="description" content="{tf.meta?.description || 'A comprehensive framework for implementing effective technology governance systems'}" />
+  <title>{getTextWithFallback('technologyGovernance.meta.title', 'Technology Governance Implementation Framework - Global Governance Framework')}</title>
+  <meta name="description" content="{getTextWithFallback('technologyGovernance.meta.description', 'Comprehensive framework for governing technology development through adaptive, inclusive, and ethically-aligned governance')}" />
 </svelte:head>
-
-<SectionNotice 
-  type="warning" 
-  customContent={true}
->
-  <p>{$t('common.notices.section.frameworks.text')}</p>
-</SectionNotice>
 
 {#if mounted}
   <div class="documentation-container">
@@ -218,324 +235,459 @@
     {/if}
 
     <div class="content">
-      <!-- Quick Access Card for Tech Governance Framework -->
-      {#if !isPrintMode && activeSection === 'index'}
+      <!-- Quick Access Card for Technology Governance -->
+      {#if !isPrintMode && !isExecutiveSummaryActive && activeSection === 'index' && translationsReady}
         <div class="tech-guide-card">
           <div class="card-content">
-            <div class="card-icon">⚙️</div>
+            <div class="card-icon">🤖</div>
             <div class="card-text">
-              <h3>{tf.guideCard?.title || getLocalizedText('newToFramework')}</h3>
-              <p>{tf.guideCard?.description || getLocalizedText('startWithIntroduction')}</p>
+              <h3>{tf.guideCard?.title || 'New to Technology Governance?'}</h3>
+              <p>{tf.guideCard?.description || 'Start with our executive summary designed for skeptics—addressing practical concerns about technology governance and implementation.'}</p>
             </div>
             <div class="card-actions">
-              <button class="primary-btn" on:click={() => setActiveSection('introduction')}>
-                {tf.guideCard?.buttonText || getLocalizedText('readIntroduction')} <span class="arrow-icon">→</span>
+              <button class="primary-btn" on:click={() => setActiveSection('executive-summary-for-the-skeptic')}>
+                {tf.guideCard?.buttonText || 'Read Executive Summary for Skeptics'} <span class="arrow-icon">→</span>
               </button>
             </div>
           </div>
         </div>
       {/if}
 
-      {#if data.isModular}
-        <!-- Sub-navigation for framework sections -->
-        {#if !isPrintMode && !initializing} 
-          <div class="section-nav">
-            <!-- Overview -->
-            <div class="nav-section">
-              <button 
-                class="nav-item overview-item" 
-                class:active={activeSection === 'index'}
-                on:click={() => setActiveSection('index')}
-              >
-                <span class="nav-icon">🏠</span>
-                <span class="nav-title">{getSectionCategoryTitle('overview')}</span>
-              </button>
-            </div>
-
-            <!-- Foundation & Understanding Accordion -->
-            <div class="nav-accordion">
-              <button 
-                class="accordion-header" 
-                class:open={foundationOpen}
-                class:has-active={['introduction', 'context'].some(section => activeSection === section)}
-                on:click={toggleFoundation}
-              >
-                <span class="accordion-icon">🧭</span>
-                <span class="accordion-title">{getSectionCategoryTitle('foundation')}</span>
-                <span class="section-count">(2)</span>
-                <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
-              </button>
-              {#if foundationOpen}
-                <div class="accordion-content" transition:slide={{ duration: 200 }}>
-                  {#if data?.sections?.['introduction']}
-                    <button 
-                      class="nav-item subsection-item" 
-                      class:active={activeSection === 'introduction'}
-                      on:click={() => setActiveSection('introduction')}
-                    >
-                      <span class="nav-icon">🔹</span>
-                      <span class="nav-title">{getShortSectionTitle('introduction')}</span>
-                    </button>
-                  {/if}
-                  {#if data?.sections?.['context']}
-                    <button 
-                      class="nav-item subsection-item" 
-                      class:active={activeSection === 'context'}
-                      on:click={() => setActiveSection('context')}
-                    >
-                      <span class="nav-icon">🔹</span>
-                      <span class="nav-title">{getShortSectionTitle('context')}</span>
-                    </button>
-                  {/if}
-                </div>
-              {/if}
-            </div>
-
-            <!-- Building Governance Systems Accordion -->
-            <div class="nav-accordion">
-              <button 
-                class="accordion-header" 
-                class:open={structureOpen}
-                class:has-active={['governance-model', 'implementation'].some(section => activeSection === section)}
-                on:click={toggleStructure}
-              >
-                <span class="accordion-icon">🏗️</span>
-                <span class="accordion-title">{getSectionCategoryTitle('structure')}</span>
-                <span class="section-count">(2)</span>
-                <span class="toggle-arrow" class:rotated={structureOpen}>▼</span>
-              </button>
-              {#if structureOpen}
-                <div class="accordion-content" transition:slide={{ duration: 200 }}>
-                  {#if data?.sections?.['governance-model']}
-                    <button 
-                      class="nav-item subsection-item" 
-                      class:active={activeSection === 'governance-model'}
-                      on:click={() => setActiveSection('governance-model')}
-                    >
-                      <span class="nav-icon">🔹</span>
-                      <span class="nav-title">{getShortSectionTitle('governance-model')}</span>
-                    </button>
-                  {/if}
-                  {#if data?.sections?.['implementation']}
-                    <button 
-                      class="nav-item subsection-item" 
-                      class:active={activeSection === 'implementation'}
-                      on:click={() => setActiveSection('implementation')}
-                    >
-                      <span class="nav-icon">🔹</span>
-                      <span class="nav-title">{getShortSectionTitle('implementation')}</span>
-                    </button>
-                  {/if}
-                </div>
-              {/if}
-            </div>
-
-            <!-- Making Governance Work Accordion -->
-            <div class="nav-accordion">
-              <button 
-                class="accordion-header" 
-                class:open={operationOpen}
-                class:has-active={['tools', 'operational'].some(section => activeSection === section)}
-                on:click={toggleOperation}
-              >
-                <span class="accordion-icon">⚙️</span>
-                <span class="accordion-title">{getSectionCategoryTitle('operation')}</span>
-                <span class="section-count">(2)</span>
-                <span class="toggle-arrow" class:rotated={operationOpen}>▼</span>
-              </button>
-              {#if operationOpen}
-                <div class="accordion-content" transition:slide={{ duration: 200 }}>
-                  {#if data?.sections?.['tools']}
-                    <button 
-                      class="nav-item subsection-item" 
-                      class:active={activeSection === 'tools'}
-                      on:click={() => setActiveSection('tools')}
-                    >
-                      <span class="nav-icon">🔹</span>
-                      <span class="nav-title">{getShortSectionTitle('tools')}</span>
-                    </button>
-                  {/if}
-                  {#if data?.sections?.['operational']}
-                    <button 
-                      class="nav-item subsection-item" 
-                      class:active={activeSection === 'operational'}
-                      on:click={() => setActiveSection('operational')}
-                    >
-                      <span class="nav-icon">🔹</span>
-                      <span class="nav-title">{getShortSectionTitle('operational')}</span>
-                    </button>
-                  {/if}
-                </div>
-              {/if}
-            </div>
-
-            <!-- Staying Ahead Accordion -->
-            <div class="nav-accordion">
-              <button 
-                class="accordion-header" 
-                class:open={adaptationOpen}
-                class:has-active={['emerging', 'evaluation'].some(section => activeSection === section)}
-                on:click={toggleAdaptation}
-              >
-                <span class="accordion-icon">🚀</span>
-                <span class="accordion-title">{getSectionCategoryTitle('adaptation')}</span>
-                <span class="section-count">(2)</span>
-                <span class="toggle-arrow" class:rotated={adaptationOpen}>▼</span>
-              </button>
-              {#if adaptationOpen}
-                <div class="accordion-content" transition:slide={{ duration: 200 }}>
-                  {#if data?.sections?.['emerging']}
-                    <button 
-                      class="nav-item subsection-item" 
-                      class:active={activeSection === 'emerging'}
-                      on:click={() => setActiveSection('emerging')}
-                    >
-                      <span class="nav-icon">🔹</span>
-                      <span class="nav-title">{getShortSectionTitle('emerging')}</span>
-                    </button>
-                  {/if}
-                  {#if data?.sections?.['evaluation']}
-                    <button 
-                      class="nav-item subsection-item" 
-                      class:active={activeSection === 'evaluation'}
-                      on:click={() => setActiveSection('evaluation')}
-                    >
-                      <span class="nav-icon">🔹</span>
-                      <span class="nav-title">{getShortSectionTitle('evaluation')}</span>
-                    </button>
-                  {/if}
-                </div>
-              {/if}
-            </div>
-
-            <!-- Learning & Improvement Accordion -->
-            <div class="nav-accordion">
-              <button 
-                class="accordion-header" 
-                class:open={learningOpen}
-                class:has-active={['case-studies', 'appendices'].some(section => activeSection === section)}
-                on:click={toggleLearning}
-              >
-                <span class="accordion-icon">📚</span>
-                <span class="accordion-title">{getSectionCategoryTitle('learning')}</span>
-                <span class="section-count">(2)</span>
-                <span class="toggle-arrow" class:rotated={learningOpen}>▼</span>
-              </button>
-              {#if learningOpen}
-                <div class="accordion-content" transition:slide={{ duration: 200 }}>
-                  {#if data?.sections?.['case-studies']}
-                    <button 
-                      class="nav-item subsection-item" 
-                      class:active={activeSection === 'case-studies'}
-                      on:click={() => setActiveSection('case-studies')}
-                    >
-                      <span class="nav-icon">🔹</span>
-                      <span class="nav-title">{getShortSectionTitle('case-studies')}</span>
-                    </button>
-                  {/if}
-                  {#if data?.sections?.['appendices']}
-                    <button 
-                      class="nav-item subsection-item" 
-                      class:active={activeSection === 'appendices'}
-                      on:click={() => setActiveSection('appendices')}
-                    >
-                      <span class="nav-icon">🔹</span>
-                      <span class="nav-title">{getShortSectionTitle('appendices')}</span>
-                    </button>
-                  {/if}
-                </div>
-              {/if}
-            </div>
+      <!-- Sub-navigation for technology governance sections -->
+      {#if !isPrintMode} 
+        <div class="section-nav">
+          <!-- Overview -->
+          <div class="nav-section">
+            <button 
+              class="nav-item overview-item" 
+              class:active={activeSection === 'index'}
+              on:click={() => setActiveSection('index')}
+            >
+              <span class="nav-icon">🏠</span>
+              <span class="nav-title">{getSectionCategoryTitle('overview')}</span>
+            </button>
           </div>
-        {/if}
 
-        <!-- Progress indicator for core sections -->
-        {#if !isPrintMode && isCoreSection && coreFrameworkSections.length > 0}
-          <div class="progress-indicator">
-            <div class="progress-bar">
-              <div class="progress-fill" style="width: {((coreFrameworkSections.indexOf(activeSection) + 1) / coreFrameworkSections.length * 100)}%"></div>
-            </div>
-            <span class="progress-text">{tf.progress?.text?.replace('{current}', coreFrameworkSections.indexOf(activeSection) + 1).replace('{total}', coreFrameworkSections.length) || `Section ${coreFrameworkSections.indexOf(activeSection) + 1} of ${coreFrameworkSections.length}`}</span>
+          <!-- Foundation Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={foundationOpen}
+              class:has-active={isFoundationSection}
+              on:click={toggleFoundation}
+            >
+              <span class="accordion-icon">🔬</span>
+              <span class="accordion-title">{getSectionCategoryTitle('foundation')}</span>
+              <span class="section-count">({foundationSections.length})</span>
+              <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
+            </button>
+            {#if foundationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each foundationSections as section}
+                  {#if data?.sections?.[section]}
+                    <button 
+                      class="nav-item subsection-item" 
+                      class:active={activeSection === section}
+                      on:click={() => setActiveSection(section)}
+                    >
+                      <span class="nav-icon">
+                        {#if section === 'at-a-glance'}⚡
+                        {:else if section === 'executive-summary-for-the-skeptic'}🤔
+                        {:else if section === 'principles'}⚖️
+                        {:else if section === 'position'}📍
+                        {:else}📋{/if}
+                      </span>
+                      <span class="nav-title">{getSectionTitle(section)}</span>
+                    </button>
+                  {/if}
+                {/each}
+              </div>
+            {/if}
           </div>
-        {/if}
 
-        <!-- Show active section, or all sections in print mode -->
-        {#each sectionsToShow as section (section)}
-          {#if data?.sections?.[section]}
-            <div class="section-content" id={section}>
-              <!-- Language fallback notice -->
-              {#if !isPrintMode && data.sectionsUsingEnglishFallback?.includes(section) && section !== 'index'}
-                <div class="language-fallback-notice">
-                  <div class="notice-icon">🌐</div>
-                  <div class="notice-content">
-                    <strong>{tf.languageFallback?.title || 'Content in your language coming soon'}</strong>
-                    <p>{tf.languageFallback?.description || 'This section is currently displayed in English until translation is complete.'}</p>
-                  </div>
-                </div>
-              {/if}
-              
-              <!-- Render sections from markdown files -->
-              <svelte:component this={data.sections[section].default} t={translationFunction} />
-              
-              <!-- Section navigation at bottom of core sections -->
-              {#if isCoreSection && !isPrintMode && coreFrameworkSections.length > 0}
-                <div class="section-navigation">
-                  {#if coreFrameworkSections.indexOf(activeSection) > 0}
-                    <button class="nav-btn prev-btn" on:click={() => {
-                      const currentIndex = coreFrameworkSections.indexOf(activeSection);
-                      const prevSection = coreFrameworkSections[currentIndex - 1];
-                      setActiveSection(prevSection);
-                    }}>
-                      ← {tf.navigation?.previousSection || 'Previous Section'}
+          <!-- Structure Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={structureOpen}
+              class:has-active={isStructureSection}
+              on:click={toggleStructure}
+            >
+              <span class="accordion-icon">🏗️</span>
+              <span class="accordion-title">{getSectionCategoryTitle('structure')}</span>
+              <span class="section-count">({structureSections.length})</span>
+              <span class="toggle-arrow" class:rotated={structureOpen}>▼</span>
+            </button>
+            {#if structureOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each structureSections as section}
+                  {#if data?.sections?.[section]}
+                    <button 
+                      class="nav-item subsection-item" 
+                      class:active={activeSection === section}
+                      on:click={() => setActiveSection(section)}
+                    >
+                      <span class="nav-icon">
+                        {#if section === 'gtc'}🏛️
+                        {:else if section === 'trrt'}📊
+                        {:else if section === 'oversight'}👁️
+                        {:else}🔧{/if}
+                      </span>
+                      <span class="nav-title">{getShortSectionTitle(section)}</span>
                     </button>
                   {/if}
-                  
-                  {#if coreFrameworkSections.indexOf(activeSection) < coreFrameworkSections.length - 1}
-                    <button class="nav-btn next-btn" on:click={() => {
-                      const currentIndex = coreFrameworkSections.indexOf(activeSection);
-                      const nextSection = coreFrameworkSections[currentIndex + 1];
-                      setActiveSection(nextSection);
-                    }}>
-                      {tf.navigation?.nextSection || 'Next Section'} →
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Operation Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={operationOpen}
+              class:has-active={isOperationSection}
+              on:click={toggleOperation}
+            >
+              <span class="accordion-icon">⚙️</span>
+              <span class="accordion-title">{getSectionCategoryTitle('operation')}</span>
+              <span class="section-count">({operationSections.length})</span>
+              <span class="toggle-arrow" class:rotated={operationOpen}>▼</span>
+            </button>
+            {#if operationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each operationSections as section}
+                  {#if data?.sections?.[section]}
+                    <button 
+                      class="nav-item subsection-item" 
+                      class:active={activeSection === section}
+                      on:click={() => setActiveSection(section)}
+                    >
+                      <span class="nav-icon">
+                        {#if section === 'indigenous'}🪶
+                        {:else if section === 'mechanisms'}🔄
+                        {:else if section === 'economy'}💚
+                        {:else}⚙️{/if}
+                      </span>
+                      <span class="nav-title">{getShortSectionTitle(section)}</span>
                     </button>
                   {/if}
-                </div>
-              {/if}
-            </div>
-          {:else}
-            <div class="missing-section">
-              <h2>{tf.errors?.sectionNotFound?.replace('{section}', section) || `Section "${section}" not found`}</h2>
-              <p>{tf.errors?.contentInDevelopment || 'This content is still being developed.'}</p>
-            </div>
-          {/if}
-        {/each}
-      {:else}
-        <!-- Legacy single file display -->
-        <svelte:component this={data.component} />
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Implementation Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={implementationOpen}
+              class:has-active={isImplementationSection}
+              on:click={toggleImplementation}
+            >
+              <span class="accordion-icon">🚀</span>
+              <span class="accordion-title">{getSectionCategoryTitle('implementation')}</span>
+              <span class="section-count">({implementationSections.length})</span>
+              <span class="toggle-arrow" class:rotated={implementationOpen}>▼</span>
+            </button>
+            {#if implementationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each implementationSections as section}
+                  {#if data?.sections?.[section]}
+                    <button 
+                      class="nav-item subsection-item" 
+                      class:active={activeSection === section}
+                      on:click={() => setActiveSection(section)}
+                    >
+                      <span class="nav-icon">
+                        {#if section === 'roadmap'}🗺️
+                        {:else if section === 'tools'}🛠️
+                        {:else if section === 'emerging'}🔮
+                        {:else if section === 'evaluation'}📊
+                        {:else}🚀{/if}
+                      </span>
+                      <span class="nav-title">{getShortSectionTitle(section)}</span>
+                    </button>
+                  {/if}
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Examples Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={examplesOpen}
+              class:has-active={isExamplesSection}
+              on:click={toggleExamples}
+            >
+              <span class="accordion-icon">📚</span>
+              <span class="accordion-title">{getSectionCategoryTitle('examples')}</span>
+              <span class="section-count">({examplesSections.length})</span>
+              <span class="toggle-arrow" class:rotated={examplesOpen}>▼</span>
+            </button>
+            {#if examplesOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each examplesSections as section}
+                  {#if data?.sections?.[section]}
+                    <button 
+                      class="nav-item subsection-item" 
+                      class:active={activeSection === section}
+                      on:click={() => setActiveSection(section)}
+                    >
+                      <span class="nav-icon">
+                        {#if section === 'case-studies'}📖
+                        {:else if section === 'international'}🌍
+                        {:else}📚{/if}
+                      </span>
+                      <span class="nav-title">{getSectionTitle(section)}</span>
+                    </button>
+                  {/if}
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Reference Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={referenceOpen}
+              class:has-active={isReferenceSection}
+              on:click={toggleReference}
+            >
+              <span class="accordion-icon">📄</span>
+              <span class="accordion-title">{getSectionCategoryTitle('reference')}</span>
+              <span class="section-count">({referenceSections.length})</span>
+              <span class="toggle-arrow" class:rotated={referenceOpen}>▼</span>
+            </button>
+            {#if referenceOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each referenceSections as section}
+                  {#if data?.sections?.[section]}
+                    <button 
+                      class="nav-item subsection-item" 
+                      class:active={activeSection === section}
+                      on:click={() => setActiveSection(section)}
+                    >
+                      <span class="nav-icon">
+                        {#if section === 'glossary'}📖
+                        {:else if section === 'references'}🔗
+                        {:else if section === 'contributing'}🤝
+                        {:else}📄{/if}
+                      </span>
+                      <span class="nav-title">{getSectionTitle(section)}</span>
+                    </button>
+                  {/if}
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Tools Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={toolsOpen}
+              class:has-active={isToolsSection}
+              on:click={toggleTools}
+            >
+              <span class="accordion-icon">🧰</span>
+              <span class="accordion-title">{getSectionCategoryTitle('tools')}</span>
+              <span class="section-count">({toolsSections.length})</span>
+              <span class="toggle-arrow" class:rotated={toolsOpen}>▼</span>
+            </button>
+            {#if toolsOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each toolsSections as section}
+                  {#if data?.sections?.[section]}
+                    <button 
+                      class="nav-item subsection-item" 
+                      class:active={activeSection === section}
+                      on:click={() => setActiveSection(section)}
+                    >
+                      <span class="nav-icon">
+                        {#if section === 'playbook'}📘
+                        {:else if section === 'trrt-detailed'}📋
+                        {:else if section === 'starter-kit-detailed'}🎯
+                        {:else}🛠️{/if}
+                      </span>
+                      <span class="nav-title">{getSectionTitle(section)}</span>
+                    </button>
+                  {/if}
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Crisis Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={crisisOpen}
+              class:has-active={isCrisisSection}
+              on:click={toggleCrisis}
+            >
+              <span class="accordion-icon">🚨</span>
+              <span class="accordion-title">{getSectionCategoryTitle('crisis')}</span>
+              <span class="section-count">({crisisSections.length})</span>
+              <span class="toggle-arrow" class:rotated={crisisOpen}>▼</span>
+            </button>
+            {#if crisisOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each crisisSections as section}
+                  {#if data?.sections?.[section]}
+                    <button 
+                      class="nav-item subsection-item" 
+                      class:active={activeSection === section}
+                      on:click={() => setActiveSection(section)}
+                    >
+                      <span class="nav-icon">
+                        {#if section === 'circuit-breaker'}⚡
+                        {:else if section === 'crisis-unit'}🛡️
+                        {:else}🚨{/if}
+                      </span>
+                      <span class="nav-title">{getSectionTitle(section)}</span>
+                    </button>
+                  {/if}
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Coordination Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={coordinationOpen}
+              class:has-active={isCoordinationSection}
+              on:click={toggleCoordination}
+            >
+              <span class="accordion-icon">🌐</span>
+              <span class="accordion-title">{getSectionCategoryTitle('coordination')}</span>
+              <span class="section-count">({coordinationSections.length})</span>
+              <span class="toggle-arrow" class:rotated={coordinationOpen}>▼</span>
+            </button>
+            {#if coordinationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each coordinationSections as section}
+                  {#if data?.sections?.[section]}
+                    <button 
+                      class="nav-item subsection-item" 
+                      class:active={activeSection === section}
+                      on:click={() => setActiveSection(section)}
+                    >
+                      <span class="nav-icon">
+                        {#if section === 'international-detailed'}🤝
+                        {:else if section === 'implementation-strategy'}📋
+                        {:else}🌐{/if}
+                      </span>
+                      <span class="nav-title">{getSectionTitle(section)}</span>
+                    </button>
+                  {/if}
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Evaluation Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={evaluationOpen}
+              class:has-active={isEvaluationSection}
+              on:click={toggleEvaluation}
+            >
+              <span class="accordion-icon">📊</span>
+              <span class="accordion-title">{getSectionCategoryTitle('evaluation')}</span>
+              <span class="section-count">({evaluationSections.length})</span>
+              <span class="toggle-arrow" class:rotated={evaluationOpen}>▼</span>
+            </button>
+            {#if evaluationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each evaluationSections as section}
+                  {#if data?.sections?.[section]}
+                    <button 
+                      class="nav-item subsection-item" 
+                      class:active={activeSection === section}
+                      on:click={() => setActiveSection(section)}
+                    >
+                      <span class="nav-icon">
+                        {#if section === 'documentation'}📝
+                        {:else if section === 'philosophy'}🤔
+                        {:else}📊{/if}
+                      </span>
+                      <span class="nav-title">{getSectionTitle(section)}</span>
+                    </button>
+                  {/if}
+                {/each}
+              </div>
+            {/if}
+          </div>
+        </div>
       {/if}
+
+      <!-- Show active section, or all sections in print mode -->
+      {#each sectionsToShow as section (section)}
+        {#if data?.sections?.[section]}
+          <div class="section-content" id={section}>
+            <!-- Language fallback notice -->
+            {#if !isPrintMode && data.sectionsUsingEnglishFallback?.includes(section) && section !== 'index' && translationsReady}
+              <div class="language-fallback-notice">
+                <div class="notice-icon">🌐</div>
+                <div class="notice-content">
+                  <strong>{tf.languageFallback?.title || 'Content in your language coming soon'}</strong>
+                  <p>{tf.languageFallback?.description || 'This section is currently displayed in English until translation is complete.'}</p>
+                </div>
+              </div>
+            {/if}
+            
+            <!-- Render sections from markdown files -->
+            <svelte:component this={data.sections[section].default} t={$t} />
+            
+            <!-- Navigation buttons at bottom of executive summary -->
+            {#if section === 'executive-summary-for-the-skeptic' && !isPrintMode && translationsReady}
+              <div class="guide-navigation">
+                <button class="secondary-btn" on:click={() => downloadFramework('executive-summary')}>
+                  {tf.navigation?.downloadPdf || 'Download PDF Version'} <span class="download-icon">↓</span>
+                </button>
+                <button class="primary-btn" on:click={() => setActiveSection('principles')}>
+                  {tf.navigation?.continueToFramework || 'Continue to Full Framework'} <span class="arrow-icon">→</span>
+                </button>
+              </div>
+            {/if}
+          </div>
+        {:else}
+          <div class="missing-section">
+            <h2>{getTextWithFallback('technologyGovernance.errors.sectionNotFound', `Section "${section}" not found`).replace('{section}', section)}</h2>
+            <p>{getTextWithFallback('technologyGovernance.errors.contentInDevelopment', 'This content is still being developed.')}</p>
+          </div>
+        {/if}
+      {/each}
     </div>
   </div>
 {:else}
   <!-- Loading state to prevent hydration issues -->
   <div class="loading-container">
     <div class="loading-spinner"></div>
-    <p>{tf.loading?.text || 'Loading framework content...'}</p>
+    <p>{getTextWithFallback('technologyGovernance.loading.text', 'Loading technology governance content...')}</p>
   </div>
 {/if}
 
 <style>
-  /* Technology Governance color scheme */
+  /* Technology Governance color scheme - Modern tech with warm accents */
   :root {
-    --tech-primary: #2B4B8C;
-    --tech-secondary: #6b7280;
-    --tech-innovation: #6B5CA5;
-    --tech-ethics: #4B5CA5;
-    --tech-governance: #2D5F2D;
-    --tech-responsibility: #C43B3B;
-    --tech-progress: #DAA520;
-    --tech-systems: #1E6B96;
-    --tech-adaptation: #8B4513;
-    --tech-future: #6DAA3F;
+    --tech-primary: #1a365d;      /* Deep blue-gray for authority */
+    --tech-secondary: #3182ce;     /* Bright blue for technology */
+    --tech-accent: #38b2ac;        /* Teal for innovation */
+    --tech-success: #38a169;       /* Green for positive outcomes */
+    --tech-warning: #ed8936;       /* Orange for caution */
+    --tech-danger: #e53e3e;        /* Red for critical issues */
+    --tech-light: #ebf8ff;         /* Very light blue background */
+    --tech-dark: #2d3748;          /* Dark gray for text */
+    --tech-wisdom: #4a5568;        /* Medium gray for secondary text */
+    --tech-gradient: linear-gradient(135deg, #3182ce 0%, #38b2ac 100%);
   }
 
   /* Loading state */
@@ -595,11 +747,11 @@
     margin-bottom: 0.5rem;
   }
 
-  /* Navigation styles */
+  /* Section Navigation */
   .section-nav {
     margin-bottom: 2rem;
     border-bottom: 1px solid #e5e7eb;
-    background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
+    background: linear-gradient(to bottom, var(--tech-light), #f1f5f9);
     border-radius: 0.5rem;
     padding: 1rem;
   }
@@ -633,22 +785,23 @@
   }
 
   .accordion-header:hover {
-    background-color: rgba(43, 75, 140, 0.05);
+    background-color: rgba(56, 178, 172, 0.05);
   }
 
   .accordion-header:focus-visible {
-    outline: 2px solid var(--tech-innovation);
+    outline: 2px solid var(--tech-accent);
     outline-offset: 2px;
+    background-color: rgba(56, 178, 172, 0.1);
   }
 
   .accordion-header.has-active {
-    background-color: rgba(43, 75, 140, 0.1);
+    background-color: rgba(26, 54, 93, 0.1);
     color: var(--tech-primary);
     font-weight: 600;
   }
 
   .accordion-header.open {
-    background-color: rgba(43, 75, 140, 0.1);
+    background-color: rgba(56, 178, 172, 0.1);
     border-bottom: 1px solid #e5e7eb;
   }
 
@@ -705,13 +858,14 @@
   }
 
   .nav-item:hover {
-    background-color: rgba(43, 75, 140, 0.05);
+    background-color: rgba(56, 178, 172, 0.05);
     color: #374151;
   }
 
   .nav-item:focus-visible {
-    outline: 2px solid var(--tech-innovation);
+    outline: 2px solid var(--tech-accent);
     outline-offset: 2px;
+    background-color: rgba(56, 178, 172, 0.1);
   }
 
   .nav-item.active {
@@ -721,12 +875,12 @@
   }
 
   .nav-item.active:hover {
-    background-color: var(--tech-innovation);
+    background-color: var(--tech-secondary);
   }
 
   .overview-item {
-    background: linear-gradient(135deg, rgba(43, 75, 140, 0.1), rgba(107, 92, 165, 0.1));
-    border: 1px solid rgba(43, 75, 140, 0.2);
+    background: linear-gradient(135deg, rgba(26, 54, 93, 0.1), rgba(56, 178, 172, 0.1));
+    border: 1px solid rgba(26, 54, 93, 0.2);
     border-radius: 0.375rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
@@ -751,44 +905,15 @@
     text-align: left;
   }
 
-  /* Progress indicator */
-  .progress-indicator {
-    margin-bottom: 2rem;
-    padding: 1rem;
-    background: linear-gradient(90deg, rgba(43, 75, 140, 0.1), rgba(107, 92, 165, 0.1));
-    border-radius: 0.5rem;
-    border-left: 4px solid var(--tech-primary);
-  }
-
-  .progress-bar {
-    width: 100%;
-    height: 8px;
-    background-color: #e5e7eb;
-    border-radius: 4px;
-    overflow: hidden;
-    margin-bottom: 0.5rem;
-  }
-
-  .progress-fill {
-    height: 100%;
-    background: linear-gradient(90deg, var(--tech-primary), var(--tech-innovation));
-    border-radius: 4px;
-    transition: width 0.3s ease;
-  }
-
-  .progress-text {
-    font-size: 0.875rem;
-    color: var(--tech-primary);
-    font-weight: 500;
-  }
-
-  /* Tech governance framework guide card */
+  /* Tech guide card */
   .tech-guide-card {
-    background: linear-gradient(135deg, rgba(43, 75, 140, 0.08) 0%, rgba(107, 92, 165, 0.08) 100%);
+    background: linear-gradient(135deg, rgba(56, 178, 172, 0.1) 0%, rgba(26, 54, 93, 0.1) 100%);
     border-radius: 0.75rem;
     margin-bottom: 2rem;
-    box-shadow: 0 4px 6px rgba(43, 75, 140, 0.1);
-    border: 1px solid rgba(43, 75, 140, 0.2);
+    box-shadow: 0 4px 6px rgba(26, 54, 93, 0.1);
+    border: 1px solid rgba(26, 54, 93, 0.2);
+    position: relative;
+    z-index: 1;
   }
   
   .card-content {
@@ -827,6 +952,8 @@
     flex-wrap: wrap;
     gap: 0.75rem;
     align-items: center;
+    position: relative;
+    overflow: visible;
   }
   
   .primary-btn {
@@ -841,22 +968,41 @@
   }
   
   .primary-btn:hover {
-    background-color: var(--tech-innovation);
+    background-color: var(--tech-secondary);
     transform: translateY(-1px);
   }
 
   .primary-btn:focus-visible {
-    outline: 2px solid var(--tech-innovation);
+    outline: 2px solid var(--tech-accent);
     outline-offset: 2px;
+    background-color: var(--tech-secondary);
+    transform: translateY(-1px);
+  }
+  
+  .secondary-btn {
+    background-color: white;
+    color: var(--tech-primary);
+    border: 1px solid var(--tech-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .secondary-btn:hover {
+    background-color: rgba(56, 178, 172, 0.1);
+    transform: translateY(-1px);
   }
 
-  .arrow-icon {
-    display: inline-block;
-    margin-left: 0.25rem;
+  .secondary-btn:focus-visible {
+    outline: 2px solid var(--tech-accent);
+    outline-offset: 2px;
+    background-color: rgba(56, 178, 172, 0.1);
+    transform: translateY(-1px);
   }
-
-   /* Section navigation */
-  .section-navigation {
+  
+  .guide-navigation {
     display: flex;
     justify-content: space-between;
     margin-top: 3rem;
@@ -864,33 +1010,10 @@
     border-top: 1px solid #e5e7eb;
   }
 
-  .nav-btn {
-    background-color: var(--tech-primary);
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.375rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-
-  .nav-btn:hover {
-    background-color: var(--tech-innovation);
-    transform: translateY(-1px);
-  }
-
-  .nav-btn:focus-visible {
-    outline: 2px solid var(--tech-innovation);
-    outline-offset: 2px;
-  }
-
-  .prev-btn {
-    margin-right: auto;
-  }
-
-  .next-btn {
-    margin-left: auto;
+  .download-icon,
+  .arrow-icon {
+    display: inline-block;
+    margin-left: 0.25rem;
   }
 
   /* Language fallback notice */
@@ -898,8 +1021,8 @@
     display: flex;
     align-items: flex-start;
     gap: 1rem;
-    background-color: rgba(107, 92, 165, 0.1);
-    border: 1px solid rgba(107, 92, 165, 0.3);
+    background-color: rgba(56, 178, 172, 0.1);
+    border: 1px solid rgba(56, 178, 172, 0.3);
     border-radius: 0.5rem;
     padding: 1rem 1.25rem;
     margin-bottom: 1.5rem;
@@ -907,7 +1030,7 @@
 
   .notice-icon {
     font-size: 1.25rem;
-    color: var(--tech-innovation);
+    color: var(--tech-accent);
     flex-shrink: 0;
     margin-top: 0.125rem;
   }
@@ -917,7 +1040,7 @@
   }
 
   .notice-content strong {
-    color: var(--tech-innovation);
+    color: var(--tech-accent);
     font-size: 0.95rem;
     display: block;
     margin-bottom: 0.25rem;
@@ -943,7 +1066,7 @@
     font-weight: 600;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    color: var(--tech-innovation);
+    color: var(--tech-secondary);
   }
   
   .content :global(h3),
@@ -952,18 +1075,26 @@
     font-weight: 600;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
-    color: var(--tech-ethics);
+    color: var(--tech-accent);
   }
 
   .content :global(h4) {
     font-size: 1.2rem;
-    color: var(--tech-systems);
   }
   
   .content :global(p) {
     margin-bottom: 1rem;
     line-height: 1.7;
     color: #4b5563;
+  }
+
+  /* Blockquotes */
+  .content :global(blockquote) {
+    background-color: rgba(56, 178, 172, 0.1);
+    border-left: 4px solid var(--tech-accent);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0.5rem;
   }
 
   /* Lists */
@@ -984,31 +1115,35 @@
   }
 
   .content :global(ul li:not(.section-nav li))::before {
-    content: "✦";
+    content: "•";
     position: absolute;
     left: 0;
     top: 0.1em;
-    color: var(--tech-progress);
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+    color: var(--tech-accent);
   }
 
+  /* Ordered lists */
   .content :global(ol) {
     list-style-type: decimal;
+    counter-reset: item;
   }
 
   .content :global(ol li) {
+    position: relative;
     margin-bottom: 0.75rem;
     padding-left: 0.5rem;
+    color: #4b5563;
   }
 
   .content :global(ol li::marker) {
-    color: var(--tech-ethics);
+    color: var(--tech-accent);
     font-weight: 600;
   }
 
   /* Links */
   .content :global(a) {
-    color: var(--tech-ethics);
+    color: var(--tech-accent);
     text-decoration: underline;
     font-weight: 500;
     transition: all 0.2s;
@@ -1047,39 +1182,23 @@
       align-items: flex-start;
       gap: 1rem;
     }
-    
+   
     .card-actions {
       width: 100%;
       justify-content: center;
     }
-
-    .section-navigation {
+   
+    .guide-navigation {
       flex-direction: column;
       gap: 1rem;
     }
-
-    .section-navigation button {
+   
+    .guide-navigation button {
       width: 100%;
     }
 
     .loading-container {
       padding: 2rem 1rem;
-    }
-
-    .language-fallback-notice {
-      padding: 0.75rem 1rem;
-    }
-    
-    .notice-icon {
-      font-size: 1.1rem;
-    }
-    
-    .notice-content strong {
-      font-size: 0.9rem;
-    }
-    
-    .notice-content p {
-      font-size: 0.8rem;
     }
   }
 </style>

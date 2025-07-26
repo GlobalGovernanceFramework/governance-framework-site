@@ -1,77 +1,94 @@
 {
   "meta": {
     "title": "Technology Governance Implementation Framework - Global Governance Framework",
-    "description": "A comprehensive framework for implementing effective technology governance systems"
+    "description": "Comprehensive framework for governing technology development through adaptive, inclusive, and ethically-aligned governance"
   },
   "guideCard": {
-    "title": "New to Technology Governance Implementation Framework?",
-    "description": "Start with our introduction that explains the framework's vision, core principles, and comprehensive approach to technology governance.",
-    "buttonText": "Read the Introduction"
+    "title": "New to Technology Governance?",
+    "description": "Start with our executive summary designed for skeptics—addressing practical concerns about technology governance and implementation.",
+    "buttonText": "Read Executive Summary for Skeptics"
   },
   "categories": {
     "overview": "Overview",
-    "foundation": "Foundation & Understanding",
-    "structure": "Building Governance Systems",
-    "operation": "Making Governance Work",
-    "adaptation": "Staying Ahead",
-    "learning": "Learning & Improvement"
+    "foundation": "Foundation",
+    "structure": "Structure", 
+    "operation": "Operation",
+    "implementation": "Implementation",
+    "examples": "Examples & Cooperation",
+    "reference": "Reference Materials",
+    "tools": "Implementation Tools",
+    "crisis": "Crisis & Security",
+    "coordination": "Coordination",
+    "evaluation": "Evaluation & Documentation"
   },
   "sections": {
-    "index": "Framework Overview",
-    "introduction": "Introduction & Core Principles",
-    "context": "Context & Scope",
-    "governance-model": "Governance Model Components",
-    "implementation": "Implementation Roadmap",
+    "index": "Technology Governance Framework",
+    "at-a-glance": "At a Glance",
+    "executive-summary-for-the-skeptic": "Executive Summary for Skeptics",
+    "principles": "Core Principles",
+    "position": "Framework Position",
+    "gtc": "Global Technology Council",
+    "trrt": "Technology Risk & Responsibility Tiering",
+    "oversight": "Oversight & Accountability",
+    "indigenous": "Indigenous Sovereignty in Tech",
+    "mechanisms": "Key Governance Mechanisms",
+    "economy": "Regenerative Tech Economy",
+    "roadmap": "Implementation Roadmap",
     "tools": "Tools & Technologies",
-    "operational": "Operational Guidelines",
     "emerging": "Emerging Technology Anticipation",
     "evaluation": "Evaluation & Metrics",
     "case-studies": "Case Studies & Examples",
-    "appendices": "Appendices & Resources"
+    "international": "International Cooperation",
+    "glossary": "Glossary",
+    "references": "References & Standards",
+    "contributing": "Contributor Guidelines",
+    "playbook": "Governance Playbook",
+    "trrt-detailed": "TRRT System Detailed",
+    "starter-kit-detailed": "Tech Governance Starter Kit",
+    "circuit-breaker": "Ethical Circuit Breaker Protocol",
+    "crisis-unit": "Tech Crisis Response Unit",
+    "international-detailed": "International Cooperation Framework",
+    "implementation-strategy": "Implementation Strategy",
+    "documentation": "Documentation & Evaluation",
+    "philosophy": "Philosophical Foundations"
   },
   "sectionsShort": {
-    "index": "Overview",
-    "introduction": "Introduction",
-    "context": "Context",
-    "governance-model": "Governance Model",
-    "implementation": "Implementation",
+    "executive-summary-for-the-skeptic": "Executive Summary",
+    "trrt": "Risk Tiering (TRRT)",
+    "indigenous": "Indigenous Sovereignty",
+    "mechanisms": "Key Mechanisms",
+    "economy": "Tech Economy",
+    "roadmap": "Roadmap",
     "tools": "Tools",
-    "operational": "Operations",
     "emerging": "Emerging Tech",
     "evaluation": "Evaluation",
     "case-studies": "Case Studies",
-    "appendices": "Appendices"
+    "international": "International",
+    "references": "References",
+    "contributing": "Contributing",
+    "playbook": "Playbook",
+    "trrt-detailed": "TRRT Detailed",
+    "starter-kit-detailed": "Starter Kit",
+    "circuit-breaker": "Circuit Breaker",
+    "crisis-unit": "Crisis Unit",
+    "international-detailed": "International Detailed",
+    "implementation-strategy": "Strategy",
+    "documentation": "Documentation",
+    "philosophy": "Philosophy"
   },
-  "progress": {
-    "text": "Section {current} of {total}"
+  "navigation": {
+    "downloadPdf": "Download PDF Version",
+    "continueToFramework": "Continue to Full Framework"
   },
   "languageFallback": {
     "title": "Content in your language coming soon",
     "description": "This section is currently displayed in English until translation is complete."
   },
-  "navigation": {
-    "downloadPdf": "Download PDF Version",
-    "continueToFull": "Continue to Full Framework",
-    "previousSection": "Previous Section",
-    "nextSection": "Next Section"
+  "loading": {
+    "text": "Loading technology governance content..."
   },
   "errors": {
     "sectionNotFound": "Section \"{section}\" not found",
     "contentInDevelopment": "This content is still being developed."
-  },
-  "loading": {
-    "text": "Loading framework content..."
-  },
-  "localizedText": {
-    "newToFramework": "New to Technology Governance Implementation Framework?",
-    "startWithIntroduction": "Start with our introduction that explains the framework's vision, core principles, and comprehensive approach to technology governance.",
-    "readIntroduction": "Read the Introduction",
-    "downloadPdf": "Download PDF Version",
-    "continueToFull": "Continue to Full Framework",
-    "foundationTitle": "Foundation & Understanding",
-    "structureTitle": "Building Governance Systems",
-    "operationTitle": "Making Governance Work",
-    "adaptationTitle": "Staying Ahead",
-    "learningTitle": "Learning & Improvement"
   }
 }

@@ -122,6 +122,66 @@
     if (isFrameworksDropdownOpen) isFrameworksDropdownOpen = false;
     if (isGetInvolvedDropdownOpen) isGetInvolvedDropdownOpen = false;
   };
+
+  // Position submenu to align with top of viewport for maximum visibility
+  function positionSubmenuToTop(submenuElement) {
+    if (!submenuElement || !browser) return;
+    
+    const viewportHeight = window.innerHeight;
+    const submenuRect = submenuElement.getBoundingClientRect();
+    const parentRect = submenuElement.parentElement.getBoundingClientRect();
+    
+    // Calculate how much space we need
+    const submenuHeight = submenuElement.scrollHeight;
+    
+    // If submenu is taller than viewport or would go below fold, align to top
+    if (submenuHeight > viewportHeight * 0.8 || submenuRect.bottom > viewportHeight) {
+      const topOffset = -parentRect.top + 10; // 10px from top of viewport
+      submenuElement.style.top = `${topOffset}px`;
+      submenuElement.style.maxHeight = `${viewportHeight - 20}px`; // 20px total margin
+    }
+  }
+
+  // Apply positioning on hover
+  function handleSubmenuHover(event) {
+    const submenu = event.currentTarget.querySelector('.dropdown-menu-level3');
+    if (submenu) {
+      // Small delay to ensure element is rendered
+      setTimeout(() => positionSubmenuToTop(submenu), 10);
+    }
+  }
+
+  function setupAdvancedSubmenuPositioning() {
+    if (!browser) return;
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const submenu = entry.target.querySelector('.dropdown-menu-level3');
+        if (submenu && entry.isIntersecting) {
+          const rect = submenu.getBoundingClientRect();
+          const viewportHeight = window.innerHeight;
+          
+          if (rect.bottom > viewportHeight - 50) {
+            submenu.classList.add('align-top');
+            const leftPos = rect.left;
+            submenu.style.left = `${leftPos}px`;
+          } else {
+            submenu.classList.remove('align-top');
+            submenu.style.left = '';
+            submenu.style.top = '';
+          }
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
+    
+    // Observe all tier submenus
+    document.querySelectorAll('.tier-submenu').forEach(el => {
+      observer.observe(el);
+    });
+  }
   
   let isMobile = false;
 
@@ -153,6 +213,8 @@
       window.addEventListener('resize', checkMobile);
       document.addEventListener('click', closeDropdowns);
     }
+
+    setupAdvancedSubmenuPositioning();
     
     // Combined cleanup
     return () => {
@@ -609,6 +671,25 @@
     color: #DAA520;
     border-left-color: #DAA520;
     font-weight: 600;
+  }
+
+  /* Dynamic positioning for level 3 menus */
+  .tier-submenu .dropdown-menu-level3.align-top {
+    position: fixed;
+    top: 10px;
+    max-height: calc(100vh - 20px);
+    overflow-y: auto;
+    z-index: 1002;
+  }
+
+  .tier-submenu .dropdown-menu-level3.align-top .dropdown-menu-level3-scrollable {
+    max-height: calc(100vh - 60px);
+  }
+
+  /* Ensure proper stacking */
+  .tier-submenu:hover > .dropdown-menu-level3.align-top {
+    display: block;
+    position: fixed;
   }
 
   /* --------------------------------------------------------------------------
@@ -1214,7 +1295,247 @@
               
               <!-- Visual Separator -->
               <div class="dropdown-separator"></div>
-                             
+
+              <!-- Desktop: Implementation Frameworks with Tiered Sub-Sub-Menus -->
+              <div class="dropdown-submenu desktop-only">
+                <a href="{base}/frameworks" role="menuitem">
+                  {browser ? ($t('common.header.tieredFrameworks') || 'Tiered Frameworks') : 'Tiered Frameworks'}
+                </a>
+                <div class="dropdown-menu-level2">
+                  {#each tiers as tier}
+                    {@const tierFrameworks = frameworksByTier[tier] || []}
+                    {@const groups = getGroupsForTier(tier)}
+                    {@const ungroupedFrameworks = getFrameworksByTierAndGroup(tier, null)}
+                    
+                    <div class="tier-submenu" on:mouseenter={handleSubmenuHover}>
+                      <a href="{base}/frameworks/tier-{tier}" role="menuitem">
+                        {browser ? ($t(tierMetadata[tier]?.titleKey) || `Tier ${tier}`) : `Tier ${tier}`}
+                      </a>
+                      <div class="dropdown-menu-level3">
+                        {#if groups.length > 0}
+                          <!-- Display grouped frameworks -->
+                          {#each groups as group}
+                            {@const groupFrameworks = getFrameworksByTierAndGroup(tier, group)}
+                            {@const groupInfo = groupMetadata[group]}
+                            
+                            {#if groupFrameworks.length > 0}
+                              <div class="framework-group-header">
+                                <span class="group-label">
+                                  {groupInfo?.emoji || '📋'} {browser ? ($t(groupInfo?.titleKey) || group) : group}
+                                </span>
+                              </div>
+                              {#each groupFrameworks as framework}
+                                <a 
+                                  href="{base}{framework.path}" 
+                                  class:active={isActive(framework.path)}
+                                  class:primal={framework.slug === 'treaty-for-our-only-home'}
+                                  class:highlighted={
+                                    framework.slug === 'meta-governance' ||
+                                    framework.slug === 'global-citizenship-practice' ||
+                                    framework.slug === 'indigenous-governance-and-traditional-knowledge'
+                                  }
+                                  data-sveltekit-preload-data="hover" 
+                                  role="menuitem"
+                                >
+              {#if framework.slug === 'treaty-for-our-only-home' || framework.slug === 'meta-governance' || framework.slug === 'global-citizenship-practice' || framework.slug === 'indigenous-governance-and-traditional-knowledge'}
+                                    {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
+                                  {:else}
+                  {#if framework.slug === 'treaty-for-our-only-home' || framework.slug === 'meta-governance' || framework.slug === 'global-citizenship-practice' || framework.slug === 'indigenous-governance-and-traditional-knowledge'}
+                                  {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
+                                {:else}
+                  {#if framework.slug === 'treaty-for-our-only-home' || framework.slug === 'meta-governance' || framework.slug === 'global-citizenship-practice' || framework.slug === 'indigenous-governance-and-traditional-knowledge'}
+                              {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
+                            {:else}
+                              {framework.emoji || '🔗'} {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
+                            {/if}
+                                {/if}
+                                  {/if}
+                                </a>
+                              {/each}
+                            {/if}
+                          {/each}
+                          
+                          <!-- Display ungrouped frameworks if any -->
+                          {#if ungroupedFrameworks.length > 0}
+                            <div class="framework-group-header">
+                              <span class="group-label">
+                                📌 {browser ? ($t('framework.groups.other.title') || 'Other') : 'Other'}
+                              </span>
+                            </div>
+                            {#each ungroupedFrameworks as framework}
+                              <a 
+                                href="{base}{framework.path}" 
+                                class:active={isActive(framework.path)}
+                                class:primal={framework.slug === 'treaty-for-our-only-home'}
+                                class:highlighted={
+                                  framework.slug === 'meta-governance' ||
+                                  framework.slug === 'global-citizenship-practice' ||
+                                  framework.slug === 'indigenous-governance-and-traditional-knowledge'
+                                }
+                                data-sveltekit-preload-data="hover" 
+                                role="menuitem"
+                              >
+                                {framework.emoji || '🔗'} {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
+                              </a>
+                            {/each}
+                          {/if}
+                        {:else}
+                          <!-- Display all frameworks without grouping if no groups exist -->
+                          {#each tierFrameworks as framework}
+                            <a 
+                              href="{base}{framework.path}" 
+                              class:active={isActive(framework.path)}
+                              class:primal={framework.slug === 'treaty-for-our-only-home'}
+                              class:highlighted={
+                                framework.slug === 'meta-governance' ||
+                                framework.slug === 'global-citizenship-practice' ||
+                                framework.slug === 'indigenous-governance-and-traditional-knowledge'
+                              }
+                              data-sveltekit-preload-data="hover" 
+                              role="menuitem"
+                            >
+                              {framework.emoji || '🔗'} {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
+                            </a>
+                          {/each}
+                        {/if}
+                      </div>
+                    </div>
+                  {/each}
+                </div>
+              </div>
+              <!-- Mobile: Collapsible Tiered Frameworks with Groups -->
+              <div class="mobile-only">
+                <button 
+                  type="button" 
+                  class={`mobile-submenu-toggle ${isTieredFrameworksOpen ? 'open' : ''}`}
+                  on:click|stopPropagation={(e) => toggleTieredFrameworks(e)}
+                  aria-label={isTieredFrameworksOpen ? 'Close tiered frameworks' : 'Open tiered frameworks'}
+                >
+                  <span>{browser ? ($t('common.header.tieredFrameworks') || 'Tiered Frameworks') : 'Tiered Frameworks'}</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+                
+                <div class={`mobile-submenu ${isTieredFrameworksOpen ? '' : 'hidden'}`}>
+                  {#each tiers as tier}
+                    {@const tierFrameworks = frameworksByTier[tier] || []}
+                    {@const groups = getGroupsForTier(tier)}
+                    {@const ungroupedFrameworks = getFrameworksByTierAndGroup(tier, null)}
+                    
+                    <div>
+                      <button 
+                        type="button" 
+                        class={`mobile-tier-toggle ${openTiers[tier] ? 'open' : ''}`}
+                        on:click|stopPropagation={(e) => toggleTier(tier, e)}
+                        aria-label={openTiers[tier] ? `Close tier ${tier}` : `Open tier ${tier}`}
+                      >
+                        <span>{browser ? ($t(tierMetadata[tier]?.titleKey) || `Tier ${tier}`) : `Tier ${tier}`}</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                      </button>
+                      
+                      <div class={`mobile-tier-submenu ${openTiers[tier] ? '' : 'hidden'}`}>
+                        
+                        {#if groups.length > 0}
+                          <!-- Display grouped frameworks -->
+                          {#each groups as group}
+                            {@const groupFrameworks = getFrameworksByTierAndGroup(tier, group)}
+                            {@const groupInfo = groupMetadata[group]}
+                            
+                            {#if groupFrameworks.length > 0}
+                              <div class="mobile-group-header">
+                                <span class="mobile-group-label">
+                                  {groupInfo?.emoji || '📋'} {browser ? ($t(groupInfo?.titleKey) || group) : group}
+                                </span>
+                              </div>
+                              {#each groupFrameworks as framework}
+                                <a 
+                                  href="{base}{framework.path}" 
+                                  class:active={isActive(framework.path)}
+                                  class:primal={framework.slug === 'treaty-for-our-only-home'}
+                                  class:highlighted={
+                                    framework.slug === 'meta-governance' ||
+                                    framework.slug === 'global-citizenship-practice' ||
+                                    framework.slug === 'indigenous-governance-and-traditional-knowledge'
+                                  }
+                                  data-sveltekit-preload-data="hover" 
+                                  role="menuitem"
+                                  class="mobile-framework-link"
+                                >
+              {#if framework.slug === 'treaty-for-our-only-home' || framework.slug === 'meta-governance' || framework.slug === 'global-citizenship-practice' || framework.slug === 'indigenous-governance-and-traditional-knowledge'}
+                                    {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
+                                  {:else}
+                  {#if framework.slug === 'treaty-for-our-only-home' || framework.slug === 'meta-governance' || framework.slug === 'global-citizenship-practice' || framework.slug === 'indigenous-governance-and-traditional-knowledge'}
+                                  {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
+                                {:else}
+                {#if framework.slug === 'treaty-for-our-only-home' || framework.slug === 'meta-governance' || framework.slug === 'global-citizenship-practice' || framework.slug === 'indigenous-governance-and-traditional-knowledge'}
+                                {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
+                              {:else}
+                                {framework.emoji || '🔗'} {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
+                              {/if}
+                                {/if}
+                                  {/if}
+                                </a>
+                              {/each}
+                            {/if}
+                          {/each}
+                          
+                          <!-- Display ungrouped frameworks if any -->
+                          {#if ungroupedFrameworks.length > 0}
+                            <div class="mobile-group-header">
+                              <span class="mobile-group-label">
+                                📌 {browser ? ($t('framework.groups.other.title') || 'Other') : 'Other'}
+                              </span>
+                            </div>
+                            {#each ungroupedFrameworks as framework}
+                              <a 
+                                href="{base}{framework.path}" 
+                                class:active={isActive(framework.path)}
+                                class:primal={framework.slug === 'treaty-for-our-only-home'}
+                                class:highlighted={
+                                  framework.slug === 'meta-governance' ||
+                                  framework.slug === 'global-citizenship-practice' ||
+                                  framework.slug === 'indigenous-governance-and-traditional-knowledge'
+                                }
+                                data-sveltekit-preload-data="hover" 
+                                role="menuitem"
+                                class="mobile-framework-link"
+                              >
+                                {framework.emoji || '🔗'} {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
+                              </a>
+                            {/each}
+                          {/if}
+                        {:else}
+                          <!-- Display all frameworks without grouping if no groups exist -->
+                          {#each tierFrameworks as framework}
+                            <a 
+                              href="{base}{framework.path}" 
+                              class:active={isActive(framework.path)}
+                              class:primal={framework.slug === 'treaty-for-our-only-home'}
+                              class:highlighted={
+                                framework.slug === 'meta-governance' ||
+                                framework.slug === 'global-citizenship-practice' ||
+                                framework.slug === 'indigenous-governance-and-traditional-knowledge'
+                              }
+                              data-sveltekit-preload-data="hover" 
+                              role="menuitem"
+                              class="mobile-framework-link"
+                            >
+                              {framework.emoji || '🔗'} {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
+                            </a>
+                          {/each}
+                        {/if}
+                      </div>
+                    </div>
+                  {/each}
+                </div>
+              </div>
+
+              <!-- Visual Separator -->
+              <div class="dropdown-separator"></div>      
+                            
               <!-- Scrollable Content Area for all the static links -->
               <div class="dropdown-scrollable-content">
                 <a href="{base}/frameworks" class={isActive('/frameworks') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
@@ -1263,245 +1584,6 @@
                 </a>
                 {/if}
               </div>
-
-              <!-- Visual Separator -->
-              <div class="dropdown-separator"></div>      
-                <!-- Desktop: Implementation Frameworks with Tiered Sub-Sub-Menus -->
-                <div class="dropdown-submenu desktop-only">
-                  <a href="{base}/frameworks" role="menuitem">
-                    {browser ? ($t('common.header.tieredFrameworks') || 'Tiered Frameworks') : 'Tiered Frameworks'}
-                  </a>
-                  <div class="dropdown-menu-level2">
-                    {#each tiers as tier}
-                      {@const tierFrameworks = frameworksByTier[tier] || []}
-                      {@const groups = getGroupsForTier(tier)}
-                      {@const ungroupedFrameworks = getFrameworksByTierAndGroup(tier, null)}
-                      
-                      <div class="tier-submenu">
-                        <a href="{base}/frameworks/tier-{tier}" role="menuitem">
-                          {browser ? ($t(tierMetadata[tier]?.titleKey) || `Tier ${tier}`) : `Tier ${tier}`}
-                        </a>
-                        <div class="dropdown-menu-level3">
-                          {#if groups.length > 0}
-                            <!-- Display grouped frameworks -->
-                            {#each groups as group}
-                              {@const groupFrameworks = getFrameworksByTierAndGroup(tier, group)}
-                              {@const groupInfo = groupMetadata[group]}
-                              
-                              {#if groupFrameworks.length > 0}
-                                <div class="framework-group-header">
-                                  <span class="group-label">
-                                    {groupInfo?.emoji || '📋'} {browser ? ($t(groupInfo?.titleKey) || group) : group}
-                                  </span>
-                                </div>
-                                {#each groupFrameworks as framework}
-                                  <a 
-                                    href="{base}{framework.path}" 
-                                    class:active={isActive(framework.path)}
-                                    class:primal={framework.slug === 'treaty-for-our-only-home'}
-                                    class:highlighted={
-                                      framework.slug === 'meta-governance' ||
-                                      framework.slug === 'global-citizenship-practice' ||
-                                      framework.slug === 'indigenous-governance-and-traditional-knowledge'
-                                    }
-                                    data-sveltekit-preload-data="hover" 
-                                    role="menuitem"
-                                  >
-                {#if framework.slug === 'treaty-for-our-only-home' || framework.slug === 'meta-governance' || framework.slug === 'global-citizenship-practice' || framework.slug === 'indigenous-governance-and-traditional-knowledge'}
-                                      {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
-                                    {:else}
-                    {#if framework.slug === 'treaty-for-our-only-home' || framework.slug === 'meta-governance' || framework.slug === 'global-citizenship-practice' || framework.slug === 'indigenous-governance-and-traditional-knowledge'}
-                                    {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
-                                  {:else}
-                    {#if framework.slug === 'treaty-for-our-only-home' || framework.slug === 'meta-governance' || framework.slug === 'global-citizenship-practice' || framework.slug === 'indigenous-governance-and-traditional-knowledge'}
-                                {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
-                              {:else}
-                                {framework.emoji || '🔗'} {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
-                              {/if}
-                                  {/if}
-                                    {/if}
-                                  </a>
-                                {/each}
-                              {/if}
-                            {/each}
-                            
-                            <!-- Display ungrouped frameworks if any -->
-                            {#if ungroupedFrameworks.length > 0}
-                              <div class="framework-group-header">
-                                <span class="group-label">
-                                  📌 {browser ? ($t('framework.groups.other.title') || 'Other') : 'Other'}
-                                </span>
-                              </div>
-                              {#each ungroupedFrameworks as framework}
-                                <a 
-                                  href="{base}{framework.path}" 
-                                  class:active={isActive(framework.path)}
-                                  class:primal={framework.slug === 'treaty-for-our-only-home'}
-                                  class:highlighted={
-                                    framework.slug === 'meta-governance' ||
-                                    framework.slug === 'global-citizenship-practice' ||
-                                    framework.slug === 'indigenous-governance-and-traditional-knowledge'
-                                  }
-                                  data-sveltekit-preload-data="hover" 
-                                  role="menuitem"
-                                >
-                                  {framework.emoji || '🔗'} {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
-                                </a>
-                              {/each}
-                            {/if}
-                          {:else}
-                            <!-- Display all frameworks without grouping if no groups exist -->
-                            {#each tierFrameworks as framework}
-                              <a 
-                                href="{base}{framework.path}" 
-                                class:active={isActive(framework.path)}
-                                class:primal={framework.slug === 'treaty-for-our-only-home'}
-                                class:highlighted={
-                                  framework.slug === 'meta-governance' ||
-                                  framework.slug === 'global-citizenship-practice' ||
-                                  framework.slug === 'indigenous-governance-and-traditional-knowledge'
-                                }
-                                data-sveltekit-preload-data="hover" 
-                                role="menuitem"
-                              >
-                                {framework.emoji || '🔗'} {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
-                              </a>
-                            {/each}
-                          {/if}
-                        </div>
-                      </div>
-                    {/each}
-                  </div>
-                </div>
-                <!-- Mobile: Collapsible Tiered Frameworks with Groups -->
-                <div class="mobile-only">
-                  <button 
-                    type="button" 
-                    class={`mobile-submenu-toggle ${isTieredFrameworksOpen ? 'open' : ''}`}
-                    on:click|stopPropagation={(e) => toggleTieredFrameworks(e)}
-                    aria-label={isTieredFrameworksOpen ? 'Close tiered frameworks' : 'Open tiered frameworks'}
-                  >
-                    <span>{browser ? ($t('common.header.tieredFrameworks') || 'Tiered Frameworks') : 'Tiered Frameworks'}</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                    </svg>
-                  </button>
-                  
-                  <div class={`mobile-submenu ${isTieredFrameworksOpen ? '' : 'hidden'}`}>
-                    {#each tiers as tier}
-                      {@const tierFrameworks = frameworksByTier[tier] || []}
-                      {@const groups = getGroupsForTier(tier)}
-                      {@const ungroupedFrameworks = getFrameworksByTierAndGroup(tier, null)}
-                      
-                      <div>
-                        <button 
-                          type="button" 
-                          class={`mobile-tier-toggle ${openTiers[tier] ? 'open' : ''}`}
-                          on:click|stopPropagation={(e) => toggleTier(tier, e)}
-                          aria-label={openTiers[tier] ? `Close tier ${tier}` : `Open tier ${tier}`}
-                        >
-                          <span>{browser ? ($t(tierMetadata[tier]?.titleKey) || `Tier ${tier}`) : `Tier ${tier}`}</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                          </svg>
-                        </button>
-                        
-                        <div class={`mobile-tier-submenu ${openTiers[tier] ? '' : 'hidden'}`}>
-                          
-                          {#if groups.length > 0}
-                            <!-- Display grouped frameworks -->
-                            {#each groups as group}
-                              {@const groupFrameworks = getFrameworksByTierAndGroup(tier, group)}
-                              {@const groupInfo = groupMetadata[group]}
-                              
-                              {#if groupFrameworks.length > 0}
-                                <div class="mobile-group-header">
-                                  <span class="mobile-group-label">
-                                    {groupInfo?.emoji || '📋'} {browser ? ($t(groupInfo?.titleKey) || group) : group}
-                                  </span>
-                                </div>
-                                {#each groupFrameworks as framework}
-                                  <a 
-                                    href="{base}{framework.path}" 
-                                    class:active={isActive(framework.path)}
-                                    class:primal={framework.slug === 'treaty-for-our-only-home'}
-                                    class:highlighted={
-                                      framework.slug === 'meta-governance' ||
-                                      framework.slug === 'global-citizenship-practice' ||
-                                      framework.slug === 'indigenous-governance-and-traditional-knowledge'
-                                    }
-                                    data-sveltekit-preload-data="hover" 
-                                    role="menuitem"
-                                    class="mobile-framework-link"
-                                  >
-                {#if framework.slug === 'treaty-for-our-only-home' || framework.slug === 'meta-governance' || framework.slug === 'global-citizenship-practice' || framework.slug === 'indigenous-governance-and-traditional-knowledge'}
-                                      {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
-                                    {:else}
-                    {#if framework.slug === 'treaty-for-our-only-home' || framework.slug === 'meta-governance' || framework.slug === 'global-citizenship-practice' || framework.slug === 'indigenous-governance-and-traditional-knowledge'}
-                                    {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
-                                  {:else}
-                  {#if framework.slug === 'treaty-for-our-only-home' || framework.slug === 'meta-governance' || framework.slug === 'global-citizenship-practice' || framework.slug === 'indigenous-governance-and-traditional-knowledge'}
-                                  {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
-                                {:else}
-                                  {framework.emoji || '🔗'} {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
-                                {/if}
-                                  {/if}
-                                    {/if}
-                                  </a>
-                                {/each}
-                              {/if}
-                            {/each}
-                            
-                            <!-- Display ungrouped frameworks if any -->
-                            {#if ungroupedFrameworks.length > 0}
-                              <div class="mobile-group-header">
-                                <span class="mobile-group-label">
-                                  📌 {browser ? ($t('framework.groups.other.title') || 'Other') : 'Other'}
-                                </span>
-                              </div>
-                              {#each ungroupedFrameworks as framework}
-                                <a 
-                                  href="{base}{framework.path}" 
-                                  class:active={isActive(framework.path)}
-                                  class:primal={framework.slug === 'treaty-for-our-only-home'}
-                                  class:highlighted={
-                                    framework.slug === 'meta-governance' ||
-                                    framework.slug === 'global-citizenship-practice' ||
-                                    framework.slug === 'indigenous-governance-and-traditional-knowledge'
-                                  }
-                                  data-sveltekit-preload-data="hover" 
-                                  role="menuitem"
-                                  class="mobile-framework-link"
-                                >
-                                  {framework.emoji || '🔗'} {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
-                                </a>
-                              {/each}
-                            {/if}
-                          {:else}
-                            <!-- Display all frameworks without grouping if no groups exist -->
-                            {#each tierFrameworks as framework}
-                              <a 
-                                href="{base}{framework.path}" 
-                                class:active={isActive(framework.path)}
-                                class:primal={framework.slug === 'treaty-for-our-only-home'}
-                                class:highlighted={
-                                  framework.slug === 'meta-governance' ||
-                                  framework.slug === 'global-citizenship-practice' ||
-                                  framework.slug === 'indigenous-governance-and-traditional-knowledge'
-                                }
-                                data-sveltekit-preload-data="hover" 
-                                role="menuitem"
-                                class="mobile-framework-link"
-                              >
-                                {framework.emoji || '🔗'} {browser ? ($t(framework.titleKey) || framework.title || framework.name || framework.slug) : (framework.title || framework.name || framework.slug)}
-                              </a>
-                            {/each}
-                          {/if}
-                        </div>
-                      </div>
-                    {/each}
-                  </div>
-                </div>
             </div>
           </li>
 

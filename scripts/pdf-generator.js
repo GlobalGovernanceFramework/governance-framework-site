@@ -50,6 +50,7 @@ Available categories:
 - gaian-trade
 - work-in-liberation
 - shield-protocol
+- technology-governance
 - regenerative-resources
 - great-transition
 - emergent-governance-protocol
@@ -93,6 +94,7 @@ const outputDirs = {
   'gaian-trade': path.join(__dirname, '..', 'static', 'frameworks','tools', 'gaian-trade'),
   'work-in-liberation': path.join(__dirname, '..', 'static', 'frameworks','tools', 'work-in-liberation'),
   'shield-protocol': path.join(__dirname, '..', 'static', 'frameworks','tools', 'shield-protocol'),
+  'technology-governance': path.join(__dirname, '..', 'static', 'frameworks','tools', 'technology-governance'),
   'regenerative-resources': path.join(__dirname, '..', 'static', 'frameworks','tools', 'regenerative-resources'),
   'great-transition': path.join(__dirname, '..', 'static', 'frameworks','tools', 'great-transition'),
   'water-and-sanitation-governance': path.join(__dirname, '..', 'static', 'frameworks','tools', 'water-and-sanitation-governance'),
@@ -207,6 +209,79 @@ const tools = [
     'pillar-5',
     'unified-workflow',
     'conclusion'
+    ]
+  },
+
+  // Technology Governance
+  {
+    name: 'executive-summary-for-the-skeptic',
+    category: 'technology-governance',
+    fileNames: {
+      en: 'technology-governance-executive-summary-en',
+      sv: 'technology-governance-executive-summary-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'technology-governance'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'technology-governance')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'assets', 'pdf'),
+      sv: path.join(__dirname, '..', 'static', 'assets', 'pdf')
+    },
+    pageFooter: {
+      en: 'Technology Governance - Executive Summary for the Skeptic',
+      sv: 'Teknikstyrning - Sammanfattning för skeptiker'
+    }
+  },
+
+  // Full framework
+  {
+    name: 'technology-governance-framework',
+    category: 'technology-governance',
+    fileNames: {
+      en: 'Technology-Governance-Framework',
+      sv: 'Technology-Governance-Framework'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'technology-governance'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'technology-governance')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Technology Governance Framework',
+      sv: 'Ramkverk för teknikstyrning'
+    },
+    sections: [
+      'index',
+      'principles',
+      'position',
+      'gtc',
+      'trrt',
+      'oversight',
+      'indigenous',
+      'mechanisms',
+      'economy',
+      'roadmap',
+      'tools',
+      'emerging',
+      'evaluation',
+      'case-studies',
+      'international',
+      'glossary',
+      'references',
+      'contributing',
+      'playbook',
+      'trrt-detailed',
+      'starter-kit-detailed',
+      'circuit-breaker',
+      'crisis-unit',
+      'international-detailed',
+      'implementation-strategy',
+      'documentation',
+      'philosophy'
     ]
   },
 

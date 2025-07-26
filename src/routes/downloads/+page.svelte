@@ -571,7 +571,7 @@
           <div class="card-content">
             <h2 class="card-title" style="color: #B8860B;">{$t('downloads.implementationFrameworks.technology.title')}</h2>
             <p class="card-description">{$t('downloads.implementationFrameworks.technology.description')}</p>
-            <a href={getPdfPath('Technology-Governance')} download class="download-button" style="background-color: #4B8AC2;">
+            <a href={getPdfPath('Technology-Governance-Framework')} download class="download-button" style="background-color: #4B8AC2;">
               {$t('downloads.downloadButton')}
               <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
