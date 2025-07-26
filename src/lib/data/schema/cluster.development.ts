@@ -224,7 +224,7 @@ export const developmentEntities: GgfEntity[] = [
     ],
     ui: {
       path: '/frameworks/regenerative-journeys',
-      titleKey: 'framework.docs.nav.frameworkTitles.regenerativeJourneys', // Needs to be added
+      titleKey: 'framework.docs.nav.frameworkTitles.regenerativeJourneys',
       emoji: '✈️',
       slug: 'regenerative-journeys',
       group: 'humanSocialSystems'

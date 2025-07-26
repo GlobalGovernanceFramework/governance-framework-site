@@ -49,6 +49,7 @@ const pageSpecificTranslationsMap = [
   
   // Framework routes (most specific first)
   { route: '/frameworks/emergent-governance-protocol', dataKey: 'egpFramework', fileName: 'frameworksEmergentGovernanceProtocol' },
+  { route: '/frameworks/conduit-protocol', dataKey: 'conduitFramework', fileName: 'frameworksConduitProtocol' },
   { route: '/frameworks/shield-protocol', dataKey: 'shieldProtocol', fileName: 'frameworksShieldProtocol' },
   { route: '/frameworks/regenerative-enterprise', dataKey: 'regenerativeFramework', fileName: 'frameworksRegenerativeEnterprise' },
   { route: '/frameworks/moral-operating-system', dataKey: 'moral-operating-system', fileName: 'frameworksMoralOperatingSystem' },

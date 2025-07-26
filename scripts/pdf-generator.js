@@ -50,6 +50,7 @@ Available categories:
 - gaian-trade
 - work-in-liberation
 - shield-protocol
+- conduit-protocol
 - technology-governance
 - regenerative-resources
 - great-transition
@@ -94,6 +95,7 @@ const outputDirs = {
   'gaian-trade': path.join(__dirname, '..', 'static', 'frameworks','tools', 'gaian-trade'),
   'work-in-liberation': path.join(__dirname, '..', 'static', 'frameworks','tools', 'work-in-liberation'),
   'shield-protocol': path.join(__dirname, '..', 'static', 'frameworks','tools', 'shield-protocol'),
+  'conduit-protocol': path.join(__dirname, '..', 'static', 'frameworks','tools', 'conduit-protocol'),
   'technology-governance': path.join(__dirname, '..', 'static', 'frameworks','tools', 'technology-governance'),
   'regenerative-resources': path.join(__dirname, '..', 'static', 'frameworks','tools', 'regenerative-resources'),
   'great-transition': path.join(__dirname, '..', 'static', 'frameworks','tools', 'great-transition'),
@@ -282,6 +284,65 @@ const tools = [
       'implementation-strategy',
       'documentation',
       'philosophy'
+    ]
+  },
+
+  // Conduit Protocol
+  {
+    name: 'executive-summary-for-the-skeptic',
+    category: 'conduit-protocol',
+    fileNames: {
+      en: 'conduit-protocol-executive-summary-en',
+      sv: 'conduit-protocol-executive-summary-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'conduit-protocol'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'conduit-protocol')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'assets', 'pdf'),
+      sv: path.join(__dirname, '..', 'static', 'assets', 'pdf')
+    },
+    pageFooter: {
+      en: 'Conduit Protocol - Executive Summary for the Skeptic',
+      sv: 'Conduit-protokollet - Sammanfattning för skeptiker'
+    }
+  },
+
+  // Full framework
+  {
+    name: 'conduit-protocol-framework',
+    category: 'conduit-protocol',
+    fileNames: {
+      en: 'Conduit-Protocol-Framework',
+      sv: 'Conduit-Protocol-Framework'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'conduit-protocol'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'conduit-protocol')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Conduit Protocol',
+      sv: 'Conduit-protokollet'
+    },
+    sections: [
+      'index',
+      'introduction',
+      'theory-of-change',
+      'core-principles',
+      'infrastructure-commons',
+      'key-mechanisms',
+      'just-transition',
+      'implementation-pathways',
+      'framework-integration',
+      'technical-specifications',
+      'advocacy-action',
+      'glossary',
+      'appendices'
     ]
   },
 
