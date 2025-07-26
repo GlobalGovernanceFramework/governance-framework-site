@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="manifest" href="/manifest.json">
+    <!-- iOS meta tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="GGF">
+
+    <!-- Theme color for Android -->
+    <meta name="theme-color" content="#2B4B8C">
+
+		<meta charset="utf-8" />
+    <link rel="icon" href="/icons/favicon.png" type="image/png">
+    <link rel="icon" href="/icons/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-touch-icon-152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/icons/apple-touch-icon-167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon-180.png">
+    <link rel="mask-icon" href="/icons/maskable_icon192.png" color="#2B4B8C">
+    <meta name="msapplication-TileImage" content="/icons/ms-tile-144.png">
+    <meta name="msapplication-TileColor" content="#2B4B8C">
+		<meta name="viewport" content="width=device-width" />
+		<!-- Temporary Tailwind CDN (until we fix the local Tailwind setup) -->
+		<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+		<!-- Custom inline styles for buttons and other elements -->
+		<style>
+			.btn-primary {
+				background-color: #2563eb;
+				color: white;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				font-weight: 500;
+				transition-property: all;
+				transition-duration: 200ms;
+			}
+			.btn-primary:hover {
+				background-color: #1d4ed8;
+				transform: translateY(-2px);
+			}
+		</style>
+		
+		<link rel="modulepreload" href="/_app/immutable/entry/start.CL5SrR2l.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/qdlZYbWk.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/9Ey5MMPk.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/CYgJF_JY.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.BpRQp30Q.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/NZTpNUN0.js">
+    <script>
+      // Unregister any existing service workers
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          for (let registration of registrations) {
+            registration.unregister();
+          }
+        });
+      }
+      // Handle hash-based routing and redirect paths
+      (function() {
+        // First check if we have a hash route
+        const { hash } = window.location;
+        if (hash && hash.length > 1) {
+          const path = hash.slice(1);
+          history.replaceState(null, null, path);
+        } 
+        // Then check if we have a saved redirect path
+        else if (sessionStorage.getItem('redirectPath')) {
+          const redirectPath = sessionStorage.getItem('redirectPath');
+          sessionStorage.removeItem('redirectPath');
+          history.replaceState(null, null, redirectPath);
+        }
+      })();
+      // Prevent browser scroll restoration
+      if (history.scrollRestoration) {
+        history.scrollRestoration = 'manual';
+      }
+    </script>
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+			<script>
+				{
+					__sveltekit_stb6ik = {
+						base: ""
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/_app/immutable/entry/start.CL5SrR2l.js"),
+						import("/_app/immutable/entry/app.BpRQp30Q.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
